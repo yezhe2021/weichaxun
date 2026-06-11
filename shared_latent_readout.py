@@ -268,9 +268,11 @@ def train(args):
             teacher = capture_receiver_teacher(receiver, tok_r, ex, args.layer, device, args.max_length)
             patched, patch, labels = run_receiver_patched(receiver, tok_r, ex, args.layer, reader, memory, args.alpha, device, args.max_length)
 
-            t_attn = teacher["teacher_attn"][:, : patch.shape[1], :]
-            mse = F.mse_loss(patch, t_attn)
-            cosine = 1.0 - F.cosine_similarity(patch.flatten(0, 1), t_attn.flatten(0, 1), dim=-1).mean()
+            attn_n = min(teacher["teacher_attn"].shape[1], patch.shape[1])
+            patch_for_loss = patch[:, :attn_n, :]
+            t_attn = teacher["teacher_attn"][:, :attn_n, :]
+            mse = F.mse_loss(patch_for_loss, t_attn)
+            cosine = 1.0 - F.cosine_similarity(patch_for_loss.flatten(0, 1), t_attn.flatten(0, 1), dim=-1).mean()
             p_log, p_lab = masked_logits(patched.logits.float(), labels)
             t_log, _ = masked_logits(teacher["teacher_logits"].float(), teacher["labels"])
             n = min(p_log.shape[0], t_log.shape[0])
@@ -321,7 +323,7 @@ def evaluate(args, sender, receiver, tok_s, tok_r, reader, ds, device, train_met
             "no_context_kl": float(F.kl_div(F.log_softmax(n_log[:n], dim=-1), F.softmax(t_log[:n], dim=-1), reduction="batchmean").cpu()),
             "patched_top1_match": float((p_log[:n].argmax(dim=-1) == t_log[:n].argmax(dim=-1)).float().mean().cpu()),
             "no_context_top1_match": float((n_log[:n].argmax(dim=-1) == t_log[:n].argmax(dim=-1)).float().mean().cpu()),
-            "attn_mse": float(F.mse_loss(patch[:, : teacher["teacher_attn"].shape[1], :], teacher["teacher_attn"][:, : patch.shape[1], :]).cpu()),
+            "attn_mse": float(F.mse_loss(patch[:, : min(patch.shape[1], teacher["teacher_attn"].shape[1]), :], teacher["teacher_attn"][:, : min(patch.shape[1], teacher["teacher_attn"].shape[1]), :]).cpu()),
         })
     summary = {k: sum(r[k] for r in rows) / max(len(rows), 1) for k in rows[0]} if rows else {}
     summary["cuda_peak_memory_bytes"] = int(torch.cuda.max_memory_allocated() - peak_start) if torch.cuda.is_available() else 0

@@ -1,0 +1,57 @@
+{
+  "train": [
+    {
+      "epoch": 0,
+      "step": 0,
+      "loss": 2.6814124584198,
+      "mse": 0.7106550335884094,
+      "cosine_loss": 0.992496132850647,
+      "kl": 19.482006072998047,
+      "patched_ce": 7.981579780578613,
+      "teacher_ce": 2.6258296966552734
+    },
+    {
+      "epoch": 0,
+      "step": 1,
+      "loss": 1.8473145961761475,
+      "mse": 1.0339949131011963,
+      "cosine_loss": 0.9982112050056458,
+      "kl": 5.706916332244873,
+      "patched_ce": 3.2833163738250732,
+      "teacher_ce": 0.41797658801078796
+    }
+  ],
+  "eval_rows": [
+    {
+      "teacher_ce": 2.6258296966552734,
+      "no_context_ce": 6.850780963897705,
+      "patched_ce": 3.084275245666504,
+      "patched_kl": 16.55051612854004,
+      "no_context_kl": 19.402379989624023,
+      "patched_top1_match": 0.0,
+      "no_context_top1_match": 0.0,
+      "attn_mse": 0.7040656208992004
+    },
+    {
+      "teacher_ce": 0.41797658801078796,
+      "no_context_ce": 5.424599647521973,
+      "patched_ce": 3.86855411529541,
+      "patched_kl": 5.093591690063477,
+      "no_context_kl": 5.395748138427734,
+      "patched_top1_match": 0.0,
+      "no_context_top1_match": 0.0,
+      "attn_mse": 0.7762346267700195
+    }
+  ],
+  "summary": {
+    "teacher_ce": 1.5219031423330307,
+    "no_context_ce": 6.137690305709839,
+    "patched_ce": 3.476414680480957,
+    "patched_kl": 10.822053909301758,
+    "no_context_kl": 12.399064064025879,
+    "patched_top1_match": 0.0,
+    "no_context_top1_match": 0.0,
+    "attn_mse": 0.74015012383461,
+    "cuda_peak_memory_bytes": 0
+  }
+}
