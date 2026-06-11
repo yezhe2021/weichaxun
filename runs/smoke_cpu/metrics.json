@@ -1,0 +1,37 @@
+{
+  "train": [
+    {
+      "epoch": 0,
+      "step": 0,
+      "loss": 1.6197600364685059,
+      "mse": 0.3686273992061615,
+      "cosine_loss": 0.9843903183937073,
+      "kl": 6.4001593589782715,
+      "patched_ce": 7.342465400695801,
+      "teacher_ce": 1.1034592390060425
+    }
+  ],
+  "eval_rows": [
+    {
+      "teacher_ce": 1.1034592390060425,
+      "no_context_ce": 1.1034592390060425,
+      "patched_ce": 11.072569847106934,
+      "patched_kl": 9.969138145446777,
+      "no_context_kl": 9.879622453468073e-09,
+      "patched_top1_match": 0.0,
+      "no_context_top1_match": 1.0,
+      "attn_mse": 0.45520877838134766
+    }
+  ],
+  "summary": {
+    "teacher_ce": 1.1034592390060425,
+    "no_context_ce": 1.1034592390060425,
+    "patched_ce": 11.072569847106934,
+    "patched_kl": 9.969138145446777,
+    "no_context_kl": 9.879622453468073e-09,
+    "patched_top1_match": 0.0,
+    "no_context_top1_match": 1.0,
+    "attn_mse": 0.45520877838134766,
+    "cuda_peak_memory_bytes": 0
+  }
+}

@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.venv/
+
+# Local model links/directories
+Qwen3-0.6B
+Qwen3-1.7B
+
+# Heavy training artifacts
+runs/**/reader.pt
+runs/**/*.bin
+runs/**/*.safetensors
+runs/**/*.pt
+runs/**/*.pth
+runs/**/*.ckpt
+
+# Keep metrics/config files under runs
+!runs/**/
+!runs/**/metrics.json
+!runs/**/config.json
+!runs/**/summary.json
