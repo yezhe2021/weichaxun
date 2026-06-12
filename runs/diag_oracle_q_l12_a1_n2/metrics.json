@@ -1,0 +1,82 @@
+{
+  "train": [
+    {
+      "epoch": 0,
+      "step": 0,
+      "query_source": "oracle_full",
+      "memory_mode": "topk",
+      "layer": 12,
+      "alpha": 1.0,
+      "memory_tokens": 64,
+      "loss": 2.629112958908081,
+      "mse": 0.7230237722396851,
+      "cosine_loss": 1.0225629806518555,
+      "kl": 20.01263427734375,
+      "patched_ce": 7.009448051452637,
+      "teacher_ce": 2.6258296966552734
+    },
+    {
+      "epoch": 0,
+      "step": 1,
+      "query_source": "oracle_full",
+      "memory_mode": "topk",
+      "layer": 12,
+      "alpha": 1.0,
+      "memory_tokens": 64,
+      "loss": 1.7909281253814697,
+      "mse": 0.9981721639633179,
+      "cosine_loss": 0.9791416525840759,
+      "kl": 5.433928489685059,
+      "patched_ce": 3.252311944961548,
+      "teacher_ce": 0.41797658801078796
+    }
+  ],
+  "eval_rows": [
+    {
+      "query_source": "oracle_full",
+      "memory_mode": "topk",
+      "layer": 12,
+      "alpha": 1.0,
+      "memory_tokens": 64,
+      "teacher_ce": 2.6258296966552734,
+      "no_context_ce": 6.850780963897705,
+      "patched_ce": 3.1498377323150635,
+      "patched_kl": 16.7541561126709,
+      "no_context_kl": 19.402379989624023,
+      "patched_top1_match": 0.0,
+      "no_context_top1_match": 0.0,
+      "attn_mse": 0.6267211437225342
+    },
+    {
+      "query_source": "oracle_full",
+      "memory_mode": "topk",
+      "layer": 12,
+      "alpha": 1.0,
+      "memory_tokens": 64,
+      "teacher_ce": 0.41797658801078796,
+      "no_context_ce": 5.424599647521973,
+      "patched_ce": 3.6315088272094727,
+      "patched_kl": 5.163412094116211,
+      "no_context_kl": 5.395748138427734,
+      "patched_top1_match": 0.0,
+      "no_context_top1_match": 0.0,
+      "attn_mse": 0.6936032176017761
+    }
+  ],
+  "summary": {
+    "layer": 12,
+    "alpha": 1.0,
+    "memory_tokens": 64.0,
+    "teacher_ce": 1.5219031423330307,
+    "no_context_ce": 6.137690305709839,
+    "patched_ce": 3.390673279762268,
+    "patched_kl": 10.958784103393555,
+    "no_context_kl": 12.399064064025879,
+    "patched_top1_match": 0.0,
+    "no_context_top1_match": 0.0,
+    "attn_mse": 0.6601621806621552,
+    "query_source": "oracle_full",
+    "memory_mode": "topk",
+    "cuda_peak_memory_bytes": 0
+  }
+}

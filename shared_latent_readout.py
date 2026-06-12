@@ -151,7 +151,7 @@ def token_saliency(hidden: torch.Tensor, query_start: int) -> torch.Tensor:
 
 
 @torch.no_grad()
-def build_shared_memory(sender, tokenizer, ex: Example, layer_idx: int, topk: int, device, max_length: int):
+def build_shared_memory(sender, tokenizer, ex: Example, layer_idx: int, topk: int, device, max_length: int, memory_mode: str = "topk"):
     prompt = format_full(ex)
     ids = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=max_length).to(device)
     q_len = tokenizer(format_query(ex), return_tensors="pt", truncation=True, max_length=max_length).input_ids.shape[1]
@@ -162,8 +162,12 @@ def build_shared_memory(sender, tokenizer, ex: Example, layer_idx: int, topk: in
     cap.close()
     k, v = infer_sender_kv(sender, layer_idx, hidden)
     sal = token_saliency(hidden, query_start)
-    keep = min(topk, hidden.shape[1])
-    idx = torch.topk(sal[0], keep).indices.sort().values
+    if memory_mode == "full" or topk <= 0:
+        idx = torch.arange(hidden.shape[1], device=device)
+    else:
+        keep = min(topk, hidden.shape[1])
+        idx = torch.topk(sal[0], keep).indices.sort().values
+    keep = idx.numel()
     pooled = hidden.mean(dim=1, keepdim=True).expand(-1, keep, -1)
     return {
         "k": k[:, idx, :].float(),
@@ -193,18 +197,24 @@ def capture_receiver_teacher(receiver, tokenizer, ex: Example, layer_idx: int, d
     }
 
 
-def run_receiver_patched(receiver, tokenizer, ex: Example, layer_idx: int, reader, memory, alpha, device, max_length: int):
+def run_receiver_patched(receiver, tokenizer, ex: Example, layer_idx: int, reader, memory, alpha, device, max_length: int, oracle_q_hidden: Optional[torch.Tensor] = None):
     ids, mask, labels, prompt_len = tokenize_prompt_answer(tokenizer, format_query(ex), ex.answer, device, max_length)
     patch_cache = {}
     module = self_attn_of(receiver, layer_idx)
 
     def hook(mod, args, kwargs, output):
         attn_out = output[0] if isinstance(output, tuple) else output
-        hidden_states = kwargs.get("hidden_states", args[0] if args else None)
-        q_hidden = hidden_states[:, prompt_len - 1 : -1, :]
+        if oracle_q_hidden is None:
+            hidden_states = kwargs.get("hidden_states", args[0] if args else None)
+            q_hidden = hidden_states[:, prompt_len - 1 : -1, :]
+        else:
+            q_hidden = oracle_q_hidden
         patch = reader(q_hidden.float(), memory).to(attn_out.dtype)
         mixed = attn_out.clone()
-        mixed[:, prompt_len - 1 : -1, :] = alpha * patch + (1.0 - alpha) * mixed[:, prompt_len - 1 : -1, :]
+        target = mixed[:, prompt_len - 1 : -1, :]
+        n = min(target.shape[1], patch.shape[1])
+        target[:, :n, :] = alpha * patch[:, :n, :] + (1.0 - alpha) * target[:, :n, :]
+        mixed[:, prompt_len - 1 : prompt_len - 1 + n, :] = target[:, :n, :]
         patch_cache["patch"] = patch.float()
         if isinstance(output, tuple):
             return (mixed,) + output[1:]
@@ -264,9 +274,10 @@ def train(args):
     for epoch in range(args.epochs):
         pbar = tqdm(dl, desc=f"epoch {epoch}")
         for step, ex in enumerate(pbar):
-            memory = build_shared_memory(sender, tok_s, ex, args.layer, args.topk, device, args.max_length)
+            memory = build_shared_memory(sender, tok_s, ex, args.layer, args.topk, device, args.max_length, args.memory_mode)
             teacher = capture_receiver_teacher(receiver, tok_r, ex, args.layer, device, args.max_length)
-            patched, patch, labels = run_receiver_patched(receiver, tok_r, ex, args.layer, reader, memory, args.alpha, device, args.max_length)
+            oracle_q = teacher["teacher_q_hidden"] if args.query_source == "oracle_full" else None
+            patched, patch, labels = run_receiver_patched(receiver, tok_r, ex, args.layer, reader, memory, args.alpha, device, args.max_length, oracle_q)
 
             attn_n = min(teacher["teacher_attn"].shape[1], patch.shape[1])
             patch_for_loss = patch[:, :attn_n, :]
@@ -288,6 +299,11 @@ def train(args):
             row = {
                 "epoch": epoch,
                 "step": step,
+                "query_source": args.query_source,
+                "memory_mode": args.memory_mode,
+                "layer": args.layer,
+                "alpha": args.alpha,
+                "memory_tokens": int(memory["position"].shape[1]),
                 "loss": float(loss.detach().cpu()),
                 "mse": float(mse.detach().cpu()),
                 "cosine_loss": float(cosine.detach().cpu()),
@@ -307,15 +323,21 @@ def evaluate(args, sender, receiver, tok_s, tok_r, reader, ds, device, train_met
     rows = []
     peak_start = torch.cuda.max_memory_allocated() if torch.cuda.is_available() else 0
     for ex in tqdm(list(ds)[: args.eval_samples], desc="eval"):
-        memory = build_shared_memory(sender, tok_s, ex, args.layer, args.topk, device, args.max_length)
+        memory = build_shared_memory(sender, tok_s, ex, args.layer, args.topk, device, args.max_length, args.memory_mode)
         teacher = capture_receiver_teacher(receiver, tok_r, ex, args.layer, device, args.max_length)
         noctx = run_receiver_no_context(receiver, tok_r, ex, device, args.max_length)
-        patched, patch, labels = run_receiver_patched(receiver, tok_r, ex, args.layer, reader, memory, args.alpha, device, args.max_length)
+        oracle_q = teacher["teacher_q_hidden"] if args.query_source == "oracle_full" else None
+        patched, patch, labels = run_receiver_patched(receiver, tok_r, ex, args.layer, reader, memory, args.alpha, device, args.max_length, oracle_q)
         p_log, p_lab = masked_logits(patched.logits.float(), labels)
         n_log, _ = masked_logits(noctx.logits.float(), labels)
         t_log, _ = masked_logits(teacher["teacher_logits"].float(), teacher["labels"])
         n = min(p_log.shape[0], t_log.shape[0], n_log.shape[0])
         rows.append({
+            "query_source": args.query_source,
+            "memory_mode": args.memory_mode,
+            "layer": args.layer,
+            "alpha": args.alpha,
+            "memory_tokens": int(memory["position"].shape[1]),
             "teacher_ce": float(teacher["teacher_ce"].cpu()),
             "no_context_ce": float(F.cross_entropy(n_log[:n], p_lab[:n]).cpu()),
             "patched_ce": float(F.cross_entropy(p_log[:n], p_lab[:n]).cpu()),
@@ -325,7 +347,15 @@ def evaluate(args, sender, receiver, tok_s, tok_r, reader, ds, device, train_met
             "no_context_top1_match": float((n_log[:n].argmax(dim=-1) == t_log[:n].argmax(dim=-1)).float().mean().cpu()),
             "attn_mse": float(F.mse_loss(patch[:, : min(patch.shape[1], teacher["teacher_attn"].shape[1]), :], teacher["teacher_attn"][:, : min(patch.shape[1], teacher["teacher_attn"].shape[1]), :]).cpu()),
         })
-    summary = {k: sum(r[k] for r in rows) / max(len(rows), 1) for k in rows[0]} if rows else {}
+    summary = {}
+    if rows:
+        for k, value in rows[0].items():
+            if isinstance(value, (int, float)):
+                summary[k] = sum(float(r[k]) for r in rows) / len(rows)
+    summary["query_source"] = args.query_source
+    summary["memory_mode"] = args.memory_mode
+    summary["layer"] = args.layer
+    summary["alpha"] = args.alpha
     summary["cuda_peak_memory_bytes"] = int(torch.cuda.max_memory_allocated() - peak_start) if torch.cuda.is_available() else 0
     with open(Path(args.out) / "metrics.json", "w", encoding="utf-8") as f:
         json.dump({"train": train_metrics, "eval_rows": rows, "summary": summary}, f, indent=2, ensure_ascii=False)
@@ -334,12 +364,14 @@ def evaluate(args, sender, receiver, tok_s, tok_r, reader, ds, device, train_met
 
 def parse_args():
     p = argparse.ArgumentParser()
-    p.add_argument("--sender-model", default="/home/yezhe/伪查询/Qwen3-0.6B")
-    p.add_argument("--receiver-model", default="/home/yezhe/伪查询/Qwen3-1.7B")
-    p.add_argument("--data", default="/home/yezhe/数据集/swift/OpenHermes-2___5/openhermes2_5.json")
+    p.add_argument("--sender-model", default="Qwen3-0.6B")
+    p.add_argument("--receiver-model", default="Qwen3-1.7B")
+    p.add_argument("--data", default="/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl")
     p.add_argument("--out", default="runs/shared_latent_readout")
     p.add_argument("--layer", type=int, default=12)
     p.add_argument("--topk", type=int, default=128)
+    p.add_argument("--memory-mode", choices=["topk", "full"], default="topk")
+    p.add_argument("--query-source", choices=["no_context", "oracle_full"], default="no_context")
     p.add_argument("--max-length", type=int, default=1024)
     p.add_argument("--max-samples", type=int, default=256)
     p.add_argument("--eval-samples", type=int, default=32)

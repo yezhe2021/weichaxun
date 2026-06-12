@@ -1,0 +1,82 @@
+{
+  "train": [
+    {
+      "epoch": 0,
+      "step": 0,
+      "query_source": "no_context",
+      "memory_mode": "topk",
+      "layer": 16,
+      "alpha": 0.25,
+      "memory_tokens": 64,
+      "loss": 3.634394407272339,
+      "mse": 2.8262109756469727,
+      "cosine_loss": 1.0068049430847168,
+      "kl": 5.44584321975708,
+      "patched_ce": 3.345303773880005,
+      "teacher_ce": 0.41797658801078796
+    },
+    {
+      "epoch": 0,
+      "step": 1,
+      "query_source": "no_context",
+      "memory_mode": "topk",
+      "layer": 16,
+      "alpha": 0.25,
+      "memory_tokens": 64,
+      "loss": 3.5966436862945557,
+      "mse": 1.743077039718628,
+      "cosine_loss": 0.8789228200912476,
+      "kl": 19.364187240600586,
+      "patched_ce": 7.095724582672119,
+      "teacher_ce": 2.6258296966552734
+    }
+  ],
+  "eval_rows": [
+    {
+      "query_source": "no_context",
+      "memory_mode": "topk",
+      "layer": 16,
+      "alpha": 0.25,
+      "memory_tokens": 64,
+      "teacher_ce": 2.6258296966552734,
+      "no_context_ce": 6.850780963897705,
+      "patched_ce": 6.651429176330566,
+      "patched_kl": 19.154661178588867,
+      "no_context_kl": 19.402379989624023,
+      "patched_top1_match": 0.0,
+      "no_context_top1_match": 0.0,
+      "attn_mse": 1.2564747333526611
+    },
+    {
+      "query_source": "no_context",
+      "memory_mode": "topk",
+      "layer": 16,
+      "alpha": 0.25,
+      "memory_tokens": 64,
+      "teacher_ce": 0.41797658801078796,
+      "no_context_ce": 5.424599647521973,
+      "patched_ce": 5.188531398773193,
+      "patched_kl": 5.383505821228027,
+      "no_context_kl": 5.395748138427734,
+      "patched_top1_match": 0.0,
+      "no_context_top1_match": 0.0,
+      "attn_mse": 1.6943674087524414
+    }
+  ],
+  "summary": {
+    "layer": 16,
+    "alpha": 0.25,
+    "memory_tokens": 64.0,
+    "teacher_ce": 1.5219031423330307,
+    "no_context_ce": 6.137690305709839,
+    "patched_ce": 5.91998028755188,
+    "patched_kl": 12.269083499908447,
+    "no_context_kl": 12.399064064025879,
+    "patched_top1_match": 0.0,
+    "no_context_top1_match": 0.0,
+    "attn_mse": 1.4754210710525513,
+    "query_source": "no_context",
+    "memory_mode": "topk",
+    "cuda_peak_memory_bytes": 0
+  }
+}
