@@ -117,25 +117,58 @@ class ActivationCapture:
         self._post.remove()
 
 
+class CrossAttentionDecoderBlock(nn.Module):
+    def __init__(self, receiver_dim: int, memory_dim: int, hidden: int, ffn_mult: int = 4):
+        super().__init__()
+        self.q_norm = nn.LayerNorm(receiver_dim)
+        self.mem_norm = nn.LayerNorm(memory_dim)
+        self.q_proj = nn.Linear(receiver_dim, hidden)
+        self.k_proj = nn.Linear(memory_dim, hidden)
+        self.v_proj = nn.Linear(memory_dim, receiver_dim)
+        self.out_proj = nn.Linear(receiver_dim, receiver_dim)
+        self.ffn_norm = nn.LayerNorm(receiver_dim)
+        self.ffn = nn.Sequential(
+            nn.Linear(receiver_dim, receiver_dim * ffn_mult),
+            nn.GELU(),
+            nn.Linear(receiver_dim * ffn_mult, receiver_dim),
+        )
+
+    def forward(self, x, memory):
+        q = self.q_proj(self.q_norm(x))
+        mem = self.mem_norm(memory)
+        k = self.k_proj(mem)
+        v = self.v_proj(mem)
+        attn = torch.softmax(torch.matmul(q, k.transpose(-1, -2)) / math.sqrt(q.shape[-1]), dim=-1)
+        x = x + self.out_proj(torch.matmul(attn, v))
+        x = x + self.ffn(self.ffn_norm(x))
+        return x
+
+
 class SharedMemoryReader(nn.Module):
     def __init__(self, receiver_dim: int, sender_k_dim: int, sender_v_dim: int, sender_hidden_dim: int, hidden: int, pos_dim: int = 32):
         super().__init__()
         self.pos = nn.Embedding(8192, pos_dim)
-        self.mem_in = nn.Linear(sender_k_dim + sender_v_dim + sender_hidden_dim + pos_dim + 1, hidden)
-        self.q = nn.Linear(receiver_dim, hidden)
-        self.k = nn.Linear(hidden, hidden)
-        self.v = nn.Linear(hidden, receiver_dim)
+        memory_dim = hidden
+        self.mem_in = nn.Sequential(
+            nn.Linear(sender_k_dim + sender_v_dim + sender_hidden_dim + pos_dim + 1, memory_dim),
+            nn.GELU(),
+            nn.LayerNorm(memory_dim),
+        )
+        self.query_in = nn.Linear(receiver_dim, receiver_dim)
+        self.blocks = nn.ModuleList([
+            CrossAttentionDecoderBlock(receiver_dim, memory_dim, hidden),
+            CrossAttentionDecoderBlock(receiver_dim, memory_dim, hidden),
+        ])
         self.out = nn.Sequential(nn.LayerNorm(receiver_dim), nn.Linear(receiver_dim, receiver_dim))
 
     def forward(self, receiver_q_hidden, memory):
         pos = self.pos(memory["position"].clamp_max(self.pos.num_embeddings - 1))
         mem = torch.cat([memory["k"], memory["v"], memory["hidden"], pos, memory["saliency"]], dim=-1)
-        mem = torch.tanh(self.mem_in(mem))
-        q = self.q(receiver_q_hidden)
-        k = self.k(mem)
-        v = self.v(mem)
-        attn = torch.softmax(torch.matmul(q, k.transpose(-1, -2)) / math.sqrt(q.shape[-1]), dim=-1)
-        return self.out(torch.matmul(attn, v))
+        mem = self.mem_in(mem)
+        x = self.query_in(receiver_q_hidden)
+        for block in self.blocks:
+            x = block(x, mem)
+        return self.out(x)
 
 
 def infer_sender_kv(sender, layer_idx: int, hidden: torch.Tensor) -> Tuple[torch.Tensor, torch.Tensor]:
@@ -167,12 +200,10 @@ def build_shared_memory(sender, tokenizer, ex: Example, layer_idx: int, topk: in
     else:
         keep = min(topk, hidden.shape[1])
         idx = torch.topk(sal[0], keep).indices.sort().values
-    keep = idx.numel()
-    pooled = hidden.mean(dim=1, keepdim=True).expand(-1, keep, -1)
     return {
         "k": k[:, idx, :].float(),
         "v": v[:, idx, :].float(),
-        "hidden": pooled.float(),
+        "hidden": hidden[:, idx, :].float(),
         "position": idx.view(1, -1).to(device),
         "saliency": sal[:, idx].unsqueeze(-1).float(),
     }
@@ -239,6 +270,12 @@ def masked_logits(logits, labels):
     return pred[mask], lab[mask]
 
 
+def teacher_topk_match(candidate_logits, teacher_logits, k: int):
+    teacher_top1 = teacher_logits.argmax(dim=-1)
+    candidate_topk = candidate_logits.topk(min(k, candidate_logits.shape[-1]), dim=-1).indices
+    return candidate_topk.eq(teacher_top1.unsqueeze(-1)).any(dim=-1).float().mean()
+
+
 def train(args):
     device = torch.device("cuda" if torch.cuda.is_available() and not args.cpu else "cpu")
     if device.type == "cuda":
@@ -283,7 +320,8 @@ def train(args):
             patch_for_loss = patch[:, :attn_n, :]
             t_attn = teacher["teacher_attn"][:, :attn_n, :]
             mse = F.mse_loss(patch_for_loss, t_attn)
-            cosine = 1.0 - F.cosine_similarity(patch_for_loss.flatten(0, 1), t_attn.flatten(0, 1), dim=-1).mean()
+            attn_cosine = F.cosine_similarity(patch_for_loss.flatten(0, 1), t_attn.flatten(0, 1), dim=-1).mean()
+            cosine = 1.0 - attn_cosine
             p_log, p_lab = masked_logits(patched.logits.float(), labels)
             t_log, _ = masked_logits(teacher["teacher_logits"].float(), teacher["labels"])
             n = min(p_log.shape[0], t_log.shape[0])
@@ -306,6 +344,7 @@ def train(args):
                 "memory_tokens": int(memory["position"].shape[1]),
                 "loss": float(loss.detach().cpu()),
                 "mse": float(mse.detach().cpu()),
+                "attn_cosine": float(attn_cosine.detach().cpu()),
                 "cosine_loss": float(cosine.detach().cpu()),
                 "kl": float(kl.detach().cpu()),
                 "patched_ce": float(ce.detach().cpu()),
@@ -332,6 +371,10 @@ def evaluate(args, sender, receiver, tok_s, tok_r, reader, ds, device, train_met
         n_log, _ = masked_logits(noctx.logits.float(), labels)
         t_log, _ = masked_logits(teacher["teacher_logits"].float(), teacher["labels"])
         n = min(p_log.shape[0], t_log.shape[0], n_log.shape[0])
+        attn_n = min(patch.shape[1], teacher["teacher_attn"].shape[1])
+        patch_attn = patch[:, :attn_n, :]
+        teacher_attn = teacher["teacher_attn"][:, :attn_n, :]
+        attn_cosine = F.cosine_similarity(patch_attn.flatten(0, 1), teacher_attn.flatten(0, 1), dim=-1).mean()
         rows.append({
             "query_source": args.query_source,
             "memory_mode": args.memory_mode,
@@ -345,7 +388,12 @@ def evaluate(args, sender, receiver, tok_s, tok_r, reader, ds, device, train_met
             "no_context_kl": float(F.kl_div(F.log_softmax(n_log[:n], dim=-1), F.softmax(t_log[:n], dim=-1), reduction="batchmean").cpu()),
             "patched_top1_match": float((p_log[:n].argmax(dim=-1) == t_log[:n].argmax(dim=-1)).float().mean().cpu()),
             "no_context_top1_match": float((n_log[:n].argmax(dim=-1) == t_log[:n].argmax(dim=-1)).float().mean().cpu()),
-            "attn_mse": float(F.mse_loss(patch[:, : min(patch.shape[1], teacher["teacher_attn"].shape[1]), :], teacher["teacher_attn"][:, : min(patch.shape[1], teacher["teacher_attn"].shape[1]), :]).cpu()),
+            "patched_top5_match": float(teacher_topk_match(p_log[:n], t_log[:n], 5).cpu()),
+            "no_context_top5_match": float(teacher_topk_match(n_log[:n], t_log[:n], 5).cpu()),
+            "patched_top10_match": float(teacher_topk_match(p_log[:n], t_log[:n], 10).cpu()),
+            "no_context_top10_match": float(teacher_topk_match(n_log[:n], t_log[:n], 10).cpu()),
+            "attn_mse": float(F.mse_loss(patch_attn, teacher_attn).cpu()),
+            "attn_cosine": float(attn_cosine.cpu()),
         })
     summary = {}
     if rows:

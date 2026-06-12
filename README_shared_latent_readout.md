@@ -54,7 +54,8 @@ The script reports:
 Notes:
 
 - The script is intentionally single-layer and keeps both LMs frozen.
-- `Z` contains sender K/V projections, token position, saliency, and pooled sender hidden state.
-- The reader does not restore receiver KV. It uses receiver query-token hidden states as queries and cross-attends into `Z`, producing a patch for the selected receiver layer attention output.
+- `Z` contains sender K/V projections, token position, saliency, and each selected token's sender hidden state.
+- The reader does not restore receiver KV. It uses receiver query-token hidden states as queries and runs a 2-layer cross-attention decoder over `Z`, producing a patch for the selected receiver layer attention output.
 - The hook patches the receiver self-attention module output at `layer` only for query-token positions.
+- Metrics include attention-output MSE/cosine, CE/KL, teacher top-1 match, and teacher top-5/top-10 token match.
 - OpenHermes conversation rows usually have no separate context `x`; for a real context-removal test, use rows with `context/query/answer` style fields or another dataset where `x` and `q` are distinct. Otherwise full-prefill and no-context can collapse to the same prompt.
