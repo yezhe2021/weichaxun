@@ -61,6 +61,28 @@ def prompt_cq_message(row: Dict, max_context_chars: int):
     )
 
 
+def packed_prompt_answer(tokenizer, row: Dict, include_message: bool, device, max_length: int, max_context_chars: int):
+    answer = " " + row["answer"]
+    context_prefix = "Context:\n"
+    context = flatten_context(row, max_context_chars)
+    if include_message:
+        suffix = f"\n\nQuestion:\n{row['question']}\n\nSender evidence message:\n{evidence_message(row)}\n\nAnswer:"
+    else:
+        suffix = f"\n\nQuestion:\n{row['question']}\n\nAnswer:"
+
+    suffix_answer_ids = tokenizer(suffix + answer, return_tensors="pt", add_special_tokens=False).input_ids[0]
+    suffix_ids = tokenizer(suffix, return_tensors="pt", add_special_tokens=False).input_ids[0]
+    prefix_ids = tokenizer(context_prefix, return_tensors="pt", add_special_tokens=True).input_ids[0]
+    budget = max(max_length - suffix_answer_ids.shape[0] - prefix_ids.shape[0], 0)
+    context_ids = tokenizer(context, return_tensors="pt", add_special_tokens=False).input_ids[0][:budget]
+    input_ids = torch.cat([prefix_ids, context_ids, suffix_answer_ids], dim=0).unsqueeze(0).to(device)
+    attention_mask = torch.ones_like(input_ids, device=device)
+    prompt_len = prefix_ids.shape[0] + context_ids.shape[0] + suffix_ids.shape[0]
+    labels = input_ids.clone()
+    labels[:, :prompt_len] = -100
+    return input_ids, attention_mask, labels, prompt_len
+
+
 def tokenize_prompt_answer(tokenizer, prompt: str, answer: str, device, max_length: int):
     text = prompt + " " + answer
     enc = tokenizer(text, return_tensors="pt", truncation=True, max_length=max_length).to(device)
@@ -106,11 +128,18 @@ def projected_qk_saliency(model, layer: int, hidden, hist_len: int):
 
 @torch.no_grad()
 def build_latent_message(sender, tokenizer, row: Dict, layer: int, topk: int, device, max_length: int, fake_tokens: int, max_context_chars: int):
-    base_prompt = prompt_cq(row, max_context_chars)
+    context_prefix = "Context:\n"
+    context = flatten_context(row, max_context_chars)
+    suffix = f"\n\nQuestion:\n{row['question']}\n\nAnswer:"
     fake_suffix = " " + " ".join(["evidence"] * fake_tokens)
-    base_ids = tokenizer(base_prompt, return_tensors="pt", truncation=True, max_length=max_length).to(device)
-    full_ids = tokenizer(base_prompt + fake_suffix, return_tensors="pt", truncation=True, max_length=max_length).to(device)
-    hist_len = min(base_ids.input_ids.shape[1], full_ids.input_ids.shape[1] - 1)
+    suffix_fake_ids = tokenizer(suffix + fake_suffix, return_tensors="pt", add_special_tokens=False).input_ids[0]
+    suffix_ids = tokenizer(suffix, return_tensors="pt", add_special_tokens=False).input_ids[0]
+    prefix_ids = tokenizer(context_prefix, return_tensors="pt", add_special_tokens=True).input_ids[0]
+    budget = max(max_length - suffix_fake_ids.shape[0] - prefix_ids.shape[0], 0)
+    context_ids = tokenizer(context, return_tensors="pt", add_special_tokens=False).input_ids[0][:budget]
+    full_input_ids = torch.cat([prefix_ids, context_ids, suffix_fake_ids], dim=0).unsqueeze(0).to(device)
+    full_ids = {"input_ids": full_input_ids, "attention_mask": torch.ones_like(full_input_ids, device=device)}
+    hist_len = prefix_ids.shape[0] + context_ids.shape[0] + suffix_ids.shape[0]
     cap = AttnInputCapture(self_attn(sender, layer))
     sender(**full_ids, use_cache=False)
     hidden = cap.input
@@ -132,12 +161,13 @@ def build_latent_message(sender, tokenizer, row: Dict, layer: int, topk: int, de
 
 
 def run_receiver_plain(receiver, tokenizer, row, prompt_fn, device, max_length, max_context_chars):
-    ids, mask, labels, _ = tokenize_prompt_answer(tokenizer, prompt_fn(row, max_context_chars), row["answer"], device, max_length)
+    include_message = prompt_fn is prompt_cq_message
+    ids, mask, labels, _ = packed_prompt_answer(tokenizer, row, include_message, device, max_length, max_context_chars)
     return receiver(input_ids=ids, attention_mask=mask, labels=labels, use_cache=False), labels
 
 
 def run_receiver_latent(receiver, tokenizer, row, reader, memory, layer, alpha, device, max_length, max_context_chars):
-    ids, mask, labels, prompt_len = tokenize_prompt_answer(tokenizer, prompt_cq(row, max_context_chars), row["answer"], device, max_length)
+    ids, mask, labels, prompt_len = packed_prompt_answer(tokenizer, row, False, device, max_length, max_context_chars)
     target_layer = get_layers(receiver)[layer]
     cache = {}
 
