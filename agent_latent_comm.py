@@ -189,6 +189,22 @@ def run_receiver_latent(receiver, tokenizer, row, reader, memory, layer, alpha, 
     return out, labels, cache["patch"]
 
 
+def control_memory(memory: Dict, mode: str):
+    out = {}
+    for key, value in memory.items():
+        if key == "position":
+            out[key] = value.clone()
+        elif mode == "zero":
+            out[key] = torch.zeros_like(value)
+        elif mode == "random":
+            out[key] = torch.randn_like(value)
+        elif mode == "constant":
+            out[key] = value.mean(dim=1, keepdim=True).expand_as(value).clone()
+        else:
+            raise ValueError(f"unknown control memory mode: {mode}")
+    return out
+
+
 @torch.no_grad()
 def evaluate(args, sender, receiver, tok_s, tok_r, reader, rows, device):
     eval_rows = []
@@ -198,17 +214,26 @@ def evaluate(args, sender, receiver, tok_s, tok_r, reader, rows, device):
         text_comm, text_labels = run_receiver_plain(receiver, tok_r, row, prompt_cq_message, device, args.max_length, args.max_context_chars)
         latent, latent_labels, _ = run_receiver_latent(receiver, tok_r, row, reader, memories[i], args.layer, args.alpha, device, args.max_length, args.max_context_chars)
         shuffled, shuffled_labels, _ = run_receiver_latent(receiver, tok_r, row, reader, memories[(i + 1) % len(memories)], args.layer, args.alpha, device, args.max_length, args.max_context_chars)
+        zero, zero_labels, _ = run_receiver_latent(receiver, tok_r, row, reader, control_memory(memories[i], "zero"), args.layer, args.alpha, device, args.max_length, args.max_context_chars)
+        random, random_labels, _ = run_receiver_latent(receiver, tok_r, row, reader, control_memory(memories[i], "random"), args.layer, args.alpha, device, args.max_length, args.max_context_chars)
+        constant, constant_labels, _ = run_receiver_latent(receiver, tok_r, row, reader, control_memory(memories[i], "constant"), args.layer, args.alpha, device, args.max_length, args.max_context_chars)
 
         n_log, n_lab = masked_logits(no_comm.logits.float(), labels)
         t_log, t_lab = masked_logits(text_comm.logits.float(), text_labels)
         l_log, l_lab = masked_logits(latent.logits.float(), latent_labels)
         s_log, s_lab = masked_logits(shuffled.logits.float(), shuffled_labels)
-        n = min(n_log.shape[0], t_log.shape[0], l_log.shape[0], s_log.shape[0])
+        z_log, z_lab = masked_logits(zero.logits.float(), zero_labels)
+        r_log, r_lab = masked_logits(random.logits.float(), random_labels)
+        c_log, c_lab = masked_logits(constant.logits.float(), constant_labels)
+        n = min(n_log.shape[0], t_log.shape[0], l_log.shape[0], s_log.shape[0], z_log.shape[0], r_log.shape[0], c_log.shape[0])
         eval_rows.append({
             "no_comm_ce": float(F.cross_entropy(n_log[:n], n_lab[:n]).cpu()),
             "text_comm_ce": float(F.cross_entropy(t_log[:n], t_lab[:n]).cpu()),
             "latent_comm_ce": float(F.cross_entropy(l_log[:n], l_lab[:n]).cpu()),
             "shuffled_latent_ce": float(F.cross_entropy(s_log[:n], s_lab[:n]).cpu()),
+            "zero_Z_ce": float(F.cross_entropy(z_log[:n], z_lab[:n]).cpu()),
+            "random_Z_ce": float(F.cross_entropy(r_log[:n], r_lab[:n]).cpu()),
+            "constant_Z_ce": float(F.cross_entropy(c_log[:n], c_lab[:n]).cpu()),
             "latent_vs_text_kl": float(F.kl_div(F.log_softmax(l_log[:n], dim=-1), F.softmax(t_log[:n], dim=-1), reduction="batchmean").cpu()),
             "no_comm_vs_text_kl": float(F.kl_div(F.log_softmax(n_log[:n], dim=-1), F.softmax(t_log[:n], dim=-1), reduction="batchmean").cpu()),
             "latent_top1_text_match": float((l_log[:n].argmax(dim=-1) == t_log[:n].argmax(dim=-1)).float().mean().cpu()),
@@ -216,6 +241,9 @@ def evaluate(args, sender, receiver, tok_s, tok_r, reader, rows, device):
             "latent_top10_text_match": float(teacher_topk_match(l_log[:n], t_log[:n], 10).cpu()),
             "no_comm_top1_text_match": float((n_log[:n].argmax(dim=-1) == t_log[:n].argmax(dim=-1)).float().mean().cpu()),
             "shuffled_top1_text_match": float((s_log[:n].argmax(dim=-1) == t_log[:n].argmax(dim=-1)).float().mean().cpu()),
+            "zero_Z_top1_text_match": float((z_log[:n].argmax(dim=-1) == t_log[:n].argmax(dim=-1)).float().mean().cpu()),
+            "random_Z_top1_text_match": float((r_log[:n].argmax(dim=-1) == t_log[:n].argmax(dim=-1)).float().mean().cpu()),
+            "constant_Z_top1_text_match": float((c_log[:n].argmax(dim=-1) == t_log[:n].argmax(dim=-1)).float().mean().cpu()),
         })
     return eval_rows
 
