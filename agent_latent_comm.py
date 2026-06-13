@@ -299,6 +299,7 @@ def main():
     p.add_argument("--w-zero-margin", type=float, default=1.0)
     p.add_argument("--w-random-margin", type=float, default=1.0)
     p.add_argument("--w-constant-margin", type=float, default=2.0)
+    p.add_argument("--eval-on-train", action="store_true")
     p.add_argument("--cpu", action="store_true")
     args = p.parse_args()
 
@@ -323,7 +324,7 @@ def main():
     opt = torch.optim.AdamW(reader.parameters(), lr=args.lr)
     rows = load_hotpot(args.data, args.max_samples + args.eval_samples)
     train_rows = rows[: args.max_samples]
-    eval_rows_src = rows[args.max_samples : args.max_samples + args.eval_samples]
+    eval_rows_src = train_rows[: args.eval_samples] if args.eval_on_train else rows[args.max_samples : args.max_samples + args.eval_samples]
 
     train_metrics = []
     for epoch in range(args.epochs):
