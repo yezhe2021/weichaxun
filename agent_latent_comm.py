@@ -295,6 +295,10 @@ def main():
     p.add_argument("--w-kl", type=float, default=0.05)
     p.add_argument("--w-margin", type=float, default=0.5)
     p.add_argument("--margin", type=float, default=0.25)
+    p.add_argument("--w-shuffled-margin", type=float, default=2.0)
+    p.add_argument("--w-zero-margin", type=float, default=1.0)
+    p.add_argument("--w-random-margin", type=float, default=1.0)
+    p.add_argument("--w-constant-margin", type=float, default=2.0)
     p.add_argument("--cpu", action="store_true")
     args = p.parse_args()
 
@@ -346,7 +350,14 @@ def main():
                 neg_log, neg_lab = masked_logits(neg.logits.float(), neg_labels)
                 neg_n = min(neg_log.shape[0], c_log.shape[0])
                 neg_ces.append(F.cross_entropy(neg_log[:neg_n], neg_lab[:neg_n]))
-            margin_loss = torch.stack([F.relu(args.margin + ce - neg_ce) for neg_ce in neg_ces]).mean()
+            margin_terms = [
+                args.w_shuffled_margin * F.relu(args.margin + ce - neg_ces[0]),
+                args.w_zero_margin * F.relu(args.margin + ce - neg_ces[1]),
+                args.w_random_margin * F.relu(args.margin + ce - neg_ces[2]),
+                args.w_constant_margin * F.relu(args.margin + ce - neg_ces[3]),
+            ]
+            margin_norm = args.w_shuffled_margin + args.w_zero_margin + args.w_random_margin + args.w_constant_margin
+            margin_loss = torch.stack(margin_terms).sum() / margin_norm
             loss = ce + args.w_kl * kl + args.w_margin * margin_loss
             opt.zero_grad(set_to_none=True)
             loss.backward()
