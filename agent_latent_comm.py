@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Dict, List
 
 import torch
+import torch.nn as nn
 import torch.nn.functional as F
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -205,6 +206,28 @@ def control_memory(memory: Dict, mode: str):
     return out
 
 
+class GatedLatentReader(nn.Module):
+    def __init__(self, receiver_dim: int, sender_k_dim: int, sender_v_dim: int, sender_hidden_dim: int, hidden: int):
+        super().__init__()
+        self.reader = SharedMemoryReader(receiver_dim, sender_k_dim, sender_v_dim, sender_hidden_dim, hidden)
+        stats_dim = sender_k_dim + sender_v_dim + sender_hidden_dim + 1
+        self.gate_norm = nn.LayerNorm(stats_dim)
+        self.gate = nn.Linear(stats_dim, receiver_dim)
+        nn.init.zeros_(self.gate.weight)
+        nn.init.constant_(self.gate.bias, -2.0)
+
+    def forward(self, receiver_q_hidden, memory):
+        patch = self.reader(receiver_q_hidden, memory)
+        stats = torch.cat([
+            memory["k"].mean(dim=1),
+            memory["v"].mean(dim=1),
+            memory["hidden"].mean(dim=1),
+            memory["saliency"].mean(dim=1),
+        ], dim=-1)
+        gate = torch.sigmoid(self.gate(self.gate_norm(stats))).unsqueeze(1)
+        return patch * gate
+
+
 @torch.no_grad()
 def evaluate(args, sender, receiver, tok_s, tok_r, reader, rows, device):
     eval_rows = []
@@ -270,6 +293,8 @@ def main():
     p.add_argument("--lr", type=float, default=2e-4)
     p.add_argument("--alpha", type=float, default=1.0)
     p.add_argument("--w-kl", type=float, default=0.05)
+    p.add_argument("--w-margin", type=float, default=0.5)
+    p.add_argument("--margin", type=float, default=0.25)
     p.add_argument("--cpu", action="store_true")
     args = p.parse_args()
 
@@ -290,7 +315,7 @@ def main():
         p_.requires_grad_(False)
 
     attn = self_attn(sender, args.layer)
-    reader = SharedMemoryReader(receiver.config.hidden_size, attn.k_proj.out_features, attn.v_proj.out_features, sender.config.hidden_size, args.reader_hidden).to(device)
+    reader = GatedLatentReader(receiver.config.hidden_size, attn.k_proj.out_features, attn.v_proj.out_features, sender.config.hidden_size, args.reader_hidden).to(device)
     opt = torch.optim.AdamW(reader.parameters(), lr=args.lr)
     rows = load_hotpot(args.data, args.max_samples + args.eval_samples)
     train_rows = rows[: args.max_samples]
@@ -298,22 +323,45 @@ def main():
 
     train_metrics = []
     for epoch in range(args.epochs):
-        for row in tqdm(train_rows, desc=f"epoch {epoch}"):
-            memory = build_latent_message(sender, tok_s, row, args.layer, args.topk, device, args.max_length, args.fake_tokens, args.max_context_chars)
+        memories = [build_latent_message(sender, tok_s, row, args.layer, args.topk, device, args.max_length, args.fake_tokens, args.max_context_chars) for row in tqdm(train_rows, desc=f"build Z epoch {epoch}")]
+        for i, row in enumerate(tqdm(train_rows, desc=f"epoch {epoch}")):
+            memory = memories[i]
+            neg_memories = [
+                memories[(i + 1) % len(memories)],
+                control_memory(memory, "zero"),
+                control_memory(memory, "random"),
+                control_memory(memory, "constant"),
+            ]
             with torch.no_grad():
                 text_comm, text_labels = run_receiver_plain(receiver, tok_r, row, prompt_cq_message, device, args.max_length, args.max_context_chars)
-            latent, latent_labels, _ = run_receiver_latent(receiver, tok_r, row, reader, memory, args.layer, args.alpha, device, args.max_length, args.max_context_chars)
-            l_log, l_lab = masked_logits(latent.logits.float(), latent_labels)
+            correct, correct_labels, _ = run_receiver_latent(receiver, tok_r, row, reader, memory, args.layer, args.alpha, device, args.max_length, args.max_context_chars)
+            c_log, c_lab = masked_logits(correct.logits.float(), correct_labels)
             t_log, _ = masked_logits(text_comm.logits.float(), text_labels)
-            n = min(l_log.shape[0], t_log.shape[0])
-            ce = F.cross_entropy(l_log[:n], l_lab[:n])
-            kl = F.kl_div(F.log_softmax(l_log[:n], dim=-1), F.softmax(t_log[:n], dim=-1), reduction="batchmean")
-            loss = ce + args.w_kl * kl
+            n = min(c_log.shape[0], t_log.shape[0])
+            ce = F.cross_entropy(c_log[:n], c_lab[:n])
+            kl = F.kl_div(F.log_softmax(c_log[:n], dim=-1), F.softmax(t_log[:n], dim=-1), reduction="batchmean")
+            neg_ces = []
+            for neg_memory in neg_memories:
+                neg, neg_labels, _ = run_receiver_latent(receiver, tok_r, row, reader, neg_memory, args.layer, args.alpha, device, args.max_length, args.max_context_chars)
+                neg_log, neg_lab = masked_logits(neg.logits.float(), neg_labels)
+                neg_n = min(neg_log.shape[0], c_log.shape[0])
+                neg_ces.append(F.cross_entropy(neg_log[:neg_n], neg_lab[:neg_n]))
+            margin_loss = torch.stack([F.relu(args.margin + ce - neg_ce) for neg_ce in neg_ces]).mean()
+            loss = ce + args.w_kl * kl + args.w_margin * margin_loss
             opt.zero_grad(set_to_none=True)
             loss.backward()
             torch.nn.utils.clip_grad_norm_(reader.parameters(), 1.0)
             opt.step()
-            train_metrics.append({"loss": float(loss.detach().cpu()), "ce": float(ce.detach().cpu()), "text_kl": float(kl.detach().cpu())})
+            train_metrics.append({
+                "loss": float(loss.detach().cpu()),
+                "correct_ce": float(ce.detach().cpu()),
+                "text_kl": float(kl.detach().cpu()),
+                "margin_loss": float(margin_loss.detach().cpu()),
+                "shuffled_ce": float(neg_ces[0].detach().cpu()),
+                "zero_Z_ce": float(neg_ces[1].detach().cpu()),
+                "random_Z_ce": float(neg_ces[2].detach().cpu()),
+                "constant_Z_ce": float(neg_ces[3].detach().cpu()),
+            })
 
     torch.save({"reader": reader.state_dict(), "args": vars(args)}, Path(args.out) / "reader.pt")
     eval_rows = evaluate(args, sender, receiver, tok_s, tok_r, reader, eval_rows_src, device)
