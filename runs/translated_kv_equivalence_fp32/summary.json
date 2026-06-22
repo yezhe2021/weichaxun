@@ -1,0 +1,52 @@
+{
+  "args": {
+    "model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-0___6B",
+    "data": "/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl",
+    "out": "runs/translated_kv_equivalence_fp32",
+    "methods": "native",
+    "max_samples": 1,
+    "max_context_tokens": 64,
+    "max_new_tokens": 0,
+    "noise_sigma": 0.1,
+    "rank": 16,
+    "rope_shift": 4.0,
+    "rope_theta": 1000000.0,
+    "residual_alphas": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "attention_topk": 16,
+    "translator_checkpoint": null,
+    "seed": 1234,
+    "device": "cuda",
+    "dtype": "float32",
+    "translator_metadata": null
+  },
+  "equivalence": [
+    {
+      "sample": 0,
+      "id": "5a8b57f25542995d1e6f1371",
+      "max_abs_logit": 3.6716461181640625e-05,
+      "top1_match": 1.0
+    }
+  ],
+  "diagnostic_table": [
+    {
+      "method": "native",
+      "n": 1,
+      "kv_mse": 0.0,
+      "kv_relative_mse": 0.0,
+      "k_cos": 1.0,
+      "v_cos": 1.0,
+      "logit_kl": 7.450580596923828e-08,
+      "ce_delta": 0.0,
+      "top1_match": 1.0,
+      "attention_route_overlap": 1.0,
+      "attention_route_js": 0.0,
+      "attention_output_cos": 1.0000000021287374,
+      "kv_joint_consistency": 1.0000001532690865
+    }
+  ]
+}
