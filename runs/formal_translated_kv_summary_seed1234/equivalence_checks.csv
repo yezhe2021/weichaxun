@@ -1,0 +1,7 @@
+atol_pass,experiment,max_abs_logit,n,strict_top1_pass
+64,autoencoder,0.19140625,64,63
+64,mse_only,0.19140625,64,63
+64,ce_only,0.19140625,64,63
+64,mse_ce,0.19140625,64,63
+64,rope_mse_ce,0.19140625,64,63
+64,deterministic_controls,0.19140625,64,63

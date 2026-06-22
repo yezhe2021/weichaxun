@@ -1,0 +1,126 @@
+{
+  "experiments": {
+    "autoencoder": [
+      "runs/formal_translator_autoencoder_n512_seed1234/metadata.json",
+      "runs/formal_eval_autoencoder_n64_seed1234/summary.json"
+    ],
+    "mse_only": [
+      "runs/formal_translator_mse_n512_seed1234/metadata.json",
+      "runs/formal_eval_mse_n64_seed1234/summary.json"
+    ],
+    "ce_only": [
+      "runs/formal_translator_ce_n512_seed1234/metadata.json",
+      "runs/formal_eval_ce_n64_seed1234/summary.json"
+    ],
+    "mse_ce": [
+      "runs/formal_translator_mse_ce_n512_seed1234/metadata.json",
+      "runs/formal_eval_mse_ce_n64_seed1234/summary.json"
+    ],
+    "rope_mse_ce": [
+      "runs/formal_translator_rope_mse_ce_n512_seed1234/metadata.json",
+      "runs/formal_eval_rope_mse_ce_n64_seed1234/summary.json"
+    ]
+  },
+  "controls": "runs/formal_translated_kv_controls_n64_seed1234/summary.json",
+  "training_rows": [
+    {
+      "experiment": "autoencoder",
+      "objective": "mse",
+      "translator_kind": "autoencoder",
+      "rope_disentangled": false,
+      "train_samples": 512,
+      "val_samples": 64,
+      "val_mse": 0.31724013946950436,
+      "val_ce": 11.30315530858934,
+      "mse_weight": null
+    },
+    {
+      "experiment": "mse_only",
+      "objective": "mse",
+      "translator_kind": "pseudo_sender",
+      "rope_disentangled": false,
+      "train_samples": 512,
+      "val_samples": 64,
+      "val_mse": 0.40690300054848194,
+      "val_ce": 12.741191249340773,
+      "mse_weight": null
+    },
+    {
+      "experiment": "ce_only",
+      "objective": "ce",
+      "translator_kind": "pseudo_sender",
+      "rope_disentangled": false,
+      "train_samples": 512,
+      "val_samples": 64,
+      "val_mse": 134.26372504234314,
+      "val_ce": 7.480683881789446,
+      "mse_weight": null
+    },
+    {
+      "experiment": "mse_ce",
+      "objective": "mse_ce",
+      "translator_kind": "pseudo_sender",
+      "rope_disentangled": false,
+      "train_samples": 512,
+      "val_samples": 64,
+      "val_mse": 1.2215242739766836,
+      "val_ce": 3.6873216065578163,
+      "mse_weight": 1.0
+    },
+    {
+      "experiment": "rope_mse_ce",
+      "objective": "mse_ce",
+      "translator_kind": "pseudo_sender",
+      "rope_disentangled": true,
+      "train_samples": 512,
+      "val_samples": 64,
+      "val_mse": 0.9041469283401966,
+      "val_ce": 8.43386172503233,
+      "mse_weight": 1.395305926428117
+    }
+  ],
+  "equivalence": [
+    {
+      "experiment": "autoencoder",
+      "n": 64,
+      "strict_top1_pass": 63,
+      "atol_pass": 64,
+      "max_abs_logit": 0.19140625
+    },
+    {
+      "experiment": "mse_only",
+      "n": 64,
+      "strict_top1_pass": 63,
+      "atol_pass": 64,
+      "max_abs_logit": 0.19140625
+    },
+    {
+      "experiment": "ce_only",
+      "n": 64,
+      "strict_top1_pass": 63,
+      "atol_pass": 64,
+      "max_abs_logit": 0.19140625
+    },
+    {
+      "experiment": "mse_ce",
+      "n": 64,
+      "strict_top1_pass": 63,
+      "atol_pass": 64,
+      "max_abs_logit": 0.19140625
+    },
+    {
+      "experiment": "rope_mse_ce",
+      "n": 64,
+      "strict_top1_pass": 63,
+      "atol_pass": 64,
+      "max_abs_logit": 0.19140625
+    },
+    {
+      "experiment": "deterministic_controls",
+      "n": 64,
+      "strict_top1_pass": 63,
+      "atol_pass": 64,
+      "max_abs_logit": 0.19140625
+    }
+  ]
+}

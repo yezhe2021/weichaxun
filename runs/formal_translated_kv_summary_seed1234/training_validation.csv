@@ -1,0 +1,6 @@
+experiment,mse_weight,objective,rope_disentangled,train_samples,translator_kind,val_ce,val_mse,val_samples
+autoencoder,,mse,False,512,autoencoder,11.30315530858934,0.31724013946950436,64
+mse_only,,mse,False,512,pseudo_sender,12.741191249340773,0.40690300054848194,64
+ce_only,,ce,False,512,pseudo_sender,7.480683881789446,134.26372504234314,64
+mse_ce,1.0,mse_ce,False,512,pseudo_sender,3.6873216065578163,1.2215242739766836,64
+rope_mse_ce,1.395305926428117,mse_ce,True,512,pseudo_sender,8.43386172503233,0.9041469283401966,64

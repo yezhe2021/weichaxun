@@ -78,3 +78,17 @@ conda run -n attnkv python translated_kv_diagnostics.py \
 Core fields are `kv_mse`, `kv_relative_mse`, `k_cos`, `v_cos`, `logit_kl`,
 `ce_delta`, `top1_match`, `attention_route_overlap`, `attention_route_js`,
 `attention_output_cos`, and `kv_joint_consistency`.
+
+## Formal seed-1234 run
+
+The completed Qwen3-0.6B formal run uses 512 HotpotQA training examples and 64
+development examples. Its consolidated report and tables are under:
+
+```text
+runs/formal_translated_kv_summary_seed1234/
+```
+
+Raw per-layer files and translator checkpoints remain on the experiment server.
+They are intentionally excluded from Git because the checkpoints exceed normal
+GitHub file-size limits. The repository contains the report, aggregate tables,
+training histories, metadata, and sample-level evaluation results.
