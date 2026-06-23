@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+  "train_samples": 512,
+  "eval_samples": 64,
+  "max_context_tokens": 256,
+  "max_new_tokens": 16,
+  "seed": 1234,
+  "experiments": [
+    "autoencoder",
+    "mse_only",
+    "ce_only",
+    "mse_ce",
+    "rope_mse_ce"
+  ],
+  "expected_file_count": 40,
+  "missing_files": []
+}

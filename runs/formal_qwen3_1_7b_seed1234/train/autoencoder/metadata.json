@@ -1,0 +1,29 @@
+{
+  "args": {
+    "model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+    "train_data": "/home/yezhe/数据集/HotpotQA/processed/hotpot_train_context_qa.jsonl",
+    "val_data": "/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl",
+    "out": "/home/yezhe/伪查询/runs/formal_qwen3_1_7b_seed1234/train/autoencoder",
+    "objective": "mse",
+    "translator_kind": "autoencoder",
+    "rope_disentangled": false,
+    "bottleneck": 128,
+    "hidden": 512,
+    "max_train_samples": 512,
+    "max_val_samples": 64,
+    "max_context_tokens": 256,
+    "epochs": 1,
+    "learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "mse_weight": null,
+    "grad_accum": 1,
+    "seed": 1234,
+    "device": "cuda",
+    "dtype": "float16"
+  },
+  "epoch": 0,
+  "global_step": 512,
+  "resolved_mse_weight": null,
+  "val_mse": 0.3779454338364303,
+  "val_ce": 8.755953990854323
+}
