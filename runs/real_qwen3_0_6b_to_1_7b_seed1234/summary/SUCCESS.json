@@ -1,0 +1,152 @@
+{
+  "status": "success",
+  "experiment": "real_qwen3_0_6b_to_1_7b_context_kv",
+  "root": "/home/yezhe/伪查询/runs/real_qwen3_0_6b_to_1_7b_seed1234",
+  "checked_files": [
+    {
+      "path": "README.md",
+      "bytes": 2300
+    },
+    {
+      "path": "run_all.sh",
+      "bytes": 3764
+    },
+    {
+      "path": "real_kv_common.py",
+      "bytes": 11708
+    },
+    {
+      "path": "real_kv_translator.py",
+      "bytes": 5231
+    },
+    {
+      "path": "train_real_kv_translator.py",
+      "bytes": 10952
+    },
+    {
+      "path": "eval_real_kv_translation.py",
+      "bytes": 6277
+    },
+    {
+      "path": "train/mse_only/metadata.json",
+      "bytes": 2054
+    },
+    {
+      "path": "train/mse_only/train_history.jsonl",
+      "bytes": 75724
+    },
+    {
+      "path": "train/mse_only/checkpoint_epoch1.pt",
+      "bytes": 237404360
+    },
+    {
+      "path": "train/ce_only/metadata.json",
+      "bytes": 2054
+    },
+    {
+      "path": "train/ce_only/train_history.jsonl",
+      "bytes": 81739
+    },
+    {
+      "path": "train/ce_only/checkpoint_epoch1.pt",
+      "bytes": 237404360
+    },
+    {
+      "path": "train/mse_ce/metadata.json",
+      "bytes": 2071
+    },
+    {
+      "path": "train/mse_ce/train_history.jsonl",
+      "bytes": 90722
+    },
+    {
+      "path": "train/mse_ce/checkpoint_epoch1.pt",
+      "bytes": 237404360
+    },
+    {
+      "path": "train/mse_then_ce/metadata.json",
+      "bytes": 4408
+    },
+    {
+      "path": "train/mse_then_ce/train_history.jsonl",
+      "bytes": 81938
+    },
+    {
+      "path": "train/mse_then_ce/checkpoint_epoch1.pt",
+      "bytes": 237406344
+    },
+    {
+      "path": "eval/mse_only/summary.json",
+      "bytes": 15938
+    },
+    {
+      "path": "eval/mse_only/diagnostic_table.csv",
+      "bytes": 1315
+    },
+    {
+      "path": "eval/mse_only/per_example.jsonl",
+      "bytes": 34903
+    },
+    {
+      "path": "eval/mse_only/per_layer.jsonl",
+      "bytes": 1961388
+    },
+    {
+      "path": "eval/ce_only/summary.json",
+      "bytes": 15971
+    },
+    {
+      "path": "eval/ce_only/diagnostic_table.csv",
+      "bytes": 1351
+    },
+    {
+      "path": "eval/ce_only/per_example.jsonl",
+      "bytes": 35655
+    },
+    {
+      "path": "eval/ce_only/per_layer.jsonl",
+      "bytes": 1973068
+    },
+    {
+      "path": "eval/mse_ce/summary.json",
+      "bytes": 15961
+    },
+    {
+      "path": "eval/mse_ce/diagnostic_table.csv",
+      "bytes": 1327
+    },
+    {
+      "path": "eval/mse_ce/per_example.jsonl",
+      "bytes": 35044
+    },
+    {
+      "path": "eval/mse_ce/per_layer.jsonl",
+      "bytes": 1949255
+    },
+    {
+      "path": "eval/mse_then_ce/summary.json",
+      "bytes": 18503
+    },
+    {
+      "path": "eval/mse_then_ce/diagnostic_table.csv",
+      "bytes": 1329
+    },
+    {
+      "path": "eval/mse_then_ce/per_example.jsonl",
+      "bytes": 35355
+    },
+    {
+      "path": "eval/mse_then_ce/per_layer.jsonl",
+      "bytes": 1982574
+    },
+    {
+      "path": "summary/all_diagnostic_rows.csv",
+      "bytes": 3379
+    }
+  ],
+  "notes": [
+    "Main experiment translates context C KV only.",
+    "Q and answer teacher forcing are processed natively by the Qwen3-1.7B receiver.",
+    "Checkpoint and per-layer files may be kept on server if too large for GitHub."
+  ]
+}
