@@ -1,0 +1,27 @@
+{
+  "sender": {
+    "layers": 28,
+    "kv_heads": 8,
+    "attention_heads": 16,
+    "head_dim": 128,
+    "rope_theta": 1000000.0,
+    "vocab_size": 151936
+  },
+  "receiver": {
+    "layers": 28,
+    "kv_heads": 8,
+    "attention_heads": 16,
+    "head_dim": 128,
+    "rope_theta": 1000000.0,
+    "vocab_size": 151936
+  },
+  "alignment_mode": "direct_layer_head",
+  "packages": {
+    "torch": true,
+    "transformers": true,
+    "accelerate": true,
+    "bitsandbytes": true
+  },
+  "int4_backend_ready": true,
+  "note": "No model weights were loaded. INT4 runs fail rather than fall back when backend is missing."
+}

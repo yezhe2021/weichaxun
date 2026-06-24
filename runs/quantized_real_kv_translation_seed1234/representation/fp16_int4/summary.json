@@ -1,0 +1,127 @@
+{
+  "args": {
+    "sender_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-0___6B",
+    "receiver_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+    "sender_precision": "fp16",
+    "receiver_precision": "int4",
+    "data": "/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl",
+    "out": "/home/yezhe/伪查询/runs/quantized_real_kv_translation_seed1234/representation/fp16_int4",
+    "max_samples": 64,
+    "max_context_tokens": 256,
+    "knn_k": 8,
+    "attention_topk": 16,
+    "dtype": "float16",
+    "device": "cuda",
+    "seed": 1234
+  },
+  "alignment": {
+    "mode": "direct_layer_head",
+    "sender": {
+      "layers": 28,
+      "kv_heads": 8,
+      "attention_heads": 16,
+      "head_dim": 128,
+      "rope_theta": 10000.0,
+      "vocab_size": 151936
+    },
+    "receiver": {
+      "layers": 28,
+      "kv_heads": 8,
+      "attention_heads": 16,
+      "head_dim": 128,
+      "rope_theta": 10000.0,
+      "vocab_size": 151936
+    },
+    "layer_map": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "head_map": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "direct_tensor_metrics": true
+  },
+  "sender_quantization": {
+    "model_path": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-0___6B",
+    "requested_precision": "fp16",
+    "compute_dtype": "torch.float16",
+    "is_loaded_in_4bit": false,
+    "num_4bit_parameter_tensors": 0,
+    "quantization_config": null
+  },
+  "receiver_quantization": {
+    "model_path": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+    "requested_precision": "int4",
+    "compute_dtype": "torch.float16",
+    "is_loaded_in_4bit": true,
+    "num_4bit_parameter_tensors": 196,
+    "quantization_config": {
+      "quant_method": "bitsandbytes",
+      "_load_in_8bit": false,
+      "_load_in_4bit": true,
+      "llm_int8_threshold": 6.0,
+      "llm_int8_skip_modules": null,
+      "llm_int8_enable_fp32_cpu_offload": false,
+      "llm_int8_has_fp16_weight": false,
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_use_double_quant": true,
+      "bnb_4bit_compute_dtype": "float16",
+      "bnb_4bit_quant_storage": "uint8",
+      "load_in_4bit": true,
+      "load_in_8bit": false
+    }
+  },
+  "metric_scope": {
+    "geometry": "cross-model relation geometry; no receiver readability claim",
+    "self_attention_route": "sender-native route versus receiver-native route",
+    "receiver_read_metrics": "not computed before translator"
+  },
+  "summary": {
+    "k_cos": 0.7749668881629728,
+    "v_cos": 0.08698312283896875,
+    "k_gram_correlation": 0.8431958956311323,
+    "v_gram_correlation": 0.8508234514322663,
+    "k_rsa": 0.7712428842371861,
+    "v_rsa": 0.7814464064181915,
+    "k_knn_overlap": 0.6794488089425224,
+    "v_knn_overlap": 0.6894239698137555,
+    "sender_kv_joint_corr": 0.5422127551116449,
+    "receiver_kv_joint_corr": 0.5326323571519294,
+    "kv_joint_consistency": 0.980185054102289,
+    "self_attention_route_overlap": 0.786425999232701,
+    "self_attention_route_correlation": 0.9841640372427979
+  }
+}

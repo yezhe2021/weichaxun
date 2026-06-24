@@ -1,0 +1,57 @@
+{
+  "args": {
+    "model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-0___6B",
+    "model_label": "qwen3_0_6b",
+    "data": "/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl",
+    "out": "/home/yezhe/伪查询/runs/quantized_real_kv_translation_seed1234/same_model_drift/qwen3_0_6b",
+    "max_samples": 64,
+    "max_context_tokens": 256,
+    "knn_k": 8,
+    "dtype": "float16",
+    "device": "cuda",
+    "seed": 1234
+  },
+  "fp16_quantization": {
+    "model_path": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-0___6B",
+    "requested_precision": "fp16",
+    "compute_dtype": "torch.float16",
+    "is_loaded_in_4bit": false,
+    "num_4bit_parameter_tensors": 0,
+    "quantization_config": null
+  },
+  "int4_quantization": {
+    "model_path": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-0___6B",
+    "requested_precision": "int4",
+    "compute_dtype": "torch.float16",
+    "is_loaded_in_4bit": true,
+    "num_4bit_parameter_tensors": 196,
+    "quantization_config": {
+      "quant_method": "bitsandbytes",
+      "_load_in_8bit": false,
+      "_load_in_4bit": true,
+      "llm_int8_threshold": 6.0,
+      "llm_int8_skip_modules": null,
+      "llm_int8_enable_fp32_cpu_offload": false,
+      "llm_int8_has_fp16_weight": false,
+      "bnb_4bit_quant_type": "nf4",
+      "bnb_4bit_use_double_quant": true,
+      "bnb_4bit_compute_dtype": "float16",
+      "bnb_4bit_quant_storage": "uint8",
+      "load_in_4bit": true,
+      "load_in_8bit": false
+    }
+  },
+  "summary": {
+    "k_cos": 0.985600951260754,
+    "v_cos": 0.9490239603910595,
+    "k_gram_correlation": 0.9757699878287635,
+    "v_gram_correlation": 0.9708361042264317,
+    "k_rsa": 0.9653117432525116,
+    "v_rsa": 0.957946509023064,
+    "k_knn_overlap": 0.8661202022007534,
+    "v_knn_overlap": 0.859417234148298,
+    "sender_kv_joint_corr": 0.5422119015295591,
+    "receiver_kv_joint_corr": 0.547225161181164,
+    "kv_joint_consistency": 0.9933775187777688
+  }
+}

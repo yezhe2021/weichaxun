@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "groups": [
+    "fp16_fp16",
+    "int4_fp16",
+    "fp16_int4",
+    "int4_int4"
+  ],
+  "main_regime": "mse_then_ce",
+  "auxiliary_regime": "ce_only_small",
+  "cross_receiver_absolute_ce_comparison": "forbidden"
+}

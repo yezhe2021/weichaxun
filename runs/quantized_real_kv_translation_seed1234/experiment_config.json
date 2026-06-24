@@ -1,0 +1,56 @@
+{
+  "experiment": "Qwen3-0.6B to Qwen3-1.7B quantized KV translation",
+  "seed": 1234,
+  "sender_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-0___6B",
+  "receiver_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+  "groups": {
+    "fp16_fp16": ["fp16", "fp16"],
+    "int4_fp16": ["int4", "fp16"],
+    "fp16_int4": ["fp16", "int4"],
+    "int4_int4": ["int4", "int4"]
+  },
+  "int4": {
+    "backend": "bitsandbytes",
+    "quant_type": "nf4",
+    "double_quant": true,
+    "compute_dtype": "float16",
+    "silent_fp16_fallback": false
+  },
+  "representation": {
+    "samples": 64,
+    "metrics": [
+      "k_cos",
+      "v_cos",
+      "k_rsa",
+      "v_rsa",
+      "k_gram_correlation",
+      "v_gram_correlation",
+      "k_knn_overlap",
+      "v_knn_overlap",
+      "kv_joint_consistency",
+      "self_attention_route_overlap"
+    ],
+    "receiver_read_metrics_before_translation": false
+  },
+  "main_training": {
+    "regime": "mse_then_ce",
+    "train_samples": 512,
+    "mse_learning_rate": 0.0002,
+    "ce_learning_rate": 0.00005
+  },
+  "auxiliary_training": {
+    "regime": "ce_only_small",
+    "train_samples": 256,
+    "learning_rate": 0.0002
+  },
+  "comparison_rule": {
+    "primary_cross_group_metrics": [
+      "ce_delta",
+      "top1_match",
+      "attention_output_cos",
+      "translated_f1"
+    ],
+    "receiver_baseline": "same group's receiver native context cache",
+    "absolute_translated_ce_across_different_receivers": "do not interpret directly"
+  }
+}
