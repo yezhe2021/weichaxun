@@ -1,0 +1,33 @@
+{
+  "experiment": "two_stage_heterogeneous_kv_diagnosis",
+  "seed": 1234,
+  "sender_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-0___6B",
+  "receiver_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+  "dataset": "/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl",
+  "real_experiment_root": "/home/yezhe/伪查询/runs/real_qwen3_0_6b_to_1_7b_seed1234",
+  "primary_checkpoint": "mse_then_ce",
+  "control_checkpoint": "mse_only",
+  "max_samples": 64,
+  "max_context_tokens": 256,
+  "attention_topk": 16,
+  "device": "cuda",
+  "dtype": "float16",
+  "stage1_conditions": [
+    "native",
+    "translated",
+    "native_k_translated_v",
+    "translated_k_native_v"
+  ],
+  "stage2_conditions": [
+    "native",
+    "translated",
+    "native_k_translated_v",
+    "translated_k_native_v"
+  ],
+  "notes": [
+    "Only context C is translated.",
+    "Receiver never re-prefills context C during stage1 cache-swap evaluation.",
+    "Stage2 is an offline receiver-Q readout probe and does not feed probed outputs back into the model.",
+    "answer_f1 is teacher-forced per-position argmax F1, not free-running generation F1."
+  ]
+}
