@@ -1,0 +1,26 @@
+{
+  "experiment": "q_aware_functional_real_kv_translation",
+  "seed": 1234,
+  "sender_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-0___6B",
+  "receiver_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+  "train_data": "/home/yezhe/数据集/HotpotQA/processed/hotpot_train_context_qa.jsonl",
+  "val_data": "/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl",
+  "translator": "RealCrossModelKVTranslator",
+  "max_train_samples": 512,
+  "max_val_samples": 64,
+  "max_context_tokens": 256,
+  "hidden": 512,
+  "device": "cuda",
+  "dtype": "float16",
+  "regimes": [
+    "mse_only",
+    "mse_then_ce",
+    "q_aware_functional"
+  ],
+  "budget_policy": "same sample-pass budget by default: 3 stages x max_train_samples for every regime",
+  "q_aware_stages": [
+    "kv_mse_warmup",
+    "q_aware_readout_alignment",
+    "functional_finetune"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "completed_regimes": [
+    "mse_only",
+    "mse_then_ce",
+    "q_aware_functional"
+  ],
+  "required_regimes": [
+    "mse_only",
+    "mse_then_ce",
+    "q_aware_functional"
+  ],
+  "primary_comparison": "q_aware_functional vs mse_then_ce"
+}
