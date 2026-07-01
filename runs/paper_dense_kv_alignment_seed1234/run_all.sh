@@ -40,20 +40,25 @@ train_one() {
     --dtype "${DTYPE}"
 }
 
-eval_with_data() {
+checkpoint_for() {
   local method="$1"
-  local data="$2"
-  local out_dir="$3"
   local checkpoint="${ROOT}/train/${method}/checkpoint_final.pt"
   if [[ ! -f "${checkpoint}" ]]; then
     echo "Missing checkpoint: ${checkpoint}" >&2
     exit 1
   fi
+  printf '%s\n' "${checkpoint}"
+}
+
+eval_with_data() {
+  local method="$1"
+  local data="$2"
+  local out_dir="$3"
   "${PY}" "${ROOT}/eval_paper_dense_adapter.py" \
     --sender-model "${SENDER}" \
     --receiver-model "${RECEIVER}" \
     --data "${data}" \
-    --adapter-checkpoint "${checkpoint}" \
+    --adapter-checkpoint "$(checkpoint_for "${method}")" \
     --method-label "${method}" \
     --out "${out_dir}" \
     --max-samples "${MAX_VAL_SAMPLES}" \
@@ -64,14 +69,40 @@ eval_with_data() {
     --dtype "${DTYPE}"
 }
 
-eval_one() {
+token_diag_with_data() {
   local method="$1"
-  eval_with_data "${method}" "${VAL_DATA}" "${ROOT}/eval/${method}"
+  local data="$2"
+  local out_dir="$3"
+  local critical_mode="$4"
+  "${PY}" "${ROOT}/token_level_diagnostics.py" \
+    --sender-model "${SENDER}" \
+    --receiver-model "${RECEIVER}" \
+    --data "${data}" \
+    --adapter-checkpoint "$(checkpoint_for "${method}")" \
+    --method-label "${method}" \
+    --out "${out_dir}" \
+    --max-samples "${MAX_VAL_SAMPLES}" \
+    --max-source-tokens "${MAX_SOURCE_TOKENS}" \
+    --critical-mode "${critical_mode}" \
+    --seed "${SEED}" \
+    --device "${DEVICE}" \
+    --dtype "${DTYPE}"
+}
+
+eval_one() {
+  eval_with_data "$1" "${VAL_DATA}" "${ROOT}/eval/$1"
 }
 
 eval_gsm8k_one() {
-  local method="$1"
-  eval_with_data "${method}" "${GSM8K_DATA}" "${ROOT}/eval_gsm8k/${method}"
+  eval_with_data "$1" "${GSM8K_DATA}" "${ROOT}/eval_gsm8k/$1"
+}
+
+token_diag_hotpot_one() {
+  token_diag_with_data "$1" "${VAL_DATA}" "${ROOT}/token_diag_hotpot/$1" answer
+}
+
+token_diag_gsm8k_one() {
+  token_diag_with_data "$1" "${GSM8K_DATA}" "${ROOT}/token_diag_gsm8k/$1" numeric
 }
 
 case "${1:-help}" in
@@ -105,8 +136,40 @@ case "${1:-help}" in
     eval_gsm8k_one paper_rec_then_mixed_generation
     eval_gsm8k_one q_aware_functional
     ;;
+  token_diag_hotpot_paper) token_diag_hotpot_one paper_rec_then_mixed_generation ;;
+  token_diag_hotpot_mse_only) token_diag_hotpot_one mse_only ;;
+  token_diag_hotpot_mse_then_ce) token_diag_hotpot_one mse_then_ce ;;
+  token_diag_hotpot_q_aware) token_diag_hotpot_one q_aware_functional ;;
+  token_diag_hotpot)
+    token_diag_hotpot_one mse_only
+    token_diag_hotpot_one mse_then_ce
+    token_diag_hotpot_one paper_rec_then_mixed_generation
+    token_diag_hotpot_one q_aware_functional
+    ;;
+  token_diag_gsm8k_paper) token_diag_gsm8k_one paper_rec_then_mixed_generation ;;
+  token_diag_gsm8k_mse_only) token_diag_gsm8k_one mse_only ;;
+  token_diag_gsm8k_mse_then_ce) token_diag_gsm8k_one mse_then_ce ;;
+  token_diag_gsm8k_q_aware) token_diag_gsm8k_one q_aware_functional ;;
+  token_diag_gsm8k)
+    token_diag_gsm8k_one mse_only
+    token_diag_gsm8k_one mse_then_ce
+    token_diag_gsm8k_one paper_rec_then_mixed_generation
+    token_diag_gsm8k_one q_aware_functional
+    ;;
   package) "${PY}" "${ROOT}/package_results.py" ;;
   package_gsm8k) "${PY}" "${ROOT}/package_gsm8k_results.py" ;;
+  package_token_hotpot)
+    "${PY}" "${ROOT}/package_token_diagnostics.py" \
+      --dataset-label hotpotqa \
+      --input-root "${ROOT}/token_diag_hotpot" \
+      --out "${ROOT}/summary_token_diag/hotpotqa"
+    ;;
+  package_token_gsm8k)
+    "${PY}" "${ROOT}/package_token_diagnostics.py" \
+      --dataset-label gsm8k \
+      --input-root "${ROOT}/token_diag_gsm8k" \
+      --out "${ROOT}/summary_token_diag/gsm8k"
+    ;;
   all)
     bash "$0" train
     bash "$0" eval
@@ -115,39 +178,29 @@ case "${1:-help}" in
   *)
     cat <<'USAGE'
 Usage:
-  run_all.sh train_paper
-  run_all.sh train_mse_only
-  run_all.sh train_mse_then_ce
-  run_all.sh train_q_aware
-  run_all.sh train
-  run_all.sh eval_paper
-  run_all.sh eval_mse_only
-  run_all.sh eval_mse_then_ce
-  run_all.sh eval_q_aware
-  run_all.sh eval
-  run_all.sh eval_gsm8k_paper
-  run_all.sh eval_gsm8k_mse_only
-  run_all.sh eval_gsm8k_mse_then_ce
-  run_all.sh eval_gsm8k_q_aware
-  run_all.sh eval_gsm8k
-  run_all.sh package
-  run_all.sh package_gsm8k
-  run_all.sh all
+  run_all.sh token_diag_hotpot
+  run_all.sh token_diag_gsm8k
+  run_all.sh token_diag_hotpot_q_aware
+  run_all.sh token_diag_gsm8k_q_aware
+  run_all.sh package_token_hotpot
+  run_all.sh package_token_gsm8k
 
-Methods:
-  paper_rec_then_mixed_generation: Phase I receiver-cache reconstruction + Phase II mixed context-aware/unaware generation loss
-  mse_only: simple MSE baseline
-  mse_then_ce: simple MSE then context-unaware gold CE baseline
-  q_aware_functional: ours, same X protocol, Phase I reconstruction + mixed generation/logit-KL/Q-aware readout stage
+Existing entries are also preserved:
+  train_paper|train_mse_only|train_mse_then_ce|train_q_aware|train
+  eval_paper|eval_mse_only|eval_mse_then_ce|eval_q_aware|eval
+  eval_gsm8k_paper|eval_gsm8k_mse_only|eval_gsm8k_mse_then_ce|eval_gsm8k_q_aware|eval_gsm8k
+  package|package_gsm8k|all
+
+Token diagnostics:
+  HotpotQA critical tokens use critical-mode=answer.
+  GSM8K critical tokens use critical-mode=numeric.
 
 Environment overrides:
-  MAX_TRAIN_SAMPLES=512
   MAX_VAL_SAMPLES=64
   MAX_SOURCE_TOKENS=256
-  PHASE1_EPOCHS=1
-  PHASE2_EPOCHS=1
   DEVICE=cuda|cpu
   DTYPE=float16|float32
+  VAL_DATA=/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl
   GSM8K_DATA=/home/yezhe/数据集/gsm8k/test.jsonl
 USAGE
     ;;
