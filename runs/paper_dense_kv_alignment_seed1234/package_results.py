@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-METHODS = ("paper_rec_then_mixed_generation", "mse_only", "mse_then_ce")
+METHODS = ("paper_rec_then_mixed_generation", "mse_only", "mse_then_ce", "q_aware_functional")
 
 
 def load_json(path):
@@ -35,7 +35,13 @@ def main():
         if train_meta.is_file():
             train_metadata[method] = load_json(train_meta)
         for row in payload["diagnostic_table"]:
-            comparison.append({"method_group": "paper" if method.startswith("paper_") else "baseline", **row})
+            if method.startswith("paper_"):
+                group = "paper"
+            elif method == "q_aware_functional":
+                group = "ours"
+            else:
+                group = "baseline"
+            comparison.append({"method_group": group, **row})
     out = ROOT / "summary"
     out.mkdir(parents=True, exist_ok=True)
     write_csv(out / "method_comparison.csv", comparison)
@@ -49,6 +55,7 @@ def main():
                 "required_methods": list(METHODS),
                 "paper_method": "paper_rec_then_mixed_generation",
                 "baselines": ["mse_only", "mse_then_ce"],
+                "ours": ["q_aware_functional"],
             },
             handle,
             indent=2,

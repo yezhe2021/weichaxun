@@ -14,6 +14,7 @@ from paper_dense_common import (
     build_paper_example,
     generation_ce,
     load_rows,
+    q_aware_functional_loss,
     receiver_cache_reconstruction_loss,
 )
 
@@ -59,6 +60,11 @@ def method_plan(method, args):
         return [
             ("mse", args.phase1_lr, args.phase1_epochs),
             ("ce", args.phase2_lr, args.phase2_epochs),
+        ]
+    if method == "q_aware_functional":
+        return [
+            ("phase1_receiver_cache_reconstruction", args.phase1_lr, args.phase1_epochs),
+            ("phase2_q_aware_functional", args.qaware_lr, args.phase2_epochs),
         ]
     raise ValueError(f"Unknown method: {method}")
 
@@ -112,6 +118,11 @@ def train_stage(sender, receiver, tokenizer, adapter, rows, optimizer, args, sta
         aware_ce = torch.zeros((), device=args.device_obj)
         unaware_ce = torch.zeros((), device=args.device_obj)
         gen_loss = torch.zeros((), device=args.device_obj)
+        logit_kl = torch.zeros((), device=args.device_obj)
+        route_loss = torch.zeros((), device=args.device_obj)
+        readout_loss = torch.zeros((), device=args.device_obj)
+        readout_mse = torch.zeros((), device=args.device_obj)
+        readout_cos_loss = torch.zeros((), device=args.device_obj)
 
         if stage_name in {"phase1_receiver_cache_reconstruction", "mse"}:
             loss = rec_loss
@@ -120,6 +131,31 @@ def train_stage(sender, receiver, tokenizer, adapter, rows, optimizer, args, sta
                 receiver, translated_pairs, example, args.device_obj, args.context_aware_weight
             )
             loss = gen_loss
+        elif stage_name == "phase2_q_aware_functional":
+            losses = q_aware_functional_loss(
+                receiver,
+                receiver_pairs,
+                translated_pairs,
+                example,
+                args.device_obj,
+                args.context_aware_weight,
+                {
+                    "ce": args.qaware_ce_weight,
+                    "logit_kl": args.qaware_logit_kl_weight,
+                    "route": args.qaware_route_weight,
+                    "readout": args.qaware_readout_weight,
+                    "weak_rec": args.qaware_weak_rec_weight,
+                },
+            )
+            loss = losses["loss"]
+            gen_loss = losses["generation_loss"]
+            aware_ce = losses.get("context_aware_ce", aware_ce)
+            unaware_ce = losses.get("context_unaware_ce", unaware_ce)
+            logit_kl = losses["logit_kl_loss"]
+            route_loss = losses["route_loss"]
+            readout_loss = losses["readout_loss"]
+            readout_mse = losses["readout_mse"]
+            readout_cos_loss = losses["readout_cos_loss"]
         elif stage_name == "ce":
             answer_ids = example["answer_ids"].to(args.device_obj)
             unaware_ce = generation_ce(
@@ -152,6 +188,11 @@ def train_stage(sender, receiver, tokenizer, adapter, rows, optimizer, args, sta
             "generation_loss": float(gen_loss.detach().item()),
             "context_aware_ce": float(aware_ce.detach().item()),
             "context_unaware_ce": float(unaware_ce.detach().item()),
+            "logit_kl_loss": float(logit_kl.detach().item()),
+            "route_loss": float(route_loss.detach().item()),
+            "readout_loss": float(readout_loss.detach().item()),
+            "readout_mse": float(readout_mse.detach().item()),
+            "readout_cos_loss": float(readout_cos_loss.detach().item()),
         }
         history.append(item)
         progress.set_postfix(loss=f"{item['loss']:.3f}", rec=f"{item['receiver_cache_reconstruction_loss']:.3f}", gen=f"{item['generation_loss']:.3f}")
@@ -161,7 +202,15 @@ def train_stage(sender, receiver, tokenizer, adapter, rows, optimizer, args, sta
 @torch.no_grad()
 def validate(sender, receiver, tokenizer, adapter, rows, args):
     adapter.eval()
-    totals = {"rec": [], "aware_ce": [], "unaware_ce": [], "mixed_gen": []}
+    totals = {
+        "rec": [],
+        "aware_ce": [],
+        "unaware_ce": [],
+        "mixed_gen": [],
+        "qaware_logit_kl": [],
+        "qaware_route": [],
+        "qaware_readout": [],
+    }
     for row in rows:
         example = build_paper_example(tokenizer, row, args.max_source_tokens)
         source_ids = example["source_ids"].to(args.device_obj)
@@ -173,6 +222,25 @@ def validate(sender, receiver, tokenizer, adapter, rows, args):
         totals["aware_ce"].append(aware_ce.item())
         totals["unaware_ce"].append(unaware_ce.item())
         totals["mixed_gen"].append(mixed.item())
+        if args.method == "q_aware_functional":
+            losses = q_aware_functional_loss(
+                receiver,
+                receiver_pairs,
+                translated_pairs,
+                example,
+                args.device_obj,
+                args.context_aware_weight,
+                {
+                    "ce": args.qaware_ce_weight,
+                    "logit_kl": args.qaware_logit_kl_weight,
+                    "route": args.qaware_route_weight,
+                    "readout": args.qaware_readout_weight,
+                    "weak_rec": args.qaware_weak_rec_weight,
+                },
+            )
+            totals["qaware_logit_kl"].append(losses["logit_kl_loss"].item())
+            totals["qaware_route"].append(losses["route_loss"].item())
+            totals["qaware_readout"].append(losses["readout_loss"].item())
     adapter.train()
     return {f"val_{key}": float(np.mean(values)) for key, values in totals.items()} if rows else {}
 
@@ -184,7 +252,7 @@ def main():
     parser.add_argument("--train-data", default="/home/yezhe/数据集/HotpotQA/processed/hotpot_train_context_qa.jsonl")
     parser.add_argument("--val-data", default="/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl")
     parser.add_argument("--out", required=True)
-    parser.add_argument("--method", choices=["paper_rec_then_mixed_generation", "mse_only", "mse_then_ce"], required=True)
+    parser.add_argument("--method", choices=["paper_rec_then_mixed_generation", "mse_only", "mse_then_ce", "q_aware_functional"], required=True)
     parser.add_argument("--init-checkpoint")
     parser.add_argument("--hidden", type=int, default=512)
     parser.add_argument("--gate-init", type=float, default=2.0)
@@ -195,7 +263,13 @@ def main():
     parser.add_argument("--phase2-epochs", type=int, default=1)
     parser.add_argument("--phase1-lr", type=float, default=2e-4)
     parser.add_argument("--phase2-lr", type=float, default=5e-5)
+    parser.add_argument("--qaware-lr", type=float, default=5e-5)
     parser.add_argument("--context-aware-weight", type=float, default=0.5)
+    parser.add_argument("--qaware-ce-weight", type=float, default=1.0)
+    parser.add_argument("--qaware-logit-kl-weight", type=float, default=0.5)
+    parser.add_argument("--qaware-route-weight", type=float, default=0.25)
+    parser.add_argument("--qaware-readout-weight", type=float, default=0.25)
+    parser.add_argument("--qaware-weak-rec-weight", type=float, default=0.02)
     parser.add_argument("--weight-decay", type=float, default=0.01)
     parser.add_argument("--grad-accum", type=int, default=1)
     parser.add_argument("--max-grad-norm", type=float, default=1.0)
@@ -266,6 +340,7 @@ def main():
                 "phase1": "receiver_cache_reconstruction_loss = mean_l,g MSE(K_trans,K_receiver)+MSE(V_trans,V_receiver)",
                 "phase2": "generation_loss = -sum_t log p_R(y_t | y_<t, translated_cache, X_R), mixed over context-aware X_R=X and context-unaware X_R=empty",
                 "mse_then_ce_baseline": "receiver_cache_reconstruction followed by context-unaware gold-answer CE",
+                "q_aware_functional": "ours: receiver_cache_reconstruction followed by mixed generation CE + logit KL + Q-aware route/readout alignment + weak reconstruction",
             },
             "source_x": "context + question, no gold answer",
             "context_aware_receiver_input": "X + Answer: + answer_prefix",

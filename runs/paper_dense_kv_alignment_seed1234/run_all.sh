@@ -65,18 +65,22 @@ case "${1:-help}" in
   train_paper) train_one paper_rec_then_mixed_generation ;;
   train_mse_only) train_one mse_only ;;
   train_mse_then_ce) train_one mse_then_ce ;;
+  train_q_aware) train_one q_aware_functional ;;
   train)
     train_one mse_only
     train_one mse_then_ce
     train_one paper_rec_then_mixed_generation
+    train_one q_aware_functional
     ;;
   eval_paper) eval_one paper_rec_then_mixed_generation ;;
   eval_mse_only) eval_one mse_only ;;
   eval_mse_then_ce) eval_one mse_then_ce ;;
+  eval_q_aware) eval_one q_aware_functional ;;
   eval)
     eval_one mse_only
     eval_one mse_then_ce
     eval_one paper_rec_then_mixed_generation
+    eval_one q_aware_functional
     ;;
   package) "${PY}" "${ROOT}/package_results.py" ;;
   all)
@@ -90,10 +94,12 @@ Usage:
   run_all.sh train_paper
   run_all.sh train_mse_only
   run_all.sh train_mse_then_ce
+  run_all.sh train_q_aware
   run_all.sh train
   run_all.sh eval_paper
   run_all.sh eval_mse_only
   run_all.sh eval_mse_then_ce
+  run_all.sh eval_q_aware
   run_all.sh eval
   run_all.sh package
   run_all.sh all
@@ -102,6 +108,7 @@ Methods:
   paper_rec_then_mixed_generation: Phase I receiver-cache reconstruction + Phase II mixed context-aware/unaware generation loss
   mse_only: simple MSE baseline
   mse_then_ce: simple MSE then context-unaware gold CE baseline
+  q_aware_functional: ours, same X protocol, Phase I reconstruction + mixed generation/logit-KL/Q-aware readout stage
 
 Environment overrides:
   MAX_TRAIN_SAMPLES=512

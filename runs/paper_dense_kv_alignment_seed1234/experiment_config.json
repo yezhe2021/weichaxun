@@ -13,8 +13,12 @@
     "mse_only",
     "mse_then_ce"
   ],
+  "ours": [
+    "q_aware_functional"
+  ],
   "phase1_loss": "receiver_cache_reconstruction_loss = sum_l,g ||K_trans-K_receiver||^2 + ||V_trans-V_receiver||^2",
   "phase2_loss": "generation_loss = -sum_t log p_R(y_t | y_<t, translated_cache, X_R), X_R in {X, empty}",
+  "q_aware_loss": "ours only: mixed generation CE + logit KL + Q-aware route/readout alignment + weak receiver-cache reconstruction",
   "default_max_train_samples": 512,
   "default_max_val_samples": 64,
   "default_max_source_tokens": 256,

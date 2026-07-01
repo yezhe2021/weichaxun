@@ -255,6 +255,148 @@ def offline_readout(query_states, pairs, num_attention_heads, prefix_len, answer
     return routes, outputs
 
 
+def logit_kl_loss(native_logits, translated_logits):
+    n = min(native_logits.shape[1], translated_logits.shape[1])
+    teacher = F.softmax(native_logits[:, :n].detach().float(), dim=-1)
+    student_log = F.log_softmax(translated_logits[:, :n].float(), dim=-1)
+    return F.kl_div(student_log, teacher, reduction="batchmean") / n
+
+
+def route_js_loss(native_routes, translated_routes):
+    losses = []
+    for layer in native_routes:
+        teacher = native_routes[layer].detach().float().clamp_min(1e-12)
+        student = translated_routes[layer].float().clamp_min(1e-12)
+        midpoint = 0.5 * (teacher + student)
+        js = 0.5 * (teacher * (teacher.log() - midpoint.log())).sum(dim=-1)
+        js = js + 0.5 * (student * (student.log() - midpoint.log())).sum(dim=-1)
+        losses.append(js.mean())
+    return torch.stack(losses).mean()
+
+
+def readout_alignment_loss(native_outputs, translated_outputs):
+    mse_losses = []
+    cos_losses = []
+    for layer in native_outputs:
+        native = native_outputs[layer].detach().float()
+        translated = translated_outputs[layer].float()
+        mse_losses.append(F.mse_loss(translated, native))
+        cos = F.cosine_similarity(
+            translated.reshape(-1, translated.shape[-1]),
+            native.reshape(-1, native.shape[-1]),
+            dim=-1,
+        ).mean()
+        cos_losses.append(1.0 - cos)
+    mse = torch.stack(mse_losses).mean()
+    cos = torch.stack(cos_losses).mean()
+    return mse + cos, mse, cos
+
+
+def q_aware_readout_losses(receiver, query_states, native_pairs, translated_pairs, prefix_len, answer_len):
+    native_routes, native_outputs = offline_readout(
+        query_states,
+        native_pairs,
+        receiver.config.num_attention_heads,
+        prefix_len,
+        answer_len,
+    )
+    translated_routes, translated_outputs = offline_readout(
+        query_states,
+        translated_pairs,
+        receiver.config.num_attention_heads,
+        prefix_len,
+        answer_len,
+    )
+    route = route_js_loss(native_routes, translated_routes)
+    readout, readout_mse, readout_cos_loss = readout_alignment_loss(native_outputs, translated_outputs)
+    return {
+        "route_loss": route,
+        "readout_loss": readout,
+        "readout_mse": readout_mse,
+        "readout_cos_loss": readout_cos_loss,
+    }
+
+
+def q_aware_functional_loss(receiver, native_pairs, translated_pairs, example, device, aware_weight, weights):
+    answer_ids = example["answer_ids"].to(device)
+    answer_len = answer_ids.shape[1]
+    modes = (
+        ("context_aware", example["aware_tail_ids"].to(device), example["aware_prefix_len"], aware_weight),
+        ("context_unaware", example["unaware_tail_ids"].to(device), example["unaware_prefix_len"], 1.0 - aware_weight),
+    )
+    ce_terms = []
+    kl_terms = []
+    route_terms = []
+    readout_terms = []
+    readout_mse_terms = []
+    readout_cos_terms = []
+    metrics = {}
+    for mode, tail_ids, prefix_len, mode_weight in modes:
+        if mode_weight == 0:
+            continue
+        with torch.no_grad():
+            native_logits, native_q, _ = run_generation(
+                receiver,
+                native_pairs,
+                tail_ids,
+                prefix_len,
+                answer_len,
+                capture_trace=True,
+            )
+        translated_logits, _, _ = run_generation(
+            receiver,
+            translated_pairs,
+            tail_ids,
+            prefix_len,
+            answer_len,
+            capture_trace=False,
+        )
+        n = min(translated_logits.shape[1], answer_ids.shape[1])
+        ce = F.cross_entropy(
+            translated_logits[:, :n].float().reshape(-1, translated_logits.shape[-1]),
+            answer_ids[:, :n].reshape(-1),
+        )
+        kl = logit_kl_loss(native_logits, translated_logits)
+        readout = q_aware_readout_losses(receiver, native_q, native_pairs, translated_pairs, prefix_len, answer_len)
+        ce_terms.append(mode_weight * ce)
+        kl_terms.append(mode_weight * kl)
+        route_terms.append(mode_weight * readout["route_loss"])
+        readout_terms.append(mode_weight * readout["readout_loss"])
+        readout_mse_terms.append(mode_weight * readout["readout_mse"])
+        readout_cos_terms.append(mode_weight * readout["readout_cos_loss"])
+        metrics[f"{mode}_ce"] = ce
+        metrics[f"{mode}_logit_kl"] = kl
+        metrics[f"{mode}_route_loss"] = readout["route_loss"]
+        metrics[f"{mode}_readout_loss"] = readout["readout_loss"]
+    ce_loss = torch.stack(ce_terms).sum()
+    logit_kl = torch.stack(kl_terms).sum()
+    route_loss = torch.stack(route_terms).sum()
+    readout_loss = torch.stack(readout_terms).sum()
+    readout_mse = torch.stack(readout_mse_terms).sum()
+    readout_cos_loss = torch.stack(readout_cos_terms).sum()
+    rec_loss = receiver_cache_reconstruction_loss(native_pairs, translated_pairs)
+    total = (
+        weights["ce"] * ce_loss
+        + weights["logit_kl"] * logit_kl
+        + weights["route"] * route_loss
+        + weights["readout"] * readout_loss
+        + weights["weak_rec"] * rec_loss
+    )
+    metrics.update(
+        {
+            "loss": total,
+            "generation_loss": ce_loss,
+            "logit_kl_loss": logit_kl,
+            "route_loss": route_loss,
+            "readout_loss": readout_loss,
+            "readout_mse": readout_mse,
+            "readout_cos_loss": readout_cos_loss,
+            "receiver_cache_reconstruction_loss": rec_loss,
+        }
+    )
+    return metrics
+
+
 def normalize_answer(text):
     text = re.sub(r"[^a-z0-9 ]", " ", text.lower())
     text = re.sub(r"\b(a|an|the)\b", " ", text)
