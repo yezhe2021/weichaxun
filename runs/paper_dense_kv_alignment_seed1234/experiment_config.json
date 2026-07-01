@@ -1,0 +1,23 @@
+{
+  "experiment": "paper_dense_kv_cache_alignment_adapter",
+  "seed": 1234,
+  "sender_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-0___6B",
+  "receiver_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+  "train_data": "/home/yezhe/数据集/HotpotQA/processed/hotpot_train_context_qa.jsonl",
+  "val_data": "/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl",
+  "source_x": "context + question, no gold answer",
+  "generation_prompt": "\\n\\nAnswer:",
+  "adapter": "RealCrossModelKVTranslator",
+  "paper_method": "paper_rec_then_mixed_generation",
+  "baselines": [
+    "mse_only",
+    "mse_then_ce"
+  ],
+  "phase1_loss": "receiver_cache_reconstruction_loss = sum_l,g ||K_trans-K_receiver||^2 + ||V_trans-V_receiver||^2",
+  "phase2_loss": "generation_loss = -sum_t log p_R(y_t | y_<t, translated_cache, X_R), X_R in {X, empty}",
+  "default_max_train_samples": 512,
+  "default_max_val_samples": 64,
+  "default_max_source_tokens": 256,
+  "device": "cuda",
+  "dtype": "float16"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "completed_methods": [
+    "paper_rec_then_mixed_generation",
+    "mse_only",
+    "mse_then_ce"
+  ],
+  "required_methods": [
+    "paper_rec_then_mixed_generation",
+    "mse_only",
+    "mse_then_ce"
+  ],
+  "paper_method": "paper_rec_then_mixed_generation",
+  "baselines": [
+    "mse_only",
+    "mse_then_ce"
+  ]
+}
