@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "dataset": "gsm8k",
+  "completed_methods": [
+    "paper_rec_then_mixed_generation",
+    "mse_only",
+    "mse_then_ce",
+    "q_aware_functional"
+  ],
+  "required_methods": [
+    "paper_rec_then_mixed_generation",
+    "mse_only",
+    "mse_then_ce",
+    "q_aware_functional"
+  ],
+  "paper_method": "paper_rec_then_mixed_generation",
+  "baselines": [
+    "mse_only",
+    "mse_then_ce"
+  ],
+  "ours": [
+    "q_aware_functional"
+  ]
+}

@@ -28,7 +28,7 @@ def load_rows(path, limit):
     with open(path, encoding="utf-8") as handle:
         source = (json.loads(line) for line in handle if line.strip()) if str(path).endswith(".jsonl") else iter(json.load(handle))
         for row in source:
-            if row.get("context") and row.get("question") and row.get("answer") is not None:
+            if row.get("question") and row.get("answer") is not None:
                 rows.append(row)
             if 0 < limit <= len(rows):
                 break
@@ -42,7 +42,12 @@ def flatten_context(context):
 
 
 def build_paper_example(tokenizer, row, max_source_tokens):
-    source_text = f"Context:\n{flatten_context(row['context'])}\n\nQuestion:\n{row['question']}"
+    if row.get("context"):
+        source_text = f"Context:\n{flatten_context(row['context'])}\n\nQuestion:\n{row['question']}"
+        task_type = "context_question_answer"
+    else:
+        source_text = f"Question:\n{row['question']}"
+        task_type = "question_answer"
     generation_prompt = "\n\nAnswer:"
     answer_text = " " + str(row["answer"]).strip()
     source_ids = tokenizer(
@@ -62,6 +67,7 @@ def build_paper_example(tokenizer, row, max_source_tokens):
     return {
         "id": row.get("id"),
         "answer": str(row["answer"]),
+        "task_type": task_type,
         "source_text": source_text,
         "source_ids": source_ids,
         "answer_ids": answer_ids,
@@ -117,7 +123,10 @@ def assert_tokenizer_compatible(sender_tokenizer, receiver_tokenizer, rows, max_
     if mismatches:
         raise ValueError("Sender/receiver tokenizers are not strictly compatible: " + ", ".join(mismatches))
     for idx, row in enumerate(rows[:max_checks]):
-        example_text = f"Context:\n{flatten_context(row['context'])}\n\nQuestion:\n{row['question']}"
+        if row.get("context"):
+            example_text = f"Context:\n{flatten_context(row['context'])}\n\nQuestion:\n{row['question']}"
+        else:
+            example_text = f"Question:\n{row['question']}"
         probes = {
             "source": (example_text, True, max_source_tokens),
             "aware": (example_text + "\n\nAnswer:", True, max_source_tokens + 32),
@@ -412,6 +421,22 @@ def answer_f1(prediction, gold):
         return 0.0
     precision, recall = common / len(p), common / len(g)
     return 2 * precision * recall / (precision + recall)
+
+
+def extract_final_answer(text):
+    text = str(text)
+    if "####" in text:
+        text = text.split("####")[-1]
+    numbers = re.findall(r"[-+]?\d[\d,]*(?:\.\d+)?", text)
+    if numbers:
+        return numbers[-1].replace(",", "")
+    return normalize_answer(text)
+
+
+def final_answer_exact_match(prediction, gold):
+    pred = extract_final_answer(prediction)
+    target = extract_final_answer(gold)
+    return float(pred == target), pred, target
 
 
 def cosine_mean(a, b):

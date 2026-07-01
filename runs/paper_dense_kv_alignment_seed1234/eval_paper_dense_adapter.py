@@ -18,6 +18,7 @@ from paper_dense_common import (
     cache_metric_rows,
     cosine_mean,
     distribution_metrics,
+    final_answer_exact_match,
     js_divergence,
     load_rows,
     mean_metric,
@@ -109,6 +110,7 @@ def summarize(rows):
         "logit_kl",
         "top1_match",
         "answer_f1",
+        "final_answer_exact_match",
         "attention_output_cos",
         "route_overlap",
         "attention_js",
@@ -162,12 +164,16 @@ def eval_mode(receiver, tokenizer, example, native_pairs, translated_pairs, mode
         args.attention_topk,
     )
     prediction = teacher_forced_prediction(tokenizer, translated_logits.detach().float().cpu())
+    final_em, pred_final, gold_final = final_answer_exact_match(prediction, example["answer"])
     return {
         **distribution,
         "receiver_prompt_mode": mode,
         "answer_prediction": prediction,
         "answer_prediction_mode": "teacher_forced_token_argmax",
         "answer_f1": answer_f1(prediction, example["answer"]),
+        "pred_final_answer": pred_final,
+        "gold_final_answer": gold_final,
+        "final_answer_exact_match": final_em,
         "attention_output_cos": mean_metric(attn_rows, "attention_output_cos"),
         "route_overlap": mean_metric(readout_rows, "route_overlap"),
         "attention_js": mean_metric(readout_rows, "attention_js"),
@@ -237,6 +243,7 @@ def main():
                         "sample": sample,
                         "id": example["id"],
                         "method": args.method_label,
+                        "task_type": example["task_type"],
                         "receiver_cache_reconstruction_loss": rec_loss,
                         "kv_mse": mean_metric(kv_rows, "kv_mse"),
                         "k_cos": mean_metric(kv_rows, "k_cos"),
@@ -259,11 +266,12 @@ def main():
     payload = {
         "args": {key: value for key, value in vars(args).items() if key != "device_obj"},
         "adapter_metadata": adapter_metadata,
-        "source_x": "context + question, no gold answer",
+        "source_x": "HotpotQA: context + question; GSM8K: question only; no gold answer",
         "context_aware_receiver_input": "X + Answer: + answer_prefix",
         "context_unaware_receiver_input": "Answer: + answer_prefix",
         "diagnostic_table": summary,
         "answer_f1_definition": "F1 of teacher-forced per-position argmax answer tokens; not free-running generation",
+        "final_answer_exact_match_definition": "For GSM8K-style answers, gold uses text after #### and prediction uses the last numeric string in the teacher-forced argmax text.",
     }
     with open(out / "summary.json", "w", encoding="utf-8") as handle:
         json.dump(payload, handle, indent=2, ensure_ascii=False)

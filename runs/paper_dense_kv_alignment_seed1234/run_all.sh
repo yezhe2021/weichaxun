@@ -8,6 +8,7 @@ SENDER="${SENDER:-/home/yezhe/all_models/hub/models/Qwen/Qwen3-0___6B}"
 RECEIVER="${RECEIVER:-/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B}"
 TRAIN_DATA="${TRAIN_DATA:-/home/yezhe/数据集/HotpotQA/processed/hotpot_train_context_qa.jsonl}"
 VAL_DATA="${VAL_DATA:-/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl}"
+GSM8K_DATA="${GSM8K_DATA:-/home/yezhe/数据集/gsm8k/test.jsonl}"
 MAX_TRAIN_SAMPLES="${MAX_TRAIN_SAMPLES:-512}"
 MAX_VAL_SAMPLES="${MAX_VAL_SAMPLES:-64}"
 MAX_SOURCE_TOKENS="${MAX_SOURCE_TOKENS:-256}"
@@ -39,8 +40,10 @@ train_one() {
     --dtype "${DTYPE}"
 }
 
-eval_one() {
+eval_with_data() {
   local method="$1"
+  local data="$2"
+  local out_dir="$3"
   local checkpoint="${ROOT}/train/${method}/checkpoint_final.pt"
   if [[ ! -f "${checkpoint}" ]]; then
     echo "Missing checkpoint: ${checkpoint}" >&2
@@ -49,16 +52,26 @@ eval_one() {
   "${PY}" "${ROOT}/eval_paper_dense_adapter.py" \
     --sender-model "${SENDER}" \
     --receiver-model "${RECEIVER}" \
-    --data "${VAL_DATA}" \
+    --data "${data}" \
     --adapter-checkpoint "${checkpoint}" \
     --method-label "${method}" \
-    --out "${ROOT}/eval/${method}" \
+    --out "${out_dir}" \
     --max-samples "${MAX_VAL_SAMPLES}" \
     --max-source-tokens "${MAX_SOURCE_TOKENS}" \
     --attention-topk "${ATTENTION_TOPK}" \
     --seed "${SEED}" \
     --device "${DEVICE}" \
     --dtype "${DTYPE}"
+}
+
+eval_one() {
+  local method="$1"
+  eval_with_data "${method}" "${VAL_DATA}" "${ROOT}/eval/${method}"
+}
+
+eval_gsm8k_one() {
+  local method="$1"
+  eval_with_data "${method}" "${GSM8K_DATA}" "${ROOT}/eval_gsm8k/${method}"
 }
 
 case "${1:-help}" in
@@ -82,7 +95,18 @@ case "${1:-help}" in
     eval_one paper_rec_then_mixed_generation
     eval_one q_aware_functional
     ;;
+  eval_gsm8k_paper) eval_gsm8k_one paper_rec_then_mixed_generation ;;
+  eval_gsm8k_mse_only) eval_gsm8k_one mse_only ;;
+  eval_gsm8k_mse_then_ce) eval_gsm8k_one mse_then_ce ;;
+  eval_gsm8k_q_aware) eval_gsm8k_one q_aware_functional ;;
+  eval_gsm8k)
+    eval_gsm8k_one mse_only
+    eval_gsm8k_one mse_then_ce
+    eval_gsm8k_one paper_rec_then_mixed_generation
+    eval_gsm8k_one q_aware_functional
+    ;;
   package) "${PY}" "${ROOT}/package_results.py" ;;
+  package_gsm8k) "${PY}" "${ROOT}/package_gsm8k_results.py" ;;
   all)
     bash "$0" train
     bash "$0" eval
@@ -101,7 +125,13 @@ Usage:
   run_all.sh eval_mse_then_ce
   run_all.sh eval_q_aware
   run_all.sh eval
+  run_all.sh eval_gsm8k_paper
+  run_all.sh eval_gsm8k_mse_only
+  run_all.sh eval_gsm8k_mse_then_ce
+  run_all.sh eval_gsm8k_q_aware
+  run_all.sh eval_gsm8k
   run_all.sh package
+  run_all.sh package_gsm8k
   run_all.sh all
 
 Methods:
@@ -118,6 +148,7 @@ Environment overrides:
   PHASE2_EPOCHS=1
   DEVICE=cuda|cpu
   DTYPE=float16|float32
+  GSM8K_DATA=/home/yezhe/数据集/gsm8k/test.jsonl
 USAGE
     ;;
 esac
