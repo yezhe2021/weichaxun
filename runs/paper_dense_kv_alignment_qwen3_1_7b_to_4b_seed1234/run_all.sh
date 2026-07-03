@@ -158,6 +158,8 @@ case "${1:-help}" in
     ;;
   package) "${PY}" "${ROOT}/package_results.py" ;;
   package_gsm8k) "${PY}" "${ROOT}/package_gsm8k_results.py" ;;
+  package_train) "${PY}" "${ROOT}/package_train_results.py" ;;
+  package_overall) "${PY}" "${ROOT}/package_overall_results.py" ;;
   package_token_hotpot)
     "${PY}" "${ROOT}/package_token_diagnostics.py" \
       --dataset-label hotpotqa \
@@ -189,7 +191,8 @@ Existing entries are also preserved:
   train_paper|train_mse_only|train_mse_then_ce|train_q_aware|train
   eval_paper|eval_mse_only|eval_mse_then_ce|eval_q_aware|eval
   eval_gsm8k_paper|eval_gsm8k_mse_only|eval_gsm8k_mse_then_ce|eval_gsm8k_q_aware|eval_gsm8k
-  package|package_gsm8k|all
+  package|package_gsm8k|package_train|package_overall|all
+  package_train
 
 Token diagnostics:
   HotpotQA critical tokens use critical-mode=answer.

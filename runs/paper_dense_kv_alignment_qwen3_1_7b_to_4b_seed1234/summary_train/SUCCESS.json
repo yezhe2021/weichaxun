@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "completed_methods": [
+    "paper_rec_then_mixed_generation",
+    "mse_only",
+    "mse_then_ce",
+    "q_aware_functional"
+  ],
+  "required_methods": [
+    "paper_rec_then_mixed_generation",
+    "mse_only",
+    "mse_then_ce",
+    "q_aware_functional"
+  ],
+  "outputs": [
+    "train_method_comparison.csv",
+    "train_last_step_comparison.csv"
+  ]
+}

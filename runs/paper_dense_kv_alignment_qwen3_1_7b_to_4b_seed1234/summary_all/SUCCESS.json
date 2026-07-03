@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "methods": [
+    "mse_only",
+    "mse_then_ce",
+    "paper_rec_then_mixed_generation",
+    "q_aware_functional"
+  ],
+  "datasets": [
+    "hotpotqa",
+    "gsm8k"
+  ],
+  "outputs": [
+    "train_summary.csv",
+    "eval_all_datasets.csv",
+    "overall_wide_summary.csv",
+    "overall_report.md"
+  ],
+  "eval_rows": 16,
+  "train_rows": 4
+}
