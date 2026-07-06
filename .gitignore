@@ -19,3 +19,7 @@ runs/**/*.ckpt
 !runs/**/metrics.json
 !runs/**/config.json
 !runs/**/summary.json
+
+# Large free-running layerwise diagnostics
+runs/free_running_layerwise_logit_lens_qwen3_1_7b_to_4b_gsm8k_seed1234/results/per_sample_trajectory.jsonl
+runs/free_running_layerwise_logit_lens_qwen3_1_7b_to_4b_gsm8k_seed1234/results/per_step_layer_logit_lens.jsonl

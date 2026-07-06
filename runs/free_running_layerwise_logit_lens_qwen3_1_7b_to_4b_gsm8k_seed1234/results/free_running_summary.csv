@@ -1,0 +1,5 @@
+answer_f1,final_answer_exact_match,mean_first_error_step,mean_generated_len,mean_prefix_survival_length,median_first_error_step,method,n,stopped_by_eos_rate
+0.007662331115302739,0.0,0.15625,96.0,0.15625,0.0,mse_only,64,0.0
+0.3268475100339471,0.234375,0.078125,96.0,0.078125,0.0,native,64,0.0
+0.005722529687148136,0.0,0.078125,96.0,0.078125,0.0,paper_rec_then_mixed_generation,64,0.0
+0.05470529125035304,0.0,0.203125,96.0,0.203125,0.0,q_aware_functional,64,0.0

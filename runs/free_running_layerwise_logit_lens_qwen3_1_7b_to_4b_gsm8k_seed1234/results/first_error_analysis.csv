@@ -1,0 +1,257 @@
+answer_f1,final_answer_exact_match,first_error_step,generated_len,gold_final_answer,gold_len,id,method,pred_final_answer,prefix_survival_length,sample
+0.27083333333333337,0.0,0,96,18,59,,native,2,0,0
+0.0,0.0,0,96,18,59,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,0
+0.0,0.0,0,96,18,59,,paper_rec_then_mixed_generation,1988,0,0
+0.0,0.0,0,96,18,59,,q_aware_functional,1996,0,0
+0.4,0.0,0,96,3,47,,native,1,0,1
+0.046511627906976744,0.0,0,96,3,47,,mse_only,answer is okay so i need to answer question that was presented question was answer answer is and user provided answer user provided answer answer is okay so i need to answer question that was presented question was answer answer is and user provided answer user provided answer answer is okay so i need to answer question that,0,1
+0.0,0.0,0,96,3,47,,paper_rec_then_mixed_generation,2014,0,1
+0.10309278350515463,0.0,0,96,3,47,,q_aware_functional,1983,0,1
+0.42477876106194684,0.0,0,96,70000,210,,native,80000,0,2
+0.04301075268817204,0.0,0,96,70000,210,,mse_only,5,0,2
+0.0,0.0,0,96,70000,210,,paper_rec_then_mixed_generation,1999,0,2
+0.04477611940298507,0.0,1,96,70000,210,,q_aware_functional,1997,1,2
+0.12765957446808512,1.0,0,96,540,47,,native,540,0,3
+0.0,0.0,0,96,540,47,,mse_only,answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is,0,3
+0.0,0.0,0,96,540,47,,paper_rec_then_mixed_generation,2014,0,3
+0.0,0.0,0,96,540,47,,q_aware_functional,1980,0,3
+0.4426229508196721,0.0,0,96,20,108,,native,25,0,4
+0.0,0.0,0,96,20,108,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,4
+0.036036036036036036,0.0,0,96,20,108,,paper_rec_then_mixed_generation,1988,0,4
+0.05263157894736842,0.0,0,96,20,108,,q_aware_functional,1990,0,4
+0.35211267605633806,0.0,0,96,64,171,,native,60,0,5
+0.0,0.0,1,96,64,171,,mse_only,k answer k answer k answer k answer k answer k answer k answer k answer k answer k answer k answer k answer k answer k answer k answer k answer k answer k answer k answer,1,5
+0.014925373134328356,0.0,0,96,64,171,,paper_rec_then_mixed_generation,1988,0,5
+0.029197080291970802,0.0,1,96,64,171,,q_aware_functional,1996,1,5
+0.33898305084745767,0.0,0,96,260,112,,native,4,0,6
+0.014184397163120565,0.0,0,96,260,112,,mse_only,answer is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is answer,0,6
+0.0,0.0,0,96,260,112,,paper_rec_then_mixed_generation,1988,0,6
+0.03603603603603604,0.0,0,96,260,112,,q_aware_functional,3,0,6
+0.09271523178807947,0.0,0,96,160,196,,native,120,0,7
+0.0,0.0,0,96,160,196,,mse_only,,0,7
+0.0,0.0,0,96,160,196,,paper_rec_then_mixed_generation,1999,0,7
+0.08805031446540881,0.0,0,96,160,196,,q_aware_functional,2016,0,7
+0.4025974025974026,0.0,0,96,45,196,,native,2,0,8
+0.0,0.0,0,96,45,196,,mse_only,,0,8
+0.041379310344827586,0.0,0,96,45,196,,paper_rec_then_mixed_generation,1988,0,8
+0.04225352112676057,0.0,0,96,45,196,,q_aware_functional,1996,0,8
+0.0,0.0,0,96,460,160,,native,472,0,9
+0.02666666666666666,0.0,0,96,460,160,,mse_only,answer is,0,9
+0.0,0.0,0,96,460,160,,paper_rec_then_mixed_generation,1988,0,9
+0.08333333333333333,0.0,0,96,460,160,,q_aware_functional,1996,0,9
+0.07476635514018692,0.0,0,96,366,192,,native,240,0,10
+0.0,0.0,1,96,366,192,,mse_only,answer is,1,10
+0.11428571428571428,0.0,0,96,366,192,,paper_rec_then_mixed_generation,1980,0,10
+0.07352941176470587,0.0,1,96,366,192,,q_aware_functional,2012,1,10
+0.22608695652173916,0.0,0,96,694,146,,native,55,0,11
+0.0,0.0,1,96,694,146,,mse_only,,1,11
+0.0,0.0,0,96,694,146,,paper_rec_then_mixed_generation,1988,0,11
+0.10526315789473685,0.0,1,96,694,146,,q_aware_functional,1996,1,11
+0.3283582089552239,0.0,0,96,13,148,,native,10.5,0,12
+0.02857142857142857,0.0,0,96,13,148,,mse_only,what is answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to answer to,0,12
+0.0,0.0,0,96,13,148,,paper_rec_then_mixed_generation,1999,0,12
+0.014814814814814814,0.0,0,96,13,148,,q_aware_functional,1945,0,12
+0.3439490445859873,0.0,0,96,18,133,,native,5,0,13
+0.0,0.0,0,96,18,133,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,13
+0.0,0.0,0,96,18,133,,paper_rec_then_mixed_generation,1988,0,13
+0.10526315789473684,0.0,0,96,18,133,,q_aware_functional,12,0,13
+0.4615384615384615,0.0,0,96,60,157,,native,12,0,14
+0.0,0.0,0,96,60,157,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,14
+0.0,0.0,0,96,60,157,,paper_rec_then_mixed_generation,2110,0,14
+0.046153846153846156,0.0,0,96,60,157,,q_aware_functional,1990,0,14
+0.33070866141732286,0.0,0,96,125,159,,native,5125,0,15
+0.0,0.0,0,96,125,159,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,15
+0.0,0.0,0,96,125,159,,paper_rec_then_mixed_generation,1999,0,15
+0.016260162601626015,0.0,0,96,125,159,,q_aware_functional,2012,0,15
+0.3966942148760331,1.0,0,96,230,151,,native,230,0,16
+0.034482758620689655,0.0,0,96,230,151,,mse_only,answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is,0,16
+0.0,0.0,0,96,230,151,,paper_rec_then_mixed_generation,2110,0,16
+0.06557377049180327,0.0,0,96,230,151,,q_aware_functional,21,0,16
+0.2953020134228188,0.0,0,96,57500,199,,native,700,0,17
+0.0,0.0,0,96,57500,199,,mse_only,,0,17
+0.0,0.0,0,96,57500,199,,paper_rec_then_mixed_generation,2110,0,17
+0.028169014084507043,0.0,0,96,57500,199,,q_aware_functional,1990,0,17
+0.4132231404958677,1.0,0,96,7,109,,native,7,0,18
+0.0,0.0,0,96,7,109,,mse_only,above is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is,0,18
+0.0,0.0,0,96,7,109,,paper_rec_then_mixed_generation,1988,0,18
+0.058252427184466014,0.0,0,96,7,109,,q_aware_functional,1980,0,18
+0.3260869565217391,0.0,0,96,6,184,,native,4,0,19
+0.0,0.0,0,96,6,184,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,19
+0.011904761904761904,0.0,0,96,6,184,,paper_rec_then_mixed_generation,1988,0,19
+0.06818181818181818,0.0,0,96,6,184,,q_aware_functional,199,0,19
+0.366412213740458,1.0,0,96,15,135,,native,15,0,20
+0.14285714285714288,0.0,0,96,15,135,,mse_only,1,0,20
+0.0,0.0,0,96,15,135,,paper_rec_then_mixed_generation,1988,0,20
+0.015625,0.0,0,96,15,135,,q_aware_functional,1996,0,20
+0.36363636363636365,0.0,0,96,14,65,,native,31,0,21
+0.0,0.0,0,96,14,65,,mse_only,,0,21
+0.0,0.0,0,96,14,65,,paper_rec_then_mixed_generation,1988,0,21
+0.0,0.0,0,96,14,65,,q_aware_functional,1996,0,21
+0.5168539325842696,1.0,0,96,7,72,,native,7,0,22
+0.0,0.0,0,96,7,72,,mse_only,answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is,0,22
+0.0,0.0,0,96,7,72,,paper_rec_then_mixed_generation,1988,0,22
+0.024390243902439025,0.0,0,96,7,72,,q_aware_functional,19,0,22
+0.30952380952380953,0.0,0,96,8,47,,native,4,0,23
+0.0,0.0,1,96,8,47,,mse_only,answer is,1,23
+0.0,0.0,0,96,8,47,,paper_rec_then_mixed_generation,1999,0,23
+0.024691358024691357,0.0,0,96,8,47,,q_aware_functional,1999,0,23
+0.3409090909090909,0.0,0,96,26,69,,native,75,0,24
+0.0,0.0,0,96,26,69,,mse_only,,0,24
+0.046511627906976744,0.0,0,96,26,69,,paper_rec_then_mixed_generation,19,0,24
+0.06382978723404255,0.0,0,96,26,69,,q_aware_functional,1826,0,24
+0.5166666666666667,0.0,0,96,2,147,,native,33,0,25
+0.01680672268907563,0.0,0,96,2,147,,mse_only,answer to question about m is n answer answer to question about m is n answer answer to question about m is n answer answer to question about m is n answer answer to question about m is n answer answer to question about m is n answer answer to question about,0,25
+0.0,0.0,0,96,2,147,,paper_rec_then_mixed_generation,1988,0,25
+0.06722689075630252,0.0,0,96,2,147,,q_aware_functional,1826,0,25
+0.2777777777777778,1.0,2,96,243,65,,native,243,2,26
+0.0,0.0,0,96,243,65,,mse_only,answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer,0,26
+0.0,0.0,1,96,243,65,,paper_rec_then_mixed_generation,2110,1,26
+0.0,0.0,1,96,243,65,,q_aware_functional,1979,1,26
+0.5436893203883495,0.0,0,96,16,89,,native,4.00,0,27
+0.0,0.0,0,96,16,89,,mse_only,answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is,0,27
+0.0,0.0,0,96,16,89,,paper_rec_then_mixed_generation,1990,0,27
+0.07142857142857142,0.0,0,96,16,89,,q_aware_functional,1990,0,27
+0.0909090909090909,1.0,0,96,25,68,,native,25,0,28
+0.0,0.0,0,96,25,68,,mse_only,,0,28
+0.0,0.0,0,96,25,68,,paper_rec_then_mixed_generation,2110,0,28
+0.043478260869565216,0.0,0,96,25,68,,q_aware_functional,199,0,28
+0.44705882352941173,1.0,0,96,104,86,,native,104,0,29
+0.0,0.0,1,96,104,86,,mse_only,answer is what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what what,1,29
+0.0,0.0,0,96,104,86,,paper_rec_then_mixed_generation,1988,0,29
+0.0,0.0,1,96,104,86,,q_aware_functional,12,1,29
+0.32812500000000006,0.0,0,96,109,124,,native,72,0,30
+0.03278688524590164,0.0,1,96,109,124,,mse_only,answer is,1,30
+0.0,0.0,0,96,109,124,,paper_rec_then_mixed_generation,1988,0,30
+0.11570247933884298,0.0,0,96,109,124,,q_aware_functional,1996,0,30
+0.32323232323232326,0.0,0,96,80,144,,native,1,0,31
+0.0,0.0,1,96,80,144,,mse_only,,1,31
+0.0,0.0,0,96,80,144,,paper_rec_then_mixed_generation,1980,0,31
+0.031999999999999994,0.0,1,96,80,144,,q_aware_functional,1997,1,31
+0.32941176470588235,1.0,0,96,35,48,,native,35,0,32
+0.0,0.0,0,96,35,48,,mse_only,answer is okay so i need to complete answer for question about,0,32
+0.0,0.0,0,96,35,48,,paper_rec_then_mixed_generation,1988,0,32
+0.028571428571428574,0.0,0,96,35,48,,q_aware_functional,1963,0,32
+0.2641509433962264,0.0,0,96,70,81,,native,30,0,33
+0.0,0.0,0,96,70,81,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,33
+0.0,0.0,0,96,70,81,,paper_rec_then_mixed_generation,1980,0,33
+0.07058823529411765,0.0,0,96,70,81,,q_aware_functional,4,0,33
+0.2809917355371901,0.0,0,96,23,88,,native,2,0,34
+0.0,0.0,0,96,23,88,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,34
+0.0,0.0,0,96,23,88,,paper_rec_then_mixed_generation,1999,0,34
+0.13513513513513514,0.0,0,96,23,88,,q_aware_functional,26,0,34
+0.5494505494505494,0.0,0,96,9,82,,native,4,0,35
+0.0,0.0,0,96,9,82,,mse_only,answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer,0,35
+0.0,0.0,0,96,9,82,,paper_rec_then_mixed_generation,2110,0,35
+0.0,0.0,0,96,9,82,,q_aware_functional,1980,0,35
+0.416,0.0,0,96,75,142,,native,4,0,36
+0.033613445378151266,0.0,0,96,75,142,,mse_only,answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is,0,36
+0.0,0.0,0,96,75,142,,paper_rec_then_mixed_generation,1990,0,36
+0.08474576271186442,0.0,0,96,75,142,,q_aware_functional,1996,0,36
+0.3738317757009346,0.0,0,96,2,125,,native,16,0,37
+0.0,0.0,0,96,2,125,,mse_only,what,0,37
+0.0,0.0,0,96,2,125,,paper_rec_then_mixed_generation,1988,0,37
+0.0,0.0,0,96,2,125,,q_aware_functional,1996,0,37
+0.3636363636363636,0.0,0,96,10,127,,native,3,0,38
+0.0,0.0,0,96,10,127,,mse_only,answer is,0,38
+0.016666666666666666,0.0,0,96,10,127,,paper_rec_then_mixed_generation,1988,0,38
+0.14583333333333334,0.0,0,96,10,127,,q_aware_functional,26,0,38
+0.3644859813084112,0.0,0,96,18,230,,native,6,0,39
+0.0,0.0,0,96,18,230,,mse_only,h answer h answer h answer h answer h answer h answer h answer h answer h answer h answer h answer h answer h answer h answer h answer h answer h answer h answer h answer,0,39
+0.0,0.0,0,96,18,230,,paper_rec_then_mixed_generation,1988,0,39
+0.07142857142857144,0.0,0,96,18,230,,q_aware_functional,1996,0,39
+0.24742268041237112,0.0,0,96,8,43,,native,3,0,40
+0.0,0.0,0,96,8,43,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,40
+0.0,0.0,0,96,8,43,,paper_rec_then_mixed_generation,1988,0,40
+0.0963855421686747,0.0,0,96,8,43,,q_aware_functional,10000,0,40
+0.2912621359223301,0.0,0,96,200,111,,native,400,0,41
+0.0,0.0,0,96,200,111,,mse_only,1,0,41
+0.0,0.0,0,96,200,111,,paper_rec_then_mixed_generation,2110,0,41
+0.099009900990099,0.0,0,96,200,111,,q_aware_functional,1826,0,41
+0.42105263157894735,1.0,0,96,26,78,,native,26,0,42
+0.022222222222222223,0.0,0,96,26,78,,mse_only,answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is,0,42
+0.0,0.0,0,96,26,78,,paper_rec_then_mixed_generation,1988,0,42
+0.043478260869565216,0.0,0,96,26,78,,q_aware_functional,1996,0,42
+0.245398773006135,0.0,0,96,48,196,,native,1800,0,43
+0.01360544217687075,0.0,0,96,48,196,,mse_only,answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer answer is answer,0,43
+0.0,0.0,0,96,48,196,,paper_rec_then_mixed_generation,2110,0,43
+0.12162162162162161,0.0,0,96,48,196,,q_aware_functional,1997,0,43
+0.4276729559748428,0.0,0,96,20,206,,native,20.00,0,44
+0.0,0.0,0,96,20,206,,mse_only,based on answer based on answer based on answer based on answer based on answer based on answer based on answer based on answer based on answer based on answer based on answer based on answer,0,44
+0.0,0.0,2,96,20,206,,paper_rec_then_mixed_generation,1999,2,44
+0.1317365269461078,0.0,2,96,20,206,,q_aware_functional,1999,2,44
+0.4748201438848921,0.0,0,96,104,162,,native,5,0,45
+0.0,0.0,0,96,104,162,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,45
+0.0,0.0,0,96,104,162,,paper_rec_then_mixed_generation,1988,0,45
+0.06666666666666667,0.0,0,96,104,162,,q_aware_functional,1826,0,45
+0.4305555555555555,0.0,0,96,163,129,,native,80,0,46
+0.0,0.0,0,96,163,129,,mse_only,is is is is is is is is is is is is is is is is is is is is is is is is,0,46
+0.0,0.0,0,96,163,129,,paper_rec_then_mixed_generation,2110,0,46
+0.04761904761904762,0.0,0,96,163,129,,q_aware_functional,1996,0,46
+0.48387096774193544,0.0,0,96,800,169,,native,50,0,47
+0.0,0.0,0,96,800,169,,mse_only,answer is,0,47
+0.0,0.0,0,96,800,169,,paper_rec_then_mixed_generation,1999,0,47
+0.0,0.0,0,96,800,169,,q_aware_functional,1997,0,47
+0.06818181818181818,1.0,0,96,8,86,,native,8,0,48
+0.013793103448275862,0.0,0,96,8,86,,mse_only,answer is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is,0,48
+0.0,0.0,0,96,8,86,,paper_rec_then_mixed_generation,1988,0,48
+0.11475409836065574,0.0,0,96,8,86,,q_aware_functional,1997,0,48
+0.5871559633027523,0.0,0,96,30,120,,native,12,0,49
+0.0,0.0,1,96,30,120,,mse_only,,1,49
+0.0,0.0,0,96,30,120,,paper_rec_then_mixed_generation,1988,0,49
+0.017857142857142856,0.0,1,96,30,120,,q_aware_functional,1996,1,49
+0.23008849557522124,0.0,0,96,294,105,,native,252,0,50
+0.0,0.0,0,96,294,105,,mse_only,answer is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is,0,50
+0.0,0.0,0,96,294,105,,paper_rec_then_mixed_generation,1988,0,50
+0.060000000000000005,0.0,0,96,294,105,,q_aware_functional,1970,0,50
+0.48351648351648346,1.0,0,96,5,71,,native,5,0,51
+0.0,0.0,0,96,5,71,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,51
+0.0,0.0,0,96,5,71,,paper_rec_then_mixed_generation,1988,0,51
+0.06741573033707866,0.0,0,96,5,71,,q_aware_functional,1996,0,51
+0.0,0.0,1,96,15,102,,native,10,1,52
+0.0,0.0,0,96,15,102,,mse_only,1,0,52
+0.0,0.0,1,96,15,102,,paper_rec_then_mixed_generation,1980,1,52
+0.0,0.0,0,96,15,102,,q_aware_functional,1750,0,52
+0.0,0.0,0,96,40,119,,native,120,0,53
+0.0,0.0,0,96,40,119,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,53
+0.0,0.0,0,96,40,119,,paper_rec_then_mixed_generation,1988,0,53
+0.0,0.0,0,96,40,119,,q_aware_functional,201,0,53
+0.3177570093457944,0.0,0,96,40,101,,native,7,0,54
+0.0,0.0,0,96,40,101,,mse_only,answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is,0,54
+0.0,0.0,0,96,40,101,,paper_rec_then_mixed_generation,1988,0,54
+0.0,0.0,0,96,40,101,,q_aware_functional,1996,0,54
+0.43243243243243246,1.0,0,96,14,58,,native,14,0,55
+0.0,0.0,0,96,14,58,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,55
+0.0,0.0,0,96,14,58,,paper_rec_then_mixed_generation,1988,0,55
+0.0,0.0,0,96,14,58,,q_aware_functional,1996,0,55
+0.3023255813953488,1.0,0,96,3,61,,native,3,0,56
+0.0,0.0,0,96,3,61,,mse_only,answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer answer,0,56
+0.0,0.0,0,96,3,61,,paper_rec_then_mixed_generation,1988,0,56
+0.0,0.0,0,96,3,61,,q_aware_functional,206,0,56
+0.4197530864197531,1.0,0,96,83,88,,native,83,0,57
+0.0,0.0,1,96,83,88,,mse_only,is is is is is is is is is is is is is is is is is is is is is is is is,1,57
+0.023255813953488372,0.0,0,96,83,88,,paper_rec_then_mixed_generation,1988,0,57
+0.06000000000000001,0.0,1,96,83,88,,q_aware_functional,1996,1,57
+0.25757575757575757,0.0,0,96,57,157,,native,32,0,58
+0.0,0.0,0,96,57,157,,mse_only,,0,58
+0.04,0.0,0,96,57,157,,paper_rec_then_mixed_generation,1980,0,58
+0.09375000000000001,0.0,0,96,57,157,,q_aware_functional,11,0,58
+0.28571428571428575,0.0,0,96,187,83,,native,20,0,59
+0.0,0.0,0,96,187,83,,mse_only,answer is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is is,0,59
+0.02127659574468085,0.0,0,96,187,83,,paper_rec_then_mixed_generation,1988,0,59
+0.06741573033707866,0.0,0,96,187,83,,q_aware_functional,1996,0,59
+0.3090909090909091,0.0,2,96,17,99,,native,25,2,60
+0.0,0.0,0,96,17,99,,mse_only,,0,60
+0.0,0.0,1,96,17,99,,paper_rec_then_mixed_generation,1988,1,60
+0.1941747572815534,0.0,1,96,17,99,,q_aware_functional,100,1,60
+0.2191780821917808,0.0,0,96,1430,102,,native,500,0,61
+0.021276595744680854,0.0,1,96,1430,102,,mse_only,answer is okay so i need to answer question about answer wait what s going on here user is asking for answer to answer wait what s going on here user is asking for answer to answer wait what s going on here user is asking for answer to answer wait what s on here user is asking for answer to answer wait what s,1,61
+0.0,0.0,0,96,1430,102,,paper_rec_then_mixed_generation,1999,0,61
+0.022727272727272728,0.0,1,96,1430,102,,q_aware_functional,1750,1,61
+0.22033898305084748,0.0,0,96,25000,132,,native,50000,0,62
+0.0,0.0,0,96,25000,132,,mse_only,based on answer answer based on answer answer based on answer answer based on answer answer based on answer answer based on answer answer based on answer answer based on answer answer based on answer answer based on,0,62
+0.0,0.0,0,96,25000,132,,paper_rec_then_mixed_generation,1988,0,62
+0.11570247933884298,0.0,0,96,25000,132,,q_aware_functional,1998,0,62
+0.34730538922155685,0.0,0,96,1596,237,,native,10,0,63
+0.0,0.0,0,96,1596,237,,mse_only,,0,63
+0.0,0.0,0,96,1596,237,,paper_rec_then_mixed_generation,2110,0,63
+0.025316455696202528,0.0,0,96,1596,237,,q_aware_functional,8,0,63
