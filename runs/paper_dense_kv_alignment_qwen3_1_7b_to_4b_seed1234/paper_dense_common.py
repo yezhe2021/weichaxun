@@ -41,15 +41,35 @@ def flatten_context(context):
     return "\n".join(f"[{title}] {' '.join(sentences)}" for title, sentences in context)
 
 
-def build_paper_example(tokenizer, row, max_source_tokens):
-    if row.get("context"):
+def extract_gsm8k_final_answer(text):
+    text = str(text)
+    if "####" in text:
+        text = text.split("####")[-1]
+    numbers = re.findall(r"[-+]?\d[\d,]*(?:\.\d+)?", text)
+    return numbers[-1].replace(",", "") if numbers else text.strip()
+
+
+def build_paper_example(tokenizer, row, max_source_tokens, answer_mode="full", target_field="answer"):
+    if row.get("source_text"):
+        source_text = str(row["source_text"])
+        task_type = row.get("task_type", "question_answer")
+    elif row.get("context"):
         source_text = f"Context:\n{flatten_context(row['context'])}\n\nQuestion:\n{row['question']}"
         task_type = "context_question_answer"
     else:
-        source_text = f"Question:\n{row['question']}"
+        source_text = f"Question: {row['question']}\n"
         task_type = "question_answer"
-    generation_prompt = "\n\nAnswer:"
-    answer_text = " " + str(row["answer"]).strip()
+    generation_prompt = str(row.get("generation_prompt", row.get("continuation_prompt", "Answer:")))
+    if target_field != "answer" and row.get(target_field) is not None:
+        answer_text = str(row[target_field]).strip()
+        if not answer_text.startswith((" ", "\n", "\t")):
+            answer_text = " " + answer_text
+    elif answer_mode == "full":
+        answer_text = " " + str(row["answer"]).strip()
+    elif answer_mode == "final_only":
+        answer_text = " #### " + extract_gsm8k_final_answer(row["answer"])
+    else:
+        raise ValueError(f"Unknown answer_mode: {answer_mode}")
     source_ids = tokenizer(
         source_text,
         return_tensors="pt",
@@ -67,6 +87,7 @@ def build_paper_example(tokenizer, row, max_source_tokens):
     return {
         "id": row.get("id"),
         "answer": str(row["answer"]),
+        "target_field": target_field if row.get(target_field) is not None else "answer",
         "task_type": task_type,
         "source_text": source_text,
         "source_ids": source_ids,

@@ -193,6 +193,7 @@ def main():
     parser.add_argument("--out", required=True)
     parser.add_argument("--max-samples", type=int, default=64)
     parser.add_argument("--max-source-tokens", type=int, default=256)
+    parser.add_argument("--answer-mode", choices=["full", "final_only"], default="full")
     parser.add_argument("--attention-topk", type=int, default=16)
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--device", choices=["cpu", "cuda"], default="cuda")
@@ -226,7 +227,7 @@ def main():
     layer_rows = []
     with torch.no_grad():
         for sample, row in enumerate(tqdm(rows, desc=args.method_label)):
-            example = build_paper_example(receiver_tokenizer, row, args.max_source_tokens)
+            example = build_paper_example(receiver_tokenizer, row, args.max_source_tokens, args.answer_mode)
             source_ids = example["source_ids"].to(args.device_obj)
             sender_pairs = extract_cache(sender(input_ids=source_ids, use_cache=True, logits_to_keep=1).past_key_values)
             native_pairs = extract_cache(receiver(input_ids=source_ids, use_cache=True, logits_to_keep=1).past_key_values)

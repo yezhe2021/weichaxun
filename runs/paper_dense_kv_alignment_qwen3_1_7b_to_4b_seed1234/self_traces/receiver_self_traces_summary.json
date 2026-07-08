@@ -1,0 +1,14 @@
+{
+  "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+  "data": "/home/yezhe/数据集/gsm8k/train.jsonl",
+  "out": "/home/yezhe/伪查询/runs/paper_dense_kv_alignment_qwen3_1_7b_to_4b_seed1234/self_traces/receiver_self_traces.jsonl",
+  "rejected_out": "/home/yezhe/伪查询/runs/paper_dense_kv_alignment_qwen3_1_7b_to_4b_seed1234/self_traces/receiver_self_traces_rejected.jsonl",
+  "max_candidates": 256,
+  "max_kept": 64,
+  "num_fewshot": 5,
+  "filter_mode": "flexible",
+  "kept": 64,
+  "rejected": 6,
+  "accept_rate_over_processed": 0.9142857142857143,
+  "prompt_format": "GSM8K benchmark style: few-shot Question/Answer examples, then Question: X\\nAnswer:"
+}

@@ -103,13 +103,32 @@ def generation_losses(receiver, translated_pairs, example, device, aware_weight)
     return mixed, aware_ce, unaware_ce
 
 
+def target_field_for_stage(args, stage_name):
+    if args.method == "paper_rec_then_mixed_generation" and stage_name == "phase2_mixed_generation":
+        return args.phase2_target_field
+    if args.method == "q_aware_functional" and stage_name == "phase2_q_aware_functional":
+        return args.phase2_target_field
+    return "answer"
+
+
+def uses_phase2_self_trace(args, stage_name):
+    return (
+        args.method == "paper_rec_then_mixed_generation"
+        and stage_name == "phase2_mixed_generation"
+    ) or (
+        args.method == "q_aware_functional"
+        and stage_name == "phase2_q_aware_functional"
+    )
+
+
 def train_stage(sender, receiver, tokenizer, adapter, rows, optimizer, args, stage_name, stage_index, history, global_step):
     stage_rows = list(rows)
     random.Random(args.seed + stage_index).shuffle(stage_rows)
     progress = tqdm(stage_rows, desc=f"{args.method}:{stage_name}")
     optimizer.zero_grad(set_to_none=True)
+    target_field = target_field_for_stage(args, stage_name)
     for index, row in enumerate(progress):
-        example = build_paper_example(tokenizer, row, args.max_source_tokens)
+        example = build_paper_example(tokenizer, row, args.max_source_tokens, args.answer_mode, target_field=target_field)
         source_ids = example["source_ids"].to(args.device_obj)
         sender_pairs, receiver_pairs = get_source_caches(sender, receiver, source_ids)
         translated_pairs = adapter(sender_pairs)
@@ -180,6 +199,7 @@ def train_stage(sender, receiver, tokenizer, adapter, rows, optimizer, args, sta
         item = {
             "method": args.method,
             "stage": stage_name,
+            "target_field": example["target_field"],
             "stage_index": stage_index,
             "sample": index,
             "step": global_step,
@@ -212,7 +232,7 @@ def validate(sender, receiver, tokenizer, adapter, rows, args):
         "qaware_readout": [],
     }
     for row in rows:
-        example = build_paper_example(tokenizer, row, args.max_source_tokens)
+        example = build_paper_example(tokenizer, row, args.max_source_tokens, args.answer_mode)
         source_ids = example["source_ids"].to(args.device_obj)
         sender_pairs, receiver_pairs = get_source_caches(sender, receiver, source_ids)
         translated_pairs = adapter(sender_pairs)
@@ -249,8 +269,10 @@ def main():
     parser = argparse.ArgumentParser(description="Train paper-style dense KV cache alignment adapter")
     parser.add_argument("--sender-model", default="/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B")
     parser.add_argument("--receiver-model", default="/home/yezhe/all_models/models/Qwen/Qwen3-4B")
-    parser.add_argument("--train-data", default="/home/yezhe/数据集/HotpotQA/processed/hotpot_train_context_qa.jsonl")
-    parser.add_argument("--val-data", default="/home/yezhe/数据集/HotpotQA/processed/hotpot_dev_context_qa.jsonl")
+    parser.add_argument("--train-data", default="/home/yezhe/数据集/gsm8k/train.jsonl")
+    parser.add_argument("--val-data", default="/home/yezhe/数据集/gsm8k/test.jsonl")
+    parser.add_argument("--phase2-data", help="Optional receiver-self-trace data for paper/q-aware Phase II")
+    parser.add_argument("--phase2-target-field", default="receiver_trace")
     parser.add_argument("--out", required=True)
     parser.add_argument("--method", choices=["paper_rec_then_mixed_generation", "mse_only", "mse_then_ce", "q_aware_functional"], required=True)
     parser.add_argument("--init-checkpoint")
@@ -259,6 +281,7 @@ def main():
     parser.add_argument("--max-train-samples", type=int, default=512)
     parser.add_argument("--max-val-samples", type=int, default=64)
     parser.add_argument("--max-source-tokens", type=int, default=256)
+    parser.add_argument("--answer-mode", choices=["full", "final_only"], default="full")
     parser.add_argument("--phase1-epochs", type=int, default=1)
     parser.add_argument("--phase2-epochs", type=int, default=1)
     parser.add_argument("--phase1-lr", type=float, default=2e-4)
@@ -290,6 +313,7 @@ def main():
     output = Path(args.out)
     output.mkdir(parents=True, exist_ok=True)
     train_rows = load_rows(args.train_data, args.max_train_samples)
+    phase2_rows = load_rows(args.phase2_data, args.max_train_samples) if args.phase2_data else train_rows
     val_rows = load_rows(args.val_data, args.max_val_samples)
     check_rows = train_rows[: args.tokenizer_check_samples] + val_rows[: args.tokenizer_check_samples]
     sender_tokenizer = AutoTokenizer.from_pretrained(args.sender_model, trust_remote_code=True)
@@ -324,9 +348,18 @@ def main():
     plan = method_plan(args.method, args)
     metadata = {}
     for stage_index, (stage_name, lr, epochs) in enumerate(plan):
+        use_phase2_trace = uses_phase2_self_trace(args, stage_name)
+        stage_rows = phase2_rows if use_phase2_trace else train_rows
+        if use_phase2_trace:
+            missing = [idx for idx, row in enumerate(stage_rows[:16]) if row.get(args.phase2_target_field) is None]
+            if missing:
+                raise ValueError(
+                    f"Phase II {args.method} training requires field '{args.phase2_target_field}' in self-trace rows; "
+                    f"missing in early rows {missing}. Generate traces first or pass --phase2-data."
+                )
         optimizer = torch.optim.AdamW(adapter.parameters(), lr=lr, weight_decay=args.weight_decay)
         for _ in range(epochs):
-            global_step = train_stage(sender, receiver, receiver_tokenizer, adapter, train_rows, optimizer, args, stage_name, stage_index, history, global_step)
+            global_step = train_stage(sender, receiver, receiver_tokenizer, adapter, stage_rows, optimizer, args, stage_name, stage_index, history, global_step)
         validation = validate(sender, receiver, receiver_tokenizer, adapter, val_rows, args)
         metadata = {
             "args": {k: v for k, v in vars(args).items() if k != "device_obj"},
@@ -338,10 +371,14 @@ def main():
             "init_checkpoint_metadata": init_metadata,
             "loss_definitions": {
                 "phase1": "receiver_cache_reconstruction_loss = mean_l,g MSE(K_trans,K_receiver)+MSE(V_trans,V_receiver)",
-                "phase2": "generation_loss = -sum_t log p_R(y_t | y_<t, translated_cache, X_R), mixed over context-aware X_R=X and context-unaware X_R=empty",
+                "phase2": "paper_rec_then_mixed_generation uses receiver-self traces: generation_loss = -sum_t log p_R(trace_t | trace_<t, translated_cache, X_R), mixed over context-aware X_R=X and context-unaware X_R=empty",
                 "mse_then_ce_baseline": "receiver_cache_reconstruction followed by context-unaware gold-answer CE",
-                "q_aware_functional": "ours: receiver_cache_reconstruction followed by mixed generation CE + logit KL + Q-aware route/readout alignment + weak reconstruction",
+                "q_aware_functional": "ours: receiver_cache_reconstruction followed by receiver-self trace mixed generation CE + logit KL + Q-aware route/readout alignment + weak reconstruction",
             },
+            "paper_phase2_data": args.phase2_data,
+            "paper_phase2_target_field": args.phase2_target_field,
+            "qaware_phase2_data": args.phase2_data if args.method == "q_aware_functional" else None,
+            "qaware_phase2_target_field": args.phase2_target_field if args.method == "q_aware_functional" else None,
             "source_x": "context + question, no gold answer",
             "context_aware_receiver_input": "X + Answer: + answer_prefix",
             "context_unaware_receiver_input": "Answer: + answer_prefix",
