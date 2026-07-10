@@ -1,0 +1,86 @@
+{
+  "status": "complete",
+  "args": {
+    "receiver_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+    "eval_cache": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_oracle_reader_seed1234/cache/eval_oracle_slots.pt",
+    "checkpoint": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_oracle_reader_seed1234/train/checkpoint_latest.pt",
+    "out": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_oracle_reader_seed1234/eval",
+    "conditions": [
+      "question_only",
+      "a_only",
+      "b_only",
+      "a_plus_b",
+      "mismatched_a_plus_b",
+      "shuffled_a_plus_b"
+    ],
+    "max_samples": 128,
+    "max_new_tokens": 32,
+    "prompt_style": "chat",
+    "p0_summary": "/home/yezhe/伪查询/runs/composable_evidence_kv_p0_hotpotqa_seed1234/results/summary.json",
+    "seed": 1234,
+    "device": "cuda",
+    "dtype": "float16",
+    "overwrite": false
+  },
+  "n": 128,
+  "conditions": [
+    {
+      "condition": "question_only",
+      "n": 128,
+      "exact_match": 0.0703125,
+      "answer_f1": 0.12182849702380953,
+      "contains_gold": 0.09375,
+      "mean_generated_tokens": 5.8203125
+    },
+    {
+      "condition": "a_only",
+      "n": 128,
+      "exact_match": 0.109375,
+      "answer_f1": 0.17454443400167086,
+      "contains_gold": 0.1171875,
+      "mean_generated_tokens": 4.9375
+    },
+    {
+      "condition": "b_only",
+      "n": 128,
+      "exact_match": 0.1015625,
+      "answer_f1": 0.16927409670008353,
+      "contains_gold": 0.1171875,
+      "mean_generated_tokens": 4.8125
+    },
+    {
+      "condition": "a_plus_b",
+      "n": 128,
+      "exact_match": 0.1015625,
+      "answer_f1": 0.16759998955722638,
+      "contains_gold": 0.1171875,
+      "mean_generated_tokens": 4.9140625
+    },
+    {
+      "condition": "mismatched_a_plus_b",
+      "n": 128,
+      "exact_match": 0.0859375,
+      "answer_f1": 0.15359949352548036,
+      "contains_gold": 0.09375,
+      "mean_generated_tokens": 4.7734375
+    },
+    {
+      "condition": "shuffled_a_plus_b",
+      "n": 128,
+      "exact_match": 0.1015625,
+      "answer_f1": 0.16759998955722638,
+      "contains_gold": 0.1171875,
+      "mean_generated_tokens": 4.9140625
+    }
+  ],
+  "paired": {
+    "n": 128,
+    "mean_ab_f1_gain_over_best_single": -0.007316468253968254,
+    "ab_beats_both_single_f1_rate": 0.0,
+    "compositional_exact_match_rate": 0.0,
+    "ab_f1_gain_over_question_only": 0.04577149253341688,
+    "correct_vs_mismatched_ab_f1_gap": 0.01400049603174603,
+    "slot_permutation_prediction_match_rate": 1.0,
+    "p0_full_text_f1_gap_closure": 0.08790480664404388
+  }
+}

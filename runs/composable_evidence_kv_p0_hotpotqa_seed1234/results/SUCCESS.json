@@ -1,0 +1,82 @@
+{
+  "status": "complete",
+  "args": {
+    "model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+    "data": "/home/yezhe/数据集/HotpotQA/raw/hotpot_dev_distractor_v1.json",
+    "out": "runs/composable_evidence_kv_p0_hotpotqa_seed1234/results",
+    "max_samples": 128,
+    "max_input_tokens": 4096,
+    "max_new_tokens": 32,
+    "conditions": [
+      "question_only",
+      "a_only",
+      "b_only",
+      "a_plus_b"
+    ],
+    "prompt_style": "chat",
+    "seed": 1234,
+    "device": "cuda",
+    "dtype": "float16",
+    "dry_run": false,
+    "overwrite": false
+  },
+  "device": "cuda",
+  "resolved_dtype": "torch.float16",
+  "n": 128,
+  "rejected_before_limit": 0,
+  "conditions": [
+    {
+      "condition": "question_only",
+      "n": 128,
+      "exact_match": 0.0703125,
+      "answer_f1": 0.12182849702380953,
+      "contains_gold": 0.09375,
+      "mean_generated_tokens": 5.8203125,
+      "mean_input_tokens": 71.7265625,
+      "truncated_rate": 0.0,
+      "mean_latency_seconds": 0.19501027015940053
+    },
+    {
+      "condition": "a_only",
+      "n": 128,
+      "exact_match": 0.40625,
+      "answer_f1": 0.5018870095386639,
+      "contains_gold": 0.4453125,
+      "mean_generated_tokens": 5.3828125,
+      "mean_input_tokens": 791.125,
+      "truncated_rate": 0.0,
+      "mean_latency_seconds": 0.23312951388652436
+    },
+    {
+      "condition": "b_only",
+      "n": 128,
+      "exact_match": 0.3359375,
+      "answer_f1": 0.44713936237373736,
+      "contains_gold": 0.40625,
+      "mean_generated_tokens": 5.2578125,
+      "mean_input_tokens": 773.984375,
+      "truncated_rate": 0.0,
+      "mean_latency_seconds": 0.2247621396163595
+    },
+    {
+      "condition": "a_plus_b",
+      "n": 128,
+      "exact_match": 0.4921875,
+      "answer_f1": 0.6425223507599427,
+      "contains_gold": 0.578125,
+      "mean_generated_tokens": 5.671875,
+      "mean_input_tokens": 1499.3828125,
+      "truncated_rate": 0.0,
+      "mean_latency_seconds": 0.372876982386515
+    }
+  ],
+  "paired": {
+    "n": 128,
+    "mean_ab_f1_gain_over_best_single": -0.05841994377150627,
+    "ab_beats_both_single_f1_rate": 0.0390625,
+    "compositional_exact_match_rate": 0.0234375,
+    "ab_f1_gain_over_question_only": 0.5206938537361331,
+    "answer_literal_in_source_a_rate": 0.6640625,
+    "answer_literal_in_source_b_rate": 0.609375
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "args": {
+    "receiver_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+    "train_cache": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_oracle_reader_seed1234/cache/train_oracle_slots.pt",
+    "out": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_oracle_reader_seed1234/train",
+    "reader_layers": [
+      8,
+      16,
+      24
+    ],
+    "shared_dim": 256,
+    "reader_heads": 4,
+    "epochs": 3,
+    "lr": 0.0002,
+    "weight_decay": 0.01,
+    "max_length": 256,
+    "gradient_accumulation": 8,
+    "contrast_weight": 0.2,
+    "contrast_margin": 0.2,
+    "contrast_every": 4,
+    "prompt_style": "chat",
+    "seed": 1234,
+    "device": "cuda",
+    "dtype": "float16"
+  },
+  "n": 1024,
+  "steps": 3072,
+  "checkpoint": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_oracle_reader_seed1234/train/checkpoint_latest.pt"
+}
