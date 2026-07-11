@@ -1,0 +1,99 @@
+{
+  "status": "complete",
+  "args": {
+    "model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "test_index": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_causal_native_seed1234/cache_qwen3_8b/test/index.json",
+    "checkpoint": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_causal_native_seed1234/p15_train_qwen3_8b/checkpoint_latest.pt",
+    "out": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_causal_native_seed1234/p15_eval_qwen3_8b",
+    "max_pairs": 256,
+    "max_new_tokens": 64,
+    "seed": 1234,
+    "device": "cuda",
+    "dtype": "float16"
+  },
+  "conditions": [
+    {
+      "condition": "correct",
+      "n": 512,
+      "exact_match": 0.2265625,
+      "token_f1": 0.3369140625,
+      "answer_found_rate": 0.447265625,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 15.529296875,
+      "own_answer_rate": 0.2265625
+    },
+    {
+      "condition": "corrupted",
+      "n": 512,
+      "exact_match": 0.96484375,
+      "token_f1": 0.96484375,
+      "answer_found_rate": 0.96484375,
+      "eos_rate": 0.955078125,
+      "mean_generated_tokens": 38.3671875,
+      "own_answer_rate": 0.0
+    },
+    {
+      "condition": "mismatched",
+      "n": 512,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "answer_found_rate": 0.44921875,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 15.46875,
+      "own_answer_rate": 0.22265625
+    },
+    {
+      "condition": "question_only",
+      "n": 512,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "answer_found_rate": 0.96484375,
+      "eos_rate": 0.9609375,
+      "mean_generated_tokens": 38.375,
+      "own_answer_rate": 0.0
+    },
+    {
+      "condition": "shuffled",
+      "n": 512,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "answer_found_rate": 0.44921875,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 15.458984375,
+      "own_answer_rate": 0.21484375
+    },
+    {
+      "condition": "state_ablation",
+      "n": 512,
+      "exact_match": 0.001953125,
+      "token_f1": 0.0029296875,
+      "answer_found_rate": 0.546875,
+      "eos_rate": 0.97265625,
+      "mean_generated_tokens": 32.31640625,
+      "own_answer_rate": 0.001953125
+    },
+    {
+      "condition": "state_swap",
+      "n": 512,
+      "exact_match": 0.2265625,
+      "token_f1": 0.3369140625,
+      "answer_found_rate": 0.447265625,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 15.529296875,
+      "own_answer_rate": 0.220703125
+    },
+    {
+      "condition": "zero",
+      "n": 512,
+      "exact_match": 0.96875,
+      "token_f1": 0.96875,
+      "answer_found_rate": 0.96875,
+      "eos_rate": 0.95703125,
+      "mean_generated_tokens": 38.4609375,
+      "own_answer_rate": 0.0
+    }
+  ],
+  "counterfactual_consistency": 0.0078125,
+  "state_ablation_em_drop": 0.224609375,
+  "state_swap_answer_follow_rate": 0.2265625
+}

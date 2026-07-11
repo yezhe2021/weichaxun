@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "args": {
+    "model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "train_index": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_causal_native_seed1234/cache_qwen3_8b/train/index.json",
+    "out": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_causal_native_seed1234/p15_train_qwen3_8b",
+    "state_dim": 1024,
+    "reader_heads": 8,
+    "reader_rounds": 3,
+    "writer_layers": [
+      12,
+      24,
+      34
+    ],
+    "writer_bottleneck": 256,
+    "max_gate": 0.5,
+    "epochs": 3,
+    "lr": 0.0002,
+    "weight_decay": 0.01,
+    "max_length": 320,
+    "gradient_accumulation": 8,
+    "distill_weight": 0.2,
+    "depend_weight": 0.2,
+    "distill_temperature": 2.0,
+    "depend_margin": 0.5,
+    "warmup_steps": 100,
+    "seed": 1234,
+    "device": "cuda",
+    "dtype": "float16"
+  },
+  "steps": 12288,
+  "checkpoint": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_causal_native_seed1234/p15_train_qwen3_8b/checkpoint_latest.pt"
+}
