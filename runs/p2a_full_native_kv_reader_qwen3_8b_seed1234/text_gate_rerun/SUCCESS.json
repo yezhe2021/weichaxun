@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "args": {
+    "model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "data": "/home/yezhe/伪查询/runs/p2a_full_native_kv_reader_qwen3_8b_seed1234/data_rerun/test.jsonl",
+    "out": "/home/yezhe/伪查询/runs/p2a_full_native_kv_reader_qwen3_8b_seed1234/text_gate_rerun",
+    "max_pairs": 16,
+    "max_new_tokens": 24,
+    "device": "cuda",
+    "dtype": "float16"
+  },
+  "conditions": {
+    "question_only": {
+      "n": 16,
+      "exact_match": 0.0
+    },
+    "full_text_base": {
+      "n": 16,
+      "exact_match": 0.9375
+    },
+    "full_text_counterfactual": {
+      "n": 16,
+      "exact_match": 0.9375
+    }
+  },
+  "full_text_counterfactual_consistency": 0.9375,
+  "gate_passed": true
+}

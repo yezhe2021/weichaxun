@@ -1,0 +1,19 @@
+{
+  "args": {
+    "model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "out": "/home/yezhe/伪查询/runs/p2a_full_native_kv_reader_qwen3_8b_seed1234/data_rerun",
+    "train_pairs": 64,
+    "test_pairs": 16,
+    "seed": 1234
+  },
+  "train_rows": 128,
+  "test_rows": 32,
+  "counterfactual_constraints": {
+    "same_question": true,
+    "same_evidence_a": true,
+    "same_bridge": true,
+    "same_target_relation_position": true,
+    "equal_answer_token_length": true,
+    "answer_absent_from_question": true
+  }
+}
