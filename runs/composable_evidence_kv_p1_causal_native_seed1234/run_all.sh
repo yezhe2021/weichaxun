@@ -12,6 +12,7 @@ TRAIN_OUT="${TRAIN_OUT:-${ROOT}/train_qwen3_8b}"
 EVAL_OUT="${EVAL_OUT:-${ROOT}/eval_qwen3_8b}"
 P15_TRAIN_OUT="${P15_TRAIN_OUT:-${ROOT}/p15_train_qwen3_8b}"
 P15_EVAL_OUT="${P15_EVAL_OUT:-${ROOT}/p15_eval_qwen3_8b}"
+P15_DIAG_OUT="${P15_DIAG_OUT:-${ROOT}/p15_state_content_diagnosis}"
 BENCHMARK_OUT="${BENCHMARK_OUT:-${ROOT}/full_text_benchmark_qwen3_8b}"
 IMPROVED_FULL_TEXT_OUT="${IMPROVED_FULL_TEXT_OUT:-${ROOT}/full_text_improved_qwen3_8b}"
 BENCHMARK_SAMPLES="${BENCHMARK_SAMPLES:-256}"
@@ -129,6 +130,17 @@ case "${1:-help}" in
       --device "${DEVICE}" \
       --dtype "${DTYPE}"
     ;;
+  p15-diagnose)
+    "${PY}" "${ROOT}/diagnose_p15_state_content.py" \
+      --train-index "${CACHE_ROOT}/train/index.json" \
+      --test-index "${CACHE_ROOT}/test/index.json" \
+      --checkpoint "${P15_TRAIN_OUT}/checkpoint_latest.pt" \
+      --out "${P15_DIAG_OUT}" \
+      --train-pairs 32 \
+      --test-pairs 32 \
+      --seed "${SEED}" \
+      --device "${DEVICE}"
+    ;;
   p15-all)
     bash "${ROOT}/run_all.sh" cache-train
     bash "${ROOT}/run_all.sh" cache-test
@@ -148,6 +160,7 @@ Run each stage separately and inspect its output before continuing:
   bash run_all.sh eval
   bash run_all.sh p15-train
   bash run_all.sh p15-eval
+  bash run_all.sh p15-diagnose
   bash run_all.sh p15-all
 
 There is intentionally no all-in-one target.

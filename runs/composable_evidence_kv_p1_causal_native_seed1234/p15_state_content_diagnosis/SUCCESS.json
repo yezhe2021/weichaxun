@@ -1,0 +1,84 @@
+{
+  "status": "complete",
+  "args": {
+    "train_index": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_causal_native_seed1234/cache_qwen3_8b/train/index.json",
+    "test_index": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_causal_native_seed1234/cache_qwen3_8b/test/index.json",
+    "checkpoint": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_causal_native_seed1234/p15_train_qwen3_8b/checkpoint_latest.pt",
+    "out": "/home/yezhe/伪查询/runs/composable_evidence_kv_p1_causal_native_seed1234/p15_state_content_diagnosis",
+    "train_pairs": 32,
+    "test_pairs": 32,
+    "probe_epochs": 100,
+    "probe_dim": 128,
+    "probe_lr": 0.003,
+    "seed": 1234,
+    "device": "cuda"
+  },
+  "train_pairs": 32,
+  "test_pairs": 32,
+  "random_condition_baseline": 0.2,
+  "random_candidate_baseline": 0.25,
+  "condition_probe_train_accuracy": 0.4375,
+  "condition_probe_test_accuracy": 0.42500001192092896,
+  "correct_state_effective_rank": 6.723304748535156,
+  "geometry": {
+    "mean_cosine_distance_correct_counterfactual": 1.8440186977386475e-07,
+    "mean_normalized_l2_correct_counterfactual": 0.0003778092679054268,
+    "mean_cosine_distance_correct_shuffled": 1.241639256477356e-05,
+    "mean_normalized_l2_correct_shuffled": 0.00472104640721227,
+    "mean_cosine_distance_correct_mismatched": 2.4417415261268616e-05,
+    "mean_normalized_l2_correct_mismatched": 0.006737765637808479,
+    "mean_cosine_distance_correct_zero": 1.8100275583565235,
+    "mean_normalized_l2_correct_zero": 2.609766848385334,
+    "mean_round_1_cf_cosine_distance": 1.3299286365509033e-06,
+    "mean_round_1_correct_a_mass": 0.4041434731334448,
+    "mean_round_1_correct_b_mass": 0.5958565464243293,
+    "mean_round_1_correct_entropy": 0.401000895537436,
+    "mean_round_1_cf_attention_js": 0.00510705352507127,
+    "mean_round_2_cf_cosine_distance": 1.7695128917694092e-07,
+    "mean_round_2_state_update_l2": 1.7049753405153751,
+    "mean_round_2_correct_a_mass": 0.5538183785974979,
+    "mean_round_2_correct_b_mass": 0.4461816498078406,
+    "mean_round_2_correct_entropy": 0.4629649119451642,
+    "mean_round_2_cf_attention_js": 0.003910004448877638,
+    "mean_round_3_cf_cosine_distance": 1.8440186977386475e-07,
+    "mean_round_3_state_update_l2": 0.5071007087826729,
+    "mean_round_3_correct_a_mass": 0.62854815274477,
+    "mean_round_3_correct_b_mass": 0.37145186378620565,
+    "mean_round_3_correct_entropy": 0.42948367446660995,
+    "mean_round_3_cf_attention_js": 0.00874663309352447
+  },
+  "candidate_probes": [
+    {
+      "round": 1,
+      "train_top1": 1.0,
+      "test_top1": 1.0,
+      "test_mrr": 1.0,
+      "test_base_top1": 1.0,
+      "test_counterfactual_top1": 1.0,
+      "label_shuffle_test_top1": 0.40625
+    },
+    {
+      "round": 2,
+      "train_top1": 1.0,
+      "test_top1": 1.0,
+      "test_mrr": 1.0,
+      "test_base_top1": 1.0,
+      "test_counterfactual_top1": 1.0,
+      "label_shuffle_test_top1": 0.234375
+    },
+    {
+      "round": 3,
+      "train_top1": 1.0,
+      "test_top1": 1.0,
+      "test_mrr": 1.0,
+      "test_base_top1": 1.0,
+      "test_counterfactual_top1": 1.0,
+      "label_shuffle_test_top1": 0.15625
+    }
+  ],
+  "diagnostic_flags": {
+    "condition_information_present": true,
+    "answer_information_present": true,
+    "best_candidate_probe_top1": 1.0
+  }
+}
