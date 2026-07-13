@@ -1,0 +1,9 @@
+condition,metric_role,n,target_em,insufficient_rate,answer_found_rate,eos_rate,mean_generated_tokens
+correct_kv,positive_accuracy,64,0.9375,0.0,1.0,1.0,2.046875
+counterfactual_kv,positive_accuracy,64,0.953125,0.0,1.0,1.0,2.046875
+full_text_prefilled_final_base,positive_accuracy,64,1.0,0.0,1.0,1.0,2.140625
+full_text_prefilled_final_counterfactual,positive_accuracy,64,1.0,0.0,1.0,1.0,2.203125
+mismatched_kv,original_answer_leakage,64,0.0,0.0,1.0,0.96875,2.828125
+reader_off,original_answer_leakage,64,0.0,1.0,1.0,1.0,4.0
+shuffled_kv,original_answer_leakage,64,0.015625,0.0,1.0,1.0,2.046875
+zero_kv,original_answer_leakage,64,0.0,1.0,1.0,1.0,4.0

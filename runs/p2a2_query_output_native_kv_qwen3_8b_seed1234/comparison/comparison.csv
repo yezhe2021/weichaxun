@@ -1,0 +1,4 @@
+config_name,query_rank,output_rank,kv_paired_consistency,full_text_paired_consistency,correct_kv_target_em,correct_kv_eos_rate,counterfactual_kv_target_em,counterfactual_kv_eos_rate,full_text_prefilled_final_base_target_em,full_text_prefilled_final_base_eos_rate,full_text_prefilled_final_counterfactual_target_em,full_text_prefilled_final_counterfactual_eos_rate,mismatched_kv_target_em,mismatched_kv_eos_rate,reader_off_target_em,reader_off_eos_rate,shuffled_kv_target_em,shuffled_kv_eos_rate,zero_kv_target_em,zero_kv_eos_rate
+output_only,0,32,0.890625,1.0,0.9375,1.0,0.953125,1.0,1.0,1.0,1.0,1.0,0.0,0.96875,0.0,1.0,0.015625,1.0,0.0,1.0
+query_only,32,0,0.984375,1.0,0.984375,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.015625,1.0,0.0,1.0,0.0,1.0,0.0,1.0
+query_output,32,32,0.8125,1.0,0.890625,1.0,0.921875,1.0,1.0,1.0,1.0,1.0,0.046875,1.0,0.0,1.0,0.0,1.0,0.0,1.0
