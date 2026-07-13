@@ -21,6 +21,7 @@ from p2a_common import (
     parse_dtype,
     resolve_device,
     student_prompt,
+    student_prefixed_prompt,
     summarize_diagnostics,
     write_jsonl,
     zero_memory,
@@ -91,14 +92,14 @@ def condition_summary(records):
     return output
 
 
-def main():
+def main(default_max_new_tokens=24):
     parser = argparse.ArgumentParser(description="Free-running evaluation for the P2-A native-KV Reader")
     parser.add_argument("--model", default="/home/yezhe/all_models/models/Qwen/Qwen3-8B")
     parser.add_argument("--test-index", required=True)
     parser.add_argument("--checkpoint", required=True)
     parser.add_argument("--out", required=True)
     parser.add_argument("--max-pairs", type=int, default=16)
-    parser.add_argument("--max-new-tokens", type=int, default=24)
+    parser.add_argument("--max-new-tokens", type=int, default=default_max_new_tokens)
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--device", choices=("auto", "cpu", "cuda"), default="auto")
     parser.add_argument("--dtype", choices=("auto", "float16", "bfloat16", "float32"), default="auto")
@@ -128,6 +129,10 @@ def main():
         reader_rank=int(train_args["reader_rank"]),
     ).to(device).eval()
     adapter.load_state_dict(checkpoint["adapter"])
+    prefill_final = bool(train_args.get("prefill_final", False))
+
+    def receiver_prompt(row):
+        return student_prefixed_prompt(tokenizer, row) if prefill_final else student_prompt(tokenizer, row)
 
     records = []
     layer_rows = []
@@ -139,7 +144,7 @@ def main():
         cf_memory = memory_to(counterfactual["memory"], device, dtype)
         other_memory = memory_to(other["memory"], device, dtype)
         conditions = [
-            ("question_only", student_prompt(tokenizer, base), None, base["answer"], False),
+            ("question_only", receiver_prompt(base), None, base["answer"], False),
             ("full_text_correct", full_text_prompt(tokenizer, base), None, base["answer"], False),
             (
                 "full_text_counterfactual",
@@ -148,24 +153,24 @@ def main():
                 counterfactual["answer"],
                 False,
             ),
-            ("correct_kv", student_prompt(tokenizer, base), base_memory, base["answer"], True),
+            ("correct_kv", receiver_prompt(base), base_memory, base["answer"], True),
             (
                 "counterfactual_kv",
-                student_prompt(tokenizer, base),
+                receiver_prompt(base),
                 cf_memory,
                 counterfactual["answer"],
                 True,
             ),
-            ("shuffled_kv", student_prompt(tokenizer, base), other_memory, "INSUFFICIENT", True),
+            ("shuffled_kv", receiver_prompt(base), other_memory, "INSUFFICIENT", True),
             (
                 "mismatched_kv",
-                student_prompt(tokenizer, base),
+                receiver_prompt(base),
                 mismatched_memory(base_memory, other_memory),
                 "INSUFFICIENT",
                 True,
             ),
-            ("zero_kv", student_prompt(tokenizer, base), zero_memory(base_memory), "INSUFFICIENT", True),
-            ("external_reader_off", student_prompt(tokenizer, base), base_memory, base["answer"], False),
+            ("zero_kv", receiver_prompt(base), zero_memory(base_memory), "INSUFFICIENT", True),
+            ("external_reader_off", receiver_prompt(base), base_memory, base["answer"], False),
         ]
         allowed = list(
             dict.fromkeys(

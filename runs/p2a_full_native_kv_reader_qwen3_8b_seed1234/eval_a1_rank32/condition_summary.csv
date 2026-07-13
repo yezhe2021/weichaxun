@@ -1,0 +1,10 @@
+condition,n,exact_match,answer_found_rate,eos_rate,mean_generated_tokens
+correct_kv,16,0.1875,0.5,1.0,2.0
+counterfactual_kv,16,0.375,0.5,1.0,2.0
+external_reader_off,16,0.0,1.0,1.0,4.0
+full_text_correct,16,0.9375,0.9375,0.6875,22.375
+full_text_counterfactual,16,0.9375,0.9375,0.8125,22.1875
+mismatched_kv,16,0.0,0.25,1.0,2.0
+question_only,16,0.0,1.0,1.0,4.0
+shuffled_kv,16,0.0,0.4375,1.0,2.0
+zero_kv,16,1.0,1.0,1.0,4.0

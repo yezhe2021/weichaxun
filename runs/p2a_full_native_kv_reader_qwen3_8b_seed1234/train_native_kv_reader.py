@@ -15,9 +15,11 @@ from p2a_common import (
     iter_cache,
     memory_to,
     pack_answer,
+    pack_prefixed_answer,
     parse_dtype,
     resolve_device,
     student_prompt,
+    student_prefixed_prompt,
     write_jsonl,
 )
 
@@ -30,9 +32,13 @@ def load_pairs(index_path, max_pairs):
     return pairs[:max_pairs] if max_pairs > 0 else pairs
 
 
-def sequence_nll(receiver, tokenizer, adapter, row, memory, answer, max_length, device):
-    prompt = student_prompt(tokenizer, row)
-    ids, mask, labels = pack_answer(tokenizer, prompt, answer, max_length, device)
+def sequence_nll(receiver, tokenizer, adapter, row, memory, answer, max_length, device, prefill_final=False):
+    if prefill_final:
+        prompt = student_prefixed_prompt(tokenizer, row)
+        ids, mask, labels = pack_prefixed_answer(tokenizer, prompt, answer, max_length, device)
+    else:
+        prompt = student_prompt(tokenizer, row)
+        ids, mask, labels = pack_answer(tokenizer, prompt, answer, max_length, device)
     with adapter.inject(receiver, memory):
         output = receiver(
             input_ids=ids,
@@ -44,17 +50,18 @@ def sequence_nll(receiver, tokenizer, adapter, row, memory, answer, max_length, 
     return output.loss.float()
 
 
-def main():
+def main(default_reader_rank=0, default_gate_init=0.0, default_epochs=1, default_prefill_final=False):
     parser = argparse.ArgumentParser(description="Train the P2-A full native-KV external Reader upper bound")
     parser.add_argument("--model", default="/home/yezhe/all_models/models/Qwen/Qwen3-8B")
     parser.add_argument("--train-index", required=True)
     parser.add_argument("--out", required=True)
     parser.add_argument("--max-pairs", type=int, default=64)
-    parser.add_argument("--epochs", type=int, default=1)
+    parser.add_argument("--epochs", type=int, default=default_epochs)
     parser.add_argument("--max-length", type=int, default=256)
     parser.add_argument("--max-gate", type=float, default=0.5)
-    parser.add_argument("--gate-init", type=float, default=0.0)
-    parser.add_argument("--reader-rank", type=int, default=0)
+    parser.add_argument("--gate-init", type=float, default=default_gate_init)
+    parser.add_argument("--reader-rank", type=int, default=default_reader_rank)
+    parser.add_argument("--prefill-final", action="store_true", default=default_prefill_final)
     parser.add_argument("--cf-weight", type=float, default=0.5)
     parser.add_argument("--cf-margin", type=float, default=0.5)
     parser.add_argument("--lr", type=float, default=5e-3)
@@ -103,16 +110,16 @@ def main():
             cf_memory = memory_to(counterfactual["memory"], device, dtype)
 
             nll_b_y = sequence_nll(
-                receiver, tokenizer, adapter, base, base_memory, base["answer"], args.max_length, device
+                receiver, tokenizer, adapter, base, base_memory, base["answer"], args.max_length, device, args.prefill_final
             )
             nll_b_cf = sequence_nll(
-                receiver, tokenizer, adapter, base, base_memory, counterfactual["answer"], args.max_length, device
+                receiver, tokenizer, adapter, base, base_memory, counterfactual["answer"], args.max_length, device, args.prefill_final
             )
             nll_cf_cf = sequence_nll(
-                receiver, tokenizer, adapter, base, cf_memory, counterfactual["answer"], args.max_length, device
+                receiver, tokenizer, adapter, base, cf_memory, counterfactual["answer"], args.max_length, device, args.prefill_final
             )
             nll_cf_y = sequence_nll(
-                receiver, tokenizer, adapter, base, cf_memory, base["answer"], args.max_length, device
+                receiver, tokenizer, adapter, base, cf_memory, base["answer"], args.max_length, device, args.prefill_final
             )
             generation_loss = 0.5 * (nll_b_y + nll_cf_cf)
             margin_b = F.relu(args.cf_margin + nll_b_y - nll_b_cf)

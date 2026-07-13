@@ -65,6 +65,10 @@ def student_prompt(tokenizer, row):
     return f"{system}\n\n{user}\n\n"
 
 
+def student_prefixed_prompt(tokenizer, row):
+    return student_prompt(tokenizer, row) + "FINAL:"
+
+
 def full_text_prompt(tokenizer, row):
     system = (
         "Use only the supplied evidence. Follow the relation from the person to the organization, "
@@ -109,6 +113,16 @@ def pack_answer(tokenizer, prompt, answer, max_length, device):
     return ids, torch.ones_like(ids), labels
 
 
+def pack_prefixed_answer(tokenizer, prompt, answer, max_length, device):
+    prompt_ids = tokenizer(prompt, add_special_tokens=False).input_ids
+    suffix_ids = tokenizer(" " + answer + (tokenizer.eos_token or ""), add_special_tokens=False).input_ids
+    suffix_ids = suffix_ids[: max(1, max_length - len(prompt_ids))]
+    ids = torch.tensor([prompt_ids + suffix_ids], dtype=torch.long, device=device)
+    labels = ids.clone()
+    labels[:, : len(prompt_ids)] = -100
+    return ids, torch.ones_like(ids), labels
+
+
 def normalize_answer(text):
     return re.sub(r"^[\s`*\"']+|[\s`*\"'.,;:!?]+$", "", str(text)).casefold()
 
@@ -142,17 +156,23 @@ def iter_cache(index_path):
 
 
 def memory_to(memory, device, dtype=None):
-    return {
+    output = {
         "keys": [value.to(device=device, dtype=dtype or value.dtype) for value in memory["keys"]],
         "values": [value.to(device=device, dtype=dtype or value.dtype) for value in memory["values"]],
     }
+    if "answer_token_mask" in memory:
+        output["answer_token_mask"] = memory["answer_token_mask"].to(device=device, dtype=torch.bool)
+    return output
 
 
 def zero_memory(memory):
-    return {
+    output = {
         "keys": [torch.zeros_like(value) for value in memory["keys"]],
         "values": [torch.zeros_like(value) for value in memory["values"]],
     }
+    if "answer_token_mask" in memory:
+        output["answer_token_mask"] = memory["answer_token_mask"]
+    return output
 
 
 def mismatched_memory(key_source, value_source):
@@ -162,7 +182,10 @@ def mismatched_memory(key_source, value_source):
         length = min(key.shape[1], value.shape[1])
         keys.append(key[:, :length])
         values.append(value[:, :length])
-    return {"keys": keys, "values": values}
+    output = {"keys": keys, "values": values}
+    if "answer_token_mask" in value_source:
+        output["answer_token_mask"] = value_source["answer_token_mask"][: values[0].shape[1]]
+    return output
 
 
 class NativeKVExternalReader(nn.Module):
@@ -212,7 +235,8 @@ class NativeKVExternalReader(nn.Module):
         readout = readout.transpose(1, 2).reshape(batch, query_length, -1).contiguous()
         projected = attention.o_proj(readout)
         if self.reader_rank > 0:
-            projected = projected + self.up[layer_index](self.down[layer_index](projected))
+            correction = self.up[layer_index](self.down[layer_index](projected.float()))
+            projected = projected + correction.to(projected.dtype)
         gate = self.gates()[layer_index].to(projected.dtype)
         external = gate * projected
         if self._diagnostics is not None:
@@ -225,6 +249,14 @@ class NativeKVExternalReader(nn.Module):
                 (-(probability * probability.clamp_min(1e-8).log()).sum(dim=-1).mean()
                  / torch.log(torch.tensor(max(2, probability.shape[-1]), device=probability.device))).detach().cpu()
             )
+            answer_mask = self._memory.get("answer_token_mask")
+            if answer_mask is not None and answer_mask.numel() == probability.shape[-1] and answer_mask.any():
+                slot["target_attention_mass"] = float(
+                    probability[..., answer_mask].sum(dim=-1).mean().detach().cpu()
+                )
+            if self._diagnostics.get("_capture_vectors", False):
+                slot["readout_vector"] = projected[:, -1, :].detach().float().mean(dim=0).cpu()
+                slot["delta_vector"] = external[:, -1, :].detach().float().mean(dim=0).cpu()
         return external
 
     @contextmanager
@@ -260,6 +292,8 @@ class NativeKVExternalReader(nn.Module):
 def summarize_diagnostics(diagnostics):
     rows = []
     for layer, values in diagnostics.items():
+        if not isinstance(values, dict) or "calls" not in values:
+            continue
         calls = max(1, values["calls"])
         rows.append(
             {
@@ -268,6 +302,7 @@ def summarize_diagnostics(diagnostics):
                 "readout_norm": values["readout_norm"] / calls,
                 "delta_norm": values["delta_norm"] / calls,
                 "attention_entropy": values.get("attention_entropy", 0.0),
+                "target_attention_mass": values.get("target_attention_mass", 0.0),
             }
         )
     return sorted(rows, key=lambda row: row["layer"])

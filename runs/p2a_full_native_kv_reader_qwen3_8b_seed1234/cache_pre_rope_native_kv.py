@@ -21,6 +21,17 @@ def evidence_indices(offsets, spans):
     return selected
 
 
+def answer_mask(text, offsets, selected, answer, evidence_start):
+    start = text.find(answer, evidence_start)
+    if start < 0:
+        raise ValueError(f"Answer {answer!r} is absent from evidence")
+    end = start + len(answer)
+    mask = [offsets[index][0] < end and offsets[index][1] > start for index in selected]
+    if not any(mask):
+        raise ValueError(f"No answer tokens selected for {answer!r}")
+    return torch.tensor(mask, dtype=torch.bool)
+
+
 @torch.inference_mode()
 def encode_example(model, tokenizer, row, device, max_length):
     text, spans = sender_text(row)
@@ -34,6 +45,7 @@ def encode_example(model, tokenizer, row, device, max_length):
     if encoded.input_ids.shape[1] > max_length:
         raise ValueError(f"{row['id']} requires {encoded.input_ids.shape[1]} tokens, max_length={max_length}")
     indices = evidence_indices(encoded.offset_mapping[0].tolist(), spans)
+    target_mask = answer_mask(text, encoded.offset_mapping[0].tolist(), indices, row["answer"], spans[1][0])
     model_inputs = {
         "input_ids": encoded.input_ids.to(device),
         "attention_mask": encoded.attention_mask.to(device),
@@ -62,7 +74,7 @@ def encode_example(model, tokenizer, row, device, max_length):
         raise RuntimeError(f"Failed to capture all layers for {row['id']}")
     return {
         **row,
-        "memory": {"keys": captured_keys, "values": captured_values},
+        "memory": {"keys": captured_keys, "values": captured_values, "answer_token_mask": target_mask},
         "evidence_token_ids": encoded.input_ids[0, indices].tolist(),
         "evidence_tokens": len(indices),
         "sender_tokens": int(encoded.input_ids.shape[1]),
@@ -115,8 +127,9 @@ def main():
     with open(output / "index.json", "w", encoding="utf-8") as handle:
         json.dump(
             {
-                "format_version": 1,
+                "format_version": 2,
                 "coordinate_system": "pre_rope_qk_native_v",
+                "answer_token_mask": True,
                 "model": args.model,
                 "data": args.data,
                 "n": len(rows),
