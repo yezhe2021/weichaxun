@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "args": {
+    "sender_model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "data": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/data/test.jsonl",
+    "reader_checkpoint": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/train/query_only/checkpoint_latest.pt",
+    "out": "/home/yezhe/伪查询/runs/p2b_heterogeneous_writer_qwen3_4b_to_8b_seed1234/audit",
+    "samples": 32
+  },
+  "sender_geometry": {
+    "hidden_size": 2560,
+    "layers": 36,
+    "attention_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "vocab_size": 151936,
+    "rope_theta": 1000000
+  },
+  "receiver_geometry": {
+    "hidden_size": 4096,
+    "layers": 36,
+    "attention_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "vocab_size": 151936,
+    "rope_theta": 1000000
+  },
+  "raw_kv_shape_compatible": true,
+  "sample_token_alignment_rate": 1.0,
+  "reader_checkpoint_sha256": "68923c9350cce2620bf0598328b694cc07f5f73fe873910ef9cc1053d0e1066b",
+  "claim_scope": "Frozen Qwen3-8B Reader-compatible per-layer KV sender integration; not receiver-independent Canonical Evidence-KV."
+}

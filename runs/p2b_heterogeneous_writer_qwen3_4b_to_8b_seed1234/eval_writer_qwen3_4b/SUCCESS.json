@@ -1,0 +1,141 @@
+{
+  "status": "complete",
+  "args": {
+    "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "reader_checkpoint": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/train/query_only/checkpoint_latest.pt",
+    "writer_checkpoint": "/home/yezhe/伪查询/runs/p2b_heterogeneous_writer_qwen3_4b_to_8b_seed1234/train_writer_qwen3_4b/checkpoint_latest.pt",
+    "sender_index": "/home/yezhe/伪查询/runs/p2b_heterogeneous_writer_qwen3_4b_to_8b_seed1234/cache_qwen3_4b_native_kv_pairs/test/index.json",
+    "teacher_index": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/cache_native_kv_pairs/test/index.json",
+    "out": "/home/yezhe/伪查询/runs/p2b_heterogeneous_writer_qwen3_4b_to_8b_seed1234/eval_writer_qwen3_4b",
+    "max_pairs": 64,
+    "max_new_tokens": 24,
+    "device": "cuda",
+    "dtype": "float16"
+  },
+  "paired_consistency": {
+    "full_text": 1.0,
+    "native_8b": 0.984375,
+    "writer_4b": 0.9375,
+    "raw_4b": 0.078125
+  },
+  "conditions": [
+    {
+      "condition": "full_text_base",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 1.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 2.140625
+    },
+    {
+      "condition": "full_text_counterfactual",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 1.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 2.203125
+    },
+    {
+      "condition": "native_8b_base",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.984375,
+      "eos_rate": 1.0,
+      "answer_found_rate": 0.984375,
+      "mean_generated_tokens": 2.046875
+    },
+    {
+      "condition": "native_8b_counterfactual",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 1.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 2.046875
+    },
+    {
+      "condition": "raw_4b_base",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.109375,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 3.6875
+    },
+    {
+      "condition": "raw_4b_counterfactual",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.125,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 3.625
+    },
+    {
+      "condition": "reader_off",
+      "metric_role": "original_answer_leakage",
+      "n": 64,
+      "target_em": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 4.0
+    },
+    {
+      "condition": "writer_4b_base",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.96875,
+      "eos_rate": 1.0,
+      "answer_found_rate": 0.984375,
+      "mean_generated_tokens": 2.0625
+    },
+    {
+      "condition": "writer_4b_counterfactual",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.96875,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 2.046875
+    },
+    {
+      "condition": "writer_mismatched",
+      "metric_role": "original_answer_leakage",
+      "n": 64,
+      "target_em": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 0.78125,
+      "mean_generated_tokens": 3.6875
+    },
+    {
+      "condition": "writer_shuffled",
+      "metric_role": "original_answer_leakage",
+      "n": 64,
+      "target_em": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 0.984375,
+      "mean_generated_tokens": 2.0625
+    },
+    {
+      "condition": "zero_kv",
+      "metric_role": "original_answer_leakage",
+      "n": 64,
+      "target_em": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 4.0
+    }
+  ],
+  "native_gap_recovery": {
+    "mean_em_writer_vs_raw": 0.9732142857142857,
+    "paired_consistency_writer_vs_raw": 0.9482758620689655
+  },
+  "route_readout_summary": {
+    "route_kl_mean": 4.505349559726407,
+    "readout_cosine_mean": 0.6565856511555871,
+    "writer_target_attention_mass_mean": 0.03293049263431017,
+    "native_target_attention_mass_mean": 0.03578869904933008
+  }
+}
