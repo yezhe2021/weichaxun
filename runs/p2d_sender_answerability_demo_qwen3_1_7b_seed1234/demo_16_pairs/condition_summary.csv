@@ -1,0 +1,9 @@
+condition,n,exact_match,insufficient_rate,leak_target_hit_rate,answer_found_rate,eos_rate,mean_generated_tokens
+a_only,16,0.625,0.625,0.0,0.625,1.0,4.0
+b_only_base,16,1.0,1.0,0.0,1.0,1.0,4.0
+b_only_counterfactual,16,1.0,1.0,0.0,1.0,1.0,4.0
+full_text_base,16,0.4375,0.0,0.4375,0.875,0.9375,5.0
+full_text_counterfactual,16,0.5,0.0,0.5,0.9375,1.0,4.8125
+mismatched_b,16,1.0,1.0,0.0,1.0,1.0,4.0
+question_only,16,1.0,1.0,0.0,1.0,1.0,4.0
+shuffled_full_text,16,0.1875,0.1875,0.0,0.9375,0.9375,5.1875
