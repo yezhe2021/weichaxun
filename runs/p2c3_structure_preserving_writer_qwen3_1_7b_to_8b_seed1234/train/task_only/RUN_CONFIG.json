@@ -1,0 +1,53 @@
+{
+  "args": {
+    "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "reader_checkpoint": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/train/query_only/checkpoint_latest.pt",
+    "sender_index": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2c1_structural_writer_qwen3_1_7b_to_8b_seed1234/cache_qwen3_1_7b_native_kv_pairs/train/index.json",
+    "teacher_index": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/cache_native_kv_pairs/train/index.json",
+    "teacher_k_rms": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2c2_enhanced_global_sparse_writer_qwen3_1_7b_to_8b_seed1234/teacher_stats/teacher_k_rms.pt",
+    "out": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2c3_structure_preserving_writer_qwen3_1_7b_to_8b_seed1234/train/task_only",
+    "variant": "task_only",
+    "max_pairs": 512,
+    "epochs": 3,
+    "max_length": 256,
+    "top_k": 6,
+    "adapter_rank": 32,
+    "route_residual_scale": 0.25,
+    "dense_warmup_fraction": 0.1,
+    "cf_weight": 0.5,
+    "cf_margin": 0.5,
+    "negative_weight": 0.5,
+    "negative_margin": 0.5,
+    "route_weight": 0.005,
+    "readout_weight": 0.005,
+    "target_mass_weight": 0.002,
+    "routing_binding_weight": 0.01,
+    "token_binding_weight": 0.05,
+    "token_relation_weight": 0.025,
+    "readout_relation_weight": 0.025,
+    "relation_max_tokens": 64,
+    "aux_every": 8,
+    "lr": 0.0002,
+    "gradient_accumulation": 4,
+    "seed": 1234,
+    "device": "cuda",
+    "dtype": "float16"
+  },
+  "features": {
+    "shared_routing": false,
+    "structure_loss": false
+  },
+  "sender_geometry": {
+    "layers": 28,
+    "kv_heads": 8,
+    "head_dim": 128
+  },
+  "receiver_geometry": {
+    "layers": 36,
+    "kv_heads": 8,
+    "head_dim": 128
+  },
+  "trainable_writer_parameters": 14163048,
+  "receiver_trainable_parameters": 0,
+  "reader_trainable_parameters": 0
+}

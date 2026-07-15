@@ -1,0 +1,14 @@
+condition,metric_role,n,target_em,memory_answer_hit_rate,eos_rate,answer_found_rate,mean_generated_tokens
+enhanced_writer_1_7b_base,accuracy,64,0.0625,0.0625,1.0,1.0,2.078125
+enhanced_writer_1_7b_counterfactual,accuracy,64,0.0625,0.0625,1.0,1.0,2.09375
+full_text_base,accuracy,64,1.0,1.0,1.0,1.0,2.140625
+full_text_counterfactual,accuracy,64,1.0,1.0,1.0,1.0,2.203125
+native_8b_base,accuracy,64,0.984375,0.984375,1.0,0.984375,2.046875
+native_8b_counterfactual,accuracy,64,1.0,1.0,1.0,1.0,2.046875
+raw_minimal_1_7b_base,accuracy,64,0.0,0.0,0.0,0.0,24.0
+raw_minimal_1_7b_counterfactual,accuracy,64,0.0,0.0,0.0,0.0,24.0
+reader_off,original_answer_leakage,64,0.0,,1.0,1.0,4.0
+writer_key_mismatched,key_route_ablation,64,0.0,0.0,1.0,0.90625,3.625
+writer_shuffled,original_answer_leakage,64,0.03125,0.0625,1.0,1.0,2.078125
+writer_value_mismatched,original_answer_leakage,64,0.0,0.0,1.0,0.953125,3.71875
+zero_kv,original_answer_leakage,64,0.0,,1.0,1.0,4.0

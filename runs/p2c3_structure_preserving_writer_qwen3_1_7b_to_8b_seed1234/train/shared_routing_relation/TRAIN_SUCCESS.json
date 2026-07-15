@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "variant": "shared_routing_relation",
+  "features": {
+    "shared_routing": true,
+    "structure_loss": true
+  },
+  "pairs": 512,
+  "epochs": 3,
+  "steps": 1536,
+  "checkpoint": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2c3_structure_preserving_writer_qwen3_1_7b_to_8b_seed1234/train/shared_routing_relation/checkpoint_latest.pt"
+}
