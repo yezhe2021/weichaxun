@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "args": {
+    "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "reader_checkpoint": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/train/query_only/checkpoint_latest.pt",
+    "sender_index": "/home/yezhe/伪查询/runs/p2c1_structural_writer_qwen3_1_7b_to_8b_seed1234/cache_qwen3_1_7b_native_kv_pairs/train/index.json",
+    "teacher_index": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/cache_native_kv_pairs/train/index.json",
+    "out": "/home/yezhe/伪查询/runs/p2c1_structural_writer_qwen3_1_7b_to_8b_seed1234/train_writer_qwen3_1_7b",
+    "max_pairs": 512,
+    "epochs": 2,
+    "max_length": 256,
+    "layer_width": 5,
+    "cf_weight": 0.5,
+    "cf_margin": 0.5,
+    "negative_weight": 0.5,
+    "negative_margin": 0.5,
+    "route_weight": 0.1,
+    "readout_weight": 0.1,
+    "kv_weight": 0.01,
+    "regularization_weight": 0.0001,
+    "lr": 0.002,
+    "gradient_accumulation": 4,
+    "seed": 1234,
+    "device": "auto",
+    "dtype": "auto"
+  },
+  "pairs": 512,
+  "steps": 1024,
+  "sender_geometry": {
+    "layers": 28,
+    "kv_heads": 8,
+    "head_dim": 128
+  },
+  "receiver_geometry": {
+    "layers": 36,
+    "kv_heads": 8,
+    "head_dim": 128
+  },
+  "checkpoint": "/home/yezhe/伪查询/runs/p2c1_structural_writer_qwen3_1_7b_to_8b_seed1234/train_writer_qwen3_1_7b/checkpoint_latest.pt"
+}

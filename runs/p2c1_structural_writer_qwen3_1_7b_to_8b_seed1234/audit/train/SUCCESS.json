@@ -1,0 +1,73 @@
+{
+  "status": "complete",
+  "args": {
+    "sender_model": "/home/yezhe/all_models/hub/models/Qwen/Qwen3-1___7B",
+    "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "data": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/data/train.jsonl",
+    "reader_checkpoint": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/train/query_only/checkpoint_latest.pt",
+    "out": "/home/yezhe/伪查询/runs/p2c1_structural_writer_qwen3_1_7b_to_8b_seed1234/audit/train",
+    "max_samples": 0
+  },
+  "sender_geometry": {
+    "model_type": "qwen3",
+    "hidden_size": 2048,
+    "layers": 28,
+    "query_heads": 16,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "vocab_size": 151936,
+    "rope_theta": 1000000,
+    "rope_scaling": null,
+    "config_sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197"
+  },
+  "receiver_geometry": {
+    "model_type": "qwen3",
+    "hidden_size": 4096,
+    "layers": 36,
+    "query_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "vocab_size": 151936,
+    "rope_theta": 1000000,
+    "rope_scaling": null,
+    "config_sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30"
+  },
+  "sender_tokenizer": {
+    "class": "Qwen2Tokenizer",
+    "vocab_size": 151669,
+    "vocab_sha256": "c605f1c0a80a9501fca9782b942a7f01474e3f37b1c59e3efea82da0e2f20376",
+    "special_token_ids": {
+      "bos_token_id": null,
+      "eos_token_id": 151645,
+      "pad_token_id": 151643,
+      "unk_token_id": null,
+      "additional_special_tokens_ids": null
+    },
+    "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "is_fast": true
+  },
+  "receiver_tokenizer": {
+    "class": "Qwen2Tokenizer",
+    "vocab_size": 151669,
+    "vocab_sha256": "c605f1c0a80a9501fca9782b942a7f01474e3f37b1c59e3efea82da0e2f20376",
+    "special_token_ids": {
+      "bos_token_id": null,
+      "eos_token_id": 151645,
+      "pad_token_id": 151643,
+      "unk_token_id": null,
+      "additional_special_tokens_ids": null
+    },
+    "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "is_fast": true
+  },
+  "alignment": {
+    "samples": 1024,
+    "exact_token_sequence_rate": 1.0,
+    "exact_offset_sequence_rate": 1.0,
+    "token_and_offset_position_rate": 1.0
+  },
+  "raw_kv_shape_compatible_by_config": false,
+  "reader_checkpoint_sha256": "68923c9350cce2620bf0598328b694cc07f5f73fe873910ef9cc1053d0e1066b",
+  "coordinate_contract": "pre_rope_k_native_v_evidence_tokens_only",
+  "claim_scope": "Qwen3-1.7B sender-specific Writer into a frozen Qwen3-8B Reader-compatible per-layer KV interface; not receiver-independent Canonical Evidence-KV."
+}
