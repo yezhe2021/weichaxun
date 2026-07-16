@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "variant": "task_only",
+  "features": {
+    "shared_routing": false,
+    "structure_loss": false
+  },
+  "pairs": 512,
+  "epochs": 3,
+  "steps": 1536,
+  "checkpoint": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2e_llama3_2_3b_to_qwen3_8b_writer_seed1234/train/task_only/checkpoint_latest.pt"
+}

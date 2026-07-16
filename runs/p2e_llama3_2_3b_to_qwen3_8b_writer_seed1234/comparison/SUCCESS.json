@@ -1,0 +1,107 @@
+{
+  "status": "complete",
+  "experiment": "P2-E Llama-3.2-3B to frozen Qwen3-8B Query Reader",
+  "variants": [
+    {
+      "variant": "task_only",
+      "writer_base_em": 0.03125,
+      "writer_cf_em": 0.078125,
+      "writer_paired": 0.0,
+      "native_paired": 0.984375,
+      "raw_paired": 0.0,
+      "route_kl": 17.95098537641267,
+      "readout_cosine": 0.041576799760504296,
+      "binding_error": 0.002033920281974133
+    },
+    {
+      "variant": "shared_span_relation",
+      "writer_base_em": 0.03125,
+      "writer_cf_em": 0.03125,
+      "writer_paired": 0.0,
+      "native_paired": 0.984375,
+      "raw_paired": 0.0,
+      "route_kl": 17.846569174279768,
+      "readout_cosine": 0.03967976355781704,
+      "binding_error": 0.0020822329843213083
+    }
+  ],
+  "llama_direct_answerability_gate": {
+    "status": "complete",
+    "args": {
+      "model": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct",
+      "train_data": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/data/train.jsonl",
+      "test_data": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/data/test.jsonl",
+      "out": "/home/yezhe/伪查询/runs/p2d_sender_answerability_demo_qwen3_1_7b_seed1234/llama_prompt_gate",
+      "calibration_pairs": 16,
+      "test_pairs": 16,
+      "seed": 1234,
+      "device": "cuda",
+      "dtype": "float16"
+    },
+    "calibration_summary": [
+      {
+        "prompt_variant": "exact_join_direct",
+        "pairs": 16,
+        "base_em": 0.875,
+        "counterfactual_em": 0.75,
+        "mean_em": 0.8125,
+        "paired_consistency": 0.75,
+        "paired_correct_count": 12,
+        "prediction_switch_rate": 0.875,
+        "eos_rate": 1.0,
+        "mean_generated_tokens": 2.0625
+      },
+      {
+        "prompt_variant": "exact_join_reason",
+        "pairs": 16,
+        "base_em": 0.8125,
+        "counterfactual_em": 0.8125,
+        "mean_em": 0.8125,
+        "paired_consistency": 0.8125,
+        "paired_correct_count": 13,
+        "prediction_switch_rate": 0.8125,
+        "eos_rate": 0.75,
+        "mean_generated_tokens": 49.0
+      },
+      {
+        "prompt_variant": "database_join_reason",
+        "pairs": 16,
+        "base_em": 0.375,
+        "counterfactual_em": 0.3125,
+        "mean_em": 0.34375,
+        "paired_consistency": 0.3125,
+        "paired_correct_count": 5,
+        "prediction_switch_rate": 0.375,
+        "eos_rate": 0.09375,
+        "mean_generated_tokens": 48.0
+      },
+      {
+        "prompt_variant": "fewshot_join_reason",
+        "pairs": 16,
+        "base_em": 0.9375,
+        "counterfactual_em": 0.9375,
+        "mean_em": 0.9375,
+        "paired_consistency": 0.9375,
+        "paired_correct_count": 15,
+        "prediction_switch_rate": 1.0,
+        "eos_rate": 0.9375,
+        "mean_generated_tokens": 24.375
+      }
+    ],
+    "selected_prompt": "fewshot_join_reason",
+    "test_summary": {
+      "prompt_variant": "fewshot_join_reason",
+      "pairs": 16,
+      "base_em": 1.0,
+      "counterfactual_em": 1.0,
+      "mean_em": 1.0,
+      "paired_consistency": 1.0,
+      "paired_correct_count": 16,
+      "prediction_switch_rate": 1.0,
+      "eos_rate": 0.9375,
+      "mean_generated_tokens": 23.625
+    },
+    "gate_passed": true,
+    "selection_rule": "paired_consistency, then mean EM, then switch rate"
+  }
+}

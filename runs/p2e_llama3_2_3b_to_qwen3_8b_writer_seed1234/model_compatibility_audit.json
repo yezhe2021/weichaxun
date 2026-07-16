@@ -1,0 +1,83 @@
+{
+  "status": "complete",
+  "sender": {
+    "model": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct",
+    "architecture": "LlamaForCausalLM",
+    "model_type": "llama",
+    "tokenizer_class": "TokenizersBackend",
+    "vocab_size": 128256,
+    "hidden_size": 3072,
+    "layers": 28,
+    "query_heads": 24,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "rope_theta": 10000.0,
+    "rope_scaling": {
+      "factor": 32.0,
+      "high_freq_factor": 4.0,
+      "low_freq_factor": 1.0,
+      "original_max_position_embeddings": 8192,
+      "rope_type": "llama3",
+      "rope_theta": 500000.0
+    }
+  },
+  "receiver": {
+    "model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "architecture": "Qwen3ForCausalLM",
+    "model_type": "qwen3",
+    "tokenizer_class": "Qwen2Tokenizer",
+    "vocab_size": 151669,
+    "hidden_size": 4096,
+    "layers": 36,
+    "query_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "rope_theta": 10000.0,
+    "rope_scaling": {
+      "rope_theta": 1000000,
+      "rope_type": "default"
+    }
+  },
+  "differences": {
+    "architecture": {
+      "sender": "LlamaForCausalLM",
+      "receiver": "Qwen3ForCausalLM"
+    },
+    "tokenizer_class": {
+      "sender": "TokenizersBackend",
+      "receiver": "Qwen2Tokenizer"
+    },
+    "vocab_size": {
+      "sender": 128256,
+      "receiver": 151669
+    },
+    "layers": {
+      "sender": 28,
+      "receiver": 36
+    },
+    "query_heads": {
+      "sender": 24,
+      "receiver": 32
+    },
+    "rope_scaling": {
+      "sender": {
+        "factor": 32.0,
+        "high_freq_factor": 4.0,
+        "low_freq_factor": 1.0,
+        "original_max_position_embeddings": 8192,
+        "rope_type": "llama3",
+        "rope_theta": 500000.0
+      },
+      "receiver": {
+        "rope_theta": 1000000,
+        "rope_type": "default"
+      }
+    }
+  },
+  "writer_contract": {
+    "input": "all evidence-token pre-RoPE K and native V from every sender layer",
+    "output": "one complete receiver-compatible Evidence-KV sequence per receiver layer",
+    "compression": false,
+    "receiver_specific": true
+  }
+}

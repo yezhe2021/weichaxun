@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "variant": "shared_span_relation",
+  "features": {
+    "shared_routing": true,
+    "structure_loss": true
+  },
+  "pairs": 512,
+  "epochs": 3,
+  "steps": 1536,
+  "checkpoint": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2e_llama3_2_3b_to_qwen3_8b_writer_seed1234/train/shared_span_relation/checkpoint_latest.pt"
+}
