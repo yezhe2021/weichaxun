@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "experiment": "P2-F Qwen3.5-4B full-attention KV to frozen Qwen3-8B Query Reader",
+  "variants": [
+    {
+      "variant": "matched_task_only",
+      "writer_base_em": 0.640625,
+      "writer_cf_em": 0.75,
+      "writer_paired": 0.5,
+      "native_paired": 0.984375,
+      "raw_paired": 0.0,
+      "route_kl": 17.99449619402488,
+      "readout_cosine": 0.029617185293697428,
+      "binding_error": 0.004182079517704551
+    },
+    {
+      "variant": "reader_aligned",
+      "writer_base_em": 0.984375,
+      "writer_cf_em": 0.9375,
+      "writer_paired": 0.921875,
+      "native_paired": 0.984375,
+      "raw_paired": 0.0,
+      "route_kl": 17.32736040155093,
+      "readout_cosine": 0.1162503762870478,
+      "binding_error": 0.004073828893524478
+    }
+  ],
+  "qwen35_direct_answerability_gate": {
+    "status": "complete",
+    "model": "/home/yezhe/all_models/models/Qwen/Qwen3___5-4B",
+    "pairs": 64,
+    "base_em": 1.0,
+    "counterfactual_em": 1.0,
+    "paired_consistency": 1.0,
+    "prediction_switch_rate": 1.0
+  },
+  "claim_boundary": "Only the eight genuine Qwen3.5 full-attention layers are transferred. Linear-attention recurrent states are excluded, not converted into fake KV."
+}

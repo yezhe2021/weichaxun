@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "variant": "matched_task_only",
+  "features": {
+    "shared_routing": false,
+    "structure_loss": false,
+    "reader_alignment": false
+  },
+  "pairs": 512,
+  "epochs": 3,
+  "steps": 1536,
+  "checkpoint": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2f_qwen3_5_4b_to_qwen3_8b_full_attention_kv_seed1234/train/matched_task_only/checkpoint_latest.pt"
+}
