@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "config": {
+    "name": "raw_evidence_attention_layer_28",
+    "kind": "raw_evidence_attention",
+    "layer": 28
+  },
+  "train_pairs": 448,
+  "validation_pairs": 64,
+  "test_pairs": 64,
+  "classes": 40,
+  "best_validation_accuracy": 0.9921875,
+  "best_epoch": 16,
+  "paired": {
+    "pairs": 64,
+    "base_accuracy": 1.0,
+    "counterfactual_accuracy": 0.984375,
+    "paired_consistency": 0.984375,
+    "prediction_switch_rate": 1.0
+  },
+  "conditions": [
+    {
+      "condition": "correct",
+      "n": 128,
+      "accuracy": 0.9921875,
+      "memory_answer_hit_rate": 0.9921875,
+      "mean_confidence": 0.9857898931950331
+    },
+    {
+      "condition": "counterfactual_state_swap",
+      "n": 128,
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.9921875,
+      "mean_confidence": 0.9857898931950331
+    },
+    {
+      "condition": "shuffled_state",
+      "n": 128,
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 1.0,
+      "mean_confidence": 0.9825091939419508
+    }
+  ]
+}

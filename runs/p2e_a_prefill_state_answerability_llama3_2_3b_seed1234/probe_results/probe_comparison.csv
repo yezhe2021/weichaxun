@@ -1,0 +1,10 @@
+config,kind,layer,slots,validation_accuracy,pairs,base_accuracy,counterfactual_accuracy,paired_consistency,prediction_switch_rate
+end_linear_layer_7,end_linear,7,,0.046875,64,0.015625,0.03125,0.0,0.0
+end_linear_layer_14,end_linear,14,,0.0390625,64,0.046875,0.046875,0.0,0.09375
+end_linear_layer_21,end_linear,21,,0.0390625,64,0.015625,0.046875,0.0,0.0
+end_linear_layer_28,end_linear,28,,0.046875,64,0.03125,0.03125,0.0,0.015625
+summary_8_linear_layer_28,summary_linear,28,8,0.0546875,64,0.0625,0.03125,0.0,0.046875
+summary_8_attention_layer_28,summary_attention,28,8,0.0546875,64,0.0,0.0625,0.0,0.015625
+summary_16_linear_layer_28,summary_linear,28,16,0.0546875,64,0.015625,0.03125,0.0,0.015625
+summary_16_attention_layer_28,summary_attention,28,16,0.03125,64,0.03125,0.03125,0.0,0.0
+raw_evidence_attention_layer_28,raw_evidence_attention,28,,0.9921875,64,1.0,0.984375,0.984375,1.0

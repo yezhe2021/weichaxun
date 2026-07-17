@@ -1,0 +1,34 @@
+{
+  "args": {
+    "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "sender_index": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2e_llama3_2_3b_to_qwen3_8b_writer_seed1234/cache_llama3_2_3b_native_kv_pairs/train/index.json",
+    "out": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2e_b_llama_specific_reader_seed1234/train/routed_reader",
+    "variant": "routed_reader",
+    "max_pairs": 512,
+    "epochs": 3,
+    "max_length": 256,
+    "top_k": 2,
+    "query_rank": 32,
+    "output_rank": 32,
+    "max_gate": 0.5,
+    "gate_init": 0.02,
+    "cf_weight": 0.5,
+    "cf_margin": 0.5,
+    "negative_weight": 0.5,
+    "negative_margin": 0.5,
+    "lr": 0.0002,
+    "gradient_accumulation": 4,
+    "seed": 1234,
+    "device": "cuda",
+    "dtype": "float16"
+  },
+  "sender_geometry": {
+    "layers": 28,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "query_heads": 24
+  },
+  "receiver_layers": 36,
+  "receiver_trainable_parameters": 0,
+  "reader_trainable_parameters": 18877752
+}

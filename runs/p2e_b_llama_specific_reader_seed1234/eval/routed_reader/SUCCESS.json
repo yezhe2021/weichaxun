@@ -1,0 +1,109 @@
+{
+  "status": "complete",
+  "variant": "routed_reader",
+  "args": {
+    "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "reader_checkpoint": "/home/yezhe/伪查询/runs/p2e_b_llama_specific_reader_seed1234/train/routed_reader/checkpoint_latest.pt",
+    "native_reader_checkpoint": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/train/query_only/checkpoint_latest.pt",
+    "sender_index": "/home/yezhe/伪查询/runs/p2e_llama3_2_3b_to_qwen3_8b_writer_seed1234/cache_llama3_2_3b_native_kv_pairs/test/index.json",
+    "native_index": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/cache_native_kv_pairs/test/index.json",
+    "out": "/home/yezhe/伪查询/runs/p2e_b_llama_specific_reader_seed1234/eval/routed_reader",
+    "max_pairs": 64,
+    "max_new_tokens": 24,
+    "device": "cuda",
+    "dtype": "float16"
+  },
+  "conditions": [
+    {
+      "condition": "full_text_base",
+      "n": 64,
+      "target_em": 1.0,
+      "memory_answer_hit_rate": 1.0,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 2.140625
+    },
+    {
+      "condition": "full_text_counterfactual",
+      "n": 64,
+      "target_em": 1.0,
+      "memory_answer_hit_rate": 1.0,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 2.203125
+    },
+    {
+      "condition": "llama_reader_base",
+      "n": 64,
+      "target_em": 0.15625,
+      "memory_answer_hit_rate": 0.15625,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 2.0
+    },
+    {
+      "condition": "llama_reader_counterfactual",
+      "n": 64,
+      "target_em": 0.15625,
+      "memory_answer_hit_rate": 0.15625,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 2.0
+    },
+    {
+      "condition": "llama_reader_mismatched",
+      "n": 64,
+      "target_em": 0.0,
+      "memory_answer_hit_rate": 0.0,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 3.84375
+    },
+    {
+      "condition": "llama_reader_off",
+      "n": 64,
+      "target_em": 0.0,
+      "memory_answer_hit_rate": null,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 4.0
+    },
+    {
+      "condition": "llama_reader_shuffled",
+      "n": 64,
+      "target_em": 0.015625,
+      "memory_answer_hit_rate": 0.1875,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 2.0
+    },
+    {
+      "condition": "llama_reader_zero",
+      "n": 64,
+      "target_em": 0.0,
+      "memory_answer_hit_rate": null,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 4.0
+    },
+    {
+      "condition": "native_8b_base",
+      "n": 64,
+      "target_em": 0.984375,
+      "memory_answer_hit_rate": 0.984375,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 2.046875
+    },
+    {
+      "condition": "native_8b_counterfactual",
+      "n": 64,
+      "target_em": 1.0,
+      "memory_answer_hit_rate": 1.0,
+      "eos_rate": 1.0,
+      "mean_generated_tokens": 2.046875
+    }
+  ],
+  "paired_consistency": {
+    "full_text": 1.0,
+    "native_8b": 0.984375,
+    "llama_specific_reader": 0.03125
+  },
+  "reader_diagnostics": {
+    "mean_target_attention_mass": 0.0456375350054701,
+    "mean_abs_gate": 0.02883664146065712
+  },
+  "trainable_component": "Llama-specific Reader only; Qwen backbone frozen",
+  "memory_object": "evidence-token-only raw Llama pre-RoPE K and native V"
+}

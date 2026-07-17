@@ -1,0 +1,11 @@
+condition,n,target_em,memory_answer_hit_rate,eos_rate,mean_generated_tokens
+full_text_base,64,1.0,1.0,1.0,2.140625
+full_text_counterfactual,64,1.0,1.0,1.0,2.203125
+llama_reader_base,64,0.265625,0.265625,1.0,2.0
+llama_reader_counterfactual,64,0.21875,0.21875,1.0,2.0
+llama_reader_mismatched,64,0.0,0.0,1.0,3.90625
+llama_reader_off,64,0.0,,1.0,4.0
+llama_reader_shuffled,64,0.046875,0.265625,1.0,2.0
+llama_reader_zero,64,0.0,,1.0,4.0
+native_8b_base,64,0.984375,0.984375,1.0,2.046875
+native_8b_counterfactual,64,1.0,1.0,1.0,2.046875

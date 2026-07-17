@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "config": {
+    "name": "end_linear_layer_14",
+    "kind": "end_linear",
+    "layer": 14
+  },
+  "train_pairs": 448,
+  "validation_pairs": 64,
+  "test_pairs": 64,
+  "classes": 40,
+  "best_validation_accuracy": 0.0390625,
+  "best_epoch": 2,
+  "paired": {
+    "pairs": 64,
+    "base_accuracy": 0.046875,
+    "counterfactual_accuracy": 0.046875,
+    "paired_consistency": 0.0,
+    "prediction_switch_rate": 0.09375
+  },
+  "conditions": [
+    {
+      "condition": "a_only",
+      "n": 128,
+      "accuracy": 0.0234375,
+      "memory_answer_hit_rate": 0.0234375,
+      "mean_confidence": 0.08916107146069407
+    },
+    {
+      "condition": "answer_masked",
+      "n": 128,
+      "accuracy": 0.0234375,
+      "memory_answer_hit_rate": 0.0234375,
+      "mean_confidence": 0.11352137161884457
+    },
+    {
+      "condition": "b_only",
+      "n": 128,
+      "accuracy": 0.015625,
+      "memory_answer_hit_rate": 0.015625,
+      "mean_confidence": 0.07666089647682384
+    },
+    {
+      "condition": "correct",
+      "n": 128,
+      "accuracy": 0.046875,
+      "memory_answer_hit_rate": 0.046875,
+      "mean_confidence": 0.10320359742036089
+    },
+    {
+      "condition": "counterfactual_state_swap",
+      "n": 128,
+      "accuracy": 0.0390625,
+      "memory_answer_hit_rate": 0.046875,
+      "mean_confidence": 0.10320359742036089
+    },
+    {
+      "condition": "question_only",
+      "n": 128,
+      "accuracy": 0.0234375,
+      "memory_answer_hit_rate": 0.0234375,
+      "mean_confidence": 0.08598323736805469
+    },
+    {
+      "condition": "shuffled_state",
+      "n": 128,
+      "accuracy": 0.015625,
+      "memory_answer_hit_rate": 0.046875,
+      "mean_confidence": 0.10325747792376205
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "experiment": "Experiment B: Llama-specific Reader",
+  "variants": [
+    {
+      "variant": "minimal_reader",
+      "base_em": 0.265625,
+      "counterfactual_em": 0.21875,
+      "paired_consistency": 0.015625,
+      "native_paired_consistency": 0.984375,
+      "full_text_paired_consistency": 1.0,
+      "shuffled_target_em": 0.046875,
+      "shuffled_memory_hit": 0.265625,
+      "mismatched_target_em": 0.0,
+      "zero_em": 0.0,
+      "reader_off_em": 0.0,
+      "target_attention_mass": 0.041001325964857144
+    },
+    {
+      "variant": "routed_reader",
+      "base_em": 0.15625,
+      "counterfactual_em": 0.15625,
+      "paired_consistency": 0.03125,
+      "native_paired_consistency": 0.984375,
+      "full_text_paired_consistency": 1.0,
+      "shuffled_target_em": 0.015625,
+      "shuffled_memory_hit": 0.1875,
+      "mismatched_target_em": 0.0,
+      "zero_em": 0.0,
+      "reader_off_em": 0.0,
+      "target_attention_mass": 0.0456375350054701
+    }
+  ],
+  "claim_boundary": "This tests a Qwen3-8B Reader specialized for evidence-token-only raw Llama Native-KV. It does not establish receiver-independent Canonical Evidence-KV."
+}
