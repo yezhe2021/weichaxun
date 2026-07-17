@@ -1,0 +1,349 @@
+{
+  "format_version": 1,
+  "split": "validation",
+  "conditions": [
+    "correct"
+  ],
+  "labels": [
+    "Athens",
+    "Berlin",
+    "Boston",
+    "Brisbane",
+    "Calgary",
+    "Denver",
+    "Dublin",
+    "Florence",
+    "Geneva",
+    "Hamburg",
+    "Helsinki",
+    "Jakarta",
+    "Kingston",
+    "Lima",
+    "Lisbon",
+    "London",
+    "Madrid",
+    "Manila",
+    "Milan",
+    "Montreal",
+    "Nairobi",
+    "Naples",
+    "Oslo",
+    "Ottawa",
+    "Paris",
+    "Portland",
+    "Prague",
+    "Riga",
+    "Rome",
+    "Seattle",
+    "Seoul",
+    "Sofia",
+    "Sydney",
+    "Tallinn",
+    "Tokyo",
+    "Toronto",
+    "Valencia",
+    "Vienna",
+    "Warsaw",
+    "Zurich"
+  ],
+  "candidate_first_token_ids": [
+    45826,
+    19846,
+    10196,
+    46235,
+    37875,
+    22117,
+    32877,
+    47506,
+    44245,
+    50462,
+    76334,
+    63033,
+    62469,
+    61953,
+    80701,
+    7148,
+    24081,
+    56564,
+    38755,
+    29513,
+    96525,
+    82621,
+    57858,
+    32166,
+    12095,
+    23077,
+    67289,
+    431,
+    21718,
+    16355,
+    50189,
+    78563,
+    21273,
+    41102,
+    26194,
+    14632,
+    60249,
+    46287,
+    72176,
+    71726
+  ],
+  "pair_files": [
+    {
+      "pair_id": "train-pair-00005",
+      "file": "pair_0000.pt"
+    },
+    {
+      "pair_id": "train-pair-00012",
+      "file": "pair_0001.pt"
+    },
+    {
+      "pair_id": "train-pair-00014",
+      "file": "pair_0002.pt"
+    },
+    {
+      "pair_id": "train-pair-00028",
+      "file": "pair_0003.pt"
+    },
+    {
+      "pair_id": "train-pair-00048",
+      "file": "pair_0004.pt"
+    },
+    {
+      "pair_id": "train-pair-00057",
+      "file": "pair_0005.pt"
+    },
+    {
+      "pair_id": "train-pair-00060",
+      "file": "pair_0006.pt"
+    },
+    {
+      "pair_id": "train-pair-00091",
+      "file": "pair_0007.pt"
+    },
+    {
+      "pair_id": "train-pair-00107",
+      "file": "pair_0008.pt"
+    },
+    {
+      "pair_id": "train-pair-00113",
+      "file": "pair_0009.pt"
+    },
+    {
+      "pair_id": "train-pair-00116",
+      "file": "pair_0010.pt"
+    },
+    {
+      "pair_id": "train-pair-00123",
+      "file": "pair_0011.pt"
+    },
+    {
+      "pair_id": "train-pair-00128",
+      "file": "pair_0012.pt"
+    },
+    {
+      "pair_id": "train-pair-00135",
+      "file": "pair_0013.pt"
+    },
+    {
+      "pair_id": "train-pair-00147",
+      "file": "pair_0014.pt"
+    },
+    {
+      "pair_id": "train-pair-00160",
+      "file": "pair_0015.pt"
+    },
+    {
+      "pair_id": "train-pair-00161",
+      "file": "pair_0016.pt"
+    },
+    {
+      "pair_id": "train-pair-00172",
+      "file": "pair_0017.pt"
+    },
+    {
+      "pair_id": "train-pair-00173",
+      "file": "pair_0018.pt"
+    },
+    {
+      "pair_id": "train-pair-00179",
+      "file": "pair_0019.pt"
+    },
+    {
+      "pair_id": "train-pair-00182",
+      "file": "pair_0020.pt"
+    },
+    {
+      "pair_id": "train-pair-00199",
+      "file": "pair_0021.pt"
+    },
+    {
+      "pair_id": "train-pair-00201",
+      "file": "pair_0022.pt"
+    },
+    {
+      "pair_id": "train-pair-00206",
+      "file": "pair_0023.pt"
+    },
+    {
+      "pair_id": "train-pair-00207",
+      "file": "pair_0024.pt"
+    },
+    {
+      "pair_id": "train-pair-00211",
+      "file": "pair_0025.pt"
+    },
+    {
+      "pair_id": "train-pair-00214",
+      "file": "pair_0026.pt"
+    },
+    {
+      "pair_id": "train-pair-00282",
+      "file": "pair_0027.pt"
+    },
+    {
+      "pair_id": "train-pair-00287",
+      "file": "pair_0028.pt"
+    },
+    {
+      "pair_id": "train-pair-00290",
+      "file": "pair_0029.pt"
+    },
+    {
+      "pair_id": "train-pair-00308",
+      "file": "pair_0030.pt"
+    },
+    {
+      "pair_id": "train-pair-00309",
+      "file": "pair_0031.pt"
+    },
+    {
+      "pair_id": "train-pair-00310",
+      "file": "pair_0032.pt"
+    },
+    {
+      "pair_id": "train-pair-00311",
+      "file": "pair_0033.pt"
+    },
+    {
+      "pair_id": "train-pair-00317",
+      "file": "pair_0034.pt"
+    },
+    {
+      "pair_id": "train-pair-00318",
+      "file": "pair_0035.pt"
+    },
+    {
+      "pair_id": "train-pair-00326",
+      "file": "pair_0036.pt"
+    },
+    {
+      "pair_id": "train-pair-00342",
+      "file": "pair_0037.pt"
+    },
+    {
+      "pair_id": "train-pair-00350",
+      "file": "pair_0038.pt"
+    },
+    {
+      "pair_id": "train-pair-00353",
+      "file": "pair_0039.pt"
+    },
+    {
+      "pair_id": "train-pair-00369",
+      "file": "pair_0040.pt"
+    },
+    {
+      "pair_id": "train-pair-00370",
+      "file": "pair_0041.pt"
+    },
+    {
+      "pair_id": "train-pair-00371",
+      "file": "pair_0042.pt"
+    },
+    {
+      "pair_id": "train-pair-00374",
+      "file": "pair_0043.pt"
+    },
+    {
+      "pair_id": "train-pair-00379",
+      "file": "pair_0044.pt"
+    },
+    {
+      "pair_id": "train-pair-00383",
+      "file": "pair_0045.pt"
+    },
+    {
+      "pair_id": "train-pair-00385",
+      "file": "pair_0046.pt"
+    },
+    {
+      "pair_id": "train-pair-00386",
+      "file": "pair_0047.pt"
+    },
+    {
+      "pair_id": "train-pair-00407",
+      "file": "pair_0048.pt"
+    },
+    {
+      "pair_id": "train-pair-00409",
+      "file": "pair_0049.pt"
+    },
+    {
+      "pair_id": "train-pair-00419",
+      "file": "pair_0050.pt"
+    },
+    {
+      "pair_id": "train-pair-00420",
+      "file": "pair_0051.pt"
+    },
+    {
+      "pair_id": "train-pair-00423",
+      "file": "pair_0052.pt"
+    },
+    {
+      "pair_id": "train-pair-00426",
+      "file": "pair_0053.pt"
+    },
+    {
+      "pair_id": "train-pair-00429",
+      "file": "pair_0054.pt"
+    },
+    {
+      "pair_id": "train-pair-00461",
+      "file": "pair_0055.pt"
+    },
+    {
+      "pair_id": "train-pair-00471",
+      "file": "pair_0056.pt"
+    },
+    {
+      "pair_id": "train-pair-00472",
+      "file": "pair_0057.pt"
+    },
+    {
+      "pair_id": "train-pair-00475",
+      "file": "pair_0058.pt"
+    },
+    {
+      "pair_id": "train-pair-00476",
+      "file": "pair_0059.pt"
+    },
+    {
+      "pair_id": "train-pair-00477",
+      "file": "pair_0060.pt"
+    },
+    {
+      "pair_id": "train-pair-00487",
+      "file": "pair_0061.pt"
+    },
+    {
+      "pair_id": "train-pair-00491",
+      "file": "pair_0062.pt"
+    },
+    {
+      "pair_id": "train-pair-00500",
+      "file": "pair_0063.pt"
+    }
+  ]
+}

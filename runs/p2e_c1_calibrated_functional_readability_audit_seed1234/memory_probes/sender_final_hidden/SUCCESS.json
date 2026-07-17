@@ -1,0 +1,43 @@
+{
+  "base_em": 1.0,
+  "counterfactual_em": 0.984375,
+  "paired_consistency": 0.984375,
+  "prediction_switch_rate": 1.0,
+  "train_loss": null,
+  "validation_loss": 0.030647807472291788,
+  "test_loss": 0.03118366724754651,
+  "conditions": [
+    {
+      "condition": "correct",
+      "accuracy": 0.9921875,
+      "memory_answer_hit_rate": 0.9921875,
+      "loss": 0.03118366724754651
+    },
+    {
+      "condition": "counterfactual_state_swap",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.9921875,
+      "loss": 11.87558987736702
+    },
+    {
+      "condition": "shuffled",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 1.0,
+      "loss": 12.14324190467596
+    },
+    {
+      "condition": "zero",
+      "accuracy": 0.03125,
+      "memory_answer_hit_rate": 0.0,
+      "loss": 3.689006771892309
+    }
+  ],
+  "status": "complete",
+  "stage": "sender_final_hidden",
+  "trainable_parameters": 0,
+  "epochs": 30,
+  "epochs_completed": 0,
+  "best_validation_accuracy": 0.9921875,
+  "weight_policy": "reused_frozen_experiment_a",
+  "source_checkpoint": "/home/yezhe/伪查询/runs/p2e_a_prefill_state_answerability_llama3_2_3b_seed1234/probe_results/raw_evidence_attention_layer_28/checkpoint.pt"
+}

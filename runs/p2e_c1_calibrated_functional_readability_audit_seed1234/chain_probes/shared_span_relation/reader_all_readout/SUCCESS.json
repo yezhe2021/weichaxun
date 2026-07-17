@@ -1,0 +1,47 @@
+{
+  "base_em": 0.0625,
+  "counterfactual_em": 0.046875,
+  "paired_consistency": 0.0,
+  "prediction_switch_rate": 0.34375,
+  "train_loss": 1.2367119001605065,
+  "validation_loss": 3.8462241208180785,
+  "test_loss": 4.019414955098182,
+  "conditions": [
+    {
+      "condition": "correct",
+      "accuracy": 0.0546875,
+      "memory_answer_hit_rate": 0.0546875,
+      "loss": 3.9335130504332483
+    },
+    {
+      "condition": "counterfactual_state_swap",
+      "accuracy": 0.0234375,
+      "memory_answer_hit_rate": 0.0546875,
+      "loss": 4.30004713870585
+    },
+    {
+      "condition": "mismatched",
+      "accuracy": 0.03125,
+      "memory_answer_hit_rate": 0.015625,
+      "loss": 4.065378990024328
+    },
+    {
+      "condition": "shuffled",
+      "accuracy": 0.03125,
+      "memory_answer_hit_rate": 0.046875,
+      "loss": 4.10679426882416
+    },
+    {
+      "condition": "zero",
+      "accuracy": 0.03125,
+      "memory_answer_hit_rate": 0.0,
+      "loss": 3.6913413275033236
+    }
+  ],
+  "status": "complete",
+  "stage": "reader_all_readout",
+  "trainable_parameters": 546344,
+  "epochs_completed": 15,
+  "best_validation_accuracy": 0.1015625,
+  "weight_policy": "stage_specific_trained"
+}

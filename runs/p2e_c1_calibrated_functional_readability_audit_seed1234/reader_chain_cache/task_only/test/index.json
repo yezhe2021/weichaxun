@@ -1,0 +1,353 @@
+{
+  "format_version": 1,
+  "split": "test",
+  "conditions": [
+    "correct",
+    "counterfactual_state_swap",
+    "shuffled",
+    "mismatched",
+    "zero"
+  ],
+  "labels": [
+    "Athens",
+    "Berlin",
+    "Boston",
+    "Brisbane",
+    "Calgary",
+    "Denver",
+    "Dublin",
+    "Florence",
+    "Geneva",
+    "Hamburg",
+    "Helsinki",
+    "Jakarta",
+    "Kingston",
+    "Lima",
+    "Lisbon",
+    "London",
+    "Madrid",
+    "Manila",
+    "Milan",
+    "Montreal",
+    "Nairobi",
+    "Naples",
+    "Oslo",
+    "Ottawa",
+    "Paris",
+    "Portland",
+    "Prague",
+    "Riga",
+    "Rome",
+    "Seattle",
+    "Seoul",
+    "Sofia",
+    "Sydney",
+    "Tallinn",
+    "Tokyo",
+    "Toronto",
+    "Valencia",
+    "Vienna",
+    "Warsaw",
+    "Zurich"
+  ],
+  "candidate_first_token_ids": [
+    45826,
+    19846,
+    10196,
+    46235,
+    37875,
+    22117,
+    32877,
+    47506,
+    44245,
+    50462,
+    76334,
+    63033,
+    62469,
+    61953,
+    80701,
+    7148,
+    24081,
+    56564,
+    38755,
+    29513,
+    96525,
+    82621,
+    57858,
+    32166,
+    12095,
+    23077,
+    67289,
+    431,
+    21718,
+    16355,
+    50189,
+    78563,
+    21273,
+    41102,
+    26194,
+    14632,
+    60249,
+    46287,
+    72176,
+    71726
+  ],
+  "pair_files": [
+    {
+      "pair_id": "test-pair-00000",
+      "file": "pair_0000.pt"
+    },
+    {
+      "pair_id": "test-pair-00001",
+      "file": "pair_0001.pt"
+    },
+    {
+      "pair_id": "test-pair-00002",
+      "file": "pair_0002.pt"
+    },
+    {
+      "pair_id": "test-pair-00003",
+      "file": "pair_0003.pt"
+    },
+    {
+      "pair_id": "test-pair-00004",
+      "file": "pair_0004.pt"
+    },
+    {
+      "pair_id": "test-pair-00005",
+      "file": "pair_0005.pt"
+    },
+    {
+      "pair_id": "test-pair-00006",
+      "file": "pair_0006.pt"
+    },
+    {
+      "pair_id": "test-pair-00007",
+      "file": "pair_0007.pt"
+    },
+    {
+      "pair_id": "test-pair-00008",
+      "file": "pair_0008.pt"
+    },
+    {
+      "pair_id": "test-pair-00009",
+      "file": "pair_0009.pt"
+    },
+    {
+      "pair_id": "test-pair-00010",
+      "file": "pair_0010.pt"
+    },
+    {
+      "pair_id": "test-pair-00011",
+      "file": "pair_0011.pt"
+    },
+    {
+      "pair_id": "test-pair-00012",
+      "file": "pair_0012.pt"
+    },
+    {
+      "pair_id": "test-pair-00013",
+      "file": "pair_0013.pt"
+    },
+    {
+      "pair_id": "test-pair-00014",
+      "file": "pair_0014.pt"
+    },
+    {
+      "pair_id": "test-pair-00015",
+      "file": "pair_0015.pt"
+    },
+    {
+      "pair_id": "test-pair-00016",
+      "file": "pair_0016.pt"
+    },
+    {
+      "pair_id": "test-pair-00017",
+      "file": "pair_0017.pt"
+    },
+    {
+      "pair_id": "test-pair-00018",
+      "file": "pair_0018.pt"
+    },
+    {
+      "pair_id": "test-pair-00019",
+      "file": "pair_0019.pt"
+    },
+    {
+      "pair_id": "test-pair-00020",
+      "file": "pair_0020.pt"
+    },
+    {
+      "pair_id": "test-pair-00021",
+      "file": "pair_0021.pt"
+    },
+    {
+      "pair_id": "test-pair-00022",
+      "file": "pair_0022.pt"
+    },
+    {
+      "pair_id": "test-pair-00023",
+      "file": "pair_0023.pt"
+    },
+    {
+      "pair_id": "test-pair-00024",
+      "file": "pair_0024.pt"
+    },
+    {
+      "pair_id": "test-pair-00025",
+      "file": "pair_0025.pt"
+    },
+    {
+      "pair_id": "test-pair-00026",
+      "file": "pair_0026.pt"
+    },
+    {
+      "pair_id": "test-pair-00027",
+      "file": "pair_0027.pt"
+    },
+    {
+      "pair_id": "test-pair-00028",
+      "file": "pair_0028.pt"
+    },
+    {
+      "pair_id": "test-pair-00029",
+      "file": "pair_0029.pt"
+    },
+    {
+      "pair_id": "test-pair-00030",
+      "file": "pair_0030.pt"
+    },
+    {
+      "pair_id": "test-pair-00031",
+      "file": "pair_0031.pt"
+    },
+    {
+      "pair_id": "test-pair-00032",
+      "file": "pair_0032.pt"
+    },
+    {
+      "pair_id": "test-pair-00033",
+      "file": "pair_0033.pt"
+    },
+    {
+      "pair_id": "test-pair-00034",
+      "file": "pair_0034.pt"
+    },
+    {
+      "pair_id": "test-pair-00035",
+      "file": "pair_0035.pt"
+    },
+    {
+      "pair_id": "test-pair-00036",
+      "file": "pair_0036.pt"
+    },
+    {
+      "pair_id": "test-pair-00037",
+      "file": "pair_0037.pt"
+    },
+    {
+      "pair_id": "test-pair-00038",
+      "file": "pair_0038.pt"
+    },
+    {
+      "pair_id": "test-pair-00039",
+      "file": "pair_0039.pt"
+    },
+    {
+      "pair_id": "test-pair-00040",
+      "file": "pair_0040.pt"
+    },
+    {
+      "pair_id": "test-pair-00041",
+      "file": "pair_0041.pt"
+    },
+    {
+      "pair_id": "test-pair-00042",
+      "file": "pair_0042.pt"
+    },
+    {
+      "pair_id": "test-pair-00043",
+      "file": "pair_0043.pt"
+    },
+    {
+      "pair_id": "test-pair-00044",
+      "file": "pair_0044.pt"
+    },
+    {
+      "pair_id": "test-pair-00045",
+      "file": "pair_0045.pt"
+    },
+    {
+      "pair_id": "test-pair-00046",
+      "file": "pair_0046.pt"
+    },
+    {
+      "pair_id": "test-pair-00047",
+      "file": "pair_0047.pt"
+    },
+    {
+      "pair_id": "test-pair-00048",
+      "file": "pair_0048.pt"
+    },
+    {
+      "pair_id": "test-pair-00049",
+      "file": "pair_0049.pt"
+    },
+    {
+      "pair_id": "test-pair-00050",
+      "file": "pair_0050.pt"
+    },
+    {
+      "pair_id": "test-pair-00051",
+      "file": "pair_0051.pt"
+    },
+    {
+      "pair_id": "test-pair-00052",
+      "file": "pair_0052.pt"
+    },
+    {
+      "pair_id": "test-pair-00053",
+      "file": "pair_0053.pt"
+    },
+    {
+      "pair_id": "test-pair-00054",
+      "file": "pair_0054.pt"
+    },
+    {
+      "pair_id": "test-pair-00055",
+      "file": "pair_0055.pt"
+    },
+    {
+      "pair_id": "test-pair-00056",
+      "file": "pair_0056.pt"
+    },
+    {
+      "pair_id": "test-pair-00057",
+      "file": "pair_0057.pt"
+    },
+    {
+      "pair_id": "test-pair-00058",
+      "file": "pair_0058.pt"
+    },
+    {
+      "pair_id": "test-pair-00059",
+      "file": "pair_0059.pt"
+    },
+    {
+      "pair_id": "test-pair-00060",
+      "file": "pair_0060.pt"
+    },
+    {
+      "pair_id": "test-pair-00061",
+      "file": "pair_0061.pt"
+    },
+    {
+      "pair_id": "test-pair-00062",
+      "file": "pair_0062.pt"
+    },
+    {
+      "pair_id": "test-pair-00063",
+      "file": "pair_0063.pt"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "status": "complete",
+  "conditions": [
+    {
+      "condition": "full_text_base",
+      "accuracy": 1.0,
+      "memory_answer_hit_rate": 1.0,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "full_text_counterfactual",
+      "accuracy": 1.0,
+      "memory_answer_hit_rate": 1.0,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "native_base",
+      "accuracy": 0.984375,
+      "memory_answer_hit_rate": 0.984375,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "native_counterfactual",
+      "accuracy": 1.0,
+      "memory_answer_hit_rate": 1.0,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "reader_off",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.0,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "writer_base",
+      "accuracy": 0.03125,
+      "memory_answer_hit_rate": 0.03125,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "writer_counterfactual",
+      "accuracy": 0.03125,
+      "memory_answer_hit_rate": 0.03125,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "writer_mismatched",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.0,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "writer_shuffled",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.015625,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "writer_zero",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.0,
+      "eos_rate": 1.0
+    }
+  ],
+  "paired_consistency": {
+    "full_text": 1.0,
+    "native": 0.984375,
+    "writer": 0.0
+  }
+}

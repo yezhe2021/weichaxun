@@ -1,0 +1,49 @@
+{
+  "base_em": 0.984375,
+  "counterfactual_em": 1.0,
+  "paired_consistency": 0.984375,
+  "prediction_switch_rate": 1.0,
+  "train_loss": 0.00012187572214991274,
+  "validation_loss": 0.0677772962505685,
+  "test_loss": 0.043327751526945235,
+  "conditions": [
+    {
+      "condition": "correct",
+      "accuracy": 0.9921875,
+      "memory_answer_hit_rate": 0.9921875,
+      "loss": 0.043327751526945235
+    },
+    {
+      "condition": "counterfactual_state_swap",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.9921875,
+      "loss": 14.201651822775602
+    },
+    {
+      "condition": "mismatched",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.140625,
+      "loss": 9.835953041911125
+    },
+    {
+      "condition": "shuffled",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.984375,
+      "loss": 14.434264898300171
+    },
+    {
+      "condition": "zero",
+      "accuracy": 0.03125,
+      "memory_answer_hit_rate": 0.0,
+      "loss": 3.689833963289857
+    }
+  ],
+  "status": "complete",
+  "stage": "writer_task_only_kv",
+  "trainable_parameters": 14237004,
+  "epochs": 30,
+  "epochs_completed": 16,
+  "best_validation_accuracy": 0.984375,
+  "weight_policy": "stage_specific_trained",
+  "source_checkpoint": null
+}

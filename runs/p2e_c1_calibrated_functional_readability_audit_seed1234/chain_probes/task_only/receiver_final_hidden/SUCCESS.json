@@ -1,0 +1,53 @@
+{
+  "base_em": 0.0,
+  "counterfactual_em": 0.0,
+  "paired_consistency": 0.0,
+  "prediction_switch_rate": 0.453125,
+  "train_loss": 3.2886076509021223,
+  "validation_loss": 3.6791913714259863,
+  "test_loss": 4.773369018919766,
+  "conditions": [
+    {
+      "condition": "correct",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.0,
+      "loss": 3.8743529627099633
+    },
+    {
+      "condition": "counterfactual_state_swap",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.0,
+      "loss": 4.0318331234157085
+    },
+    {
+      "condition": "mismatched",
+      "accuracy": 0.03125,
+      "memory_answer_hit_rate": 0.0390625,
+      "loss": 5.857520718127489
+    },
+    {
+      "condition": "reader_off",
+      "accuracy": 0.03125,
+      "memory_answer_hit_rate": 0.0,
+      "loss": 6.106363901868463
+    },
+    {
+      "condition": "shuffled",
+      "accuracy": 0.015625,
+      "memory_answer_hit_rate": 0.015625,
+      "loss": 3.9967743884772062
+    },
+    {
+      "condition": "zero",
+      "accuracy": 0.03125,
+      "memory_answer_hit_rate": 0.0,
+      "loss": 6.106363901868463
+    }
+  ],
+  "status": "complete",
+  "stage": "receiver_final_hidden",
+  "trainable_parameters": 546216,
+  "epochs_completed": 17,
+  "best_validation_accuracy": 0.078125,
+  "weight_policy": "stage_specific_trained"
+}

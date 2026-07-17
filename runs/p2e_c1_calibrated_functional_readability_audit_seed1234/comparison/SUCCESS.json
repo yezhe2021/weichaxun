@@ -1,0 +1,370 @@
+{
+  "status": "complete",
+  "experiment": "P2-E-C1 calibrated segmented functional readability audit",
+  "table": [
+    {
+      "branch": "common",
+      "stage": "sender_final_hidden",
+      "representation": "llama_final_evidence_hidden",
+      "base_em": 1.0,
+      "counterfactual_em": 0.984375,
+      "paired_consistency": 0.984375,
+      "prediction_switch_rate": 1.0,
+      "test_loss": 0.03118366724754651,
+      "metric": "reused_frozen_experiment_a"
+    },
+    {
+      "branch": "common",
+      "stage": "raw_kv_aux",
+      "representation": "raw_llama_last_layer_kv",
+      "base_em": 0.953125,
+      "counterfactual_em": 0.96875,
+      "paired_consistency": 0.9375,
+      "prediction_switch_rate": 0.984375,
+      "test_loss": 0.28814217582887114,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "common",
+      "stage": "raw_kv",
+      "representation": "raw_llama_all_28_layer_kv",
+      "base_em": 0.984375,
+      "counterfactual_em": 0.984375,
+      "paired_consistency": 0.96875,
+      "prediction_switch_rate": 1.0,
+      "test_loss": 0.08825779838772974,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "task_only",
+      "stage": "writer_kv",
+      "representation": "task_only_writer_all_36_layer_kv",
+      "base_em": 0.984375,
+      "counterfactual_em": 1.0,
+      "paired_consistency": 0.984375,
+      "prediction_switch_rate": 1.0,
+      "test_loss": 0.043327751526945235,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "task_only",
+      "stage": "reader_readout",
+      "representation": "task_only_reader_all_layer_readout",
+      "base_em": 0.1875,
+      "counterfactual_em": 0.28125,
+      "paired_consistency": 0.078125,
+      "prediction_switch_rate": 0.6875,
+      "test_loss": 5.67496289620176,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "task_only",
+      "stage": "cumulative_delta",
+      "representation": "task_only_final_cumulative_delta",
+      "base_em": 0.015625,
+      "counterfactual_em": 0.015625,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.40625,
+      "test_loss": 4.001749979145825,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "task_only",
+      "stage": "receiver_final_hidden",
+      "representation": "task_only_receiver_final_hidden",
+      "base_em": 0.0,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.453125,
+      "test_loss": 4.773369018919766,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "task_only",
+      "stage": "first_token_logits",
+      "representation": "task_only_first_token_logits",
+      "base_em": 0.03125,
+      "counterfactual_em": 0.078125,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.171875,
+      "test_loss": null,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "task_only",
+      "stage": "free_running",
+      "representation": "free_running_generation",
+      "base_em": 0.03125,
+      "counterfactual_em": 0.078125,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": null,
+      "test_loss": null,
+      "metric": "free_running_em"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "writer_kv",
+      "representation": "shared_span_relation_writer_all_36_layer_kv",
+      "base_em": 0.984375,
+      "counterfactual_em": 0.984375,
+      "paired_consistency": 0.96875,
+      "prediction_switch_rate": 1.0,
+      "test_loss": 0.08096595084312597,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "reader_readout",
+      "representation": "shared_span_relation_reader_all_layer_readout",
+      "base_em": 0.0625,
+      "counterfactual_em": 0.046875,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.34375,
+      "test_loss": 4.019414955098182,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "cumulative_delta",
+      "representation": "shared_span_relation_final_cumulative_delta",
+      "base_em": 0.03125,
+      "counterfactual_em": 0.046875,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.34375,
+      "test_loss": 3.733940167352557,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "receiver_final_hidden",
+      "representation": "shared_span_relation_receiver_final_hidden",
+      "base_em": 0.015625,
+      "counterfactual_em": 0.015625,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.453125,
+      "test_loss": 4.689523142576218,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "first_token_logits",
+      "representation": "shared_span_relation_first_token_logits",
+      "base_em": 0.03125,
+      "counterfactual_em": 0.03125,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.21875,
+      "test_loss": null,
+      "metric": "stage_specific_trained"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "free_running",
+      "representation": "free_running_generation",
+      "base_em": 0.03125,
+      "counterfactual_em": 0.03125,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": null,
+      "test_loss": null,
+      "metric": "free_running_em"
+    }
+  ],
+  "branches": {
+    "task_only": {
+      "rows": [
+        {
+          "branch": "common",
+          "stage": "sender_final_hidden",
+          "representation": "llama_final_evidence_hidden",
+          "base_em": 1.0,
+          "counterfactual_em": 0.984375,
+          "paired_consistency": 0.984375,
+          "prediction_switch_rate": 1.0,
+          "test_loss": 0.03118366724754651,
+          "metric": "reused_frozen_experiment_a"
+        },
+        {
+          "branch": "common",
+          "stage": "raw_kv",
+          "representation": "raw_llama_all_28_layer_kv",
+          "base_em": 0.984375,
+          "counterfactual_em": 0.984375,
+          "paired_consistency": 0.96875,
+          "prediction_switch_rate": 1.0,
+          "test_loss": 0.08825779838772974,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "task_only",
+          "stage": "writer_kv",
+          "representation": "task_only_writer_all_36_layer_kv",
+          "base_em": 0.984375,
+          "counterfactual_em": 1.0,
+          "paired_consistency": 0.984375,
+          "prediction_switch_rate": 1.0,
+          "test_loss": 0.043327751526945235,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "task_only",
+          "stage": "reader_readout",
+          "representation": "task_only_reader_all_layer_readout",
+          "base_em": 0.1875,
+          "counterfactual_em": 0.28125,
+          "paired_consistency": 0.078125,
+          "prediction_switch_rate": 0.6875,
+          "test_loss": 5.67496289620176,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "task_only",
+          "stage": "cumulative_delta",
+          "representation": "task_only_final_cumulative_delta",
+          "base_em": 0.015625,
+          "counterfactual_em": 0.015625,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.40625,
+          "test_loss": 4.001749979145825,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "task_only",
+          "stage": "receiver_final_hidden",
+          "representation": "task_only_receiver_final_hidden",
+          "base_em": 0.0,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.453125,
+          "test_loss": 4.773369018919766,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "task_only",
+          "stage": "first_token_logits",
+          "representation": "task_only_first_token_logits",
+          "base_em": 0.03125,
+          "counterfactual_em": 0.078125,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.171875,
+          "test_loss": null,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "task_only",
+          "stage": "free_running",
+          "representation": "free_running_generation",
+          "base_em": 0.03125,
+          "counterfactual_em": 0.078125,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": null,
+          "test_loss": null,
+          "metric": "free_running_em"
+        }
+      ],
+      "first_large_drop": {
+        "from": "task_only_writer_all_36_layer_kv",
+        "to": "task_only_reader_all_layer_readout",
+        "paired_drop": 0.90625,
+        "diagnosis": "Frozen Reader grounding is the first clear functional drop"
+      }
+    },
+    "shared_span_relation": {
+      "rows": [
+        {
+          "branch": "common",
+          "stage": "sender_final_hidden",
+          "representation": "llama_final_evidence_hidden",
+          "base_em": 1.0,
+          "counterfactual_em": 0.984375,
+          "paired_consistency": 0.984375,
+          "prediction_switch_rate": 1.0,
+          "test_loss": 0.03118366724754651,
+          "metric": "reused_frozen_experiment_a"
+        },
+        {
+          "branch": "common",
+          "stage": "raw_kv",
+          "representation": "raw_llama_all_28_layer_kv",
+          "base_em": 0.984375,
+          "counterfactual_em": 0.984375,
+          "paired_consistency": 0.96875,
+          "prediction_switch_rate": 1.0,
+          "test_loss": 0.08825779838772974,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "writer_kv",
+          "representation": "shared_span_relation_writer_all_36_layer_kv",
+          "base_em": 0.984375,
+          "counterfactual_em": 0.984375,
+          "paired_consistency": 0.96875,
+          "prediction_switch_rate": 1.0,
+          "test_loss": 0.08096595084312597,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "reader_readout",
+          "representation": "shared_span_relation_reader_all_layer_readout",
+          "base_em": 0.0625,
+          "counterfactual_em": 0.046875,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.34375,
+          "test_loss": 4.019414955098182,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "cumulative_delta",
+          "representation": "shared_span_relation_final_cumulative_delta",
+          "base_em": 0.03125,
+          "counterfactual_em": 0.046875,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.34375,
+          "test_loss": 3.733940167352557,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "receiver_final_hidden",
+          "representation": "shared_span_relation_receiver_final_hidden",
+          "base_em": 0.015625,
+          "counterfactual_em": 0.015625,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.453125,
+          "test_loss": 4.689523142576218,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "first_token_logits",
+          "representation": "shared_span_relation_first_token_logits",
+          "base_em": 0.03125,
+          "counterfactual_em": 0.03125,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.21875,
+          "test_loss": null,
+          "metric": "stage_specific_trained"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "free_running",
+          "representation": "free_running_generation",
+          "base_em": 0.03125,
+          "counterfactual_em": 0.03125,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": null,
+          "test_loss": null,
+          "metric": "free_running_em"
+        }
+      ],
+      "first_large_drop": {
+        "from": "shared_span_relation_writer_all_36_layer_kv",
+        "to": "shared_span_relation_reader_all_layer_readout",
+        "paired_drop": 0.96875,
+        "diagnosis": "Frozen Reader grounding is the first clear functional drop"
+      }
+    }
+  },
+  "claim_boundary": "The final-hidden positive control reuses the frozen Experiment-A checkpoint. Incompatible representations use independently trained, head-preserving or state-matched probes on the full 448/64/64 split."
+}

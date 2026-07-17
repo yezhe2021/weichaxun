@@ -1,0 +1,16 @@
+branch,stage,representation,base_em,counterfactual_em,paired_consistency,prediction_switch_rate,test_loss,metric
+common,sender_final_hidden,llama_final_evidence_hidden,1.0,0.984375,0.984375,1.0,0.03118366724754651,reused_frozen_experiment_a
+common,raw_kv_aux,raw_llama_last_layer_kv,0.953125,0.96875,0.9375,0.984375,0.28814217582887114,stage_specific_trained
+common,raw_kv,raw_llama_all_28_layer_kv,0.984375,0.984375,0.96875,1.0,0.08825779838772974,stage_specific_trained
+task_only,writer_kv,task_only_writer_all_36_layer_kv,0.984375,1.0,0.984375,1.0,0.043327751526945235,stage_specific_trained
+task_only,reader_readout,task_only_reader_all_layer_readout,0.1875,0.28125,0.078125,0.6875,5.67496289620176,stage_specific_trained
+task_only,cumulative_delta,task_only_final_cumulative_delta,0.015625,0.015625,0.0,0.40625,4.001749979145825,stage_specific_trained
+task_only,receiver_final_hidden,task_only_receiver_final_hidden,0.0,0.0,0.0,0.453125,4.773369018919766,stage_specific_trained
+task_only,first_token_logits,task_only_first_token_logits,0.03125,0.078125,0.0,0.171875,,stage_specific_trained
+task_only,free_running,free_running_generation,0.03125,0.078125,0.0,,,free_running_em
+shared_span_relation,writer_kv,shared_span_relation_writer_all_36_layer_kv,0.984375,0.984375,0.96875,1.0,0.08096595084312597,stage_specific_trained
+shared_span_relation,reader_readout,shared_span_relation_reader_all_layer_readout,0.0625,0.046875,0.0,0.34375,4.019414955098182,stage_specific_trained
+shared_span_relation,cumulative_delta,shared_span_relation_final_cumulative_delta,0.03125,0.046875,0.0,0.34375,3.733940167352557,stage_specific_trained
+shared_span_relation,receiver_final_hidden,shared_span_relation_receiver_final_hidden,0.015625,0.015625,0.0,0.453125,4.689523142576218,stage_specific_trained
+shared_span_relation,first_token_logits,shared_span_relation_first_token_logits,0.03125,0.03125,0.0,0.21875,,stage_specific_trained
+shared_span_relation,free_running,free_running_generation,0.03125,0.03125,0.0,,,free_running_em

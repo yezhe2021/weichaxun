@@ -1,0 +1,49 @@
+{
+  "base_em": 0.953125,
+  "counterfactual_em": 0.96875,
+  "paired_consistency": 0.9375,
+  "prediction_switch_rate": 0.984375,
+  "train_loss": 0.005753244434185416,
+  "validation_loss": 0.13142202074755094,
+  "test_loss": 0.28814217582887114,
+  "conditions": [
+    {
+      "condition": "correct",
+      "accuracy": 0.9609375,
+      "memory_answer_hit_rate": 0.9609375,
+      "loss": 0.28814217582887114
+    },
+    {
+      "condition": "counterfactual_state_swap",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.9609375,
+      "loss": 16.564882267266512
+    },
+    {
+      "condition": "mismatched",
+      "accuracy": 0.0234375,
+      "memory_answer_hit_rate": 0.125,
+      "loss": 10.915505074895918
+    },
+    {
+      "condition": "shuffled",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.953125,
+      "loss": 16.302555710077286
+    },
+    {
+      "condition": "zero",
+      "accuracy": 0.0234375,
+      "memory_answer_hit_rate": 0.0,
+      "loss": 3.7169733494520187
+    }
+  ],
+  "status": "complete",
+  "stage": "raw_last_kv",
+  "trainable_parameters": 469929,
+  "epochs": 30,
+  "epochs_completed": 27,
+  "best_validation_accuracy": 0.984375,
+  "weight_policy": "stage_specific_trained",
+  "source_checkpoint": null
+}

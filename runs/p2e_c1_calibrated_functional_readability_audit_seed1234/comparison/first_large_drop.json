@@ -1,0 +1,18 @@
+{
+  "threshold": 0.2,
+  "quick_audit_only": false,
+  "branches": {
+    "task_only": {
+      "from": "task_only_writer_all_36_layer_kv",
+      "to": "task_only_reader_all_layer_readout",
+      "paired_drop": 0.90625,
+      "diagnosis": "Frozen Reader grounding is the first clear functional drop"
+    },
+    "shared_span_relation": {
+      "from": "shared_span_relation_writer_all_36_layer_kv",
+      "to": "shared_span_relation_reader_all_layer_readout",
+      "paired_drop": 0.96875,
+      "diagnosis": "Frozen Reader grounding is the first clear functional drop"
+    }
+  }
+}
