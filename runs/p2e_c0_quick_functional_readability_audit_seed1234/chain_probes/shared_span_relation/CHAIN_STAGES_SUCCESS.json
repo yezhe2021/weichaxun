@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "stages": [
+    {
+      "base_em": 0.0625,
+      "counterfactual_em": 0.0625,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.25,
+      "train_loss": 2.8870860673487186,
+      "validation_loss": 3.7355341240763664,
+      "test_loss": 3.7687206000089644,
+      "status": "complete",
+      "stage": "reader_all_readout",
+      "trainable_parameters": 269096
+    },
+    {
+      "base_em": 0.0,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.0,
+      "train_loss": 3.6205508690327406,
+      "validation_loss": 3.720970071852207,
+      "test_loss": 3.7410067334771155,
+      "status": "complete",
+      "stage": "final_cumulative_delta",
+      "trainable_parameters": 269032
+    },
+    {
+      "base_em": 0.0,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.0,
+      "train_loss": 3.6186479050666094,
+      "validation_loss": 3.7385657504200935,
+      "test_loss": 3.750680464506149,
+      "status": "complete",
+      "stage": "receiver_final_hidden",
+      "trainable_parameters": 269032
+    },
+    {
+      "base_em": 0.0625,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.25,
+      "train_loss": null,
+      "validation_loss": null,
+      "test_loss": null,
+      "status": "complete",
+      "stage": "first_token_logits"
+    }
+  ]
+}

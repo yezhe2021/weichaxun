@@ -1,0 +1,39 @@
+{
+  "base_em": 0.125,
+  "counterfactual_em": 0.0,
+  "paired_consistency": 0.0,
+  "prediction_switch_rate": 0.3125,
+  "train_loss": 3.1567152668721974,
+  "validation_loss": 3.5968730971217155,
+  "test_loss": 3.6920974664390087,
+  "conditions": [
+    {
+      "condition": "correct",
+      "accuracy": 0.0625,
+      "memory_answer_hit_rate": 0.0625,
+      "loss": 3.6920974664390087
+    },
+    {
+      "condition": "counterfactual_state_swap",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.0625,
+      "loss": 3.9691019877791405
+    },
+    {
+      "condition": "shuffled",
+      "accuracy": 0.0,
+      "memory_answer_hit_rate": 0.125,
+      "loss": 3.8369771912693977
+    },
+    {
+      "condition": "zero",
+      "accuracy": 0.03125,
+      "memory_answer_hit_rate": 0.0,
+      "loss": 3.690776064991951
+    }
+  ],
+  "status": "complete",
+  "stage": "sender_final_hidden",
+  "trainable_parameters": 400168,
+  "epochs": 6
+}

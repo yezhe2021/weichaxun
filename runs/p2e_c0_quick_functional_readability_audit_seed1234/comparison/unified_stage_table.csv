@@ -1,0 +1,16 @@
+branch,stage,representation,base_em,counterfactual_em,paired_consistency,prediction_switch_rate,test_loss,metric
+common,sender_final_hidden,llama_final_evidence_hidden,0.125,0.0,0.0,0.3125,3.6920974664390087,trained_functional_probe
+common,raw_kv_aux,raw_llama_last_layer_kv,0.0,0.0,0.0,0.125,3.753017798066139,trained_functional_probe
+common,raw_kv,raw_llama_all_28_layer_kv,0.0,0.0,0.0,0.0,3.7865221947431564,trained_functional_probe
+task_only,writer_kv,task_only_writer_all_36_layer_kv,0.0,0.0,0.0,0.0,3.7551386654376984,trained_functional_probe
+task_only,reader_readout,task_only_reader_all_layer_readout,0.0,0.125,0.0,0.375,3.7827602967619898,trained_functional_probe
+task_only,cumulative_delta,task_only_final_cumulative_delta,0.0,0.0,0.0,0.0,3.7417681947350503,trained_functional_probe
+task_only,receiver_final_hidden,task_only_receiver_final_hidden,0.0,0.0,0.0,0.0,3.7568751245737078,trained_functional_probe
+task_only,first_token_logits,task_only_first_token_logits,0.0625,0.0625,0.0,0.3125,,trained_functional_probe
+task_only,free_running,free_running_generation,0.0625,0.0625,0.0,,,free_running_em
+shared_span_relation,writer_kv,shared_span_relation_writer_all_36_layer_kv,0.0,0.0,0.0,0.0,3.7560655176639557,trained_functional_probe
+shared_span_relation,reader_readout,shared_span_relation_reader_all_layer_readout,0.0625,0.0625,0.0,0.25,3.7687206000089644,trained_functional_probe
+shared_span_relation,cumulative_delta,shared_span_relation_final_cumulative_delta,0.0,0.0,0.0,0.0,3.7410067334771155,trained_functional_probe
+shared_span_relation,receiver_final_hidden,shared_span_relation_receiver_final_hidden,0.0,0.0,0.0,0.0,3.750680464506149,trained_functional_probe
+shared_span_relation,first_token_logits,shared_span_relation_first_token_logits,0.0625,0.0,0.0,0.25,,trained_functional_probe
+shared_span_relation,free_running,free_running_generation,0.0625,0.0,0.0,,,free_running_em

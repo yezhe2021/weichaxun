@@ -1,0 +1,370 @@
+{
+  "status": "complete",
+  "experiment": "P2-E-C0 quick segmented functional readability audit",
+  "table": [
+    {
+      "branch": "common",
+      "stage": "sender_final_hidden",
+      "representation": "llama_final_evidence_hidden",
+      "base_em": 0.125,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.3125,
+      "test_loss": 3.6920974664390087,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "common",
+      "stage": "raw_kv_aux",
+      "representation": "raw_llama_last_layer_kv",
+      "base_em": 0.0,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.125,
+      "test_loss": 3.753017798066139,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "common",
+      "stage": "raw_kv",
+      "representation": "raw_llama_all_28_layer_kv",
+      "base_em": 0.0,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.0,
+      "test_loss": 3.7865221947431564,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "task_only",
+      "stage": "writer_kv",
+      "representation": "task_only_writer_all_36_layer_kv",
+      "base_em": 0.0,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.0,
+      "test_loss": 3.7551386654376984,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "task_only",
+      "stage": "reader_readout",
+      "representation": "task_only_reader_all_layer_readout",
+      "base_em": 0.0,
+      "counterfactual_em": 0.125,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.375,
+      "test_loss": 3.7827602967619898,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "task_only",
+      "stage": "cumulative_delta",
+      "representation": "task_only_final_cumulative_delta",
+      "base_em": 0.0,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.0,
+      "test_loss": 3.7417681947350503,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "task_only",
+      "stage": "receiver_final_hidden",
+      "representation": "task_only_receiver_final_hidden",
+      "base_em": 0.0,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.0,
+      "test_loss": 3.7568751245737078,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "task_only",
+      "stage": "first_token_logits",
+      "representation": "task_only_first_token_logits",
+      "base_em": 0.0625,
+      "counterfactual_em": 0.0625,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.3125,
+      "test_loss": null,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "task_only",
+      "stage": "free_running",
+      "representation": "free_running_generation",
+      "base_em": 0.0625,
+      "counterfactual_em": 0.0625,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": null,
+      "test_loss": null,
+      "metric": "free_running_em"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "writer_kv",
+      "representation": "shared_span_relation_writer_all_36_layer_kv",
+      "base_em": 0.0,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.0,
+      "test_loss": 3.7560655176639557,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "reader_readout",
+      "representation": "shared_span_relation_reader_all_layer_readout",
+      "base_em": 0.0625,
+      "counterfactual_em": 0.0625,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.25,
+      "test_loss": 3.7687206000089644,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "cumulative_delta",
+      "representation": "shared_span_relation_final_cumulative_delta",
+      "base_em": 0.0,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.0,
+      "test_loss": 3.7410067334771155,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "receiver_final_hidden",
+      "representation": "shared_span_relation_receiver_final_hidden",
+      "base_em": 0.0,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.0,
+      "test_loss": 3.750680464506149,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "first_token_logits",
+      "representation": "shared_span_relation_first_token_logits",
+      "base_em": 0.0625,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": 0.25,
+      "test_loss": null,
+      "metric": "trained_functional_probe"
+    },
+    {
+      "branch": "shared_span_relation",
+      "stage": "free_running",
+      "representation": "free_running_generation",
+      "base_em": 0.0625,
+      "counterfactual_em": 0.0,
+      "paired_consistency": 0.0,
+      "prediction_switch_rate": null,
+      "test_loss": null,
+      "metric": "free_running_em"
+    }
+  ],
+  "branches": {
+    "task_only": {
+      "rows": [
+        {
+          "branch": "common",
+          "stage": "sender_final_hidden",
+          "representation": "llama_final_evidence_hidden",
+          "base_em": 0.125,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.3125,
+          "test_loss": 3.6920974664390087,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "common",
+          "stage": "raw_kv",
+          "representation": "raw_llama_all_28_layer_kv",
+          "base_em": 0.0,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.0,
+          "test_loss": 3.7865221947431564,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "task_only",
+          "stage": "writer_kv",
+          "representation": "task_only_writer_all_36_layer_kv",
+          "base_em": 0.0,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.0,
+          "test_loss": 3.7551386654376984,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "task_only",
+          "stage": "reader_readout",
+          "representation": "task_only_reader_all_layer_readout",
+          "base_em": 0.0,
+          "counterfactual_em": 0.125,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.375,
+          "test_loss": 3.7827602967619898,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "task_only",
+          "stage": "cumulative_delta",
+          "representation": "task_only_final_cumulative_delta",
+          "base_em": 0.0,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.0,
+          "test_loss": 3.7417681947350503,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "task_only",
+          "stage": "receiver_final_hidden",
+          "representation": "task_only_receiver_final_hidden",
+          "base_em": 0.0,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.0,
+          "test_loss": 3.7568751245737078,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "task_only",
+          "stage": "first_token_logits",
+          "representation": "task_only_first_token_logits",
+          "base_em": 0.0625,
+          "counterfactual_em": 0.0625,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.3125,
+          "test_loss": null,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "task_only",
+          "stage": "free_running",
+          "representation": "free_running_generation",
+          "base_em": 0.0625,
+          "counterfactual_em": 0.0625,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": null,
+          "test_loss": null,
+          "metric": "free_running_em"
+        }
+      ],
+      "first_large_drop": {
+        "from": null,
+        "to": null,
+        "paired_drop": null,
+        "diagnosis": "No >= threshold drop; quick audit is inconclusive"
+      }
+    },
+    "shared_span_relation": {
+      "rows": [
+        {
+          "branch": "common",
+          "stage": "sender_final_hidden",
+          "representation": "llama_final_evidence_hidden",
+          "base_em": 0.125,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.3125,
+          "test_loss": 3.6920974664390087,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "common",
+          "stage": "raw_kv",
+          "representation": "raw_llama_all_28_layer_kv",
+          "base_em": 0.0,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.0,
+          "test_loss": 3.7865221947431564,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "writer_kv",
+          "representation": "shared_span_relation_writer_all_36_layer_kv",
+          "base_em": 0.0,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.0,
+          "test_loss": 3.7560655176639557,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "reader_readout",
+          "representation": "shared_span_relation_reader_all_layer_readout",
+          "base_em": 0.0625,
+          "counterfactual_em": 0.0625,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.25,
+          "test_loss": 3.7687206000089644,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "cumulative_delta",
+          "representation": "shared_span_relation_final_cumulative_delta",
+          "base_em": 0.0,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.0,
+          "test_loss": 3.7410067334771155,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "receiver_final_hidden",
+          "representation": "shared_span_relation_receiver_final_hidden",
+          "base_em": 0.0,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.0,
+          "test_loss": 3.750680464506149,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "first_token_logits",
+          "representation": "shared_span_relation_first_token_logits",
+          "base_em": 0.0625,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": 0.25,
+          "test_loss": null,
+          "metric": "trained_functional_probe"
+        },
+        {
+          "branch": "shared_span_relation",
+          "stage": "free_running",
+          "representation": "free_running_generation",
+          "base_em": 0.0625,
+          "counterfactual_em": 0.0,
+          "paired_consistency": 0.0,
+          "prediction_switch_rate": null,
+          "test_loss": null,
+          "metric": "free_running_em"
+        }
+      ],
+      "first_large_drop": {
+        "from": null,
+        "to": null,
+        "paired_drop": null,
+        "diagnosis": "No >= threshold drop; quick audit is inconclusive"
+      }
+    }
+  },
+  "claim_boundary": "This 64/16/16 quick audit identifies directional drops only. It is not a statistical-significance replacement for the full audit."
+}

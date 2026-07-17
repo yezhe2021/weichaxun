@@ -1,0 +1,157 @@
+{
+  "format_version": 1,
+  "split": "validation",
+  "conditions": [
+    "correct"
+  ],
+  "labels": [
+    "Athens",
+    "Berlin",
+    "Boston",
+    "Brisbane",
+    "Calgary",
+    "Denver",
+    "Dublin",
+    "Florence",
+    "Geneva",
+    "Hamburg",
+    "Helsinki",
+    "Jakarta",
+    "Kingston",
+    "Lima",
+    "Lisbon",
+    "London",
+    "Madrid",
+    "Manila",
+    "Milan",
+    "Montreal",
+    "Nairobi",
+    "Naples",
+    "Oslo",
+    "Ottawa",
+    "Paris",
+    "Portland",
+    "Prague",
+    "Riga",
+    "Rome",
+    "Seattle",
+    "Seoul",
+    "Sofia",
+    "Sydney",
+    "Tallinn",
+    "Tokyo",
+    "Toronto",
+    "Valencia",
+    "Vienna",
+    "Warsaw",
+    "Zurich"
+  ],
+  "candidate_first_token_ids": [
+    45826,
+    19846,
+    10196,
+    46235,
+    37875,
+    22117,
+    32877,
+    47506,
+    44245,
+    50462,
+    76334,
+    63033,
+    62469,
+    61953,
+    80701,
+    7148,
+    24081,
+    56564,
+    38755,
+    29513,
+    96525,
+    82621,
+    57858,
+    32166,
+    12095,
+    23077,
+    67289,
+    431,
+    21718,
+    16355,
+    50189,
+    78563,
+    21273,
+    41102,
+    26194,
+    14632,
+    60249,
+    46287,
+    72176,
+    71726
+  ],
+  "pair_files": [
+    {
+      "pair_id": "train-pair-00014",
+      "file": "pair_0000.pt"
+    },
+    {
+      "pair_id": "train-pair-00028",
+      "file": "pair_0001.pt"
+    },
+    {
+      "pair_id": "train-pair-00057",
+      "file": "pair_0002.pt"
+    },
+    {
+      "pair_id": "train-pair-00107",
+      "file": "pair_0003.pt"
+    },
+    {
+      "pair_id": "train-pair-00113",
+      "file": "pair_0004.pt"
+    },
+    {
+      "pair_id": "train-pair-00179",
+      "file": "pair_0005.pt"
+    },
+    {
+      "pair_id": "train-pair-00199",
+      "file": "pair_0006.pt"
+    },
+    {
+      "pair_id": "train-pair-00211",
+      "file": "pair_0007.pt"
+    },
+    {
+      "pair_id": "train-pair-00342",
+      "file": "pair_0008.pt"
+    },
+    {
+      "pair_id": "train-pair-00350",
+      "file": "pair_0009.pt"
+    },
+    {
+      "pair_id": "train-pair-00353",
+      "file": "pair_0010.pt"
+    },
+    {
+      "pair_id": "train-pair-00409",
+      "file": "pair_0011.pt"
+    },
+    {
+      "pair_id": "train-pair-00420",
+      "file": "pair_0012.pt"
+    },
+    {
+      "pair_id": "train-pair-00471",
+      "file": "pair_0013.pt"
+    },
+    {
+      "pair_id": "train-pair-00472",
+      "file": "pair_0014.pt"
+    },
+    {
+      "pair_id": "train-pair-00476",
+      "file": "pair_0015.pt"
+    }
+  ]
+}

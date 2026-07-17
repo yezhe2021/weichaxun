@@ -1,0 +1,18 @@
+{
+  "threshold": 0.2,
+  "quick_audit_only": true,
+  "branches": {
+    "task_only": {
+      "from": null,
+      "to": null,
+      "paired_drop": null,
+      "diagnosis": "No >= threshold drop; quick audit is inconclusive"
+    },
+    "shared_span_relation": {
+      "from": null,
+      "to": null,
+      "paired_drop": null,
+      "diagnosis": "No >= threshold drop; quick audit is inconclusive"
+    }
+  }
+}
