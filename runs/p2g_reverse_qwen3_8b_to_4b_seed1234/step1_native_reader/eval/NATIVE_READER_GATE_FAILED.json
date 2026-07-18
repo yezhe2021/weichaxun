@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "enter_writer_stage": false,
+  "paired_threshold": 0.9,
+  "native_kv": {
+    "base_em": 0.9375,
+    "counterfactual_em": 0.90625,
+    "paired_consistency": 0.890625,
+    "prediction_switch_rate": 0.953125
+  },
+  "full_text_upper_bound": {
+    "base_em": 0.96875,
+    "counterfactual_em": 0.984375,
+    "paired_consistency": 0.96875
+  },
+  "controls": {
+    "shuffled_kv": 0.0,
+    "mismatched_kv": 0.0,
+    "zero_kv": 0.0,
+    "reader_off": 0.0
+  }
+}
