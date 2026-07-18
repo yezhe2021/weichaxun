@@ -1,0 +1,101 @@
+{
+  "status": "complete",
+  "writer_sha256": "9da05c4c24f9b22f1a0ce78abd05f0cae86dbac70c2c62b994ccf20617cda3b5",
+  "rows": [
+    {
+      "branch": "mother_qwen3_4b",
+      "receiver": "qwen3_4b",
+      "base_em": 0.03125,
+      "counterfactual_em": 0.03125,
+      "paired_consistency": 0.0,
+      "prediction_switch": 0.015625,
+      "zero_em": 0.0,
+      "reader_off_em": 0.0,
+      "permutation_em": 0.03125,
+      "drop_half_em": 0.03125,
+      "permutation_logit_max_diff": 0.0390625,
+      "writer_sha256": "9da05c4c24f9b22f1a0ce78abd05f0cae86dbac70c2c62b994ccf20617cda3b5"
+    },
+    {
+      "branch": "mother_qwen3_5_4b",
+      "receiver": "qwen3_5_4b",
+      "base_em": 0.03125,
+      "counterfactual_em": 0.015625,
+      "paired_consistency": 0.0,
+      "prediction_switch": 0.0,
+      "zero_em": 0.0,
+      "reader_off_em": 0.0,
+      "permutation_em": 0.03125,
+      "drop_half_em": 0.03125,
+      "permutation_logit_max_diff": 0.02734375,
+      "writer_sha256": "9da05c4c24f9b22f1a0ce78abd05f0cae86dbac70c2c62b994ccf20617cda3b5"
+    },
+    {
+      "branch": "frozen_writer_retrained_qwen3_4b",
+      "receiver": "qwen3_4b",
+      "base_em": 0.015625,
+      "counterfactual_em": 0.015625,
+      "paired_consistency": 0.0,
+      "prediction_switch": 0.046875,
+      "zero_em": 0.0,
+      "reader_off_em": 0.0,
+      "permutation_em": 0.015625,
+      "drop_half_em": 0.015625,
+      "permutation_logit_max_diff": 0.046875,
+      "writer_sha256": "9da05c4c24f9b22f1a0ce78abd05f0cae86dbac70c2c62b994ccf20617cda3b5"
+    },
+    {
+      "branch": "frozen_writer_retrained_qwen3_5_4b",
+      "receiver": "qwen3_5_4b",
+      "base_em": 0.015625,
+      "counterfactual_em": 0.03125,
+      "paired_consistency": 0.0,
+      "prediction_switch": 0.0,
+      "zero_em": 0.0,
+      "reader_off_em": 0.0,
+      "permutation_em": 0.015625,
+      "drop_half_em": 0.015625,
+      "permutation_logit_max_diff": 0.0234375,
+      "writer_sha256": "9da05c4c24f9b22f1a0ce78abd05f0cae86dbac70c2c62b994ccf20617cda3b5"
+    },
+    {
+      "branch": "oracle_joint_qwen3_4b",
+      "receiver": "qwen3_4b",
+      "base_em": 0.03125,
+      "counterfactual_em": 0.03125,
+      "paired_consistency": 0.0,
+      "prediction_switch": 0.03125,
+      "zero_em": 0.0,
+      "reader_off_em": 0.0,
+      "permutation_em": 0.03125,
+      "drop_half_em": 0.03125,
+      "permutation_logit_max_diff": 0.0390625,
+      "writer_sha256": "255579f039e899c7946a2e81d6f061eaab046f668c3aae603b178479ee0017b4"
+    },
+    {
+      "branch": "oracle_joint_qwen3_5_4b",
+      "receiver": "qwen3_5_4b",
+      "base_em": 0.015625,
+      "counterfactual_em": 0.03125,
+      "paired_consistency": 0.0,
+      "prediction_switch": 0.0,
+      "zero_em": 0.0,
+      "reader_off_em": 0.0,
+      "permutation_em": 0.015625,
+      "drop_half_em": 0.015625,
+      "permutation_logit_max_diff": 0.025390625,
+      "writer_sha256": "5944d67d4a29095412fd2316d9a1b88023fd33b70e761511b9514e294ec70b1b"
+    }
+  ],
+  "oracle_paired_gains": {
+    "qwen3_4b": 0.0,
+    "qwen3_5_4b": 0.0
+  },
+  "success_criteria": {
+    "qwen3_4b_paired_ge_0_85": false,
+    "qwen3_5_4b_paired_ge_0_70": false,
+    "same_writer_for_both_receivers": true,
+    "overall_pass": false
+  },
+  "interpretation_scope": "This tests one Qwen3-8B Writer with two receiver-specific Readers. It does not establish multi-sender composition or question-independent memory."
+}

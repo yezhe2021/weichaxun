@@ -1,0 +1,397 @@
+{
+  "format_version": 1,
+  "interface": "receiver_independent_canonical_evidence_kv",
+  "coordinate_system": "none",
+  "slots": 256,
+  "canonical_dim": 256,
+  "writer_sha256": "9da05c4c24f9b22f1a0ce78abd05f0cae86dbac70c2c62b994ccf20617cda3b5",
+  "writer_checkpoint": "/home/yezhe/伪查询/runs/p2i_cached_canonical_evidence_kv_qwen3_8b_seed1234/mother/cycle_2_qwen3_5_4b/checkpoint_latest.pt",
+  "source_index": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/cache_native_kv_pairs/test/index.json",
+  "pairs": 64,
+  "pair_files": [
+    {
+      "pair_id": "test-pair-00000",
+      "file": "pair_00000.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "test-pair-00001",
+      "file": "pair_00001.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "test-pair-00002",
+      "file": "pair_00002.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "test-pair-00003",
+      "file": "pair_00003.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "test-pair-00004",
+      "file": "pair_00004.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "test-pair-00005",
+      "file": "pair_00005.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "test-pair-00006",
+      "file": "pair_00006.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "test-pair-00007",
+      "file": "pair_00007.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "test-pair-00008",
+      "file": "pair_00008.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "test-pair-00009",
+      "file": "pair_00009.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "test-pair-00010",
+      "file": "pair_00010.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "test-pair-00011",
+      "file": "pair_00011.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "test-pair-00012",
+      "file": "pair_00012.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "test-pair-00013",
+      "file": "pair_00013.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "test-pair-00014",
+      "file": "pair_00014.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "test-pair-00015",
+      "file": "pair_00015.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "test-pair-00016",
+      "file": "pair_00016.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "test-pair-00017",
+      "file": "pair_00017.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "test-pair-00018",
+      "file": "pair_00018.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "test-pair-00019",
+      "file": "pair_00019.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "test-pair-00020",
+      "file": "pair_00020.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "test-pair-00021",
+      "file": "pair_00021.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "test-pair-00022",
+      "file": "pair_00022.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "test-pair-00023",
+      "file": "pair_00023.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "test-pair-00024",
+      "file": "pair_00024.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "test-pair-00025",
+      "file": "pair_00025.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "test-pair-00026",
+      "file": "pair_00026.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "test-pair-00027",
+      "file": "pair_00027.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "test-pair-00028",
+      "file": "pair_00028.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "test-pair-00029",
+      "file": "pair_00029.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "test-pair-00030",
+      "file": "pair_00030.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "test-pair-00031",
+      "file": "pair_00031.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "test-pair-00032",
+      "file": "pair_00032.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "test-pair-00033",
+      "file": "pair_00033.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "test-pair-00034",
+      "file": "pair_00034.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "test-pair-00035",
+      "file": "pair_00035.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "test-pair-00036",
+      "file": "pair_00036.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "test-pair-00037",
+      "file": "pair_00037.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "test-pair-00038",
+      "file": "pair_00038.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "test-pair-00039",
+      "file": "pair_00039.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "test-pair-00040",
+      "file": "pair_00040.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "test-pair-00041",
+      "file": "pair_00041.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "test-pair-00042",
+      "file": "pair_00042.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "test-pair-00043",
+      "file": "pair_00043.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "test-pair-00044",
+      "file": "pair_00044.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "test-pair-00045",
+      "file": "pair_00045.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "test-pair-00046",
+      "file": "pair_00046.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "test-pair-00047",
+      "file": "pair_00047.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "test-pair-00048",
+      "file": "pair_00048.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "test-pair-00049",
+      "file": "pair_00049.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "test-pair-00050",
+      "file": "pair_00050.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "test-pair-00051",
+      "file": "pair_00051.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "test-pair-00052",
+      "file": "pair_00052.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "test-pair-00053",
+      "file": "pair_00053.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "test-pair-00054",
+      "file": "pair_00054.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "test-pair-00055",
+      "file": "pair_00055.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "test-pair-00056",
+      "file": "pair_00056.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "test-pair-00057",
+      "file": "pair_00057.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "test-pair-00058",
+      "file": "pair_00058.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "test-pair-00059",
+      "file": "pair_00059.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "test-pair-00060",
+      "file": "pair_00060.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "test-pair-00061",
+      "file": "pair_00061.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "test-pair-00062",
+      "file": "pair_00062.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "test-pair-00063",
+      "file": "pair_00063.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Zurich"
+    }
+  ]
+}

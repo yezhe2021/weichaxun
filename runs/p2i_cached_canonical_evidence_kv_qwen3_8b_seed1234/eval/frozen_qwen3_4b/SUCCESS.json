@@ -1,0 +1,162 @@
+{
+  "status": "complete",
+  "receiver": "qwen3_4b",
+  "args": {
+    "receiver_name": "qwen3_4b",
+    "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "canonical_index": "/home/yezhe/伪查询/runs/p2i_cached_canonical_evidence_kv_qwen3_8b_seed1234/cache/canonical/test/index.json",
+    "checkpoint": "/home/yezhe/伪查询/runs/p2i_cached_canonical_evidence_kv_qwen3_8b_seed1234/forks/qwen3_4b/checkpoint_latest.pt",
+    "mismatch_index": "/home/yezhe/伪查询/runs/p2i_cached_canonical_evidence_kv_qwen3_8b_seed1234/cache/true_mismatch_canonical/test/index.json",
+    "out": "/home/yezhe/伪查询/runs/p2i_cached_canonical_evidence_kv_qwen3_8b_seed1234/eval/frozen_qwen3_4b",
+    "max_pairs": 64,
+    "max_new_tokens": 24,
+    "seed": 1234,
+    "device": "cuda",
+    "dtype": "float16"
+  },
+  "conditions": [
+    {
+      "condition": "correct_slots",
+      "n": 64,
+      "target_em": 0.015625,
+      "source_memory_answer_rate": 0.015625,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "mean_tokens": 2.0
+    },
+    {
+      "condition": "counterfactual_slots",
+      "n": 64,
+      "target_em": 0.015625,
+      "source_memory_answer_rate": 0.015625,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "mean_tokens": 2.0
+    },
+    {
+      "condition": "drop_half_slots",
+      "n": 64,
+      "target_em": 0.015625,
+      "source_memory_answer_rate": 0.015625,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "mean_tokens": 2.0
+    },
+    {
+      "condition": "full_text_base",
+      "n": 64,
+      "target_em": 0.96875,
+      "source_memory_answer_rate": 0.96875,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "mean_tokens": 2.34375
+    },
+    {
+      "condition": "full_text_counterfactual",
+      "n": 64,
+      "target_em": 0.984375,
+      "source_memory_answer_rate": 0.984375,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "mean_tokens": 2.3125
+    },
+    {
+      "condition": "kv_mismatched_slots",
+      "n": 64,
+      "target_em": 0.015625,
+      "source_memory_answer_rate": 0.015625,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "mean_tokens": 2.0
+    },
+    {
+      "condition": "reader_off",
+      "n": 64,
+      "target_em": 0.0,
+      "source_memory_answer_rate": 0.0,
+      "insufficient_rate": 1.0,
+      "eos_rate": 1.0,
+      "mean_tokens": 4.0
+    },
+    {
+      "condition": "shuffled_complete_memory",
+      "n": 64,
+      "target_em": 0.015625,
+      "source_memory_answer_rate": 0.015625,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "mean_tokens": 2.0
+    },
+    {
+      "condition": "slot_permutation",
+      "n": 64,
+      "target_em": 0.015625,
+      "source_memory_answer_rate": 0.015625,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "mean_tokens": 2.0
+    },
+    {
+      "condition": "true_mismatched_a_b",
+      "n": 64,
+      "target_em": 0.015625,
+      "source_memory_answer_rate": 0.015625,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "mean_tokens": 2.0
+    },
+    {
+      "condition": "zero_slots",
+      "n": 64,
+      "target_em": 0.0,
+      "source_memory_answer_rate": 0.0,
+      "insufficient_rate": 1.0,
+      "eos_rate": 1.0,
+      "mean_tokens": 4.0
+    }
+  ],
+  "canonical_paired_consistency": 0.0,
+  "canonical_prediction_switch": 0.046875,
+  "full_text_paired_consistency": 0.96875,
+  "slot_permutation_max_logit_difference": 0.046875,
+  "slot_permutation_mean_logit_difference": 0.0246124267578125,
+  "writer_sha256": "9da05c4c24f9b22f1a0ce78abd05f0cae86dbac70c2c62b994ccf20617cda3b5",
+  "reader_active_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ]
+}

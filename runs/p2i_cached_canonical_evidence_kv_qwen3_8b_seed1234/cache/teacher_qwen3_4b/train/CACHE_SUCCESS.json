@@ -1,0 +1,2700 @@
+{
+  "status": "complete",
+  "format_version": 1,
+  "teacher_kind": "native_reader",
+  "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+  "rows_index": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/cache_native_kv_pairs/train/index.json",
+  "native_index": "/home/yezhe/伪查询/runs/p2g1_native_reader_qwen3_4b_seed1234/cache/train/index.json",
+  "native_reader_checkpoint": "/home/yezhe/伪查询/runs/p2g1_native_reader_qwen3_4b_seed1234/train/checkpoint_latest.pt",
+  "pairs": 448,
+  "pair_files": [
+    {
+      "pair_id": "train-pair-00000",
+      "file": "pair_00000.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "train-pair-00001",
+      "file": "pair_00001.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "train-pair-00002",
+      "file": "pair_00002.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00003",
+      "file": "pair_00003.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00004",
+      "file": "pair_00004.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "train-pair-00005",
+      "file": "pair_00005.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "train-pair-00006",
+      "file": "pair_00006.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "train-pair-00007",
+      "file": "pair_00007.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "train-pair-00008",
+      "file": "pair_00008.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "train-pair-00009",
+      "file": "pair_00009.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "train-pair-00010",
+      "file": "pair_00010.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "train-pair-00011",
+      "file": "pair_00011.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "train-pair-00012",
+      "file": "pair_00012.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "train-pair-00013",
+      "file": "pair_00013.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "train-pair-00014",
+      "file": "pair_00014.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "train-pair-00015",
+      "file": "pair_00015.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00016",
+      "file": "pair_00016.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "train-pair-00017",
+      "file": "pair_00017.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00018",
+      "file": "pair_00018.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "train-pair-00019",
+      "file": "pair_00019.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "train-pair-00020",
+      "file": "pair_00020.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00021",
+      "file": "pair_00021.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "train-pair-00022",
+      "file": "pair_00022.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "train-pair-00023",
+      "file": "pair_00023.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "train-pair-00024",
+      "file": "pair_00024.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "train-pair-00025",
+      "file": "pair_00025.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "train-pair-00026",
+      "file": "pair_00026.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "train-pair-00027",
+      "file": "pair_00027.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00028",
+      "file": "pair_00028.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "train-pair-00029",
+      "file": "pair_00029.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "train-pair-00030",
+      "file": "pair_00030.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "train-pair-00031",
+      "file": "pair_00031.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "train-pair-00032",
+      "file": "pair_00032.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "train-pair-00033",
+      "file": "pair_00033.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "train-pair-00034",
+      "file": "pair_00034.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00035",
+      "file": "pair_00035.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "train-pair-00036",
+      "file": "pair_00036.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "train-pair-00037",
+      "file": "pair_00037.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "train-pair-00038",
+      "file": "pair_00038.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "train-pair-00039",
+      "file": "pair_00039.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "train-pair-00040",
+      "file": "pair_00040.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00041",
+      "file": "pair_00041.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "train-pair-00042",
+      "file": "pair_00042.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "train-pair-00043",
+      "file": "pair_00043.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00044",
+      "file": "pair_00044.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "train-pair-00045",
+      "file": "pair_00045.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "train-pair-00046",
+      "file": "pair_00046.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "train-pair-00047",
+      "file": "pair_00047.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "train-pair-00048",
+      "file": "pair_00048.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "train-pair-00049",
+      "file": "pair_00049.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "train-pair-00050",
+      "file": "pair_00050.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00051",
+      "file": "pair_00051.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "train-pair-00052",
+      "file": "pair_00052.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "train-pair-00053",
+      "file": "pair_00053.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "train-pair-00054",
+      "file": "pair_00054.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "train-pair-00055",
+      "file": "pair_00055.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "train-pair-00056",
+      "file": "pair_00056.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "train-pair-00057",
+      "file": "pair_00057.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "train-pair-00058",
+      "file": "pair_00058.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "train-pair-00059",
+      "file": "pair_00059.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "train-pair-00060",
+      "file": "pair_00060.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "train-pair-00061",
+      "file": "pair_00061.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00062",
+      "file": "pair_00062.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "train-pair-00063",
+      "file": "pair_00063.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "train-pair-00064",
+      "file": "pair_00064.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00065",
+      "file": "pair_00065.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00066",
+      "file": "pair_00066.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "train-pair-00067",
+      "file": "pair_00067.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "train-pair-00068",
+      "file": "pair_00068.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "train-pair-00069",
+      "file": "pair_00069.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "train-pair-00070",
+      "file": "pair_00070.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "train-pair-00071",
+      "file": "pair_00071.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00072",
+      "file": "pair_00072.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "train-pair-00073",
+      "file": "pair_00073.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "train-pair-00074",
+      "file": "pair_00074.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "train-pair-00075",
+      "file": "pair_00075.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "train-pair-00076",
+      "file": "pair_00076.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "train-pair-00077",
+      "file": "pair_00077.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "train-pair-00078",
+      "file": "pair_00078.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "train-pair-00079",
+      "file": "pair_00079.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "train-pair-00080",
+      "file": "pair_00080.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "train-pair-00081",
+      "file": "pair_00081.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00082",
+      "file": "pair_00082.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "train-pair-00083",
+      "file": "pair_00083.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "train-pair-00084",
+      "file": "pair_00084.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "train-pair-00085",
+      "file": "pair_00085.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "train-pair-00086",
+      "file": "pair_00086.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "train-pair-00087",
+      "file": "pair_00087.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "train-pair-00088",
+      "file": "pair_00088.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "train-pair-00089",
+      "file": "pair_00089.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "train-pair-00090",
+      "file": "pair_00090.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00091",
+      "file": "pair_00091.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00092",
+      "file": "pair_00092.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "train-pair-00093",
+      "file": "pair_00093.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "train-pair-00094",
+      "file": "pair_00094.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "train-pair-00095",
+      "file": "pair_00095.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00096",
+      "file": "pair_00096.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "train-pair-00097",
+      "file": "pair_00097.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "train-pair-00098",
+      "file": "pair_00098.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "train-pair-00099",
+      "file": "pair_00099.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "train-pair-00100",
+      "file": "pair_00100.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "train-pair-00101",
+      "file": "pair_00101.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "train-pair-00102",
+      "file": "pair_00102.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00103",
+      "file": "pair_00103.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "train-pair-00104",
+      "file": "pair_00104.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "train-pair-00105",
+      "file": "pair_00105.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "train-pair-00106",
+      "file": "pair_00106.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "train-pair-00107",
+      "file": "pair_00107.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "train-pair-00108",
+      "file": "pair_00108.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "train-pair-00109",
+      "file": "pair_00109.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "train-pair-00110",
+      "file": "pair_00110.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "train-pair-00111",
+      "file": "pair_00111.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "train-pair-00112",
+      "file": "pair_00112.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "train-pair-00113",
+      "file": "pair_00113.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00114",
+      "file": "pair_00114.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "train-pair-00115",
+      "file": "pair_00115.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "train-pair-00116",
+      "file": "pair_00116.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "train-pair-00117",
+      "file": "pair_00117.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "train-pair-00118",
+      "file": "pair_00118.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00119",
+      "file": "pair_00119.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "train-pair-00120",
+      "file": "pair_00120.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "train-pair-00121",
+      "file": "pair_00121.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00122",
+      "file": "pair_00122.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "train-pair-00123",
+      "file": "pair_00123.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00124",
+      "file": "pair_00124.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "train-pair-00125",
+      "file": "pair_00125.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "train-pair-00126",
+      "file": "pair_00126.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "train-pair-00127",
+      "file": "pair_00127.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "train-pair-00128",
+      "file": "pair_00128.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "train-pair-00129",
+      "file": "pair_00129.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "train-pair-00130",
+      "file": "pair_00130.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00131",
+      "file": "pair_00131.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "train-pair-00132",
+      "file": "pair_00132.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "train-pair-00133",
+      "file": "pair_00133.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "train-pair-00134",
+      "file": "pair_00134.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "train-pair-00135",
+      "file": "pair_00135.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "train-pair-00136",
+      "file": "pair_00136.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "train-pair-00137",
+      "file": "pair_00137.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "train-pair-00138",
+      "file": "pair_00138.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "train-pair-00139",
+      "file": "pair_00139.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "train-pair-00140",
+      "file": "pair_00140.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "train-pair-00141",
+      "file": "pair_00141.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "train-pair-00142",
+      "file": "pair_00142.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "train-pair-00143",
+      "file": "pair_00143.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "train-pair-00144",
+      "file": "pair_00144.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "train-pair-00145",
+      "file": "pair_00145.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "train-pair-00146",
+      "file": "pair_00146.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "train-pair-00147",
+      "file": "pair_00147.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "train-pair-00148",
+      "file": "pair_00148.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "train-pair-00149",
+      "file": "pair_00149.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "train-pair-00150",
+      "file": "pair_00150.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "train-pair-00151",
+      "file": "pair_00151.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "train-pair-00152",
+      "file": "pair_00152.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00153",
+      "file": "pair_00153.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00154",
+      "file": "pair_00154.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "train-pair-00155",
+      "file": "pair_00155.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00156",
+      "file": "pair_00156.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00157",
+      "file": "pair_00157.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "train-pair-00158",
+      "file": "pair_00158.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "train-pair-00159",
+      "file": "pair_00159.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "train-pair-00160",
+      "file": "pair_00160.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "train-pair-00161",
+      "file": "pair_00161.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "train-pair-00162",
+      "file": "pair_00162.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "train-pair-00163",
+      "file": "pair_00163.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00164",
+      "file": "pair_00164.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "train-pair-00165",
+      "file": "pair_00165.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "train-pair-00166",
+      "file": "pair_00166.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "train-pair-00167",
+      "file": "pair_00167.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "train-pair-00168",
+      "file": "pair_00168.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "train-pair-00169",
+      "file": "pair_00169.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "train-pair-00170",
+      "file": "pair_00170.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00171",
+      "file": "pair_00171.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "train-pair-00172",
+      "file": "pair_00172.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00173",
+      "file": "pair_00173.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "train-pair-00174",
+      "file": "pair_00174.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "train-pair-00175",
+      "file": "pair_00175.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "train-pair-00176",
+      "file": "pair_00176.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "train-pair-00177",
+      "file": "pair_00177.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "train-pair-00178",
+      "file": "pair_00178.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "train-pair-00179",
+      "file": "pair_00179.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "train-pair-00180",
+      "file": "pair_00180.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "train-pair-00181",
+      "file": "pair_00181.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00182",
+      "file": "pair_00182.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "train-pair-00183",
+      "file": "pair_00183.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "train-pair-00184",
+      "file": "pair_00184.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "train-pair-00185",
+      "file": "pair_00185.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "train-pair-00186",
+      "file": "pair_00186.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "train-pair-00187",
+      "file": "pair_00187.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00188",
+      "file": "pair_00188.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "train-pair-00189",
+      "file": "pair_00189.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00190",
+      "file": "pair_00190.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "train-pair-00191",
+      "file": "pair_00191.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "train-pair-00192",
+      "file": "pair_00192.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "train-pair-00193",
+      "file": "pair_00193.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "train-pair-00194",
+      "file": "pair_00194.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "train-pair-00195",
+      "file": "pair_00195.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00196",
+      "file": "pair_00196.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "train-pair-00197",
+      "file": "pair_00197.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "train-pair-00198",
+      "file": "pair_00198.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "train-pair-00199",
+      "file": "pair_00199.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "train-pair-00200",
+      "file": "pair_00200.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "train-pair-00201",
+      "file": "pair_00201.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00202",
+      "file": "pair_00202.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "train-pair-00203",
+      "file": "pair_00203.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "train-pair-00204",
+      "file": "pair_00204.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00205",
+      "file": "pair_00205.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "train-pair-00206",
+      "file": "pair_00206.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "train-pair-00207",
+      "file": "pair_00207.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "train-pair-00208",
+      "file": "pair_00208.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "train-pair-00209",
+      "file": "pair_00209.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "train-pair-00210",
+      "file": "pair_00210.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00211",
+      "file": "pair_00211.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "train-pair-00212",
+      "file": "pair_00212.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00213",
+      "file": "pair_00213.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "train-pair-00214",
+      "file": "pair_00214.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "train-pair-00215",
+      "file": "pair_00215.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "train-pair-00216",
+      "file": "pair_00216.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "train-pair-00217",
+      "file": "pair_00217.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "train-pair-00218",
+      "file": "pair_00218.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "train-pair-00219",
+      "file": "pair_00219.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "train-pair-00220",
+      "file": "pair_00220.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "train-pair-00221",
+      "file": "pair_00221.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "train-pair-00222",
+      "file": "pair_00222.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "train-pair-00223",
+      "file": "pair_00223.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "train-pair-00224",
+      "file": "pair_00224.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "train-pair-00225",
+      "file": "pair_00225.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "train-pair-00226",
+      "file": "pair_00226.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "train-pair-00227",
+      "file": "pair_00227.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "train-pair-00228",
+      "file": "pair_00228.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "train-pair-00229",
+      "file": "pair_00229.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "train-pair-00230",
+      "file": "pair_00230.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00231",
+      "file": "pair_00231.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "train-pair-00232",
+      "file": "pair_00232.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "train-pair-00233",
+      "file": "pair_00233.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "train-pair-00234",
+      "file": "pair_00234.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00235",
+      "file": "pair_00235.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "train-pair-00236",
+      "file": "pair_00236.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00237",
+      "file": "pair_00237.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "train-pair-00238",
+      "file": "pair_00238.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "train-pair-00239",
+      "file": "pair_00239.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "train-pair-00240",
+      "file": "pair_00240.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "train-pair-00241",
+      "file": "pair_00241.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "train-pair-00242",
+      "file": "pair_00242.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "train-pair-00243",
+      "file": "pair_00243.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "train-pair-00244",
+      "file": "pair_00244.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "train-pair-00245",
+      "file": "pair_00245.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "train-pair-00246",
+      "file": "pair_00246.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "train-pair-00247",
+      "file": "pair_00247.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00248",
+      "file": "pair_00248.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "train-pair-00249",
+      "file": "pair_00249.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "train-pair-00250",
+      "file": "pair_00250.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "train-pair-00251",
+      "file": "pair_00251.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00252",
+      "file": "pair_00252.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "train-pair-00253",
+      "file": "pair_00253.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "train-pair-00254",
+      "file": "pair_00254.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00255",
+      "file": "pair_00255.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "train-pair-00256",
+      "file": "pair_00256.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "train-pair-00257",
+      "file": "pair_00257.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "train-pair-00258",
+      "file": "pair_00258.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00259",
+      "file": "pair_00259.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00260",
+      "file": "pair_00260.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "train-pair-00261",
+      "file": "pair_00261.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "train-pair-00262",
+      "file": "pair_00262.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "train-pair-00263",
+      "file": "pair_00263.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "train-pair-00264",
+      "file": "pair_00264.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "train-pair-00265",
+      "file": "pair_00265.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "train-pair-00266",
+      "file": "pair_00266.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "train-pair-00267",
+      "file": "pair_00267.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "train-pair-00268",
+      "file": "pair_00268.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "train-pair-00269",
+      "file": "pair_00269.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "train-pair-00270",
+      "file": "pair_00270.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "train-pair-00271",
+      "file": "pair_00271.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "train-pair-00272",
+      "file": "pair_00272.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00273",
+      "file": "pair_00273.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "train-pair-00274",
+      "file": "pair_00274.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "train-pair-00275",
+      "file": "pair_00275.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00276",
+      "file": "pair_00276.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "train-pair-00277",
+      "file": "pair_00277.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "train-pair-00278",
+      "file": "pair_00278.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "train-pair-00279",
+      "file": "pair_00279.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "train-pair-00280",
+      "file": "pair_00280.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00281",
+      "file": "pair_00281.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "train-pair-00282",
+      "file": "pair_00282.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "train-pair-00283",
+      "file": "pair_00283.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "train-pair-00284",
+      "file": "pair_00284.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "train-pair-00285",
+      "file": "pair_00285.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "train-pair-00286",
+      "file": "pair_00286.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00287",
+      "file": "pair_00287.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "train-pair-00288",
+      "file": "pair_00288.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "train-pair-00289",
+      "file": "pair_00289.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "train-pair-00290",
+      "file": "pair_00290.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "train-pair-00291",
+      "file": "pair_00291.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "train-pair-00292",
+      "file": "pair_00292.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "train-pair-00293",
+      "file": "pair_00293.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "train-pair-00294",
+      "file": "pair_00294.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "train-pair-00295",
+      "file": "pair_00295.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00296",
+      "file": "pair_00296.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "train-pair-00297",
+      "file": "pair_00297.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "train-pair-00298",
+      "file": "pair_00298.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "train-pair-00299",
+      "file": "pair_00299.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "train-pair-00300",
+      "file": "pair_00300.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "train-pair-00301",
+      "file": "pair_00301.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00302",
+      "file": "pair_00302.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00303",
+      "file": "pair_00303.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "train-pair-00304",
+      "file": "pair_00304.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00305",
+      "file": "pair_00305.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "train-pair-00306",
+      "file": "pair_00306.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "train-pair-00307",
+      "file": "pair_00307.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "train-pair-00308",
+      "file": "pair_00308.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "train-pair-00309",
+      "file": "pair_00309.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "train-pair-00310",
+      "file": "pair_00310.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "train-pair-00311",
+      "file": "pair_00311.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "train-pair-00312",
+      "file": "pair_00312.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "train-pair-00313",
+      "file": "pair_00313.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "train-pair-00314",
+      "file": "pair_00314.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "train-pair-00315",
+      "file": "pair_00315.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "train-pair-00316",
+      "file": "pair_00316.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "train-pair-00317",
+      "file": "pair_00317.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "train-pair-00318",
+      "file": "pair_00318.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00319",
+      "file": "pair_00319.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "train-pair-00320",
+      "file": "pair_00320.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "train-pair-00321",
+      "file": "pair_00321.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "train-pair-00322",
+      "file": "pair_00322.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "train-pair-00323",
+      "file": "pair_00323.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "train-pair-00324",
+      "file": "pair_00324.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00325",
+      "file": "pair_00325.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "train-pair-00326",
+      "file": "pair_00326.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "train-pair-00327",
+      "file": "pair_00327.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00328",
+      "file": "pair_00328.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "train-pair-00329",
+      "file": "pair_00329.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "train-pair-00330",
+      "file": "pair_00330.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "train-pair-00331",
+      "file": "pair_00331.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "train-pair-00332",
+      "file": "pair_00332.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "train-pair-00333",
+      "file": "pair_00333.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "train-pair-00334",
+      "file": "pair_00334.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "train-pair-00335",
+      "file": "pair_00335.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00336",
+      "file": "pair_00336.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "train-pair-00337",
+      "file": "pair_00337.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "train-pair-00338",
+      "file": "pair_00338.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "train-pair-00339",
+      "file": "pair_00339.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "train-pair-00340",
+      "file": "pair_00340.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "train-pair-00341",
+      "file": "pair_00341.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "train-pair-00342",
+      "file": "pair_00342.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "train-pair-00343",
+      "file": "pair_00343.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00344",
+      "file": "pair_00344.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00345",
+      "file": "pair_00345.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "train-pair-00346",
+      "file": "pair_00346.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "train-pair-00347",
+      "file": "pair_00347.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00348",
+      "file": "pair_00348.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "train-pair-00349",
+      "file": "pair_00349.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "train-pair-00350",
+      "file": "pair_00350.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "train-pair-00351",
+      "file": "pair_00351.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "train-pair-00352",
+      "file": "pair_00352.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "train-pair-00353",
+      "file": "pair_00353.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "train-pair-00354",
+      "file": "pair_00354.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "train-pair-00355",
+      "file": "pair_00355.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "train-pair-00356",
+      "file": "pair_00356.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "train-pair-00357",
+      "file": "pair_00357.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00358",
+      "file": "pair_00358.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "train-pair-00359",
+      "file": "pair_00359.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "train-pair-00360",
+      "file": "pair_00360.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "train-pair-00361",
+      "file": "pair_00361.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "train-pair-00362",
+      "file": "pair_00362.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "train-pair-00363",
+      "file": "pair_00363.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00364",
+      "file": "pair_00364.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "train-pair-00365",
+      "file": "pair_00365.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00366",
+      "file": "pair_00366.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "train-pair-00367",
+      "file": "pair_00367.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "train-pair-00368",
+      "file": "pair_00368.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "train-pair-00369",
+      "file": "pair_00369.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "train-pair-00370",
+      "file": "pair_00370.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00371",
+      "file": "pair_00371.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "train-pair-00372",
+      "file": "pair_00372.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00373",
+      "file": "pair_00373.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "train-pair-00374",
+      "file": "pair_00374.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "train-pair-00375",
+      "file": "pair_00375.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00376",
+      "file": "pair_00376.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "train-pair-00377",
+      "file": "pair_00377.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "train-pair-00378",
+      "file": "pair_00378.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "train-pair-00379",
+      "file": "pair_00379.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "train-pair-00380",
+      "file": "pair_00380.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "train-pair-00381",
+      "file": "pair_00381.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "train-pair-00382",
+      "file": "pair_00382.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "train-pair-00383",
+      "file": "pair_00383.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "train-pair-00384",
+      "file": "pair_00384.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "train-pair-00385",
+      "file": "pair_00385.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "train-pair-00386",
+      "file": "pair_00386.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "train-pair-00387",
+      "file": "pair_00387.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "train-pair-00388",
+      "file": "pair_00388.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "train-pair-00389",
+      "file": "pair_00389.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "train-pair-00390",
+      "file": "pair_00390.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00391",
+      "file": "pair_00391.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "train-pair-00392",
+      "file": "pair_00392.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "train-pair-00393",
+      "file": "pair_00393.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "train-pair-00394",
+      "file": "pair_00394.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "train-pair-00395",
+      "file": "pair_00395.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "train-pair-00396",
+      "file": "pair_00396.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00397",
+      "file": "pair_00397.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "train-pair-00398",
+      "file": "pair_00398.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "train-pair-00399",
+      "file": "pair_00399.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "train-pair-00400",
+      "file": "pair_00400.pt",
+      "base_answer": "Toronto",
+      "counterfactual_answer": "Boston"
+    },
+    {
+      "pair_id": "train-pair-00401",
+      "file": "pair_00401.pt",
+      "base_answer": "Florence",
+      "counterfactual_answer": "Riga"
+    },
+    {
+      "pair_id": "train-pair-00402",
+      "file": "pair_00402.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Seattle"
+    },
+    {
+      "pair_id": "train-pair-00403",
+      "file": "pair_00403.pt",
+      "base_answer": "Milan",
+      "counterfactual_answer": "Sydney"
+    },
+    {
+      "pair_id": "train-pair-00404",
+      "file": "pair_00404.pt",
+      "base_answer": "Tallinn",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00405",
+      "file": "pair_00405.pt",
+      "base_answer": "Naples",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00406",
+      "file": "pair_00406.pt",
+      "base_answer": "Athens",
+      "counterfactual_answer": "Nairobi"
+    },
+    {
+      "pair_id": "train-pair-00407",
+      "file": "pair_00407.pt",
+      "base_answer": "Nairobi",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00408",
+      "file": "pair_00408.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Lisbon"
+    },
+    {
+      "pair_id": "train-pair-00409",
+      "file": "pair_00409.pt",
+      "base_answer": "Geneva",
+      "counterfactual_answer": "Madrid"
+    },
+    {
+      "pair_id": "train-pair-00410",
+      "file": "pair_00410.pt",
+      "base_answer": "Prague",
+      "counterfactual_answer": "Calgary"
+    },
+    {
+      "pair_id": "train-pair-00411",
+      "file": "pair_00411.pt",
+      "base_answer": "Berlin",
+      "counterfactual_answer": "London"
+    },
+    {
+      "pair_id": "train-pair-00412",
+      "file": "pair_00412.pt",
+      "base_answer": "Lima",
+      "counterfactual_answer": "Prague"
+    },
+    {
+      "pair_id": "train-pair-00413",
+      "file": "pair_00413.pt",
+      "base_answer": "Calgary",
+      "counterfactual_answer": "Rome"
+    },
+    {
+      "pair_id": "train-pair-00414",
+      "file": "pair_00414.pt",
+      "base_answer": "Tokyo",
+      "counterfactual_answer": "Montreal"
+    },
+    {
+      "pair_id": "train-pair-00415",
+      "file": "pair_00415.pt",
+      "base_answer": "Montreal",
+      "counterfactual_answer": "Milan"
+    },
+    {
+      "pair_id": "train-pair-00416",
+      "file": "pair_00416.pt",
+      "base_answer": "Seoul",
+      "counterfactual_answer": "Helsinki"
+    },
+    {
+      "pair_id": "train-pair-00417",
+      "file": "pair_00417.pt",
+      "base_answer": "Helsinki",
+      "counterfactual_answer": "Lima"
+    },
+    {
+      "pair_id": "train-pair-00418",
+      "file": "pair_00418.pt",
+      "base_answer": "Boston",
+      "counterfactual_answer": "Toronto"
+    },
+    {
+      "pair_id": "train-pair-00419",
+      "file": "pair_00419.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Naples"
+    },
+    {
+      "pair_id": "train-pair-00420",
+      "file": "pair_00420.pt",
+      "base_answer": "Ottawa",
+      "counterfactual_answer": "Zurich"
+    },
+    {
+      "pair_id": "train-pair-00421",
+      "file": "pair_00421.pt",
+      "base_answer": "Seattle",
+      "counterfactual_answer": "Paris"
+    },
+    {
+      "pair_id": "train-pair-00422",
+      "file": "pair_00422.pt",
+      "base_answer": "Hamburg",
+      "counterfactual_answer": "Seoul"
+    },
+    {
+      "pair_id": "train-pair-00423",
+      "file": "pair_00423.pt",
+      "base_answer": "Rome",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00424",
+      "file": "pair_00424.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00425",
+      "file": "pair_00425.pt",
+      "base_answer": "Sydney",
+      "counterfactual_answer": "Dublin"
+    },
+    {
+      "pair_id": "train-pair-00426",
+      "file": "pair_00426.pt",
+      "base_answer": "Brisbane",
+      "counterfactual_answer": "Ottawa"
+    },
+    {
+      "pair_id": "train-pair-00427",
+      "file": "pair_00427.pt",
+      "base_answer": "Kingston",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00428",
+      "file": "pair_00428.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Warsaw"
+    },
+    {
+      "pair_id": "train-pair-00429",
+      "file": "pair_00429.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00430",
+      "file": "pair_00430.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Kingston"
+    },
+    {
+      "pair_id": "train-pair-00431",
+      "file": "pair_00431.pt",
+      "base_answer": "Portland",
+      "counterfactual_answer": "Denver"
+    },
+    {
+      "pair_id": "train-pair-00432",
+      "file": "pair_00432.pt",
+      "base_answer": "Manila",
+      "counterfactual_answer": "Athens"
+    },
+    {
+      "pair_id": "train-pair-00433",
+      "file": "pair_00433.pt",
+      "base_answer": "Vienna",
+      "counterfactual_answer": "Hamburg"
+    },
+    {
+      "pair_id": "train-pair-00434",
+      "file": "pair_00434.pt",
+      "base_answer": "Dublin",
+      "counterfactual_answer": "Valencia"
+    },
+    {
+      "pair_id": "train-pair-00435",
+      "file": "pair_00435.pt",
+      "base_answer": "London",
+      "counterfactual_answer": "Portland"
+    },
+    {
+      "pair_id": "train-pair-00436",
+      "file": "pair_00436.pt",
+      "base_answer": "Oslo",
+      "counterfactual_answer": "Jakarta"
+    },
+    {
+      "pair_id": "train-pair-00437",
+      "file": "pair_00437.pt",
+      "base_answer": "Riga",
+      "counterfactual_answer": "Vienna"
+    },
+    {
+      "pair_id": "train-pair-00438",
+      "file": "pair_00438.pt",
+      "base_answer": "Warsaw",
+      "counterfactual_answer": "Florence"
+    },
+    {
+      "pair_id": "train-pair-00439",
+      "file": "pair_00439.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Oslo"
+    },
+    {
+      "pair_id": "train-pair-00440",
+      "file": "pair_00440.pt",
+      "base_answer": "Denver",
+      "counterfactual_answer": "Berlin"
+    },
+    {
+      "pair_id": "train-pair-00441",
+      "file": "pair_00441.pt",
+      "base_answer": "Jakarta",
+      "counterfactual_answer": "Tokyo"
+    },
+    {
+      "pair_id": "train-pair-00442",
+      "file": "pair_00442.pt",
+      "base_answer": "Lisbon",
+      "counterfactual_answer": "Tallinn"
+    },
+    {
+      "pair_id": "train-pair-00443",
+      "file": "pair_00443.pt",
+      "base_answer": "Sofia",
+      "counterfactual_answer": "Brisbane"
+    },
+    {
+      "pair_id": "train-pair-00444",
+      "file": "pair_00444.pt",
+      "base_answer": "Valencia",
+      "counterfactual_answer": "Geneva"
+    },
+    {
+      "pair_id": "train-pair-00445",
+      "file": "pair_00445.pt",
+      "base_answer": "Zurich",
+      "counterfactual_answer": "Sofia"
+    },
+    {
+      "pair_id": "train-pair-00446",
+      "file": "pair_00446.pt",
+      "base_answer": "Madrid",
+      "counterfactual_answer": "Manila"
+    },
+    {
+      "pair_id": "train-pair-00447",
+      "file": "pair_00447.pt",
+      "base_answer": "Paris",
+      "counterfactual_answer": "London"
+    }
+  ]
+}
