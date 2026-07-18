@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "writer_sha256": "9da05c4c24f9b22f1a0ce78abd05f0cae86dbac70c2c62b994ccf20617cda3b5",
+  "validation": {
+    "examples": 128,
+    "key_cross_sample_variance": 0.002187177073210478,
+    "value_cross_sample_variance": 0.0005398321663960814,
+    "key_adjacent_sample_same_slot_cosine": 0.9985486268997192,
+    "value_adjacent_sample_same_slot_cosine": 0.9996521472930908,
+    "mean_key_within_slot_cosine": 0.926187414675951,
+    "mean_value_within_slot_cosine": 0.9869662132114172,
+    "mean_key_effective_rank": 13.599026143550873,
+    "mean_value_effective_rank": 6.439693957567215,
+    "mean_assignment_entropy": 0.9991998658515513,
+    "mean_slot_usage_entropy": 5.545177459716797,
+    "mean_atom_coverage_normalized_entropy": 0.9999959601297197,
+    "mean_effective_covered_atoms": 18721.506030250726
+  },
+  "test": {
+    "examples": 128,
+    "key_cross_sample_variance": 0.0020346841774880886,
+    "value_cross_sample_variance": 0.0005021310644224286,
+    "key_adjacent_sample_same_slot_cosine": 0.9986315369606018,
+    "value_adjacent_sample_same_slot_cosine": 0.9996727108955383,
+    "mean_key_within_slot_cosine": 0.9262452684342861,
+    "mean_value_within_slot_cosine": 0.9869709582999349,
+    "mean_key_effective_rank": 13.604999631643295,
+    "mean_value_effective_rank": 6.444499999284744,
+    "mean_assignment_entropy": 0.9991993345320225,
+    "mean_slot_usage_entropy": 5.545177459716797,
+    "mean_atom_coverage_normalized_entropy": 0.9999959569595873,
+    "mean_effective_covered_atoms": 18602.260696194244
+  },
+  "args": {
+    "writer_checkpoint": "/home/yezhe/伪查询/runs/p2i_cached_canonical_evidence_kv_qwen3_8b_seed1234/mother/cycle_2_qwen3_5_4b/checkpoint_latest.pt",
+    "native_train_index": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/cache_native_kv_pairs/train/index.json",
+    "native_test_index": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/cache_native_kv_pairs/test/index.json",
+    "out": "/home/yezhe/伪查询/runs/p2i_d_writer_reader_responsibility_seed1234/slot_diagnostics",
+    "train_pairs": 448,
+    "validation_pairs": 64,
+    "device": "cuda",
+    "dtype": "float16"
+  }
+}

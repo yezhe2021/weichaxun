@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "verdict": "writer_problem",
+  "explanation": "Qwen3-4B: writer_problem; Qwen3.5-4B: writer_problem.",
+  "writer_probe_passed": false,
+  "reader_oracles": {
+    "qwen3_4b": true,
+    "qwen3_5_4b": true
+  },
+  "receiver_verdicts": {
+    "qwen3_4b": "writer_problem",
+    "qwen3_5_4b": "writer_problem"
+  },
+  "joint_overfit_passed": null,
+  "joint_rescue_passed": null,
+  "rows": [
+    {
+      "component": "writer_probe",
+      "passed": false,
+      "primary_metric": 0.0234375,
+      "paired_consistency": 0.0,
+      "interpretation": "sample-specific canonical content readability"
+    },
+    {
+      "component": "reader_oracle_qwen3_4b",
+      "passed": true,
+      "primary_metric": 1.0,
+      "paired_consistency": 1.0,
+      "interpretation": "4B Reader and injection capacity"
+    },
+    {
+      "component": "reader_oracle_qwen3_5_4b",
+      "passed": true,
+      "primary_metric": 1.0,
+      "paired_consistency": 1.0,
+      "interpretation": "Qwen3.5 Reader and injection capacity"
+    },
+    {
+      "component": "real_writer_reader_joint_qwen3_4b",
+      "passed": null,
+      "primary_metric": null,
+      "paired_consistency": null,
+      "interpretation": "protocol establishment on the fixed small subset"
+    }
+  ],
+  "attribution_is_valid": true
+}

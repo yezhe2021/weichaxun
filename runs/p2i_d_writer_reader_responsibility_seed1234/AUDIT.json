@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "split": {
+    "train": 448,
+    "validation": 64,
+    "test": 64
+  },
+  "canonical_train_pairs": 512,
+  "canonical_test_pairs": 64,
+  "mother_checkpoint_sha256": "a1cdc3e5a579663ce70bd3023c6e26ca80598183a89679f81ce153180a1780ee",
+  "canonical_writer_sha256": "9da05c4c24f9b22f1a0ce78abd05f0cae86dbac70c2c62b994ccf20617cda3b5",
+  "p2i_dependency": "/home/yezhe/伪查询/runs/p2i_cached_canonical_evidence_kv_qwen3_8b_seed1234"
+}

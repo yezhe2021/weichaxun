@@ -1,0 +1,5 @@
+component,passed,primary_metric,paired_consistency,interpretation
+writer_probe,False,0.0234375,0.0,sample-specific canonical content readability
+reader_oracle_qwen3_4b,True,1.0,1.0,4B Reader and injection capacity
+reader_oracle_qwen3_5_4b,True,1.0,1.0,Qwen3.5 Reader and injection capacity
+real_writer_reader_joint_qwen3_4b,,,,protocol establishment on the fixed small subset

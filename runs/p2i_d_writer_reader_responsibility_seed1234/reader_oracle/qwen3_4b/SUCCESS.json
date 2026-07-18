@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "reader_oracle_passed": true,
+  "receiver": "qwen3_4b",
+  "reader_init": "mother",
+  "base_em": 1.0,
+  "counterfactual_em": 1.0,
+  "paired_consistency": 1.0,
+  "conditions": [
+    {
+      "condition": "base_cf_state_swap",
+      "n": 16,
+      "original_target_accuracy": 0.0,
+      "source_memory_accuracy": 1.0,
+      "mean_confidence": 1.0
+    },
+    {
+      "condition": "correct",
+      "n": 16,
+      "original_target_accuracy": 1.0,
+      "source_memory_accuracy": 1.0,
+      "mean_confidence": 1.0
+    },
+    {
+      "condition": "reader_off",
+      "n": 16,
+      "original_target_accuracy": 0.0,
+      "source_memory_accuracy": 0.0,
+      "mean_confidence": 1.0
+    },
+    {
+      "condition": "zero",
+      "n": 16,
+      "original_target_accuracy": 0.0,
+      "source_memory_accuracy": 0.0,
+      "mean_confidence": 1.0
+    }
+  ],
+  "best_epoch": 23,
+  "best_teacher_forced_loss": 0.007784592336975038,
+  "thresholds": {
+    "base_em": 0.95,
+    "counterfactual_em": 0.95,
+    "paired": 0.9,
+    "swap_source": 0.9
+  },
+  "args": {
+    "receiver_name": "qwen3_4b",
+    "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "mother_checkpoint": "/home/yezhe/伪查询/runs/p2i_cached_canonical_evidence_kv_qwen3_8b_seed1234/mother/cycle_2_qwen3_5_4b/checkpoint_latest.pt",
+    "canonical_index": "/home/yezhe/伪查询/runs/p2i_cached_canonical_evidence_kv_qwen3_8b_seed1234/cache/canonical/train/index.json",
+    "subset": "/home/yezhe/伪查询/runs/p2i_d_writer_reader_responsibility_seed1234/data/diagnostic_subset.json",
+    "out": "/home/yezhe/伪查询/runs/p2i_d_writer_reader_responsibility_seed1234/reader_oracle/qwen3_4b",
+    "reader_init": "mother",
+    "epochs": 60,
+    "patience": 15,
+    "max_length": 256,
+    "max_new_tokens": 24,
+    "margin": 0.5,
+    "margin_weight": 0.5,
+    "reader_lr": 0.002,
+    "slot_lr": 0.01,
+    "gradient_accumulation": 4,
+    "seed": 1234,
+    "device": "cuda",
+    "dtype": "float16"
+  }
+}

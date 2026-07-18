@@ -1,0 +1,69 @@
+{
+  "status": "complete",
+  "writer_probe_passed": false,
+  "thresholds": {
+    "validation_accuracy": 0.8,
+    "test_paired_consistency": 0.7,
+    "swap_source_memory_accuracy": 0.7,
+    "zero_original_accuracy_max": 0.1
+  },
+  "synthetic_positive_control": {
+    "accuracy": 1.0,
+    "passed": true
+  },
+  "best_epoch": 5,
+  "validation_loss": 3.6887854021042585,
+  "validation_accuracy": 0.0234375,
+  "test_correct_accuracy": 0.0234375,
+  "conditions": [
+    {
+      "condition": "base_cf_state_swap",
+      "n": 128,
+      "original_target_accuracy": 0.0234375,
+      "source_memory_accuracy": 0.0234375,
+      "mean_confidence": 0.026510882322327234
+    },
+    {
+      "condition": "correct",
+      "n": 128,
+      "original_target_accuracy": 0.0234375,
+      "source_memory_accuracy": 0.0234375,
+      "mean_confidence": 0.026510882322327234
+    },
+    {
+      "condition": "cross_sample_shuffled",
+      "n": 128,
+      "original_target_accuracy": 0.0234375,
+      "source_memory_accuracy": 0.015625,
+      "mean_confidence": 0.026511123360251077
+    },
+    {
+      "condition": "k_current_v_other",
+      "n": 128,
+      "original_target_accuracy": 0.0234375,
+      "source_memory_accuracy": 0.015625,
+      "mean_confidence": 0.02651112094463315
+    },
+    {
+      "condition": "zero",
+      "n": 128,
+      "original_target_accuracy": 0.0234375,
+      "source_memory_accuracy": 0.0,
+      "mean_confidence": 0.03423609584569931
+    }
+  ],
+  "correct_paired_consistency": 0.0,
+  "args": {
+    "train_index": "/home/yezhe/伪查询/runs/p2i_cached_canonical_evidence_kv_qwen3_8b_seed1234/cache/canonical/train/index.json",
+    "test_index": "/home/yezhe/伪查询/runs/p2i_cached_canonical_evidence_kv_qwen3_8b_seed1234/cache/canonical/test/index.json",
+    "out": "/home/yezhe/伪查询/runs/p2i_d_writer_reader_responsibility_seed1234/writer_probe",
+    "train_pairs": 448,
+    "validation_pairs": 64,
+    "epochs": 30,
+    "patience": 5,
+    "batch_size": 16,
+    "lr": 0.001,
+    "seed": 1234,
+    "device": "cuda"
+  }
+}
