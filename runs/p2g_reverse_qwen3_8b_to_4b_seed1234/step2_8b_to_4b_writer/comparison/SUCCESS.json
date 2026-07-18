@@ -1,0 +1,94 @@
+{
+  "status": "complete",
+  "experiment": "P2-G2 Qwen3-8B sender to frozen Qwen3-4B Query Reader",
+  "variants": [
+    {
+      "variant": "matched_task_only",
+      "full_text_base_em": 0.96875,
+      "full_text_cf_em": 0.984375,
+      "full_text_paired": 0.96875,
+      "native_4b_base_em": 0.9375,
+      "native_4b_cf_em": 0.90625,
+      "native_4b_paired": 0.890625,
+      "raw_8b_base_em": 0.8125,
+      "raw_8b_cf_em": 0.765625,
+      "raw_8b_paired": 0.703125,
+      "writer_base_em": 1.0,
+      "writer_cf_em": 0.953125,
+      "writer_mean_em": 0.9765625,
+      "writer_paired": 0.953125,
+      "writer_switch_rate": 1.0,
+      "shuffled_original_answer_em": 0.0,
+      "shuffled_memory_answer_hit": 1.0,
+      "k_mismatched_original_answer_em": 0.109375,
+      "v_mismatched_original_answer_em": 0.015625,
+      "zero_original_answer_em": 0.0,
+      "reader_off_original_answer_em": 0.0,
+      "route_kl": 12.970875662027133,
+      "readout_cosine": 0.14149986056827402,
+      "writer_target_attention_mass": 0.030181552514928107,
+      "native_target_attention_mass": 0.027956898365561145,
+      "mean_em_recovery": 1.411764705882353,
+      "paired_recovery": 1.3333333333333333
+    },
+    {
+      "variant": "reader_aligned",
+      "full_text_base_em": 0.96875,
+      "full_text_cf_em": 0.984375,
+      "full_text_paired": 0.96875,
+      "native_4b_base_em": 0.9375,
+      "native_4b_cf_em": 0.90625,
+      "native_4b_paired": 0.890625,
+      "raw_8b_base_em": 0.8125,
+      "raw_8b_cf_em": 0.765625,
+      "raw_8b_paired": 0.703125,
+      "writer_base_em": 0.984375,
+      "writer_cf_em": 1.0,
+      "writer_mean_em": 0.9921875,
+      "writer_paired": 0.984375,
+      "writer_switch_rate": 1.0,
+      "shuffled_original_answer_em": 0.0,
+      "shuffled_memory_answer_hit": 0.984375,
+      "k_mismatched_original_answer_em": 0.109375,
+      "v_mismatched_original_answer_em": 0.0,
+      "zero_original_answer_em": 0.0,
+      "reader_off_original_answer_em": 0.0,
+      "route_kl": 8.930978525223004,
+      "readout_cosine": 0.4549325748197993,
+      "writer_target_attention_mass": 0.029423033632995255,
+      "native_target_attention_mass": 0.027956898365561145,
+      "mean_em_recovery": 1.5294117647058822,
+      "paired_recovery": 1.5
+    }
+  ],
+  "native_reader_gate": {
+    "status": "failed",
+    "enter_writer_stage": false,
+    "paired_threshold": 0.9,
+    "native_kv": {
+      "base_em": 0.9375,
+      "counterfactual_em": 0.90625,
+      "paired_consistency": 0.890625,
+      "prediction_switch_rate": 0.953125
+    },
+    "full_text_upper_bound": {
+      "base_em": 0.96875,
+      "counterfactual_em": 0.984375,
+      "paired_consistency": 0.96875
+    },
+    "controls": {
+      "shuffled_kv": 0.0,
+      "mismatched_kv": 0.0,
+      "zero_kv": 0.0,
+      "reader_off": 0.0
+    }
+  },
+  "success_criteria_met": true,
+  "success_criteria": {
+    "reader_aligned_base_em_at_least": 0.85,
+    "reader_aligned_cf_em_at_least": 0.85,
+    "reader_aligned_paired_at_least": 0.8,
+    "reader_aligned_paired_exceeds_task_only": true
+  },
+  "claim_boundary": "This tests direction reversal and Reader-aligned transfer on the current synthetic task. It does not establish capability amplification or receiver-independent Canonical Evidence-KV."
+}

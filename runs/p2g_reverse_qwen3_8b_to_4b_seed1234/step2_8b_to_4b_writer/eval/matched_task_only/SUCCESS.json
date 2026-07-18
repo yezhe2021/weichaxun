@@ -1,0 +1,200 @@
+{
+  "status": "complete",
+  "variant": "matched_task_only",
+  "args": {
+    "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "reader_checkpoint": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/train/checkpoint_latest.pt",
+    "writer_checkpoint": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step2_8b_to_4b_writer/train/matched_task_only/checkpoint_latest.pt",
+    "sender_index": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/cache_native_kv_pairs/test/index.json",
+    "teacher_index": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/cache/test/index.json",
+    "out": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step2_8b_to_4b_writer/eval/matched_task_only",
+    "max_pairs": 64,
+    "max_new_tokens": 24,
+    "device": "cuda",
+    "dtype": "float16"
+  },
+  "paired_consistency": {
+    "full_text": 0.96875,
+    "native_4b": 0.890625,
+    "writer_8b_to_4b": 0.953125,
+    "raw_minimal_8b": 0.703125
+  },
+  "prediction_switch_rate": {
+    "full_text": 0.984375,
+    "native_4b": 0.953125,
+    "writer_8b_to_4b": 1.0,
+    "raw_minimal_8b": 0.90625
+  },
+  "conditions": [
+    {
+      "condition": "full_text_base",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.96875,
+      "memory_answer_hit_rate": 0.96875,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 2.34375
+    },
+    {
+      "condition": "full_text_counterfactual",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.984375,
+      "memory_answer_hit_rate": 0.984375,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 2.3125
+    },
+    {
+      "condition": "native_4b_base",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.9375,
+      "memory_answer_hit_rate": 0.9375,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 2.046875
+    },
+    {
+      "condition": "native_4b_counterfactual",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.90625,
+      "memory_answer_hit_rate": 0.90625,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 0.96875,
+      "mean_generated_tokens": 2.0625
+    },
+    {
+      "condition": "raw_minimal_8b_base",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.8125,
+      "memory_answer_hit_rate": 0.8125,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 0.96875,
+      "mean_generated_tokens": 2.0625
+    },
+    {
+      "condition": "raw_minimal_8b_counterfactual",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.765625,
+      "memory_answer_hit_rate": 0.765625,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 0.90625,
+      "mean_generated_tokens": 2.171875
+    },
+    {
+      "condition": "reader_off",
+      "metric_role": "original_answer_leakage",
+      "n": 64,
+      "target_em": 0.0,
+      "memory_answer_hit_rate": null,
+      "insufficient_rate": 1.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 4.0
+    },
+    {
+      "condition": "writer_8b_to_4b_base",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 1.0,
+      "memory_answer_hit_rate": 1.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 2.046875
+    },
+    {
+      "condition": "writer_8b_to_4b_counterfactual",
+      "metric_role": "accuracy",
+      "n": 64,
+      "target_em": 0.953125,
+      "memory_answer_hit_rate": 0.953125,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 2.046875
+    },
+    {
+      "condition": "writer_key_mismatched",
+      "metric_role": "key_route_ablation",
+      "n": 64,
+      "target_em": 0.109375,
+      "memory_answer_hit_rate": 0.109375,
+      "insufficient_rate": 0.4375,
+      "eos_rate": 1.0,
+      "answer_found_rate": 0.9375,
+      "mean_generated_tokens": 3.21875
+    },
+    {
+      "condition": "writer_shuffled",
+      "metric_role": "original_answer_leakage",
+      "n": 64,
+      "target_em": 0.0,
+      "memory_answer_hit_rate": 1.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 2.046875
+    },
+    {
+      "condition": "writer_value_mismatched",
+      "metric_role": "original_answer_leakage",
+      "n": 64,
+      "target_em": 0.015625,
+      "memory_answer_hit_rate": 0.09375,
+      "insufficient_rate": 0.4375,
+      "eos_rate": 1.0,
+      "answer_found_rate": 0.90625,
+      "mean_generated_tokens": 3.265625
+    },
+    {
+      "condition": "zero_kv",
+      "metric_role": "original_answer_leakage",
+      "n": 64,
+      "target_em": 0.0,
+      "memory_answer_hit_rate": null,
+      "insufficient_rate": 1.0,
+      "eos_rate": 1.0,
+      "answer_found_rate": 1.0,
+      "mean_generated_tokens": 4.0
+    }
+  ],
+  "native_gap_recovery": {
+    "mean_em_writer_vs_raw": 1.411764705882353,
+    "paired_consistency_writer_vs_raw": 1.3333333333333333
+  },
+  "native_performance_gap": {
+    "mean_em_native_minus_writer": -0.0546875,
+    "paired_consistency_native_minus_writer": -0.0625
+  },
+  "writer_vs_raw_paired_bootstrap": {
+    "mean_gap": 0.25,
+    "ci95_low": 0.140625,
+    "ci95_high": 0.3597656249999943,
+    "samples": 10000
+  },
+  "success_level": "strong_success",
+  "route_readout_summary": {
+    "route_kl_mean": 12.970875662027133,
+    "readout_cosine_mean": 0.14149986056827402,
+    "writer_target_attention_mass_mean": 0.030181552514928107,
+    "native_target_attention_mass_mean": 0.027956898365561145
+  },
+  "token_alignment": "strict_identity",
+  "kv_routing_difference": {
+    "layer_l1": 0.004064710810780525,
+    "head_l1": 8.039026511141856e-08,
+    "layer_support_disagreement": 0.026234567165374756
+  }
+}

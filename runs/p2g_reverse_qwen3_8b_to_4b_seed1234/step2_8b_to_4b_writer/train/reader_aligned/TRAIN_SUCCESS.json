@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "variant": "reader_aligned",
+  "features": {
+    "shared_routing": false,
+    "structure_loss": false,
+    "reader_alignment": true
+  },
+  "pairs": 512,
+  "epochs": 3,
+  "steps": 1536,
+  "checkpoint": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step2_8b_to_4b_writer/train/reader_aligned/checkpoint_latest.pt"
+}

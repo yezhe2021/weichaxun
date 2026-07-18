@@ -1,37 +1,44 @@
-# P2-G1: Qwen3-4B Native Query Reader
+# P2-G: Reverse Qwen3-8B to Qwen3-4B Native-KV Communication
 
-This directory implements only step 1 of the reverse KV communication experiment.
-It does not train an 8B-to-4B Writer.
+## Step 1
 
-## Fixed setup
+`step1_native_reader/` trains a rank-32 Query-only Reader for a frozen Qwen3-4B
+receiver using Qwen3-4B Native KV. Its measured paired consistency is 0.890625.
+The original 0.90 gate failed by one test pair; step 2 proceeds by explicit user
+decision and records this override in `step2_8b_to_4b_writer/AUDIT.json`.
 
-- Frozen evidence encoder: Qwen3-4B.
-- Frozen receiver backbone: Qwen3-4B.
-- Trainable module: rank-32 layer-wise Query adapter plus scalar gates.
-- Memory: all evidence-token pre-RoPE K and native V from all 36 layers.
-- Data: existing 512 train pairs and 64 test pairs with identical base/CF split.
-- Training: generation NLL, base/CF answer-swap margin, and correct-vs-shuffled/mismatched ranking.
-- Evaluation: full text, correct KV, counterfactual KV, shuffled, mismatched, zero, and Reader-off.
-- Hard gate: Native-KV paired counterfactual consistency must be at least 0.90.
+## Step 2
 
-## Run
+- Sender memory: cached full evidence-token Native KV from frozen Qwen3-8B.
+- Receiver: frozen Qwen3-4B.
+- Reader: frozen step-1 rank-32 Query-only Reader.
+- Trainable parameters: 8B-to-4B Writer only.
+- Data: the same 512 train pairs and 64 test pairs used by P2-A2/P2-G1.
+- Token transport: strict identity; Qwen3-8B and Qwen3-4B evidence token IDs
+  must match for every sample used during training and evaluation.
+- Variants: `matched_task_only` and `reader_aligned`, initialized with the same seed.
+
+The evaluation reports full text, 4B Native KV, raw/minimal 8B KV, Writer KV,
+shuffled, K-mismatched, V-mismatched, zero, and Reader-off generation conditions,
+plus paired consistency, prediction switching, EOS, memory-answer hits, route KL,
+readout cosine, target attention mass, and Native-gap recovery.
+
+Run in the background:
 
 ```bash
 cd /home/yezhe/伪查询
-chmod +x runs/p2g_reverse_qwen3_8b_to_4b_seed1234/run_step1.sh
-nohup bash runs/p2g_reverse_qwen3_8b_to_4b_seed1234/run_step1.sh all \
-  > runs/p2g_reverse_qwen3_8b_to_4b_seed1234/logs/step1.log 2>&1 &
-echo $! > runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1.pid
+ROOT=runs/p2g_reverse_qwen3_8b_to_4b_seed1234
+chmod +x "$ROOT/run_step2.sh"
+nohup bash "$ROOT/run_step2.sh" wait-cuda > "$ROOT/logs/step2.log" 2>&1 &
+echo $! > "$ROOT/step2.pid"
 ```
 
-If CUDA is temporarily unavailable, replace `all` with `wait-cuda`; the launcher
-checks every 60 seconds and starts the same pipeline as soon as CUDA returns.
-
-Monitor without reading result metrics:
+Monitor:
 
 ```bash
-bash runs/p2g_reverse_qwen3_8b_to_4b_seed1234/run_step1.sh status
-tail -f runs/p2g_reverse_qwen3_8b_to_4b_seed1234/logs/step1.log
+bash runs/p2g_reverse_qwen3_8b_to_4b_seed1234/run_step2.sh status
+tail -f runs/p2g_reverse_qwen3_8b_to_4b_seed1234/logs/step2.log
 ```
 
-The final gate file is written under `step1_native_reader/eval/`.
+Writer outputs remain specific to the frozen Qwen3-4B Reader interface. This
+experiment does not establish receiver-independent Canonical Evidence-KV.

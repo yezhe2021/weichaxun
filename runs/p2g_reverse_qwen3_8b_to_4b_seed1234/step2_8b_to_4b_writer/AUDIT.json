@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "sender_model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+  "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+  "sender_geometry": {
+    "model_type": "qwen3",
+    "layers": 36,
+    "hidden_size": 4096,
+    "query_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "query_width": 4096
+  },
+  "receiver_geometry": {
+    "model_type": "qwen3",
+    "layers": 36,
+    "hidden_size": 2560,
+    "query_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "query_width": 4096
+  },
+  "reader": {
+    "checkpoint": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/train/checkpoint_latest.pt",
+    "frozen": true,
+    "query_rank": 32,
+    "native_gate_status": "failed",
+    "native_paired_consistency": 0.890625,
+    "native_gate_override": true
+  },
+  "splits": {
+    "train": {
+      "pairs": 512,
+      "pair_ids_aligned": true,
+      "sampled_token_identity_positions": [
+        0,
+        256,
+        511
+      ]
+    },
+    "test": {
+      "pairs": 64,
+      "pair_ids_aligned": true,
+      "sampled_token_identity_positions": [
+        0,
+        32,
+        63
+      ]
+    }
+  },
+  "claim_boundary": "Writer output remains specific to the frozen Qwen3-4B Reader interface."
+}

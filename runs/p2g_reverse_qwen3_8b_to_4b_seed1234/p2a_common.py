@@ -284,6 +284,17 @@ class NativeKVExternalReader(nn.Module):
                 slot["target_attention_mass"] = float(
                     probability[..., answer_mask].sum(dim=-1).mean().detach().cpu()
                 )
+            if self._diagnostics.get("_capture_training_tensors", False):
+                query_index = int(self._diagnostics.get("_capture_query_index", query_length - 1))
+                query_index = max(0, min(query_length - 1, query_index))
+                route = probability[:, :, query_index, :]
+                slot["route_tensor"] = route
+                slot["readout_tensor"] = projected[:, query_index, :]
+                slot["route_entropy_tensor"] = (
+                    -(route * route.clamp_min(1e-8).log()).sum(dim=-1).mean()
+                )
+                if answer_mask is not None and answer_mask.numel() == route.shape[-1] and answer_mask.any():
+                    slot["target_mass_tensor"] = route[..., answer_mask].sum(dim=-1).mean()
             if self._diagnostics.get("_capture_vectors", False):
                 slot["readout_vector"] = projected[:, -1, :].detach().float().mean(dim=0).cpu()
                 slot["delta_vector"] = external[:, -1, :].detach().float().mean(dim=0).cpu()
