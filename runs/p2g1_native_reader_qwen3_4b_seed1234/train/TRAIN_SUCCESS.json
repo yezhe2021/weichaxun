@@ -2,8 +2,8 @@
   "status": "complete",
   "args": {
     "model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
-    "train_index": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/cache/train/index.json",
-    "out": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/train",
+    "train_index": "/home/yezhe/伪查询/runs/p2g1_native_reader_qwen3_4b_seed1234/cache/train/index.json",
+    "out": "/home/yezhe/伪查询/runs/p2g1_native_reader_qwen3_4b_seed1234/train",
     "config_name": "query_only",
     "query_rank": 32,
     "output_rank": 0,
@@ -25,7 +25,7 @@
   },
   "pairs": 512,
   "steps": 1024,
-  "checkpoint": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/train/checkpoint_latest.pt",
+  "checkpoint": "/home/yezhe/伪查询/runs/p2g1_native_reader_qwen3_4b_seed1234/train/checkpoint_latest.pt",
   "freeze_audit": {
     "receiver_trainable_parameters": 0,
     "reader_trainable_parameters": 9437220,

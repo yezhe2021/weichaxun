@@ -5,9 +5,9 @@
   "output_rank": 0,
   "args": {
     "model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
-    "test_index": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/cache/test/index.json",
-    "checkpoint": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/train/checkpoint_latest.pt",
-    "out": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/eval",
+    "test_index": "/home/yezhe/伪查询/runs/p2g1_native_reader_qwen3_4b_seed1234/cache/test/index.json",
+    "checkpoint": "/home/yezhe/伪查询/runs/p2g1_native_reader_qwen3_4b_seed1234/train/checkpoint_latest.pt",
+    "out": "/home/yezhe/伪查询/runs/p2g1_native_reader_qwen3_4b_seed1234/eval",
     "max_pairs": 64,
     "max_new_tokens": 24,
     "device": "cuda",

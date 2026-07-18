@@ -1,12 +1,12 @@
 {
   "args": {
     "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
-    "reader_checkpoint": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/train/checkpoint_latest.pt",
-    "sender_index": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/cache_native_kv_pairs/train/index.json",
-    "teacher_index": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/cache/train/index.json",
-    "teacher_k_rms": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step2_8b_to_4b_writer/teacher_stats/teacher_k_rms.pt",
-    "out": "/home/yezhe/\u4f2a\u67e5\u8be2/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step2_8b_to_4b_writer/train/reader_aligned",
-    "variant": "reader_aligned",
+    "reader_checkpoint": "/home/yezhe/伪查询/runs/p2g1_native_reader_qwen3_4b_seed1234/train/checkpoint_latest.pt",
+    "sender_index": "/home/yezhe/伪查询/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/cache_native_kv_pairs/train/index.json",
+    "teacher_index": "/home/yezhe/伪查询/runs/p2g1_native_reader_qwen3_4b_seed1234/cache/train/index.json",
+    "teacher_k_rms": "/home/yezhe/伪查询/runs/p2g2_reverse_writer_qwen3_8b_to_4b_seed1234/teacher_stats/teacher_k_rms.pt",
+    "out": "/home/yezhe/伪查询/runs/p2g2_reverse_writer_qwen3_8b_to_4b_seed1234/train/matched_task_only",
+    "variant": "matched_task_only",
     "max_pairs": 512,
     "epochs": 3,
     "max_length": 256,
@@ -18,14 +18,14 @@
     "cf_margin": 0.5,
     "negative_weight": 0.5,
     "negative_margin": 0.5,
-    "route_weight": 0.05,
-    "readout_weight": 0.1,
-    "attention_mass_weight": 0.05,
+    "route_weight": 0.005,
+    "readout_weight": 0.005,
+    "attention_mass_weight": 0.005,
     "routing_binding_weight": 0.01,
     "span_binding_weight": 0.05,
     "span_relation_weight": 0.025,
     "readout_relation_weight": 0.025,
-    "aux_every": 1,
+    "aux_every": 8,
     "lr": 0.0002,
     "gradient_accumulation": 4,
     "seed": 1234,
@@ -35,7 +35,7 @@
   "features": {
     "shared_routing": false,
     "structure_loss": false,
-    "reader_alignment": true
+    "reader_alignment": false
   },
   "sender_geometry": {
     "layers": 36,

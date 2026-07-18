@@ -8,11 +8,11 @@ SENDER_MODEL="/home/yezhe/all_models/models/Qwen/Qwen3-8B"
 RECEIVER_MODEL="/home/yezhe/all_models/models/Qwen/Qwen3-4B"
 P2A2_ROOT="${PROJECT}/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234"
 SENDER_CACHE_ROOT="${P2A2_ROOT}/cache_native_kv_pairs"
-STEP1_ROOT="${ROOT}/step1_native_reader"
+STEP1_ROOT="${PROJECT}/runs/p2g1_native_reader_qwen3_4b_seed1234"
 TEACHER_CACHE_ROOT="${STEP1_ROOT}/cache"
 READER_CHECKPOINT="${STEP1_ROOT}/train/checkpoint_latest.pt"
 NATIVE_GATE="${STEP1_ROOT}/eval/NATIVE_READER_GATE_FAILED.json"
-STEP2_ROOT="${ROOT}/step2_8b_to_4b_writer"
+STEP2_ROOT="${ROOT}"
 TEACHER_STATS="${STEP2_ROOT}/teacher_stats"
 TRAIN_ROOT="${STEP2_ROOT}/train"
 EVAL_ROOT="${STEP2_ROOT}/eval"
@@ -138,7 +138,7 @@ wait_for_cuda() {
 
 status() {
   nvidia-smi --query-gpu=name,memory.used,memory.total,utilization.gpu --format=csv,noheader || true
-  pgrep -af 'train_p2g2_writer|eval_p2g2_writer|run_step2.sh wait-cuda' || true
+  pgrep -af 'train_p2g2_writer|eval_p2g2_writer|run_all.sh wait-cuda' || true
   [[ -f "${STEP2_ROOT}/AUDIT.json" ]] && echo audit=complete || echo audit=pending
   [[ -f "${TEACHER_STATS}/SUCCESS.json" ]] && echo teacher_stats=complete || echo teacher_stats=pending
   for variant in "${VARIANTS[@]}"; do

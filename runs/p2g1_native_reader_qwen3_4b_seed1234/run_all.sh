@@ -9,10 +9,10 @@ MODEL="/home/yezhe/all_models/models/Qwen/Qwen3-4B"
 SOURCE_DATA_ROOT="${PROJECT}/runs/p2a2_query_output_native_kv_qwen3_8b_seed1234/data"
 TRAIN_DATA="${SOURCE_DATA_ROOT}/train.jsonl"
 TEST_DATA="${SOURCE_DATA_ROOT}/test.jsonl"
-TRAIN_CACHE="${ROOT}/step1_native_reader/cache/train"
-TEST_CACHE="${ROOT}/step1_native_reader/cache/test"
-TRAIN_OUT="${ROOT}/step1_native_reader/train"
-EVAL_OUT="${ROOT}/step1_native_reader/eval"
+TRAIN_CACHE="${ROOT}/cache/train"
+TEST_CACHE="${ROOT}/cache/test"
+TRAIN_OUT="${ROOT}/train"
+EVAL_OUT="${ROOT}/eval"
 LOG_DIR="${ROOT}/logs"
 TRAIN_PAIRS=512
 TEST_PAIRS=64
@@ -25,7 +25,7 @@ audit() {
     --model "${MODEL}" \
     --train-data "${TRAIN_DATA}" \
     --test-data "${TEST_DATA}" \
-    --out "${ROOT}/step1_native_reader/AUDIT.json"
+    --out "${ROOT}/AUDIT.json"
 }
 
 cache_train() {
@@ -93,7 +93,7 @@ status() {
   printf '\nProcesses:\n'
   pgrep -af 'cache_qwen3_4b_native_kv|train_qwen3_4b_native_reader|eval_qwen3_4b_native_reader' || true
   printf '\nMarkers:\n'
-  find "${ROOT}/step1_native_reader" -maxdepth 3 -type f \
+  find "${ROOT}" -maxdepth 3 -type f \
     \( -name 'AUDIT.json' -o -name 'CACHE_SUCCESS.json' -o -name 'TRAIN_SUCCESS.json' \
        -o -name 'SUCCESS.json' -o -name 'NATIVE_READER_GATE_*.json' \) -print 2>/dev/null || true
 }

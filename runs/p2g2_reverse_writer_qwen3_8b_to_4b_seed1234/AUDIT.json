@@ -21,7 +21,7 @@
     "query_width": 4096
   },
   "reader": {
-    "checkpoint": "/home/yezhe/伪查询/runs/p2g_reverse_qwen3_8b_to_4b_seed1234/step1_native_reader/train/checkpoint_latest.pt",
+    "checkpoint": "/home/yezhe/伪查询/runs/p2g1_native_reader_qwen3_4b_seed1234/train/checkpoint_latest.pt",
     "frozen": true,
     "query_rank": 32,
     "native_gate_status": "failed",
