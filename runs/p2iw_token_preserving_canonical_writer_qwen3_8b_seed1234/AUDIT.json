@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "train_pairs": 512,
+  "test_pairs": 64,
+  "labels": 40,
+  "split_overlap": 0,
+  "sample_final_kv_shape": [
+    8,
+    60,
+    128
+  ],
+  "model_layers": 36,
+  "model_hidden_size": 4096,
+  "model_kv_heads": 8,
+  "model_head_dim": 128,
+  "native_train_sha256": "5ded121ca2c21d02cb4cec21d0a63aa3a2b4dd1ce385eb621e560faf72430a5a",
+  "native_test_sha256": "d29506494afdcaa6490a737455d3c7ec1a1b01fab1595026fe30e05afadd135e"
+}
