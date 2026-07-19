@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "mode": "small",
+  "best_epoch": 120,
+  "validation": {
+    "loss": 0.06619460182264447,
+    "content_loss": 0.0661853444762528,
+    "accuracy": 1.0,
+    "paired_consistency": 1.0
+  },
+  "small_overfit_gate": {
+    "base_cf_accuracy": 1.0,
+    "paired_consistency": 1.0,
+    "state_swap_source_accuracy": 1.0,
+    "mean_cross_sample_pooled_value_cosine": 0.19779303669929504,
+    "passed": true
+  }
+}

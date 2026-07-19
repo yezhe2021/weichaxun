@@ -35,8 +35,9 @@ Run the gated pipeline with:
 bash run_all.sh all
 ```
 
-The pipeline intentionally stops if the final-hidden teacher probe or the 16-pair Writer overfit positive
-control fails. This prevents a full run from producing an invalid attribution.
+The default pipeline records a warning and continues if the final-hidden teacher probe or the 16-pair Writer
+overfit positive control misses its threshold. This permits end-to-end diagnosis without treating a failed
+positive control as success. Set `STRICT_GATES=1` to restore hard-stop behavior.
 
 ## Controls and outputs
 

@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "splits": {
+    "validation": {
+      "samples": 128,
+      "mean_pooled_cross_sample_cosine": 0.04092402756214142,
+      "mean_key_effective_rank": 47.936407655477524,
+      "mean_value_effective_rank": 55.3063648045063,
+      "mean_shared_effective_rank": 59.34071043133736,
+      "mean_kv_linear_cka": 0.8099652100354433,
+      "mean_kv_relation_graph_agreement": 0.8026450076140463,
+      "mean_unchanged_span_distance": 0.009011988528072834,
+      "mean_changed_city_span_distance": 0.8682783227413893,
+      "mean_same_position_variance": 0.7165589663717482,
+      "mean_same_position_cross_sample_cosine": 0.09201403086384137,
+      "collapsed_by_p2i_threshold": false
+    },
+    "test": {
+      "samples": 128,
+      "mean_pooled_cross_sample_cosine": 0.03266846761107445,
+      "mean_key_effective_rank": 47.65832796692848,
+      "mean_value_effective_rank": 55.01981073617935,
+      "mean_shared_effective_rank": 59.01748624444008,
+      "mean_kv_linear_cka": 0.8088538404554129,
+      "mean_kv_relation_graph_agreement": 0.8000175948254764,
+      "mean_unchanged_span_distance": 0.009739214554429054,
+      "mean_changed_city_span_distance": 0.8668988542631269,
+      "mean_same_position_variance": 0.726353799871036,
+      "mean_same_position_cross_sample_cosine": 0.08211050006960119,
+      "collapsed_by_p2i_threshold": false
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "status": "complete",
+  "source": "pca",
+  "best_epoch": 7,
+  "test_loss": 0.0642707095974937,
+  "test_accuracy": 0.9765625,
+  "base_accuracy": 0.953125,
+  "counterfactual_accuracy": 1.0,
+  "conditions": [
+    {
+      "condition": "base_cf_memory_swap",
+      "n": 128,
+      "original_target_accuracy": 0.0,
+      "source_memory_accuracy": 0.9765625,
+      "k_source_accuracy": 0.9765625,
+      "v_source_accuracy": 0.9765625,
+      "mean_confidence": 0.9856693362817168,
+      "mean_source_answer_attention_mass": 0.6076420198078267
+    },
+    {
+      "condition": "correct",
+      "n": 128,
+      "original_target_accuracy": 0.9765625,
+      "source_memory_accuracy": 0.9765625,
+      "k_source_accuracy": 0.9765625,
+      "v_source_accuracy": 0.9765625,
+      "mean_confidence": 0.9856693362817168,
+      "mean_source_answer_attention_mass": 0.6076420198078267
+    },
+    {
+      "condition": "cross_sample_shuffled",
+      "n": 128,
+      "original_target_accuracy": 0.0,
+      "source_memory_accuracy": 0.9765625,
+      "k_source_accuracy": 0.9765625,
+      "v_source_accuracy": 0.9765625,
+      "mean_confidence": 0.9854017165489495,
+      "mean_source_answer_attention_mass": 0.6163142892182805
+    },
+    {
+      "condition": "k_current_v_other",
+      "n": 128,
+      "original_target_accuracy": 0.015625,
+      "source_memory_accuracy": 0.0,
+      "k_source_accuracy": 0.015625,
+      "v_source_accuracy": 0.1484375,
+      "mean_confidence": 0.780331016285345,
+      "mean_source_answer_attention_mass": 0.10079579142101025
+    },
+    {
+      "condition": "token_permutation",
+      "n": 128,
+      "original_target_accuracy": 0.9765625,
+      "source_memory_accuracy": 0.9765625,
+      "k_source_accuracy": 0.9765625,
+      "v_source_accuracy": 0.9765625,
+      "mean_confidence": 0.9856693376787007,
+      "mean_source_answer_attention_mass": 0.6076420207391493
+    },
+    {
+      "condition": "zero",
+      "n": 128,
+      "original_target_accuracy": 0.03125,
+      "source_memory_accuracy": 0.0,
+      "k_source_accuracy": 0.0,
+      "v_source_accuracy": 0.0,
+      "mean_confidence": 0.052075047977268696,
+      "mean_source_answer_attention_mass": 0.0
+    }
+  ],
+  "correct_paired_consistency": 0.953125,
+  "fresh_probe_success": true
+}
