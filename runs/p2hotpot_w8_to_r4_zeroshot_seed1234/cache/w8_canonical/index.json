@@ -1,0 +1,399 @@
+{
+  "status": "complete",
+  "format_version": 1,
+  "interface": "token_preserving_canonical_evidence_kv",
+  "samples": 64,
+  "canonical_dim": 256,
+  "variable_token_axis": true,
+  "writer_checkpoint": "/home/yezhe/伪查询/runs/p2iw_token_preserving_canonical_writer_qwen3_8b_seed1234/writer_full/best_checkpoint.pt",
+  "writer_checkpoint_sha256": "4150a1a153c18fa71ed43911e1f50a996a4729475fae764676a5c075c5a96229",
+  "writer_state_sha256": "4bf476e5ca7cbd9e81a4b417328462f3bd5d1ccac5318080708270f66b8386e8",
+  "entries": [
+    {
+      "id": "5a8ba67755429971feec4748",
+      "file": "sample_00000.pt",
+      "answer": "Orchard Central",
+      "type": "bridge"
+    },
+    {
+      "id": "5ae72e79554299572ea54763",
+      "file": "sample_00001.pt",
+      "answer": "Arkansas",
+      "type": "bridge"
+    },
+    {
+      "id": "5a79257b55429974737f79a7",
+      "file": "sample_00002.pt",
+      "answer": "Third Army",
+      "type": "bridge"
+    },
+    {
+      "id": "5adfbd4655429942ec259b31",
+      "file": "sample_00003.pt",
+      "answer": "Jena Malone",
+      "type": "bridge"
+    },
+    {
+      "id": "5abccb235542996583600497",
+      "file": "sample_00004.pt",
+      "answer": "Cameron Indoor Stadium",
+      "type": "bridge"
+    },
+    {
+      "id": "5a75d35d5542992d0ec05ffe",
+      "file": "sample_00005.pt",
+      "answer": "Toppers Pizza",
+      "type": "comparison"
+    },
+    {
+      "id": "5ade0cc85542990dbb2f7f37",
+      "file": "sample_00006.pt",
+      "answer": "yes",
+      "type": "comparison"
+    },
+    {
+      "id": "5adcd5005542994d58a2f6f0",
+      "file": "sample_00007.pt",
+      "answer": "Mel Blanc",
+      "type": "bridge"
+    },
+    {
+      "id": "5a7100435542994082a3e4a3",
+      "file": "sample_00008.pt",
+      "answer": "Shikashika is a shaved ice drink",
+      "type": "comparison"
+    },
+    {
+      "id": "5ae33c4d5542992f92d82262",
+      "file": "sample_00009.pt",
+      "answer": "William Jefferson Clinton",
+      "type": "bridge"
+    },
+    {
+      "id": "5a89e8035542992e4fca846d",
+      "file": "sample_00010.pt",
+      "answer": "yes",
+      "type": "comparison"
+    },
+    {
+      "id": "5add8f055542990dbb2f7e6d",
+      "file": "sample_00011.pt",
+      "answer": "Rudolf Höss",
+      "type": "bridge"
+    },
+    {
+      "id": "5ab527205542996a3a96a03d",
+      "file": "sample_00012.pt",
+      "answer": "\"Give Up\"",
+      "type": "bridge"
+    },
+    {
+      "id": "5a758ce05542992db947367c",
+      "file": "sample_00013.pt",
+      "answer": "Jenny Bae",
+      "type": "bridge"
+    },
+    {
+      "id": "5ac5630e5542993e66e823d5",
+      "file": "sample_00014.pt",
+      "answer": "1692",
+      "type": "bridge"
+    },
+    {
+      "id": "5ab6f7415542991d322236f4",
+      "file": "sample_00015.pt",
+      "answer": "1978",
+      "type": "bridge"
+    },
+    {
+      "id": "5ab7fd6b5542990e739ec7b5",
+      "file": "sample_00016.pt",
+      "answer": "St. Louis",
+      "type": "bridge"
+    },
+    {
+      "id": "5ae3305c55429928c423965f",
+      "file": "sample_00017.pt",
+      "answer": "1911",
+      "type": "bridge"
+    },
+    {
+      "id": "5abbdaac5542992ccd8e7fc0",
+      "file": "sample_00018.pt",
+      "answer": "yes",
+      "type": "comparison"
+    },
+    {
+      "id": "5abe65e25542993f32c2a101",
+      "file": "sample_00019.pt",
+      "answer": "Stanford University",
+      "type": "bridge"
+    },
+    {
+      "id": "5a8b04df55429950cd6afc49",
+      "file": "sample_00020.pt",
+      "answer": "The Bomb Factory",
+      "type": "bridge"
+    },
+    {
+      "id": "5a74b55455429974ef308c39",
+      "file": "sample_00021.pt",
+      "answer": "1966",
+      "type": "bridge"
+    },
+    {
+      "id": "5ab72a025542992aa3b8c7b8",
+      "file": "sample_00022.pt",
+      "answer": "documentary",
+      "type": "comparison"
+    },
+    {
+      "id": "5ab3d2595542992ade7c6ebf",
+      "file": "sample_00023.pt",
+      "answer": "Toronto",
+      "type": "bridge"
+    },
+    {
+      "id": "5a7f40055542992e7d278cc0",
+      "file": "sample_00024.pt",
+      "answer": "50 JJB Sports Fitness Clubs",
+      "type": "bridge"
+    },
+    {
+      "id": "5ab48f245542990594ba9c66",
+      "file": "sample_00025.pt",
+      "answer": "yes",
+      "type": "comparison"
+    },
+    {
+      "id": "5a72c6f65542994cef4bc402",
+      "file": "sample_00026.pt",
+      "answer": "tomato",
+      "type": "bridge"
+    },
+    {
+      "id": "5ab5487b554299494045ef68",
+      "file": "sample_00027.pt",
+      "answer": "1941",
+      "type": "bridge"
+    },
+    {
+      "id": "5ae0cddc55429945ae959459",
+      "file": "sample_00028.pt",
+      "answer": "35 people",
+      "type": "bridge"
+    },
+    {
+      "id": "5ae0e5655542990adbacf6b8",
+      "file": "sample_00029.pt",
+      "answer": "England",
+      "type": "bridge"
+    },
+    {
+      "id": "5a7d07a455429907fabef0ae",
+      "file": "sample_00030.pt",
+      "answer": "Juventus Football Club",
+      "type": "bridge"
+    },
+    {
+      "id": "5ae7739c5542997b22f6a775",
+      "file": "sample_00031.pt",
+      "answer": "Morita therapy",
+      "type": "bridge"
+    },
+    {
+      "id": "5a72339855429971e9dc934d",
+      "file": "sample_00032.pt",
+      "answer": "1-800-273-8255",
+      "type": "bridge"
+    },
+    {
+      "id": "5a7bacf2554299294a54aa8d",
+      "file": "sample_00033.pt",
+      "answer": "North Carolina",
+      "type": "bridge"
+    },
+    {
+      "id": "5a74a62b55429916b01641a0",
+      "file": "sample_00034.pt",
+      "answer": "Prof. Dr. Ulrich Hans Walter",
+      "type": "comparison"
+    },
+    {
+      "id": "5ae678915542996d980e7b70",
+      "file": "sample_00035.pt",
+      "answer": "Chickamauga Wars",
+      "type": "bridge"
+    },
+    {
+      "id": "5ae362105542991a06ce99ae",
+      "file": "sample_00036.pt",
+      "answer": "8.7",
+      "type": "bridge"
+    },
+    {
+      "id": "5ae180d855429901ffe4aecc",
+      "file": "sample_00037.pt",
+      "answer": "1964",
+      "type": "bridge"
+    },
+    {
+      "id": "5ac2ae4155429921a00ab030",
+      "file": "sample_00038.pt",
+      "answer": "Jane Goward",
+      "type": "bridge"
+    },
+    {
+      "id": "5ae3bb0d5542992f92d82357",
+      "file": "sample_00039.pt",
+      "answer": "Nikolai Morozov",
+      "type": "bridge"
+    },
+    {
+      "id": "5ab51ddf5542990594ba9d11",
+      "file": "sample_00040.pt",
+      "answer": "yes",
+      "type": "comparison"
+    },
+    {
+      "id": "5abd455c55429924427fcf5a",
+      "file": "sample_00041.pt",
+      "answer": "was a rock band",
+      "type": "comparison"
+    },
+    {
+      "id": "5ac4c16b5542997ea680cab4",
+      "file": "sample_00042.pt",
+      "answer": "yes",
+      "type": "comparison"
+    },
+    {
+      "id": "5ac2ada255429967731025f9",
+      "file": "sample_00043.pt",
+      "answer": "yes",
+      "type": "comparison"
+    },
+    {
+      "id": "5a8db19d5542994ba4e3dd00",
+      "file": "sample_00044.pt",
+      "answer": "yes",
+      "type": "comparison"
+    },
+    {
+      "id": "5ac002705542996f0d89cb05",
+      "file": "sample_00045.pt",
+      "answer": "county-level",
+      "type": "comparison"
+    },
+    {
+      "id": "5abdcad155429965af743e4d",
+      "file": "sample_00046.pt",
+      "answer": "Pagliacci",
+      "type": "comparison"
+    },
+    {
+      "id": "5ac3891f554299741d48a284",
+      "file": "sample_00047.pt",
+      "answer": "Jacksonville International Airport",
+      "type": "comparison"
+    },
+    {
+      "id": "5a7759fc5542993569682d60",
+      "file": "sample_00048.pt",
+      "answer": "Canary Islands, Spain",
+      "type": "comparison"
+    },
+    {
+      "id": "5a8197905542995ce29dcc10",
+      "file": "sample_00049.pt",
+      "answer": "Taigan",
+      "type": "comparison"
+    },
+    {
+      "id": "5ae1e9635542997f29b3c19e",
+      "file": "sample_00050.pt",
+      "answer": "Grand Junction Regional Airport",
+      "type": "comparison"
+    },
+    {
+      "id": "5a8b3c5b55429971feec4684",
+      "file": "sample_00051.pt",
+      "answer": "no",
+      "type": "comparison"
+    },
+    {
+      "id": "5a77671255429966f1a36d21",
+      "file": "sample_00052.pt",
+      "answer": "negotiation phases",
+      "type": "comparison"
+    },
+    {
+      "id": "5ae1cf355542997f29b3c126",
+      "file": "sample_00053.pt",
+      "answer": "Bedknobs and Broomsticks",
+      "type": "comparison"
+    },
+    {
+      "id": "5a7b23d355429931da12c9f1",
+      "file": "sample_00054.pt",
+      "answer": "Eric Gaffney",
+      "type": "comparison"
+    },
+    {
+      "id": "5a83305d55429966c78a6b4a",
+      "file": "sample_00055.pt",
+      "answer": "District of Columbia",
+      "type": "comparison"
+    },
+    {
+      "id": "5ab96c93554299743d22eb63",
+      "file": "sample_00056.pt",
+      "answer": "Ezhou",
+      "type": "comparison"
+    },
+    {
+      "id": "5a843cf35542996488c2e51b",
+      "file": "sample_00057.pt",
+      "answer": "film",
+      "type": "comparison"
+    },
+    {
+      "id": "5a7562045542992db947364f",
+      "file": "sample_00058.pt",
+      "answer": "Saint Louis University",
+      "type": "comparison"
+    },
+    {
+      "id": "5a8aa5835542996c9b8d5f4e",
+      "file": "sample_00059.pt",
+      "answer": "Midnight Oil",
+      "type": "comparison"
+    },
+    {
+      "id": "5adf53dc5542995534e8c791",
+      "file": "sample_00060.pt",
+      "answer": "Ridley Scott",
+      "type": "comparison"
+    },
+    {
+      "id": "5a8ad8b65542992d82986fa2",
+      "file": "sample_00061.pt",
+      "answer": "Max Neufeld",
+      "type": "comparison"
+    },
+    {
+      "id": "5a79c9395542994bb94570a2",
+      "file": "sample_00062.pt",
+      "answer": "singer, songwriter",
+      "type": "comparison"
+    },
+    {
+      "id": "5a7ced4355429909bec76895",
+      "file": "sample_00063.pt",
+      "answer": "To Shoot an Elephant",
+      "type": "comparison"
+    }
+  ],
+  "max_sender_tokens": 264,
+  "max_evidence_tokens": 222
+}

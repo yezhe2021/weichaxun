@@ -1,0 +1,272 @@
+{
+  "status": "complete",
+  "experiment": "P2-Hotpot W8 canonical Writer to frozen R4 Reader zero-shot",
+  "weights_frozen": true,
+  "samples": 64,
+  "evidence_regime": "gold_supporting_sentences",
+  "results": {
+    "q4_question_only": {
+      "status": "complete",
+      "model": "qwen3_4b",
+      "samples": 64,
+      "conditions": [
+        {
+          "condition": "question_only",
+          "n": 64,
+          "em": 0.0,
+          "f1": 0.06388648350205256,
+          "source_em": 0.0,
+          "eos_rate": 0.640625,
+          "parse_rate": 1.0,
+          "mean_generated_tokens": 17.390625,
+          "by_type": {
+            "bridge": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.027873774509803922
+            },
+            "comparison": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.09989919249430118
+            }
+          }
+        }
+      ]
+    },
+    "q4_full_text": {
+      "status": "complete",
+      "model": "qwen3_4b",
+      "samples": 64,
+      "conditions": [
+        {
+          "condition": "full_text",
+          "n": 64,
+          "em": 0.03125,
+          "f1": 0.19261003753191253,
+          "source_em": 0.03125,
+          "eos_rate": 0.890625,
+          "parse_rate": 1.0,
+          "mean_generated_tokens": 13.890625,
+          "by_type": {
+            "bridge": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.18658459595959598
+            },
+            "comparison": {
+              "n": 32,
+              "em": 0.0625,
+              "f1": 0.1986354791042291
+            }
+          }
+        }
+      ]
+    },
+    "q8_full_text": {
+      "status": "complete",
+      "model": "qwen3_8b",
+      "samples": 64,
+      "conditions": [
+        {
+          "condition": "full_text",
+          "n": 64,
+          "em": 0.546875,
+          "f1": 0.6893067417184264,
+          "source_em": 0.546875,
+          "eos_rate": 0.96875,
+          "parse_rate": 1.0,
+          "mean_generated_tokens": 6.234375,
+          "by_type": {
+            "bridge": {
+              "n": 32,
+              "em": 0.59375,
+              "f1": 0.7239583333333333
+            },
+            "comparison": {
+              "n": 32,
+              "em": 0.5,
+              "f1": 0.6546551501035196
+            }
+          }
+        }
+      ]
+    },
+    "w8_to_r4_canonical": {
+      "status": "complete",
+      "samples": 64,
+      "conditions": [
+        {
+          "condition": "correct",
+          "n": 64,
+          "em": 0.015625,
+          "f1": 0.07796124303936805,
+          "source_em": 0.015625,
+          "eos_rate": 0.734375,
+          "parse_rate": 1.0,
+          "mean_generated_tokens": 13.828125,
+          "by_type": {
+            "bridge": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.03896306818181818
+            },
+            "comparison": {
+              "n": 32,
+              "em": 0.03125,
+              "f1": 0.1169594178969179
+            }
+          }
+        },
+        {
+          "condition": "kv_mismatch",
+          "n": 64,
+          "em": 0.0,
+          "f1": 0.06706445354998533,
+          "source_em": 0.0,
+          "eos_rate": 0.59375,
+          "parse_rate": 1.0,
+          "mean_generated_tokens": 18.484375,
+          "by_type": {
+            "bridge": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.0482234768907563
+            },
+            "comparison": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.08590543020921437
+            }
+          }
+        },
+        {
+          "condition": "reader_off",
+          "n": 64,
+          "em": 0.0,
+          "f1": 0.06388648350205256,
+          "source_em": 0.0,
+          "eos_rate": 0.640625,
+          "parse_rate": 1.0,
+          "mean_generated_tokens": 17.390625,
+          "by_type": {
+            "bridge": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.027873774509803922
+            },
+            "comparison": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.09989919249430118
+            }
+          }
+        },
+        {
+          "condition": "shuffled",
+          "n": 64,
+          "em": 0.0,
+          "f1": 0.05629336374321189,
+          "source_em": 0.0,
+          "eos_rate": 0.75,
+          "parse_rate": 1.0,
+          "mean_generated_tokens": 15.296875,
+          "by_type": {
+            "bridge": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.011259191176470588
+            },
+            "comparison": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.1013275363099532
+            }
+          }
+        },
+        {
+          "condition": "token_permutation",
+          "n": 64,
+          "em": 0.015625,
+          "f1": 0.07796124303936805,
+          "source_em": 0.015625,
+          "eos_rate": 0.734375,
+          "parse_rate": 1.0,
+          "mean_generated_tokens": 13.828125,
+          "by_type": {
+            "bridge": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.03896306818181818
+            },
+            "comparison": {
+              "n": 32,
+              "em": 0.03125,
+              "f1": 0.1169594178969179
+            }
+          }
+        },
+        {
+          "condition": "zero",
+          "n": 64,
+          "em": 0.0,
+          "f1": 0.06388648350205256,
+          "source_em": 0.0,
+          "eos_rate": 0.640625,
+          "parse_rate": 1.0,
+          "mean_generated_tokens": 17.390625,
+          "by_type": {
+            "bridge": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.027873774509803922
+            },
+            "comparison": {
+              "n": 32,
+              "em": 0.0,
+              "f1": 0.09989919249430118
+            }
+          }
+        }
+      ],
+      "active_layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "model": "qwen3_4b",
+  "samples": 64,
+  "conditions": [
+    {
+      "condition": "question_only",
+      "n": 64,
+      "em": 0.0,
+      "f1": 0.06388648350205256,
+      "source_em": 0.0,
+      "eos_rate": 0.640625,
+      "parse_rate": 1.0,
+      "mean_generated_tokens": 17.390625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.0,
+          "f1": 0.027873774509803922
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.0,
+          "f1": 0.09989919249430118
+        }
+      }
+    }
+  ]
+}

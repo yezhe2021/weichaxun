@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "model": "qwen3_4b",
+  "samples": 64,
+  "conditions": [
+    {
+      "condition": "full_text",
+      "n": 64,
+      "em": 0.03125,
+      "f1": 0.19261003753191253,
+      "source_em": 0.03125,
+      "eos_rate": 0.890625,
+      "parse_rate": 1.0,
+      "mean_generated_tokens": 13.890625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.0,
+          "f1": 0.18658459595959598
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.0625,
+          "f1": 0.1986354791042291
+        }
+      }
+    }
+  ]
+}
