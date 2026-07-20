@@ -1,0 +1,93 @@
+{
+  "status": "complete",
+  "layer_config": "uniform16",
+  "seed": 1234,
+  "writer_checkpoint": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/uniform16/seed1234/writer/writer_best.pt",
+  "training_probe_discarded": true,
+  "best_epoch": 3,
+  "best_validation_score": 0.3796986433705184,
+  "conditions": [
+    {
+      "condition": "correct",
+      "n": 64,
+      "current_answer_em": 0.328125,
+      "current_answer_f1": 0.4453066464785215,
+      "source_memory_em": 0.328125,
+      "source_memory_f1": 0.4453066464785215,
+      "start_accuracy": 0.421875,
+      "end_accuracy": 0.390625,
+      "supporting_sentence_recall": 0.9218431646004319,
+      "loss": 4.716003129258752
+    },
+    {
+      "condition": "kv_mismatch",
+      "n": 64,
+      "current_answer_em": 0.109375,
+      "current_answer_f1": 0.28735942876567877,
+      "source_memory_em": 0.0,
+      "source_memory_f1": 0.0,
+      "start_accuracy": 0.15625,
+      "end_accuracy": 0.234375,
+      "supporting_sentence_recall": 0.9170939289033413,
+      "loss": 6.831934375688434
+    },
+    {
+      "condition": "question_only",
+      "n": 64,
+      "current_answer_em": 0.015625,
+      "current_answer_f1": 0.0656080031080031,
+      "source_memory_em": 0.015625,
+      "source_memory_f1": 0.0656080031080031,
+      "start_accuracy": 0.0,
+      "end_accuracy": 0.03125,
+      "supporting_sentence_recall": 0.9096040176227689,
+      "loss": 8.590958051383495
+    },
+    {
+      "condition": "shuffled",
+      "n": 64,
+      "current_answer_em": 0.0,
+      "current_answer_f1": 0.0,
+      "source_memory_em": 0.1875,
+      "source_memory_f1": 0.25153579059829057,
+      "start_accuracy": 0.234375,
+      "end_accuracy": 0.21875,
+      "supporting_sentence_recall": 0.9186317846179008,
+      "loss": 5.824335716664791
+    },
+    {
+      "condition": "zero",
+      "n": 64,
+      "current_answer_em": 0.015625,
+      "current_answer_f1": 0.0656080031080031,
+      "source_memory_em": 0.015625,
+      "source_memory_f1": 0.0656080031080031,
+      "start_accuracy": 0.0,
+      "end_accuracy": 0.03125,
+      "supporting_sentence_recall": 0.9096040176227689,
+      "loss": 8.590962395071983
+    }
+  ],
+  "writer_config": {
+    "selected_layers": [
+      0,
+      2,
+      5,
+      7,
+      9,
+      12,
+      14,
+      16,
+      19,
+      21,
+      23,
+      26,
+      28,
+      30,
+      33,
+      35
+    ],
+    "rank": 32,
+    "canonical_dim": 256
+  }
+}

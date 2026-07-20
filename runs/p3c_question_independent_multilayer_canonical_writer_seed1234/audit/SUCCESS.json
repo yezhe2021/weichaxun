@@ -1,0 +1,87 @@
+{
+  "status": "complete",
+  "missing_or_invalid": [],
+  "p3b": "/home/yezhe/伪查询/runs/p3b_multilayer_question_independent_kv_readability_seed1234",
+  "layer_configs": {
+    "uniform16": [
+      0,
+      2,
+      5,
+      7,
+      9,
+      12,
+      14,
+      16,
+      19,
+      21,
+      23,
+      26,
+      28,
+      30,
+      33,
+      35
+    ],
+    "all36": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ]
+  },
+  "caches": {
+    "train": {
+      "samples": 363,
+      "layers": 36,
+      "kv_flat_dim": 1024,
+      "question_in_evidence_only_sender": false
+    },
+    "validation": {
+      "samples": 64,
+      "layers": 36,
+      "kv_flat_dim": 1024,
+      "question_in_evidence_only_sender": false
+    },
+    "test": {
+      "samples": 428,
+      "layers": 36,
+      "kv_flat_dim": 1024,
+      "question_in_evidence_only_sender": false
+    }
+  },
+  "sender_frozen": true,
+  "question_encoder_frozen": true,
+  "question_independent": true,
+  "cuda_available": true
+}

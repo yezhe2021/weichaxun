@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "passed": true,
+  "correct_em": 1.0,
+  "zero_em": 0.0,
+  "shuffled_current_em": 0.0,
+  "shuffled_source_em": 1.0,
+  "mismatch_em": 0.3125,
+  "criteria": {
+    "min_correct_em": 0.9,
+    "min_zero_gap": 0.5
+  },
+  "note": "Cross-sample source following is diagnostic, not a hard gate, because the current question does not identify the source sample's answer span."
+}

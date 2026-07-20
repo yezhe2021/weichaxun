@@ -1,0 +1,181 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "layer_config": "uniform16",
+      "layers": 16,
+      "seed": 1234,
+      "correct_em": 0.26401869158878505,
+      "correct_f1": 0.37956211295271214,
+      "zero_f1": 0.09415824310684126,
+      "shuffled_current_f1": 0.002974504726841175,
+      "shuffled_source_f1": 0.25815664086692125,
+      "mismatch_f1": 0.24389162621020788,
+      "start_accuracy": 0.3107476635514019,
+      "end_accuracy": 0.3060747663551402,
+      "supporting_sentence_recall": 0.8928110989454751,
+      "retention": 0.9599928734623794,
+      "writer_checkpoint": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/uniform16/seed1234/writer/writer_best.pt"
+    },
+    {
+      "layer_config": "uniform16",
+      "layers": 16,
+      "seed": 2345,
+      "correct_em": 0.24065420560747663,
+      "correct_f1": 0.36594185306028126,
+      "zero_f1": 0.039920776874460225,
+      "shuffled_current_f1": 0.004283489096573208,
+      "shuffled_source_f1": 0.23256739986727792,
+      "mismatch_f1": 0.24627799454597504,
+      "start_accuracy": 0.29439252336448596,
+      "end_accuracy": 0.29439252336448596,
+      "supporting_sentence_recall": 0.9153795710233884,
+      "retention": 1.096614106549935,
+      "writer_checkpoint": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/uniform16/seed2345/writer/writer_best.pt"
+    },
+    {
+      "layer_config": "uniform16",
+      "layers": 16,
+      "seed": 3456,
+      "correct_em": 0.2616822429906542,
+      "correct_f1": 0.3680044718903548,
+      "zero_f1": 0.08773463876542491,
+      "shuffled_current_f1": 0.0028602406694765137,
+      "shuffled_source_f1": 0.2885743096330897,
+      "mismatch_f1": 0.22189803050165885,
+      "start_accuracy": 0.3177570093457944,
+      "end_accuracy": 0.31542056074766356,
+      "supporting_sentence_recall": 0.9152585273591157,
+      "retention": 0.9427238761398863,
+      "writer_checkpoint": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/uniform16/seed3456/writer/writer_best.pt"
+    },
+    {
+      "layer_config": "all36",
+      "layers": 36,
+      "seed": 1234,
+      "correct_em": 0.2897196261682243,
+      "correct_f1": 0.3995916985402967,
+      "zero_f1": 0.08418780790258033,
+      "shuffled_current_f1": 0.0030912104510235345,
+      "shuffled_source_f1": 0.2597828008836805,
+      "mismatch_f1": 0.22421373789914195,
+      "start_accuracy": 0.3247663551401869,
+      "end_accuracy": 0.3411214953271028,
+      "supporting_sentence_recall": 0.8989565564650241,
+      "retention": 1.0614006371873763,
+      "writer_checkpoint": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/all36/seed1234/writer/writer_best.pt"
+    },
+    {
+      "layer_config": "all36",
+      "layers": 36,
+      "seed": 2345,
+      "correct_em": 0.24065420560747663,
+      "correct_f1": 0.3362650138040028,
+      "zero_f1": 0.08089129565409532,
+      "shuffled_current_f1": 0.0022892476163504203,
+      "shuffled_source_f1": 0.27580210471222016,
+      "mismatch_f1": 0.24169873022951635,
+      "start_accuracy": 0.2757009345794392,
+      "end_accuracy": 0.2897196261682243,
+      "supporting_sentence_recall": 0.9100930927512801,
+      "retention": 0.8593864413567521,
+      "writer_checkpoint": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/all36/seed2345/writer/writer_best.pt"
+    },
+    {
+      "layer_config": "all36",
+      "layers": 36,
+      "seed": 3456,
+      "correct_em": 0.26401869158878505,
+      "correct_f1": 0.37162012442386283,
+      "zero_f1": 0.08949367053751332,
+      "shuffled_current_f1": 0.0008507069254732806,
+      "shuffled_source_f1": 0.3007496527356341,
+      "mismatch_f1": 0.2367345393596081,
+      "start_accuracy": 0.32242990654205606,
+      "end_accuracy": 0.3060747663551402,
+      "supporting_sentence_recall": 0.890128147239997,
+      "retention": 0.9494150415105178,
+      "writer_checkpoint": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/all36/seed3456/writer/writer_best.pt"
+    }
+  ],
+  "aggregate": {
+    "uniform16": {
+      "correct_em": {
+        "mean": 0.25545171339563866,
+        "std": 0.01050680495578819
+      },
+      "correct_f1": {
+        "mean": 0.37116947930111605,
+        "std": 0.005993931587696044
+      },
+      "zero_f1": {
+        "mean": 0.07393788624890879,
+        "std": 0.024196259639713787
+      },
+      "shuffled_current_f1": {
+        "mean": 0.003372744830963632,
+        "std": 0.000645680729518288
+      },
+      "shuffled_source_f1": {
+        "mean": 0.2597661167890963,
+        "std": 0.022893030889144586
+      },
+      "mismatch_f1": {
+        "mean": 0.23735588375261393,
+        "std": 0.01097368393945366
+      },
+      "retention": {
+        "mean": 0.9997769520507336,
+        "std": 0.06883618445632468
+      }
+    },
+    "all36": {
+      "correct_em": {
+        "mean": 0.26479750778816197,
+        "std": 0.020038442882038317
+      },
+      "correct_f1": {
+        "mean": 0.3691589455893875,
+        "std": 0.025911519971677222
+      },
+      "zero_f1": {
+        "mean": 0.08485759136472966,
+        "std": 0.00354369588831978
+      },
+      "shuffled_current_f1": {
+        "mean": 0.0020770549976157453,
+        "std": 0.0009269064291447794
+      },
+      "shuffled_source_f1": {
+        "mean": 0.2787781861105116,
+        "std": 0.016856522635306893
+      },
+      "mismatch_f1": {
+        "mean": 0.23421566916275546,
+        "std": 0.007357072311717353
+      },
+      "retention": {
+        "mean": 0.9567340400182154,
+        "std": 0.08263417224385322
+      }
+    }
+  },
+  "all36_minus_uniform16_f1": -0.002010533711728546,
+  "layer_recommendation": "uniform16_is_stable_efficiency_candidate",
+  "fresh_probe_interface_passed": true,
+  "interpretation": "Frozen Writer remains independently readable",
+  "gate": {
+    "status": "complete",
+    "passed": true,
+    "correct_em": 1.0,
+    "zero_em": 0.0,
+    "shuffled_current_em": 0.0,
+    "shuffled_source_em": 1.0,
+    "mismatch_em": 0.3125,
+    "criteria": {
+      "min_correct_em": 0.9,
+      "min_zero_gap": 0.5
+    },
+    "note": "Cross-sample source following is diagnostic, not a hard gate, because the current question does not identify the source sample's answer span."
+  }
+}
