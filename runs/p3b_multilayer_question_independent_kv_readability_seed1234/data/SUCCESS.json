@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "seed": 1234,
+  "train": 363,
+  "validation": 64,
+  "test": 428,
+  "excluded_train": 85,
+  "excluded_test": 72,
+  "train_types": {
+    "comparison": 148,
+    "bridge": 215
+  },
+  "validation_types": {
+    "bridge": 41,
+    "comparison": 23
+  },
+  "test_types": {
+    "bridge": 250,
+    "comparison": 178
+  }
+}

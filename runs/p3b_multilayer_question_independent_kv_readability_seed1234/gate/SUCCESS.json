@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "passed": true,
+  "criteria": {
+    "min_correct_em": 0.9,
+    "min_zero_gap": 0.5
+  },
+  "branches": [
+    {
+      "source": "hidden",
+      "correct_em": 0.75,
+      "zero_em": 0.0,
+      "shuffled_current_em": 0.0,
+      "shuffled_source_em": 0.6875,
+      "passed": false
+    },
+    {
+      "source": "native_kv",
+      "correct_em": 1.0,
+      "zero_em": 0.0,
+      "shuffled_current_em": 0.0625,
+      "shuffled_source_em": 0.5,
+      "passed": true
+    },
+    {
+      "source": "trainable",
+      "correct_em": 1.0,
+      "zero_em": 0.0,
+      "shuffled_current_em": 0.0,
+      "shuffled_source_em": 1.0,
+      "passed": true
+    }
+  ],
+  "note": "Cross-sample source-answer following is reported but is not a gate: the current question does not identify the source sample's answer."
+}

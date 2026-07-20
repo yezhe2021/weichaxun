@@ -1,0 +1,112 @@
+{
+  "status": "complete",
+  "sender_mode": "question_evidence",
+  "source": "hidden",
+  "layer_set": "uniform16",
+  "layers": [
+    0,
+    2,
+    5,
+    7,
+    9,
+    12,
+    14,
+    16,
+    19,
+    21,
+    23,
+    26,
+    28,
+    30,
+    33,
+    35
+  ],
+  "conditions": [
+    {
+      "condition": "correct",
+      "n": 428,
+      "current_answer_em": 0.397196261682243,
+      "current_answer_f1": 0.547103065677832,
+      "source_memory_em": 0.397196261682243,
+      "source_memory_f1": 0.547103065677832,
+      "start_accuracy": 0.45794392523364486,
+      "end_accuracy": 0.4953271028037383,
+      "supporting_fact_recall": 0.9002339172864628,
+      "loss": 3.502928497409013
+    },
+    {
+      "condition": "kv_mismatch",
+      "n": 428,
+      "current_answer_em": 0.11214953271028037,
+      "current_answer_f1": 0.29347996764430745,
+      "source_memory_em": 0.0,
+      "source_memory_f1": 0.0014797507788161994,
+      "start_accuracy": 0.24065420560747663,
+      "end_accuracy": 0.18457943925233644,
+      "supporting_fact_recall": 0.9040600685315712,
+      "loss": 6.24780400877244
+    },
+    {
+      "condition": "layer_permutation",
+      "n": 428,
+      "current_answer_em": 0.2897196261682243,
+      "current_answer_f1": 0.42196364123934216,
+      "source_memory_em": 0.2897196261682243,
+      "source_memory_f1": 0.42196364123934216,
+      "start_accuracy": 0.338785046728972,
+      "end_accuracy": 0.37850467289719625,
+      "supporting_fact_recall": 0.8990418515472769,
+      "loss": 4.975420902265567
+    },
+    {
+      "condition": "question_only",
+      "n": 428,
+      "current_answer_em": 0.0,
+      "current_answer_f1": 0.07236801366655103,
+      "source_memory_em": 0.0,
+      "source_memory_f1": 0.07236801366655103,
+      "start_accuracy": 0.007009345794392523,
+      "end_accuracy": 0.011682242990654205,
+      "supporting_fact_recall": 0.9036965612496171,
+      "loss": 8.663040232435565
+    },
+    {
+      "condition": "shuffled",
+      "n": 428,
+      "current_answer_em": 0.0,
+      "current_answer_f1": 0.0007842624665054571,
+      "source_memory_em": 0.3060747663551402,
+      "source_memory_f1": 0.40929622039435126,
+      "start_accuracy": 0.34813084112149534,
+      "end_accuracy": 0.38317757009345793,
+      "supporting_fact_recall": 0.8998038293880837,
+      "loss": 4.656461889324623
+    },
+    {
+      "condition": "token_permutation",
+      "n": 428,
+      "current_answer_em": 0.411214953271028,
+      "current_answer_f1": 0.5491914948792235,
+      "source_memory_em": 0.411214953271028,
+      "source_memory_f1": 0.5491914948792235,
+      "start_accuracy": 0.4602803738317757,
+      "end_accuracy": 0.5070093457943925,
+      "supporting_fact_recall": 0.9003913692224805,
+      "loss": 3.5178247190942273
+    },
+    {
+      "condition": "zero",
+      "n": 428,
+      "current_answer_em": 0.002336448598130841,
+      "current_answer_f1": 0.07272606682834253,
+      "source_memory_em": 0.002336448598130841,
+      "source_memory_f1": 0.07272606682834253,
+      "start_accuracy": 0.007009345794392523,
+      "end_accuracy": 0.014018691588785047,
+      "supporting_fact_recall": 0.9037945110385663,
+      "loss": 8.662629949712308
+    }
+  ],
+  "correct_shuffled_em_gap": 0.397196261682243,
+  "best_validation_score": 0.421875
+}
