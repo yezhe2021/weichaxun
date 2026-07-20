@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "receiver": "qwen3_5_4b",
+  "pairs": 64,
+  "new_sender_base_em": 0.984375,
+  "new_sender_counterfactual_em": 0.953125,
+  "new_sender_paired": 0.953125,
+  "old_sender_paired": 0.984375,
+  "paired_gap_from_old": -0.03125,
+  "conditions": [
+    {
+      "condition": "new_sender_base_cf_swap",
+      "n": 128,
+      "target_em": 0.0,
+      "source_memory_accuracy": 0.96875,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "new_sender_correct",
+      "n": 128,
+      "target_em": 0.96875,
+      "source_memory_accuracy": 0.96875,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "new_sender_kv_mismatch",
+      "n": 128,
+      "target_em": 0.0234375,
+      "source_memory_accuracy": 0.1171875,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "new_sender_shuffled",
+      "n": 128,
+      "target_em": 0.0,
+      "source_memory_accuracy": 0.9765625,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "new_sender_token_permutation",
+      "n": 128,
+      "target_em": 0.96875,
+      "source_memory_accuracy": 0.96875,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "new_sender_zero",
+      "n": 128,
+      "target_em": 0.0,
+      "source_memory_accuracy": 0.0,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "old_sender_correct",
+      "n": 128,
+      "target_em": 0.9921875,
+      "source_memory_accuracy": 0.9921875,
+      "eos_rate": 1.0
+    },
+    {
+      "condition": "reader_off",
+      "n": 128,
+      "target_em": 0.0,
+      "source_memory_accuracy": 0.0,
+      "eos_rate": 1.0
+    }
+  ],
+  "within_five_points_of_old": true,
+  "control_gate": true,
+  "old_writer_checkpoint_sha256": "4150a1a153c18fa71ed43911e1f50a996a4729475fae764676a5c075c5a96229",
+  "new_writer_checkpoint_sha256": "f64f13bbbf717e1fd7b3ef79e21dde378c16ca0131d0567a2e44f94717000c20"
+}

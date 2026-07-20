@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "train_pairs": 512,
+  "test_pairs": 64,
+  "strict_token_alignment_required": true,
+  "old_writer_checkpoint_sha256": "4150a1a153c18fa71ed43911e1f50a996a4729475fae764676a5c075c5a96229",
+  "p2iw_writer_file_sha256": "4150a1a153c18fa71ed43911e1f50a996a4729475fae764676a5c075c5a96229",
+  "both_readers_frozen_interface_verified": true,
+  "qwen3_4b_sender": {
+    "kv_heads": 8,
+    "head_dim": 128,
+    "flat_dim": 1024
+  }
+}
