@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "samples": 500,
+  "metrics": {
+    "answer_sentence_removed": {
+      "n": 427,
+      "em": 0.11241217798594848,
+      "f1": 0.18923229385758658,
+      "generation_tokens": 5.180327868852459,
+      "source_answer_em": 0.0
+    },
+    "correct_public": {
+      "n": 500,
+      "em": 0.152,
+      "f1": 0.22480322455322455,
+      "generation_tokens": 4.986,
+      "source_answer_em": 0.0
+    },
+    "full_text": {
+      "n": 500,
+      "em": 0.158,
+      "f1": 0.39840392367478605,
+      "generation_tokens": 12.402,
+      "source_answer_em": 0.0
+    },
+    "question_only": {
+      "n": 500,
+      "em": 0.01,
+      "f1": 0.08290481408782001,
+      "generation_tokens": 20.01,
+      "source_answer_em": 0.0
+    },
+    "reader_off": {
+      "n": 500,
+      "em": 0.01,
+      "f1": 0.08290481408782001,
+      "generation_tokens": 20.01,
+      "source_answer_em": 0.0
+    },
+    "shuffled_public": {
+      "n": 500,
+      "em": 0.138,
+      "f1": 0.20490879675879678,
+      "generation_tokens": 4.892,
+      "source_answer_em": 0.0
+    },
+    "zero_public": {
+      "n": 500,
+      "em": 0.01,
+      "f1": 0.08290481408782001,
+      "generation_tokens": 20.01,
+      "source_answer_em": 0.0
+    },
+    "gap_recovery_em": 0.9594594594594594,
+    "gap_recovery_f1": 0.4497585132686113
+  }
+}
