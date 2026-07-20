@@ -1,0 +1,118 @@
+{
+  "status": "complete",
+  "source": "pca_kv",
+  "samples": 500,
+  "profile": "probe",
+  "conditions": [
+    {
+      "condition": "correct",
+      "n": 500,
+      "em": 0.308,
+      "f1": 0.37602143461114046,
+      "yes_no_accuracy": 0.7222222222222222,
+      "source_em": 0.308,
+      "eos_rate": 0.996,
+      "parse_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 250,
+          "em": 0.1,
+          "f1": 0.17557640235581412
+        },
+        "comparison": {
+          "n": 250,
+          "em": 0.516,
+          "f1": 0.5764664668664669
+        }
+      }
+    },
+    {
+      "condition": "kv_mismatch",
+      "n": 500,
+      "em": 0.258,
+      "f1": 0.35081137868896384,
+      "yes_no_accuracy": 0.6388888888888888,
+      "source_em": 0.008,
+      "eos_rate": 0.974,
+      "parse_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 250,
+          "em": 0.084,
+          "f1": 0.15603980595027037
+        },
+        "comparison": {
+          "n": 250,
+          "em": 0.432,
+          "f1": 0.5455829514276573
+        }
+      }
+    },
+    {
+      "condition": "reader_off",
+      "n": 500,
+      "em": 0.05,
+      "f1": 0.1649104245703694,
+      "yes_no_accuracy": 0.0,
+      "source_em": 0.0,
+      "eos_rate": 0.574,
+      "parse_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 250,
+          "em": 0.056,
+          "f1": 0.11896593461558058
+        },
+        "comparison": {
+          "n": 250,
+          "em": 0.044,
+          "f1": 0.21085491452515817
+        }
+      }
+    },
+    {
+      "condition": "shuffled",
+      "n": 500,
+      "em": 0.312,
+      "f1": 0.3768664380511129,
+      "yes_no_accuracy": 0.7222222222222222,
+      "source_em": 0.01,
+      "eos_rate": 0.998,
+      "parse_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 250,
+          "em": 0.1,
+          "f1": 0.17286074121956474
+        },
+        "comparison": {
+          "n": 250,
+          "em": 0.524,
+          "f1": 0.5808721348826612
+        }
+      }
+    },
+    {
+      "condition": "zero",
+      "n": 500,
+      "em": 0.05,
+      "f1": 0.1649104245703694,
+      "yes_no_accuracy": 0.0,
+      "source_em": 0.0,
+      "eos_rate": 0.574,
+      "parse_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 250,
+          "em": 0.056,
+          "f1": 0.11896593461558058
+        },
+        "comparison": {
+          "n": 250,
+          "em": 0.044,
+          "f1": 0.21085491452515817
+        }
+      }
+    }
+  ]
+}

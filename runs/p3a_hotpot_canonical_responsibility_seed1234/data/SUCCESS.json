@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "train": 512,
+  "dev": 500,
+  "train_types": {
+    "bridge": 256,
+    "comparison": 256
+  },
+  "dev_types": {
+    "bridge": 250,
+    "comparison": 250
+  },
+  "dev_answer_types": {
+    "extractive": 428,
+    "yes_no": 72
+  }
+}
