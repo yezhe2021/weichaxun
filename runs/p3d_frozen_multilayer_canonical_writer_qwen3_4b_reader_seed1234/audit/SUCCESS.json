@@ -1,0 +1,132 @@
+{
+  "status": "complete",
+  "errors": [],
+  "protocol": {
+    "status": "complete",
+    "main_protocol": "canonical16",
+    "question_independent": true,
+    "canonical16": {
+      "layer_config": "uniform16",
+      "seed": 1234,
+      "selection_rule": "retention_closest_to_three_seed_median",
+      "median_retention": 0.9599928734623794,
+      "selected_retention": 0.9599928734623794,
+      "writer_checkpoint": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/uniform16/seed1234/writer/writer_best.pt",
+      "writer_sha256": "adf39167598c34b45e6d21a6562a48fe6e5435cedcec40dd23bd7cc89a400e75",
+      "canonical_cache": {
+        "train": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/uniform16/seed1234/cache/train/index.json",
+        "validation": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/uniform16/seed1234/cache/validation/index.json",
+        "test": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/uniform16/seed1234/cache/test/index.json"
+      },
+      "groups": 16,
+      "memory_dim": 256,
+      "original_layer_indices": [
+        0,
+        2,
+        5,
+        7,
+        9,
+        12,
+        14,
+        16,
+        19,
+        21,
+        23,
+        26,
+        28,
+        30,
+        33,
+        35
+      ]
+    },
+    "canonical36": {
+      "layer_config": "all36",
+      "seed": 3456,
+      "selection_rule": "retention_closest_to_three_seed_median",
+      "median_retention": 0.9494150415105178,
+      "selected_retention": 0.9494150415105178,
+      "writer_checkpoint": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/all36/seed3456/writer/writer_best.pt",
+      "writer_sha256": "148a822fb6691110a46901543b5634a0de21345b2b9681a8813387f167514694",
+      "canonical_cache": {
+        "train": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/all36/seed3456/cache/train/index.json",
+        "validation": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/all36/seed3456/cache/validation/index.json",
+        "test": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/all36/seed3456/cache/test/index.json"
+      },
+      "groups": 36,
+      "memory_dim": 256,
+      "original_layer_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    "native16": {
+      "groups": 16,
+      "memory_dim": 1024,
+      "original_layer_indices": [
+        0,
+        2,
+        5,
+        7,
+        9,
+        12,
+        14,
+        16,
+        19,
+        21,
+        23,
+        26,
+        28,
+        30,
+        33,
+        35
+      ],
+      "cache": {
+        "train": "/home/yezhe/伪查询/runs/p3b_multilayer_question_independent_kv_readability_seed1234/cache/train/index.json",
+        "validation": "/home/yezhe/伪查询/runs/p3b_multilayer_question_independent_kv_readability_seed1234/cache/validation/index.json",
+        "test": "/home/yezhe/伪查询/runs/p3b_multilayer_question_independent_kv_readability_seed1234/cache/test/index.json"
+      }
+    },
+    "writer_frozen": true,
+    "sender_frozen": true,
+    "receiver_backbone_frozen": true
+  },
+  "receiver_geometry": {
+    "layers": 36,
+    "hidden_size": 2560,
+    "heads": 32
+  }
+}

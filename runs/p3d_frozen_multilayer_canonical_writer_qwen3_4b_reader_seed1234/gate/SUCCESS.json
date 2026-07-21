@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "checks": {
+    "correct_em_at_least_0_90": true,
+    "correct_f1_exceeds_zero_by_0_50": true,
+    "correct_f1_exceeds_shuffled_by_0_50": true,
+    "correct_f1_exceeds_kv_mismatch_by_0_30": true,
+    "reader_off_matches_question_only": true,
+    "gate_opened": true
+  },
+  "metrics": {
+    "correct": {
+      "n": 16,
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "eos_rate": 1.0,
+      "mean_elapsed_seconds": 0.5685275469440967,
+      "insufficient_rate": 0.0,
+      "source_answer_exact_match": 0.0,
+      "bridge": {
+        "n": 10,
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "comparison": {
+        "n": 6,
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "zero": {
+      "n": 16,
+      "exact_match": 0.1875,
+      "f1": 0.21875,
+      "eos_rate": 0.75,
+      "mean_elapsed_seconds": 1.9175464962609112,
+      "insufficient_rate": 0.0625,
+      "source_answer_exact_match": 0.0,
+      "rejection_accuracy": 0.0625,
+      "bridge": {
+        "n": 10,
+        "exact_match": 0.0,
+        "f1": 0.05
+      },
+      "comparison": {
+        "n": 6,
+        "exact_match": 0.5,
+        "f1": 0.5
+      }
+    },
+    "shuffled": {
+      "n": 16,
+      "exact_match": 0.125,
+      "f1": 0.125,
+      "eos_rate": 1.0,
+      "mean_elapsed_seconds": 0.4904900266556069,
+      "insufficient_rate": 0.875,
+      "source_answer_exact_match": 0.0,
+      "rejection_accuracy": 0.875,
+      "bridge": {
+        "n": 10,
+        "exact_match": 0.2,
+        "f1": 0.2
+      },
+      "comparison": {
+        "n": 6,
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "mismatch_f1": 0.0
+  },
+  "training": {
+    "status": "complete",
+    "source": "canonical16",
+    "mode": "small",
+    "best_epoch": 60,
+    "validation_loss": 0.09588434407487512,
+    "reader_parameters": 25546788,
+    "backbone_parameters_updated": 0,
+    "optimizer_reader_only": true,
+    "update_steps": 240,
+    "initial_gate": 0.005,
+    "final_gate_mean": 0.005094670690596104
+  }
+}

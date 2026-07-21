@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "metrics": {
+    "n": 428,
+    "exact_match": 0.07242990654205607,
+    "f1": 0.18146886607957882,
+    "bridge": {
+      "n": 250,
+      "exact_match": 0.056,
+      "f1": 0.11815287687102073
+    },
+    "comparison": {
+      "n": 178,
+      "exact_match": 0.09550561797752809,
+      "f1": 0.27039581721519407
+    }
+  },
+  "source": "/home/yezhe/伪查询/runs/p3a_hotpot_canonical_responsibility_seed1234/readers/old_synthetic/eval/per_sample_generation.jsonl"
+}

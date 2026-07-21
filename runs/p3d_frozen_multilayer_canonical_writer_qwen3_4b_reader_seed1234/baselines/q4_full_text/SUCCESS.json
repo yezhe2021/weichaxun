@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "model": "qwen3_4b",
+  "condition": "full_text",
+  "metrics": {
+    "n": 428,
+    "exact_match": 0.3294392523364486,
+    "f1": 0.5297425092400142,
+    "eos_rate": 0.7523364485981309,
+    "bridge": {
+      "n": 250,
+      "exact_match": 0.436,
+      "f1": 0.6033601998447565
+    },
+    "comparison": {
+      "n": 178,
+      "exact_match": 0.1797752808988764,
+      "f1": 0.42634687636818264
+    }
+  },
+  "args": {
+    "model_name": "qwen3_4b",
+    "model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "cache": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/uniform16/seed1234/cache/test/index.json",
+    "condition": "full_text",
+    "out": "/home/yezhe/伪查询/runs/p3d_frozen_multilayer_canonical_writer_qwen3_4b_reader_seed1234/baselines/q4_full_text",
+    "max_new_tokens": 32,
+    "device": "cuda"
+  }
+}
