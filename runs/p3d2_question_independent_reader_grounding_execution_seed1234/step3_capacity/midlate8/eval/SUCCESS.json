@@ -1,0 +1,117 @@
+{
+  "status": "complete",
+  "configuration": "midlate8",
+  "samples": 428,
+  "conditions": {
+    "correct": {
+      "n": 428,
+      "em": 0.2266355140186916,
+      "f1": 0.31735288564590386,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 0.9953271028037384,
+      "compatibility_score": 3.2875794383967034,
+      "bridge_f1": 0.17280692640692635,
+      "comparison_f1": 0.5203668733410969
+    },
+    "hard_shuffled": {
+      "n": 428,
+      "em": 0.22429906542056074,
+      "f1": 0.3103611403120057,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 0.9929906542056075,
+      "compatibility_score": 2.9980399352367795,
+      "bridge_f1": 0.1572243599825943,
+      "comparison_f1": 0.5254408879656732
+    },
+    "zero": {
+      "n": 428,
+      "em": 0.056074766355140186,
+      "f1": 0.15983549377189996,
+      "source_em": 0.0,
+      "insufficient_rate": 0.028037383177570093,
+      "eos_rate": 0.6588785046728972,
+      "compatibility_score": -0.7697884480112067,
+      "bridge_f1": 0.1223102094915935,
+      "comparison_f1": 0.21253954472738668
+    },
+    "reader_off": {
+      "n": 428,
+      "em": 0.056074766355140186,
+      "f1": 0.15983549377189996,
+      "source_em": 0.0,
+      "insufficient_rate": 0.028037383177570093,
+      "eos_rate": 0.6588785046728972,
+      "compatibility_score": 0.0,
+      "bridge_f1": 0.1223102094915935,
+      "comparison_f1": 0.21253954472738668
+    },
+    "kv_mismatch": {
+      "n": 428,
+      "em": 0.22429906542056074,
+      "f1": 0.3071563800423818,
+      "source_em": 0.0,
+      "insufficient_rate": 0.002336448598130841,
+      "eos_rate": 0.9789719626168224,
+      "compatibility_score": 2.551343568992392,
+      "bridge_f1": 0.14846164604248094,
+      "comparison_f1": 0.5300422424017931
+    },
+    "wrong_k_correct_v": {
+      "n": 428,
+      "em": 0.2102803738317757,
+      "f1": 0.3024447322232574,
+      "source_em": 0.0,
+      "insufficient_rate": 0.002336448598130841,
+      "eos_rate": 0.9789719626168224,
+      "compatibility_score": 2.5807711791212316,
+      "bridge_f1": 0.14905244783328273,
+      "comparison_f1": 0.5178833338945698
+    },
+    "correct_k_wrong_v": {
+      "n": 428,
+      "em": 0.21728971962616822,
+      "f1": 0.30244874088946894,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 0.9766355140186916,
+      "compatibility_score": 2.438341475535776,
+      "bridge_f1": 0.15194844375897007,
+      "comparison_f1": 0.5138255627019672
+    },
+    "token_permutation": {
+      "n": 428,
+      "em": 0.2266355140186916,
+      "f1": 0.3169634775462154,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 0.9929906542056075,
+      "compatibility_score": 3.2875794467524946,
+      "bridge_f1": 0.17214025974025973,
+      "comparison_f1": 0.5203668733410969
+    },
+    "layer_permutation": {
+      "n": 428,
+      "em": 0.22897196261682243,
+      "f1": 0.31968933424403473,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 0.9953271028037384,
+      "compatibility_score": 3.2086600109795542,
+      "bridge_f1": 0.17680692640692638,
+      "comparison_f1": 0.5203668733410969
+    }
+  },
+  "correct_minus_shuffled_f1": 0.0069917453338981805,
+  "functional_diagnostics": {
+    "residual_cosine": 0.22237084922598344,
+    "reader_rms_ratio": 0.03794570153069935,
+    "teacher_rms_ratio": 0.4899984863108007,
+    "grounding_kl": 0.10434279454628302
+  },
+  "reader_parameters": 2838544,
+  "receiver_parameters_updated": 0,
+  "writer_parameters_updated": 0,
+  "checkpoint": "/home/yezhe/伪查询/runs/p3d2_question_independent_reader_grounding_execution_seed1234/step3_capacity/midlate8/train/checkpoint_best.pt"
+}

@@ -1,0 +1,117 @@
+{
+  "status": "complete",
+  "configuration": "midlate8",
+  "samples": 16,
+  "conditions": {
+    "correct": {
+      "n": 16,
+      "em": 1.0,
+      "f1": 1.0,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "compatibility_score": 4.374044880270958,
+      "bridge_f1": 1.0,
+      "comparison_f1": 1.0
+    },
+    "hard_shuffled": {
+      "n": 16,
+      "em": 0.8125,
+      "f1": 0.8125,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "compatibility_score": 2.966425709426403,
+      "bridge_f1": 0.7,
+      "comparison_f1": 1.0
+    },
+    "zero": {
+      "n": 16,
+      "em": 0.1875,
+      "f1": 0.21875,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0625,
+      "eos_rate": 0.75,
+      "compatibility_score": -0.8965649083256721,
+      "bridge_f1": 0.05,
+      "comparison_f1": 0.5
+    },
+    "reader_off": {
+      "n": 16,
+      "em": 0.1875,
+      "f1": 0.21875,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0625,
+      "eos_rate": 0.75,
+      "compatibility_score": 0.0,
+      "bridge_f1": 0.05,
+      "comparison_f1": 0.5
+    },
+    "kv_mismatch": {
+      "n": 16,
+      "em": 0.4375,
+      "f1": 0.51875,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "compatibility_score": 2.9378787726163864,
+      "bridge_f1": 0.25,
+      "comparison_f1": 0.9666666666666667
+    },
+    "wrong_k_correct_v": {
+      "n": 16,
+      "em": 0.4375,
+      "f1": 0.4826388888888889,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "compatibility_score": 2.960959881544113,
+      "bridge_f1": 0.25,
+      "comparison_f1": 0.8703703703703703
+    },
+    "correct_k_wrong_v": {
+      "n": 16,
+      "em": 0.375,
+      "f1": 0.45625,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "compatibility_score": 2.8097365349531174,
+      "bridge_f1": 0.25,
+      "comparison_f1": 0.7999999999999999
+    },
+    "token_permutation": {
+      "n": 16,
+      "em": 1.0,
+      "f1": 1.0,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "compatibility_score": 4.37404491007328,
+      "bridge_f1": 1.0,
+      "comparison_f1": 1.0
+    },
+    "layer_permutation": {
+      "n": 16,
+      "em": 1.0,
+      "f1": 1.0,
+      "source_em": 0.0,
+      "insufficient_rate": 0.0,
+      "eos_rate": 1.0,
+      "compatibility_score": 4.347872346639633,
+      "bridge_f1": 1.0,
+      "comparison_f1": 1.0
+    }
+  },
+  "correct_minus_shuffled_f1": 0.1875,
+  "functional_diagnostics": {
+    "residual_cosine": 0.3880156930536032,
+    "reader_rms_ratio": 0.04048171458998695,
+    "teacher_rms_ratio": 0.458794254809618,
+    "grounding_kl": 0.035078886430710554
+  },
+  "reader_parameters": 2838544,
+  "receiver_parameters_updated": 0,
+  "writer_parameters_updated": 0,
+  "checkpoint": "/home/yezhe/伪查询/runs/p3d2_question_independent_reader_grounding_execution_seed1234/step3_capacity/midlate8/small/train/checkpoint_best.pt"
+}

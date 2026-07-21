@@ -1,0 +1,229 @@
+{
+  "status": "complete",
+  "n": 428,
+  "modes": {
+    "standard": {
+      "correct": {
+        "n": 428,
+        "em": 0.2219626168224299,
+        "f1": 0.3020830586312632,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.076,
+          "f1": 0.13675140415140416
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.42696629213483145,
+          "f1": 0.5342904385187058
+        }
+      },
+      "reader_off": {
+        "n": 428,
+        "em": 0.056074766355140186,
+        "f1": 0.15983549377190007,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.06,
+          "f1": 0.12231020949159353
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.05056179775280899,
+          "f1": 0.21253954472738673
+        }
+      },
+      "shuffled": {
+        "n": 428,
+        "em": 0.1822429906542056,
+        "f1": 0.24884795425079115,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.056,
+          "f1": 0.09978384562297606
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.3595505617977528,
+          "f1": 0.45820765737974495
+        }
+      },
+      "zero": {
+        "n": 428,
+        "em": 0.056074766355140186,
+        "f1": 0.15983549377190007,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.06,
+          "f1": 0.12231020949159353
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.05056179775280899,
+          "f1": 0.21253954472738673
+        }
+      },
+      "correct_minus_shuffled_f1": 0.053235104380472076
+    },
+    "oracle_token": {
+      "correct": {
+        "n": 428,
+        "em": 0.028037383177570093,
+        "f1": 0.04857003501863315,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.012,
+          "f1": 0.016592592592592593
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.05056179775280899,
+          "f1": 0.09348217325745414
+        }
+      },
+      "reader_off": {
+        "n": 428,
+        "em": 0.056074766355140186,
+        "f1": 0.15983549377190007,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.06,
+          "f1": 0.12231020949159353
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.05056179775280899,
+          "f1": 0.21253954472738673
+        }
+      },
+      "shuffled": {
+        "n": 428,
+        "em": 0.02570093457943925,
+        "f1": 0.04335126573994084,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.008,
+          "f1": 0.011988795518207283
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.05056179775280899,
+          "f1": 0.08739967897271268
+        }
+      },
+      "zero": {
+        "n": 428,
+        "em": 0.056074766355140186,
+        "f1": 0.15983549377190007,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.06,
+          "f1": 0.12231020949159353
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.05056179775280899,
+          "f1": 0.21253954472738673
+        }
+      },
+      "correct_minus_shuffled_f1": 0.00521876927869231
+    },
+    "oracle_token_layer": {
+      "correct": {
+        "n": 428,
+        "em": 0.0794392523364486,
+        "f1": 0.20547277201970848,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.06,
+          "f1": 0.12921708331981197
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.10674157303370786,
+          "f1": 0.3125734583959677
+        }
+      },
+      "reader_off": {
+        "n": 428,
+        "em": 0.056074766355140186,
+        "f1": 0.15983549377190007,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.06,
+          "f1": 0.12231020949159353
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.05056179775280899,
+          "f1": 0.21253954472738673
+        }
+      },
+      "shuffled": {
+        "n": 428,
+        "em": 0.08177570093457943,
+        "f1": 0.18874628196875323,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.064,
+          "f1": 0.12212188805208277
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.10674157303370786,
+          "f1": 0.28231986893036903
+        }
+      },
+      "zero": {
+        "n": 428,
+        "em": 0.056074766355140186,
+        "f1": 0.15983549377190007,
+        "compatibility_accuracy": 0.0,
+        "bridge": {
+          "n": 250,
+          "em": 0.06,
+          "f1": 0.12231020949159353
+        },
+        "comparison": {
+          "n": 178,
+          "em": 0.05056179775280899,
+          "f1": 0.21253954472738673
+        }
+      },
+      "correct_minus_shuffled_f1": 0.01672649005095525
+    }
+  },
+  "oracle_gain": {
+    "f1": -0.09661028661155474,
+    "bridge_f1": -0.007534320831592195,
+    "correct_shuffled_gap_gain": -0.036508614329516825
+  },
+  "diagnosis_rule": "Large Oracle bridge/gap gains imply grounding failure; weak Oracle gains imply execution incompatibility.",
+  "writer_frozen": true,
+  "receiver_backbone_frozen": true,
+  "reader_checkpoint_unchanged": true,
+  "args": {
+    "model": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "protocol": "/home/yezhe/伪查询/runs/p3d_frozen_multilayer_canonical_writer_qwen3_4b_reader_seed1234/protocol/protocol.json",
+    "reader_checkpoint": "/home/yezhe/伪查询/runs/p3d_frozen_multilayer_canonical_writer_qwen3_4b_reader_seed1234/readers/canonical16/train/checkpoint_best.pt",
+    "span_probe": "/home/yezhe/伪查询/runs/p3c_question_independent_multilayer_canonical_writer_seed1234/branches/uniform16/seed1234/fresh_probe/fresh_probe_best.pt",
+    "out": "/home/yezhe/伪查询/runs/p3d2_question_independent_reader_grounding_execution_seed1234/step1_oracle",
+    "split": "test",
+    "max_samples": 0,
+    "top_layers": 4,
+    "max_new_tokens": 32,
+    "seed": 1234,
+    "device": "cuda"
+  }
+}
