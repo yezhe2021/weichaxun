@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "branch": "native_projected16",
+  "best_epoch_by_train_objective": 19,
+  "best_train_loss": 0.0714135433302232,
+  "validation_used_for_training_or_selection": false,
+  "answer_loss": "answer_tokens_only_mean_nll",
+  "hard_negative_leakage_filters": true,
+  "reader_metadata": {
+    "selected_layers": [
+      0,
+      2,
+      5,
+      7,
+      9,
+      12,
+      14,
+      16,
+      19,
+      21,
+      23,
+      26,
+      28,
+      30,
+      33,
+      35
+    ],
+    "memory_dim": 1024,
+    "rank": 32,
+    "gate_init": 0.01,
+    "query_heads": 32,
+    "head_dim": 128,
+    "hidden_size": 2560,
+    "injection": "self_attention_output_before_decoder_residual",
+    "query": "native_q_proj_q_norm_pre_rope"
+  },
+  "trainable_parameters": 4456464,
+  "receiver_backbone_frozen": true,
+  "checkpoint": "/home/yezhe/伪查询/runs/p3d3_layer_aligned_native_query_reader_seed1234/readers/native_projected16/checkpoint_best.pt"
+}
