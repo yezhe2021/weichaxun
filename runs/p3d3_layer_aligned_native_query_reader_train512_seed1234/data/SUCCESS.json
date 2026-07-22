@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "seed": 1234,
+  "train": 512,
+  "validation": 64,
+  "splits_are_official_and_disjoint": true,
+  "train_types": {
+    "bridge": 256,
+    "comparison": 256
+  },
+  "validation_types": {
+    "bridge": 32,
+    "comparison": 32
+  }
+}

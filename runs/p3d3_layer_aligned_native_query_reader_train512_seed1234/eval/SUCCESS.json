@@ -1,0 +1,127 @@
+{
+  "status": "complete",
+  "validation_evaluated_once_after_training": true,
+  "conditions": {
+    "question_only": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.2837907936549819,
+      "eos_rate": 0.953125,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.23322555322966507
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.3343560340802988
+        }
+      }
+    },
+    "reader_off": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.2837907936549819,
+      "eos_rate": 0.953125,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.23322555322966507
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.3343560340802988
+        }
+      }
+    },
+    "correct_native_projected16": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.29086174242424245,
+      "eos_rate": 0.96875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.09375,
+          "f1": 0.13797348484848485
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.40625,
+          "f1": 0.44375
+        }
+      }
+    },
+    "correct_canonical16": {
+      "n": 64,
+      "em": 0.265625,
+      "f1": 0.35736607142857146,
+      "eos_rate": 0.984375,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.125,
+          "f1": 0.20952380952380953
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.40625,
+          "f1": 0.5052083333333333
+        }
+      },
+      "support_attention_mass": 0.2675975381807539
+    },
+    "hard_shuffled_canonical16": {
+      "n": 64,
+      "em": 0.265625,
+      "f1": 0.3103174603174603,
+      "eos_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.09375,
+          "f1": 0.1527777777777778
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.4375,
+          "f1": 0.46785714285714286
+        }
+      }
+    },
+    "oracle_support_canonical16": {
+      "n": 64,
+      "em": 0.28125,
+      "f1": 0.3625744047619047,
+      "eos_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.2855654761904762
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.40625,
+          "f1": 0.4395833333333334
+        }
+      }
+    }
+  },
+  "correct_shuffled_f1_gap": 0.04704861111111114,
+  "canonical_relative_native_projected_recovery": 10.405290743081371,
+  "prediction_switch_rate": 0.578125,
+  "reader_off_exact_output_consistency": 1.0,
+  "phenomena": {
+    "correct_improves_question_only": true,
+    "wrong_memory_hurts": true,
+    "canonical_close_to_native_projected": true
+  },
+  "n": 64,
+  "native_checkpoint": "/home/yezhe/伪查询/runs/p3d3_layer_aligned_native_query_reader_train512_seed1234/readers/native_projected16/checkpoint_best.pt",
+  "canonical_checkpoint": "/home/yezhe/伪查询/runs/p3d3_layer_aligned_native_query_reader_train512_seed1234/readers/canonical16/checkpoint_best.pt"
+}
