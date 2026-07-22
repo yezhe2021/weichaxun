@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "errors": [],
+  "stage_a_gate": {
+    "status": "complete",
+    "passed": true,
+    "thresholds": {
+      "correct_f1": 0.85,
+      "correct_shuffled_gap": 0.4,
+      "reader_off_consistency": 0.999
+    },
+    "observed": {
+      "correct_f1": 0.96875,
+      "correct_shuffled_gap": 0.7321428571428572,
+      "reader_off_consistency": 1.0
+    },
+    "action": "run_formal512"
+  },
+  "sender_geometry": {
+    "layers": 36,
+    "query_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "hidden_size": 4096
+  },
+  "receiver_geometry": {
+    "layers": 36,
+    "query_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "hidden_size": 2560
+  },
+  "selected_layers": [
+    0,
+    2,
+    5,
+    7,
+    9,
+    12,
+    14,
+    16,
+    19,
+    21,
+    23,
+    26,
+    28,
+    30,
+    33,
+    35
+  ],
+  "sender_config_sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+  "receiver_config_sha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+  "invariants": {
+    "writer_loaded": false,
+    "canonical_projection": false,
+    "native_reshape_lossless": true,
+    "memory": "Qwen3-8B evidence-only [16,T,8,128]",
+    "receiver": "frozen Qwen3-4B"
+  }
+}

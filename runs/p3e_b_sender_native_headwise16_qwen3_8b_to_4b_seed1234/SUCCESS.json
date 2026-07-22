@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "experiment": "P3-E Native Headwise Stage A/B comparison",
+  "receiver_native_4b_to_4b": {
+    "em": 0.40625,
+    "f1": 0.5368990384615384,
+    "correct_shuffled_gap": 0.31394516941391937
+  },
+  "sender_native_8b_to_4b_stage_a_reader_zero_shot": {
+    "em": 0.328125,
+    "f1": 0.4217068370940653,
+    "bridge_f1": 0.40111294955044957,
+    "comparison_f1": 0.44230072463768116,
+    "correct_shuffled_gap": 0.1479408114530396,
+    "question_only_gain": 0.13791604343908342,
+    "prediction_switch_rate": 0.765625
+  },
+  "sender_native_8b_to_4b_retrained_reader": {
+    "em": 0.359375,
+    "f1": 0.46282467532467536,
+    "bridge_f1": 0.4176136363636364,
+    "comparison_f1": 0.5080357142857144,
+    "correct_shuffled_gap": 0.254803841991342,
+    "question_only_gain": 0.17903388166969347,
+    "prediction_switch_rate": 0.796875
+  },
+  "diagnosis": "raw_cross_model_native_kv_incompatible_or_not_executable"
+}
