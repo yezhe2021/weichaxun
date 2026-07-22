@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "errors": [],
+  "geometry": {
+    "layers": 36,
+    "query_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "hidden_size": 2560
+  },
+  "selected_layers": [
+    0,
+    2,
+    5,
+    7,
+    9,
+    12,
+    14,
+    16,
+    19,
+    21,
+    23,
+    26,
+    28,
+    30,
+    33,
+    35
+  ],
+  "model_config_sha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+  "invariants": {
+    "same_model_evidence_encoder_and_receiver": true,
+    "native_128d_heads": true,
+    "canonical_projection": false,
+    "fixed_gqa_mapping": "query_head // 4",
+    "sender_sees_question": false
+  }
+}
