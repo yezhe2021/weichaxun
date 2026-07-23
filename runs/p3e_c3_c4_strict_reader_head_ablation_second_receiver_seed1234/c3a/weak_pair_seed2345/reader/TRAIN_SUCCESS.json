@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "experiment": "C3-A strict fresh Reader",
+  "initialization": {
+    "mode": "weak_pair",
+    "seed": 2345,
+    "query_adapter": "fresh orthogonal down plus Normal(0,1e-3) up",
+    "route": "Normal(0,0.05) plus 0.5 preferred-pair bias",
+    "gate": 0.01,
+    "native_reader_loaded": false,
+    "c1_reader_loaded": false
+  },
+  "samples": 512,
+  "best_epoch_by_train_objective": 20,
+  "best_train_loss": 0.004409411039490552,
+  "writer_frozen": true,
+  "checkpoint": "/home/yezhe/伪查询/runs/p3e_c3_c4_strict_reader_head_ablation_second_receiver_seed1234/c3a/weak_pair_seed2345/reader/checkpoint_best.pt"
+}

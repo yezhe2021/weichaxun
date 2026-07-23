@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-F Reader scale study",
+  "scale": 1024,
+  "epochs": 20,
+  "optimizer_steps": 20480,
+  "best_epoch_by_training_objective": 19,
+  "best_train_loss": 0.0022653401011770713,
+  "init_reader": "/home/yezhe/伪查询/runs/p3e_c1_learnable_overcomplete_canonical_head_reader_seed1234/formal512/reader/checkpoint_best.pt",
+  "init_reader_sha256": "3619b4235a202bfac835d8fd3f99254312d643946d3b01172a5c8ec7809ea071",
+  "validation_used_for_selection": false,
+  "warmup_ratio": 0.0,
+  "constant_learning_rate": 0.0002,
+  "batch_size": 1,
+  "checkpoint": "/home/yezhe/伪查询/runs/p3e_f_reader_training_scale_study_seed1234/train1024/checkpoint_best.pt"
+}

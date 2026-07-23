@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "passed": true,
+  "thresholds": {
+    "correct_f1": 0.85,
+    "correct_shuffled_gap": 0.4,
+    "reader_off_consistency": 0.999
+  },
+  "observed": {
+    "correct_f1": 1.0,
+    "correct_shuffled_gap": 0.9315476190476191,
+    "reader_off_consistency": 1.0
+  },
+  "action": "run_formal512"
+}
