@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-I Adapter-Augmented Reader QA-only",
+  "mode": "formal512",
+  "samples": 512,
+  "epochs": 5,
+  "best_epoch_by_training_loss": 4,
+  "best_train_loss": 0.0007533027360480948,
+  "initial_equivalence": {
+    "max_abs_logit_difference": 0.0,
+    "mean_abs_logit_difference": 0.0
+  },
+  "smoke_free_running": null,
+  "trainable_lora_parameters": 1867776,
+  "receiver_layers": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "targets": [
+    "q_proj",
+    "v_proj",
+    "o_proj",
+    "down_proj"
+  ],
+  "rank": 8,
+  "alpha": 16.0,
+  "dropout": 0.0,
+  "checkpoint_best": "/home/yezhe/伪查询/runs/p3e_i_adapter_augmented_reader_seed1234/formal512/checkpoint_best.pt",
+  "checkpoint_last": "/home/yezhe/伪查询/runs/p3e_i_adapter_augmented_reader_seed1234/formal512/checkpoint_last.pt"
+}
