@@ -1,0 +1,232 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-H Evidence Assimilation Reader V2",
+  "samples": 64,
+  "conditions": {
+    "question_only": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.2837907936549819,
+      "eos_rate": 0.953125,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.23322555322966507
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.3343560340802988
+        }
+      }
+    },
+    "current_c1_reader": {
+      "n": 64,
+      "em": 0.375,
+      "f1": 0.49378720238095236,
+      "eos_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.25,
+          "f1": 0.4594494047619048
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.5,
+          "f1": 0.528125
+        }
+      }
+    },
+    "assimilation_reader_v2": {
+      "n": 64,
+      "em": 0.21875,
+      "f1": 0.34091608452821687,
+      "eos_rate": 0.671875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.2789569805194805
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.28125,
+          "f1": 0.40287518853695325
+        }
+      }
+    },
+    "hard_shuffled_assimilation": {
+      "n": 64,
+      "em": 0.0625,
+      "f1": 0.10972514005602241,
+      "eos_rate": 0.390625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.03125,
+          "f1": 0.041666666666666664
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.09375,
+          "f1": 0.17778361344537816
+        }
+      }
+    },
+    "oracle_support_assimilation": {
+      "n": 64,
+      "em": 0.203125,
+      "f1": 0.3797181984681985,
+      "eos_rate": 0.9375,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.21875,
+          "f1": 0.4034569597069597
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.35597943722943726
+        }
+      }
+    },
+    "reader_off": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.2837907936549819,
+      "eos_rate": 0.953125,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.23322555322966507
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.3343560340802988
+        }
+      }
+    }
+  },
+  "assimilation_minus_c1_f1": -0.1528711178527355,
+  "correct_shuffled_f1_gap": 0.23119094447219446,
+  "prediction_switch_rate": 0.890625,
+  "reader_off_exact_output_consistency": 1.0,
+  "old_scalar_gates": [
+    0.28147608041763306,
+    0.17483602464199066,
+    0.24790294468402863,
+    0.23178601264953613,
+    0.22504982352256775,
+    0.2129136472940445,
+    0.22367402911186218,
+    0.09615827351808548,
+    0.29107367992401123,
+    0.28405633568763733,
+    0.39161691069602966,
+    0.40787869691848755,
+    0.3716782331466675,
+    0.35353684425354004,
+    0.473604291677475,
+    0.3306093215942383
+  ],
+  "assimilation_betas": [
+    0.011776823550462723,
+    0.0115791205316782,
+    0.013327913358807564,
+    0.013687792234122753,
+    0.013611008413136005,
+    0.014061826281249523,
+    0.018139753490686417,
+    0.016278663650155067
+  ],
+  "layer_diagnostics": {
+    "0": {
+      "old_gate": 0.281494140625
+    },
+    "2": {
+      "old_gate": 0.1748046875
+    },
+    "5": {
+      "old_gate": 0.2479248046875
+    },
+    "7": {
+      "old_gate": 0.2318115234375
+    },
+    "9": {
+      "old_gate": 0.22509765625
+    },
+    "12": {
+      "old_gate": 0.212890625
+    },
+    "14": {
+      "old_gate": 0.2236328125
+    },
+    "16": {
+      "old_gate": 0.09613037109375
+    },
+    "19": {
+      "old_gate": 0.291015625,
+      "beta": 0.011776823550462723,
+      "assimilation_to_evidence_rms_ratio": 19.568111818992858,
+      "correction_to_old_external_rms_ratio": 0.79208408326107,
+      "assimilation_evidence_cosine": -0.021886936955373592
+    },
+    "21": {
+      "old_gate": 0.283935546875,
+      "beta": 0.0115791205316782,
+      "assimilation_to_evidence_rms_ratio": 18.320797825679676,
+      "correction_to_old_external_rms_ratio": 0.7472850656337406,
+      "assimilation_evidence_cosine": -0.036532881647246856
+    },
+    "23": {
+      "old_gate": 0.3916015625,
+      "beta": 0.013327913358807564,
+      "assimilation_to_evidence_rms_ratio": 17.13410924961681,
+      "correction_to_old_external_rms_ratio": 0.583174964262024,
+      "assimilation_evidence_cosine": -0.027588668255374565
+    },
+    "26": {
+      "old_gate": 0.407958984375,
+      "beta": 0.013687792234122753,
+      "assimilation_to_evidence_rms_ratio": 15.569673624446327,
+      "correction_to_old_external_rms_ratio": 0.5223676778440451,
+      "assimilation_evidence_cosine": -0.0220666181019392
+    },
+    "28": {
+      "old_gate": 0.37158203125,
+      "beta": 0.013611008413136005,
+      "assimilation_to_evidence_rms_ratio": 14.748468743085281,
+      "correction_to_old_external_rms_ratio": 0.5402278737084634,
+      "assimilation_evidence_cosine": -0.07831079497751195
+    },
+    "30": {
+      "old_gate": 0.353515625,
+      "beta": 0.014061826281249523,
+      "assimilation_to_evidence_rms_ratio": 11.092789789936905,
+      "correction_to_old_external_rms_ratio": 0.4412127318507333,
+      "assimilation_evidence_cosine": -0.047729512698536626
+    },
+    "33": {
+      "old_gate": 0.4736328125,
+      "beta": 0.018139753490686417,
+      "assimilation_to_evidence_rms_ratio": 10.7994631921097,
+      "correction_to_old_external_rms_ratio": 0.41367675108280183,
+      "assimilation_evidence_cosine": 0.004445382543663548
+    },
+    "35": {
+      "old_gate": 0.33056640625,
+      "beta": 0.016278663650155067,
+      "assimilation_to_evidence_rms_ratio": 12.863860678349091,
+      "correction_to_old_external_rms_ratio": 0.6335716118686008,
+      "assimilation_evidence_cosine": -0.025888053080754436
+    }
+  },
+  "manual_semantic_evaluation": "pending_blinded_CPW_review",
+  "base_reader": "/home/yezhe/伪查询/runs/p3e_c1_learnable_overcomplete_canonical_head_reader_seed1234/formal512/reader/checkpoint_best.pt",
+  "assimilation_reader": "/home/yezhe/伪查询/runs/p3e_h_evidence_assimilation_reader_v2_seed1234/formal512/checkpoint_best.pt"
+}

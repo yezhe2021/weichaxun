@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-H Evidence Assimilation Reader V2",
+  "mode": "smoke16",
+  "samples": 16,
+  "epochs": 5,
+  "best_epoch_by_total_training_loss": 5,
+  "best_train_loss": 4.289302684366703,
+  "initial_equivalence": {
+    "max_abs_logit_difference": 0.0,
+    "mean_abs_logit_difference": 0.0
+  },
+  "smoke_free_running": {
+    "correct_em": 0.875,
+    "correct_f1": 0.8920454545454546,
+    "shuffled_current_f1": 0.03229166666666666,
+    "correct_shuffled_gap": 0.8597537878787879
+  },
+  "trainable_parameters": 7905288,
+  "old_c1_reader_frozen": true,
+  "receiver_backbone_frozen": true,
+  "checkpoint_best": "/home/yezhe/伪查询/runs/p3e_h_evidence_assimilation_reader_v2_seed1234/smoke16/checkpoint_best.pt",
+  "checkpoint_last": "/home/yezhe/伪查询/runs/p3e_h_evidence_assimilation_reader_v2_seed1234/smoke16/checkpoint_last.pt"
+}
