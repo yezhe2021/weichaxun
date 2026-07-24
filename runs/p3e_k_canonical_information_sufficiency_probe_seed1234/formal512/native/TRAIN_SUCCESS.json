@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-K Canonical Information Sufficiency Probe",
+  "mode": "native",
+  "samples": 512,
+  "epochs": 5,
+  "best_epoch": 5,
+  "best_training_loss": 2.6766976155158773,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 7.260165125364438,
+      "support_loss": 0.9215640212350991,
+      "span_loss": 5.565709506961866,
+      "yesno_loss": 0.7728915970014456,
+      "gradient_norm": 66.9343320208136
+    },
+    {
+      "epoch": 2,
+      "loss": 4.889606822223868,
+      "support_loss": 0.6968052884039935,
+      "span_loss": 3.92306205472903,
+      "yesno_loss": 0.26973947866051634,
+      "gradient_norm": 85.01406351104379
+    },
+    {
+      "epoch": 3,
+      "loss": 3.997132605218212,
+      "support_loss": 0.6810628257226199,
+      "span_loss": 3.1439440813108313,
+      "yesno_loss": 0.1721256951634499,
+      "gradient_norm": 99.39347963989712
+    },
+    {
+      "epoch": 4,
+      "loss": 3.2565316511609126,
+      "support_loss": 0.6289081504946807,
+      "span_loss": 2.477872037943682,
+      "yesno_loss": 0.14975145527925174,
+      "gradient_norm": 112.47984843421727
+    },
+    {
+      "epoch": 5,
+      "loss": 2.6766976155158773,
+      "support_loss": 0.6101882534167089,
+      "span_loss": 1.940657982265744,
+      "yesno_loss": 0.12585137485267245,
+      "gradient_norm": 108.69416873459704
+    }
+  ],
+  "probe_metadata": {
+    "mode": "native",
+    "unit_dim": 16,
+    "structured_token_dim": 4096,
+    "token_hidden": 512,
+    "token_transformer_layers": 4,
+    "token_transformer_heads": 8,
+    "token_transformer_ffn": 2048,
+    "layer_head_pooling": false,
+    "native_8_to_16": "lossless_adjacent_duplication"
+  },
+  "trainable_parameters": 16609125,
+  "receiver_parameters_loaded": 0,
+  "sender_parameters_loaded": 0,
+  "writer_parameters_loaded": 0,
+  "cache_tensors_require_grad": false,
+  "optimizer_boundary": "probe_parameters_only"
+}
