@@ -1,0 +1,135 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-L Question-Conditioned Sender Diagnosis",
+  "samples": 64,
+  "metrics": {
+    "question_only": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.2837907936549819,
+      "eos_rate": 0.953125,
+      "average_output_tokens": 9.40625,
+      "bridge": {
+        "n": 32,
+        "em": 0.15625,
+        "f1": 0.23322555322966507
+      },
+      "comparison": {
+        "n": 32,
+        "em": 0.1875,
+        "f1": 0.3343560340802988
+      }
+    },
+    "evidence_only_canonical": {
+      "n": 64,
+      "em": 0.375,
+      "f1": 0.49378720238095236,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.21875,
+      "bridge": {
+        "n": 32,
+        "em": 0.25,
+        "f1": 0.4594494047619048
+      },
+      "comparison": {
+        "n": 32,
+        "em": 0.5,
+        "f1": 0.528125
+      }
+    },
+    "neutral_prefix_canonical": {
+      "n": 64,
+      "em": 0.375,
+      "f1": 0.4385416666666666,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.15625,
+      "bridge": {
+        "n": 32,
+        "em": 0.1875,
+        "f1": 0.30208333333333337
+      },
+      "comparison": {
+        "n": 32,
+        "em": 0.5625,
+        "f1": 0.575
+      }
+    },
+    "wrong_question_canonical": {
+      "n": 64,
+      "em": 0.34375,
+      "f1": 0.45442708333333337,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.15625,
+      "bridge": {
+        "n": 32,
+        "em": 0.25,
+        "f1": 0.41822916666666665
+      },
+      "comparison": {
+        "n": 32,
+        "em": 0.4375,
+        "f1": 0.49062500000000003
+      }
+    },
+    "correct_question_canonical": {
+      "n": 64,
+      "em": 0.375,
+      "f1": 0.4619318181818182,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.234375,
+      "bridge": {
+        "n": 32,
+        "em": 0.21875,
+        "f1": 0.3644886363636364
+      },
+      "comparison": {
+        "n": 32,
+        "em": 0.53125,
+        "f1": 0.559375
+      }
+    },
+    "correct_question_hard_shuffled_evidence": {
+      "n": 64,
+      "em": 0.21875,
+      "f1": 0.2505208333333333,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.953125,
+      "bridge": {
+        "n": 32,
+        "em": 0.0625,
+        "f1": 0.08854166666666666
+      },
+      "comparison": {
+        "n": 32,
+        "em": 0.375,
+        "f1": 0.4125
+      }
+    },
+    "full_evidence_text": {
+      "n": 64,
+      "em": 0.453125,
+      "f1": 0.6256678765313635,
+      "eos_rate": 0.90625,
+      "average_output_tokens": 9.3125,
+      "bridge": {
+        "n": 32,
+        "em": 0.5625,
+        "f1": 0.748917748917749
+      },
+      "comparison": {
+        "n": 32,
+        "em": 0.34375,
+        "f1": 0.5024180041449778
+      }
+    }
+  },
+  "delta_q_automatic_f1": -0.03185538419913414,
+  "prediction_switch": {
+    "question_conditioning_switch": 0.28125,
+    "correct_vs_wrong_question_switch": 0.3125
+  },
+  "manual_cpw_required": true,
+  "baseline_writer": "/home/yezhe/伪查询/runs/p3e_c2_learned_head_structured_writer_seed1234/writer_formal512/worker/checkpoint_best.pt",
+  "conditioned_writer": "/home/yezhe/伪查询/runs/p3e_l_question_conditioned_sender_diagnosis_seed1234/conditioned_writer_epoch7_8/checkpoint_best.pt",
+  "reader": "/home/yezhe/伪查询/runs/p3e_c1_learnable_overcomplete_canonical_head_reader_seed1234/formal512/reader/checkpoint_best.pt"
+}
