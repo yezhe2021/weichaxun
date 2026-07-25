@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-N3 Attention-vs-Readout Sufficiency Ablation",
+  "mode": "attention_readout",
+  "samples": 512,
+  "epochs": 10,
+  "best_epoch": 10,
+  "best_train_loss": 0.6207240407493373,
+  "checkpoint": "/home/yezhe/伪查询/runs/p3e_n3_attention_vs_readout_sufficiency_seed1234/probe/attention_readout/checkpoint_best.pt",
+  "only_probe_trained": true
+}
