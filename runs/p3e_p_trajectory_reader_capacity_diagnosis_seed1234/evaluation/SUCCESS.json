@@ -1,0 +1,168 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-P Trajectory-Supervised Memory Interface Diagnosis",
+  "samples": 64,
+  "conditions": {
+    "reader_off_position_aligned": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.2948238015218713,
+      "eos_rate": 0.9375,
+      "average_output_tokens": 11.734375,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.125,
+          "f1": 0.23888494318181816
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.21875,
+          "f1": 0.35076265986192456
+        }
+      }
+    },
+    "a0_correct_kv": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.2983115842490842,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.203125,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.125,
+          "f1": 0.1841231684981685
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.375,
+          "f1": 0.4125
+        }
+      }
+    },
+    "a0_hard_shuffled": {
+      "n": 64,
+      "em": 0.234375,
+      "f1": 0.2755952380952381,
+      "eos_rate": 0.984375,
+      "average_output_tokens": 4.8125,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.125,
+          "f1": 0.1699404761904762
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.34375,
+          "f1": 0.38125
+        }
+      }
+    },
+    "a1_correct_kv": {
+      "n": 64,
+      "em": 0.359375,
+      "f1": 0.43324383949383954,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.71875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.2849972943722944
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.53125,
+          "f1": 0.5814903846153846
+        }
+      }
+    },
+    "a1_hard_shuffled": {
+      "n": 64,
+      "em": 0.359375,
+      "f1": 0.42082619348244354,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.796875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.21875,
+          "f1": 0.2865597943722944
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.5,
+          "f1": 0.5550925925925925
+        }
+      }
+    },
+    "c1_correct_kv": {
+      "n": 64,
+      "em": 0.328125,
+      "f1": 0.3993400696525697,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.71875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.2515647546897547
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.5,
+          "f1": 0.5471153846153847
+        }
+      }
+    },
+    "c1_hard_shuffled": {
+      "n": 64,
+      "em": 0.296875,
+      "f1": 0.3731856684981685,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.703125,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.2461309523809524
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.4375,
+          "f1": 0.5002403846153847
+        }
+      }
+    }
+  },
+  "state_diagnostics": {
+    "a0": {
+      "cosine_before": 0.8000935819000006,
+      "cosine_after": 0.7864999864250422,
+      "normalized_mse_before": 0.3998120524920523,
+      "normalized_mse_after": 0.42699760012328625
+    },
+    "a1": {
+      "cosine_before": 0.9093025056645274,
+      "cosine_after": 0.907194359228015,
+      "normalized_mse_before": 0.18139441107632592,
+      "normalized_mse_after": 0.1856105457409285
+    },
+    "c1": {
+      "cosine_before": 0.9077354269102216,
+      "cosine_after": 0.9063738714903593,
+      "normalized_mse_before": 0.18452858028467745,
+      "normalized_mse_after": 0.18725157534936443
+    }
+  },
+  "teacher_branch_used_during_generation": false,
+  "teacher_states_read_only_for_offline_diagnostics": true,
+  "position_aligned": true,
+  "checkpoints": {
+    "a0": "/home/yezhe/伪查询/runs/p3e_p_trajectory_reader_capacity_diagnosis_seed1234/train/a0/checkpoint_epoch_008.pt",
+    "a1": "/home/yezhe/伪查询/runs/p3e_p_trajectory_reader_capacity_diagnosis_seed1234/train/a1/checkpoint_epoch_008.pt",
+    "c1": "/home/yezhe/伪查询/runs/p3e_p_trajectory_reader_capacity_diagnosis_seed1234/train/c1/checkpoint_epoch_008.pt"
+  }
+}
