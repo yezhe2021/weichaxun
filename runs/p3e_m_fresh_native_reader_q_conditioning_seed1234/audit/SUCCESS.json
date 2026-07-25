@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-M input audit",
+  "splits": {
+    "train": {
+      "samples": 512,
+      "all_ids_aligned": true,
+      "all_evidence_token_ids_identical": true,
+      "all_question_tokens_excluded": true,
+      "shape": "[16,T,8,128]",
+      "first": {
+        "id": "5ae4050055429970de88d851",
+        "tokens": 227,
+        "hard_index": 52
+      }
+    },
+    "validation": {
+      "samples": 64,
+      "all_ids_aligned": true,
+      "all_evidence_token_ids_identical": true,
+      "all_question_tokens_excluded": true,
+      "shape": "[16,T,8,128]",
+      "first": {
+        "id": "5ab6c47e55429954757d3368",
+        "tokens": 217,
+        "hard_index": 47
+      }
+    }
+  },
+  "train_base_sha256": "296ff87a3c27d821f1d5c316d98c682109847ce05dace4cc9b5fc59e57c9ea14",
+  "train_conditioned_sha256": "b255d8a4d8e66d3675120c3378386fafb975c4265455906c9a3cabb9d63c1e88",
+  "validation_base_sha256": "77e63a0bfa1a207d3445864d22f90718073c0a98da936f2488aa297a96b464b5",
+  "validation_conditioned_sha256": "6eb426a5d44cec5fcf9488361adcf790e4e578c5899c0a60e2242cd54450c898",
+  "writer_loaded": false,
+  "canonical_memory_used": false
+}

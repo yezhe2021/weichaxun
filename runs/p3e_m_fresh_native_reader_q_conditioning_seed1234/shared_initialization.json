@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "checkpoint": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/shared_initialization.pt",
+  "seed": 1234,
+  "reader_metadata": {
+    "selected_layers": [
+      0,
+      2,
+      5,
+      7,
+      9,
+      12,
+      14,
+      16,
+      19,
+      21,
+      23,
+      26,
+      28,
+      30,
+      33,
+      35
+    ],
+    "query_heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "query_per_kv": 4,
+    "rank": 32,
+    "gate_init": 0.01,
+    "query": "receiver_q_proj_reshape_q_norm_pre_rope_128d",
+    "memory": "native_pre_rope_k_and_native_v_Tx8x128",
+    "output": "native_32x128_heads_to_frozen_receiver_o_proj",
+    "injection": "self_attention_output_before_decoder_residual",
+    "canonical_projection_used": false
+  },
+  "loads_existing_reader_weights": false
+}
