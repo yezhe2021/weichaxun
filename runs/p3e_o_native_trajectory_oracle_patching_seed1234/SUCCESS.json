@@ -1,0 +1,167 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-O Native Trajectory Oracle Patching",
+  "diagnostic_table": {
+    "question_only": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.2837907936549819,
+      "eos_rate": 0.953125,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.23322555322966507
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.3343560340802988
+        }
+      }
+    },
+    "reader_c_native_kv": {
+      "n": 64,
+      "em": 0.46875,
+      "f1": 0.5720238095238096,
+      "eos_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.40625,
+          "f1": 0.5721726190476191
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.53125,
+          "f1": 0.571875
+        }
+      }
+    },
+    "full_evidence_text": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.40983000528813956,
+      "eos_rate": 0.640625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.46875,
+          "f1": 0.6608480553739421
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.03125,
+          "f1": 0.15881195520233732
+        }
+      }
+    },
+    "o1_oracle_attention_output": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.42383153542329416,
+      "eos_rate": 0.734375,
+      "average_output_tokens": 17.921875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.34375,
+          "f1": 0.5332986111111111
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.31436445973547744
+        }
+      },
+      "prediction_switch_vs_question_only": 0.84375
+    },
+    "o2_oracle_post_attention_state": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.40983000528813956,
+      "eos_rate": 0.640625,
+      "average_output_tokens": 20.109375,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.46875,
+          "f1": 0.6608480553739421
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.03125,
+          "f1": 0.15881195520233732
+        }
+      },
+      "prediction_switch_vs_question_only": 0.921875
+    },
+    "o3_oracle_block_output": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.40983000528813956,
+      "eos_rate": 0.640625,
+      "average_output_tokens": 20.109375,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.46875,
+          "f1": 0.6608480553739421
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.03125,
+          "f1": 0.15881195520233732
+        }
+      },
+      "prediction_switch_vs_question_only": 0.921875
+    },
+    "o3_oracle_block_output_unaligned": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.40983000528813956,
+      "eos_rate": 0.640625,
+      "average_output_tokens": 20.109375,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.46875,
+          "f1": 0.6608480553739421
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.03125,
+          "f1": 0.15881195520233732
+        }
+      },
+      "prediction_switch_vs_question_only": 0.921875
+    }
+  },
+  "selected_layers": [
+    0,
+    2,
+    5,
+    7,
+    9,
+    12,
+    14,
+    16,
+    19,
+    21,
+    23,
+    26,
+    28,
+    30,
+    33,
+    35
+  ],
+  "free_running": true,
+  "gold_answer_prefix_used": false,
+  "current_token_only_patch": true,
+  "position_alignment": {
+    "o1_o2_o3": "aligned to full-text answer suffix positions",
+    "sanity": "O3 with ordinary question-only positions"
+  },
+  "oracle_detail": "/home/yezhe/伪查询/runs/p3e_o_native_trajectory_oracle_patching_seed1234/evaluation/SUCCESS.json",
+  "baseline_detail": "/home/yezhe/伪查询/runs/p3e_n_native_oracle_bottleneck_decomposition_seed1234/evaluation/SUCCESS.json"
+}
