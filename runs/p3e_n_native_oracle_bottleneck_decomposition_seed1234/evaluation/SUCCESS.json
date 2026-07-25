@@ -1,0 +1,123 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-N Native Oracle Bottleneck Decomposition",
+  "samples": 64,
+  "conditions": {
+    "question_only": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.2837907936549819,
+      "eos_rate": 0.953125,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.23322555322966507
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.3343560340802988
+        }
+      }
+    },
+    "reader_off": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.2837907936549819,
+      "eos_rate": 0.953125,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.23322555322966507
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.3343560340802988
+        }
+      }
+    },
+    "full_evidence_text": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.40983000528813956,
+      "eos_rate": 0.640625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.46875,
+          "f1": 0.6608480553739421
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.03125,
+          "f1": 0.15881195520233732
+        }
+      }
+    },
+    "qwen3_4b_qconditioned_native_reader_c": {
+      "n": 64,
+      "em": 0.46875,
+      "f1": 0.5720238095238096,
+      "eos_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.40625,
+          "f1": 0.5721726190476191
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.53125,
+          "f1": 0.571875
+        }
+      }
+    },
+    "qwen3_4b_qconditioned_hard_shuffled_reader_c": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.23895089285714285,
+      "eos_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.0625,
+          "f1": 0.14352678571428573
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.28125,
+          "f1": 0.334375
+        }
+      }
+    }
+  },
+  "dependency_4b_automatic_f1": 0.3330729166666667,
+  "prediction_switch_rate": 0.640625,
+  "reader_off_exact_output_consistency": 1.0,
+  "reader_c_gates": [
+    0.09652189165353775,
+    0.09223403036594391,
+    0.10707013309001923,
+    0.12149067223072052,
+    0.12273065000772476,
+    0.1087825745344162,
+    0.13995105028152466,
+    0.1196642741560936,
+    0.15984952449798584,
+    0.16583165526390076,
+    0.21715965867042542,
+    0.21810604631900787,
+    0.21628691256046295,
+    0.18435007333755493,
+    0.24746805429458618,
+    0.16807933151721954
+  ],
+  "reader_c": "/home/yezhe/伪查询/runs/p3e_n_native_oracle_bottleneck_decomposition_seed1234/reader_c/checkpoint_epoch_005.pt",
+  "p3em_heterogeneous_reference": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/evaluation/SUCCESS.json",
+  "manual_cpw_required": true,
+  "writer_loaded": false,
+  "canonical_projection_used": false
+}
