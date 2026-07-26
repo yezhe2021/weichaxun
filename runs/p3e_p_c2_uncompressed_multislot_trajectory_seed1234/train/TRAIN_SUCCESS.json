@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-P-C2 Uncompressed Multi-Slot Trajectory Reader",
+  "samples": 512,
+  "epochs": 8,
+  "last_checkpoint": "/home/yezhe/伪查询/runs/p3e_p_c2_uncompressed_multislot_trajectory_seed1234/train/checkpoint_epoch_008.pt",
+  "loss": "answer + 0.5 * normalized_state_mse",
+  "slots": 8,
+  "slot_dim": 256,
+  "slot_pooling_before_state_query": false,
+  "receiver_frozen": true,
+  "only_c2_reader_updated": true
+}
