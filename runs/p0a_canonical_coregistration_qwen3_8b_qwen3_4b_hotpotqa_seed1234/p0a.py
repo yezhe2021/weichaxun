@@ -580,6 +580,40 @@ def aggregate(rows):
     return {key: sum(x[key] for x in rows) / len(rows) for key in rows[0]}
 
 
+def mean_cosine(xs, ys):
+    x = F.normalize(torch.stack(xs).float(), dim=-1)
+    y = F.normalize(torch.stack(ys).float(), dim=-1)
+    return (x * y).sum(-1).mean().item()
+
+
+def cross_sample_readout_metrics(anchors, candidates):
+    anchors = F.normalize(torch.stack(anchors).float(), dim=-1)
+    candidates = F.normalize(torch.stack(candidates).float(), dim=-1)
+    similarity = anchors @ candidates.T
+    n = similarity.shape[0]
+    labels = torch.arange(n)
+    order = similarity.argsort(dim=1, descending=True)
+    ranks = (order == labels[:, None]).nonzero(as_tuple=False)[:, 1] + 1
+    diagonal = similarity.diag()
+    if n > 1:
+        off_diagonal = similarity[~torch.eye(n, dtype=torch.bool)]
+        negative_mean = off_diagonal.mean().item()
+        hardest_negative = similarity.masked_fill(torch.eye(n, dtype=torch.bool), -float("inf")).max(1).values.mean().item()
+    else:
+        negative_mean = 0.0
+        hardest_negative = 0.0
+    return {
+        "recall_at_1": (ranks <= 1).float().mean().item(),
+        "recall_at_5": (ranks <= min(5, n)).float().mean().item(),
+        "mrr": (1.0 / ranks.float()).mean().item(),
+        "positive_cosine": diagonal.mean().item(),
+        "mean_negative_cosine": negative_mean,
+        "mean_hardest_negative_cosine": hardest_negative,
+        "positive_minus_mean_negative": diagonal.mean().item() - negative_mean,
+        "positive_minus_hardest_negative": diagonal.mean().item() - hardest_negative,
+    }
+
+
 @torch.no_grad()
 def evaluate_system(cfg, checkpoint, mode, split="validation", limit=None):
     device = require_cuda()
@@ -592,6 +626,8 @@ def evaluate_system(cfg, checkpoint, mode, split="validation", limit=None):
         system.eval()
     grid_rows = {x: [] for x in ("aa", "ab", "ba", "bb")}
     shuffled_rows = {"ab": [], "ba": []}
+    readouts = {x: [] for x in ("aa", "ab", "ba", "bb")}
+    shuffled_readouts = {"ab": [], "ba": []}
     cached = [dataset[i] for i in range(len(dataset))]
     progress(f"Evaluation {mode}: {len(cached)} samples")
     for index, row in enumerate(cached):
@@ -599,10 +635,11 @@ def evaluate_system(cfg, checkpoint, mode, split="validation", limit=None):
         b = to_device(row["b"], device)
         with torch.autocast("cuda", dtype=torch.float16):
             if system is None:
-                ka, qa, kb, qb = a["k"], a["q"], b["k"], b["q"]
+                ka, va, qa = a["k"], a["v"], a["q"]
+                kb, vb, qb = b["k"], b["v"], b["q"]
             else:
-                ka, _, qa = system.transform("a", a)
-                kb, _, qb = system.transform("b", b)
+                ka, va, qa = system.transform("a", a)
+                kb, vb, qb = system.transform("b", b)
             scores = {
                 "aa": retrieval_scores(qa, ka),
                 "ab": retrieval_scores(qa, kb),
@@ -611,25 +648,67 @@ def evaluate_system(cfg, checkpoint, mode, split="validation", limit=None):
             }
             for name in scores:
                 grid_rows[name].append(sample_metrics(scores[name], row["sample"]))
+            current_readouts = {
+                "aa": readout(qa, ka, va),
+                "ab": readout(qa, kb, vb),
+                "ba": readout(qb, ka, va),
+                "bb": readout(qb, kb, vb),
+            }
+            for name, value in current_readouts.items():
+                readouts[name].append(value.detach().cpu())
             other = cached[(index + 1) % len(cached)]
             oa = to_device(other["a"], device)
             ob = to_device(other["b"], device)
             if system is None:
                 shuffled_ab = retrieval_scores(qa, ob["k"])
                 shuffled_ba = retrieval_scores(qb, oa["k"])
+                okb, ovb = ob["k"], ob["v"]
+                oka, ova = oa["k"], oa["v"]
             else:
-                okb, _, _ = system.transform("b", ob)
-                oka, _, _ = system.transform("a", oa)
+                okb, ovb, _ = system.transform("b", ob)
+                oka, ova, _ = system.transform("a", oa)
                 shuffled_ab = retrieval_scores(qa, okb)
                 shuffled_ba = retrieval_scores(qb, oka)
             shuffled_rows["ab"].append(sample_metrics(shuffled_ab, other["sample"]))
             shuffled_rows["ba"].append(sample_metrics(shuffled_ba, other["sample"]))
+            shuffled_readouts["ab"].append(readout(qa, okb, ovb).detach().cpu())
+            shuffled_readouts["ba"].append(readout(qb, oka, ova).detach().cpu())
         if (index + 1) % 8 == 0 or index + 1 == len(cached):
             progress(f"Evaluation {mode}: {index + 1}/{len(cached)}")
+    pairwise = {}
+    names = ("aa", "ab", "ba", "bb")
+    for left_index, left in enumerate(names):
+        for right in names[left_index + 1 :]:
+            pairwise[f"{left}_{right}"] = mean_cosine(readouts[left], readouts[right])
+    correct_a = mean_cosine(readouts["aa"], readouts["ab"])
+    shuffled_a = mean_cosine(readouts["aa"], shuffled_readouts["ab"])
+    correct_b = mean_cosine(readouts["bb"], readouts["ba"])
+    shuffled_b = mean_cosine(readouts["bb"], shuffled_readouts["ba"])
     result = {
         "mode": mode,
-        "grid": {name: aggregate(rows) for name, rows in grid_rows.items()},
-        "shuffled": {name: aggregate(rows) for name, rows in shuffled_rows.items()},
+        "k_retrieval": {
+            "grid": {name: aggregate(rows) for name, rows in grid_rows.items()},
+            "shuffled": {name: aggregate(rows) for name, rows in shuffled_rows.items()},
+        },
+        "v_readout": {
+            "same_sample_pairwise_cosine": pairwise,
+            "a_query_reads_b_memory": {
+                "correct_memory_cosine": correct_a,
+                "shuffled_memory_cosine": shuffled_a,
+                "correct_minus_shuffled": correct_a - shuffled_a,
+                "cross_sample_identification": cross_sample_readout_metrics(
+                    readouts["aa"], readouts["ab"]
+                ),
+            },
+            "b_query_reads_a_memory": {
+                "correct_memory_cosine": correct_b,
+                "shuffled_memory_cosine": shuffled_b,
+                "correct_minus_shuffled": correct_b - shuffled_b,
+                "cross_sample_identification": cross_sample_readout_metrics(
+                    readouts["bb"], readouts["ba"]
+                ),
+            },
+        },
     }
     del system
     empty_cuda()
@@ -663,7 +742,10 @@ def cpu_self_test(cfg):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True)
-    parser.add_argument("command", choices=["prepare", "cpu_self_test", "sanity", "extract_a", "extract_b"])
+    parser.add_argument(
+        "command",
+        choices=["prepare", "cpu_self_test", "sanity", "extract_a", "extract_b", "evaluate"],
+    )
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
     cfg = load_json(args.config)
@@ -677,6 +759,8 @@ def main():
         extract_sender(cfg, "a", args.limit)
     elif args.command == "extract_b":
         extract_sender(cfg, "b", args.limit)
+    elif args.command == "evaluate":
+        final_evaluation(cfg)
 
 
 if __name__ == "__main__":

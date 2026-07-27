@@ -27,6 +27,15 @@ all non-supporting sentences and tokens in the same HotpotQA context. No KV
 MSE, answer CE, Receiver KL, trajectory, reconstruction, or sender-ID
 adversarial loss is used.
 
+Final evaluation reports both halves of the protocol:
+
+- K functionality: AA/AB/BA/BB supporting-evidence Recall@1/5, MRR,
+  AUPRC, and shuffled controls.
+- V functionality: canonical readout cosine for `R_AA↔R_AB` and
+  `R_BB↔R_BA`, all six four-grid readout pairs, correct-vs-shuffled
+  readout gaps, and cross-sample Recall@1/5/MRR. The cross-sample metrics
+  ensure that high readout cosine is sample-specific rather than collapse.
+
 The pipeline first runs an 8-train/4-validation smoke test. Only after all
 mechanical checks and both private/shared smoke training paths finish does it
 continue to 256 balanced train and 64 balanced validation examples.
