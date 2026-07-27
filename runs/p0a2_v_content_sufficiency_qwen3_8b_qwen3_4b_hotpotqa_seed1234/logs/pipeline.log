@@ -1,0 +1,344 @@
+[2026-07-27 20:49:31] P0-A2 pipeline started
+[2026-07-27 20:49:31] Pipeline stage started: cpu_self_test 
+[2026-07-27 20:49:36] P0-A2 CPU structural self-test passed
+[2026-07-27 20:49:37] Pipeline stage completed: cpu_self_test
+[2026-07-27 20:49:37] Pipeline stage started: text_embeddings --limit 8
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:55,  3.43it/s]Loading weights:  31%|███▏      | 125/398 [00:00<00:00, 410.23it/s]Loading weights:  50%|█████     | 199/398 [00:00<00:00, 339.81it/s]Loading weights:  63%|██████▎   | 252/398 [00:00<00:00, 337.19it/s]Loading weights:  75%|███████▍  | 297/398 [00:01<00:00, 261.69it/s]Loading weights:  84%|████████▍ | 335/398 [00:01<00:00, 264.99it/s]Loading weights:  93%|█████████▎| 372/398 [00:01<00:00, 235.53it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 277.79it/s]
+[2026-07-27 20:49:57] Frozen sentence embedding extraction: 16 samples
+[2026-07-27 20:50:00] Frozen sentence embedding extraction: 4/16
+[2026-07-27 20:50:02] Frozen sentence embedding extraction: 8/16
+[2026-07-27 20:50:04] Frozen sentence embedding extraction: 12/16
+[2026-07-27 20:50:06] Frozen sentence embedding extraction: 16/16
+[2026-07-27 20:50:09] Pipeline stage completed: smoke_text_embeddings
+[2026-07-27 20:50:09] Pipeline stage started: readouts --mode raw_native --limit 8
+[2026-07-27 20:50:15] Readout precompute raw_native: 8
+[2026-07-27 20:50:16] Readout precompute raw_native: 16
+[2026-07-27 20:50:16] Readout precompute raw_native: completed 16
+[2026-07-27 20:50:17] Pipeline stage started: readouts --mode private_writer --limit 8
+[2026-07-27 20:50:23] Readout precompute private_writer: 8
+[2026-07-27 20:50:24] Readout precompute private_writer: 16
+[2026-07-27 20:50:24] Readout precompute private_writer: completed 16
+[2026-07-27 20:50:25] Pipeline stage started: readouts --mode shared_canonical --limit 8
+[2026-07-27 20:50:31] Readout precompute shared_canonical: 8
+[2026-07-27 20:50:32] Readout precompute shared_canonical: 16
+[2026-07-27 20:50:32] Readout precompute shared_canonical: completed 16
+[2026-07-27 20:50:33] Pipeline stage completed: smoke_readouts
+[2026-07-27 20:50:33] Pipeline stage started: train_probe --mode raw_native --sender a --smoke
+[2026-07-27 20:50:39] Probe training raw_native_a_smoke started
+[2026-07-27 20:50:41] Probe training raw_native_a_smoke: epoch 1/2
+[2026-07-27 20:50:41] Probe training raw_native_a_smoke: epoch 2/2
+[2026-07-27 20:50:42] Pipeline stage started: evaluate_probe --mode raw_native --sender a --smoke
+[2026-07-27 20:50:48] Pipeline stage started: train_probe --mode raw_native --sender b --smoke
+[2026-07-27 20:50:54] Probe training raw_native_b_smoke started
+[2026-07-27 20:50:56] Probe training raw_native_b_smoke: epoch 1/2
+[2026-07-27 20:50:56] Probe training raw_native_b_smoke: epoch 2/2
+[2026-07-27 20:50:57] Pipeline stage started: evaluate_probe --mode raw_native --sender b --smoke
+[2026-07-27 20:51:04] Pipeline stage started: train_probe --mode private_writer --sender a --smoke
+[2026-07-27 20:51:10] Probe training private_writer_a_smoke started
+[2026-07-27 20:51:11] Probe training private_writer_a_smoke: epoch 1/2
+[2026-07-27 20:51:12] Probe training private_writer_a_smoke: epoch 2/2
+[2026-07-27 20:51:13] Pipeline stage started: evaluate_probe --mode private_writer --sender a --smoke
+[2026-07-27 20:51:20] Pipeline stage started: train_probe --mode private_writer --sender b --smoke
+[2026-07-27 20:51:26] Probe training private_writer_b_smoke started
+[2026-07-27 20:51:27] Probe training private_writer_b_smoke: epoch 1/2
+[2026-07-27 20:51:27] Probe training private_writer_b_smoke: epoch 2/2
+[2026-07-27 20:51:29] Pipeline stage started: evaluate_probe --mode private_writer --sender b --smoke
+[2026-07-27 20:51:35] Pipeline stage started: train_probe --mode shared_canonical --sender a --smoke
+[2026-07-27 20:51:41] Probe training shared_canonical_a_smoke started
+[2026-07-27 20:51:42] Probe training shared_canonical_a_smoke: epoch 1/2
+[2026-07-27 20:51:43] Probe training shared_canonical_a_smoke: epoch 2/2
+[2026-07-27 20:51:44] Pipeline stage started: evaluate_probe --mode shared_canonical --sender a --smoke
+[2026-07-27 20:51:50] Pipeline stage started: train_probe --mode shared_canonical --sender b --smoke
+[2026-07-27 20:51:57] Probe training shared_canonical_b_smoke started
+[2026-07-27 20:51:58] Probe training shared_canonical_b_smoke: epoch 1/2
+[2026-07-27 20:51:58] Probe training shared_canonical_b_smoke: epoch 2/2
+[2026-07-27 20:52:00] Pipeline stage started: evaluate_probe --mode shared_canonical --sender b --smoke
+[2026-07-27 20:52:06] Pipeline stage completed: smoke_passed
+[2026-07-27 20:52:06] Pipeline stage started: text_embeddings 
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:44,  8.97it/s]Loading weights:  22%|██▏       | 89/398 [00:00<00:00, 492.74it/s]Loading weights:  35%|███▌      | 141/398 [00:00<00:00, 398.19it/s]Loading weights:  46%|████▌     | 184/398 [00:00<00:00, 355.77it/s]Loading weights:  56%|█████▌    | 222/398 [00:00<00:00, 317.58it/s]Loading weights:  65%|██████▍   | 258/398 [00:00<00:00, 317.00it/s]Loading weights:  74%|███████▍  | 295/398 [00:00<00:00, 331.19it/s]Loading weights:  83%|████████▎ | 330/398 [00:00<00:00, 327.84it/s]Loading weights:  93%|█████████▎| 372/398 [00:01<00:00, 351.52it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 344.37it/s]
+[2026-07-27 20:52:27] Frozen sentence embedding extraction: 320 samples
+[2026-07-27 20:52:29] Frozen sentence embedding extraction: 12/320
+[2026-07-27 20:52:31] Frozen sentence embedding extraction: 16/320
+[2026-07-27 20:52:33] Frozen sentence embedding extraction: 20/320
+[2026-07-27 20:52:36] Frozen sentence embedding extraction: 24/320
+[2026-07-27 20:52:38] Frozen sentence embedding extraction: 28/320
+[2026-07-27 20:52:39] Frozen sentence embedding extraction: 32/320
+[2026-07-27 20:52:42] Frozen sentence embedding extraction: 36/320
+[2026-07-27 20:52:44] Frozen sentence embedding extraction: 40/320
+[2026-07-27 20:52:47] Frozen sentence embedding extraction: 44/320
+[2026-07-27 20:52:49] Frozen sentence embedding extraction: 48/320
+[2026-07-27 20:52:52] Frozen sentence embedding extraction: 52/320
+[2026-07-27 20:52:54] Frozen sentence embedding extraction: 56/320
+[2026-07-27 20:52:57] Frozen sentence embedding extraction: 60/320
+[2026-07-27 20:52:58] Frozen sentence embedding extraction: 64/320
+[2026-07-27 20:53:01] Frozen sentence embedding extraction: 68/320
+[2026-07-27 20:53:03] Frozen sentence embedding extraction: 72/320
+[2026-07-27 20:53:05] Frozen sentence embedding extraction: 76/320
+[2026-07-27 20:53:07] Frozen sentence embedding extraction: 80/320
+[2026-07-27 20:53:09] Frozen sentence embedding extraction: 84/320
+[2026-07-27 20:53:11] Frozen sentence embedding extraction: 88/320
+[2026-07-27 20:53:13] Frozen sentence embedding extraction: 92/320
+[2026-07-27 20:53:14] Frozen sentence embedding extraction: 96/320
+[2026-07-27 20:53:17] Frozen sentence embedding extraction: 100/320
+[2026-07-27 20:53:19] Frozen sentence embedding extraction: 104/320
+[2026-07-27 20:53:21] Frozen sentence embedding extraction: 108/320
+[2026-07-27 20:53:24] Frozen sentence embedding extraction: 112/320
+[2026-07-27 20:53:26] Frozen sentence embedding extraction: 116/320
+[2026-07-27 20:53:29] Frozen sentence embedding extraction: 120/320
+[2026-07-27 20:53:31] Frozen sentence embedding extraction: 124/320
+[2026-07-27 20:53:33] Frozen sentence embedding extraction: 128/320
+[2026-07-27 20:53:35] Frozen sentence embedding extraction: 132/320
+[2026-07-27 20:53:37] Frozen sentence embedding extraction: 136/320
+[2026-07-27 20:53:40] Frozen sentence embedding extraction: 140/320
+[2026-07-27 20:53:42] Frozen sentence embedding extraction: 144/320
+[2026-07-27 20:53:45] Frozen sentence embedding extraction: 148/320
+[2026-07-27 20:53:47] Frozen sentence embedding extraction: 152/320
+[2026-07-27 20:53:49] Frozen sentence embedding extraction: 156/320
+[2026-07-27 20:53:52] Frozen sentence embedding extraction: 160/320
+[2026-07-27 20:53:54] Frozen sentence embedding extraction: 164/320
+[2026-07-27 20:53:57] Frozen sentence embedding extraction: 168/320
+[2026-07-27 20:53:58] Frozen sentence embedding extraction: 172/320
+[2026-07-27 20:54:00] Frozen sentence embedding extraction: 176/320
+[2026-07-27 20:54:03] Frozen sentence embedding extraction: 180/320
+[2026-07-27 20:54:05] Frozen sentence embedding extraction: 184/320
+[2026-07-27 20:54:07] Frozen sentence embedding extraction: 188/320
+[2026-07-27 20:54:09] Frozen sentence embedding extraction: 192/320
+[2026-07-27 20:54:11] Frozen sentence embedding extraction: 196/320
+[2026-07-27 20:54:14] Frozen sentence embedding extraction: 200/320
+[2026-07-27 20:54:16] Frozen sentence embedding extraction: 204/320
+[2026-07-27 20:54:19] Frozen sentence embedding extraction: 208/320
+[2026-07-27 20:54:21] Frozen sentence embedding extraction: 212/320
+[2026-07-27 20:54:23] Frozen sentence embedding extraction: 216/320
+[2026-07-27 20:54:26] Frozen sentence embedding extraction: 220/320
+[2026-07-27 20:54:29] Frozen sentence embedding extraction: 224/320
+[2026-07-27 20:54:31] Frozen sentence embedding extraction: 228/320
+[2026-07-27 20:54:33] Frozen sentence embedding extraction: 232/320
+[2026-07-27 20:54:35] Frozen sentence embedding extraction: 236/320
+[2026-07-27 20:54:38] Frozen sentence embedding extraction: 240/320
+[2026-07-27 20:54:40] Frozen sentence embedding extraction: 244/320
+[2026-07-27 20:54:41] Frozen sentence embedding extraction: 248/320
+[2026-07-27 20:54:44] Frozen sentence embedding extraction: 252/320
+[2026-07-27 20:54:46] Frozen sentence embedding extraction: 256/320
+[2026-07-27 20:54:49] Frozen sentence embedding extraction: 268/320
+[2026-07-27 20:54:51] Frozen sentence embedding extraction: 272/320
+[2026-07-27 20:54:54] Frozen sentence embedding extraction: 276/320
+[2026-07-27 20:54:56] Frozen sentence embedding extraction: 280/320
+[2026-07-27 20:54:59] Frozen sentence embedding extraction: 284/320
+[2026-07-27 20:55:02] Frozen sentence embedding extraction: 288/320
+[2026-07-27 20:55:04] Frozen sentence embedding extraction: 292/320
+[2026-07-27 20:55:06] Frozen sentence embedding extraction: 296/320
+[2026-07-27 20:55:09] Frozen sentence embedding extraction: 300/320
+[2026-07-27 20:55:12] Frozen sentence embedding extraction: 304/320
+[2026-07-27 20:55:14] Frozen sentence embedding extraction: 308/320
+[2026-07-27 20:55:17] Frozen sentence embedding extraction: 312/320
+[2026-07-27 20:55:19] Frozen sentence embedding extraction: 316/320
+[2026-07-27 20:55:21] Frozen sentence embedding extraction: 320/320
+[2026-07-27 20:55:25] Pipeline stage completed: formal_text_embeddings
+[2026-07-27 20:55:25] Pipeline stage started: readouts --mode raw_native
+[2026-07-27 20:55:31] Readout precompute raw_native: 8
+[2026-07-27 20:55:32] Readout precompute raw_native: 16
+[2026-07-27 20:55:32] Readout precompute raw_native: 24
+[2026-07-27 20:55:33] Readout precompute raw_native: 32
+[2026-07-27 20:55:33] Readout precompute raw_native: 40
+[2026-07-27 20:55:34] Readout precompute raw_native: 48
+[2026-07-27 20:55:35] Readout precompute raw_native: 56
+[2026-07-27 20:55:35] Readout precompute raw_native: 64
+[2026-07-27 20:55:36] Readout precompute raw_native: 72
+[2026-07-27 20:55:36] Readout precompute raw_native: 80
+[2026-07-27 20:55:36] Readout precompute raw_native: 88
+[2026-07-27 20:55:37] Readout precompute raw_native: 96
+[2026-07-27 20:55:38] Readout precompute raw_native: 104
+[2026-07-27 20:55:38] Readout precompute raw_native: 112
+[2026-07-27 20:55:39] Readout precompute raw_native: 120
+[2026-07-27 20:55:39] Readout precompute raw_native: 128
+[2026-07-27 20:55:40] Readout precompute raw_native: 136
+[2026-07-27 20:55:40] Readout precompute raw_native: 144
+[2026-07-27 20:55:41] Readout precompute raw_native: 152
+[2026-07-27 20:55:41] Readout precompute raw_native: 160
+[2026-07-27 20:55:42] Readout precompute raw_native: 168
+[2026-07-27 20:55:42] Readout precompute raw_native: 176
+[2026-07-27 20:55:43] Readout precompute raw_native: 184
+[2026-07-27 20:55:43] Readout precompute raw_native: 192
+[2026-07-27 20:55:44] Readout precompute raw_native: 200
+[2026-07-27 20:55:45] Readout precompute raw_native: 208
+[2026-07-27 20:55:45] Readout precompute raw_native: 216
+[2026-07-27 20:55:46] Readout precompute raw_native: 224
+[2026-07-27 20:55:46] Readout precompute raw_native: 232
+[2026-07-27 20:55:47] Readout precompute raw_native: 240
+[2026-07-27 20:55:47] Readout precompute raw_native: 248
+[2026-07-27 20:55:48] Readout precompute raw_native: 256
+[2026-07-27 20:55:48] Readout precompute raw_native: 264
+[2026-07-27 20:55:49] Readout precompute raw_native: 272
+[2026-07-27 20:55:49] Readout precompute raw_native: 280
+[2026-07-27 20:55:50] Readout precompute raw_native: 288
+[2026-07-27 20:55:50] Readout precompute raw_native: 296
+[2026-07-27 20:55:51] Readout precompute raw_native: 304
+[2026-07-27 20:55:51] Readout precompute raw_native: 312
+[2026-07-27 20:55:52] Readout precompute raw_native: 320
+[2026-07-27 20:55:52] Readout precompute raw_native: completed 320
+[2026-07-27 20:55:53] Pipeline stage started: readouts --mode private_writer
+[2026-07-27 20:55:59] Readout precompute private_writer: 8
+[2026-07-27 20:56:00] Readout precompute private_writer: 16
+[2026-07-27 20:56:01] Readout precompute private_writer: 24
+[2026-07-27 20:56:01] Readout precompute private_writer: 32
+[2026-07-27 20:56:02] Readout precompute private_writer: 40
+[2026-07-27 20:56:03] Readout precompute private_writer: 48
+[2026-07-27 20:56:03] Readout precompute private_writer: 56
+[2026-07-27 20:56:04] Readout precompute private_writer: 64
+[2026-07-27 20:56:05] Readout precompute private_writer: 72
+[2026-07-27 20:56:05] Readout precompute private_writer: 80
+[2026-07-27 20:56:06] Readout precompute private_writer: 88
+[2026-07-27 20:56:07] Readout precompute private_writer: 96
+[2026-07-27 20:56:07] Readout precompute private_writer: 104
+[2026-07-27 20:56:08] Readout precompute private_writer: 112
+[2026-07-27 20:56:09] Readout precompute private_writer: 120
+[2026-07-27 20:56:10] Readout precompute private_writer: 128
+[2026-07-27 20:56:10] Readout precompute private_writer: 136
+[2026-07-27 20:56:11] Readout precompute private_writer: 144
+[2026-07-27 20:56:12] Readout precompute private_writer: 152
+[2026-07-27 20:56:13] Readout precompute private_writer: 160
+[2026-07-27 20:56:14] Readout precompute private_writer: 168
+[2026-07-27 20:56:14] Readout precompute private_writer: 176
+[2026-07-27 20:56:15] Readout precompute private_writer: 184
+[2026-07-27 20:56:16] Readout precompute private_writer: 192
+[2026-07-27 20:56:16] Readout precompute private_writer: 200
+[2026-07-27 20:56:17] Readout precompute private_writer: 208
+[2026-07-27 20:56:18] Readout precompute private_writer: 216
+[2026-07-27 20:56:18] Readout precompute private_writer: 224
+[2026-07-27 20:56:19] Readout precompute private_writer: 232
+[2026-07-27 20:56:20] Readout precompute private_writer: 240
+[2026-07-27 20:56:20] Readout precompute private_writer: 248
+[2026-07-27 20:56:21] Readout precompute private_writer: 256
+[2026-07-27 20:56:22] Readout precompute private_writer: 264
+[2026-07-27 20:56:22] Readout precompute private_writer: 272
+[2026-07-27 20:56:23] Readout precompute private_writer: 280
+[2026-07-27 20:56:24] Readout precompute private_writer: 288
+[2026-07-27 20:56:25] Readout precompute private_writer: 296
+[2026-07-27 20:56:25] Readout precompute private_writer: 304
+[2026-07-27 20:56:26] Readout precompute private_writer: 312
+[2026-07-27 20:56:27] Readout precompute private_writer: 320
+[2026-07-27 20:56:27] Readout precompute private_writer: completed 320
+[2026-07-27 20:56:28] Pipeline stage started: readouts --mode shared_canonical
+[2026-07-27 20:56:34] Readout precompute shared_canonical: 8
+[2026-07-27 20:56:35] Readout precompute shared_canonical: 16
+[2026-07-27 20:56:36] Readout precompute shared_canonical: 24
+[2026-07-27 20:56:36] Readout precompute shared_canonical: 32
+[2026-07-27 20:56:37] Readout precompute shared_canonical: 40
+[2026-07-27 20:56:38] Readout precompute shared_canonical: 48
+[2026-07-27 20:56:39] Readout precompute shared_canonical: 56
+[2026-07-27 20:56:40] Readout precompute shared_canonical: 64
+[2026-07-27 20:56:40] Readout precompute shared_canonical: 72
+[2026-07-27 20:56:41] Readout precompute shared_canonical: 80
+[2026-07-27 20:56:42] Readout precompute shared_canonical: 88
+[2026-07-27 20:56:42] Readout precompute shared_canonical: 96
+[2026-07-27 20:56:43] Readout precompute shared_canonical: 104
+[2026-07-27 20:56:44] Readout precompute shared_canonical: 112
+[2026-07-27 20:56:45] Readout precompute shared_canonical: 120
+[2026-07-27 20:56:46] Readout precompute shared_canonical: 128
+[2026-07-27 20:56:46] Readout precompute shared_canonical: 136
+[2026-07-27 20:56:47] Readout precompute shared_canonical: 144
+[2026-07-27 20:56:48] Readout precompute shared_canonical: 152
+[2026-07-27 20:56:49] Readout precompute shared_canonical: 160
+[2026-07-27 20:56:49] Readout precompute shared_canonical: 168
+[2026-07-27 20:56:50] Readout precompute shared_canonical: 176
+[2026-07-27 20:56:51] Readout precompute shared_canonical: 184
+[2026-07-27 20:56:51] Readout precompute shared_canonical: 192
+[2026-07-27 20:56:52] Readout precompute shared_canonical: 200
+[2026-07-27 20:56:53] Readout precompute shared_canonical: 208
+[2026-07-27 20:56:54] Readout precompute shared_canonical: 216
+[2026-07-27 20:56:54] Readout precompute shared_canonical: 224
+[2026-07-27 20:56:55] Readout precompute shared_canonical: 232
+[2026-07-27 20:56:56] Readout precompute shared_canonical: 240
+[2026-07-27 20:56:56] Readout precompute shared_canonical: 248
+[2026-07-27 20:56:57] Readout precompute shared_canonical: 256
+[2026-07-27 20:56:58] Readout precompute shared_canonical: 264
+[2026-07-27 20:56:58] Readout precompute shared_canonical: 272
+[2026-07-27 20:56:59] Readout precompute shared_canonical: 280
+[2026-07-27 20:57:00] Readout precompute shared_canonical: 288
+[2026-07-27 20:57:00] Readout precompute shared_canonical: 296
+[2026-07-27 20:57:01] Readout precompute shared_canonical: 304
+[2026-07-27 20:57:02] Readout precompute shared_canonical: 312
+[2026-07-27 20:57:03] Readout precompute shared_canonical: 320
+[2026-07-27 20:57:03] Readout precompute shared_canonical: completed 320
+[2026-07-27 20:57:04] Pipeline stage completed: formal_readouts
+[2026-07-27 20:57:04] Pipeline stage started: train_probe --mode raw_native --sender a
+[2026-07-27 20:57:09] Probe training raw_native_a_formal started
+[2026-07-27 20:57:13] Probe training raw_native_a_formal: epoch 1/10
+[2026-07-27 20:57:15] Probe training raw_native_a_formal: epoch 2/10
+[2026-07-27 20:57:17] Probe training raw_native_a_formal: epoch 3/10
+[2026-07-27 20:57:19] Probe training raw_native_a_formal: epoch 4/10
+[2026-07-27 20:57:21] Probe training raw_native_a_formal: epoch 5/10
+[2026-07-27 20:57:24] Probe training raw_native_a_formal: epoch 6/10
+[2026-07-27 20:57:27] Probe training raw_native_a_formal: epoch 7/10
+[2026-07-27 20:57:29] Probe training raw_native_a_formal: epoch 8/10
+[2026-07-27 20:57:32] Probe training raw_native_a_formal: epoch 9/10
+[2026-07-27 20:57:34] Probe training raw_native_a_formal: epoch 10/10
+[2026-07-27 20:57:36] Pipeline stage started: evaluate_probe --mode raw_native --sender a
+[2026-07-27 20:57:43] Pipeline stage started: train_probe --mode raw_native --sender b
+[2026-07-27 20:57:48] Probe training raw_native_b_formal started
+[2026-07-27 20:57:52] Probe training raw_native_b_formal: epoch 1/10
+[2026-07-27 20:57:55] Probe training raw_native_b_formal: epoch 2/10
+[2026-07-27 20:57:57] Probe training raw_native_b_formal: epoch 3/10
+[2026-07-27 20:58:00] Probe training raw_native_b_formal: epoch 4/10
+[2026-07-27 20:58:03] Probe training raw_native_b_formal: epoch 5/10
+[2026-07-27 20:58:05] Probe training raw_native_b_formal: epoch 6/10
+[2026-07-27 20:58:08] Probe training raw_native_b_formal: epoch 7/10
+[2026-07-27 20:58:10] Probe training raw_native_b_formal: epoch 8/10
+[2026-07-27 20:58:13] Probe training raw_native_b_formal: epoch 9/10
+[2026-07-27 20:58:16] Probe training raw_native_b_formal: epoch 10/10
+[2026-07-27 20:58:18] Pipeline stage started: evaluate_probe --mode raw_native --sender b
+[2026-07-27 20:58:24] Pipeline stage started: train_probe --mode private_writer --sender a
+[2026-07-27 20:58:30] Probe training private_writer_a_formal started
+[2026-07-27 20:58:34] Probe training private_writer_a_formal: epoch 1/10
+[2026-07-27 20:58:36] Probe training private_writer_a_formal: epoch 2/10
+[2026-07-27 20:58:39] Probe training private_writer_a_formal: epoch 3/10
+[2026-07-27 20:58:41] Probe training private_writer_a_formal: epoch 4/10
+[2026-07-27 20:58:44] Probe training private_writer_a_formal: epoch 5/10
+[2026-07-27 20:58:46] Probe training private_writer_a_formal: epoch 6/10
+[2026-07-27 20:58:49] Probe training private_writer_a_formal: epoch 7/10
+[2026-07-27 20:58:51] Probe training private_writer_a_formal: epoch 8/10
+[2026-07-27 20:58:54] Probe training private_writer_a_formal: epoch 9/10
+[2026-07-27 20:58:57] Probe training private_writer_a_formal: epoch 10/10
+[2026-07-27 20:58:58] Pipeline stage started: evaluate_probe --mode private_writer --sender a
+[2026-07-27 20:59:05] Pipeline stage started: train_probe --mode private_writer --sender b
+[2026-07-27 20:59:11] Probe training private_writer_b_formal started
+[2026-07-27 20:59:15] Probe training private_writer_b_formal: epoch 1/10
+[2026-07-27 20:59:17] Probe training private_writer_b_formal: epoch 2/10
+[2026-07-27 20:59:20] Probe training private_writer_b_formal: epoch 3/10
+[2026-07-27 20:59:22] Probe training private_writer_b_formal: epoch 4/10
+[2026-07-27 20:59:25] Probe training private_writer_b_formal: epoch 5/10
+[2026-07-27 20:59:28] Probe training private_writer_b_formal: epoch 6/10
+[2026-07-27 20:59:30] Probe training private_writer_b_formal: epoch 7/10
+[2026-07-27 20:59:33] Probe training private_writer_b_formal: epoch 8/10
+[2026-07-27 20:59:36] Probe training private_writer_b_formal: epoch 9/10
+[2026-07-27 20:59:38] Probe training private_writer_b_formal: epoch 10/10
+[2026-07-27 20:59:40] Pipeline stage started: evaluate_probe --mode private_writer --sender b
+[2026-07-27 20:59:47] Pipeline stage started: train_probe --mode shared_canonical --sender a
+[2026-07-27 20:59:53] Probe training shared_canonical_a_formal started
+[2026-07-27 20:59:57] Probe training shared_canonical_a_formal: epoch 1/10
+[2026-07-27 20:59:59] Probe training shared_canonical_a_formal: epoch 2/10
+[2026-07-27 21:00:02] Probe training shared_canonical_a_formal: epoch 3/10
+[2026-07-27 21:00:05] Probe training shared_canonical_a_formal: epoch 4/10
+[2026-07-27 21:00:08] Probe training shared_canonical_a_formal: epoch 5/10
+[2026-07-27 21:00:10] Probe training shared_canonical_a_formal: epoch 6/10
+[2026-07-27 21:00:13] Probe training shared_canonical_a_formal: epoch 7/10
+[2026-07-27 21:00:16] Probe training shared_canonical_a_formal: epoch 8/10
+[2026-07-27 21:00:18] Probe training shared_canonical_a_formal: epoch 9/10
+[2026-07-27 21:00:21] Probe training shared_canonical_a_formal: epoch 10/10
+[2026-07-27 21:00:22] Pipeline stage started: evaluate_probe --mode shared_canonical --sender a
+[2026-07-27 21:00:29] Pipeline stage started: train_probe --mode shared_canonical --sender b
+[2026-07-27 21:00:35] Probe training shared_canonical_b_formal started
+[2026-07-27 21:00:39] Probe training shared_canonical_b_formal: epoch 1/10
+[2026-07-27 21:00:42] Probe training shared_canonical_b_formal: epoch 2/10
+[2026-07-27 21:00:44] Probe training shared_canonical_b_formal: epoch 3/10
+[2026-07-27 21:00:47] Probe training shared_canonical_b_formal: epoch 4/10
+[2026-07-27 21:00:50] Probe training shared_canonical_b_formal: epoch 5/10
+[2026-07-27 21:00:52] Probe training shared_canonical_b_formal: epoch 6/10
+[2026-07-27 21:00:55] Probe training shared_canonical_b_formal: epoch 7/10
+[2026-07-27 21:00:58] Probe training shared_canonical_b_formal: epoch 8/10
+[2026-07-27 21:01:01] Probe training shared_canonical_b_formal: epoch 9/10
+[2026-07-27 21:01:04] Probe training shared_canonical_b_formal: epoch 10/10
+[2026-07-27 21:01:06] Pipeline stage started: evaluate_probe --mode shared_canonical --sender b
+[2026-07-27 21:01:13] Pipeline stage completed: formal_probe_evaluation
+[2026-07-27 21:01:13] Pipeline stage completed: final_evaluation
+[2026-07-27 21:01:13] P0-A2 pipeline completed
