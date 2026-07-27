@@ -1,0 +1,16 @@
+{
+  "experiment_name": "p0b_question_aware_kv_selection_qwen3_8b_qwen3_4b_hotpotqa_seed1234",
+  "seed": 1234,
+  "source_p0a_dir": "/home/yezhe/可拔插/p0a_canonical_coregistration_qwen3_8b_qwen3_4b_hotpotqa_seed1234",
+  "source_p0a2_dir": "/home/yezhe/可拔插/p0a2_v_content_sufficiency_qwen3_8b_qwen3_4b_hotpotqa_seed1234",
+  "work_dir": "/home/yezhe/可拔插/p0b_question_aware_kv_selection_qwen3_8b_qwen3_4b_hotpotqa_seed1234",
+  "model_a": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+  "model_b": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+  "selected_layers": [0, 5, 10, 15, 20, 25, 30, 35],
+  "num_kv_heads": 8,
+  "num_query_heads": 32,
+  "head_dim": 128,
+  "budgets": [2, 4, 8],
+  "main_budget": 4,
+  "smoke_validation_size": 4
+}
