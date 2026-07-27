@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "first_token_max_abs_logit_difference": 0.0,
+  "all_teacher_forced_max_abs_logit_difference": 0.0,
+  "top1_equal": true,
+  "full_sequence_teacher_forcing_nll": 0.8978811502456665,
+  "native_incremental_teacher_forcing_nll": 0.8994470834732056,
+  "injected_teacher_forcing_nll": 0.8994470834732056,
+  "free_running_generation_equal": true,
+  "rope_round_trip_cosine": 1.0,
+  "rope_round_trip_mse": 7.207116823337856e-07
+}
