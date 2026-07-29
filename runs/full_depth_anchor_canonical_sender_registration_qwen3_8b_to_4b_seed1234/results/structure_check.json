@@ -1,0 +1,27 @@
+{
+  "4b": {
+    "layers": 36,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "rope_theta": null,
+    "rope_scaling": {
+      "rope_theta": 1000000,
+      "rope_type": "default"
+    }
+  },
+  "8b": {
+    "layers": 36,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "rope_theta": null,
+    "rope_scaling": {
+      "rope_theta": 1000000,
+      "rope_type": "default"
+    }
+  },
+  "r0_lora_self_smoke": "/home/yezhe/可拔插/r0_raw_native_kv_cross_model_qwen3_8b_to_4b_hotpotqa_seed1234/artifacts/smoke/lora_self/best.pt",
+  "r0_lora_self_formal": "/home/yezhe/可拔插/r0_raw_native_kv_cross_model_qwen3_8b_to_4b_hotpotqa_seed1234/artifacts/formal/lora_self/best.pt",
+  "canonical_v1": "Qwen3-4B 36-layer selected pre-RoPE K/native V",
+  "writer_4b": "identity",
+  "reader_frozen": true
+}

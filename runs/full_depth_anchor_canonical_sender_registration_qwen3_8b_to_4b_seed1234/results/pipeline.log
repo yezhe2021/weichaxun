@@ -1,0 +1,110 @@
+[2026-07-28 22:25:42] CUDA ready; starting/resuming full-depth anchor pipeline
+[2026-07-28 22:25:42] stage started: cpu_selftest
+[2026-07-28 22:25:47] Full-depth Writer CPU self-test passed
+[2026-07-28 22:25:48] stage completed: cpu_selftest
+[2026-07-28 22:25:48] stage started: structure
+[2026-07-28 22:25:52] Anchor protocol, RoPE, and frozen R0 Reader checks passed
+[2026-07-28 22:25:53] stage completed: structure
+[2026-07-28 22:25:53] stage started: smoke_reference
+[2026-07-28 22:25:57] smoke: exact R0/R1 sample and position reference prepared
+[2026-07-28 22:25:58] stage completed: smoke_reference
+[2026-07-28 22:25:58] stage started: smoke_question_queries
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  31%|███▏      | 125/398 [00:00<00:00, 1229.97it/s]Loading weights:  62%|██████▏   | 248/398 [00:00<00:00, 1198.21it/s]Loading weights:  92%|█████████▏| 368/398 [00:00<00:00, 1119.30it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1155.73it/s]
+[2026-07-28 22:26:12] smoke: 4B Question Query train shard 1/1
+[2026-07-28 22:26:14] smoke: 4B Question Query validation shard 1/1
+[2026-07-28 22:26:16] smoke: 4B Question Query test shard 1/1
+[2026-07-28 22:26:18] stage completed: smoke_question_queries
+[2026-07-28 22:26:18] stage started: smoke_writer_warmup
+[2026-07-28 22:26:26] smoke: full-depth Writer warm-up epoch completed
+[2026-07-28 22:26:28] stage completed: smoke_writer_warmup
+[2026-07-28 22:26:28] stage started: smoke_writer_functional
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  11%|█         | 42/398 [00:00<00:00, 403.15it/s]Loading weights:  21%|██        | 83/398 [00:00<00:00, 382.97it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 349.67it/s]Loading weights:  41%|████      | 163/398 [00:00<00:00, 350.21it/s]Loading weights:  51%|█████     | 202/398 [00:00<00:00, 360.34it/s]Loading weights:  73%|███████▎  | 289/398 [00:00<00:00, 520.10it/s]Loading weights:  92%|█████████▏| 367/398 [00:00<00:00, 595.09it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 487.50it/s]
+[2026-07-28 22:26:46] smoke: frozen-Reader Writer registration epoch 1/1
+[2026-07-28 22:26:48] stage completed: smoke_writer_functional
+[2026-07-28 22:26:48] stage started: smoke_evaluation
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 126/398 [00:00<00:00, 1240.46it/s]Loading weights:  63%|██████▎   | 251/398 [00:00<00:00, 1155.88it/s]Loading weights:  92%|█████████▏| 367/398 [00:00<00:00, 1089.39it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 715.08it/s] 
+[2026-07-28 22:26:59] smoke: evaluating question_only
+[2026-07-28 22:27:13] smoke: evaluating supporting_text
+[2026-07-28 22:27:29] smoke: evaluating native_4b
+[2026-07-28 22:27:44] smoke: evaluating native_4b_shuffled
+[2026-07-28 22:28:00] smoke: evaluating raw_native_8b
+[2026-07-28 22:28:16] smoke: evaluating writer_8b_correct
+[2026-07-28 22:28:31] smoke: evaluating writer_8b_shuffled
+[2026-07-28 22:28:47] smoke: evaluating writer_8b_zero
+[2026-07-28 22:29:03] smoke: full-depth anchor evaluation completed
+[2026-07-28 22:29:04] stage completed: smoke_evaluation
+[2026-07-28 22:29:04] Full-depth anchor smoke passed; formal pipeline authorized
+[2026-07-28 22:29:04] stage started: formal_reference
+[2026-07-28 22:29:10] formal: exact R0/R1 sample and position reference prepared
+[2026-07-28 22:29:11] stage completed: formal_reference
+[2026-07-28 22:29:11] stage started: formal_question_queries
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   4%|▍         | 15/398 [00:00<00:03, 109.94it/s]Loading weights:  34%|███▍      | 136/398 [00:00<00:00, 642.77it/s]Loading weights:  52%|█████▏    | 206/398 [00:00<00:00, 615.74it/s]Loading weights:  68%|██████▊   | 271/398 [00:00<00:00, 534.38it/s]Loading weights:  95%|█████████▍| 377/398 [00:00<00:00, 679.85it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 437.55it/s]
+[2026-07-28 22:29:41] formal: 4B Question Query train shard 1/32
+[2026-07-28 22:29:57] formal: 4B Question Query train shard 2/32
+[2026-07-28 22:30:16] formal: 4B Question Query train shard 3/32
+[2026-07-28 22:30:50] formal: 4B Question Query train shard 4/32
+[2026-07-28 22:31:31] formal: 4B Question Query train shard 5/32
+[2026-07-28 22:32:10] formal: 4B Question Query train shard 6/32
+[2026-07-28 22:32:52] formal: 4B Question Query train shard 7/32
+[2026-07-28 22:33:36] formal: 4B Question Query train shard 8/32
+[2026-07-28 22:34:21] formal: 4B Question Query train shard 9/32
+[2026-07-28 22:35:00] formal: 4B Question Query train shard 10/32
+[2026-07-28 22:35:47] formal: 4B Question Query train shard 11/32
+[2026-07-28 22:36:29] formal: 4B Question Query train shard 12/32
+[2026-07-28 22:37:09] formal: 4B Question Query train shard 13/32
+[2026-07-28 22:37:53] formal: 4B Question Query train shard 14/32
+[2026-07-28 22:38:35] formal: 4B Question Query train shard 15/32
+[2026-07-28 22:39:21] formal: 4B Question Query train shard 16/32
+[2026-07-28 22:40:02] formal: 4B Question Query train shard 17/32
+[2026-07-28 22:40:45] formal: 4B Question Query train shard 18/32
+[2026-07-28 22:41:28] formal: 4B Question Query train shard 19/32
+[2026-07-28 22:42:08] formal: 4B Question Query train shard 20/32
+[2026-07-28 22:42:50] formal: 4B Question Query train shard 21/32
+[2026-07-28 22:43:31] formal: 4B Question Query train shard 22/32
+[2026-07-28 22:44:19] formal: 4B Question Query train shard 23/32
+[2026-07-28 22:45:05] formal: 4B Question Query train shard 24/32
+[2026-07-28 22:45:49] formal: 4B Question Query train shard 25/32
+[2026-07-28 22:46:26] formal: 4B Question Query train shard 26/32
+[2026-07-28 22:47:06] formal: 4B Question Query train shard 27/32
+[2026-07-28 22:47:45] formal: 4B Question Query train shard 28/32
+[2026-07-28 22:48:24] formal: 4B Question Query train shard 29/32
+[2026-07-28 22:49:05] formal: 4B Question Query train shard 30/32
+[2026-07-28 22:49:44] formal: 4B Question Query train shard 31/32
+[2026-07-28 22:50:22] formal: 4B Question Query train shard 32/32
+[2026-07-28 22:50:59] formal: 4B Question Query validation shard 1/4
+[2026-07-28 22:51:36] formal: 4B Question Query validation shard 2/4
+[2026-07-28 22:52:18] formal: 4B Question Query validation shard 3/4
+[2026-07-28 22:53:02] formal: 4B Question Query validation shard 4/4
+[2026-07-28 22:53:42] formal: 4B Question Query test shard 1/4
+[2026-07-28 22:54:18] formal: 4B Question Query test shard 2/4
+[2026-07-28 22:55:04] formal: 4B Question Query test shard 3/4
+[2026-07-28 22:55:39] formal: 4B Question Query test shard 4/4
+[2026-07-28 22:55:40] stage completed: formal_question_queries
+[2026-07-28 22:55:40] stage started: formal_writer_warmup
+[2026-07-28 23:03:58] formal: full-depth Writer warm-up epoch completed
+[2026-07-28 23:04:00] stage completed: formal_writer_warmup
+[2026-07-28 23:04:00] stage started: formal_writer_functional
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 130/398 [00:00<00:00, 1289.58it/s]Loading weights:  65%|██████▌   | 259/398 [00:00<00:00, 1136.19it/s]Loading weights:  94%|█████████▍| 374/398 [00:00<00:00, 1095.84it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1138.39it/s]
+[2026-07-28 23:22:40] formal: frozen-Reader Writer registration epoch 1/2
+[2026-07-28 23:40:48] formal: frozen-Reader Writer registration epoch 2/2
+[2026-07-28 23:40:50] stage completed: formal_writer_functional
+[2026-07-28 23:40:50] stage started: formal_evaluation
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  30%|███       | 121/398 [00:00<00:00, 1199.25it/s]Loading weights:  62%|██████▏   | 245/398 [00:00<00:00, 1190.66it/s]Loading weights:  92%|█████████▏| 365/398 [00:00<00:00, 1180.80it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1173.43it/s]
+[2026-07-28 23:41:00] formal: evaluating question_only
+[2026-07-28 23:47:31] formal: evaluating supporting_text
+[2026-07-28 23:59:15] formal: evaluating native_4b
+[2026-07-29 00:02:42] formal: evaluating native_4b_shuffled
+[2026-07-29 00:06:19] formal: evaluating raw_native_8b
+[2026-07-29 00:09:41] formal: evaluating writer_8b_correct
+[2026-07-29 00:13:16] formal: evaluating writer_8b_shuffled
+[2026-07-29 00:17:30] formal: evaluating writer_8b_zero
+[2026-07-29 00:18:22] formal: full-depth anchor evaluation completed
+[2026-07-29 00:18:24] stage completed: formal_evaluation
+[2026-07-29 00:18:24] Full-depth anchor pipeline completed
+[2026-07-29 00:18:24] Full-depth anchor pipeline finished
