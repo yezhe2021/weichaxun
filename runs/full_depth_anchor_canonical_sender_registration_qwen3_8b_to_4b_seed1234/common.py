@@ -123,15 +123,15 @@ def structure_check(cfg):
     ] != report["8b"]["rope_scaling"]:
         raise RuntimeError("RoPE configurations differ")
     for mode in ("smoke", "formal"):
-        checkpoint = Path(cfg["r0_dir"]) / "artifacts" / mode / "lora_self" / "best.pt"
+        checkpoint = Path(cfg["r1_dir"]) / "artifacts" / mode / "sparse_reader" / "best.pt"
         if not checkpoint.exists():
-            raise RuntimeError(f"R0 LoRA_self missing: {checkpoint}")
-        report[f"r0_lora_self_{mode}"] = str(checkpoint)
+            raise RuntimeError(f"R1 sparse Reader missing: {checkpoint}")
+        report[f"r1_sparse_reader_{mode}"] = str(checkpoint)
     report["canonical_v1"] = "Qwen3-4B 36-layer selected pre-RoPE K/native V"
     report["writer_4b"] = "identity"
     report["reader_frozen"] = True
     save_json(Path(cfg["work_dir"]) / "artifacts" / "structure_check.json", report)
-    progress("Anchor protocol, RoPE, and frozen R0 Reader checks passed")
+    progress("Anchor protocol, RoPE, and frozen R1 sparse Reader checks passed")
 
 
 def prepare_reference(cfg, mode):
@@ -282,8 +282,8 @@ class ResidualMLP(nn.Module):
     def __init__(self, dim, hidden, gamma):
         super().__init__()
         self.norm = nn.RMSNorm(dim)
-        self.fc1 = nn.Linear(dim, hidden)
-        self.fc2 = nn.Linear(hidden, dim)
+        self.fc1 = nn.Linear(dim, hidden, bias=False)
+        self.fc2 = nn.Linear(hidden, dim, bias=False)
         self.gamma = nn.Parameter(torch.tensor(float(gamma), dtype=torch.float32))
 
     def forward(self, x):
@@ -296,12 +296,12 @@ class ResidualMLP(nn.Module):
         hidden = F.linear(
             normalized,
             self.fc1.weight.to(x.dtype),
-            self.fc1.bias.to(x.dtype),
+            None,
         )
         residual = F.linear(
             F.silu(hidden),
             self.fc2.weight.to(x.dtype),
-            self.fc2.bias.to(x.dtype),
+            None,
         )
         return x + self.gamma.to(x.dtype) * residual
 
@@ -462,7 +462,7 @@ class LoRALinear(nn.Module):
         return output
 
 
-def frozen_r0_reader(cfg, mode):
+def frozen_sparse_reader(cfg, mode):
     model = load_model(cfg["model_4b"])
     device = require_cuda()
     for layer in model.model.layers:
@@ -473,7 +473,7 @@ def frozen_r0_reader(cfg, mode):
                 LoRALinear(getattr(layer.self_attn, name)).to(device),
             )
     checkpoint = torch.load(
-        Path(cfg["r0_dir"]) / "artifacts" / mode / "lora_self" / "best.pt",
+        Path(cfg["r1_dir"]) / "artifacts" / mode / "sparse_reader" / "best.pt",
         map_location="cpu",
         weights_only=False,
     )
@@ -686,7 +686,7 @@ def train_functional(cfg, mode):
     rows = manifest(cfg, mode)
     store = AssetStore(cfg, mode, rows)
     tok = tokenizer(cfg["model_4b"])
-    reader = frozen_r0_reader(cfg, mode)
+    reader = frozen_sparse_reader(cfg, mode)
     writer = FullDepthWriter8B(cfg).to(require_cuda())
     warmup = torch.load(
         Path(cfg["work_dir"]) / "artifacts" / mode / "warmup" / "final.pt",
@@ -890,6 +890,141 @@ def pairwise_rows(cfg, mode):
     return rows
 
 
+def r1_reference_rows(cfg, mode):
+    path = (
+        Path(cfg["r1_dir"])
+        / "artifacts"
+        / mode
+        / "evaluation"
+        / "per_condition.jsonl"
+    )
+    wanted = {
+        "native_4b_sparse_correct",
+        "cross_8b_raw_native_correct",
+    }
+    rows = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        row = json.loads(line)
+        if row["condition"] in wanted:
+            rows[(row["condition"], row["sample_id"])] = row
+    return rows
+
+
+@torch.no_grad()
+def verify_reader_protocol(cfg, mode):
+    """Hard Gate: no Writer is instantiated or trained in this function."""
+    seed_all(cfg["seed"])
+    rows = manifest(cfg, mode)
+    store = AssetStore(cfg, mode, rows)
+    tok = tokenizer(cfg["model_4b"])
+    reader = frozen_sparse_reader(cfg, mode)
+    set_lora(reader, True)
+    references = r1_reference_rows(cfg, mode)
+    conditions = [
+        ("native_4b_sparse_correct", "4b"),
+        ("cross_8b_raw_native_correct", "8b"),
+    ]
+    report = {
+        "reader_checkpoint": str(
+            Path(cfg["r1_dir"])
+            / "artifacts"
+            / mode
+            / "sparse_reader"
+            / "best.pt"
+        ),
+        "writer_instantiated": False,
+        "writer_trained": False,
+        "conditions": {},
+    }
+    outputs = []
+    for condition, sender in conditions:
+        progress(f"{mode}: Reader protocol Gate evaluating {condition}")
+        matches, em_values, nll_values, reference_nll = [], [], [], []
+        for sample in rows["test"]:
+            key, value, mask = raw_memory(
+                store, "test", sender, sample, "correct"
+            )
+            key, value = key.to(require_cuda()), value.to(require_cuda())
+            with torch.autocast("cuda", dtype=torch.float16):
+                prediction = greedy_generate(
+                    cfg, reader, tok, sample, key, value, mask
+                )
+                nll = answer_loss(
+                    cfg, reader, tok, sample, key, value, mask
+                ).item()
+            reference = references[(condition, sample["id"])]
+            matches.append(prediction == reference["prediction"])
+            em = float(
+                normalize_answer(prediction)
+                == normalize_answer(sample["answer"])
+            )
+            em_values.append(em)
+            nll_values.append(nll)
+            reference_nll.append(reference["gold_answer_nll"])
+            outputs.append(
+                {
+                    "condition": condition,
+                    "sample_id": sample["id"],
+                    "prediction": prediction,
+                    "reference_prediction": reference["prediction"],
+                    "prediction_identical": prediction == reference["prediction"],
+                    "em": em,
+                    "gold_answer_nll": nll,
+                    "reference_gold_answer_nll": reference["gold_answer_nll"],
+                }
+            )
+        current_em = sum(em_values) / len(em_values)
+        reference_em = sum(
+            references[(condition, sample["id"])]["strict_semantic_accuracy"]
+            for sample in rows["test"]
+        ) / len(rows["test"])
+        current_nll = sum(nll_values) / len(nll_values)
+        expected_nll = sum(reference_nll) / len(reference_nll)
+        condition_report = {
+            "em": current_em,
+            "r1_reference_em": reference_em,
+            "em_absolute_delta": abs(current_em - reference_em),
+            "gold_answer_nll": current_nll,
+            "r1_reference_gold_answer_nll": expected_nll,
+            "nll_absolute_delta": abs(current_nll - expected_nll),
+            "all_generations_identical": all(matches),
+        }
+        report["conditions"][condition] = condition_report
+        if (
+            not condition_report["all_generations_identical"]
+            or condition_report["em_absolute_delta"] > 1e-12
+            or condition_report["nll_absolute_delta"] > 1e-4
+        ):
+            save_json(
+                Path(cfg["work_dir"])
+                / "artifacts"
+                / mode
+                / "reader_protocol_gate"
+                / "report.json",
+                report,
+            )
+            raise RuntimeError(
+                f"{condition} failed exact R1 sparse-interface reproduction: "
+                f"{condition_report}"
+            )
+    report["passed"] = True
+    output = (
+        Path(cfg["work_dir"])
+        / "artifacts"
+        / mode
+        / "reader_protocol_gate"
+    )
+    save_json(output / "report.json", report)
+    save_json(output / "per_sample.json", outputs)
+    progress(
+        f"{mode}: frozen R1 sparse Reader Gate passed; "
+        f"4B EM={report['conditions']['native_4b_sparse_correct']['em']:.4f}, "
+        f"8B raw EM={report['conditions']['cross_8b_raw_native_correct']['em']:.4f}"
+    )
+    del reader
+    empty_cuda()
+
+
 FINAL_CONDITIONS = [
     {"key": "question_only", "lora": False, "memory": None, "compact": True},
     {"key": "supporting_text", "lora": False, "memory": None, "text": True},
@@ -908,7 +1043,7 @@ def evaluate(cfg, mode):
     rows = manifest(cfg, mode)
     store = AssetStore(cfg, mode, rows)
     tok = tokenizer(cfg["model_4b"])
-    reader = frozen_r0_reader(cfg, mode)
+    reader = frozen_sparse_reader(cfg, mode)
     writer = FullDepthWriter8B(cfg).to(require_cuda()).eval()
     state = torch.load(
         Path(cfg["work_dir"]) / "artifacts" / mode / "functional" / "best.pt",
@@ -940,6 +1075,9 @@ def evaluate(cfg, mode):
                     key, value = writer(
                         key.to(require_cuda()), value.to(require_cuda())
                     )
+                    if kind == "zero":
+                        key = torch.zeros_like(key)
+                        value = torch.zeros_like(value)
                 else:
                     key, value, mask = raw_memory(
                         store, "test", sender, sample, kind
@@ -1151,6 +1289,10 @@ def cpu_selftest(cfg):
     assert torch.allclose(
         writer.head_k.detach(), torch.eye(2).unsqueeze(0).repeat(4, 1, 1)
     )
+    zero = torch.zeros_like(key)
+    zero_k, zero_v = writer(zero, zero)
+    assert torch.count_nonzero(zero_k).item() == 0
+    assert torch.count_nonzero(zero_v).item() == 0
     progress("Full-depth Writer CPU self-test passed")
 
 
@@ -1195,3 +1337,9 @@ def cli_evaluate():
     args = common_parser().parse_args()
     cfg = load_json(args.config)
     evaluate(cfg, args.mode)
+
+
+def cli_verify():
+    args = common_parser().parse_args()
+    cfg = load_json(args.config)
+    verify_reader_protocol(cfg, args.mode)

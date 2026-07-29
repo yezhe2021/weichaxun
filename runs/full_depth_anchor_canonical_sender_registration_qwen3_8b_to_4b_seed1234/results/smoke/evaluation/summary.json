@@ -18,42 +18,42 @@
     "token_f1": 0.018518518518518517,
     "strict_semantic_accuracy": 0.0,
     "loose_semantic_accuracy": 0.25,
-    "gold_answer_nll": 12.78933334350586
+    "gold_answer_nll": 12.817025661468506
   },
   "native_4b_shuffled": {
     "em": 0.0,
     "token_f1": 0.0,
     "strict_semantic_accuracy": 0.0,
     "loose_semantic_accuracy": 0.0,
-    "gold_answer_nll": 14.488026142120361
+    "gold_answer_nll": 14.535197019577026
   },
   "raw_native_8b": {
     "em": 0.0,
     "token_f1": 0.0,
     "strict_semantic_accuracy": 0.0,
     "loose_semantic_accuracy": 0.0,
-    "gold_answer_nll": 15.080855131149292
+    "gold_answer_nll": 15.063908815383911
   },
   "writer_8b_correct": {
     "em": 0.0,
     "token_f1": 0.0,
     "strict_semantic_accuracy": 0.0,
     "loose_semantic_accuracy": 0.0,
-    "gold_answer_nll": 15.537081241607666
+    "gold_answer_nll": 14.98486590385437
   },
   "writer_8b_shuffled": {
     "em": 0.0,
     "token_f1": 0.028571428571428574,
     "strict_semantic_accuracy": 0.0,
     "loose_semantic_accuracy": 0.25,
-    "gold_answer_nll": 17.74854803085327
+    "gold_answer_nll": 16.595332384109497
   },
   "writer_8b_zero": {
     "em": 0.0,
-    "token_f1": 0.019607843137254898,
+    "token_f1": 0.02040816326530612,
     "strict_semantic_accuracy": 0.0,
     "loose_semantic_accuracy": 0.25,
-    "gold_answer_nll": 15.281421661376953
+    "gold_answer_nll": 15.179804563522339
   },
   "pair_reader_8b": {
     "em": 0.0,
@@ -71,6 +71,6 @@
     "writer_gain": 0.0,
     "retention_pair": null,
     "writer_correct_minus_shuffled": 0.0,
-    "writer_correct_minus_shuffled_nll_advantage": 2.2114667892456055
+    "writer_correct_minus_shuffled_nll_advantage": 1.610466480255127
   }
 }

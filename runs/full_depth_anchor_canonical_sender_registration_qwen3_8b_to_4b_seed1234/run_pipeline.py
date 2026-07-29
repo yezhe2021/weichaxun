@@ -64,6 +64,12 @@ def main():
             "queries",
         )
         run(
+            f"{mode}_reader_protocol_gate",
+            "verify_reader_protocol.py",
+            "--mode",
+            mode,
+        )
+        run(
             f"{mode}_writer_warmup",
             "train_writer_warmup.py",
             "--mode",
