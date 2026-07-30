@@ -1,0 +1,461 @@
+sample_id,type,condition,answer,prediction,em,token_f1,nll,manual_c_p_w
+5a7b40cd5542995eb53be8d4,comparison,question_only,Golf Digest,"To determine which magazine has been around longer, Guitar World or Golf Digest, we need to look at their founding dates. Guitar World was first published in 1977, while Golf Digest was established in 1945. Comparing these two dates, Golf Digest was founded earlier than Guitar World. Therefore",0.0,0.07999999999999999,12.727783203125,
+5aba749055429901930fa7d8,comparison,question_only,director,"Both Chris Menges and Aram Avakian are musicians. Chris Menges is known for his work as a composer and musician, particularly in the realm of electronic music and film scores. Aram Avakian, on the other hand, is a renowned record producer and engineer, known for his work with various artists",0.0,0.0,26.231399536132812,
+5ab615cf554299488d4d9aa3,bridge,question_only,our greatest comedienne,"The answer is ""Desi Arnaz.""
+
+But wait, the question is about Dawn Lake describing the star of ""I Love Lucy"" as what. Let me think again. Dawn Lake is a person, but I'm not sure about her connection to ""I Love Lucy."" Maybe it's a trick question or a reference",0.0,0.0,12.088297843933105,
+5a8b42be55429949d91db515,comparison,question_only,novelist,"Both are authors.
+Okay, so I need to figure out what profession John Lanchester and Alan Dean Foster have in common. Let me start by recalling what I know about these two authors.
+
+First, John Lanchester. I remember he's a British author, right? He's written novels, maybe some non",0.0,0.0,18.193235397338867,
+5a7b40cd5542995eb53be8d4,comparison,supporting_text,Golf Digest,"Guitar World has been around longer than Golf Digest. Guitar World was first published in July 1980, while Golf Digest was first published in 1950.
+
+Step-by-Step Explanation:
+1. Identify the publication years for both magazines.
+   - Guitar World: According to the document, Guitar World",0.0,0.09302325581395349,11.486193656921387,
+5aba749055429901930fa7d8,comparison,supporting_text,director,Both Chris Menges and Aram Avakian are film directors.,0.0,0.0,17.225852966308594,
+5ab615cf554299488d4d9aa3,bridge,supporting_text,our greatest comedienne,"The answer is ""Lucille Ball"". The question asks what Dawn Lake described the star of ""I Love Lucy"" as. From the document about Dawn Lake, Sentence 1 states that Bert Newton described her as ""our greatest comedienne - Australia's Lucille Ball"". However, this is a description of Dawn Lake herself",0.0,0.1276595744680851,9.455886840820312,
+5a8b42be55429949d91db515,comparison,supporting_text,novelist,Both John Lanchester and Alan Dean Foster are authors.,0.0,0.0,17.494140625,
+5a7b40cd5542995eb53be8d4,comparison,native4_correct,Golf Digest,"Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been",0.0,0.07407407407407407,8.62838077545166,
+5aba749055429901930fa7d8,comparison,native4_correct,director,Chris Menges and Aram Avokianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianian,0.0,0.0,17.9560489654541,
+5ab615cf554299488d4d9aa3,bridge,native4_correct,our greatest comedienne,"Dawn Lake described the star of ""I Love Lucy"" as what?
+
+Answer: Dawn Lake described the star of ""I Love Lucy"" as what?
+
+Answer: Dawn Lake described the star of ""I Love Lucy"" as what?
+
+Answer: Dawn Lake described the star of ""I Love Lucy"" as what?
+
+Answer:",0.0,0.0,9.291932106018066,
+5a8b42be55429949d91db515,comparison,native4_correct,novelist,"The profession does John Lanchester and Alan Dean Foster have in common is the author of fantasy and science fiction.
+
+Answer: The profession does John Lanchester and Alan Dean Foster have in common is the author of fantasy and science fiction.
+
+Answer: The profession does John Lanchester and Alan Dean Foster have in common",0.0,0.0,15.391740798950195,
+5a7b40cd5542995eb53be8d4,comparison,native4_shuffled,Golf Digest,Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy Lucy,0.0,0.0,17.73444175720215,
+5aba749055429901930fa7d8,comparison,native4_shuffled,director,"What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer:",0.0,0.0,16.918441772460938,
+5ab615cf554299488d4d9aa3,bridge,native4_shuffled,our greatest comedienne,"Dawn Lake described the star of ""I Love Lucy"" as what?
+
+Answer: Dawn Lake described the star of ""I Love Lucy"" as what?
+
+Answer: Dawn Lake described the star of ""I Love Lucy"" as what?
+
+Answer: Dawn Lake described the star of ""I Love Lucy"" as what?
+
+Answer:",0.0,0.0,15.853830337524414,
+5a8b42be55429949d91db515,comparison,native4_shuffled,novelist,The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The Answer: The,0.0,0.0,13.843876838684082,
+5a7b40cd5542995eb53be8d4,comparison,native4_zero,Golf Digest,"Guitar World has been around longer than Golf Digest.
+
+Explanation: Guitar World was first published in 1969, while Golf Digest was first published in 1969 as well. However, Guitar World has had a more consistent publication schedule and has been published more frequently over the years. Additionally, Guitar World",0.0,0.08163265306122448,13.596491813659668,
+5aba749055429901930fa7d8,comparison,native4_zero,director,"Both Chris Menges and Aram Avakian are musicians.
+
+**Reasoning**: Chris Menges is a composer and musician known for his work in the 1960s, particularly with the band The Association. Aram Avakian is a producer and musician, famous for his work with The Doors and",0.0,0.0,19.742223739624023,
+5ab615cf554299488d4d9aa3,bridge,native4_zero,our greatest comedienne,"The star of ""I Love Lucy"" was Lucille Ball, and she was known for her comedic acting and her role as the titular character in the show.
+
+Wait, but the question is about Dawn Lake describing the star of ""I Love Lucy"" as what? So maybe the answer is that Dawn Lake described the star",0.0,0.0,11.414072036743164,
+5a8b42be55429949d91db515,comparison,native4_zero,novelist,"Both are authors.
+
+But wait, I need to check if that's correct. Let me think again. John Lanchester is a British author known for novels like ""Bull"" and ""The Debt."" Alan Dean Foster is an American author who has written science fiction and fantasy novels, including ""The City and the",0.0,0.0,15.9664306640625,
+5a7b40cd5542995eb53be8d4,comparison,raw8_correct,Golf Digest,"Answer: 2
+
+Answer: 2
+
+Answer: 2
+
+Answer: 2
+
+Answer: 2
+
+Answer: 2
+
+Answer: 2
+
+Answer: 2
+
+Answer: 2
+
+Answer: 2
+
+Answer: 2
+
+Answer: 2
+
+Answer:",0.0,0.0,12.898246765136719,
+5aba749055429901930fa7d8,comparison,raw8_correct,director,"The The The The The The The The The The The The The The The The The The The The The The The The The
+The
+
+Answer: The The The The The The The The The The The The The The The The The
+The
+
+Answer: The The The The The The The The The The The The",0.0,0.0,21.240394592285156,
+5ab615cf554299488d4d9aa3,bridge,raw8_correct,our greatest comedienne,Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn,0.0,0.0,10.089011192321777,
+5a8b42be55429949d91db515,comparison,raw8_correct,novelist,Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer:,0.0,0.0,16.027982711791992,
+5a7b40cd5542995eb53be8d4,comparison,raw8_shuffled,Golf Digest,,0.0,0.0,8.149209022521973,
+5aba749055429901930fa7d8,comparison,raw8_shuffled,director,The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The,0.0,0.0,19.14229965209961,
+5ab615cf554299488d4d9aa3,bridge,raw8_shuffled,our greatest comedienne,"""I Love Lucy"" as what? as what? as what? as what? as what? as what? as what? as what? as what? as what? as what? as what? as what? as what? as what? as what? as what? as what? as what? as what",0.0,0.0,15.787656784057617,
+5a8b42be55429949d91db515,comparison,raw8_shuffled,novelist,"...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...
+
+Answer: ...",0.0,0.0,20.701251983642578,
+5a7b40cd5542995eb53be8d4,comparison,reader_off,Golf Digest,"To determine which magazine has been around longer, Guitar World or Golf Digest, we need to look at their founding dates. Guitar World was first published in 1977, while Golf Digest was established in 1945. Comparing these two dates, Golf Digest was founded earlier than Guitar World. Therefore",0.0,0.07999999999999999,12.727783203125,
+5aba749055429901930fa7d8,comparison,reader_off,director,"Both Chris Menges and Aram Avakian are musicians. Chris Menges is known for his work as a composer and musician, particularly in the realm of electronic music and film scores. Aram Avakian, on the other hand, is a renowned record producer and engineer, known for his work with various artists",0.0,0.0,26.231399536132812,
+5ab615cf554299488d4d9aa3,bridge,reader_off,our greatest comedienne,"The answer is ""Desi Arnaz.""
+
+But wait, the question is about Dawn Lake describing the star of ""I Love Lucy"" as what. Let me think again. Dawn Lake is a person, but I'm not sure about her connection to ""I Love Lucy."" Maybe it's a trick question or a reference",0.0,0.0,12.088297843933105,
+5a8b42be55429949d91db515,comparison,reader_off,novelist,"Both are authors.
+Okay, so I need to figure out what profession John Lanchester and Alan Dean Foster have in common. Let me start by recalling what I know about these two authors.
+
+First, John Lanchester. I remember he's a British author, right? He's written novels, maybe some non",0.0,0.0,18.193235397338867,
+5a7b40cd5542995eb53be8d4,comparison,writer_linear_correct,Golf Digest,"Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been",0.0,0.07407407407407407,7.76841402053833,
+5aba749055429901930fa7d8,comparison,writer_linear_correct,director,"What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer:",0.0,0.0,18.30624771118164,
+5ab615cf554299488d4d9aa3,bridge,writer_linear_correct,our greatest comedienne,Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn,0.0,0.0,10.447155952453613,
+5a8b42be55429949d91db515,comparison,writer_linear_correct,novelist,Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer:,0.0,0.0,14.907140731811523,
+5a7b40cd5542995eb53be8d4,comparison,writer_linear_shuffled,Golf Digest,"Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Question: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been",0.0,0.07407407407407407,9.65102481842041,
+5aba749055429901930fa7d8,comparison,writer_linear_shuffled,director,"The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer:",0.0,0.0,18.18460464477539,
+5ab615cf554299488d4d9aa3,bridge,writer_linear_shuffled,our greatest comedienne,"What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer:",0.0,0.0,17.65639877319336,
+5a8b42be55429949d91db515,comparison,writer_linear_shuffled,novelist,Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer:,0.0,0.0,16.155752182006836,
+5a7b40cd5542995eb53be8d4,comparison,writer_linear_zero,Golf Digest,"Guitar World has been around longer than Golf Digest.
+
+Explanation: Guitar World was first published in 1969, while Golf Digest was first published in 1969 as well. However, Guitar World has had a more consistent publication schedule and has been published more frequently over the years. Additionally, Guitar World",0.0,0.08163265306122448,13.596491813659668,
+5aba749055429901930fa7d8,comparison,writer_linear_zero,director,"Both Chris Menges and Aram Avakian are musicians.
+
+**Reasoning**: Chris Menges is a composer and musician known for his work in the 1960s, particularly with the band The Association. Aram Avakian is a producer and musician, famous for his work with The Doors and",0.0,0.0,19.742223739624023,
+5ab615cf554299488d4d9aa3,bridge,writer_linear_zero,our greatest comedienne,"The star of ""I Love Lucy"" was Lucille Ball, and she was known for her comedic acting and her role as the titular character in the show.
+
+Wait, but the question is about Dawn Lake describing the star of ""I Love Lucy"" as what? So maybe the answer is that Dawn Lake described the star",0.0,0.0,11.414072036743164,
+5a8b42be55429949d91db515,comparison,writer_linear_zero,novelist,"Both are authors.
+
+But wait, I need to check if that's correct. Let me think again. John Lanchester is a British author known for novels like ""Bull"" and ""The Debt."" Alan Dean Foster is an American author who has written science fiction and fantasy novels, including ""The City and the",0.0,0.0,15.9664306640625,
+5a7b40cd5542995eb53be8d4,comparison,writer_mlp_correct,Golf Digest,"Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been",0.0,0.07407407407407407,7.5635809898376465,
+5aba749055429901930fa7d8,comparison,writer_mlp_correct,director,"What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer:",0.0,0.0,18.141082763671875,
+5ab615cf554299488d4d9aa3,bridge,writer_mlp_correct,our greatest comedienne,Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn,0.0,0.0,10.225543022155762,
+5a8b42be55429949d91db515,comparison,writer_mlp_correct,novelist,Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer:,0.0,0.0,14.849798202514648,
+5a7b40cd5542995eb53be8d4,comparison,writer_mlp_shuffled,Golf Digest,"Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Question: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been",0.0,0.07407407407407407,9.615450859069824,
+5aba749055429901930fa7d8,comparison,writer_mlp_shuffled,director,"The monthly golf magazine published by Cond Nast Publications in the United States.
+
+Answer: The monthly golf magazine published by Cond Nast Publications in the United States.
+
+Answer: The monthly golf magazine published by Cond Nast Publications in the United States.
+
+Answer: The monthly golf magazine published by Cond Nast Publications in the United",0.0,0.0,18.4962215423584,
+5ab615cf554299488d4d9aa3,bridge,writer_mlp_shuffled,our greatest comedienne,"What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer:",0.0,0.0,17.699188232421875,
+5a8b42be55429949d91db515,comparison,writer_mlp_shuffled,novelist,Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer:,0.0,0.0,16.14441680908203,
+5a7b40cd5542995eb53be8d4,comparison,writer_mlp_zero,Golf Digest,"Guitar World has been around longer than Golf Digest.
+
+Explanation: Guitar World was first published in 1969, while Golf Digest was first published in 1969 as well. However, Guitar World has had a more consistent publication schedule and has been published more frequently over the years. Additionally, Guitar World",0.0,0.08163265306122448,13.596491813659668,
+5aba749055429901930fa7d8,comparison,writer_mlp_zero,director,"Both Chris Menges and Aram Avakian are musicians.
+
+**Reasoning**: Chris Menges is a composer and musician known for his work in the 1960s, particularly with the band The Association. Aram Avakian is a producer and musician, famous for his work with The Doors and",0.0,0.0,19.742223739624023,
+5ab615cf554299488d4d9aa3,bridge,writer_mlp_zero,our greatest comedienne,"The star of ""I Love Lucy"" was Lucille Ball, and she was known for her comedic acting and her role as the titular character in the show.
+
+Wait, but the question is about Dawn Lake describing the star of ""I Love Lucy"" as what? So maybe the answer is that Dawn Lake described the star",0.0,0.0,11.414072036743164,
+5a8b42be55429949d91db515,comparison,writer_mlp_zero,novelist,"Both are authors.
+
+But wait, I need to check if that's correct. Let me think again. John Lanchester is a British author known for novels like ""Bull"" and ""The Debt."" Alan Dean Foster is an American author who has written science fiction and fantasy novels, including ""The City and the",0.0,0.0,15.9664306640625,
+5a7b40cd5542995eb53be8d4,comparison,writer_full_correct,Golf Digest,"Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been around longer, Golf Digest or Golf Digest?
+
+Answer: Which magazine has been",0.0,0.07407407407407407,7.562490463256836,
+5aba749055429901930fa7d8,comparison,writer_full_correct,director,"What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer:",0.0,0.0,18.127208709716797,
+5ab615cf554299488d4d9aa3,bridge,writer_full_correct,our greatest comedienne,Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn,0.0,0.0,10.172978401184082,
+5a8b42be55429949d91db515,comparison,writer_full_correct,novelist,Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer:,0.0,0.0,14.854877471923828,
+5a7b40cd5542995eb53be8d4,comparison,writer_full_shuffled,Golf Digest,"Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Question: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been",0.0,0.07407407407407407,9.549378395080566,
+5aba749055429901930fa7d8,comparison,writer_full_shuffled,director,"The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer: The
+
+Answer:",0.0,0.0,18.132076263427734,
+5ab615cf554299488d4d9aa3,bridge,writer_full_shuffled,our greatest comedienne,"What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer: What?
+
+Answer:",0.0,0.0,17.706701278686523,
+5a8b42be55429949d91db515,comparison,writer_full_shuffled,novelist,Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer:,0.0,0.0,16.135372161865234,
+5a7b40cd5542995eb53be8d4,comparison,writer_full_zero,Golf Digest,"Guitar World has been around longer than Golf Digest.
+
+Explanation: Guitar World was first published in 1969, while Golf Digest was first published in 1969 as well. However, Guitar World has had a more consistent publication schedule and has been published more frequently over the years. Additionally, Guitar World",0.0,0.08163265306122448,13.596491813659668,
+5aba749055429901930fa7d8,comparison,writer_full_zero,director,"Both Chris Menges and Aram Avakian are musicians.
+
+**Reasoning**: Chris Menges is a composer and musician known for his work in the 1960s, particularly with the band The Association. Aram Avakian is a producer and musician, famous for his work with The Doors and",0.0,0.0,19.742223739624023,
+5ab615cf554299488d4d9aa3,bridge,writer_full_zero,our greatest comedienne,"The star of ""I Love Lucy"" was Lucille Ball, and she was known for her comedic acting and her role as the titular character in the show.
+
+Wait, but the question is about Dawn Lake describing the star of ""I Love Lucy"" as what? So maybe the answer is that Dawn Lake described the star",0.0,0.0,11.414072036743164,
+5a8b42be55429949d91db515,comparison,writer_full_zero,novelist,"Both are authors.
+
+But wait, I need to check if that's correct. Let me think again. John Lanchester is a British author known for novels like ""Bull"" and ""The Debt."" Alan Dean Foster is an American author who has written science fiction and fantasy novels, including ""The City and the",0.0,0.0,15.9664306640625,
