@@ -1,0 +1,210 @@
+sample_id,type,condition,answer,prediction,em,token_f1,nll,manual_c_p_w
+5a7b40cd5542995eb53be8d4,comparison,question_only,Golf Digest,"To determine which magazine has been around longer, Guitar World or Golf Digest, we need to look at their founding dates. Guitar World was first published in 1977, while Golf Digest was established in 1945. Comparing these two dates, Golf Digest was founded earlier than Guitar World. Therefore",0.0,0.07999999999999999,12.727783203125,
+5aba749055429901930fa7d8,comparison,question_only,director,"Both Chris Menges and Aram Avakian are musicians. Chris Menges is known for his work as a composer and musician, particularly in the realm of electronic music and film scores. Aram Avakian, on the other hand, is a renowned record producer and engineer, known for his work with various artists",0.0,0.0,26.231399536132812,
+5a7b40cd5542995eb53be8d4,comparison,supporting_text,Golf Digest,"Guitar World has been around longer than Golf Digest. Guitar World was first published in July 1980, while Golf Digest was first published in 1950.
+
+Step-by-Step Explanation:
+1. Identify the publication years for both magazines.
+   - Guitar World: According to the document, Guitar World",0.0,0.09302325581395349,11.486193656921387,
+5aba749055429901930fa7d8,comparison,supporting_text,director,Both Chris Menges and Aram Avakian are film directors.,0.0,0.0,17.225852966308594,
+5a7b40cd5542995eb53be8d4,comparison,native4_correct,Golf Digest,"Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been around longer, Guitar World or Golf Digest?
+
+Answer: Which magazine has been",0.0,0.07407407407407407,8.62838077545166,
+5aba749055429901930fa7d8,comparison,native4_correct,director,Chris Menges and Aram Avokianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianian,0.0,0.0,17.9560489654541,
+5a7b40cd5542995eb53be8d4,comparison,native4_shuffled,Golf Digest,The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The The,0.0,0.0,9.161713600158691,
+5aba749055429901930fa7d8,comparison,native4_shuffled,director,"What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer: What occupation do Chris Menges and Aram Avakian share?
+
+Answer:",0.0,0.0,16.918441772460938,
+5a7b40cd5542995eb53be8d4,comparison,native4_zero,Golf Digest,"Guitar World has been around longer than Golf Digest.
+
+Explanation: Guitar World was first published in 1969, while Golf Digest was first published in 1969 as well. However, Guitar World has had a more consistent publication schedule and has been published more frequently over the years. Additionally, Guitar World",0.0,0.08163265306122448,13.596491813659668,
+5aba749055429901930fa7d8,comparison,native4_zero,director,"Both Chris Menges and Aram Avakian are musicians.
+
+**Reasoning**: Chris Menges is a composer and musician known for his work in the 1960s, particularly with the band The Association. Aram Avakian is a producer and musician, famous for his work with The Doors and",0.0,0.0,19.742223739624023,
+5a7b40cd5542995eb53be8d4,comparison,reader_off,Golf Digest,"To determine which magazine has been around longer, Guitar World or Golf Digest, we need to look at their founding dates. Guitar World was first published in 1977, while Golf Digest was established in 1945. Comparing these two dates, Golf Digest was founded earlier than Guitar World. Therefore",0.0,0.07999999999999999,12.727783203125,
+5aba749055429901930fa7d8,comparison,reader_off,director,"Both Chris Menges and Aram Avakian are musicians. Chris Menges is known for his work as a composer and musician, particularly in the realm of electronic music and film scores. Aram Avakian, on the other hand, is a renowned record producer and engineer, known for his work with various artists",0.0,0.0,26.231399536132812,
+5a7b40cd5542995eb53be8d4,comparison,q35_s0_correct,Golf Digest,"var
+ var
+
+
+
+ var var var var var var varvar the var var var var var var var var var var var var var var var var var var var由 var the var the show var var var var var var var var var var var var",0.0,0.0,15.324614524841309,
+5aba749055429901930fa7d8,comparison,q35_s0_correct,director,"一个 in的在在在在的的的：二一个 the向向明确.定定明确的便明确定定明确
+
+明确
+
+
+
+
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便",0.0,0.0,14.186883926391602,
+5a7b40cd5542995eb53be8d4,comparison,q35_s0_shuffled,Golf Digest,"问题的，定
+
+    保障定   
+
+定
+
+定
+定  定   定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定",0.0,0.0,16.81181526184082,
+5aba749055429901930fa7d8,comparison,q35_s0_shuffled,director,"函数儿
+函数
+函数奇儿儿函数儿
+一位的
+定
+
+
+
+ var
+ var
+ var
+
+var var
+var var var var var var var var var var var var var var var var var var var var var var var var var var var var var var var var var var",0.0,0.0,13.986675262451172,
+5a7b40cd5542995eb53be8d4,comparison,q35_s0_zero,Golf Digest,"Guitar World has been around longer than Golf Digest.
+
+Explanation: Guitar World was first published in 1969, while Golf Digest was first published in 1969 as well. However, Guitar World has had a more consistent publication schedule and has been published more frequently over the years. Additionally, Guitar World",0.0,0.08163265306122448,13.596491813659668,
+5aba749055429901930fa7d8,comparison,q35_s0_zero,director,"Both Chris Menges and Aram Avakian are musicians.
+
+**Reasoning**: Chris Menges is a composer and musician known for his work in the 1960s, particularly with the band The Association. Aram Avakian is a producer and musician, famous for his work with The Doors and",0.0,0.0,19.742223739624023,
+5a7b40cd5542995eb53be8d4,comparison,q35_s1_correct,Golf Digest,"var
+ var
+
+
+
+ var var var var var var varvar the var var var var var var var var var var var var var var var var var var var由 var the var the show var var var var var var var var var var var var",0.0,0.0,15.330509185791016,
+5aba749055429901930fa7d8,comparison,q35_s1_correct,director,"一个 in的在在在在的的的：二一个 the向向明确.定定明确的便明确定定明确
+
+明确
+
+
+
+
+
+
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便",0.0,0.0,14.186832427978516,
+5a7b40cd5542995eb53be8d4,comparison,q35_s1_shuffled,Golf Digest,"问题的，定
+
+    保障定   
+
+定
+
+定
+定  定   定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定",0.0,0.0,16.813627243041992,
+5aba749055429901930fa7d8,comparison,q35_s1_shuffled,director,"函数儿
+函数儿儿儿儿儿函数
+定
+定
+定儿
+
+
+ 儿儿儿儿
+
+
+
+儿
+儿
+儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿",0.0,0.0,13.981562614440918,
+5a7b40cd5542995eb53be8d4,comparison,q35_s1_zero,Golf Digest,"Guitar World has been around longer than Golf Digest.
+
+Explanation: Guitar World was first published in 1969, while Golf Digest was first published in 1969 as well. However, Guitar World has had a more consistent publication schedule and has been published more frequently over the years. Additionally, Guitar World",0.0,0.08163265306122448,13.596491813659668,
+5aba749055429901930fa7d8,comparison,q35_s1_zero,director,"Both Chris Menges and Aram Avakian are musicians.
+
+**Reasoning**: Chris Menges is a composer and musician known for his work in the 1960s, particularly with the band The Association. Aram Avakian is a producer and musician, famous for his work with The Doors and",0.0,0.0,19.742223739624023,
+5a7b40cd5542995eb53be8d4,comparison,q35_s2_correct,Golf Digest,"var
+ var
+
+
+
+ var var var var var var varvar the var var var var var var var var var var var var var var var var var var var the var the var the show var var var var var var var var var var var var",0.0,0.0,15.33225154876709,
+5aba749055429901930fa7d8,comparison,q35_s2_correct,director,"一个 in的在在在在的的的：二一个 the向向明确.定定明确的便明确定定明确
+
+明确
+
+
+
+
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便
+便",0.0,0.0,14.18617057800293,
+5a7b40cd5542995eb53be8d4,comparison,q35_s2_shuffled,Golf Digest,"问题的，定
+
+    保障定   
+
+定
+
+定
+定  定   定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定定",0.0,0.0,16.792930603027344,
+5aba749055429901930fa7d8,comparison,q35_s2_shuffled,director,"函数儿
+函数儿儿儿儿儿函数
+定
+定
+定儿
+
+
+ 儿儿儿儿
+
+
+
+儿
+儿
+儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿儿",0.0,0.0,13.977922439575195,
+5a7b40cd5542995eb53be8d4,comparison,q35_s2_zero,Golf Digest,"Guitar World has been around longer than Golf Digest.
+
+Explanation: Guitar World was first published in 1969, while Golf Digest was first published in 1969 as well. However, Guitar World has had a more consistent publication schedule and has been published more frequently over the years. Additionally, Guitar World",0.0,0.08163265306122448,13.596491813659668,
+5aba749055429901930fa7d8,comparison,q35_s2_zero,director,"Both Chris Menges and Aram Avakian are musicians.
+
+**Reasoning**: Chris Menges is a composer and musician known for his work in the 1960s, particularly with the band The Association. Aram Avakian is a producer and musician, famous for his work with The Doors and",0.0,0.0,19.742223739624023,
