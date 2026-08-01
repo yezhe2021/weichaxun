@@ -1,0 +1,106 @@
+[2026-07-31 23:57:00] development: start manifest
+[2026-07-31 23:57:21] development: native-tokenizer manifest built
+[2026-07-31 23:57:22] development: start extract
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<00:46,  9.22it/s]Loading weights:   5%|▌         | 22/426 [00:00<00:03, 115.75it/s]Loading weights:   9%|▉         | 40/426 [00:00<00:02, 133.86it/s]Loading weights:  13%|█▎        | 54/426 [00:00<00:03, 120.44it/s]Loading weights:  17%|█▋        | 74/426 [00:00<00:02, 145.57it/s]Loading weights:  21%|██        | 89/426 [00:00<00:02, 138.85it/s]Loading weights:  24%|██▍       | 104/426 [00:00<00:02, 125.93it/s]Loading weights:  28%|██▊       | 118/426 [00:00<00:02, 129.50it/s]Loading weights:  31%|███       | 133/426 [00:01<00:02, 134.42it/s]Loading weights:  35%|███▍      | 147/426 [00:01<00:02, 130.41it/s]Loading weights:  39%|███▉      | 166/426 [00:01<00:01, 142.35it/s]Loading weights:  42%|████▏     | 181/426 [00:01<00:01, 143.73it/s]Loading weights:  46%|████▌     | 196/426 [00:01<00:01, 142.92it/s]Loading weights:  50%|████▉     | 211/426 [00:01<00:01, 129.06it/s]Loading weights:  53%|█████▎    | 225/426 [00:01<00:01, 131.51it/s]Loading weights:  56%|█████▌    | 239/426 [00:01<00:01, 128.90it/s]Loading weights:  60%|██████    | 257/426 [00:01<00:01, 136.57it/s]Loading weights:  64%|██████▍   | 274/426 [00:02<00:01, 143.06it/s]Loading weights:  68%|██████▊   | 289/426 [00:02<00:00, 139.78it/s]Loading weights:  71%|███████▏  | 304/426 [00:02<00:00, 140.40it/s]Loading weights:  75%|███████▍  | 319/426 [00:02<00:00, 126.03it/s]Loading weights:  78%|███████▊  | 334/426 [00:02<00:00, 132.24it/s]Loading weights:  83%|████████▎ | 354/426 [00:02<00:00, 143.31it/s]Loading weights:  87%|████████▋ | 369/426 [00:02<00:00, 127.33it/s]Loading weights:  90%|█████████ | 384/426 [00:02<00:00, 132.18it/s]Loading weights:  93%|█████████▎| 398/426 [00:03<00:00, 132.46it/s]Loading weights:  97%|█████████▋| 413/426 [00:03<00:00, 130.59it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 132.40it/s]
+[2026-07-31 23:57:46] development: extract train shard 1/64
+[2026-07-31 23:58:01] development: extract train shard 2/64
+[2026-07-31 23:58:14] development: extract train shard 3/64
+[2026-07-31 23:58:33] development: extract train shard 4/64
+[2026-07-31 23:58:55] development: extract train shard 5/64
+[2026-07-31 23:59:23] development: extract train shard 6/64
+[2026-07-31 23:59:54] development: extract train shard 7/64
+[2026-08-01 00:00:29] development: extract train shard 8/64
+[2026-08-01 00:01:01] development: extract train shard 9/64
+[2026-08-01 00:01:30] development: extract train shard 10/64
+[2026-08-01 00:01:59] development: extract train shard 11/64
+[2026-08-01 00:02:32] development: extract train shard 12/64
+[2026-08-01 00:03:05] development: extract train shard 13/64
+[2026-08-01 00:03:39] development: extract train shard 14/64
+[2026-08-01 00:04:11] development: extract train shard 15/64
+[2026-08-01 00:04:44] development: extract train shard 16/64
+[2026-08-01 00:05:12] development: extract train shard 17/64
+[2026-08-01 00:05:42] development: extract train shard 18/64
+[2026-08-01 00:06:19] development: extract train shard 19/64
+[2026-08-01 00:06:50] development: extract train shard 20/64
+[2026-08-01 00:07:21] development: extract train shard 21/64
+[2026-08-01 00:07:55] development: extract train shard 22/64
+[2026-08-01 00:08:24] development: extract train shard 23/64
+[2026-08-01 00:08:57] development: extract train shard 24/64
+[2026-08-01 00:09:29] development: extract train shard 25/64
+[2026-08-01 00:10:05] development: extract train shard 26/64
+[2026-08-01 00:10:38] development: extract train shard 27/64
+[2026-08-01 00:11:14] development: extract train shard 28/64
+[2026-08-01 00:11:50] development: extract train shard 29/64
+[2026-08-01 00:12:23] development: extract train shard 30/64
+[2026-08-01 00:13:00] development: extract train shard 31/64
+[2026-08-01 00:13:31] development: extract train shard 32/64
+[2026-08-01 00:14:02] development: extract train shard 33/64
+[2026-08-01 00:14:42] development: extract train shard 34/64
+[2026-08-01 00:15:22] development: extract train shard 35/64
+[2026-08-01 00:15:56] development: extract train shard 36/64
+[2026-08-01 00:16:29] development: extract train shard 37/64
+[2026-08-01 00:16:58] development: extract train shard 38/64
+[2026-08-01 00:17:25] development: extract train shard 39/64
+[2026-08-01 00:17:59] development: extract train shard 40/64
+[2026-08-01 00:18:38] development: extract train shard 41/64
+[2026-08-01 00:19:17] development: extract train shard 42/64
+[2026-08-01 00:19:55] development: extract train shard 43/64
+[2026-08-01 00:20:30] development: extract train shard 44/64
+[2026-08-01 00:21:05] development: extract train shard 45/64
+[2026-08-01 00:21:36] development: extract train shard 46/64
+[2026-08-01 00:22:09] development: extract train shard 47/64
+[2026-08-01 00:22:48] development: extract train shard 48/64
+[2026-08-01 00:23:25] development: extract train shard 49/64
+[2026-08-01 00:23:55] development: extract train shard 50/64
+[2026-08-01 00:24:23] development: extract train shard 51/64
+[2026-08-01 00:24:55] development: extract train shard 52/64
+[2026-08-01 00:25:31] development: extract train shard 53/64
+[2026-08-01 00:26:08] development: extract train shard 54/64
+[2026-08-01 00:26:41] development: extract train shard 55/64
+[2026-08-01 00:27:16] development: extract train shard 56/64
+[2026-08-01 00:27:53] development: extract train shard 57/64
+[2026-08-01 00:28:25] development: extract train shard 58/64
+[2026-08-01 00:29:02] development: extract train shard 59/64
+[2026-08-01 00:29:34] development: extract train shard 60/64
+[2026-08-01 00:30:11] development: extract train shard 61/64
+[2026-08-01 00:30:49] development: extract train shard 62/64
+[2026-08-01 00:31:26] development: extract train shard 63/64
+[2026-08-01 00:32:04] development: extract train shard 64/64
+[2026-08-01 00:32:40] development: extract validation shard 1/8
+[2026-08-01 00:33:13] development: extract validation shard 2/8
+[2026-08-01 00:33:47] development: extract validation shard 3/8
+[2026-08-01 00:34:23] development: extract validation shard 4/8
+[2026-08-01 00:34:57] development: extract validation shard 5/8
+[2026-08-01 00:35:32] development: extract validation shard 6/8
+[2026-08-01 00:36:08] development: extract validation shard 7/8
+[2026-08-01 00:36:42] development: extract validation shard 8/8
+[2026-08-01 00:37:18] development: extract test shard 1/8
+[2026-08-01 00:37:55] development: extract test shard 2/8
+[2026-08-01 00:38:31] development: extract test shard 3/8
+[2026-08-01 00:39:08] development: extract test shard 4/8
+[2026-08-01 00:39:41] development: extract test shard 5/8
+[2026-08-01 00:40:11] development: extract test shard 6/8
+[2026-08-01 00:40:45] development: extract test shard 7/8
+[2026-08-01 00:41:22] development: extract test shard 8/8
+[2026-08-01 00:41:27] development: start train
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   6%|▌         | 25/426 [00:00<00:01, 238.46it/s]Loading weights:  12%|█▏        | 49/426 [00:00<00:03, 100.30it/s]Loading weights:  15%|█▍        | 63/426 [00:00<00:03, 102.55it/s]Loading weights:  18%|█▊        | 76/426 [00:00<00:03, 108.28it/s]Loading weights:  21%|██        | 89/426 [00:00<00:03, 99.46it/s] Loading weights:  23%|██▎       | 100/426 [00:01<00:03, 83.68it/s]Loading weights:  27%|██▋       | 116/426 [00:01<00:03, 99.48it/s]Loading weights:  30%|███       | 128/426 [00:01<00:03, 95.50it/s]Loading weights:  33%|███▎      | 142/426 [00:01<00:02, 105.66it/s]Loading weights:  36%|███▌      | 154/426 [00:01<00:02, 91.03it/s] Loading weights:  40%|████      | 171/426 [00:01<00:02, 105.55it/s]Loading weights:  43%|████▎     | 183/426 [00:01<00:02, 108.51it/s]Loading weights:  46%|████▌     | 195/426 [00:01<00:02, 93.85it/s] Loading weights:  48%|████▊     | 206/426 [00:02<00:02, 88.66it/s]Loading weights:  52%|█████▏    | 222/426 [00:02<00:02, 88.19it/s]Loading weights:  56%|█████▌    | 239/426 [00:02<00:01, 102.95it/s]Loading weights:  59%|█████▉    | 251/426 [00:02<00:01, 103.30it/s]Loading weights:  62%|██████▏   | 262/426 [00:02<00:01, 93.80it/s] Loading weights:  65%|██████▍   | 276/426 [00:02<00:01, 98.78it/s]Loading weights:  68%|██████▊   | 288/426 [00:02<00:01, 101.54it/s]Loading weights:  70%|███████   | 299/426 [00:02<00:01, 101.81it/s]Loading weights:  73%|███████▎  | 310/426 [00:03<00:01, 87.82it/s] Loading weights:  75%|███████▌  | 320/426 [00:03<00:01, 89.44it/s]Loading weights:  78%|███████▊  | 331/426 [00:03<00:01, 91.70it/s]Loading weights:  81%|████████  | 344/426 [00:03<00:00, 98.29it/s]Loading weights:  83%|████████▎ | 355/426 [00:03<00:00, 96.10it/s]Loading weights:  86%|████████▌ | 365/426 [00:03<00:00, 81.18it/s]Loading weights:  90%|████████▉ | 382/426 [00:03<00:00, 102.11it/s]Loading weights:  92%|█████████▏| 394/426 [00:04<00:00, 99.12it/s] Loading weights:  95%|█████████▌| 405/426 [00:04<00:00, 99.61it/s]Loading weights:  98%|█████████▊| 416/426 [00:04<00:00, 86.11it/s]Loading weights: 100%|██████████| 426/426 [00:04<00:00, 88.12it/s]Loading weights: 100%|██████████| 426/426 [00:04<00:00, 96.73it/s]
+[2026-08-01 00:45:51] development: Reader LoRA 16/128
+[2026-08-01 00:49:54] development: Reader LoRA 32/128
+[2026-08-01 00:52:59] development: Reader LoRA 48/128
+[2026-08-01 00:56:56] development: Reader LoRA 64/128
+[2026-08-01 00:58:44] development: Reader LoRA 80/128
+[2026-08-01 01:00:39] development: Reader LoRA 96/128
+[2026-08-01 01:02:34] development: Reader LoRA 112/128
+[2026-08-01 01:04:24] development: Reader LoRA 128/128
+[2026-08-01 01:04:25] development: start evaluate
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<00:51,  8.23it/s]Loading weights:   5%|▌         | 22/426 [00:00<00:03, 108.55it/s]Loading weights:   9%|▊         | 37/426 [00:00<00:03, 121.83it/s]Loading weights:  12%|█▏        | 50/426 [00:00<00:03, 107.84it/s]Loading weights:  15%|█▌        | 66/426 [00:00<00:03, 118.50it/s]Loading weights:  19%|█▉        | 80/426 [00:00<00:03, 114.34it/s]Loading weights:  22%|██▏       | 94/426 [00:00<00:02, 118.79it/s]Loading weights:  27%|██▋       | 113/426 [00:00<00:02, 131.97it/s]Loading weights:  30%|███       | 128/426 [00:01<00:02, 131.40it/s]Loading weights:  34%|███▎      | 143/426 [00:01<00:02, 134.67it/s]Loading weights:  37%|███▋      | 157/426 [00:01<00:02, 119.50it/s]Loading weights:  40%|████      | 172/426 [00:01<00:02, 124.49it/s]Loading weights:  44%|████▎     | 186/426 [00:01<00:01, 126.84it/s]Loading weights:  47%|████▋     | 200/426 [00:01<00:01, 127.69it/s]Loading weights:  50%|█████     | 213/426 [00:01<00:01, 120.06it/s]Loading weights:  53%|█████▎    | 226/426 [00:01<00:01, 119.43it/s]Loading weights:  56%|█████▋    | 240/426 [00:01<00:01, 121.96it/s]Loading weights:  59%|█████▉    | 253/426 [00:02<00:01, 120.48it/s]Loading weights:  62%|██████▏   | 266/426 [00:02<00:01, 122.46it/s]Loading weights:  65%|██████▌   | 279/426 [00:02<00:01, 121.97it/s]Loading weights:  69%|██████▉   | 293/426 [00:02<00:01, 123.49it/s]Loading weights:  72%|███████▏  | 306/426 [00:02<00:00, 121.99it/s]Loading weights:  75%|███████▍  | 319/426 [00:02<00:00, 122.80it/s]Loading weights:  78%|███████▊  | 332/426 [00:02<00:00, 121.54it/s]Loading weights:  81%|████████  | 346/426 [00:02<00:00, 123.16it/s]Loading weights:  85%|████████▍ | 360/426 [00:02<00:00, 124.25it/s]Loading weights:  88%|████████▊ | 373/426 [00:03<00:00, 125.13it/s]Loading weights:  91%|█████████ | 386/426 [00:03<00:00, 122.87it/s]Loading weights:  94%|█████████▎| 399/426 [00:03<00:00, 121.17it/s]Loading weights:  97%|█████████▋| 412/426 [00:03<00:00, 120.92it/s]Loading weights: 100%|█████████▉| 425/426 [00:03<00:00, 123.06it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 121.53it/s]
+[2026-08-01 01:04:35] development: evaluate question_only
+[2026-08-01 01:08:06] development: evaluate gold_supporting_text
+[2026-08-01 01:12:58] development: evaluate self_sparse_kv_lora_off
+[2026-08-01 01:18:10] development: evaluate self_sparse_kv_lora_on
+[2026-08-01 01:18:51] development: evaluate shuffled_self_kv_lora_on
+[2026-08-01 01:19:31] development: evaluate zero_self_kv_lora_on
+development: pipeline completed
