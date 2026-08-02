@@ -1,0 +1,15 @@
+[2026-08-02 21:22:57] smoke: start render
+[2026-08-02 21:23:02] rendered and froze 64 full-context samples
+[2026-08-02 21:23:03] smoke: start audit
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 58/398 [00:00<00:00, 534.03it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 551.50it/s]Loading weights:  45%|████▌     | 180/398 [00:00<00:00, 530.21it/s]Loading weights:  59%|█████▊    | 233/398 [00:00<00:00, 429.50it/s]Loading weights:  70%|██████▉   | 278/398 [00:00<00:00, 350.07it/s]Loading weights:  79%|███████▉  | 316/398 [00:00<00:00, 245.88it/s]Loading weights:  87%|████████▋ | 346/398 [00:01<00:00, 255.43it/s]Loading weights:  95%|█████████▍| 378/398 [00:01<00:00, 264.49it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 333.40it/s]
+[2026-08-02 21:23:27] smoke: full-context cache audit 1/8
+[2026-08-02 21:23:33] smoke: full-context cache audit 2/8
+[2026-08-02 21:23:42] smoke: full-context cache audit 3/8
+[2026-08-02 21:23:49] smoke: full-context cache audit 4/8
+[2026-08-02 21:23:56] smoke: full-context cache audit 5/8
+[2026-08-02 21:24:03] smoke: full-context cache audit 6/8
+[2026-08-02 21:24:07] smoke: full-context cache audit 7/8
+[2026-08-02 21:24:13] smoke: full-context cache audit 8/8
+[2026-08-02 21:24:13] smoke: audit completed; gate_passed=True
+smoke: pipeline completed
