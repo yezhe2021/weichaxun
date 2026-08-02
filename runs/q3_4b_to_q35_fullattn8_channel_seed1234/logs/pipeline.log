@@ -1,0 +1,204 @@
+[2026-08-02 14:03:45] development: start audit
+[2026-08-02 14:03:56] development: protocol audit passed
+[2026-08-02 14:03:58] development: start p0
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   5%|▌         | 22/426 [00:00<00:02, 174.17it/s]Loading weights:   9%|▉         | 40/426 [00:00<00:03, 126.15it/s]Loading weights:  13%|█▎        | 54/426 [00:00<00:03, 103.08it/s]Loading weights:  15%|█▌        | 66/426 [00:00<00:03, 105.07it/s]Loading weights:  19%|█▊        | 79/426 [00:00<00:03, 109.75it/s]Loading weights:  21%|██▏       | 91/426 [00:00<00:02, 112.57it/s]Loading weights:  24%|██▍       | 103/426 [00:00<00:03, 92.96it/s]Loading weights:  28%|██▊       | 118/426 [00:01<00:03, 95.95it/s]Loading weights:  31%|███       | 132/426 [00:01<00:02, 103.60it/s]Loading weights:  34%|███▎      | 143/426 [00:01<00:02, 104.91it/s]Loading weights:  36%|███▌      | 154/426 [00:01<00:03, 89.16it/s] Loading weights:  40%|████      | 171/426 [00:01<00:02, 103.23it/s]Loading weights:  43%|████▎     | 184/426 [00:01<00:02, 107.38it/s]Loading weights:  46%|████▌     | 196/426 [00:01<00:02, 105.19it/s]Loading weights:  49%|████▊     | 207/426 [00:02<00:02, 88.03it/s] Loading weights:  52%|█████▏    | 222/426 [00:02<00:01, 102.33it/s]Loading weights:  55%|█████▍    | 234/426 [00:02<00:01, 102.48it/s]Loading weights:  58%|█████▊    | 245/426 [00:02<00:01, 100.34it/s]Loading weights:  60%|██████    | 256/426 [00:02<00:01, 93.82it/s] Loading weights:  62%|██████▏   | 266/426 [00:02<00:01, 88.65it/s]Loading weights:  65%|██████▌   | 278/426 [00:02<00:01, 88.28it/s]Loading weights:  69%|██████▊   | 292/426 [00:02<00:01, 98.64it/s]Loading weights:  72%|███████▏  | 306/426 [00:02<00:01, 108.15it/s]Loading weights:  76%|███████▌  | 324/426 [00:03<00:00, 125.34it/s]Loading weights:  80%|███████▉  | 340/426 [00:03<00:00, 134.52it/s]Loading weights:  83%|████████▎ | 354/426 [00:03<00:00, 131.43it/s]Loading weights:  86%|████████▋ | 368/426 [00:03<00:00, 118.82it/s]Loading weights:  90%|█████████ | 384/426 [00:03<00:00, 127.24it/s]Loading weights:  93%|█████████▎| 398/426 [00:03<00:00, 129.50it/s]Loading weights:  97%|█████████▋| 412/426 [00:03<00:00, 131.07it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 127.42it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 109.49it/s]
+[2026-08-02 14:04:21] development: evaluate q35_full_text
+[2026-08-02 14:17:00] development: evaluate q35_official_hybrid_cache
+[2026-08-02 14:29:59] development: evaluate q35_native_anchor8_lora_off
+[2026-08-02 14:33:50] development: evaluate q35_native_anchor8_shuffled_lora_off
+[2026-08-02 14:37:39] development: evaluate q35_anchor8_no_memory_lora_off
+[2026-08-02 14:41:26] development: P0 completed; train_reader=True
+[2026-08-02 14:41:28] development: start reader
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<01:01,  6.94it/s]Loading weights:   4%|▍         | 17/426 [00:00<00:04, 83.13it/s]Loading weights:   7%|▋         | 28/426 [00:00<00:04, 93.53it/s]Loading weights:  10%|▉         | 42/426 [00:00<00:03, 107.14it/s]Loading weights:  13%|█▎        | 54/426 [00:00<00:03, 110.84it/s]Loading weights:  16%|█▌        | 67/426 [00:00<00:03, 113.24it/s]Loading weights:  19%|█▉        | 81/426 [00:00<00:02, 118.07it/s]Loading weights:  22%|██▏       | 95/426 [00:00<00:02, 121.10it/s]Loading weights:  25%|██▌       | 108/426 [00:00<00:02, 123.50it/s]Loading weights:  28%|██▊       | 121/426 [00:01<00:02, 122.70it/s]Loading weights:  31%|███▏      | 134/426 [00:01<00:02, 121.05it/s]Loading weights:  35%|███▍      | 148/426 [00:01<00:02, 123.99it/s]Loading weights:  38%|███▊      | 161/426 [00:01<00:02, 125.41it/s]Loading weights:  41%|████      | 174/426 [00:01<00:02, 123.00it/s]Loading weights:  44%|████▍     | 187/426 [00:01<00:01, 121.50it/s]Loading weights:  47%|████▋     | 201/426 [00:01<00:01, 123.77it/s]Loading weights:  50%|█████     | 214/426 [00:01<00:01, 124.78it/s]Loading weights:  53%|█████▎    | 227/426 [00:01<00:01, 122.49it/s]Loading weights:  56%|█████▋    | 240/426 [00:02<00:01, 121.48it/s]Loading weights:  60%|█████▉    | 254/426 [00:02<00:01, 123.27it/s]Loading weights:  63%|██████▎   | 267/426 [00:02<00:01, 123.96it/s]Loading weights:  66%|██████▌   | 280/426 [00:02<00:01, 122.68it/s]Loading weights:  69%|██████▉   | 293/426 [00:02<00:01, 117.81it/s]Loading weights:  72%|███████▏  | 307/426 [00:02<00:00, 120.37it/s]Loading weights:  75%|███████▌  | 320/426 [00:02<00:00, 122.61it/s]Loading weights:  78%|███████▊  | 333/426 [00:02<00:00, 121.53it/s]Loading weights:  81%|████████  | 346/426 [00:02<00:00, 121.25it/s]Loading weights:  84%|████████▍ | 359/426 [00:03<00:00, 120.03it/s]Loading weights:  87%|████████▋ | 372/426 [00:03<00:00, 122.31it/s]Loading weights:  90%|█████████ | 385/426 [00:03<00:00, 121.51it/s]Loading weights:  94%|█████████▎| 399/426 [00:03<00:00, 123.03it/s]Loading weights:  97%|█████████▋| 413/426 [00:03<00:00, 124.18it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 125.23it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 118.98it/s]
+[2026-08-02 14:46:16] development: P1 Reader 25/600
+[2026-08-02 14:52:10] development: P1 Reader 50/600
+[2026-08-02 15:02:26] development: P1 Reader 75/600
+[2026-08-02 15:08:55] development: P1 Reader 100/600
+[2026-08-02 15:15:13] development: P1 Reader 125/600
+[2026-08-02 15:17:58] development: P1 Reader 150/600
+[2026-08-02 15:22:00] development: P1 Reader 175/600
+[2026-08-02 15:24:45] development: P1 Reader 200/600
+[2026-08-02 15:28:47] development: P1 Reader 225/600
+[2026-08-02 15:31:32] development: P1 Reader 250/600
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<01:36,  4.40it/s]Loading weights:   5%|▌         | 23/426 [00:00<00:04, 87.35it/s]Loading weights:   9%|▉         | 40/426 [00:00<00:03, 114.12it/s]Loading weights:  13%|█▎        | 55/426 [00:00<00:03, 118.64it/s]Loading weights:  17%|█▋        | 73/426 [00:00<00:02, 135.53it/s]Loading weights:  22%|██▏       | 92/426 [00:00<00:02, 142.65it/s]Loading weights:  25%|██▌       | 108/426 [00:00<00:02, 141.27it/s]Loading weights:  30%|███       | 128/426 [00:01<00:01, 152.34it/s]Loading weights:  34%|███▍      | 146/426 [00:01<00:01, 154.41it/s]Loading weights:  38%|███▊      | 162/426 [00:01<00:01, 148.88it/s]Loading weights:  42%|████▏     | 181/426 [00:01<00:01, 153.79it/s]Loading weights:  47%|████▋     | 199/426 [00:01<00:01, 155.26it/s]Loading weights:  50%|█████     | 215/426 [00:01<00:01, 148.64it/s]Loading weights:  55%|█████▍    | 233/426 [00:01<00:01, 154.70it/s]Loading weights:  59%|█████▊    | 250/426 [00:01<00:01, 157.08it/s]Loading weights:  62%|██████▏   | 266/426 [00:01<00:01, 143.34it/s]Loading weights:  67%|██████▋   | 287/426 [00:02<00:00, 159.42it/s]Loading weights:  71%|███████▏  | 304/426 [00:02<00:00, 160.36it/s]Loading weights:  75%|███████▌  | 321/426 [00:02<00:00, 147.78it/s]Loading weights:  80%|███████▉  | 340/426 [00:02<00:00, 151.04it/s]Loading weights:  84%|████████▍ | 358/426 [00:02<00:00, 155.84it/s]Loading weights:  88%|████████▊ | 374/426 [00:02<00:00, 149.87it/s]Loading weights:  92%|█████████▏| 393/426 [00:02<00:00, 157.64it/s]Loading weights:  96%|█████████▌| 410/426 [00:02<00:00, 158.98it/s]Loading weights: 100%|██████████| 426/426 [00:02<00:00, 143.44it/s]
+[2026-08-02 15:32:50] development: evaluate q35_native_anchor8_reader_correct
+[2026-08-02 15:33:30] development: evaluate q35_native_anchor8_reader_shuffled
+[2026-08-02 15:34:10] development: evaluate q35_native_anchor8_reader_no_memory
+[2026-08-02 15:34:50] development: start assets
+[2026-08-02 15:35:07] development: alignment/cache train shard 1/64
+[2026-08-02 15:35:07] development: alignment/cache train shard 2/64
+[2026-08-02 15:35:07] development: alignment/cache train shard 3/64
+[2026-08-02 15:35:08] development: alignment/cache train shard 4/64
+[2026-08-02 15:35:08] development: alignment/cache train shard 5/64
+[2026-08-02 15:35:08] development: alignment/cache train shard 6/64
+[2026-08-02 15:35:09] development: alignment/cache train shard 7/64
+[2026-08-02 15:35:09] development: alignment/cache train shard 8/64
+[2026-08-02 15:35:09] development: alignment/cache train shard 9/64
+[2026-08-02 15:35:10] development: alignment/cache train shard 10/64
+[2026-08-02 15:35:10] development: alignment/cache train shard 11/64
+[2026-08-02 15:35:10] development: alignment/cache train shard 12/64
+[2026-08-02 15:35:11] development: alignment/cache train shard 13/64
+[2026-08-02 15:35:11] development: alignment/cache train shard 14/64
+[2026-08-02 15:35:11] development: alignment/cache train shard 15/64
+[2026-08-02 15:35:11] development: alignment/cache train shard 16/64
+[2026-08-02 15:35:12] development: alignment/cache train shard 17/64
+[2026-08-02 15:35:12] development: alignment/cache train shard 18/64
+[2026-08-02 15:35:13] development: alignment/cache train shard 19/64
+[2026-08-02 15:35:13] development: alignment/cache train shard 20/64
+[2026-08-02 15:35:13] development: alignment/cache train shard 21/64
+[2026-08-02 15:35:14] development: alignment/cache train shard 22/64
+[2026-08-02 15:35:14] development: alignment/cache train shard 23/64
+[2026-08-02 15:35:14] development: alignment/cache train shard 24/64
+[2026-08-02 15:35:15] development: alignment/cache train shard 25/64
+[2026-08-02 15:35:15] development: alignment/cache train shard 26/64
+[2026-08-02 15:35:15] development: alignment/cache train shard 27/64
+[2026-08-02 15:35:15] development: alignment/cache train shard 28/64
+[2026-08-02 15:35:16] development: alignment/cache train shard 29/64
+[2026-08-02 15:35:16] development: alignment/cache train shard 30/64
+[2026-08-02 15:35:17] development: alignment/cache train shard 31/64
+[2026-08-02 15:35:17] development: alignment/cache train shard 32/64
+[2026-08-02 15:35:17] development: alignment/cache train shard 33/64
+[2026-08-02 15:35:18] development: alignment/cache train shard 34/64
+[2026-08-02 15:35:18] development: alignment/cache train shard 35/64
+[2026-08-02 15:35:18] development: alignment/cache train shard 36/64
+[2026-08-02 15:35:19] development: alignment/cache train shard 37/64
+[2026-08-02 15:35:19] development: alignment/cache train shard 38/64
+[2026-08-02 15:35:19] development: alignment/cache train shard 39/64
+[2026-08-02 15:35:20] development: alignment/cache train shard 40/64
+[2026-08-02 15:35:20] development: alignment/cache train shard 41/64
+[2026-08-02 15:35:21] development: alignment/cache train shard 42/64
+[2026-08-02 15:35:21] development: alignment/cache train shard 43/64
+[2026-08-02 15:35:21] development: alignment/cache train shard 44/64
+[2026-08-02 15:35:22] development: alignment/cache train shard 45/64
+[2026-08-02 15:35:23] development: alignment/cache train shard 46/64
+[2026-08-02 15:35:24] development: alignment/cache train shard 47/64
+[2026-08-02 15:35:24] development: alignment/cache train shard 48/64
+[2026-08-02 15:35:25] development: alignment/cache train shard 49/64
+[2026-08-02 15:35:25] development: alignment/cache train shard 50/64
+[2026-08-02 15:35:25] development: alignment/cache train shard 51/64
+[2026-08-02 15:35:25] development: alignment/cache train shard 52/64
+[2026-08-02 15:35:26] development: alignment/cache train shard 53/64
+[2026-08-02 15:35:26] development: alignment/cache train shard 54/64
+[2026-08-02 15:35:26] development: alignment/cache train shard 55/64
+[2026-08-02 15:35:26] development: alignment/cache train shard 56/64
+[2026-08-02 15:35:27] development: alignment/cache train shard 57/64
+[2026-08-02 15:35:27] development: alignment/cache train shard 58/64
+[2026-08-02 15:35:27] development: alignment/cache train shard 59/64
+[2026-08-02 15:35:28] development: alignment/cache train shard 60/64
+[2026-08-02 15:35:28] development: alignment/cache train shard 61/64
+[2026-08-02 15:35:28] development: alignment/cache train shard 62/64
+[2026-08-02 15:35:29] development: alignment/cache train shard 63/64
+[2026-08-02 15:35:29] development: alignment/cache train shard 64/64
+[2026-08-02 15:35:29] development: alignment/cache validation shard 1/8
+[2026-08-02 15:35:30] development: alignment/cache validation shard 2/8
+[2026-08-02 15:35:30] development: alignment/cache validation shard 3/8
+[2026-08-02 15:35:30] development: alignment/cache validation shard 4/8
+[2026-08-02 15:35:30] development: alignment/cache validation shard 5/8
+[2026-08-02 15:35:31] development: alignment/cache validation shard 6/8
+[2026-08-02 15:35:31] development: alignment/cache validation shard 7/8
+[2026-08-02 15:35:31] development: alignment/cache validation shard 8/8
+[2026-08-02 15:35:32] development: alignment/cache test shard 1/8
+[2026-08-02 15:35:32] development: alignment/cache test shard 2/8
+[2026-08-02 15:35:32] development: alignment/cache test shard 3/8
+[2026-08-02 15:35:32] development: alignment/cache test shard 4/8
+[2026-08-02 15:35:33] development: alignment/cache test shard 5/8
+[2026-08-02 15:35:33] development: alignment/cache test shard 6/8
+[2026-08-02 15:35:33] development: alignment/cache test shard 7/8
+[2026-08-02 15:35:34] development: alignment/cache test shard 8/8
+[2026-08-02 15:35:38] development: scale stats 64/512
+[2026-08-02 15:35:38] development: scale stats 128/512
+[2026-08-02 15:35:38] development: scale stats 192/512
+[2026-08-02 15:35:39] development: scale stats 256/512
+[2026-08-02 15:35:39] development: scale stats 320/512
+[2026-08-02 15:35:39] development: scale stats 384/512
+[2026-08-02 15:35:40] development: scale stats 448/512
+[2026-08-02 15:35:40] development: scale stats 512/512
+[2026-08-02 15:35:40] development: reverse alignment/cache/scales completed
+[2026-08-02 15:35:42] development: start overfit
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<01:11,  5.93it/s]Loading weights:   3%|▎         | 14/426 [00:00<00:06, 62.30it/s]Loading weights:   6%|▋         | 27/426 [00:00<00:04, 87.74it/s]Loading weights:  10%|▉         | 41/426 [00:00<00:03, 103.80it/s]Loading weights:  13%|█▎        | 54/426 [00:00<00:03, 111.96it/s]Loading weights:  16%|█▌        | 67/426 [00:00<00:03, 114.50it/s]Loading weights:  19%|█▉        | 81/426 [00:00<00:02, 118.83it/s]Loading weights:  22%|██▏       | 95/426 [00:00<00:02, 121.79it/s]Loading weights:  25%|██▌       | 108/426 [00:01<00:02, 124.00it/s]Loading weights:  28%|██▊       | 121/426 [00:01<00:02, 123.08it/s]Loading weights:  31%|███▏      | 134/426 [00:01<00:02, 121.93it/s]Loading weights:  35%|███▍      | 148/426 [00:01<00:02, 124.02it/s]Loading weights:  38%|███▊      | 162/426 [00:01<00:02, 128.51it/s]Loading weights:  41%|████      | 175/426 [00:01<00:01, 125.67it/s]Loading weights:  44%|████▍     | 188/426 [00:01<00:01, 124.08it/s]Loading weights:  47%|████▋     | 201/426 [00:01<00:01, 123.17it/s]Loading weights:  50%|█████     | 214/426 [00:01<00:01, 123.74it/s]Loading weights:  53%|█████▎    | 227/426 [00:01<00:01, 122.20it/s]Loading weights:  56%|█████▋    | 240/426 [00:02<00:01, 122.08it/s]Loading weights:  60%|█████▉    | 254/426 [00:02<00:01, 123.97it/s]Loading weights:  63%|██████▎   | 267/426 [00:02<00:01, 125.41it/s]Loading weights:  66%|██████▌   | 280/426 [00:02<00:01, 123.75it/s]Loading weights:  69%|██████▉   | 293/426 [00:02<00:01, 118.80it/s]Loading weights:  72%|███████▏  | 307/426 [00:02<00:00, 121.49it/s]Loading weights:  75%|███████▌  | 320/426 [00:02<00:00, 123.73it/s]Loading weights:  78%|███████▊  | 333/426 [00:02<00:00, 122.85it/s]Loading weights:  81%|████████  | 346/426 [00:02<00:00, 121.66it/s]Loading weights:  85%|████████▍ | 360/426 [00:03<00:00, 123.79it/s]Loading weights:  88%|████████▊ | 373/426 [00:03<00:00, 125.44it/s]Loading weights:  91%|█████████ | 386/426 [00:03<00:00, 123.63it/s]Loading weights:  94%|█████████▎| 399/426 [00:03<00:00, 122.55it/s]Loading weights:  97%|█████████▋| 413/426 [00:03<00:00, 124.55it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 125.84it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 118.96it/s]
+[2026-08-02 15:36:07] development: Stage A overfit 50/1000
+[2026-08-02 15:36:17] development: Stage A overfit 100/1000
+[2026-08-02 15:36:32] development: Stage A overfit 150/1000
+[2026-08-02 15:36:46] development: Stage A overfit 200/1000
+[2026-08-02 15:37:02] development: Stage A overfit 250/1000
+[2026-08-02 15:37:16] development: Stage A overfit 300/1000
+[2026-08-02 15:37:30] development: Stage A overfit 350/1000
+[2026-08-02 15:37:44] development: Stage A overfit 400/1000
+[2026-08-02 15:37:59] development: Stage A overfit 450/1000
+[2026-08-02 15:38:13] development: Stage A overfit 500/1000
+[2026-08-02 15:38:25] development: Stage A overfit 550/1000
+[2026-08-02 15:38:36] development: Stage A overfit 600/1000
+[2026-08-02 15:38:47] development: Stage A overfit 650/1000
+[2026-08-02 15:38:59] development: Stage A overfit 700/1000
+[2026-08-02 15:39:09] development: Stage A overfit 750/1000
+[2026-08-02 15:39:21] development: Stage A overfit 800/1000
+[2026-08-02 15:39:34] development: Stage A overfit 850/1000
+[2026-08-02 15:39:45] development: Stage A overfit 900/1000
+[2026-08-02 15:39:58] development: Stage A overfit 950/1000
+[2026-08-02 15:40:10] development: Stage A overfit 1000/1000
+[2026-08-02 15:40:11] development: start stage_a
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<00:53,  7.94it/s]Loading weights:   5%|▌         | 22/426 [00:00<00:03, 107.85it/s]Loading weights:   9%|▊         | 37/426 [00:00<00:03, 121.34it/s]Loading weights:  12%|█▏        | 50/426 [00:00<00:03, 106.89it/s]Loading weights:  15%|█▌        | 66/426 [00:00<00:03, 117.48it/s]Loading weights:  19%|█▊        | 79/426 [00:00<00:02, 116.18it/s]Loading weights:  22%|██▏       | 94/426 [00:00<00:02, 122.93it/s]Loading weights:  25%|██▌       | 107/426 [00:00<00:02, 117.74it/s]Loading weights:  28%|██▊       | 120/426 [00:01<00:02, 118.72it/s]Loading weights:  31%|███▏      | 134/426 [00:01<00:02, 121.67it/s]Loading weights:  35%|███▍      | 148/426 [00:01<00:02, 125.00it/s]Loading weights:  38%|███▊      | 164/426 [00:01<00:01, 134.76it/s]Loading weights:  42%|████▏     | 178/426 [00:01<00:01, 132.93it/s]Loading weights:  45%|████▌     | 192/426 [00:01<00:01, 132.36it/s]Loading weights:  48%|████▊     | 206/426 [00:01<00:01, 111.18it/s]Loading weights:  53%|█████▎    | 225/426 [00:01<00:01, 124.35it/s]Loading weights:  56%|█████▌    | 239/426 [00:01<00:01, 125.22it/s]Loading weights:  59%|█████▉    | 253/426 [00:02<00:01, 125.75it/s]Loading weights:  62%|██████▏   | 266/426 [00:02<00:01, 118.87it/s]Loading weights:  65%|██████▌   | 279/426 [00:02<00:01, 118.93it/s]Loading weights:  69%|██████▉   | 293/426 [00:02<00:01, 117.73it/s]Loading weights:  72%|███████▏  | 307/426 [00:02<00:00, 120.38it/s]Loading weights:  75%|███████▌  | 320/426 [00:02<00:00, 121.90it/s]Loading weights:  78%|███████▊  | 333/426 [00:02<00:00, 120.37it/s]Loading weights:  81%|████████  | 346/426 [00:02<00:00, 120.45it/s]Loading weights:  85%|████████▍ | 360/426 [00:03<00:00, 122.33it/s]Loading weights:  88%|████████▊ | 373/426 [00:03<00:00, 123.94it/s]Loading weights:  91%|█████████ | 386/426 [00:03<00:00, 121.93it/s]Loading weights:  94%|█████████▎| 399/426 [00:03<00:00, 120.35it/s]Loading weights:  97%|█████████▋| 413/426 [00:03<00:00, 122.67it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 124.21it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 120.38it/s]
+[2026-08-02 15:40:43] development: Stage A 50/800
+[2026-08-02 15:41:02] development: Stage A 100/800
+[2026-08-02 15:41:20] development: Stage A 150/800
+[2026-08-02 15:41:38] development: Stage A 200/800
+[2026-08-02 15:41:55] development: Stage A 250/800
+[2026-08-02 15:42:12] development: Stage A 300/800
+[2026-08-02 15:42:27] development: Stage A 350/800
+[2026-08-02 15:42:45] development: Stage A 400/800
+[2026-08-02 15:43:02] development: Stage A 450/800
+[2026-08-02 15:43:18] development: Stage A 500/800
+[2026-08-02 15:43:35] development: Stage A 550/800
+[2026-08-02 15:43:52] development: Stage A 600/800
+[2026-08-02 15:44:09] development: Stage A 650/800
+[2026-08-02 15:44:26] development: Stage A 700/800
+[2026-08-02 15:44:43] development: Stage A 750/800
+[2026-08-02 15:44:59] development: Stage A 800/800
+[2026-08-02 15:45:00] development: start f1
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<00:50,  8.48it/s]Loading weights:   4%|▍         | 19/426 [00:00<00:04, 94.47it/s]Loading weights:   9%|▊         | 37/426 [00:00<00:03, 126.09it/s]Loading weights:  12%|█▏        | 50/426 [00:00<00:03, 110.22it/s]Loading weights:  15%|█▌        | 66/426 [00:00<00:03, 112.21it/s]Loading weights:  19%|█▉        | 81/426 [00:00<00:02, 120.50it/s]Loading weights:  22%|██▏       | 95/426 [00:00<00:02, 123.94it/s]Loading weights:  27%|██▋       | 114/426 [00:00<00:02, 132.32it/s]Loading weights:  30%|███       | 129/426 [00:01<00:02, 134.88it/s]Loading weights:  34%|███▎      | 143/426 [00:01<00:02, 134.17it/s]Loading weights:  37%|███▋      | 157/426 [00:01<00:02, 118.64it/s]Loading weights:  40%|████      | 172/426 [00:01<00:02, 124.18it/s]Loading weights:  44%|████▎     | 186/426 [00:01<00:01, 126.04it/s]Loading weights:  47%|████▋     | 200/426 [00:01<00:01, 119.59it/s]Loading weights:  50%|█████     | 213/426 [00:01<00:01, 121.39it/s]Loading weights:  53%|█████▎    | 226/426 [00:01<00:01, 120.27it/s]Loading weights:  56%|█████▋    | 240/426 [00:01<00:01, 122.48it/s]Loading weights:  60%|█████▉    | 254/426 [00:02<00:01, 123.56it/s]Loading weights:  63%|██████▎   | 267/426 [00:02<00:01, 124.32it/s]Loading weights:  66%|██████▌   | 280/426 [00:02<00:01, 122.86it/s]Loading weights:  69%|██████▉   | 293/426 [00:02<00:01, 121.67it/s]Loading weights:  72%|███████▏  | 307/426 [00:02<00:00, 123.37it/s]Loading weights:  75%|███████▌  | 320/426 [00:02<00:00, 124.56it/s]Loading weights:  78%|███████▊  | 333/426 [00:02<00:00, 123.46it/s]Loading weights:  81%|████████  | 346/426 [00:02<00:00, 121.71it/s]Loading weights:  85%|████████▍ | 360/426 [00:02<00:00, 125.48it/s]Loading weights:  88%|████████▊ | 373/426 [00:03<00:00, 126.01it/s]Loading weights:  91%|█████████ | 386/426 [00:03<00:00, 123.64it/s]Loading weights:  94%|█████████▎| 399/426 [00:03<00:00, 122.40it/s]Loading weights:  97%|█████████▋| 413/426 [00:03<00:00, 124.29it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 125.44it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 121.92it/s]
+[2026-08-02 15:48:44] development: Stage B F1 25/400
+[2026-08-02 15:51:55] development: Stage B F1 50/400
+[2026-08-02 15:54:33] development: Stage B F1 75/400
+[2026-08-02 15:57:39] development: Stage B F1 100/400
+[2026-08-02 16:00:17] development: Stage B F1 125/400
+[2026-08-02 16:03:25] development: Stage B F1 150/400
+[2026-08-02 16:06:02] development: Stage B F1 175/400
+[2026-08-02 16:09:07] development: Stage B F1 200/400
+[2026-08-02 16:09:08] development: start f2
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<00:50,  8.43it/s]Loading weights:   5%|▍         | 21/426 [00:00<00:03, 109.12it/s]Loading weights:   9%|▊         | 37/426 [00:00<00:03, 126.34it/s]Loading weights:  12%|█▏        | 50/426 [00:00<00:03, 110.16it/s]Loading weights:  15%|█▌        | 66/426 [00:00<00:03, 111.95it/s]Loading weights:  19%|█▉        | 81/426 [00:00<00:02, 120.08it/s]Loading weights:  22%|██▏       | 94/426 [00:00<00:02, 120.72it/s]Loading weights:  27%|██▋       | 114/426 [00:00<00:02, 136.80it/s]Loading weights:  30%|███       | 128/426 [00:01<00:02, 131.65it/s]Loading weights:  33%|███▎      | 142/426 [00:01<00:02, 131.83it/s]Loading weights:  37%|███▋      | 156/426 [00:01<00:02, 120.14it/s]Loading weights:  40%|████      | 172/426 [00:01<00:02, 117.83it/s]Loading weights:  44%|████▍     | 187/426 [00:01<00:01, 123.79it/s]Loading weights:  47%|████▋     | 201/426 [00:01<00:01, 125.69it/s]Loading weights:  50%|█████     | 214/426 [00:01<00:01, 126.03it/s]Loading weights:  53%|█████▎    | 227/426 [00:01<00:01, 123.74it/s]Loading weights:  56%|█████▋    | 240/426 [00:01<00:01, 122.14it/s]Loading weights:  60%|█████▉    | 254/426 [00:02<00:01, 123.46it/s]Loading weights:  63%|██████▎   | 267/426 [00:02<00:01, 124.43it/s]Loading weights:  66%|██████▌   | 280/426 [00:02<00:01, 123.42it/s]Loading weights:  69%|██████▉   | 293/426 [00:02<00:01, 121.55it/s]Loading weights:  72%|███████▏  | 307/426 [00:02<00:00, 123.35it/s]Loading weights:  75%|███████▌  | 320/426 [00:02<00:00, 120.58it/s]Loading weights:  78%|███████▊  | 333/426 [00:02<00:00, 120.74it/s]Loading weights:  81%|████████  | 346/426 [00:02<00:00, 120.25it/s]Loading weights:  85%|████████▍ | 360/426 [00:02<00:00, 122.36it/s]Loading weights:  88%|████████▊ | 373/426 [00:03<00:00, 123.79it/s]Loading weights:  91%|█████████ | 386/426 [00:03<00:00, 122.53it/s]Loading weights:  94%|█████████▎| 399/426 [00:03<00:00, 120.68it/s]Loading weights:  97%|█████████▋| 413/426 [00:03<00:00, 123.32it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 124.80it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 121.65it/s]
+[2026-08-02 16:13:10] development: Stage B F2 25/400
+[2026-08-02 16:16:22] development: Stage B F2 50/400
+[2026-08-02 16:18:59] development: Stage B F2 75/400
+[2026-08-02 16:22:03] development: Stage B F2 100/400
+[2026-08-02 16:24:51] development: Stage B F2 125/400
+[2026-08-02 16:28:25] development: Stage B F2 150/400
+[2026-08-02 16:31:32] development: Stage B F2 175/400
+[2026-08-02 16:35:08] development: Stage B F2 200/400
+[2026-08-02 16:37:54] development: Stage B F2 225/400
+[2026-08-02 16:40:59] development: Stage B F2 250/400
+[2026-08-02 16:43:35] development: Stage B F2 275/400
+[2026-08-02 16:46:38] development: Stage B F2 300/400
+[2026-08-02 16:49:18] development: Stage B F2 325/400
+[2026-08-02 16:52:52] development: Stage B F2 350/400
+[2026-08-02 16:55:51] development: Stage B F2 375/400
+[2026-08-02 16:59:21] development: Stage B F2 400/400
+[2026-08-02 16:59:22] development: start evaluate
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<00:50,  8.40it/s]Loading weights:   5%|▌         | 22/426 [00:00<00:03, 109.25it/s]Loading weights:   8%|▊         | 36/426 [00:00<00:03, 117.18it/s]Loading weights:  11%|█▏        | 48/426 [00:00<00:03, 102.65it/s]Loading weights:  15%|█▌        | 66/426 [00:00<00:02, 120.05it/s]Loading weights:  19%|█▉        | 80/426 [00:00<00:02, 115.39it/s]Loading weights:  22%|██▏       | 95/426 [00:00<00:02, 123.04it/s]Loading weights:  26%|██▋       | 112/426 [00:00<00:02, 129.55it/s]Loading weights:  30%|███       | 128/426 [00:01<00:02, 135.60it/s]Loading weights:  33%|███▎      | 142/426 [00:01<00:02, 134.74it/s]Loading weights:  37%|███▋      | 156/426 [00:01<00:02, 118.94it/s]Loading weights:  40%|████      | 172/426 [00:01<00:02, 123.59it/s]Loading weights:  44%|████▎     | 186/426 [00:01<00:01, 125.85it/s]Loading weights:  47%|████▋     | 200/426 [00:01<00:01, 127.28it/s]Loading weights:  50%|█████     | 213/426 [00:01<00:01, 119.77it/s]Loading weights:  53%|█████▎    | 226/426 [00:01<00:01, 119.02it/s]Loading weights:  56%|█████▋    | 240/426 [00:02<00:01, 121.37it/s]Loading weights:  60%|█████▉    | 254/426 [00:02<00:01, 122.84it/s]Loading weights:  63%|██████▎   | 267/426 [00:02<00:01, 124.08it/s]Loading weights:  66%|██████▌   | 280/426 [00:02<00:01, 122.56it/s]Loading weights:  69%|██████▉   | 293/426 [00:02<00:01, 121.07it/s]Loading weights:  72%|███████▏  | 307/426 [00:02<00:00, 122.62it/s]Loading weights:  75%|███████▌  | 320/426 [00:02<00:00, 123.67it/s]Loading weights:  78%|███████▊  | 333/426 [00:02<00:00, 118.52it/s]Loading weights:  81%|████████  | 346/426 [00:02<00:00, 118.85it/s]Loading weights:  85%|████████▍ | 360/426 [00:02<00:00, 121.29it/s]Loading weights:  88%|████████▊ | 373/426 [00:03<00:00, 122.94it/s]Loading weights:  91%|█████████ | 386/426 [00:03<00:00, 121.76it/s]Loading weights:  94%|█████████▎| 399/426 [00:03<00:00, 120.44it/s]Loading weights:  97%|█████████▋| 413/426 [00:03<00:00, 122.58it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 124.12it/s]Loading weights: 100%|██████████| 426/426 [00:03<00:00, 121.00it/s]
+[2026-08-02 16:59:35] development: evaluate q35_native_anchor8_correct
+[2026-08-02 17:00:24] development: evaluate q35_native_anchor8_shuffled
+[2026-08-02 17:01:13] development: evaluate q35_native_anchor8_no_memory
+[2026-08-02 17:01:59] development: evaluate q3_to_q35_f0
+[2026-08-02 17:02:42] development: evaluate q3_to_q35_f1
+[2026-08-02 17:03:34] development: evaluate q3_to_q35_f2_best_nll
+[2026-08-02 17:04:12] development: evaluate q3_to_q35_f2_best_generation
+[2026-08-02 17:04:52] development: evaluate q3_to_q35_f2_shuffled
+[2026-08-02 17:05:35] development: evaluate q3_to_q35_f2_no_memory
+[2026-08-02 17:06:13] development: final evaluation completed
+development: pipeline completed
