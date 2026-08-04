@@ -1,0 +1,28 @@
+{
+  "validation_selected_v2": "v2_hl",
+  "delta_v2_ce_over_linear_continued_ce": -0.03022311889499374,
+  "deltas": {
+    "linear_continued_ce": {
+      "correct_minus_shuffled_f1": 0.405735757298257,
+      "correct_minus_no_memory_f1": 0.39280324898531394
+    },
+    "v2_h_ce": {
+      "correct_minus_shuffled_f1": 0.39729437229437214,
+      "correct_minus_no_memory_f1": 0.372242342877533
+    },
+    "v2_hl_ce": {
+      "correct_minus_shuffled_f1": 0.3960026952214451,
+      "correct_minus_no_memory_f1": 0.3625801300903202
+    },
+    "linear_continued_kd": {
+      "correct_minus_shuffled_f1": 0.40078023487366293,
+      "correct_minus_no_memory_f1": 0.3471550858680792
+    },
+    "v2_hl_kd": {
+      "correct_minus_shuffled_f1": 0.39257699765512255,
+      "correct_minus_no_memory_f1": 0.35189827722096734
+    }
+  },
+  "same_checkpoint_used_for_correct_and_shuffled": true,
+  "test_used_for_selection": false
+}

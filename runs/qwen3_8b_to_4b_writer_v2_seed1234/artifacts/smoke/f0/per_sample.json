@@ -1,0 +1,134 @@
+[
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "linear_continued_f0_correct",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Kim Yoon-seok and Ha Jung-woo.",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.26543134450912476,
+    "teacher_kl": 0.24977554380893707
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "linear_continued_f0_correct",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Answer: Isabella Baumfree",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 1.0202635526657104,
+    "teacher_kl": 0.39785149693489075
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "linear_continued_f0_shuffled",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "The question is based on incorrect information. The 2008 South Korean movie \"Plan B\" was remade as the Hindi movie \"Murder",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.315972089767456,
+    "teacher_kl": 3.2979185581207275
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "linear_continued_f0_shuffled",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Answer: Anna Julia Swanscott",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.4284467697143555,
+    "teacher_kl": 3.9494760036468506
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "v2_h_f0_correct",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Kim Yoon-seok and Ha Jung-woo.",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.2735097408294678,
+    "teacher_kl": 0.25763607025146484
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "v2_h_f0_correct",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Answer: Isabella Baumfree",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 1.0092145204544067,
+    "teacher_kl": 0.39680689573287964
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "v2_h_f0_shuffled",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "The question is based on incorrect information. The 2008 South Korean movie \"Plan B\" was remade as the Hindi movie \"Murder",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.3218259811401367,
+    "teacher_kl": 3.303663969039917
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "v2_h_f0_shuffled",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Answer: Anna Julia Swanscott",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.434784889221191,
+    "teacher_kl": 3.953139066696167
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "v2_hl_f0_correct",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Kim Yoon-seok and Ha Jung-woo.",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.26517531275749207,
+    "teacher_kl": 0.24948322772979736
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "v2_hl_f0_correct",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Answer: Isabella Baumfree",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 1.0060688257217407,
+    "teacher_kl": 0.4006184935569763
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "v2_hl_f0_shuffled",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "The question is based on incorrect information. The 2008 South Korean movie \"Plan B\" was remade as the Hindi movie \"Murder",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.321787118911743,
+    "teacher_kl": 3.303588390350342
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "v2_hl_f0_shuffled",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Answer: Anna Julia Swanscott",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.438745498657227,
+    "teacher_kl": 3.950169086456299
+  }
+]

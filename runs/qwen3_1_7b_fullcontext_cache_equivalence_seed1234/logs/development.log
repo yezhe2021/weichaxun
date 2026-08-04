@@ -1,0 +1,87 @@
+[2026-08-04 19:46:26] development: start preflight
+Qwen3-1.7B model/tokenizer preflight passed
+[2026-08-04 19:46:33] development: start render
+[2026-08-04 19:46:39] rendered and froze 64 full-context samples
+[2026-08-04 19:46:40] development: start audit
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  55%|█████▍    | 170/311 [00:00<00:00, 1654.42it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1440.96it/s]
+[2026-08-04 19:46:52] development: full-context cache audit 1/64
+[2026-08-04 19:46:55] development: full-context cache audit 2/64
+[2026-08-04 19:46:57] development: full-context cache audit 3/64
+[2026-08-04 19:46:59] development: full-context cache audit 4/64
+[2026-08-04 19:47:01] development: full-context cache audit 5/64
+[2026-08-04 19:47:02] development: full-context cache audit 6/64
+[2026-08-04 19:47:03] development: full-context cache audit 7/64
+[2026-08-04 19:47:04] development: full-context cache audit 8/64
+[2026-08-04 19:47:06] development: full-context cache audit 9/64
+[2026-08-04 19:47:07] development: full-context cache audit 10/64
+[2026-08-04 19:47:08] development: full-context cache audit 11/64
+[2026-08-04 19:47:10] development: full-context cache audit 12/64
+[2026-08-04 19:47:12] development: full-context cache audit 13/64
+[2026-08-04 19:47:13] development: full-context cache audit 14/64
+[2026-08-04 19:47:14] development: full-context cache audit 15/64
+[2026-08-04 19:47:16] development: full-context cache audit 16/64
+[2026-08-04 19:47:17] development: full-context cache audit 17/64
+[2026-08-04 19:47:19] development: full-context cache audit 18/64
+[2026-08-04 19:47:21] development: full-context cache audit 19/64
+[2026-08-04 19:47:22] development: full-context cache audit 20/64
+[2026-08-04 19:47:24] development: full-context cache audit 21/64
+[2026-08-04 19:47:25] development: full-context cache audit 22/64
+[2026-08-04 19:47:27] development: full-context cache audit 23/64
+[2026-08-04 19:47:29] development: full-context cache audit 24/64
+[2026-08-04 19:47:30] development: full-context cache audit 25/64
+[2026-08-04 19:47:32] development: full-context cache audit 26/64
+[2026-08-04 19:47:33] development: full-context cache audit 27/64
+[2026-08-04 19:47:35] development: full-context cache audit 28/64
+[2026-08-04 19:47:36] development: full-context cache audit 29/64
+[2026-08-04 19:47:38] development: full-context cache audit 30/64
+[2026-08-04 19:47:40] development: full-context cache audit 31/64
+[2026-08-04 19:47:41] development: full-context cache audit 32/64
+[2026-08-04 19:47:43] development: full-context cache audit 33/64
+[2026-08-04 19:47:45] development: full-context cache audit 34/64
+[2026-08-04 19:47:47] development: full-context cache audit 35/64
+[2026-08-04 19:47:49] development: full-context cache audit 36/64
+[2026-08-04 19:47:51] development: full-context cache audit 37/64
+[2026-08-04 19:47:52] development: full-context cache audit 38/64
+[2026-08-04 19:47:54] development: full-context cache audit 39/64
+[2026-08-04 19:47:56] development: full-context cache audit 40/64
+[2026-08-04 19:47:58] development: full-context cache audit 41/64
+[2026-08-04 19:48:00] development: full-context cache audit 42/64
+[2026-08-04 19:48:02] development: full-context cache audit 43/64
+[2026-08-04 19:48:03] development: full-context cache audit 44/64
+[2026-08-04 19:48:05] development: full-context cache audit 45/64
+[2026-08-04 19:48:07] development: full-context cache audit 46/64
+[2026-08-04 19:48:09] development: full-context cache audit 47/64
+[2026-08-04 19:48:11] development: full-context cache audit 48/64
+[2026-08-04 19:48:12] development: full-context cache audit 49/64
+[2026-08-04 19:48:14] development: full-context cache audit 50/64
+[2026-08-04 19:48:16] development: full-context cache audit 51/64
+[2026-08-04 19:48:18] development: full-context cache audit 52/64
+[2026-08-04 19:48:20] development: full-context cache audit 53/64
+[2026-08-04 19:48:21] development: full-context cache audit 54/64
+[2026-08-04 19:48:24] development: full-context cache audit 55/64
+[2026-08-04 19:48:26] development: full-context cache audit 56/64
+[2026-08-04 19:48:28] development: full-context cache audit 57/64
+[2026-08-04 19:48:29] development: full-context cache audit 58/64
+[2026-08-04 19:48:32] development: full-context cache audit 59/64
+[2026-08-04 19:48:34] development: full-context cache audit 60/64
+[2026-08-04 19:48:35] development: full-context cache audit 61/64
+[2026-08-04 19:48:37] development: full-context cache audit 62/64
+[2026-08-04 19:48:39] development: full-context cache audit 63/64
+[2026-08-04 19:48:42] development: full-context cache audit 64/64
+[2026-08-04 19:48:42] development: audit completed; gate_passed=False
+Traceback (most recent call last):
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py", line 404, in <module>
+    main()
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py", line 400, in main
+    raise RuntimeError(f"full-cache equivalence hard gate failed: {[k for k,v in gate['checks'].items() if not v]}")
+RuntimeError: full-cache equivalence hard gate failed: ['A1_A2_top1', 'A1_A3post_top1', 'A1_A3pre_top1']
+Traceback (most recent call last):
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/run_pipeline.py", line 39, in <module>
+    main()
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/run_pipeline.py", line 30, in main
+    subprocess.run([
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yezhe/data/miniconda3/envs/attnkv/bin/python', '-u', '/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py', '--config', '/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/config.json', '--mode', 'development']' returned non-zero exit status 1.
+[2026-08-04 19:48:43] Non-CUDA failure; stopping with status=1

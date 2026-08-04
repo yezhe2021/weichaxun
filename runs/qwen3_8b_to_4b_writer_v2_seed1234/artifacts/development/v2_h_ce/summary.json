@@ -1,0 +1,15 @@
+{
+  "kind": "v2_h",
+  "branch": "ce",
+  "initialized_from": "/home/yezhe/可拔插/qwen3_8b_to_4b_writer_v2_seed1234/artifacts/development/v2_h_stage_a/best.pt",
+  "best_validation_nll": 0.45735303895708057,
+  "best_validation_generation_f1": 0.7154761904761905,
+  "training_seconds": 3596.979606100358,
+  "peak_gpu_bytes": 17835268096,
+  "parameters": {
+    "trainable_parameters": 94445568,
+    "total_parameters": 94445568
+  },
+  "representation_losses_used": false,
+  "tether_used": false
+}

@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "counts": {
+    "source8": {
+      "train": 512,
+      "validation": 64,
+      "test": 64
+    },
+    "target4": {
+      "train": 512,
+      "validation": 64,
+      "test": 64
+    },
+    "teacher4": {
+      "train": 512,
+      "validation": 64,
+      "test": 64
+    }
+  },
+  "manifest_sha256": "cb30447d5be1cef90363d9fca562354bcb15f97c2198d5fcd37eb8bfe20b16c0",
+  "protocol_sha256": "1440fc931c92b95518121b4ea3e7bc66e67f0c54613dc32637cc350a08a68da3",
+  "prompt_sha256": "7b70866d497f8cb53302658dede83dbd7371bdebea41bcadac457a0c7693bc45",
+  "model_config_sha256": {
+    "qwen3_4b": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+    "qwen3_8b": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30"
+  },
+  "tokenizers": {
+    "qwen3_4b": {
+      "sha256": "183eb6b03de828e38271b243b5bbf45b0147e7ec7583a5fc6149cb003c4b62b4",
+      "files": [
+        "merges.txt",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    },
+    "qwen3_8b": {
+      "sha256": "183eb6b03de828e38271b243b5bbf45b0147e7ec7583a5fc6149cb003c4b62b4",
+      "files": [
+        "merges.txt",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ]
+    }
+  },
+  "scale_shapes": {
+    "source_k": [
+      36,
+      1024
+    ],
+    "source_v": [
+      36,
+      1024
+    ],
+    "target_k": [
+      36,
+      1024
+    ],
+    "target_v": [
+      36,
+      1024
+    ]
+  },
+  "linear_checkpoint_shapes": {
+    "weight_k": [
+      36,
+      1024,
+      1024
+    ],
+    "weight_v": [
+      36,
+      1024,
+      1024
+    ]
+  },
+  "linear_checkpoint_sha256": "75e71bf283206c3bb0cb837b17319c1e46b4eeac097a3332954876f20240b671",
+  "links": {
+    "source8": "/home/yezhe/可拔插/qwen3_8b_to_4b_fullcontext_writer_comparison_seed1234/cache/development/source8",
+    "target4": "/home/yezhe/可拔插/qwen3_8b_to_4b_fullcontext_writer_comparison_seed1234/cache/development/target4",
+    "teacher4": "/home/yezhe/可拔插/qwen3_8b_to_4b_fullcontext_writer_comparison_seed1234/cache/development/teacher4"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "seed": 1234,
+  "sizes": {
+    "train": 512,
+    "validation": 64,
+    "test": 64
+  },
+  "full_context": true,
+  "supporting_fact_selection": false,
+  "same_4b_8b_tokens": true,
+  "test_ids_equal_frozen_cache_audits": true,
+  "reader": "Qwen3-4B Identity",
+  "writer_question_aware": false,
+  "prompt": "You are a question answering system. Answer the question using only the provided context. Return only the shortest answer span. Do not explain your reasoning. If the answer is yes or no, return exactly \"yes\" or \"no\".",
+  "thinking": false,
+  "max_new_tokens": 32
+}

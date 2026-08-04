@@ -1,0 +1,35 @@
+[2026-08-04 13:49:48] waiting for completed 8B Writer v2 pipeline
+[2026-08-04 19:43:51] 8B completed; starting 1.7B cache smoke
+smoke: skip preflight
+smoke: skip render
+[2026-08-04 19:43:52] smoke: start audit
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   2%|▏         | 6/311 [00:00<00:38,  7.96it/s]Loading weights:   5%|▌         | 16/311 [00:01<00:33,  8.87it/s]Loading weights:   8%|▊         | 25/311 [00:02<00:21, 13.55it/s]Loading weights:   9%|▊         | 27/311 [00:02<00:21, 13.37it/s]Loading weights:  10%|█         | 32/311 [00:02<00:23, 12.12it/s]Loading weights:  11%|█         | 34/311 [00:03<00:26, 10.46it/s]Loading weights:  12%|█▏        | 37/311 [00:03<00:39,  6.96it/s]Loading weights:  16%|█▌        | 49/311 [00:04<00:26,  9.78it/s]Loading weights:  19%|█▉        | 60/311 [00:05<00:22, 11.34it/s]Loading weights:  22%|██▏       | 69/311 [00:05<00:17, 13.86it/s]Loading weights:  24%|██▍       | 75/311 [00:06<00:14, 16.12it/s]Loading weights:  25%|██▌       | 78/311 [00:06<00:15, 15.26it/s]Loading weights:  26%|██▌       | 80/311 [00:06<00:14, 15.49it/s]Loading weights:  26%|██▋       | 82/311 [00:06<00:15, 14.49it/s]Loading weights:  27%|██▋       | 84/311 [00:06<00:18, 12.40it/s]Loading weights:  29%|██▉       | 90/311 [00:07<00:15, 14.26it/s]Loading weights:  30%|███       | 94/311 [00:07<00:15, 14.10it/s]Loading weights:  31%|███       | 96/311 [00:07<00:16, 13.08it/s]Loading weights:  32%|███▏      | 101/311 [00:07<00:12, 17.19it/s]Loading weights:  33%|███▎      | 103/311 [00:08<00:13, 14.94it/s]Loading weights:  34%|███▍      | 105/311 [00:08<00:16, 12.19it/s]Loading weights:  36%|███▌      | 111/311 [00:08<00:12, 15.67it/s]Loading weights:  36%|███▋      | 113/311 [00:08<00:13, 14.93it/s]Loading weights:  37%|███▋      | 115/311 [00:09<00:15, 12.75it/s]Loading weights:  39%|███▉      | 121/311 [00:09<00:17, 10.67it/s]Loading weights:  41%|████      | 126/311 [00:09<00:13, 14.04it/s]Loading weights:  41%|████      | 128/311 [00:10<00:17, 10.36it/s]Loading weights:  42%|████▏     | 130/311 [00:10<00:16, 10.76it/s]Loading weights:  44%|████▎     | 136/311 [00:10<00:12, 14.49it/s]Loading weights:  44%|████▍     | 138/311 [00:11<00:22,  7.66it/s]Loading weights:  48%|████▊     | 148/311 [00:11<00:10, 14.92it/s]Loading weights:  49%|████▉     | 153/311 [00:12<00:09, 15.88it/s]Loading weights:  50%|█████     | 156/311 [00:12<00:10, 15.35it/s]Loading weights:  51%|█████     | 159/311 [00:14<00:36,  4.18it/s]Loading weights:  62%|██████▏   | 192/311 [00:15<00:06, 17.10it/s]Loading weights:  64%|██████▍   | 199/311 [00:15<00:07, 15.40it/s]Loading weights:  66%|██████▌   | 204/311 [00:16<00:09, 11.49it/s]Loading weights:  69%|██████▉   | 214/311 [00:16<00:06, 14.88it/s]Loading weights:  71%|███████   | 221/311 [00:17<00:05, 15.30it/s]Loading weights:  72%|███████▏  | 225/311 [00:19<00:10,  8.16it/s]Loading weights:  79%|███████▉  | 247/311 [00:19<00:03, 17.60it/s]Loading weights:  82%|████████▏ | 254/311 [00:19<00:03, 14.73it/s]Loading weights:  83%|████████▎ | 259/311 [00:20<00:04, 12.20it/s]Loading weights:  85%|████████▍ | 263/311 [00:20<00:03, 13.06it/s]Loading weights:  86%|████████▋ | 269/311 [00:21<00:03, 12.96it/s]Loading weights:  89%|████████▊ | 276/311 [00:21<00:02, 12.84it/s]Loading weights:  90%|████████▉ | 279/311 [00:23<00:04,  6.70it/s]Loading weights:  97%|█████████▋| 303/311 [00:23<00:00, 16.43it/s]Loading weights: 100%|██████████| 311/311 [00:23<00:00, 13.06it/s]
+[2026-08-04 19:44:47] smoke: full-context cache audit 1/8
+[2026-08-04 19:44:50] smoke: full-context cache audit 2/8
+[2026-08-04 19:44:52] smoke: full-context cache audit 3/8
+[2026-08-04 19:44:54] smoke: full-context cache audit 4/8
+[2026-08-04 19:44:56] smoke: full-context cache audit 5/8
+[2026-08-04 19:44:57] smoke: full-context cache audit 6/8
+[2026-08-04 19:44:59] smoke: full-context cache audit 7/8
+[2026-08-04 19:45:00] smoke: full-context cache audit 8/8
+Traceback (most recent call last):
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py", line 404, in <module>
+    main()
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py", line 372, in main
+    conditions, comparisons, layerwise, generation_rows, distribution_rows, cache_all, trace_all = aggregate(records)
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py", line 248, in aggregate
+    **{key: sum(x[key] for x in c) / len(c) for key in (
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py", line 248, in <dictcomp>
+    **{key: sum(x[key] for x in c) / len(c) for key in (
+ZeroDivisionError: division by zero
+Traceback (most recent call last):
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/run_pipeline.py", line 39, in <module>
+    main()
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/run_pipeline.py", line 30, in main
+    subprocess.run([
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yezhe/data/miniconda3/envs/attnkv/bin/python', '-u', '/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py', '--config', '/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/config.json', '--mode', 'smoke']' returned non-zero exit status 1.
+[2026-08-04 19:45:02] Non-CUDA failure; stopping with status=1
+[2026-08-04 19:45:02] 1.7B cache smoke failed with status=1
