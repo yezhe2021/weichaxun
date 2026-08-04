@@ -233,6 +233,15 @@ def distribution(reference, other, gold=None):
 
 # ---------------------------------------------------------------------------
 # Qwen3.5 hybrid cache helpers
+#
+# NOTE: transformers versions differ in how linear-attention layer caches store
+# state. Installed transformers 5.9.0 stores a single tensor per layer
+# (``conv_states``/``recurrent_states``) plus bool init flags and a stored
+# ``has_previous_state`` bool; newer main-branch versions store dicts keyed by
+# ``state_idx``. Every helper below is written to handle BOTH shapes so the
+# script runs on either. ``clone_cache`` copies *all* instance attributes via
+# ``vars(src)``, so nothing (tensors, dicts of tensors, bools, and crucially
+# ``has_previous_state``) is ever dropped.
 # ---------------------------------------------------------------------------
 
 def layer_types(config):
@@ -247,8 +256,24 @@ def layer_types(config):
     return list(lt)
 
 
-def clone_tensor(x):
-    return None if x is None else x.detach().clone()
+def _clone_value(value):
+    """Recursively clone a cache-layer attribute (tensor / dict-of-tensors /
+    scalar / dtype / device). Non-tensor objects (dtype, device, module refs)
+    are shared by reference; they are immutable or stateless in the cache path."""
+    if value is None:
+        return None
+    if isinstance(value, torch.Tensor):
+        return value.detach().clone()
+    if isinstance(value, dict):
+        return {k: _clone_value(v) for k, v in value.items()}
+    if isinstance(value, (bool, int, float, str)):
+        return value
+    return value
+
+
+def _copy_layer_state(src, dst):
+    for attr, value in vars(src).items():
+        setattr(dst, attr, _clone_value(value))
 
 
 def clone_cache(cache, config):
@@ -256,53 +281,66 @@ def clone_cache(cache, config):
 
     Rebuilds the per-layer cache objects from ``config`` (so FA layers get a
     fresh ``DynamicLayer`` and linear layers a fresh ``LinearAttentionLayer``),
-    then copies every tensor and init flag. The source cache is never mutated.
+    then copies every instance attribute of the source layer verbatim. The
+    source cache is never mutated. Copying via ``vars(src)`` guarantees the
+    ``has_previous_state`` flag travels with the state, which the model reads
+    to decide whether to resume from the copied recurrent/conv states.
     """
     new = DynamicCache(config=config)
-    for idx, src in enumerate(cache.layers):
-        dst = new.layers[idx]
-        for attr in ("keys", "values", "conv_states", "recurrent_states"):
-            value = getattr(src, attr, None)
-            if value is not None:
-                setattr(dst, attr, value.detach().clone())
-        for attr in ("is_initialized", "is_conv_states_initialized", "is_recurrent_states_initialized",
-                     "dtype", "device", "max_batch_size", "conv_kernel_size"):
-            if hasattr(src, attr):
-                setattr(dst, attr, getattr(src, attr))
+    for src, dst in zip(cache.layers, new.layers):
+        _copy_layer_state(src, dst)
     return new
+
+
+def _state_iter(states):
+    """Yield ``(state_idx, tensor)`` from a conv/recurrent container that is
+    either a single tensor (transformers 5.9) or a dict keyed by state_idx
+    (newer main-branch versions). Empty when ``states`` is None."""
+    if states is None:
+        return
+    if isinstance(states, dict):
+        for idx in sorted(states.keys()):
+            tensor = states[idx]
+            if tensor is not None:
+                yield idx, tensor
+    elif torch.is_tensor(states):
+        yield 0, states
 
 
 def zero_components(cache, config, zero_fa=False, zero_recurrent=False, zero_conv=False):
     """Same-shape zeroing of the cache components, per protocol section 7.
 
     FA layer KV is zeroed (token positions preserved); linear layers have their
-    recurrent and/or conv state zeroed. Operates in place on ``cache``.
+    recurrent and/or conv state zeroed (every state_idx). Operates in place.
     """
     types = layer_types(config)
     for idx, layer in enumerate(cache.layers):
         is_linear = idx < len(types) and types[idx] == "linear_attention"
         if is_linear:
-            if zero_conv and getattr(layer, "is_conv_states_initialized", False) and layer.conv_states is not None:
-                layer.conv_states.zero_()
-            if zero_recurrent and getattr(layer, "is_recurrent_states_initialized", False) and layer.recurrent_states is not None:
-                layer.recurrent_states.zero_()
+            if zero_conv and getattr(layer, "is_conv_states_initialized", False):
+                for _, tensor in _state_iter(getattr(layer, "conv_states", None)):
+                    tensor.zero_()
+            if zero_recurrent and getattr(layer, "is_recurrent_states_initialized", False):
+                for _, tensor in _state_iter(getattr(layer, "recurrent_states", None)):
+                    tensor.zero_()
         else:
-            if zero_fa and getattr(layer, "is_initialized", False) and layer.keys is not None and layer.keys.numel() > 0:
+            if zero_fa and getattr(layer, "is_initialized", False) and getattr(layer, "keys", None) is not None:
                 layer.keys.zero_()
                 layer.values.zero_()
 
 
 def collect_cache_tensors(cache):
-    """Flatten all state tensors of a hybrid cache for B-vs-C comparison."""
+    """Flatten every state tensor of a hybrid cache into
+    ``(kind, layer_idx, state_idx, tensor)`` tuples for B-vs-C comparison."""
     out = []
     for idx, layer in enumerate(cache.layers):
-        if getattr(layer, "is_initialized", False) and getattr(layer, "keys", None) is not None and layer.keys.numel() > 0:
-            out.append(("fa_key", idx, layer.keys.detach().clone()))
-            out.append(("fa_value", idx, layer.values.detach().clone()))
-        if getattr(layer, "is_conv_states_initialized", False) and getattr(layer, "conv_states", None) is not None:
-            out.append(("conv_state", idx, layer.conv_states.detach().clone()))
-        if getattr(layer, "is_recurrent_states_initialized", False) and getattr(layer, "recurrent_states", None) is not None:
-            out.append(("recurrent_state", idx, layer.recurrent_states.detach().clone()))
+        if getattr(layer, "is_initialized", False) and getattr(layer, "keys", None) is not None:
+            out.append(("fa_key", idx, 0, layer.keys.detach().clone()))
+            out.append(("fa_value", idx, 0, layer.values.detach().clone()))
+        for sidx, tensor in _state_iter(getattr(layer, "conv_states", None)):
+            out.append(("conv_state", idx, sidx, tensor.detach().clone()))
+        for sidx, tensor in _state_iter(getattr(layer, "recurrent_states", None)):
+            out.append(("recurrent_state", idx, sidx, tensor.detach().clone()))
     return out
 
 
@@ -311,8 +349,8 @@ def cache_tensors_equal(left, right, tol=0.0):
     if len(left) != len(right):
         return False, float("inf"), float("inf")
     max_abs, max_nmse = 0.0, 0.0
-    for (lk, li, lt), (rk, ri, rt) in zip(left, right):
-        if lk != rk or li != ri or lt.shape != rt.shape:
+    for (lk, li, ls, lt), (rk, ri, rs, rt) in zip(left, right):
+        if lk != rk or li != ri or ls != rs or lt.shape != rt.shape:
             return False, float("inf"), float("inf")
         d = (lt.float() - rt.float()).abs().max().item()
         nm = (lt.float() - rt.float()).square().mean().item() / lt.float().square().mean().clamp_min(1e-12).item()
@@ -322,7 +360,8 @@ def cache_tensors_equal(left, right, tol=0.0):
 
 
 def cache_manifest(cache, config, expected_prefix_len):
-    """Per-layer structure dump used by Smoke-1 to validate every assumption."""
+    """Per-layer structure dump used by Smoke-1 to validate every assumption,
+    including the dict-vs-tensor container shape and has_previous_state."""
     types = layer_types(config)
     rows = []
     for idx, layer in enumerate(cache.layers):
@@ -330,28 +369,31 @@ def cache_manifest(cache, config, expected_prefix_len):
             "layer_idx": idx,
             "layer_type": types[idx] if idx < len(types) else "?",
             "layer_class": type(layer).__name__,
+            "has_previous_state": getattr(layer, "has_previous_state", None),
         }
         if getattr(layer, "is_initialized", False) and getattr(layer, "keys", None) is not None and layer.keys.numel() > 0:
             row.update({
-                "key_shape": list(layer.keys.shape),
-                "value_shape": list(layer.values.shape),
-                "dtype": str(layer.keys.dtype),
-                "key_norm": layer.keys.float().norm().item(),
-                "value_norm": layer.values.float().norm().item(),
+                "fa_key_shape": list(layer.keys.shape),
+                "fa_value_shape": list(layer.values.shape),
+                "fa_dtype": str(layer.keys.dtype),
+                "fa_key_norm": layer.keys.float().norm().item(),
+                "fa_value_norm": layer.values.float().norm().item(),
                 "seq_len": int(layer.get_seq_length()),
             })
-        if getattr(layer, "is_conv_states_initialized", False) and layer.conv_states is not None:
-            row.update({
-                "conv_shape": list(layer.conv_states.shape),
-                "conv_dtype": str(layer.conv_states.dtype),
-                "conv_norm": layer.conv_states.float().norm().item(),
-            })
-        if getattr(layer, "is_recurrent_states_initialized", False) and layer.recurrent_states is not None:
-            row.update({
-                "recurrent_shape": list(layer.recurrent_states.shape),
-                "recurrent_dtype": str(layer.recurrent_states.dtype),
-                "recurrent_norm": layer.recurrent_states.float().norm().item(),
-            })
+        if getattr(layer, "is_conv_states_initialized", False):
+            conv = getattr(layer, "conv_states", None)
+            row["conv_container"] = "dict" if isinstance(conv, dict) else ("tensor" if torch.is_tensor(conv) else None)
+            row["conv_states"] = {
+                str(sidx): {"shape": list(t.shape), "dtype": str(t.dtype), "norm": t.float().norm().item()}
+                for sidx, t in _state_iter(conv)
+            }
+        if getattr(layer, "is_recurrent_states_initialized", False):
+            rec = getattr(layer, "recurrent_states", None)
+            row["recurrent_container"] = "dict" if isinstance(rec, dict) else ("tensor" if torch.is_tensor(rec) else None)
+            row["recurrent_states"] = {
+                str(sidx): {"shape": list(t.shape), "dtype": str(t.dtype), "norm": t.float().norm().item()}
+                for sidx, t in _state_iter(rec)
+            }
         rows.append(row)
     return {
         "num_layers": len(cache.layers),
@@ -363,7 +405,7 @@ def cache_manifest(cache, config, expected_prefix_len):
 
 
 # ---------------------------------------------------------------------------
-# Forward helpers (Path A continuous / Path B replay)
+# Forward helpers (Path A0/A1 continuous / Path B replay)
 # ---------------------------------------------------------------------------
 
 def prefill(model, ids):
@@ -377,9 +419,10 @@ def prefill(model, ids):
 def forward_logits(model, ids_list, target_ids, prefix=0, cache=None):
     """Teacher-forced logits over the answer region.
 
-    - Path A (continuous): ids_list = full_input_ids, cache=None -> use_cache=False
+    - Path A0 (continuous): ids_list = full_input_ids, cache=None -> use_cache=False
+    - Path A1 (continuous + cache): ids_list = full_input_ids, cache=empty DynamicCache -> use_cache=True
     - Path B (replay): ids_list = question_input_ids, cache=cloned prefix cache.
-    The model derives position_ids from cache.get_seq_length() on the replay path,
+    The model derives position_ids from cache.get_seq_length() on cache paths,
     so no manual cache_position is needed.
     """
     current = ids_list + target_ids[:-1]

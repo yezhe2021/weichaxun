@@ -11,9 +11,12 @@ def aggregate_conditions(records):
     conditions = {}
     for name in sorted({row["condition"] for row in rows}):
         group = [row for row in rows if row["condition"] == name]
+
         def mean(key, subset=None):
-            vals = [x[key] for x in (subset or group)]
+            source = group if subset is None else subset
+            vals = [x[key] for x in source]
             return sum(vals) / len(vals) if vals else float("nan")
+
         conditions[name] = {
             "count": len(group),
             "em": mean("em"),
@@ -30,25 +33,35 @@ def aggregate_equivalence(records):
     cont = [r["continuity"] for r in records]
     matches = [r["generation"][-1]["exact_generation_match"] for r in records]
 
-    def mean(rows, key):
+    def max_of(rows, key):
+        return max(x[key] for x in rows) if rows else float("nan")
+
+    def mean_of(rows, key):
         return sum(x[key] for x in rows) / len(rows) if rows else float("nan")
+
+    def agg(name, rows):
+        return {
+            "mean_kl": mean_of(rows, "mean_kl"),
+            "max_kl": max_of(rows, "max_kl"),
+            "top1_match_rate": mean_of(rows, "top1_match_rate"),
+            "nll_diff": max_of(rows, "nll_absolute_difference"),
+            "logits_max_abs": max_of(rows, "logits_max_absolute_error"),
+        }
 
     return {
         "samples": len(records),
         "generation_exact_match_rate": sum(matches) / len(matches) if matches else float("nan"),
         "clone_gate": {
-            "logits_max_abs": max(x["logits_max_absolute_error"] for x in clone),
-            "cache_nmse": max(x["post_forward_B_equals_C_nmse"] for x in clone),
-            "base_unmutated_max_abs": max(x["base_unmutated_max_abs"] for x in clone),
-            "top1_match": mean(clone, "top1_match_rate"),
+            "clone_pre_forward_nmse": max_of(clone, "clone_pre_forward_nmse"),
+            "clone_pre_forward_max_abs": max_of(clone, "clone_pre_forward_max_abs"),
+            "post_forward_B_vs_C_nmse": max_of(clone, "post_forward_B_vs_C_nmse"),
+            "base_cache_unmutated_max_abs": max_of(clone, "base_cache_unmutated_max_abs"),
+            "base_cache_unmutated_nmse": max_of(clone, "base_cache_unmutated_nmse"),
+            "top1_match": mean_of(clone, "top1_match_rate"),
         },
-        "continuity": {
-            "mean_kl": mean(cont, "mean_kl"),
-            "max_kl": max(x["max_kl"] for x in cont),
-            "top1_match_rate": mean(cont, "top1_match_rate"),
-            "nll_diff": max(x["nll_absolute_difference"] for x in cont),
-            "logits_max_abs": max(x["logits_max_absolute_error"] for x in cont),
-        },
+        "continuity_a0_vs_a1": agg("a0_vs_a1", [x["a0_vs_a1"] for x in cont]),
+        "continuity_a1_vs_b": agg("a1_vs_b", [x["a1_vs_b"] for x in cont]),
+        "continuity_a0_vs_b": agg("a0_vs_b", [x["a0_vs_b"] for x in cont]),
     }
 
 
@@ -90,12 +103,16 @@ def main():
     }
 
     g = cfg["gates"]
+    a1b = equiv["continuity_a1_vs_b"]
+    a0a1 = equiv["continuity_a0_vs_a1"]
     checks = {
-        "clone_logits_max_abs": equiv["clone_gate"]["logits_max_abs"] <= g["clone_logits_max_abs"],
-        "clone_cache_nmse": equiv["clone_gate"]["cache_nmse"] <= g["clone_cache_nmse"],
-        "replay_mean_kl": equiv["continuity"]["mean_kl"] <= g["replay_mean_kl"],
-        "answer_nll_diff": equiv["continuity"]["nll_diff"] <= g["answer_nll_diff"],
-        "top1_match_rate": equiv["continuity"]["top1_match_rate"] >= g["top1_match_rate"],
+        "clone_pre_forward_max_abs": equiv["clone_gate"]["clone_pre_forward_max_abs"] <= g["clone_logits_max_abs"],
+        "clone_pre_forward_nmse": equiv["clone_gate"]["clone_pre_forward_nmse"] <= g["clone_cache_nmse"],
+        "post_forward_B_vs_C_nmse": equiv["clone_gate"]["post_forward_B_vs_C_nmse"] <= g["clone_cache_nmse"],
+        "a0_vs_a1_mean_kl": a0a1["mean_kl"] <= g["replay_mean_kl"],
+        "a1_vs_b_mean_kl": a1b["mean_kl"] <= g["replay_mean_kl"],
+        "a1_vs_b_nll_diff": a1b["nll_diff"] <= g["answer_nll_diff"],
+        "a1_vs_b_top1": a1b["top1_match_rate"] >= g["top1_match_rate"],
         "generation_match": equiv["generation_exact_match_rate"] >= g["generation_match_min"],
         "em_diff": abs(fh.get("em", 0) - conditions.get("continuous", {}).get("em", 0)) <= g["em_f1_diff"],
         "f1_diff": abs(fh.get("f1", 0) - conditions.get("continuous", {}).get("f1", 0)) <= g["em_f1_diff"],
@@ -115,8 +132,14 @@ def main():
         print(f"  {name:22s} {c['em']:.3f} | {c['f1']:.3f} | {c['nll']:.3f}")
     print(f"  {'recovery':22s} " + " | ".join(f"{k}={v:.3f}" for k, v in recovery_map.items()))
     print(f"  gaps: " + ", ".join(f"{k}={v:.3f}" for k, v in gaps.items()))
-    print(f"equivalence: {equiv}")
+    print(f"clone gate: {equiv['clone_gate']}")
+    print(f"continuity A0vsA1: {a0a1}")
+    print(f"continuity A1vsB: {a1b}")
     print(f"gate: passed={gate['passed']} failed={[k for k, v in checks.items() if not v]}")
+
+    if cfg["enforce_hard_gates"] and not gate["passed"]:
+        failed = [k for k, v in checks.items() if not v]
+        raise RuntimeError(f"Equivalence gates failed: {failed}")
 
 
 if __name__ == "__main__":

@@ -4,19 +4,20 @@ import argparse
 from pathlib import Path
 
 import torch
+from transformers import DynamicCache
 
 from common import (
     cache_manifest, cache_tensors_equal, clone_cache, collect_cache_tensors,
-    device, forward_logits, load_json, load_model, load_tokenizer, prefill,
-    progress, save_json, selected_samples, target_ids, distribution,
+    device, distribution, forward_logits, load_json, load_model, load_tokenizer,
+    prefill, progress, save_json, selected_samples, target_ids,
 )
 
 
 def forward_logits_range(model, prompt_ids, prefix=0, cache=None):
     """Logits at every position of `prompt_ids` (used by the split diagnostic).
 
-    Path continuous: prompt_ids = full ids, cache=None -> use_cache=False.
-    Path replay: prompt_ids = suffix ids, cache = prefix cache -> use_cache=True.
+    Continuous side uses cache=empty DynamicCache (use_cache=True), so the
+    comparison with the replay path has no use_cache confound.
     """
     ids = torch.tensor([prompt_ids], dtype=torch.long, device=device())
     mask = torch.ones(1, prefix + len(prompt_ids), dtype=torch.long, device=device())
@@ -28,16 +29,17 @@ def forward_logits_range(model, prompt_ids, prefix=0, cache=None):
     return output.logits[0].float().cpu()
 
 
-def split_remainder(model, full_ids, context_end, target, r):
+def split_remainder(model, full_ids, context_end, r):
     """Split full_ids at the largest position <= context_end with (k mod 64)==r,
-    prefill [0:k), replay [k:), compare with continuous logits at [k:)."""
+    prefill [0:k), replay [k:), compare with continuous (use_cache=True) at [k:)."""
     k = context_end - ((context_end - r) % 64)
     if k < 64 or k >= len(full_ids) - 1:
         return {"remainder": r, "split": k, "skipped": True}
     prefix_ids, suffix_ids = full_ids[:k], full_ids[k:]
     cache = prefill(model, prefix_ids)
     logits_replay = forward_logits_range(model, suffix_ids, prefix=k, cache=cache)
-    logits_cont = forward_logits_range(model, full_ids)
+    logits_cont = forward_logits_range(model, full_ids,
+                                       cache=DynamicCache(config=model.config))
     logits_cont_slice = logits_cont[k:]
     m = distribution(logits_cont_slice, logits_replay, gold=None)
     return {
@@ -85,30 +87,33 @@ def main():
         "manifest_seq_length": manifest["get_seq_length"] == prefix_len,
         "has_previous_state": manifest["has_previous_state"],
     }
+    n_linear = sum(1 for l in manifest["layers"] if l["layer_type"] == "linear_attention")
     n_linear_initialized = sum(
-        l["layer_type"] == "linear_attention" and "recurrent_shape" in l
+        l["layer_type"] == "linear_attention" and bool(l.get("recurrent_states")) and bool(l.get("has_previous_state"))
         for l in manifest["layers"]
     )
     n_fa_initialized = sum(
-        l["layer_type"] == "full_attention" and "key_shape" in l
+        l["layer_type"] == "full_attention" and "fa_key_shape" in l
         for l in manifest["layers"]
     )
-    checks["n_linear_recurrent_initialized"] = n_linear_initialized == 24
+    checks["n_linear_recurrent_initialized"] = n_linear_initialized == n_linear == 24
     checks["n_fa_kv_initialized"] = n_fa_initialized == 8
 
-    # ---- Smoke-1.b: Gate 1, cache-copy / re-injection ----
+    # ---- Smoke-1.b: Gate 1, cache-copy / re-injection (checked BEFORE forward) ----
     snapshot_base = collect_cache_tensors(base_cache)
     cache_b = clone_cache(base_cache, model.config)
     cache_c = clone_cache(base_cache, model.config)
     clone_eq, clone_max_abs, clone_max_nmse = cache_tensors_equal(
         collect_cache_tensors(cache_b), snapshot_base)
+    _, _, clone_c_max_nmse = cache_tensors_equal(collect_cache_tensors(cache_c), snapshot_base)
     checks["clone_tensors_equal"] = clone_eq
 
     logits_B = forward_logits(model, question_ids, target, prefix=prefix_len, cache=cache_b)
     logits_C = forward_logits(model, question_ids, target, prefix=prefix_len, cache=cache_c)
-    logits_A = forward_logits(model, full_ids, target)
+    logits_A0 = forward_logits(model, full_ids, target)
+    logits_A1 = forward_logits(model, full_ids, target, cache=DynamicCache(config=model.config))
     m_BvC = distribution(logits_B, logits_C, target)
-    m_AvB = distribution(logits_A, logits_B, target)
+    m_A1B = distribution(logits_A1, logits_B, target)
 
     # after replay: B and C were mutated identically; base_cache must be untouched
     eq_BC_post, _, _ = cache_tensors_equal(collect_cache_tensors(cache_b),
@@ -122,8 +127,9 @@ def main():
         "prefix_len": prefix_len,
         "question_len": len(question_ids),
         "clone_gate": {"tensors_equal": clone_eq, "max_abs": clone_max_abs,
-                       "max_nmse": clone_max_nmse, **m_BvC},
-        "continuity_gate": m_AvB,
+                       "max_nmse": clone_max_nmse, "clone_c_max_nmse": clone_c_max_nmse,
+                       **m_BvC},
+        "continuity": {"a1_vs_b": m_A1B},
         "manifest_checks": checks,
         "split_diag": [],
     }
@@ -131,11 +137,11 @@ def main():
     # ---- Smoke-1.c: Gate 2, arbitrary-split replay ----
     if args.split_diag:
         for r in cfg["split_remainders"]:
-            result["split_diag"].append(split_remainder(model, full_ids, prefix_len, target, r))
+            result["split_diag"].append(split_remainder(model, full_ids, prefix_len, r))
 
     save_json(root / "metrics" / "smoke1_audit.json", result)
-    progress(f"clone_gate max_abs={clone_max_abs:.3e} | continuity mean_kl={m_AvB['mean_kl']:.3e} "
-             f"max_abs={m_AvB['logits_max_absolute_error']:.3e} | checks={checks}")
+    progress(f"clone_gate max_abs={clone_max_abs:.3e} | A1B mean_kl={m_A1B['mean_kl']:.3e} "
+             f"max_abs={m_A1B['logits_max_absolute_error']:.3e} | checks={checks}")
     if cfg["enforce_hard_gates"] and not all(v is True for v in checks.values()):
         raise RuntimeError(f"Smoke-1 structural checks failed: "
                            f"{[k for k, v in checks.items() if v is not True]}")
