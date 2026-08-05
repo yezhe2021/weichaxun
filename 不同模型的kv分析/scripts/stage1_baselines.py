@@ -154,7 +154,8 @@ def main():
     model = load_model(args.model, cfg)
     manifest = load_json(Path(args.workdir) / "artifacts" / "manifest.json")[args.split]
     samples = manifest if args.max_samples <= 0 else manifest[: args.max_samples]
-    id_map = {sample["id"]: sample for sample in samples}
+    # donor 映射覆盖整个 split：shuffle_id 可能指向取样范围之外的样本
+    id_map = {sample["id"]: sample for sample in manifest}
 
     per_sample = []
     for index, sample in enumerate(samples, 1):

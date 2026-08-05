@@ -462,8 +462,8 @@ def main():
     cfg["eval_every"] = {"overfit": eval_every[0], "direct": eval_every[1], "stage_b": eval_every[2]}
 
     manifest = load_json(Path(args.workdir) / "artifacts" / "manifest.json")
-    smoke = {"smoke": 4, "development": 10**9}[args.mode]
-    rows = {split: values[:smoke] for split, values in manifest.items()}
+    # 使用完整 split：overfit donor 可能指向 split 内任意样本
+    rows = manifest
     store = make_store(cfg, args.mode, rows)
 
     if args.phase == "stage_a":

@@ -329,6 +329,9 @@ def apply_rope(model, tensor, positions):
 
 def dynamic_cache(model, pre_key, value, positions=None):
     """把 pre-RoPE K + V 注入 Receiver：K 先经 Receiver 自己的 RoPE 旋转（方案 §七 恢复后）。"""
+    device = next(model.parameters()).device
+    pre_key = pre_key.to(device)
+    value = value.to(device)
     positions = list(range(pre_key.shape[1])) if positions is None else positions
     post_key = apply_rope(model, pre_key, positions)
     items = [

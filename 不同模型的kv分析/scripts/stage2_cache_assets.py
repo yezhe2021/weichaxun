@@ -83,8 +83,8 @@ def main():
         "target_dir": args.target_dir,
     }
     manifest = load_json(Path(args.workdir) / "artifacts" / "manifest.json")
-    smoke = {"smoke": 4, "development": 10**9}[args.mode]
-    rows = {split: values[:smoke] for split, values in manifest.items()}
+    # 缓存完整 split：shuffle_derangement 的 donor 可能指向 split 内任意样本
+    rows = manifest
 
     if args.action in ("source", "target"):
         if not args.model:

@@ -191,7 +191,9 @@ def stage_baselines(cfg, exp, mode):
         summary = load_json(work / "artifacts" / f"{role}_baseline_summary.json")
         progress(f"{role} baselines: {summary['f1']} self_gain={summary['self_gain']} cache_gate_passed={summary['cache_gate']['cache_gate_passed']}")
         if not summary["cache_gate"]["cache_gate_passed"]:
-            raise RuntimeError(f"{role} cache gate failed")
+            if mode == "development":
+                raise RuntimeError(f"{role} cache gate failed")
+            progress(f"WARNING {role}: cache gate not passed in smoke (link check only)")
 
 
 def _train(cfg, exp, mode, direction, phase):

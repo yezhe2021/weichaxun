@@ -157,8 +157,8 @@ def main():
         "seed": args.seed,
     }
     manifest = load_json(Path(args.workdir) / "artifacts" / "manifest.json")["test"]
-    smoke = {"smoke": 2, "development": 10**9}[args.mode]
-    samples = manifest[:smoke]
+    # 使用完整 test split：shuffled donor 可能指向任意 test 样本
+    samples = manifest
     store = Store(cfg, args.mode, {"test": samples, "train": [], "validation": []})
 
     # Receiver 条件
