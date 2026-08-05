@@ -30,10 +30,19 @@ from pathlib import Path
 import torch
 
 from protocol import (
-    Store, capture_native, cuda, dynamic_cache, generate, load_json, load_model, progress,
-    save_json, token_f1, tokenizer, write_jsonl, seed_all,
+    Store, capture_native, cuda, dynamic_cache, generate, load_json, load_model, normalize_answer,
+    progress, save_json, token_f1, tokenizer, write_jsonl, seed_all,
 )
 from writer import load_writer
+
+
+def exact_match(prediction, answer):
+    """Normalized EM（问题 9）：统一大小写/标点/冠词/空格后比较。"""
+    return float(normalize_answer(prediction) == normalize_answer(answer))
+
+
+def _em(rows, pred_key):
+    return float(sum(exact_match(row[pred_key], row["answer"]) for row in rows) / len(rows))
 
 
 @torch.no_grad()
@@ -172,37 +181,62 @@ def main():
     conditions = {
         "correct": {
             "f1": mean_f1(merged, "f1_correct"),
-            "em": float(sum(1 for r in merged if r["correct_prediction"].strip() == r["answer"].strip()) / len(merged)),
+            "em": _em(merged, "correct_prediction"),
             "by_type": type_f1(merged, "f1_correct"),
         },
         "shuffled": {
             "f1": mean_f1(merged, "f1_shuffled"),
+            "em": _em(merged, "shuffled_prediction"),
             "by_type": type_f1(merged, "f1_shuffled"),
         },
         "question_only": {
             "f1": mean_f1(merged, "f1_qonly"),
+            "em": _em(merged, "qonly_prediction"),
             "by_type": type_f1(merged, "f1_qonly"),
         },
         "receiver_full_text": {
             "f1": mean_f1(merged, "f1_receiver_fulltext"),
+            "em": _em(merged, "receiver_fulltext_prediction"),
             "by_type": type_f1(merged, "f1_receiver_fulltext"),
         },
         "receiver_native": {
             "f1": mean_f1(merged, "f1_receiver_native"),
+            "em": _em(merged, "receiver_native_prediction"),
             "by_type": type_f1(merged, "f1_receiver_native"),
         },
         "sender_full_text": {
             "f1": mean_f1(merged, "f1_sender_fulltext"),
+            "em": _em(merged, "sender_fulltext_prediction"),
             "by_type": type_f1(merged, "f1_sender_fulltext"),
         },
         "sender_question_only": {
             "f1": mean_f1(merged, "f1_sender_qonly"),
+            "em": _em(merged, "sender_qonly_prediction"),
             "by_type": type_f1(merged, "f1_sender_qonly"),
         },
     }
     cross_gain = conditions["correct"]["f1"] - conditions["question_only"]["f1"]
     self_gain = conditions["sender_full_text"]["f1"] - conditions["sender_question_only"]["f1"]
     recovery_denom = conditions["receiver_full_text"]["f1"] - conditions["question_only"]["f1"]
+    def _type_derived(t):
+        """按类型计算完整派生指标（问题 13：补 ReleaseDelta_t 与 ReceiverRecovery_t）。"""
+        f1_correct = type_f1(merged, "f1_correct")[t]
+        f1_shuffled = type_f1(merged, "f1_shuffled")[t]
+        f1_qonly = type_f1(merged, "f1_qonly")[t]
+        f1_fulltext = type_f1(merged, "f1_receiver_fulltext")[t]
+        f1_sender_full = type_f1(merged, "f1_sender_fulltext")[t]
+        f1_sender_qonly = type_f1(merged, "f1_sender_qonly")[t]
+        cross = f1_correct - f1_qonly
+        self_gain = f1_sender_full - f1_sender_qonly
+        denom = f1_fulltext - f1_qonly
+        return {
+            "cross_gain": cross,
+            "self_gain": self_gain,
+            "release_delta": cross - self_gain,
+            "receiver_recovery": (cross / denom) if abs(denom) > 1e-12 else float("nan"),
+            "specificity": f1_correct - f1_shuffled,
+        }
+
     result = {
         "sender": args.sender_model,
         "receiver": args.receiver_model,
@@ -219,14 +253,7 @@ def main():
             "receiver_recovery": (cross_gain / recovery_denom) if abs(recovery_denom) > 1e-12 else float("nan"),
             "specificity": conditions["correct"]["f1"] - conditions["shuffled"]["f1"],
         },
-        "by_type": {
-            t: {
-                "cross_gain": type_f1(merged, "f1_correct")[t] - type_f1(merged, "f1_qonly")[t],
-                "self_gain": type_f1(merged, "f1_sender_fulltext")[t] - type_f1(merged, "f1_sender_qonly")[t],
-                "specificity": type_f1(merged, "f1_correct")[t] - type_f1(merged, "f1_shuffled")[t],
-            }
-            for t in ("bridge", "comparison")
-        },
+        "by_type": {t: _type_derived(t) for t in ("bridge", "comparison")},
     }
     save_json(args.out, result)
     write_jsonl(str(Path(args.out).with_suffix("")) + "_per_sample.jsonl", merged)

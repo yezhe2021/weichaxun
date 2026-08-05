@@ -5,9 +5,9 @@
   audit     阶段0：Tokenizer 与协议审计（跨模型 token 一致性）
   cache     阶段2：KV 资产缓存 + 每个方向的 RMS scale
   baselines 阶段1：sender/receiver 各自 Cache Gate + 文本基线（F1^QOnly/FullText/Shuffled/SelfGain）
-  gates     阶段4：4 个方向（2 Self + 2 跨模型）的 16 样本功能 Gate
+  gates     阶段4：全部方向的 16 样本功能 Gate（每个方向都跑，失败也记录）
   formal    阶段5+6：对通过 Gate 的方向跑 Direct CE 与 Stage A→B，再在 test 上评估
-  all       依序执行以上全部
+  all       依序执行以上全部，formal 覆盖全部方向（问题 10）
 
 用法：
   python -u run_pipeline.py --experiment 06_17 --mode smoke --stage all      # 冒烟验证全流程
@@ -37,6 +37,7 @@ MODELS = {
 }
 
 # 每组模型同架构、KV 维度同为 8×128=1024，逐层可映射（方案 §一）。
+# direction: (名字, source 目录, target 目录, Sender 模型, Receiver 模型)  —— 问题 5
 EXPERIMENTS = {
     "06_17": {
         "work_dir_name": "qwen3_06b_17b_bidirectional_kv_scale_diagnosis_seed1234",
@@ -44,12 +45,11 @@ EXPERIMENTS = {
         "receiver": "1.7B",
         "num_layers": 28,
         "roles": [("source_06", "0.6B"), ("source_17", "1.7B"), ("target_06", "0.6B"), ("target_17", "1.7B")],
-        # (方向名, source 目录, target 目录, Receiver 模型)
         "directions": [
-            ("self_06", "source_06", "target_06", "0.6B"),
-            ("self_17", "source_17", "target_17", "1.7B"),
-            ("06_to_17", "source_06", "target_17", "1.7B"),
-            ("17_to_06", "source_17", "target_06", "0.6B"),
+            ("self_06", "source_06", "target_06", "0.6B", "0.6B"),
+            ("self_17", "source_17", "target_17", "1.7B", "1.7B"),
+            ("06_to_17", "source_06", "target_17", "0.6B", "1.7B"),
+            ("17_to_06", "source_17", "target_06", "1.7B", "0.6B"),
         ],
         "default_direction": "06_to_17",
     },
@@ -60,16 +60,21 @@ EXPERIMENTS = {
         "num_layers": 36,
         "roles": [("source_04", "4B"), ("source_08", "8B"), ("target_04", "4B"), ("target_08", "8B")],
         "directions": [
-            ("self_04", "source_04", "target_04", "4B"),
-            ("self_08", "source_08", "target_08", "8B"),
-            ("04_to_08", "source_04", "target_08", "8B"),
-            ("08_to_04", "source_08", "target_04", "4B"),
+            ("self_04", "source_04", "target_04", "4B", "4B"),
+            ("self_08", "source_08", "target_08", "8B", "8B"),
+            ("04_to_08", "source_04", "target_08", "4B", "8B"),
+            ("08_to_04", "source_08", "target_04", "8B", "4B"),
         ],
         "default_direction": "04_to_08",
     },
 }
 
-SIZES = {"smoke": {"train": 4, "validation": 2, "test": 2}, "development": {"train": 512, "validation": 64, "test": 64}}
+# 方案 §四：开发 512/64/64（扩大 512/128/256）；Smoke 保证每个 split 每类 ≥2 条，
+# 且 train 满足 overfit 的 Bridge/Comparison 各 8 条，donor derangement 可构造（问题 4）。
+SIZES = {
+    "smoke": {"train": 16, "validation": 4, "test": 4},
+    "development": {"train": 512, "validation": 64, "test": 64},
+}
 
 
 def run(args):
@@ -98,6 +103,13 @@ def cfg_for(exp, mode, base):
         "head_dim": 128,
         "feature_dim": 1024,
     }
+
+
+def direction_of(exp, direction):
+    match = [d for d in exp["directions"] if d[0] == direction]
+    if not match:
+        raise ValueError(f"unknown direction {direction}")
+    return match[0]
 
 
 def stage_init(cfg, exp, mode):
@@ -148,7 +160,7 @@ def stage_cache(cfg, exp, mode):
         ])
         cached[model_key] = dest
     # 每个方向统计 RMS scale（source / target 组合不同）
-    for direction, source_dir, target_dir, _ in exp["directions"]:
+    for direction, source_dir, target_dir, *_ in exp["directions"]:
         run([
             str(SCRIPTS / "stage2_cache_assets.py"),
             "--workdir", cfg["work_dir"], "--mode", mode,
@@ -182,12 +194,8 @@ def stage_baselines(cfg, exp, mode):
             raise RuntimeError(f"{role} cache gate failed")
 
 
-def _train(cfg, exp, mode, direction, phase, receiver_model):
-    source_dir, target_dir = None, None
-    for name, sdir, tdir, _recv in exp["directions"]:
-        if name == direction:
-            source_dir, target_dir = sdir, tdir
-            break
+def _train(cfg, exp, mode, direction, phase):
+    _, source_dir, target_dir, _, receiver_model = direction_of(exp, direction)
     run([
         str(SCRIPTS / "train_writer.py"),
         "--workdir", cfg["work_dir"], "--mode", mode,
@@ -202,39 +210,41 @@ def _train(cfg, exp, mode, direction, phase, receiver_model):
 
 
 def stage_gates(cfg, exp, mode):
-    """阶段4：4 个方向的 16 样本功能 Gate。"""
+    """阶段4：全部方向的 16 样本功能 Gate（问题 6：失败也继续，全部记录）。"""
     work = Path(cfg["work_dir"])
-    for direction, source_dir, target_dir, receiver_model in exp["directions"]:
-        _train(cfg, exp, mode, direction, "overfit", receiver_model)
+    for direction, *_ in exp["directions"]:
+        _train(cfg, exp, mode, direction, "overfit")
         gate = load_json(work / "artifacts" / mode / direction / "overfit" / "gate.json")
-        progress(f"{direction} gate: recovery={gate['train_recovery']:.3f} specificity={gate['specificity']:.3f} nll_ratio={gate['nll_ratio']:.3f} passed={gate['passed']}")
+        progress(f"{direction} gate: recovery={gate.get('train_recovery')} specificity={gate.get('specificity')} passed={gate['passed']}")
     progress("gates done")
 
 
 def stage_formal(cfg, exp, mode, direction):
-    """阶段5+6：Direct CE 与 Stage A→B，再在 test 上评估（方案 §十五 C0-C4）。"""
-    work = Path(cfg["work_dir"])
-    match = [d for d in exp["directions"] if d[0] == direction]
-    if not match:
-        raise ValueError(f"unknown direction {direction}")
-    _, source_dir, target_dir, receiver_model = match[0]
+    """阶段5+6：Direct CE 与 Stage A→B，再在 test 上评估（方案 §十五 C0-C4）。
 
-    gate_path = work / "artifacts" / mode / direction / "overfit" / "gate.json"
-    if gate_path.exists():
+    Development 严格门控：gate 缺失或未通过则禁止继续（问题 6）。
+    Smoke 只验证链路，不检查 gate。
+    """
+    work = Path(cfg["work_dir"])
+    _, source_dir, target_dir, sender_model, receiver_model = direction_of(exp, direction)
+
+    if mode == "development":
+        gate_path = work / "artifacts" / mode / direction / "overfit" / "gate.json"
+        if not gate_path.exists():
+            raise RuntimeError(f"missing required gate: {gate_path}")
         gate = load_json(gate_path)
         if not gate["passed"]:
             progress(f"{direction} overfit gate NOT passed, skipping formal training")
             return
-    else:
-        progress(f"warning: {gate_path} missing, running formal anyway")
 
     # C1 路径 F1：Direct CE
-    _train(cfg, exp, mode, direction, "direct", receiver_model)
+    _train(cfg, exp, mode, direction, "direct")
     # C2 路径 F2：Stage A（表示对齐）→ Stage B（CE）
-    _train(cfg, exp, mode, direction, "stage_a", receiver_model)
-    _train(cfg, exp, mode, direction, "stage_b", receiver_model)
+    _train(cfg, exp, mode, direction, "stage_a")
+    _train(cfg, exp, mode, direction, "stage_b")
 
-    # C3/C4 阶段6 评估：同一 validation 选出的唯一 checkpoint，test 上跑全部条件
+    # C3/C4 阶段6 评估：同一 validation 选出的唯一 checkpoint，test 上跑全部条件。
+    # Sender/Receiver 按 direction 显式指定（问题 5）。
     for training_path, phase_dir in (("f1_ce", "direct"), ("stage_a_then_ce", "stage_b")):
         checkpoint = work / "artifacts" / mode / direction / phase_dir / "best.pt"
         if not checkpoint.exists():
@@ -244,7 +254,7 @@ def stage_formal(cfg, exp, mode, direction):
             str(SCRIPTS / "stage6_evaluate.py"),
             "--workdir", cfg["work_dir"], "--mode", mode,
             "--receiver-model", MODELS[receiver_model],
-            "--sender-model", cfg["sender_path"],
+            "--sender-model", MODELS[sender_model],
             "--writer-checkpoint", str(checkpoint),
             "--training-path", training_path,
             "--source-dir", source_dir, "--target-dir", target_dir,
@@ -278,7 +288,11 @@ def main():
         stage_baselines(cfg, exp, args.mode)
     if args.stage in ("gates", "all"):
         stage_gates(cfg, exp, args.mode)
-    if args.stage in ("formal", "all"):
+    if args.stage == "all":
+        # 问题 10：--stage all 遍历全部方向完成 2×2 矩阵
+        for direction_name, *_ in exp["directions"]:
+            stage_formal(cfg, exp, args.mode, direction_name)
+    elif args.stage == "formal":
         stage_formal(cfg, exp, args.mode, direction)
     progress("pipeline complete")
 

@@ -39,14 +39,22 @@ def logit_kl(native, test):
     native, test = native[:n].float(), test[:n].float()
     log_test = F.log_softmax(test, dim=-1)
     p_native = F.softmax(native, dim=-1)
-    return max(0.0, F.kl_div(log_test, p_native, reduction="batchmean").item() / n)
+    # batchmean 已按第一维（answer token）归一化，不再额外除 n（问题 7）
+    return max(0.0, F.kl_div(log_test, p_native, reduction="batchmean").item())
 
 
 @torch.no_grad()
 def run_cache_gate(model, sample):
-    """比较 FullText / Official Native / Manual pre-RoPE 三种路径的 answer-token logits。"""
+    """比较 FullText / Official Native / Manual pre-RoPE 三条路径的 answer-token logits。
+
+    Official 是真正的 prefix-cache 续写（问题 8）：
+      Context prefill → 取官方 past_key_values → Question suffix 继续前向。
+    Manual 是 pre-RoPE 提取后重新注入的等价续写。
+    """
     answer = sample["answer_token_ids"]
     n = len(answer) - 1
+    prompt = sample["question_suffix_ids"]
+
     # 1) FullText：非 cache 完整前向（基准）
     current = sample["full_input_ids"] + answer[:-1]
     ids = torch.tensor([current], dtype=torch.long, device=cuda())
@@ -55,12 +63,24 @@ def run_cache_gate(model, sample):
     start = len(sample["full_input_ids"]) - 1
     full_logits = model(input_ids=ids, attention_mask=mask, position_ids=positions, use_cache=False).logits[0, start:start + n]
 
-    # 2) Official Native Cache：官方 cache 机制（use_cache=True，同样完整前向）
-    off_logits = model(input_ids=ids, attention_mask=mask, position_ids=positions, use_cache=True).logits[0, start:start + n]
+    # 2) Official Native Cache：Context prefill → 官方 cache → Question suffix 续写
+    context_ids = torch.tensor([sample["context_input_ids"]], dtype=torch.long, device=cuda())
+    ctx_len = context_ids.shape[1]
+    ctx_pos = torch.arange(ctx_len, device=cuda()).unsqueeze(0)
+    ctx_mask = torch.ones(1, ctx_len, dtype=torch.long, device=cuda())
+    context_out = model(input_ids=context_ids, attention_mask=ctx_mask, position_ids=ctx_pos, use_cache=True)
+    official_cache = context_out.past_key_values
+    current_suffix = prompt + answer[:-1]
+    ids_suffix = torch.tensor([current_suffix], dtype=torch.long, device=cuda())
+    pos_suffix = torch.arange(ctx_len, ctx_len + len(current_suffix), device=cuda()).unsqueeze(0)
+    mask_suffix = torch.ones(1, ctx_len + len(current_suffix), dtype=torch.long, device=cuda())
+    off_logits = model(
+        input_ids=ids_suffix, attention_mask=mask_suffix, position_ids=pos_suffix,
+        past_key_values=official_cache, use_cache=False,
+    ).logits[0, len(prompt) - 1:len(prompt) - 1 + n]
 
     # 3) Manual pre-RoPE Cache：context-only pre-RoPE KV 提取 → 注入 → 以 question 继续
     kv = manual_kv(model, sample)
-    prompt = sample["question_suffix_ids"]
     current_manual = prompt + answer[:-1]
     prefix = kv[0].shape[1]
     ids_manual = torch.tensor([current_manual], dtype=torch.long, device=cuda())
@@ -71,7 +91,7 @@ def run_cache_gate(model, sample):
         input_ids=ids_manual, attention_mask=mask_manual, position_ids=pos_manual,
         past_key_values=cache, use_cache=False,
     ).logits[0, len(prompt) - 1:len(prompt) - 1 + n]
-    del cache, ids, ids_manual
+    del official_cache, cache, ids, ids_manual
     torch.cuda.empty_cache()
 
     pairs = {

@@ -18,6 +18,7 @@
 | `train_writer.py` | §八/九/十 | 训练：overfit（16 样本功能 Gate）/ direct（CE）/ stage_a（表示对齐）/ stage_b（CE） |
 | `stage6_evaluate.py` | §十一/十二 | test 全条件（correct/shuffled/no_memory/fulltext/native）+ 派生指标 |
 | `run_pipeline.py` | §十五 | 单 V100 执行顺序编排（init→audit→cache→baselines→gates→formal） |
+| `test_sanity.py` | 审查§五 | 最小单元测试：方向元数据 / checkpoint 往返 / Writer 梯度 / Self Identity |
 
 ## 关键机制（复用已验证的 8B→4B 实现）
 
@@ -31,17 +32,34 @@
 PY=/home/yezhe/data/miniconda3/envs/attnkv/bin/python
 cd /home/yezhe/不同模型的kv分析/scripts
 
-# 冒烟：验证全流程能跑通
+# 0) 单元测试（正式实验前必跑）
+$PY -u test_sanity.py                                  # CPU：方向元数据 / checkpoint / 梯度
+$PY -u test_sanity.py --gpu --model <Qwen3-0.6B路径>    # GPU：Self Identity 一致
+
+# 冒烟：验证 Direct CE → Stage A → Stage B → Final evaluation 全链路（smoke=16/4/4，gate 不强制通过）
 $PY -u run_pipeline.py --experiment 06_17 --mode smoke --stage all
 
-# 正式：分步执行（gate 通过才继续 formal）
+# 正式：分步执行（formal 仅在对应方向 gate 通过后运行）
 $PY -u run_pipeline.py --experiment 06_17 --mode development --stage init
 $PY -u run_pipeline.py --experiment 06_17 --mode development --stage audit
 $PY -u run_pipeline.py --experiment 06_17 --mode development --stage cache
 $PY -u run_pipeline.py --experiment 06_17 --mode development --stage baselines
-$PY -u run_pipeline.py --experiment 06_17 --mode development --stage gates
+$PY -u run_pipeline.py --experiment 06_17 --mode development --stage gates      # 四方向全部记录
 $PY -u run_pipeline.py --experiment 06_17 --mode development --stage formal --direction 06_to_17
 ```
+
+## Smoke 模式说明（审查 §四/§五）
+
+- Smoke 规模 16/4/4：train 满足 overfit 的 Bridge/Comparison 各 8 条；validation/test 每类 ≥2 条，donor derangement 可构造。
+- Smoke 阶段 Gate 不强制通过（只验证链路：forward / 梯度 / optimizer / checkpoint 保存加载 / validation 生成 / evaluation 输出）。
+- Development Gate 失败：方向记入 `gate.json`，不中断其它方向；Formal 仅对通过方向继续，Gate 缺失直接报错。
+
+## 训练与门控要点（审查修复）
+
+- 训练路径 Writer 前向不置于 `no_grad` 下；CE/表示损失校验 `requires_grad`，首步校验参数梯度非零。
+- 过拟合 eval 固定在训练集，不参与 validation checkpoint 选择；Gate 用训练集 best checkpoint，只诊断，正式训练重新 Identity 初始化。
+- Self 方向用独立 Gate（Update0 与 Native 一致率 100%、Update0 KV max error ≈ 0、训练后 F1 不降超 2 点、Correct > Shuffled）；跨模型方向用 TrainRecovery / Specificity / NLL ratio。
+- Stage6 按方向显式指定 Sender/Receiver（`17_to_06` 的 Sender 是 1.7B）；EM 用 Normalized EM。
 
 ## 输出布局（§十六）
 
