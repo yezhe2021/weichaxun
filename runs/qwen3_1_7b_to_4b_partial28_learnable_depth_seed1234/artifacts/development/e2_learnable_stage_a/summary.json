@@ -1,0 +1,19 @@
+{
+  "kind": "learnable_matrix",
+  "overfit_code_validation_only": false,
+  "initial_checkpoint": "/home/yezhe/可拔插/qwen3_1_7b_to_4b_partial28_learnable_depth_seed1234/artifacts/development/e1_repeat_stage_a/best.pt",
+  "initial_loss": 1.5659769345074892,
+  "final_loss": 1.4354609120637178,
+  "loss_decreased": true,
+  "all_trainable_parameters_received_nonzero_finite_gradient": true,
+  "missing_gradient_parameters": [],
+  "no_nan_or_inf": true,
+  "best_validation_loss": 1.4354609120637178,
+  "training_seconds": 347.4498680168763,
+  "peak_gpu_bytes": 1547326976,
+  "parameters": {
+    "trainable_parameters": 75498480,
+    "total_parameters": 75498480,
+    "learnable_depth_parameters": 1008
+  }
+}

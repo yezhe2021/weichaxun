@@ -1,0 +1,14 @@
+{
+  "kind": "learnable_matrix",
+  "loss": "answer CE only",
+  "initial_checkpoint": "/home/yezhe/可拔插/qwen3_1_7b_to_4b_partial28_learnable_depth_seed1234/artifacts/development/e2_learnable_stage_a/best.pt",
+  "best_validation_nll": 2.4919867288845126,
+  "best_validation_generation_f1": 0.21726190476190474,
+  "selected_checkpoint": "selected.pt",
+  "selection_uses_test": false,
+  "representation_loss_used": false,
+  "kd_used": false,
+  "tether_used": false,
+  "training_seconds": 2339.2609519697726,
+  "peak_gpu_bytes": 14401755136
+}
