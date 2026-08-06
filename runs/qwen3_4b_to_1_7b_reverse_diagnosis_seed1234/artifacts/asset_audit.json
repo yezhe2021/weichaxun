@@ -1,0 +1,27 @@
+{
+  "base_manifest_sha256": "cb30447d5be1cef90363d9fca562354bcb15f97c2198d5fcd37eb8bfe20b16c0",
+  "eval128_manifest_sha256": "a04b26c4171346caa629b2387a3bd72962fe4d81b4cf18ebf154ec0a3bed01c2",
+  "expected_forward_eval128_sha256": "a04b26c4171346caa629b2387a3bd72962fe4d81b4cf18ebf154ec0a3bed01c2",
+  "strictly_comparable": true,
+  "sizes": {
+    "train": 512,
+    "validation": 64,
+    "test": 128
+  },
+  "test_type_counts": {
+    "bridge": 64,
+    "comparison": 64
+  },
+  "tokenizer_vocab_sha256": "145980efdfb01c53b3f7ae954c2a305dc6ec9081bcfb3ef844cab642632bd007",
+  "tokenizer_vocab_equal": true,
+  "special_token_ids": {
+    "bos_token_id": null,
+    "eos_token_id": 151645,
+    "pad_token_id": 151643
+  },
+  "context_and_question_ids_shared_from_frozen_manifest": true,
+  "sender_sees_question": false,
+  "receiver_backbone_frozen": true,
+  "reader": "Identity",
+  "thinking": false
+}
