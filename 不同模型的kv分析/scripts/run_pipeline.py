@@ -196,7 +196,7 @@ def stage_baselines(cfg, exp, mode):
             progress(f"WARNING {role}: cache gate not passed in smoke (link check only)")
 
 
-def _train(cfg, exp, mode, direction, phase):
+def _train(cfg, exp, mode, direction, phase, max_updates):
     _, source_dir, target_dir, _, receiver_model = direction_of(exp, direction)
     run([
         str(SCRIPTS / "train_writer.py"),
@@ -207,21 +207,22 @@ def _train(cfg, exp, mode, direction, phase):
         "--num-layers", str(cfg["num_layers"]),
         "--feature-dim", str(cfg["feature_dim"]),
         "--sampled-tokens", "128",
+        "--max-updates", str(max_updates),
         "--max-new-tokens", str(cfg["max_new_tokens"]),
     ])
 
 
-def stage_gates(cfg, exp, mode):
+def stage_gates(cfg, exp, mode, max_updates):
     """阶段4：全部方向的 16 样本功能 Gate（问题 6：失败也继续，全部记录）。"""
     work = Path(cfg["work_dir"])
     for direction, *_ in exp["directions"]:
-        _train(cfg, exp, mode, direction, "overfit")
+        _train(cfg, exp, mode, direction, "overfit", max_updates)
         gate = load_json(work / "artifacts" / mode / direction / "overfit" / "gate.json")
         progress(f"{direction} gate: recovery={gate.get('train_recovery')} specificity={gate.get('specificity')} passed={gate['passed']}")
     progress("gates done")
 
 
-def stage_formal(cfg, exp, mode, direction):
+def stage_formal(cfg, exp, mode, direction, max_updates):
     """阶段5+6：Direct CE 与 Stage A→B，再在 test 上评估（方案 §十五 C0-C4）。
 
     Development 严格门控：gate 缺失或未通过则禁止继续（问题 6）。
@@ -240,10 +241,10 @@ def stage_formal(cfg, exp, mode, direction):
             return
 
     # C1 路径 F1：Direct CE
-    _train(cfg, exp, mode, direction, "direct")
+    _train(cfg, exp, mode, direction, "direct", max_updates)
     # C2 路径 F2：Stage A（表示对齐）→ Stage B（CE）
-    _train(cfg, exp, mode, direction, "stage_a")
-    _train(cfg, exp, mode, direction, "stage_b")
+    _train(cfg, exp, mode, direction, "stage_a", max_updates)
+    _train(cfg, exp, mode, direction, "stage_b", max_updates)
 
     # C3/C4 阶段6 评估：同一 validation 选出的唯一 checkpoint，test 上跑全部条件。
     # Sender/Receiver 按 direction 显式指定（问题 5）。
@@ -274,6 +275,7 @@ def main():
     parser.add_argument("--base", default="/home/yezhe/不同模型的kv分析/runs")
     parser.add_argument("--stage", choices=("init", "audit", "cache", "baselines", "gates", "formal", "all"), required=True)
     parser.add_argument("--direction")
+    parser.add_argument("--max-updates", type=int, default=800, help="训练 updates（快速模式 400）")
     args = parser.parse_args()
 
     exp = EXPERIMENTS[args.experiment]
@@ -289,13 +291,13 @@ def main():
     if args.stage in ("baselines", "all"):
         stage_baselines(cfg, exp, args.mode)
     if args.stage in ("gates", "all"):
-        stage_gates(cfg, exp, args.mode)
+        stage_gates(cfg, exp, args.mode, args.max_updates)
     if args.stage == "all":
         # 问题 10：--stage all 遍历全部方向完成 2×2 矩阵
         for direction_name, *_ in exp["directions"]:
-            stage_formal(cfg, exp, args.mode, direction_name)
+            stage_formal(cfg, exp, args.mode, direction_name, args.max_updates)
     elif args.stage == "formal":
-        stage_formal(cfg, exp, args.mode, direction)
+        stage_formal(cfg, exp, args.mode, direction, args.max_updates)
     progress("pipeline complete")
 
 
