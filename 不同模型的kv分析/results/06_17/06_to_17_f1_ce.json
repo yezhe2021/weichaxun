@@ -1,0 +1,90 @@
+{
+  "sender": "/home/yezhe/all_models/models/Qwen/Qwen3-0.6B",
+  "receiver": "/home/yezhe/all_models/models/Qwen/Qwen3-1.7B",
+  "training_path": "f1_ce",
+  "selected_checkpoint": "/home/yezhe/不同模型的kv分析/runs/qwen3_06b_17b_bidirectional_kv_scale_diagnosis_seed1234/artifacts/development/06_to_17/direct/best.pt",
+  "selection_split": "validation",
+  "mode": "development",
+  "n": 64,
+  "conditions": {
+    "correct": {
+      "f1": 0.38018804112554105,
+      "em": 0.328125,
+      "by_type": {
+        "bridge": 0.17098214285714286,
+        "comparison": 0.5893939393939395
+      }
+    },
+    "shuffled": {
+      "f1": 0.3513392857142857,
+      "em": 0.296875,
+      "by_type": {
+        "bridge": 0.1464285714285714,
+        "comparison": 0.55625
+      }
+    },
+    "question_only": {
+      "f1": 0.171875,
+      "em": 0.171875,
+      "by_type": {
+        "bridge": 0.03125,
+        "comparison": 0.3125
+      }
+    },
+    "receiver_full_text": {
+      "f1": 0.16145833333333331,
+      "em": 0.140625,
+      "by_type": {
+        "bridge": 0.020833333333333332,
+        "comparison": 0.3020833333333333
+      }
+    },
+    "receiver_native": {
+      "f1": 0.16145833333333331,
+      "em": 0.140625,
+      "by_type": {
+        "bridge": 0.020833333333333332,
+        "comparison": 0.3020833333333333
+      }
+    },
+    "sender_full_text": {
+      "f1": 0.09375,
+      "em": 0.09375,
+      "by_type": {
+        "bridge": 0.0,
+        "comparison": 0.1875
+      }
+    },
+    "sender_question_only": {
+      "f1": 0.09375,
+      "em": 0.09375,
+      "by_type": {
+        "bridge": 0.0,
+        "comparison": 0.1875
+      }
+    }
+  },
+  "derived": {
+    "sender_self_gain": 0.0,
+    "cross_gain": 0.20831304112554105,
+    "release_delta": 0.20831304112554105,
+    "receiver_recovery": -19.998051948051906,
+    "specificity": 0.028848755411255367
+  },
+  "by_type": {
+    "bridge": {
+      "cross_gain": 0.13973214285714286,
+      "self_gain": 0.0,
+      "release_delta": 0.13973214285714286,
+      "receiver_recovery": -13.414285714285713,
+      "specificity": 0.024553571428571452
+    },
+    "comparison": {
+      "cross_gain": 0.27689393939393947,
+      "self_gain": 0.0,
+      "release_delta": 0.27689393939393947,
+      "receiver_recovery": -26.581818181818143,
+      "specificity": 0.03314393939393945
+    }
+  }
+}

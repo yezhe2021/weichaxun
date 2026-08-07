@@ -1,0 +1,90 @@
+{
+  "sender": "/home/yezhe/all_models/models/Qwen/Qwen3-1.7B",
+  "receiver": "/home/yezhe/all_models/models/Qwen/Qwen3-0.6B",
+  "training_path": "stage_a_then_ce",
+  "selected_checkpoint": "/home/yezhe/不同模型的kv分析/runs/qwen3_06b_17b_bidirectional_kv_scale_diagnosis_seed1234/artifacts/development/17_to_06/stage_b/best.pt",
+  "selection_split": "validation",
+  "mode": "development",
+  "n": 64,
+  "conditions": {
+    "correct": {
+      "f1": 0.4299512987012987,
+      "em": 0.359375,
+      "by_type": {
+        "bridge": 0.27240259740259737,
+        "comparison": 0.5875
+      }
+    },
+    "shuffled": {
+      "f1": 0.2848958333333333,
+      "em": 0.234375,
+      "by_type": {
+        "bridge": 0.10104166666666665,
+        "comparison": 0.46875000000000006
+      }
+    },
+    "question_only": {
+      "f1": 0.09375,
+      "em": 0.09375,
+      "by_type": {
+        "bridge": 0.0,
+        "comparison": 0.1875
+      }
+    },
+    "receiver_full_text": {
+      "f1": 0.09375,
+      "em": 0.09375,
+      "by_type": {
+        "bridge": 0.0,
+        "comparison": 0.1875
+      }
+    },
+    "receiver_native": {
+      "f1": 0.09375,
+      "em": 0.09375,
+      "by_type": {
+        "bridge": 0.0,
+        "comparison": 0.1875
+      }
+    },
+    "sender_full_text": {
+      "f1": 0.16145833333333331,
+      "em": 0.140625,
+      "by_type": {
+        "bridge": 0.020833333333333332,
+        "comparison": 0.3020833333333333
+      }
+    },
+    "sender_question_only": {
+      "f1": 0.171875,
+      "em": 0.171875,
+      "by_type": {
+        "bridge": 0.03125,
+        "comparison": 0.3125
+      }
+    }
+  },
+  "derived": {
+    "sender_self_gain": -0.010416666666666685,
+    "cross_gain": 0.3362012987012987,
+    "release_delta": 0.3466179653679654,
+    "receiver_recovery": NaN,
+    "specificity": 0.14505546536796543
+  },
+  "by_type": {
+    "bridge": {
+      "cross_gain": 0.27240259740259737,
+      "self_gain": -0.010416666666666668,
+      "release_delta": 0.28281926406926405,
+      "receiver_recovery": NaN,
+      "specificity": 0.17136093073593073
+    },
+    "comparison": {
+      "cross_gain": 0.4,
+      "self_gain": -0.010416666666666685,
+      "release_delta": 0.4104166666666667,
+      "receiver_recovery": NaN,
+      "specificity": 0.11874999999999997
+    }
+  }
+}
