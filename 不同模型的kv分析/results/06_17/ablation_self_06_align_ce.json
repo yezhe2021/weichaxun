@@ -1,0 +1,59 @@
+{
+  "sender": null,
+  "receiver": "/home/yezhe/all_models/models/Qwen/Qwen3-0.6B",
+  "direction": "self_06",
+  "writer_mode": "checkpoint",
+  "writer_checkpoint": "/home/yezhe/不同模型的kv分析/runs/qwen3_06b_17b_bidirectional_kv_scale_diagnosis_seed1234/artifacts/development/self_06/stage_b/best.pt",
+  "mode": "development",
+  "n": 64,
+  "conditions": {
+    "correct": {
+      "f1": 0.5585700757575758,
+      "by_type": {
+        "bridge": 0.5171401515151515,
+        "comparison": 0.6000000000000001
+      }
+    },
+    "shuffled": {
+      "f1": 0.25498511904761906,
+      "by_type": {
+        "bridge": 0.09955357142857144,
+        "comparison": 0.4104166666666667
+      }
+    },
+    "zero": {
+      "f1": 0.08378243407410145,
+      "by_type": {
+        "bridge": 0.038421148331634264,
+        "comparison": 0.1291437198165686
+      }
+    },
+    "learned_constant": {
+      "f1": 0.09375,
+      "by_type": {
+        "bridge": 0.0,
+        "comparison": 0.1875
+      }
+    },
+    "question_only": {
+      "f1": 0.09375,
+      "by_type": {
+        "bridge": 0.0,
+        "comparison": 0.1875
+      }
+    },
+    "receiver_native": {
+      "f1": 0.09375,
+      "by_type": {
+        "bridge": 0.0,
+        "comparison": 0.1875
+      }
+    }
+  },
+  "derived": {
+    "specificity": 0.3035849567099567,
+    "correct_minus_qonly": 0.4648200757575758,
+    "correct_minus_zero": 0.4747876416834743,
+    "correct_minus_constant": 0.4648200757575758
+  }
+}

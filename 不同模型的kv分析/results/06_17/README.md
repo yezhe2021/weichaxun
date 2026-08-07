@@ -27,4 +27,9 @@
 ## 文件
 
 - `{direction}_{f1_ce,stage_a_then_ce}.json` — 每个方向的完整条件结果 + 派生指标（§十六 schema）
-- 每方向含 per_sample 明细（per_sample.jsonl，可向服务器索要或本地重跑生成）
+- `ablation_{direction}_{identity|align|align_ce}.json` — 消融实验：Alignment-only vs Align+CE（复用 stage_a/stage_b checkpoint）
+- 每方向含 per_sample 明细（`_per_sample.jsonl`）
+
+## 消融实验（Alignment-only vs Align+CE）
+
+回答「高分来自 KV 空间对齐，还是 CE 把 Writer 训练成任务适配器」。评估条件含 correct/shuffled/zero/learned_constant/question_only/receiver_native。衍生指标：specificity、correct−qonly、correct−zero、correct−constant。
