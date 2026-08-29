@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": {
+    "full_text_official_split_logits_max_abs": true,
+    "full_text_manual_split_logits_max_abs": true,
+    "full_text_official_split_logits_cosine": true,
+    "full_text_manual_split_logits_cosine": true,
+    "full_text_official_split_top1": true,
+    "full_text_manual_split_top1": true,
+    "full_text_official_split_answer_nll": true,
+    "full_text_manual_split_answer_nll": true,
+    "official_manual_logits_exact": true,
+    "official_manual_answer_nll_exact": true,
+    "official_manual_post_rope_k_exact": true,
+    "official_manual_native_v_exact": true,
+    "official_generation_match": true,
+    "manual_generation_match": true
+  },
+  "tolerances": {
+    "split_forward_logits_max_abs": 0.3,
+    "split_forward_logits_cosine_min": 0.9999,
+    "split_forward_answer_nll_abs_diff_max": 0.02,
+    "split_forward_top1_match_rate_min": 1.0,
+    "official_manual_logits_max_abs": 1e-06,
+    "official_manual_answer_nll_abs_diff_max": 1e-06,
+    "official_manual_cache_max_abs": 1e-06,
+    "greedy_match_required": true
+  },
+  "sample_count": 8
+}

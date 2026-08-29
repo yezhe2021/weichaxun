@@ -1,0 +1,59 @@
+{
+  "experiment_name": "fullkv_native_reader_qwen3_1_7b_to_4b_seed1234",
+  "seed": 1234,
+  "work_dir": "/home/yezhe/重实现/fullkv_native_reader_qwen3_1_7b_to_4b_seed1234",
+  "model_1_7b": "/home/yezhe/all_models/models/Qwen/Qwen3-1.7B",
+  "model_4b": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+  "hotpot_train": "/home/yezhe/数据集/HotpotQA/raw/hotpot_train_v1.1.json",
+  "hotpot_dev": "/home/yezhe/数据集/HotpotQA/raw/hotpot_dev_distractor_v1.json",
+  "dtype": "float16",
+  "attention_implementation": "eager",
+  "source_layers": 28,
+  "target_layers": 36,
+  "num_kv_heads": 8,
+  "head_dim": 128,
+  "local_layers": 5,
+  "max_prefix_tokens": 1536,
+  "max_suffix_tokens": 256,
+  "max_answer_tokens": 32,
+  "max_new_tokens": 32,
+  "splits": {
+    "train": 64,
+    "validation": 16,
+    "test": 32
+  },
+  "protocol_audit_samples": 8,
+  "overfit_samples": 16,
+  "calibration_samples": 64,
+  "stage_a": {
+    "updates": 150,
+    "overfit_updates": 75,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0,
+    "gradient_clip": 1.0,
+    "token_sample_size": 128,
+    "validation_every": 50
+  },
+  "stage_b": {
+    "updates": 150,
+    "overfit_updates": 75,
+    "learning_rate": 0.00003,
+    "weight_decay": 0.0,
+    "gradient_clip": 1.0,
+    "reconstruction_weight": 0.01,
+    "reconstruction_token_sample_size": 64,
+    "validation_every": 50
+  },
+  "protocol_tolerances": {
+    "split_forward_logits_max_abs": 0.3,
+    "split_forward_logits_cosine_min": 0.9999,
+    "split_forward_answer_nll_abs_diff_max": 0.02,
+    "split_forward_top1_match_rate_min": 1.0,
+    "official_manual_logits_max_abs": 0.000001,
+    "official_manual_answer_nll_abs_diff_max": 0.000001,
+    "official_manual_cache_max_abs": 0.000001,
+    "greedy_match_required": true
+  },
+  "rms_epsilon": 0.000001,
+  "save_predicted_kv_audit_samples": 0
+}
