@@ -1,0 +1,47 @@
+PASS test_writers.py:test_checkpoint_round_trip_and_metadata
+PASS test_writers.py:test_d2_initialization_equals_calibrated_d0
+PASS test_writers.py:test_head_independence
+PASS test_writers.py:test_neighbor_order_and_boundary_rules
+PASS test_writers.py:test_parameters_are_independent_by_layer_and_family
+PASS test_writers.py:test_shapes_zero_and_no_bias
+PASS test_writers.py:test_token_independence
+PASS test_losses.py:test_decoder_layer_capture_preserves_autograd
+PASS test_losses.py:test_hidden_loss_averages_layers_instead_of_flattening
+PASS test_losses.py:test_identical_36_layer_hidden_loss_is_zero
+PASS test_losses.py:test_identical_full_vocabulary_kl_is_zero
+PASS test_losses.py:test_last_n_kl_ignores_earlier_tokens
+12 unit tests passed
+[2026-08-30 11:36:47] prepared MMLU-Pro Options-first manifests
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 91/398 [00:00<00:00, 895.36it/s]Loading weights:  48%|████▊     | 190/398 [00:00<00:00, 925.48it/s]Loading weights:  75%|███████▍  | 297/398 [00:00<00:00, 982.85it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 982.29it/s]
+[2026-08-30 11:37:22] protocol audit 1/32
+[2026-08-30 11:37:22] protocol audit 2/32
+[2026-08-30 11:37:23] protocol audit 3/32
+[2026-08-30 11:37:23] protocol audit 4/32
+[2026-08-30 11:37:23] protocol audit 5/32
+[2026-08-30 11:37:24] protocol audit 6/32
+[2026-08-30 11:37:24] protocol audit 7/32
+[2026-08-30 11:37:24] protocol audit 8/32
+[2026-08-30 11:37:25] protocol audit 9/32
+[2026-08-30 11:37:25] protocol audit 10/32
+[2026-08-30 11:37:25] protocol audit 11/32
+[2026-08-30 11:37:26] protocol audit 12/32
+[2026-08-30 11:37:26] protocol audit 13/32
+[2026-08-30 11:37:27] protocol audit 14/32
+[2026-08-30 11:37:27] protocol audit 15/32
+[2026-08-30 11:37:27] protocol audit 16/32
+[2026-08-30 11:37:28] protocol audit 17/32
+[2026-08-30 11:37:28] protocol audit 18/32
+[2026-08-30 11:37:28] protocol audit 19/32
+[2026-08-30 11:37:29] protocol audit 20/32
+[2026-08-30 11:37:29] protocol audit 21/32
+[2026-08-30 11:37:29] protocol audit 22/32
+[2026-08-30 11:37:30] protocol audit 23/32
+[2026-08-30 11:37:30] protocol audit 24/32
+[2026-08-30 11:37:31] protocol audit 25/32
+[2026-08-30 11:37:31] protocol audit 26/32
+[2026-08-30 11:37:31] protocol audit 27/32
+[2026-08-30 11:37:32] protocol audit 28/32
+[2026-08-30 11:37:32] protocol audit 29/32
+[2026-08-30 11:37:32] protocol audit 30/32
+[2026-08-30 11:37:33] protocol audit 31/32
+[2026-08-30 11:37:33] protocol audit 32/32
