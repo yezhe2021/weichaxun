@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": {
+    "full_official_logits_max_abs": true,
+    "full_manual_logits_max_abs": true,
+    "full_official_logits_cosine": true,
+    "full_manual_logits_cosine": true,
+    "full_official_hidden_cosine": true,
+    "full_manual_hidden_cosine": true,
+    "official_choice_top1_match": true,
+    "manual_choice_top1_match": true,
+    "official_manual_logits_exact": true,
+    "official_manual_post_rope_k_exact": true,
+    "official_manual_native_v_exact": true,
+    "options_first_accuracy_retention": true
+  },
+  "tolerances": {
+    "split_forward_logits_max_abs": 0.3,
+    "split_forward_logits_cosine_min": 0.9999,
+    "split_forward_hidden_cosine_min": 0.9999,
+    "split_forward_choice_top1_match_rate_min": 1.0,
+    "official_manual_logits_max_abs": 1e-06,
+    "official_manual_cache_max_abs": 1e-06,
+    "options_first_relative_accuracy_min": 0.75
+  },
+  "sample_count": 32,
+  "standard_question_first_accuracy": 0.4375,
+  "options_first_accuracy": 0.375,
+  "options_first_relative_accuracy": 0.8571428571428571,
+  "gold_used_only_for_protocol_feasibility_measurement": true
+}
