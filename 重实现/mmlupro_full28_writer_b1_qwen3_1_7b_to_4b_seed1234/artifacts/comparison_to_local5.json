@@ -1,0 +1,40 @@
+{
+  "protocol": {
+    "same_seed": true,
+    "same_splits": true,
+    "same_cache": true,
+    "same_stage_a_objective": "KV_reconstruction",
+    "same_stage_b_objective": "final_position_full_vocabulary_KL",
+    "full28_source_layers_per_target": 28,
+    "local5_source_layers_per_target": 5
+  },
+  "stage_a": {
+    "full28_best_validation_kv_loss": 1.0686381615232676,
+    "local5_best_validation_kv_loss": 1.452523175161332,
+    "full28_minus_local5": -0.38388501363806427,
+    "full28_over_local5": 0.7357116084599297,
+    "full28_better": true
+  },
+  "stage_b": {
+    "full28_best_validation_final_kl": 0.7378139589709463,
+    "local5_best_validation_final_kl": 0.8567995937628439,
+    "full28_minus_local5": -0.11898563479189761,
+    "full28_over_local5": 0.8611278113831226,
+    "full28_better": true
+  },
+  "formal_test": {
+    "full28_accuracy": 0.203125,
+    "local5_accuracy": 0.1953125,
+    "full28_minus_local5_accuracy": 0.0078125,
+    "full28_native_agreement": 0.4140625,
+    "local5_native_agreement": 0.34375,
+    "full28_minus_local5_native_agreement": 0.0703125,
+    "full28_native_choice_kl": 0.6977751570229884,
+    "local5_native_choice_kl": 0.8146982729958836
+  },
+  "local5_references": {
+    "stage_a_summary": "/home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/d2/stage_a/summary.json",
+    "stage_b_summary": "/home/yezhe/重实现/mmlupro_b1_epoch_batch8_clip30_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/d2/stage_b_final/summary.json",
+    "formal_summary": "/home/yezhe/重实现/mmlupro_b1_epoch_batch8_clip30_qwen3_1_7b_to_4b_seed1234/artifacts/evaluation/formal/summary.json"
+  }
+}
