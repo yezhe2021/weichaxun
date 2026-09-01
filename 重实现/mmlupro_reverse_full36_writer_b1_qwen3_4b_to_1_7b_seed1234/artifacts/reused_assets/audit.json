@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": {
+    "manifest_counts": true,
+    "all_split_ids_disjoint": true,
+    "all_paired_caches_present": true,
+    "reverse_calibration_is_local_target": true,
+    "full36_stage_a_checkpoint_is_local_target": true,
+    "forward_stage_a_reference_present": true,
+    "forward_stage_b_reference_present": true,
+    "forward_formal_reference_present": true,
+    "sender_is_target4": true,
+    "receiver_is_source17": true,
+    "stage_b_mode_is_final_only": true,
+    "effective_batch_is_8": true
+  },
+  "missing_cache_count": 0,
+  "missing_cache_examples": []
+}
