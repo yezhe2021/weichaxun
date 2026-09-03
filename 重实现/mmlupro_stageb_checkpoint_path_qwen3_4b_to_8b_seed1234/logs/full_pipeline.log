@@ -1,0 +1,165 @@
+[2026-09-03 09:18:47] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_unit_tests.py
+PASS test_writers.py:test_checkpoint_round_trip_and_metadata
+PASS test_writers.py:test_d2_initialization_equals_calibrated_d0
+PASS test_writers.py:test_full28_initialization_equals_calibrated_d0
+PASS test_writers.py:test_full28_shape_and_layer_concat_order
+PASS test_writers.py:test_head8_cross_head_blocks_are_independent_and_receive_gradients
+PASS test_writers.py:test_head8_identity_extension_zero_and_freeze_policy
+PASS test_writers.py:test_head_independence
+PASS test_writers.py:test_neighbor_order_and_boundary_rules
+PASS test_writers.py:test_parameters_are_independent_by_layer_and_family
+PASS test_writers.py:test_shapes_zero_and_no_bias
+PASS test_writers.py:test_token_independence
+PASS test_losses.py:test_clip_rate_decision_uses_pre_clip_norm
+PASS test_losses.py:test_decoder_layer_capture_preserves_autograd
+PASS test_losses.py:test_epoch_sampler_is_without_replacement_and_changes_each_epoch
+PASS test_losses.py:test_final_kl_ignores_all_earlier_suffix_positions
+PASS test_losses.py:test_hidden_loss_averages_layers_instead_of_flattening
+PASS test_losses.py:test_identical_36_layer_hidden_loss_is_zero
+PASS test_losses.py:test_identical_full_vocabulary_kl_is_zero
+PASS test_losses.py:test_last_n_kl_ignores_earlier_tokens
+PASS test_losses.py:test_shuffled_comparison_uses_only_matched_correct_samples
+PASS test_losses.py:test_training_sample_physically_removes_gold_fields
+21 unit tests passed
+[2026-09-03 09:18:54] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_unit_tests.py
+[2026-09-03 09:18:54] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u audit_cache_reuse.py --config /home/yezhe/重实现/mmlupro_stageb_checkpoint_path_qwen3_4b_to_8b_seed1234/config.json
+[2026-09-03 09:18:59] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u audit_cache_reuse.py --config /home/yezhe/重实现/mmlupro_stageb_checkpoint_path_qwen3_4b_to_8b_seed1234/config.json
+[2026-09-03 09:18:59] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_stageb_checkpoint_path_qwen3_4b_to_8b_seed1234/config.json train --writer full36_head8 --stage b --functional-mode final
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 60/399 [00:00<00:00, 587.18it/s]Loading weights:  30%|██▉       | 119/399 [00:00<00:00, 573.62it/s]Loading weights:  44%|████▍     | 177/399 [00:00<00:00, 535.94it/s]Loading weights:  58%|█████▊    | 231/399 [00:00<00:00, 521.62it/s]Loading weights:  71%|███████   | 284/399 [00:00<00:00, 482.65it/s]Loading weights:  84%|████████▎ | 334/399 [00:00<00:00, 484.01it/s]Loading weights:  96%|█████████▌| 383/399 [00:00<00:00, 473.50it/s]Loading weights: 100%|██████████| 399/399 [00:00<00:00, 508.99it/s]
+[2026-09-03 09:27:18] Stage B final epoch=1/4 validation=0.470735 clip_rate=0.0469
+[2026-09-03 09:36:18] Stage B final epoch=2/4 validation=0.396580 clip_rate=0.0000
+[2026-09-03 09:45:21] Stage B final epoch=3/4 validation=0.382388 clip_rate=0.0000
+[2026-09-03 09:54:14] Stage B final epoch=4/4 validation=0.389722 clip_rate=0.0000
+[2026-09-03 09:54:22] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_stageb_checkpoint_path_qwen3_4b_to_8b_seed1234/config.json train --writer full36_head8 --stage b --functional-mode final
+[2026-09-03 09:54:22] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u evaluate_stageb_checkpoints.py --config /home/yezhe/重实现/mmlupro_stageb_checkpoint_path_qwen3_4b_to_8b_seed1234/config.json
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 48/399 [00:00<00:00, 466.03it/s]Loading weights:  24%|██▍       | 96/399 [00:00<00:00, 474.04it/s]Loading weights:  37%|███▋      | 149/399 [00:00<00:00, 489.63it/s]Loading weights:  50%|████▉     | 198/399 [00:00<00:00, 487.80it/s]Loading weights:  62%|██████▏   | 247/399 [00:00<00:00, 486.95it/s]Loading weights:  74%|███████▍  | 296/399 [00:00<00:00, 472.49it/s]Loading weights:  86%|████████▋ | 345/399 [00:00<00:00, 470.72it/s]Loading weights: 100%|██████████| 399/399 [00:00<00:00, 487.54it/s]
+[2026-09-03 09:54:41] checkpoint-path evaluation: 1/128
+[2026-09-03 09:54:41] checkpoint-path evaluation: 2/128
+[2026-09-03 09:54:41] checkpoint-path evaluation: 3/128
+[2026-09-03 09:54:42] checkpoint-path evaluation: 4/128
+[2026-09-03 09:54:42] checkpoint-path evaluation: 5/128
+[2026-09-03 09:54:42] checkpoint-path evaluation: 6/128
+[2026-09-03 09:54:43] checkpoint-path evaluation: 7/128
+[2026-09-03 09:54:43] checkpoint-path evaluation: 8/128
+[2026-09-03 09:54:44] checkpoint-path evaluation: 9/128
+[2026-09-03 09:54:44] checkpoint-path evaluation: 10/128
+[2026-09-03 09:54:44] checkpoint-path evaluation: 11/128
+[2026-09-03 09:54:45] checkpoint-path evaluation: 12/128
+[2026-09-03 09:54:45] checkpoint-path evaluation: 13/128
+[2026-09-03 09:54:46] checkpoint-path evaluation: 14/128
+[2026-09-03 09:54:46] checkpoint-path evaluation: 15/128
+[2026-09-03 09:54:47] checkpoint-path evaluation: 16/128
+[2026-09-03 09:54:47] checkpoint-path evaluation: 17/128
+[2026-09-03 09:54:47] checkpoint-path evaluation: 18/128
+[2026-09-03 09:54:48] checkpoint-path evaluation: 19/128
+[2026-09-03 09:54:48] checkpoint-path evaluation: 20/128
+[2026-09-03 09:54:49] checkpoint-path evaluation: 21/128
+[2026-09-03 09:54:50] checkpoint-path evaluation: 22/128
+[2026-09-03 09:54:50] checkpoint-path evaluation: 23/128
+[2026-09-03 09:54:51] checkpoint-path evaluation: 24/128
+[2026-09-03 09:54:51] checkpoint-path evaluation: 25/128
+[2026-09-03 09:54:52] checkpoint-path evaluation: 26/128
+[2026-09-03 09:54:52] checkpoint-path evaluation: 27/128
+[2026-09-03 09:54:52] checkpoint-path evaluation: 28/128
+[2026-09-03 09:54:53] checkpoint-path evaluation: 29/128
+[2026-09-03 09:54:54] checkpoint-path evaluation: 30/128
+[2026-09-03 09:54:54] checkpoint-path evaluation: 31/128
+[2026-09-03 09:54:54] checkpoint-path evaluation: 32/128
+[2026-09-03 09:54:55] checkpoint-path evaluation: 33/128
+[2026-09-03 09:54:55] checkpoint-path evaluation: 34/128
+[2026-09-03 09:54:56] checkpoint-path evaluation: 35/128
+[2026-09-03 09:54:56] checkpoint-path evaluation: 36/128
+[2026-09-03 09:54:57] checkpoint-path evaluation: 37/128
+[2026-09-03 09:54:57] checkpoint-path evaluation: 38/128
+[2026-09-03 09:54:58] checkpoint-path evaluation: 39/128
+[2026-09-03 09:54:59] checkpoint-path evaluation: 40/128
+[2026-09-03 09:54:59] checkpoint-path evaluation: 41/128
+[2026-09-03 09:55:00] checkpoint-path evaluation: 42/128
+[2026-09-03 09:55:01] checkpoint-path evaluation: 43/128
+[2026-09-03 09:55:01] checkpoint-path evaluation: 44/128
+[2026-09-03 09:55:01] checkpoint-path evaluation: 45/128
+[2026-09-03 09:55:02] checkpoint-path evaluation: 46/128
+[2026-09-03 09:55:02] checkpoint-path evaluation: 47/128
+[2026-09-03 09:55:03] checkpoint-path evaluation: 48/128
+[2026-09-03 09:55:03] checkpoint-path evaluation: 49/128
+[2026-09-03 09:55:04] checkpoint-path evaluation: 50/128
+[2026-09-03 09:55:05] checkpoint-path evaluation: 51/128
+[2026-09-03 09:55:05] checkpoint-path evaluation: 52/128
+[2026-09-03 09:55:06] checkpoint-path evaluation: 53/128
+[2026-09-03 09:55:07] checkpoint-path evaluation: 54/128
+[2026-09-03 09:55:08] checkpoint-path evaluation: 55/128
+[2026-09-03 09:55:09] checkpoint-path evaluation: 56/128
+[2026-09-03 09:55:09] checkpoint-path evaluation: 57/128
+[2026-09-03 09:55:10] checkpoint-path evaluation: 58/128
+[2026-09-03 09:55:10] checkpoint-path evaluation: 59/128
+[2026-09-03 09:55:11] checkpoint-path evaluation: 60/128
+[2026-09-03 09:55:11] checkpoint-path evaluation: 61/128
+[2026-09-03 09:55:12] checkpoint-path evaluation: 62/128
+[2026-09-03 09:55:12] checkpoint-path evaluation: 63/128
+[2026-09-03 09:55:13] checkpoint-path evaluation: 64/128
+[2026-09-03 09:55:13] checkpoint-path evaluation: 65/128
+[2026-09-03 09:55:14] checkpoint-path evaluation: 66/128
+[2026-09-03 09:55:15] checkpoint-path evaluation: 67/128
+[2026-09-03 09:55:15] checkpoint-path evaluation: 68/128
+[2026-09-03 09:55:16] checkpoint-path evaluation: 69/128
+[2026-09-03 09:55:17] checkpoint-path evaluation: 70/128
+[2026-09-03 09:55:18] checkpoint-path evaluation: 71/128
+[2026-09-03 09:55:18] checkpoint-path evaluation: 72/128
+[2026-09-03 09:55:19] checkpoint-path evaluation: 73/128
+[2026-09-03 09:55:19] checkpoint-path evaluation: 74/128
+[2026-09-03 09:55:20] checkpoint-path evaluation: 75/128
+[2026-09-03 09:55:20] checkpoint-path evaluation: 76/128
+[2026-09-03 09:55:21] checkpoint-path evaluation: 77/128
+[2026-09-03 09:55:21] checkpoint-path evaluation: 78/128
+[2026-09-03 09:55:22] checkpoint-path evaluation: 79/128
+[2026-09-03 09:55:22] checkpoint-path evaluation: 80/128
+[2026-09-03 09:55:23] checkpoint-path evaluation: 81/128
+[2026-09-03 09:55:24] checkpoint-path evaluation: 82/128
+[2026-09-03 09:55:24] checkpoint-path evaluation: 83/128
+[2026-09-03 09:55:25] checkpoint-path evaluation: 84/128
+[2026-09-03 09:55:26] checkpoint-path evaluation: 85/128
+[2026-09-03 09:55:27] checkpoint-path evaluation: 86/128
+[2026-09-03 09:55:27] checkpoint-path evaluation: 87/128
+[2026-09-03 09:55:28] checkpoint-path evaluation: 88/128
+[2026-09-03 09:55:28] checkpoint-path evaluation: 89/128
+[2026-09-03 09:55:29] checkpoint-path evaluation: 90/128
+[2026-09-03 09:55:30] checkpoint-path evaluation: 91/128
+[2026-09-03 09:55:31] checkpoint-path evaluation: 92/128
+[2026-09-03 09:55:31] checkpoint-path evaluation: 93/128
+[2026-09-03 09:55:32] checkpoint-path evaluation: 94/128
+[2026-09-03 09:55:32] checkpoint-path evaluation: 95/128
+[2026-09-03 09:55:33] checkpoint-path evaluation: 96/128
+[2026-09-03 09:55:34] checkpoint-path evaluation: 97/128
+[2026-09-03 09:55:35] checkpoint-path evaluation: 98/128
+[2026-09-03 09:55:36] checkpoint-path evaluation: 99/128
+[2026-09-03 09:55:36] checkpoint-path evaluation: 100/128
+[2026-09-03 09:55:37] checkpoint-path evaluation: 101/128
+[2026-09-03 09:55:37] checkpoint-path evaluation: 102/128
+[2026-09-03 09:55:38] checkpoint-path evaluation: 103/128
+[2026-09-03 09:55:38] checkpoint-path evaluation: 104/128
+[2026-09-03 09:55:39] checkpoint-path evaluation: 105/128
+[2026-09-03 09:55:40] checkpoint-path evaluation: 106/128
+[2026-09-03 09:55:40] checkpoint-path evaluation: 107/128
+[2026-09-03 09:55:41] checkpoint-path evaluation: 108/128
+[2026-09-03 09:55:42] checkpoint-path evaluation: 109/128
+[2026-09-03 09:55:43] checkpoint-path evaluation: 110/128
+[2026-09-03 09:55:44] checkpoint-path evaluation: 111/128
+[2026-09-03 09:55:45] checkpoint-path evaluation: 112/128
+[2026-09-03 09:55:45] checkpoint-path evaluation: 113/128
+[2026-09-03 09:55:45] checkpoint-path evaluation: 114/128
+[2026-09-03 09:55:46] checkpoint-path evaluation: 115/128
+[2026-09-03 09:55:46] checkpoint-path evaluation: 116/128
+[2026-09-03 09:55:47] checkpoint-path evaluation: 117/128
+[2026-09-03 09:55:48] checkpoint-path evaluation: 118/128
+[2026-09-03 09:55:49] checkpoint-path evaluation: 119/128
+[2026-09-03 09:55:50] checkpoint-path evaluation: 120/128
+[2026-09-03 09:55:50] checkpoint-path evaluation: 121/128
+[2026-09-03 09:55:51] checkpoint-path evaluation: 122/128
+[2026-09-03 09:55:52] checkpoint-path evaluation: 123/128
+[2026-09-03 09:55:52] checkpoint-path evaluation: 124/128
+[2026-09-03 09:55:53] checkpoint-path evaluation: 125/128
+[2026-09-03 09:55:54] checkpoint-path evaluation: 126/128
+[2026-09-03 09:55:54] checkpoint-path evaluation: 127/128
+[2026-09-03 09:55:55] checkpoint-path evaluation: 128/128
+[2026-09-03 09:55:56] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u evaluate_stageb_checkpoints.py --config /home/yezhe/重实现/mmlupro_stageb_checkpoint_path_qwen3_4b_to_8b_seed1234/config.json
+[2026-09-03 09:55:56] ALL STAGE-B CHECKPOINT-PATH EXPERIMENTS COMPLETED
