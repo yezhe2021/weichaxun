@@ -1,0 +1,158 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-P-C2 Uncompressed Multi-Slot Trajectory Reader",
+  "comparison_table": {
+    "reader_c_native_kv": {
+      "n": 64,
+      "em": 0.46875,
+      "f1": 0.5720238095238096,
+      "eos_rate": 1.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.40625,
+          "f1": 0.5721726190476191
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.53125,
+          "f1": 0.571875
+        }
+      }
+    },
+    "a1_av_trajectory": {
+      "n": 64,
+      "em": 0.359375,
+      "f1": 0.43324383949383954,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.71875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.2849972943722944
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.53125,
+          "f1": 0.5814903846153846
+        }
+      },
+      "correct_shuffled_f1_gap": 0.012417646011396,
+      "automatic_f1_gap_recovery": 0.8556428569140697
+    },
+    "c1_pooled_128d_fullkv": {
+      "n": 64,
+      "em": 0.328125,
+      "f1": 0.3993400696525697,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.71875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.2515647546897547
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.5,
+          "f1": 0.5471153846153847
+        }
+      },
+      "correct_shuffled_f1_gap": 0.026154401154401208,
+      "automatic_f1_gap_recovery": 1.0646753165757668
+    },
+    "c1_pooled_128d_hard_shuffled": {
+      "n": 64,
+      "em": 0.296875,
+      "f1": 0.3731856684981685,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.703125,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.2461309523809524
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.4375,
+          "f1": 0.5002403846153847
+        }
+      }
+    },
+    "c2_uncompressed_multislot": {
+      "n": 64,
+      "em": 0.328125,
+      "f1": 0.3974867724867725,
+      "eos_rate": 1.0,
+      "average_output_tokens": 5.546875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.2961309523809524
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.46875,
+          "f1": 0.4988425925925926
+        }
+      },
+      "correct_shuffled_f1_gap": 0.015625,
+      "automatic_f1_gap_recovery": 1.0761017528353436
+    },
+    "c2_uncompressed_multislot_hard_shuffled": {
+      "n": 64,
+      "em": 0.3125,
+      "f1": 0.3818617724867725,
+      "eos_rate": 1.0,
+      "average_output_tokens": 5.15625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.27529761904761907
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.4375,
+          "f1": 0.4884259259259259
+        }
+      }
+    },
+    "full_evidence_text": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.40983000528813956,
+      "eos_rate": 0.640625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.46875,
+          "f1": 0.6608480553739421
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.03125,
+          "f1": 0.15881195520233732
+        }
+      }
+    }
+  },
+  "state_and_slot_diagnostics": {
+    "cosine_before": 0.9113517999649048,
+    "cosine_after": 0.9093950111418962,
+    "normalized_mse_before": 0.1772958529763855,
+    "normalized_mse_after": 0.18120932980673388,
+    "slot_off_diagonal_cosine": 0.307626124471426,
+    "state_query_slot_attention_entropy": 0.783169592730701,
+    "state_query_slot_attention_max": 0.7315901285037398
+  },
+  "c1_preserved_as_pooled_memory_baseline": true,
+  "c2_slots": 8,
+  "c2_slot_dim": 256,
+  "c2_slot_pooling_before_state_query": false,
+  "p3ep_original_result": "/home/yezhe/伪查询/runs/p3e_p_trajectory_reader_capacity_diagnosis_seed1234/SUCCESS.json",
+  "c2_evaluation": "/home/yezhe/伪查询/runs/p3e_p_c2_uncompressed_multislot_trajectory_seed1234/evaluation/SUCCESS.json"
+}

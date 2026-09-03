@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "manifest_counts": true,
+    "all_split_ids_disjoint": true,
+    "all_paired_caches_present": true,
+    "calibration_present": true,
+    "stage_a_checkpoint_present": true,
+    "stage_a_writer_is_d2": true,
+    "stage_b_mode_is_final_only": true,
+    "effective_batch_is_8": true
+  },
+  "missing_cache_count": 0,
+  "missing_cache_examples": []
+}

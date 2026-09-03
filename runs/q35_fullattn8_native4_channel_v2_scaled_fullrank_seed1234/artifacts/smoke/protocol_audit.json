@@ -1,0 +1,31 @@
+{
+  "samples": {
+    "train": 4,
+    "validation": 2,
+    "test": 2
+  },
+  "sender_input": "complete context only; question excluded",
+  "source_layers": [
+    3,
+    7,
+    11,
+    15,
+    19,
+    23,
+    27,
+    31
+  ],
+  "source_state": "k_proj -> k_norm -> pre-RoPE K; native V",
+  "excluded": [
+    "DeltaNet pseudo-KV",
+    "DeltaNet recurrent state",
+    "DeltaNet convolution state",
+    "question",
+    "Selector"
+  ],
+  "reader_checkpoint": "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/artifacts/smoke/sparse_reader/best.pt",
+  "reader_checkpoint_sha256": "43883798e1d9a19e4b1120a12180cbb05e085d03a67175e400042d695d768f61",
+  "receiver_translator": "identity",
+  "q_o_lora": "enabled and frozen during training",
+  "hard_gate": null
+}

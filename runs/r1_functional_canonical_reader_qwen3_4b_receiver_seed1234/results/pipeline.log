@@ -1,0 +1,272 @@
+[2026-07-28 17:32:52] CUDA ready; starting/resuming R1 pipeline
+[2026-07-28 17:32:52] stage started: cpu_selftest
+[2026-07-28 17:32:56] R1 CPU self-test passed
+[2026-07-28 17:32:57] stage completed: cpu_selftest
+[2026-07-28 17:32:57] stage started: structure
+[2026-07-28 17:33:01] R1 structure and frozen-Writer asset check passed
+[2026-07-28 17:33:02] stage completed: structure
+[2026-07-28 17:33:02] stage started: smoke_manifest
+[2026-07-28 17:33:14] smoke: reconstructed original positions for exact R0 sample IDs
+[2026-07-28 17:33:16] stage completed: smoke_manifest
+[2026-07-28 17:33:16] stage started: smoke_assets_4b
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  30%|███       | 121/398 [00:00<00:00, 1134.93it/s]Loading weights:  59%|█████▉    | 235/398 [00:00<00:00, 1005.92it/s]Loading weights:  85%|████████▍ | 337/398 [00:00<00:00, 981.79it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 981.76it/s]
+[2026-07-28 17:33:30] smoke: 4b train shard 1/1
+[2026-07-28 17:33:33] smoke: 4b validation shard 1/1
+[2026-07-28 17:33:35] smoke: 4b test shard 1/1
+[2026-07-28 17:33:36] stage completed: smoke_assets_4b
+[2026-07-28 17:33:36] stage started: smoke_assets_8b
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 59/399 [00:00<00:00, 588.29it/s]Loading weights:  30%|██▉       | 118/399 [00:00<00:00, 568.47it/s]Loading weights:  44%|████▍     | 175/399 [00:00<00:00, 524.24it/s]Loading weights:  57%|█████▋    | 228/399 [00:00<00:00, 510.70it/s]Loading weights:  70%|███████   | 280/399 [00:00<00:00, 491.11it/s]Loading weights:  83%|████████▎ | 330/399 [00:00<00:00, 480.66it/s]Loading weights:  95%|█████████▍| 379/399 [00:00<00:00, 480.71it/s]Loading weights: 100%|██████████| 399/399 [00:00<00:00, 507.18it/s]
+[2026-07-28 17:33:57] smoke: 8b train shard 1/1
+[2026-07-28 17:34:01] smoke: 8b validation shard 1/1
+[2026-07-28 17:34:03] smoke: 8b test shard 1/1
+[2026-07-28 17:34:05] stage completed: smoke_assets_8b
+[2026-07-28 17:34:05] stage started: smoke_r1_0_sparse_gate
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  31%|███       | 122/398 [00:00<00:00, 1219.19it/s]Loading weights:  61%|██████▏   | 244/398 [00:00<00:00, 1090.16it/s]Loading weights:  89%|████████▉ | 354/398 [00:00<00:00, 1006.11it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1021.40it/s]
+[2026-07-28 17:34:17] smoke: R1-0 sparse reader epoch 1/1
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 956.12it/s]Loading weights:  50%|████▉     | 198/398 [00:00<00:00, 954.22it/s]Loading weights:  75%|███████▌  | 300/398 [00:00<00:00, 961.90it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 983.88it/s]
+[2026-07-28 17:34:22] smoke: R1-0 sparse-native gate evaluation completed
+[2026-07-28 17:34:24] stage completed: smoke_r1_0_sparse_gate
+[2026-07-28 17:34:24] stage started: smoke_r1_1_reconstruction
+[2026-07-28 17:34:31] smoke: R1-1 reconstruction warm-up epoch completed
+[2026-07-28 17:34:32] stage completed: smoke_r1_1_reconstruction
+[2026-07-28 17:34:32] stage started: smoke_r1_1_functional
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 1160.44it/s]Loading weights:  61%|██████    | 241/398 [00:00<00:00, 1081.80it/s]Loading weights:  88%|████████▊ | 350/398 [00:00<00:00, 1014.84it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1036.47it/s]
+Traceback (most recent call last):
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/train_r1_self_canonical.py", line 4, in <module>
+    cli_functional()
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/r1_common.py", line 1288, in cli_functional
+    train_self_canonical(cfg, args.mode)
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/r1_common.py", line 942, in train_self_canonical
+    val = validate_memory_nll(
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/r1_common.py", line 660, in validate_memory_nll
+    key, value = translator(key, value)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/r1_common.py", line 512, in forward
+    mixed_k = torch.einsum("ri,ishd->rshd", self.depth_k.softmax(-1), canonical_k)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/functional.py", line 402, in einsum
+    return _VF.einsum(equation, operands)  # type: ignore[attr-defined]
+RuntimeError: expected scalar type Half but found Float
+[2026-07-28 17:34:51] Pipeline failed: CalledProcessError: Command '['/home/yezhe/data/miniconda3/envs/attnkv/bin/python', '-u', '/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/train_r1_self_canonical.py', '--config', '/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/config.json', '--mode', 'smoke']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/run_pipeline.py", line 102, in <module>
+    main()
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/run_pipeline.py", line 83, in main
+    run(
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/run_pipeline.py", line 35, in run
+    subprocess.run(
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yezhe/data/miniconda3/envs/attnkv/bin/python', '-u', '/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/train_r1_self_canonical.py', '--config', '/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/config.json', '--mode', 'smoke']' returned non-zero exit status 1.
+[2026-07-28 17:34:51] R1 stopped; retrying after GPU recovery
+[2026-07-28 17:35:53] CUDA ready; starting/resuming R1 pipeline
+[2026-07-28 17:35:53] resume: skip completed stage cpu_selftest
+[2026-07-28 17:35:53] resume: skip completed stage structure
+[2026-07-28 17:35:53] resume: skip completed stage smoke_manifest
+[2026-07-28 17:35:53] resume: skip completed stage smoke_assets_4b
+[2026-07-28 17:35:53] resume: skip completed stage smoke_assets_8b
+[2026-07-28 17:35:53] resume: skip completed stage smoke_r1_0_sparse_gate
+[2026-07-28 17:35:53] resume: skip completed stage smoke_r1_1_reconstruction
+[2026-07-28 17:35:53] stage started: smoke_r1_1_functional
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  29%|██▊       | 114/398 [00:00<00:00, 1138.88it/s]Loading weights:  57%|█████▋    | 228/398 [00:00<00:00, 1054.51it/s]Loading weights:  84%|████████▍ | 334/398 [00:00<00:00, 1025.73it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1036.85it/s]
+Traceback (most recent call last):
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/train_r1_self_canonical.py", line 4, in <module>
+    cli_functional()
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/r1_common.py", line 1288, in cli_functional
+    train_self_canonical(cfg, args.mode)
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/r1_common.py", line 942, in train_self_canonical
+    val = validate_memory_nll(
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/r1_common.py", line 660, in validate_memory_nll
+    key, value = translator(key, value)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/r1_common.py", line 512, in forward
+    mixed_k = torch.einsum("ri,ishd->rshd", self.depth_k.softmax(-1), canonical_k)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/functional.py", line 402, in einsum
+    return _VF.einsum(equation, operands)  # type: ignore[attr-defined]
+RuntimeError: expected scalar type Half but found Float
+[2026-07-28 17:36:12] Pipeline failed: CalledProcessError: Command '['/home/yezhe/data/miniconda3/envs/attnkv/bin/python', '-u', '/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/train_r1_self_canonical.py', '--config', '/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/config.json', '--mode', 'smoke']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/run_pipeline.py", line 102, in <module>
+    main()
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/run_pipeline.py", line 83, in main
+    run(
+  File "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/run_pipeline.py", line 35, in run
+    subprocess.run(
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yezhe/data/miniconda3/envs/attnkv/bin/python', '-u', '/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/train_r1_self_canonical.py', '--config', '/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/config.json', '--mode', 'smoke']' returned non-zero exit status 1.
+[2026-07-28 17:36:12] R1 stopped; retrying after GPU recovery
+[2026-07-28 17:37:14] CUDA ready; starting/resuming R1 pipeline
+[2026-07-28 17:37:14] resume: skip completed stage cpu_selftest
+[2026-07-28 17:37:14] resume: skip completed stage structure
+[2026-07-28 17:37:14] resume: skip completed stage smoke_manifest
+[2026-07-28 17:37:14] resume: skip completed stage smoke_assets_4b
+[2026-07-28 17:37:14] resume: skip completed stage smoke_assets_8b
+[2026-07-28 17:37:14] resume: skip completed stage smoke_r1_0_sparse_gate
+[2026-07-28 17:37:14] resume: skip completed stage smoke_r1_1_reconstruction
+[2026-07-28 17:37:14] stage started: smoke_r1_1_functional
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 132/398 [00:00<00:00, 1274.13it/s]Loading weights:  65%|██████▌   | 260/398 [00:00<00:00, 1269.52it/s]Loading weights:  97%|█████████▋| 387/398 [00:00<00:00, 1121.37it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1155.10it/s]
+[2026-07-28 17:37:31] smoke: R1-1 functional epoch 1/1
+[2026-07-28 17:37:33] stage completed: smoke_r1_1_functional
+[2026-07-28 17:37:33] stage started: smoke_r1_2_cross_evaluation
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 1228.02it/s]Loading weights:  62%|██████▏   | 247/398 [00:00<00:00, 1195.08it/s]Loading weights:  92%|█████████▏| 367/398 [00:00<00:00, 1137.14it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1169.10it/s]
+[2026-07-28 17:37:42] smoke: evaluating question_only
+[2026-07-28 17:37:59] smoke: evaluating supporting_text
+[2026-07-28 17:38:18] smoke: evaluating native_4b_sparse_correct
+[2026-07-28 17:38:37] smoke: evaluating native_4b_sparse_shuffled
+[2026-07-28 17:38:52] smoke: evaluating native_4b_sparse_zero
+[2026-07-28 17:39:07] smoke: evaluating self_4b_canonical_correct
+[2026-07-28 17:39:21] smoke: evaluating self_4b_canonical_shuffled
+[2026-07-28 17:39:36] smoke: evaluating self_4b_canonical_zero
+[2026-07-28 17:39:51] smoke: evaluating self_reader_no_memory
+[2026-07-28 17:40:05] smoke: evaluating cross_8b_raw_native_correct
+[2026-07-28 17:40:20] smoke: evaluating cross_8b_canonical_correct
+[2026-07-28 17:40:34] smoke: evaluating cross_8b_canonical_shuffled
+[2026-07-28 17:40:49] smoke: evaluating cross_8b_canonical_zero
+[2026-07-28 17:41:04] smoke: R1 final self/cross evaluation completed
+[2026-07-28 17:41:05] stage completed: smoke_r1_2_cross_evaluation
+[2026-07-28 17:41:05] R1 complete smoke pipeline passed; formal pipeline authorized
+[2026-07-28 17:41:05] stage started: formal_manifest
+[2026-07-28 17:41:40] formal: reconstructed original positions for exact R0 sample IDs
+[2026-07-28 17:41:42] stage completed: formal_manifest
+[2026-07-28 17:41:42] stage started: formal_assets_4b
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 1184.70it/s]Loading weights:  62%|██████▏   | 245/398 [00:00<00:00, 1146.96it/s]Loading weights:  90%|█████████ | 360/398 [00:00<00:00, 1049.30it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1084.55it/s]
+[2026-07-28 17:42:14] formal: 4b train shard 1/32
+[2026-07-28 17:42:40] formal: 4b train shard 2/32
+[2026-07-28 17:43:17] formal: 4b train shard 3/32
+[2026-07-28 17:44:03] formal: 4b train shard 4/32
+[2026-07-28 17:44:46] formal: 4b train shard 5/32
+[2026-07-28 17:45:29] formal: 4b train shard 6/32
+[2026-07-28 17:46:14] formal: 4b train shard 7/32
+[2026-07-28 17:46:59] formal: 4b train shard 8/32
+[2026-07-28 17:47:48] formal: 4b train shard 9/32
+[2026-07-28 17:48:27] formal: 4b train shard 10/32
+[2026-07-28 17:49:19] formal: 4b train shard 11/32
+[2026-07-28 17:50:04] formal: 4b train shard 12/32
+[2026-07-28 17:50:47] formal: 4b train shard 13/32
+[2026-07-28 17:51:34] formal: 4b train shard 14/32
+[2026-07-28 17:52:17] formal: 4b train shard 15/32
+[2026-07-28 17:53:07] formal: 4b train shard 16/32
+[2026-07-28 17:53:51] formal: 4b train shard 17/32
+[2026-07-28 17:54:34] formal: 4b train shard 18/32
+[2026-07-28 17:55:22] formal: 4b train shard 19/32
+[2026-07-28 17:56:04] formal: 4b train shard 20/32
+[2026-07-28 17:56:49] formal: 4b train shard 21/32
+[2026-07-28 17:57:33] formal: 4b train shard 22/32
+[2026-07-28 17:58:24] formal: 4b train shard 23/32
+[2026-07-28 17:59:14] formal: 4b train shard 24/32
+[2026-07-28 18:00:06] formal: 4b train shard 25/32
+[2026-07-28 18:00:48] formal: 4b train shard 26/32
+[2026-07-28 18:01:35] formal: 4b train shard 27/32
+[2026-07-28 18:02:22] formal: 4b train shard 28/32
+[2026-07-28 18:03:09] formal: 4b train shard 29/32
+[2026-07-28 18:03:57] formal: 4b train shard 30/32
+[2026-07-28 18:04:44] formal: 4b train shard 31/32
+[2026-07-28 18:05:32] formal: 4b train shard 32/32
+[2026-07-28 18:06:16] formal: 4b validation shard 1/4
+[2026-07-28 18:07:02] formal: 4b validation shard 2/4
+[2026-07-28 18:07:52] formal: 4b validation shard 3/4
+[2026-07-28 18:08:44] formal: 4b validation shard 4/4
+[2026-07-28 18:09:34] formal: 4b test shard 1/4
+[2026-07-28 18:10:20] formal: 4b test shard 2/4
+[2026-07-28 18:11:14] formal: 4b test shard 3/4
+[2026-07-28 18:11:57] formal: 4b test shard 4/4
+[2026-07-28 18:11:58] stage completed: formal_assets_4b
+[2026-07-28 18:11:58] stage started: formal_assets_8b
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 48/399 [00:00<00:00, 479.16it/s]Loading weights:  26%|██▌       | 104/399 [00:00<00:00, 520.95it/s]Loading weights:  39%|███▉      | 157/399 [00:00<00:00, 512.72it/s]Loading weights:  52%|█████▏    | 209/399 [00:00<00:00, 499.26it/s]Loading weights:  65%|██████▍   | 259/399 [00:00<00:00, 479.29it/s]Loading weights:  78%|███████▊  | 312/399 [00:00<00:00, 483.57it/s]Loading weights:  90%|█████████ | 361/399 [00:00<00:00, 471.03it/s]Loading weights: 100%|██████████| 399/399 [00:00<00:00, 496.51it/s]
+[2026-07-28 18:13:21] formal: 8b train shard 1/32
+[2026-07-28 18:14:26] formal: 8b train shard 2/32
+[2026-07-28 18:15:29] formal: 8b train shard 3/32
+[2026-07-28 18:16:38] formal: 8b train shard 4/32
+[2026-07-28 18:17:41] formal: 8b train shard 5/32
+[2026-07-28 18:18:44] formal: 8b train shard 6/32
+[2026-07-28 18:19:52] formal: 8b train shard 7/32
+[2026-07-28 18:20:59] formal: 8b train shard 8/32
+[2026-07-28 18:22:11] formal: 8b train shard 9/32
+[2026-07-28 18:23:09] formal: 8b train shard 10/32
+[2026-07-28 18:24:24] formal: 8b train shard 11/32
+[2026-07-28 18:25:27] formal: 8b train shard 12/32
+[2026-07-28 18:26:29] formal: 8b train shard 13/32
+[2026-07-28 18:27:35] formal: 8b train shard 14/32
+[2026-07-28 18:28:40] formal: 8b train shard 15/32
+[2026-07-28 18:29:49] formal: 8b train shard 16/32
+[2026-07-28 18:30:49] formal: 8b train shard 17/32
+[2026-07-28 18:31:51] formal: 8b train shard 18/32
+[2026-07-28 18:32:56] formal: 8b train shard 19/32
+[2026-07-28 18:33:53] formal: 8b train shard 20/32
+[2026-07-28 18:34:56] formal: 8b train shard 21/32
+[2026-07-28 18:35:57] formal: 8b train shard 22/32
+[2026-07-28 18:37:06] formal: 8b train shard 23/32
+[2026-07-28 18:38:15] formal: 8b train shard 24/32
+[2026-07-28 18:39:20] formal: 8b train shard 25/32
+[2026-07-28 18:40:16] formal: 8b train shard 26/32
+[2026-07-28 18:41:17] formal: 8b train shard 27/32
+[2026-07-28 18:42:16] formal: 8b train shard 28/32
+[2026-07-28 18:43:14] formal: 8b train shard 29/32
+[2026-07-28 18:44:15] formal: 8b train shard 30/32
+[2026-07-28 18:45:15] formal: 8b train shard 31/32
+[2026-07-28 18:46:13] formal: 8b train shard 32/32
+[2026-07-28 18:47:09] formal: 8b validation shard 1/4
+[2026-07-28 18:48:07] formal: 8b validation shard 2/4
+[2026-07-28 18:49:09] formal: 8b validation shard 3/4
+[2026-07-28 18:50:15] formal: 8b validation shard 4/4
+[2026-07-28 18:51:15] formal: 8b test shard 1/4
+[2026-07-28 18:52:11] formal: 8b test shard 2/4
+[2026-07-28 18:53:16] formal: 8b test shard 3/4
+[2026-07-28 18:54:12] formal: 8b test shard 4/4
+[2026-07-28 18:54:13] stage completed: formal_assets_8b
+[2026-07-28 18:54:13] stage started: formal_r1_0_sparse_gate
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1076.50it/s]Loading weights:  57%|█████▋    | 227/398 [00:00<00:00, 1112.91it/s]Loading weights:  85%|████████▌ | 339/398 [00:00<00:00, 1058.25it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1057.37it/s]
+[2026-07-28 19:00:20] formal: R1-0 sparse reader epoch 1/2
+[2026-07-28 19:06:04] formal: R1-0 sparse reader epoch 2/2
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 110/398 [00:00<00:00, 1097.39it/s]Loading weights:  55%|█████▌    | 220/398 [00:00<00:00, 1062.00it/s]Loading weights:  82%|████████▏ | 327/398 [00:00<00:00, 1050.10it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1061.46it/s]
+[2026-07-28 19:07:14] formal: R1-0 sparse-native gate evaluation completed
+[2026-07-28 19:07:15] stage completed: formal_r1_0_sparse_gate
+[2026-07-28 19:07:15] stage started: formal_r1_1_reconstruction
+[2026-07-28 19:11:34] formal: R1-1 reconstruction warm-up epoch completed
+[2026-07-28 19:11:35] stage completed: formal_r1_1_reconstruction
+[2026-07-28 19:11:35] stage started: formal_r1_1_functional
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  30%|███       | 121/398 [00:00<00:00, 1179.18it/s]Loading weights:  60%|██████    | 239/398 [00:00<00:00, 1169.89it/s]Loading weights:  89%|████████▉ | 356/398 [00:00<00:00, 1167.06it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1171.94it/s]
+[2026-07-28 19:26:27] formal: R1-1 functional epoch 1/2
+[2026-07-28 19:40:52] formal: R1-1 functional epoch 2/2
+[2026-07-28 19:40:54] stage completed: formal_r1_1_functional
+[2026-07-28 19:40:54] stage started: formal_r1_2_cross_evaluation
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  30%|███       | 121/398 [00:00<00:00, 1193.28it/s]Loading weights:  61%|██████    | 241/398 [00:00<00:00, 1104.30it/s]Loading weights:  88%|████████▊ | 352/398 [00:00<00:00, 1045.10it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1068.68it/s]
+[2026-07-28 19:41:04] formal: evaluating question_only
+[2026-07-28 19:47:37] formal: evaluating supporting_text
+[2026-07-28 19:59:01] formal: evaluating native_4b_sparse_correct
+[2026-07-28 19:59:46] formal: evaluating native_4b_sparse_shuffled
+[2026-07-28 20:00:43] formal: evaluating native_4b_sparse_zero
+[2026-07-28 20:08:05] formal: evaluating self_4b_canonical_correct
+[2026-07-28 20:10:45] formal: evaluating self_4b_canonical_shuffled
+[2026-07-28 20:13:50] formal: evaluating self_4b_canonical_zero
+[2026-07-28 20:21:25] formal: evaluating self_reader_no_memory
+[2026-07-28 20:29:44] formal: evaluating cross_8b_raw_native_correct
+[2026-07-28 20:30:36] formal: evaluating cross_8b_canonical_correct
+[2026-07-28 20:37:34] formal: evaluating cross_8b_canonical_shuffled
+[2026-07-28 20:45:09] formal: evaluating cross_8b_canonical_zero
+[2026-07-28 20:52:37] formal: R1 final self/cross evaluation completed
+[2026-07-28 20:52:38] stage completed: formal_r1_2_cross_evaluation
+[2026-07-28 20:52:38] R1 pipeline completed
+[2026-07-28 20:52:38] R1 pipeline finished

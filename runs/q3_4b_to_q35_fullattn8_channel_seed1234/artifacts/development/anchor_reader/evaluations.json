@@ -1,0 +1,62 @@
+[
+  {
+    "update": 25,
+    "validation_nll": 1.946588165126741,
+    "selected_nll": true
+  },
+  {
+    "update": 50,
+    "validation_nll": 1.8136731554404832,
+    "selected_nll": true,
+    "validation_generation_f1": 0.37734375000000003,
+    "selected_generation": true
+  },
+  {
+    "update": 75,
+    "validation_nll": 1.7547322259633802,
+    "selected_nll": true
+  },
+  {
+    "update": 100,
+    "validation_nll": 1.7269718309107702,
+    "selected_nll": true,
+    "validation_generation_f1": 0.44505208333333335,
+    "selected_generation": true
+  },
+  {
+    "update": 125,
+    "validation_nll": 1.734103271184722,
+    "selected_nll": false
+  },
+  {
+    "update": 150,
+    "validation_nll": 1.8251353311352432,
+    "selected_nll": false,
+    "validation_generation_f1": 0.38847966269841266,
+    "selected_generation": false
+  },
+  {
+    "update": 175,
+    "validation_nll": 1.8714931341237389,
+    "selected_nll": false
+  },
+  {
+    "update": 200,
+    "validation_nll": 1.9179065332355094,
+    "selected_nll": false,
+    "validation_generation_f1": 0.3966145833333333,
+    "selected_generation": false
+  },
+  {
+    "update": 225,
+    "validation_nll": 2.1352962143701006,
+    "selected_nll": false
+  },
+  {
+    "update": 250,
+    "validation_nll": 2.053443928096385,
+    "selected_nll": false,
+    "validation_generation_f1": 0.4072048611111111,
+    "selected_generation": false
+  }
+]

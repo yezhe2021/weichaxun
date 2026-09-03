@@ -1,0 +1,22 @@
+[
+  {
+    "update": 1,
+    "grad_norm": 1.4400553703308105,
+    "lr": 5e-05,
+    "functional_loss": 13.407815933227539,
+    "answer_nll": 13.022897720336914,
+    "shuffled_nll": 11.598307609558105,
+    "dependence": 1.9245901107788086,
+    "kv_loss_weight": 0.0
+  },
+  {
+    "update": 2,
+    "grad_norm": 0.4606362283229828,
+    "lr": 5e-05,
+    "functional_loss": 12.3157320022583,
+    "answer_nll": 12.314229011535645,
+    "shuffled_nll": 12.80671215057373,
+    "dependence": 0.0075168609619140625,
+    "kv_loss_weight": 0.0
+  }
+]

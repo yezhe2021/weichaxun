@@ -1,0 +1,24 @@
+[
+  {
+    "update": 1,
+    "lr": 5e-05,
+    "grad_norm": 222.28892517089844,
+    "dependence_computed": false,
+    "loss": 12.757400095462799,
+    "answer_nll": 10.641925692558289,
+    "distill_kl": 4.2309484872967005,
+    "dependence": 0.0,
+    "shuffled_nll": 0.0
+  },
+  {
+    "update": 2,
+    "lr": 5e-05,
+    "grad_norm": 137.46852111816406,
+    "dependence_computed": true,
+    "loss": 12.275707721710205,
+    "answer_nll": 10.282348930835724,
+    "distill_kl": 3.789318975992501,
+    "dependence": 0.49349653720855713,
+    "shuffled_nll": 12.647677063941956
+  }
+]

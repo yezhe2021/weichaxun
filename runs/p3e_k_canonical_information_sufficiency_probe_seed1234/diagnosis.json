@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "provisional_diagnosis": "A_canonical_information_sufficient_receiver_execution_is_primary_gap",
+  "diagnostic_only": true,
+  "observed": {
+    "full_text": {
+      "support_sentence_recall_at_2": 0.6364583333333333,
+      "span_token_f1": 0.0698051948051948
+    },
+    "native": {
+      "support_sentence_recall_at_2": 0.6651041666666667,
+      "span_token_f1": 0.23520081109366825
+    },
+    "canonical": {
+      "support_sentence_recall_at_2": 0.6572916666666667,
+      "span_token_f1": 0.1993271221532091
+    },
+    "canonical_correct_minus_sample_shuffled_answer_f1": 0.22134688228438226,
+    "canonical_correct_minus_hard_shuffled_answer_f1": 0.22199792395104895
+  }
+}

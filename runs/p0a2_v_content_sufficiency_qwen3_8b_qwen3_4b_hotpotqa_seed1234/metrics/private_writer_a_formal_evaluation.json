@@ -1,0 +1,31 @@
+{
+  "mode": "private_writer",
+  "probe_trained_sender": "a",
+  "probe_training_source": "a_self_only",
+  "conditions": {
+    "self": {
+      "support_recall_at_1": 0.26953125,
+      "support_hit_at_1": 0.578125,
+      "support_recall_at_5": 0.62890625,
+      "support_hit_at_5": 0.8125,
+      "mrr": 0.6956912878787878,
+      "support_auprc": 0.5950515059304121
+    },
+    "cross": {
+      "support_recall_at_1": 0.24218750000000003,
+      "support_hit_at_1": 0.53125,
+      "support_recall_at_5": 0.59765625,
+      "support_hit_at_5": 0.8125,
+      "mrr": 0.6631964670337832,
+      "support_auprc": 0.5350436770085475
+    },
+    "shuffled": {
+      "support_recall_at_1": 0.17838541666666666,
+      "support_hit_at_1": 0.390625,
+      "support_recall_at_5": 0.44140625000000006,
+      "support_hit_at_5": 0.71875,
+      "mrr": 0.5395689596861473,
+      "support_auprc": 0.40618674929108367
+    }
+  }
+}

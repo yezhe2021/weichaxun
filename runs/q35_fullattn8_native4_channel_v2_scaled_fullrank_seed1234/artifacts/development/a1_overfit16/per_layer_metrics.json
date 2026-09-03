@@ -1,0 +1,90 @@
+[
+  {
+    "layer": 0,
+    "target_layer": 3,
+    "k_nmse": 0.9295814735814929,
+    "v_nmse": 1.3290860764682293,
+    "k_cosine": 0.5351518499664962,
+    "v_cosine": 0.2730542062781751,
+    "route_kl": 6.781424783170223,
+    "attention_output_cosine": 0.18453109689289704,
+    "representation_score": 2.3778469444252552
+  },
+  {
+    "layer": 1,
+    "target_layer": 8,
+    "k_nmse": 0.9973176512867212,
+    "v_nmse": 1.3347849640995264,
+    "k_cosine": 0.4841854306869209,
+    "v_cosine": 0.24688721261918545,
+    "route_kl": 2.2671006433665752,
+    "attention_output_cosine": 0.39576637209393084,
+    "representation_score": 2.458995351055637
+  },
+  {
+    "layer": 2,
+    "target_layer": 12,
+    "k_nmse": 0.9852154888212681,
+    "v_nmse": 1.3138587083667517,
+    "k_cosine": 0.5000477503053844,
+    "v_cosine": 0.27148027974180877,
+    "route_kl": 2.710691809654236,
+    "attention_output_cosine": 0.42942432197742164,
+    "representation_score": 2.4219213941833004
+  },
+  {
+    "layer": 3,
+    "target_layer": 17,
+    "k_nmse": 0.9609155962243676,
+    "v_nmse": 1.2934692054986954,
+    "k_cosine": 0.4994665547274053,
+    "v_cosine": 0.27842449373565614,
+    "route_kl": 3.1755212247371674,
+    "attention_output_cosine": 0.3775957439793274,
+    "representation_score": 2.3765956968767568
+  },
+  {
+    "layer": 4,
+    "target_layer": 21,
+    "k_nmse": 0.9032050771638751,
+    "v_nmse": 1.3227099291980267,
+    "k_cosine": 0.5203086594119668,
+    "v_cosine": 0.28108583530411124,
+    "route_kl": 2.7433053124696016,
+    "attention_output_cosine": 0.3819469817681238,
+    "representation_score": 2.345775556890294
+  },
+  {
+    "layer": 5,
+    "target_layer": 26,
+    "k_nmse": 0.904059212654829,
+    "v_nmse": 1.4537288434803486,
+    "k_cosine": 0.5131659228354692,
+    "v_cosine": 0.20741971652023494,
+    "route_kl": 2.2807009872049093,
+    "attention_output_cosine": 0.2969626898993738,
+    "representation_score": 2.4857294921996074
+  },
+  {
+    "layer": 6,
+    "target_layer": 30,
+    "k_nmse": 0.8912987224757671,
+    "v_nmse": 1.4700025245547295,
+    "k_cosine": 0.5162957338616252,
+    "v_cosine": 0.19084119866602123,
+    "route_kl": 2.9105364233255386,
+    "attention_output_cosine": 0.2747775790048763,
+    "representation_score": 2.4905875537777318
+  },
+  {
+    "layer": 7,
+    "target_layer": 35,
+    "k_nmse": 0.8994539361447096,
+    "v_nmse": 1.3554036896675825,
+    "k_cosine": 0.5178086683154106,
+    "v_cosine": 0.2088464630069211,
+    "route_kl": 2.0529344845563173,
+    "attention_output_cosine": 0.4389174757525325,
+    "representation_score": 2.382192112680059
+  }
+]

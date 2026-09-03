@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "teacher_cache_complete": true,
+  "teacher_answer_positions_only": true,
+  "teacher_truncation": false,
+  "smoke16_epochs": 5,
+  "formal512_epochs": 5,
+  "initial_c1_equivalence": true,
+  "receiver_backbone_frozen": true,
+  "c1_reader_frozen": true,
+  "writer_and_sender_not_loaded_during_training": true,
+  "reader_off_exact": true
+}

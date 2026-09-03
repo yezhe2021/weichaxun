@@ -1,0 +1,202 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-J Canonical Soft-Prefix Executability Diagnosis",
+  "diagnostic_only_not_final_communication_method": true,
+  "samples": 64,
+  "conditions": {
+    "question_only": {
+      "n": 64,
+      "em": 0.015625,
+      "f1": 0.1276665284681437,
+      "eos_rate": 0.0,
+      "average_output_tokens": 32.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.03125,
+          "f1": 0.10302765465640684
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.0,
+          "f1": 0.15230540227988051
+        }
+      }
+    },
+    "full_evidence_text": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.4380547517096428,
+      "eos_rate": 0.0,
+      "average_output_tokens": 32.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.375,
+          "f1": 0.5577719382067209
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.125,
+          "f1": 0.3183375652125652
+        }
+      }
+    },
+    "exact_evidence_embeddings": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.4380547517096428,
+      "eos_rate": 0.0,
+      "average_output_tokens": 32.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.375,
+          "f1": 0.5577719382067209
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.125,
+          "f1": 0.3183375652125652
+        }
+      }
+    },
+    "current_c1_headwise_reader": {
+      "n": 64,
+      "em": 0.234375,
+      "f1": 0.31843697390572395,
+      "eos_rate": 0.0,
+      "average_output_tokens": 32.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.2884837962962963
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.28125,
+          "f1": 0.34839015151515146
+        }
+      }
+    },
+    "canonical_soft_prefix": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.33746445105820105,
+      "eos_rate": 0.9375,
+      "average_output_tokens": 8.25,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.09375,
+          "f1": 0.21410714285714286
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.40625,
+          "f1": 0.4608217592592593
+        }
+      }
+    },
+    "sample_shuffled_canonical_soft_prefix": {
+      "n": 64,
+      "em": 0.265625,
+      "f1": 0.3507457010582011,
+      "eos_rate": 0.90625,
+      "average_output_tokens": 8.640625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.09375,
+          "f1": 0.20941964285714285
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.4375,
+          "f1": 0.4920717592592593
+        }
+      }
+    },
+    "token_order_shuffled_soft_prefix": {
+      "n": 64,
+      "em": 0.109375,
+      "f1": 0.27137619446829975,
+      "eos_rate": 0.296875,
+      "average_output_tokens": 26.796875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.09375,
+          "f1": 0.21105046269519953
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.125,
+          "f1": 0.33170192624139994
+        }
+      }
+    },
+    "soft_prefix_off": {
+      "n": 64,
+      "em": 0.015625,
+      "f1": 0.1276665284681437,
+      "eos_rate": 0.0,
+      "average_output_tokens": 32.0,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.03125,
+          "f1": 0.10302765465640684
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.0,
+          "f1": 0.15230540227988051
+        }
+      }
+    }
+  },
+  "embedding_reconstruction": {
+    "samples": 64,
+    "tokens": 16278,
+    "embedding_cosine": 0.35501732614698306,
+    "embedding_mse": 0.0005639268272613407,
+    "nearest_neighbor": {
+      "sampled_positions": 512,
+      "nearest_token_top1": 0.310546875,
+      "nearest_token_top5": 0.4296875,
+      "scope": "first_512_valid_validation_positions_in_fixed_sample_order"
+    }
+  },
+  "correct_shuffled_f1_gap": -0.013281250000000022,
+  "canonical_minus_full_text_f1": -0.10059030065144176,
+  "canonical_minus_current_c1_f1": 0.0190274771524771,
+  "prediction_switch_rate": 0.125,
+  "input_ids_exact_embeddings_generation_consistency": 1.0,
+  "soft_prefix_off_question_only_consistency": 1.0,
+  "hard_negative_mapping_source": "deterministic_leakage_safe_reconstruction",
+  "decoder_metadata": {
+    "layers": 16,
+    "canonical_heads": 16,
+    "head_dim": 128,
+    "fusion_dim": 128,
+    "hidden_size": 512,
+    "receiver_dim": 2560,
+    "transformer_layers": 2,
+    "transformer_heads": 8,
+    "ffn_dim": 2048,
+    "max_tokens": 1024,
+    "target_rms": 0.020627308636903763,
+    "token_axis_preserved": true,
+    "slot_compression": false,
+    "question_conditioned": false
+  },
+  "decoder_checkpoint": "/home/yezhe/伪查询/runs/p3e_j_canonical_soft_prefix_executability_seed1234/formal512/stage_b/checkpoint_best.pt",
+  "decoder_checkpoint_sha256": "ad80f5e33c03babdb4689dabe23810437771b493f275cfb7535043b477b7059d",
+  "fixed_c2_writer_checkpoint": "/home/yezhe/伪查询/runs/p3e_c2_learned_head_structured_writer_seed1234/writer_formal512/worker/checkpoint_best.pt",
+  "fixed_c2_writer_sha256": "ffca105246292d876dda62e06b5b7c90b32952df065ad28ba5100d3094a55d1a",
+  "c1_reader": "/home/yezhe/伪查询/runs/p3e_c1_learnable_overcomplete_canonical_head_reader_seed1234/formal512/reader/checkpoint_best.pt",
+  "c1_reader_sha256": "3619b4235a202bfac835d8fd3f99254312d643946d3b01172a5c8ec7809ea071",
+  "manual_semantic_evaluation": "pending_blinded_CPW_review"
+}

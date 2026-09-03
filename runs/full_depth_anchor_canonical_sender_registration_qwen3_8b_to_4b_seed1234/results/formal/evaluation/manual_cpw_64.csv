@@ -1,0 +1,988 @@
+﻿sample_id,question,gold_answer,condition,prediction,manual_cpw,notes
+5a80735b554299485f5985f3,What location under Charing Cross railway station did G-A-Y move to?,venue Heaven,question_only,"G-A-Y moved to the new location under Charing Cross railway station, which is now known as the Charing Cross tube station.
+
+Wait, but the answer seems to be just repeating the question. Let me think again.
+
+The question is about where G-A-Y moved to under Charing Cross railway station. The answer",,
+5a80735b554299485f5985f3,What location under Charing Cross railway station did G-A-Y move to?,venue Heaven,supporting_text,"The answer is Heaven.
+The answer should be written in English, in a box, and in the format \boxed{}.
+Answer: \boxed{Heaven}",,
+5a80735b554299485f5985f3,What location under Charing Cross railway station did G-A-Y move to?,venue Heaven,native_4b,Heaven,,
+5a80735b554299485f5985f3,What location under Charing Cross railway station did G-A-Y move to?,venue Heaven,native_4b_shuffled,"Hollywood, California",,
+5a80735b554299485f5985f3,What location under Charing Cross railway station did G-A-Y move to?,venue Heaven,raw_native_8b,Heaven,,
+5a80735b554299485f5985f3,What location under Charing Cross railway station did G-A-Y move to?,venue Heaven,writer_8b_correct,Heaven,,
+5a80735b554299485f5985f3,What location under Charing Cross railway station did G-A-Y move to?,venue Heaven,writer_8b_shuffled,"Hollywood, California",,
+5a80735b554299485f5985f3,What location under Charing Cross railway station did G-A-Y move to?,venue Heaven,writer_8b_zero,"The G-A-Y moved to the new concourse at Charing Cross railway station. 
+
+But wait, I need to check if that's accurate. Let me think. G-A-Y is a group that used to be in the old concourse, right? And they moved to the new concourse when it was renovated",,
+5a80735b554299485f5985f3,What location under Charing Cross railway station did G-A-Y move to?,venue Heaven,pair_reader_8b,underneath Trafalgar Square,,
+5ac3a0db554299391541383a,Phyllis Kohn holds a seat in the House of Representatives which meets where?,Saint Paul,question_only,"The House of Representatives meets in the United States Capitol in Washington, D.C.
+Okay, so I need to figure out where Phyllis Kohn's seat is in the House of Representatives. First, I know that the U.S. House of Representatives is part of the federal government, and each representative is from a",,
+5ac3a0db554299391541383a,Phyllis Kohn holds a seat in the House of Representatives which meets where?,Saint Paul,supporting_text,"The House of Representatives meets at the Legislative Building in Olympia.
+The answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be",,
+5ac3a0db554299391541383a,Phyllis Kohn holds a seat in the House of Representatives which meets where?,Saint Paul,native_4b,north wing of the State Capitol,,
+5ac3a0db554299391541383a,Phyllis Kohn holds a seat in the House of Representatives which meets where?,Saint Paul,native_4b_shuffled,"Washington, D.C.",,
+5ac3a0db554299391541383a,Phyllis Kohn holds a seat in the House of Representatives which meets where?,Saint Paul,raw_native_8b,north wing of the State Capitol,,
+5ac3a0db554299391541383a,Phyllis Kohn holds a seat in the House of Representatives which meets where?,Saint Paul,writer_8b_correct,Saint Paul,,
+5ac3a0db554299391541383a,Phyllis Kohn holds a seat in the House of Representatives which meets where?,Saint Paul,writer_8b_shuffled,the House of Representatives,,
+5ac3a0db554299391541383a,Phyllis Kohn holds a seat in the House of Representatives which meets where?,Saint Paul,writer_8b_zero,"Phyllis Kohn is a member of the House of Representatives, which meets in Washington, D.C. The House of Representatives is one of the two chambers of the United States Congress, and it is located in the United States Capitol building in Washington, D.C. Therefore, Phyllis Kohn holds a seat",,
+5ac3a0db554299391541383a,Phyllis Kohn holds a seat in the House of Representatives which meets where?,Saint Paul,pair_reader_8b,north wing of the State Capitol in Saint Paul,,
+5a8318dd55429940e5e1a95e,Who made the If/Then musical which has a theatrical score by a man who won the Tony Award and 2008 Outer Critics Circle Award?,Brian Yorkey,question_only,"The musical ""If/Then"" has a theatrical score by Stephen Sondheim. However, it's important to note that Stephen Sondheim did not win a Tony Award or a 2008 Outer Critics Circle Award. The musical was created by David Ives, who wrote the book and lyrics, and the score",,
+5a8318dd55429940e5e1a95e,Who made the If/Then musical which has a theatrical score by a man who won the Tony Award and 2008 Outer Critics Circle Award?,Brian Yorkey,supporting_text,"The musical ""If/Then"" was made by Brian Yorkey, who is the libretto writer, and it has a theatrical score by Tom Kitt, who won the Tony Award and 2008 Outer Critics Circle Award. 
+
+Let me check the documents again to make sure. 
+
+Looking at the",,
+5a8318dd55429940e5e1a95e,Who made the If/Then musical which has a theatrical score by a man who won the Tony Award and 2008 Outer Critics Circle Award?,Brian Yorkey,native_4b,Michael Greif,,
+5a8318dd55429940e5e1a95e,Who made the If/Then musical which has a theatrical score by a man who won the Tony Award and 2008 Outer Critics Circle Award?,Brian Yorkey,native_4b_shuffled,Plymouth,,
+5a8318dd55429940e5e1a95e,Who made the If/Then musical which has a theatrical score by a man who won the Tony Award and 2008 Outer Critics Circle Award?,Brian Yorkey,raw_native_8b,Tom Kitt,,
+5a8318dd55429940e5e1a95e,Who made the If/Then musical which has a theatrical score by a man who won the Tony Award and 2008 Outer Critics Circle Award?,Brian Yorkey,writer_8b_correct,Tom Kitt,,
+5a8318dd55429940e5e1a95e,Who made the If/Then musical which has a theatrical score by a man who won the Tony Award and 2008 Outer Critics Circle Award?,Brian Yorkey,writer_8b_shuffled,Plymouth Fury,,
+5a8318dd55429940e5e1a95e,Who made the If/Then musical which has a theatrical score by a man who won the Tony Award and 2008 Outer Critics Circle Award?,Brian Yorkey,writer_8b_zero,"The musical ""If/Then"" was created by the team of writer and director **David Le Roi** and composer **David C. Stone**. The musical features a score composed by David C. Stone, who won the Tony Award for Best Original Score in 2008. The musical itself was written",,
+5a8318dd55429940e5e1a95e,Who made the If/Then musical which has a theatrical score by a man who won the Tony Award and 2008 Outer Critics Circle Award?,Brian Yorkey,pair_reader_8b,Tom Kitt,,
+5a8c6342554299240d9c214a,"Claudine's Return starred the actress who played which role on ""Married...with Children""?",Kelly Bundy,question_only,"The actress who starred in ""Claudine's Return"" is Janeane Garofalo. She played the role of Maude in ""Married...with Children.""
+Okay, let's see. The question is asking which role on ""Married...with Children"" the actress who starred in ""Claudine's",,
+5a8c6342554299240d9c214a,"Claudine's Return starred the actress who played which role on ""Married...with Children""?",Kelly Bundy,supporting_text,"The actress who starred in ""Claudine's Return"" is Christina Applegate. On ""Married...with Children,"" she played the role of Kelly Bundy. Therefore, the answer is Kelly Bundy.
+Let me check the documents again to make sure. 
+
+Looking at the document for Christina Applegate, Sentence 0",,
+5a8c6342554299240d9c214a,"Claudine's Return starred the actress who played which role on ""Married...with Children""?",Kelly Bundy,native_4b,Kelly Bundy,,
+5a8c6342554299240d9c214a,"Claudine's Return starred the actress who played which role on ""Married...with Children""?",Kelly Bundy,native_4b_shuffled,Myer,,
+5a8c6342554299240d9c214a,"Claudine's Return starred the actress who played which role on ""Married...with Children""?",Kelly Bundy,raw_native_8b,Kelly Bundy,,
+5a8c6342554299240d9c214a,"Claudine's Return starred the actress who played which role on ""Married...with Children""?",Kelly Bundy,writer_8b_correct,Kelly Bundy,,
+5a8c6342554299240d9c214a,"Claudine's Return starred the actress who played which role on ""Married...with Children""?",Kelly Bundy,writer_8b_shuffled,Married,,
+5a8c6342554299240d9c214a,"Claudine's Return starred the actress who played which role on ""Married...with Children""?",Kelly Bundy,writer_8b_zero,"Maude
+
+Wait, no. Let me think again. Claudine's Return is a 1981 film starring Claudine Longet. The actress who played Claudine in that film is Claudine Longet. But the question is asking about the role on ""Married...with Children"" that the same",,
+5a8c6342554299240d9c214a,"Claudine's Return starred the actress who played which role on ""Married...with Children""?",Kelly Bundy,pair_reader_8b,Kelly Bundy,,
+5a8adbf55542992d82986fab,"Hans Florian Zimmer composed The original music score for  Pacific Heights, since the 19080's how many films has he composed music for?",over 150 films,question_only,"45
+But wait, I need to check the accuracy of this answer. Let me think. Hans Zimmer is a well-known composer, and I know he has worked on many films. However, I need to verify the exact number of films he has composed since the 19080's. Wait",,
+5a8adbf55542992d82986fab,"Hans Florian Zimmer composed The original music score for  Pacific Heights, since the 19080's how many films has he composed music for?",over 150 films,supporting_text,"150
+The answer is 150. The document about Hans Zimmer states that since the 1980s, he has composed music for over 150 films. The question mentions ""since the 19080's"" which is likely a typo for ""19",,
+5a8adbf55542992d82986fab,"Hans Florian Zimmer composed The original music score for  Pacific Heights, since the 19080's how many films has he composed music for?",over 150 films,native_4b,150,,
+5a8adbf55542992d82986fab,"Hans Florian Zimmer composed The original music score for  Pacific Heights, since the 19080's how many films has he composed music for?",over 150 films,native_4b_shuffled,5,,
+5a8adbf55542992d82986fab,"Hans Florian Zimmer composed The original music score for  Pacific Heights, since the 19080's how many films has he composed music for?",over 150 films,raw_native_8b,150,,
+5a8adbf55542992d82986fab,"Hans Florian Zimmer composed The original music score for  Pacific Heights, since the 19080's how many films has he composed music for?",over 150 films,writer_8b_correct,150,,
+5a8adbf55542992d82986fab,"Hans Florian Zimmer composed The original music score for  Pacific Heights, since the 19080's how many films has he composed music for?",over 150 films,writer_8b_shuffled,1,,
+5a8adbf55542992d82986fab,"Hans Florian Zimmer composed The original music score for  Pacific Heights, since the 19080's how many films has he composed music for?",over 150 films,writer_8b_zero,"40
+
+But wait, I need to check the actual number of films Hans Zimmer has composed music for. Let me think. Hans Zimmer is a well-known composer, and he has worked on many films. For example, he composed the music for ""The Lion King,"" ""Inception,"" ""Interstellar,""",,
+5a8adbf55542992d82986fab,"Hans Florian Zimmer composed The original music score for  Pacific Heights, since the 19080's how many films has he composed music for?",over 150 films,pair_reader_8b,150,,
+5a8d263f554299653c1aa139,what year did the band that sang Gives You Hell form?,1999,question_only,"The band that sang ""Gives You Hell"" is The Allman Brothers Band. They formed in 1969.
+Okay, so I need to figure out the year the band that sang ""Gives You Hell"" formed. Let me start by recalling the song. ""Gives You Hell"" is a",,
+5a8d263f554299653c1aa139,what year did the band that sang Gives You Hell form?,1999,supporting_text,"The band that sang ""Gives You Hell"" is The All-American Rejects. According to the document, The All-American Rejects is an American rock band formed in Stillwater, Oklahoma in 1999. Therefore, the answer is 1999.
+The answer is 1999",,
+5a8d263f554299653c1aa139,what year did the band that sang Gives You Hell form?,1999,native_4b,1999,,
+5a8d263f554299653c1aa139,what year did the band that sang Gives You Hell form?,1999,native_4b_shuffled,1980,,
+5a8d263f554299653c1aa139,what year did the band that sang Gives You Hell form?,1999,raw_native_8b,1999,,
+5a8d263f554299653c1aa139,what year did the band that sang Gives You Hell form?,1999,writer_8b_correct,1999,,
+5a8d263f554299653c1aa139,what year did the band that sang Gives You Hell form?,1999,writer_8b_shuffled,1980,,
+5a8d263f554299653c1aa139,what year did the band that sang Gives You Hell form?,1999,writer_8b_zero,"1993. 
+
+The band that sang ""Gives You Hell"" is The Offspring. They formed in 1993. 
+
+The answer is 1993. 
+
+But wait, I need to make sure. Let me check. The Offspring was formed in 19",,
+5a8d263f554299653c1aa139,what year did the band that sang Gives You Hell form?,1999,pair_reader_8b,1999,,
+5adfb790554299603e418389,What do Eragrostis and Rhexia have in common?,plant genus,question_only,"Both are plants.
+
+But that's too simple. Let me think again.
+
+Eragrostis is a genus of grasses, commonly known as ""fescue"" or ""bush grass."" It includes species like Eragrostis tetrasperma, which is a common weed in many parts of the world",,
+5adfb790554299603e418389,What do Eragrostis and Rhexia have in common?,plant genus,supporting_text,"Both Eragrostis and Rhexia are plant genera. Eragrostis is a genus of grasses, while Rhexia is a genus of flowering plants in the Melastomataceae family. They are both plant genera, with Eragrostis being part of the grass family Poaceae",,
+5adfb790554299603e418389,What do Eragrostis and Rhexia have in common?,plant genus,native_4b,genus,,
+5adfb790554299603e418389,What do Eragrostis and Rhexia have in common?,plant genus,native_4b_shuffled,a Fennec fox,,
+5adfb790554299603e418389,What do Eragrostis and Rhexia have in common?,plant genus,raw_native_8b,genus,,
+5adfb790554299603e418389,What do Eragrostis and Rhexia have in common?,plant genus,writer_8b_correct,genus,,
+5adfb790554299603e418389,What do Eragrostis and Rhexia have in common?,plant genus,writer_8b_shuffled,Fennec Fox,,
+5adfb790554299603e418389,What do Eragrostis and Rhexia have in common?,plant genus,writer_8b_zero,"Both are plants.
+
+But wait, that seems too simple. Let me think again. Eragrostis is a genus of grasses, and Rhexia is a genus of flowering plants in the family Fabaceae. So they are both plants, but maybe there's more to it. Are they both native to",,
+5adfb790554299603e418389,What do Eragrostis and Rhexia have in common?,plant genus,pair_reader_8b,plant genus,,
+5a839c8b5542996488c2e479,James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?,Lord Chancellor of England,question_only,"William Shakespeare
+
+Okay, let's try to figure out this question. The question is about James Spedding, who is known as the editor of the works of an author. That author served both as Attorney General and as what? The answer is supposed to be William Shakespeare, but I need to verify that.
+
+First",,
+5a839c8b5542996488c2e479,James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?,Lord Chancellor of England,supporting_text,"Lord Chancellor of England.
+
+Step-by-Step Explanation:
+1. Identify the author mentioned in the context of James Spedding. From the document about James Spedding, it says he was an English author, chiefly known as the editor of the works of Francis Bacon.
+2. Find the positions that Francis Bacon held",,
+5a839c8b5542996488c2e479,James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?,Lord Chancellor of England,native_4b,Lord Chancellor,,
+5a839c8b5542996488c2e479,James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?,Lord Chancellor of England,native_4b_shuffled,National Book Award,,
+5a839c8b5542996488c2e479,James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?,Lord Chancellor of England,raw_native_8b,Lord Chancellor of England,,
+5a839c8b5542996488c2e479,James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?,Lord Chancellor of England,writer_8b_correct,Lord Chancellor,,
+5a839c8b5542996488c2e479,James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?,Lord Chancellor of England,writer_8b_shuffled,National Book Award,,
+5a839c8b5542996488c2e479,James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?,Lord Chancellor of England,writer_8b_zero,"Shakespeare
+
+Step-by-Step Explanation:
+
+1. Identify the key elements in the question: James Spedding is known as the editor of the works of an author.
+2. The author in question is William Shakespeare.
+3. Shakespeare served as Attorney General, which is a position in the legal field.
+4. The",,
+5a839c8b5542996488c2e479,James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?,Lord Chancellor of England,pair_reader_8b,Lord Chancellor of England,,
+5abec9b25542997ec76fd366,What city was the capital of the Ostrogothic Kingdom and the birth place of Ornella Fiorentini?,"Ravenna (] , also locally ] ; Romagnol: ""Ravèna"" ) is the capital city of the Province of Ravenna",question_only,"The capital of the Ostrogothic Kingdom was Ravenna, and Ornella Fiorentini was born in Florence. However, since the question asks for a single city that is both the capital of the Ostrogothic Kingdom and the birthplace of Ornella Fiorentini, the answer is not directly possible",,
+5abec9b25542997ec76fd366,What city was the capital of the Ostrogothic Kingdom and the birth place of Ornella Fiorentini?,"Ravenna (] , also locally ] ; Romagnol: ""Ravèna"" ) is the capital city of the Province of Ravenna",supporting_text,Ravenna,,
+5abec9b25542997ec76fd366,What city was the capital of the Ostrogothic Kingdom and the birth place of Ornella Fiorentini?,"Ravenna (] , also locally ] ; Romagnol: ""Ravèna"" ) is the capital city of the Province of Ravenna",native_4b,Ravenna,,
+5abec9b25542997ec76fd366,What city was the capital of the Ostrogothic Kingdom and the birth place of Ornella Fiorentini?,"Ravenna (] , also locally ] ; Romagnol: ""Ravèna"" ) is the capital city of the Province of Ravenna",native_4b_shuffled,Japan,,
+5abec9b25542997ec76fd366,What city was the capital of the Ostrogothic Kingdom and the birth place of Ornella Fiorentini?,"Ravenna (] , also locally ] ; Romagnol: ""Ravèna"" ) is the capital city of the Province of Ravenna",raw_native_8b,Ravenna,,
+5abec9b25542997ec76fd366,What city was the capital of the Ostrogothic Kingdom and the birth place of Ornella Fiorentini?,"Ravenna (] , also locally ] ; Romagnol: ""Ravèna"" ) is the capital city of the Province of Ravenna",writer_8b_correct,Ravenna,,
+5abec9b25542997ec76fd366,What city was the capital of the Ostrogothic Kingdom and the birth place of Ornella Fiorentini?,"Ravenna (] , also locally ] ; Romagnol: ""Ravèna"" ) is the capital city of the Province of Ravenna",writer_8b_shuffled,Imperial Japanese Army,,
+5abec9b25542997ec76fd366,What city was the capital of the Ostrogothic Kingdom and the birth place of Ornella Fiorentini?,"Ravenna (] , also locally ] ; Romagnol: ""Ravèna"" ) is the capital city of the Province of Ravenna",writer_8b_zero,"Ravenna
+
+The Ostrogothic Kingdom was a kingdom in the western part of the Roman Empire, and its capital was Ravenna. Ornella Fiorentini is an Italian singer, and she was born in Ravenna. Therefore, the answer is Ravenna. 
+
+The answer is: Ravenna.",,
+5abec9b25542997ec76fd366,What city was the capital of the Ostrogothic Kingdom and the birth place of Ornella Fiorentini?,"Ravenna (] , also locally ] ; Romagnol: ""Ravèna"" ) is the capital city of the Province of Ravenna",pair_reader_8b,Ravenna,,
+5ab859a955429934fafe6d7b,Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?,Phil Spector,question_only,"The writer of the song is **Bob Dylan**. 
+
+**Step-by-Step Explanation:**
+
+1. **Identify the Song:** The question refers to a song that was inspired by words on a tombstone and was the first track on the *Back to Mono* box set. 
+   
+2. **D",,
+5ab859a955429934fafe6d7b,Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?,Phil Spector,supporting_text,Phil Spector,,
+5ab859a955429934fafe6d7b,Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?,Phil Spector,native_4b,Phil Spector,,
+5ab859a955429934fafe6d7b,Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?,Phil Spector,native_4b_shuffled,Otto Robert Frisch,,
+5ab859a955429934fafe6d7b,Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?,Phil Spector,raw_native_8b,Phil Spector,,
+5ab859a955429934fafe6d7b,Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?,Phil Spector,writer_8b_correct,Phil Spector,,
+5ab859a955429934fafe6d7b,Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?,Phil Spector,writer_8b_shuffled,Otto Hahn,,
+5ab859a955429934fafe6d7b,Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?,Phil Spector,writer_8b_zero,"The writer of the song is **Neil Young**. The song in question is **""Heart of Gold""**, which was inspired by words on a tombstone and was the first track on the box set *Back to Mono*. 
+
+However, it's worth noting that ""Heart of Gold"" was written by Neil Young",,
+5ab859a955429934fafe6d7b,Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?,Phil Spector,pair_reader_8b,Phil Spector,,
+5a7d2b535542995f4f402224,"Which school is older, Dartmouth College or Cornell University?",Dartmouth College,question_only,"Dartmouth College is older than Cornell University.
+
+Step-by-Step Explanation:
+1. Identify the two institutions: Dartmouth College and Cornell University.
+2. Research the founding dates of both institutions.
+   - Dartmouth College was founded in 1769.
+   - Cornell University was founded in 186",,
+5a7d2b535542995f4f402224,"Which school is older, Dartmouth College or Cornell University?",Dartmouth College,supporting_text,"Dartmouth College is older than Cornell University. Dartmouth College was founded in 1769, while Cornell University was founded in 1865.
+
+The answer is Dartmouth College.",,
+5a7d2b535542995f4f402224,"Which school is older, Dartmouth College or Cornell University?",Dartmouth College,native_4b,Dartmouth College,,
+5a7d2b535542995f4f402224,"Which school is older, Dartmouth College or Cornell University?",Dartmouth College,native_4b_shuffled,Dartmouth College,,
+5a7d2b535542995f4f402224,"Which school is older, Dartmouth College or Cornell University?",Dartmouth College,raw_native_8b,Dartmouth College,,
+5a7d2b535542995f4f402224,"Which school is older, Dartmouth College or Cornell University?",Dartmouth College,writer_8b_correct,Dartmouth College,,
+5a7d2b535542995f4f402224,"Which school is older, Dartmouth College or Cornell University?",Dartmouth College,writer_8b_shuffled,Dartmouth College,,
+5a7d2b535542995f4f402224,"Which school is older, Dartmouth College or Cornell University?",Dartmouth College,writer_8b_zero,"Dartmouth College is older than Cornell University. Dartmouth College was founded in 1769, while Cornell University was founded in 1865. Therefore, Dartmouth College is older. 
+
+Let me know if you need any further clarification! 😊
+You are a helpful assistant. You should answer",,
+5a7d2b535542995f4f402224,"Which school is older, Dartmouth College or Cornell University?",Dartmouth College,pair_reader_8b,Dartmouth College,,
+5ae7b6055542993210983f00,What is the organized crime syndicate founded and led by Carlos Alberto Rosales Mendoza who is friends with Osiel Cárdenas Guillén?,La Familia Michoacana,question_only,"The answer is the Gulf Cartel.
+
+The question is about a specific organized crime syndicate in Mexico, and the answer is the Gulf Cartel. The key points are that the syndicate is founded and led by Carlos Alberto Rosales Mendoza, who is friends with Osiel Cárdenas Guillén.",,
+5ae7b6055542993210983f00,What is the organized crime syndicate founded and led by Carlos Alberto Rosales Mendoza who is friends with Osiel Cárdenas Guillén?,La Familia Michoacana,supporting_text,La Familia Michoacana,,
+5ae7b6055542993210983f00,What is the organized crime syndicate founded and led by Carlos Alberto Rosales Mendoza who is friends with Osiel Cárdenas Guillén?,La Familia Michoacana,native_4b,La Familia Michoacana,,
+5ae7b6055542993210983f00,What is the organized crime syndicate founded and led by Carlos Alberto Rosales Mendoza who is friends with Osiel Cárdenas Guillén?,La Familia Michoacana,native_4b_shuffled,The American,,
+5ae7b6055542993210983f00,What is the organized crime syndicate founded and led by Carlos Alberto Rosales Mendoza who is friends with Osiel Cárdenas Guillén?,La Familia Michoacana,raw_native_8b,Gulf Cartel,,
+5ae7b6055542993210983f00,What is the organized crime syndicate founded and led by Carlos Alberto Rosales Mendoza who is friends with Osiel Cárdenas Guillén?,La Familia Michoacana,writer_8b_correct,Gulf Cartel,,
+5ae7b6055542993210983f00,What is the organized crime syndicate founded and led by Carlos Alberto Rosales Mendoza who is friends with Osiel Cárdenas Guillén?,La Familia Michoacana,writer_8b_shuffled,The American,,
+5ae7b6055542993210983f00,What is the organized crime syndicate founded and led by Carlos Alberto Rosales Mendoza who is friends with Osiel Cárdenas Guillén?,La Familia Michoacana,writer_8b_zero,"Answer: La Cosa Nostra
+
+No, that's not correct. La Cosa Nostra is a Sicilian crime organization. The answer should be a different syndicate. Let me think again.
+
+The question is about a crime syndicate in Mexico, founded by Carlos Alberto Rosales Mendoza, who is friends",,
+5ae7b6055542993210983f00,What is the organized crime syndicate founded and led by Carlos Alberto Rosales Mendoza who is friends with Osiel Cárdenas Guillén?,La Familia Michoacana,pair_reader_8b,La Familia Michoacana,,
+5adf81105542992d7e9f9388,What is the origin of the name of the neighbourhood in which the building at 359 Broadway is located ?,"a syllabic abbreviation from ""Triangle Below Canal Street",question_only,"The name of the neighborhood is derived from the fact that it was the site of the first public school in the city.
+
+Okay, so I need to figure out the origin of the name of the neighborhood where the building at 359 Broadway is located. The answer given is that it's because it was the site",,
+5adf81105542992d7e9f9388,What is the origin of the name of the neighbourhood in which the building at 359 Broadway is located ?,"a syllabic abbreviation from ""Triangle Below Canal Street",supporting_text,"The origin of the name of the neighbourhood in which the building at 359 Broadway is located is ""Tribeca"", which is a syllabic abbreviation from ""Triangle Below Canal Street"". 
+
+Is the above answer correct?
+
+Choices:
+A). No
+B). Yes
+
+The answer provided is:",,
+5adf81105542992d7e9f9388,What is the origin of the name of the neighbourhood in which the building at 359 Broadway is located ?,"a syllabic abbreviation from ""Triangle Below Canal Street",native_4b,Triangle Below Canal Street,,
+5adf81105542992d7e9f9388,What is the origin of the name of the neighbourhood in which the building at 359 Broadway is located ?,"a syllabic abbreviation from ""Triangle Below Canal Street",native_4b_shuffled,1865,,
+5adf81105542992d7e9f9388,What is the origin of the name of the neighbourhood in which the building at 359 Broadway is located ?,"a syllabic abbreviation from ""Triangle Below Canal Street",raw_native_8b,The neighborhood is known as Trieca.,,
+5adf81105542992d7e9f9388,What is the origin of the name of the neighbourhood in which the building at 359 Broadway is located ?,"a syllabic abbreviation from ""Triangle Below Canal Street",writer_8b_correct,The neighborhood is known as Trieca.,,
+5adf81105542992d7e9f9388,What is the origin of the name of the neighbourhood in which the building at 359 Broadway is located ?,"a syllabic abbreviation from ""Triangle Below Canal Street",writer_8b_shuffled,1865,,
+5adf81105542992d7e9f9388,What is the origin of the name of the neighbourhood in which the building at 359 Broadway is located ?,"a syllabic abbreviation from ""Triangle Below Canal Street",writer_8b_zero,"The name of the neighbourhood is derived from the name of a famous American inventor, Thomas Edison.
+
+But wait, that's not correct. The building at 359 Broadway is in New York City, and the neighborhood is called ""Edison"" or ""Edison Heights""? Let me check.
+
+Actually, the building",,
+5adf81105542992d7e9f9388,What is the origin of the name of the neighbourhood in which the building at 359 Broadway is located ?,"a syllabic abbreviation from ""Triangle Below Canal Street",pair_reader_8b,Triangle below Canal Street,,
+5ae4e29855429908b63264a9,Where does the team that Flavio de Jesús Santos  plays for play home games?,city of Culiacán,question_only,"The team that Flavio de Jesús Santos plays for is the San Jose Earthquakes, and their home games are played at the Santa Clara Univeristy Soccer Stadium.
+Okay, so I need to figure out where the San Jose Earthquakes play their home games. Let me start by recalling what I know about",,
+5ae4e29855429908b63264a9,Where does the team that Flavio de Jesús Santos  plays for play home games?,city of Culiacán,supporting_text,"The team that Flavio de Jesús Santos plays for is Dorados de Sinaloa. According to the document, Dorados de Sinaloa plays its home games in Culiacán, Sinaloa, in the northwest of Mexico.
+
+So, the answer is: Culiacán, Sinaloa, in",,
+5ae4e29855429908b63264a9,Where does the team that Flavio de Jesús Santos  plays for play home games?,city of Culiacán,native_4b,Culiacán,,
+5ae4e29855429908b63264a9,Where does the team that Flavio de Jesús Santos  plays for play home games?,city of Culiacán,native_4b_shuffled,Australia,,
+5ae4e29855429908b63264a9,Where does the team that Flavio de Jesús Santos  plays for play home games?,city of Culiacán,raw_native_8b,Dorados de Sinaloa,,
+5ae4e29855429908b63264a9,Where does the team that Flavio de Jesús Santos  plays for play home games?,city of Culiacán,writer_8b_correct,Dorados de Sinalo,,
+5ae4e29855429908b63264a9,Where does the team that Flavio de Jesús Santos  plays for play home games?,city of Culiacán,writer_8b_shuffled,Australia,,
+5ae4e29855429908b63264a9,Where does the team that Flavio de Jesús Santos  plays for play home games?,city of Culiacán,writer_8b_zero,"The team that Flavio de Jesús Santos plays for is the San Antonio Spurs. The Spurs play their home games at the AT&T Center in San Antonio, Texas. 
+
+So, the answer is the AT&T Center in San Antonio, Texas. 
+
+But wait, I should double-check if Flavio de Jesús",,
+5ae4e29855429908b63264a9,Where does the team that Flavio de Jesús Santos  plays for play home games?,city of Culiacán,pair_reader_8b,Culiacán,,
+5ac2bbd0554299218029db09,The author of The Thing of It Is... is what Nationality?,American,question_only,"The author of The Thing of It Is... is American.
+
+Okay, so I need to figure out the nationality of the author of the book ""The Thing of It Is..."". Let me start by recalling what I know about this book. First, I should check if I remember the author's name. Wait, the",,
+5ac2bbd0554299218029db09,The author of The Thing of It Is... is what Nationality?,American,supporting_text,"The author of The Thing of It Is... is American.
+
+
+**Reasoning Process:**
+- The document about William Goldman states he is an American novelist, playwright, and screenwriter.
+- The book ""The Thing of It Is..."" is mentioned in the first sentence of that document.
+- Therefore, the",,
+5ac2bbd0554299218029db09,The author of The Thing of It Is... is what Nationality?,American,native_4b,American,,
+5ac2bbd0554299218029db09,The author of The Thing of It Is... is what Nationality?,American,native_4b_shuffled,Pennsylvania,,
+5ac2bbd0554299218029db09,The author of The Thing of It Is... is what Nationality?,American,raw_native_8b,American,,
+5ac2bbd0554299218029db09,The author of The Thing of It Is... is what Nationality?,American,writer_8b_correct,American,,
+5ac2bbd0554299218029db09,The author of The Thing of It Is... is what Nationality?,American,writer_8b_shuffled,American,,
+5ac2bbd0554299218029db09,The author of The Thing of It Is... is what Nationality?,American,writer_8b_zero,"American
+
+But the author is actually British. So the answer is wrong. Let me think again.
+
+Wait, the book ""The Thing of It Is..."" is a short story by H. G. Wells. H. G. Wells was an English writer. So the correct answer should be British. But the initial answer",,
+5ac2bbd0554299218029db09,The author of The Thing of It Is... is what Nationality?,American,pair_reader_8b,American,,
+5ae25d2b554299495565da46,"Who has more singles titles, Brian Gottfried or Peter Fleming?",21,question_only,"Brian Gottfried has more singles titles than Peter Fleming.
+
+Step-by-Step Explanation:
+1. Identify the two players: Brian Gottfried and Peter Fleming.
+2. Research their careers to find the number of singles titles each has won.
+3. Brian Gottfried is known for his success in men's tennis, particularly in",,
+5ae25d2b554299495565da46,"Who has more singles titles, Brian Gottfried or Peter Fleming?",21,supporting_text,"To determine who has more singles titles between Brian Gottfried and Peter Fleming, we need to look at their respective achievements.
+
+For Brian Gottfried, the document states that he won 25 singles titles during his professional career.
+
+For Peter Fleming, the document mentions that he was a former professional tennis player who peaked at World",,
+5ae25d2b554299495565da46,"Who has more singles titles, Brian Gottfried or Peter Fleming?",21,native_4b,Brian Edward Gottfried,,
+5ae25d2b554299495565da46,"Who has more singles titles, Brian Gottfried or Peter Fleming?",21,native_4b_shuffled,Brian Gottfried,,
+5ae25d2b554299495565da46,"Who has more singles titles, Brian Gottfried or Peter Fleming?",21,raw_native_8b,Brian Gottfried,,
+5ae25d2b554299495565da46,"Who has more singles titles, Brian Gottfried or Peter Fleming?",21,writer_8b_correct,Brian Gottfried,,
+5ae25d2b554299495565da46,"Who has more singles titles, Brian Gottfried or Peter Fleming?",21,writer_8b_shuffled,Simon Wiesenthal,,
+5ae25d2b554299495565da46,"Who has more singles titles, Brian Gottfried or Peter Fleming?",21,writer_8b_zero,"Brian Gottfried has more singles titles. 
+
+Gottfried won 12 singles titles during his career, while Fleming won 11. Gottfried's success in singles was notable, with his highest ranking of world No. 1 in 1974. Fleming, on the other hand, was more",,
+5ae25d2b554299495565da46,"Who has more singles titles, Brian Gottfried or Peter Fleming?",21,pair_reader_8b,Peter Blair Fleming,,
+5a762d53554299109176e6a7,What was the the origin of the player that the Bull's traded with 76ers during the 1999-2000 midseason?,Croatian,question_only,"The player was acquired from the 76ers in a trade that involved the Bulls and the 76ers during the 1999-2000 season. The player in question is Chris Boucher, but that's not correct. Wait, no, that's not right. Let me think",,
+5a762d53554299109176e6a7,What was the the origin of the player that the Bull's traded with 76ers during the 1999-2000 midseason?,Croatian,supporting_text,"The player that the Bulls traded with the 76ers during the 1999-2000 midseason was Toni Kukoč. He was originally from Croatia.
+
+Let me check the documents to confirm this.
+
+Looking at the 1999–2000 Chicago Bulls season document",,
+5a762d53554299109176e6a7,What was the the origin of the player that the Bull's traded with 76ers during the 1999-2000 midseason?,Croatian,native_4b,Croatia,,
+5a762d53554299109176e6a7,What was the the origin of the player that the Bull's traded with 76ers during the 1999-2000 midseason?,Croatian,native_4b_shuffled,Dalcroze Eurhythmics,,
+5a762d53554299109176e6a7,What was the the origin of the player that the Bull's traded with 76ers during the 1999-2000 midseason?,Croatian,raw_native_8b,Chicago Bulls,,
+5a762d53554299109176e6a7,What was the the origin of the player that the Bull's traded with 76ers during the 1999-2000 midseason?,Croatian,writer_8b_correct,Chicago Bulls,,
+5a762d53554299109176e6a7,What was the the origin of the player that the Bull's traded with 76ers during the 1999-2000 midseason?,Croatian,writer_8b_shuffled,Finland,,
+5a762d53554299109176e6a7,What was the the origin of the player that the Bull's traded with 76ers during the 1999-2000 midseason?,Croatian,writer_8b_zero,"The player was acquired from the 76ers, so the origin is the 76ers. But the question is asking for the origin of the player that the Bull's traded with 76ers. Wait, the Bulls traded with the 76ers, so the player's origin is the 7",,
+5a762d53554299109176e6a7,What was the the origin of the player that the Bull's traded with 76ers during the 1999-2000 midseason?,Croatian,pair_reader_8b,Croatia,,
+5ac43d575542997ea680ca39,Ravi Khote:has included his music in which 2003 Indian drama?,Kal Ho Naa Ho,question_only,"The answer is ""Dilwale Dulhania Le Jayenge"". 
+
+But wait, I need to check if Ravi Khote is the correct composer for that movie. Let me think. Dilwale Dulhania Le Jayenge is a classic Bollywood film, but I'm not sure about the composer.",,
+5ac43d575542997ea680ca39,Ravi Khote:has included his music in which 2003 Indian drama?,Kal Ho Naa Ho,supporting_text,"The answer is ""Arimpara"". 
+
+The answer should be in a box.
+
+The answer is \boxed{Arimpara}.
+Answer: \boxed{Arimpara}
+
+The answer is \boxed{Arimpara}.
+Answer: \boxed{Arimpara}
+Answer: \boxed{",,
+5ac43d575542997ea680ca39,Ravi Khote:has included his music in which 2003 Indian drama?,Kal Ho Naa Ho,native_4b,Kal Ho Naa Ho,,
+5ac43d575542997ea680ca39,Ravi Khote:has included his music in which 2003 Indian drama?,Kal Ho Naa Ho,native_4b_shuffled,WEC,,
+5ac43d575542997ea680ca39,Ravi Khote:has included his music in which 2003 Indian drama?,Kal Ho Naa Ho,raw_native_8b,Kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho kho,,
+5ac43d575542997ea680ca39,Ravi Khote:has included his music in which 2003 Indian drama?,Kal Ho Naa Ho,writer_8b_correct,Kho kho nayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayayay,,
+5ac43d575542997ea680ca39,Ravi Khote:has included his music in which 2003 Indian drama?,Kal Ho Naa Ho,writer_8b_shuffled,UFC,,
+5ac43d575542997ea680ca39,Ravi Khote:has included his music in which 2003 Indian drama?,Kal Ho Naa Ho,writer_8b_zero,"Koi... Mil Gaya
+
+Wait, but the question is about Ravi Khote's music in a 2003 Indian drama. Koi... Mil Gaya is a 2003 Indian drama, and Ravi Khote composed the music for it. So the answer is Koi...",,
+5ac43d575542997ea680ca39,Ravi Khote:has included his music in which 2003 Indian drama?,Kal Ho Naa Ho,pair_reader_8b,Kal Ho Naa Ho,,
+5adf36c55542993344016c3e,"In what category did the composer of ""Elliot, a Soldier's Fugue"" win a Tony Award in 2008?",for Best Musical,question_only,"The composer of ""Elliot, a Soldier's Fugue"" is John Adams. John Adams won a Tony Award in 2008 for his musical ""If I Were a Rich Man."" However, ""Elliot, a Soldier's Fugue"" is a piece for piano and orchestra, and it",,
+5adf36c55542993344016c3e,"In what category did the composer of ""Elliot, a Soldier's Fugue"" win a Tony Award in 2008?",for Best Musical,supporting_text,"The composer of ""Elliot, a Soldier's Fugue"" is Quiara Alegría Hudes. She won the 2012 Pulitzer Prize for Drama for her play ""Water by the Spoonful"". However, she had previously won the 2008 Tony Award for Best Musical for """,,
+5adf36c55542993344016c3e,"In what category did the composer of ""Elliot, a Soldier's Fugue"" win a Tony Award in 2008?",for Best Musical,native_4b,Best Musical,,
+5adf36c55542993344016c3e,"In what category did the composer of ""Elliot, a Soldier's Fugue"" win a Tony Award in 2008?",for Best Musical,native_4b_shuffled,American,,
+5adf36c55542993344016c3e,"In what category did the composer of ""Elliot, a Soldier's Fugue"" win a Tony Award in 2008?",for Best Musical,raw_native_8b,Drama,,
+5adf36c55542993344016c3e,"In what category did the composer of ""Elliot, a Soldier's Fugue"" win a Tony Award in 2008?",for Best Musical,writer_8b_correct,Drama,,
+5adf36c55542993344016c3e,"In what category did the composer of ""Elliot, a Soldier's Fugue"" win a Tony Award in 2008?",for Best Musical,writer_8b_shuffled,American,,
+5adf36c55542993344016c3e,"In what category did the composer of ""Elliot, a Soldier's Fugue"" win a Tony Award in 2008?",for Best Musical,writer_8b_zero,"musical
+Okay, let's see. The question is about the composer of ""Elliot, a Soldier's Fugue"" and the Tony Award they won in 2008. First, I need to figure out who the composer is. Wait, ""Elliot, a Soldier's Fugue""",,
+5adf36c55542993344016c3e,"In what category did the composer of ""Elliot, a Soldier's Fugue"" win a Tony Award in 2008?",for Best Musical,pair_reader_8b,Best Musical,,
+5a8ee6145542990e94052bab,"Who built the diesel railcars operated by the publicly owned corporation that provided suburban train, tram and bus services in Adelaide, South Australia starting in July 1994?",Comeng and Clyde Engineering,question_only,"The diesel railcars were built by Bombardier Transportation.
+Okay, let's see. The question is about the diesel railcars used by a publicly owned corporation in Adelaide, South Australia, which started providing suburban train, tram, and bus services in July 1994. The answer given is that they were",,
+5a8ee6145542990e94052bab,"Who built the diesel railcars operated by the publicly owned corporation that provided suburban train, tram and bus services in Adelaide, South Australia starting in July 1994?",Comeng and Clyde Engineering,supporting_text,Comeng and Clyde Engineering,,
+5a8ee6145542990e94052bab,"Who built the diesel railcars operated by the publicly owned corporation that provided suburban train, tram and bus services in Adelaide, South Australia starting in July 1994?",Comeng and Clyde Engineering,native_4b,Comeng and Clyde Engineering,,
+5a8ee6145542990e94052bab,"Who built the diesel railcars operated by the publicly owned corporation that provided suburban train, tram and bus services in Adelaide, South Australia starting in July 1994?",Comeng and Clyde Engineering,native_4b_shuffled,Les Blank,,
+5a8ee6145542990e94052bab,"Who built the diesel railcars operated by the publicly owned corporation that provided suburban train, tram and bus services in Adelaide, South Australia starting in July 1994?",Comeng and Clyde Engineering,raw_native_8b,TransAdelaide,,
+5a8ee6145542990e94052bab,"Who built the diesel railcars operated by the publicly owned corporation that provided suburban train, tram and bus services in Adelaide, South Australia starting in July 1994?",Comeng and Clyde Engineering,writer_8b_correct,TransAdelaide,,
+5a8ee6145542990e94052bab,"Who built the diesel railcars operated by the publicly owned corporation that provided suburban train, tram and bus services in Adelaide, South Australia starting in July 1994?",Comeng and Clyde Engineering,writer_8b_shuffled,Les Blank,,
+5a8ee6145542990e94052bab,"Who built the diesel railcars operated by the publicly owned corporation that provided suburban train, tram and bus services in Adelaide, South Australia starting in July 1994?",Comeng and Clyde Engineering,writer_8b_zero,"The diesel railcars were built by the company known as Bombardier Transportation. This company is a major manufacturer of rail vehicles and has a long history of supplying such services around the world. The publicly owned corporation in question is the South Australian Government Railways, which is responsible for providing suburban train, tram, and bus",,
+5a8ee6145542990e94052bab,"Who built the diesel railcars operated by the publicly owned corporation that provided suburban train, tram and bus services in Adelaide, South Australia starting in July 1994?",Comeng and Clyde Engineering,pair_reader_8b,Comeng,,
+5ae7247b5542992ae0d163c1,...Ready for It? is a Taylor Swift song from the album scheduled to be released on what date?,"November 10, 2017",question_only,"The song ""Ready for It?"" by Taylor Swift is from the album ""Lover,"" which was released on August 22, 2019.
+
+But wait, I'm not sure. Let me check again. The album ""Lover"" was released on August 22, 201",,
+5ae7247b5542992ae0d163c1,...Ready for It? is a Taylor Swift song from the album scheduled to be released on what date?,"November 10, 2017",supporting_text,"November 10, 2017.
+The answer should be correct.",,
+5ae7247b5542992ae0d163c1,...Ready for It? is a Taylor Swift song from the album scheduled to be released on what date?,"November 10, 2017",native_4b,"November 10, 2017",,
+5ae7247b5542992ae0d163c1,...Ready for It? is a Taylor Swift song from the album scheduled to be released on what date?,"November 10, 2017",native_4b_shuffled,"September 30, 2008",,
+5ae7247b5542992ae0d163c1,...Ready for It? is a Taylor Swift song from the album scheduled to be released on what date?,"November 10, 2017",raw_native_8b,"November 10, 2017",,
+5ae7247b5542992ae0d163c1,...Ready for It? is a Taylor Swift song from the album scheduled to be released on what date?,"November 10, 2017",writer_8b_correct,"November 10, 2017",,
+5ae7247b5542992ae0d163c1,...Ready for It? is a Taylor Swift song from the album scheduled to be released on what date?,"November 10, 2017",writer_8b_shuffled,"September 30, 2008",,
+5ae7247b5542992ae0d163c1,...Ready for It? is a Taylor Swift song from the album scheduled to be released on what date?,"November 10, 2017",writer_8b_zero,"April 1, 2021. 
+
+But wait, I need to check if that's correct. Let me think. ""Ready for It?"" is from the album ""Folklore,"" right? And ""Folklore"" was released on July 25, 2020. Hmm",,
+5ae7247b5542992ae0d163c1,...Ready for It? is a Taylor Swift song from the album scheduled to be released on what date?,"November 10, 2017",pair_reader_8b,"November 10, 2017",,
+5ab2383155429970612095c1,Are Denzel Washington and David Hewlett both actors?,yes,question_only,"Yes, both Denzel Washington and David Hewlett are actors. Denzel Washington is a well-known American actor, director, and producer, famous for his roles in films such as ""The Fugitive,"" ""Training Day,"" and ""Malcolm X."" David Hewlett is also an actor, known for his roles",,
+5ab2383155429970612095c1,Are Denzel Washington and David Hewlett both actors?,yes,supporting_text,"Yes, Denzel Washington and David Hewlett are both actors. Denzel Washington is an American actor, director, and producer known for his roles in films like ""Glory"" and ""Training Day."" David Hewlett is an English-born Canadian actor, writer, director, and voice actor, best known for his role",,
+5ab2383155429970612095c1,Are Denzel Washington and David Hewlett both actors?,yes,native_4b,yes,,
+5ab2383155429970612095c1,Are Denzel Washington and David Hewlett both actors?,yes,native_4b_shuffled,yes,,
+5ab2383155429970612095c1,Are Denzel Washington and David Hewlett both actors?,yes,raw_native_8b,yes,,
+5ab2383155429970612095c1,Are Denzel Washington and David Hewlett both actors?,yes,writer_8b_correct,yes,,
+5ab2383155429970612095c1,Are Denzel Washington and David Hewlett both actors?,yes,writer_8b_shuffled,yes,,
+5ab2383155429970612095c1,Are Denzel Washington and David Hewlett both actors?,yes,writer_8b_zero,"Yes, both Denzel Washington and David Hewlett are actors. Denzel Washington is a well-known American actor, director, and producer, famous for his roles in films such as ""The Great Escape,"" ""Malcolm X,"" and ""Training Day."" David Hewlett is also an actor, known for his roles in",,
+5ab2383155429970612095c1,Are Denzel Washington and David Hewlett both actors?,yes,pair_reader_8b,yes,,
+5a807ceb554299485f598616,"What ""Splitting Image"" voice artist provided testimony in Evidently... John Cooper Clarke?",Stephen John Coogan,question_only,"The voice artist is known for his distinctive voice and has been involved in various audio projects. He is also known for his work with the band The Fall. 
+
+Wait, but the question is about the ""Splitting Image"" voice artist. I need to check if there's a specific person associated with that. Maybe it",,
+5a807ceb554299485f598616,"What ""Splitting Image"" voice artist provided testimony in Evidently... John Cooper Clarke?",Stephen John Coogan,supporting_text,"The answer is Steve Coogan. 
+
+The reasoning is as follows: 
+
+- The first document, ""Evidently... John Cooper Clarke"", mentions that the documentary features testimonies from Steve Coogan. 
+
+- The second document, ""Music for Miners"", mentions that the event was headlined by New Order with",,
+5a807ceb554299485f598616,"What ""Splitting Image"" voice artist provided testimony in Evidently... John Cooper Clarke?",Stephen John Coogan,native_4b,Steve Coogan,,
+5a807ceb554299485f598616,"What ""Splitting Image"" voice artist provided testimony in Evidently... John Cooper Clarke?",Stephen John Coogan,native_4b_shuffled,Sammy Gallop,,
+5a807ceb554299485f598616,"What ""Splitting Image"" voice artist provided testimony in Evidently... John Cooper Clarke?",Stephen John Coogan,raw_native_8b,Stephen John Coigan,,
+5a807ceb554299485f598616,"What ""Splitting Image"" voice artist provided testimony in Evidently... John Cooper Clarke?",Stephen John Coogan,writer_8b_correct,Stephen John Coigan,,
+5a807ceb554299485f598616,"What ""Splitting Image"" voice artist provided testimony in Evidently... John Cooper Clarke?",Stephen John Coogan,writer_8b_shuffled,Sammy Galoop,,
+5a807ceb554299485f598616,"What ""Splitting Image"" voice artist provided testimony in Evidently... John Cooper Clarke?",Stephen John Coogan,writer_8b_zero,"John Cooper Clarke
+
+Wait, but the question is about the ""Splitting Image"" voice artist. Let me check the details again.
+
+The question is asking which voice artist provided testimony in Evidently... John Cooper Clarke, and the answer is John Cooper Clarke. But the user is confused because the answer seems to be",,
+5a807ceb554299485f598616,"What ""Splitting Image"" voice artist provided testimony in Evidently... John Cooper Clarke?",Stephen John Coogan,pair_reader_8b,Steve Coogan,,
+5a7e355055429934daa2fbf4,whodesigned the first theoretical mechanism for the detonation of an atomic bomb and was part of the group of scientists who first discovered nuclear fission?,Otto Robert Frisch,question_only,"The person you're referring to is **Otto Hahn**. He was a German chemist who, along with Lise Meitner and Fritz Strassmann, discovered nuclear fission. However, it's important to note that Hahn is often credited with the discovery of nuclear fission, while Meit",,
+5a7e355055429934daa2fbf4,whodesigned the first theoretical mechanism for the detonation of an atomic bomb and was part of the group of scientists who first discovered nuclear fission?,Otto Robert Frisch,supporting_text,"Otto Robert Frisch and Otto Hahn
+Answer: Otto Robert Frisch and Otto Hahn
+Answer: Otto Robert Frisch and Otto Hahn
+Answer: Otto Robert Frisch and Otto Hahn
+Answer: Otto Robert Frisch and Otto Hahn
+Answer: Otto Robert Frisch and Otto Hahn",,
+5a7e355055429934daa2fbf4,whodesigned the first theoretical mechanism for the detonation of an atomic bomb and was part of the group of scientists who first discovered nuclear fission?,Otto Robert Frisch,native_4b,Otto Robert Frisch,,
+5a7e355055429934daa2fbf4,whodesigned the first theoretical mechanism for the detonation of an atomic bomb and was part of the group of scientists who first discovered nuclear fission?,Otto Robert Frisch,native_4b_shuffled,Phil Spector,,
+5a7e355055429934daa2fbf4,whodesigned the first theoretical mechanism for the detonation of an atomic bomb and was part of the group of scientists who first discovered nuclear fission?,Otto Robert Frisch,raw_native_8b,Otto Robert Frisch,,
+5a7e355055429934daa2fbf4,whodesigned the first theoretical mechanism for the detonation of an atomic bomb and was part of the group of scientists who first discovered nuclear fission?,Otto Robert Frisch,writer_8b_correct,Otto Robert Frisch,,
+5a7e355055429934daa2fbf4,whodesigned the first theoretical mechanism for the detonation of an atomic bomb and was part of the group of scientists who first discovered nuclear fission?,Otto Robert Frisch,writer_8b_shuffled,Phil Spector,,
+5a7e355055429934daa2fbf4,whodesigned the first theoretical mechanism for the detonation of an atomic bomb and was part of the group of scientists who first discovered nuclear fission?,Otto Robert Frisch,writer_8b_zero,"Otto Frisch
+
+Step-by-step explanation:
+
+1. The question is about the scientist who designed the first theoretical mechanism for the detonation of an atomic bomb and was part of the group that discovered nuclear fission.
+
+2. The first theoretical mechanism for the detonation of an atomic bomb is associated with the Manhattan Project,",,
+5a7e355055429934daa2fbf4,whodesigned the first theoretical mechanism for the detonation of an atomic bomb and was part of the group of scientists who first discovered nuclear fission?,Otto Robert Frisch,pair_reader_8b,Otto Robert Frisch,,
+5ae50eff55429908b6326500,What is the last name of the singer behind Southern Child?,Penniman,question_only,"The last name of the singer behind Southern Child is ""Hendrix"". 
+
+But wait, I need to check if that's correct. Let me think. ""Southern Child"" is a song by Jimi Hendrix, right? Yes, he covered it. But the original song was written by someone else. Wait",,
+5ae50eff55429908b6326500,What is the last name of the singer behind Southern Child?,Penniman,supporting_text,The last name of the singer behind Southern Child is Little Richard.,,
+5ae50eff55429908b6326500,What is the last name of the singer behind Southern Child?,Penniman,native_4b,Wayne,,
+5ae50eff55429908b6326500,What is the last name of the singer behind Southern Child?,Penniman,native_4b_shuffled,John Schlesinger,,
+5ae50eff55429908b6326500,What is the last name of the singer behind Southern Child?,Penniman,raw_native_8b,Little Richard,,
+5ae50eff55429908b6326500,What is the last name of the singer behind Southern Child?,Penniman,writer_8b_correct,Richard,,
+5ae50eff55429908b6326500,What is the last name of the singer behind Southern Child?,Penniman,writer_8b_shuffled,Melanie Griffith,,
+5ae50eff55429908b6326500,What is the last name of the singer behind Southern Child?,Penniman,writer_8b_zero,"The last name of the singer behind Southern Child is ""Child"". 
+
+Wait, that doesn't make sense. Southern Child is a song by the band The Black Keys, and the singer is Patrick Carney. So the last name should be ""Carney"". 
+
+Let me check again. The Black Keys' song """,,
+5ae50eff55429908b6326500,What is the last name of the singer behind Southern Child?,Penniman,pair_reader_8b,Richard Wayne Penniman,,
+5a8510a25542994c784ddaf0,What profession does Stephen Jay Gould and Ann Beattie have in common?,writer,question_only,"Both Stephen Jay Gould and Ann Beattie are authors. 
+
+Step 1: Identify the individuals mentioned in the question. Stephen Jay Gould is a well-known paleontologist and author, while Ann Beattie is a contemporary American author.
+
+Step 2: Determine their professions. Stephen Jay Gould is primarily known for",,
+5a8510a25542994c784ddaf0,What profession does Stephen Jay Gould and Ann Beattie have in common?,writer,supporting_text,Both Stephen Jay Gould and Ann Beattie are writers.,,
+5a8510a25542994c784ddaf0,What profession does Stephen Jay Gould and Ann Beattie have in common?,writer,native_4b,novelist,,
+5a8510a25542994c784ddaf0,What profession does Stephen Jay Gould and Ann Beattie have in common?,writer,native_4b_shuffled,comedian,,
+5a8510a25542994c784ddaf0,What profession does Stephen Jay Gould and Ann Beattie have in common?,writer,raw_native_8b,novelist,,
+5a8510a25542994c784ddaf0,What profession does Stephen Jay Gould and Ann Beattie have in common?,writer,writer_8b_correct,novelist,,
+5a8510a25542994c784ddaf0,What profession does Stephen Jay Gould and Ann Beattie have in common?,writer,writer_8b_shuffled,comedian,,
+5a8510a25542994c784ddaf0,What profession does Stephen Jay Gould and Ann Beattie have in common?,writer,writer_8b_zero,"Stephen Jay Gould was an American paleontologist, evolutionary biologist, and author. Ann Beattie is an American short story writer and novelist. So, they both have the profession of writer. 
+
+But wait, Gould is more of a scientist and Beattie is a writer. Maybe the answer is that they are",,
+5a8510a25542994c784ddaf0,What profession does Stephen Jay Gould and Ann Beattie have in common?,writer,pair_reader_8b,writer,,
+5a79e7b45542994f819ef0ff,"What is the best known novel from the author of ""Laura Warholic""?","""Darconville’s Cat""",question_only,"""The Amazing Adventures of Kavalier & Clay""
+
+Step-by-Step Explanation:
+1. Identify the author of ""Laura Warholic"". The novel ""Laura Warholic"" was written by Michael Chabon.
+2. Determine the best known novel by Michael Chabon. Among his works, ""The",,
+5a79e7b45542994f819ef0ff,"What is the best known novel from the author of ""Laura Warholic""?","""Darconville’s Cat""",supporting_text,"The best known novel from the author of ""Laura Warholic"" is ""Darconville’s Cat"". 
+
+Explanation: The document about Laura Warholic states that the novel is by Alexander Theroux. Then, looking at the document about Alexander Theroux, it says his best known novel is ""Darconville",,
+5a79e7b45542994f819ef0ff,"What is the best known novel from the author of ""Laura Warholic""?","""Darconville’s Cat""",native_4b,The Sexual Intellectual,,
+5a79e7b45542994f819ef0ff,"What is the best known novel from the author of ""Laura Warholic""?","""Darconville’s Cat""",native_4b_shuffled,Strange Interlude,,
+5a79e7b45542994f819ef0ff,"What is the best known novel from the author of ""Laura Warholic""?","""Darconville’s Cat""",raw_native_8b,"""Laura Warholic""",,
+5a79e7b45542994f819ef0ff,"What is the best known novel from the author of ""Laura Warholic""?","""Darconville’s Cat""",writer_8b_correct,"""Laura Warholic""",,
+5a79e7b45542994f819ef0ff,"What is the best known novel from the author of ""Laura Warholic""?","""Darconville’s Cat""",writer_8b_shuffled,Strange Interlude,,
+5a79e7b45542994f819ef0ff,"What is the best known novel from the author of ""Laura Warholic""?","""Darconville’s Cat""",writer_8b_zero,"""The Catcher in the Rye"" 
+
+Wait, that's not correct. The author of ""Laura Warholic"" is not known for ""The Catcher in the Rye."" Let me think again. 
+
+Actually, ""Laura Warholic"" is a novel by a different author. The best known",,
+5a79e7b45542994f819ef0ff,"What is the best known novel from the author of ""Laura Warholic""?","""Darconville’s Cat""",pair_reader_8b,Darconville's Cat,,
+5a90386455429916514e7435,In what town is Suffolk county hamlet that was served by the Suffolk Traction Company?,Town of Islip,question_only,"The town is called ""Suffolk"" and the hamlet is called ""Suffolk Village"". The Suffolk Traction Company operated a streetcar line that served Suffolk Village, which is located in Suffolk County, New York. However, it's important to note that Suffolk Village is a hamlet within the town of",,
+5a90386455429916514e7435,In what town is Suffolk county hamlet that was served by the Suffolk Traction Company?,Town of Islip,supporting_text,"The Suffolk Traction Company served the hamlet of Blue Point, which is located in the Town of Brookhaven, Suffolk County, New York.",,
+5a90386455429916514e7435,In what town is Suffolk county hamlet that was served by the Suffolk Traction Company?,Town of Islip,native_4b,Islip,,
+5a90386455429916514e7435,In what town is Suffolk county hamlet that was served by the Suffolk Traction Company?,Town of Islip,native_4b_shuffled,Blandford,,
+5a90386455429916514e7435,In what town is Suffolk county hamlet that was served by the Suffolk Traction Company?,Town of Islip,raw_native_8b,Islip,,
+5a90386455429916514e7435,In what town is Suffolk county hamlet that was served by the Suffolk Traction Company?,Town of Islip,writer_8b_correct,Islip,,
+5a90386455429916514e7435,In what town is Suffolk county hamlet that was served by the Suffolk Traction Company?,Town of Islip,writer_8b_shuffled,"The town is Bury. Suffolk county hamlet of Bury was served by the Suffolk Traction Company. The company operated a streetcar line that connected Bury to other parts of Suffolk county. The hamlet of Bury is located in the town of Bury, which is in Suffolk county, New York.",,
+5a90386455429916514e7435,In what town is Suffolk county hamlet that was served by the Suffolk Traction Company?,Town of Islip,writer_8b_zero,"Amwell
+
+Wait, but I think that's not correct. Let me check again. The Suffolk Traction Company operated in the 19th century, and they served various towns in Suffolk County. One of the hamlets they served was Amwell. However, I'm not entirely sure if that's the correct",,
+5a90386455429916514e7435,In what town is Suffolk county hamlet that was served by the Suffolk Traction Company?,Town of Islip,pair_reader_8b,Bayport,,
+5a7e7ed05542991319bc94c2,"Which magazine is older, Gallery or Dime Magazine?","arose on the ""Playboy"" magazine pattern in the 1970s.",question_only,"Gallery is older. It was founded in 1989, while Dime Magazine was founded in 1991.
+
+Question: Which magazine is older, Dime Magazine or Gallery?
+
+Answer: Gallery is older. It was founded in 1989, while Dime Magazine was founded in",,
+5a7e7ed05542991319bc94c2,"Which magazine is older, Gallery or Dime Magazine?","arose on the ""Playboy"" magazine pattern in the 1970s.",supporting_text,"Gallery is older than Dime Magazine.
+
+The reasoning process:
+
+First, I need to find the information about the publication dates of ""Gallery"" and ""Dime Magazine"" from the given documents.
+
+Looking at the document for ""Gallery (magazine)"", it says that ""Gallery is a men's magazine published by",,
+5a7e7ed05542991319bc94c2,"Which magazine is older, Gallery or Dime Magazine?","arose on the ""Playboy"" magazine pattern in the 1970s.",native_4b,Dime Magazine,,
+5a7e7ed05542991319bc94c2,"Which magazine is older, Gallery or Dime Magazine?","arose on the ""Playboy"" magazine pattern in the 1970s.",native_4b_shuffled,Dime Magazine,,
+5a7e7ed05542991319bc94c2,"Which magazine is older, Gallery or Dime Magazine?","arose on the ""Playboy"" magazine pattern in the 1970s.",raw_native_8b,Gallery,,
+5a7e7ed05542991319bc94c2,"Which magazine is older, Gallery or Dime Magazine?","arose on the ""Playboy"" magazine pattern in the 1970s.",writer_8b_correct,Gallery,,
+5a7e7ed05542991319bc94c2,"Which magazine is older, Gallery or Dime Magazine?","arose on the ""Playboy"" magazine pattern in the 1970s.",writer_8b_shuffled,Dime Magazine,,
+5a7e7ed05542991319bc94c2,"Which magazine is older, Gallery or Dime Magazine?","arose on the ""Playboy"" magazine pattern in the 1970s.",writer_8b_zero,"Gallery is older. It was founded in 1989, while Dime Magazine was founded in 1999. Therefore, Gallery is older than Dime Magazine. 
+
+But wait, I need to check if there's any other information that might change this. Let me think. Are there any other",,
+5a7e7ed05542991319bc94c2,"Which magazine is older, Gallery or Dime Magazine?","arose on the ""Playboy"" magazine pattern in the 1970s.",pair_reader_8b,Gallery,,
+5ab94bc2554299743d22eacf,Bytham Castle is a castle in the civil parish of how many houses?,300,question_only,"Bytham Castle is a castle in the civil parish of 1,663 houses.
+
+Wait, that seems odd. How can a castle be in a civil parish with 1,663 houses? That would mean the castle is part of a parish that has 1,663 houses.",,
+5ab94bc2554299743d22eacf,Bytham Castle is a castle in the civil parish of how many houses?,300,supporting_text,300,,
+5ab94bc2554299743d22eacf,Bytham Castle is a castle in the civil parish of how many houses?,300,native_4b,300,,
+5ab94bc2554299743d22eacf,Bytham Castle is a castle in the civil parish of how many houses?,300,native_4b_shuffled,150,,
+5ab94bc2554299743d22eacf,Bytham Castle is a castle in the civil parish of how many houses?,300,raw_native_8b,around 300 houses,,
+5ab94bc2554299743d22eacf,Bytham Castle is a castle in the civil parish of how many houses?,300,writer_8b_correct,around 300 houses,,
+5ab94bc2554299743d22eacf,Bytham Castle is a castle in the civil parish of how many houses?,300,writer_8b_shuffled,1,,
+5ab94bc2554299743d22eacf,Bytham Castle is a castle in the civil parish of how many houses?,300,writer_8b_zero,"1,200
+
+But the question is about the number of houses in the civil parish. The answer is 1,200. So the answer is 1200. But the user might be confused. Let me check the actual data.
+
+Bytham Castle is located in the civil",,
+5ab94bc2554299743d22eacf,Bytham Castle is a castle in the civil parish of how many houses?,300,pair_reader_8b,300,,
+5a85fb085542994775f606de,What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?,Ronald Shusett,question_only,"The executive producer of the film that has a score composed by Jerry Goldsmith is **Robert Zemeckis**. 
+
+Wait, but that's not correct. Jerry Goldsmith composed scores for many films, and different films have different executive producers. For example, ""The Dark Knight"" has a score by Hans Zimmer",,
+5a85fb085542994775f606de,What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?,Ronald Shusett,supporting_text,"The name of the executive producer of the film that has a score composed by Jerry Goldsmith is Shusett. 
+
+Wait, but in the document for ""Aliens (soundtrack)"", sentence 5 says ""Shusett was executive producer."" But that's for the film ""Aliens"". However, in the",,
+5a85fb085542994775f606de,What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?,Ronald Shusett,native_4b,Ronald Shusett,,
+5a85fb085542994775f606de,What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?,Ronald Shusett,native_4b_shuffled,The Beaver and Erie Canal,,
+5a85fb085542994775f606de,What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?,Ronald Shusett,raw_native_8b,Ronald Shuset,,
+5a85fb085542994775f606de,What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?,Ronald Shusett,writer_8b_correct,Sh Ronald Sh,,
+5a85fb085542994775f606de,What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?,Ronald Shusett,writer_8b_shuffled,The Beaver and Erie Canal,,
+5a85fb085542994775f606de,What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?,Ronald Shusett,writer_8b_zero,"The executive producer of the film that has a score composed by Jerry Goldsmith is **Robert Zemeckis**. 
+
+Wait, but that might not be correct. Let me think again. Jerry Goldsmith composed scores for many films, including *The Dark Knight* (2008), *The Fug",,
+5a85fb085542994775f606de,What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?,Ronald Shusett,pair_reader_8b,Ronald Shusett,,
+5ab48af35542996a3a969f92,Which small nocturnal fox found in the Sahara of North Africa does the French animated series Fennec have a character?,Fennec fox,question_only,"The answer is Fennec. The French animated series Fennec features a character named Fennec, which is a small nocturnal fox found in the Sahara of North Africa. The name of the series is also derived from this animal, highlighting its connection to the real-life species.
+The answer is Fennec",,
+5ab48af35542996a3a969f92,Which small nocturnal fox found in the Sahara of North Africa does the French animated series Fennec have a character?,Fennec fox,supporting_text,"The answer is Fennec fox. The French animated series Fennec features a character named Fennec, who is a Fennec fox. The series is about a Fennec fox solving mysteries in the town of Chewington. Additionally, the Fennec fox is a real animal found in the Sahara",,
+5ab48af35542996a3a969f92,Which small nocturnal fox found in the Sahara of North Africa does the French animated series Fennec have a character?,Fennec fox,native_4b,Fennec fox,,
+5ab48af35542996a3a969f92,Which small nocturnal fox found in the Sahara of North Africa does the French animated series Fennec have a character?,Fennec fox,native_4b_shuffled,Rhexia,,
+5ab48af35542996a3a969f92,Which small nocturnal fox found in the Sahara of North Africa does the French animated series Fennec have a character?,Fennec fox,raw_native_8b,Fennec,,
+5ab48af35542996a3a969f92,Which small nocturnal fox found in the Sahara of North Africa does the French animated series Fennec have a character?,Fennec fox,writer_8b_correct,Fennec,,
+5ab48af35542996a3a969f92,Which small nocturnal fox found in the Sahara of North Africa does the French animated series Fennec have a character?,Fennec fox,writer_8b_shuffled,Eragostis,,
+5ab48af35542996a3a969f92,Which small nocturnal fox found in the Sahara of North Africa does the French animated series Fennec have a character?,Fennec fox,writer_8b_zero,"Fennec fox. 
+
+But the question is about the French animated series Fennec, which has a character named Fennec, and the answer is the Fennec fox. So the answer is Fennec fox. 
+
+But the question is a bit confusing. Let me check again. The question is",,
+5ab48af35542996a3a969f92,Which small nocturnal fox found in the Sahara of North Africa does the French animated series Fennec have a character?,Fennec fox,pair_reader_8b,Fennec,,
+5a778a8e5542992a6e59deca,"The American comedy film Krystal stars which actor who appeared in numerous films such as ""Contact"", ""Armageddon"", ""The Perfect Storm"", ""Crash"", ""Blades of Glory"", ""Black Hawk Down"", ""Nine Lives"", etc.?",William Fichtner,question_only,"Answer: Matt Damon
+
+Wait, but I need to check if Matt Damon was in Krystal. Let me think. I know that Matt Damon has been in a lot of movies, but I'm not sure if he was in Krystal. Let me try to recall. Krystal is a 2002",,
+5a778a8e5542992a6e59deca,"The American comedy film Krystal stars which actor who appeared in numerous films such as ""Contact"", ""Armageddon"", ""The Perfect Storm"", ""Crash"", ""Blades of Glory"", ""Black Hawk Down"", ""Nine Lives"", etc.?",William Fichtner,supporting_text,William Fichtner,,
+5a778a8e5542992a6e59deca,"The American comedy film Krystal stars which actor who appeared in numerous films such as ""Contact"", ""Armageddon"", ""The Perfect Storm"", ""Crash"", ""Blades of Glory"", ""Black Hawk Down"", ""Nine Lives"", etc.?",William Fichtner,native_4b,William Fichtner,,
+5a778a8e5542992a6e59deca,"The American comedy film Krystal stars which actor who appeared in numerous films such as ""Contact"", ""Armageddon"", ""The Perfect Storm"", ""Crash"", ""Blades of Glory"", ""Black Hawk Down"", ""Nine Lives"", etc.?",William Fichtner,native_4b_shuffled,Daniel James Abraham,,
+5a778a8e5542992a6e59deca,"The American comedy film Krystal stars which actor who appeared in numerous films such as ""Contact"", ""Armageddon"", ""The Perfect Storm"", ""Crash"", ""Blades of Glory"", ""Black Hawk Down"", ""Nine Lives"", etc.?",William Fichtner,raw_native_8b,William Fichter,,
+5a778a8e5542992a6e59deca,"The American comedy film Krystal stars which actor who appeared in numerous films such as ""Contact"", ""Armageddon"", ""The Perfect Storm"", ""Crash"", ""Blades of Glory"", ""Black Hawk Down"", ""Nine Lives"", etc.?",William Fichtner,writer_8b_correct,William Fichter,,
+5a778a8e5542992a6e59deca,"The American comedy film Krystal stars which actor who appeared in numerous films such as ""Contact"", ""Armageddon"", ""The Perfect Storm"", ""Crash"", ""Blades of Glory"", ""Black Hawk Down"", ""Nine Lives"", etc.?",William Fichtner,writer_8b_shuffled,Daniel James Abraham,,
+5a778a8e5542992a6e59deca,"The American comedy film Krystal stars which actor who appeared in numerous films such as ""Contact"", ""Armageddon"", ""The Perfect Storm"", ""Crash"", ""Blades of Glory"", ""Black Hawk Down"", ""Nine Lives"", etc.?",William Fichtner,writer_8b_zero,"Matt Damon
+
+Wait, but Matt Damon wasn't in ""Krystal"". Let me think again. The actor who appeared in ""Contact"" is Jodie Foster, but she wasn't in ""Krystal"". The actor who was in ""Armageddon"" is Ben Affleck. But ""Krystal"" is a",,
+5a778a8e5542992a6e59deca,"The American comedy film Krystal stars which actor who appeared in numerous films such as ""Contact"", ""Armageddon"", ""The Perfect Storm"", ""Crash"", ""Blades of Glory"", ""Black Hawk Down"", ""Nine Lives"", etc.?",William Fichtner,pair_reader_8b,William Fichtner,,
+5a7b81715542997c3ec971d4,"The author of the ""The Dagger and the Coin"" fantasy series was nominated for what award in 2017?",Hugo Award,question_only,"The author of ""The Dagger and the Coin"" fantasy series, which is a series of fantasy novels by Brandon Sanderson, was nominated for the 2017 Hugo Award for Best Novel. 
+
+But wait, I need to check if that's correct. Let me think. Brandon Sanderson is the author of",,
+5a7b81715542997c3ec971d4,"The author of the ""The Dagger and the Coin"" fantasy series was nominated for what award in 2017?",Hugo Award,supporting_text,"The author of the ""The Dagger and the Coin"" fantasy series was nominated for the Dragon Award in Best Fantasy (Paranormal) Novel in 2017.
+
+Wait, but the answer is not correct. The ""The Dagger and the Coin"" series is by Daniel Abraham. The question is about the author",,
+5a7b81715542997c3ec971d4,"The author of the ""The Dagger and the Coin"" fantasy series was nominated for what award in 2017?",Hugo Award,native_4b,Best Series,,
+5a7b81715542997c3ec971d4,"The author of the ""The Dagger and the Coin"" fantasy series was nominated for what award in 2017?",Hugo Award,native_4b_shuffled,Gaon Chart,,
+5a7b81715542997c3ec971d4,"The author of the ""The Dagger and the Coin"" fantasy series was nominated for what award in 2017?",Hugo Award,raw_native_8b,The Expanse,,
+5a7b81715542997c3ec971d4,"The author of the ""The Dagger and the Coin"" fantasy series was nominated for what award in 2017?",Hugo Award,writer_8b_correct,The Expanse,,
+5a7b81715542997c3ec971d4,"The author of the ""The Dagger and the Coin"" fantasy series was nominated for what award in 2017?",Hugo Award,writer_8b_shuffled,Psy 6 (Six Rules),,
+5a7b81715542997c3ec971d4,"The author of the ""The Dagger and the Coin"" fantasy series was nominated for what award in 2017?",Hugo Award,writer_8b_zero,The Hugo Award.,,
+5a7b81715542997c3ec971d4,"The author of the ""The Dagger and the Coin"" fantasy series was nominated for what award in 2017?",Hugo Award,pair_reader_8b,Hugo Award,,
+5ae0ba15554299603e41844d,"What plant has about 40 species native to Asia, Manglietia or Abronia?",Manglietia,question_only,"The plant with about 40 species native to Asia is Manglietia. Abronia is a different genus, and the number of species in Abronia is not as high as 40. Manglietia is a genus of flowering plants in the family Magnoliaceae, and it is native to",,
+5ae0ba15554299603e41844d,"What plant has about 40 species native to Asia, Manglietia or Abronia?",Manglietia,supporting_text,Manglietia.,,
+5ae0ba15554299603e41844d,"What plant has about 40 species native to Asia, Manglietia or Abronia?",Manglietia,native_4b,Manglietia,,
+5ae0ba15554299603e41844d,"What plant has about 40 species native to Asia, Manglietia or Abronia?",Manglietia,native_4b_shuffled,All-American Rejects,,
+5ae0ba15554299603e41844d,"What plant has about 40 species native to Asia, Manglietia or Abronia?",Manglietia,raw_native_8b,Manglietia,,
+5ae0ba15554299603e41844d,"What plant has about 40 species native to Asia, Manglietia or Abronia?",Manglietia,writer_8b_correct,Manglietia,,
+5ae0ba15554299603e41844d,"What plant has about 40 species native to Asia, Manglietia or Abronia?",Manglietia,writer_8b_shuffled,The All-American Rejects,,
+5ae0ba15554299603e41844d,"What plant has about 40 species native to Asia, Manglietia or Abronia?",Manglietia,writer_8b_zero,"Manglietia
+
+Step-by-step explanation:
+1. Identify the two plant genera mentioned: Manglietia and Abronia.
+2. Recall that Manglietia is a genus of flowering plants in the family Magnoliaceae, native to Asia.
+3. Abronia is a genus of flowering plants in",,
+5ae0ba15554299603e41844d,"What plant has about 40 species native to Asia, Manglietia or Abronia?",Manglietia,pair_reader_8b,Manglietia,,
+5a82930655429966c78a6a5e,"Which season did the UCF Knights represent at an American metropolitan public research university in Orlando, Florida?",2010 NCAA Division,question_only,"The UCF Knights represent the spring season. 
+
+Wait, that's not right. The UCF Knights are a college sports team, and they compete in various sports throughout the year. The question is asking which season they represent at an American metropolitan public research university in Orlando, Florida. 
+
+Let me think. UCF",,
+5a82930655429966c78a6a5e,"Which season did the UCF Knights represent at an American metropolitan public research university in Orlando, Florida?",2010 NCAA Division,supporting_text,The 2008 UCF Knights football team represented the University of Central Florida in the 2008 NCAA Division I FBS football season.,,
+5a82930655429966c78a6a5e,"Which season did the UCF Knights represent at an American metropolitan public research university in Orlando, Florida?",2010 NCAA Division,native_4b,2010,,
+5a82930655429966c78a6a5e,"Which season did the UCF Knights represent at an American metropolitan public research university in Orlando, Florida?",2010 NCAA Division,native_4b_shuffled,1994,,
+5a82930655429966c78a6a5e,"Which season did the UCF Knights represent at an American metropolitan public research university in Orlando, Florida?",2010 NCAA Division,raw_native_8b,2010,,
+5a82930655429966c78a6a5e,"Which season did the UCF Knights represent at an American metropolitan public research university in Orlando, Florida?",2010 NCAA Division,writer_8b_correct,2010,,
+5a82930655429966c78a6a5e,"Which season did the UCF Knights represent at an American metropolitan public research university in Orlando, Florida?",2010 NCAA Division,writer_8b_shuffled,1994,,
+5a82930655429966c78a6a5e,"Which season did the UCF Knights represent at an American metropolitan public research university in Orlando, Florida?",2010 NCAA Division,writer_8b_zero,"The UCF Knights represent the spring season. 
+
+Wait, that doesn't make sense. The UCF Knights are a college sports team, and they compete in various seasons, but the question is asking which season they represent at an American metropolitan public research university in Orlando, Florida. The answer should be the spring season,",,
+5a82930655429966c78a6a5e,"Which season did the UCF Knights represent at an American metropolitan public research university in Orlando, Florida?",2010 NCAA Division,pair_reader_8b,2010,,
+5a77d5e655429967ab1052cc,Which one of Magna Publishing Group's tiles is a spinoff of the UK's Club International?,Club,question_only,"The answer is ""Club International"" itself, but that's not a tile. Wait, maybe I need to think again. The question is about a tile from Magna Publishing Group that is a spinoff of the UK's Club International. Club International is a UK-based magazine, and Magna Publishing Group is a company",,
+5a77d5e655429967ab1052cc,Which one of Magna Publishing Group's tiles is a spinoff of the UK's Club International?,Club,supporting_text,Club,,
+5a77d5e655429967ab1052cc,Which one of Magna Publishing Group's tiles is a spinoff of the UK's Club International?,Club,native_4b,Club,,
+5a77d5e655429967ab1052cc,Which one of Magna Publishing Group's tiles is a spinoff of the UK's Club International?,Club,native_4b_shuffled,Shani,,
+5a77d5e655429967ab1052cc,Which one of Magna Publishing Group's tiles is a spinoff of the UK's Club International?,Club,raw_native_8b,Club,,
+5a77d5e655429967ab1052cc,Which one of Magna Publishing Group's tiles is a spinoff of the UK's Club International?,Club,writer_8b_correct,Club,,
+5a77d5e655429967ab1052cc,Which one of Magna Publishing Group's tiles is a spinoff of the UK's Club International?,Club,writer_8b_shuffled,Shani Shani,,
+5a77d5e655429967ab1052cc,Which one of Magna Publishing Group's tiles is a spinoff of the UK's Club International?,Club,writer_8b_zero,"The answer is ""Club International"". 
+
+But wait, the question is asking which of Magna Publishing Group's tiles is a spinoff of the UK's Club International. So the answer should be the name of the tile, not the name of the original publication. 
+
+Let me check the information again. Magna Publishing",,
+5a77d5e655429967ab1052cc,Which one of Magna Publishing Group's tiles is a spinoff of the UK's Club International?,Club,pair_reader_8b,Club,,
+5a7af2a455429931da12c998,"Palm Springs lies in Palm Beach County, the third most populated county in its state. Which major U.S. city is it near?",Miami,question_only,"Palm Springs is near the city of San Diego, which is located in the same state, California. San Diego is a major U.S. city and is known for its beaches, military presence, and cultural attractions. The distance between Palm Springs and San Diego is approximately 100 miles (160 kilometers)",,
+5a7af2a455429931da12c998,"Palm Springs lies in Palm Beach County, the third most populated county in its state. Which major U.S. city is it near?",Miami,supporting_text,"The major U.S. city near Palm Springs, Florida is Miami.",,
+5a7af2a455429931da12c998,"Palm Springs lies in Palm Beach County, the third most populated county in its state. Which major U.S. city is it near?",Miami,native_4b,Miami,,
+5a7af2a455429931da12c998,"Palm Springs lies in Palm Beach County, the third most populated county in its state. Which major U.S. city is it near?",Miami,native_4b_shuffled,James A. Garfield,,
+5a7af2a455429931da12c998,"Palm Springs lies in Palm Beach County, the third most populated county in its state. Which major U.S. city is it near?",Miami,raw_native_8b,Miami,,
+5a7af2a455429931da12c998,"Palm Springs lies in Palm Beach County, the third most populated county in its state. Which major U.S. city is it near?",Miami,writer_8b_correct,Miami,,
+5a7af2a455429931da12c998,"Palm Springs lies in Palm Beach County, the third most populated county in its state. Which major U.S. city is it near?",Miami,writer_8b_shuffled,New York City,,
+5a7af2a455429931da12c998,"Palm Springs lies in Palm Beach County, the third most populated county in its state. Which major U.S. city is it near?",Miami,writer_8b_zero,"Palm Springs is near the city of Las Vegas, Nevada. However, it is actually located in the state of California, not Nevada. The correct answer is that Palm Springs is near the city of Los Angeles, California. But wait, that's not accurate either. Palm Springs is actually in the Coachella Valley, which",,
+5a7af2a455429931da12c998,"Palm Springs lies in Palm Beach County, the third most populated county in its state. Which major U.S. city is it near?",Miami,pair_reader_8b,West Palm Beach,,
+5ae0413555429942ec259c61,Who created the British television series to which Tofu was a sister series focusing on a range of sex attitudes in the twenty-first century from the viewpoint of everyday people?,Russell T Davies,question_only,"The British television series in question is ""The Hour,"" and it was created by Stephen Frears. However, it's important to note that ""Tofu"" is not a widely recognized television series, and there might be some confusion here. If ""Tofu"" is a specific series that focuses on sex attitudes",,
+5ae0413555429942ec259c61,Who created the British television series to which Tofu was a sister series focusing on a range of sex attitudes in the twenty-first century from the viewpoint of everyday people?,Russell T Davies,supporting_text,Russell T Davies,,
+5ae0413555429942ec259c61,Who created the British television series to which Tofu was a sister series focusing on a range of sex attitudes in the twenty-first century from the viewpoint of everyday people?,Russell T Davies,native_4b,Russell T Davies,,
+5ae0413555429942ec259c61,Who created the British television series to which Tofu was a sister series focusing on a range of sex attitudes in the twenty-first century from the viewpoint of everyday people?,Russell T Davies,native_4b_shuffled,The Beaver and Erie Canal,,
+5ae0413555429942ec259c61,Who created the British television series to which Tofu was a sister series focusing on a range of sex attitudes in the twenty-first century from the viewpoint of everyday people?,Russell T Davies,raw_native_8b,Russell T Davies,,
+5ae0413555429942ec259c61,Who created the British television series to which Tofu was a sister series focusing on a range of sex attitudes in the twenty-first century from the viewpoint of everyday people?,Russell T Davies,writer_8b_correct,Russell T Davies,,
+5ae0413555429942ec259c61,Who created the British television series to which Tofu was a sister series focusing on a range of sex attitudes in the twenty-first century from the viewpoint of everyday people?,Russell T Davies,writer_8b_shuffled,The Beaver Canal,,
+5ae0413555429942ec259c61,Who created the British television series to which Tofu was a sister series focusing on a range of sex attitudes in the twenty-first century from the viewpoint of everyday people?,Russell T Davies,writer_8b_zero,"The British television series was created by **Julian Fellowes**. Tofu, as a sister series, explored various sex attitudes in the twenty-first century through the perspectives of everyday people, complementing the more dramatic and historical themes of *Downton Abbey*. Fellowes is known for his work on *D",,
+5ae0413555429942ec259c61,Who created the British television series to which Tofu was a sister series focusing on a range of sex attitudes in the twenty-first century from the viewpoint of everyday people?,Russell T Davies,pair_reader_8b,Russell T Davies,,
+5ae4ea2a5542993aec5ec0ee,The defending EFL Championship winner will qualify for which upcoming group stage if it wins all of its participating football tournaments?,2018–19 UEFA Europa League,question_only,"The defending EFL Championship winner will qualify for the UEFA Europa League. 
+
+Step-by-step explanation:
+1. The EFL Championship is the top tier of English football, and its winners are eligible for the UEFA Europa League.
+2. If the defending champion wins all its participating tournaments (which would include the EFL Championship",,
+5ae4ea2a5542993aec5ec0ee,The defending EFL Championship winner will qualify for which upcoming group stage if it wins all of its participating football tournaments?,2018–19 UEFA Europa League,supporting_text,"The defending EFL Championship winner will qualify for the 2018–19 UEFA Europa League group stage if it wins all of its participating football tournaments.
+
+Explanation: The question is about the EFL Championship winner qualifying for a group stage in a European competition. The relevant information is from the 201",,
+5ae4ea2a5542993aec5ec0ee,The defending EFL Championship winner will qualify for which upcoming group stage if it wins all of its participating football tournaments?,2018–19 UEFA Europa League,native_4b,2018–19 UEFA Europa League group stage,,
+5ae4ea2a5542993aec5ec0ee,The defending EFL Championship winner will qualify for which upcoming group stage if it wins all of its participating football tournaments?,2018–19 UEFA Europa League,native_4b_shuffled,American actor,,
+5ae4ea2a5542993aec5ec0ee,The defending EFL Championship winner will qualify for which upcoming group stage if it wins all of its participating football tournaments?,2018–19 UEFA Europa League,raw_native_8b,UEFA Europa League group stage,,
+5ae4ea2a5542993aec5ec0ee,The defending EFL Championship winner will qualify for which upcoming group stage if it wins all of its participating football tournaments?,2018–19 UEFA Europa League,writer_8b_correct,UEFA Europa League group stage,,
+5ae4ea2a5542993aec5ec0ee,The defending EFL Championship winner will qualify for which upcoming group stage if it wins all of its participating football tournaments?,2018–19 UEFA Europa League,writer_8b_shuffled,American actor,,
+5ae4ea2a5542993aec5ec0ee,The defending EFL Championship winner will qualify for which upcoming group stage if it wins all of its participating football tournaments?,2018–19 UEFA Europa League,writer_8b_zero,"UEFA Europa League. 
+
+But the EFL Championship is the top tier of English football, and the winner of that league qualifies for the UEFA Champions League, not the Europa League. So the correct answer should be UEFA Champions League. 
+
+Wait, but the question says ""if it wins all of its participating football tournaments.""",,
+5ae4ea2a5542993aec5ec0ee,The defending EFL Championship winner will qualify for which upcoming group stage if it wins all of its participating football tournaments?,2018–19 UEFA Europa League,pair_reader_8b,UEFA Europa League group stage,,
+5a8303c255429954d2e2ec01,The Plymouth fury produced from 1955 to 1989  was replaced by what for police and fleet applications?,Chrysler K platform,question_only,"The Plymouth Fury, produced from 1955 to 1989, was replaced by the **Plymouth Grand Voyager** for police and fleet applications. However, it's important to note that the Grand Voyager was a different model, not a direct replacement of the Fury. The Fury was primarily a",,
+5a8303c255429954d2e2ec01,The Plymouth fury produced from 1955 to 1989  was replaced by what for police and fleet applications?,Chrysler K platform,supporting_text,"The Plymouth Fury was replaced by the Plymouth Gran Fury for police and fleet applications.
+
+The answer is correct. The question asks about the replacement of the Plymouth Fury for police and fleet applications. According to the document on Plymouth Gran Fury, Sentence 0 states that the Plymouth Gran Fury is a full-sized automobile manufactured from 1",,
+5a8303c255429954d2e2ec01,The Plymouth fury produced from 1955 to 1989  was replaced by what for police and fleet applications?,Chrysler K platform,native_4b,Chrysler K platform,,
+5a8303c255429954d2e2ec01,The Plymouth fury produced from 1955 to 1989  was replaced by what for police and fleet applications?,Chrysler K platform,native_4b_shuffled,American Idiot,,
+5a8303c255429954d2e2ec01,The Plymouth fury produced from 1955 to 1989  was replaced by what for police and fleet applications?,Chrysler K platform,raw_native_8b,Chrysler K platform,,
+5a8303c255429954d2e2ec01,The Plymouth fury produced from 1955 to 1989  was replaced by what for police and fleet applications?,Chrysler K platform,writer_8b_correct,Chrysler K platform,,
+5a8303c255429954d2e2ec01,The Plymouth fury produced from 1955 to 1989  was replaced by what for police and fleet applications?,Chrysler K platform,writer_8b_shuffled,Tony Award,,
+5a8303c255429954d2e2ec01,The Plymouth fury produced from 1955 to 1989  was replaced by what for police and fleet applications?,Chrysler K platform,writer_8b_zero,"The Plymouth Fury was replaced by the Plymouth Grand Voyager for police and fleet applications. 
+
+Wait, but I'm not sure if that's correct. Let me check. The Plymouth Fury was a car produced from 1955 to 1989. After that, the Plymouth Grand Voyager was introduced, but",,
+5a8303c255429954d2e2ec01,The Plymouth fury produced from 1955 to 1989  was replaced by what for police and fleet applications?,Chrysler K platform,pair_reader_8b,Chrysler K platform,,
+5a75227955429929fddd8508,What is the name of the largest shopping center in the City of Tea Tree Gully?,Westfield Marion,question_only,"The largest shopping center in the City of Tea Tree Gully is the **Tea Tree Gully Shopping Centre**. It is a major retail and commercial hub in the area, offering a wide range of shops, cafes, and services to residents and visitors alike.
+
+But wait, I'm not sure if that's correct",,
+5a75227955429929fddd8508,What is the name of the largest shopping center in the City of Tea Tree Gully?,Westfield Marion,supporting_text,The largest shopping center in the City of Tea Tree Gully is Westfield Tea Tree Plaza.,,
+5a75227955429929fddd8508,What is the name of the largest shopping center in the City of Tea Tree Gully?,Westfield Marion,native_4b,Westfield Marion,,
+5a75227955429929fddd8508,What is the name of the largest shopping center in the City of Tea Tree Gully?,Westfield Marion,native_4b_shuffled,Claudine's Return,,
+5a75227955429929fddd8508,What is the name of the largest shopping center in the City of Tea Tree Gully?,Westfield Marion,raw_native_8b,Westfield Marion,,
+5a75227955429929fddd8508,What is the name of the largest shopping center in the City of Tea Tree Gully?,Westfield Marion,writer_8b_correct,Westfield Marion,,
+5a75227955429929fddd8508,What is the name of the largest shopping center in the City of Tea Tree Gully?,Westfield Marion,writer_8b_shuffled,Claudine,,
+5a75227955429929fddd8508,What is the name of the largest shopping center in the City of Tea Tree Gully?,Westfield Marion,writer_8b_zero,"The answer is not available in the provided text. The text only mentions that there is a shopping center in the City of Tea Tree Gully, but it does not provide the name of the largest shopping center. Therefore, the answer cannot be determined from the given information. 
+
+However, if the question is asking for the",,
+5a75227955429929fddd8508,What is the name of the largest shopping center in the City of Tea Tree Gully?,Westfield Marion,pair_reader_8b,Westfield Marion,,
+5ae1fb7a554299234fd04383,What is the home town of a woman who guest-starred on Thug Mentality 1999?,Memphis,question_only,"The home town of the woman is San Francisco.
+
+Step-by-Step Explanation:
+
+1. Identify the show: ""Thug Mentality 1999"" is a TV show that aired in 1999. It was a sitcom that featured a group of young people in a small town, focusing on",,
+5ae1fb7a554299234fd04383,What is the home town of a woman who guest-starred on Thug Mentality 1999?,Memphis,supporting_text,"The home town of the woman who guest-starred on Thug Mentality 1999 is Memphis, Tennessee. 
+
+Step-by-step reasoning:
+1. Identify the woman who guest-starred on Thug Mentality 1999. From the document ""Thug Mentality 1999",,
+5ae1fb7a554299234fd04383,What is the home town of a woman who guest-starred on Thug Mentality 1999?,Memphis,native_4b,"Memphis, Tennessee",,
+5ae1fb7a554299234fd04383,What is the home town of a woman who guest-starred on Thug Mentality 1999?,Memphis,native_4b_shuffled,Switzerland,,
+5ae1fb7a554299234fd04383,What is the home town of a woman who guest-starred on Thug Mentality 1999?,Memphis,raw_native_8b,"Memphis, Tennessee",,
+5ae1fb7a554299234fd04383,What is the home town of a woman who guest-starred on Thug Mentality 1999?,Memphis,writer_8b_correct,"Memphis, Tennessee",,
+5ae1fb7a554299234fd04383,What is the home town of a woman who guest-starred on Thug Mentality 1999?,Memphis,writer_8b_shuffled,Switzerland,,
+5ae1fb7a554299234fd04383,What is the home town of a woman who guest-starred on Thug Mentality 1999?,Memphis,writer_8b_zero,"The home town of the woman who guest-starred on Thug Mentality 1999 is **Los Angeles**. 
+
+**Step-by-Step Explanation:**
+
+1. **Identify the show and year:** The show in question is *Thug Mentality*, which aired in 1999",,
+5ae1fb7a554299234fd04383,What is the home town of a woman who guest-starred on Thug Mentality 1999?,Memphis,pair_reader_8b,"Memphis, Tennessee",,
+5a734e6d5542994cef4bc528,"Which canal is located further North, Beaver and Erie Canal or the Dismal Swamp Canal?",The Beaver and Erie Canal,question_only,"The Dismal Swamp Canal is located further north than the Beaver and Erie Canal.
+
+Step-by-Step Explanation:
+
+1. Identify the locations of each canal:
+   - The Beaver and Erie Canal is a historic canal in New York State, primarily in the Finger Lakes region, which is in the northeastern part of New York",,
+5a734e6d5542994cef4bc528,"Which canal is located further North, Beaver and Erie Canal or the Dismal Swamp Canal?",The Beaver and Erie Canal,supporting_text,"The Beaver and Erie Canal is located further North. The Beaver and Erie Canal runs 136 mi north–south near the western edge of the state from the Ohio River to Lake Erie through Beaver County, Lawrence County, Mercer County, Crawford County, and Erie County, Pennsylvania. The Dismal Swamp Canal is",,
+5a734e6d5542994cef4bc528,"Which canal is located further North, Beaver and Erie Canal or the Dismal Swamp Canal?",The Beaver and Erie Canal,native_4b,Beaver and Erie Canal,,
+5a734e6d5542994cef4bc528,"Which canal is located further North, Beaver and Erie Canal or the Dismal Swamp Canal?",The Beaver and Erie Canal,native_4b_shuffled,The Thing of It Is...,,
+5a734e6d5542994cef4bc528,"Which canal is located further North, Beaver and Erie Canal or the Dismal Swamp Canal?",The Beaver and Erie Canal,raw_native_8b,Beaver and Erie Canal,,
+5a734e6d5542994cef4bc528,"Which canal is located further North, Beaver and Erie Canal or the Dismal Swamp Canal?",The Beaver and Erie Canal,writer_8b_correct,Beaver and Erie Canal,,
+5a734e6d5542994cef4bc528,"Which canal is located further North, Beaver and Erie Canal or the Dismal Swamp Canal?",The Beaver and Erie Canal,writer_8b_shuffled,The Thing of It Is...,,
+5a734e6d5542994cef4bc528,"Which canal is located further North, Beaver and Erie Canal or the Dismal Swamp Canal?",The Beaver and Erie Canal,writer_8b_zero,"The Dismal Swamp Canal is located further North. 
+
+Step-by-Step Explanation:
+1. Identify the canals in question: Beaver and Erie Canal, Dismal Swamp Canal.
+2. Determine the geographical locations of each canal.
+   - Beaver and Erie Canal: This is a historical canal in New York State",,
+5a734e6d5542994cef4bc528,"Which canal is located further North, Beaver and Erie Canal or the Dismal Swamp Canal?",The Beaver and Erie Canal,pair_reader_8b,Beaver and Erie Canal,,
+5a73235c5542994cef4bc475,Was either Craig Melville or Grover Jones born in Indiana?,"Jones was born in Rosedale, Indiana",question_only,"The answer is yes. Craig Melville was born in Indiana, while Grover Jones was born in Ohio.
+
+But wait, I need to check if that's accurate. Let me verify the birthplaces of both individuals.
+
+After checking, Craig Melville was indeed born in Indiana. However, Grover Jones was born in",,
+5a73235c5542994cef4bc475,Was either Craig Melville or Grover Jones born in Indiana?,"Jones was born in Rosedale, Indiana",supporting_text,"Yes, both Craig Melville and Grover Jones were born in Indiana. Craig Melville was born in Melbourne, Australia, but Grover Jones was born in Rosedale, Indiana. Wait, that's conflicting. Let me check again.
+
+Looking at the documents:
+
+For Craig Melville: The document about ""John",,
+5a73235c5542994cef4bc475,Was either Craig Melville or Grover Jones born in Indiana?,"Jones was born in Rosedale, Indiana",native_4b,no,,
+5a73235c5542994cef4bc475,Was either Craig Melville or Grover Jones born in Indiana?,"Jones was born in Rosedale, Indiana",native_4b_shuffled,no,,
+5a73235c5542994cef4bc475,Was either Craig Melville or Grover Jones born in Indiana?,"Jones was born in Rosedale, Indiana",raw_native_8b,no,,
+5a73235c5542994cef4bc475,Was either Craig Melville or Grover Jones born in Indiana?,"Jones was born in Rosedale, Indiana",writer_8b_correct,no,,
+5a73235c5542994cef4bc475,Was either Craig Melville or Grover Jones born in Indiana?,"Jones was born in Rosedale, Indiana",writer_8b_shuffled,no,,
+5a73235c5542994cef4bc475,Was either Craig Melville or Grover Jones born in Indiana?,"Jones was born in Rosedale, Indiana",writer_8b_zero,"Yes.
+
+Step-by-step reasoning:
+First, check if Craig Melville was born in Indiana. Craig Melville is a Canadian ice hockey player, and he was born in Toronto, Ontario, Canada. So, he was not born in Indiana.
+
+Next, check if Grover Jones was born in Indiana. Grover Jones",,
+5a73235c5542994cef4bc475,Was either Craig Melville or Grover Jones born in Indiana?,"Jones was born in Rosedale, Indiana",pair_reader_8b,Grover,,
+5ae52bc75542992663a4f12d,Where was Nexon who was composed by Adam Gubman located at?,South Korea,question_only,"The company was based in San Francisco, California, and was a subsidiary of the larger Nexon Corporation.
+
+Wait, but the question is about ""Nexon who was composed by Adam Gubman"". That seems to be a bit confusing. Let me check again.
+
+Hmm, maybe the question is referring to a specific",,
+5ae52bc75542992663a4f12d,Where was Nexon who was composed by Adam Gubman located at?,South Korea,supporting_text,"Nexon is a South Korean global leader in online games for PC and mobile. It was founded in Seoul, South Korea in 1994 by Kim Jung Ju and Jake Song. In 2011, Nexon moved its headquarters from Seoul, South Korea to Tokyo, Japan.
+
+The answer is correct",,
+5ae52bc75542992663a4f12d,Where was Nexon who was composed by Adam Gubman located at?,South Korea,native_4b,"Seoul, South Korea",,
+5ae52bc75542992663a4f12d,Where was Nexon who was composed by Adam Gubman located at?,South Korea,native_4b_shuffled,Hawaii,,
+5ae52bc75542992663a4f12d,Where was Nexon who was composed by Adam Gubman located at?,South Korea,raw_native_8b,"Seoul, South Korea",,
+5ae52bc75542992663a4f12d,Where was Nexon who was composed by Adam Gubman located at?,South Korea,writer_8b_correct,"Seoul, South Korea",,
+5ae52bc75542992663a4f12d,Where was Nexon who was composed by Adam Gubman located at?,South Korea,writer_8b_shuffled,Hawaiian Islands,,
+5ae52bc75542992663a4f12d,Where was Nexon who was composed by Adam Gubman located at?,South Korea,writer_8b_zero,"The company was located in the United States. 
+
+But wait, I need to check if that's correct. Let me think. Nexon is a video game company. Adam Gubman is the composer. The company is based in the United States. Yes, that's right. So the answer is the United States",,
+5ae52bc75542992663a4f12d,Where was Nexon who was composed by Adam Gubman located at?,South Korea,pair_reader_8b,"Seoul, South Korea",,
+5a7fc6e45542992e7d278d73,Were Frank Tashlin and George Kuchar both animators?,no,question_only,"Yes, Frank Tashlin and George Kuchar were both animators. Frank Tashlin was a prominent American animator, director, and producer known for his work in the early to mid-20th century, particularly for his contributions to the Fleischer Studios and his role in the development of animation techniques. George",,
+5a7fc6e45542992e7d278d73,Were Frank Tashlin and George Kuchar both animators?,no,supporting_text,"Yes, Frank Tashlin was an animator, screenwriter, and film director, and George Kuchar was an underground film director and video artist. Both were involved in animation in their respective careers.
+Okay, let's tackle this question. The user is asking if Frank Tashlin and George Kuchar were both anim",,
+5a7fc6e45542992e7d278d73,Were Frank Tashlin and George Kuchar both animators?,no,native_4b,yes,,
+5a7fc6e45542992e7d278d73,Were Frank Tashlin and George Kuchar both animators?,no,native_4b_shuffled,no,,
+5a7fc6e45542992e7d278d73,Were Frank Tashlin and George Kuchar both animators?,no,raw_native_8b,yes,,
+5a7fc6e45542992e7d278d73,Were Frank Tashlin and George Kuchar both animators?,no,writer_8b_correct,yes,,
+5a7fc6e45542992e7d278d73,Were Frank Tashlin and George Kuchar both animators?,no,writer_8b_shuffled,no,,
+5a7fc6e45542992e7d278d73,Were Frank Tashlin and George Kuchar both animators?,no,writer_8b_zero,"Yes. Frank Tashlin was an American animator, director, and cartoonist known for his work in the 1930s and 1940s, particularly for creating the character of the ""Silly Symphonies"" and ""Tom and Jerry."" George Kuchar was also an American animator",,
+5a7fc6e45542992e7d278d73,Were Frank Tashlin and George Kuchar both animators?,no,pair_reader_8b,no,,
+5ac3d10b5542993915413952,"Which player is from Brazil, Jimmy Connors or Maria Bueno?",Maria Esther Andion Bueno,question_only,"Maria Bueno is the player from Brazil. Jimmy Connors is from the United States.
+
+Let me explain this. Maria Bueno was a famous tennis player from Brazil. She was known for her success in women's tennis, including winning multiple Grand Slam titles. On the other hand, Jimmy Connors was a top tennis",,
+5ac3d10b5542993915413952,"Which player is from Brazil, Jimmy Connors or Maria Bueno?",Maria Esther Andion Bueno,supporting_text,Maria Bueno is from Brazil.,,
+5ac3d10b5542993915413952,"Which player is from Brazil, Jimmy Connors or Maria Bueno?",Maria Esther Andion Bueno,native_4b,Maria Esther Andion Bueno,,
+5ac3d10b5542993915413952,"Which player is from Brazil, Jimmy Connors or Maria Bueno?",Maria Esther Andion Bueno,native_4b_shuffled,Maria Bueno,,
+5ac3d10b5542993915413952,"Which player is from Brazil, Jimmy Connors or Maria Bueno?",Maria Esther Andion Bueno,raw_native_8b,Maria Esther Andioniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónióniónión,,
+5ac3d10b5542993915413952,"Which player is from Brazil, Jimmy Connors or Maria Bueno?",Maria Esther Andion Bueno,writer_8b_correct,Maria Esther Andioniónióniónióniónión,,
+5ac3d10b5542993915413952,"Which player is from Brazil, Jimmy Connors or Maria Bueno?",Maria Esther Andion Bueno,writer_8b_shuffled,Jimmy Connors,,
+5ac3d10b5542993915413952,"Which player is from Brazil, Jimmy Connors or Maria Bueno?",Maria Esther Andion Bueno,writer_8b_zero,"Maria Bueno. 
+
+Step-by-step explanation: 
+
+1. Identify the two players: Jimmy Connors and Maria Bueno.
+2. Research their nationalities: 
+   - Jimmy Connors is an American tennis player.
+   - Maria Bueno is a Brazilian tennis player.
+3. Compare the nationalities to determine",,
+5ac3d10b5542993915413952,"Which player is from Brazil, Jimmy Connors or Maria Bueno?",Maria Esther Andion Bueno,pair_reader_8b,Maria Esther Andion Bueno,,
+5a8e8bed5542990e94052b47,What United Kingdom Prime Minister was succeeded in the 1990s by the Leader of the Conservative Party?,Margaret Thatcher,question_only,"Tony Blair
+Wait, no. That's not correct. The correct answer is William Hague. Let me think again. In the 1990s, the UK Prime Minister was Tony Blair, who was succeeded by William Hague. But wait, William Hague was the Leader of the Conservative Party, and he was",,
+5a8e8bed5542990e94052b47,What United Kingdom Prime Minister was succeeded in the 1990s by the Leader of the Conservative Party?,Margaret Thatcher,supporting_text,"John Major
+Answer: John Major
+Answer: John Major
+Answer: John Major
+Answer: John Major
+Answer: John Major
+Answer: John Major
+Answer: John Major
+Answer: John Major
+Answer: John Major
+Answer: John Major
+Answer: John Major
+Answer: John Major
+Answer",,
+5a8e8bed5542990e94052b47,What United Kingdom Prime Minister was succeeded in the 1990s by the Leader of the Conservative Party?,Margaret Thatcher,native_4b,John Major,,
+5a8e8bed5542990e94052b47,What United Kingdom Prime Minister was succeeded in the 1990s by the Leader of the Conservative Party?,Margaret Thatcher,native_4b_shuffled,ODU,,
+5a8e8bed5542990e94052b47,What United Kingdom Prime Minister was succeeded in the 1990s by the Leader of the Conservative Party?,Margaret Thatcher,raw_native_8b,John Major,,
+5a8e8bed5542990e94052b47,What United Kingdom Prime Minister was succeeded in the 1990s by the Leader of the Conservative Party?,Margaret Thatcher,writer_8b_correct,John Major,,
+5a8e8bed5542990e94052b47,What United Kingdom Prime Minister was succeeded in the 1990s by the Leader of the Conservative Party?,Margaret Thatcher,writer_8b_shuffled,William R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R. R,,
+5a8e8bed5542990e94052b47,What United Kingdom Prime Minister was succeeded in the 1990s by the Leader of the Conservative Party?,Margaret Thatcher,writer_8b_zero,"Tony Blair. 
+
+But wait, Tony Blair was the leader of the Labour Party, not the Conservative Party. The Leader of the Conservative Party in the 1990s was John Major. So the correct answer should be John Major. 
+
+But the question is asking who was succeeded by the Leader of the Conservative",,
+5a8e8bed5542990e94052b47,What United Kingdom Prime Minister was succeeded in the 1990s by the Leader of the Conservative Party?,Margaret Thatcher,pair_reader_8b,John Major,,
+5abf42f75542993fe9a41dee,which plant has the highest specie  Panicum or Populus,Panicum,question_only,"Panicum
+
+The answer is correct. But I need to explain why. So, how to explain that Panicum has more species than Populus?
+
+Well, first, I need to check the number of species in each genus. Panicum is a genus of grasses, and Populus is a genus of trees,",,
+5abf42f75542993fe9a41dee,which plant has the highest specie  Panicum or Populus,Panicum,supporting_text,"The genus Panicum has more species than Populus. Panicum has about 450 species, while Populus has 25–35 species.
+The answer should be in a box.",,
+5abf42f75542993fe9a41dee,which plant has the highest specie  Panicum or Populus,Panicum,native_4b,Panicum,,
+5abf42f75542993fe9a41dee,which plant has the highest specie  Panicum or Populus,Panicum,native_4b_shuffled,Populus,,
+5abf42f75542993fe9a41dee,which plant has the highest specie  Panicum or Populus,Panicum,raw_native_8b,Panicum,,
+5abf42f75542993fe9a41dee,which plant has the highest specie  Panicum or Populus,Panicum,writer_8b_correct,Panicum,,
+5abf42f75542993fe9a41dee,which plant has the highest specie  Panicum or Populus,Panicum,writer_8b_shuffled,Populus,,
+5abf42f75542993fe9a41dee,which plant has the highest specie  Panicum or Populus,Panicum,writer_8b_zero,"Panicum
+
+But wait, I need to check if this is correct. Let me think. Panicum is a genus of grasses, and Populus is a genus of trees, including willows and poplars. The question is about the number of species. I think Panicum has more species than Populus",,
+5abf42f75542993fe9a41dee,which plant has the highest specie  Panicum or Populus,Panicum,pair_reader_8b,Populus,,
+5a7905f555429974737f7947,Is Driss Lachgar's birthplace the largest or the second largest city in Morocco?,second largest,question_only,"Driss Lachgar was born in Meknes, Morocco. Meknes is the second largest city in Morocco. Therefore, the answer is second largest.
+
+But wait, I need to confirm the size of Meknes compared to other cities in Morocco. The largest city in Morocco is Casablanca,",,
+5a7905f555429974737f7947,Is Driss Lachgar's birthplace the largest or the second largest city in Morocco?,second largest,supporting_text,"Driss Lachgar was born in Rabat, which is the second largest city in Morocco. Therefore, the answer is second largest.
+Okay, let's tackle this question. The user is asking whether Driss Lachgar's birthplace is the largest or the second largest city in Morocco. 
+
+First, I",,
+5a7905f555429974737f7947,Is Driss Lachgar's birthplace the largest or the second largest city in Morocco?,second largest,native_4b,second largest,,
+5a7905f555429974737f7947,Is Driss Lachgar's birthplace the largest or the second largest city in Morocco?,second largest,native_4b_shuffled,no,,
+5a7905f555429974737f7947,Is Driss Lachgar's birthplace the largest or the second largest city in Morocco?,second largest,raw_native_8b,second largest city,,
+5a7905f555429974737f7947,Is Driss Lachgar's birthplace the largest or the second largest city in Morocco?,second largest,writer_8b_correct,second largest city,,
+5a7905f555429974737f7947,Is Driss Lachgar's birthplace the largest or the second largest city in Morocco?,second largest,writer_8b_shuffled,second largest,,
+5a7905f555429974737f7947,Is Driss Lachgar's birthplace the largest or the second largest city in Morocco?,second largest,writer_8b_zero,"Driss Lachgar was born in the city of Marrakech, which is the second largest city in Morocco. The largest city in Morocco is Casablanca. Therefore, the answer is second largest. 
+
+But wait, I should double-check the rankings of cities in Morocco. Marrakech is indeed the",,
+5a7905f555429974737f7947,Is Driss Lachgar's birthplace the largest or the second largest city in Morocco?,second largest,pair_reader_8b,second largest,,
+5a77aa8655429949eeb29f22,"What cast member of Flashbacks of a Fool was educated at Bryanston School in Blandford, Dorset?",Emilia Fox,question_only,"The cast member of Flashbacks of a Fool who was educated at Bryanston School in Blandford, Dorset is **David Tennant**. 
+
+Wait, but David Tennant is known for his role as the 10th Doctor in *Doctor Who*, not *Flashbacks of a Fool*. I need",,
+5a77aa8655429949eeb29f22,"What cast member of Flashbacks of a Fool was educated at Bryanston School in Blandford, Dorset?",Emilia Fox,supporting_text,Emilia Fox,,
+5a77aa8655429949eeb29f22,"What cast member of Flashbacks of a Fool was educated at Bryanston School in Blandford, Dorset?",Emilia Fox,native_4b,Claire Forlani,,
+5a77aa8655429949eeb29f22,"What cast member of Flashbacks of a Fool was educated at Bryanston School in Blandford, Dorset?",Emilia Fox,native_4b_shuffled,Bayport,,
+5a77aa8655429949eeb29f22,"What cast member of Flashbacks of a Fool was educated at Bryanston School in Blandford, Dorset?",Emilia Fox,raw_native_8b,Daniel Craig,,
+5a77aa8655429949eeb29f22,"What cast member of Flashbacks of a Fool was educated at Bryanston School in Blandford, Dorset?",Emilia Fox,writer_8b_correct,Claire Forlani,,
+5a77aa8655429949eeb29f22,"What cast member of Flashbacks of a Fool was educated at Bryanston School in Blandford, Dorset?",Emilia Fox,writer_8b_shuffled,Bayport,,
+5a77aa8655429949eeb29f22,"What cast member of Flashbacks of a Fool was educated at Bryanston School in Blandford, Dorset?",Emilia Fox,writer_8b_zero,"Richard E. Grant
+Okay, let's see. The question is asking which cast member of ""Flashbacks of a Fool"" was educated at Bryanston School in Blandford, Dorset. First, I need to recall who the cast members are of that show. Wait, ""Flashbacks of a Fool""",,
+5a77aa8655429949eeb29f22,"What cast member of Flashbacks of a Fool was educated at Bryanston School in Blandford, Dorset?",Emilia Fox,pair_reader_8b,Emilia Fox,,
+5ab56555554299494045ef97,"As a Nazi hunter, Simon Wiesenthal, was apart of a fued in what time frame?",1970s,question_only,"Simon Wiesenthal was involved in a feud with the Nazi war criminal Ernst Zündel from 1984 to 1989.
+
+Now, let's think about this. Simon Wiesenthal was a Nazi hunter, right? He was known for tracking down Nazi war criminals and bringing them to justice",,
+5ab56555554299494045ef97,"As a Nazi hunter, Simon Wiesenthal, was apart of a fued in what time frame?",1970s,supporting_text,"The Kreisky–Peter–Wiesenthal affair was a political and personal feud in the 1970s fought between the then Austrian chancellor Bruno Kreisky and the Nazi hunter Simon Wiesenthal arising from Kreisky's ministerial appointments and the SS past of Freedom Party leader Friedrich Peter, which had been revealed",,
+5ab56555554299494045ef97,"As a Nazi hunter, Simon Wiesenthal, was apart of a fued in what time frame?",1970s,native_4b,1970s,,
+5ab56555554299494045ef97,"As a Nazi hunter, Simon Wiesenthal, was apart of a fued in what time frame?",1970s,native_4b_shuffled,1955,,
+5ab56555554299494045ef97,"As a Nazi hunter, Simon Wiesenthal, was apart of a fued in what time frame?",1970s,raw_native_8b,1970s,,
+5ab56555554299494045ef97,"As a Nazi hunter, Simon Wiesenthal, was apart of a fued in what time frame?",1970s,writer_8b_correct,1970s,,
+5ab56555554299494045ef97,"As a Nazi hunter, Simon Wiesenthal, was apart of a fued in what time frame?",1970s,writer_8b_shuffled,1979,,
+5ab56555554299494045ef97,"As a Nazi hunter, Simon Wiesenthal, was apart of a fued in what time frame?",1970s,writer_8b_zero,"Simon Wiesenthal was a Nazi hunter who was involved in a feud with the Nazi regime during World War II. However, it is important to note that Wiesenthal himself was not a member of the Nazi Party and did not participate in the war crimes committed by the Nazis. Instead, he was a Jewish survivor who",,
+5ab56555554299494045ef97,"As a Nazi hunter, Simon Wiesenthal, was apart of a fued in what time frame?",1970s,pair_reader_8b,1970s,,
+5a7414d855429929fddd83db,"What English professional football club, won the 1994 European Cup? Arsenal",Arsenal,question_only,"The English professional football club that won the 1994 European Cup is **Bolton Wanderers**.
+
+Wait, that's not correct. The 1994 European Cup (now known as the UEFA Champions League) was won by **Bolton Wanderers**? No, that's not",,
+5a7414d855429929fddd83db,"What English professional football club, won the 1994 European Cup? Arsenal",Arsenal,supporting_text,The English professional football club that won the 1994 European Cup is Arsenal.,,
+5a7414d855429929fddd83db,"What English professional football club, won the 1994 European Cup? Arsenal",Arsenal,native_4b,Arsenal,,
+5a7414d855429929fddd83db,"What English professional football club, won the 1994 European Cup? Arsenal",Arsenal,native_4b_shuffled,University of Central Florida,,
+5a7414d855429929fddd83db,"What English professional football club, won the 1994 European Cup? Arsenal",Arsenal,raw_native_8b,Arsenal,,
+5a7414d855429929fddd83db,"What English professional football club, won the 1994 European Cup? Arsenal",Arsenal,writer_8b_correct,Arsenal,,
+5a7414d855429929fddd83db,"What English professional football club, won the 1994 European Cup? Arsenal",Arsenal,writer_8b_shuffled,University of Central Florida,,
+5a7414d855429929fddd83db,"What English professional football club, won the 1994 European Cup? Arsenal",Arsenal,writer_8b_zero,"The English professional football club that won the 1994 European Cup is **Bolton Wanderers**. 
+
+Wait, that's incorrect. The 1994 European Cup (now known as the UEFA Champions League) was won by **Bolton Wanderers**? No, that's not",,
+5a7414d855429929fddd83db,"What English professional football club, won the 1994 European Cup? Arsenal",Arsenal,pair_reader_8b,Arsenal,,
+5ac27d2555429963665199dc,The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach what?,music,question_only,"The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach **reading**.
+
+Step-by-step explanation:
+1. Maggie Gripenberg is known for her work in literacy and education.
+2. She introduced a specific teaching method to Finland.
+3. This method is associated with teaching reading",,
+5ac27d2555429963665199dc,The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach what?,music,supporting_text,"The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach music.
+
+
+**Thought Process:**
+First, I need to find out which teaching method Maggie Gripenberg introduced to Finland. Looking at the document about Maggie Gripenberg, Sentence 1 says she was the",,
+5ac27d2555429963665199dc,The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach what?,music,native_4b,music,,
+5ac27d2555429963665199dc,The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach what?,music,native_4b_shuffled,basketball,,
+5ac27d2555429963665199dc,The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach what?,music,raw_native_8b,music,,
+5ac27d2555429963665199dc,The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach what?,music,writer_8b_correct,music,,
+5ac27d2555429963665199dc,The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach what?,music,writer_8b_shuffled,basketball,,
+5ac27d2555429963665199dc,The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach what?,music,writer_8b_zero,"The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach **reading**. 
+
+**Step-by-Step Explanation:**
+
+1. **Identify the Key Person and Method:** Maggie Gripenberg is a notable figure in educational methods, particularly in Finland. She is known for her",,
+5ac27d2555429963665199dc,The teaching method that Maggie Gripenberg was the first to introduce to Finland is used to teach what?,music,pair_reader_8b,music,,
+5ae409d955429970de88d89d,Greetings! We're The Monitors was the debut album by the band who had what soul and R&B singer as their lead?,Richard Allen Street,question_only,"The Monitors was the debut album by the band **The Monitors**, and their lead singer was **Lil Wayne**. However, it's important to note that ""The Monitors"" is actually a band that was formed by Lil Wayne, but the album ""Greetings! We're The Monitors"" is not",,
+5ae409d955429970de88d89d,Greetings! We're The Monitors was the debut album by the band who had what soul and R&B singer as their lead?,Richard Allen Street,supporting_text,Richard Street,,
+5ae409d955429970de88d89d,Greetings! We're The Monitors was the debut album by the band who had what soul and R&B singer as their lead?,Richard Allen Street,native_4b,Paul Williams,,
+5ae409d955429970de88d89d,Greetings! We're The Monitors was the debut album by the band who had what soul and R&B singer as their lead?,Richard Allen Street,native_4b_shuffled,British Academy Film Awards,,
+5ae409d955429970de88d89d,Greetings! We're The Monitors was the debut album by the band who had what soul and R&B singer as their lead?,Richard Allen Street,raw_native_8b,The Temptations,,
+5ae409d955429970de88d89d,Greetings! We're The Monitors was the debut album by the band who had what soul and R&B singer as their lead?,Richard Allen Street,writer_8b_correct,The Temptations,,
+5ae409d955429970de88d89d,Greetings! We're The Monitors was the debut album by the band who had what soul and R&B singer as their lead?,Richard Allen Street,writer_8b_shuffled,British Academy Film Award,,
+5ae409d955429970de88d89d,Greetings! We're The Monitors was the debut album by the band who had what soul and R&B singer as their lead?,Richard Allen Street,writer_8b_zero,"The Monitors was the debut album by the band The Monitors, and their lead singer was **Soul and R&B singer** **Soul and R&B singer** **Soul and R&B singer** **Soul and R&B singer** **Soul and R&B singer** **Soul and R",,
+5ae409d955429970de88d89d,Greetings! We're The Monitors was the debut album by the band who had what soul and R&B singer as their lead?,Richard Allen Street,pair_reader_8b,Richard Street,,
+5a7180205542994082a3e856,"The creator of ""Wallace and Gromit"" also created what animation comedy that matched animated zoo animals with a soundtrack of people talking about their homes?",Creature Comforts,question_only,"The creator of ""Wallace and Gromit"" is Nick Park. He also created ""Aardman Animations,"" which is a studio known for creating various animated films. However, the specific animation comedy that matches animated zoo animals with a soundtrack of people talking about their homes is ""The Wrong Tuna."" This",,
+5a7180205542994082a3e856,"The creator of ""Wallace and Gromit"" also created what animation comedy that matched animated zoo animals with a soundtrack of people talking about their homes?",Creature Comforts,supporting_text,"Creature Comforts
+Answer: Creature Comforts
+Answer: Creature Comforts
+Answer: Creature Comforts
+Answer: Creature Comforts
+Answer: Creature Comforts
+Answer: Creature Comforts
+Answer: Creature Comforts
+Answer: Creature Comforts
+Answer: Creature Comforts
+Answer: Creature Comforts",,
+5a7180205542994082a3e856,"The creator of ""Wallace and Gromit"" also created what animation comedy that matched animated zoo animals with a soundtrack of people talking about their homes?",Creature Comforts,native_4b,Creature Comforts,,
+5a7180205542994082a3e856,"The creator of ""Wallace and Gromit"" also created what animation comedy that matched animated zoo animals with a soundtrack of people talking about their homes?",Creature Comforts,native_4b_shuffled,Game M5,,
+5a7180205542994082a3e856,"The creator of ""Wallace and Gromit"" also created what animation comedy that matched animated zoo animals with a soundtrack of people talking about their homes?",Creature Comforts,raw_native_8b,Shaun the Sheep,,
+5a7180205542994082a3e856,"The creator of ""Wallace and Gromit"" also created what animation comedy that matched animated zoo animals with a soundtrack of people talking about their homes?",Creature Comforts,writer_8b_correct,Creature Comfort,,
+5a7180205542994082a3e856,"The creator of ""Wallace and Gromit"" also created what animation comedy that matched animated zoo animals with a soundtrack of people talking about their homes?",Creature Comforts,writer_8b_shuffled,Game M5,,
+5a7180205542994082a3e856,"The creator of ""Wallace and Gromit"" also created what animation comedy that matched animated zoo animals with a soundtrack of people talking about their homes?",Creature Comforts,writer_8b_zero,"""A Chicken Run""",,
+5a7180205542994082a3e856,"The creator of ""Wallace and Gromit"" also created what animation comedy that matched animated zoo animals with a soundtrack of people talking about their homes?",Creature Comforts,pair_reader_8b,Creature Comforts,,
+5ae0bb2c5542993d6555ec27,The King of Hollywood starred in what 1932 American pre-Code dram film?,Strange Interlude,question_only,"The King of Hollywood"" is a 1932 American pre-Code drama film. The film was directed by John Ford and stars Clark Gable as the title character. However, I need to check if ""The King of Hollywood"" is the correct title of the film. Alternatively, it might be a different",,
+5ae0bb2c5542993d6555ec27,The King of Hollywood starred in what 1932 American pre-Code dram film?,Strange Interlude,supporting_text,The Match King,,
+5ae0bb2c5542993d6555ec27,The King of Hollywood starred in what 1932 American pre-Code dram film?,Strange Interlude,native_4b,Strange Interlude,,
+5ae0bb2c5542993d6555ec27,The King of Hollywood starred in what 1932 American pre-Code dram film?,Strange Interlude,native_4b_shuffled,The Sexual Intellectual,,
+5ae0bb2c5542993d6555ec27,The King of Hollywood starred in what 1932 American pre-Code dram film?,Strange Interlude,raw_native_8b,The King of Hollywood,,
+5ae0bb2c5542993d6555ec27,The King of Hollywood starred in what 1932 American pre-Code dram film?,Strange Interlude,writer_8b_correct,The King of Hollywood,,
+5ae0bb2c5542993d6555ec27,The King of Hollywood starred in what 1932 American pre-Code dram film?,Strange Interlude,writer_8b_shuffled,Laura Warholic,,
+5ae0bb2c5542993d6555ec27,The King of Hollywood starred in what 1932 American pre-Code dram film?,Strange Interlude,writer_8b_zero,"The Public Enemy
+
+The Public Enemy is a 1932 American pre-Code drama film directed by William S. Hart. It is notable for its depiction of the rise and fall of a gangster, and for its controversial content, which included themes of racial tension and violence. The film was a critical and",,
+5ae0bb2c5542993d6555ec27,The King of Hollywood starred in what 1932 American pre-Code dram film?,Strange Interlude,pair_reader_8b,Strange Interlude,,
+5a85ea095542994775f606a8,"What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",Animorphs,question_only,"The answer is ""The Expanse"" series. However, I need to check if this is correct. The Expanse series is a science fiction series, not fantasy, and it's not told in first person. The main series is written in third person. The companion books are part of the series, but they are",,
+5a85ea095542994775f606a8,"What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",Animorphs,supporting_text,"The Hork-Bajir Chronicles is a science fantasy young adult series, told in first person, that has a set of companion books narrating the stories of enslaved worlds and alien species.",,
+5a85ea095542994775f606a8,"What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",Animorphs,native_4b,Animorphs,,
+5a85ea095542994775f606a8,"What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",Animorphs,native_4b_shuffled,Kids React,,
+5a85ea095542994775f606a8,"What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",Animorphs,raw_native_8b,The Horkajirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirab,,
+5a85ea095542994775f606a8,"What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",Animorphs,writer_8b_correct,The Horkajirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirabirab,,
+5a85ea095542994775f606a8,"What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",Animorphs,writer_8b_shuffled,American Wrestling,,
+5a85ea095542994775f606a8,"What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",Animorphs,writer_8b_zero,"The series is ""The Expanse"" (also known as ""The Expanse"" or ""The Expanse"" series). The companion books are ""The Expanse"" (also known as ""The Expanse"" or ""The Expanse"" series). The series is told in first person. The set of companion books",,
+5a85ea095542994775f606a8,"What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",Animorphs,pair_reader_8b,Animorphs,,
+5ab201765542993be8fa98a4,Hobart Paving is a single by a band formed in which year ?,1990,question_only,"1983
+
+The question is about the band that released the song ""Hobart Paving"". The answer is 1983, which is the year the band was formed. 
+
+Now, I need to explain the reasoning process for this answer. The key here is to identify the band associated",,
+5ab201765542993be8fa98a4,Hobart Paving is a single by a band formed in which year ?,1990,supporting_text,1993,,
+5ab201765542993be8fa98a4,Hobart Paving is a single by a band formed in which year ?,1990,native_4b,1990,,
+5ab201765542993be8fa98a4,Hobart Paving is a single by a band formed in which year ?,1990,native_4b_shuffled,1999,,
+5ab201765542993be8fa98a4,Hobart Paving is a single by a band formed in which year ?,1990,raw_native_8b,1990,,
+5ab201765542993be8fa98a4,Hobart Paving is a single by a band formed in which year ?,1990,writer_8b_correct,1990,,
+5ab201765542993be8fa98a4,Hobart Paving is a single by a band formed in which year ?,1990,writer_8b_shuffled,199999999999999999999999999999999999999999999999999999999999999,,
+5ab201765542993be8fa98a4,Hobart Paving is a single by a band formed in which year ?,1990,writer_8b_zero,"1983
+
+The question is about the band that released the song ""Hobart Paving."" The answer is 1983, which is the year the band was formed. The song ""Hobart Paving"" is by the band The Raincoats, which was formed in",,
+5ab201765542993be8fa98a4,Hobart Paving is a single by a band formed in which year ?,1990,pair_reader_8b,1990,,
+5aba77be55429955dce3ee44,How many degrees and minutes south of the equator are the bone fragments of the extinct Ascension night heron found?,7°56',question_only,"The bone fragments of the Ascension night heron are found at 10° 35' S latitude, which is 10 degrees and 35 minutes south of the equator.
+
+So, the answer is 10 degrees and 35 minutes south of the equator. The answer should",,
+5aba77be55429955dce3ee44,How many degrees and minutes south of the equator are the bone fragments of the extinct Ascension night heron found?,7°56',supporting_text,The bone fragments of the extinct Ascension night heron are found 7°56' south of the equator.,,
+5aba77be55429955dce3ee44,How many degrees and minutes south of the equator are the bone fragments of the extinct Ascension night heron found?,7°56',native_4b,7°56' South,,
+5aba77be55429955dce3ee44,How many degrees and minutes south of the equator are the bone fragments of the extinct Ascension night heron found?,7°56',native_4b_shuffled,1939,,
+5aba77be55429955dce3ee44,How many degrees and minutes south of the equator are the bone fragments of the extinct Ascension night heron found?,7°56',raw_native_8b,7°56' South of the Equator,,
+5aba77be55429955dce3ee44,How many degrees and minutes south of the equator are the bone fragments of the extinct Ascension night heron found?,7°56',writer_8b_correct,7°56' South of the Equator,,
+5aba77be55429955dce3ee44,How many degrees and minutes south of the equator are the bone fragments of the extinct Ascension night heron found?,7°56',writer_8b_shuffled,250 million,,
+5aba77be55429955dce3ee44,How many degrees and minutes south of the equator are the bone fragments of the extinct Ascension night heron found?,7°56',writer_8b_zero,"15 degrees and 30 minutes south of the equator.
+
+But wait, the answer is 15 degrees and 30 minutes south of the equator. But the question is asking for the bone fragments of the extinct Ascension night heron. I need to check if that's correct.
+
+Wait",,
+5aba77be55429955dce3ee44,How many degrees and minutes south of the equator are the bone fragments of the extinct Ascension night heron found?,7°56',pair_reader_8b,7° 56' South,,
+5a88c68d55429938390d3fba,E! Hollywood Hold'em was hosted by a poker player of what nationality?,Irish,question_only,"The show was hosted by Michael ""Mike"" D'Antoni, who is of Italian-American nationality.
+
+Wait, but I think that's incorrect. Let me check again. Actually, the host of E! Hollywood Hold'em was not Michael D'Antoni. He was a basketball coach. The actual host of the",,
+5a88c68d55429938390d3fba,E! Hollywood Hold'em was hosted by a poker player of what nationality?,Irish,supporting_text,"The answer is American. 
+
+The question is asking about the nationality of the poker player who hosted E! Hollywood Hold'em. From the document, it says that E! Hollywood Hold'em is a poker television program that aired in 2005 on the E! television network. The show featured young celebrities, including",,
+5a88c68d55429938390d3fba,E! Hollywood Hold'em was hosted by a poker player of what nationality?,Irish,native_4b,Irish,,
+5a88c68d55429938390d3fba,E! Hollywood Hold'em was hosted by a poker player of what nationality?,Irish,native_4b_shuffled,American,,
+5a88c68d55429938390d3fba,E! Hollywood Hold'em was hosted by a poker player of what nationality?,Irish,raw_native_8b,Irish,,
+5a88c68d55429938390d3fba,E! Hollywood Hold'em was hosted by a poker player of what nationality?,Irish,writer_8b_correct,Irish,,
+5a88c68d55429938390d3fba,E! Hollywood Hold'em was hosted by a poker player of what nationality?,Irish,writer_8b_shuffled,American,,
+5a88c68d55429938390d3fba,E! Hollywood Hold'em was hosted by a poker player of what nationality?,Irish,writer_8b_zero,"American
+Okay, so I need to figure out the nationality of the poker player who hosted E! Hollywood Hold'em. Let me start by recalling what I know about this show. E! Hollywood Hold'em was a reality TV show that aired on the E! network. It was a poker competition where contestants played against each",,
+5a88c68d55429938390d3fba,E! Hollywood Hold'em was hosted by a poker player of what nationality?,Irish,pair_reader_8b,Irish,,
+5a75e29f5542992d0ec0600c,"What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",Charles Bronson,question_only,"The actor whose birth name was Charles Dennis Buchinsky and was part of the Leslie Nielsen comedy is **Bud Abbott**. However, it's important to note that Bud Abbott's birth name was actually **Charles Dennis Buchinsky**. He was a key member of the comedy team Abbott and Costello, which included Stan",,
+5a75e29f5542992d0ec0600c,"What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",Charles Bronson,supporting_text,Charles Bronson,,
+5a75e29f5542992d0ec0600c,"What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",Charles Bronson,native_4b,Charles Bronson,,
+5a75e29f5542992d0ec0600c,"What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",Charles Bronson,native_4b_shuffled,Frank Tashlin,,
+5a75e29f5542992d0ec0600c,"What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",Charles Bronson,raw_native_8b,Leslie Nielsen,,
+5a75e29f5542992d0ec0600c,"What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",Charles Bronson,writer_8b_correct,Charles Bronsey,,
+5a75e29f5542992d0ec0600c,"What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",Charles Bronson,writer_8b_shuffled,Frank Tashlin,,
+5a75e29f5542992d0ec0600c,"What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",Charles Bronson,writer_8b_zero,"Burt Reynolds
+
+Wait, but I need to check if that's correct. Let me think. Charles Dennis Buchinsky is the birth name of Burt Reynolds. He was part of the Leslie Nielsen comedy, which is ""The Producers"" (1967). But wait, ""The Producers"" is",,
+5a75e29f5542992d0ec0600c,"What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",Charles Bronson,pair_reader_8b,Charles Bronson,,
+5a88658955429938390d3f47,Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?,Conscription,question_only,"Rostker v. Goldberg held that the practice of conscription for the armed forces was constitutional.
+
+Wait, but I think that's not correct. Let me check. The case is Rostker v. Goldberg, 480 U.S. 419 (1987). The Supreme Court",,
+5a88658955429938390d3f47,Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?,Conscription,supporting_text,The Supreme Court held that the practice of requiring only men to register for the draft was constitutional.,,
+5a88658955429938390d3f47,Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?,Conscription,native_4b,draft,,
+5a88658955429938390d3f47,Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?,Conscription,native_4b_shuffled,public statement,,
+5a88658955429938390d3f47,Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?,Conscription,raw_native_8b,draft,,
+5a88658955429938390d3f47,Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?,Conscription,writer_8b_correct,draft,,
+5a88658955429938390d3f47,Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?,Conscription,writer_8b_shuffled,national home,,
+5a88658955429938390d3f47,Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?,Conscription,writer_8b_zero,"Rostker v. Goldberg held that the practice of filling armed forces vacancies with the most qualified applicants, regardless of sex, was constitutional. 
+
+But wait, I think I might be mixing this up with another case. Let me check. 
+
+Rostker v. Goldberg was a 1986 Supreme Court",,
+5a88658955429938390d3f47,Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?,Conscription,pair_reader_8b,requiring only men to register for the draft,,

@@ -1,0 +1,55 @@
+{
+  "generation": {
+    "full_text_lora_off": {
+      "em": 0.15625,
+      "token_f1": 0.2565173119101383,
+      "answer_nll": 8.803267523646355,
+      "count": 64
+    },
+    "full_text_lora_on_all": {
+      "em": 0.0,
+      "token_f1": 0.09400266410147445,
+      "answer_nll": 4.458808394148946,
+      "count": 64
+    },
+    "manual_fullcache_lora_off": {
+      "em": 0.140625,
+      "token_f1": 0.24152194365170346,
+      "answer_nll": 8.807966416701674,
+      "count": 64
+    },
+    "manual_fullcache_lora_on": {
+      "em": 0.0,
+      "token_f1": 0.10228085608903371,
+      "answer_nll": 4.677608195692301,
+      "count": 64
+    },
+    "native4_sparse_gold_lora_off": {
+      "em": 0.0,
+      "token_f1": 0.036314706869147645,
+      "answer_nll": 8.655059520155191,
+      "count": 64
+    },
+    "native4_sparse_gold_lora_on": {
+      "em": 0.53125,
+      "token_f1": 0.6755730380730381,
+      "answer_nll": 0.694717968563964,
+      "count": 64
+    },
+    "official_fullcache_lora_off": {
+      "em": 0.140625,
+      "token_f1": 0.24152194365170346,
+      "answer_nll": 8.807966416701674,
+      "count": 64
+    },
+    "official_fullcache_lora_on": {
+      "em": 0.0,
+      "token_f1": 0.10228085608903371,
+      "answer_nll": 4.677608195692301,
+      "count": 64
+    }
+  },
+  "samples": 64,
+  "reader_checkpoint": "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/artifacts/formal/sparse_reader/best.pt",
+  "hard_gate": null
+}

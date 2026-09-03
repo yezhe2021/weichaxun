@@ -1,0 +1,555 @@
+[
+  {
+    "update": 50,
+    "validation_answer_nll": 2.6538911170464417,
+    "selected": true,
+    "per_anchor_representation": [
+      {
+        "target_layer": 3,
+        "k_standardized_nmse": 2.032728135585785,
+        "v_standardized_nmse": 2.0263827592134476,
+        "k_cosine": -0.02715771133080125,
+        "v_cosine": 0.004916431731544435,
+        "route_kl": 9.858331441879272,
+        "attention_output_cosine": -0.01590758014936
+      },
+      {
+        "target_layer": 8,
+        "k_standardized_nmse": 2.0205942690372467,
+        "v_standardized_nmse": 2.006034702062607,
+        "k_cosine": -0.041431685647694394,
+        "v_cosine": -0.0024649500264786184,
+        "route_kl": 3.548832058906555,
+        "attention_output_cosine": -0.007765000103972852
+      },
+      {
+        "target_layer": 12,
+        "k_standardized_nmse": 1.9658369272947311,
+        "v_standardized_nmse": 1.9970903545618057,
+        "k_cosine": 0.019856296479701996,
+        "v_cosine": 0.012499769683927298,
+        "route_kl": 4.443817764520645,
+        "attention_output_cosine": -9.649957064539194e-06
+      },
+      {
+        "target_layer": 17,
+        "k_standardized_nmse": 1.9799813032150269,
+        "v_standardized_nmse": 2.0038148015737534,
+        "k_cosine": 0.05566743708914146,
+        "v_cosine": -0.007339042727835476,
+        "route_kl": 4.878065645694733,
+        "attention_output_cosine": -0.018142652115784585
+      },
+      {
+        "target_layer": 21,
+        "k_standardized_nmse": 1.9861625283956528,
+        "v_standardized_nmse": 1.9702108353376389,
+        "k_cosine": 0.018368573277257383,
+        "v_cosine": -0.014146037516184151,
+        "route_kl": 4.441904604434967,
+        "attention_output_cosine": -0.027121989871375263
+      },
+      {
+        "target_layer": 26,
+        "k_standardized_nmse": 2.0166686475276947,
+        "v_standardized_nmse": 1.9592423886060715,
+        "k_cosine": 0.035067961434833705,
+        "v_cosine": 5.709966353606433e-05,
+        "route_kl": 3.8491387367248535,
+        "attention_output_cosine": 0.018719599582254887
+      },
+      {
+        "target_layer": 30,
+        "k_standardized_nmse": 2.0182278901338577,
+        "v_standardized_nmse": 2.0037803649902344,
+        "k_cosine": -0.03463412565179169,
+        "v_cosine": -0.0032196113897953182,
+        "route_kl": 4.847262412309647,
+        "attention_output_cosine": -0.010975623736158013
+      },
+      {
+        "target_layer": 35,
+        "k_standardized_nmse": 1.9887924939393997,
+        "v_standardized_nmse": 1.9615322351455688,
+        "k_cosine": 0.0016779627185314894,
+        "v_cosine": -0.004909308088826947,
+        "route_kl": 4.1048402190208435,
+        "attention_output_cosine": -0.0042521527502685785
+      }
+    ]
+  },
+  {
+    "update": 100,
+    "validation_answer_nll": 2.598256846300501,
+    "selected": true,
+    "per_anchor_representation": [
+      {
+        "target_layer": 3,
+        "k_standardized_nmse": 2.0334807634353638,
+        "v_standardized_nmse": 2.025337442755699,
+        "k_cosine": -0.0243853252613917,
+        "v_cosine": 0.004878022591583431,
+        "route_kl": 9.836742162704468,
+        "attention_output_cosine": -0.013375303940847516
+      },
+      {
+        "target_layer": 8,
+        "k_standardized_nmse": 2.0189880579710007,
+        "v_standardized_nmse": 2.0051187574863434,
+        "k_cosine": -0.03783781742095016,
+        "v_cosine": -0.002037175538134761,
+        "route_kl": 3.548975646495819,
+        "attention_output_cosine": -0.005523101543076336
+      },
+      {
+        "target_layer": 12,
+        "k_standardized_nmse": 1.965428814291954,
+        "v_standardized_nmse": 1.9985421299934387,
+        "k_cosine": 0.03473605867475271,
+        "v_cosine": 0.012344418675638735,
+        "route_kl": 4.425573647022247,
+        "attention_output_cosine": 0.00038447382394224405
+      },
+      {
+        "target_layer": 17,
+        "k_standardized_nmse": 1.9831613600254059,
+        "v_standardized_nmse": 2.007060334086418,
+        "k_cosine": 0.059673905838280916,
+        "v_cosine": -0.008084740722551942,
+        "route_kl": 4.91682755947113,
+        "attention_output_cosine": -0.019444046018179506
+      },
+      {
+        "target_layer": 21,
+        "k_standardized_nmse": 1.9847920387983322,
+        "v_standardized_nmse": 1.9735260009765625,
+        "k_cosine": 0.02893153252080083,
+        "v_cosine": -0.01567951834294945,
+        "route_kl": 4.442135214805603,
+        "attention_output_cosine": -0.030293562333099544
+      },
+      {
+        "target_layer": 26,
+        "k_standardized_nmse": 2.013312414288521,
+        "v_standardized_nmse": 1.9594394117593765,
+        "k_cosine": 0.04085812880657613,
+        "v_cosine": 0.00027757324278354645,
+        "route_kl": 3.8510865569114685,
+        "attention_output_cosine": 0.019954868650529534
+      },
+      {
+        "target_layer": 30,
+        "k_standardized_nmse": 2.0188480615615845,
+        "v_standardized_nmse": 2.0039070546627045,
+        "k_cosine": -0.03555423207581043,
+        "v_cosine": -0.0032089241431094706,
+        "route_kl": 4.856700986623764,
+        "attention_output_cosine": -0.011341062257997692
+      },
+      {
+        "target_layer": 35,
+        "k_standardized_nmse": 1.9934775084257126,
+        "v_standardized_nmse": 1.9571457356214523,
+        "k_cosine": 0.03341037721838802,
+        "v_cosine": -0.0026157168322242796,
+        "route_kl": 4.066437631845474,
+        "attention_output_cosine": 0.0010087528498843312
+      }
+    ]
+  },
+  {
+    "update": 150,
+    "validation_answer_nll": 2.5887091966724256,
+    "selected": true,
+    "per_anchor_representation": [
+      {
+        "target_layer": 3,
+        "k_standardized_nmse": 2.0340800136327744,
+        "v_standardized_nmse": 2.0288463085889816,
+        "k_cosine": -0.012645279814023525,
+        "v_cosine": 0.0036856370279565454,
+        "route_kl": 9.883749604225159,
+        "attention_output_cosine": -0.014217227697372437
+      },
+      {
+        "target_layer": 8,
+        "k_standardized_nmse": 2.0211228728294373,
+        "v_standardized_nmse": 2.0057359486818314,
+        "k_cosine": -0.055361218517646194,
+        "v_cosine": -0.002337991121748928,
+        "route_kl": 3.5574590265750885,
+        "attention_output_cosine": -0.005907856160774827
+      },
+      {
+        "target_layer": 12,
+        "k_standardized_nmse": 1.9682033360004425,
+        "v_standardized_nmse": 2.0002789944410324,
+        "k_cosine": 0.03517846018075943,
+        "v_cosine": 0.012133310083299875,
+        "route_kl": 4.429729014635086,
+        "attention_output_cosine": 0.0009974497370421886
+      },
+      {
+        "target_layer": 17,
+        "k_standardized_nmse": 1.986367255449295,
+        "v_standardized_nmse": 2.0126257091760635,
+        "k_cosine": 0.0746585768647492,
+        "v_cosine": -0.010511912871152163,
+        "route_kl": 4.979653239250183,
+        "attention_output_cosine": -0.02152667910559103
+      },
+      {
+        "target_layer": 21,
+        "k_standardized_nmse": 1.9870953857898712,
+        "v_standardized_nmse": 1.9762162566184998,
+        "k_cosine": 0.036378037417307496,
+        "v_cosine": -0.01579225156456232,
+        "route_kl": 4.443024814128876,
+        "attention_output_cosine": -0.03006590937729925
+      },
+      {
+        "target_layer": 26,
+        "k_standardized_nmse": 2.0081361681222916,
+        "v_standardized_nmse": 1.9598827511072159,
+        "k_cosine": 0.05151556903729215,
+        "v_cosine": 0.0006148659740574658,
+        "route_kl": 3.8762928247451782,
+        "attention_output_cosine": 0.021734364505391568
+      },
+      {
+        "target_layer": 30,
+        "k_standardized_nmse": 2.0208826810121536,
+        "v_standardized_nmse": 2.004523813724518,
+        "k_cosine": -0.038477722089737654,
+        "v_cosine": -0.0029892328020650893,
+        "route_kl": 4.927529543638229,
+        "attention_output_cosine": -0.010567175690084696
+      },
+      {
+        "target_layer": 35,
+        "k_standardized_nmse": 1.9986933469772339,
+        "v_standardized_nmse": 1.9599551856517792,
+        "k_cosine": 0.033364309347234666,
+        "v_cosine": -0.0013462072820402682,
+        "route_kl": 4.0726927518844604,
+        "attention_output_cosine": 0.004460352705791593
+      }
+    ]
+  },
+  {
+    "update": 200,
+    "validation_answer_nll": 2.591079608679138,
+    "selected": false,
+    "per_anchor_representation": [
+      {
+        "target_layer": 3,
+        "k_standardized_nmse": 2.0340199023485184,
+        "v_standardized_nmse": 2.0330035388469696,
+        "k_cosine": 0.002806289354339242,
+        "v_cosine": 0.0031644751434214413,
+        "route_kl": 9.943604469299316,
+        "attention_output_cosine": -0.01446302654221654
+      },
+      {
+        "target_layer": 8,
+        "k_standardized_nmse": 2.025978833436966,
+        "v_standardized_nmse": 2.006507635116577,
+        "k_cosine": -0.07315171218942851,
+        "v_cosine": -0.0019301395877846517,
+        "route_kl": 3.587704747915268,
+        "attention_output_cosine": -0.0051016476936638355
+      },
+      {
+        "target_layer": 12,
+        "k_standardized_nmse": 1.973659172654152,
+        "v_standardized_nmse": 2.003211662173271,
+        "k_cosine": 0.030736202374100685,
+        "v_cosine": 0.011775430291891098,
+        "route_kl": 4.43850040435791,
+        "attention_output_cosine": 0.0008359317434951663
+      },
+      {
+        "target_layer": 17,
+        "k_standardized_nmse": 1.9947617650032043,
+        "v_standardized_nmse": 2.016771510243416,
+        "k_cosine": 0.0822284605819732,
+        "v_cosine": -0.010592856531729922,
+        "route_kl": 5.03587132692337,
+        "attention_output_cosine": -0.021345984801882878
+      },
+      {
+        "target_layer": 21,
+        "k_standardized_nmse": 1.9895184338092804,
+        "v_standardized_nmse": 1.9788642823696136,
+        "k_cosine": 0.04706885386258364,
+        "v_cosine": -0.015791747951880097,
+        "route_kl": 4.44518107175827,
+        "attention_output_cosine": -0.029037265572696924
+      },
+      {
+        "target_layer": 26,
+        "k_standardized_nmse": 2.0084958970546722,
+        "v_standardized_nmse": 1.960717797279358,
+        "k_cosine": 0.05780934446374886,
+        "v_cosine": 0.0008235934947151691,
+        "route_kl": 3.9057734608650208,
+        "attention_output_cosine": 0.022781627718359232
+      },
+      {
+        "target_layer": 30,
+        "k_standardized_nmse": 2.0252992808818817,
+        "v_standardized_nmse": 2.0059406459331512,
+        "k_cosine": -0.0366000784561038,
+        "v_cosine": -0.003030747117009014,
+        "route_kl": 4.973384499549866,
+        "attention_output_cosine": -0.010842921328730881
+      },
+      {
+        "target_layer": 35,
+        "k_standardized_nmse": 2.005315512418747,
+        "v_standardized_nmse": 1.9640505909919739,
+        "k_cosine": 0.02219444134971127,
+        "v_cosine": -0.001158256665803492,
+        "route_kl": 4.114653259515762,
+        "attention_output_cosine": 0.004368220455944538
+      }
+    ]
+  },
+  {
+    "update": 250,
+    "validation_answer_nll": 2.6466448004794074,
+    "selected": false,
+    "per_anchor_representation": [
+      {
+        "target_layer": 3,
+        "k_standardized_nmse": 2.0371830612421036,
+        "v_standardized_nmse": 2.039228707551956,
+        "k_cosine": 0.015438509290106595,
+        "v_cosine": 0.0015965530765242875,
+        "route_kl": 10.001623749732971,
+        "attention_output_cosine": -0.01730648591183126
+      },
+      {
+        "target_layer": 8,
+        "k_standardized_nmse": 2.0334010422229767,
+        "v_standardized_nmse": 2.0080195516347885,
+        "k_cosine": -0.10044701769948006,
+        "v_cosine": -0.001502536644693464,
+        "route_kl": 3.618254214525223,
+        "attention_output_cosine": -0.0034096784656867385
+      },
+      {
+        "target_layer": 12,
+        "k_standardized_nmse": 1.9809547364711761,
+        "v_standardized_nmse": 2.0064107477664948,
+        "k_cosine": 0.019024930894374847,
+        "v_cosine": 0.011698496178723872,
+        "route_kl": 4.457406133413315,
+        "attention_output_cosine": 0.0008442265680059791
+      },
+      {
+        "target_layer": 17,
+        "k_standardized_nmse": 2.0022684186697006,
+        "v_standardized_nmse": 2.020841270685196,
+        "k_cosine": 0.09055492095649242,
+        "v_cosine": -0.01128249173052609,
+        "route_kl": 5.086646616458893,
+        "attention_output_cosine": -0.021447852777782828
+      },
+      {
+        "target_layer": 21,
+        "k_standardized_nmse": 1.9960306137800217,
+        "v_standardized_nmse": 1.9808454066514969,
+        "k_cosine": 0.04913203697651625,
+        "v_cosine": -0.015210666111670434,
+        "route_kl": 4.449008464813232,
+        "attention_output_cosine": -0.02642542717512697
+      },
+      {
+        "target_layer": 26,
+        "k_standardized_nmse": 2.0102479457855225,
+        "v_standardized_nmse": 1.962181106209755,
+        "k_cosine": 0.06659499148372561,
+        "v_cosine": 0.0009136184380622581,
+        "route_kl": 3.948898106813431,
+        "attention_output_cosine": 0.02314069669228047
+      },
+      {
+        "target_layer": 30,
+        "k_standardized_nmse": 2.0303101986646652,
+        "v_standardized_nmse": 2.0077661126852036,
+        "k_cosine": -0.03485077270306647,
+        "v_cosine": -0.0036313195305410773,
+        "route_kl": 5.046968966722488,
+        "attention_output_cosine": -0.012839425005950034
+      },
+      {
+        "target_layer": 35,
+        "k_standardized_nmse": 2.0182577669620514,
+        "v_standardized_nmse": 1.9731127172708511,
+        "k_cosine": -0.00250643421895802,
+        "v_cosine": 0.0008058440580498427,
+        "route_kl": 4.169293254613876,
+        "attention_output_cosine": 0.009896409115754068
+      }
+    ]
+  },
+  {
+    "update": 300,
+    "validation_answer_nll": 2.7270736254067742,
+    "selected": false,
+    "per_anchor_representation": [
+      {
+        "target_layer": 3,
+        "k_standardized_nmse": 2.042499750852585,
+        "v_standardized_nmse": 2.046726956963539,
+        "k_cosine": 0.0323256904957816,
+        "v_cosine": -0.0014337152388179675,
+        "route_kl": 10.053136944770813,
+        "attention_output_cosine": -0.019141754833981395
+      },
+      {
+        "target_layer": 8,
+        "k_standardized_nmse": 2.039194628596306,
+        "v_standardized_nmse": 2.010100483894348,
+        "k_cosine": -0.11633151303976774,
+        "v_cosine": -0.0018154564750147983,
+        "route_kl": 3.6477639973163605,
+        "attention_output_cosine": -0.003975631901994348
+      },
+      {
+        "target_layer": 12,
+        "k_standardized_nmse": 1.990071639418602,
+        "v_standardized_nmse": 2.0111619383096695,
+        "k_cosine": 0.012052888050675392,
+        "v_cosine": 0.01228806795552373,
+        "route_kl": 4.482759594917297,
+        "attention_output_cosine": 0.003138511732686311
+      },
+      {
+        "target_layer": 17,
+        "k_standardized_nmse": 2.0162153095006943,
+        "v_standardized_nmse": 2.0264847576618195,
+        "k_cosine": 0.0968184438534081,
+        "v_cosine": -0.013127769459970295,
+        "route_kl": 5.1254207491874695,
+        "attention_output_cosine": -0.02546925435308367
+      },
+      {
+        "target_layer": 21,
+        "k_standardized_nmse": 2.004289820790291,
+        "v_standardized_nmse": 1.9832752794027328,
+        "k_cosine": 0.05547541892156005,
+        "v_cosine": -0.014395740465261042,
+        "route_kl": 4.4605496525764465,
+        "attention_output_cosine": -0.02313041058368981
+      },
+      {
+        "target_layer": 26,
+        "k_standardized_nmse": 2.0143426209688187,
+        "v_standardized_nmse": 1.9641453474760056,
+        "k_cosine": 0.07157106674276292,
+        "v_cosine": 0.0006185083911987022,
+        "route_kl": 3.9802516102790833,
+        "attention_output_cosine": 0.02186022506793961
+      },
+      {
+        "target_layer": 30,
+        "k_standardized_nmse": 2.0366073846817017,
+        "v_standardized_nmse": 2.0104790776968002,
+        "k_cosine": -0.03153465338982642,
+        "v_cosine": -0.003536991309374571,
+        "route_kl": 5.108682632446289,
+        "attention_output_cosine": -0.011607609980273992
+      },
+      {
+        "target_layer": 35,
+        "k_standardized_nmse": 2.030506730079651,
+        "v_standardized_nmse": 1.9846654385328293,
+        "k_cosine": -0.014639909903053194,
+        "v_cosine": 0.004479454553802498,
+        "route_kl": 4.225284725427628,
+        "attention_output_cosine": 0.01898420474026352
+      }
+    ]
+  },
+  {
+    "update": 350,
+    "validation_answer_nll": 2.8262107969712815,
+    "selected": false,
+    "per_anchor_representation": [
+      {
+        "target_layer": 3,
+        "k_standardized_nmse": 2.055065006017685,
+        "v_standardized_nmse": 2.0537787079811096,
+        "k_cosine": 0.04843154735863209,
+        "v_cosine": -0.0018008855258813128,
+        "route_kl": 10.075161576271057,
+        "attention_output_cosine": -0.01925505301915109
+      },
+      {
+        "target_layer": 8,
+        "k_standardized_nmse": 2.045028045773506,
+        "v_standardized_nmse": 2.0118785053491592,
+        "k_cosine": -0.13262320030480623,
+        "v_cosine": -0.0011874408810399473,
+        "route_kl": 3.662986397743225,
+        "attention_output_cosine": -0.002683716593310237
+      },
+      {
+        "target_layer": 12,
+        "k_standardized_nmse": 2.0003533363342285,
+        "v_standardized_nmse": 2.017276108264923,
+        "k_cosine": 0.0032993420027196407,
+        "v_cosine": 0.012513464665971696,
+        "route_kl": 4.5085830092430115,
+        "attention_output_cosine": 0.004099998797755688
+      },
+      {
+        "target_layer": 17,
+        "k_standardized_nmse": 2.028195410966873,
+        "v_standardized_nmse": 2.0320862531661987,
+        "k_cosine": 0.10041083721444011,
+        "v_cosine": -0.0131927314796485,
+        "route_kl": 5.191334843635559,
+        "attention_output_cosine": -0.023766677069943398
+      },
+      {
+        "target_layer": 21,
+        "k_standardized_nmse": 2.012674167752266,
+        "v_standardized_nmse": 1.9856719225645065,
+        "k_cosine": 0.058671428356319666,
+        "v_cosine": -0.01352710323408246,
+        "route_kl": 4.468503832817078,
+        "attention_output_cosine": -0.02041805488988757
+      },
+      {
+        "target_layer": 26,
+        "k_standardized_nmse": 2.0209496170282364,
+        "v_standardized_nmse": 1.9659995436668396,
+        "k_cosine": 0.07791679329238832,
+        "v_cosine": 0.0005791190778836608,
+        "route_kl": 3.997868001461029,
+        "attention_output_cosine": 0.021619378647301346
+      },
+      {
+        "target_layer": 30,
+        "k_standardized_nmse": 2.0463645607233047,
+        "v_standardized_nmse": 2.0120388716459274,
+        "k_cosine": -0.029248292092233896,
+        "v_cosine": -0.0030271311989054084,
+        "route_kl": 5.173433065414429,
+        "attention_output_cosine": -0.01039946498349309
+      },
+      {
+        "target_layer": 35,
+        "k_standardized_nmse": 2.045420989394188,
+        "v_standardized_nmse": 1.99621020257473,
+        "k_cosine": -0.03367965389043093,
+        "v_cosine": 0.00799506448674947,
+        "route_kl": 4.276399791240692,
+        "attention_output_cosine": 0.027374928002245724
+      }
+    ]
+  }
+]

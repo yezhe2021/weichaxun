@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "samples_checked": 16,
+  "truncated_samples": 2,
+  "sender_input": "evidence/context only; question absent",
+  "receiver_input": "question only plus external memory",
+  "channel": "Qwen3-4B native sparse pre-RoPE K and native V",
+  "reader_checkpoint": "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/artifacts/smoke/sparse_reader/best.pt",
+  "reader_checkpoint_sha256": "43883798e1d9a19e4b1120a12180cbb05e085d03a67175e400042d695d768f61",
+  "reader_lora": "q_proj and o_proj on all 36 layers, frozen",
+  "position_protocol": "R1 selected_position_ids",
+  "token_mask_preserved": true,
+  "depth_interaction": false
+}

@@ -1,0 +1,67 @@
+[2026-07-27 22:56:27] P0-B pipeline started
+[2026-07-27 22:56:27] Pipeline stage started: cpu_self_test 
+[2026-07-27 22:56:32] P0-B CPU structural self-test passed
+[2026-07-27 22:56:33] Pipeline stage completed: cpu_self_test
+[2026-07-27 22:56:33] Pipeline stage started: extract_a --limit 4
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:03,  6.26it/s]Loading weights:   4%|▍         | 17/399 [00:00<00:04, 76.63it/s]Loading weights:  10%|▉         | 38/399 [00:00<00:02, 120.44it/s]Loading weights:  15%|█▍        | 59/399 [00:00<00:02, 150.35it/s]Loading weights:  19%|█▉        | 76/399 [00:00<00:02, 148.86it/s]Loading weights:  23%|██▎       | 92/399 [00:00<00:02, 146.64it/s]Loading weights:  31%|███▏      | 125/399 [00:00<00:01, 196.87it/s]Loading weights:  37%|███▋      | 149/399 [00:00<00:01, 193.72it/s]Loading weights:  43%|████▎     | 171/399 [00:01<00:01, 196.31it/s]Loading weights:  48%|████▊     | 193/399 [00:01<00:01, 189.22it/s]Loading weights:  56%|█████▌    | 224/399 [00:01<00:00, 219.07it/s]Loading weights:  62%|██████▏   | 247/399 [00:01<00:00, 210.75it/s]Loading weights:  67%|██████▋   | 269/399 [00:01<00:00, 171.62it/s]Loading weights:  73%|███████▎  | 291/399 [00:01<00:00, 178.87it/s]Loading weights:  78%|███████▊  | 310/399 [00:01<00:00, 178.43it/s]Loading weights:  82%|████████▏ | 329/399 [00:01<00:00, 163.85it/s]Loading weights:  87%|████████▋ | 347/399 [00:02<00:00, 147.57it/s]Loading weights:  91%|█████████ | 363/399 [00:02<00:00, 113.95it/s]Loading weights: 100%|██████████| 399/399 [00:02<00:00, 169.93it/s]
+[2026-07-27 22:56:50] Native selector extraction a: 4 samples
+[2026-07-27 22:56:53] Native selector extraction a: 4/4
+[2026-07-27 22:56:54] Pipeline stage started: extract_b --limit 4
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 52/398 [00:00<00:01, 284.31it/s]Loading weights:  37%|███▋      | 147/398 [00:00<00:00, 568.34it/s]Loading weights:  54%|█████▎    | 213/398 [00:00<00:00, 473.06it/s]Loading weights:  67%|██████▋   | 267/398 [00:00<00:00, 403.32it/s]Loading weights:  84%|████████▍ | 336/398 [00:00<00:00, 474.94it/s]Loading weights:  98%|█████████▊| 389/398 [00:00<00:00, 475.20it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 466.01it/s]
+[2026-07-27 22:57:05] Native selector extraction b: 4 samples
+[2026-07-27 22:57:07] Native selector extraction b: 4/4
+[2026-07-27 22:57:08] Pipeline stage completed: smoke_selector_extraction
+[2026-07-27 22:57:08] Pipeline stage started: evaluate --limit 4
+[2026-07-27 22:57:15] Canonical condition completed: gold_only
+[2026-07-27 22:57:15] Canonical condition completed: gold_plus_distractors
+[2026-07-27 22:57:16] Canonical condition completed: auto_top_8
+[2026-07-27 22:57:16] Canonical condition completed: auto_top_4
+[2026-07-27 22:57:16] Canonical condition completed: auto_top_2
+[2026-07-27 22:57:17] Canonical condition completed: random_4
+[2026-07-27 22:57:18] Pipeline stage completed: smoke_passed
+[2026-07-27 22:57:18] Pipeline stage started: extract_a 
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:02,  6.41it/s]Loading weights:   7%|▋         | 28/399 [00:00<00:02, 130.01it/s]Loading weights:  11%|█         | 44/399 [00:00<00:04, 71.15it/s] Loading weights:  23%|██▎       | 91/399 [00:00<00:02, 151.95it/s]Loading weights:  28%|██▊       | 113/399 [00:00<00:01, 149.84it/s]Loading weights:  33%|███▎      | 132/399 [00:00<00:01, 155.15it/s]Loading weights:  38%|███▊      | 151/399 [00:01<00:01, 135.61it/s]Loading weights:  43%|████▎     | 171/399 [00:01<00:01, 132.53it/s]Loading weights:  47%|████▋     | 188/399 [00:01<00:01, 119.53it/s]Loading weights:  55%|█████▍    | 219/399 [00:01<00:01, 149.51it/s]Loading weights:  59%|█████▉    | 236/399 [00:01<00:01, 126.05it/s]Loading weights:  64%|██████▎   | 254/399 [00:01<00:01, 130.95it/s]Loading weights:  69%|██████▊   | 274/399 [00:02<00:00, 142.37it/s]Loading weights:  73%|███████▎  | 290/399 [00:02<00:00, 124.32it/s]Loading weights:  76%|███████▌  | 304/399 [00:02<00:00, 108.67it/s]Loading weights:  84%|████████▎ | 334/399 [00:02<00:00, 141.04it/s]Loading weights:  88%|████████▊ | 350/399 [00:02<00:00, 116.07it/s]Loading weights:  91%|█████████ | 364/399 [00:02<00:00, 117.59it/s]Loading weights:  99%|█████████▉| 395/399 [00:03<00:00, 156.70it/s]Loading weights: 100%|██████████| 399/399 [00:03<00:00, 129.87it/s]
+[2026-07-27 22:57:36] Native selector extraction a: 64 samples
+[2026-07-27 22:57:38] Native selector extraction a: 8/64
+[2026-07-27 22:57:40] Native selector extraction a: 12/64
+[2026-07-27 22:57:42] Native selector extraction a: 16/64
+[2026-07-27 22:57:44] Native selector extraction a: 20/64
+[2026-07-27 22:57:45] Native selector extraction a: 24/64
+[2026-07-27 22:57:47] Native selector extraction a: 28/64
+[2026-07-27 22:57:50] Native selector extraction a: 32/64
+[2026-07-27 22:57:51] Native selector extraction a: 36/64
+[2026-07-27 22:57:53] Native selector extraction a: 40/64
+[2026-07-27 22:57:56] Native selector extraction a: 44/64
+[2026-07-27 22:57:59] Native selector extraction a: 48/64
+[2026-07-27 22:58:02] Native selector extraction a: 52/64
+[2026-07-27 22:58:04] Native selector extraction a: 56/64
+[2026-07-27 22:58:07] Native selector extraction a: 60/64
+[2026-07-27 22:58:10] Native selector extraction a: 64/64
+[2026-07-27 22:58:11] Pipeline stage started: extract_b 
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:40,  9.85it/s]Loading weights:  11%|█         | 44/398 [00:00<00:01, 250.81it/s]Loading weights:  17%|█▋        | 69/398 [00:00<00:01, 234.50it/s]Loading weights:  23%|██▎       | 93/398 [00:00<00:01, 217.78it/s]Loading weights:  31%|███       | 124/398 [00:00<00:01, 239.87it/s]Loading weights:  40%|███▉      | 158/398 [00:00<00:01, 159.58it/s]Loading weights:  66%|██████▌   | 262/398 [00:00<00:00, 342.89it/s]Loading weights:  78%|███████▊  | 309/398 [00:01<00:00, 260.90it/s]Loading weights:  87%|████████▋ | 347/398 [00:01<00:00, 260.80it/s]Loading weights:  99%|█████████▉| 394/398 [00:01<00:00, 289.55it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 259.93it/s]
+[2026-07-27 22:58:23] Native selector extraction b: 64 samples
+[2026-07-27 22:58:26] Native selector extraction b: 8/64
+[2026-07-27 22:58:27] Native selector extraction b: 12/64
+[2026-07-27 22:58:29] Native selector extraction b: 16/64
+[2026-07-27 22:58:31] Native selector extraction b: 20/64
+[2026-07-27 22:58:33] Native selector extraction b: 24/64
+[2026-07-27 22:58:35] Native selector extraction b: 28/64
+[2026-07-27 22:58:37] Native selector extraction b: 32/64
+[2026-07-27 22:58:39] Native selector extraction b: 36/64
+[2026-07-27 22:58:41] Native selector extraction b: 40/64
+[2026-07-27 22:58:43] Native selector extraction b: 44/64
+[2026-07-27 22:58:46] Native selector extraction b: 48/64
+[2026-07-27 22:58:48] Native selector extraction b: 52/64
+[2026-07-27 22:58:51] Native selector extraction b: 56/64
+[2026-07-27 22:58:53] Native selector extraction b: 60/64
+[2026-07-27 22:58:55] Native selector extraction b: 64/64
+[2026-07-27 22:58:56] Pipeline stage completed: formal_selector_extraction
+[2026-07-27 22:58:56] Pipeline stage started: evaluate 
+[2026-07-27 22:59:11] Canonical condition completed: gold_only
+[2026-07-27 22:59:19] Canonical condition completed: gold_plus_distractors
+[2026-07-27 22:59:27] Canonical condition completed: auto_top_8
+[2026-07-27 22:59:36] Canonical condition completed: auto_top_4
+[2026-07-27 22:59:42] Canonical condition completed: auto_top_2
+[2026-07-27 22:59:51] Canonical condition completed: random_4
+[2026-07-27 22:59:52] Pipeline stage completed: final_evaluation
+[2026-07-27 22:59:52] P0-B pipeline completed

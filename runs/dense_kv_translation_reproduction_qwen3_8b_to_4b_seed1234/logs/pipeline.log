@@ -1,0 +1,122 @@
+[2026-07-26 16:48:41] Pipeline started
+[2026-07-26 16:48:41] Pipeline stage started: split
+[2026-07-26 16:48:45] Pipeline stage completed: split
+[2026-07-26 16:48:45] Pipeline stage completed: gate0_reused
+[2026-07-26 16:48:46] Pipeline stage completed: extract_sender_reused
+[2026-07-26 16:48:46] Pipeline stage completed: extract_receiver_reused
+[2026-07-26 16:48:46] Pipeline stage completed: phase1_formal_reused
+[2026-07-26 16:48:46] Pipeline stage completed: gate1_passed
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 973.83it/s]Loading weights:  51%|█████     | 201/398 [00:00<00:00, 974.20it/s]Loading weights:  75%|███████▌  | 300/398 [00:00<00:00, 978.42it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 984.62it/s]
+[2026-07-26 16:48:58] Phase-I generation sanity: started for 64 samples
+[2026-07-26 16:52:54] Phase-I generation sanity: 4/64 samples
+[2026-07-26 16:56:49] Phase-I generation sanity: 8/64 samples
+[2026-07-26 17:00:46] Phase-I generation sanity: 12/64 samples
+[2026-07-26 17:04:34] Phase-I generation sanity: 16/64 samples
+[2026-07-26 17:07:37] Phase-I generation sanity: 20/64 samples
+[2026-07-26 17:10:41] Phase-I generation sanity: 24/64 samples
+[2026-07-26 17:13:45] Phase-I generation sanity: 28/64 samples
+[2026-07-26 17:16:49] Phase-I generation sanity: 32/64 samples
+[2026-07-26 17:19:52] Phase-I generation sanity: 36/64 samples
+[2026-07-26 17:22:55] Phase-I generation sanity: 40/64 samples
+[2026-07-26 17:25:58] Phase-I generation sanity: 44/64 samples
+[2026-07-26 17:29:01] Phase-I generation sanity: 48/64 samples
+[2026-07-26 17:32:04] Phase-I generation sanity: 52/64 samples
+[2026-07-26 17:35:08] Phase-I generation sanity: 56/64 samples
+[2026-07-26 17:38:11] Phase-I generation sanity: 60/64 samples
+[2026-07-26 17:41:15] Phase-I generation sanity: 64/64 samples
+[2026-07-26 17:41:16] Phase-I generation sanity: completed
+[2026-07-26 17:41:16] Pipeline stage completed: phase1_generation_sanity
+[2026-07-26 17:41:16] Pipeline stage started: traces
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  29%|██▉       | 117/398 [00:00<00:00, 1168.80it/s]Loading weights:  59%|█████▉    | 234/398 [00:00<00:00, 1055.70it/s]Loading weights:  86%|████████▌ | 341/398 [00:00<00:00, 1041.38it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1070.13it/s]
+[2026-07-26 17:41:25] Receiver-self trace generation: started for 256 samples
+[2026-07-26 17:45:17] Receiver-self trace generation: 8/256 samples
+[2026-07-26 17:48:19] Receiver-self trace generation: 16/256 samples
+[2026-07-26 17:51:41] Receiver-self trace generation: 24/256 samples
+[2026-07-26 17:55:27] Receiver-self trace generation: 32/256 samples
+[2026-07-26 17:58:50] Receiver-self trace generation: 40/256 samples
+[2026-07-26 18:02:25] Receiver-self trace generation: 48/256 samples
+[2026-07-26 18:06:44] Receiver-self trace generation: 56/256 samples
+[2026-07-26 18:10:29] Receiver-self trace generation: 64/256 samples
+[2026-07-26 18:14:04] Receiver-self trace generation: 72/256 samples
+[2026-07-26 18:17:27] Receiver-self trace generation: 80/256 samples
+[2026-07-26 18:20:39] Receiver-self trace generation: 88/256 samples
+[2026-07-26 18:23:38] Receiver-self trace generation: 96/256 samples
+[2026-07-26 18:27:01] Receiver-self trace generation: 104/256 samples
+[2026-07-26 18:30:47] Receiver-self trace generation: 112/256 samples
+[2026-07-26 18:34:22] Receiver-self trace generation: 120/256 samples
+[2026-07-26 18:37:45] Receiver-self trace generation: 128/256 samples
+[2026-07-26 18:41:18] Receiver-self trace generation: 136/256 samples
+[2026-07-26 18:44:50] Receiver-self trace generation: 144/256 samples
+[2026-07-26 18:48:36] Receiver-self trace generation: 152/256 samples
+[2026-07-26 18:51:58] Receiver-self trace generation: 160/256 samples
+[2026-07-26 18:54:48] Receiver-self trace generation: 168/256 samples
+[2026-07-26 18:58:44] Receiver-self trace generation: 176/256 samples
+[2026-07-26 19:02:16] Receiver-self trace generation: 184/256 samples
+[2026-07-26 19:05:03] Receiver-self trace generation: 192/256 samples
+[2026-07-26 19:08:36] Receiver-self trace generation: 200/256 samples
+[2026-07-26 19:11:35] Receiver-self trace generation: 208/256 samples
+[2026-07-26 19:14:57] Receiver-self trace generation: 216/256 samples
+[2026-07-26 19:16:59] Receiver-self trace generation: 224/256 samples
+[2026-07-26 19:19:23] Receiver-self trace generation: 232/256 samples
+[2026-07-26 19:22:35] Receiver-self trace generation: 240/256 samples
+[2026-07-26 19:26:21] Receiver-self trace generation: 248/256 samples
+[2026-07-26 19:30:07] Receiver-self trace generation: 256/256 samples
+[2026-07-26 19:30:07] Receiver-self trace generation: completed
+[2026-07-26 19:30:08] Pipeline stage completed: traces
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  31%|███▏      | 125/398 [00:00<00:00, 1229.33it/s]Loading weights:  62%|██████▏   | 248/398 [00:00<00:00, 1174.43it/s]Loading weights:  92%|█████████▏| 366/398 [00:00<00:00, 1078.05it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1113.81it/s]
+[2026-07-26 19:30:16] Phase II: started for 300 optimization steps
+[2026-07-26 19:31:22] Phase II: step 10/300
+[2026-07-26 19:31:50] Phase II: step 20/300
+[2026-07-26 19:31:56] Phase II: step 30/300
+[2026-07-26 19:32:14] Phase II: step 40/300
+[2026-07-26 19:32:32] Phase II: step 50/300
+[2026-07-26 19:32:38] Phase II: step 60/300
+[2026-07-26 19:32:44] Phase II: step 70/300
+[2026-07-26 19:32:51] Phase II: step 80/300
+[2026-07-26 19:32:58] Phase II: step 90/300
+[2026-07-26 19:33:06] Phase II: step 100/300
+[2026-07-26 19:33:13] Phase II: step 110/300
+[2026-07-26 19:33:21] Phase II: step 120/300
+[2026-07-26 19:33:39] Phase II: step 130/300
+[2026-07-26 19:33:46] Phase II: step 140/300
+[2026-07-26 19:33:53] Phase II: step 150/300
+[2026-07-26 19:34:01] Phase II: step 160/300
+[2026-07-26 19:34:09] Phase II: step 170/300
+[2026-07-26 19:34:28] Phase II: step 180/300
+[2026-07-26 19:34:48] Phase II: step 190/300
+[2026-07-26 19:34:55] Phase II: step 200/300
+[2026-07-26 19:35:02] Phase II: step 210/300
+[2026-07-26 19:35:09] Phase II: step 220/300
+[2026-07-26 19:35:26] Phase II: step 230/300
+[2026-07-26 19:35:33] Phase II: step 240/300
+[2026-07-26 19:35:40] Phase II: step 250/300
+[2026-07-26 19:35:57] Phase II: step 260/300
+[2026-07-26 19:36:04] Phase II: step 270/300
+[2026-07-26 19:36:33] Phase II: step 280/300
+[2026-07-26 19:36:39] Phase II: step 290/300
+[2026-07-26 19:36:46] Phase II: step 300/300
+[2026-07-26 19:36:49] Phase II: completed
+[2026-07-26 19:36:49] Pipeline stage completed: phase2
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1127.26it/s]Loading weights:  57%|█████▋    | 226/398 [00:00<00:00, 1097.63it/s]Loading weights:  86%|████████▌ | 341/398 [00:00<00:00, 1107.81it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1029.02it/s]
+[2026-07-26 19:37:03] Final evaluation: started for 64 samples
+[2026-07-26 19:40:46] Final evaluation: 4/64 samples
+[2026-07-26 19:44:34] Final evaluation: 8/64 samples
+[2026-07-26 19:48:22] Final evaluation: 12/64 samples
+[2026-07-26 19:52:11] Final evaluation: 16/64 samples
+[2026-07-26 19:55:56] Final evaluation: 20/64 samples
+[2026-07-26 19:59:41] Final evaluation: 24/64 samples
+[2026-07-26 20:03:26] Final evaluation: 28/64 samples
+[2026-07-26 20:07:11] Final evaluation: 32/64 samples
+[2026-07-26 20:10:58] Final evaluation: 36/64 samples
+[2026-07-26 20:14:44] Final evaluation: 40/64 samples
+[2026-07-26 20:18:30] Final evaluation: 44/64 samples
+[2026-07-26 20:22:16] Final evaluation: 48/64 samples
+[2026-07-26 20:26:04] Final evaluation: 52/64 samples
+[2026-07-26 20:29:55] Final evaluation: 56/64 samples
+[2026-07-26 20:33:45] Final evaluation: 60/64 samples
+[2026-07-26 20:37:59] Final evaluation: 64/64 samples
+[2026-07-26 20:37:59] Final evaluation: completed
+[2026-07-26 20:37:59] Pipeline stage completed: final_evaluation
+[2026-07-26 20:37:59] Pipeline completed

@@ -1,0 +1,110 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-J Canonical Soft-Prefix Executability Diagnosis",
+  "stage": "a",
+  "mode": "smoke16",
+  "samples": 16,
+  "epochs": 2,
+  "best_epoch": 2,
+  "best_training_loss": 0.7514387629926205,
+  "initialization": {
+    "initialized_from": "random",
+    "target_rms": 0.02070448361337185
+  },
+  "interface_equivalence": {
+    "prefill_max_abs_logit_difference": 0.0,
+    "prefill_mean_abs_logit_difference": 0.0,
+    "cache_next_max_abs_logit_difference": 0.0,
+    "cache_next_mean_abs_logit_difference": 0.0,
+    "next_token_equal": true,
+    "position_ids_equal": true,
+    "causal_mask_equal": true,
+    "sequence_tokens": 265
+  },
+  "initial_sample_reconstruction": {
+    "tokens": 227,
+    "embedding_cosine": -0.001070761471055448,
+    "embedding_mse": 0.0008528467151336372,
+    "position_quartiles": {
+      "0": {
+        "cosine": -0.0022632565815001726,
+        "mse": 0.0008641626918688416
+      },
+      "1": {
+        "cosine": 0.00026256198179908097,
+        "mse": 0.0008444078266620636
+      },
+      "2": {
+        "cosine": -0.0020819357596337795,
+        "mse": 0.000846443057525903
+      },
+      "3": {
+        "cosine": -0.0002213368861703202,
+        "mse": 0.0008565720054320991
+      }
+    }
+  },
+  "final_sample_reconstruction": {
+    "tokens": 227,
+    "embedding_cosine": 0.2742684781551361,
+    "embedding_mse": 0.0006291504250839353,
+    "position_quartiles": {
+      "0": {
+        "cosine": 0.28649359941482544,
+        "mse": 0.0006282423273660243
+      },
+      "1": {
+        "cosine": 0.25142714381217957,
+        "mse": 0.0006422557635232806
+      },
+      "2": {
+        "cosine": 0.317298948764801,
+        "mse": 0.0005894352798350155
+      },
+      "3": {
+        "cosine": 0.24206870794296265,
+        "mse": 0.0006566525553353131
+      }
+    }
+  },
+  "decoder_metadata": {
+    "layers": 16,
+    "canonical_heads": 16,
+    "head_dim": 128,
+    "fusion_dim": 128,
+    "hidden_size": 512,
+    "receiver_dim": 2560,
+    "transformer_layers": 2,
+    "transformer_heads": 8,
+    "ffn_dim": 2048,
+    "max_tokens": 1024,
+    "target_rms": 0.02070448361337185,
+    "token_axis_preserved": true,
+    "slot_compression": false,
+    "question_conditioned": false
+  },
+  "trainable_parameters": 8279297,
+  "receiver_trainable_parameters": 0,
+  "receiver_frozen_gradient_audit": "passed_each_step",
+  "canonical_index_sha256": "3c6f055eff554f9739df1c19f818d7980cb4aafca7d3ace2a2ae3313c6c3a3d2",
+  "native_index_sha256": "296ff87a3c27d821f1d5c316d98c682109847ce05dace4cc9b5fc59e57c9ea14",
+  "fixed_c2_writer_checkpoint": "/home/yezhe/伪查询/runs/p3e_c2_learned_head_structured_writer_seed1234/writer_formal512/worker/checkpoint_best.pt",
+  "fixed_c2_writer_sha256": "ffca105246292d876dda62e06b5b7c90b32952df065ad28ba5100d3094a55d1a",
+  "data_sha256": "104399e1fe9686cb63a2a574b484b1d1eef6dacebb641909a533d74c9d69b313",
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 0.8222497701644897,
+      "embedding_cosine": 0.17782233282923698,
+      "embedding_mse": 0.0007209997675090563,
+      "gradient_norm": 0.17401473736390471
+    },
+    {
+      "epoch": 2,
+      "loss": 0.7514387629926205,
+      "embedding_cosine": 0.2486276738345623,
+      "embedding_mse": 0.0006644296954618767,
+      "gradient_norm": 0.06581871537491679
+    }
+  ]
+}

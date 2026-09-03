@@ -1,0 +1,57 @@
+{
+  "writer": "d2",
+  "checkpoint": "checkpoints/quick/d2/stage_a/best.pt",
+  "sample_count": 4,
+  "functional_modes": [
+    "final"
+  ],
+  "rows": [
+    {
+      "sample_id": "3114",
+      "functional_mode": "final",
+      "functional_kl": 1.4552282094955444,
+      "gradient": {
+        "norm": 173.68356914780477,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "471",
+      "functional_mode": "final",
+      "functional_kl": 8.460922241210938,
+      "gradient": {
+        "norm": 671.5478409435996,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "3851",
+      "functional_mode": "final",
+      "functional_kl": 2.4563071727752686,
+      "gradient": {
+        "norm": 609.2971727668122,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "10446",
+      "functional_mode": "final",
+      "functional_kl": 0.6688992977142334,
+      "gradient": {
+        "norm": 253.7246589185473,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    }
+  ],
+  "receiver_gradient_count": 0,
+  "kv_hidden_losses_present_in_training_graph": false,
+  "gold_label_used": false
+}

@@ -1,0 +1,56 @@
+{
+  "q35_anchor8_no_memory_lora_off": {
+    "count": 64,
+    "em": 0.0,
+    "token_f1": 0.03866871641906909,
+    "nll": 3.7492702584713697,
+    "bridge_em": 0.0,
+    "bridge_f1": 0.029523975666974435,
+    "comparison_em": 0.0,
+    "comparison_f1": 0.07829592634481258
+  },
+  "q35_full_text": {
+    "count": 64,
+    "em": 0.0,
+    "token_f1": 0.04916683362758918,
+    "nll": 3.6779296547174454,
+    "bridge_em": 0.0,
+    "bridge_f1": 0.03968567435722657,
+    "comparison_em": 0.0,
+    "comparison_f1": 0.09025185713249383
+  },
+  "q35_native_anchor8_lora_off": {
+    "count": 64,
+    "em": 0.0,
+    "token_f1": 0.05254189305703624,
+    "nll": 4.685271791182458,
+    "bridge_em": 0.0,
+    "bridge_f1": 0.045386097608803265,
+    "comparison_em": 0.0,
+    "comparison_f1": 0.08355033999937912
+  },
+  "q35_native_anchor8_shuffled_lora_off": {
+    "count": 64,
+    "em": 0.0,
+    "token_f1": 0.036447339843123136,
+    "nll": 6.663325496017933,
+    "bridge_em": 0.0,
+    "bridge_f1": 0.02646905583232292,
+    "comparison_em": 0.0,
+    "comparison_f1": 0.07968657055659069
+  },
+  "q35_official_hybrid_cache": {
+    "count": 64,
+    "em": 0.0,
+    "token_f1": 0.04645932959962715,
+    "nll": 3.6796235786750913,
+    "bridge_em": 0.0,
+    "bridge_f1": 0.037523409946937245,
+    "comparison_em": 0.0,
+    "comparison_f1": 0.08518164809461666
+  },
+  "decision": {
+    "train_reader": true,
+    "smoke_forces_training_path": false
+  }
+}

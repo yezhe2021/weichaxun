@@ -1,0 +1,21 @@
+{
+  "experiment_name": "p0a2_v_content_sufficiency_qwen3_8b_qwen3_4b_hotpotqa_seed1234",
+  "seed": 1234,
+  "source_p0a_dir": "/home/yezhe/可拔插/p0a_canonical_coregistration_qwen3_8b_qwen3_4b_hotpotqa_seed1234",
+  "work_dir": "/home/yezhe/可拔插/p0a2_v_content_sufficiency_qwen3_8b_qwen3_4b_hotpotqa_seed1234",
+  "text_encoder": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+  "hotpot_train": "/home/yezhe/数据集/HotpotQA/raw/hotpot_train_v1.1.json",
+  "hotpot_validation": "/home/yezhe/数据集/HotpotQA/raw/hotpot_dev_distractor_v1.json",
+  "modes": ["raw_native", "private_writer", "shared_canonical"],
+  "smoke_train_size": 8,
+  "smoke_validation_size": 4,
+  "text_batch_size": 8,
+  "text_max_tokens": 128,
+  "probe_learning_rate": 0.0003,
+  "probe_weight_decay": 0.01,
+  "probe_temperature": 0.07,
+  "probe_batch_size": 8,
+  "smoke_epochs": 2,
+  "formal_epochs": 10,
+  "gradient_clip": 1.0
+}

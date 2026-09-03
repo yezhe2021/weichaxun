@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "errors": [],
+  "writer": "/home/yezhe/伪查询/runs/p3e_c2_learned_head_structured_writer_seed1234/writer_formal512/worker/checkpoint_best.pt",
+  "writer_sha256": "ffca105246292d876dda62e06b5b7c90b32952df065ad28ba5100d3094a55d1a",
+  "qwen35_geometry": {
+    "layers": 32,
+    "query_heads": 16,
+    "kv_heads": 4,
+    "head_dim": 256,
+    "hidden_size": 2560,
+    "full_layers": [
+      3,
+      7,
+      11,
+      15,
+      19,
+      23,
+      27,
+      31
+    ]
+  },
+  "pipeline": [
+    "C3-A fully_random two seeds",
+    "C3-A weak_pair two seeds",
+    "C3-B pair ablation two strict seeds",
+    "C4 Qwen3.5 two seeds"
+  ],
+  "unconditional_execution": true,
+  "score_based_early_stop": false
+}

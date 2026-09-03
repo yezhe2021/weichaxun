@@ -1,0 +1,156 @@
+{
+  "native4_correct": {
+    "em": 0.5,
+    "token_f1": 0.6484897047397048,
+    "nll": 0.8564792119186677,
+    "bridge_f1": 0.6656625425856196,
+    "comparison_f1": 0.5740740740740741,
+    "count": 64
+  },
+  "native4_shuffled": {
+    "em": 0.09375,
+    "token_f1": 0.12437996031746032,
+    "nll": 6.319248632349627,
+    "bridge_f1": 0.0728021978021978,
+    "comparison_f1": 0.3478835978835979,
+    "count": 64
+  },
+  "native4_zero": {
+    "em": 0.0,
+    "token_f1": 0.03327021384599063,
+    "nll": 6.358541622757912,
+    "bridge_f1": 0.02387299997713588,
+    "comparison_f1": 0.07399147394436127,
+    "count": 64
+  },
+  "question_only": {
+    "em": 0.0,
+    "token_f1": 0.032099305251472456,
+    "nll": 7.54943423718214,
+    "bridge_f1": 0.02285596471461006,
+    "comparison_f1": 0.07215378091120943,
+    "count": 64
+  },
+  "raw8_correct": {
+    "em": 0.359375,
+    "token_f1": 0.5035199175824177,
+    "nll": 1.138151302739061,
+    "bridge_f1": 0.4997534516765286,
+    "comparison_f1": 0.5198412698412698,
+    "count": 64
+  },
+  "raw8_shuffled": {
+    "em": 0.046875,
+    "token_f1": 0.06961805555555556,
+    "nll": 6.062522755259124,
+    "bridge_f1": 0.028846153846153848,
+    "comparison_f1": 0.24629629629629632,
+    "count": 64
+  },
+  "reader_off": {
+    "em": 0.0,
+    "token_f1": 0.032217116201725175,
+    "nll": 11.127881180495024,
+    "bridge_f1": 0.023995260543078913,
+    "comparison_f1": 0.06784515738919235,
+    "count": 64
+  },
+  "supporting_text": {
+    "em": 0.15625,
+    "token_f1": 0.2565173119101383,
+    "nll": 8.803267523646355,
+    "bridge_f1": 0.27154016214443355,
+    "comparison_f1": 0.19141829422819248,
+    "count": 64
+  },
+  "writer_full_correct": {
+    "em": 0.453125,
+    "token_f1": 0.5760938714063714,
+    "nll": 0.9651201639862848,
+    "bridge_f1": 0.5893804913035682,
+    "comparison_f1": 0.5185185185185185,
+    "count": 64
+  },
+  "writer_full_shuffled": {
+    "em": 0.0625,
+    "token_f1": 0.08866567460317461,
+    "nll": 6.137323493792792,
+    "bridge_f1": 0.028846153846153848,
+    "comparison_f1": 0.3478835978835979,
+    "count": 64
+  },
+  "writer_full_zero": {
+    "em": 0.0,
+    "token_f1": 0.03327021384599063,
+    "nll": 6.358541622757912,
+    "bridge_f1": 0.02387299997713588,
+    "comparison_f1": 0.07399147394436127,
+    "count": 64
+  },
+  "writer_linear_correct": {
+    "em": 0.484375,
+    "token_f1": 0.6126283005189256,
+    "nll": 0.9412128642125026,
+    "bridge_f1": 0.6151151732882503,
+    "comparison_f1": 0.6018518518518519,
+    "count": 64
+  },
+  "writer_linear_shuffled": {
+    "em": 0.046875,
+    "token_f1": 0.07304067460317461,
+    "nll": 6.287342916253692,
+    "bridge_f1": 0.028846153846153848,
+    "comparison_f1": 0.26455026455026454,
+    "count": 64
+  },
+  "writer_linear_zero": {
+    "em": 0.0,
+    "token_f1": 0.03327021384599063,
+    "nll": 6.358541622757912,
+    "bridge_f1": 0.02387299997713588,
+    "comparison_f1": 0.07399147394436127,
+    "count": 64
+  },
+  "writer_mlp_correct": {
+    "em": 0.453125,
+    "token_f1": 0.5930581571206571,
+    "nll": 1.0097373296339356,
+    "bridge_f1": 0.6102596121826891,
+    "comparison_f1": 0.5185185185185185,
+    "count": 64
+  },
+  "writer_mlp_shuffled": {
+    "em": 0.078125,
+    "token_f1": 0.10429067460317461,
+    "nll": 6.2596730739751365,
+    "bridge_f1": 0.04807692307692308,
+    "comparison_f1": 0.3478835978835979,
+    "count": 64
+  },
+  "writer_mlp_zero": {
+    "em": 0.0,
+    "token_f1": 0.03327021384599063,
+    "nll": 6.358541622757912,
+    "bridge_f1": 0.02387299997713588,
+    "comparison_f1": 0.07399147394436127,
+    "count": 64
+  },
+  "writer_linear_diagnostics": {
+    "retention": 0.96875,
+    "correct_shuffled_em_gap": 0.4375,
+    "correct_shuffled_nll_gap": 5.34613005204119,
+    "criteria_diagnostic_only": true
+  },
+  "writer_mlp_diagnostics": {
+    "retention": 0.90625,
+    "correct_shuffled_em_gap": 0.375,
+    "correct_shuffled_nll_gap": 5.249935744341201,
+    "criteria_diagnostic_only": true
+  },
+  "writer_full_diagnostics": {
+    "retention": 0.90625,
+    "correct_shuffled_em_gap": 0.390625,
+    "correct_shuffled_nll_gap": 5.172203329806507,
+    "criteria_diagnostic_only": true
+  }
+}

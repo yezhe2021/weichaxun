@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "train": 512,
+  "validation": 64,
+  "test": 64,
+  "reader_checkpoint": "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/artifacts/formal/sparse_reader/best.pt",
+  "reader_receiver_lora_frozen": true,
+  "writer_input": "8B evidence KV only; no question",
+  "channel_shape": [
+    36,
+    "T<=128",
+    8,
+    128
+  ],
+  "f0": "scale-only, no training",
+  "f1": "scale-only initialization, functional-only training",
+  "f2": "previous linear Stage-A initialization, functional-only training",
+  "optimized_losses": [
+    "answer_nll",
+    "native_output_distillation",
+    "dependence_margin"
+  ],
+  "diagnostic_only": [
+    "kv",
+    "cosine",
+    "route",
+    "attention_output"
+  ],
+  "hard_gates_enforced": false
+}

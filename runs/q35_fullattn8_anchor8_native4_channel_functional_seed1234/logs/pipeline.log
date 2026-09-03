@@ -1,0 +1,59 @@
+[2026-08-01 11:05:51] development: start audit
+[2026-08-01 11:05:56] development: asset and protocol audit passed
+[2026-08-01 11:05:57] development: start upper_bound
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1083.37it/s]Loading weights:  59%|█████▉    | 234/398 [00:00<00:00, 1150.20it/s]Loading weights:  88%|████████▊ | 350/398 [00:00<00:00, 1092.21it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1110.95it/s]
+[2026-08-01 11:06:08] evaluate question_only
+[2026-08-01 11:09:41] evaluate native4_full36
+[2026-08-01 11:10:02] evaluate native4_anchor8
+[2026-08-01 11:13:40] evaluate native4_anchor8_shuffled
+[2026-08-01 11:17:20] evaluate native4_anchor8_lora_off
+[2026-08-01 11:20:29] evaluate q35_a1_anchor_f0
+[2026-08-01 11:24:09] evaluate q35_a1_anchor_f0_shuffled
+[2026-08-01 11:27:49] evaluate q35_a1_anchor_none
+[2026-08-01 11:31:24] development: Anchor8 upper bound completed; train_reader=True
+[2026-08-01 11:31:25] development: start reader
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1079.99it/s]Loading weights:  59%|█████▉    | 234/398 [00:00<00:00, 1122.21it/s]Loading weights:  87%|████████▋ | 347/398 [00:00<00:00, 1079.31it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1072.97it/s]
+[2026-08-01 11:33:34] development: Anchor8 Reader 50/400
+[2026-08-01 11:35:21] development: Anchor8 Reader 100/400
+[2026-08-01 11:37:55] development: Anchor8 Reader 150/400
+[2026-08-01 11:39:38] development: Anchor8 Reader 200/400
+[2026-08-01 11:41:46] development: Anchor8 Reader 250/400
+[2026-08-01 11:43:25] development: Anchor8 Reader 300/400
+[2026-08-01 11:45:39] development: Anchor8 Reader 350/400
+[2026-08-01 11:47:22] development: Anchor8 Reader 400/400
+[2026-08-01 11:48:03] development: Anchor8 Reader early stop at 400
+[2026-08-01 11:48:05] development: start f1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 93/398 [00:00<00:00, 887.14it/s]Loading weights:  51%|█████     | 201/398 [00:00<00:00, 982.72it/s]Loading weights:  75%|███████▌  | 300/398 [00:00<00:00, 983.16it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 984.69it/s]
+[2026-08-01 11:49:22] development: Anchor-F1 50/600
+[2026-08-01 11:50:29] development: Anchor-F1 100/600
+[2026-08-01 11:52:03] development: Anchor-F1 150/600
+[2026-08-01 11:53:10] development: Anchor-F1 200/600
+[2026-08-01 11:54:46] development: Anchor-F1 250/600
+[2026-08-01 11:55:56] development: Anchor-F1 300/600
+[2026-08-01 11:57:32] development: Anchor-F1 350/600
+[2026-08-01 11:57:32] development: Anchor-F1 early stop at 350
+[2026-08-01 11:57:33] development: start f2
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  29%|██▉       | 115/398 [00:00<00:00, 1149.70it/s]Loading weights:  59%|█████▉    | 236/398 [00:00<00:00, 1176.48it/s]Loading weights:  89%|████████▉ | 354/398 [00:00<00:00, 1123.44it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1118.14it/s]
+[2026-08-01 11:58:50] development: Anchor-F2 50/600
+[2026-08-01 11:59:58] development: Anchor-F2 100/600
+[2026-08-01 12:01:44] development: Anchor-F2 150/600
+[2026-08-01 12:02:51] development: Anchor-F2 200/600
+[2026-08-01 12:04:37] development: Anchor-F2 250/600
+[2026-08-01 12:05:42] development: Anchor-F2 300/600
+[2026-08-01 12:07:23] development: Anchor-F2 350/600
+[2026-08-01 12:07:23] development: Anchor-F2 early stop at 350
+[2026-08-01 12:07:24] development: start evaluate
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 103/398 [00:00<00:00, 1029.03it/s]Loading weights:  56%|█████▌    | 221/398 [00:00<00:00, 1117.10it/s]Loading weights:  85%|████████▍ | 337/398 [00:00<00:00, 1135.40it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1136.02it/s]
+[2026-08-01 12:07:35] evaluate native4_anchor8_anchor8_reader
+[2026-08-01 12:07:54] evaluate q35_anchor_f0_anchor8_reader
+[2026-08-01 12:08:14] evaluate q35_anchor_f1
+[2026-08-01 12:08:32] evaluate q35_anchor_f2
+[2026-08-01 12:08:52] evaluate q35_anchor_f2_shuffled
+[2026-08-01 12:09:11] evaluate q35_anchor_f2_no_memory
+[2026-08-01 12:09:32] development: final evaluation completed
+development: pipeline completed

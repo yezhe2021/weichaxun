@@ -1,0 +1,141 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-J Canonical Soft-Prefix Executability Diagnosis",
+  "stage": "b",
+  "mode": "formal512",
+  "samples": 512,
+  "epochs": 5,
+  "best_epoch": 5,
+  "best_training_loss": 3.9474822119809687,
+  "initialization": {
+    "initialized_from": "/home/yezhe/伪查询/runs/p3e_j_canonical_soft_prefix_executability_seed1234/formal512/stage_a/checkpoint_best.pt",
+    "source_stage": "a"
+  },
+  "interface_equivalence": {
+    "prefill_max_abs_logit_difference": 0.0,
+    "prefill_mean_abs_logit_difference": 0.0,
+    "cache_next_max_abs_logit_difference": 0.0,
+    "cache_next_mean_abs_logit_difference": 0.0,
+    "next_token_equal": true,
+    "position_ids_equal": true,
+    "causal_mask_equal": true,
+    "sequence_tokens": 265
+  },
+  "initial_sample_reconstruction": {
+    "tokens": 227,
+    "embedding_cosine": 0.7791888117790222,
+    "embedding_mse": 0.00019979984790552408,
+    "position_quartiles": {
+      "0": {
+        "cosine": 0.8346989750862122,
+        "mse": 0.00015473956591449678
+      },
+      "1": {
+        "cosine": 0.758421003818512,
+        "mse": 0.00021676855976693332
+      },
+      "2": {
+        "cosine": 0.8202987313270569,
+        "mse": 0.00016773241804912686
+      },
+      "3": {
+        "cosine": 0.7043107151985168,
+        "mse": 0.000259168358752504
+      }
+    }
+  },
+  "final_sample_reconstruction": {
+    "tokens": 227,
+    "embedding_cosine": 0.3627726435661316,
+    "embedding_mse": 0.0005493100034072995,
+    "position_quartiles": {
+      "0": {
+        "cosine": 0.4219106137752533,
+        "mse": 0.0005053459899500012
+      },
+      "1": {
+        "cosine": 0.3175719082355499,
+        "mse": 0.0005830193986184895
+      },
+      "2": {
+        "cosine": 0.398139089345932,
+        "mse": 0.0005177920102141798
+      },
+      "3": {
+        "cosine": 0.3145067095756531,
+        "mse": 0.000590311421547085
+      }
+    }
+  },
+  "decoder_metadata": {
+    "layers": 16,
+    "canonical_heads": 16,
+    "head_dim": 128,
+    "fusion_dim": 128,
+    "hidden_size": 512,
+    "receiver_dim": 2560,
+    "transformer_layers": 2,
+    "transformer_heads": 8,
+    "ffn_dim": 2048,
+    "max_tokens": 1024,
+    "target_rms": 0.020627308636903763,
+    "token_axis_preserved": true,
+    "slot_compression": false,
+    "question_conditioned": false
+  },
+  "trainable_parameters": 8279297,
+  "receiver_trainable_parameters": 0,
+  "receiver_frozen_gradient_audit": "passed_each_step",
+  "canonical_index_sha256": "3c6f055eff554f9739df1c19f818d7980cb4aafca7d3ace2a2ae3313c6c3a3d2",
+  "native_index_sha256": "296ff87a3c27d821f1d5c316d98c682109847ce05dace4cc9b5fc59e57c9ea14",
+  "fixed_c2_writer_checkpoint": "/home/yezhe/伪查询/runs/p3e_c2_learned_head_structured_writer_seed1234/writer_formal512/worker/checkpoint_best.pt",
+  "fixed_c2_writer_sha256": "ffca105246292d876dda62e06b5b7c90b32952df065ad28ba5100d3094a55d1a",
+  "data_sha256": "104399e1fe9686cb63a2a574b484b1d1eef6dacebb641909a533d74c9d69b313",
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 5.099561255192384,
+      "answer_nll": 2.6715401010442292,
+      "embedding_loss": 0.6169354449375533,
+      "hidden_loss": 0.2658838617790025,
+      "kl_loss": 4.343384287436493,
+      "gradient_norm": 38.45268995675724
+    },
+    {
+      "epoch": 2,
+      "loss": 4.328577360836789,
+      "answer_nll": 1.964601265281999,
+      "embedding_loss": 0.6846395893953741,
+      "hidden_loss": 0.258582703769207,
+      "kl_loss": 4.1955136467004195,
+      "gradient_norm": 7.735437121475115
+    },
+    {
+      "epoch": 3,
+      "loss": 4.131225379998796,
+      "answer_nll": 1.8408565958852705,
+      "embedding_loss": 0.6671597639797255,
+      "hidden_loss": 0.2550903056835523,
+      "kl_loss": 4.058783335785847,
+      "gradient_norm": 6.018804750754498
+    },
+    {
+      "epoch": 4,
+      "loss": 4.026643814169802,
+      "answer_nll": 1.772848858461657,
+      "embedding_loss": 0.662884590565227,
+      "hidden_loss": 0.2535224773018854,
+      "kl_loss": 3.988913585373666,
+      "gradient_norm": 5.890565717534628
+    },
+    {
+      "epoch": 5,
+      "loss": 3.9474822119809687,
+      "answer_nll": 1.7251289556879783,
+      "embedding_loss": 0.671235789777711,
+      "hidden_loss": 0.25336614064872265,
+      "kl_loss": 3.9228460363228805,
+      "gradient_norm": 5.196304884389974
+    }
+  ]
+}

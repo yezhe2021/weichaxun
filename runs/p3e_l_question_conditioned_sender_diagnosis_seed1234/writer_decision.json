@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "train_conditioned_writer": true,
+  "automatic_rule": "skip only if correct_q exceeds evidence by .05 and neutral/wrong by .03 F1"
+}
