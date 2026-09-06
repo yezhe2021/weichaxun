@@ -1,0 +1,44 @@
+{
+  "seed": 1234,
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "llama": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct"
+  },
+  "data_file": "/home/yezhe/数据集/MMLU-Pro/data/test-00000-of-00001.parquet",
+  "splits": {
+    "train": 1024,
+    "validation": 128,
+    "test": 128
+  },
+  "slots": 64,
+  "max_prefix_tokens": 512,
+  "max_suffix_tokens": 384,
+  "attention_implementation": "eager",
+  "batch_size": 8,
+  "optimizer_steps": 512,
+  "validation_interval_steps": 64,
+  "learning_rate": 0.001,
+  "clip": 30.0,
+  "temperature": 1.0,
+  "audit_samples": 4,
+  "diagnostic_samples": 8,
+  "arms": {
+    "overfit16": {
+      "train_samples": 16,
+      "validation": "train",
+      "epochs": 256
+    },
+    "repeat128": {
+      "train_samples": 128,
+      "validation": "validation",
+      "epochs": 32
+    },
+    "diverse1024": {
+      "train_samples": 1024,
+      "validation": "validation",
+      "epochs": 4
+    }
+  },
+  "mode": "study",
+  "signature": "705940eacf6f67bb36e2867bc42b2b71760d4c0377ebaefd9463ccb74f7636e4"
+}

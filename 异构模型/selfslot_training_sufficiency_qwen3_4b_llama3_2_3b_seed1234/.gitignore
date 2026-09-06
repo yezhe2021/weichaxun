@@ -1,0 +1,7 @@
+__pycache__/
+*.pt
+*.pid
+*.lock
+runs/*/cache/
+runs/*/initialization/
+runs/*/training/*/*/*.pt
