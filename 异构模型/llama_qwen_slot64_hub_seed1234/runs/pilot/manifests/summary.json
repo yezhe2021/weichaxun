@@ -1,0 +1,19 @@
+{
+  "signature": "078951e0eca7699de28e212a1b851031552dbde94cf297c04ae9cce5813a006d",
+  "counts": {
+    "train": 128,
+    "validation": 32,
+    "test": 128
+  },
+  "rejected_length": 6,
+  "split_source": "/home/yezhe/数据集/MMLU-Pro/data/test-00000-of-00001.parquet",
+  "split_policy": "category-balanced disjoint internal train/val/test from official test pool; not official benchmark score",
+  "tokenizers_independent": true,
+  "original_options_order": true,
+  "sender_sees": "options only",
+  "receiver_sees": "question plus answer instruction",
+  "training_uses_gold": false,
+  "no_token_truncation": true,
+  "no_cross_family_vocab_kl": true,
+  "family_bos_added_once": true
+}

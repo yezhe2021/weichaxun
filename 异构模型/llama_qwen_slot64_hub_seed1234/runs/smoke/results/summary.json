@@ -1,0 +1,118 @@
+{
+  "conditions": {
+    "llama_native": {
+      "count": 2,
+      "reference": "llama_native",
+      "accuracy": 0.0,
+      "native_agreement": 1.0,
+      "reference_agreement": 1.0,
+      "full_kl_vs_native": 0.0,
+      "full_kl_vs_reference": 0.0
+    },
+    "llama_self_slot": {
+      "count": 2,
+      "reference": "llama_native",
+      "accuracy": 0.0,
+      "native_agreement": 0.0,
+      "reference_agreement": 0.0,
+      "full_kl_vs_native": 5.511270523071289,
+      "full_kl_vs_reference": 5.511270523071289
+    },
+    "qwen_native": {
+      "count": 2,
+      "reference": "qwen_native",
+      "accuracy": 0.0,
+      "native_agreement": 1.0,
+      "reference_agreement": 1.0,
+      "full_kl_vs_native": 0.0,
+      "full_kl_vs_reference": 0.0
+    },
+    "qwen_question_only": {
+      "count": 2,
+      "reference": "qwen_native",
+      "accuracy": 0.5,
+      "native_agreement": 0.0,
+      "reference_agreement": 0.0,
+      "full_kl_vs_native": 3.2934763431549072,
+      "full_kl_vs_reference": 3.2934763431549072
+    },
+    "qwen_self_slot": {
+      "count": 2,
+      "reference": "qwen_native",
+      "accuracy": 0.0,
+      "native_agreement": 0.5,
+      "reference_agreement": 0.5,
+      "full_kl_vs_native": 1.3898741602897644,
+      "full_kl_vs_reference": 1.3898741602897644
+    },
+    "shuffled_llama_slots": {
+      "count": 2,
+      "reference": "qwen_self_slot",
+      "accuracy": 0.5,
+      "native_agreement": 0.0,
+      "reference_agreement": 0.0,
+      "full_kl_vs_native": 3.0718480348587036,
+      "full_kl_vs_reference": 2.330183267593384
+    },
+    "stage_a_best": {
+      "count": 2,
+      "reference": "qwen_self_slot",
+      "accuracy": 0.5,
+      "native_agreement": 0.0,
+      "reference_agreement": 0.0,
+      "full_kl_vs_native": 3.2074440717697144,
+      "full_kl_vs_reference": 2.4192185401916504
+    },
+    "stage_b_best": {
+      "count": 2,
+      "reference": "qwen_self_slot",
+      "accuracy": 0.5,
+      "native_agreement": 0.0,
+      "reference_agreement": 0.0,
+      "full_kl_vs_native": 3.2074440717697144,
+      "full_kl_vs_reference": 2.4192185401916504
+    },
+    "stage_b_best_trained": {
+      "count": 2,
+      "reference": "qwen_self_slot",
+      "accuracy": 0.5,
+      "native_agreement": 0.0,
+      "reference_agreement": 0.0,
+      "full_kl_vs_native": 2.917361259460449,
+      "full_kl_vs_reference": 2.1143866777420044
+    },
+    "stage_b_last": {
+      "count": 2,
+      "reference": "qwen_self_slot",
+      "accuracy": 0.5,
+      "native_agreement": 0.0,
+      "reference_agreement": 0.0,
+      "full_kl_vs_native": 2.917361259460449,
+      "full_kl_vs_reference": 2.1143866777420044
+    },
+    "zero_slots": {
+      "count": 2,
+      "reference": "qwen_self_slot",
+      "accuracy": 0.5,
+      "native_agreement": 0.0,
+      "reference_agreement": 0.0,
+      "full_kl_vs_native": 3.173029899597168,
+      "full_kl_vs_reference": 2.4226964116096497
+    }
+  },
+  "retention": {
+    "qwen": null,
+    "llama": null,
+    "cross_stage_a": null,
+    "cross_stage_b": null
+  },
+  "accuracy_gaps": {
+    "qwen_compression": 0.0,
+    "llama_compression": 0.0,
+    "cross_registration": -0.5
+  },
+  "zero_denominator_retention": null,
+  "benchmark": "internal held-out feasibility subset",
+  "position_policy": "pre-RoPE pooling; receiver RoPE slots=0..63, suffix starts at 64",
+  "short_prefix_policy": "keep all examples, including T<64; in that case this is resampling not compression"
+}
