@@ -1,0 +1,107 @@
+{
+  "experiment": "16_slot_soft_locality_increased_training",
+  "controlled": "16 ordered slots, lambda=16, 1024 train examples, four true epochs, 512 optimizer steps and 4096 sample exposures",
+  "locality_formula": "-lambda * abs((t+0.5)/T - (i+0.5)/16)",
+  "results": {
+    "qwen": {
+      "lambda_16": {
+        "family": "qwen",
+        "slots": 16,
+        "locality_strength": 16.0,
+        "train_samples": 1024,
+        "validation_samples": 128,
+        "test_samples": 128,
+        "optimizer_steps": 512,
+        "sample_exposures": 4096,
+        "initial_validation_full_kl": 5.10491075576283,
+        "best_validation_full_kl": 3.7624137059319764,
+        "best_step": 512,
+        "relative_validation_kl_reduction": 0.262981492539382,
+        "clip_rate": 0.0,
+        "same_query_initialization_across_strengths": true,
+        "gold_used_for_training": false,
+        "validation_metrics": {
+          "full_kl": 3.7624137059319764,
+          "choice_kl": 1.7347152987495065,
+          "native_agreement": 0.25,
+          "accuracy": 0.1015625,
+          "slot_k_cosine": 0.9298254204913974,
+          "slot_v_cosine": 0.705983392894268,
+          "normalized_attention_entropy": 0.7047698935493827,
+          "effective_attended_tokens": 31.7816269248724,
+          "maximum_attention_weight": 0.1320310487644747,
+          "mean_attended_normalized_distance": 0.05841518039233051,
+          "sample_count": 128,
+          "mean_native_prefix_tokens": 121.65625,
+          "native_prefix_shorter_than_slots_fraction": 0.0
+        },
+        "test_metrics": {
+          "full_kl": 3.70661249011755,
+          "choice_kl": 1.4970313635421917,
+          "native_agreement": 0.296875,
+          "accuracy": 0.109375,
+          "slot_k_cosine": 0.9291620473377407,
+          "slot_v_cosine": 0.7043323274701834,
+          "normalized_attention_entropy": 0.7014449443668127,
+          "effective_attended_tokens": 31.405059702694416,
+          "maximum_attention_weight": 0.13806059377384372,
+          "mean_attended_normalized_distance": 0.05839960084995255,
+          "sample_count": 128,
+          "mean_native_prefix_tokens": 120.2734375,
+          "native_prefix_shorter_than_slots_fraction": 0.0
+        },
+        "seconds": 861.1096867360175
+      }
+    },
+    "llama": {
+      "lambda_16": {
+        "family": "llama",
+        "slots": 16,
+        "locality_strength": 16.0,
+        "train_samples": 1024,
+        "validation_samples": 128,
+        "test_samples": 128,
+        "optimizer_steps": 512,
+        "sample_exposures": 4096,
+        "initial_validation_full_kl": 4.91436074860394,
+        "best_validation_full_kl": 1.2231389459921047,
+        "best_step": 512,
+        "relative_validation_kl_reduction": 0.7511092472526419,
+        "clip_rate": 0.0,
+        "same_query_initialization_across_strengths": true,
+        "gold_used_for_training": false,
+        "validation_metrics": {
+          "full_kl": 1.2231389459921047,
+          "choice_kl": 0.738776306679938,
+          "native_agreement": 0.171875,
+          "accuracy": 0.0859375,
+          "slot_k_cosine": 0.9381109271198511,
+          "slot_v_cosine": 0.7014524410478771,
+          "normalized_attention_entropy": 0.6918113976716995,
+          "effective_attended_tokens": 29.56548684090376,
+          "maximum_attention_weight": 0.15320863280794583,
+          "mean_attended_normalized_distance": 0.05838997717364691,
+          "sample_count": 128,
+          "mean_native_prefix_tokens": 116.1015625,
+          "native_prefix_shorter_than_slots_fraction": 0.0
+        },
+        "test_metrics": {
+          "full_kl": 1.284309095237404,
+          "choice_kl": 0.6744008149253204,
+          "native_agreement": 0.2578125,
+          "accuracy": 0.109375,
+          "slot_k_cosine": 0.9374205418862402,
+          "slot_v_cosine": 0.701094024349004,
+          "normalized_attention_entropy": 0.6887303688563406,
+          "effective_attended_tokens": 29.25832512974739,
+          "maximum_attention_weight": 0.15893915243213996,
+          "mean_attended_normalized_distance": 0.05841375526506454,
+          "sample_count": 128,
+          "mean_native_prefix_tokens": 114.671875,
+          "native_prefix_shorter_than_slots_fraction": 0.0
+        },
+        "seconds": 558.153545813635
+      }
+    }
+  }
+}
