@@ -1,0 +1,123 @@
+{
+  "experiment": "native_kv_token0_parity_ablation",
+  "question": "Does token0 explain the functional gap between even and odd stride-2 Native KV?",
+  "training": "none",
+  "results": {
+    "qwen": {
+      "family": "qwen",
+      "split": "test",
+      "conditions": {
+        "native_full": {
+          "full_vocab_kl": 0.0,
+          "choice_kl": 0.0,
+          "native_agreement": 1.0,
+          "accuracy": 0.25,
+          "retained_fraction": 1.0,
+          "samples": 128,
+          "mean_retained_tokens": 120.2734375,
+          "mean_original_tokens": 120.2734375
+        },
+        "keep_even": {
+          "full_vocab_kl": 0.5629809984670828,
+          "choice_kl": 0.6612157356012176,
+          "native_agreement": 0.546875,
+          "accuracy": 0.2109375,
+          "retained_fraction": 0.503357929797711,
+          "samples": 128,
+          "mean_retained_tokens": 60.40625,
+          "mean_original_tokens": 120.2734375
+        },
+        "keep_odd": {
+          "full_vocab_kl": 5.408816092647612,
+          "choice_kl": 2.262694116565399,
+          "native_agreement": 0.1640625,
+          "accuracy": 0.125,
+          "retained_fraction": 0.49664207020228907,
+          "samples": 128,
+          "mean_retained_tokens": 59.8671875,
+          "mean_original_tokens": 120.2734375
+        },
+        "keep_odd_plus_token0": {
+          "full_vocab_kl": 0.8075367110723164,
+          "choice_kl": 0.584374046104017,
+          "native_agreement": 0.6015625,
+          "accuracy": 0.234375,
+          "retained_fraction": 0.5080743155615981,
+          "samples": 128,
+          "mean_retained_tokens": 60.8671875,
+          "mean_original_tokens": 120.2734375
+        },
+        "keep_even_minus_token0": {
+          "full_vocab_kl": 5.210743451025337,
+          "choice_kl": 2.1303319941507652,
+          "native_agreement": 0.2265625,
+          "accuracy": 0.15625,
+          "retained_fraction": 0.49192568443840173,
+          "samples": 128,
+          "mean_retained_tokens": 59.40625,
+          "mean_original_tokens": 120.2734375
+        }
+      },
+      "seconds": 29.99776648171246,
+      "position_protocol": "retained K uses original token positions; suffix begins at original full-context length"
+    },
+    "llama": {
+      "family": "llama",
+      "split": "test",
+      "conditions": {
+        "native_full": {
+          "full_vocab_kl": 0.0,
+          "choice_kl": 0.0,
+          "native_agreement": 1.0,
+          "accuracy": 0.2265625,
+          "retained_fraction": 1.0,
+          "samples": 128,
+          "mean_retained_tokens": 114.671875,
+          "mean_original_tokens": 114.671875
+        },
+        "keep_even": {
+          "full_vocab_kl": 0.3778000867605442,
+          "choice_kl": 0.3744570113485679,
+          "native_agreement": 0.46875,
+          "accuracy": 0.1953125,
+          "retained_fraction": 0.501538224444915,
+          "samples": 128,
+          "mean_retained_tokens": 57.5,
+          "mean_original_tokens": 114.671875
+        },
+        "keep_odd": {
+          "full_vocab_kl": 3.911040361970663,
+          "choice_kl": 1.3641599548282102,
+          "native_agreement": 0.078125,
+          "accuracy": 0.140625,
+          "retained_fraction": 0.498461775555085,
+          "samples": 128,
+          "mean_retained_tokens": 57.171875,
+          "mean_original_tokens": 114.671875
+        },
+        "keep_odd_plus_token0": {
+          "full_vocab_kl": 0.30078367178793997,
+          "choice_kl": 0.2953533596446505,
+          "native_agreement": 0.5546875,
+          "accuracy": 0.203125,
+          "retained_fraction": 0.5104131864844513,
+          "samples": 128,
+          "mean_retained_tokens": 58.171875,
+          "mean_original_tokens": 114.671875
+        },
+        "keep_even_minus_token0": {
+          "full_vocab_kl": 4.48274839669466,
+          "choice_kl": 2.8822902822867036,
+          "native_agreement": 0.0859375,
+          "accuracy": 0.140625,
+          "retained_fraction": 0.48958681351554867,
+          "samples": 128,
+          "mean_retained_tokens": 56.5,
+          "mean_original_tokens": 114.671875
+        }
+      },
+      "seconds": 24.022181866690516,
+      "position_protocol": "retained K uses original token positions; suffix begins at original full-context length"
+    }
+  }
+}

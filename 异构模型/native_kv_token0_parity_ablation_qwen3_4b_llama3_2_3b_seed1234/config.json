@@ -1,0 +1,13 @@
+{
+  "seed": 1234,
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "llama": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct"
+  },
+  "source_root": "/home/yezhe/异构模型/selfslot_training_sufficiency_qwen3_4b_llama3_2_3b_seed1234/runs/study",
+  "split": "test",
+  "samples": 128,
+  "conditions": ["keep_even", "keep_odd", "keep_odd_plus_token0", "keep_even_minus_token0"],
+  "temperature": 1.0,
+  "attention_implementation": "eager"
+}
