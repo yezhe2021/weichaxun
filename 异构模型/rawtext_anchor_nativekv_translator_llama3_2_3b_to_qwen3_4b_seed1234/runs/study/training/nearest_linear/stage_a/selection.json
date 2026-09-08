@@ -1,0 +1,20 @@
+{
+  "criterion": "minimum validation choice KL; gold accuracy diagnostic only",
+  "best": {
+    "step": 512,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/nearest_linear/step_512.pt",
+    "representation": {
+      "loss": 2.100697800517082,
+      "k_nmse": 0.5799084417521954,
+      "v_nmse": 0.8318406604230404,
+      "k_cosine": 0.8337702751159668,
+      "v_cosine": 0.4772810600697994
+    },
+    "functional": {
+      "choice_kl": 1.7079753651923966,
+      "accuracy": 0.109375,
+      "oracle_accuracy": 0.203125,
+      "oracle_agreement": 0.21875
+    }
+  }
+}

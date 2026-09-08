@@ -1,0 +1,19 @@
+[
+  {
+    "step": 1,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/checkpoints/nearest_linear/step_1.pt",
+    "representation": {
+      "loss": 4.059665679931641,
+      "k_nmse": 1.0732413530349731,
+      "v_nmse": 1.0152833461761475,
+      "k_cosine": 0.024087071418762207,
+      "v_cosine": 0.004771828651428223
+    },
+    "functional": {
+      "choice_kl": 1.1434336006641388,
+      "accuracy": 0.5,
+      "oracle_accuracy": 0.5,
+      "oracle_agreement": 0.5
+    }
+  }
+]

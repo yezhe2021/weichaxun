@@ -1,0 +1,19 @@
+[
+  {
+    "step": 1,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/checkpoints/local5_linear/step_1.pt",
+    "representation": {
+      "loss": 3.903748035430908,
+      "k_nmse": 1.0358102321624756,
+      "v_nmse": 1.0085750818252563,
+      "k_cosine": 0.10269135236740112,
+      "v_cosine": 0.03794598579406738
+    },
+    "functional": {
+      "choice_kl": 1.2055646777153015,
+      "accuracy": 0.5,
+      "oracle_accuracy": 0.5,
+      "oracle_agreement": 0.5
+    }
+  }
+]
