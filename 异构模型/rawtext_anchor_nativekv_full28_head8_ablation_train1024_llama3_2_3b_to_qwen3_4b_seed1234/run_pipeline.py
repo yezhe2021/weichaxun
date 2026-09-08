@@ -4,13 +4,13 @@ import os
 import traceback
 
 from common import configuration, run_root, save_json, seed_all
-from train import run_phase1
+from train import run_phase1, run_stage_b
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", choices=("smoke", "study"), default="study")
-    parser.add_argument("action", choices=("phase1",), default="phase1", nargs="?")
+    parser.add_argument("action", choices=("phase1", "stage_b"), default="phase1", nargs="?")
     args = parser.parse_args()
     cfg = configuration(args.mode)
     seed_all(cfg["seed"])
@@ -25,7 +25,10 @@ def main():
     save_json(root / "run_config.json", cfg)
     save_json(root / "status.json", {"status": "running", "stage": args.action, "pid": os.getpid()})
     try:
-        run_phase1(cfg)
+        if args.action == "phase1":
+            run_phase1(cfg)
+        else:
+            run_stage_b(cfg)
         save_json(root / "status.json", {"status": "completed", "stage": args.action, "pid": os.getpid()})
     except BaseException as error:
         save_json(root / "status.json", {"status": "failed", "stage": args.action,

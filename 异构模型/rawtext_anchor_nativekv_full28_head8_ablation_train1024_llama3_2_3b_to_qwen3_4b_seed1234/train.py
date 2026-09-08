@@ -268,9 +268,10 @@ def evaluate_selected(cfg, model, selections):
     return results
 
 
-def weight_audit(cfg, architecture, alias="best_accuracy"):
-    module, payload = load_checkpoint(cfg, checkpoint_path(cfg, architecture, alias))
-    audit = {"architecture": architecture, "checkpoint": alias, "step": payload["step"]}
+def weight_audit(cfg, arm, alias="best_accuracy"):
+    module, payload = load_checkpoint(cfg, checkpoint_path(cfg, arm, alias))
+    architecture = module.architecture
+    audit = {"arm": arm, "architecture": architecture, "checkpoint": alias, "step": payload["step"]}
     if architecture != "local5_samehead":
         for component, maps in (("k", module.k_depth), ("v", module.v_depth)):
             matrix = []
@@ -290,9 +291,130 @@ def weight_audit(cfg, architecture, alias="best_accuracy"):
                     layer.append((scores / scores.sum().clamp_min(1e-12)).tolist())
                 matrices.append(layer)
             audit[f"{component}_head_norm_36x8x8"] = matrices
-    save_json(run_root(cfg) / "audit" / f"weights_{architecture}_{alias}.json", audit)
+    save_json(run_root(cfg) / "audit" / f"weights_{arm}_{alias}.json", audit)
     del module
     torch.cuda.empty_cache()
+
+
+def train_stage_b(cfg, model, architecture="full28_head8"):
+    """Functional fine-tuning from Phase-1 validation-best accuracy checkpoint."""
+    seed_all(cfg["seed"] + 100)
+    module, source = load_checkpoint(cfg, checkpoint_path(cfg, architecture, "best_accuracy"))
+    train_rows, validation_rows = rows(cfg, "train"), rows(cfg, "validation")
+    optimizer = torch.optim.AdamW(module.parameters(), lr=cfg["stage_b_learning_rate"], weight_decay=0)
+    # The frozen FP16 receiver backward path overflows with a large initial scale on V100.
+    scaler = torch.amp.GradScaler("cuda", init_scale=1.0, growth_interval=1000000)
+    arm = f"{architecture}_choice_kl"
+    root = run_root(cfg) / "training" / arm / "stage_b"
+    root.mkdir(parents=True, exist_ok=True)
+    stream = (root / "steps.jsonl").open("w", encoding="utf-8")
+    candidates, step, clipped, started = [], 0, 0, time.monotonic()
+    try:
+        for epoch in range(1, cfg["stage_b_epochs"] + 1):
+            order = list(range(len(train_rows)))
+            random.Random(cfg["seed"] + 100 + epoch).shuffle(order)
+            for begin in range(0, len(order), cfg["batch_size"]):
+                indices = order[begin:begin + cfg["batch_size"]]
+                optimizer.zero_grad(set_to_none=True)
+                losses = []
+                for index in indices:
+                    row = train_rows[index]
+                    pair, teacher = load_pair(cfg, "train", row), load_teacher(cfg, "train", row)
+                    key, value = receiver_memory(pair, translated_content(module, pair))
+                    metadata = pair["metadata"]
+                    student = final_logits(model, metadata["qwen_suffix"], key, value,
+                                           positions=torch.arange(33, device="cuda"), suffix_start=33)
+                    loss = choice_loss(student, teacher["choice_logits"],
+                                       metadata["qwen_choice_ids"], cfg["temperature"])
+                    if not torch.isfinite(loss):
+                        raise RuntimeError("Nonfinite Stage-B choice loss")
+                    scaler.scale(loss / len(indices)).backward()
+                    losses.append(loss.item())
+                scaler.unscale_(optimizer)
+                norm = torch.nn.utils.clip_grad_norm_(module.parameters(), cfg["clip"])
+                if not torch.isfinite(norm):
+                    raise RuntimeError("Invalid Stage-B gradient")
+                clipped += int(norm.item() > cfg["clip"])
+                scaler.step(optimizer)
+                scaler.update()
+                step += 1
+                record = {"epoch": epoch, "step": step,
+                          "mean_choice_kl": sum(losses) / len(losses),
+                          "pre_clip_grad_norm": norm.item(), "clipped": norm.item() > cfg["clip"]}
+                stream.write(json.dumps(record) + "\n")
+                stream.flush()
+                if step % 16 == 0:
+                    log(f"Stage B {arm} {step}/{cfg['stage_b_steps']} choice_KL={record['mean_choice_kl']:.6f}")
+                if step % cfg["validation_interval_steps"] == 0 or step == cfg["stage_b_steps"]:
+                    metrics, _ = functional_metrics(cfg, model, module, validation_rows, "validation")
+                    name = f"step_{step}"
+                    save_checkpoint(cfg, arm, name, module, step)
+                    candidate = {"step": step, "path": str(checkpoint_path(cfg, arm, name)),
+                                 "functional": metrics}
+                    candidates.append(candidate)
+                    save_json(root / "candidates.json", candidates)
+                    log(f"Stage B validation step={step} acc={metrics['accuracy']:.4f} choice_KL={metrics['choice_kl']:.6f}")
+                if step >= cfg["stage_b_steps"]:
+                    break
+            if step >= cfg["stage_b_steps"]:
+                break
+    finally:
+        stream.close()
+    best_choice = min(candidates, key=lambda item: (item["functional"]["choice_kl"], item["step"]))
+    best_accuracy = max(candidates, key=lambda item: (item["functional"]["accuracy"],
+                                                      -item["functional"]["choice_kl"], -item["step"]))
+    copy_selected(cfg, arm, best_choice, "best_choice_kl")
+    copy_selected(cfg, arm, best_accuracy, "best_accuracy")
+    summary = {"arm": arm, "architecture": architecture,
+               "initialized_from": {"alias": "best_accuracy", "step": source["step"]},
+               "objective": "ONLY final-position A-J choice KL; no gold labels; Qwen Native token0 fixed",
+               "steps": step, "epochs": cfg["stage_b_epochs"], "clip_rate": clipped / max(step, 1),
+               "best_choice_kl": best_choice, "best_accuracy": best_accuracy,
+               "candidates": candidates, "seconds": time.monotonic() - started}
+    save_json(root / "summary.json", summary)
+    del module, optimizer, scaler
+    torch.cuda.empty_cache()
+    return summary
+
+
+def evaluate_stage_b(cfg, model, summary):
+    arm = summary["arm"]
+    result = {}
+    for alias in ("best_accuracy", "best_choice_kl"):
+        module, payload = load_checkpoint(cfg, checkpoint_path(cfg, arm, alias))
+        metrics, records = functional_metrics(cfg, model, module, rows(cfg, "test"), "test", records=True)
+        rep = representation_metrics(cfg, module, "test", rows(cfg, "test"))
+        value = {"checkpoint_step": payload["step"], "functional": metrics, "representation": rep}
+        result[alias] = value
+        root = run_root(cfg) / "evaluation" / arm / alias
+        root.mkdir(parents=True, exist_ok=True)
+        save_json(root / "summary.json", value)
+        with (root / "per_sample_metrics.jsonl").open("w", encoding="utf-8") as output:
+            for record in records:
+                output.write(json.dumps(record, ensure_ascii=False) + "\n")
+        del module
+        torch.cuda.empty_cache()
+    save_json(run_root(cfg) / "results" / "stage_b_summary.json", {
+        "experiment": "full28_head8_pure_choice_kl_stage_b",
+        "training": summary, "test": result,
+    })
+    return result
+
+
+def run_stage_b(cfg):
+    architecture = "full28_head8"
+    source = checkpoint_path(cfg, architecture, "best_accuracy")
+    if not source.exists():
+        raise FileNotFoundError(f"Missing Phase-1 initialization: {source}")
+    model = load_model(cfg, "qwen")
+    try:
+        summary = train_stage_b(cfg, model, architecture)
+        evaluate_stage_b(cfg, model, summary)
+    finally:
+        del model
+        torch.cuda.empty_cache()
+    weight_audit(cfg, f"{architecture}_choice_kl")
+    log("STAGE B FULL28_HEAD8 CHOICE-KL COMPLETED")
 
 
 def run_phase1(cfg):

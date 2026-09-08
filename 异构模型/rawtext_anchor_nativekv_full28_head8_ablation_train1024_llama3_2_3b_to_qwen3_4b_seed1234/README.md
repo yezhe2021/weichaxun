@@ -17,4 +17,9 @@ Checkpoints every 128 steps through step 1024 are functionally evaluated on vali
 choice-KL and maximum-accuracy checkpoints are selected using validation only and reported on test.
 The audit directory records 36x28 depth-block norms and, for Head8, 36x8x8 head-block norms.
 
+Stage B is a separate action and does not rerun Phase 1. It initializes Full28+Head8 from the
+Phase-1 validation-best-accuracy checkpoint and trains only final-position A-J choice KL for four
+true epochs (512 optimizer steps, effective batch 8), with Qwen-native token0 fixed. Launch it with
+`bash launch_stage_b.sh`.
+
 Run tests with `python tests.py`; launch the study with `bash launch.sh`.
