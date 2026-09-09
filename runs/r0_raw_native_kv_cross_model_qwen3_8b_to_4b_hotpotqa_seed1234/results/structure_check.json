@@ -1,0 +1,48 @@
+{
+  "4b": {
+    "path": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 8,
+    "head_dim": 128,
+    "rope_theta": null,
+    "rope_scaling": {
+      "rope_theta": 1000000,
+      "rope_type": "default"
+    },
+    "tokenizer": {
+      "class": "Qwen2Tokenizer",
+      "vocab_size": 151643,
+      "len": 151669,
+      "bos": null,
+      "eos": 151645,
+      "pad": 151643,
+      "special_tokens": {
+        "eos_token": "<|im_end|>",
+        "pad_token": "<|endoftext|>"
+      }
+    }
+  },
+  "8b": {
+    "path": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 8,
+    "head_dim": 128,
+    "rope_theta": null,
+    "rope_scaling": {
+      "rope_theta": 1000000,
+      "rope_type": "default"
+    },
+    "tokenizer": {
+      "class": "Qwen2Tokenizer",
+      "vocab_size": 151643,
+      "len": 151669,
+      "bos": null,
+      "eos": 151645,
+      "pad": 151643,
+      "special_tokens": {
+        "eos_token": "<|im_end|>",
+        "pad_token": "<|endoftext|>"
+      }
+    }
+  }
+}

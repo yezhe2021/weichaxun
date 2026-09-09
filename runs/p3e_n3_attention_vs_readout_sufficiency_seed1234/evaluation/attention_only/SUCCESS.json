@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-N3 Attention-vs-Readout Sufficiency Ablation",
+  "mode": "attention_only",
+  "samples": 64,
+  "correct_current": {
+    "n": 64,
+    "support_token_f1": 0.6202998279675596,
+    "span_n": 56,
+    "span_em": 0.26785714285714285,
+    "span_token_f1": 0.4231097536548666,
+    "yesno_n": 8,
+    "yesno_accuracy": 0.375
+  },
+  "shuffled_source": {
+    "n": 64,
+    "support_token_f1": 0.5914483637232264,
+    "span_n": 56,
+    "span_em": 0.125,
+    "span_token_f1": 0.2068498553267461,
+    "yesno_n": 8,
+    "yesno_accuracy": 0.625
+  },
+  "zero_current": {
+    "n": 64,
+    "support_token_f1": 0.48000693902333247,
+    "span_n": 56,
+    "span_em": 0.0,
+    "span_token_f1": 0.03233418367346939,
+    "yesno_n": 8,
+    "yesno_accuracy": 0.375
+  },
+  "checkpoint": "/home/yezhe/伪查询/runs/p3e_n3_attention_vs_readout_sufficiency_seed1234/probe/attention_only/checkpoint_best.pt"
+}

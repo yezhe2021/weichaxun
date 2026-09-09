@@ -1,0 +1,43 @@
+{
+  "family": "qwen",
+  "arm": "center",
+  "train_samples": 1024,
+  "optimizer_steps": 512,
+  "sample_exposures": 4096,
+  "initial_validation_full_kl": 0.8729836579442463,
+  "best_validation_full_kl": 0.7509167965282586,
+  "best_step": 512,
+  "clip_rate": 0.0,
+  "gold_used_for_training": false,
+  "selector_trainable": false,
+  "validation_metrics": {
+    "full_kl": 0.7509167965282586,
+    "choice_kl": 0.8008840686766234,
+    "native_agreement": 0.5546875,
+    "accuracy": 0.21875,
+    "native_accuracy": 0.28125,
+    "selected_attention_mass": 0.3316809295514995,
+    "selected_token_normalized_position": 0.49316369896417406,
+    "selected_within_chunk_fraction": 0.3207532945570055,
+    "remaining_tokens_per_valid_slot": 2.775146484375,
+    "empty_slot_fraction": 0.05908203125,
+    "retention": 0.7777777777777778,
+    "sample_count": 128
+  },
+  "test_metrics": {
+    "full_kl": 0.7335553325852686,
+    "choice_kl": 0.8082819521748661,
+    "native_agreement": 0.5703125,
+    "accuracy": 0.171875,
+    "native_accuracy": 0.25,
+    "selected_attention_mass": 0.360548418661008,
+    "selected_token_normalized_position": 0.4922367415819348,
+    "selected_within_chunk_fraction": 0.28355231736579395,
+    "remaining_tokens_per_valid_slot": 2.729736328125,
+    "empty_slot_fraction": 0.0888671875,
+    "retention": 0.6875,
+    "sample_count": 128
+  },
+  "original_position_oracle_test_metrics": null,
+  "seconds": 953.0461885593832
+}

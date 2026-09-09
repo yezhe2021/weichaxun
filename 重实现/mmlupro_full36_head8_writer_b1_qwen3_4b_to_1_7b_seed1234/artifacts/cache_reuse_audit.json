@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "roles": {
+    "target4": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "source17": "/home/yezhe/all_models/models/Qwen/Qwen3-1.7B"
+  },
+  "splits": {
+    "train": {
+      "count": 1024,
+      "probes": [
+        {
+          "sample_id": "3114",
+          "family": "target4",
+          "shape": [
+            36,
+            102,
+            8,
+            128
+          ]
+        },
+        {
+          "sample_id": "3114",
+          "family": "source17",
+          "shape": [
+            28,
+            102,
+            8,
+            128
+          ]
+        },
+        {
+          "sample_id": "4703",
+          "family": "target4",
+          "shape": [
+            36,
+            44,
+            8,
+            128
+          ]
+        },
+        {
+          "sample_id": "4703",
+          "family": "source17",
+          "shape": [
+            28,
+            44,
+            8,
+            128
+          ]
+        }
+      ]
+    },
+    "validation": {
+      "count": 128,
+      "probes": [
+        {
+          "sample_id": "10673",
+          "family": "target4",
+          "shape": [
+            36,
+            104,
+            8,
+            128
+          ]
+        },
+        {
+          "sample_id": "10673",
+          "family": "source17",
+          "shape": [
+            28,
+            104,
+            8,
+            128
+          ]
+        },
+        {
+          "sample_id": "8943",
+          "family": "target4",
+          "shape": [
+            36,
+            93,
+            8,
+            128
+          ]
+        },
+        {
+          "sample_id": "8943",
+          "family": "source17",
+          "shape": [
+            28,
+            93,
+            8,
+            128
+          ]
+        }
+      ]
+    },
+    "test": {
+      "count": 128,
+      "probes": [
+        {
+          "sample_id": "1698",
+          "family": "target4",
+          "shape": [
+            36,
+            71,
+            8,
+            128
+          ]
+        },
+        {
+          "sample_id": "1698",
+          "family": "source17",
+          "shape": [
+            28,
+            71,
+            8,
+            128
+          ]
+        },
+        {
+          "sample_id": "10841",
+          "family": "target4",
+          "shape": [
+            36,
+            24,
+            8,
+            128
+          ]
+        },
+        {
+          "sample_id": "10841",
+          "family": "source17",
+          "shape": [
+            28,
+            24,
+            8,
+            128
+          ]
+        }
+      ]
+    }
+  }
+}

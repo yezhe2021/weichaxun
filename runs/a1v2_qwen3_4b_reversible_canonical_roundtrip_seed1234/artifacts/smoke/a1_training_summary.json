@@ -1,0 +1,22 @@
+{
+  "completed_optimizer_updates": 2,
+  "maximum_optimizer_updates": 2,
+  "best_update": 0,
+  "best_validation": {
+    "kv": 4.964170757402672e-13,
+    "route": -2.5247812868167685e-10,
+    "output": 5.704353005578366e-13,
+    "output_cosine": 1.0,
+    "orth": 0.0,
+    "gate": 0.0,
+    "score": -1.2556934562513253e-10
+  },
+  "best_functional_probe": {
+    "native_nll": 12.554290533065796,
+    "decoded_nll": 12.525362730026245,
+    "decoded_minus_native_nll": -0.02892780303955078
+  },
+  "early_stopped": false,
+  "microbatch": 1,
+  "gradient_accumulation": 8
+}

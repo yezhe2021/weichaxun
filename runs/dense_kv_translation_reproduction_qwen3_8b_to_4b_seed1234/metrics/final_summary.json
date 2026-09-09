@@ -1,0 +1,21 @@
+{
+  "accuracy": {
+    "receiver_only": 0.34375,
+    "random": 0.0625,
+    "phase1": 0.1875,
+    "phase2": 0.640625,
+    "phase2_shuffled": 0.6875
+  },
+  "teacher_forcing_answer_nll": {
+    "receiver_only": 0.9685369390062988,
+    "random": 0.9504409916698933,
+    "phase1": 1.085621983744204,
+    "phase2": 1.1371191125363111,
+    "phase2_shuffled": 1.1059285467490554
+  },
+  "native_cache_oracle_accuracy": 0.34375,
+  "native_cache_oracle_teacher_forcing_answer_nll": 0.9685369390062988,
+  "phase2_minus_phase1_accuracy": 0.453125,
+  "phase2_correct_minus_shuffled_accuracy": -0.046875,
+  "full_outputs": "metrics/final_outputs.json"
+}

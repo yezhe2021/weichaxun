@@ -1,0 +1,23 @@
+{
+  "seed": 1234,
+  "policy": "unfiltered random sample; train from official train, validation/test disjoint from official dev",
+  "counts": {
+    "train": 1024,
+    "validation": 128,
+    "test": 128
+  },
+  "type_counts": {
+    "train": {
+      "bridge": 843,
+      "comparison": 181
+    },
+    "validation": {
+      "bridge": 106,
+      "comparison": 22
+    },
+    "test": {
+      "bridge": 101,
+      "comparison": 27
+    }
+  }
+}

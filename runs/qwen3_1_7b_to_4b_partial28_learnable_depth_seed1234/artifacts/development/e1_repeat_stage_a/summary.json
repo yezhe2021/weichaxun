@@ -1,0 +1,20 @@
+{
+  "kind": "repeat",
+  "overfit_code_validation_only": false,
+  "initial_checkpoint": null,
+  "initial_loss": 4.512230694293976,
+  "final_loss": 1.5659769345074892,
+  "loss_decreased": true,
+  "all_trainable_parameters_received_nonzero_finite_gradient": true,
+  "missing_gradient_parameters": [],
+  "no_nan_or_inf": true,
+  "best_validation_loss": 1.5659769345074892,
+  "training_seconds": 1526.9109049644321,
+  "peak_gpu_bytes": 1551504896,
+  "parameters": {
+    "trainable_parameters": 75497472,
+    "total_parameters": 75497472,
+    "learnable_depth_parameters": 0
+  },
+  "parameters_changed": true
+}

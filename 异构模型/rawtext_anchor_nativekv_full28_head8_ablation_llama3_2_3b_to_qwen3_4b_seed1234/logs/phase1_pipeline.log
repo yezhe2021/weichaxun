@@ -1,0 +1,229 @@
+[2026-09-08 11:45:32] Pair reuse audit train: 1024 files present
+[2026-09-08 11:45:32] Pair reuse audit validation: 128 files present
+[2026-09-08 11:45:32] Pair reuse audit test: 128 files present
+[2026-09-08 11:45:37] Stage A local5_samehead 16/512 loss=2.653254
+[2026-09-08 11:45:39] Stage A local5_samehead 32/512 loss=2.376734
+[2026-09-08 11:45:41] Stage A local5_samehead 48/512 loss=2.161111
+[2026-09-08 11:45:42] Stage A local5_samehead 64/512 loss=1.885304
+[2026-09-08 11:45:45] Stage A local5_samehead 80/512 loss=1.834893
+[2026-09-08 11:45:47] Stage A local5_samehead 96/512 loss=1.847488
+[2026-09-08 11:45:50] Stage A local5_samehead 112/512 loss=1.826116
+[2026-09-08 11:45:53] Stage A local5_samehead 128/512 loss=1.643671
+[2026-09-08 11:45:56] Stage A local5_samehead validation step=128 rep=1.720704
+[2026-09-08 11:45:58] Stage A local5_samehead 144/512 loss=1.743122
+[2026-09-08 11:46:00] Stage A local5_samehead 160/512 loss=1.766907
+[2026-09-08 11:46:02] Stage A local5_samehead 176/512 loss=1.503909
+[2026-09-08 11:46:04] Stage A local5_samehead 192/512 loss=1.676696
+[2026-09-08 11:46:06] Stage A local5_samehead 208/512 loss=1.656538
+[2026-09-08 11:46:08] Stage A local5_samehead 224/512 loss=1.627854
+[2026-09-08 11:46:10] Stage A local5_samehead 240/512 loss=1.495906
+[2026-09-08 11:46:12] Stage A local5_samehead 256/512 loss=1.531622
+[2026-09-08 11:46:13] Stage A local5_samehead validation step=256 rep=1.490566
+[2026-09-08 11:46:15] Stage A local5_samehead 272/512 loss=1.420487
+[2026-09-08 11:46:17] Stage A local5_samehead 288/512 loss=1.408608
+[2026-09-08 11:46:19] Stage A local5_samehead 304/512 loss=1.441422
+[2026-09-08 11:46:21] Stage A local5_samehead 320/512 loss=1.411319
+[2026-09-08 11:46:23] Stage A local5_samehead 336/512 loss=1.505208
+[2026-09-08 11:46:25] Stage A local5_samehead 352/512 loss=1.460254
+[2026-09-08 11:46:27] Stage A local5_samehead 368/512 loss=1.509204
+[2026-09-08 11:46:28] Stage A local5_samehead 384/512 loss=1.362441
+[2026-09-08 11:46:30] Stage A local5_samehead validation step=384 rep=1.370188
+[2026-09-08 11:46:32] Stage A local5_samehead 400/512 loss=1.483304
+[2026-09-08 11:46:34] Stage A local5_samehead 416/512 loss=1.398485
+[2026-09-08 11:46:36] Stage A local5_samehead 432/512 loss=1.350402
+[2026-09-08 11:46:39] Stage A local5_samehead 448/512 loss=1.358542
+[2026-09-08 11:46:42] Stage A local5_samehead 464/512 loss=1.277663
+[2026-09-08 11:46:45] Stage A local5_samehead 480/512 loss=1.198048
+[2026-09-08 11:46:47] Stage A local5_samehead 496/512 loss=1.260051
+[2026-09-08 11:46:49] Stage A local5_samehead 512/512 loss=1.378480
+[2026-09-08 11:46:51] Stage A local5_samehead validation step=512 rep=1.294377
+[2026-09-08 11:46:55] Stage A full28_samehead 16/512 loss=1.983520
+[2026-09-08 11:46:57] Stage A full28_samehead 32/512 loss=1.724152
+[2026-09-08 11:46:59] Stage A full28_samehead 48/512 loss=1.496203
+[2026-09-08 11:47:02] Stage A full28_samehead 64/512 loss=1.190767
+[2026-09-08 11:47:04] Stage A full28_samehead 80/512 loss=1.137592
+[2026-09-08 11:47:07] Stage A full28_samehead 96/512 loss=1.133913
+[2026-09-08 11:47:09] Stage A full28_samehead 112/512 loss=1.141741
+[2026-09-08 11:47:12] Stage A full28_samehead 128/512 loss=0.979132
+[2026-09-08 11:47:14] Stage A full28_samehead validation step=128 rep=1.046528
+[2026-09-08 11:47:16] Stage A full28_samehead 144/512 loss=1.077003
+[2026-09-08 11:47:19] Stage A full28_samehead 160/512 loss=1.116063
+[2026-09-08 11:47:22] Stage A full28_samehead 176/512 loss=0.872885
+[2026-09-08 11:47:24] Stage A full28_samehead 192/512 loss=1.044041
+[2026-09-08 11:47:28] Stage A full28_samehead 208/512 loss=1.033826
+[2026-09-08 11:47:31] Stage A full28_samehead 224/512 loss=1.029248
+[2026-09-08 11:47:33] Stage A full28_samehead 240/512 loss=0.906778
+[2026-09-08 11:47:36] Stage A full28_samehead 256/512 loss=0.965999
+[2026-09-08 11:47:38] Stage A full28_samehead validation step=256 rep=0.924080
+[2026-09-08 11:47:41] Stage A full28_samehead 272/512 loss=0.868825
+[2026-09-08 11:47:43] Stage A full28_samehead 288/512 loss=0.874100
+[2026-09-08 11:47:46] Stage A full28_samehead 304/512 loss=0.896354
+[2026-09-08 11:47:49] Stage A full28_samehead 320/512 loss=0.870606
+[2026-09-08 11:47:51] Stage A full28_samehead 336/512 loss=0.957247
+[2026-09-08 11:47:54] Stage A full28_samehead 352/512 loss=0.926316
+[2026-09-08 11:47:56] Stage A full28_samehead 368/512 loss=0.971240
+[2026-09-08 11:47:59] Stage A full28_samehead 384/512 loss=0.875670
+[2026-09-08 11:48:01] Stage A full28_samehead validation step=384 rep=0.885685
+[2026-09-08 11:48:04] Stage A full28_samehead 400/512 loss=0.960746
+[2026-09-08 11:48:06] Stage A full28_samehead 416/512 loss=0.859906
+[2026-09-08 11:48:09] Stage A full28_samehead 432/512 loss=0.855963
+[2026-09-08 11:48:11] Stage A full28_samehead 448/512 loss=0.888438
+[2026-09-08 11:48:15] Stage A full28_samehead 464/512 loss=0.822149
+[2026-09-08 11:48:18] Stage A full28_samehead 480/512 loss=0.762911
+[2026-09-08 11:48:21] Stage A full28_samehead 496/512 loss=0.817261
+[2026-09-08 11:48:23] Stage A full28_samehead 512/512 loss=0.938812
+[2026-09-08 11:48:25] Stage A full28_samehead validation step=512 rep=0.867921
+[2026-09-08 11:48:33] Stage A full28_diagonal 16/512 loss=1.637426
+[2026-09-08 11:48:40] Stage A full28_diagonal 32/512 loss=1.438500
+[2026-09-08 11:48:48] Stage A full28_diagonal 48/512 loss=1.266253
+[2026-09-08 11:48:55] Stage A full28_diagonal 64/512 loss=0.997668
+[2026-09-08 11:49:04] Stage A full28_diagonal 80/512 loss=0.971780
+[2026-09-08 11:49:11] Stage A full28_diagonal 96/512 loss=1.007467
+[2026-09-08 11:49:19] Stage A full28_diagonal 112/512 loss=1.022378
+[2026-09-08 11:49:26] Stage A full28_diagonal 128/512 loss=0.877756
+[2026-09-08 11:49:30] Stage A full28_diagonal validation step=128 rep=0.947311
+[2026-09-08 11:49:37] Stage A full28_diagonal 144/512 loss=0.989515
+[2026-09-08 11:49:44] Stage A full28_diagonal 160/512 loss=1.032737
+[2026-09-08 11:49:53] Stage A full28_diagonal 176/512 loss=0.793327
+[2026-09-08 11:50:00] Stage A full28_diagonal 192/512 loss=0.966163
+[2026-09-08 11:50:07] Stage A full28_diagonal 208/512 loss=0.955348
+[2026-09-08 11:50:14] Stage A full28_diagonal 224/512 loss=0.953743
+[2026-09-08 11:50:22] Stage A full28_diagonal 240/512 loss=0.828964
+[2026-09-08 11:50:29] Stage A full28_diagonal 256/512 loss=0.888083
+[2026-09-08 11:50:33] Stage A full28_diagonal validation step=256 rep=0.844674
+[2026-09-08 11:50:42] Stage A full28_diagonal 272/512 loss=0.795236
+[2026-09-08 11:50:50] Stage A full28_diagonal 288/512 loss=0.793829
+[2026-09-08 11:50:57] Stage A full28_diagonal 304/512 loss=0.812637
+[2026-09-08 11:51:04] Stage A full28_diagonal 320/512 loss=0.785901
+[2026-09-08 11:51:11] Stage A full28_diagonal 336/512 loss=0.866652
+[2026-09-08 11:51:18] Stage A full28_diagonal 352/512 loss=0.834778
+[2026-09-08 11:51:28] Stage A full28_diagonal 368/512 loss=0.875426
+[2026-09-08 11:51:36] Stage A full28_diagonal 384/512 loss=0.783491
+[2026-09-08 11:51:40] Stage A full28_diagonal validation step=384 rep=0.797194
+[2026-09-08 11:51:47] Stage A full28_diagonal 400/512 loss=0.860908
+[2026-09-08 11:51:55] Stage A full28_diagonal 416/512 loss=0.757089
+[2026-09-08 11:52:03] Stage A full28_diagonal 432/512 loss=0.757919
+[2026-09-08 11:52:12] Stage A full28_diagonal 448/512 loss=0.787263
+[2026-09-08 11:52:22] Stage A full28_diagonal 464/512 loss=0.723207
+[2026-09-08 11:52:31] Stage A full28_diagonal 480/512 loss=0.670530
+[2026-09-08 11:52:40] Stage A full28_diagonal 496/512 loss=0.717935
+[2026-09-08 11:52:49] Stage A full28_diagonal 512/512 loss=0.829593
+[2026-09-08 11:52:53] Stage A full28_diagonal validation step=512 rep=0.770856
+[2026-09-08 11:53:06] Stage A full28_head8 16/512 loss=1.511533
+[2026-09-08 11:53:15] Stage A full28_head8 32/512 loss=1.252372
+[2026-09-08 11:53:23] Stage A full28_head8 48/512 loss=1.099448
+[2026-09-08 11:53:30] Stage A full28_head8 64/512 loss=0.850225
+[2026-09-08 11:53:36] Stage A full28_head8 80/512 loss=0.836680
+[2026-09-08 11:53:41] Stage A full28_head8 96/512 loss=0.846402
+[2026-09-08 11:53:48] Stage A full28_head8 112/512 loss=0.877683
+[2026-09-08 11:53:56] Stage A full28_head8 128/512 loss=0.756315
+[2026-09-08 11:53:59] Stage A full28_head8 validation step=128 rep=0.802735
+[2026-09-08 11:54:05] Stage A full28_head8 144/512 loss=0.830205
+[2026-09-08 11:54:11] Stage A full28_head8 160/512 loss=0.865779
+[2026-09-08 11:54:16] Stage A full28_head8 176/512 loss=0.667206
+[2026-09-08 11:54:22] Stage A full28_head8 192/512 loss=0.802789
+[2026-09-08 11:54:27] Stage A full28_head8 208/512 loss=0.775142
+[2026-09-08 11:54:34] Stage A full28_head8 224/512 loss=0.797028
+[2026-09-08 11:54:42] Stage A full28_head8 240/512 loss=0.668510
+[2026-09-08 11:54:48] Stage A full28_head8 256/512 loss=0.738057
+[2026-09-08 11:54:51] Stage A full28_head8 validation step=256 rep=0.698699
+[2026-09-08 11:54:56] Stage A full28_head8 272/512 loss=0.650469
+[2026-09-08 11:55:02] Stage A full28_head8 288/512 loss=0.657459
+[2026-09-08 11:55:08] Stage A full28_head8 304/512 loss=0.661099
+[2026-09-08 11:55:13] Stage A full28_head8 320/512 loss=0.617949
+[2026-09-08 11:55:19] Stage A full28_head8 336/512 loss=0.689273
+[2026-09-08 11:55:28] Stage A full28_head8 352/512 loss=0.659636
+[2026-09-08 11:55:34] Stage A full28_head8 368/512 loss=0.673205
+[2026-09-08 11:55:40] Stage A full28_head8 384/512 loss=0.638636
+[2026-09-08 11:55:43] Stage A full28_head8 validation step=384 rep=0.657438
+[2026-09-08 11:55:49] Stage A full28_head8 400/512 loss=0.663433
+[2026-09-08 11:55:55] Stage A full28_head8 416/512 loss=0.564497
+[2026-09-08 11:56:01] Stage A full28_head8 432/512 loss=0.582473
+[2026-09-08 11:56:06] Stage A full28_head8 448/512 loss=0.603162
+[2026-09-08 11:56:14] Stage A full28_head8 464/512 loss=0.559398
+[2026-09-08 11:56:21] Stage A full28_head8 480/512 loss=0.528937
+[2026-09-08 11:56:26] Stage A full28_head8 496/512 loss=0.573167
+[2026-09-08 11:56:32] Stage A full28_head8 512/512 loss=0.659075
+[2026-09-08 11:56:35] Stage A full28_head8 validation step=512 rep=0.638024
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:02<17:37,  2.66s/it]Loading weights:   4%|▍         | 16/398 [00:02<00:52,  7.25it/s]Loading weights:   5%|▌         | 20/398 [00:03<00:52,  7.24it/s]Loading weights:   6%|▌         | 22/398 [00:03<00:54,  6.88it/s]Loading weights:   8%|▊         | 31/398 [00:04<00:36, 10.10it/s]Loading weights:   9%|▉         | 36/398 [00:05<00:38,  9.34it/s]Loading weights:  10%|▉         | 38/398 [00:05<00:47,  7.53it/s]Loading weights:  12%|█▏        | 47/398 [00:06<00:35,  9.76it/s]Loading weights:  12%|█▏        | 49/398 [00:06<00:45,  7.74it/s]Loading weights:  15%|█▍        | 59/398 [00:08<00:42,  7.98it/s]Loading weights:  18%|█▊        | 70/398 [00:09<00:40,  8.16it/s]Loading weights:  18%|█▊        | 71/398 [00:09<00:40,  8.16it/s]Loading weights:  20%|██        | 80/398 [00:09<00:27, 11.65it/s]Loading weights:  22%|██▏       | 86/398 [00:10<00:26, 11.63it/s]Loading weights:  22%|██▏       | 88/398 [00:10<00:26, 11.63it/s]Loading weights:  23%|██▎       | 91/398 [00:11<00:42,  7.27it/s]Loading weights:  23%|██▎       | 93/398 [00:11<00:42,  7.14it/s]Loading weights:  26%|██▌       | 102/398 [00:13<00:41,  7.11it/s]Loading weights:  26%|██▌       | 103/398 [00:13<00:43,  6.81it/s]Loading weights:  26%|██▌       | 104/398 [00:13<00:49,  5.91it/s]Loading weights:  28%|██▊       | 113/398 [00:13<00:25, 11.01it/s]Loading weights:  29%|██▉       | 115/398 [00:14<00:44,  6.30it/s]Loading weights:  31%|███       | 124/398 [00:15<00:30,  8.97it/s]Loading weights:  32%|███▏      | 126/398 [00:16<00:37,  7.29it/s]Loading weights:  34%|███▍      | 135/398 [00:17<00:31,  8.36it/s]Loading weights:  34%|███▍      | 137/398 [00:17<00:34,  7.60it/s]Loading weights:  37%|███▋      | 146/398 [00:18<00:30,  8.20it/s]Loading weights:  37%|███▋      | 147/398 [00:18<00:36,  6.93it/s]Loading weights:  39%|███▊      | 154/398 [00:19<00:25,  9.54it/s]Loading weights:  39%|███▉      | 156/398 [00:19<00:24,  9.69it/s]Loading weights:  40%|███▉      | 158/398 [00:21<00:59,  4.04it/s]Loading weights:  42%|████▏     | 169/398 [00:21<00:25,  8.91it/s]Loading weights:  44%|████▎     | 174/398 [00:21<00:19, 11.35it/s]Loading weights:  45%|████▍     | 179/398 [00:23<00:34,  6.41it/s]Loading weights:  48%|████▊     | 192/398 [00:23<00:17, 11.75it/s]Loading weights:  50%|████▉     | 198/398 [00:24<00:17, 11.32it/s]Loading weights:  51%|█████     | 202/398 [00:24<00:20,  9.54it/s]Loading weights:  52%|█████▏    | 205/398 [00:25<00:21,  9.15it/s]Loading weights:  53%|█████▎    | 212/398 [00:25<00:18, 10.05it/s]Loading weights:  54%|█████▍    | 214/398 [00:26<00:28,  6.43it/s]Loading weights:  57%|█████▋    | 225/398 [00:28<00:27,  6.30it/s]Loading weights:  59%|█████▉    | 235/398 [00:28<00:16,  9.59it/s]Loading weights:  62%|██████▏   | 245/398 [00:29<00:16,  9.19it/s]Loading weights:  62%|██████▏   | 247/398 [00:30<00:18,  8.01it/s]Loading weights:  64%|██████▍   | 256/398 [00:31<00:18,  7.51it/s]Loading weights:  66%|██████▌   | 262/398 [00:31<00:14,  9.51it/s]Loading weights:  66%|██████▋   | 264/398 [00:32<00:15,  8.48it/s]Loading weights:  67%|██████▋   | 267/398 [00:33<00:19,  6.57it/s]Loading weights:  68%|██████▊   | 269/398 [00:34<00:29,  4.33it/s]Loading weights:  70%|███████   | 279/398 [00:35<00:19,  6.15it/s]Loading weights:  70%|███████   | 280/398 [00:36<00:26,  4.38it/s]Loading weights:  73%|███████▎  | 289/398 [00:37<00:15,  6.83it/s]Loading weights:  75%|███████▍  | 297/398 [00:38<00:14,  7.01it/s]Loading weights:  76%|███████▌  | 302/398 [00:39<00:16,  5.87it/s]Loading weights:  78%|███████▊  | 311/398 [00:40<00:12,  7.02it/s]Loading weights:  78%|███████▊  | 312/398 [00:40<00:12,  6.89it/s]Loading weights:  80%|███████▉  | 317/398 [00:41<00:10,  7.88it/s]Loading weights:  81%|████████  | 322/398 [00:42<00:13,  5.63it/s]Loading weights:  84%|████████▍ | 334/398 [00:44<00:10,  6.34it/s]Loading weights:  86%|████████▋ | 344/398 [00:44<00:06,  8.31it/s]Loading weights:  87%|████████▋ | 346/398 [00:46<00:09,  5.49it/s]Loading weights:  91%|█████████ | 361/398 [00:46<00:03, 10.68it/s]Loading weights:  92%|█████████▏| 366/398 [00:47<00:03,  8.65it/s]Loading weights:  93%|█████████▎| 370/398 [00:47<00:03,  9.26it/s]Loading weights:  94%|█████████▎| 373/398 [00:48<00:02,  9.15it/s]Loading weights:  94%|█████████▍| 376/398 [00:48<00:02,  9.13it/s]Loading weights:  95%|█████████▍| 378/398 [00:48<00:02,  7.53it/s]Loading weights:  96%|█████████▌| 383/398 [00:49<00:01,  9.33it/s]Loading weights:  97%|█████████▋| 385/398 [00:49<00:01,  9.42it/s]Loading weights:  97%|█████████▋| 388/398 [00:49<00:00, 11.27it/s]Loading weights:  98%|█████████▊| 390/398 [00:50<00:01,  6.94it/s]Loading weights: 100%|██████████| 398/398 [00:50<00:00,  7.91it/s]
+[2026-09-08 11:57:50] Functional local5_samehead step=128 acc=0.0938 choice_KL=1.791262
+[2026-09-08 11:58:05] Functional local5_samehead step=256 acc=0.0938 choice_KL=1.577198
+[2026-09-08 11:58:19] Functional local5_samehead step=384 acc=0.1016 choice_KL=1.575692
+[2026-09-08 11:58:32] Functional local5_samehead step=512 acc=0.1094 choice_KL=1.562293
+[2026-09-08 11:58:51] Functional full28_samehead step=128 acc=0.0938 choice_KL=1.389220
+[2026-09-08 11:59:05] Functional full28_samehead step=256 acc=0.0859 choice_KL=1.495912
+[2026-09-08 11:59:19] Functional full28_samehead step=384 acc=0.1250 choice_KL=2.028410
+[2026-09-08 11:59:35] Functional full28_samehead step=512 acc=0.0625 choice_KL=1.415153
+[2026-09-08 11:59:58] Functional full28_diagonal step=128 acc=0.0781 choice_KL=1.190586
+[2026-09-08 12:00:21] Functional full28_diagonal step=256 acc=0.1328 choice_KL=1.287201
+[2026-09-08 12:00:42] Functional full28_diagonal step=384 acc=0.1250 choice_KL=1.141040
+[2026-09-08 12:01:05] Functional full28_diagonal step=512 acc=0.1250 choice_KL=1.165330
+[2026-09-08 12:01:29] Functional full28_head8 step=128 acc=0.0625 choice_KL=1.347803
+[2026-09-08 12:01:54] Functional full28_head8 step=256 acc=0.0859 choice_KL=1.339799
+[2026-09-08 12:02:21] Functional full28_head8 step=384 acc=0.1484 choice_KL=2.421787
+[2026-09-08 12:02:45] Functional full28_head8 step=512 acc=0.1094 choice_KL=1.365949
+[2026-09-08 12:02:54] Test local5_samehead: 16/128
+[2026-09-08 12:02:56] Test local5_samehead: 32/128
+[2026-09-08 12:02:57] Test local5_samehead: 48/128
+[2026-09-08 12:02:59] Test local5_samehead: 64/128
+[2026-09-08 12:03:01] Test local5_samehead: 80/128
+[2026-09-08 12:03:02] Test local5_samehead: 96/128
+[2026-09-08 12:03:04] Test local5_samehead: 112/128
+[2026-09-08 12:03:06] Test local5_samehead: 128/128
+[2026-09-08 12:03:10] Test local5_samehead: 16/128
+[2026-09-08 12:03:11] Test local5_samehead: 32/128
+[2026-09-08 12:03:12] Test local5_samehead: 48/128
+[2026-09-08 12:03:13] Test local5_samehead: 64/128
+[2026-09-08 12:03:15] Test local5_samehead: 80/128
+[2026-09-08 12:03:18] Test local5_samehead: 96/128
+[2026-09-08 12:03:19] Test local5_samehead: 112/128
+[2026-09-08 12:03:21] Test local5_samehead: 128/128
+[2026-09-08 12:03:27] Test full28_samehead: 16/128
+[2026-09-08 12:03:30] Test full28_samehead: 32/128
+[2026-09-08 12:03:32] Test full28_samehead: 48/128
+[2026-09-08 12:03:34] Test full28_samehead: 64/128
+[2026-09-08 12:03:36] Test full28_samehead: 80/128
+[2026-09-08 12:03:38] Test full28_samehead: 96/128
+[2026-09-08 12:03:40] Test full28_samehead: 112/128
+[2026-09-08 12:03:42] Test full28_samehead: 128/128
+[2026-09-08 12:03:47] Test full28_samehead: 16/128
+[2026-09-08 12:03:49] Test full28_samehead: 32/128
+[2026-09-08 12:03:51] Test full28_samehead: 48/128
+[2026-09-08 12:03:53] Test full28_samehead: 64/128
+[2026-09-08 12:03:55] Test full28_samehead: 80/128
+[2026-09-08 12:03:58] Test full28_samehead: 96/128
+[2026-09-08 12:03:59] Test full28_samehead: 112/128
+[2026-09-08 12:04:01] Test full28_samehead: 128/128
+[2026-09-08 12:04:07] Test full28_diagonal: 16/128
+[2026-09-08 12:04:11] Test full28_diagonal: 32/128
+[2026-09-08 12:04:15] Test full28_diagonal: 48/128
+[2026-09-08 12:04:18] Test full28_diagonal: 64/128
+[2026-09-08 12:04:21] Test full28_diagonal: 80/128
+[2026-09-08 12:04:23] Test full28_diagonal: 96/128
+[2026-09-08 12:04:26] Test full28_diagonal: 112/128
+[2026-09-08 12:04:28] Test full28_diagonal: 128/128
+[2026-09-08 12:04:35] Test full28_diagonal: 16/128
+[2026-09-08 12:04:37] Test full28_diagonal: 32/128
+[2026-09-08 12:04:40] Test full28_diagonal: 48/128
+[2026-09-08 12:04:42] Test full28_diagonal: 64/128
+[2026-09-08 12:04:45] Test full28_diagonal: 80/128
+[2026-09-08 12:04:47] Test full28_diagonal: 96/128
+[2026-09-08 12:04:49] Test full28_diagonal: 112/128
+[2026-09-08 12:04:51] Test full28_diagonal: 128/128
+[2026-09-08 12:05:00] Test full28_head8: 16/128
+[2026-09-08 12:05:03] Test full28_head8: 32/128
+[2026-09-08 12:05:06] Test full28_head8: 48/128
+[2026-09-08 12:05:09] Test full28_head8: 64/128
+[2026-09-08 12:05:11] Test full28_head8: 80/128
+[2026-09-08 12:05:14] Test full28_head8: 96/128
+[2026-09-08 12:05:16] Test full28_head8: 112/128
+[2026-09-08 12:05:18] Test full28_head8: 128/128
+[2026-09-08 12:05:26] Test full28_head8: 16/128
+[2026-09-08 12:05:28] Test full28_head8: 32/128
+[2026-09-08 12:05:31] Test full28_head8: 48/128
+[2026-09-08 12:05:34] Test full28_head8: 64/128
+[2026-09-08 12:05:35] Test full28_head8: 80/128
+[2026-09-08 12:05:37] Test full28_head8: 96/128
+[2026-09-08 12:05:40] Test full28_head8: 112/128
+[2026-09-08 12:05:44] Test full28_head8: 128/128
+[2026-09-08 12:05:53] PHASE 1 ARCHITECTURE AUDIT COMPLETED

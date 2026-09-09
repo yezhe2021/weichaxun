@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "model_shape": [
+    36,
+    8,
+    128
+  ],
+  "reader_checkpoint": "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/artifacts/formal/sparse_reader/best.pt",
+  "native_k": "pre-RoPE",
+  "native_v": true,
+  "query_positions": [
+    "last_question",
+    "first_gold_answer"
+  ],
+  "counts": {
+    "train": 512,
+    "validation": 64,
+    "test": 64
+  }
+}

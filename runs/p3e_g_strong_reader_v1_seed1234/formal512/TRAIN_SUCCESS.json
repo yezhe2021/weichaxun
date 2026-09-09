@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-G Strong Reader V1",
+  "mode": "formal512",
+  "samples": 512,
+  "epochs": 5,
+  "best_epoch_by_training_loss": 2,
+  "best_train_loss": 0.017807641173870792,
+  "new_parameter_squared_change": 518.1046388007464,
+  "smoke_free_running": null,
+  "trainable_parameters": 10608656,
+  "frozen_base_parameters": 4202512,
+  "initial_equivalence_error": 2.9802322387695312e-08,
+  "checkpoint_best": "/home/yezhe/伪查询/runs/p3e_g_strong_reader_v1_seed1234/formal512/checkpoint_best.pt",
+  "checkpoint_last": "/home/yezhe/伪查询/runs/p3e_g_strong_reader_v1_seed1234/formal512/checkpoint_last.pt"
+}

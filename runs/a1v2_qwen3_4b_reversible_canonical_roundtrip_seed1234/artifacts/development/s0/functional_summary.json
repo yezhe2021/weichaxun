@@ -1,0 +1,23 @@
+{
+  "conditions": {
+    "native": {
+      "em": 0.734375,
+      "token_f1": 0.8168964076858813,
+      "gold_answer_nll": 0.4066820452276261
+    },
+    "decoded_correct": {
+      "em": 0.734375,
+      "token_f1": 0.8168964076858813,
+      "gold_answer_nll": 0.4066820452276261
+    },
+    "decoded_shuffled": {
+      "em": 0.09375,
+      "token_f1": 0.11383928571428571,
+      "gold_answer_nll": 6.286356105119921
+    }
+  },
+  "native_decoded_em_delta": 0.0,
+  "native_decoded_nll_delta": 0.0,
+  "native_decoded_prediction_match": 1.0,
+  "correct_minus_shuffled": 0.640625
+}

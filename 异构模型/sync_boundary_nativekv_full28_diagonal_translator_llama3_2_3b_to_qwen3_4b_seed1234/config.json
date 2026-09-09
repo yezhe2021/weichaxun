@@ -1,0 +1,28 @@
+{
+  "seed": 1234,
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "llama": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct"
+  },
+  "source_root": "/home/yezhe/异构模型/selfslot_training_sufficiency_qwen3_4b_llama3_2_3b_seed1234/runs/study",
+  "importance_root": "/home/yezhe/异构模型/queryaware_hybrid32x32_qwen3_4b_llama3_2_3b_seed1234/runs/study",
+  "oracle_root": "/home/yezhe/异构模型/sync_boundary_nativekv_oracle_llama3_2_3b_to_qwen3_4b_seed1234/runs/study",
+  "rawanchor_baseline_root": "/home/yezhe/异构模型/rawtext_anchor_nativekv_full28_head8_ablation_train1024_llama3_2_3b_to_qwen3_4b_seed1234/runs/study",
+  "regions": 32,
+  "selection": "sync_max_unique",
+  "train_samples": 1024,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "stage_a_epochs": 8,
+  "stage_b_epochs": 4,
+  "batch_size": 8,
+  "stage_a_steps": 1024,
+  "stage_b_steps": 512,
+  "validation_interval_steps": 128,
+  "stage_a_learning_rate": 0.001,
+  "stage_b_learning_rate": 0.0001,
+  "clip": 30.0,
+  "temperature": 1.0,
+  "attention_implementation": "eager",
+  "architectures": ["full28_diagonal"]
+}

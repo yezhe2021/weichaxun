@@ -1,0 +1,40 @@
+{
+  "selection_uses_test": false,
+  "ranking_rule": [
+    "max validation generation F1",
+    "min validation NLL",
+    "min parameters"
+  ],
+  "all_candidates": [
+    {
+      "kind": "v2_hl",
+      "validation_generation_f1": 0.16666666666666666,
+      "validation_nll": 4.967583775520325,
+      "parameters": 94447872
+    },
+    {
+      "kind": "v2_h",
+      "validation_generation_f1": 0.16666666666666666,
+      "validation_nll": 4.974595069885254,
+      "parameters": 94445568
+    },
+    {
+      "kind": "linear_continued",
+      "validation_generation_f1": 0.16666666666666666,
+      "validation_nll": 4.976687073707581,
+      "parameters": 75497472
+    }
+  ],
+  "best_overall": {
+    "kind": "v2_hl",
+    "validation_generation_f1": 0.16666666666666666,
+    "validation_nll": 4.967583775520325,
+    "parameters": 94447872
+  },
+  "best_v2": {
+    "kind": "v2_hl",
+    "validation_generation_f1": 0.16666666666666666,
+    "validation_nll": 4.967583775520325,
+    "parameters": 94447872
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "phase": "translator_only",
+    "sample": 1,
+    "answer_ce": 13.23504638671875
+  },
+  {
+    "phase": "translator_only",
+    "sample": 2,
+    "answer_ce": 12.806007385253906
+  },
+  {
+    "phase": "translator_only",
+    "sample": 3,
+    "answer_ce": 12.202990531921387
+  },
+  {
+    "phase": "translator_only",
+    "sample": 4,
+    "answer_ce": 11.79609489440918
+  },
+  {
+    "phase": "translator_only",
+    "sample": 5,
+    "answer_ce": 13.876365661621094
+  },
+  {
+    "phase": "translator_only",
+    "sample": 6,
+    "answer_ce": 7.10357666015625
+  },
+  {
+    "phase": "translator_only",
+    "sample": 7,
+    "answer_ce": 12.28537368774414
+  },
+  {
+    "phase": "translator_only",
+    "sample": 8,
+    "answer_ce": 12.163467407226562
+  },
+  {
+    "phase": "joint",
+    "epoch": 1,
+    "sample": 1,
+    "answer_ce": 12.803201675415039,
+    "reconstruction": 3.505530834197998,
+    "dependence": 1.8234281539916992,
+    "shuffled_nll": 11.47977352142334,
+    "total": 13.518441200256348
+  },
+  {
+    "phase": "joint",
+    "epoch": 1,
+    "sample": 2,
+    "answer_ce": 11.688787460327148,
+    "reconstruction": 3.5350420475006104,
+    "dependence": 0.12933349609375,
+    "shuffled_nll": 12.059453964233398,
+    "total": 12.068158149719238
+  },
+  {
+    "phase": "joint",
+    "epoch": 1,
+    "sample": 3,
+    "answer_ce": 12.201947212219238,
+    "reconstruction": 3.517082691192627,
+    "dependence": 0.3041067123413086,
+    "shuffled_nll": 12.39784049987793,
+    "total": 12.614477157592773
+  },
+  {
+    "phase": "joint",
+    "epoch": 1,
+    "sample": 4,
+    "answer_ce": 13.851035118103027,
+    "reconstruction": 3.539780616760254,
+    "dependence": 2.499464988708496,
+    "shuffled_nll": 11.851570129394531,
+    "total": 14.704906463623047
+  },
+  {
+    "phase": "joint",
+    "epoch": 1,
+    "sample": 5,
+    "answer_ce": 7.057016849517822,
+    "reconstruction": 3.533000946044922,
+    "dependence": 0.0,
+    "shuffled_nll": 7.80729866027832,
+    "total": 7.4103169441223145
+  },
+  {
+    "phase": "joint",
+    "epoch": 1,
+    "sample": 6,
+    "answer_ce": 12.247600555419922,
+    "reconstruction": 3.5310425758361816,
+    "dependence": 1.7685184478759766,
+    "shuffled_nll": 10.979082107543945,
+    "total": 12.954408645629883
+  },
+  {
+    "phase": "joint",
+    "epoch": 1,
+    "sample": 7,
+    "answer_ce": 13.25011920928955,
+    "reconstruction": 3.52807354927063,
+    "dependence": 1.0821666717529297,
+    "shuffled_nll": 12.667952537536621,
+    "total": 13.81935977935791
+  },
+  {
+    "phase": "joint",
+    "epoch": 1,
+    "sample": 8,
+    "answer_ce": 12.152144432067871,
+    "reconstruction": 3.5673418045043945,
+    "dependence": 1.3126535415649414,
+    "shuffled_nll": 11.33949089050293,
+    "total": 12.771409034729004
+  }
+]

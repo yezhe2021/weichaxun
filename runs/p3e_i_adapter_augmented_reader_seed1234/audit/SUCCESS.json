@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "qa_only_stage": true,
+  "evidence_reconstruction_stage": false,
+  "smoke16_epochs": 5,
+  "formal512_epochs": 5,
+  "receiver_base_parameters_frozen": true,
+  "c1_reader_frozen": true,
+  "sender_writer_canonical_cache_frozen": true,
+  "lora_layers": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+  ],
+  "lora_targets": [
+    "q_proj",
+    "v_proj",
+    "o_proj",
+    "down_proj"
+  ],
+  "rank": 8,
+  "alpha": 16.0,
+  "dropout": 0.0,
+  "reader_off_disables_external_reader_and_lora": true,
+  "reader_off_exact": true
+}

@@ -1,0 +1,642 @@
+[
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Murder 2",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.771440505981445
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "William Lloyd (1818–1820)",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.3357083797454834
+  },
+  {
+    "sample_id": "5a8de5d55542995085b3734d",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.1712316274642944
+  },
+  {
+    "sample_id": "5ade9c2155429939a52fe8fe",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "1854",
+    "prediction": "1890",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.1021463871002197
+  },
+  {
+    "sample_id": "5ab871725542990e739ec8f8",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Red House Painters",
+    "prediction": "Daughtry",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.6931703686714172
+  },
+  {
+    "sample_id": "5a835b88554299123d8c2101",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "YIVO",
+    "prediction": "American Civil Rights Association",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.147181987762451
+  },
+  {
+    "sample_id": "5a74e8a25542996c70cfae37",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Robert Arthur Mould",
+    "prediction": "John Lennon",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.378002643585205
+  },
+  {
+    "sample_id": "5a835a265542992ef85e2281",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "theater and film",
+    "prediction": "film director",
+    "em": 0.0,
+    "f1": 0.4,
+    "nll": 2.017312526702881
+  },
+  {
+    "sample_id": "5adc396155429944faac2479",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.27870652079582214
+  },
+  {
+    "sample_id": "5a7df6e65542995f4f402353",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Cherie Ann Currie",
+    "prediction": "Adam Duritz",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.7921955585479736
+  },
+  {
+    "sample_id": "5add292b5542990d50227e0a",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Detroit, Michigan",
+    "prediction": "New York",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.8436627388000488
+  },
+  {
+    "sample_id": "5ac02edb554299294b218f41",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Phil Collins",
+    "prediction": "Celine Dion",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.652102470397949
+  },
+  {
+    "sample_id": "5a8f876e5542997ba9cb32a1",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.4141942262649536
+  },
+  {
+    "sample_id": "5ab1ec725542993be8fa9883",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Stoloff",
+    "prediction": "Benjamin Stolff",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.7788785696029663
+  },
+  {
+    "sample_id": "5ac283f7554299677310254a",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Xinghua () is a county-level city",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.8790574073791504
+  },
+  {
+    "sample_id": "5ade6eb65542992fa25da782",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Johnny Cash, Waylon Jennings",
+    "prediction": "Bobby Darin and John Lennon",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.307250738143921
+  },
+  {
+    "sample_id": "5a810221554299260e20a1f9",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Andrew Lloyd Webber and Tim Rice",
+    "prediction": "Murray Taylor",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.227898359298706
+  },
+  {
+    "sample_id": "5a72aec45542994cef4bc3d7",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Nelson Algren",
+    "prediction": "Nathanael",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.7872071862220764
+  },
+  {
+    "sample_id": "5ae15d70554299422ee9966f",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Fredric March",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.743435859680176
+  },
+  {
+    "sample_id": "5ab96ab755429970cfb8eacd",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.315362930297852
+  },
+  {
+    "sample_id": "5a82efe355429966c78a6aa1",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Winter Haven Mall",
+    "prediction": "West Palm Beach",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.8996505737304688
+  },
+  {
+    "sample_id": "5a865bbf5542991e77181615",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Ghostbusters: Answer the Call",
+    "prediction": "The 2011 movie starring Melissa McCarthy and featuring a character named Slimer is \"The 201\" (201).",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.919306755065918
+  },
+  {
+    "sample_id": "5ab850795542990e739ec8bd",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Kennebec County, Maine",
+    "prediction": "Burlington, New York",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.591932773590088
+  },
+  {
+    "sample_id": "5a9052765542995651fb513d",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Prof Bhabananda Deka",
+    "prediction": "Czesław Miłos",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.2344858646392822
+  },
+  {
+    "sample_id": "5a80ad205542992bc0c4a79d",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "1st Earl Grosvenor",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.32836389541626
+  },
+  {
+    "sample_id": "5abf877c5542990832d3a147",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.9111544489860535
+  },
+  {
+    "sample_id": "5a76f22055429972597f13fa",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "vocalist",
+    "prediction": "A. 1990s",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.380866050720215
+  },
+  {
+    "sample_id": "5a72bbfa5542992359bc318d",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "University of Washington",
+    "prediction": "University of Washington",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.05858345329761505
+  },
+  {
+    "sample_id": "5a888abc5542997e5c09a604",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Ghettopoly",
+    "prediction": "Yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.356050729751587
+  },
+  {
+    "sample_id": "5a8463d05542990548d0b2a5",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Shari Shattuck",
+    "prediction": "Catherine Keenan",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.158907413482666
+  },
+  {
+    "sample_id": "5ac540365542994611c8b470",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Loughborough University",
+    "prediction": "University of Loughborough",
+    "em": 0.0,
+    "f1": 0.8,
+    "nll": 2.0281593799591064
+  },
+  {
+    "sample_id": "5a90a9a45542990a9849367e",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_correct",
+    "answer": "Podocarpus",
+    "prediction": "Podocarpus",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.17802304029464722
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "10000000000000000000000000000000",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 11.575096130371094
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "William Henry",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.3781232833862305
+  },
+  {
+    "sample_id": "5a8de5d55542995085b3734d",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.898396372795105
+  },
+  {
+    "sample_id": "5ade9c2155429939a52fe8fe",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "1854",
+    "prediction": "1950",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.4892001152038574
+  },
+  {
+    "sample_id": "5ab871725542990e739ec8f8",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Red House Painters",
+    "prediction": "Daughtry",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.5087486505508423
+  },
+  {
+    "sample_id": "5a835b88554299123d8c2101",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "YIVO",
+    "prediction": "Jewish Center for Jewish History",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.081430196762085
+  },
+  {
+    "sample_id": "5a74e8a25542996c70cfae37",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Robert Arthur Mould",
+    "prediction": "John Lennon",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.547565937042236
+  },
+  {
+    "sample_id": "5a835a265542992ef85e2281",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "theater and film",
+    "prediction": "film industry",
+    "em": 0.0,
+    "f1": 0.4,
+    "nll": 3.360863447189331
+  },
+  {
+    "sample_id": "5adc396155429944faac2479",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "no",
+    "prediction": "non-fiction writers",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.697267532348633
+  },
+  {
+    "sample_id": "5a7df6e65542995f4f402353",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Cherie Ann Currie",
+    "prediction": "Cherie Currie",
+    "em": 0.0,
+    "f1": 0.8,
+    "nll": 3.241933584213257
+  },
+  {
+    "sample_id": "5add292b5542990d50227e0a",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Detroit, Michigan",
+    "prediction": "New York",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.658519744873047
+  },
+  {
+    "sample_id": "5ac02edb554299294b218f41",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Phil Collins",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.9194629192352295
+  },
+  {
+    "sample_id": "5a8f876e5542997ba9cb32a1",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.4154547452926636
+  },
+  {
+    "sample_id": "5ab1ec725542993be8fa9883",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Stoloff",
+    "prediction": "Benjamin Stoloff",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 0.7340107560157776
+  },
+  {
+    "sample_id": "5ac283f7554299677310254a",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Xinghua () is a county-level city",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.8034627437591553
+  },
+  {
+    "sample_id": "5ade6eb65542992fa25da782",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Johnny Cash, Waylon Jennings",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.6899659633636475
+  },
+  {
+    "sample_id": "5a810221554299260e20a1f9",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Andrew Lloyd Webber and Tim Rice",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.291604042053223
+  },
+  {
+    "sample_id": "5a72aec45542994cef4bc3d7",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Nelson Algren",
+    "prediction": "Nathanael West",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.4675135612487793
+  },
+  {
+    "sample_id": "5ae15d70554299422ee9966f",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Fredric March",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.1055383682250977
+  },
+  {
+    "sample_id": "5ab96ab755429970cfb8eacd",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+    "prediction": "William S. Burroughs",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.039205074310303
+  },
+  {
+    "sample_id": "5a82efe355429966c78a6aa1",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Winter Haven Mall",
+    "prediction": "Pike City",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.6203908920288086
+  },
+  {
+    "sample_id": "5a865bbf5542991e77181615",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Ghostbusters: Answer the Call",
+    "prediction": "The Nutty Professor",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.770820617675781
+  },
+  {
+    "sample_id": "5ab850795542990e739ec8bd",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Kennebec County, Maine",
+    "prediction": "county of Bakers",
+    "em": 0.0,
+    "f1": 0.3333333333333333,
+    "nll": 3.2296338081359863
+  },
+  {
+    "sample_id": "5a9052765542995651fb513d",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Prof Bhabananda Deka",
+    "prediction": "B.",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.516336679458618
+  },
+  {
+    "sample_id": "5a80ad205542992bc0c4a79d",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "1st Earl Grosvenor",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.6879096031188965
+  },
+  {
+    "sample_id": "5abf877c5542990832d3a147",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.8338670134544373
+  },
+  {
+    "sample_id": "5a76f22055429972597f13fa",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "vocalist",
+    "prediction": "solo",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.215757966041565
+  },
+  {
+    "sample_id": "5a72bbfa5542992359bc318d",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "University of Washington",
+    "prediction": "University of Washington",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.10784953832626343
+  },
+  {
+    "sample_id": "5a888abc5542997e5c09a604",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Ghettopoly",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.9672253727912903
+  },
+  {
+    "sample_id": "5a8463d05542990548d0b2a5",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Shari Shattuck",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.2789106369018555
+  },
+  {
+    "sample_id": "5ac540365542994611c8b470",
+    "type": "bridge",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Loughborough University",
+    "prediction": "University of London",
+    "em": 0.0,
+    "f1": 0.4,
+    "nll": 1.835310697555542
+  },
+  {
+    "sample_id": "5a90a9a45542990a9849367e",
+    "type": "comparison",
+    "condition": "r2_learnable_ce_shuffled",
+    "answer": "Podocarpus",
+    "prediction": "Podocperm",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.969379425048828
+  }
+]

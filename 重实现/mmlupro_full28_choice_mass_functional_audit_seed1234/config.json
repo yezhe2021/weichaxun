@@ -1,0 +1,24 @@
+{
+  "experiment_name": "mmlupro_full28_choice_mass_functional_audit_seed1234",
+  "seed": 1234,
+  "work_dir": "/home/yezhe/重实现/mmlupro_full28_choice_mass_functional_audit_seed1234",
+  "cache_dir": "/home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/cache",
+  "manifest_dir": "/home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/artifacts/manifests",
+  "calibration_path": "/home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/artifacts/calibration/rms_scales.pt",
+  "model_4b": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+  "dtype": "float16",
+  "attention_implementation": "eager",
+  "source_layers": 28,
+  "target_layers": 36,
+  "num_kv_heads": 8,
+  "head_dim": 128,
+  "rms_epsilon": 0.000001,
+  "temperature": 1.0,
+  "splits": ["train", "validation", "test"],
+  "checkpoints": {
+    "stage_a": "/home/yezhe/重实现/mmlupro_full28_writer_b1_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/full28/stage_a/best.pt",
+    "b1_final_kl": "/home/yezhe/重实现/mmlupro_full28_writer_b1_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/full28/stage_b_final/best.pt"
+  },
+  "decomposition_tolerance": 0.0005,
+  "labels": ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+}

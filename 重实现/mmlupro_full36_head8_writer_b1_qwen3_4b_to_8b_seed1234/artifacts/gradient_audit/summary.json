@@ -1,0 +1,57 @@
+{
+  "writer": "full36_head8",
+  "checkpoint": "/home/yezhe/重实现/mmlupro_full36_head8_writer_b1_qwen3_4b_to_8b_seed1234/checkpoints/quick/full36_head8/stage_a/best.pt",
+  "sample_count": 4,
+  "functional_modes": [
+    "final"
+  ],
+  "rows": [
+    {
+      "sample_id": "3114",
+      "functional_mode": "final",
+      "functional_kl": 0.04197908192873001,
+      "gradient": {
+        "norm": 17.32890959462906,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "471",
+      "functional_mode": "final",
+      "functional_kl": 0.024567507207393646,
+      "gradient": {
+        "norm": 7.120506566289856,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "3851",
+      "functional_mode": "final",
+      "functional_kl": 0.022821007296442986,
+      "gradient": {
+        "norm": 10.434776011697792,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "10446",
+      "functional_mode": "final",
+      "functional_kl": 0.11107397079467773,
+      "gradient": {
+        "norm": 33.498349431336656,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    }
+  ],
+  "receiver_gradient_count": 0,
+  "kv_hidden_losses_present_in_training_graph": false,
+  "gold_label_used": false
+}

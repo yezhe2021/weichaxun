@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "provisional_automatic_diagnosis": "canonical_memory_does_not_preserve_full_evidence_token_content",
+  "manual_CPW_review_required_for_final_interpretation": true,
+  "thresholds": {
+    "embedding_cosine_good": 0.8,
+    "soft_prefix_within_full_text_f1": 0.08,
+    "soft_prefix_within_c1_f1": 0.05
+  },
+  "observed": {
+    "embedding_cosine": 0.35501732614698306,
+    "canonical_soft_prefix_f1": 0.33746445105820105,
+    "full_evidence_text_f1": 0.4380547517096428,
+    "current_c1_f1": 0.31843697390572395,
+    "correct_shuffled_f1_gap": -0.013281250000000022
+  },
+  "scope": "Diagnostic evidence only. KV-to-soft-token conversion is not proposed as the final heterogeneous latent communication interface."
+}

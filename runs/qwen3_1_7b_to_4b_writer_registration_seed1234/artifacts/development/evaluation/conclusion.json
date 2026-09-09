@@ -1,0 +1,28 @@
+{
+  "validation_selected_v2": "v2_h",
+  "delta_v2_ce_over_linear_continued_ce": -0.023040674603174716,
+  "deltas": {
+    "linear_continued_ce": {
+      "correct_minus_shuffled_f1": 0.09424603174603183,
+      "correct_minus_no_memory_f1": -0.0262013575192922
+    },
+    "v2_h_ce": {
+      "correct_minus_shuffled_f1": 0.11739130434782605,
+      "correct_minus_no_memory_f1": -0.04924203212246692
+    },
+    "v2_hl_ce": {
+      "correct_minus_shuffled_f1": 0.07558847402597405,
+      "correct_minus_no_memory_f1": -0.033921415239349995
+    },
+    "linear_continued_kd": {
+      "correct_minus_shuffled_f1": 0.02425399436090228,
+      "correct_minus_no_memory_f1": -0.05962149640818115
+    },
+    "v2_h_kd": {
+      "correct_minus_shuffled_f1": 0.13047331871345036,
+      "correct_minus_no_memory_f1": -0.029623976566911292
+    }
+  },
+  "same_checkpoint_used_for_correct_and_shuffled": true,
+  "test_used_for_selection": false
+}

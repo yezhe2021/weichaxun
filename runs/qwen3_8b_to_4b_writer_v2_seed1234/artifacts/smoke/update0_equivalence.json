@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "count": 2,
+  "maximum_kv_abs_difference": {
+    "v2_h": 0.0,
+    "v2_hl": 0.0
+  },
+  "maximum_answer_token_kl": {
+    "v2_h": 0.0,
+    "v2_hl": 0.0
+  },
+  "top1_matches": {
+    "v2_h": 2,
+    "v2_hl": 2
+  },
+  "generation_matches": {
+    "v2_h": 2,
+    "v2_hl": 2
+  },
+  "rows": [
+    {
+      "sample_id": "5ac3d9135542995c82c4ac4c",
+      "linear_prediction": "Answer: 729.",
+      "v2_h": {
+        "kv_max_abs_difference": 0.0,
+        "answer_token_kl": 0.0,
+        "top1_match": true,
+        "prediction": "Answer: 729.",
+        "generation_match": true
+      },
+      "v2_hl": {
+        "kv_max_abs_difference": 0.0,
+        "answer_token_kl": 0.0,
+        "top1_match": true,
+        "prediction": "Answer: 729.",
+        "generation_match": true
+      }
+    },
+    {
+      "sample_id": "5adc0e395542996e685252c1",
+      "linear_prediction": "No.",
+      "v2_h": {
+        "kv_max_abs_difference": 0.0,
+        "answer_token_kl": 0.0,
+        "top1_match": true,
+        "prediction": "No.",
+        "generation_match": true
+      },
+      "v2_hl": {
+        "kv_max_abs_difference": 0.0,
+        "answer_token_kl": 0.0,
+        "top1_match": true,
+        "prediction": "No.",
+        "generation_match": true
+      }
+    }
+  ]
+}

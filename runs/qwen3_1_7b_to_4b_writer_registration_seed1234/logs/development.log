@@ -1,0 +1,919 @@
+[2026-08-04 21:21:48] development: start prepare
+receiver assets linked; cache-audit continuation recorded
+[2026-08-04 21:21:48] development: start source1_7
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  54%|█████▍    | 169/311 [00:00<00:00, 1669.24it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1659.73it/s]
+[2026-08-04 21:21:57] development: source1_7 train 1/512
+[2026-08-04 21:21:58] development: source1_7 train 2/512
+[2026-08-04 21:21:58] development: source1_7 train 3/512
+[2026-08-04 21:21:58] development: source1_7 train 4/512
+[2026-08-04 21:21:59] development: source1_7 train 5/512
+[2026-08-04 21:21:59] development: source1_7 train 6/512
+[2026-08-04 21:22:00] development: source1_7 train 7/512
+[2026-08-04 21:22:00] development: source1_7 train 8/512
+[2026-08-04 21:22:01] development: source1_7 train 9/512
+[2026-08-04 21:22:01] development: source1_7 train 10/512
+[2026-08-04 21:22:02] development: source1_7 train 11/512
+[2026-08-04 21:22:02] development: source1_7 train 12/512
+[2026-08-04 21:22:03] development: source1_7 train 13/512
+[2026-08-04 21:22:03] development: source1_7 train 14/512
+[2026-08-04 21:22:04] development: source1_7 train 15/512
+[2026-08-04 21:22:04] development: source1_7 train 16/512
+[2026-08-04 21:22:05] development: source1_7 train 17/512
+[2026-08-04 21:22:05] development: source1_7 train 18/512
+[2026-08-04 21:22:05] development: source1_7 train 19/512
+[2026-08-04 21:22:06] development: source1_7 train 20/512
+[2026-08-04 21:22:06] development: source1_7 train 21/512
+[2026-08-04 21:22:07] development: source1_7 train 22/512
+[2026-08-04 21:22:07] development: source1_7 train 23/512
+[2026-08-04 21:22:08] development: source1_7 train 24/512
+[2026-08-04 21:22:08] development: source1_7 train 25/512
+[2026-08-04 21:22:09] development: source1_7 train 26/512
+[2026-08-04 21:22:10] development: source1_7 train 27/512
+[2026-08-04 21:22:10] development: source1_7 train 28/512
+[2026-08-04 21:22:10] development: source1_7 train 29/512
+[2026-08-04 21:22:11] development: source1_7 train 30/512
+[2026-08-04 21:22:12] development: source1_7 train 31/512
+[2026-08-04 21:22:12] development: source1_7 train 32/512
+[2026-08-04 21:22:13] development: source1_7 train 33/512
+[2026-08-04 21:22:13] development: source1_7 train 34/512
+[2026-08-04 21:22:14] development: source1_7 train 35/512
+[2026-08-04 21:22:14] development: source1_7 train 36/512
+[2026-08-04 21:22:15] development: source1_7 train 37/512
+[2026-08-04 21:22:15] development: source1_7 train 38/512
+[2026-08-04 21:22:15] development: source1_7 train 39/512
+[2026-08-04 21:22:16] development: source1_7 train 40/512
+[2026-08-04 21:22:16] development: source1_7 train 41/512
+[2026-08-04 21:22:17] development: source1_7 train 42/512
+[2026-08-04 21:22:17] development: source1_7 train 43/512
+[2026-08-04 21:22:18] development: source1_7 train 44/512
+[2026-08-04 21:22:18] development: source1_7 train 45/512
+[2026-08-04 21:22:19] development: source1_7 train 46/512
+[2026-08-04 21:22:19] development: source1_7 train 47/512
+[2026-08-04 21:22:19] development: source1_7 train 48/512
+[2026-08-04 21:22:20] development: source1_7 train 49/512
+[2026-08-04 21:22:20] development: source1_7 train 50/512
+[2026-08-04 21:22:21] development: source1_7 train 51/512
+[2026-08-04 21:22:21] development: source1_7 train 52/512
+[2026-08-04 21:22:22] development: source1_7 train 53/512
+[2026-08-04 21:22:22] development: source1_7 train 54/512
+[2026-08-04 21:22:23] development: source1_7 train 55/512
+[2026-08-04 21:22:23] development: source1_7 train 56/512
+[2026-08-04 21:22:24] development: source1_7 train 57/512
+[2026-08-04 21:22:24] development: source1_7 train 58/512
+[2026-08-04 21:22:25] development: source1_7 train 59/512
+[2026-08-04 21:22:25] development: source1_7 train 60/512
+[2026-08-04 21:22:26] development: source1_7 train 61/512
+[2026-08-04 21:22:26] development: source1_7 train 62/512
+[2026-08-04 21:22:27] development: source1_7 train 63/512
+[2026-08-04 21:22:27] development: source1_7 train 64/512
+[2026-08-04 21:22:28] development: source1_7 train 65/512
+[2026-08-04 21:22:28] development: source1_7 train 66/512
+[2026-08-04 21:22:29] development: source1_7 train 67/512
+[2026-08-04 21:22:29] development: source1_7 train 68/512
+[2026-08-04 21:22:30] development: source1_7 train 69/512
+[2026-08-04 21:22:30] development: source1_7 train 70/512
+[2026-08-04 21:22:31] development: source1_7 train 71/512
+[2026-08-04 21:22:31] development: source1_7 train 72/512
+[2026-08-04 21:22:32] development: source1_7 train 73/512
+[2026-08-04 21:22:33] development: source1_7 train 74/512
+[2026-08-04 21:22:33] development: source1_7 train 75/512
+[2026-08-04 21:22:34] development: source1_7 train 76/512
+[2026-08-04 21:22:34] development: source1_7 train 77/512
+[2026-08-04 21:22:34] development: source1_7 train 78/512
+[2026-08-04 21:22:35] development: source1_7 train 79/512
+[2026-08-04 21:22:36] development: source1_7 train 80/512
+[2026-08-04 21:22:36] development: source1_7 train 81/512
+[2026-08-04 21:22:37] development: source1_7 train 82/512
+[2026-08-04 21:22:37] development: source1_7 train 84/512
+[2026-08-04 21:22:38] development: source1_7 train 85/512
+[2026-08-04 21:22:38] development: source1_7 train 86/512
+[2026-08-04 21:22:39] development: source1_7 train 87/512
+[2026-08-04 21:22:39] development: source1_7 train 88/512
+[2026-08-04 21:22:40] development: source1_7 train 89/512
+[2026-08-04 21:22:40] development: source1_7 train 90/512
+[2026-08-04 21:22:41] development: source1_7 train 91/512
+[2026-08-04 21:22:41] development: source1_7 train 92/512
+[2026-08-04 21:22:42] development: source1_7 train 93/512
+[2026-08-04 21:22:42] development: source1_7 train 94/512
+[2026-08-04 21:22:43] development: source1_7 train 95/512
+[2026-08-04 21:22:43] development: source1_7 train 96/512
+[2026-08-04 21:22:44] development: source1_7 train 97/512
+[2026-08-04 21:22:44] development: source1_7 train 98/512
+[2026-08-04 21:22:45] development: source1_7 train 99/512
+[2026-08-04 21:22:45] development: source1_7 train 100/512
+[2026-08-04 21:22:46] development: source1_7 train 101/512
+[2026-08-04 21:22:46] development: source1_7 train 102/512
+[2026-08-04 21:22:47] development: source1_7 train 103/512
+[2026-08-04 21:22:47] development: source1_7 train 104/512
+[2026-08-04 21:22:48] development: source1_7 train 105/512
+[2026-08-04 21:22:48] development: source1_7 train 106/512
+[2026-08-04 21:22:49] development: source1_7 train 107/512
+[2026-08-04 21:22:49] development: source1_7 train 108/512
+[2026-08-04 21:22:50] development: source1_7 train 109/512
+[2026-08-04 21:22:50] development: source1_7 train 110/512
+[2026-08-04 21:22:51] development: source1_7 train 111/512
+[2026-08-04 21:22:51] development: source1_7 train 112/512
+[2026-08-04 21:22:51] development: source1_7 train 113/512
+[2026-08-04 21:22:52] development: source1_7 train 114/512
+[2026-08-04 21:22:53] development: source1_7 train 115/512
+[2026-08-04 21:22:53] development: source1_7 train 116/512
+[2026-08-04 21:22:54] development: source1_7 train 117/512
+[2026-08-04 21:22:54] development: source1_7 train 118/512
+[2026-08-04 21:22:55] development: source1_7 train 119/512
+[2026-08-04 21:22:55] development: source1_7 train 120/512
+[2026-08-04 21:22:56] development: source1_7 train 121/512
+[2026-08-04 21:22:56] development: source1_7 train 122/512
+[2026-08-04 21:22:57] development: source1_7 train 123/512
+[2026-08-04 21:22:57] development: source1_7 train 124/512
+[2026-08-04 21:22:58] development: source1_7 train 125/512
+[2026-08-04 21:22:58] development: source1_7 train 126/512
+[2026-08-04 21:22:59] development: source1_7 train 127/512
+[2026-08-04 21:22:59] development: source1_7 train 128/512
+[2026-08-04 21:23:00] development: source1_7 train 129/512
+[2026-08-04 21:23:00] development: source1_7 train 130/512
+[2026-08-04 21:23:01] development: source1_7 train 131/512
+[2026-08-04 21:23:01] development: source1_7 train 132/512
+[2026-08-04 21:23:02] development: source1_7 train 133/512
+[2026-08-04 21:23:02] development: source1_7 train 134/512
+[2026-08-04 21:23:03] development: source1_7 train 135/512
+[2026-08-04 21:23:03] development: source1_7 train 136/512
+[2026-08-04 21:23:04] development: source1_7 train 137/512
+[2026-08-04 21:23:04] development: source1_7 train 138/512
+[2026-08-04 21:23:05] development: source1_7 train 139/512
+[2026-08-04 21:23:06] development: source1_7 train 140/512
+[2026-08-04 21:23:06] development: source1_7 train 141/512
+[2026-08-04 21:23:07] development: source1_7 train 142/512
+[2026-08-04 21:23:07] development: source1_7 train 143/512
+[2026-08-04 21:23:07] development: source1_7 train 144/512
+[2026-08-04 21:23:08] development: source1_7 train 145/512
+[2026-08-04 21:23:08] development: source1_7 train 146/512
+[2026-08-04 21:23:09] development: source1_7 train 147/512
+[2026-08-04 21:23:10] development: source1_7 train 148/512
+[2026-08-04 21:23:10] development: source1_7 train 149/512
+[2026-08-04 21:23:11] development: source1_7 train 150/512
+[2026-08-04 21:23:11] development: source1_7 train 151/512
+[2026-08-04 21:23:12] development: source1_7 train 152/512
+[2026-08-04 21:23:12] development: source1_7 train 153/512
+[2026-08-04 21:23:13] development: source1_7 train 154/512
+[2026-08-04 21:23:13] development: source1_7 train 155/512
+[2026-08-04 21:23:14] development: source1_7 train 156/512
+[2026-08-04 21:23:14] development: source1_7 train 157/512
+[2026-08-04 21:23:15] development: source1_7 train 158/512
+[2026-08-04 21:23:15] development: source1_7 train 159/512
+[2026-08-04 21:23:16] development: source1_7 train 160/512
+[2026-08-04 21:23:16] development: source1_7 train 161/512
+[2026-08-04 21:23:16] development: source1_7 train 162/512
+[2026-08-04 21:23:17] development: source1_7 train 163/512
+[2026-08-04 21:23:17] development: source1_7 train 164/512
+[2026-08-04 21:23:18] development: source1_7 train 165/512
+[2026-08-04 21:23:18] development: source1_7 train 166/512
+[2026-08-04 21:23:19] development: source1_7 train 167/512
+[2026-08-04 21:23:19] development: source1_7 train 168/512
+[2026-08-04 21:23:19] development: source1_7 train 169/512
+[2026-08-04 21:23:20] development: source1_7 train 170/512
+[2026-08-04 21:23:21] development: source1_7 train 171/512
+[2026-08-04 21:23:21] development: source1_7 train 172/512
+[2026-08-04 21:23:21] development: source1_7 train 173/512
+[2026-08-04 21:23:22] development: source1_7 train 174/512
+[2026-08-04 21:23:22] development: source1_7 train 176/512
+[2026-08-04 21:23:23] development: source1_7 train 177/512
+[2026-08-04 21:23:23] development: source1_7 train 178/512
+[2026-08-04 21:23:24] development: source1_7 train 179/512
+[2026-08-04 21:23:24] development: source1_7 train 180/512
+[2026-08-04 21:23:25] development: source1_7 train 181/512
+[2026-08-04 21:23:25] development: source1_7 train 182/512
+[2026-08-04 21:23:25] development: source1_7 train 183/512
+[2026-08-04 21:23:26] development: source1_7 train 184/512
+[2026-08-04 21:23:27] development: source1_7 train 185/512
+[2026-08-04 21:23:27] development: source1_7 train 186/512
+[2026-08-04 21:23:28] development: source1_7 train 187/512
+[2026-08-04 21:23:28] development: source1_7 train 188/512
+[2026-08-04 21:23:29] development: source1_7 train 189/512
+[2026-08-04 21:23:30] development: source1_7 train 190/512
+[2026-08-04 21:23:32] development: source1_7 train 191/512
+[2026-08-04 21:23:33] development: source1_7 train 192/512
+[2026-08-04 21:23:33] development: source1_7 train 193/512
+[2026-08-04 21:23:34] development: source1_7 train 194/512
+[2026-08-04 21:23:35] development: source1_7 train 195/512
+[2026-08-04 21:23:35] development: source1_7 train 196/512
+[2026-08-04 21:23:36] development: source1_7 train 197/512
+[2026-08-04 21:23:36] development: source1_7 train 198/512
+[2026-08-04 21:23:37] development: source1_7 train 199/512
+[2026-08-04 21:23:38] development: source1_7 train 200/512
+[2026-08-04 21:23:38] development: source1_7 train 201/512
+[2026-08-04 21:23:39] development: source1_7 train 202/512
+[2026-08-04 21:23:39] development: source1_7 train 203/512
+[2026-08-04 21:23:40] development: source1_7 train 204/512
+[2026-08-04 21:23:41] development: source1_7 train 205/512
+[2026-08-04 21:23:42] development: source1_7 train 206/512
+[2026-08-04 21:23:43] development: source1_7 train 207/512
+[2026-08-04 21:23:43] development: source1_7 train 208/512
+[2026-08-04 21:23:44] development: source1_7 train 209/512
+[2026-08-04 21:23:44] development: source1_7 train 210/512
+[2026-08-04 21:23:45] development: source1_7 train 211/512
+[2026-08-04 21:23:46] development: source1_7 train 212/512
+[2026-08-04 21:23:46] development: source1_7 train 213/512
+[2026-08-04 21:23:46] development: source1_7 train 214/512
+[2026-08-04 21:23:47] development: source1_7 train 215/512
+[2026-08-04 21:23:48] development: source1_7 train 216/512
+[2026-08-04 21:23:49] development: source1_7 train 217/512
+[2026-08-04 21:23:49] development: source1_7 train 218/512
+[2026-08-04 21:23:50] development: source1_7 train 219/512
+[2026-08-04 21:23:51] development: source1_7 train 220/512
+[2026-08-04 21:23:51] development: source1_7 train 221/512
+[2026-08-04 21:23:52] development: source1_7 train 222/512
+[2026-08-04 21:23:53] development: source1_7 train 223/512
+[2026-08-04 21:23:54] development: source1_7 train 224/512
+[2026-08-04 21:23:54] development: source1_7 train 225/512
+[2026-08-04 21:23:55] development: source1_7 train 227/512
+[2026-08-04 21:23:56] development: source1_7 train 228/512
+[2026-08-04 21:23:57] development: source1_7 train 229/512
+[2026-08-04 21:23:58] development: source1_7 train 230/512
+[2026-08-04 21:23:59] development: source1_7 train 231/512
+[2026-08-04 21:24:00] development: source1_7 train 232/512
+[2026-08-04 21:24:00] development: source1_7 train 233/512
+[2026-08-04 21:24:01] development: source1_7 train 234/512
+[2026-08-04 21:24:02] development: source1_7 train 235/512
+[2026-08-04 21:24:03] development: source1_7 train 236/512
+[2026-08-04 21:24:04] development: source1_7 train 237/512
+[2026-08-04 21:24:05] development: source1_7 train 238/512
+[2026-08-04 21:24:06] development: source1_7 train 239/512
+[2026-08-04 21:24:07] development: source1_7 train 240/512
+[2026-08-04 21:24:07] development: source1_7 train 241/512
+[2026-08-04 21:24:09] development: source1_7 train 242/512
+[2026-08-04 21:24:10] development: source1_7 train 243/512
+[2026-08-04 21:24:11] development: source1_7 train 244/512
+[2026-08-04 21:24:12] development: source1_7 train 245/512
+[2026-08-04 21:24:14] development: source1_7 train 246/512
+[2026-08-04 21:24:15] development: source1_7 train 247/512
+[2026-08-04 21:24:16] development: source1_7 train 248/512
+[2026-08-04 21:24:17] development: source1_7 train 249/512
+[2026-08-04 21:24:18] development: source1_7 train 250/512
+[2026-08-04 21:24:19] development: source1_7 train 251/512
+[2026-08-04 21:24:21] development: source1_7 train 252/512
+[2026-08-04 21:24:22] development: source1_7 train 253/512
+[2026-08-04 21:24:23] development: source1_7 train 254/512
+[2026-08-04 21:24:24] development: source1_7 train 255/512
+[2026-08-04 21:24:25] development: source1_7 train 256/512
+[2026-08-04 21:24:26] development: source1_7 train 257/512
+[2026-08-04 21:24:27] development: source1_7 train 258/512
+[2026-08-04 21:24:27] development: source1_7 train 259/512
+[2026-08-04 21:24:28] development: source1_7 train 260/512
+[2026-08-04 21:24:29] development: source1_7 train 261/512
+[2026-08-04 21:24:30] development: source1_7 train 262/512
+[2026-08-04 21:24:31] development: source1_7 train 263/512
+[2026-08-04 21:24:32] development: source1_7 train 264/512
+[2026-08-04 21:24:33] development: source1_7 train 265/512
+[2026-08-04 21:24:34] development: source1_7 train 266/512
+[2026-08-04 21:24:36] development: source1_7 train 267/512
+[2026-08-04 21:24:37] development: source1_7 train 268/512
+[2026-08-04 21:24:38] development: source1_7 train 269/512
+[2026-08-04 21:24:39] development: source1_7 train 270/512
+[2026-08-04 21:24:40] development: source1_7 train 271/512
+[2026-08-04 21:24:42] development: source1_7 train 272/512
+[2026-08-04 21:24:43] development: source1_7 train 273/512
+[2026-08-04 21:24:44] development: source1_7 train 274/512
+[2026-08-04 21:24:44] development: source1_7 train 275/512
+[2026-08-04 21:24:45] development: source1_7 train 276/512
+[2026-08-04 21:24:46] development: source1_7 train 277/512
+[2026-08-04 21:24:48] development: source1_7 train 278/512
+[2026-08-04 21:24:48] development: source1_7 train 279/512
+[2026-08-04 21:24:49] development: source1_7 train 280/512
+[2026-08-04 21:24:50] development: source1_7 train 281/512
+[2026-08-04 21:24:50] development: source1_7 train 282/512
+[2026-08-04 21:24:51] development: source1_7 train 283/512
+[2026-08-04 21:24:52] development: source1_7 train 284/512
+[2026-08-04 21:24:54] development: source1_7 train 285/512
+[2026-08-04 21:24:55] development: source1_7 train 286/512
+[2026-08-04 21:24:56] development: source1_7 train 287/512
+[2026-08-04 21:24:57] development: source1_7 train 288/512
+[2026-08-04 21:24:58] development: source1_7 train 289/512
+[2026-08-04 21:24:59] development: source1_7 train 290/512
+[2026-08-04 21:25:00] development: source1_7 train 291/512
+[2026-08-04 21:25:01] development: source1_7 train 292/512
+[2026-08-04 21:25:02] development: source1_7 train 293/512
+[2026-08-04 21:25:03] development: source1_7 train 294/512
+[2026-08-04 21:25:04] development: source1_7 train 295/512
+[2026-08-04 21:25:04] development: source1_7 train 296/512
+[2026-08-04 21:25:06] development: source1_7 train 297/512
+[2026-08-04 21:25:08] development: source1_7 train 298/512
+[2026-08-04 21:25:09] development: source1_7 train 299/512
+[2026-08-04 21:25:10] development: source1_7 train 300/512
+[2026-08-04 21:25:11] development: source1_7 train 301/512
+[2026-08-04 21:25:12] development: source1_7 train 302/512
+[2026-08-04 21:25:14] development: source1_7 train 303/512
+[2026-08-04 21:25:15] development: source1_7 train 304/512
+[2026-08-04 21:25:16] development: source1_7 train 305/512
+[2026-08-04 21:25:17] development: source1_7 train 306/512
+[2026-08-04 21:25:18] development: source1_7 train 307/512
+[2026-08-04 21:25:19] development: source1_7 train 308/512
+[2026-08-04 21:25:20] development: source1_7 train 309/512
+[2026-08-04 21:25:21] development: source1_7 train 310/512
+[2026-08-04 21:25:22] development: source1_7 train 311/512
+[2026-08-04 21:25:23] development: source1_7 train 312/512
+[2026-08-04 21:25:24] development: source1_7 train 313/512
+[2026-08-04 21:25:25] development: source1_7 train 314/512
+[2026-08-04 21:25:26] development: source1_7 train 315/512
+[2026-08-04 21:25:27] development: source1_7 train 316/512
+[2026-08-04 21:25:29] development: source1_7 train 317/512
+[2026-08-04 21:25:30] development: source1_7 train 319/512
+[2026-08-04 21:25:31] development: source1_7 train 320/512
+[2026-08-04 21:25:32] development: source1_7 train 321/512
+[2026-08-04 21:25:33] development: source1_7 train 322/512
+[2026-08-04 21:25:34] development: source1_7 train 323/512
+[2026-08-04 21:25:35] development: source1_7 train 324/512
+[2026-08-04 21:25:36] development: source1_7 train 325/512
+[2026-08-04 21:25:37] development: source1_7 train 326/512
+[2026-08-04 21:25:38] development: source1_7 train 327/512
+[2026-08-04 21:25:39] development: source1_7 train 328/512
+[2026-08-04 21:25:40] development: source1_7 train 329/512
+[2026-08-04 21:25:41] development: source1_7 train 330/512
+[2026-08-04 21:25:42] development: source1_7 train 331/512
+[2026-08-04 21:25:43] development: source1_7 train 332/512
+[2026-08-04 21:25:44] development: source1_7 train 333/512
+[2026-08-04 21:25:45] development: source1_7 train 334/512
+[2026-08-04 21:25:46] development: source1_7 train 335/512
+[2026-08-04 21:25:47] development: source1_7 train 336/512
+[2026-08-04 21:25:48] development: source1_7 train 337/512
+[2026-08-04 21:25:50] development: source1_7 train 338/512
+[2026-08-04 21:25:50] development: source1_7 train 339/512
+[2026-08-04 21:25:51] development: source1_7 train 340/512
+[2026-08-04 21:25:54] development: source1_7 train 341/512
+[2026-08-04 21:25:55] development: source1_7 train 342/512
+[2026-08-04 21:25:57] development: source1_7 train 343/512
+[2026-08-04 21:25:58] development: source1_7 train 344/512
+[2026-08-04 21:25:59] development: source1_7 train 345/512
+[2026-08-04 21:26:01] development: source1_7 train 346/512
+[2026-08-04 21:26:02] development: source1_7 train 347/512
+[2026-08-04 21:26:03] development: source1_7 train 348/512
+[2026-08-04 21:26:04] development: source1_7 train 349/512
+[2026-08-04 21:26:05] development: source1_7 train 350/512
+[2026-08-04 21:26:06] development: source1_7 train 351/512
+[2026-08-04 21:26:07] development: source1_7 train 352/512
+[2026-08-04 21:26:07] development: source1_7 train 353/512
+[2026-08-04 21:26:08] development: source1_7 train 354/512
+[2026-08-04 21:26:09] development: source1_7 train 356/512
+[2026-08-04 21:26:10] development: source1_7 train 357/512
+[2026-08-04 21:26:11] development: source1_7 train 358/512
+[2026-08-04 21:26:13] development: source1_7 train 359/512
+[2026-08-04 21:26:14] development: source1_7 train 360/512
+[2026-08-04 21:26:15] development: source1_7 train 361/512
+[2026-08-04 21:26:17] development: source1_7 train 362/512
+[2026-08-04 21:26:18] development: source1_7 train 363/512
+[2026-08-04 21:26:19] development: source1_7 train 364/512
+[2026-08-04 21:26:20] development: source1_7 train 365/512
+[2026-08-04 21:26:21] development: source1_7 train 366/512
+[2026-08-04 21:26:23] development: source1_7 train 367/512
+[2026-08-04 21:26:23] development: source1_7 train 368/512
+[2026-08-04 21:26:25] development: source1_7 train 369/512
+[2026-08-04 21:26:26] development: source1_7 train 370/512
+[2026-08-04 21:26:27] development: source1_7 train 371/512
+[2026-08-04 21:26:28] development: source1_7 train 372/512
+[2026-08-04 21:26:29] development: source1_7 train 373/512
+[2026-08-04 21:26:30] development: source1_7 train 374/512
+[2026-08-04 21:26:31] development: source1_7 train 375/512
+[2026-08-04 21:26:32] development: source1_7 train 376/512
+[2026-08-04 21:26:33] development: source1_7 train 377/512
+[2026-08-04 21:26:34] development: source1_7 train 378/512
+[2026-08-04 21:26:35] development: source1_7 train 379/512
+[2026-08-04 21:26:38] development: source1_7 train 380/512
+[2026-08-04 21:26:39] development: source1_7 train 381/512
+[2026-08-04 21:26:40] development: source1_7 train 382/512
+[2026-08-04 21:26:41] development: source1_7 train 383/512
+[2026-08-04 21:26:43] development: source1_7 train 384/512
+[2026-08-04 21:26:44] development: source1_7 train 385/512
+[2026-08-04 21:26:44] development: source1_7 train 386/512
+[2026-08-04 21:26:45] development: source1_7 train 387/512
+[2026-08-04 21:26:46] development: source1_7 train 388/512
+[2026-08-04 21:26:47] development: source1_7 train 389/512
+[2026-08-04 21:26:47] development: source1_7 train 390/512
+[2026-08-04 21:26:49] development: source1_7 train 391/512
+[2026-08-04 21:26:50] development: source1_7 train 392/512
+[2026-08-04 21:26:51] development: source1_7 train 393/512
+[2026-08-04 21:26:52] development: source1_7 train 394/512
+[2026-08-04 21:26:53] development: source1_7 train 395/512
+[2026-08-04 21:26:54] development: source1_7 train 396/512
+[2026-08-04 21:26:54] development: source1_7 train 397/512
+[2026-08-04 21:26:55] development: source1_7 train 398/512
+[2026-08-04 21:26:56] development: source1_7 train 399/512
+[2026-08-04 21:26:57] development: source1_7 train 400/512
+[2026-08-04 21:26:59] development: source1_7 train 401/512
+[2026-08-04 21:27:00] development: source1_7 train 402/512
+[2026-08-04 21:27:01] development: source1_7 train 403/512
+[2026-08-04 21:27:02] development: source1_7 train 404/512
+[2026-08-04 21:27:03] development: source1_7 train 405/512
+[2026-08-04 21:27:04] development: source1_7 train 406/512
+[2026-08-04 21:27:05] development: source1_7 train 407/512
+[2026-08-04 21:27:07] development: source1_7 train 408/512
+[2026-08-04 21:27:08] development: source1_7 train 409/512
+[2026-08-04 21:27:08] development: source1_7 train 410/512
+[2026-08-04 21:27:09] development: source1_7 train 411/512
+[2026-08-04 21:27:11] development: source1_7 train 412/512
+[2026-08-04 21:27:12] development: source1_7 train 413/512
+[2026-08-04 21:27:13] development: source1_7 train 414/512
+[2026-08-04 21:27:14] development: source1_7 train 416/512
+[2026-08-04 21:27:15] development: source1_7 train 417/512
+[2026-08-04 21:27:16] development: source1_7 train 418/512
+[2026-08-04 21:27:17] development: source1_7 train 419/512
+[2026-08-04 21:27:18] development: source1_7 train 420/512
+[2026-08-04 21:27:19] development: source1_7 train 421/512
+[2026-08-04 21:27:20] development: source1_7 train 422/512
+[2026-08-04 21:27:21] development: source1_7 train 423/512
+[2026-08-04 21:27:22] development: source1_7 train 424/512
+[2026-08-04 21:27:23] development: source1_7 train 425/512
+[2026-08-04 21:27:24] development: source1_7 train 426/512
+[2026-08-04 21:27:26] development: source1_7 train 427/512
+[2026-08-04 21:27:26] development: source1_7 train 428/512
+[2026-08-04 21:27:28] development: source1_7 train 429/512
+[2026-08-04 21:27:29] development: source1_7 train 430/512
+[2026-08-04 21:27:30] development: source1_7 train 431/512
+[2026-08-04 21:27:31] development: source1_7 train 432/512
+[2026-08-04 21:27:32] development: source1_7 train 433/512
+[2026-08-04 21:27:33] development: source1_7 train 434/512
+[2026-08-04 21:27:34] development: source1_7 train 435/512
+[2026-08-04 21:27:36] development: source1_7 train 436/512
+[2026-08-04 21:27:37] development: source1_7 train 437/512
+[2026-08-04 21:27:38] development: source1_7 train 438/512
+[2026-08-04 21:27:38] development: source1_7 train 439/512
+[2026-08-04 21:27:39] development: source1_7 train 440/512
+[2026-08-04 21:27:40] development: source1_7 train 441/512
+[2026-08-04 21:27:41] development: source1_7 train 442/512
+[2026-08-04 21:27:42] development: source1_7 train 443/512
+[2026-08-04 21:27:43] development: source1_7 train 444/512
+[2026-08-04 21:27:44] development: source1_7 train 445/512
+[2026-08-04 21:27:45] development: source1_7 train 446/512
+[2026-08-04 21:27:47] development: source1_7 train 447/512
+[2026-08-04 21:27:48] development: source1_7 train 448/512
+[2026-08-04 21:27:49] development: source1_7 train 449/512
+[2026-08-04 21:27:50] development: source1_7 train 450/512
+[2026-08-04 21:27:51] development: source1_7 train 451/512
+[2026-08-04 21:27:52] development: source1_7 train 452/512
+[2026-08-04 21:27:53] development: source1_7 train 453/512
+[2026-08-04 21:27:54] development: source1_7 train 454/512
+[2026-08-04 21:27:55] development: source1_7 train 456/512
+[2026-08-04 21:27:56] development: source1_7 train 457/512
+[2026-08-04 21:27:57] development: source1_7 train 458/512
+[2026-08-04 21:27:58] development: source1_7 train 459/512
+[2026-08-04 21:28:00] development: source1_7 train 460/512
+[2026-08-04 21:28:01] development: source1_7 train 461/512
+[2026-08-04 21:28:01] development: source1_7 train 462/512
+[2026-08-04 21:28:03] development: source1_7 train 463/512
+[2026-08-04 21:28:04] development: source1_7 train 464/512
+[2026-08-04 21:28:04] development: source1_7 train 465/512
+[2026-08-04 21:28:05] development: source1_7 train 466/512
+[2026-08-04 21:28:06] development: source1_7 train 467/512
+[2026-08-04 21:28:07] development: source1_7 train 468/512
+[2026-08-04 21:28:09] development: source1_7 train 469/512
+[2026-08-04 21:28:10] development: source1_7 train 470/512
+[2026-08-04 21:28:11] development: source1_7 train 471/512
+[2026-08-04 21:28:12] development: source1_7 train 472/512
+[2026-08-04 21:28:14] development: source1_7 train 473/512
+[2026-08-04 21:28:15] development: source1_7 train 475/512
+[2026-08-04 21:28:15] development: source1_7 train 476/512
+[2026-08-04 21:28:16] development: source1_7 train 477/512
+[2026-08-04 21:28:17] development: source1_7 train 478/512
+[2026-08-04 21:28:19] development: source1_7 train 479/512
+[2026-08-04 21:28:20] development: source1_7 train 480/512
+[2026-08-04 21:28:21] development: source1_7 train 481/512
+[2026-08-04 21:28:22] development: source1_7 train 482/512
+[2026-08-04 21:28:23] development: source1_7 train 483/512
+[2026-08-04 21:28:24] development: source1_7 train 484/512
+[2026-08-04 21:28:26] development: source1_7 train 485/512
+[2026-08-04 21:28:26] development: source1_7 train 486/512
+[2026-08-04 21:28:28] development: source1_7 train 487/512
+[2026-08-04 21:28:28] development: source1_7 train 488/512
+[2026-08-04 21:28:29] development: source1_7 train 489/512
+[2026-08-04 21:28:31] development: source1_7 train 490/512
+[2026-08-04 21:28:32] development: source1_7 train 491/512
+[2026-08-04 21:28:33] development: source1_7 train 492/512
+[2026-08-04 21:28:34] development: source1_7 train 493/512
+[2026-08-04 21:28:35] development: source1_7 train 494/512
+[2026-08-04 21:28:36] development: source1_7 train 495/512
+[2026-08-04 21:28:37] development: source1_7 train 496/512
+[2026-08-04 21:28:38] development: source1_7 train 497/512
+[2026-08-04 21:28:39] development: source1_7 train 498/512
+[2026-08-04 21:28:40] development: source1_7 train 499/512
+[2026-08-04 21:28:41] development: source1_7 train 500/512
+[2026-08-04 21:28:42] development: source1_7 train 501/512
+[2026-08-04 21:28:44] development: source1_7 train 502/512
+[2026-08-04 21:28:45] development: source1_7 train 503/512
+[2026-08-04 21:28:46] development: source1_7 train 504/512
+[2026-08-04 21:28:47] development: source1_7 train 505/512
+[2026-08-04 21:28:47] development: source1_7 train 506/512
+[2026-08-04 21:28:48] development: source1_7 train 507/512
+[2026-08-04 21:28:50] development: source1_7 train 508/512
+[2026-08-04 21:28:50] development: source1_7 train 509/512
+[2026-08-04 21:28:51] development: source1_7 train 510/512
+[2026-08-04 21:28:53] development: source1_7 train 511/512
+[2026-08-04 21:28:54] development: source1_7 train 512/512
+[2026-08-04 21:28:55] development: source1_7 validation 2/64
+[2026-08-04 21:28:56] development: source1_7 validation 3/64
+[2026-08-04 21:28:57] development: source1_7 validation 4/64
+[2026-08-04 21:28:58] development: source1_7 validation 5/64
+[2026-08-04 21:28:59] development: source1_7 validation 6/64
+[2026-08-04 21:29:00] development: source1_7 validation 7/64
+[2026-08-04 21:29:01] development: source1_7 validation 8/64
+[2026-08-04 21:29:02] development: source1_7 validation 9/64
+[2026-08-04 21:29:03] development: source1_7 validation 10/64
+[2026-08-04 21:29:03] development: source1_7 validation 11/64
+[2026-08-04 21:29:05] development: source1_7 validation 12/64
+[2026-08-04 21:29:06] development: source1_7 validation 13/64
+[2026-08-04 21:29:07] development: source1_7 validation 14/64
+[2026-08-04 21:29:08] development: source1_7 validation 15/64
+[2026-08-04 21:29:08] development: source1_7 validation 16/64
+[2026-08-04 21:29:09] development: source1_7 validation 17/64
+[2026-08-04 21:29:11] development: source1_7 validation 18/64
+[2026-08-04 21:29:12] development: source1_7 validation 19/64
+[2026-08-04 21:29:13] development: source1_7 validation 20/64
+[2026-08-04 21:29:14] development: source1_7 validation 21/64
+[2026-08-04 21:29:15] development: source1_7 validation 22/64
+[2026-08-04 21:29:16] development: source1_7 validation 23/64
+[2026-08-04 21:29:17] development: source1_7 validation 24/64
+[2026-08-04 21:29:18] development: source1_7 validation 25/64
+[2026-08-04 21:29:19] development: source1_7 validation 26/64
+[2026-08-04 21:29:20] development: source1_7 validation 27/64
+[2026-08-04 21:29:21] development: source1_7 validation 28/64
+[2026-08-04 21:29:23] development: source1_7 validation 29/64
+[2026-08-04 21:29:26] development: source1_7 validation 30/64
+[2026-08-04 21:29:27] development: source1_7 validation 31/64
+[2026-08-04 21:29:28] development: source1_7 validation 32/64
+[2026-08-04 21:29:29] development: source1_7 validation 33/64
+[2026-08-04 21:29:30] development: source1_7 validation 34/64
+[2026-08-04 21:29:31] development: source1_7 validation 35/64
+[2026-08-04 21:29:32] development: source1_7 validation 36/64
+[2026-08-04 21:29:33] development: source1_7 validation 37/64
+[2026-08-04 21:29:34] development: source1_7 validation 38/64
+[2026-08-04 21:29:35] development: source1_7 validation 39/64
+[2026-08-04 21:29:35] development: source1_7 validation 40/64
+[2026-08-04 21:29:36] development: source1_7 validation 41/64
+[2026-08-04 21:29:37] development: source1_7 validation 42/64
+[2026-08-04 21:29:38] development: source1_7 validation 44/64
+[2026-08-04 21:29:39] development: source1_7 validation 45/64
+[2026-08-04 21:29:40] development: source1_7 validation 47/64
+[2026-08-04 21:29:41] development: source1_7 validation 49/64
+[2026-08-04 21:29:42] development: source1_7 validation 50/64
+[2026-08-04 21:29:42] development: source1_7 validation 51/64
+[2026-08-04 21:29:43] development: source1_7 validation 52/64
+[2026-08-04 21:29:44] development: source1_7 validation 53/64
+[2026-08-04 21:29:45] development: source1_7 validation 54/64
+[2026-08-04 21:29:46] development: source1_7 validation 55/64
+[2026-08-04 21:29:47] development: source1_7 validation 56/64
+[2026-08-04 21:29:48] development: source1_7 validation 57/64
+[2026-08-04 21:29:49] development: source1_7 validation 58/64
+[2026-08-04 21:29:50] development: source1_7 validation 59/64
+[2026-08-04 21:29:51] development: source1_7 validation 60/64
+[2026-08-04 21:29:52] development: source1_7 validation 61/64
+[2026-08-04 21:29:55] development: source1_7 validation 62/64
+[2026-08-04 21:29:55] development: source1_7 validation 63/64
+[2026-08-04 21:29:57] development: source1_7 validation 64/64
+[2026-08-04 21:29:59] development: source1_7 test 1/64
+[2026-08-04 21:30:00] development: source1_7 test 2/64
+[2026-08-04 21:30:01] development: source1_7 test 3/64
+[2026-08-04 21:30:02] development: source1_7 test 4/64
+[2026-08-04 21:30:03] development: source1_7 test 5/64
+[2026-08-04 21:30:03] development: source1_7 test 6/64
+[2026-08-04 21:30:04] development: source1_7 test 7/64
+[2026-08-04 21:30:05] development: source1_7 test 8/64
+[2026-08-04 21:30:06] development: source1_7 test 9/64
+[2026-08-04 21:30:07] development: source1_7 test 10/64
+[2026-08-04 21:30:08] development: source1_7 test 11/64
+[2026-08-04 21:30:09] development: source1_7 test 12/64
+[2026-08-04 21:30:10] development: source1_7 test 13/64
+[2026-08-04 21:30:10] development: source1_7 test 14/64
+[2026-08-04 21:30:12] development: source1_7 test 15/64
+[2026-08-04 21:30:12] development: source1_7 test 16/64
+[2026-08-04 21:30:13] development: source1_7 test 17/64
+[2026-08-04 21:30:14] development: source1_7 test 18/64
+[2026-08-04 21:30:15] development: source1_7 test 19/64
+[2026-08-04 21:30:16] development: source1_7 test 20/64
+[2026-08-04 21:30:17] development: source1_7 test 21/64
+[2026-08-04 21:30:18] development: source1_7 test 22/64
+[2026-08-04 21:30:19] development: source1_7 test 23/64
+[2026-08-04 21:30:20] development: source1_7 test 25/64
+[2026-08-04 21:30:21] development: source1_7 test 26/64
+[2026-08-04 21:30:22] development: source1_7 test 27/64
+[2026-08-04 21:30:23] development: source1_7 test 28/64
+[2026-08-04 21:30:24] development: source1_7 test 29/64
+[2026-08-04 21:30:26] development: source1_7 test 30/64
+[2026-08-04 21:30:27] development: source1_7 test 31/64
+[2026-08-04 21:30:27] development: source1_7 test 32/64
+[2026-08-04 21:30:28] development: source1_7 test 33/64
+[2026-08-04 21:30:30] development: source1_7 test 34/64
+[2026-08-04 21:30:31] development: source1_7 test 35/64
+[2026-08-04 21:30:32] development: source1_7 test 36/64
+[2026-08-04 21:30:33] development: source1_7 test 37/64
+[2026-08-04 21:30:34] development: source1_7 test 38/64
+[2026-08-04 21:30:35] development: source1_7 test 39/64
+[2026-08-04 21:30:36] development: source1_7 test 40/64
+[2026-08-04 21:30:37] development: source1_7 test 41/64
+[2026-08-04 21:30:39] development: source1_7 test 42/64
+[2026-08-04 21:30:40] development: source1_7 test 43/64
+[2026-08-04 21:30:41] development: source1_7 test 44/64
+[2026-08-04 21:30:42] development: source1_7 test 45/64
+[2026-08-04 21:30:43] development: source1_7 test 46/64
+[2026-08-04 21:30:44] development: source1_7 test 47/64
+[2026-08-04 21:30:45] development: source1_7 test 49/64
+[2026-08-04 21:30:46] development: source1_7 test 52/64
+[2026-08-04 21:30:46] development: source1_7 test 53/64
+[2026-08-04 21:30:47] development: source1_7 test 54/64
+[2026-08-04 21:30:49] development: source1_7 test 55/64
+[2026-08-04 21:30:50] development: source1_7 test 56/64
+[2026-08-04 21:30:51] development: source1_7 test 57/64
+[2026-08-04 21:30:52] development: source1_7 test 58/64
+[2026-08-04 21:30:53] development: source1_7 test 59/64
+[2026-08-04 21:30:54] development: source1_7 test 60/64
+[2026-08-04 21:30:55] development: source1_7 test 61/64
+[2026-08-04 21:30:56] development: source1_7 test 62/64
+[2026-08-04 21:30:57] development: source1_7 test 63/64
+[2026-08-04 21:30:58] development: source1_7 test 64/64
+[2026-08-04 21:31:39] development: start scales
+[2026-08-04 21:34:33] development: RMS 32/512
+[2026-08-04 21:35:16] development: RMS 64/512
+[2026-08-04 21:35:58] development: RMS 96/512
+[2026-08-04 21:36:40] development: RMS 128/512
+[2026-08-04 21:37:23] development: RMS 160/512
+[2026-08-04 21:38:13] development: RMS 192/512
+[2026-08-04 21:39:03] development: RMS 224/512
+[2026-08-04 21:39:48] development: RMS 256/512
+[2026-08-04 21:40:39] development: RMS 288/512
+[2026-08-04 21:41:23] development: RMS 320/512
+[2026-08-04 21:42:08] development: RMS 352/512
+[2026-08-04 21:42:56] development: RMS 384/512
+[2026-08-04 21:44:16] development: RMS 416/512
+[2026-08-04 21:45:12] development: RMS 448/512
+[2026-08-04 21:46:13] development: RMS 480/512
+[2026-08-04 21:47:08] development: RMS 512/512
+[2026-08-04 21:47:10] development: start depth_baseline
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:02<15:25,  2.33s/it]Loading weights:  28%|██▊       | 111/398 [00:02<00:04, 63.02it/s]Loading weights:  41%|████      | 164/398 [00:02<00:02, 87.76it/s]Loading weights:  51%|█████     | 202/398 [00:02<00:01, 107.65it/s]Loading weights:  59%|█████▉    | 235/398 [00:03<00:01, 88.89it/s] Loading weights:  65%|██████▍   | 258/398 [00:05<00:04, 31.59it/s]Loading weights:  73%|███████▎  | 289/398 [00:06<00:02, 42.33it/s]Loading weights:  78%|███████▊  | 309/398 [00:06<00:02, 37.00it/s]Loading weights:  81%|████████▏ | 324/398 [00:06<00:01, 42.15it/s]Loading weights:  86%|████████▌ | 341/398 [00:07<00:01, 47.21it/s]Loading weights:  89%|████████▊ | 353/398 [00:07<00:00, 51.41it/s]Loading weights:  91%|█████████▏| 364/398 [00:07<00:00, 45.75it/s]Loading weights:  94%|█████████▎| 373/398 [00:08<00:00, 35.16it/s]Loading weights: 100%|██████████| 398/398 [00:08<00:00, 48.35it/s]
+[2026-08-04 21:53:18] development: start depth_overfit
+[2026-08-04 21:55:05] development: depth_linear_overfit16 25/800 validation=3.453343
+[2026-08-04 21:56:23] development: depth_linear_overfit16 50/800 validation=2.943982
+[2026-08-04 21:57:44] development: depth_linear_overfit16 75/800 validation=2.663155
+[2026-08-04 21:59:05] development: depth_linear_overfit16 100/800 validation=2.467255
+[2026-08-04 22:00:27] development: depth_linear_overfit16 125/800 validation=2.312187
+[2026-08-04 22:01:50] development: depth_linear_overfit16 150/800 validation=2.183036
+[2026-08-04 22:03:11] development: depth_linear_overfit16 175/800 validation=2.073091
+[2026-08-04 22:04:36] development: depth_linear_overfit16 200/800 validation=1.978226
+[2026-08-04 22:05:55] development: depth_linear_overfit16 225/800 validation=1.895477
+[2026-08-04 22:07:20] development: depth_linear_overfit16 250/800 validation=1.822627
+[2026-08-04 22:08:41] development: depth_linear_overfit16 275/800 validation=1.758004
+[2026-08-04 22:10:06] development: depth_linear_overfit16 300/800 validation=1.700272
+[2026-08-04 22:11:26] development: depth_linear_overfit16 325/800 validation=1.648375
+[2026-08-04 22:12:47] development: depth_linear_overfit16 350/800 validation=1.601466
+[2026-08-04 22:14:09] development: depth_linear_overfit16 375/800 validation=1.558859
+[2026-08-04 22:15:55] development: depth_linear_overfit16 400/800 validation=1.519988
+[2026-08-04 22:17:17] development: depth_linear_overfit16 425/800 validation=1.484371
+[2026-08-04 22:18:37] development: depth_linear_overfit16 450/800 validation=1.451623
+[2026-08-04 22:20:05] development: depth_linear_overfit16 475/800 validation=1.421396
+[2026-08-04 22:21:31] development: depth_linear_overfit16 500/800 validation=1.393409
+[2026-08-04 22:23:04] development: depth_linear_overfit16 525/800 validation=1.367423
+[2026-08-04 22:24:34] development: depth_linear_overfit16 550/800 validation=1.343226
+[2026-08-04 22:26:06] development: depth_linear_overfit16 575/800 validation=1.320631
+[2026-08-04 22:27:38] development: depth_linear_overfit16 600/800 validation=1.299479
+[2026-08-04 22:29:11] development: depth_linear_overfit16 625/800 validation=1.279632
+[2026-08-04 22:30:39] development: depth_linear_overfit16 650/800 validation=1.260971
+[2026-08-04 22:32:13] development: depth_linear_overfit16 675/800 validation=1.243387
+[2026-08-04 22:33:44] development: depth_linear_overfit16 700/800 validation=1.226790
+[2026-08-04 22:35:18] development: depth_linear_overfit16 725/800 validation=1.211097
+[2026-08-04 22:36:47] development: depth_linear_overfit16 750/800 validation=1.196232
+[2026-08-04 22:38:18] development: depth_linear_overfit16 775/800 validation=1.182124
+[2026-08-04 22:39:45] development: depth_linear_overfit16 800/800 validation=1.168714
+[2026-08-04 22:39:53] development: start depth_stagea
+[2026-08-04 22:43:32] development: depth_linear_stage_a 25/800 validation=3.502607
+[2026-08-04 22:47:09] development: depth_linear_stage_a 50/800 validation=3.023805
+[2026-08-04 22:51:29] development: depth_linear_stage_a 75/800 validation=2.766421
+[2026-08-04 22:54:23] development: depth_linear_stage_a 100/800 validation=2.589859
+[2026-08-04 22:57:30] development: depth_linear_stage_a 125/800 validation=2.450306
+[2026-08-04 22:59:54] development: depth_linear_stage_a 150/800 validation=2.334295
+[2026-08-04 23:02:27] development: depth_linear_stage_a 175/800 validation=2.235192
+[2026-08-04 23:04:55] development: depth_linear_stage_a 200/800 validation=2.149294
+[2026-08-04 23:07:19] development: depth_linear_stage_a 225/800 validation=2.074363
+[2026-08-04 23:10:01] development: depth_linear_stage_a 250/800 validation=2.008271
+[2026-08-04 23:12:20] development: depth_linear_stage_a 275/800 validation=1.949650
+[2026-08-04 23:14:50] development: depth_linear_stage_a 300/800 validation=1.896917
+[2026-08-04 23:17:42] development: depth_linear_stage_a 325/800 validation=1.849461
+[2026-08-04 23:20:03] development: depth_linear_stage_a 350/800 validation=1.806550
+[2026-08-04 23:22:49] development: depth_linear_stage_a 375/800 validation=1.767476
+[2026-08-04 23:25:16] development: depth_linear_stage_a 400/800 validation=1.731861
+[2026-08-04 23:27:46] development: depth_linear_stage_a 425/800 validation=1.699082
+[2026-08-04 23:30:39] development: depth_linear_stage_a 450/800 validation=1.668809
+[2026-08-04 23:32:39] development: depth_linear_stage_a 475/800 validation=1.641032
+[2026-08-04 23:35:06] development: depth_linear_stage_a 500/800 validation=1.615136
+[2026-08-04 23:37:15] development: depth_linear_stage_a 525/800 validation=1.591040
+[2026-08-04 23:39:15] development: depth_linear_stage_a 550/800 validation=1.568700
+[2026-08-04 23:41:30] development: depth_linear_stage_a 575/800 validation=1.547651
+[2026-08-04 23:43:13] development: depth_linear_stage_a 600/800 validation=1.528073
+[2026-08-04 23:45:03] development: depth_linear_stage_a 625/800 validation=1.509620
+[2026-08-04 23:47:10] development: depth_linear_stage_a 650/800 validation=1.492150
+[2026-08-04 23:48:46] development: depth_linear_stage_a 675/800 validation=1.475832
+[2026-08-04 23:50:32] development: depth_linear_stage_a 700/800 validation=1.460200
+[2026-08-04 23:52:11] development: depth_linear_stage_a 725/800 validation=1.445652
+[2026-08-04 23:53:45] development: depth_linear_stage_a 750/800 validation=1.431853
+[2026-08-04 23:55:16] development: depth_linear_stage_a 775/800 validation=1.418446
+[2026-08-04 23:56:52] development: depth_linear_stage_a 800/800 validation=1.405940
+[2026-08-04 23:57:18] development: start depth_f0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:01<07:55,  1.20s/it]Loading weights:   4%|▍         | 15/398 [00:02<00:58,  6.57it/s]Loading weights:   7%|▋         | 26/398 [00:03<00:45,  8.24it/s]Loading weights:   9%|▉         | 36/398 [00:03<00:30, 11.84it/s]Loading weights:  10%|▉         | 38/398 [00:04<00:46,  7.70it/s]Loading weights:  12%|█▏        | 48/398 [00:05<00:29, 11.94it/s]Loading weights:  15%|█▍        | 58/398 [00:05<00:25, 13.60it/s]Loading weights:  15%|█▌        | 61/398 [00:06<00:29, 11.49it/s]Loading weights:  16%|█▌        | 63/398 [00:06<00:32, 10.30it/s]Loading weights:  17%|█▋        | 69/398 [00:06<00:27, 11.77it/s]Loading weights:  19%|█▉        | 75/398 [00:07<00:27, 11.59it/s]Loading weights:  20%|██        | 81/398 [00:07<00:20, 15.31it/s]Loading weights:  21%|██        | 84/398 [00:07<00:20, 15.28it/s]Loading weights:  22%|██▏       | 87/398 [00:08<00:21, 14.79it/s]Loading weights:  23%|██▎       | 91/398 [00:08<00:25, 12.03it/s]Loading weights:  24%|██▍       | 97/398 [00:08<00:17, 16.95it/s]Loading weights:  26%|██▌       | 102/398 [00:08<00:15, 19.21it/s]Loading weights:  26%|██▋       | 105/398 [00:09<00:25, 11.41it/s]Loading weights:  29%|██▊       | 114/398 [00:09<00:17, 16.41it/s]Loading weights:  29%|██▉       | 117/398 [00:10<00:22, 12.35it/s]Loading weights:  31%|███       | 124/398 [00:10<00:16, 16.23it/s]Loading weights:  32%|███▏      | 127/398 [00:11<00:27,  9.69it/s]Loading weights:  33%|███▎      | 132/398 [00:12<00:35,  7.56it/s]Loading weights:  34%|███▍      | 137/398 [00:12<00:31,  8.19it/s]Loading weights:  36%|███▌      | 144/398 [00:14<00:36,  6.97it/s]Loading weights:  37%|███▋      | 146/398 [00:14<00:36,  6.86it/s]Loading weights:  39%|███▊      | 154/398 [00:15<00:31,  7.75it/s]Loading weights:  39%|███▉      | 157/398 [00:16<00:36,  6.54it/s]Loading weights:  41%|████      | 163/398 [00:16<00:29,  7.96it/s]Loading weights:  41%|████▏     | 165/398 [00:16<00:33,  7.04it/s]Loading weights:  42%|████▏     | 169/398 [00:17<00:33,  6.81it/s]Loading weights:  43%|████▎     | 170/398 [00:17<00:35,  6.46it/s]Loading weights:  45%|████▍     | 179/398 [00:18<00:19, 11.46it/s]Loading weights:  45%|████▌     | 181/398 [00:18<00:21, 10.30it/s]Loading weights:  47%|████▋     | 188/398 [00:18<00:16, 12.81it/s]Loading weights:  48%|████▊     | 192/398 [00:19<00:16, 12.34it/s]Loading weights:  51%|█████     | 201/398 [00:20<00:18, 10.69it/s]Loading weights:  53%|█████▎    | 212/398 [00:20<00:11, 15.83it/s]Loading weights:  56%|█████▌    | 223/398 [00:21<00:11, 15.66it/s]Loading weights:  57%|█████▋    | 225/398 [00:21<00:13, 12.96it/s]Loading weights:  58%|█████▊    | 229/398 [00:21<00:12, 13.77it/s]Loading weights:  59%|█████▉    | 234/398 [00:21<00:10, 16.30it/s]Loading weights:  60%|█████▉    | 237/398 [00:22<00:15, 10.61it/s]Loading weights:  62%|██████▏   | 245/398 [00:23<00:12, 12.19it/s]Loading weights:  63%|██████▎   | 251/398 [00:23<00:09, 16.17it/s]Loading weights:  64%|██████▍   | 254/398 [00:24<00:15,  9.06it/s]Loading weights:  66%|██████▌   | 262/398 [00:24<00:11, 11.34it/s]Loading weights:  67%|██████▋   | 267/398 [00:24<00:10, 12.33it/s]Loading weights:  68%|██████▊   | 269/398 [00:25<00:11, 11.19it/s]Loading weights:  70%|██████▉   | 278/398 [00:25<00:08, 13.34it/s]Loading weights:  72%|███████▏  | 287/398 [00:26<00:08, 12.81it/s]Loading weights:  73%|███████▎  | 289/398 [00:26<00:09, 12.00it/s]Loading weights:  74%|███████▍  | 294/398 [00:27<00:08, 12.66it/s]Loading weights:  75%|███████▌  | 300/398 [00:27<00:05, 16.64it/s]Loading weights:  76%|███████▌  | 303/398 [00:28<00:12,  7.78it/s]Loading weights:  78%|███████▊  | 311/398 [00:28<00:08, 10.29it/s]Loading weights:  79%|███████▊  | 313/398 [00:29<00:10,  7.81it/s]Loading weights:  81%|████████  | 322/398 [00:30<00:06, 11.02it/s]Loading weights:  81%|████████▏ | 324/398 [00:30<00:08,  8.60it/s]Loading weights:  83%|████████▎ | 330/398 [00:31<00:08,  8.04it/s]Loading weights:  84%|████████▎ | 333/398 [00:31<00:08,  7.60it/s]Loading weights:  84%|████████▍ | 335/398 [00:32<00:07,  8.22it/s]Loading weights:  86%|████████▌ | 341/398 [00:32<00:07,  7.68it/s]Loading weights:  86%|████████▌ | 342/398 [00:33<00:07,  7.77it/s]Loading weights:  86%|████████▋ | 344/398 [00:33<00:07,  7.09it/s]Loading weights:  87%|████████▋ | 346/398 [00:33<00:07,  6.87it/s]Loading weights:  88%|████████▊ | 352/398 [00:34<00:06,  7.54it/s]Loading weights:  89%|████████▉ | 356/398 [00:36<00:09,  4.53it/s]Loading weights:  92%|█████████▏| 366/398 [00:37<00:05,  5.63it/s]Loading weights:  92%|█████████▏| 367/398 [00:37<00:05,  5.17it/s]Loading weights:  94%|█████████▍| 374/398 [00:39<00:04,  4.88it/s]Loading weights:  95%|█████████▌| 379/398 [00:40<00:03,  5.23it/s]Loading weights:  97%|█████████▋| 385/398 [00:41<00:02,  4.78it/s]Loading weights:  98%|█████████▊| 389/398 [00:41<00:01,  5.89it/s]Loading weights: 100%|██████████| 398/398 [00:41<00:00,  9.49it/s]
+[2026-08-05 00:03:11] development: start depth_ce
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 87/398 [00:00<00:00, 864.47it/s]Loading weights:  44%|████▎     | 174/398 [00:00<00:00, 516.34it/s]Loading weights:  59%|█████▉    | 235/398 [00:00<00:00, 544.21it/s]Loading weights:  74%|███████▍  | 295/398 [00:00<00:00, 560.12it/s]Loading weights:  89%|████████▉ | 355/398 [00:00<00:00, 558.17it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 565.71it/s]
+[2026-08-05 00:06:37] development: linear_continued/ce 25/400
+[2026-08-05 00:10:26] development: linear_continued/ce 50/400
+[2026-08-05 00:13:39] development: linear_continued/ce 75/400
+[2026-08-05 00:17:02] development: linear_continued/ce 100/400
+[2026-08-05 00:19:40] development: linear_continued/ce 125/400
+[2026-08-05 00:23:00] development: linear_continued/ce 150/400
+[2026-08-05 00:25:38] development: linear_continued/ce 175/400
+[2026-08-05 00:28:57] development: linear_continued/ce 200/400
+[2026-08-05 00:31:34] development: linear_continued/ce 225/400
+[2026-08-05 00:34:52] development: linear_continued/ce 250/400
+[2026-08-05 00:37:27] development: linear_continued/ce 275/400
+[2026-08-05 00:40:39] development: linear_continued/ce 300/400
+[2026-08-05 00:43:13] development: linear_continued/ce 325/400
+[2026-08-05 00:46:20] development: linear_continued/ce 350/400
+[2026-08-05 00:49:48] development: linear_continued/ce 375/400
+[2026-08-05 00:53:44] development: linear_continued/ce 400/400
+[2026-08-05 00:53:47] development: start depth_kd
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 60/398 [00:00<00:00, 582.56it/s]Loading weights:  33%|███▎      | 132/398 [00:00<00:00, 343.58it/s]Loading weights:  43%|████▎     | 173/398 [00:01<00:02, 111.72it/s]Loading weights:  50%|████▉     | 198/398 [00:01<00:02, 95.05it/s] Loading weights:  54%|█████▍    | 216/398 [00:01<00:01, 99.89it/s]Loading weights:  58%|█████▊    | 232/398 [00:01<00:01, 97.40it/s]Loading weights:  62%|██████▏   | 246/398 [00:02<00:01, 91.16it/s]Loading weights:  65%|██████▍   | 258/398 [00:02<00:02, 66.18it/s]Loading weights:  68%|██████▊   | 272/398 [00:02<00:01, 75.89it/s]Loading weights:  71%|███████   | 283/398 [00:03<00:02, 50.18it/s]Loading weights:  78%|███████▊  | 311/398 [00:03<00:01, 70.53it/s]Loading weights:  81%|████████  | 321/398 [00:03<00:01, 74.44it/s]Loading weights:  83%|████████▎ | 331/398 [00:03<00:01, 66.47it/s]Loading weights:  85%|████████▌ | 340/398 [00:03<00:00, 70.00it/s]Loading weights:  88%|████████▊ | 349/398 [00:03<00:00, 54.69it/s]Loading weights:  89%|████████▉ | 356/398 [00:04<00:00, 56.65it/s]Loading weights:  95%|█████████▍| 377/398 [00:04<00:00, 83.36it/s]Loading weights:  97%|█████████▋| 388/398 [00:04<00:00, 80.26it/s]Loading weights: 100%|██████████| 398/398 [00:04<00:00, 91.07it/s]
+[2026-08-05 00:56:44] development: linear_continued/kd 25/400
+[2026-08-05 01:00:17] development: linear_continued/kd 50/400
+[2026-08-05 01:02:59] development: linear_continued/kd 75/400
+[2026-08-05 01:06:16] development: linear_continued/kd 100/400
+[2026-08-05 01:08:51] development: linear_continued/kd 125/400
+[2026-08-05 01:12:14] development: linear_continued/kd 150/400
+[2026-08-05 01:14:46] development: linear_continued/kd 175/400
+[2026-08-05 01:18:09] development: linear_continued/kd 200/400
+[2026-08-05 01:20:38] development: linear_continued/kd 225/400
+[2026-08-05 01:24:00] development: linear_continued/kd 250/400
+[2026-08-05 01:26:31] development: linear_continued/kd 275/400
+[2026-08-05 01:29:47] development: linear_continued/kd 300/400
+[2026-08-05 01:32:22] development: linear_continued/kd 325/400
+[2026-08-05 01:35:34] development: linear_continued/kd 350/400
+[2026-08-05 01:38:10] development: linear_continued/kd 375/400
+[2026-08-05 01:41:20] development: linear_continued/kd 400/400
+[2026-08-05 01:41:22] development: start depth_evaluate
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  27%|██▋       | 108/398 [00:00<00:00, 1067.98it/s]Loading weights:  54%|█████▍    | 215/398 [00:00<00:00, 997.99it/s] Loading weights:  79%|███████▉  | 316/398 [00:00<00:00, 838.28it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 851.75it/s]
+[2026-08-05 01:52:03] development: start update0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 975.55it/s]Loading weights:  50%|█████     | 200/398 [00:00<00:00, 611.62it/s]Loading weights:  68%|██████▊   | 269/398 [00:00<00:00, 469.10it/s]Loading weights:  81%|████████  | 322/398 [00:00<00:00, 438.18it/s]Loading weights:  94%|█████████▍| 374/398 [00:00<00:00, 458.42it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 508.85it/s]
+[2026-08-05 01:57:37] development: start overfit_linear
+[2026-08-05 01:59:10] development: linear_continued_overfit16 25/200 validation=1.359857
+[2026-08-05 02:00:27] development: linear_continued_overfit16 50/200 validation=1.348508
+[2026-08-05 02:01:49] development: linear_continued_overfit16 75/200 validation=1.337931
+[2026-08-05 02:03:07] development: linear_continued_overfit16 100/200 validation=1.327933
+[2026-08-05 02:04:28] development: linear_continued_overfit16 125/200 validation=1.318406
+[2026-08-05 02:05:45] development: linear_continued_overfit16 150/200 validation=1.309294
+[2026-08-05 02:07:04] development: linear_continued_overfit16 175/200 validation=1.300546
+[2026-08-05 02:08:23] development: linear_continued_overfit16 200/200 validation=1.292123
+[2026-08-05 02:08:30] development: start overfit_v2_h
+[2026-08-05 02:10:00] development: v2_h_overfit16 25/200 validation=1.358170
+[2026-08-05 02:11:21] development: v2_h_overfit16 50/200 validation=1.344772
+[2026-08-05 02:12:41] development: v2_h_overfit16 75/200 validation=1.331725
+[2026-08-05 02:14:03] development: v2_h_overfit16 100/200 validation=1.318747
+[2026-08-05 02:15:22] development: v2_h_overfit16 125/200 validation=1.305558
+[2026-08-05 02:16:45] development: v2_h_overfit16 150/200 validation=1.291885
+[2026-08-05 02:18:05] development: v2_h_overfit16 175/200 validation=1.277523
+[2026-08-05 02:19:29] development: v2_h_overfit16 200/200 validation=1.262443
+[2026-08-05 02:19:35] development: start overfit_v2_hl
+[2026-08-05 02:21:29] development: v2_hl_overfit16 25/200 validation=1.356818
+[2026-08-05 02:23:08] development: v2_hl_overfit16 50/200 validation=1.342144
+[2026-08-05 02:24:48] development: v2_hl_overfit16 75/200 validation=1.327893
+[2026-08-05 02:26:27] development: v2_hl_overfit16 100/200 validation=1.313787
+[2026-08-05 02:28:09] development: v2_hl_overfit16 125/200 validation=1.299534
+[2026-08-05 02:29:48] development: v2_hl_overfit16 150/200 validation=1.284875
+[2026-08-05 02:31:29] development: v2_hl_overfit16 175/200 validation=1.269605
+[2026-08-05 02:33:12] development: v2_hl_overfit16 200/200 validation=1.253708
+[2026-08-05 02:33:19] development: start overfit_gate
+[2026-08-05 02:33:25] development: start stagea_linear
+[2026-08-05 02:35:33] development: linear_continued_stage_a 25/200 validation=1.401756
+[2026-08-05 02:37:13] development: linear_continued_stage_a 50/200 validation=1.397680
+[2026-08-05 02:38:50] development: linear_continued_stage_a 75/200 validation=1.393771
+[2026-08-05 02:40:26] development: linear_continued_stage_a 100/200 validation=1.389952
+[2026-08-05 02:42:21] development: linear_continued_stage_a 125/200 validation=1.386208
+[2026-08-05 02:44:08] development: linear_continued_stage_a 150/200 validation=1.382592
+[2026-08-05 02:46:02] development: linear_continued_stage_a 175/200 validation=1.379018
+[2026-08-05 02:47:51] development: linear_continued_stage_a 200/200 validation=1.375487
+[2026-08-05 02:48:15] development: start stagea_v2_h
+[2026-08-05 02:50:17] development: v2_h_stage_a 25/200 validation=1.400504
+[2026-08-05 02:51:56] development: v2_h_stage_a 50/200 validation=1.394876
+[2026-08-05 02:53:35] development: v2_h_stage_a 75/200 validation=1.389107
+[2026-08-05 02:55:12] development: v2_h_stage_a 100/200 validation=1.383129
+[2026-08-05 02:56:50] development: v2_h_stage_a 125/200 validation=1.376876
+[2026-08-05 02:58:28] development: v2_h_stage_a 150/200 validation=1.370316
+[2026-08-05 03:00:08] development: v2_h_stage_a 175/200 validation=1.363216
+[2026-08-05 03:01:46] development: v2_h_stage_a 200/200 validation=1.355458
+[2026-08-05 03:02:11] development: start stagea_v2_hl
+[2026-08-05 03:04:38] development: v2_hl_stage_a 25/200 validation=1.399110
+[2026-08-05 03:06:36] development: v2_hl_stage_a 50/200 validation=1.392137
+[2026-08-05 03:08:40] development: v2_hl_stage_a 75/200 validation=1.385086
+[2026-08-05 03:10:36] development: v2_hl_stage_a 100/200 validation=1.377873
+[2026-08-05 03:12:36] development: v2_hl_stage_a 125/200 validation=1.370430
+[2026-08-05 03:14:36] development: v2_hl_stage_a 150/200 validation=1.362739
+[2026-08-05 03:16:40] development: v2_hl_stage_a 175/200 validation=1.354562
+[2026-08-05 03:18:37] development: v2_hl_stage_a 200/200 validation=1.345769
+[2026-08-05 03:19:01] development: start f0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  19%|█▉        | 77/398 [00:00<00:00, 762.16it/s]Loading weights:  39%|███▊      | 154/398 [00:00<00:00, 568.21it/s]Loading weights:  56%|█████▋    | 224/398 [00:00<00:00, 582.43it/s]Loading weights:  73%|███████▎  | 291/398 [00:00<00:00, 608.81it/s]Loading weights:  89%|████████▉ | 354/398 [00:00<00:00, 511.63it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 571.42it/s]
+[2026-08-05 03:33:46] development: start ce_linear
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:07<49:48,  7.53s/it]Loading weights:   8%|▊         | 31/398 [00:07<01:07,  5.47it/s]Loading weights:   9%|▉         | 37/398 [00:08<00:55,  6.53it/s]Loading weights:  10%|█         | 41/398 [00:08<00:48,  7.34it/s]Loading weights:  12%|█▏        | 47/398 [00:09<00:52,  6.72it/s]Loading weights:  13%|█▎        | 50/398 [00:10<00:55,  6.32it/s]Loading weights:  15%|█▍        | 59/398 [00:11<00:59,  5.72it/s]Loading weights:  18%|█▊        | 70/398 [00:12<00:37,  8.66it/s]Loading weights:  19%|█▉        | 75/398 [00:13<00:41,  7.69it/s]Loading weights:  20%|██        | 80/398 [00:14<00:44,  7.08it/s]Loading weights:  23%|██▎       | 92/398 [00:14<00:29, 10.44it/s]Loading weights:  24%|██▎       | 94/398 [00:15<00:34,  8.83it/s]Loading weights:  26%|██▌       | 102/398 [00:16<00:37,  7.92it/s]Loading weights:  26%|██▌       | 104/398 [00:17<00:52,  5.60it/s]Loading weights:  29%|██▊       | 114/398 [00:17<00:30,  9.39it/s]Loading weights:  29%|██▉       | 117/398 [00:17<00:27, 10.10it/s]Loading weights:  30%|███       | 121/398 [00:18<00:33,  8.34it/s]Loading weights:  31%|███       | 123/398 [00:20<01:09,  3.98it/s]Loading weights:  37%|███▋      | 146/398 [00:21<00:22, 11.36it/s]Loading weights:  38%|███▊      | 152/398 [00:21<00:19, 12.76it/s]Loading weights:  39%|███▉      | 155/398 [00:21<00:17, 13.61it/s]Loading weights:  40%|███▉      | 158/398 [00:22<00:26,  9.20it/s]Loading weights:  42%|████▏     | 168/398 [00:23<00:25,  9.20it/s]Loading weights:  44%|████▎     | 174/398 [00:23<00:20, 11.05it/s]Loading weights:  45%|████▍     | 179/398 [00:24<00:20, 10.52it/s]Loading weights:  58%|█████▊    | 229/398 [00:24<00:04, 36.21it/s]Loading weights:  59%|█████▉    | 234/398 [00:25<00:06, 25.40it/s]Loading weights:  60%|█████▉    | 238/398 [00:26<00:10, 15.28it/s]Loading weights:  62%|██████▏   | 246/398 [00:26<00:09, 15.96it/s]Loading weights:  63%|██████▎   | 251/398 [00:27<00:09, 15.61it/s]Loading weights:  64%|██████▍   | 254/398 [00:27<00:09, 14.51it/s]Loading weights:  64%|██████▍   | 256/398 [00:28<00:12, 11.67it/s]Loading weights:  65%|██████▍   | 258/398 [00:29<00:20,  6.85it/s]Loading weights:  67%|██████▋   | 268/398 [00:29<00:14,  8.93it/s]Loading weights:  68%|██████▊   | 270/398 [00:30<00:17,  7.31it/s]Loading weights:  70%|██████▉   | 278/398 [00:30<00:12,  9.91it/s]Loading weights:  70%|███████   | 280/398 [00:31<00:11, 10.23it/s]Loading weights:  73%|███████▎  | 289/398 [00:32<00:11,  9.48it/s]Loading weights:  74%|███████▍  | 295/398 [00:32<00:08, 12.13it/s]Loading weights:  75%|███████▍  | 297/398 [00:32<00:09, 10.17it/s]Loading weights:  75%|███████▌  | 299/398 [00:32<00:09, 10.86it/s]Loading weights:  76%|███████▌  | 302/398 [00:33<00:10,  9.04it/s]Loading weights:  77%|███████▋  | 305/398 [00:33<00:08, 10.62it/s]Loading weights:  77%|███████▋  | 307/398 [00:33<00:10,  8.62it/s]Loading weights:  78%|███████▊  | 309/398 [00:34<00:14,  6.33it/s]Loading weights:  78%|███████▊  | 312/398 [00:34<00:12,  6.75it/s]Loading weights:  80%|████████  | 319/398 [00:35<00:10,  7.55it/s]Loading weights:  80%|████████  | 320/398 [00:35<00:10,  7.71it/s]Loading weights:  81%|████████▏ | 324/398 [00:37<00:16,  4.47it/s]Loading weights:  84%|████████▍ | 335/398 [00:38<00:09,  6.56it/s]Loading weights:  86%|████████▋ | 344/398 [00:39<00:06,  8.05it/s]Loading weights:  89%|████████▊ | 353/398 [00:39<00:03, 11.92it/s]Loading weights:  89%|████████▉ | 356/398 [00:40<00:04,  8.75it/s]Loading weights:  91%|█████████ | 361/398 [00:40<00:03, 10.57it/s]Loading weights:  91%|█████████▏| 364/398 [00:40<00:02, 11.52it/s]Loading weights:  92%|█████████▏| 367/398 [00:41<00:03,  8.87it/s]Loading weights:  93%|█████████▎| 369/398 [00:41<00:03,  9.56it/s]Loading weights:  95%|█████████▍| 377/398 [00:42<00:02,  9.26it/s]Loading weights:  97%|█████████▋| 388/398 [00:42<00:00, 13.61it/s]Loading weights:  98%|█████████▊| 390/398 [00:42<00:00, 13.26it/s]Loading weights: 100%|██████████| 398/398 [00:42<00:00,  9.29it/s]
+[2026-08-05 03:37:41] development: linear_continued/ce 25/400
+[2026-08-05 03:41:13] development: linear_continued/ce 50/400
+[2026-08-05 03:44:06] development: linear_continued/ce 75/400
+[2026-08-05 03:47:25] development: linear_continued/ce 100/400
+[2026-08-05 03:50:07] development: linear_continued/ce 125/400
+[2026-08-05 03:53:42] development: linear_continued/ce 150/400
+[2026-08-05 03:56:23] development: linear_continued/ce 175/400
+[2026-08-05 03:59:35] development: linear_continued/ce 200/400
+[2026-08-05 04:02:08] development: linear_continued/ce 225/400
+[2026-08-05 04:05:29] development: linear_continued/ce 250/400
+[2026-08-05 04:08:19] development: linear_continued/ce 275/400
+[2026-08-05 04:11:27] development: linear_continued/ce 300/400
+[2026-08-05 04:13:59] development: linear_continued/ce 325/400
+[2026-08-05 04:17:01] development: linear_continued/ce 350/400
+[2026-08-05 04:19:24] development: linear_continued/ce 375/400
+[2026-08-05 04:22:20] development: linear_continued/ce 400/400
+[2026-08-05 04:22:22] development: start ce_v2_h
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 91/398 [00:00<00:00, 889.21it/s]Loading weights:  45%|████▌     | 180/398 [00:00<00:00, 721.57it/s]Loading weights:  64%|██████▍   | 255/398 [00:01<00:00, 145.88it/s]Loading weights:  75%|███████▌  | 299/398 [00:01<00:00, 143.84it/s]Loading weights:  83%|████████▎ | 331/398 [00:02<00:00, 83.05it/s] Loading weights:  89%|████████▊ | 353/398 [00:02<00:00, 82.00it/s]Loading weights:  95%|█████████▍| 377/398 [00:03<00:00, 89.12it/s]Loading weights:  99%|█████████▊| 393/398 [00:03<00:00, 79.81it/s]Loading weights: 100%|██████████| 398/398 [00:03<00:00, 116.13it/s]
+[2026-08-05 04:25:22] development: v2_h/ce 25/400
+[2026-08-05 04:28:49] development: v2_h/ce 50/400
+[2026-08-05 04:31:28] development: v2_h/ce 75/400
+[2026-08-05 04:34:56] development: v2_h/ce 100/400
+[2026-08-05 04:37:33] development: v2_h/ce 125/400
+[2026-08-05 04:41:07] development: v2_h/ce 150/400
+[2026-08-05 04:43:50] development: v2_h/ce 175/400
+[2026-08-05 04:47:10] development: v2_h/ce 200/400
+[2026-08-05 04:49:48] development: v2_h/ce 225/400
+[2026-08-05 04:53:12] development: v2_h/ce 250/400
+[2026-08-05 04:55:50] development: v2_h/ce 275/400
+[2026-08-05 04:59:10] development: v2_h/ce 300/400
+[2026-08-05 05:01:46] development: v2_h/ce 325/400
+[2026-08-05 05:05:03] development: v2_h/ce 350/400
+[2026-08-05 05:07:40] development: v2_h/ce 375/400
+[2026-08-05 05:10:55] development: v2_h/ce 400/400
+[2026-08-05 05:10:57] development: start ce_v2_hl
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   4%|▍         | 16/398 [00:00<00:04, 85.57it/s]Loading weights:   6%|▋         | 25/398 [00:00<00:06, 56.63it/s]Loading weights:   8%|▊         | 33/398 [00:00<00:07, 46.03it/s]Loading weights:  10%|▉         | 38/398 [00:00<00:09, 37.88it/s]Loading weights:  12%|█▏        | 48/398 [00:01<00:07, 44.83it/s]Loading weights:  15%|█▍        | 58/398 [00:01<00:07, 43.09it/s]Loading weights:  17%|█▋        | 69/398 [00:01<00:07, 46.61it/s]Loading weights:  20%|██        | 80/398 [00:01<00:06, 49.62it/s]Loading weights:  23%|██▎       | 91/398 [00:01<00:05, 59.10it/s]Loading weights:  37%|███▋      | 146/398 [00:01<00:01, 155.65it/s]Loading weights:  51%|█████     | 201/398 [00:01<00:00, 238.86it/s]Loading weights:  73%|███████▎  | 289/398 [00:02<00:00, 386.29it/s]Loading weights:  86%|████████▋ | 344/398 [00:02<00:00, 355.29it/s]Loading weights: 100%|██████████| 398/398 [00:02<00:00, 171.51it/s]
+[2026-08-05 05:17:47] development: v2_hl/ce 25/400
+[2026-08-05 05:25:05] development: v2_hl/ce 50/400
+[2026-08-05 05:31:36] development: v2_hl/ce 75/400
+[2026-08-05 05:38:46] development: v2_hl/ce 100/400
+[2026-08-05 05:45:21] development: v2_hl/ce 125/400
+[2026-08-05 05:52:39] development: v2_hl/ce 150/400
+[2026-08-05 05:59:07] development: v2_hl/ce 175/400
+[2026-08-05 06:06:13] development: v2_hl/ce 200/400
+[2026-08-05 06:12:41] development: v2_hl/ce 225/400
+[2026-08-05 06:19:43] development: v2_hl/ce 250/400
+[2026-08-05 06:26:09] development: v2_hl/ce 275/400
+[2026-08-05 06:33:20] development: v2_hl/ce 300/400
+[2026-08-05 06:39:42] development: v2_hl/ce 325/400
+[2026-08-05 06:46:29] development: v2_hl/ce 350/400
+[2026-08-05 06:52:48] development: v2_hl/ce 375/400
+[2026-08-05 06:59:33] development: v2_hl/ce 400/400
+[2026-08-05 06:59:35] development: start select
+[2026-08-05 06:59:42] development: start kd
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 91/398 [00:00<00:00, 887.84it/s]Loading weights:  45%|████▌     | 180/398 [00:00<00:00, 734.82it/s]Loading weights:  64%|██████▍   | 256/398 [00:00<00:00, 711.85it/s]Loading weights:  84%|████████▍ | 335/398 [00:00<00:00, 734.74it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 676.51it/s]
+[2026-08-05 07:02:50] development: linear_continued/kd 25/400
+[2026-08-05 07:06:20] development: linear_continued/kd 50/400
+[2026-08-05 07:09:05] development: linear_continued/kd 75/400
+[2026-08-05 07:12:23] development: linear_continued/kd 100/400
+[2026-08-05 07:14:57] development: linear_continued/kd 125/400
+[2026-08-05 07:18:14] development: linear_continued/kd 150/400
+[2026-08-05 07:20:48] development: linear_continued/kd 175/400
+[2026-08-05 07:24:02] development: linear_continued/kd 200/400
+[2026-08-05 07:26:30] development: linear_continued/kd 225/400
+[2026-08-05 07:29:36] development: linear_continued/kd 250/400
+[2026-08-05 07:32:08] development: linear_continued/kd 275/400
+[2026-08-05 07:35:18] development: linear_continued/kd 300/400
+[2026-08-05 07:37:46] development: linear_continued/kd 325/400
+[2026-08-05 07:40:56] development: linear_continued/kd 350/400
+[2026-08-05 07:43:23] development: linear_continued/kd 375/400
+[2026-08-05 07:46:27] development: linear_continued/kd 400/400
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  25%|██▍       | 99/398 [00:00<00:00, 988.09it/s]Loading weights:  50%|████▉     | 198/398 [00:00<00:00, 857.45it/s]Loading weights:  72%|███████▏  | 285/398 [00:00<00:00, 510.36it/s]Loading weights:  87%|████████▋ | 348/398 [00:00<00:00, 477.59it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 498.42it/s]
+[2026-08-05 07:49:12] development: v2_h/kd 25/400
+[2026-08-05 07:52:35] development: v2_h/kd 50/400
+[2026-08-05 07:55:17] development: v2_h/kd 75/400
+[2026-08-05 07:58:40] development: v2_h/kd 100/400
+[2026-08-05 08:01:21] development: v2_h/kd 125/400
+[2026-08-05 08:04:44] development: v2_h/kd 150/400
+[2026-08-05 08:07:25] development: v2_h/kd 175/400
+[2026-08-05 08:10:43] development: v2_h/kd 200/400
+[2026-08-05 08:13:22] development: v2_h/kd 225/400
+[2026-08-05 08:16:40] development: v2_h/kd 250/400
+[2026-08-05 08:19:20] development: v2_h/kd 275/400
+[2026-08-05 08:22:39] development: v2_h/kd 300/400
+[2026-08-05 08:25:20] development: v2_h/kd 325/400
+[2026-08-05 08:28:38] development: v2_h/kd 350/400
+[2026-08-05 08:31:17] development: v2_h/kd 375/400
+[2026-08-05 08:34:30] development: v2_h/kd 400/400
+[2026-08-05 08:34:32] development: start evaluate
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 88/398 [00:00<00:00, 847.44it/s]Loading weights:  43%|████▎     | 173/398 [00:00<00:00, 781.94it/s]Loading weights:  63%|██████▎   | 252/398 [00:00<00:00, 751.98it/s]Loading weights:  82%|████████▏ | 328/398 [00:00<00:00, 740.46it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 771.10it/s]
+[2026-08-05 08:42:28] development: final evaluation completed
+development: pipeline completed

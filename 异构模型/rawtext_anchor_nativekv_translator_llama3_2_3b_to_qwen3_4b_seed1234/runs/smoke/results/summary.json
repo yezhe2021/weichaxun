@@ -1,0 +1,267 @@
+{
+  "experiment": "rawtext_anchor_nativekv_translator_llama_to_qwen",
+  "pairing": "Llama-driven raw-text anchors; target never uses Qwen-self selection",
+  "schema": "33 pre-RoPE entries; Qwen canonical positions 0..32; suffix starts 33",
+  "checkpoint_selection": "minimum validation choice KL; gold accuracy diagnostic only",
+  "stage_a": {
+    "nearest_linear": {
+      "arm": "nearest_linear",
+      "window": 1,
+      "steps": 1,
+      "clip_rate": 0.0,
+      "candidates": [
+        {
+          "step": 1,
+          "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/checkpoints/nearest_linear/step_1.pt",
+          "representation": {
+            "loss": 4.059665679931641,
+            "k_nmse": 1.0732413530349731,
+            "v_nmse": 1.0152833461761475,
+            "k_cosine": 0.024087071418762207,
+            "v_cosine": 0.004771828651428223
+          }
+        }
+      ],
+      "seconds": 1.3525421433150768
+    },
+    "local5_linear": {
+      "arm": "local5_linear",
+      "window": 5,
+      "steps": 1,
+      "clip_rate": 0.0,
+      "candidates": [
+        {
+          "step": 1,
+          "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/checkpoints/local5_linear/step_1.pt",
+          "representation": {
+            "loss": 3.903748035430908,
+            "k_nmse": 1.0358102321624756,
+            "v_nmse": 1.0085750818252563,
+            "k_cosine": 0.10269135236740112,
+            "v_cosine": 0.03794598579406738
+          }
+        }
+      ],
+      "seconds": 0.3487565666437149
+    }
+  },
+  "stage_a_selected": {
+    "nearest_linear": {
+      "step": 1,
+      "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/checkpoints/nearest_linear/step_1.pt",
+      "representation": {
+        "loss": 4.059665679931641,
+        "k_nmse": 1.0732413530349731,
+        "v_nmse": 1.0152833461761475,
+        "k_cosine": 0.024087071418762207,
+        "v_cosine": 0.004771828651428223
+      },
+      "functional": {
+        "choice_kl": 1.1434336006641388,
+        "accuracy": 0.5,
+        "oracle_accuracy": 0.5,
+        "oracle_agreement": 0.5
+      }
+    },
+    "local5_linear": {
+      "step": 1,
+      "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/checkpoints/local5_linear/step_1.pt",
+      "representation": {
+        "loss": 3.903748035430908,
+        "k_nmse": 1.0358102321624756,
+        "v_nmse": 1.0085750818252563,
+        "k_cosine": 0.10269135236740112,
+        "v_cosine": 0.03794598579406738
+      },
+      "functional": {
+        "choice_kl": 1.2055646777153015,
+        "accuracy": 0.5,
+        "oracle_accuracy": 0.5,
+        "oracle_agreement": 0.5
+      }
+    }
+  },
+  "stage_b": {
+    "arm": "local5_choice_kl",
+    "initialized_from": 1,
+    "steps": 1,
+    "clip_rate": 0.0,
+    "selection_criterion": "validation_choice_kl",
+    "best": {
+      "step": 1,
+      "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/checkpoints/local5_choice_kl/step_1.pt",
+      "functional": {
+        "choice_kl": 1.115450233221054,
+        "accuracy": 0.5,
+        "oracle_accuracy": 0.5,
+        "oracle_agreement": 0.5
+      }
+    },
+    "candidates": [
+      {
+        "step": 1,
+        "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/checkpoints/local5_choice_kl/step_1.pt",
+        "functional": {
+          "choice_kl": 1.115450233221054,
+          "accuracy": 0.5,
+          "oracle_accuracy": 0.5,
+          "oracle_agreement": 0.5
+        }
+      }
+    ],
+    "seconds": 1.5204570312052965
+  },
+  "results": {
+    "E0_oracle": {
+      "accuracy": 1.0
+    },
+    "E1_direct_nearest": {
+      "functional": {
+        "translated_all": {
+          "accuracy": 0.5,
+          "oracle_accuracy": 1.0,
+          "qwen_full_accuracy": 1.0,
+          "oracle_agreement": 0.5,
+          "choice_kl": 1.9386523067951202,
+          "full_kl": 2.217628449201584,
+          "selection_retention": 1.0,
+          "translation_retention": 0.5
+        }
+      },
+      "representation": {
+        "loss": 4.29571533203125,
+        "k_nmse": 1.2499524354934692,
+        "v_nmse": 1.047264277935028,
+        "k_cosine": 0.0025524795055389404,
+        "v_cosine": -0.0010509788990020752
+      },
+      "sample_count": 2
+    },
+    "nearest_linear": {
+      "functional": {
+        "translated_all": {
+          "accuracy": 0.5,
+          "oracle_accuracy": 1.0,
+          "qwen_full_accuracy": 1.0,
+          "oracle_agreement": 0.5,
+          "choice_kl": 1.8470414951443672,
+          "full_kl": 2.690466582775116,
+          "selection_retention": 1.0,
+          "translation_retention": 0.5
+        }
+      },
+      "representation": {
+        "loss": 4.052184104919434,
+        "k_nmse": 1.0710914731025696,
+        "v_nmse": 1.0140754580497742,
+        "k_cosine": 0.02492135763168335,
+        "v_cosine": 0.008061408996582031
+      },
+      "sample_count": 2
+    },
+    "local5_linear": {
+      "functional": {
+        "oracle": {
+          "accuracy": 1.0,
+          "oracle_accuracy": 1.0,
+          "qwen_full_accuracy": 1.0,
+          "oracle_agreement": 1.0,
+          "choice_kl": 0.0,
+          "full_kl": 0.0,
+          "selection_retention": 1.0,
+          "translation_retention": 1.0
+        },
+        "native_token0_translated_anchors": {
+          "accuracy": 0.5,
+          "oracle_accuracy": 1.0,
+          "qwen_full_accuracy": 1.0,
+          "oracle_agreement": 0.5,
+          "choice_kl": 1.8776315078139305,
+          "full_kl": 1.8668768554925919,
+          "selection_retention": 1.0,
+          "translation_retention": 0.5
+        },
+        "translated_token0_native_anchors": {
+          "accuracy": 0.5,
+          "oracle_accuracy": 1.0,
+          "qwen_full_accuracy": 1.0,
+          "oracle_agreement": 0.5,
+          "choice_kl": 3.3186252042651176,
+          "full_kl": 5.707670450210571,
+          "selection_retention": 1.0,
+          "translation_retention": 0.5
+        },
+        "translated_all": {
+          "accuracy": 0.5,
+          "oracle_accuracy": 1.0,
+          "qwen_full_accuracy": 1.0,
+          "oracle_agreement": 0.5,
+          "choice_kl": 1.9421893432736397,
+          "full_kl": 2.376140832901001,
+          "selection_retention": 1.0,
+          "translation_retention": 0.5
+        }
+      },
+      "representation": {
+        "loss": 3.8935248851776123,
+        "k_nmse": 1.0349563360214233,
+        "v_nmse": 1.0072895884513855,
+        "k_cosine": 0.10352683067321777,
+        "v_cosine": 0.04519429802894592
+      },
+      "sample_count": 2
+    },
+    "local5_choice_kl": {
+      "functional": {
+        "oracle": {
+          "accuracy": 1.0,
+          "oracle_accuracy": 1.0,
+          "qwen_full_accuracy": 1.0,
+          "oracle_agreement": 1.0,
+          "choice_kl": 0.0,
+          "full_kl": 0.0,
+          "selection_retention": 1.0,
+          "translation_retention": 1.0
+        },
+        "native_token0_translated_anchors": {
+          "accuracy": 0.5,
+          "oracle_accuracy": 1.0,
+          "qwen_full_accuracy": 1.0,
+          "oracle_agreement": 0.5,
+          "choice_kl": 1.8603739142417908,
+          "full_kl": 1.857434168457985,
+          "selection_retention": 1.0,
+          "translation_retention": 0.5
+        },
+        "translated_token0_native_anchors": {
+          "accuracy": 0.5,
+          "oracle_accuracy": 1.0,
+          "qwen_full_accuracy": 1.0,
+          "oracle_agreement": 0.5,
+          "choice_kl": 3.3019465059041977,
+          "full_kl": 5.6826313734054565,
+          "selection_retention": 1.0,
+          "translation_retention": 0.5
+        },
+        "translated_all": {
+          "accuracy": 0.5,
+          "oracle_accuracy": 1.0,
+          "qwen_full_accuracy": 1.0,
+          "oracle_agreement": 0.5,
+          "choice_kl": 1.9037987142801285,
+          "full_kl": 2.393995553255081,
+          "selection_retention": 1.0,
+          "translation_retention": 0.5
+        }
+      },
+      "representation": {
+        "loss": 3.8934983015060425,
+        "k_nmse": 1.0349472165107727,
+        "v_nmse": 1.0072883367538452,
+        "k_cosine": 0.10355961322784424,
+        "v_cosine": 0.04517751932144165
+      },
+      "sample_count": 2
+    }
+  }
+}

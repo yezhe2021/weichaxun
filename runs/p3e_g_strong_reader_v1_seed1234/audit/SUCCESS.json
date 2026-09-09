@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "epochs": 5,
+  "smoke16_complete": true,
+  "formal512_complete": true,
+  "validation64_complete": true,
+  "writer_frozen": true,
+  "receiver_backbone_frozen": true,
+  "base_query_adapter_frozen": true,
+  "base_head_routing_frozen": true,
+  "native_o_proj_frozen": true,
+  "reader_off_exact": true
+}

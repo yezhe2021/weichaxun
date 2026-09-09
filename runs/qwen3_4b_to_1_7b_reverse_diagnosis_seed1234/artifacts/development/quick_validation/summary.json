@@ -1,0 +1,87 @@
+{
+  "purpose": "rapid feasibility validation; not final metric optimization",
+  "test_samples": 32,
+  "r1_checkpoint": "/home/yezhe/可拔插/qwen3_4b_to_1_7b_reverse_diagnosis_seed1234/artifacts/development/r1_continued_ce/selected.pt",
+  "r2_ce_updates": 150,
+  "conditions": {
+    "r1_continued_ce_correct": {
+      "count": 32,
+      "em": 0.0625,
+      "f1": 0.146875,
+      "bridge_f1": 0.047058823529411764,
+      "comparison_f1": 0.26,
+      "nll": 3.09399788454175
+    },
+    "r1_continued_ce_shuffled": {
+      "count": 32,
+      "em": 0.125,
+      "f1": 0.21145833333333336,
+      "bridge_f1": 0.052941176470588235,
+      "comparison_f1": 0.39111111111111113,
+      "nll": 3.413047785870731
+    },
+    "r2_learnable_ce_correct": {
+      "count": 32,
+      "em": 0.09375,
+      "f1": 0.13125,
+      "bridge_f1": 0.047058823529411764,
+      "comparison_f1": 0.22666666666666666,
+      "nll": 2.6463009803555906
+    },
+    "r2_learnable_ce_shuffled": {
+      "count": 32,
+      "em": 0.0625,
+      "f1": 0.14375000000000002,
+      "bridge_f1": 0.04313725490196079,
+      "comparison_f1": 0.2577777777777778,
+      "nll": 3.466773606836796
+    }
+  },
+  "comparisons": {
+    "r1_continued_ce": {
+      "correct_f1": 0.146875,
+      "shuffled_f1": 0.21145833333333336,
+      "correct_minus_shuffled": -0.06458333333333335,
+      "correct_em": 0.0625,
+      "shuffled_em": 0.125,
+      "correct_nll": 3.09399788454175,
+      "shuffled_nll": 3.413047785870731
+    },
+    "r2_learnable_ce": {
+      "correct_f1": 0.13125,
+      "shuffled_f1": 0.14375000000000002,
+      "correct_minus_shuffled": -0.012500000000000011,
+      "correct_em": 0.09375,
+      "shuffled_em": 0.0625,
+      "correct_nll": 2.6463009803555906,
+      "shuffled_nll": 3.466773606836796
+    }
+  },
+  "receiver17_reference_128": {
+    "b1_f_1_7b_full_context_text": {
+      "count": 128,
+      "em": 0.1953125,
+      "f1": 0.2267795138888889,
+      "bridge_f1": 0.19574652777777776,
+      "comparison_f1": 0.2578125,
+      "nll": 5.21033675735956
+    },
+    "b1_n_1_7b_native_cache": {
+      "count": 128,
+      "em": 0.1953125,
+      "f1": 0.2267795138888889,
+      "bridge_f1": 0.19574652777777776,
+      "comparison_f1": 0.2578125,
+      "nll": 5.210315555317321
+    },
+    "b1_q_1_7b_question_only": {
+      "count": 128,
+      "em": 0.0859375,
+      "f1": 0.0965029761904762,
+      "bridge_f1": 0.0,
+      "comparison_f1": 0.1930059523809524,
+      "nll": 5.030633302219886
+    },
+    "native_generation_match_vs_text": 1.0
+  }
+}

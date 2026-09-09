@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "asset_paths": {
+    "scales": "/home/yezhe/可拔插/q35_fullattn8_native4_channel_v2_scaled_fullrank_seed1234/artifacts/development/scales.pt",
+    "a1": "/home/yezhe/可拔插/q35_fullattn8_native4_channel_v2_scaled_fullrank_seed1234/artifacts/development/a1/best.pt",
+    "alignment": "/home/yezhe/可拔插/q35_fullattn8_native4_channel_v2_scaled_fullrank_seed1234/artifacts/development/alignment_metadata.json",
+    "full36_reader": "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/artifacts/formal/sparse_reader/best.pt",
+    "q35_cache": "/home/yezhe/可拔插/q35_fullattn8_native4_channel_v2_scaled_fullrank_seed1234/cache/development",
+    "native4_cache": "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/cache/formal"
+  },
+  "checkpoint_sha256": {
+    "scales": "bee4bed9e7bbe301020cfc9112a7abec76e7e831500a4c2fc56cc786291a469c",
+    "a1": "1a81653a3ac86b5d0f975b1149fd99dca27d10e61433b98933f7d6f986ba8fac",
+    "full36_reader": "432b36c66da439f09a82828e7060d6e4b02135e53639ec20dc4408b5bf389601"
+  },
+  "source_layers": [
+    3,
+    7,
+    11,
+    15,
+    19,
+    23,
+    27,
+    31
+  ],
+  "anchor_layers": [
+    3,
+    8,
+    12,
+    17,
+    21,
+    26,
+    30,
+    35
+  ],
+  "external_memory_layers": 8,
+  "non_anchor_external_slots": 0,
+  "writer_parameters": "16 independent bias-free 1024x1024 matrices only",
+  "deleted_modules": [
+    "36x8 depth mapper",
+    "learned depth residual",
+    "8-to-36 interpolation",
+    "target-layer calibration",
+    "non-anchor prediction",
+    "dummy KV",
+    "zero placeholders"
+  ],
+  "question_enters_sender": false,
+  "hard_gates_enforced": false
+}

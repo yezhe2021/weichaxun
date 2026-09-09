@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "seed": 1234,
+  "nested": true,
+  "sizes": [
+    512,
+    1024,
+    2048
+  ],
+  "prefix_sha256": {
+    "512": "ccb626a6ae1a127a0ccaf67535d646c93a5cc9d522366ab07682354a668f9c38",
+    "1024": "67ff94a7ce4bcf65120fa10e3ee150b868b74c0b25a264700c067aeb77b02511",
+    "2048": "7a7f738ab357ca40511fde60cc4c1da62c97271e5e320b10db5d743b0e1c71ce"
+  },
+  "types": {
+    "512": {
+      "bridge": 256,
+      "comparison": 256
+    },
+    "1024": {
+      "bridge": 512,
+      "comparison": 512
+    },
+    "2048": {
+      "bridge": 1024,
+      "comparison": 1024
+    }
+  },
+  "max_evidence_tokens": 593,
+  "validation_ids_excluded": true,
+  "existing512": "/home/yezhe/伪查询/runs/p3d3_layer_aligned_native_query_reader_train512_seed1234/data/train.jsonl",
+  "fixed_validation64": "/home/yezhe/伪查询/runs/p3d3_layer_aligned_native_query_reader_train512_seed1234/data/validation.jsonl"
+}

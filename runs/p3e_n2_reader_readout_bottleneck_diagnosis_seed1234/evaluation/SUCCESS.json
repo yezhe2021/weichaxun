@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-N2 Reader readout content diagnosis",
+  "samples": 64,
+  "correct_current": {
+    "n": 64,
+    "support_token_f1": 0.602363154087292,
+    "span_n": 56,
+    "span_em": 0.35714285714285715,
+    "span_token_f1": 0.5424693362193362,
+    "yesno_n": 8,
+    "yesno_accuracy": 0.75
+  },
+  "shuffled_source": {
+    "n": 64,
+    "support_token_f1": 0.5959130810188517,
+    "span_n": 56,
+    "span_em": 0.08928571428571429,
+    "span_token_f1": 0.19574691181834036,
+    "yesno_n": 8,
+    "yesno_accuracy": 0.375
+  },
+  "zero_current": {
+    "n": 64,
+    "support_token_f1": 0.48148148148148145,
+    "span_n": 56,
+    "span_em": 0.0,
+    "span_token_f1": 0.01388888888888889,
+    "yesno_n": 8,
+    "yesno_accuracy": 0.375
+  },
+  "probe_checkpoint": "/home/yezhe/伪查询/runs/p3e_n2_reader_readout_bottleneck_diagnosis_seed1234/probe/checkpoint_best.pt",
+  "input_excludes_native_kv": true,
+  "input_contains_only_reader_readout_and_attention": true
+}

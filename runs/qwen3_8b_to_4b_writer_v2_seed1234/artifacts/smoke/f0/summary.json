@@ -1,0 +1,56 @@
+{
+  "linear_continued_f0_correct": {
+    "count": 2,
+    "em": 0.5,
+    "f1": 0.8333333333333333,
+    "bridge_f1": 0.8333333333333333,
+    "comparison_f1": 0.0,
+    "nll": 0.6428474485874176,
+    "teacher_kl": 0.3238135203719139
+  },
+  "linear_continued_f0_shuffled": {
+    "count": 2,
+    "em": 0.0,
+    "f1": 0.0,
+    "bridge_f1": 0.0,
+    "comparison_f1": 0.0,
+    "nll": 3.8722094297409058,
+    "teacher_kl": 3.623697280883789
+  },
+  "v2_h_f0_correct": {
+    "count": 2,
+    "em": 0.5,
+    "f1": 0.8333333333333333,
+    "bridge_f1": 0.8333333333333333,
+    "comparison_f1": 0.0,
+    "nll": 0.6413621306419373,
+    "teacher_kl": 0.32722148299217224
+  },
+  "v2_h_f0_shuffled": {
+    "count": 2,
+    "em": 0.0,
+    "f1": 0.0,
+    "bridge_f1": 0.0,
+    "comparison_f1": 0.0,
+    "nll": 3.878305435180664,
+    "teacher_kl": 3.628401517868042
+  },
+  "v2_hl_f0_correct": {
+    "count": 2,
+    "em": 0.5,
+    "f1": 0.8333333333333333,
+    "bridge_f1": 0.8333333333333333,
+    "comparison_f1": 0.0,
+    "nll": 0.6356220692396164,
+    "teacher_kl": 0.32505086064338684
+  },
+  "v2_hl_f0_shuffled": {
+    "count": 2,
+    "em": 0.0,
+    "f1": 0.0,
+    "bridge_f1": 0.0,
+    "comparison_f1": 0.0,
+    "nll": 3.880266308784485,
+    "teacher_kl": 3.6268787384033203
+  }
+}

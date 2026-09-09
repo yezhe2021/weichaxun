@@ -1,0 +1,702 @@
+[
+  {
+    "layer": 0,
+    "post_k_cosine": 1.0000000298023224,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 0.9999999701976776,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000298023224,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 0.9999999701976776,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999994784593582,
+        "attention_output_cosine": 0.9999995008111
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999994784593582,
+        "attention_output_cosine": 0.9999995008111
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999994784593582,
+        "attention_output_cosine": 0.9999995008111
+      }
+    }
+  },
+  {
+    "layer": 1,
+    "post_k_cosine": 1.0000000298023224,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 0.9999999850988388,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000298023224,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 0.9999999850988388,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999993816018105,
+        "attention_output_cosine": 0.9999978318810463
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999993816018105,
+        "attention_output_cosine": 0.9999978318810463
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999993816018105,
+        "attention_output_cosine": 0.9999978318810463
+      }
+    }
+  },
+  {
+    "layer": 2,
+    "post_k_cosine": 1.0000000074505806,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000149011612,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000074505806,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000149011612,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999993368983269,
+        "attention_output_cosine": 0.9999978840351105
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999993368983269,
+        "attention_output_cosine": 0.9999978840351105
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999993368983269,
+        "attention_output_cosine": 0.9999978840351105
+      }
+    }
+  },
+  {
+    "layer": 3,
+    "post_k_cosine": 1.0000000447034836,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000447034836,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999993145465851,
+        "attention_output_cosine": 0.9999969974160194
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999993145465851,
+        "attention_output_cosine": 0.9999969974160194
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999993145465851,
+        "attention_output_cosine": 0.9999969974160194
+      }
+    }
+  },
+  {
+    "layer": 4,
+    "post_k_cosine": 0.9999999850988388,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.000000037252903,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.9999999850988388,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.000000037252903,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999990984797478,
+        "attention_output_cosine": 0.999992810189724
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999990984797478,
+        "attention_output_cosine": 0.999992810189724
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999990984797478,
+        "attention_output_cosine": 0.999992810189724
+      }
+    }
+  },
+  {
+    "layer": 5,
+    "post_k_cosine": 1.0000000149011612,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 0.9999999701976776,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000149011612,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 0.9999999701976776,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999989569187164,
+        "attention_output_cosine": 0.9999936819076538
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999989569187164,
+        "attention_output_cosine": 0.9999936819076538
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999989569187164,
+        "attention_output_cosine": 0.9999936819076538
+      }
+    }
+  },
+  {
+    "layer": 6,
+    "post_k_cosine": 0.9999999776482582,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000074505806,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.9999999776482582,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000074505806,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999986961483955,
+        "attention_output_cosine": 0.9999909400939941
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999986961483955,
+        "attention_output_cosine": 0.9999909400939941
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999986961483955,
+        "attention_output_cosine": 0.9999909400939941
+      }
+    }
+  },
+  {
+    "layer": 7,
+    "post_k_cosine": 0.9999999925494194,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000074505806,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.9999999925494194,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000074505806,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999985173344612,
+        "attention_output_cosine": 0.9999948963522911
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999985173344612,
+        "attention_output_cosine": 0.9999948963522911
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999985173344612,
+        "attention_output_cosine": 0.9999948963522911
+      }
+    }
+  },
+  {
+    "layer": 8,
+    "post_k_cosine": 1.0,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000149011612,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000149011612,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999984875321388,
+        "attention_output_cosine": 0.9999953880906105
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999984875321388,
+        "attention_output_cosine": 0.9999953880906105
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999984875321388,
+        "attention_output_cosine": 0.9999953880906105
+      }
+    }
+  },
+  {
+    "layer": 9,
+    "post_k_cosine": 1.0000000223517418,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000074505806,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000223517418,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000074505806,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999982416629791,
+        "attention_output_cosine": 0.9999935626983643
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999982416629791,
+        "attention_output_cosine": 0.9999935626983643
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999982416629791,
+        "attention_output_cosine": 0.9999935626983643
+      }
+    }
+  },
+  {
+    "layer": 10,
+    "post_k_cosine": 0.9999999776482582,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 0.9999999478459358,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.9999999776482582,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 0.9999999478459358,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.999998576939106,
+        "attention_output_cosine": 0.9999941885471344
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.999998576939106,
+        "attention_output_cosine": 0.9999941885471344
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.999998576939106,
+        "attention_output_cosine": 0.9999941885471344
+      }
+    }
+  },
+  {
+    "layer": 11,
+    "post_k_cosine": 1.0000000298023224,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000074505806,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000298023224,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000074505806,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.999998152256012,
+        "attention_output_cosine": 0.9999934956431389
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.999998152256012,
+        "attention_output_cosine": 0.9999934956431389
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.999998152256012,
+        "attention_output_cosine": 0.9999934956431389
+      }
+    }
+  },
+  {
+    "layer": 12,
+    "post_k_cosine": 0.9999999850988388,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000447034836,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.9999999850988388,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000447034836,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999978020787239,
+        "attention_output_cosine": 0.9999922066926956
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999978020787239,
+        "attention_output_cosine": 0.9999922066926956
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999978020787239,
+        "attention_output_cosine": 0.9999922066926956
+      }
+    }
+  },
+  {
+    "layer": 13,
+    "post_k_cosine": 1.0000000149011612,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 0.9999999776482582,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000149011612,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 0.9999999776482582,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999976083636284,
+        "attention_output_cosine": 0.9999887272715569
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999976083636284,
+        "attention_output_cosine": 0.9999887272715569
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999976083636284,
+        "attention_output_cosine": 0.9999887272715569
+      }
+    }
+  },
+  {
+    "layer": 14,
+    "post_k_cosine": 1.0000000074505806,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000149011612,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000074505806,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000149011612,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999971762299538,
+        "attention_output_cosine": 0.9999905973672867
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999971762299538,
+        "attention_output_cosine": 0.9999905973672867
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999971762299538,
+        "attention_output_cosine": 0.9999905973672867
+      }
+    }
+  },
+  {
+    "layer": 15,
+    "post_k_cosine": 0.9999999776482582,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 0.9999999850988388,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.9999999776482582,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 0.9999999850988388,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.999996542930603,
+        "attention_output_cosine": 0.9999853447079659
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.999996542930603,
+        "attention_output_cosine": 0.9999853447079659
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.999996542930603,
+        "attention_output_cosine": 0.9999853447079659
+      }
+    }
+  },
+  {
+    "layer": 16,
+    "post_k_cosine": 1.0000000149011612,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 0.9999999776482582,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000149011612,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 0.9999999776482582,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999965876340866,
+        "attention_output_cosine": 0.9999875426292419
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999965876340866,
+        "attention_output_cosine": 0.9999875426292419
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999965876340866,
+        "attention_output_cosine": 0.9999875426292419
+      }
+    }
+  },
+  {
+    "layer": 17,
+    "post_k_cosine": 0.999999962747097,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000670552254,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.999999962747097,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000670552254,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999966099858284,
+        "attention_output_cosine": 0.9999915808439255
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999966099858284,
+        "attention_output_cosine": 0.9999915808439255
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999966099858284,
+        "attention_output_cosine": 0.9999915808439255
+      }
+    }
+  },
+  {
+    "layer": 18,
+    "post_k_cosine": 0.9999999776482582,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 0.9999999850988388,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.9999999776482582,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 0.9999999850988388,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999965503811836,
+        "attention_output_cosine": 0.9999887868762016
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999965503811836,
+        "attention_output_cosine": 0.9999887868762016
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999965503811836,
+        "attention_output_cosine": 0.9999887868762016
+      }
+    }
+  },
+  {
+    "layer": 19,
+    "post_k_cosine": 0.9999999850988388,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000149011612,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.9999999850988388,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000149011612,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.999996542930603,
+        "attention_output_cosine": 0.9999853074550629
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.999996542930603,
+        "attention_output_cosine": 0.9999853074550629
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.999996542930603,
+        "attention_output_cosine": 0.9999853074550629
+      }
+    }
+  },
+  {
+    "layer": 20,
+    "post_k_cosine": 1.0000000298023224,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 0.9999999850988388,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000298023224,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 0.9999999850988388,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999970570206642,
+        "attention_output_cosine": 0.9999923929572105
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999970570206642,
+        "attention_output_cosine": 0.9999923929572105
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999970570206642,
+        "attention_output_cosine": 0.9999923929572105
+      }
+    }
+  },
+  {
+    "layer": 21,
+    "post_k_cosine": 1.0000000298023224,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.000000037252903,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000298023224,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.000000037252903,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999972879886627,
+        "attention_output_cosine": 0.9999930560588837
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999972879886627,
+        "attention_output_cosine": 0.9999930560588837
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999972879886627,
+        "attention_output_cosine": 0.9999930560588837
+      }
+    }
+  },
+  {
+    "layer": 22,
+    "post_k_cosine": 1.0000000596046448,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 0.9999999701976776,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000596046448,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 0.9999999701976776,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999974817037582,
+        "attention_output_cosine": 0.9999928548932076
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999974817037582,
+        "attention_output_cosine": 0.9999928548932076
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999974817037582,
+        "attention_output_cosine": 0.9999928548932076
+      }
+    }
+  },
+  {
+    "layer": 23,
+    "post_k_cosine": 0.9999999552965164,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000074505806,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.9999999552965164,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000074505806,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999974444508553,
+        "attention_output_cosine": 0.9999868497252464
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999974444508553,
+        "attention_output_cosine": 0.9999868497252464
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999974444508553,
+        "attention_output_cosine": 0.9999868497252464
+      }
+    }
+  },
+  {
+    "layer": 24,
+    "post_k_cosine": 0.9999999850988388,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000223517418,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.9999999850988388,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000223517418,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999977573752403,
+        "attention_output_cosine": 0.9999922290444374
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999977573752403,
+        "attention_output_cosine": 0.9999922290444374
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999977573752403,
+        "attention_output_cosine": 0.9999922290444374
+      }
+    }
+  },
+  {
+    "layer": 25,
+    "post_k_cosine": 1.0,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999982342123985,
+        "attention_output_cosine": 0.9999915361404419
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999982342123985,
+        "attention_output_cosine": 0.9999915361404419
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999982342123985,
+        "attention_output_cosine": 0.9999915361404419
+      }
+    }
+  },
+  {
+    "layer": 26,
+    "post_k_cosine": 1.0000000074505806,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 1.0000000298023224,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 1.0000000074505806,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 1.0000000298023224,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999985173344612,
+        "attention_output_cosine": 0.9999931752681732
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999985173344612,
+        "attention_output_cosine": 0.9999931752681732
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999985173344612,
+        "attention_output_cosine": 0.9999931752681732
+      }
+    }
+  },
+  {
+    "layer": 27,
+    "post_k_cosine": 0.999999962747097,
+    "post_k_nmse": 0.0,
+    "post_v_cosine": 0.9999999850988388,
+    "post_v_nmse": 0.0,
+    "pre_rope_k_cosine": 0.999999962747097,
+    "pre_rope_k_nmse": 0.0,
+    "pre_rope_v_cosine": 0.9999999850988388,
+    "pre_rope_v_nmse": 0.0,
+    "trace_comparisons": {
+      "text_vs_manual_post": {
+        "hidden_cosine": 0.9999941363930702,
+        "attention_output_cosine": 0.9999910518527031
+      },
+      "text_vs_manual_pre": {
+        "hidden_cosine": 0.9999941363930702,
+        "attention_output_cosine": 0.9999910518527031
+      },
+      "text_vs_official": {
+        "hidden_cosine": 0.9999941363930702,
+        "attention_output_cosine": 0.9999910518527031
+      }
+    }
+  }
+]

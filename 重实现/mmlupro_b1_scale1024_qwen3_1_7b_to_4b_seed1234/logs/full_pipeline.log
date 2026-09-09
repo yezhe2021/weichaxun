@@ -1,0 +1,3249 @@
+[2026-08-30 22:30:18] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_unit_tests.py
+PASS test_writers.py:test_checkpoint_round_trip_and_metadata
+PASS test_writers.py:test_d2_initialization_equals_calibrated_d0
+PASS test_writers.py:test_head_independence
+PASS test_writers.py:test_neighbor_order_and_boundary_rules
+PASS test_writers.py:test_parameters_are_independent_by_layer_and_family
+PASS test_writers.py:test_shapes_zero_and_no_bias
+PASS test_writers.py:test_token_independence
+PASS test_losses.py:test_decoder_layer_capture_preserves_autograd
+PASS test_losses.py:test_final_kl_ignores_all_earlier_suffix_positions
+PASS test_losses.py:test_hidden_loss_averages_layers_instead_of_flattening
+PASS test_losses.py:test_identical_36_layer_hidden_loss_is_zero
+PASS test_losses.py:test_identical_full_vocabulary_kl_is_zero
+PASS test_losses.py:test_last_n_kl_ignores_earlier_tokens
+PASS test_losses.py:test_shuffled_comparison_uses_only_matched_correct_samples
+PASS test_losses.py:test_training_sample_physically_removes_gold_fields
+15 unit tests passed
+[2026-08-30 22:30:24] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_unit_tests.py
+[2026-08-30 22:30:24] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json prepare
+[2026-08-30 22:31:16] prepared MMLU-Pro Options-first manifests
+[2026-08-30 22:31:18] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json prepare
+[2026-08-30 22:31:18] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u audit_anchor_split.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json
+anchored scale-up audit passed: {'test_exact_identity_and_order': True, 'old_train_is_new_train_prefix': True, 'old_validation_is_new_validation_prefix': True, 'counts_exact': True, 'all_splits_disjoint': True}
+[2026-08-30 22:31:22] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u audit_anchor_split.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json
+[2026-08-30 22:31:22] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json audit
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  29%|██▊       | 114/398 [00:00<00:00, 1138.87it/s]Loading weights:  57%|█████▋    | 228/398 [00:00<00:00, 1023.43it/s]Loading weights:  83%|████████▎ | 332/398 [00:00<00:00, 1007.74it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1001.07it/s]
+[2026-08-30 22:31:37] protocol audit 1/32
+[2026-08-30 22:31:39] protocol audit 2/32
+[2026-08-30 22:31:40] protocol audit 3/32
+[2026-08-30 22:31:42] protocol audit 4/32
+[2026-08-30 22:31:43] protocol audit 5/32
+[2026-08-30 22:31:45] protocol audit 6/32
+[2026-08-30 22:31:47] protocol audit 7/32
+[2026-08-30 22:31:49] protocol audit 8/32
+[2026-08-30 22:31:51] protocol audit 9/32
+[2026-08-30 22:31:52] protocol audit 10/32
+[2026-08-30 22:31:54] protocol audit 11/32
+[2026-08-30 22:31:56] protocol audit 12/32
+[2026-08-30 22:31:58] protocol audit 13/32
+[2026-08-30 22:32:00] protocol audit 14/32
+[2026-08-30 22:32:02] protocol audit 15/32
+[2026-08-30 22:32:05] protocol audit 16/32
+[2026-08-30 22:32:06] protocol audit 17/32
+[2026-08-30 22:32:07] protocol audit 18/32
+[2026-08-30 22:32:09] protocol audit 19/32
+[2026-08-30 22:32:09] protocol audit 20/32
+[2026-08-30 22:32:11] protocol audit 21/32
+[2026-08-30 22:32:13] protocol audit 22/32
+[2026-08-30 22:32:15] protocol audit 23/32
+[2026-08-30 22:32:17] protocol audit 24/32
+[2026-08-30 22:32:18] protocol audit 25/32
+[2026-08-30 22:32:20] protocol audit 26/32
+[2026-08-30 22:32:22] protocol audit 27/32
+[2026-08-30 22:32:24] protocol audit 28/32
+[2026-08-30 22:32:26] protocol audit 29/32
+[2026-08-30 22:32:28] protocol audit 30/32
+[2026-08-30 22:32:29] protocol audit 31/32
+[2026-08-30 22:32:31] protocol audit 32/32
+[2026-08-30 22:32:32] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json audit
+[2026-08-30 22:32:32] START bash ./seed_anchor_cache.sh
+Anchored cache files linked without tensor duplication.
+[2026-08-30 22:32:34] DONE  bash ./seed_anchor_cache.sh
+[2026-08-30 22:32:34] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json cache --split train --family both
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 147/311 [00:00<00:00, 1457.84it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1611.60it/s]
+[2026-08-30 22:32:45] source17/train: resume skip 1/1024
+[2026-08-30 22:32:45] source17/train: resume skip 2/1024
+[2026-08-30 22:32:45] source17/train: resume skip 3/1024
+[2026-08-30 22:32:45] source17/train: resume skip 4/1024
+[2026-08-30 22:32:45] source17/train: resume skip 5/1024
+[2026-08-30 22:32:45] source17/train: resume skip 6/1024
+[2026-08-30 22:32:45] source17/train: resume skip 7/1024
+[2026-08-30 22:32:45] source17/train: resume skip 8/1024
+[2026-08-30 22:32:45] source17/train: resume skip 9/1024
+[2026-08-30 22:32:45] source17/train: resume skip 10/1024
+[2026-08-30 22:32:45] source17/train: resume skip 11/1024
+[2026-08-30 22:32:45] source17/train: resume skip 12/1024
+[2026-08-30 22:32:45] source17/train: resume skip 13/1024
+[2026-08-30 22:32:45] source17/train: resume skip 14/1024
+[2026-08-30 22:32:45] source17/train: resume skip 15/1024
+[2026-08-30 22:32:45] source17/train: resume skip 16/1024
+[2026-08-30 22:32:45] source17/train: resume skip 17/1024
+[2026-08-30 22:32:45] source17/train: resume skip 18/1024
+[2026-08-30 22:32:45] source17/train: resume skip 19/1024
+[2026-08-30 22:32:45] source17/train: resume skip 20/1024
+[2026-08-30 22:32:45] source17/train: resume skip 21/1024
+[2026-08-30 22:32:45] source17/train: resume skip 22/1024
+[2026-08-30 22:32:45] source17/train: resume skip 23/1024
+[2026-08-30 22:32:45] source17/train: resume skip 24/1024
+[2026-08-30 22:32:45] source17/train: resume skip 25/1024
+[2026-08-30 22:32:45] source17/train: resume skip 26/1024
+[2026-08-30 22:32:45] source17/train: resume skip 27/1024
+[2026-08-30 22:32:45] source17/train: resume skip 28/1024
+[2026-08-30 22:32:45] source17/train: resume skip 29/1024
+[2026-08-30 22:32:45] source17/train: resume skip 30/1024
+[2026-08-30 22:32:45] source17/train: resume skip 31/1024
+[2026-08-30 22:32:45] source17/train: resume skip 32/1024
+[2026-08-30 22:32:45] source17/train: resume skip 33/1024
+[2026-08-30 22:32:45] source17/train: resume skip 34/1024
+[2026-08-30 22:32:45] source17/train: resume skip 35/1024
+[2026-08-30 22:32:45] source17/train: resume skip 36/1024
+[2026-08-30 22:32:45] source17/train: resume skip 37/1024
+[2026-08-30 22:32:45] source17/train: resume skip 38/1024
+[2026-08-30 22:32:45] source17/train: resume skip 39/1024
+[2026-08-30 22:32:45] source17/train: resume skip 40/1024
+[2026-08-30 22:32:45] source17/train: resume skip 41/1024
+[2026-08-30 22:32:45] source17/train: resume skip 42/1024
+[2026-08-30 22:32:45] source17/train: resume skip 43/1024
+[2026-08-30 22:32:45] source17/train: resume skip 44/1024
+[2026-08-30 22:32:45] source17/train: resume skip 45/1024
+[2026-08-30 22:32:45] source17/train: resume skip 46/1024
+[2026-08-30 22:32:45] source17/train: resume skip 47/1024
+[2026-08-30 22:32:45] source17/train: resume skip 48/1024
+[2026-08-30 22:32:45] source17/train: resume skip 49/1024
+[2026-08-30 22:32:45] source17/train: resume skip 50/1024
+[2026-08-30 22:32:45] source17/train: resume skip 51/1024
+[2026-08-30 22:32:45] source17/train: resume skip 52/1024
+[2026-08-30 22:32:45] source17/train: resume skip 53/1024
+[2026-08-30 22:32:45] source17/train: resume skip 54/1024
+[2026-08-30 22:32:45] source17/train: resume skip 55/1024
+[2026-08-30 22:32:45] source17/train: resume skip 56/1024
+[2026-08-30 22:32:45] source17/train: resume skip 57/1024
+[2026-08-30 22:32:45] source17/train: resume skip 58/1024
+[2026-08-30 22:32:45] source17/train: resume skip 59/1024
+[2026-08-30 22:32:45] source17/train: resume skip 60/1024
+[2026-08-30 22:32:45] source17/train: resume skip 61/1024
+[2026-08-30 22:32:45] source17/train: resume skip 62/1024
+[2026-08-30 22:32:45] source17/train: resume skip 63/1024
+[2026-08-30 22:32:45] source17/train: resume skip 64/1024
+[2026-08-30 22:32:45] source17/train: resume skip 65/1024
+[2026-08-30 22:32:45] source17/train: resume skip 66/1024
+[2026-08-30 22:32:45] source17/train: resume skip 67/1024
+[2026-08-30 22:32:45] source17/train: resume skip 68/1024
+[2026-08-30 22:32:45] source17/train: resume skip 69/1024
+[2026-08-30 22:32:45] source17/train: resume skip 70/1024
+[2026-08-30 22:32:45] source17/train: resume skip 71/1024
+[2026-08-30 22:32:45] source17/train: resume skip 72/1024
+[2026-08-30 22:32:45] source17/train: resume skip 73/1024
+[2026-08-30 22:32:45] source17/train: resume skip 74/1024
+[2026-08-30 22:32:45] source17/train: resume skip 75/1024
+[2026-08-30 22:32:45] source17/train: resume skip 76/1024
+[2026-08-30 22:32:45] source17/train: resume skip 77/1024
+[2026-08-30 22:32:45] source17/train: resume skip 78/1024
+[2026-08-30 22:32:45] source17/train: resume skip 79/1024
+[2026-08-30 22:32:45] source17/train: resume skip 80/1024
+[2026-08-30 22:32:45] source17/train: resume skip 81/1024
+[2026-08-30 22:32:45] source17/train: resume skip 82/1024
+[2026-08-30 22:32:45] source17/train: resume skip 83/1024
+[2026-08-30 22:32:45] source17/train: resume skip 84/1024
+[2026-08-30 22:32:45] source17/train: resume skip 85/1024
+[2026-08-30 22:32:45] source17/train: resume skip 86/1024
+[2026-08-30 22:32:45] source17/train: resume skip 87/1024
+[2026-08-30 22:32:45] source17/train: resume skip 88/1024
+[2026-08-30 22:32:45] source17/train: resume skip 89/1024
+[2026-08-30 22:32:45] source17/train: resume skip 90/1024
+[2026-08-30 22:32:45] source17/train: resume skip 91/1024
+[2026-08-30 22:32:45] source17/train: resume skip 92/1024
+[2026-08-30 22:32:45] source17/train: resume skip 93/1024
+[2026-08-30 22:32:45] source17/train: resume skip 94/1024
+[2026-08-30 22:32:45] source17/train: resume skip 95/1024
+[2026-08-30 22:32:45] source17/train: resume skip 96/1024
+[2026-08-30 22:32:45] source17/train: resume skip 97/1024
+[2026-08-30 22:32:45] source17/train: resume skip 98/1024
+[2026-08-30 22:32:45] source17/train: resume skip 99/1024
+[2026-08-30 22:32:45] source17/train: resume skip 100/1024
+[2026-08-30 22:32:45] source17/train: resume skip 101/1024
+[2026-08-30 22:32:45] source17/train: resume skip 102/1024
+[2026-08-30 22:32:45] source17/train: resume skip 103/1024
+[2026-08-30 22:32:45] source17/train: resume skip 104/1024
+[2026-08-30 22:32:45] source17/train: resume skip 105/1024
+[2026-08-30 22:32:45] source17/train: resume skip 106/1024
+[2026-08-30 22:32:45] source17/train: resume skip 107/1024
+[2026-08-30 22:32:45] source17/train: resume skip 108/1024
+[2026-08-30 22:32:45] source17/train: resume skip 109/1024
+[2026-08-30 22:32:45] source17/train: resume skip 110/1024
+[2026-08-30 22:32:45] source17/train: resume skip 111/1024
+[2026-08-30 22:32:45] source17/train: resume skip 112/1024
+[2026-08-30 22:32:45] source17/train: resume skip 113/1024
+[2026-08-30 22:32:45] source17/train: resume skip 114/1024
+[2026-08-30 22:32:45] source17/train: resume skip 115/1024
+[2026-08-30 22:32:45] source17/train: resume skip 116/1024
+[2026-08-30 22:32:45] source17/train: resume skip 117/1024
+[2026-08-30 22:32:45] source17/train: resume skip 118/1024
+[2026-08-30 22:32:45] source17/train: resume skip 119/1024
+[2026-08-30 22:32:45] source17/train: resume skip 120/1024
+[2026-08-30 22:32:45] source17/train: resume skip 121/1024
+[2026-08-30 22:32:45] source17/train: resume skip 122/1024
+[2026-08-30 22:32:45] source17/train: resume skip 123/1024
+[2026-08-30 22:32:45] source17/train: resume skip 124/1024
+[2026-08-30 22:32:45] source17/train: resume skip 125/1024
+[2026-08-30 22:32:45] source17/train: resume skip 126/1024
+[2026-08-30 22:32:45] source17/train: resume skip 127/1024
+[2026-08-30 22:32:45] source17/train: resume skip 128/1024
+[2026-08-30 22:32:46] source17/train: 129/1024 T=43
+[2026-08-30 22:32:46] source17/train: 130/1024 T=57
+[2026-08-30 22:32:47] source17/train: 131/1024 T=193
+[2026-08-30 22:32:47] source17/train: 132/1024 T=77
+[2026-08-30 22:32:47] source17/train: 133/1024 T=323
+[2026-08-30 22:32:47] source17/train: 134/1024 T=233
+[2026-08-30 22:32:47] source17/train: 135/1024 T=94
+[2026-08-30 22:32:48] source17/train: 136/1024 T=68
+[2026-08-30 22:32:48] source17/train: 137/1024 T=83
+[2026-08-30 22:32:48] source17/train: 138/1024 T=393
+[2026-08-30 22:32:48] source17/train: 139/1024 T=71
+[2026-08-30 22:32:48] source17/train: 140/1024 T=145
+[2026-08-30 22:32:48] source17/train: 141/1024 T=61
+[2026-08-30 22:32:49] source17/train: 142/1024 T=156
+[2026-08-30 22:32:49] source17/train: 143/1024 T=94
+[2026-08-30 22:32:49] source17/train: 144/1024 T=60
+[2026-08-30 22:32:49] source17/train: 145/1024 T=69
+[2026-08-30 22:32:49] source17/train: 146/1024 T=126
+[2026-08-30 22:32:49] source17/train: 147/1024 T=62
+[2026-08-30 22:32:49] source17/train: 148/1024 T=93
+[2026-08-30 22:32:50] source17/train: 149/1024 T=108
+[2026-08-30 22:32:50] source17/train: 150/1024 T=146
+[2026-08-30 22:32:50] source17/train: 151/1024 T=199
+[2026-08-30 22:32:50] source17/train: 152/1024 T=90
+[2026-08-30 22:32:50] source17/train: 153/1024 T=79
+[2026-08-30 22:32:50] source17/train: 154/1024 T=243
+[2026-08-30 22:32:50] source17/train: 155/1024 T=53
+[2026-08-30 22:32:51] source17/train: 156/1024 T=134
+[2026-08-30 22:32:51] source17/train: 157/1024 T=157
+[2026-08-30 22:32:51] source17/train: 158/1024 T=82
+[2026-08-30 22:32:51] source17/train: 159/1024 T=126
+[2026-08-30 22:32:51] source17/train: 160/1024 T=168
+[2026-08-30 22:32:51] source17/train: 161/1024 T=93
+[2026-08-30 22:32:52] source17/train: 162/1024 T=92
+[2026-08-30 22:32:52] source17/train: 163/1024 T=69
+[2026-08-30 22:32:52] source17/train: 164/1024 T=85
+[2026-08-30 22:32:52] source17/train: 165/1024 T=491
+[2026-08-30 22:32:52] source17/train: 166/1024 T=66
+[2026-08-30 22:32:52] source17/train: 167/1024 T=71
+[2026-08-30 22:32:53] source17/train: 168/1024 T=205
+[2026-08-30 22:32:53] source17/train: 169/1024 T=63
+[2026-08-30 22:32:53] source17/train: 170/1024 T=117
+[2026-08-30 22:32:53] source17/train: 171/1024 T=400
+[2026-08-30 22:32:53] source17/train: 172/1024 T=122
+[2026-08-30 22:32:53] source17/train: 173/1024 T=121
+[2026-08-30 22:32:54] source17/train: 174/1024 T=120
+[2026-08-30 22:32:54] source17/train: 175/1024 T=96
+[2026-08-30 22:32:54] source17/train: 176/1024 T=203
+[2026-08-30 22:32:54] source17/train: 177/1024 T=86
+[2026-08-30 22:32:54] source17/train: 178/1024 T=183
+[2026-08-30 22:32:54] source17/train: 179/1024 T=147
+[2026-08-30 22:32:55] source17/train: 180/1024 T=66
+[2026-08-30 22:32:55] source17/train: 181/1024 T=106
+[2026-08-30 22:32:55] source17/train: 182/1024 T=115
+[2026-08-30 22:32:55] source17/train: 183/1024 T=100
+[2026-08-30 22:32:55] source17/train: 184/1024 T=154
+[2026-08-30 22:32:55] source17/train: 185/1024 T=179
+[2026-08-30 22:32:55] source17/train: 186/1024 T=103
+[2026-08-30 22:32:56] source17/train: 187/1024 T=62
+[2026-08-30 22:32:56] source17/train: 188/1024 T=218
+[2026-08-30 22:32:56] source17/train: 189/1024 T=83
+[2026-08-30 22:32:56] source17/train: 190/1024 T=136
+[2026-08-30 22:32:56] source17/train: 191/1024 T=183
+[2026-08-30 22:32:56] source17/train: 192/1024 T=93
+[2026-08-30 22:32:57] source17/train: 193/1024 T=326
+[2026-08-30 22:32:57] source17/train: 194/1024 T=133
+[2026-08-30 22:32:57] source17/train: 195/1024 T=156
+[2026-08-30 22:32:57] source17/train: 196/1024 T=169
+[2026-08-30 22:32:57] source17/train: 197/1024 T=202
+[2026-08-30 22:32:57] source17/train: 198/1024 T=101
+[2026-08-30 22:32:58] source17/train: 199/1024 T=122
+[2026-08-30 22:32:58] source17/train: 200/1024 T=143
+[2026-08-30 22:32:58] source17/train: 201/1024 T=190
+[2026-08-30 22:32:58] source17/train: 202/1024 T=176
+[2026-08-30 22:32:58] source17/train: 203/1024 T=308
+[2026-08-30 22:32:58] source17/train: 204/1024 T=66
+[2026-08-30 22:32:59] source17/train: 205/1024 T=69
+[2026-08-30 22:32:59] source17/train: 206/1024 T=123
+[2026-08-30 22:32:59] source17/train: 207/1024 T=99
+[2026-08-30 22:32:59] source17/train: 208/1024 T=54
+[2026-08-30 22:32:59] source17/train: 209/1024 T=53
+[2026-08-30 22:32:59] source17/train: 210/1024 T=132
+[2026-08-30 22:32:59] source17/train: 211/1024 T=62
+[2026-08-30 22:32:59] source17/train: 212/1024 T=55
+[2026-08-30 22:33:00] source17/train: 213/1024 T=67
+[2026-08-30 22:33:00] source17/train: 214/1024 T=229
+[2026-08-30 22:33:00] source17/train: 215/1024 T=63
+[2026-08-30 22:33:00] source17/train: 216/1024 T=95
+[2026-08-30 22:33:00] source17/train: 217/1024 T=61
+[2026-08-30 22:33:00] source17/train: 218/1024 T=113
+[2026-08-30 22:33:00] source17/train: 219/1024 T=73
+[2026-08-30 22:33:00] source17/train: 220/1024 T=177
+[2026-08-30 22:33:00] source17/train: 221/1024 T=100
+[2026-08-30 22:33:01] source17/train: 222/1024 T=64
+[2026-08-30 22:33:01] source17/train: 223/1024 T=155
+[2026-08-30 22:33:01] source17/train: 224/1024 T=85
+[2026-08-30 22:33:01] source17/train: 225/1024 T=163
+[2026-08-30 22:33:01] source17/train: 226/1024 T=145
+[2026-08-30 22:33:01] source17/train: 227/1024 T=86
+[2026-08-30 22:33:01] source17/train: 228/1024 T=101
+[2026-08-30 22:33:02] source17/train: 229/1024 T=218
+[2026-08-30 22:33:02] source17/train: 230/1024 T=151
+[2026-08-30 22:33:02] source17/train: 231/1024 T=73
+[2026-08-30 22:33:02] source17/train: 232/1024 T=83
+[2026-08-30 22:33:02] source17/train: 233/1024 T=163
+[2026-08-30 22:33:02] source17/train: 234/1024 T=141
+[2026-08-30 22:33:03] source17/train: 235/1024 T=257
+[2026-08-30 22:33:03] source17/train: 236/1024 T=95
+[2026-08-30 22:33:03] source17/train: 237/1024 T=202
+[2026-08-30 22:33:03] source17/train: 238/1024 T=121
+[2026-08-30 22:33:03] source17/train: 239/1024 T=69
+[2026-08-30 22:33:03] source17/train: 240/1024 T=57
+[2026-08-30 22:33:03] source17/train: 241/1024 T=24
+[2026-08-30 22:33:04] source17/train: 242/1024 T=79
+[2026-08-30 22:33:04] source17/train: 243/1024 T=103
+[2026-08-30 22:33:04] source17/train: 244/1024 T=248
+[2026-08-30 22:33:04] source17/train: 245/1024 T=81
+[2026-08-30 22:33:04] source17/train: 246/1024 T=84
+[2026-08-30 22:33:04] source17/train: 247/1024 T=112
+[2026-08-30 22:33:04] source17/train: 248/1024 T=195
+[2026-08-30 22:33:05] source17/train: 249/1024 T=223
+[2026-08-30 22:33:05] source17/train: 250/1024 T=88
+[2026-08-30 22:33:05] source17/train: 251/1024 T=117
+[2026-08-30 22:33:05] source17/train: 252/1024 T=125
+[2026-08-30 22:33:05] source17/train: 253/1024 T=115
+[2026-08-30 22:33:05] source17/train: 254/1024 T=68
+[2026-08-30 22:33:05] source17/train: 255/1024 T=69
+[2026-08-30 22:33:06] source17/train: 256/1024 T=203
+[2026-08-30 22:33:06] source17/train: 257/1024 T=208
+[2026-08-30 22:33:06] source17/train: 258/1024 T=179
+[2026-08-30 22:33:06] source17/train: 259/1024 T=141
+[2026-08-30 22:33:06] source17/train: 260/1024 T=250
+[2026-08-30 22:33:06] source17/train: 261/1024 T=74
+[2026-08-30 22:33:07] source17/train: 262/1024 T=63
+[2026-08-30 22:33:07] source17/train: 263/1024 T=201
+[2026-08-30 22:33:07] source17/train: 264/1024 T=51
+[2026-08-30 22:33:07] source17/train: 265/1024 T=156
+[2026-08-30 22:33:07] source17/train: 266/1024 T=72
+[2026-08-30 22:33:07] source17/train: 267/1024 T=53
+[2026-08-30 22:33:07] source17/train: 268/1024 T=31
+[2026-08-30 22:33:07] source17/train: 269/1024 T=60
+[2026-08-30 22:33:08] source17/train: 270/1024 T=163
+[2026-08-30 22:33:08] source17/train: 271/1024 T=134
+[2026-08-30 22:33:08] source17/train: 272/1024 T=124
+[2026-08-30 22:33:08] source17/train: 273/1024 T=73
+[2026-08-30 22:33:08] source17/train: 274/1024 T=173
+[2026-08-30 22:33:08] source17/train: 275/1024 T=201
+[2026-08-30 22:33:09] source17/train: 276/1024 T=71
+[2026-08-30 22:33:09] source17/train: 277/1024 T=78
+[2026-08-30 22:33:09] source17/train: 278/1024 T=195
+[2026-08-30 22:33:09] source17/train: 279/1024 T=157
+[2026-08-30 22:33:09] source17/train: 280/1024 T=77
+[2026-08-30 22:33:09] source17/train: 281/1024 T=79
+[2026-08-30 22:33:09] source17/train: 282/1024 T=84
+[2026-08-30 22:33:10] source17/train: 283/1024 T=157
+[2026-08-30 22:33:10] source17/train: 284/1024 T=155
+[2026-08-30 22:33:10] source17/train: 285/1024 T=98
+[2026-08-30 22:33:10] source17/train: 286/1024 T=135
+[2026-08-30 22:33:10] source17/train: 287/1024 T=118
+[2026-08-30 22:33:10] source17/train: 288/1024 T=269
+[2026-08-30 22:33:11] source17/train: 289/1024 T=174
+[2026-08-30 22:33:11] source17/train: 290/1024 T=124
+[2026-08-30 22:33:11] source17/train: 291/1024 T=71
+[2026-08-30 22:33:11] source17/train: 292/1024 T=131
+[2026-08-30 22:33:11] source17/train: 293/1024 T=182
+[2026-08-30 22:33:11] source17/train: 294/1024 T=74
+[2026-08-30 22:33:11] source17/train: 295/1024 T=77
+[2026-08-30 22:33:12] source17/train: 296/1024 T=148
+[2026-08-30 22:33:12] source17/train: 297/1024 T=84
+[2026-08-30 22:33:12] source17/train: 298/1024 T=174
+[2026-08-30 22:33:12] source17/train: 299/1024 T=57
+[2026-08-30 22:33:12] source17/train: 300/1024 T=173
+[2026-08-30 22:33:12] source17/train: 301/1024 T=152
+[2026-08-30 22:33:12] source17/train: 302/1024 T=71
+[2026-08-30 22:33:13] source17/train: 303/1024 T=57
+[2026-08-30 22:33:13] source17/train: 304/1024 T=340
+[2026-08-30 22:33:13] source17/train: 305/1024 T=71
+[2026-08-30 22:33:13] source17/train: 306/1024 T=127
+[2026-08-30 22:33:13] source17/train: 307/1024 T=209
+[2026-08-30 22:33:13] source17/train: 308/1024 T=88
+[2026-08-30 22:33:14] source17/train: 309/1024 T=98
+[2026-08-30 22:33:14] source17/train: 310/1024 T=131
+[2026-08-30 22:33:14] source17/train: 311/1024 T=242
+[2026-08-30 22:33:14] source17/train: 312/1024 T=64
+[2026-08-30 22:33:14] source17/train: 313/1024 T=183
+[2026-08-30 22:33:14] source17/train: 314/1024 T=123
+[2026-08-30 22:33:15] source17/train: 315/1024 T=129
+[2026-08-30 22:33:15] source17/train: 316/1024 T=256
+[2026-08-30 22:33:15] source17/train: 317/1024 T=143
+[2026-08-30 22:33:15] source17/train: 318/1024 T=23
+[2026-08-30 22:33:15] source17/train: 319/1024 T=86
+[2026-08-30 22:33:15] source17/train: 320/1024 T=129
+[2026-08-30 22:33:15] source17/train: 321/1024 T=51
+[2026-08-30 22:33:16] source17/train: 322/1024 T=73
+[2026-08-30 22:33:16] source17/train: 323/1024 T=64
+[2026-08-30 22:33:16] source17/train: 324/1024 T=24
+[2026-08-30 22:33:16] source17/train: 325/1024 T=201
+[2026-08-30 22:33:16] source17/train: 326/1024 T=99
+[2026-08-30 22:33:16] source17/train: 327/1024 T=127
+[2026-08-30 22:33:16] source17/train: 328/1024 T=132
+[2026-08-30 22:33:17] source17/train: 329/1024 T=115
+[2026-08-30 22:33:17] source17/train: 330/1024 T=58
+[2026-08-30 22:33:17] source17/train: 331/1024 T=119
+[2026-08-30 22:33:17] source17/train: 332/1024 T=159
+[2026-08-30 22:33:17] source17/train: 333/1024 T=112
+[2026-08-30 22:33:17] source17/train: 334/1024 T=75
+[2026-08-30 22:33:17] source17/train: 335/1024 T=147
+[2026-08-30 22:33:18] source17/train: 336/1024 T=83
+[2026-08-30 22:33:18] source17/train: 337/1024 T=149
+[2026-08-30 22:33:18] source17/train: 338/1024 T=96
+[2026-08-30 22:33:18] source17/train: 339/1024 T=73
+[2026-08-30 22:33:18] source17/train: 340/1024 T=32
+[2026-08-30 22:33:18] source17/train: 341/1024 T=176
+[2026-08-30 22:33:18] source17/train: 342/1024 T=203
+[2026-08-30 22:33:19] source17/train: 343/1024 T=283
+[2026-08-30 22:33:19] source17/train: 344/1024 T=148
+[2026-08-30 22:33:19] source17/train: 345/1024 T=197
+[2026-08-30 22:33:19] source17/train: 346/1024 T=317
+[2026-08-30 22:33:19] source17/train: 347/1024 T=74
+[2026-08-30 22:33:19] source17/train: 348/1024 T=100
+[2026-08-30 22:33:20] source17/train: 349/1024 T=222
+[2026-08-30 22:33:20] source17/train: 350/1024 T=189
+[2026-08-30 22:33:20] source17/train: 351/1024 T=130
+[2026-08-30 22:33:20] source17/train: 352/1024 T=58
+[2026-08-30 22:33:20] source17/train: 353/1024 T=86
+[2026-08-30 22:33:20] source17/train: 354/1024 T=75
+[2026-08-30 22:33:21] source17/train: 355/1024 T=196
+[2026-08-30 22:33:21] source17/train: 356/1024 T=507
+[2026-08-30 22:33:21] source17/train: 357/1024 T=257
+[2026-08-30 22:33:21] source17/train: 358/1024 T=87
+[2026-08-30 22:33:21] source17/train: 359/1024 T=41
+[2026-08-30 22:33:22] source17/train: 360/1024 T=350
+[2026-08-30 22:33:22] source17/train: 361/1024 T=73
+[2026-08-30 22:33:22] source17/train: 362/1024 T=99
+[2026-08-30 22:33:22] source17/train: 363/1024 T=124
+[2026-08-30 22:33:22] source17/train: 364/1024 T=59
+[2026-08-30 22:33:22] source17/train: 365/1024 T=45
+[2026-08-30 22:33:22] source17/train: 366/1024 T=74
+[2026-08-30 22:33:23] source17/train: 367/1024 T=153
+[2026-08-30 22:33:23] source17/train: 368/1024 T=169
+[2026-08-30 22:33:23] source17/train: 369/1024 T=57
+[2026-08-30 22:33:23] source17/train: 370/1024 T=120
+[2026-08-30 22:33:23] source17/train: 371/1024 T=263
+[2026-08-30 22:33:23] source17/train: 372/1024 T=77
+[2026-08-30 22:33:24] source17/train: 373/1024 T=139
+[2026-08-30 22:33:24] source17/train: 374/1024 T=74
+[2026-08-30 22:33:24] source17/train: 375/1024 T=108
+[2026-08-30 22:33:24] source17/train: 376/1024 T=87
+[2026-08-30 22:33:24] source17/train: 377/1024 T=115
+[2026-08-30 22:33:24] source17/train: 378/1024 T=68
+[2026-08-30 22:33:24] source17/train: 379/1024 T=58
+[2026-08-30 22:33:25] source17/train: 380/1024 T=108
+[2026-08-30 22:33:25] source17/train: 381/1024 T=73
+[2026-08-30 22:33:25] source17/train: 382/1024 T=230
+[2026-08-30 22:33:25] source17/train: 383/1024 T=138
+[2026-08-30 22:33:25] source17/train: 384/1024 T=70
+[2026-08-30 22:33:25] source17/train: 385/1024 T=65
+[2026-08-30 22:33:25] source17/train: 386/1024 T=56
+[2026-08-30 22:33:26] source17/train: 387/1024 T=137
+[2026-08-30 22:33:26] source17/train: 388/1024 T=143
+[2026-08-30 22:33:26] source17/train: 389/1024 T=51
+[2026-08-30 22:33:26] source17/train: 390/1024 T=54
+[2026-08-30 22:33:26] source17/train: 391/1024 T=181
+[2026-08-30 22:33:26] source17/train: 392/1024 T=123
+[2026-08-30 22:33:26] source17/train: 393/1024 T=113
+[2026-08-30 22:33:27] source17/train: 394/1024 T=129
+[2026-08-30 22:33:27] source17/train: 395/1024 T=90
+[2026-08-30 22:33:27] source17/train: 396/1024 T=132
+[2026-08-30 22:33:27] source17/train: 397/1024 T=174
+[2026-08-30 22:33:27] source17/train: 398/1024 T=105
+[2026-08-30 22:33:27] source17/train: 399/1024 T=62
+[2026-08-30 22:33:27] source17/train: 400/1024 T=55
+[2026-08-30 22:33:28] source17/train: 401/1024 T=114
+[2026-08-30 22:33:28] source17/train: 402/1024 T=99
+[2026-08-30 22:33:28] source17/train: 403/1024 T=46
+[2026-08-30 22:33:28] source17/train: 404/1024 T=114
+[2026-08-30 22:33:28] source17/train: 405/1024 T=165
+[2026-08-30 22:33:28] source17/train: 406/1024 T=113
+[2026-08-30 22:33:28] source17/train: 407/1024 T=66
+[2026-08-30 22:33:29] source17/train: 408/1024 T=37
+[2026-08-30 22:33:29] source17/train: 409/1024 T=103
+[2026-08-30 22:33:29] source17/train: 410/1024 T=84
+[2026-08-30 22:33:29] source17/train: 411/1024 T=170
+[2026-08-30 22:33:29] source17/train: 412/1024 T=253
+[2026-08-30 22:33:29] source17/train: 413/1024 T=93
+[2026-08-30 22:33:29] source17/train: 414/1024 T=63
+[2026-08-30 22:33:30] source17/train: 415/1024 T=134
+[2026-08-30 22:33:30] source17/train: 416/1024 T=149
+[2026-08-30 22:33:30] source17/train: 417/1024 T=93
+[2026-08-30 22:33:30] source17/train: 418/1024 T=25
+[2026-08-30 22:33:30] source17/train: 419/1024 T=265
+[2026-08-30 22:33:30] source17/train: 420/1024 T=127
+[2026-08-30 22:33:31] source17/train: 421/1024 T=48
+[2026-08-30 22:33:31] source17/train: 422/1024 T=46
+[2026-08-30 22:33:31] source17/train: 423/1024 T=129
+[2026-08-30 22:33:31] source17/train: 424/1024 T=62
+[2026-08-30 22:33:31] source17/train: 425/1024 T=469
+[2026-08-30 22:33:31] source17/train: 426/1024 T=206
+[2026-08-30 22:33:32] source17/train: 427/1024 T=129
+[2026-08-30 22:33:32] source17/train: 428/1024 T=89
+[2026-08-30 22:33:32] source17/train: 429/1024 T=76
+[2026-08-30 22:33:32] source17/train: 430/1024 T=187
+[2026-08-30 22:33:32] source17/train: 431/1024 T=63
+[2026-08-30 22:33:32] source17/train: 432/1024 T=88
+[2026-08-30 22:33:32] source17/train: 433/1024 T=77
+[2026-08-30 22:33:33] source17/train: 434/1024 T=103
+[2026-08-30 22:33:33] source17/train: 435/1024 T=116
+[2026-08-30 22:33:33] source17/train: 436/1024 T=90
+[2026-08-30 22:33:33] source17/train: 437/1024 T=329
+[2026-08-30 22:33:33] source17/train: 438/1024 T=103
+[2026-08-30 22:33:33] source17/train: 439/1024 T=231
+[2026-08-30 22:33:34] source17/train: 440/1024 T=93
+[2026-08-30 22:33:34] source17/train: 441/1024 T=65
+[2026-08-30 22:33:34] source17/train: 442/1024 T=98
+[2026-08-30 22:33:34] source17/train: 443/1024 T=100
+[2026-08-30 22:33:34] source17/train: 444/1024 T=118
+[2026-08-30 22:33:34] source17/train: 445/1024 T=48
+[2026-08-30 22:33:34] source17/train: 446/1024 T=49
+[2026-08-30 22:33:34] source17/train: 447/1024 T=86
+[2026-08-30 22:33:35] source17/train: 448/1024 T=129
+[2026-08-30 22:33:35] source17/train: 449/1024 T=74
+[2026-08-30 22:33:35] source17/train: 450/1024 T=71
+[2026-08-30 22:33:35] source17/train: 451/1024 T=257
+[2026-08-30 22:33:35] source17/train: 452/1024 T=56
+[2026-08-30 22:33:35] source17/train: 453/1024 T=218
+[2026-08-30 22:33:36] source17/train: 454/1024 T=103
+[2026-08-30 22:33:36] source17/train: 455/1024 T=143
+[2026-08-30 22:33:36] source17/train: 456/1024 T=35
+[2026-08-30 22:33:36] source17/train: 457/1024 T=109
+[2026-08-30 22:33:36] source17/train: 458/1024 T=100
+[2026-08-30 22:33:36] source17/train: 459/1024 T=84
+[2026-08-30 22:33:36] source17/train: 460/1024 T=176
+[2026-08-30 22:33:37] source17/train: 461/1024 T=219
+[2026-08-30 22:33:37] source17/train: 462/1024 T=63
+[2026-08-30 22:33:37] source17/train: 463/1024 T=70
+[2026-08-30 22:33:37] source17/train: 464/1024 T=47
+[2026-08-30 22:33:37] source17/train: 465/1024 T=142
+[2026-08-30 22:33:37] source17/train: 466/1024 T=104
+[2026-08-30 22:33:37] source17/train: 467/1024 T=141
+[2026-08-30 22:33:38] source17/train: 468/1024 T=173
+[2026-08-30 22:33:38] source17/train: 469/1024 T=80
+[2026-08-30 22:33:38] source17/train: 470/1024 T=73
+[2026-08-30 22:33:38] source17/train: 471/1024 T=210
+[2026-08-30 22:33:38] source17/train: 472/1024 T=193
+[2026-08-30 22:33:38] source17/train: 473/1024 T=58
+[2026-08-30 22:33:39] source17/train: 474/1024 T=263
+[2026-08-30 22:33:39] source17/train: 475/1024 T=165
+[2026-08-30 22:33:39] source17/train: 476/1024 T=93
+[2026-08-30 22:33:39] source17/train: 477/1024 T=144
+[2026-08-30 22:33:39] source17/train: 478/1024 T=126
+[2026-08-30 22:33:39] source17/train: 479/1024 T=61
+[2026-08-30 22:33:39] source17/train: 480/1024 T=163
+[2026-08-30 22:33:40] source17/train: 481/1024 T=104
+[2026-08-30 22:33:40] source17/train: 482/1024 T=72
+[2026-08-30 22:33:40] source17/train: 483/1024 T=86
+[2026-08-30 22:33:40] source17/train: 484/1024 T=68
+[2026-08-30 22:33:40] source17/train: 485/1024 T=123
+[2026-08-30 22:33:40] source17/train: 486/1024 T=285
+[2026-08-30 22:33:41] source17/train: 487/1024 T=159
+[2026-08-30 22:33:41] source17/train: 488/1024 T=153
+[2026-08-30 22:33:41] source17/train: 489/1024 T=226
+[2026-08-30 22:33:41] source17/train: 490/1024 T=113
+[2026-08-30 22:33:41] source17/train: 491/1024 T=69
+[2026-08-30 22:33:41] source17/train: 492/1024 T=34
+[2026-08-30 22:33:42] source17/train: 493/1024 T=283
+[2026-08-30 22:33:42] source17/train: 494/1024 T=214
+[2026-08-30 22:33:42] source17/train: 495/1024 T=245
+[2026-08-30 22:33:42] source17/train: 496/1024 T=55
+[2026-08-30 22:33:42] source17/train: 497/1024 T=152
+[2026-08-30 22:33:42] source17/train: 498/1024 T=235
+[2026-08-30 22:33:43] source17/train: 499/1024 T=104
+[2026-08-30 22:33:43] source17/train: 500/1024 T=67
+[2026-08-30 22:33:43] source17/train: 501/1024 T=97
+[2026-08-30 22:33:43] source17/train: 502/1024 T=174
+[2026-08-30 22:33:43] source17/train: 503/1024 T=160
+[2026-08-30 22:33:43] source17/train: 504/1024 T=87
+[2026-08-30 22:33:43] source17/train: 505/1024 T=62
+[2026-08-30 22:33:44] source17/train: 506/1024 T=61
+[2026-08-30 22:33:44] source17/train: 507/1024 T=92
+[2026-08-30 22:33:44] source17/train: 508/1024 T=125
+[2026-08-30 22:33:44] source17/train: 509/1024 T=337
+[2026-08-30 22:33:44] source17/train: 510/1024 T=47
+[2026-08-30 22:33:44] source17/train: 511/1024 T=123
+[2026-08-30 22:33:44] source17/train: 512/1024 T=96
+[2026-08-30 22:33:45] source17/train: 513/1024 T=145
+[2026-08-30 22:33:45] source17/train: 514/1024 T=363
+[2026-08-30 22:33:45] source17/train: 515/1024 T=154
+[2026-08-30 22:33:45] source17/train: 516/1024 T=187
+[2026-08-30 22:33:45] source17/train: 517/1024 T=82
+[2026-08-30 22:33:46] source17/train: 518/1024 T=98
+[2026-08-30 22:33:46] source17/train: 519/1024 T=228
+[2026-08-30 22:33:46] source17/train: 520/1024 T=108
+[2026-08-30 22:33:46] source17/train: 521/1024 T=47
+[2026-08-30 22:33:46] source17/train: 522/1024 T=49
+[2026-08-30 22:33:46] source17/train: 523/1024 T=76
+[2026-08-30 22:33:46] source17/train: 524/1024 T=101
+[2026-08-30 22:33:47] source17/train: 525/1024 T=75
+[2026-08-30 22:33:47] source17/train: 526/1024 T=77
+[2026-08-30 22:33:47] source17/train: 527/1024 T=113
+[2026-08-30 22:33:47] source17/train: 528/1024 T=138
+[2026-08-30 22:33:47] source17/train: 529/1024 T=75
+[2026-08-30 22:33:47] source17/train: 530/1024 T=131
+[2026-08-30 22:33:47] source17/train: 531/1024 T=162
+[2026-08-30 22:33:48] source17/train: 532/1024 T=149
+[2026-08-30 22:33:48] source17/train: 533/1024 T=107
+[2026-08-30 22:33:48] source17/train: 534/1024 T=23
+[2026-08-30 22:33:48] source17/train: 535/1024 T=293
+[2026-08-30 22:33:48] source17/train: 536/1024 T=113
+[2026-08-30 22:33:48] source17/train: 537/1024 T=158
+[2026-08-30 22:33:48] source17/train: 538/1024 T=93
+[2026-08-30 22:33:49] source17/train: 539/1024 T=333
+[2026-08-30 22:33:49] source17/train: 540/1024 T=70
+[2026-08-30 22:33:49] source17/train: 541/1024 T=183
+[2026-08-30 22:33:49] source17/train: 542/1024 T=124
+[2026-08-30 22:33:49] source17/train: 543/1024 T=156
+[2026-08-30 22:33:49] source17/train: 544/1024 T=86
+[2026-08-30 22:33:50] source17/train: 545/1024 T=298
+[2026-08-30 22:33:50] source17/train: 546/1024 T=69
+[2026-08-30 22:33:50] source17/train: 547/1024 T=76
+[2026-08-30 22:33:50] source17/train: 548/1024 T=110
+[2026-08-30 22:33:50] source17/train: 549/1024 T=153
+[2026-08-30 22:33:50] source17/train: 550/1024 T=183
+[2026-08-30 22:33:51] source17/train: 551/1024 T=133
+[2026-08-30 22:33:51] source17/train: 552/1024 T=191
+[2026-08-30 22:33:51] source17/train: 553/1024 T=131
+[2026-08-30 22:33:51] source17/train: 554/1024 T=68
+[2026-08-30 22:33:51] source17/train: 555/1024 T=75
+[2026-08-30 22:33:51] source17/train: 556/1024 T=84
+[2026-08-30 22:33:51] source17/train: 557/1024 T=84
+[2026-08-30 22:33:52] source17/train: 558/1024 T=100
+[2026-08-30 22:33:52] source17/train: 559/1024 T=242
+[2026-08-30 22:33:52] source17/train: 560/1024 T=69
+[2026-08-30 22:33:52] source17/train: 561/1024 T=127
+[2026-08-30 22:33:52] source17/train: 562/1024 T=206
+[2026-08-30 22:33:52] source17/train: 563/1024 T=111
+[2026-08-30 22:33:53] source17/train: 564/1024 T=183
+[2026-08-30 22:33:53] source17/train: 565/1024 T=121
+[2026-08-30 22:33:53] source17/train: 566/1024 T=160
+[2026-08-30 22:33:53] source17/train: 567/1024 T=52
+[2026-08-30 22:33:53] source17/train: 568/1024 T=133
+[2026-08-30 22:33:53] source17/train: 569/1024 T=223
+[2026-08-30 22:33:53] source17/train: 570/1024 T=76
+[2026-08-30 22:33:54] source17/train: 571/1024 T=63
+[2026-08-30 22:33:54] source17/train: 572/1024 T=154
+[2026-08-30 22:33:54] source17/train: 573/1024 T=141
+[2026-08-30 22:33:54] source17/train: 574/1024 T=94
+[2026-08-30 22:33:54] source17/train: 575/1024 T=78
+[2026-08-30 22:33:54] source17/train: 576/1024 T=65
+[2026-08-30 22:33:54] source17/train: 577/1024 T=73
+[2026-08-30 22:33:55] source17/train: 578/1024 T=78
+[2026-08-30 22:33:55] source17/train: 579/1024 T=229
+[2026-08-30 22:33:55] source17/train: 580/1024 T=226
+[2026-08-30 22:33:55] source17/train: 581/1024 T=347
+[2026-08-30 22:33:55] source17/train: 582/1024 T=162
+[2026-08-30 22:33:56] source17/train: 583/1024 T=364
+[2026-08-30 22:33:56] source17/train: 584/1024 T=93
+[2026-08-30 22:33:56] source17/train: 585/1024 T=128
+[2026-08-30 22:33:56] source17/train: 586/1024 T=118
+[2026-08-30 22:33:56] source17/train: 587/1024 T=181
+[2026-08-30 22:33:56] source17/train: 588/1024 T=78
+[2026-08-30 22:33:57] source17/train: 589/1024 T=32
+[2026-08-30 22:33:57] source17/train: 590/1024 T=103
+[2026-08-30 22:33:57] source17/train: 591/1024 T=199
+[2026-08-30 22:33:57] source17/train: 592/1024 T=176
+[2026-08-30 22:33:57] source17/train: 593/1024 T=103
+[2026-08-30 22:33:57] source17/train: 594/1024 T=83
+[2026-08-30 22:33:57] source17/train: 595/1024 T=92
+[2026-08-30 22:33:58] source17/train: 596/1024 T=164
+[2026-08-30 22:33:58] source17/train: 597/1024 T=143
+[2026-08-30 22:33:58] source17/train: 598/1024 T=40
+[2026-08-30 22:33:58] source17/train: 599/1024 T=168
+[2026-08-30 22:33:58] source17/train: 600/1024 T=194
+[2026-08-30 22:33:58] source17/train: 601/1024 T=70
+[2026-08-30 22:33:58] source17/train: 602/1024 T=102
+[2026-08-30 22:33:59] source17/train: 603/1024 T=202
+[2026-08-30 22:33:59] source17/train: 604/1024 T=94
+[2026-08-30 22:33:59] source17/train: 605/1024 T=298
+[2026-08-30 22:33:59] source17/train: 606/1024 T=97
+[2026-08-30 22:33:59] source17/train: 607/1024 T=103
+[2026-08-30 22:33:59] source17/train: 608/1024 T=213
+[2026-08-30 22:33:59] source17/train: 609/1024 T=116
+[2026-08-30 22:33:59] source17/train: 610/1024 T=186
+[2026-08-30 22:33:59] source17/train: 611/1024 T=122
+[2026-08-30 22:33:59] source17/train: 612/1024 T=98
+[2026-08-30 22:33:59] source17/train: 613/1024 T=80
+[2026-08-30 22:33:59] source17/train: 614/1024 T=165
+[2026-08-30 22:33:59] source17/train: 615/1024 T=54
+[2026-08-30 22:34:00] source17/train: 616/1024 T=57
+[2026-08-30 22:34:00] source17/train: 617/1024 T=37
+[2026-08-30 22:34:00] source17/train: 618/1024 T=256
+[2026-08-30 22:34:00] source17/train: 619/1024 T=114
+[2026-08-30 22:34:00] source17/train: 620/1024 T=93
+[2026-08-30 22:34:00] source17/train: 621/1024 T=93
+[2026-08-30 22:34:00] source17/train: 622/1024 T=71
+[2026-08-30 22:34:01] source17/train: 623/1024 T=128
+[2026-08-30 22:34:01] source17/train: 624/1024 T=94
+[2026-08-30 22:34:01] source17/train: 625/1024 T=41
+[2026-08-30 22:34:01] source17/train: 626/1024 T=120
+[2026-08-30 22:34:01] source17/train: 627/1024 T=206
+[2026-08-30 22:34:01] source17/train: 628/1024 T=83
+[2026-08-30 22:34:01] source17/train: 629/1024 T=167
+[2026-08-30 22:34:02] source17/train: 630/1024 T=36
+[2026-08-30 22:34:02] source17/train: 631/1024 T=89
+[2026-08-30 22:34:02] source17/train: 632/1024 T=156
+[2026-08-30 22:34:02] source17/train: 633/1024 T=58
+[2026-08-30 22:34:02] source17/train: 634/1024 T=216
+[2026-08-30 22:34:03] source17/train: 635/1024 T=463
+[2026-08-30 22:34:03] source17/train: 636/1024 T=125
+[2026-08-30 22:34:03] source17/train: 637/1024 T=101
+[2026-08-30 22:34:03] source17/train: 638/1024 T=52
+[2026-08-30 22:34:03] source17/train: 639/1024 T=129
+[2026-08-30 22:34:03] source17/train: 640/1024 T=266
+[2026-08-30 22:34:03] source17/train: 641/1024 T=53
+[2026-08-30 22:34:04] source17/train: 642/1024 T=63
+[2026-08-30 22:34:04] source17/train: 643/1024 T=23
+[2026-08-30 22:34:04] source17/train: 644/1024 T=113
+[2026-08-30 22:34:04] source17/train: 645/1024 T=123
+[2026-08-30 22:34:04] source17/train: 646/1024 T=128
+[2026-08-30 22:34:04] source17/train: 647/1024 T=93
+[2026-08-30 22:34:04] source17/train: 648/1024 T=39
+[2026-08-30 22:34:04] source17/train: 649/1024 T=79
+[2026-08-30 22:34:05] source17/train: 650/1024 T=62
+[2026-08-30 22:34:05] source17/train: 651/1024 T=374
+[2026-08-30 22:34:05] source17/train: 652/1024 T=46
+[2026-08-30 22:34:05] source17/train: 653/1024 T=80
+[2026-08-30 22:34:05] source17/train: 654/1024 T=146
+[2026-08-30 22:34:05] source17/train: 655/1024 T=60
+[2026-08-30 22:34:06] source17/train: 656/1024 T=51
+[2026-08-30 22:34:06] source17/train: 657/1024 T=155
+[2026-08-30 22:34:06] source17/train: 658/1024 T=96
+[2026-08-30 22:34:06] source17/train: 659/1024 T=83
+[2026-08-30 22:34:06] source17/train: 660/1024 T=61
+[2026-08-30 22:34:06] source17/train: 661/1024 T=89
+[2026-08-30 22:34:06] source17/train: 662/1024 T=146
+[2026-08-30 22:34:07] source17/train: 663/1024 T=85
+[2026-08-30 22:34:07] source17/train: 664/1024 T=143
+[2026-08-30 22:34:07] source17/train: 665/1024 T=93
+[2026-08-30 22:34:07] source17/train: 666/1024 T=73
+[2026-08-30 22:34:07] source17/train: 667/1024 T=71
+[2026-08-30 22:34:07] source17/train: 668/1024 T=174
+[2026-08-30 22:34:07] source17/train: 669/1024 T=67
+[2026-08-30 22:34:08] source17/train: 670/1024 T=145
+[2026-08-30 22:34:08] source17/train: 671/1024 T=58
+[2026-08-30 22:34:08] source17/train: 672/1024 T=113
+[2026-08-30 22:34:08] source17/train: 673/1024 T=246
+[2026-08-30 22:34:08] source17/train: 674/1024 T=68
+[2026-08-30 22:34:08] source17/train: 675/1024 T=84
+[2026-08-30 22:34:08] source17/train: 676/1024 T=271
+[2026-08-30 22:34:09] source17/train: 677/1024 T=105
+[2026-08-30 22:34:09] source17/train: 678/1024 T=43
+[2026-08-30 22:34:09] source17/train: 679/1024 T=83
+[2026-08-30 22:34:09] source17/train: 680/1024 T=84
+[2026-08-30 22:34:09] source17/train: 681/1024 T=150
+[2026-08-30 22:34:09] source17/train: 682/1024 T=250
+[2026-08-30 22:34:09] source17/train: 683/1024 T=73
+[2026-08-30 22:34:10] source17/train: 684/1024 T=107
+[2026-08-30 22:34:10] source17/train: 685/1024 T=391
+[2026-08-30 22:34:10] source17/train: 686/1024 T=335
+[2026-08-30 22:34:10] source17/train: 687/1024 T=77
+[2026-08-30 22:34:10] source17/train: 688/1024 T=74
+[2026-08-30 22:34:11] source17/train: 689/1024 T=110
+[2026-08-30 22:34:11] source17/train: 690/1024 T=107
+[2026-08-30 22:34:11] source17/train: 691/1024 T=106
+[2026-08-30 22:34:11] source17/train: 692/1024 T=106
+[2026-08-30 22:34:11] source17/train: 693/1024 T=71
+[2026-08-30 22:34:11] source17/train: 694/1024 T=115
+[2026-08-30 22:34:11] source17/train: 695/1024 T=67
+[2026-08-30 22:34:12] source17/train: 696/1024 T=123
+[2026-08-30 22:34:12] source17/train: 697/1024 T=121
+[2026-08-30 22:34:12] source17/train: 698/1024 T=125
+[2026-08-30 22:34:12] source17/train: 699/1024 T=93
+[2026-08-30 22:34:12] source17/train: 700/1024 T=189
+[2026-08-30 22:34:12] source17/train: 701/1024 T=73
+[2026-08-30 22:34:13] source17/train: 702/1024 T=103
+[2026-08-30 22:34:13] source17/train: 703/1024 T=73
+[2026-08-30 22:34:13] source17/train: 704/1024 T=126
+[2026-08-30 22:34:13] source17/train: 705/1024 T=107
+[2026-08-30 22:34:13] source17/train: 706/1024 T=81
+[2026-08-30 22:34:13] source17/train: 707/1024 T=63
+[2026-08-30 22:34:13] source17/train: 708/1024 T=214
+[2026-08-30 22:34:14] source17/train: 709/1024 T=94
+[2026-08-30 22:34:14] source17/train: 710/1024 T=97
+[2026-08-30 22:34:14] source17/train: 711/1024 T=116
+[2026-08-30 22:34:14] source17/train: 712/1024 T=102
+[2026-08-30 22:34:14] source17/train: 713/1024 T=45
+[2026-08-30 22:34:14] source17/train: 714/1024 T=63
+[2026-08-30 22:34:14] source17/train: 715/1024 T=60
+[2026-08-30 22:34:14] source17/train: 716/1024 T=58
+[2026-08-30 22:34:15] source17/train: 717/1024 T=73
+[2026-08-30 22:34:15] source17/train: 718/1024 T=32
+[2026-08-30 22:34:15] source17/train: 719/1024 T=129
+[2026-08-30 22:34:15] source17/train: 720/1024 T=65
+[2026-08-30 22:34:15] source17/train: 721/1024 T=189
+[2026-08-30 22:34:15] source17/train: 722/1024 T=80
+[2026-08-30 22:34:16] source17/train: 723/1024 T=68
+[2026-08-30 22:34:16] source17/train: 724/1024 T=84
+[2026-08-30 22:34:16] source17/train: 725/1024 T=146
+[2026-08-30 22:34:16] source17/train: 726/1024 T=39
+[2026-08-30 22:34:16] source17/train: 727/1024 T=133
+[2026-08-30 22:34:16] source17/train: 728/1024 T=75
+[2026-08-30 22:34:16] source17/train: 729/1024 T=61
+[2026-08-30 22:34:16] source17/train: 730/1024 T=76
+[2026-08-30 22:34:17] source17/train: 731/1024 T=116
+[2026-08-30 22:34:17] source17/train: 732/1024 T=63
+[2026-08-30 22:34:17] source17/train: 733/1024 T=169
+[2026-08-30 22:34:17] source17/train: 734/1024 T=102
+[2026-08-30 22:34:17] source17/train: 735/1024 T=80
+[2026-08-30 22:34:17] source17/train: 736/1024 T=107
+[2026-08-30 22:34:17] source17/train: 737/1024 T=44
+[2026-08-30 22:34:18] source17/train: 738/1024 T=146
+[2026-08-30 22:34:18] source17/train: 739/1024 T=204
+[2026-08-30 22:34:18] source17/train: 740/1024 T=293
+[2026-08-30 22:34:18] source17/train: 741/1024 T=69
+[2026-08-30 22:34:18] source17/train: 742/1024 T=138
+[2026-08-30 22:34:18] source17/train: 743/1024 T=82
+[2026-08-30 22:34:19] source17/train: 744/1024 T=113
+[2026-08-30 22:34:19] source17/train: 745/1024 T=76
+[2026-08-30 22:34:19] source17/train: 746/1024 T=72
+[2026-08-30 22:34:19] source17/train: 747/1024 T=161
+[2026-08-30 22:34:19] source17/train: 748/1024 T=83
+[2026-08-30 22:34:19] source17/train: 749/1024 T=43
+[2026-08-30 22:34:19] source17/train: 750/1024 T=88
+[2026-08-30 22:34:20] source17/train: 751/1024 T=123
+[2026-08-30 22:34:20] source17/train: 752/1024 T=94
+[2026-08-30 22:34:20] source17/train: 753/1024 T=95
+[2026-08-30 22:34:20] source17/train: 754/1024 T=83
+[2026-08-30 22:34:20] source17/train: 755/1024 T=128
+[2026-08-30 22:34:20] source17/train: 756/1024 T=236
+[2026-08-30 22:34:20] source17/train: 757/1024 T=141
+[2026-08-30 22:34:21] source17/train: 758/1024 T=145
+[2026-08-30 22:34:21] source17/train: 759/1024 T=69
+[2026-08-30 22:34:21] source17/train: 760/1024 T=101
+[2026-08-30 22:34:21] source17/train: 761/1024 T=186
+[2026-08-30 22:34:21] source17/train: 762/1024 T=130
+[2026-08-30 22:34:21] source17/train: 763/1024 T=56
+[2026-08-30 22:34:21] source17/train: 764/1024 T=24
+[2026-08-30 22:34:22] source17/train: 765/1024 T=157
+[2026-08-30 22:34:22] source17/train: 766/1024 T=81
+[2026-08-30 22:34:22] source17/train: 767/1024 T=214
+[2026-08-30 22:34:22] source17/train: 768/1024 T=126
+[2026-08-30 22:34:22] source17/train: 769/1024 T=153
+[2026-08-30 22:34:22] source17/train: 770/1024 T=264
+[2026-08-30 22:34:22] source17/train: 771/1024 T=116
+[2026-08-30 22:34:23] source17/train: 772/1024 T=113
+[2026-08-30 22:34:23] source17/train: 773/1024 T=99
+[2026-08-30 22:34:23] source17/train: 774/1024 T=97
+[2026-08-30 22:34:23] source17/train: 775/1024 T=75
+[2026-08-30 22:34:23] source17/train: 776/1024 T=148
+[2026-08-30 22:34:23] source17/train: 777/1024 T=90
+[2026-08-30 22:34:23] source17/train: 778/1024 T=31
+[2026-08-30 22:34:24] source17/train: 779/1024 T=153
+[2026-08-30 22:34:24] source17/train: 780/1024 T=251
+[2026-08-30 22:34:24] source17/train: 781/1024 T=197
+[2026-08-30 22:34:24] source17/train: 782/1024 T=83
+[2026-08-30 22:34:24] source17/train: 783/1024 T=411
+[2026-08-30 22:34:25] source17/train: 784/1024 T=59
+[2026-08-30 22:34:25] source17/train: 785/1024 T=87
+[2026-08-30 22:34:25] source17/train: 786/1024 T=172
+[2026-08-30 22:34:25] source17/train: 787/1024 T=90
+[2026-08-30 22:34:25] source17/train: 788/1024 T=300
+[2026-08-30 22:34:25] source17/train: 789/1024 T=192
+[2026-08-30 22:34:25] source17/train: 790/1024 T=83
+[2026-08-30 22:34:26] source17/train: 791/1024 T=62
+[2026-08-30 22:34:26] source17/train: 792/1024 T=154
+[2026-08-30 22:34:26] source17/train: 793/1024 T=49
+[2026-08-30 22:34:26] source17/train: 794/1024 T=318
+[2026-08-30 22:34:26] source17/train: 795/1024 T=47
+[2026-08-30 22:34:27] source17/train: 796/1024 T=347
+[2026-08-30 22:34:27] source17/train: 797/1024 T=163
+[2026-08-30 22:34:27] source17/train: 798/1024 T=59
+[2026-08-30 22:34:27] source17/train: 799/1024 T=213
+[2026-08-30 22:34:27] source17/train: 800/1024 T=63
+[2026-08-30 22:34:27] source17/train: 801/1024 T=79
+[2026-08-30 22:34:27] source17/train: 802/1024 T=152
+[2026-08-30 22:34:28] source17/train: 803/1024 T=155
+[2026-08-30 22:34:28] source17/train: 804/1024 T=133
+[2026-08-30 22:34:28] source17/train: 805/1024 T=175
+[2026-08-30 22:34:28] source17/train: 806/1024 T=76
+[2026-08-30 22:34:28] source17/train: 807/1024 T=84
+[2026-08-30 22:34:28] source17/train: 808/1024 T=56
+[2026-08-30 22:34:28] source17/train: 809/1024 T=64
+[2026-08-30 22:34:29] source17/train: 810/1024 T=132
+[2026-08-30 22:34:29] source17/train: 811/1024 T=64
+[2026-08-30 22:34:29] source17/train: 812/1024 T=131
+[2026-08-30 22:34:29] source17/train: 813/1024 T=185
+[2026-08-30 22:34:29] source17/train: 814/1024 T=201
+[2026-08-30 22:34:29] source17/train: 815/1024 T=41
+[2026-08-30 22:34:29] source17/train: 816/1024 T=102
+[2026-08-30 22:34:30] source17/train: 817/1024 T=243
+[2026-08-30 22:34:30] source17/train: 818/1024 T=97
+[2026-08-30 22:34:30] source17/train: 819/1024 T=111
+[2026-08-30 22:34:30] source17/train: 820/1024 T=113
+[2026-08-30 22:34:30] source17/train: 821/1024 T=90
+[2026-08-30 22:34:30] source17/train: 822/1024 T=63
+[2026-08-30 22:34:30] source17/train: 823/1024 T=81
+[2026-08-30 22:34:31] source17/train: 824/1024 T=93
+[2026-08-30 22:34:31] source17/train: 825/1024 T=88
+[2026-08-30 22:34:31] source17/train: 826/1024 T=159
+[2026-08-30 22:34:31] source17/train: 827/1024 T=157
+[2026-08-30 22:34:31] source17/train: 828/1024 T=65
+[2026-08-30 22:34:31] source17/train: 829/1024 T=121
+[2026-08-30 22:34:31] source17/train: 830/1024 T=335
+[2026-08-30 22:34:32] source17/train: 831/1024 T=65
+[2026-08-30 22:34:32] source17/train: 832/1024 T=65
+[2026-08-30 22:34:32] source17/train: 833/1024 T=102
+[2026-08-30 22:34:32] source17/train: 834/1024 T=118
+[2026-08-30 22:34:32] source17/train: 835/1024 T=132
+[2026-08-30 22:34:32] source17/train: 836/1024 T=216
+[2026-08-30 22:34:33] source17/train: 837/1024 T=105
+[2026-08-30 22:34:33] source17/train: 838/1024 T=306
+[2026-08-30 22:34:33] source17/train: 839/1024 T=152
+[2026-08-30 22:34:33] source17/train: 840/1024 T=111
+[2026-08-30 22:34:33] source17/train: 841/1024 T=108
+[2026-08-30 22:34:33] source17/train: 842/1024 T=62
+[2026-08-30 22:34:33] source17/train: 843/1024 T=158
+[2026-08-30 22:34:34] source17/train: 844/1024 T=119
+[2026-08-30 22:34:34] source17/train: 845/1024 T=55
+[2026-08-30 22:34:34] source17/train: 846/1024 T=108
+[2026-08-30 22:34:34] source17/train: 847/1024 T=163
+[2026-08-30 22:34:34] source17/train: 848/1024 T=133
+[2026-08-30 22:34:34] source17/train: 849/1024 T=70
+[2026-08-30 22:34:34] source17/train: 850/1024 T=84
+[2026-08-30 22:34:35] source17/train: 851/1024 T=115
+[2026-08-30 22:34:35] source17/train: 852/1024 T=183
+[2026-08-30 22:34:35] source17/train: 853/1024 T=66
+[2026-08-30 22:34:35] source17/train: 854/1024 T=109
+[2026-08-30 22:34:35] source17/train: 855/1024 T=383
+[2026-08-30 22:34:35] source17/train: 856/1024 T=120
+[2026-08-30 22:34:36] source17/train: 857/1024 T=233
+[2026-08-30 22:34:36] source17/train: 858/1024 T=215
+[2026-08-30 22:34:36] source17/train: 859/1024 T=83
+[2026-08-30 22:34:36] source17/train: 860/1024 T=186
+[2026-08-30 22:34:36] source17/train: 861/1024 T=65
+[2026-08-30 22:34:36] source17/train: 862/1024 T=179
+[2026-08-30 22:34:37] source17/train: 863/1024 T=65
+[2026-08-30 22:34:37] source17/train: 864/1024 T=298
+[2026-08-30 22:34:37] source17/train: 865/1024 T=96
+[2026-08-30 22:34:37] source17/train: 866/1024 T=95
+[2026-08-30 22:34:37] source17/train: 867/1024 T=96
+[2026-08-30 22:34:37] source17/train: 868/1024 T=158
+[2026-08-30 22:34:37] source17/train: 869/1024 T=104
+[2026-08-30 22:34:38] source17/train: 870/1024 T=81
+[2026-08-30 22:34:38] source17/train: 871/1024 T=99
+[2026-08-30 22:34:38] source17/train: 872/1024 T=70
+[2026-08-30 22:34:38] source17/train: 873/1024 T=60
+[2026-08-30 22:34:38] source17/train: 874/1024 T=54
+[2026-08-30 22:34:38] source17/train: 875/1024 T=105
+[2026-08-30 22:34:38] source17/train: 876/1024 T=73
+[2026-08-30 22:34:39] source17/train: 877/1024 T=162
+[2026-08-30 22:34:39] source17/train: 878/1024 T=213
+[2026-08-30 22:34:39] source17/train: 879/1024 T=34
+[2026-08-30 22:34:39] source17/train: 880/1024 T=217
+[2026-08-30 22:34:39] source17/train: 881/1024 T=44
+[2026-08-30 22:34:39] source17/train: 882/1024 T=151
+[2026-08-30 22:34:39] source17/train: 883/1024 T=197
+[2026-08-30 22:34:40] source17/train: 884/1024 T=60
+[2026-08-30 22:34:40] source17/train: 885/1024 T=116
+[2026-08-30 22:34:40] source17/train: 886/1024 T=164
+[2026-08-30 22:34:40] source17/train: 887/1024 T=92
+[2026-08-30 22:34:40] source17/train: 888/1024 T=61
+[2026-08-30 22:34:40] source17/train: 889/1024 T=132
+[2026-08-30 22:34:40] source17/train: 890/1024 T=63
+[2026-08-30 22:34:40] source17/train: 891/1024 T=50
+[2026-08-30 22:34:41] source17/train: 892/1024 T=137
+[2026-08-30 22:34:41] source17/train: 893/1024 T=83
+[2026-08-30 22:34:41] source17/train: 894/1024 T=43
+[2026-08-30 22:34:41] source17/train: 895/1024 T=73
+[2026-08-30 22:34:41] source17/train: 896/1024 T=193
+[2026-08-30 22:34:41] source17/train: 897/1024 T=231
+[2026-08-30 22:34:41] source17/train: 898/1024 T=54
+[2026-08-30 22:34:42] source17/train: 899/1024 T=100
+[2026-08-30 22:34:42] source17/train: 900/1024 T=133
+[2026-08-30 22:34:42] source17/train: 901/1024 T=101
+[2026-08-30 22:34:42] source17/train: 902/1024 T=77
+[2026-08-30 22:34:42] source17/train: 903/1024 T=49
+[2026-08-30 22:34:42] source17/train: 904/1024 T=93
+[2026-08-30 22:34:42] source17/train: 905/1024 T=130
+[2026-08-30 22:34:43] source17/train: 906/1024 T=384
+[2026-08-30 22:34:43] source17/train: 907/1024 T=93
+[2026-08-30 22:34:43] source17/train: 908/1024 T=127
+[2026-08-30 22:34:43] source17/train: 909/1024 T=63
+[2026-08-30 22:34:43] source17/train: 910/1024 T=200
+[2026-08-30 22:34:43] source17/train: 911/1024 T=99
+[2026-08-30 22:34:44] source17/train: 912/1024 T=174
+[2026-08-30 22:34:44] source17/train: 913/1024 T=164
+[2026-08-30 22:34:44] source17/train: 914/1024 T=325
+[2026-08-30 22:34:44] source17/train: 915/1024 T=93
+[2026-08-30 22:34:44] source17/train: 916/1024 T=43
+[2026-08-30 22:34:44] source17/train: 917/1024 T=107
+[2026-08-30 22:34:45] source17/train: 918/1024 T=156
+[2026-08-30 22:34:45] source17/train: 919/1024 T=88
+[2026-08-30 22:34:45] source17/train: 920/1024 T=83
+[2026-08-30 22:34:45] source17/train: 921/1024 T=40
+[2026-08-30 22:34:45] source17/train: 922/1024 T=163
+[2026-08-30 22:34:45] source17/train: 923/1024 T=63
+[2026-08-30 22:34:45] source17/train: 924/1024 T=210
+[2026-08-30 22:34:46] source17/train: 925/1024 T=156
+[2026-08-30 22:34:46] source17/train: 926/1024 T=122
+[2026-08-30 22:34:46] source17/train: 927/1024 T=103
+[2026-08-30 22:34:46] source17/train: 928/1024 T=208
+[2026-08-30 22:34:46] source17/train: 929/1024 T=71
+[2026-08-30 22:34:46] source17/train: 930/1024 T=128
+[2026-08-30 22:34:46] source17/train: 931/1024 T=130
+[2026-08-30 22:34:47] source17/train: 932/1024 T=62
+[2026-08-30 22:34:47] source17/train: 933/1024 T=82
+[2026-08-30 22:34:47] source17/train: 934/1024 T=223
+[2026-08-30 22:34:47] source17/train: 935/1024 T=45
+[2026-08-30 22:34:47] source17/train: 936/1024 T=73
+[2026-08-30 22:34:47] source17/train: 937/1024 T=53
+[2026-08-30 22:34:47] source17/train: 938/1024 T=71
+[2026-08-30 22:34:48] source17/train: 939/1024 T=83
+[2026-08-30 22:34:48] source17/train: 940/1024 T=42
+[2026-08-30 22:34:48] source17/train: 941/1024 T=74
+[2026-08-30 22:34:48] source17/train: 942/1024 T=159
+[2026-08-30 22:34:48] source17/train: 943/1024 T=74
+[2026-08-30 22:34:48] source17/train: 944/1024 T=119
+[2026-08-30 22:34:48] source17/train: 945/1024 T=66
+[2026-08-30 22:34:49] source17/train: 946/1024 T=80
+[2026-08-30 22:34:49] source17/train: 947/1024 T=142
+[2026-08-30 22:34:49] source17/train: 948/1024 T=450
+[2026-08-30 22:34:49] source17/train: 949/1024 T=87
+[2026-08-30 22:34:49] source17/train: 950/1024 T=20
+[2026-08-30 22:34:49] source17/train: 951/1024 T=78
+[2026-08-30 22:34:49] source17/train: 952/1024 T=60
+[2026-08-30 22:34:50] source17/train: 953/1024 T=93
+[2026-08-30 22:34:50] source17/train: 954/1024 T=161
+[2026-08-30 22:34:50] source17/train: 955/1024 T=174
+[2026-08-30 22:34:50] source17/train: 956/1024 T=198
+[2026-08-30 22:34:50] source17/train: 957/1024 T=83
+[2026-08-30 22:34:50] source17/train: 958/1024 T=87
+[2026-08-30 22:34:50] source17/train: 959/1024 T=44
+[2026-08-30 22:34:51] source17/train: 960/1024 T=223
+[2026-08-30 22:34:51] source17/train: 961/1024 T=70
+[2026-08-30 22:34:51] source17/train: 962/1024 T=56
+[2026-08-30 22:34:51] source17/train: 963/1024 T=46
+[2026-08-30 22:34:51] source17/train: 964/1024 T=419
+[2026-08-30 22:34:51] source17/train: 965/1024 T=54
+[2026-08-30 22:34:52] source17/train: 966/1024 T=182
+[2026-08-30 22:34:52] source17/train: 967/1024 T=71
+[2026-08-30 22:34:52] source17/train: 968/1024 T=54
+[2026-08-30 22:34:52] source17/train: 969/1024 T=53
+[2026-08-30 22:34:52] source17/train: 970/1024 T=65
+[2026-08-30 22:34:52] source17/train: 971/1024 T=83
+[2026-08-30 22:34:52] source17/train: 972/1024 T=81
+[2026-08-30 22:34:53] source17/train: 973/1024 T=119
+[2026-08-30 22:34:53] source17/train: 974/1024 T=175
+[2026-08-30 22:34:53] source17/train: 975/1024 T=205
+[2026-08-30 22:34:53] source17/train: 976/1024 T=178
+[2026-08-30 22:34:53] source17/train: 977/1024 T=109
+[2026-08-30 22:34:53] source17/train: 978/1024 T=91
+[2026-08-30 22:34:53] source17/train: 979/1024 T=85
+[2026-08-30 22:34:54] source17/train: 980/1024 T=150
+[2026-08-30 22:34:54] source17/train: 981/1024 T=165
+[2026-08-30 22:34:54] source17/train: 982/1024 T=172
+[2026-08-30 22:34:54] source17/train: 983/1024 T=73
+[2026-08-30 22:34:54] source17/train: 984/1024 T=56
+[2026-08-30 22:34:54] source17/train: 985/1024 T=171
+[2026-08-30 22:34:54] source17/train: 986/1024 T=114
+[2026-08-30 22:34:55] source17/train: 987/1024 T=72
+[2026-08-30 22:34:55] source17/train: 988/1024 T=93
+[2026-08-30 22:34:55] source17/train: 989/1024 T=65
+[2026-08-30 22:34:55] source17/train: 990/1024 T=206
+[2026-08-30 22:34:55] source17/train: 991/1024 T=130
+[2026-08-30 22:34:55] source17/train: 992/1024 T=149
+[2026-08-30 22:34:56] source17/train: 993/1024 T=68
+[2026-08-30 22:34:56] source17/train: 994/1024 T=136
+[2026-08-30 22:34:56] source17/train: 995/1024 T=203
+[2026-08-30 22:34:56] source17/train: 996/1024 T=112
+[2026-08-30 22:34:56] source17/train: 997/1024 T=77
+[2026-08-30 22:34:56] source17/train: 998/1024 T=102
+[2026-08-30 22:34:56] source17/train: 999/1024 T=77
+[2026-08-30 22:34:57] source17/train: 1000/1024 T=49
+[2026-08-30 22:34:57] source17/train: 1001/1024 T=143
+[2026-08-30 22:34:57] source17/train: 1002/1024 T=211
+[2026-08-30 22:34:57] source17/train: 1003/1024 T=55
+[2026-08-30 22:34:57] source17/train: 1004/1024 T=201
+[2026-08-30 22:34:57] source17/train: 1005/1024 T=143
+[2026-08-30 22:34:57] source17/train: 1006/1024 T=113
+[2026-08-30 22:34:58] source17/train: 1007/1024 T=117
+[2026-08-30 22:34:58] source17/train: 1008/1024 T=107
+[2026-08-30 22:34:58] source17/train: 1009/1024 T=249
+[2026-08-30 22:34:58] source17/train: 1010/1024 T=105
+[2026-08-30 22:34:58] source17/train: 1011/1024 T=57
+[2026-08-30 22:34:58] source17/train: 1012/1024 T=83
+[2026-08-30 22:34:58] source17/train: 1013/1024 T=50
+[2026-08-30 22:34:58] source17/train: 1014/1024 T=57
+[2026-08-30 22:34:58] source17/train: 1015/1024 T=114
+[2026-08-30 22:34:58] source17/train: 1016/1024 T=162
+[2026-08-30 22:34:58] source17/train: 1017/1024 T=205
+[2026-08-30 22:34:59] source17/train: 1018/1024 T=70
+[2026-08-30 22:34:59] source17/train: 1019/1024 T=261
+[2026-08-30 22:34:59] source17/train: 1020/1024 T=271
+[2026-08-30 22:34:59] source17/train: 1021/1024 T=196
+[2026-08-30 22:34:59] source17/train: 1022/1024 T=296
+[2026-08-30 22:35:00] source17/train: 1023/1024 T=101
+[2026-08-30 22:35:00] source17/train: 1024/1024 T=44
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  29%|██▊       | 114/398 [00:00<00:00, 1116.72it/s]Loading weights:  57%|█████▋    | 226/398 [00:00<00:00, 1079.80it/s]Loading weights:  84%|████████▍ | 335/398 [00:00<00:00, 1028.49it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1061.06it/s]
+[2026-08-30 22:35:05] target4/train: resume skip 1/1024
+[2026-08-30 22:35:05] target4/train: resume skip 2/1024
+[2026-08-30 22:35:05] target4/train: resume skip 3/1024
+[2026-08-30 22:35:05] target4/train: resume skip 4/1024
+[2026-08-30 22:35:05] target4/train: resume skip 5/1024
+[2026-08-30 22:35:05] target4/train: resume skip 6/1024
+[2026-08-30 22:35:05] target4/train: resume skip 7/1024
+[2026-08-30 22:35:05] target4/train: resume skip 8/1024
+[2026-08-30 22:35:05] target4/train: resume skip 9/1024
+[2026-08-30 22:35:05] target4/train: resume skip 10/1024
+[2026-08-30 22:35:05] target4/train: resume skip 11/1024
+[2026-08-30 22:35:05] target4/train: resume skip 12/1024
+[2026-08-30 22:35:05] target4/train: resume skip 13/1024
+[2026-08-30 22:35:05] target4/train: resume skip 14/1024
+[2026-08-30 22:35:05] target4/train: resume skip 15/1024
+[2026-08-30 22:35:05] target4/train: resume skip 16/1024
+[2026-08-30 22:35:05] target4/train: resume skip 17/1024
+[2026-08-30 22:35:05] target4/train: resume skip 18/1024
+[2026-08-30 22:35:05] target4/train: resume skip 19/1024
+[2026-08-30 22:35:05] target4/train: resume skip 20/1024
+[2026-08-30 22:35:05] target4/train: resume skip 21/1024
+[2026-08-30 22:35:05] target4/train: resume skip 22/1024
+[2026-08-30 22:35:05] target4/train: resume skip 23/1024
+[2026-08-30 22:35:05] target4/train: resume skip 24/1024
+[2026-08-30 22:35:05] target4/train: resume skip 25/1024
+[2026-08-30 22:35:05] target4/train: resume skip 26/1024
+[2026-08-30 22:35:05] target4/train: resume skip 27/1024
+[2026-08-30 22:35:05] target4/train: resume skip 28/1024
+[2026-08-30 22:35:05] target4/train: resume skip 29/1024
+[2026-08-30 22:35:05] target4/train: resume skip 30/1024
+[2026-08-30 22:35:05] target4/train: resume skip 31/1024
+[2026-08-30 22:35:05] target4/train: resume skip 32/1024
+[2026-08-30 22:35:05] target4/train: resume skip 33/1024
+[2026-08-30 22:35:05] target4/train: resume skip 34/1024
+[2026-08-30 22:35:05] target4/train: resume skip 35/1024
+[2026-08-30 22:35:05] target4/train: resume skip 36/1024
+[2026-08-30 22:35:05] target4/train: resume skip 37/1024
+[2026-08-30 22:35:05] target4/train: resume skip 38/1024
+[2026-08-30 22:35:05] target4/train: resume skip 39/1024
+[2026-08-30 22:35:05] target4/train: resume skip 40/1024
+[2026-08-30 22:35:05] target4/train: resume skip 41/1024
+[2026-08-30 22:35:05] target4/train: resume skip 42/1024
+[2026-08-30 22:35:05] target4/train: resume skip 43/1024
+[2026-08-30 22:35:05] target4/train: resume skip 44/1024
+[2026-08-30 22:35:05] target4/train: resume skip 45/1024
+[2026-08-30 22:35:05] target4/train: resume skip 46/1024
+[2026-08-30 22:35:05] target4/train: resume skip 47/1024
+[2026-08-30 22:35:05] target4/train: resume skip 48/1024
+[2026-08-30 22:35:05] target4/train: resume skip 49/1024
+[2026-08-30 22:35:05] target4/train: resume skip 50/1024
+[2026-08-30 22:35:05] target4/train: resume skip 51/1024
+[2026-08-30 22:35:05] target4/train: resume skip 52/1024
+[2026-08-30 22:35:05] target4/train: resume skip 53/1024
+[2026-08-30 22:35:05] target4/train: resume skip 54/1024
+[2026-08-30 22:35:05] target4/train: resume skip 55/1024
+[2026-08-30 22:35:05] target4/train: resume skip 56/1024
+[2026-08-30 22:35:05] target4/train: resume skip 57/1024
+[2026-08-30 22:35:05] target4/train: resume skip 58/1024
+[2026-08-30 22:35:05] target4/train: resume skip 59/1024
+[2026-08-30 22:35:05] target4/train: resume skip 60/1024
+[2026-08-30 22:35:05] target4/train: resume skip 61/1024
+[2026-08-30 22:35:05] target4/train: resume skip 62/1024
+[2026-08-30 22:35:05] target4/train: resume skip 63/1024
+[2026-08-30 22:35:05] target4/train: resume skip 64/1024
+[2026-08-30 22:35:05] target4/train: resume skip 65/1024
+[2026-08-30 22:35:05] target4/train: resume skip 66/1024
+[2026-08-30 22:35:05] target4/train: resume skip 67/1024
+[2026-08-30 22:35:05] target4/train: resume skip 68/1024
+[2026-08-30 22:35:05] target4/train: resume skip 69/1024
+[2026-08-30 22:35:05] target4/train: resume skip 70/1024
+[2026-08-30 22:35:05] target4/train: resume skip 71/1024
+[2026-08-30 22:35:05] target4/train: resume skip 72/1024
+[2026-08-30 22:35:05] target4/train: resume skip 73/1024
+[2026-08-30 22:35:05] target4/train: resume skip 74/1024
+[2026-08-30 22:35:05] target4/train: resume skip 75/1024
+[2026-08-30 22:35:05] target4/train: resume skip 76/1024
+[2026-08-30 22:35:05] target4/train: resume skip 77/1024
+[2026-08-30 22:35:05] target4/train: resume skip 78/1024
+[2026-08-30 22:35:05] target4/train: resume skip 79/1024
+[2026-08-30 22:35:05] target4/train: resume skip 80/1024
+[2026-08-30 22:35:05] target4/train: resume skip 81/1024
+[2026-08-30 22:35:05] target4/train: resume skip 82/1024
+[2026-08-30 22:35:05] target4/train: resume skip 83/1024
+[2026-08-30 22:35:05] target4/train: resume skip 84/1024
+[2026-08-30 22:35:05] target4/train: resume skip 85/1024
+[2026-08-30 22:35:05] target4/train: resume skip 86/1024
+[2026-08-30 22:35:05] target4/train: resume skip 87/1024
+[2026-08-30 22:35:05] target4/train: resume skip 88/1024
+[2026-08-30 22:35:05] target4/train: resume skip 89/1024
+[2026-08-30 22:35:05] target4/train: resume skip 90/1024
+[2026-08-30 22:35:05] target4/train: resume skip 91/1024
+[2026-08-30 22:35:05] target4/train: resume skip 92/1024
+[2026-08-30 22:35:05] target4/train: resume skip 93/1024
+[2026-08-30 22:35:05] target4/train: resume skip 94/1024
+[2026-08-30 22:35:05] target4/train: resume skip 95/1024
+[2026-08-30 22:35:05] target4/train: resume skip 96/1024
+[2026-08-30 22:35:05] target4/train: resume skip 97/1024
+[2026-08-30 22:35:05] target4/train: resume skip 98/1024
+[2026-08-30 22:35:05] target4/train: resume skip 99/1024
+[2026-08-30 22:35:05] target4/train: resume skip 100/1024
+[2026-08-30 22:35:05] target4/train: resume skip 101/1024
+[2026-08-30 22:35:05] target4/train: resume skip 102/1024
+[2026-08-30 22:35:05] target4/train: resume skip 103/1024
+[2026-08-30 22:35:05] target4/train: resume skip 104/1024
+[2026-08-30 22:35:05] target4/train: resume skip 105/1024
+[2026-08-30 22:35:05] target4/train: resume skip 106/1024
+[2026-08-30 22:35:05] target4/train: resume skip 107/1024
+[2026-08-30 22:35:05] target4/train: resume skip 108/1024
+[2026-08-30 22:35:05] target4/train: resume skip 109/1024
+[2026-08-30 22:35:05] target4/train: resume skip 110/1024
+[2026-08-30 22:35:05] target4/train: resume skip 111/1024
+[2026-08-30 22:35:05] target4/train: resume skip 112/1024
+[2026-08-30 22:35:05] target4/train: resume skip 113/1024
+[2026-08-30 22:35:05] target4/train: resume skip 114/1024
+[2026-08-30 22:35:05] target4/train: resume skip 115/1024
+[2026-08-30 22:35:05] target4/train: resume skip 116/1024
+[2026-08-30 22:35:05] target4/train: resume skip 117/1024
+[2026-08-30 22:35:05] target4/train: resume skip 118/1024
+[2026-08-30 22:35:05] target4/train: resume skip 119/1024
+[2026-08-30 22:35:05] target4/train: resume skip 120/1024
+[2026-08-30 22:35:05] target4/train: resume skip 121/1024
+[2026-08-30 22:35:05] target4/train: resume skip 122/1024
+[2026-08-30 22:35:05] target4/train: resume skip 123/1024
+[2026-08-30 22:35:05] target4/train: resume skip 124/1024
+[2026-08-30 22:35:05] target4/train: resume skip 125/1024
+[2026-08-30 22:35:05] target4/train: resume skip 126/1024
+[2026-08-30 22:35:05] target4/train: resume skip 127/1024
+[2026-08-30 22:35:05] target4/train: resume skip 128/1024
+[2026-08-30 22:35:05] target4/train: 129/1024 T=43
+[2026-08-30 22:35:05] target4/train: 130/1024 T=57
+[2026-08-30 22:35:05] target4/train: 131/1024 T=193
+[2026-08-30 22:35:06] target4/train: 132/1024 T=77
+[2026-08-30 22:35:06] target4/train: 133/1024 T=323
+[2026-08-30 22:35:07] target4/train: 134/1024 T=233
+[2026-08-30 22:35:07] target4/train: 135/1024 T=94
+[2026-08-30 22:35:07] target4/train: 136/1024 T=68
+[2026-08-30 22:35:08] target4/train: 137/1024 T=83
+[2026-08-30 22:35:08] target4/train: 138/1024 T=393
+[2026-08-30 22:35:08] target4/train: 139/1024 T=71
+[2026-08-30 22:35:09] target4/train: 140/1024 T=145
+[2026-08-30 22:35:09] target4/train: 141/1024 T=61
+[2026-08-30 22:35:09] target4/train: 142/1024 T=156
+[2026-08-30 22:35:09] target4/train: 143/1024 T=94
+[2026-08-30 22:35:10] target4/train: 144/1024 T=60
+[2026-08-30 22:35:10] target4/train: 145/1024 T=69
+[2026-08-30 22:35:10] target4/train: 146/1024 T=126
+[2026-08-30 22:35:10] target4/train: 147/1024 T=62
+[2026-08-30 22:35:11] target4/train: 148/1024 T=93
+[2026-08-30 22:35:11] target4/train: 149/1024 T=108
+[2026-08-30 22:35:11] target4/train: 150/1024 T=146
+[2026-08-30 22:35:12] target4/train: 151/1024 T=199
+[2026-08-30 22:35:12] target4/train: 152/1024 T=90
+[2026-08-30 22:35:12] target4/train: 153/1024 T=79
+[2026-08-30 22:35:13] target4/train: 154/1024 T=243
+[2026-08-30 22:35:13] target4/train: 155/1024 T=53
+[2026-08-30 22:35:13] target4/train: 156/1024 T=134
+[2026-08-30 22:35:13] target4/train: 157/1024 T=157
+[2026-08-30 22:35:14] target4/train: 158/1024 T=82
+[2026-08-30 22:35:14] target4/train: 159/1024 T=126
+[2026-08-30 22:35:14] target4/train: 160/1024 T=168
+[2026-08-30 22:35:15] target4/train: 161/1024 T=93
+[2026-08-30 22:35:15] target4/train: 162/1024 T=92
+[2026-08-30 22:35:15] target4/train: 163/1024 T=69
+[2026-08-30 22:35:15] target4/train: 164/1024 T=85
+[2026-08-30 22:35:16] target4/train: 165/1024 T=491
+[2026-08-30 22:35:16] target4/train: 166/1024 T=66
+[2026-08-30 22:35:17] target4/train: 167/1024 T=71
+[2026-08-30 22:35:17] target4/train: 168/1024 T=205
+[2026-08-30 22:35:17] target4/train: 169/1024 T=63
+[2026-08-30 22:35:18] target4/train: 170/1024 T=117
+[2026-08-30 22:35:18] target4/train: 171/1024 T=400
+[2026-08-30 22:35:18] target4/train: 172/1024 T=122
+[2026-08-30 22:35:19] target4/train: 173/1024 T=121
+[2026-08-30 22:35:19] target4/train: 174/1024 T=120
+[2026-08-30 22:35:19] target4/train: 175/1024 T=96
+[2026-08-30 22:35:20] target4/train: 176/1024 T=203
+[2026-08-30 22:35:20] target4/train: 177/1024 T=86
+[2026-08-30 22:35:20] target4/train: 178/1024 T=183
+[2026-08-30 22:35:20] target4/train: 179/1024 T=147
+[2026-08-30 22:35:21] target4/train: 180/1024 T=66
+[2026-08-30 22:35:21] target4/train: 181/1024 T=106
+[2026-08-30 22:35:21] target4/train: 182/1024 T=115
+[2026-08-30 22:35:22] target4/train: 183/1024 T=100
+[2026-08-30 22:35:22] target4/train: 184/1024 T=154
+[2026-08-30 22:35:22] target4/train: 185/1024 T=179
+[2026-08-30 22:35:23] target4/train: 186/1024 T=103
+[2026-08-30 22:35:23] target4/train: 187/1024 T=62
+[2026-08-30 22:35:23] target4/train: 188/1024 T=218
+[2026-08-30 22:35:23] target4/train: 189/1024 T=83
+[2026-08-30 22:35:24] target4/train: 190/1024 T=136
+[2026-08-30 22:35:24] target4/train: 191/1024 T=183
+[2026-08-30 22:35:24] target4/train: 192/1024 T=93
+[2026-08-30 22:35:25] target4/train: 193/1024 T=326
+[2026-08-30 22:35:25] target4/train: 194/1024 T=133
+[2026-08-30 22:35:25] target4/train: 195/1024 T=156
+[2026-08-30 22:35:26] target4/train: 196/1024 T=169
+[2026-08-30 22:35:26] target4/train: 197/1024 T=202
+[2026-08-30 22:35:26] target4/train: 198/1024 T=101
+[2026-08-30 22:35:27] target4/train: 199/1024 T=122
+[2026-08-30 22:35:27] target4/train: 200/1024 T=143
+[2026-08-30 22:35:27] target4/train: 201/1024 T=190
+[2026-08-30 22:35:28] target4/train: 202/1024 T=176
+[2026-08-30 22:35:28] target4/train: 203/1024 T=308
+[2026-08-30 22:35:28] target4/train: 204/1024 T=66
+[2026-08-30 22:35:29] target4/train: 205/1024 T=69
+[2026-08-30 22:35:29] target4/train: 206/1024 T=123
+[2026-08-30 22:35:29] target4/train: 207/1024 T=99
+[2026-08-30 22:35:29] target4/train: 208/1024 T=54
+[2026-08-30 22:35:30] target4/train: 209/1024 T=53
+[2026-08-30 22:35:30] target4/train: 210/1024 T=132
+[2026-08-30 22:35:30] target4/train: 211/1024 T=62
+[2026-08-30 22:35:30] target4/train: 212/1024 T=55
+[2026-08-30 22:35:30] target4/train: 213/1024 T=67
+[2026-08-30 22:35:31] target4/train: 214/1024 T=229
+[2026-08-30 22:35:31] target4/train: 215/1024 T=63
+[2026-08-30 22:35:31] target4/train: 216/1024 T=95
+[2026-08-30 22:35:31] target4/train: 217/1024 T=61
+[2026-08-30 22:35:32] target4/train: 218/1024 T=113
+[2026-08-30 22:35:32] target4/train: 219/1024 T=73
+[2026-08-30 22:35:32] target4/train: 220/1024 T=177
+[2026-08-30 22:35:33] target4/train: 221/1024 T=100
+[2026-08-30 22:35:33] target4/train: 222/1024 T=64
+[2026-08-30 22:35:33] target4/train: 223/1024 T=155
+[2026-08-30 22:35:33] target4/train: 224/1024 T=85
+[2026-08-30 22:35:34] target4/train: 225/1024 T=163
+[2026-08-30 22:35:34] target4/train: 226/1024 T=145
+[2026-08-30 22:35:34] target4/train: 227/1024 T=86
+[2026-08-30 22:35:35] target4/train: 228/1024 T=101
+[2026-08-30 22:35:35] target4/train: 229/1024 T=218
+[2026-08-30 22:35:35] target4/train: 230/1024 T=151
+[2026-08-30 22:35:36] target4/train: 231/1024 T=73
+[2026-08-30 22:35:36] target4/train: 232/1024 T=83
+[2026-08-30 22:35:36] target4/train: 233/1024 T=163
+[2026-08-30 22:35:36] target4/train: 234/1024 T=141
+[2026-08-30 22:35:37] target4/train: 235/1024 T=257
+[2026-08-30 22:35:37] target4/train: 236/1024 T=95
+[2026-08-30 22:35:38] target4/train: 237/1024 T=202
+[2026-08-30 22:35:38] target4/train: 238/1024 T=121
+[2026-08-30 22:35:38] target4/train: 239/1024 T=69
+[2026-08-30 22:35:38] target4/train: 240/1024 T=57
+[2026-08-30 22:35:38] target4/train: 241/1024 T=24
+[2026-08-30 22:35:39] target4/train: 242/1024 T=79
+[2026-08-30 22:35:39] target4/train: 243/1024 T=103
+[2026-08-30 22:35:39] target4/train: 244/1024 T=248
+[2026-08-30 22:35:40] target4/train: 245/1024 T=81
+[2026-08-30 22:35:40] target4/train: 246/1024 T=84
+[2026-08-30 22:35:40] target4/train: 247/1024 T=112
+[2026-08-30 22:35:41] target4/train: 248/1024 T=195
+[2026-08-30 22:35:41] target4/train: 249/1024 T=223
+[2026-08-30 22:35:41] target4/train: 250/1024 T=88
+[2026-08-30 22:35:41] target4/train: 251/1024 T=117
+[2026-08-30 22:35:42] target4/train: 252/1024 T=125
+[2026-08-30 22:35:42] target4/train: 253/1024 T=115
+[2026-08-30 22:35:42] target4/train: 254/1024 T=68
+[2026-08-30 22:35:43] target4/train: 255/1024 T=69
+[2026-08-30 22:35:43] target4/train: 256/1024 T=203
+[2026-08-30 22:35:43] target4/train: 257/1024 T=208
+[2026-08-30 22:35:44] target4/train: 258/1024 T=179
+[2026-08-30 22:35:44] target4/train: 259/1024 T=141
+[2026-08-30 22:35:44] target4/train: 260/1024 T=250
+[2026-08-30 22:35:45] target4/train: 261/1024 T=74
+[2026-08-30 22:35:45] target4/train: 262/1024 T=63
+[2026-08-30 22:35:45] target4/train: 263/1024 T=201
+[2026-08-30 22:35:45] target4/train: 264/1024 T=51
+[2026-08-30 22:35:46] target4/train: 265/1024 T=156
+[2026-08-30 22:35:46] target4/train: 266/1024 T=72
+[2026-08-30 22:35:46] target4/train: 267/1024 T=53
+[2026-08-30 22:35:46] target4/train: 268/1024 T=31
+[2026-08-30 22:35:46] target4/train: 269/1024 T=60
+[2026-08-30 22:35:47] target4/train: 270/1024 T=163
+[2026-08-30 22:35:47] target4/train: 271/1024 T=134
+[2026-08-30 22:35:47] target4/train: 272/1024 T=124
+[2026-08-30 22:35:48] target4/train: 273/1024 T=73
+[2026-08-30 22:35:48] target4/train: 274/1024 T=173
+[2026-08-30 22:35:48] target4/train: 275/1024 T=201
+[2026-08-30 22:35:49] target4/train: 276/1024 T=71
+[2026-08-30 22:35:49] target4/train: 277/1024 T=78
+[2026-08-30 22:35:49] target4/train: 278/1024 T=195
+[2026-08-30 22:35:49] target4/train: 279/1024 T=157
+[2026-08-30 22:35:50] target4/train: 280/1024 T=77
+[2026-08-30 22:35:50] target4/train: 281/1024 T=79
+[2026-08-30 22:35:50] target4/train: 282/1024 T=84
+[2026-08-30 22:35:51] target4/train: 283/1024 T=157
+[2026-08-30 22:35:51] target4/train: 284/1024 T=155
+[2026-08-30 22:35:51] target4/train: 285/1024 T=98
+[2026-08-30 22:35:52] target4/train: 286/1024 T=135
+[2026-08-30 22:35:52] target4/train: 287/1024 T=118
+[2026-08-30 22:35:52] target4/train: 288/1024 T=269
+[2026-08-30 22:35:53] target4/train: 289/1024 T=174
+[2026-08-30 22:35:53] target4/train: 290/1024 T=124
+[2026-08-30 22:35:53] target4/train: 291/1024 T=71
+[2026-08-30 22:35:54] target4/train: 292/1024 T=131
+[2026-08-30 22:35:54] target4/train: 293/1024 T=182
+[2026-08-30 22:35:54] target4/train: 294/1024 T=74
+[2026-08-30 22:35:54] target4/train: 295/1024 T=77
+[2026-08-30 22:35:55] target4/train: 296/1024 T=148
+[2026-08-30 22:35:55] target4/train: 297/1024 T=84
+[2026-08-30 22:35:55] target4/train: 298/1024 T=174
+[2026-08-30 22:35:56] target4/train: 299/1024 T=57
+[2026-08-30 22:35:56] target4/train: 300/1024 T=173
+[2026-08-30 22:35:56] target4/train: 301/1024 T=152
+[2026-08-30 22:35:56] target4/train: 302/1024 T=71
+[2026-08-30 22:35:57] target4/train: 303/1024 T=57
+[2026-08-30 22:35:57] target4/train: 304/1024 T=340
+[2026-08-30 22:35:57] target4/train: 305/1024 T=71
+[2026-08-30 22:35:58] target4/train: 306/1024 T=127
+[2026-08-30 22:35:58] target4/train: 307/1024 T=209
+[2026-08-30 22:35:58] target4/train: 308/1024 T=88
+[2026-08-30 22:35:58] target4/train: 309/1024 T=98
+[2026-08-30 22:35:58] target4/train: 310/1024 T=131
+[2026-08-30 22:35:58] target4/train: 311/1024 T=242
+[2026-08-30 22:35:59] target4/train: 312/1024 T=64
+[2026-08-30 22:35:59] target4/train: 313/1024 T=183
+[2026-08-30 22:35:59] target4/train: 314/1024 T=123
+[2026-08-30 22:36:00] target4/train: 315/1024 T=129
+[2026-08-30 22:36:00] target4/train: 316/1024 T=256
+[2026-08-30 22:36:00] target4/train: 317/1024 T=143
+[2026-08-30 22:36:00] target4/train: 318/1024 T=23
+[2026-08-30 22:36:01] target4/train: 319/1024 T=86
+[2026-08-30 22:36:01] target4/train: 320/1024 T=129
+[2026-08-30 22:36:01] target4/train: 321/1024 T=51
+[2026-08-30 22:36:02] target4/train: 322/1024 T=73
+[2026-08-30 22:36:02] target4/train: 323/1024 T=64
+[2026-08-30 22:36:02] target4/train: 324/1024 T=24
+[2026-08-30 22:36:02] target4/train: 325/1024 T=201
+[2026-08-30 22:36:02] target4/train: 326/1024 T=99
+[2026-08-30 22:36:03] target4/train: 327/1024 T=127
+[2026-08-30 22:36:03] target4/train: 328/1024 T=132
+[2026-08-30 22:36:03] target4/train: 329/1024 T=115
+[2026-08-30 22:36:03] target4/train: 330/1024 T=58
+[2026-08-30 22:36:04] target4/train: 331/1024 T=119
+[2026-08-30 22:36:04] target4/train: 332/1024 T=159
+[2026-08-30 22:36:04] target4/train: 333/1024 T=112
+[2026-08-30 22:36:05] target4/train: 334/1024 T=75
+[2026-08-30 22:36:05] target4/train: 335/1024 T=147
+[2026-08-30 22:36:05] target4/train: 336/1024 T=83
+[2026-08-30 22:36:06] target4/train: 337/1024 T=149
+[2026-08-30 22:36:06] target4/train: 338/1024 T=96
+[2026-08-30 22:36:06] target4/train: 339/1024 T=73
+[2026-08-30 22:36:06] target4/train: 340/1024 T=32
+[2026-08-30 22:36:07] target4/train: 341/1024 T=176
+[2026-08-30 22:36:07] target4/train: 342/1024 T=203
+[2026-08-30 22:36:07] target4/train: 343/1024 T=283
+[2026-08-30 22:36:08] target4/train: 344/1024 T=148
+[2026-08-30 22:36:08] target4/train: 345/1024 T=197
+[2026-08-30 22:36:09] target4/train: 346/1024 T=317
+[2026-08-30 22:36:09] target4/train: 347/1024 T=74
+[2026-08-30 22:36:09] target4/train: 348/1024 T=100
+[2026-08-30 22:36:09] target4/train: 349/1024 T=222
+[2026-08-30 22:36:10] target4/train: 350/1024 T=189
+[2026-08-30 22:36:10] target4/train: 351/1024 T=130
+[2026-08-30 22:36:10] target4/train: 352/1024 T=58
+[2026-08-30 22:36:11] target4/train: 353/1024 T=86
+[2026-08-30 22:36:11] target4/train: 354/1024 T=75
+[2026-08-30 22:36:11] target4/train: 355/1024 T=196
+[2026-08-30 22:36:12] target4/train: 356/1024 T=507
+[2026-08-30 22:36:12] target4/train: 357/1024 T=257
+[2026-08-30 22:36:13] target4/train: 358/1024 T=87
+[2026-08-30 22:36:13] target4/train: 359/1024 T=41
+[2026-08-30 22:36:13] target4/train: 360/1024 T=350
+[2026-08-30 22:36:14] target4/train: 361/1024 T=73
+[2026-08-30 22:36:14] target4/train: 362/1024 T=99
+[2026-08-30 22:36:14] target4/train: 363/1024 T=124
+[2026-08-30 22:36:14] target4/train: 364/1024 T=59
+[2026-08-30 22:36:14] target4/train: 365/1024 T=45
+[2026-08-30 22:36:15] target4/train: 366/1024 T=74
+[2026-08-30 22:36:15] target4/train: 367/1024 T=153
+[2026-08-30 22:36:15] target4/train: 368/1024 T=169
+[2026-08-30 22:36:16] target4/train: 369/1024 T=57
+[2026-08-30 22:36:16] target4/train: 370/1024 T=120
+[2026-08-30 22:36:16] target4/train: 371/1024 T=263
+[2026-08-30 22:36:17] target4/train: 372/1024 T=77
+[2026-08-30 22:36:17] target4/train: 373/1024 T=139
+[2026-08-30 22:36:17] target4/train: 374/1024 T=74
+[2026-08-30 22:36:17] target4/train: 375/1024 T=108
+[2026-08-30 22:36:18] target4/train: 376/1024 T=87
+[2026-08-30 22:36:18] target4/train: 377/1024 T=115
+[2026-08-30 22:36:18] target4/train: 378/1024 T=68
+[2026-08-30 22:36:18] target4/train: 379/1024 T=58
+[2026-08-30 22:36:19] target4/train: 380/1024 T=108
+[2026-08-30 22:36:19] target4/train: 381/1024 T=73
+[2026-08-30 22:36:19] target4/train: 382/1024 T=230
+[2026-08-30 22:36:20] target4/train: 383/1024 T=138
+[2026-08-30 22:36:20] target4/train: 384/1024 T=70
+[2026-08-30 22:36:20] target4/train: 385/1024 T=65
+[2026-08-30 22:36:20] target4/train: 386/1024 T=56
+[2026-08-30 22:36:21] target4/train: 387/1024 T=137
+[2026-08-30 22:36:21] target4/train: 388/1024 T=143
+[2026-08-30 22:36:21] target4/train: 389/1024 T=51
+[2026-08-30 22:36:21] target4/train: 390/1024 T=54
+[2026-08-30 22:36:22] target4/train: 391/1024 T=181
+[2026-08-30 22:36:22] target4/train: 392/1024 T=123
+[2026-08-30 22:36:22] target4/train: 393/1024 T=113
+[2026-08-30 22:36:23] target4/train: 394/1024 T=129
+[2026-08-30 22:36:23] target4/train: 395/1024 T=90
+[2026-08-30 22:36:23] target4/train: 396/1024 T=132
+[2026-08-30 22:36:24] target4/train: 397/1024 T=174
+[2026-08-30 22:36:24] target4/train: 398/1024 T=105
+[2026-08-30 22:36:24] target4/train: 399/1024 T=62
+[2026-08-30 22:36:24] target4/train: 400/1024 T=55
+[2026-08-30 22:36:24] target4/train: 401/1024 T=114
+[2026-08-30 22:36:25] target4/train: 402/1024 T=99
+[2026-08-30 22:36:25] target4/train: 403/1024 T=46
+[2026-08-30 22:36:25] target4/train: 404/1024 T=114
+[2026-08-30 22:36:25] target4/train: 405/1024 T=165
+[2026-08-30 22:36:26] target4/train: 406/1024 T=113
+[2026-08-30 22:36:26] target4/train: 407/1024 T=66
+[2026-08-30 22:36:26] target4/train: 408/1024 T=37
+[2026-08-30 22:36:26] target4/train: 409/1024 T=103
+[2026-08-30 22:36:27] target4/train: 410/1024 T=84
+[2026-08-30 22:36:27] target4/train: 411/1024 T=170
+[2026-08-30 22:36:27] target4/train: 412/1024 T=253
+[2026-08-30 22:36:28] target4/train: 413/1024 T=93
+[2026-08-30 22:36:28] target4/train: 414/1024 T=63
+[2026-08-30 22:36:28] target4/train: 415/1024 T=134
+[2026-08-30 22:36:29] target4/train: 416/1024 T=149
+[2026-08-30 22:36:29] target4/train: 417/1024 T=93
+[2026-08-30 22:36:29] target4/train: 418/1024 T=25
+[2026-08-30 22:36:29] target4/train: 419/1024 T=265
+[2026-08-30 22:36:30] target4/train: 420/1024 T=127
+[2026-08-30 22:36:30] target4/train: 421/1024 T=48
+[2026-08-30 22:36:30] target4/train: 422/1024 T=46
+[2026-08-30 22:36:30] target4/train: 423/1024 T=129
+[2026-08-30 22:36:31] target4/train: 424/1024 T=62
+[2026-08-30 22:36:31] target4/train: 425/1024 T=469
+[2026-08-30 22:36:32] target4/train: 426/1024 T=206
+[2026-08-30 22:36:32] target4/train: 427/1024 T=129
+[2026-08-30 22:36:32] target4/train: 428/1024 T=89
+[2026-08-30 22:36:32] target4/train: 429/1024 T=76
+[2026-08-30 22:36:33] target4/train: 430/1024 T=187
+[2026-08-30 22:36:33] target4/train: 431/1024 T=63
+[2026-08-30 22:36:33] target4/train: 432/1024 T=88
+[2026-08-30 22:36:34] target4/train: 433/1024 T=77
+[2026-08-30 22:36:34] target4/train: 434/1024 T=103
+[2026-08-30 22:36:34] target4/train: 435/1024 T=116
+[2026-08-30 22:36:34] target4/train: 436/1024 T=90
+[2026-08-30 22:36:35] target4/train: 437/1024 T=329
+[2026-08-30 22:36:35] target4/train: 438/1024 T=103
+[2026-08-30 22:36:35] target4/train: 439/1024 T=231
+[2026-08-30 22:36:36] target4/train: 440/1024 T=93
+[2026-08-30 22:36:36] target4/train: 441/1024 T=65
+[2026-08-30 22:36:36] target4/train: 442/1024 T=98
+[2026-08-30 22:36:36] target4/train: 443/1024 T=100
+[2026-08-30 22:36:37] target4/train: 444/1024 T=118
+[2026-08-30 22:36:37] target4/train: 445/1024 T=48
+[2026-08-30 22:36:37] target4/train: 446/1024 T=49
+[2026-08-30 22:36:37] target4/train: 447/1024 T=86
+[2026-08-30 22:36:38] target4/train: 448/1024 T=129
+[2026-08-30 22:36:38] target4/train: 449/1024 T=74
+[2026-08-30 22:36:38] target4/train: 450/1024 T=71
+[2026-08-30 22:36:39] target4/train: 451/1024 T=257
+[2026-08-30 22:36:39] target4/train: 452/1024 T=56
+[2026-08-30 22:36:39] target4/train: 453/1024 T=218
+[2026-08-30 22:36:40] target4/train: 454/1024 T=103
+[2026-08-30 22:36:40] target4/train: 455/1024 T=143
+[2026-08-30 22:36:40] target4/train: 456/1024 T=35
+[2026-08-30 22:36:40] target4/train: 457/1024 T=109
+[2026-08-30 22:36:41] target4/train: 458/1024 T=100
+[2026-08-30 22:36:41] target4/train: 459/1024 T=84
+[2026-08-30 22:36:41] target4/train: 460/1024 T=176
+[2026-08-30 22:36:42] target4/train: 461/1024 T=219
+[2026-08-30 22:36:42] target4/train: 462/1024 T=63
+[2026-08-30 22:36:42] target4/train: 463/1024 T=70
+[2026-08-30 22:36:42] target4/train: 464/1024 T=47
+[2026-08-30 22:36:43] target4/train: 465/1024 T=142
+[2026-08-30 22:36:43] target4/train: 466/1024 T=104
+[2026-08-30 22:36:43] target4/train: 467/1024 T=141
+[2026-08-30 22:36:43] target4/train: 468/1024 T=173
+[2026-08-30 22:36:44] target4/train: 469/1024 T=80
+[2026-08-30 22:36:44] target4/train: 470/1024 T=73
+[2026-08-30 22:36:44] target4/train: 471/1024 T=210
+[2026-08-30 22:36:45] target4/train: 472/1024 T=193
+[2026-08-30 22:36:45] target4/train: 473/1024 T=58
+[2026-08-30 22:36:45] target4/train: 474/1024 T=263
+[2026-08-30 22:36:46] target4/train: 475/1024 T=165
+[2026-08-30 22:36:46] target4/train: 476/1024 T=93
+[2026-08-30 22:36:46] target4/train: 477/1024 T=144
+[2026-08-30 22:36:47] target4/train: 478/1024 T=126
+[2026-08-30 22:36:47] target4/train: 479/1024 T=61
+[2026-08-30 22:36:47] target4/train: 480/1024 T=163
+[2026-08-30 22:36:47] target4/train: 481/1024 T=104
+[2026-08-30 22:36:48] target4/train: 482/1024 T=72
+[2026-08-30 22:36:48] target4/train: 483/1024 T=86
+[2026-08-30 22:36:48] target4/train: 484/1024 T=68
+[2026-08-30 22:36:48] target4/train: 485/1024 T=123
+[2026-08-30 22:36:49] target4/train: 486/1024 T=285
+[2026-08-30 22:36:49] target4/train: 487/1024 T=159
+[2026-08-30 22:36:50] target4/train: 488/1024 T=153
+[2026-08-30 22:36:50] target4/train: 489/1024 T=226
+[2026-08-30 22:36:50] target4/train: 490/1024 T=113
+[2026-08-30 22:36:51] target4/train: 491/1024 T=69
+[2026-08-30 22:36:51] target4/train: 492/1024 T=34
+[2026-08-30 22:36:51] target4/train: 493/1024 T=283
+[2026-08-30 22:36:51] target4/train: 494/1024 T=214
+[2026-08-30 22:36:52] target4/train: 495/1024 T=245
+[2026-08-30 22:36:52] target4/train: 496/1024 T=55
+[2026-08-30 22:36:52] target4/train: 497/1024 T=152
+[2026-08-30 22:36:53] target4/train: 498/1024 T=235
+[2026-08-30 22:36:53] target4/train: 499/1024 T=104
+[2026-08-30 22:36:53] target4/train: 500/1024 T=67
+[2026-08-30 22:36:54] target4/train: 501/1024 T=97
+[2026-08-30 22:36:54] target4/train: 502/1024 T=174
+[2026-08-30 22:36:54] target4/train: 503/1024 T=160
+[2026-08-30 22:36:55] target4/train: 504/1024 T=87
+[2026-08-30 22:36:55] target4/train: 505/1024 T=62
+[2026-08-30 22:36:55] target4/train: 506/1024 T=61
+[2026-08-30 22:36:55] target4/train: 507/1024 T=92
+[2026-08-30 22:36:55] target4/train: 508/1024 T=125
+[2026-08-30 22:36:56] target4/train: 509/1024 T=337
+[2026-08-30 22:36:56] target4/train: 510/1024 T=47
+[2026-08-30 22:36:56] target4/train: 511/1024 T=123
+[2026-08-30 22:36:57] target4/train: 512/1024 T=96
+[2026-08-30 22:36:57] target4/train: 513/1024 T=145
+[2026-08-30 22:36:58] target4/train: 514/1024 T=363
+[2026-08-30 22:36:58] target4/train: 515/1024 T=154
+[2026-08-30 22:36:58] target4/train: 516/1024 T=187
+[2026-08-30 22:36:58] target4/train: 517/1024 T=82
+[2026-08-30 22:36:59] target4/train: 518/1024 T=98
+[2026-08-30 22:36:59] target4/train: 519/1024 T=228
+[2026-08-30 22:36:59] target4/train: 520/1024 T=108
+[2026-08-30 22:36:59] target4/train: 521/1024 T=47
+[2026-08-30 22:37:00] target4/train: 522/1024 T=49
+[2026-08-30 22:37:00] target4/train: 523/1024 T=76
+[2026-08-30 22:37:00] target4/train: 524/1024 T=101
+[2026-08-30 22:37:01] target4/train: 525/1024 T=75
+[2026-08-30 22:37:01] target4/train: 526/1024 T=77
+[2026-08-30 22:37:01] target4/train: 527/1024 T=113
+[2026-08-30 22:37:01] target4/train: 528/1024 T=138
+[2026-08-30 22:37:02] target4/train: 529/1024 T=75
+[2026-08-30 22:37:02] target4/train: 530/1024 T=131
+[2026-08-30 22:37:02] target4/train: 531/1024 T=162
+[2026-08-30 22:37:02] target4/train: 532/1024 T=149
+[2026-08-30 22:37:02] target4/train: 533/1024 T=107
+[2026-08-30 22:37:02] target4/train: 534/1024 T=23
+[2026-08-30 22:37:02] target4/train: 535/1024 T=293
+[2026-08-30 22:37:02] target4/train: 536/1024 T=113
+[2026-08-30 22:37:03] target4/train: 537/1024 T=158
+[2026-08-30 22:37:03] target4/train: 538/1024 T=93
+[2026-08-30 22:37:03] target4/train: 539/1024 T=333
+[2026-08-30 22:37:03] target4/train: 540/1024 T=70
+[2026-08-30 22:37:04] target4/train: 541/1024 T=183
+[2026-08-30 22:37:04] target4/train: 542/1024 T=124
+[2026-08-30 22:37:04] target4/train: 543/1024 T=156
+[2026-08-30 22:37:05] target4/train: 544/1024 T=86
+[2026-08-30 22:37:05] target4/train: 545/1024 T=298
+[2026-08-30 22:37:05] target4/train: 546/1024 T=69
+[2026-08-30 22:37:06] target4/train: 547/1024 T=76
+[2026-08-30 22:37:06] target4/train: 548/1024 T=110
+[2026-08-30 22:37:06] target4/train: 549/1024 T=153
+[2026-08-30 22:37:07] target4/train: 550/1024 T=183
+[2026-08-30 22:37:07] target4/train: 551/1024 T=133
+[2026-08-30 22:37:07] target4/train: 552/1024 T=191
+[2026-08-30 22:37:08] target4/train: 553/1024 T=131
+[2026-08-30 22:37:08] target4/train: 554/1024 T=68
+[2026-08-30 22:37:08] target4/train: 555/1024 T=75
+[2026-08-30 22:37:08] target4/train: 556/1024 T=84
+[2026-08-30 22:37:09] target4/train: 557/1024 T=84
+[2026-08-30 22:37:09] target4/train: 558/1024 T=100
+[2026-08-30 22:37:09] target4/train: 559/1024 T=242
+[2026-08-30 22:37:10] target4/train: 560/1024 T=69
+[2026-08-30 22:37:10] target4/train: 561/1024 T=127
+[2026-08-30 22:37:10] target4/train: 562/1024 T=206
+[2026-08-30 22:37:10] target4/train: 563/1024 T=111
+[2026-08-30 22:37:11] target4/train: 564/1024 T=183
+[2026-08-30 22:37:11] target4/train: 565/1024 T=121
+[2026-08-30 22:37:11] target4/train: 566/1024 T=160
+[2026-08-30 22:37:12] target4/train: 567/1024 T=52
+[2026-08-30 22:37:12] target4/train: 568/1024 T=133
+[2026-08-30 22:37:12] target4/train: 569/1024 T=223
+[2026-08-30 22:37:13] target4/train: 570/1024 T=76
+[2026-08-30 22:37:13] target4/train: 571/1024 T=63
+[2026-08-30 22:37:13] target4/train: 572/1024 T=154
+[2026-08-30 22:37:13] target4/train: 573/1024 T=141
+[2026-08-30 22:37:14] target4/train: 574/1024 T=94
+[2026-08-30 22:37:14] target4/train: 575/1024 T=78
+[2026-08-30 22:37:14] target4/train: 576/1024 T=65
+[2026-08-30 22:37:15] target4/train: 577/1024 T=73
+[2026-08-30 22:37:15] target4/train: 578/1024 T=78
+[2026-08-30 22:37:15] target4/train: 579/1024 T=229
+[2026-08-30 22:37:16] target4/train: 580/1024 T=226
+[2026-08-30 22:37:16] target4/train: 581/1024 T=347
+[2026-08-30 22:37:16] target4/train: 582/1024 T=162
+[2026-08-30 22:37:17] target4/train: 583/1024 T=364
+[2026-08-30 22:37:17] target4/train: 584/1024 T=93
+[2026-08-30 22:37:17] target4/train: 585/1024 T=128
+[2026-08-30 22:37:18] target4/train: 586/1024 T=118
+[2026-08-30 22:37:18] target4/train: 587/1024 T=181
+[2026-08-30 22:37:18] target4/train: 588/1024 T=78
+[2026-08-30 22:37:18] target4/train: 589/1024 T=32
+[2026-08-30 22:37:19] target4/train: 590/1024 T=103
+[2026-08-30 22:37:19] target4/train: 591/1024 T=199
+[2026-08-30 22:37:19] target4/train: 592/1024 T=176
+[2026-08-30 22:37:20] target4/train: 593/1024 T=103
+[2026-08-30 22:37:20] target4/train: 594/1024 T=83
+[2026-08-30 22:37:20] target4/train: 595/1024 T=92
+[2026-08-30 22:37:21] target4/train: 596/1024 T=164
+[2026-08-30 22:37:21] target4/train: 597/1024 T=143
+[2026-08-30 22:37:21] target4/train: 598/1024 T=40
+[2026-08-30 22:37:21] target4/train: 599/1024 T=168
+[2026-08-30 22:37:22] target4/train: 600/1024 T=194
+[2026-08-30 22:37:22] target4/train: 601/1024 T=70
+[2026-08-30 22:37:22] target4/train: 602/1024 T=102
+[2026-08-30 22:37:23] target4/train: 603/1024 T=202
+[2026-08-30 22:37:23] target4/train: 604/1024 T=94
+[2026-08-30 22:37:23] target4/train: 605/1024 T=298
+[2026-08-30 22:37:24] target4/train: 606/1024 T=97
+[2026-08-30 22:37:24] target4/train: 607/1024 T=103
+[2026-08-30 22:37:24] target4/train: 608/1024 T=213
+[2026-08-30 22:37:24] target4/train: 609/1024 T=116
+[2026-08-30 22:37:25] target4/train: 610/1024 T=186
+[2026-08-30 22:37:25] target4/train: 611/1024 T=122
+[2026-08-30 22:37:25] target4/train: 612/1024 T=98
+[2026-08-30 22:37:26] target4/train: 613/1024 T=80
+[2026-08-30 22:37:26] target4/train: 614/1024 T=165
+[2026-08-30 22:37:26] target4/train: 615/1024 T=54
+[2026-08-30 22:37:26] target4/train: 616/1024 T=57
+[2026-08-30 22:37:26] target4/train: 617/1024 T=37
+[2026-08-30 22:37:27] target4/train: 618/1024 T=256
+[2026-08-30 22:37:27] target4/train: 619/1024 T=114
+[2026-08-30 22:37:27] target4/train: 620/1024 T=93
+[2026-08-30 22:37:28] target4/train: 621/1024 T=93
+[2026-08-30 22:37:28] target4/train: 622/1024 T=71
+[2026-08-30 22:37:28] target4/train: 623/1024 T=128
+[2026-08-30 22:37:28] target4/train: 624/1024 T=94
+[2026-08-30 22:37:29] target4/train: 625/1024 T=41
+[2026-08-30 22:37:29] target4/train: 626/1024 T=120
+[2026-08-30 22:37:29] target4/train: 627/1024 T=206
+[2026-08-30 22:37:29] target4/train: 628/1024 T=83
+[2026-08-30 22:37:30] target4/train: 629/1024 T=167
+[2026-08-30 22:37:30] target4/train: 630/1024 T=36
+[2026-08-30 22:37:30] target4/train: 631/1024 T=89
+[2026-08-30 22:37:31] target4/train: 632/1024 T=156
+[2026-08-30 22:37:31] target4/train: 633/1024 T=58
+[2026-08-30 22:37:31] target4/train: 634/1024 T=216
+[2026-08-30 22:37:32] target4/train: 635/1024 T=463
+[2026-08-30 22:37:32] target4/train: 636/1024 T=125
+[2026-08-30 22:37:32] target4/train: 637/1024 T=101
+[2026-08-30 22:37:32] target4/train: 638/1024 T=52
+[2026-08-30 22:37:33] target4/train: 639/1024 T=129
+[2026-08-30 22:37:33] target4/train: 640/1024 T=266
+[2026-08-30 22:37:33] target4/train: 641/1024 T=53
+[2026-08-30 22:37:34] target4/train: 642/1024 T=63
+[2026-08-30 22:37:34] target4/train: 643/1024 T=23
+[2026-08-30 22:37:34] target4/train: 644/1024 T=113
+[2026-08-30 22:37:34] target4/train: 645/1024 T=123
+[2026-08-30 22:37:35] target4/train: 646/1024 T=128
+[2026-08-30 22:37:35] target4/train: 647/1024 T=93
+[2026-08-30 22:37:35] target4/train: 648/1024 T=39
+[2026-08-30 22:37:35] target4/train: 649/1024 T=79
+[2026-08-30 22:37:35] target4/train: 650/1024 T=62
+[2026-08-30 22:37:36] target4/train: 651/1024 T=374
+[2026-08-30 22:37:36] target4/train: 652/1024 T=46
+[2026-08-30 22:37:36] target4/train: 653/1024 T=80
+[2026-08-30 22:37:37] target4/train: 654/1024 T=146
+[2026-08-30 22:37:37] target4/train: 655/1024 T=60
+[2026-08-30 22:37:37] target4/train: 656/1024 T=51
+[2026-08-30 22:37:37] target4/train: 657/1024 T=155
+[2026-08-30 22:37:38] target4/train: 658/1024 T=96
+[2026-08-30 22:37:38] target4/train: 659/1024 T=83
+[2026-08-30 22:37:38] target4/train: 660/1024 T=61
+[2026-08-30 22:37:39] target4/train: 661/1024 T=89
+[2026-08-30 22:37:39] target4/train: 662/1024 T=146
+[2026-08-30 22:37:39] target4/train: 663/1024 T=85
+[2026-08-30 22:37:39] target4/train: 664/1024 T=143
+[2026-08-30 22:37:40] target4/train: 665/1024 T=93
+[2026-08-30 22:37:40] target4/train: 666/1024 T=73
+[2026-08-30 22:37:40] target4/train: 667/1024 T=71
+[2026-08-30 22:37:41] target4/train: 668/1024 T=174
+[2026-08-30 22:37:41] target4/train: 669/1024 T=67
+[2026-08-30 22:37:41] target4/train: 670/1024 T=145
+[2026-08-30 22:37:41] target4/train: 671/1024 T=58
+[2026-08-30 22:37:42] target4/train: 672/1024 T=113
+[2026-08-30 22:37:42] target4/train: 673/1024 T=246
+[2026-08-30 22:37:42] target4/train: 674/1024 T=68
+[2026-08-30 22:37:43] target4/train: 675/1024 T=84
+[2026-08-30 22:37:43] target4/train: 676/1024 T=271
+[2026-08-30 22:37:43] target4/train: 677/1024 T=105
+[2026-08-30 22:37:44] target4/train: 678/1024 T=43
+[2026-08-30 22:37:44] target4/train: 679/1024 T=83
+[2026-08-30 22:37:44] target4/train: 680/1024 T=84
+[2026-08-30 22:37:44] target4/train: 681/1024 T=150
+[2026-08-30 22:37:45] target4/train: 682/1024 T=250
+[2026-08-30 22:37:45] target4/train: 683/1024 T=73
+[2026-08-30 22:37:45] target4/train: 684/1024 T=107
+[2026-08-30 22:37:46] target4/train: 685/1024 T=391
+[2026-08-30 22:37:46] target4/train: 686/1024 T=335
+[2026-08-30 22:37:47] target4/train: 687/1024 T=77
+[2026-08-30 22:37:47] target4/train: 688/1024 T=74
+[2026-08-30 22:37:47] target4/train: 689/1024 T=110
+[2026-08-30 22:37:47] target4/train: 690/1024 T=107
+[2026-08-30 22:37:48] target4/train: 691/1024 T=106
+[2026-08-30 22:37:48] target4/train: 692/1024 T=106
+[2026-08-30 22:37:48] target4/train: 693/1024 T=71
+[2026-08-30 22:37:49] target4/train: 694/1024 T=115
+[2026-08-30 22:37:49] target4/train: 695/1024 T=67
+[2026-08-30 22:37:49] target4/train: 696/1024 T=123
+[2026-08-30 22:37:49] target4/train: 697/1024 T=121
+[2026-08-30 22:37:50] target4/train: 698/1024 T=125
+[2026-08-30 22:37:50] target4/train: 699/1024 T=93
+[2026-08-30 22:37:50] target4/train: 700/1024 T=189
+[2026-08-30 22:37:51] target4/train: 701/1024 T=73
+[2026-08-30 22:37:51] target4/train: 702/1024 T=103
+[2026-08-30 22:37:51] target4/train: 703/1024 T=73
+[2026-08-30 22:37:51] target4/train: 704/1024 T=126
+[2026-08-30 22:37:52] target4/train: 705/1024 T=107
+[2026-08-30 22:37:52] target4/train: 706/1024 T=81
+[2026-08-30 22:37:52] target4/train: 707/1024 T=63
+[2026-08-30 22:37:52] target4/train: 708/1024 T=214
+[2026-08-30 22:37:53] target4/train: 709/1024 T=94
+[2026-08-30 22:37:53] target4/train: 710/1024 T=97
+[2026-08-30 22:37:53] target4/train: 711/1024 T=116
+[2026-08-30 22:37:53] target4/train: 712/1024 T=102
+[2026-08-30 22:37:54] target4/train: 713/1024 T=45
+[2026-08-30 22:37:54] target4/train: 714/1024 T=63
+[2026-08-30 22:37:54] target4/train: 715/1024 T=60
+[2026-08-30 22:37:54] target4/train: 716/1024 T=58
+[2026-08-30 22:37:54] target4/train: 717/1024 T=73
+[2026-08-30 22:37:55] target4/train: 718/1024 T=32
+[2026-08-30 22:37:55] target4/train: 719/1024 T=129
+[2026-08-30 22:37:55] target4/train: 720/1024 T=65
+[2026-08-30 22:37:56] target4/train: 721/1024 T=189
+[2026-08-30 22:37:56] target4/train: 722/1024 T=80
+[2026-08-30 22:37:56] target4/train: 723/1024 T=68
+[2026-08-30 22:37:56] target4/train: 724/1024 T=84
+[2026-08-30 22:37:57] target4/train: 725/1024 T=146
+[2026-08-30 22:37:57] target4/train: 726/1024 T=39
+[2026-08-30 22:37:57] target4/train: 727/1024 T=133
+[2026-08-30 22:37:58] target4/train: 728/1024 T=75
+[2026-08-30 22:37:58] target4/train: 729/1024 T=61
+[2026-08-30 22:37:58] target4/train: 730/1024 T=76
+[2026-08-30 22:37:58] target4/train: 731/1024 T=116
+[2026-08-30 22:37:58] target4/train: 732/1024 T=63
+[2026-08-30 22:37:59] target4/train: 733/1024 T=169
+[2026-08-30 22:37:59] target4/train: 734/1024 T=102
+[2026-08-30 22:37:59] target4/train: 735/1024 T=80
+[2026-08-30 22:38:00] target4/train: 736/1024 T=107
+[2026-08-30 22:38:00] target4/train: 737/1024 T=44
+[2026-08-30 22:38:00] target4/train: 738/1024 T=146
+[2026-08-30 22:38:00] target4/train: 739/1024 T=204
+[2026-08-30 22:38:01] target4/train: 740/1024 T=293
+[2026-08-30 22:38:01] target4/train: 741/1024 T=69
+[2026-08-30 22:38:02] target4/train: 742/1024 T=138
+[2026-08-30 22:38:02] target4/train: 743/1024 T=82
+[2026-08-30 22:38:02] target4/train: 744/1024 T=113
+[2026-08-30 22:38:02] target4/train: 745/1024 T=76
+[2026-08-30 22:38:03] target4/train: 746/1024 T=72
+[2026-08-30 22:38:03] target4/train: 747/1024 T=161
+[2026-08-30 22:38:03] target4/train: 748/1024 T=83
+[2026-08-30 22:38:03] target4/train: 749/1024 T=43
+[2026-08-30 22:38:04] target4/train: 750/1024 T=88
+[2026-08-30 22:38:04] target4/train: 751/1024 T=123
+[2026-08-30 22:38:04] target4/train: 752/1024 T=94
+[2026-08-30 22:38:05] target4/train: 753/1024 T=95
+[2026-08-30 22:38:05] target4/train: 754/1024 T=83
+[2026-08-30 22:38:05] target4/train: 755/1024 T=128
+[2026-08-30 22:38:06] target4/train: 756/1024 T=236
+[2026-08-30 22:38:06] target4/train: 757/1024 T=141
+[2026-08-30 22:38:06] target4/train: 758/1024 T=145
+[2026-08-30 22:38:06] target4/train: 759/1024 T=69
+[2026-08-30 22:38:06] target4/train: 760/1024 T=101
+[2026-08-30 22:38:06] target4/train: 761/1024 T=186
+[2026-08-30 22:38:06] target4/train: 762/1024 T=130
+[2026-08-30 22:38:06] target4/train: 763/1024 T=56
+[2026-08-30 22:38:06] target4/train: 764/1024 T=24
+[2026-08-30 22:38:07] target4/train: 765/1024 T=157
+[2026-08-30 22:38:07] target4/train: 766/1024 T=81
+[2026-08-30 22:38:07] target4/train: 767/1024 T=214
+[2026-08-30 22:38:07] target4/train: 768/1024 T=126
+[2026-08-30 22:38:08] target4/train: 769/1024 T=153
+[2026-08-30 22:38:08] target4/train: 770/1024 T=264
+[2026-08-30 22:38:08] target4/train: 771/1024 T=116
+[2026-08-30 22:38:09] target4/train: 772/1024 T=113
+[2026-08-30 22:38:09] target4/train: 773/1024 T=99
+[2026-08-30 22:38:09] target4/train: 774/1024 T=97
+[2026-08-30 22:38:10] target4/train: 775/1024 T=75
+[2026-08-30 22:38:10] target4/train: 776/1024 T=148
+[2026-08-30 22:38:10] target4/train: 777/1024 T=90
+[2026-08-30 22:38:10] target4/train: 778/1024 T=31
+[2026-08-30 22:38:11] target4/train: 779/1024 T=153
+[2026-08-30 22:38:11] target4/train: 780/1024 T=251
+[2026-08-30 22:38:11] target4/train: 781/1024 T=197
+[2026-08-30 22:38:12] target4/train: 782/1024 T=83
+[2026-08-30 22:38:12] target4/train: 783/1024 T=411
+[2026-08-30 22:38:12] target4/train: 784/1024 T=59
+[2026-08-30 22:38:13] target4/train: 785/1024 T=87
+[2026-08-30 22:38:13] target4/train: 786/1024 T=172
+[2026-08-30 22:38:13] target4/train: 787/1024 T=90
+[2026-08-30 22:38:14] target4/train: 788/1024 T=300
+[2026-08-30 22:38:14] target4/train: 789/1024 T=192
+[2026-08-30 22:38:14] target4/train: 790/1024 T=83
+[2026-08-30 22:38:15] target4/train: 791/1024 T=62
+[2026-08-30 22:38:15] target4/train: 792/1024 T=154
+[2026-08-30 22:38:15] target4/train: 793/1024 T=49
+[2026-08-30 22:38:16] target4/train: 794/1024 T=318
+[2026-08-30 22:38:16] target4/train: 795/1024 T=47
+[2026-08-30 22:38:16] target4/train: 796/1024 T=347
+[2026-08-30 22:38:17] target4/train: 797/1024 T=163
+[2026-08-30 22:38:17] target4/train: 798/1024 T=59
+[2026-08-30 22:38:17] target4/train: 799/1024 T=213
+[2026-08-30 22:38:17] target4/train: 800/1024 T=63
+[2026-08-30 22:38:18] target4/train: 801/1024 T=79
+[2026-08-30 22:38:18] target4/train: 802/1024 T=152
+[2026-08-30 22:38:18] target4/train: 803/1024 T=155
+[2026-08-30 22:38:19] target4/train: 804/1024 T=133
+[2026-08-30 22:38:19] target4/train: 805/1024 T=175
+[2026-08-30 22:38:19] target4/train: 806/1024 T=76
+[2026-08-30 22:38:20] target4/train: 807/1024 T=84
+[2026-08-30 22:38:20] target4/train: 808/1024 T=56
+[2026-08-30 22:38:20] target4/train: 809/1024 T=64
+[2026-08-30 22:38:20] target4/train: 810/1024 T=132
+[2026-08-30 22:38:20] target4/train: 811/1024 T=64
+[2026-08-30 22:38:21] target4/train: 812/1024 T=131
+[2026-08-30 22:38:21] target4/train: 813/1024 T=185
+[2026-08-30 22:38:21] target4/train: 814/1024 T=201
+[2026-08-30 22:38:22] target4/train: 815/1024 T=41
+[2026-08-30 22:38:22] target4/train: 816/1024 T=102
+[2026-08-30 22:38:22] target4/train: 817/1024 T=243
+[2026-08-30 22:38:22] target4/train: 818/1024 T=97
+[2026-08-30 22:38:23] target4/train: 819/1024 T=111
+[2026-08-30 22:38:23] target4/train: 820/1024 T=113
+[2026-08-30 22:38:23] target4/train: 821/1024 T=90
+[2026-08-30 22:38:23] target4/train: 822/1024 T=63
+[2026-08-30 22:38:24] target4/train: 823/1024 T=81
+[2026-08-30 22:38:24] target4/train: 824/1024 T=93
+[2026-08-30 22:38:24] target4/train: 825/1024 T=88
+[2026-08-30 22:38:25] target4/train: 826/1024 T=159
+[2026-08-30 22:38:25] target4/train: 827/1024 T=157
+[2026-08-30 22:38:25] target4/train: 828/1024 T=65
+[2026-08-30 22:38:26] target4/train: 829/1024 T=121
+[2026-08-30 22:38:26] target4/train: 830/1024 T=335
+[2026-08-30 22:38:26] target4/train: 831/1024 T=65
+[2026-08-30 22:38:27] target4/train: 832/1024 T=65
+[2026-08-30 22:38:27] target4/train: 833/1024 T=102
+[2026-08-30 22:38:27] target4/train: 834/1024 T=118
+[2026-08-30 22:38:27] target4/train: 835/1024 T=132
+[2026-08-30 22:38:28] target4/train: 836/1024 T=216
+[2026-08-30 22:38:28] target4/train: 837/1024 T=105
+[2026-08-30 22:38:29] target4/train: 838/1024 T=306
+[2026-08-30 22:38:29] target4/train: 839/1024 T=152
+[2026-08-30 22:38:29] target4/train: 840/1024 T=111
+[2026-08-30 22:38:29] target4/train: 841/1024 T=108
+[2026-08-30 22:38:30] target4/train: 842/1024 T=62
+[2026-08-30 22:38:30] target4/train: 843/1024 T=158
+[2026-08-30 22:38:30] target4/train: 844/1024 T=119
+[2026-08-30 22:38:30] target4/train: 845/1024 T=55
+[2026-08-30 22:38:31] target4/train: 846/1024 T=108
+[2026-08-30 22:38:31] target4/train: 847/1024 T=163
+[2026-08-30 22:38:31] target4/train: 848/1024 T=133
+[2026-08-30 22:38:32] target4/train: 849/1024 T=70
+[2026-08-30 22:38:32] target4/train: 850/1024 T=84
+[2026-08-30 22:38:32] target4/train: 851/1024 T=115
+[2026-08-30 22:38:32] target4/train: 852/1024 T=183
+[2026-08-30 22:38:33] target4/train: 853/1024 T=66
+[2026-08-30 22:38:33] target4/train: 854/1024 T=109
+[2026-08-30 22:38:34] target4/train: 855/1024 T=383
+[2026-08-30 22:38:34] target4/train: 856/1024 T=120
+[2026-08-30 22:38:34] target4/train: 857/1024 T=233
+[2026-08-30 22:38:34] target4/train: 858/1024 T=215
+[2026-08-30 22:38:35] target4/train: 859/1024 T=83
+[2026-08-30 22:38:35] target4/train: 860/1024 T=186
+[2026-08-30 22:38:35] target4/train: 861/1024 T=65
+[2026-08-30 22:38:36] target4/train: 862/1024 T=179
+[2026-08-30 22:38:36] target4/train: 863/1024 T=65
+[2026-08-30 22:38:36] target4/train: 864/1024 T=298
+[2026-08-30 22:38:37] target4/train: 865/1024 T=96
+[2026-08-30 22:38:37] target4/train: 866/1024 T=95
+[2026-08-30 22:38:37] target4/train: 867/1024 T=96
+[2026-08-30 22:38:38] target4/train: 868/1024 T=158
+[2026-08-30 22:38:38] target4/train: 869/1024 T=104
+[2026-08-30 22:38:38] target4/train: 870/1024 T=81
+[2026-08-30 22:38:38] target4/train: 871/1024 T=99
+[2026-08-30 22:38:39] target4/train: 872/1024 T=70
+[2026-08-30 22:38:39] target4/train: 873/1024 T=60
+[2026-08-30 22:38:39] target4/train: 874/1024 T=54
+[2026-08-30 22:38:39] target4/train: 875/1024 T=105
+[2026-08-30 22:38:40] target4/train: 876/1024 T=73
+[2026-08-30 22:38:40] target4/train: 877/1024 T=162
+[2026-08-30 22:38:40] target4/train: 878/1024 T=213
+[2026-08-30 22:38:40] target4/train: 879/1024 T=34
+[2026-08-30 22:38:41] target4/train: 880/1024 T=217
+[2026-08-30 22:38:41] target4/train: 881/1024 T=44
+[2026-08-30 22:38:41] target4/train: 882/1024 T=151
+[2026-08-30 22:38:42] target4/train: 883/1024 T=197
+[2026-08-30 22:38:42] target4/train: 884/1024 T=60
+[2026-08-30 22:38:42] target4/train: 885/1024 T=116
+[2026-08-30 22:38:42] target4/train: 886/1024 T=164
+[2026-08-30 22:38:43] target4/train: 887/1024 T=92
+[2026-08-30 22:38:43] target4/train: 888/1024 T=61
+[2026-08-30 22:38:43] target4/train: 889/1024 T=132
+[2026-08-30 22:38:43] target4/train: 890/1024 T=63
+[2026-08-30 22:38:44] target4/train: 891/1024 T=50
+[2026-08-30 22:38:44] target4/train: 892/1024 T=137
+[2026-08-30 22:38:44] target4/train: 893/1024 T=83
+[2026-08-30 22:38:44] target4/train: 894/1024 T=43
+[2026-08-30 22:38:45] target4/train: 895/1024 T=73
+[2026-08-30 22:38:45] target4/train: 896/1024 T=193
+[2026-08-30 22:38:45] target4/train: 897/1024 T=231
+[2026-08-30 22:38:46] target4/train: 898/1024 T=54
+[2026-08-30 22:38:46] target4/train: 899/1024 T=100
+[2026-08-30 22:38:46] target4/train: 900/1024 T=133
+[2026-08-30 22:38:46] target4/train: 901/1024 T=101
+[2026-08-30 22:38:47] target4/train: 902/1024 T=77
+[2026-08-30 22:38:47] target4/train: 903/1024 T=49
+[2026-08-30 22:38:47] target4/train: 904/1024 T=93
+[2026-08-30 22:38:47] target4/train: 905/1024 T=130
+[2026-08-30 22:38:48] target4/train: 906/1024 T=384
+[2026-08-30 22:38:48] target4/train: 907/1024 T=93
+[2026-08-30 22:38:49] target4/train: 908/1024 T=127
+[2026-08-30 22:38:49] target4/train: 909/1024 T=63
+[2026-08-30 22:38:49] target4/train: 910/1024 T=200
+[2026-08-30 22:38:49] target4/train: 911/1024 T=99
+[2026-08-30 22:38:50] target4/train: 912/1024 T=174
+[2026-08-30 22:38:50] target4/train: 913/1024 T=164
+[2026-08-30 22:38:50] target4/train: 914/1024 T=325
+[2026-08-30 22:38:51] target4/train: 915/1024 T=93
+[2026-08-30 22:38:51] target4/train: 916/1024 T=43
+[2026-08-30 22:38:51] target4/train: 917/1024 T=107
+[2026-08-30 22:38:52] target4/train: 918/1024 T=156
+[2026-08-30 22:38:52] target4/train: 919/1024 T=88
+[2026-08-30 22:38:52] target4/train: 920/1024 T=83
+[2026-08-30 22:38:52] target4/train: 921/1024 T=40
+[2026-08-30 22:38:53] target4/train: 922/1024 T=163
+[2026-08-30 22:38:53] target4/train: 923/1024 T=63
+[2026-08-30 22:38:53] target4/train: 924/1024 T=210
+[2026-08-30 22:38:53] target4/train: 925/1024 T=156
+[2026-08-30 22:38:54] target4/train: 926/1024 T=122
+[2026-08-30 22:38:54] target4/train: 927/1024 T=103
+[2026-08-30 22:38:54] target4/train: 928/1024 T=208
+[2026-08-30 22:38:55] target4/train: 929/1024 T=71
+[2026-08-30 22:38:55] target4/train: 930/1024 T=128
+[2026-08-30 22:38:55] target4/train: 931/1024 T=130
+[2026-08-30 22:38:55] target4/train: 932/1024 T=62
+[2026-08-30 22:38:56] target4/train: 933/1024 T=82
+[2026-08-30 22:38:56] target4/train: 934/1024 T=223
+[2026-08-30 22:38:56] target4/train: 935/1024 T=45
+[2026-08-30 22:38:57] target4/train: 936/1024 T=73
+[2026-08-30 22:38:57] target4/train: 937/1024 T=53
+[2026-08-30 22:38:57] target4/train: 938/1024 T=71
+[2026-08-30 22:38:57] target4/train: 939/1024 T=83
+[2026-08-30 22:38:57] target4/train: 940/1024 T=42
+[2026-08-30 22:38:58] target4/train: 941/1024 T=74
+[2026-08-30 22:38:58] target4/train: 942/1024 T=159
+[2026-08-30 22:38:58] target4/train: 943/1024 T=74
+[2026-08-30 22:38:59] target4/train: 944/1024 T=119
+[2026-08-30 22:38:59] target4/train: 945/1024 T=66
+[2026-08-30 22:38:59] target4/train: 946/1024 T=80
+[2026-08-30 22:38:59] target4/train: 947/1024 T=142
+[2026-08-30 22:39:00] target4/train: 948/1024 T=450
+[2026-08-30 22:39:00] target4/train: 949/1024 T=87
+[2026-08-30 22:39:00] target4/train: 950/1024 T=20
+[2026-08-30 22:39:01] target4/train: 951/1024 T=78
+[2026-08-30 22:39:01] target4/train: 952/1024 T=60
+[2026-08-30 22:39:01] target4/train: 953/1024 T=93
+[2026-08-30 22:39:02] target4/train: 954/1024 T=161
+[2026-08-30 22:39:02] target4/train: 955/1024 T=174
+[2026-08-30 22:39:02] target4/train: 956/1024 T=198
+[2026-08-30 22:39:03] target4/train: 957/1024 T=83
+[2026-08-30 22:39:03] target4/train: 958/1024 T=87
+[2026-08-30 22:39:03] target4/train: 959/1024 T=44
+[2026-08-30 22:39:03] target4/train: 960/1024 T=223
+[2026-08-30 22:39:04] target4/train: 961/1024 T=70
+[2026-08-30 22:39:04] target4/train: 962/1024 T=56
+[2026-08-30 22:39:04] target4/train: 963/1024 T=46
+[2026-08-30 22:39:05] target4/train: 964/1024 T=419
+[2026-08-30 22:39:05] target4/train: 965/1024 T=54
+[2026-08-30 22:39:05] target4/train: 966/1024 T=182
+[2026-08-30 22:39:05] target4/train: 967/1024 T=71
+[2026-08-30 22:39:06] target4/train: 968/1024 T=54
+[2026-08-30 22:39:06] target4/train: 969/1024 T=53
+[2026-08-30 22:39:06] target4/train: 970/1024 T=65
+[2026-08-30 22:39:06] target4/train: 971/1024 T=83
+[2026-08-30 22:39:07] target4/train: 972/1024 T=81
+[2026-08-30 22:39:07] target4/train: 973/1024 T=119
+[2026-08-30 22:39:07] target4/train: 974/1024 T=175
+[2026-08-30 22:39:08] target4/train: 975/1024 T=205
+[2026-08-30 22:39:08] target4/train: 976/1024 T=178
+[2026-08-30 22:39:08] target4/train: 977/1024 T=109
+[2026-08-30 22:39:08] target4/train: 978/1024 T=91
+[2026-08-30 22:39:09] target4/train: 979/1024 T=85
+[2026-08-30 22:39:09] target4/train: 980/1024 T=150
+[2026-08-30 22:39:09] target4/train: 981/1024 T=165
+[2026-08-30 22:39:10] target4/train: 982/1024 T=172
+[2026-08-30 22:39:10] target4/train: 983/1024 T=73
+[2026-08-30 22:39:10] target4/train: 984/1024 T=56
+[2026-08-30 22:39:10] target4/train: 985/1024 T=171
+[2026-08-30 22:39:10] target4/train: 986/1024 T=114
+[2026-08-30 22:39:10] target4/train: 987/1024 T=72
+[2026-08-30 22:39:11] target4/train: 988/1024 T=93
+[2026-08-30 22:39:11] target4/train: 989/1024 T=65
+[2026-08-30 22:39:11] target4/train: 990/1024 T=206
+[2026-08-30 22:39:11] target4/train: 991/1024 T=130
+[2026-08-30 22:39:12] target4/train: 992/1024 T=149
+[2026-08-30 22:39:12] target4/train: 993/1024 T=68
+[2026-08-30 22:39:12] target4/train: 994/1024 T=136
+[2026-08-30 22:39:13] target4/train: 995/1024 T=203
+[2026-08-30 22:39:13] target4/train: 996/1024 T=112
+[2026-08-30 22:39:13] target4/train: 997/1024 T=77
+[2026-08-30 22:39:13] target4/train: 998/1024 T=102
+[2026-08-30 22:39:14] target4/train: 999/1024 T=77
+[2026-08-30 22:39:14] target4/train: 1000/1024 T=49
+[2026-08-30 22:39:14] target4/train: 1001/1024 T=143
+[2026-08-30 22:39:14] target4/train: 1002/1024 T=211
+[2026-08-30 22:39:15] target4/train: 1003/1024 T=55
+[2026-08-30 22:39:15] target4/train: 1004/1024 T=201
+[2026-08-30 22:39:15] target4/train: 1005/1024 T=143
+[2026-08-30 22:39:16] target4/train: 1006/1024 T=113
+[2026-08-30 22:39:16] target4/train: 1007/1024 T=117
+[2026-08-30 22:39:16] target4/train: 1008/1024 T=107
+[2026-08-30 22:39:16] target4/train: 1009/1024 T=249
+[2026-08-30 22:39:17] target4/train: 1010/1024 T=105
+[2026-08-30 22:39:17] target4/train: 1011/1024 T=57
+[2026-08-30 22:39:17] target4/train: 1012/1024 T=83
+[2026-08-30 22:39:17] target4/train: 1013/1024 T=50
+[2026-08-30 22:39:18] target4/train: 1014/1024 T=57
+[2026-08-30 22:39:18] target4/train: 1015/1024 T=114
+[2026-08-30 22:39:18] target4/train: 1016/1024 T=162
+[2026-08-30 22:39:19] target4/train: 1017/1024 T=205
+[2026-08-30 22:39:19] target4/train: 1018/1024 T=70
+[2026-08-30 22:39:19] target4/train: 1019/1024 T=261
+[2026-08-30 22:39:20] target4/train: 1020/1024 T=271
+[2026-08-30 22:39:20] target4/train: 1021/1024 T=196
+[2026-08-30 22:39:20] target4/train: 1022/1024 T=296
+[2026-08-30 22:39:21] target4/train: 1023/1024 T=101
+[2026-08-30 22:39:21] target4/train: 1024/1024 T=44
+[2026-08-30 22:39:23] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json cache --split train --family both
+[2026-08-30 22:39:23] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json cache --split validation --family both
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  60%|██████    | 188/311 [00:00<00:00, 1866.31it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1875.68it/s]
+[2026-08-30 22:39:33] source17/validation: resume skip 1/128
+[2026-08-30 22:39:33] source17/validation: resume skip 2/128
+[2026-08-30 22:39:33] source17/validation: resume skip 3/128
+[2026-08-30 22:39:33] source17/validation: resume skip 4/128
+[2026-08-30 22:39:33] source17/validation: resume skip 5/128
+[2026-08-30 22:39:33] source17/validation: resume skip 6/128
+[2026-08-30 22:39:33] source17/validation: resume skip 7/128
+[2026-08-30 22:39:33] source17/validation: resume skip 8/128
+[2026-08-30 22:39:33] source17/validation: resume skip 9/128
+[2026-08-30 22:39:33] source17/validation: resume skip 10/128
+[2026-08-30 22:39:33] source17/validation: resume skip 11/128
+[2026-08-30 22:39:33] source17/validation: resume skip 12/128
+[2026-08-30 22:39:33] source17/validation: resume skip 13/128
+[2026-08-30 22:39:33] source17/validation: resume skip 14/128
+[2026-08-30 22:39:33] source17/validation: resume skip 15/128
+[2026-08-30 22:39:33] source17/validation: resume skip 16/128
+[2026-08-30 22:39:33] source17/validation: resume skip 17/128
+[2026-08-30 22:39:33] source17/validation: resume skip 18/128
+[2026-08-30 22:39:33] source17/validation: resume skip 19/128
+[2026-08-30 22:39:33] source17/validation: resume skip 20/128
+[2026-08-30 22:39:33] source17/validation: resume skip 21/128
+[2026-08-30 22:39:33] source17/validation: resume skip 22/128
+[2026-08-30 22:39:33] source17/validation: resume skip 23/128
+[2026-08-30 22:39:33] source17/validation: resume skip 24/128
+[2026-08-30 22:39:33] source17/validation: resume skip 25/128
+[2026-08-30 22:39:33] source17/validation: resume skip 26/128
+[2026-08-30 22:39:33] source17/validation: resume skip 27/128
+[2026-08-30 22:39:33] source17/validation: resume skip 28/128
+[2026-08-30 22:39:33] source17/validation: resume skip 29/128
+[2026-08-30 22:39:33] source17/validation: resume skip 30/128
+[2026-08-30 22:39:33] source17/validation: resume skip 31/128
+[2026-08-30 22:39:33] source17/validation: resume skip 32/128
+[2026-08-30 22:39:35] source17/validation: 33/128 T=223
+[2026-08-30 22:39:35] source17/validation: 34/128 T=31
+[2026-08-30 22:39:35] source17/validation: 35/128 T=185
+[2026-08-30 22:39:35] source17/validation: 36/128 T=103
+[2026-08-30 22:39:35] source17/validation: 37/128 T=63
+[2026-08-30 22:39:35] source17/validation: 38/128 T=87
+[2026-08-30 22:39:36] source17/validation: 39/128 T=126
+[2026-08-30 22:39:36] source17/validation: 40/128 T=122
+[2026-08-30 22:39:36] source17/validation: 41/128 T=53
+[2026-08-30 22:39:36] source17/validation: 42/128 T=111
+[2026-08-30 22:39:36] source17/validation: 43/128 T=211
+[2026-08-30 22:39:36] source17/validation: 44/128 T=59
+[2026-08-30 22:39:36] source17/validation: 45/128 T=77
+[2026-08-30 22:39:37] source17/validation: 46/128 T=60
+[2026-08-30 22:39:37] source17/validation: 47/128 T=79
+[2026-08-30 22:39:37] source17/validation: 48/128 T=111
+[2026-08-30 22:39:37] source17/validation: 49/128 T=146
+[2026-08-30 22:39:37] source17/validation: 50/128 T=93
+[2026-08-30 22:39:37] source17/validation: 51/128 T=75
+[2026-08-30 22:39:37] source17/validation: 52/128 T=59
+[2026-08-30 22:39:38] source17/validation: 53/128 T=117
+[2026-08-30 22:39:38] source17/validation: 54/128 T=215
+[2026-08-30 22:39:38] source17/validation: 55/128 T=75
+[2026-08-30 22:39:38] source17/validation: 56/128 T=41
+[2026-08-30 22:39:38] source17/validation: 57/128 T=189
+[2026-08-30 22:39:38] source17/validation: 58/128 T=158
+[2026-08-30 22:39:39] source17/validation: 59/128 T=140
+[2026-08-30 22:39:39] source17/validation: 60/128 T=49
+[2026-08-30 22:39:39] source17/validation: 61/128 T=134
+[2026-08-30 22:39:39] source17/validation: 62/128 T=114
+[2026-08-30 22:39:39] source17/validation: 63/128 T=181
+[2026-08-30 22:39:39] source17/validation: 64/128 T=44
+[2026-08-30 22:39:39] source17/validation: 65/128 T=90
+[2026-08-30 22:39:40] source17/validation: 66/128 T=81
+[2026-08-30 22:39:40] source17/validation: 67/128 T=132
+[2026-08-30 22:39:40] source17/validation: 68/128 T=83
+[2026-08-30 22:39:40] source17/validation: 69/128 T=52
+[2026-08-30 22:39:40] source17/validation: 70/128 T=109
+[2026-08-30 22:39:40] source17/validation: 71/128 T=120
+[2026-08-30 22:39:40] source17/validation: 72/128 T=183
+[2026-08-30 22:39:41] source17/validation: 73/128 T=143
+[2026-08-30 22:39:41] source17/validation: 74/128 T=50
+[2026-08-30 22:39:41] source17/validation: 75/128 T=124
+[2026-08-30 22:39:41] source17/validation: 76/128 T=195
+[2026-08-30 22:39:41] source17/validation: 77/128 T=57
+[2026-08-30 22:39:41] source17/validation: 78/128 T=91
+[2026-08-30 22:39:41] source17/validation: 79/128 T=125
+[2026-08-30 22:39:42] source17/validation: 80/128 T=54
+[2026-08-30 22:39:42] source17/validation: 81/128 T=130
+[2026-08-30 22:39:42] source17/validation: 82/128 T=88
+[2026-08-30 22:39:42] source17/validation: 83/128 T=90
+[2026-08-30 22:39:42] source17/validation: 84/128 T=48
+[2026-08-30 22:39:42] source17/validation: 85/128 T=190
+[2026-08-30 22:39:42] source17/validation: 86/128 T=73
+[2026-08-30 22:39:43] source17/validation: 87/128 T=58
+[2026-08-30 22:39:43] source17/validation: 88/128 T=50
+[2026-08-30 22:39:43] source17/validation: 89/128 T=171
+[2026-08-30 22:39:43] source17/validation: 90/128 T=188
+[2026-08-30 22:39:43] source17/validation: 91/128 T=44
+[2026-08-30 22:39:43] source17/validation: 92/128 T=59
+[2026-08-30 22:39:43] source17/validation: 93/128 T=195
+[2026-08-30 22:39:44] source17/validation: 94/128 T=149
+[2026-08-30 22:39:44] source17/validation: 95/128 T=88
+[2026-08-30 22:39:44] source17/validation: 96/128 T=183
+[2026-08-30 22:39:44] source17/validation: 97/128 T=85
+[2026-08-30 22:39:44] source17/validation: 98/128 T=67
+[2026-08-30 22:39:44] source17/validation: 99/128 T=140
+[2026-08-30 22:39:44] source17/validation: 100/128 T=103
+[2026-08-30 22:39:45] source17/validation: 101/128 T=176
+[2026-08-30 22:39:45] source17/validation: 102/128 T=93
+[2026-08-30 22:39:45] source17/validation: 103/128 T=174
+[2026-08-30 22:39:45] source17/validation: 104/128 T=106
+[2026-08-30 22:39:45] source17/validation: 105/128 T=370
+[2026-08-30 22:39:45] source17/validation: 106/128 T=72
+[2026-08-30 22:39:46] source17/validation: 107/128 T=87
+[2026-08-30 22:39:46] source17/validation: 108/128 T=234
+[2026-08-30 22:39:46] source17/validation: 109/128 T=71
+[2026-08-30 22:39:46] source17/validation: 110/128 T=334
+[2026-08-30 22:39:46] source17/validation: 111/128 T=81
+[2026-08-30 22:39:46] source17/validation: 112/128 T=140
+[2026-08-30 22:39:47] source17/validation: 113/128 T=144
+[2026-08-30 22:39:47] source17/validation: 114/128 T=83
+[2026-08-30 22:39:47] source17/validation: 115/128 T=71
+[2026-08-30 22:39:47] source17/validation: 116/128 T=44
+[2026-08-30 22:39:47] source17/validation: 117/128 T=102
+[2026-08-30 22:39:47] source17/validation: 118/128 T=57
+[2026-08-30 22:39:47] source17/validation: 119/128 T=193
+[2026-08-30 22:39:48] source17/validation: 120/128 T=93
+[2026-08-30 22:39:48] source17/validation: 121/128 T=212
+[2026-08-30 22:39:48] source17/validation: 122/128 T=61
+[2026-08-30 22:39:48] source17/validation: 123/128 T=127
+[2026-08-30 22:39:48] source17/validation: 124/128 T=326
+[2026-08-30 22:39:48] source17/validation: 125/128 T=48
+[2026-08-30 22:39:49] source17/validation: 126/128 T=99
+[2026-08-30 22:39:49] source17/validation: 127/128 T=207
+[2026-08-30 22:39:49] source17/validation: 128/128 T=93
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1068.72it/s]Loading weights:  56%|█████▋    | 224/398 [00:00<00:00, 1089.76it/s]Loading weights:  84%|████████▍ | 334/398 [00:00<00:00, 1050.87it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1077.25it/s]
+[2026-08-30 22:39:53] target4/validation: resume skip 1/128
+[2026-08-30 22:39:53] target4/validation: resume skip 2/128
+[2026-08-30 22:39:53] target4/validation: resume skip 3/128
+[2026-08-30 22:39:53] target4/validation: resume skip 4/128
+[2026-08-30 22:39:53] target4/validation: resume skip 5/128
+[2026-08-30 22:39:53] target4/validation: resume skip 6/128
+[2026-08-30 22:39:53] target4/validation: resume skip 7/128
+[2026-08-30 22:39:53] target4/validation: resume skip 8/128
+[2026-08-30 22:39:53] target4/validation: resume skip 9/128
+[2026-08-30 22:39:53] target4/validation: resume skip 10/128
+[2026-08-30 22:39:53] target4/validation: resume skip 11/128
+[2026-08-30 22:39:53] target4/validation: resume skip 12/128
+[2026-08-30 22:39:53] target4/validation: resume skip 13/128
+[2026-08-30 22:39:53] target4/validation: resume skip 14/128
+[2026-08-30 22:39:53] target4/validation: resume skip 15/128
+[2026-08-30 22:39:53] target4/validation: resume skip 16/128
+[2026-08-30 22:39:53] target4/validation: resume skip 17/128
+[2026-08-30 22:39:53] target4/validation: resume skip 18/128
+[2026-08-30 22:39:53] target4/validation: resume skip 19/128
+[2026-08-30 22:39:53] target4/validation: resume skip 20/128
+[2026-08-30 22:39:53] target4/validation: resume skip 21/128
+[2026-08-30 22:39:53] target4/validation: resume skip 22/128
+[2026-08-30 22:39:53] target4/validation: resume skip 23/128
+[2026-08-30 22:39:53] target4/validation: resume skip 24/128
+[2026-08-30 22:39:53] target4/validation: resume skip 25/128
+[2026-08-30 22:39:53] target4/validation: resume skip 26/128
+[2026-08-30 22:39:53] target4/validation: resume skip 27/128
+[2026-08-30 22:39:53] target4/validation: resume skip 28/128
+[2026-08-30 22:39:53] target4/validation: resume skip 29/128
+[2026-08-30 22:39:53] target4/validation: resume skip 30/128
+[2026-08-30 22:39:53] target4/validation: resume skip 31/128
+[2026-08-30 22:39:53] target4/validation: resume skip 32/128
+[2026-08-30 22:39:53] target4/validation: 33/128 T=223
+[2026-08-30 22:39:53] target4/validation: 34/128 T=31
+[2026-08-30 22:39:54] target4/validation: 35/128 T=185
+[2026-08-30 22:39:54] target4/validation: 36/128 T=103
+[2026-08-30 22:39:54] target4/validation: 37/128 T=63
+[2026-08-30 22:39:54] target4/validation: 38/128 T=87
+[2026-08-30 22:39:55] target4/validation: 39/128 T=126
+[2026-08-30 22:39:55] target4/validation: 40/128 T=122
+[2026-08-30 22:39:55] target4/validation: 41/128 T=53
+[2026-08-30 22:39:55] target4/validation: 42/128 T=111
+[2026-08-30 22:39:56] target4/validation: 43/128 T=211
+[2026-08-30 22:39:56] target4/validation: 44/128 T=59
+[2026-08-30 22:39:56] target4/validation: 45/128 T=77
+[2026-08-30 22:39:56] target4/validation: 46/128 T=60
+[2026-08-30 22:39:57] target4/validation: 47/128 T=79
+[2026-08-30 22:39:57] target4/validation: 48/128 T=111
+[2026-08-30 22:39:57] target4/validation: 49/128 T=146
+[2026-08-30 22:39:58] target4/validation: 50/128 T=93
+[2026-08-30 22:39:58] target4/validation: 51/128 T=75
+[2026-08-30 22:39:58] target4/validation: 52/128 T=59
+[2026-08-30 22:39:58] target4/validation: 53/128 T=117
+[2026-08-30 22:39:59] target4/validation: 54/128 T=215
+[2026-08-30 22:39:59] target4/validation: 55/128 T=75
+[2026-08-30 22:39:59] target4/validation: 56/128 T=41
+[2026-08-30 22:40:00] target4/validation: 57/128 T=189
+[2026-08-30 22:40:00] target4/validation: 58/128 T=158
+[2026-08-30 22:40:00] target4/validation: 59/128 T=140
+[2026-08-30 22:40:00] target4/validation: 60/128 T=49
+[2026-08-30 22:40:00] target4/validation: 61/128 T=134
+[2026-08-30 22:40:01] target4/validation: 62/128 T=114
+[2026-08-30 22:40:01] target4/validation: 63/128 T=181
+[2026-08-30 22:40:01] target4/validation: 64/128 T=44
+[2026-08-30 22:40:01] target4/validation: 65/128 T=90
+[2026-08-30 22:40:01] target4/validation: 66/128 T=81
+[2026-08-30 22:40:02] target4/validation: 67/128 T=132
+[2026-08-30 22:40:02] target4/validation: 68/128 T=83
+[2026-08-30 22:40:02] target4/validation: 69/128 T=52
+[2026-08-30 22:40:02] target4/validation: 70/128 T=109
+[2026-08-30 22:40:03] target4/validation: 71/128 T=120
+[2026-08-30 22:40:03] target4/validation: 72/128 T=183
+[2026-08-30 22:40:03] target4/validation: 73/128 T=143
+[2026-08-30 22:40:04] target4/validation: 74/128 T=50
+[2026-08-30 22:40:04] target4/validation: 75/128 T=124
+[2026-08-30 22:40:04] target4/validation: 76/128 T=195
+[2026-08-30 22:40:04] target4/validation: 77/128 T=57
+[2026-08-30 22:40:05] target4/validation: 78/128 T=91
+[2026-08-30 22:40:05] target4/validation: 79/128 T=125
+[2026-08-30 22:40:05] target4/validation: 80/128 T=54
+[2026-08-30 22:40:05] target4/validation: 81/128 T=130
+[2026-08-30 22:40:06] target4/validation: 82/128 T=88
+[2026-08-30 22:40:06] target4/validation: 83/128 T=90
+[2026-08-30 22:40:06] target4/validation: 84/128 T=48
+[2026-08-30 22:40:07] target4/validation: 85/128 T=190
+[2026-08-30 22:40:07] target4/validation: 86/128 T=73
+[2026-08-30 22:40:07] target4/validation: 87/128 T=58
+[2026-08-30 22:40:07] target4/validation: 88/128 T=50
+[2026-08-30 22:40:08] target4/validation: 89/128 T=171
+[2026-08-30 22:40:08] target4/validation: 90/128 T=188
+[2026-08-30 22:40:08] target4/validation: 91/128 T=44
+[2026-08-30 22:40:08] target4/validation: 92/128 T=59
+[2026-08-30 22:40:09] target4/validation: 93/128 T=195
+[2026-08-30 22:40:09] target4/validation: 94/128 T=149
+[2026-08-30 22:40:09] target4/validation: 95/128 T=88
+[2026-08-30 22:40:10] target4/validation: 96/128 T=183
+[2026-08-30 22:40:10] target4/validation: 97/128 T=85
+[2026-08-30 22:40:10] target4/validation: 98/128 T=67
+[2026-08-30 22:40:10] target4/validation: 99/128 T=140
+[2026-08-30 22:40:11] target4/validation: 100/128 T=103
+[2026-08-30 22:40:11] target4/validation: 101/128 T=176
+[2026-08-30 22:40:11] target4/validation: 102/128 T=93
+[2026-08-30 22:40:12] target4/validation: 103/128 T=174
+[2026-08-30 22:40:12] target4/validation: 104/128 T=106
+[2026-08-30 22:40:12] target4/validation: 105/128 T=370
+[2026-08-30 22:40:13] target4/validation: 106/128 T=72
+[2026-08-30 22:40:13] target4/validation: 107/128 T=87
+[2026-08-30 22:40:13] target4/validation: 108/128 T=234
+[2026-08-30 22:40:14] target4/validation: 109/128 T=71
+[2026-08-30 22:40:14] target4/validation: 110/128 T=334
+[2026-08-30 22:40:14] target4/validation: 111/128 T=81
+[2026-08-30 22:40:15] target4/validation: 112/128 T=140
+[2026-08-30 22:40:15] target4/validation: 113/128 T=144
+[2026-08-30 22:40:15] target4/validation: 114/128 T=83
+[2026-08-30 22:40:16] target4/validation: 115/128 T=71
+[2026-08-30 22:40:16] target4/validation: 116/128 T=44
+[2026-08-30 22:40:16] target4/validation: 117/128 T=102
+[2026-08-30 22:40:16] target4/validation: 118/128 T=57
+[2026-08-30 22:40:17] target4/validation: 119/128 T=193
+[2026-08-30 22:40:17] target4/validation: 120/128 T=93
+[2026-08-30 22:40:17] target4/validation: 121/128 T=212
+[2026-08-30 22:40:17] target4/validation: 122/128 T=61
+[2026-08-30 22:40:18] target4/validation: 123/128 T=127
+[2026-08-30 22:40:18] target4/validation: 124/128 T=326
+[2026-08-30 22:40:18] target4/validation: 125/128 T=48
+[2026-08-30 22:40:19] target4/validation: 126/128 T=99
+[2026-08-30 22:40:19] target4/validation: 127/128 T=207
+[2026-08-30 22:40:19] target4/validation: 128/128 T=93
+[2026-08-30 22:40:21] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json cache --split validation --family both
+[2026-08-30 22:40:21] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json cache --split test --family both
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  58%|█████▊    | 181/311 [00:00<00:00, 1793.03it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1821.91it/s]
+[2026-08-30 22:40:32] source17/test: resume skip 1/128
+[2026-08-30 22:40:32] source17/test: resume skip 2/128
+[2026-08-30 22:40:32] source17/test: resume skip 3/128
+[2026-08-30 22:40:32] source17/test: resume skip 4/128
+[2026-08-30 22:40:32] source17/test: resume skip 5/128
+[2026-08-30 22:40:32] source17/test: resume skip 6/128
+[2026-08-30 22:40:32] source17/test: resume skip 7/128
+[2026-08-30 22:40:32] source17/test: resume skip 8/128
+[2026-08-30 22:40:32] source17/test: resume skip 9/128
+[2026-08-30 22:40:32] source17/test: resume skip 10/128
+[2026-08-30 22:40:32] source17/test: resume skip 11/128
+[2026-08-30 22:40:32] source17/test: resume skip 12/128
+[2026-08-30 22:40:32] source17/test: resume skip 13/128
+[2026-08-30 22:40:32] source17/test: resume skip 14/128
+[2026-08-30 22:40:32] source17/test: resume skip 15/128
+[2026-08-30 22:40:32] source17/test: resume skip 16/128
+[2026-08-30 22:40:32] source17/test: resume skip 17/128
+[2026-08-30 22:40:32] source17/test: resume skip 18/128
+[2026-08-30 22:40:32] source17/test: resume skip 19/128
+[2026-08-30 22:40:32] source17/test: resume skip 20/128
+[2026-08-30 22:40:32] source17/test: resume skip 21/128
+[2026-08-30 22:40:32] source17/test: resume skip 22/128
+[2026-08-30 22:40:32] source17/test: resume skip 23/128
+[2026-08-30 22:40:32] source17/test: resume skip 24/128
+[2026-08-30 22:40:32] source17/test: resume skip 25/128
+[2026-08-30 22:40:32] source17/test: resume skip 26/128
+[2026-08-30 22:40:32] source17/test: resume skip 27/128
+[2026-08-30 22:40:32] source17/test: resume skip 28/128
+[2026-08-30 22:40:32] source17/test: resume skip 29/128
+[2026-08-30 22:40:32] source17/test: resume skip 30/128
+[2026-08-30 22:40:32] source17/test: resume skip 31/128
+[2026-08-30 22:40:32] source17/test: resume skip 32/128
+[2026-08-30 22:40:32] source17/test: resume skip 33/128
+[2026-08-30 22:40:32] source17/test: resume skip 34/128
+[2026-08-30 22:40:32] source17/test: resume skip 35/128
+[2026-08-30 22:40:32] source17/test: resume skip 36/128
+[2026-08-30 22:40:32] source17/test: resume skip 37/128
+[2026-08-30 22:40:32] source17/test: resume skip 38/128
+[2026-08-30 22:40:32] source17/test: resume skip 39/128
+[2026-08-30 22:40:32] source17/test: resume skip 40/128
+[2026-08-30 22:40:32] source17/test: resume skip 41/128
+[2026-08-30 22:40:32] source17/test: resume skip 42/128
+[2026-08-30 22:40:32] source17/test: resume skip 43/128
+[2026-08-30 22:40:32] source17/test: resume skip 44/128
+[2026-08-30 22:40:32] source17/test: resume skip 45/128
+[2026-08-30 22:40:32] source17/test: resume skip 46/128
+[2026-08-30 22:40:32] source17/test: resume skip 47/128
+[2026-08-30 22:40:32] source17/test: resume skip 48/128
+[2026-08-30 22:40:32] source17/test: resume skip 49/128
+[2026-08-30 22:40:32] source17/test: resume skip 50/128
+[2026-08-30 22:40:32] source17/test: resume skip 51/128
+[2026-08-30 22:40:32] source17/test: resume skip 52/128
+[2026-08-30 22:40:32] source17/test: resume skip 53/128
+[2026-08-30 22:40:32] source17/test: resume skip 54/128
+[2026-08-30 22:40:32] source17/test: resume skip 55/128
+[2026-08-30 22:40:32] source17/test: resume skip 56/128
+[2026-08-30 22:40:32] source17/test: resume skip 57/128
+[2026-08-30 22:40:32] source17/test: resume skip 58/128
+[2026-08-30 22:40:32] source17/test: resume skip 59/128
+[2026-08-30 22:40:32] source17/test: resume skip 60/128
+[2026-08-30 22:40:32] source17/test: resume skip 61/128
+[2026-08-30 22:40:32] source17/test: resume skip 62/128
+[2026-08-30 22:40:32] source17/test: resume skip 63/128
+[2026-08-30 22:40:32] source17/test: resume skip 64/128
+[2026-08-30 22:40:32] source17/test: resume skip 65/128
+[2026-08-30 22:40:32] source17/test: resume skip 66/128
+[2026-08-30 22:40:32] source17/test: resume skip 67/128
+[2026-08-30 22:40:32] source17/test: resume skip 68/128
+[2026-08-30 22:40:32] source17/test: resume skip 69/128
+[2026-08-30 22:40:32] source17/test: resume skip 70/128
+[2026-08-30 22:40:32] source17/test: resume skip 71/128
+[2026-08-30 22:40:32] source17/test: resume skip 72/128
+[2026-08-30 22:40:32] source17/test: resume skip 73/128
+[2026-08-30 22:40:32] source17/test: resume skip 74/128
+[2026-08-30 22:40:32] source17/test: resume skip 75/128
+[2026-08-30 22:40:32] source17/test: resume skip 76/128
+[2026-08-30 22:40:32] source17/test: resume skip 77/128
+[2026-08-30 22:40:32] source17/test: resume skip 78/128
+[2026-08-30 22:40:32] source17/test: resume skip 79/128
+[2026-08-30 22:40:32] source17/test: resume skip 80/128
+[2026-08-30 22:40:32] source17/test: resume skip 81/128
+[2026-08-30 22:40:32] source17/test: resume skip 82/128
+[2026-08-30 22:40:32] source17/test: resume skip 83/128
+[2026-08-30 22:40:32] source17/test: resume skip 84/128
+[2026-08-30 22:40:32] source17/test: resume skip 85/128
+[2026-08-30 22:40:32] source17/test: resume skip 86/128
+[2026-08-30 22:40:32] source17/test: resume skip 87/128
+[2026-08-30 22:40:32] source17/test: resume skip 88/128
+[2026-08-30 22:40:32] source17/test: resume skip 89/128
+[2026-08-30 22:40:32] source17/test: resume skip 90/128
+[2026-08-30 22:40:32] source17/test: resume skip 91/128
+[2026-08-30 22:40:32] source17/test: resume skip 92/128
+[2026-08-30 22:40:32] source17/test: resume skip 93/128
+[2026-08-30 22:40:32] source17/test: resume skip 94/128
+[2026-08-30 22:40:32] source17/test: resume skip 95/128
+[2026-08-30 22:40:32] source17/test: resume skip 96/128
+[2026-08-30 22:40:32] source17/test: resume skip 97/128
+[2026-08-30 22:40:32] source17/test: resume skip 98/128
+[2026-08-30 22:40:32] source17/test: resume skip 99/128
+[2026-08-30 22:40:32] source17/test: resume skip 100/128
+[2026-08-30 22:40:32] source17/test: resume skip 101/128
+[2026-08-30 22:40:32] source17/test: resume skip 102/128
+[2026-08-30 22:40:32] source17/test: resume skip 103/128
+[2026-08-30 22:40:32] source17/test: resume skip 104/128
+[2026-08-30 22:40:32] source17/test: resume skip 105/128
+[2026-08-30 22:40:32] source17/test: resume skip 106/128
+[2026-08-30 22:40:32] source17/test: resume skip 107/128
+[2026-08-30 22:40:32] source17/test: resume skip 108/128
+[2026-08-30 22:40:32] source17/test: resume skip 109/128
+[2026-08-30 22:40:32] source17/test: resume skip 110/128
+[2026-08-30 22:40:32] source17/test: resume skip 111/128
+[2026-08-30 22:40:32] source17/test: resume skip 112/128
+[2026-08-30 22:40:32] source17/test: resume skip 113/128
+[2026-08-30 22:40:32] source17/test: resume skip 114/128
+[2026-08-30 22:40:32] source17/test: resume skip 115/128
+[2026-08-30 22:40:32] source17/test: resume skip 116/128
+[2026-08-30 22:40:32] source17/test: resume skip 117/128
+[2026-08-30 22:40:32] source17/test: resume skip 118/128
+[2026-08-30 22:40:32] source17/test: resume skip 119/128
+[2026-08-30 22:40:32] source17/test: resume skip 120/128
+[2026-08-30 22:40:32] source17/test: resume skip 121/128
+[2026-08-30 22:40:32] source17/test: resume skip 122/128
+[2026-08-30 22:40:32] source17/test: resume skip 123/128
+[2026-08-30 22:40:32] source17/test: resume skip 124/128
+[2026-08-30 22:40:32] source17/test: resume skip 125/128
+[2026-08-30 22:40:32] source17/test: resume skip 126/128
+[2026-08-30 22:40:32] source17/test: resume skip 127/128
+[2026-08-30 22:40:32] source17/test: resume skip 128/128
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1129.35it/s]Loading weights:  57%|█████▋    | 226/398 [00:00<00:00, 1125.67it/s]Loading weights:  86%|████████▋ | 344/398 [00:00<00:00, 1133.91it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1138.07it/s]
+[2026-08-30 22:40:37] target4/test: resume skip 1/128
+[2026-08-30 22:40:37] target4/test: resume skip 2/128
+[2026-08-30 22:40:37] target4/test: resume skip 3/128
+[2026-08-30 22:40:37] target4/test: resume skip 4/128
+[2026-08-30 22:40:37] target4/test: resume skip 5/128
+[2026-08-30 22:40:37] target4/test: resume skip 6/128
+[2026-08-30 22:40:37] target4/test: resume skip 7/128
+[2026-08-30 22:40:37] target4/test: resume skip 8/128
+[2026-08-30 22:40:37] target4/test: resume skip 9/128
+[2026-08-30 22:40:37] target4/test: resume skip 10/128
+[2026-08-30 22:40:37] target4/test: resume skip 11/128
+[2026-08-30 22:40:37] target4/test: resume skip 12/128
+[2026-08-30 22:40:37] target4/test: resume skip 13/128
+[2026-08-30 22:40:37] target4/test: resume skip 14/128
+[2026-08-30 22:40:37] target4/test: resume skip 15/128
+[2026-08-30 22:40:37] target4/test: resume skip 16/128
+[2026-08-30 22:40:37] target4/test: resume skip 17/128
+[2026-08-30 22:40:37] target4/test: resume skip 18/128
+[2026-08-30 22:40:37] target4/test: resume skip 19/128
+[2026-08-30 22:40:37] target4/test: resume skip 20/128
+[2026-08-30 22:40:37] target4/test: resume skip 21/128
+[2026-08-30 22:40:37] target4/test: resume skip 22/128
+[2026-08-30 22:40:37] target4/test: resume skip 23/128
+[2026-08-30 22:40:37] target4/test: resume skip 24/128
+[2026-08-30 22:40:37] target4/test: resume skip 25/128
+[2026-08-30 22:40:37] target4/test: resume skip 26/128
+[2026-08-30 22:40:37] target4/test: resume skip 27/128
+[2026-08-30 22:40:37] target4/test: resume skip 28/128
+[2026-08-30 22:40:37] target4/test: resume skip 29/128
+[2026-08-30 22:40:37] target4/test: resume skip 30/128
+[2026-08-30 22:40:37] target4/test: resume skip 31/128
+[2026-08-30 22:40:37] target4/test: resume skip 32/128
+[2026-08-30 22:40:37] target4/test: resume skip 33/128
+[2026-08-30 22:40:37] target4/test: resume skip 34/128
+[2026-08-30 22:40:37] target4/test: resume skip 35/128
+[2026-08-30 22:40:37] target4/test: resume skip 36/128
+[2026-08-30 22:40:37] target4/test: resume skip 37/128
+[2026-08-30 22:40:37] target4/test: resume skip 38/128
+[2026-08-30 22:40:37] target4/test: resume skip 39/128
+[2026-08-30 22:40:37] target4/test: resume skip 40/128
+[2026-08-30 22:40:37] target4/test: resume skip 41/128
+[2026-08-30 22:40:37] target4/test: resume skip 42/128
+[2026-08-30 22:40:37] target4/test: resume skip 43/128
+[2026-08-30 22:40:37] target4/test: resume skip 44/128
+[2026-08-30 22:40:37] target4/test: resume skip 45/128
+[2026-08-30 22:40:37] target4/test: resume skip 46/128
+[2026-08-30 22:40:37] target4/test: resume skip 47/128
+[2026-08-30 22:40:37] target4/test: resume skip 48/128
+[2026-08-30 22:40:37] target4/test: resume skip 49/128
+[2026-08-30 22:40:37] target4/test: resume skip 50/128
+[2026-08-30 22:40:37] target4/test: resume skip 51/128
+[2026-08-30 22:40:37] target4/test: resume skip 52/128
+[2026-08-30 22:40:37] target4/test: resume skip 53/128
+[2026-08-30 22:40:37] target4/test: resume skip 54/128
+[2026-08-30 22:40:37] target4/test: resume skip 55/128
+[2026-08-30 22:40:37] target4/test: resume skip 56/128
+[2026-08-30 22:40:37] target4/test: resume skip 57/128
+[2026-08-30 22:40:37] target4/test: resume skip 58/128
+[2026-08-30 22:40:37] target4/test: resume skip 59/128
+[2026-08-30 22:40:37] target4/test: resume skip 60/128
+[2026-08-30 22:40:37] target4/test: resume skip 61/128
+[2026-08-30 22:40:37] target4/test: resume skip 62/128
+[2026-08-30 22:40:37] target4/test: resume skip 63/128
+[2026-08-30 22:40:37] target4/test: resume skip 64/128
+[2026-08-30 22:40:37] target4/test: resume skip 65/128
+[2026-08-30 22:40:37] target4/test: resume skip 66/128
+[2026-08-30 22:40:37] target4/test: resume skip 67/128
+[2026-08-30 22:40:37] target4/test: resume skip 68/128
+[2026-08-30 22:40:37] target4/test: resume skip 69/128
+[2026-08-30 22:40:37] target4/test: resume skip 70/128
+[2026-08-30 22:40:37] target4/test: resume skip 71/128
+[2026-08-30 22:40:37] target4/test: resume skip 72/128
+[2026-08-30 22:40:37] target4/test: resume skip 73/128
+[2026-08-30 22:40:37] target4/test: resume skip 74/128
+[2026-08-30 22:40:37] target4/test: resume skip 75/128
+[2026-08-30 22:40:37] target4/test: resume skip 76/128
+[2026-08-30 22:40:37] target4/test: resume skip 77/128
+[2026-08-30 22:40:37] target4/test: resume skip 78/128
+[2026-08-30 22:40:37] target4/test: resume skip 79/128
+[2026-08-30 22:40:37] target4/test: resume skip 80/128
+[2026-08-30 22:40:37] target4/test: resume skip 81/128
+[2026-08-30 22:40:37] target4/test: resume skip 82/128
+[2026-08-30 22:40:37] target4/test: resume skip 83/128
+[2026-08-30 22:40:37] target4/test: resume skip 84/128
+[2026-08-30 22:40:37] target4/test: resume skip 85/128
+[2026-08-30 22:40:37] target4/test: resume skip 86/128
+[2026-08-30 22:40:37] target4/test: resume skip 87/128
+[2026-08-30 22:40:37] target4/test: resume skip 88/128
+[2026-08-30 22:40:37] target4/test: resume skip 89/128
+[2026-08-30 22:40:37] target4/test: resume skip 90/128
+[2026-08-30 22:40:37] target4/test: resume skip 91/128
+[2026-08-30 22:40:37] target4/test: resume skip 92/128
+[2026-08-30 22:40:37] target4/test: resume skip 93/128
+[2026-08-30 22:40:37] target4/test: resume skip 94/128
+[2026-08-30 22:40:37] target4/test: resume skip 95/128
+[2026-08-30 22:40:37] target4/test: resume skip 96/128
+[2026-08-30 22:40:37] target4/test: resume skip 97/128
+[2026-08-30 22:40:37] target4/test: resume skip 98/128
+[2026-08-30 22:40:37] target4/test: resume skip 99/128
+[2026-08-30 22:40:37] target4/test: resume skip 100/128
+[2026-08-30 22:40:37] target4/test: resume skip 101/128
+[2026-08-30 22:40:37] target4/test: resume skip 102/128
+[2026-08-30 22:40:37] target4/test: resume skip 103/128
+[2026-08-30 22:40:37] target4/test: resume skip 104/128
+[2026-08-30 22:40:37] target4/test: resume skip 105/128
+[2026-08-30 22:40:37] target4/test: resume skip 106/128
+[2026-08-30 22:40:37] target4/test: resume skip 107/128
+[2026-08-30 22:40:37] target4/test: resume skip 108/128
+[2026-08-30 22:40:37] target4/test: resume skip 109/128
+[2026-08-30 22:40:37] target4/test: resume skip 110/128
+[2026-08-30 22:40:37] target4/test: resume skip 111/128
+[2026-08-30 22:40:37] target4/test: resume skip 112/128
+[2026-08-30 22:40:37] target4/test: resume skip 113/128
+[2026-08-30 22:40:37] target4/test: resume skip 114/128
+[2026-08-30 22:40:37] target4/test: resume skip 115/128
+[2026-08-30 22:40:37] target4/test: resume skip 116/128
+[2026-08-30 22:40:37] target4/test: resume skip 117/128
+[2026-08-30 22:40:37] target4/test: resume skip 118/128
+[2026-08-30 22:40:37] target4/test: resume skip 119/128
+[2026-08-30 22:40:37] target4/test: resume skip 120/128
+[2026-08-30 22:40:37] target4/test: resume skip 121/128
+[2026-08-30 22:40:37] target4/test: resume skip 122/128
+[2026-08-30 22:40:37] target4/test: resume skip 123/128
+[2026-08-30 22:40:37] target4/test: resume skip 124/128
+[2026-08-30 22:40:37] target4/test: resume skip 125/128
+[2026-08-30 22:40:37] target4/test: resume skip 126/128
+[2026-08-30 22:40:37] target4/test: resume skip 127/128
+[2026-08-30 22:40:37] target4/test: resume skip 128/128
+[2026-08-30 22:40:39] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json cache --split test --family both
+[2026-08-30 22:40:39] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json calibrate
+[2026-08-30 22:40:46] calibration source17: 1/128
+[2026-08-30 22:40:46] calibration source17: 2/128
+[2026-08-30 22:40:46] calibration source17: 3/128
+[2026-08-30 22:40:46] calibration source17: 4/128
+[2026-08-30 22:40:46] calibration source17: 5/128
+[2026-08-30 22:40:46] calibration source17: 6/128
+[2026-08-30 22:40:46] calibration source17: 7/128
+[2026-08-30 22:40:46] calibration source17: 8/128
+[2026-08-30 22:40:46] calibration source17: 9/128
+[2026-08-30 22:40:46] calibration source17: 10/128
+[2026-08-30 22:40:46] calibration source17: 11/128
+[2026-08-30 22:40:46] calibration source17: 12/128
+[2026-08-30 22:40:46] calibration source17: 13/128
+[2026-08-30 22:40:46] calibration source17: 14/128
+[2026-08-30 22:40:46] calibration source17: 15/128
+[2026-08-30 22:40:46] calibration source17: 16/128
+[2026-08-30 22:40:46] calibration source17: 17/128
+[2026-08-30 22:40:46] calibration source17: 18/128
+[2026-08-30 22:40:46] calibration source17: 19/128
+[2026-08-30 22:40:46] calibration source17: 20/128
+[2026-08-30 22:40:46] calibration source17: 21/128
+[2026-08-30 22:40:47] calibration source17: 22/128
+[2026-08-30 22:40:47] calibration source17: 23/128
+[2026-08-30 22:40:47] calibration source17: 24/128
+[2026-08-30 22:40:47] calibration source17: 25/128
+[2026-08-30 22:40:47] calibration source17: 26/128
+[2026-08-30 22:40:47] calibration source17: 27/128
+[2026-08-30 22:40:47] calibration source17: 28/128
+[2026-08-30 22:40:47] calibration source17: 29/128
+[2026-08-30 22:40:47] calibration source17: 30/128
+[2026-08-30 22:40:47] calibration source17: 31/128
+[2026-08-30 22:40:47] calibration source17: 32/128
+[2026-08-30 22:40:47] calibration source17: 33/128
+[2026-08-30 22:40:47] calibration source17: 34/128
+[2026-08-30 22:40:47] calibration source17: 35/128
+[2026-08-30 22:40:47] calibration source17: 36/128
+[2026-08-30 22:40:47] calibration source17: 37/128
+[2026-08-30 22:40:47] calibration source17: 38/128
+[2026-08-30 22:40:47] calibration source17: 39/128
+[2026-08-30 22:40:47] calibration source17: 40/128
+[2026-08-30 22:40:47] calibration source17: 41/128
+[2026-08-30 22:40:47] calibration source17: 42/128
+[2026-08-30 22:40:47] calibration source17: 43/128
+[2026-08-30 22:40:47] calibration source17: 44/128
+[2026-08-30 22:40:47] calibration source17: 45/128
+[2026-08-30 22:40:47] calibration source17: 46/128
+[2026-08-30 22:40:47] calibration source17: 47/128
+[2026-08-30 22:40:47] calibration source17: 48/128
+[2026-08-30 22:40:47] calibration source17: 49/128
+[2026-08-30 22:40:47] calibration source17: 50/128
+[2026-08-30 22:40:47] calibration source17: 51/128
+[2026-08-30 22:40:47] calibration source17: 52/128
+[2026-08-30 22:40:47] calibration source17: 53/128
+[2026-08-30 22:40:47] calibration source17: 54/128
+[2026-08-30 22:40:47] calibration source17: 55/128
+[2026-08-30 22:40:47] calibration source17: 56/128
+[2026-08-30 22:40:47] calibration source17: 57/128
+[2026-08-30 22:40:47] calibration source17: 58/128
+[2026-08-30 22:40:47] calibration source17: 59/128
+[2026-08-30 22:40:47] calibration source17: 60/128
+[2026-08-30 22:40:47] calibration source17: 61/128
+[2026-08-30 22:40:47] calibration source17: 62/128
+[2026-08-30 22:40:47] calibration source17: 63/128
+[2026-08-30 22:40:47] calibration source17: 64/128
+[2026-08-30 22:40:47] calibration source17: 65/128
+[2026-08-30 22:40:47] calibration source17: 66/128
+[2026-08-30 22:40:47] calibration source17: 67/128
+[2026-08-30 22:40:47] calibration source17: 68/128
+[2026-08-30 22:40:47] calibration source17: 69/128
+[2026-08-30 22:40:47] calibration source17: 70/128
+[2026-08-30 22:40:47] calibration source17: 71/128
+[2026-08-30 22:40:47] calibration source17: 72/128
+[2026-08-30 22:40:48] calibration source17: 73/128
+[2026-08-30 22:40:48] calibration source17: 74/128
+[2026-08-30 22:40:48] calibration source17: 75/128
+[2026-08-30 22:40:48] calibration source17: 76/128
+[2026-08-30 22:40:48] calibration source17: 77/128
+[2026-08-30 22:40:48] calibration source17: 78/128
+[2026-08-30 22:40:48] calibration source17: 79/128
+[2026-08-30 22:40:48] calibration source17: 80/128
+[2026-08-30 22:40:48] calibration source17: 81/128
+[2026-08-30 22:40:48] calibration source17: 82/128
+[2026-08-30 22:40:48] calibration source17: 83/128
+[2026-08-30 22:40:48] calibration source17: 84/128
+[2026-08-30 22:40:48] calibration source17: 85/128
+[2026-08-30 22:40:48] calibration source17: 86/128
+[2026-08-30 22:40:48] calibration source17: 87/128
+[2026-08-30 22:40:48] calibration source17: 88/128
+[2026-08-30 22:40:48] calibration source17: 89/128
+[2026-08-30 22:40:48] calibration source17: 90/128
+[2026-08-30 22:40:48] calibration source17: 91/128
+[2026-08-30 22:40:48] calibration source17: 92/128
+[2026-08-30 22:40:48] calibration source17: 93/128
+[2026-08-30 22:40:48] calibration source17: 94/128
+[2026-08-30 22:40:48] calibration source17: 95/128
+[2026-08-30 22:40:48] calibration source17: 96/128
+[2026-08-30 22:40:48] calibration source17: 97/128
+[2026-08-30 22:40:48] calibration source17: 98/128
+[2026-08-30 22:40:48] calibration source17: 99/128
+[2026-08-30 22:40:48] calibration source17: 100/128
+[2026-08-30 22:40:48] calibration source17: 101/128
+[2026-08-30 22:40:48] calibration source17: 102/128
+[2026-08-30 22:40:48] calibration source17: 103/128
+[2026-08-30 22:40:48] calibration source17: 104/128
+[2026-08-30 22:40:48] calibration source17: 105/128
+[2026-08-30 22:40:48] calibration source17: 106/128
+[2026-08-30 22:40:48] calibration source17: 107/128
+[2026-08-30 22:40:48] calibration source17: 108/128
+[2026-08-30 22:40:48] calibration source17: 109/128
+[2026-08-30 22:40:48] calibration source17: 110/128
+[2026-08-30 22:40:48] calibration source17: 111/128
+[2026-08-30 22:40:48] calibration source17: 112/128
+[2026-08-30 22:40:48] calibration source17: 113/128
+[2026-08-30 22:40:48] calibration source17: 114/128
+[2026-08-30 22:40:48] calibration source17: 115/128
+[2026-08-30 22:40:48] calibration source17: 116/128
+[2026-08-30 22:40:48] calibration source17: 117/128
+[2026-08-30 22:40:48] calibration source17: 118/128
+[2026-08-30 22:40:48] calibration source17: 119/128
+[2026-08-30 22:40:48] calibration source17: 120/128
+[2026-08-30 22:40:48] calibration source17: 121/128
+[2026-08-30 22:40:48] calibration source17: 122/128
+[2026-08-30 22:40:48] calibration source17: 123/128
+[2026-08-30 22:40:48] calibration source17: 124/128
+[2026-08-30 22:40:48] calibration source17: 125/128
+[2026-08-30 22:40:49] calibration source17: 126/128
+[2026-08-30 22:40:49] calibration source17: 127/128
+[2026-08-30 22:40:49] calibration source17: 128/128
+[2026-08-30 22:40:49] calibration target4: 1/128
+[2026-08-30 22:40:49] calibration target4: 2/128
+[2026-08-30 22:40:49] calibration target4: 3/128
+[2026-08-30 22:40:49] calibration target4: 4/128
+[2026-08-30 22:40:49] calibration target4: 5/128
+[2026-08-30 22:40:49] calibration target4: 6/128
+[2026-08-30 22:40:49] calibration target4: 7/128
+[2026-08-30 22:40:49] calibration target4: 8/128
+[2026-08-30 22:40:49] calibration target4: 9/128
+[2026-08-30 22:40:49] calibration target4: 10/128
+[2026-08-30 22:40:49] calibration target4: 11/128
+[2026-08-30 22:40:49] calibration target4: 12/128
+[2026-08-30 22:40:49] calibration target4: 13/128
+[2026-08-30 22:40:49] calibration target4: 14/128
+[2026-08-30 22:40:49] calibration target4: 15/128
+[2026-08-30 22:40:49] calibration target4: 16/128
+[2026-08-30 22:40:49] calibration target4: 17/128
+[2026-08-30 22:40:49] calibration target4: 18/128
+[2026-08-30 22:40:49] calibration target4: 19/128
+[2026-08-30 22:40:49] calibration target4: 20/128
+[2026-08-30 22:40:49] calibration target4: 21/128
+[2026-08-30 22:40:49] calibration target4: 22/128
+[2026-08-30 22:40:49] calibration target4: 23/128
+[2026-08-30 22:40:49] calibration target4: 24/128
+[2026-08-30 22:40:49] calibration target4: 25/128
+[2026-08-30 22:40:49] calibration target4: 26/128
+[2026-08-30 22:40:49] calibration target4: 27/128
+[2026-08-30 22:40:49] calibration target4: 28/128
+[2026-08-30 22:40:49] calibration target4: 29/128
+[2026-08-30 22:40:49] calibration target4: 30/128
+[2026-08-30 22:40:49] calibration target4: 31/128
+[2026-08-30 22:40:49] calibration target4: 32/128
+[2026-08-30 22:40:49] calibration target4: 33/128
+[2026-08-30 22:40:49] calibration target4: 34/128
+[2026-08-30 22:40:49] calibration target4: 35/128
+[2026-08-30 22:40:49] calibration target4: 36/128
+[2026-08-30 22:40:50] calibration target4: 37/128
+[2026-08-30 22:40:50] calibration target4: 38/128
+[2026-08-30 22:40:50] calibration target4: 39/128
+[2026-08-30 22:40:50] calibration target4: 40/128
+[2026-08-30 22:40:50] calibration target4: 41/128
+[2026-08-30 22:40:50] calibration target4: 42/128
+[2026-08-30 22:40:50] calibration target4: 43/128
+[2026-08-30 22:40:50] calibration target4: 44/128
+[2026-08-30 22:40:50] calibration target4: 45/128
+[2026-08-30 22:40:50] calibration target4: 46/128
+[2026-08-30 22:40:50] calibration target4: 47/128
+[2026-08-30 22:40:50] calibration target4: 48/128
+[2026-08-30 22:40:50] calibration target4: 49/128
+[2026-08-30 22:40:50] calibration target4: 50/128
+[2026-08-30 22:40:50] calibration target4: 51/128
+[2026-08-30 22:40:50] calibration target4: 52/128
+[2026-08-30 22:40:50] calibration target4: 53/128
+[2026-08-30 22:40:50] calibration target4: 54/128
+[2026-08-30 22:40:50] calibration target4: 55/128
+[2026-08-30 22:40:50] calibration target4: 56/128
+[2026-08-30 22:40:50] calibration target4: 57/128
+[2026-08-30 22:40:50] calibration target4: 58/128
+[2026-08-30 22:40:50] calibration target4: 59/128
+[2026-08-30 22:40:50] calibration target4: 60/128
+[2026-08-30 22:40:50] calibration target4: 61/128
+[2026-08-30 22:40:50] calibration target4: 62/128
+[2026-08-30 22:40:50] calibration target4: 63/128
+[2026-08-30 22:40:50] calibration target4: 64/128
+[2026-08-30 22:40:50] calibration target4: 65/128
+[2026-08-30 22:40:50] calibration target4: 66/128
+[2026-08-30 22:40:50] calibration target4: 67/128
+[2026-08-30 22:40:50] calibration target4: 68/128
+[2026-08-30 22:40:50] calibration target4: 69/128
+[2026-08-30 22:40:50] calibration target4: 70/128
+[2026-08-30 22:40:50] calibration target4: 71/128
+[2026-08-30 22:40:50] calibration target4: 72/128
+[2026-08-30 22:40:50] calibration target4: 73/128
+[2026-08-30 22:40:50] calibration target4: 74/128
+[2026-08-30 22:40:50] calibration target4: 75/128
+[2026-08-30 22:40:50] calibration target4: 76/128
+[2026-08-30 22:40:50] calibration target4: 77/128
+[2026-08-30 22:40:50] calibration target4: 78/128
+[2026-08-30 22:40:50] calibration target4: 79/128
+[2026-08-30 22:40:51] calibration target4: 80/128
+[2026-08-30 22:40:51] calibration target4: 81/128
+[2026-08-30 22:40:51] calibration target4: 82/128
+[2026-08-30 22:40:51] calibration target4: 83/128
+[2026-08-30 22:40:51] calibration target4: 84/128
+[2026-08-30 22:40:51] calibration target4: 85/128
+[2026-08-30 22:40:51] calibration target4: 86/128
+[2026-08-30 22:40:51] calibration target4: 87/128
+[2026-08-30 22:40:51] calibration target4: 88/128
+[2026-08-30 22:40:51] calibration target4: 89/128
+[2026-08-30 22:40:51] calibration target4: 90/128
+[2026-08-30 22:40:51] calibration target4: 91/128
+[2026-08-30 22:40:51] calibration target4: 92/128
+[2026-08-30 22:40:51] calibration target4: 93/128
+[2026-08-30 22:40:51] calibration target4: 94/128
+[2026-08-30 22:40:51] calibration target4: 95/128
+[2026-08-30 22:40:51] calibration target4: 96/128
+[2026-08-30 22:40:51] calibration target4: 97/128
+[2026-08-30 22:40:51] calibration target4: 98/128
+[2026-08-30 22:40:51] calibration target4: 99/128
+[2026-08-30 22:40:51] calibration target4: 100/128
+[2026-08-30 22:40:51] calibration target4: 101/128
+[2026-08-30 22:40:51] calibration target4: 102/128
+[2026-08-30 22:40:51] calibration target4: 103/128
+[2026-08-30 22:40:51] calibration target4: 104/128
+[2026-08-30 22:40:51] calibration target4: 105/128
+[2026-08-30 22:40:51] calibration target4: 106/128
+[2026-08-30 22:40:51] calibration target4: 107/128
+[2026-08-30 22:40:51] calibration target4: 108/128
+[2026-08-30 22:40:51] calibration target4: 109/128
+[2026-08-30 22:40:51] calibration target4: 110/128
+[2026-08-30 22:40:51] calibration target4: 111/128
+[2026-08-30 22:40:52] calibration target4: 112/128
+[2026-08-30 22:40:52] calibration target4: 113/128
+[2026-08-30 22:40:52] calibration target4: 114/128
+[2026-08-30 22:40:52] calibration target4: 115/128
+[2026-08-30 22:40:52] calibration target4: 116/128
+[2026-08-30 22:40:52] calibration target4: 117/128
+[2026-08-30 22:40:52] calibration target4: 118/128
+[2026-08-30 22:40:52] calibration target4: 119/128
+[2026-08-30 22:40:52] calibration target4: 120/128
+[2026-08-30 22:40:52] calibration target4: 121/128
+[2026-08-30 22:40:52] calibration target4: 122/128
+[2026-08-30 22:40:52] calibration target4: 123/128
+[2026-08-30 22:40:52] calibration target4: 124/128
+[2026-08-30 22:40:52] calibration target4: 125/128
+[2026-08-30 22:40:52] calibration target4: 126/128
+[2026-08-30 22:40:52] calibration target4: 127/128
+[2026-08-30 22:40:52] calibration target4: 128/128
+[2026-08-30 22:40:53] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json calibrate
+[2026-08-30 22:40:53] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_gpu_tests.py
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 112/398 [00:00<00:00, 1110.58it/s]Loading weights:  56%|█████▋    | 224/398 [00:00<00:00, 1005.41it/s]Loading weights:  82%|████████▏ | 326/398 [00:00<00:00, 985.62it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1005.19it/s]
+PASS GPU pure-functional gradient path: final
+[2026-08-30 22:41:06] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_gpu_tests.py
+[2026-08-30 22:41:06] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json train --writer d2 --stage a
+[2026-08-30 22:41:56] Stage A d2 400/8000 validation=3.014195
+[2026-08-30 22:42:29] Stage A d2 800/8000 validation=2.645466
+[2026-08-30 22:43:02] Stage A d2 1200/8000 validation=2.450868
+[2026-08-30 22:43:38] Stage A d2 1600/8000 validation=2.319325
+[2026-08-30 22:44:09] Stage A d2 2000/8000 validation=2.217382
+[2026-08-30 22:44:40] Stage A d2 2400/8000 validation=2.133192
+[2026-08-30 22:45:12] Stage A d2 2800/8000 validation=2.059646
+[2026-08-30 22:45:45] Stage A d2 3200/8000 validation=1.991840
+[2026-08-30 22:46:19] Stage A d2 3600/8000 validation=1.928324
+[2026-08-30 22:46:51] Stage A d2 4000/8000 validation=1.869925
+[2026-08-30 22:47:25] Stage A d2 4400/8000 validation=1.815822
+[2026-08-30 22:47:58] Stage A d2 4800/8000 validation=1.763823
+[2026-08-30 22:48:32] Stage A d2 5200/8000 validation=1.716434
+[2026-08-30 22:49:04] Stage A d2 5600/8000 validation=1.670577
+[2026-08-30 22:49:36] Stage A d2 6000/8000 validation=1.626156
+[2026-08-30 22:50:08] Stage A d2 6400/8000 validation=1.586377
+[2026-08-30 22:50:40] Stage A d2 6800/8000 validation=1.550333
+[2026-08-30 22:51:12] Stage A d2 7200/8000 validation=1.514210
+[2026-08-30 22:51:44] Stage A d2 7600/8000 validation=1.482333
+[2026-08-30 22:52:17] Stage A d2 8000/8000 validation=1.452523
+[2026-08-30 22:52:18] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json train --writer d2 --stage a
+[2026-08-30 22:52:18] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json gradient_audit --writer d2 --functional-mode final --checkpoint checkpoints/quick/d2/stage_a/best.pt
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  29%|██▊       | 114/398 [00:00<00:00, 1138.07it/s]Loading weights:  57%|█████▋    | 228/398 [00:00<00:00, 1028.27it/s]Loading weights:  83%|████████▎ | 332/398 [00:00<00:00, 964.97it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 998.70it/s]
+[2026-08-30 22:52:33] gradient audit final sample=3114
+[2026-08-30 22:52:34] gradient audit final sample=471
+[2026-08-30 22:52:36] gradient audit final sample=3851
+[2026-08-30 22:52:36] gradient audit final sample=10446
+[2026-08-30 22:52:38] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json gradient_audit --writer d2 --functional-mode final --checkpoint checkpoints/quick/d2/stage_a/best.pt
+[2026-08-30 22:52:38] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json train --writer d2 --stage b --functional-mode final
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  29%|██▉       | 116/398 [00:00<00:00, 1158.63it/s]Loading weights:  58%|█████▊    | 232/398 [00:00<00:00, 1125.14it/s]Loading weights:  87%|████████▋ | 345/398 [00:00<00:00, 1012.46it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1039.05it/s]
+[2026-08-30 22:59:38] Stage B final d2 400/16000 validation_functional_kl=1.027653
+[2026-08-30 23:05:29] Stage B final d2 800/16000 validation_functional_kl=0.923364
+[2026-08-30 23:05:33] Stage B final diagnostic 800/16000 kv=1.575028 hidden=0.486461
+[2026-08-30 23:10:46] Stage B final d2 1200/16000 validation_functional_kl=1.148029
+[2026-08-30 23:16:22] Stage B final d2 1600/16000 validation_functional_kl=0.759064
+[2026-08-30 23:16:27] Stage B final diagnostic 1600/16000 kv=1.584589 hidden=0.484904
+[2026-08-30 23:22:04] Stage B final d2 2000/16000 validation_functional_kl=0.938298
+[2026-08-30 23:27:44] Stage B final d2 2400/16000 validation_functional_kl=0.996827
+[2026-08-30 23:27:49] Stage B final diagnostic 2400/16000 kv=1.592998 hidden=0.483002
+[2026-08-30 23:33:32] Stage B final d2 2800/16000 validation_functional_kl=0.987472
+[2026-08-30 23:39:11] Stage B final d2 3200/16000 validation_functional_kl=0.790958
+[2026-08-30 23:39:15] Stage B final diagnostic 3200/16000 kv=1.600402 hidden=0.474983
+[2026-08-30 23:44:53] Stage B final d2 3600/16000 validation_functional_kl=0.907573
+[2026-08-30 23:50:30] Stage B final d2 4000/16000 validation_functional_kl=0.855747
+[2026-08-30 23:50:34] Stage B final diagnostic 4000/16000 kv=1.607629 hidden=0.457125
+[2026-08-30 23:55:57] Stage B final d2 4400/16000 validation_functional_kl=0.844022
+[2026-08-31 00:01:38] Stage B final d2 4800/16000 validation_functional_kl=0.886919
+[2026-08-31 00:01:43] Stage B final diagnostic 4800/16000 kv=1.614869 hidden=0.480671
+[2026-08-31 00:07:24] Stage B final d2 5200/16000 validation_functional_kl=1.009755
+[2026-08-31 00:12:55] Stage B final d2 5600/16000 validation_functional_kl=0.913585
+[2026-08-31 00:12:59] Stage B final diagnostic 5600/16000 kv=1.621591 hidden=0.478788
+[2026-08-31 00:18:12] Stage B final d2 6000/16000 validation_functional_kl=0.900992
+[2026-08-31 00:23:39] Stage B final d2 6400/16000 validation_functional_kl=0.995238
+[2026-08-31 00:23:43] Stage B final diagnostic 6400/16000 kv=1.625807 hidden=0.482944
+[2026-08-31 00:29:14] Stage B final d2 6800/16000 validation_functional_kl=0.908244
+[2026-08-31 00:34:48] Stage B final d2 7200/16000 validation_functional_kl=0.961848
+[2026-08-31 00:34:52] Stage B final diagnostic 7200/16000 kv=1.631375 hidden=0.478090
+[2026-08-31 00:40:25] Stage B final d2 7600/16000 validation_functional_kl=0.961332
+[2026-08-31 00:46:01] Stage B final d2 8000/16000 validation_functional_kl=0.968158
+[2026-08-31 00:46:05] Stage B final diagnostic 8000/16000 kv=1.638359 hidden=0.473413
+[2026-08-31 00:51:31] Stage B final d2 8400/16000 validation_functional_kl=0.931853
+[2026-08-31 00:56:55] Stage B final d2 8800/16000 validation_functional_kl=0.892997
+[2026-08-31 00:56:59] Stage B final diagnostic 8800/16000 kv=1.643558 hidden=0.464209
+[2026-08-31 01:02:29] Stage B final d2 9200/16000 validation_functional_kl=0.952434
+[2026-08-31 01:07:59] Stage B final d2 9600/16000 validation_functional_kl=0.918763
+[2026-08-31 01:08:03] Stage B final diagnostic 9600/16000 kv=1.647737 hidden=0.472427
+[2026-08-31 01:13:34] Stage B final d2 10000/16000 validation_functional_kl=0.873869
+[2026-08-31 01:19:04] Stage B final d2 10400/16000 validation_functional_kl=0.969176
+[2026-08-31 01:19:09] Stage B final diagnostic 10400/16000 kv=1.652541 hidden=0.469262
+[2026-08-31 01:23:41] Stage B final d2 10800/16000 validation_functional_kl=0.862607
+[2026-08-31 01:25:56] Stage B final d2 11200/16000 validation_functional_kl=0.969902
+[2026-08-31 01:25:58] Stage B final diagnostic 11200/16000 kv=1.658010 hidden=0.470170
+[2026-08-31 01:28:14] Stage B final d2 11600/16000 validation_functional_kl=0.957510
+[2026-08-31 01:30:36] Stage B final d2 12000/16000 validation_functional_kl=0.939011
+[2026-08-31 01:30:38] Stage B final diagnostic 12000/16000 kv=1.663433 hidden=0.458824
+[2026-08-31 01:32:51] Stage B final d2 12400/16000 validation_functional_kl=0.957157
+[2026-08-31 01:35:06] Stage B final d2 12800/16000 validation_functional_kl=0.977000
+[2026-08-31 01:35:08] Stage B final diagnostic 12800/16000 kv=1.667119 hidden=0.464152
+[2026-08-31 01:37:20] Stage B final d2 13200/16000 validation_functional_kl=1.000744
+[2026-08-31 01:39:35] Stage B final d2 13600/16000 validation_functional_kl=0.960593
+[2026-08-31 01:39:36] Stage B final diagnostic 13600/16000 kv=1.670647 hidden=0.474320
+[2026-08-31 01:41:53] Stage B final d2 14000/16000 validation_functional_kl=0.903770
+[2026-08-31 01:44:06] Stage B final d2 14400/16000 validation_functional_kl=0.959832
+[2026-08-31 01:44:08] Stage B final diagnostic 14400/16000 kv=1.673570 hidden=0.464198
+[2026-08-31 01:46:21] Stage B final d2 14800/16000 validation_functional_kl=0.936040
+[2026-08-31 01:48:33] Stage B final d2 15200/16000 validation_functional_kl=0.942637
+[2026-08-31 01:48:35] Stage B final diagnostic 15200/16000 kv=1.679269 hidden=0.467415
+[2026-08-31 01:50:50] Stage B final d2 15600/16000 validation_functional_kl=0.903434
+[2026-08-31 01:53:03] Stage B final d2 16000/16000 validation_functional_kl=0.856255
+[2026-08-31 01:53:05] Stage B final diagnostic 16000/16000 kv=1.683381 hidden=0.469537
+[2026-08-31 01:53:09] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json train --writer d2 --stage b --functional-mode final
+[2026-08-31 01:53:09] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json evaluate --scope formal
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  30%|██▉       | 119/398 [00:00<00:00, 1177.93it/s]Loading weights:  60%|█████▉    | 237/398 [00:00<00:00, 1061.94it/s]Loading weights:  86%|████████▋ | 344/398 [00:00<00:00, 985.88it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1024.49it/s]
+[2026-08-31 01:53:22] 4B pure-functional evaluation: 1/128
+[2026-08-31 01:53:23] 4B pure-functional evaluation: 2/128
+[2026-08-31 01:53:23] 4B pure-functional evaluation: 3/128
+[2026-08-31 01:53:24] 4B pure-functional evaluation: 4/128
+[2026-08-31 01:53:24] 4B pure-functional evaluation: 5/128
+[2026-08-31 01:53:25] 4B pure-functional evaluation: 6/128
+[2026-08-31 01:53:25] 4B pure-functional evaluation: 7/128
+[2026-08-31 01:53:26] 4B pure-functional evaluation: 8/128
+[2026-08-31 01:53:26] 4B pure-functional evaluation: 9/128
+[2026-08-31 01:53:27] 4B pure-functional evaluation: 10/128
+[2026-08-31 01:53:28] 4B pure-functional evaluation: 11/128
+[2026-08-31 01:53:28] 4B pure-functional evaluation: 12/128
+[2026-08-31 01:53:29] 4B pure-functional evaluation: 13/128
+[2026-08-31 01:53:29] 4B pure-functional evaluation: 14/128
+[2026-08-31 01:53:30] 4B pure-functional evaluation: 15/128
+[2026-08-31 01:53:31] 4B pure-functional evaluation: 16/128
+[2026-08-31 01:53:31] 4B pure-functional evaluation: 17/128
+[2026-08-31 01:53:32] 4B pure-functional evaluation: 18/128
+[2026-08-31 01:53:32] 4B pure-functional evaluation: 19/128
+[2026-08-31 01:53:33] 4B pure-functional evaluation: 20/128
+[2026-08-31 01:53:33] 4B pure-functional evaluation: 21/128
+[2026-08-31 01:53:34] 4B pure-functional evaluation: 22/128
+[2026-08-31 01:53:34] 4B pure-functional evaluation: 23/128
+[2026-08-31 01:53:35] 4B pure-functional evaluation: 24/128
+[2026-08-31 01:53:35] 4B pure-functional evaluation: 25/128
+[2026-08-31 01:53:36] 4B pure-functional evaluation: 26/128
+[2026-08-31 01:53:37] 4B pure-functional evaluation: 27/128
+[2026-08-31 01:53:37] 4B pure-functional evaluation: 28/128
+[2026-08-31 01:53:39] 4B pure-functional evaluation: 29/128
+[2026-08-31 01:53:39] 4B pure-functional evaluation: 30/128
+[2026-08-31 01:53:40] 4B pure-functional evaluation: 31/128
+[2026-08-31 01:53:40] 4B pure-functional evaluation: 32/128
+[2026-08-31 01:53:41] 4B pure-functional evaluation: 33/128
+[2026-08-31 01:53:41] 4B pure-functional evaluation: 34/128
+[2026-08-31 01:53:42] 4B pure-functional evaluation: 35/128
+[2026-08-31 01:53:43] 4B pure-functional evaluation: 36/128
+[2026-08-31 01:53:44] 4B pure-functional evaluation: 37/128
+[2026-08-31 01:53:44] 4B pure-functional evaluation: 38/128
+[2026-08-31 01:53:45] 4B pure-functional evaluation: 39/128
+[2026-08-31 01:53:46] 4B pure-functional evaluation: 40/128
+[2026-08-31 01:53:46] 4B pure-functional evaluation: 41/128
+[2026-08-31 01:53:47] 4B pure-functional evaluation: 42/128
+[2026-08-31 01:53:48] 4B pure-functional evaluation: 43/128
+[2026-08-31 01:53:49] 4B pure-functional evaluation: 44/128
+[2026-08-31 01:53:50] 4B pure-functional evaluation: 45/128
+[2026-08-31 01:53:50] 4B pure-functional evaluation: 46/128
+[2026-08-31 01:53:51] 4B pure-functional evaluation: 47/128
+[2026-08-31 01:53:52] 4B pure-functional evaluation: 48/128
+[2026-08-31 01:53:52] 4B pure-functional evaluation: 49/128
+[2026-08-31 01:53:53] 4B pure-functional evaluation: 50/128
+[2026-08-31 01:53:54] 4B pure-functional evaluation: 51/128
+[2026-08-31 01:53:54] 4B pure-functional evaluation: 52/128
+[2026-08-31 01:53:55] 4B pure-functional evaluation: 53/128
+[2026-08-31 01:53:56] 4B pure-functional evaluation: 54/128
+[2026-08-31 01:53:57] 4B pure-functional evaluation: 55/128
+[2026-08-31 01:53:59] 4B pure-functional evaluation: 56/128
+[2026-08-31 01:53:59] 4B pure-functional evaluation: 57/128
+[2026-08-31 01:54:00] 4B pure-functional evaluation: 58/128
+[2026-08-31 01:54:00] 4B pure-functional evaluation: 59/128
+[2026-08-31 01:54:01] 4B pure-functional evaluation: 60/128
+[2026-08-31 01:54:01] 4B pure-functional evaluation: 61/128
+[2026-08-31 01:54:02] 4B pure-functional evaluation: 62/128
+[2026-08-31 01:54:02] 4B pure-functional evaluation: 63/128
+[2026-08-31 01:54:03] 4B pure-functional evaluation: 64/128
+[2026-08-31 01:54:04] 4B pure-functional evaluation: 65/128
+[2026-08-31 01:54:04] 4B pure-functional evaluation: 66/128
+[2026-08-31 01:54:05] 4B pure-functional evaluation: 67/128
+[2026-08-31 01:54:05] 4B pure-functional evaluation: 68/128
+[2026-08-31 01:54:07] 4B pure-functional evaluation: 69/128
+[2026-08-31 01:54:08] 4B pure-functional evaluation: 70/128
+[2026-08-31 01:54:09] 4B pure-functional evaluation: 71/128
+[2026-08-31 01:54:09] 4B pure-functional evaluation: 72/128
+[2026-08-31 01:54:10] 4B pure-functional evaluation: 73/128
+[2026-08-31 01:54:10] 4B pure-functional evaluation: 74/128
+[2026-08-31 01:54:11] 4B pure-functional evaluation: 75/128
+[2026-08-31 01:54:11] 4B pure-functional evaluation: 76/128
+[2026-08-31 01:54:12] 4B pure-functional evaluation: 77/128
+[2026-08-31 01:54:13] 4B pure-functional evaluation: 78/128
+[2026-08-31 01:54:13] 4B pure-functional evaluation: 79/128
+[2026-08-31 01:54:14] 4B pure-functional evaluation: 80/128
+[2026-08-31 01:54:15] 4B pure-functional evaluation: 81/128
+[2026-08-31 01:54:16] 4B pure-functional evaluation: 82/128
+[2026-08-31 01:54:16] 4B pure-functional evaluation: 83/128
+[2026-08-31 01:54:17] 4B pure-functional evaluation: 84/128
+[2026-08-31 01:54:18] 4B pure-functional evaluation: 85/128
+[2026-08-31 01:54:18] 4B pure-functional evaluation: 86/128
+[2026-08-31 01:54:19] 4B pure-functional evaluation: 87/128
+[2026-08-31 01:54:20] 4B pure-functional evaluation: 88/128
+[2026-08-31 01:54:20] 4B pure-functional evaluation: 89/128
+[2026-08-31 01:54:21] 4B pure-functional evaluation: 90/128
+[2026-08-31 01:54:22] 4B pure-functional evaluation: 91/128
+[2026-08-31 01:54:23] 4B pure-functional evaluation: 92/128
+[2026-08-31 01:54:23] 4B pure-functional evaluation: 93/128
+[2026-08-31 01:54:24] 4B pure-functional evaluation: 94/128
+[2026-08-31 01:54:25] 4B pure-functional evaluation: 95/128
+[2026-08-31 01:54:26] 4B pure-functional evaluation: 96/128
+[2026-08-31 01:54:26] 4B pure-functional evaluation: 97/128
+[2026-08-31 01:54:28] 4B pure-functional evaluation: 98/128
+[2026-08-31 01:54:28] 4B pure-functional evaluation: 99/128
+[2026-08-31 01:54:29] 4B pure-functional evaluation: 100/128
+[2026-08-31 01:54:30] 4B pure-functional evaluation: 101/128
+[2026-08-31 01:54:30] 4B pure-functional evaluation: 102/128
+[2026-08-31 01:54:31] 4B pure-functional evaluation: 103/128
+[2026-08-31 01:54:31] 4B pure-functional evaluation: 104/128
+[2026-08-31 01:54:32] 4B pure-functional evaluation: 105/128
+[2026-08-31 01:54:33] 4B pure-functional evaluation: 106/128
+[2026-08-31 01:54:34] 4B pure-functional evaluation: 107/128
+[2026-08-31 01:54:34] 4B pure-functional evaluation: 108/128
+[2026-08-31 01:54:35] 4B pure-functional evaluation: 109/128
+[2026-08-31 01:54:37] 4B pure-functional evaluation: 110/128
+[2026-08-31 01:54:38] 4B pure-functional evaluation: 111/128
+[2026-08-31 01:54:38] 4B pure-functional evaluation: 112/128
+[2026-08-31 01:54:39] 4B pure-functional evaluation: 113/128
+[2026-08-31 01:54:39] 4B pure-functional evaluation: 114/128
+[2026-08-31 01:54:40] 4B pure-functional evaluation: 115/128
+[2026-08-31 01:54:41] 4B pure-functional evaluation: 116/128
+[2026-08-31 01:54:42] 4B pure-functional evaluation: 117/128
+[2026-08-31 01:54:42] 4B pure-functional evaluation: 118/128
+[2026-08-31 01:54:43] 4B pure-functional evaluation: 119/128
+[2026-08-31 01:54:44] 4B pure-functional evaluation: 120/128
+[2026-08-31 01:54:45] 4B pure-functional evaluation: 121/128
+[2026-08-31 01:54:46] 4B pure-functional evaluation: 122/128
+[2026-08-31 01:54:46] 4B pure-functional evaluation: 123/128
+[2026-08-31 01:54:47] 4B pure-functional evaluation: 124/128
+[2026-08-31 01:54:48] 4B pure-functional evaluation: 125/128
+[2026-08-31 01:54:48] 4B pure-functional evaluation: 126/128
+[2026-08-31 01:54:49] 4B pure-functional evaluation: 127/128
+[2026-08-31 01:54:50] 4B pure-functional evaluation: 128/128
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  59%|█████▊    | 182/311 [00:00<00:00, 1813.51it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1866.57it/s]
+[2026-08-31 01:54:58] 1.7B evaluation: 1/128
+[2026-08-31 01:54:58] 1.7B evaluation: 2/128
+[2026-08-31 01:54:58] 1.7B evaluation: 3/128
+[2026-08-31 01:54:58] 1.7B evaluation: 4/128
+[2026-08-31 01:54:58] 1.7B evaluation: 5/128
+[2026-08-31 01:54:58] 1.7B evaluation: 6/128
+[2026-08-31 01:54:59] 1.7B evaluation: 7/128
+[2026-08-31 01:54:59] 1.7B evaluation: 8/128
+[2026-08-31 01:54:59] 1.7B evaluation: 9/128
+[2026-08-31 01:54:59] 1.7B evaluation: 10/128
+[2026-08-31 01:54:59] 1.7B evaluation: 11/128
+[2026-08-31 01:54:59] 1.7B evaluation: 12/128
+[2026-08-31 01:54:59] 1.7B evaluation: 13/128
+[2026-08-31 01:54:59] 1.7B evaluation: 14/128
+[2026-08-31 01:54:59] 1.7B evaluation: 15/128
+[2026-08-31 01:54:59] 1.7B evaluation: 16/128
+[2026-08-31 01:55:00] 1.7B evaluation: 17/128
+[2026-08-31 01:55:00] 1.7B evaluation: 18/128
+[2026-08-31 01:55:00] 1.7B evaluation: 19/128
+[2026-08-31 01:55:00] 1.7B evaluation: 20/128
+[2026-08-31 01:55:00] 1.7B evaluation: 21/128
+[2026-08-31 01:55:00] 1.7B evaluation: 22/128
+[2026-08-31 01:55:00] 1.7B evaluation: 23/128
+[2026-08-31 01:55:00] 1.7B evaluation: 24/128
+[2026-08-31 01:55:00] 1.7B evaluation: 25/128
+[2026-08-31 01:55:00] 1.7B evaluation: 26/128
+[2026-08-31 01:55:00] 1.7B evaluation: 27/128
+[2026-08-31 01:55:01] 1.7B evaluation: 28/128
+[2026-08-31 01:55:01] 1.7B evaluation: 29/128
+[2026-08-31 01:55:01] 1.7B evaluation: 30/128
+[2026-08-31 01:55:01] 1.7B evaluation: 31/128
+[2026-08-31 01:55:01] 1.7B evaluation: 32/128
+[2026-08-31 01:55:01] 1.7B evaluation: 33/128
+[2026-08-31 01:55:01] 1.7B evaluation: 34/128
+[2026-08-31 01:55:01] 1.7B evaluation: 35/128
+[2026-08-31 01:55:01] 1.7B evaluation: 36/128
+[2026-08-31 01:55:02] 1.7B evaluation: 37/128
+[2026-08-31 01:55:02] 1.7B evaluation: 38/128
+[2026-08-31 01:55:02] 1.7B evaluation: 39/128
+[2026-08-31 01:55:02] 1.7B evaluation: 40/128
+[2026-08-31 01:55:02] 1.7B evaluation: 41/128
+[2026-08-31 01:55:02] 1.7B evaluation: 42/128
+[2026-08-31 01:55:02] 1.7B evaluation: 43/128
+[2026-08-31 01:55:03] 1.7B evaluation: 44/128
+[2026-08-31 01:55:03] 1.7B evaluation: 45/128
+[2026-08-31 01:55:03] 1.7B evaluation: 46/128
+[2026-08-31 01:55:03] 1.7B evaluation: 47/128
+[2026-08-31 01:55:03] 1.7B evaluation: 48/128
+[2026-08-31 01:55:03] 1.7B evaluation: 49/128
+[2026-08-31 01:55:03] 1.7B evaluation: 50/128
+[2026-08-31 01:55:03] 1.7B evaluation: 51/128
+[2026-08-31 01:55:03] 1.7B evaluation: 52/128
+[2026-08-31 01:55:04] 1.7B evaluation: 53/128
+[2026-08-31 01:55:04] 1.7B evaluation: 54/128
+[2026-08-31 01:55:04] 1.7B evaluation: 55/128
+[2026-08-31 01:55:04] 1.7B evaluation: 56/128
+[2026-08-31 01:55:04] 1.7B evaluation: 57/128
+[2026-08-31 01:55:04] 1.7B evaluation: 58/128
+[2026-08-31 01:55:04] 1.7B evaluation: 59/128
+[2026-08-31 01:55:04] 1.7B evaluation: 60/128
+[2026-08-31 01:55:05] 1.7B evaluation: 61/128
+[2026-08-31 01:55:05] 1.7B evaluation: 62/128
+[2026-08-31 01:55:05] 1.7B evaluation: 63/128
+[2026-08-31 01:55:05] 1.7B evaluation: 64/128
+[2026-08-31 01:55:05] 1.7B evaluation: 65/128
+[2026-08-31 01:55:05] 1.7B evaluation: 66/128
+[2026-08-31 01:55:05] 1.7B evaluation: 67/128
+[2026-08-31 01:55:05] 1.7B evaluation: 68/128
+[2026-08-31 01:55:05] 1.7B evaluation: 69/128
+[2026-08-31 01:55:05] 1.7B evaluation: 70/128
+[2026-08-31 01:55:06] 1.7B evaluation: 71/128
+[2026-08-31 01:55:06] 1.7B evaluation: 72/128
+[2026-08-31 01:55:06] 1.7B evaluation: 73/128
+[2026-08-31 01:55:06] 1.7B evaluation: 74/128
+[2026-08-31 01:55:06] 1.7B evaluation: 75/128
+[2026-08-31 01:55:06] 1.7B evaluation: 76/128
+[2026-08-31 01:55:06] 1.7B evaluation: 77/128
+[2026-08-31 01:55:06] 1.7B evaluation: 78/128
+[2026-08-31 01:55:06] 1.7B evaluation: 79/128
+[2026-08-31 01:55:06] 1.7B evaluation: 80/128
+[2026-08-31 01:55:07] 1.7B evaluation: 81/128
+[2026-08-31 01:55:07] 1.7B evaluation: 82/128
+[2026-08-31 01:55:07] 1.7B evaluation: 83/128
+[2026-08-31 01:55:07] 1.7B evaluation: 84/128
+[2026-08-31 01:55:07] 1.7B evaluation: 85/128
+[2026-08-31 01:55:07] 1.7B evaluation: 86/128
+[2026-08-31 01:55:07] 1.7B evaluation: 87/128
+[2026-08-31 01:55:07] 1.7B evaluation: 88/128
+[2026-08-31 01:55:07] 1.7B evaluation: 89/128
+[2026-08-31 01:55:08] 1.7B evaluation: 90/128
+[2026-08-31 01:55:08] 1.7B evaluation: 91/128
+[2026-08-31 01:55:08] 1.7B evaluation: 92/128
+[2026-08-31 01:55:08] 1.7B evaluation: 93/128
+[2026-08-31 01:55:08] 1.7B evaluation: 94/128
+[2026-08-31 01:55:08] 1.7B evaluation: 95/128
+[2026-08-31 01:55:08] 1.7B evaluation: 96/128
+[2026-08-31 01:55:08] 1.7B evaluation: 97/128
+[2026-08-31 01:55:09] 1.7B evaluation: 98/128
+[2026-08-31 01:55:09] 1.7B evaluation: 99/128
+[2026-08-31 01:55:09] 1.7B evaluation: 100/128
+[2026-08-31 01:55:09] 1.7B evaluation: 101/128
+[2026-08-31 01:55:09] 1.7B evaluation: 102/128
+[2026-08-31 01:55:09] 1.7B evaluation: 103/128
+[2026-08-31 01:55:09] 1.7B evaluation: 104/128
+[2026-08-31 01:55:09] 1.7B evaluation: 105/128
+[2026-08-31 01:55:09] 1.7B evaluation: 106/128
+[2026-08-31 01:55:09] 1.7B evaluation: 107/128
+[2026-08-31 01:55:10] 1.7B evaluation: 108/128
+[2026-08-31 01:55:10] 1.7B evaluation: 109/128
+[2026-08-31 01:55:10] 1.7B evaluation: 110/128
+[2026-08-31 01:55:10] 1.7B evaluation: 111/128
+[2026-08-31 01:55:10] 1.7B evaluation: 112/128
+[2026-08-31 01:55:10] 1.7B evaluation: 113/128
+[2026-08-31 01:55:10] 1.7B evaluation: 114/128
+[2026-08-31 01:55:10] 1.7B evaluation: 115/128
+[2026-08-31 01:55:11] 1.7B evaluation: 116/128
+[2026-08-31 01:55:11] 1.7B evaluation: 117/128
+[2026-08-31 01:55:11] 1.7B evaluation: 118/128
+[2026-08-31 01:55:11] 1.7B evaluation: 119/128
+[2026-08-31 01:55:11] 1.7B evaluation: 120/128
+[2026-08-31 01:55:11] 1.7B evaluation: 121/128
+[2026-08-31 01:55:11] 1.7B evaluation: 122/128
+[2026-08-31 01:55:12] 1.7B evaluation: 123/128
+[2026-08-31 01:55:12] 1.7B evaluation: 124/128
+[2026-08-31 01:55:12] 1.7B evaluation: 125/128
+[2026-08-31 01:55:12] 1.7B evaluation: 126/128
+[2026-08-31 01:55:12] 1.7B evaluation: 127/128
+[2026-08-31 01:55:12] 1.7B evaluation: 128/128
+[2026-08-31 01:55:14] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json evaluate --scope formal
+[2026-08-31 01:55:14] ALL B1 SCALE-1024 EXPERIMENTS COMPLETED

@@ -1,0 +1,1346 @@
+[
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "comparison": "full_text_vs_official",
+    "mean_kl": -5.040105555131902e-10,
+    "max_kl": 8.011142443864472e-11,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      48336,
+      13509,
+      785,
+      42,
+      57893
+    ],
+    "first_other_top5_ids": [
+      48336,
+      13509,
+      785,
+      42,
+      57893
+    ],
+    "first_reference_top5_tokens": [
+      "Kim",
+      "ĠKim",
+      "The",
+      "K",
+      "kim"
+    ],
+    "first_other_top5_tokens": [
+      "Kim",
+      "ĠKim",
+      "The",
+      "K",
+      "kim"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.00012171268463134766,
+    "logits_cosine": 1.0000333786010742,
+    "reference_nll": 0.002326074754819274,
+    "other_nll": 0.002325789537280798,
+    "nll_absolute_difference": 2.852175384759903e-07
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "comparison": "full_text_vs_manual_post",
+    "mean_kl": -5.040105555131902e-10,
+    "max_kl": 8.011142443864472e-11,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      48336,
+      13509,
+      785,
+      42,
+      57893
+    ],
+    "first_other_top5_ids": [
+      48336,
+      13509,
+      785,
+      42,
+      57893
+    ],
+    "first_reference_top5_tokens": [
+      "Kim",
+      "ĠKim",
+      "The",
+      "K",
+      "kim"
+    ],
+    "first_other_top5_tokens": [
+      "Kim",
+      "ĠKim",
+      "The",
+      "K",
+      "kim"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.00012171268463134766,
+    "logits_cosine": 1.0000333786010742,
+    "reference_nll": 0.002326074754819274,
+    "other_nll": 0.002325789537280798,
+    "nll_absolute_difference": 2.852175384759903e-07
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "comparison": "full_text_vs_manual_pre",
+    "mean_kl": -5.040105555131902e-10,
+    "max_kl": 8.011142443864472e-11,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      48336,
+      13509,
+      785,
+      42,
+      57893
+    ],
+    "first_other_top5_ids": [
+      48336,
+      13509,
+      785,
+      42,
+      57893
+    ],
+    "first_reference_top5_tokens": [
+      "Kim",
+      "ĠKim",
+      "The",
+      "K",
+      "kim"
+    ],
+    "first_other_top5_tokens": [
+      "Kim",
+      "ĠKim",
+      "The",
+      "K",
+      "kim"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.00012171268463134766,
+    "logits_cosine": 1.0000333786010742,
+    "reference_nll": 0.002326074754819274,
+    "other_nll": 0.002325789537280798,
+    "nll_absolute_difference": 2.852175384759903e-07
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "comparison": "full_text_vs_shuffled",
+    "mean_kl": 3.444133758544922,
+    "max_kl": 24.803178787231445,
+    "top1_match_rate": 0.6363636255264282,
+    "first_top1_match": false,
+    "first_reference_top5_ids": [
+      48336,
+      13509,
+      785,
+      42,
+      57893
+    ],
+    "first_other_top5_ids": [
+      785,
+      2152,
+      2753,
+      4064,
+      9693
+    ],
+    "first_reference_top5_tokens": [
+      "Kim",
+      "ĠKim",
+      "The",
+      "K",
+      "kim"
+    ],
+    "first_other_top5_tokens": [
+      "The",
+      "no",
+      "No",
+      "None",
+      "yes"
+    ],
+    "top5_set_equal": false,
+    "logits_max_absolute_error": 36.20962905883789,
+    "logits_cosine": 0.7624236345291138,
+    "reference_nll": 0.002326074754819274,
+    "other_nll": 3.4359076023101807,
+    "nll_absolute_difference": 3.4335815275553614
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "comparison": "full_text_vs_official",
+    "mean_kl": -6.496287507928855e-09,
+    "max_kl": 4.579418441674754e-12,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      61713,
+      3872,
+      41,
+      78093,
+      60256
+    ],
+    "first_other_top5_ids": [
+      61713,
+      3872,
+      41,
+      78093,
+      60256
+    ],
+    "first_reference_top5_tokens": [
+      "Jud",
+      "Is",
+      "J",
+      "ĠJudith",
+      "Judge"
+    ],
+    "first_other_top5_tokens": [
+      "Jud",
+      "Is",
+      "J",
+      "ĠJudith",
+      "Judge"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.00015544891357421875,
+    "logits_cosine": 1.0000396966934204,
+    "reference_nll": 0.49734559655189514,
+    "other_nll": 0.49733150005340576,
+    "nll_absolute_difference": 1.4096498489379883e-05
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "comparison": "full_text_vs_manual_post",
+    "mean_kl": -6.496287507928855e-09,
+    "max_kl": 4.579418441674754e-12,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      61713,
+      3872,
+      41,
+      78093,
+      60256
+    ],
+    "first_other_top5_ids": [
+      61713,
+      3872,
+      41,
+      78093,
+      60256
+    ],
+    "first_reference_top5_tokens": [
+      "Jud",
+      "Is",
+      "J",
+      "ĠJudith",
+      "Judge"
+    ],
+    "first_other_top5_tokens": [
+      "Jud",
+      "Is",
+      "J",
+      "ĠJudith",
+      "Judge"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.00015544891357421875,
+    "logits_cosine": 1.0000396966934204,
+    "reference_nll": 0.49734559655189514,
+    "other_nll": 0.49733150005340576,
+    "nll_absolute_difference": 1.4096498489379883e-05
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "comparison": "full_text_vs_manual_pre",
+    "mean_kl": -6.496287507928855e-09,
+    "max_kl": 4.579418441674754e-12,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      61713,
+      3872,
+      41,
+      78093,
+      60256
+    ],
+    "first_other_top5_ids": [
+      61713,
+      3872,
+      41,
+      78093,
+      60256
+    ],
+    "first_reference_top5_tokens": [
+      "Jud",
+      "Is",
+      "J",
+      "ĠJudith",
+      "Judge"
+    ],
+    "first_other_top5_tokens": [
+      "Jud",
+      "Is",
+      "J",
+      "ĠJudith",
+      "Judge"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.00015544891357421875,
+    "logits_cosine": 1.0000396966934204,
+    "reference_nll": 0.49734559655189514,
+    "other_nll": 0.49733150005340576,
+    "nll_absolute_difference": 1.4096498489379883e-05
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "comparison": "full_text_vs_shuffled",
+    "mean_kl": 6.529632091522217,
+    "max_kl": 30.593698501586914,
+    "top1_match_rate": 0.3333333432674408,
+    "first_top1_match": false,
+    "first_reference_top5_ids": [
+      61713,
+      3872,
+      41,
+      78093,
+      60256
+    ],
+    "first_other_top5_ids": [
+      2152,
+      785,
+      2753,
+      39205,
+      9693
+    ],
+    "first_reference_top5_tokens": [
+      "Jud",
+      "Is",
+      "J",
+      "ĠJudith",
+      "Judge"
+    ],
+    "first_other_top5_tokens": [
+      "no",
+      "The",
+      "No",
+      "(no",
+      "yes"
+    ],
+    "top5_set_equal": false,
+    "logits_max_absolute_error": 35.68206024169922,
+    "logits_cosine": 0.5891265869140625,
+    "reference_nll": 0.49734559655189514,
+    "other_nll": 6.107873439788818,
+    "nll_absolute_difference": 5.610527843236923
+  },
+  {
+    "sample_id": "5a8de5d55542995085b3734d",
+    "comparison": "full_text_vs_official",
+    "mean_kl": 4.661021915652874e-11,
+    "max_kl": 7.834616982949072e-11,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      2152,
+      2753,
+      18341,
+      902,
+      39205
+    ],
+    "first_other_top5_ids": [
+      2152,
+      2753,
+      18341,
+      902,
+      39205
+    ],
+    "first_reference_top5_tokens": [
+      "no",
+      "No",
+      ".no",
+      "Ġno",
+      "(no"
+    ],
+    "first_other_top5_tokens": [
+      "no",
+      "No",
+      ".no",
+      "Ġno",
+      "(no"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 9.72747802734375e-05,
+    "logits_cosine": 1.0000066757202148,
+    "reference_nll": 1.311301275563892e-06,
+    "other_nll": 1.311301275563892e-06,
+    "nll_absolute_difference": 0.0
+  },
+  {
+    "sample_id": "5a8de5d55542995085b3734d",
+    "comparison": "full_text_vs_manual_post",
+    "mean_kl": 4.661021915652874e-11,
+    "max_kl": 7.834616982949072e-11,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      2152,
+      2753,
+      18341,
+      902,
+      39205
+    ],
+    "first_other_top5_ids": [
+      2152,
+      2753,
+      18341,
+      902,
+      39205
+    ],
+    "first_reference_top5_tokens": [
+      "no",
+      "No",
+      ".no",
+      "Ġno",
+      "(no"
+    ],
+    "first_other_top5_tokens": [
+      "no",
+      "No",
+      ".no",
+      "Ġno",
+      "(no"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 9.72747802734375e-05,
+    "logits_cosine": 1.0000066757202148,
+    "reference_nll": 1.311301275563892e-06,
+    "other_nll": 1.311301275563892e-06,
+    "nll_absolute_difference": 0.0
+  },
+  {
+    "sample_id": "5a8de5d55542995085b3734d",
+    "comparison": "full_text_vs_manual_pre",
+    "mean_kl": 4.661021915652874e-11,
+    "max_kl": 7.834616982949072e-11,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      2152,
+      2753,
+      18341,
+      902,
+      39205
+    ],
+    "first_other_top5_ids": [
+      2152,
+      2753,
+      18341,
+      902,
+      39205
+    ],
+    "first_reference_top5_tokens": [
+      "no",
+      "No",
+      ".no",
+      "Ġno",
+      "(no"
+    ],
+    "first_other_top5_tokens": [
+      "no",
+      "No",
+      ".no",
+      "Ġno",
+      "(no"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 9.72747802734375e-05,
+    "logits_cosine": 1.0000066757202148,
+    "reference_nll": 1.311301275563892e-06,
+    "other_nll": 1.311301275563892e-06,
+    "nll_absolute_difference": 0.0
+  },
+  {
+    "sample_id": "5a8de5d55542995085b3734d",
+    "comparison": "full_text_vs_shuffled",
+    "mean_kl": 2.393510840192903e-05,
+    "max_kl": 4.780316521646455e-05,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      2152,
+      2753,
+      18341,
+      902,
+      39205
+    ],
+    "first_other_top5_ids": [
+      2152,
+      2753,
+      9693,
+      66479,
+      902
+    ],
+    "first_reference_top5_tokens": [
+      "no",
+      "No",
+      ".no",
+      "Ġno",
+      "(no"
+    ],
+    "first_other_top5_tokens": [
+      "no",
+      "No",
+      "yes",
+      ":no",
+      "Ġno"
+    ],
+    "top5_set_equal": false,
+    "logits_max_absolute_error": 8.856067657470703,
+    "logits_cosine": 0.9598127603530884,
+    "reference_nll": 1.311301275563892e-06,
+    "other_nll": 2.8251846742932685e-05,
+    "nll_absolute_difference": 2.6940545467368793e-05
+  },
+  {
+    "sample_id": "5ade9c2155429939a52fe8fe",
+    "comparison": "full_text_vs_official",
+    "mean_kl": 2.823613787228396e-09,
+    "max_kl": 1.4118059610268574e-08,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      16,
+      48849,
+      785,
+      17,
+      9454
+    ],
+    "first_other_top5_ids": [
+      16,
+      48849,
+      785,
+      17,
+      9454
+    ],
+    "first_reference_top5_tokens": [
+      "1",
+      "Walk",
+      "The",
+      "2",
+      "Yes"
+    ],
+    "first_other_top5_tokens": [
+      "1",
+      "Walk",
+      "The",
+      "2",
+      "Yes"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.0001125335693359375,
+    "logits_cosine": 1.0000104904174805,
+    "reference_nll": 5.7045428548008204e-05,
+    "other_nll": 5.7045428548008204e-05,
+    "nll_absolute_difference": 0.0
+  },
+  {
+    "sample_id": "5ade9c2155429939a52fe8fe",
+    "comparison": "full_text_vs_manual_post",
+    "mean_kl": 2.823613787228396e-09,
+    "max_kl": 1.4118059610268574e-08,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      16,
+      48849,
+      785,
+      17,
+      9454
+    ],
+    "first_other_top5_ids": [
+      16,
+      48849,
+      785,
+      17,
+      9454
+    ],
+    "first_reference_top5_tokens": [
+      "1",
+      "Walk",
+      "The",
+      "2",
+      "Yes"
+    ],
+    "first_other_top5_tokens": [
+      "1",
+      "Walk",
+      "The",
+      "2",
+      "Yes"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.0001125335693359375,
+    "logits_cosine": 1.0000104904174805,
+    "reference_nll": 5.7045428548008204e-05,
+    "other_nll": 5.7045428548008204e-05,
+    "nll_absolute_difference": 0.0
+  },
+  {
+    "sample_id": "5ade9c2155429939a52fe8fe",
+    "comparison": "full_text_vs_manual_pre",
+    "mean_kl": 2.823613787228396e-09,
+    "max_kl": 1.4118059610268574e-08,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      16,
+      48849,
+      785,
+      17,
+      9454
+    ],
+    "first_other_top5_ids": [
+      16,
+      48849,
+      785,
+      17,
+      9454
+    ],
+    "first_reference_top5_tokens": [
+      "1",
+      "Walk",
+      "The",
+      "2",
+      "Yes"
+    ],
+    "first_other_top5_tokens": [
+      "1",
+      "Walk",
+      "The",
+      "2",
+      "Yes"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.0001125335693359375,
+    "logits_cosine": 1.0000104904174805,
+    "reference_nll": 5.7045428548008204e-05,
+    "other_nll": 5.7045428548008204e-05,
+    "nll_absolute_difference": 0.0
+  },
+  {
+    "sample_id": "5ade9c2155429939a52fe8fe",
+    "comparison": "full_text_vs_shuffled",
+    "mean_kl": 5.051342487335205,
+    "max_kl": 23.506954193115234,
+    "top1_match_rate": 0.6000000238418579,
+    "first_top1_match": false,
+    "first_reference_top5_ids": [
+      16,
+      48849,
+      785,
+      17,
+      9454
+    ],
+    "first_other_top5_ids": [
+      2152,
+      2753,
+      785,
+      39205,
+      9693
+    ],
+    "first_reference_top5_tokens": [
+      "1",
+      "Walk",
+      "The",
+      "2",
+      "Yes"
+    ],
+    "first_other_top5_tokens": [
+      "no",
+      "No",
+      "The",
+      "(no",
+      "yes"
+    ],
+    "top5_set_equal": false,
+    "logits_max_absolute_error": 31.506690979003906,
+    "logits_cosine": 0.715674877166748,
+    "reference_nll": 5.7045428548008204e-05,
+    "other_nll": 5.051384449005127,
+    "nll_absolute_difference": 5.051327403576579
+  },
+  {
+    "sample_id": "5ab871725542990e739ec8f8",
+    "comparison": "full_text_vs_official",
+    "mean_kl": -4.740926762281106e-09,
+    "max_kl": 4.468004438651363e-11,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      6033,
+      3731,
+      20943,
+      92940,
+      26058
+    ],
+    "first_other_top5_ids": [
+      6033,
+      3731,
+      20943,
+      92940,
+      26058
+    ],
+    "first_reference_top5_tokens": [
+      "Red",
+      "ĠRed",
+      ".Red",
+      "_Red",
+      "_red"
+    ],
+    "first_other_top5_tokens": [
+      "Red",
+      "ĠRed",
+      ".Red",
+      "_Red",
+      "_red"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.00016164779663085938,
+    "logits_cosine": 1.0000360012054443,
+    "reference_nll": 0.004354578908532858,
+    "other_nll": 0.0043542287312448025,
+    "nll_absolute_difference": 3.501772880554199e-07
+  },
+  {
+    "sample_id": "5ab871725542990e739ec8f8",
+    "comparison": "full_text_vs_manual_post",
+    "mean_kl": -4.740926762281106e-09,
+    "max_kl": 4.468004438651363e-11,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      6033,
+      3731,
+      20943,
+      92940,
+      26058
+    ],
+    "first_other_top5_ids": [
+      6033,
+      3731,
+      20943,
+      92940,
+      26058
+    ],
+    "first_reference_top5_tokens": [
+      "Red",
+      "ĠRed",
+      ".Red",
+      "_Red",
+      "_red"
+    ],
+    "first_other_top5_tokens": [
+      "Red",
+      "ĠRed",
+      ".Red",
+      "_Red",
+      "_red"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.00016164779663085938,
+    "logits_cosine": 1.0000360012054443,
+    "reference_nll": 0.004354578908532858,
+    "other_nll": 0.0043542287312448025,
+    "nll_absolute_difference": 3.501772880554199e-07
+  },
+  {
+    "sample_id": "5ab871725542990e739ec8f8",
+    "comparison": "full_text_vs_manual_pre",
+    "mean_kl": -4.740926762281106e-09,
+    "max_kl": 4.468004438651363e-11,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      6033,
+      3731,
+      20943,
+      92940,
+      26058
+    ],
+    "first_other_top5_ids": [
+      6033,
+      3731,
+      20943,
+      92940,
+      26058
+    ],
+    "first_reference_top5_tokens": [
+      "Red",
+      "ĠRed",
+      ".Red",
+      "_Red",
+      "_red"
+    ],
+    "first_other_top5_tokens": [
+      "Red",
+      "ĠRed",
+      ".Red",
+      "_Red",
+      "_red"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.00016164779663085938,
+    "logits_cosine": 1.0000360012054443,
+    "reference_nll": 0.004354578908532858,
+    "other_nll": 0.0043542287312448025,
+    "nll_absolute_difference": 3.501772880554199e-07
+  },
+  {
+    "sample_id": "5ab871725542990e739ec8f8",
+    "comparison": "full_text_vs_shuffled",
+    "mean_kl": 0.011083574965596199,
+    "max_kl": 0.05434407293796539,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      6033,
+      3731,
+      20943,
+      92940,
+      26058
+    ],
+    "first_other_top5_ids": [
+      6033,
+      30416,
+      2152,
+      6352,
+      1151
+    ],
+    "first_reference_top5_tokens": [
+      "Red",
+      "ĠRed",
+      ".Red",
+      "_Red",
+      "_red"
+    ],
+    "first_other_top5_tokens": [
+      "Red",
+      "Da",
+      "no",
+      "DA",
+      "red"
+    ],
+    "top5_set_equal": false,
+    "logits_max_absolute_error": 29.898818969726562,
+    "logits_cosine": 0.9260293245315552,
+    "reference_nll": 0.004354578908532858,
+    "other_nll": 0.0003482651081867516,
+    "nll_absolute_difference": 0.004006313800346106
+  },
+  {
+    "sample_id": "5a835b88554299123d8c2101",
+    "comparison": "full_text_vs_official",
+    "mean_kl": 2.8880603464287447e-10,
+    "max_kl": 6.255260753817993e-10,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      56,
+      98977,
+      809,
+      29137,
+      20206
+    ],
+    "first_other_top5_ids": [
+      56,
+      98977,
+      809,
+      29137,
+      20206
+    ],
+    "first_reference_top5_tokens": [
+      "Y",
+      "York",
+      "ĠY",
+      "-Y",
+      "(Y"
+    ],
+    "first_other_top5_tokens": [
+      "Y",
+      "York",
+      "ĠY",
+      "-Y",
+      "(Y"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.0001544952392578125,
+    "logits_cosine": 0.9999939799308777,
+    "reference_nll": 2.431806751701515e-05,
+    "other_nll": 2.431806751701515e-05,
+    "nll_absolute_difference": 0.0
+  },
+  {
+    "sample_id": "5a835b88554299123d8c2101",
+    "comparison": "full_text_vs_manual_post",
+    "mean_kl": 2.8880603464287447e-10,
+    "max_kl": 6.255260753817993e-10,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      56,
+      98977,
+      809,
+      29137,
+      20206
+    ],
+    "first_other_top5_ids": [
+      56,
+      98977,
+      809,
+      29137,
+      20206
+    ],
+    "first_reference_top5_tokens": [
+      "Y",
+      "York",
+      "ĠY",
+      "-Y",
+      "(Y"
+    ],
+    "first_other_top5_tokens": [
+      "Y",
+      "York",
+      "ĠY",
+      "-Y",
+      "(Y"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.0001544952392578125,
+    "logits_cosine": 0.9999939799308777,
+    "reference_nll": 2.431806751701515e-05,
+    "other_nll": 2.431806751701515e-05,
+    "nll_absolute_difference": 0.0
+  },
+  {
+    "sample_id": "5a835b88554299123d8c2101",
+    "comparison": "full_text_vs_manual_pre",
+    "mean_kl": 2.8880603464287447e-10,
+    "max_kl": 6.255260753817993e-10,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      56,
+      98977,
+      809,
+      29137,
+      20206
+    ],
+    "first_other_top5_ids": [
+      56,
+      98977,
+      809,
+      29137,
+      20206
+    ],
+    "first_reference_top5_tokens": [
+      "Y",
+      "York",
+      "ĠY",
+      "-Y",
+      "(Y"
+    ],
+    "first_other_top5_tokens": [
+      "Y",
+      "York",
+      "ĠY",
+      "-Y",
+      "(Y"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.0001544952392578125,
+    "logits_cosine": 0.9999939799308777,
+    "reference_nll": 2.431806751701515e-05,
+    "other_nll": 2.431806751701515e-05,
+    "nll_absolute_difference": 0.0
+  },
+  {
+    "sample_id": "5a835b88554299123d8c2101",
+    "comparison": "full_text_vs_shuffled",
+    "mean_kl": 14.46733570098877,
+    "max_kl": 22.650920867919922,
+    "top1_match_rate": 0.3333333432674408,
+    "first_top1_match": false,
+    "first_reference_top5_ids": [
+      56,
+      98977,
+      809,
+      29137,
+      20206
+    ],
+    "first_other_top5_ids": [
+      9693,
+      785,
+      2152,
+      2753,
+      9454
+    ],
+    "first_reference_top5_tokens": [
+      "Y",
+      "York",
+      "ĠY",
+      "-Y",
+      "(Y"
+    ],
+    "first_other_top5_tokens": [
+      "yes",
+      "The",
+      "no",
+      "No",
+      "Yes"
+    ],
+    "top5_set_equal": false,
+    "logits_max_absolute_error": 45.46630096435547,
+    "logits_cosine": 0.7082327008247375,
+    "reference_nll": 2.431806751701515e-05,
+    "other_nll": 14.467486381530762,
+    "nll_absolute_difference": 14.467462063463245
+  },
+  {
+    "sample_id": "5a74e8a25542996c70cfae37",
+    "comparison": "full_text_vs_official",
+    "mean_kl": 2.3199533960571728e-10,
+    "max_kl": 1.1116978448910686e-09,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      32388,
+      14261,
+      47086,
+      34532,
+      27476
+    ],
+    "first_other_top5_ids": [
+      32388,
+      14261,
+      47086,
+      34532,
+      27476
+    ],
+    "first_reference_top5_tokens": [
+      "Bob",
+      "ĠBob",
+      "bob",
+      "Robert",
+      "Bill"
+    ],
+    "first_other_top5_tokens": [
+      "Bob",
+      "ĠBob",
+      "bob",
+      "Robert",
+      "Bill"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.000102996826171875,
+    "logits_cosine": 1.000014066696167,
+    "reference_nll": 4.982464790344238,
+    "other_nll": 4.982486248016357,
+    "nll_absolute_difference": 2.1457672119140625e-05
+  },
+  {
+    "sample_id": "5a74e8a25542996c70cfae37",
+    "comparison": "full_text_vs_manual_post",
+    "mean_kl": 2.3199533960571728e-10,
+    "max_kl": 1.1116978448910686e-09,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      32388,
+      14261,
+      47086,
+      34532,
+      27476
+    ],
+    "first_other_top5_ids": [
+      32388,
+      14261,
+      47086,
+      34532,
+      27476
+    ],
+    "first_reference_top5_tokens": [
+      "Bob",
+      "ĠBob",
+      "bob",
+      "Robert",
+      "Bill"
+    ],
+    "first_other_top5_tokens": [
+      "Bob",
+      "ĠBob",
+      "bob",
+      "Robert",
+      "Bill"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.000102996826171875,
+    "logits_cosine": 1.000014066696167,
+    "reference_nll": 4.982464790344238,
+    "other_nll": 4.982486248016357,
+    "nll_absolute_difference": 2.1457672119140625e-05
+  },
+  {
+    "sample_id": "5a74e8a25542996c70cfae37",
+    "comparison": "full_text_vs_manual_pre",
+    "mean_kl": 2.3199533960571728e-10,
+    "max_kl": 1.1116978448910686e-09,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      32388,
+      14261,
+      47086,
+      34532,
+      27476
+    ],
+    "first_other_top5_ids": [
+      32388,
+      14261,
+      47086,
+      34532,
+      27476
+    ],
+    "first_reference_top5_tokens": [
+      "Bob",
+      "ĠBob",
+      "bob",
+      "Robert",
+      "Bill"
+    ],
+    "first_other_top5_tokens": [
+      "Bob",
+      "ĠBob",
+      "bob",
+      "Robert",
+      "Bill"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 0.000102996826171875,
+    "logits_cosine": 1.000014066696167,
+    "reference_nll": 4.982464790344238,
+    "other_nll": 4.982486248016357,
+    "nll_absolute_difference": 2.1457672119140625e-05
+  },
+  {
+    "sample_id": "5a74e8a25542996c70cfae37",
+    "comparison": "full_text_vs_shuffled",
+    "mean_kl": 14.49554443359375,
+    "max_kl": 24.742008209228516,
+    "top1_match_rate": 0.0,
+    "first_top1_match": false,
+    "first_reference_top5_ids": [
+      32388,
+      14261,
+      47086,
+      34532,
+      27476
+    ],
+    "first_other_top5_ids": [
+      2152,
+      785,
+      2753,
+      16141,
+      9693
+    ],
+    "first_reference_top5_tokens": [
+      "Bob",
+      "ĠBob",
+      "bob",
+      "Robert",
+      "Bill"
+    ],
+    "first_other_top5_tokens": [
+      "no",
+      "The",
+      "No",
+      "Answer",
+      "yes"
+    ],
+    "top5_set_equal": false,
+    "logits_max_absolute_error": 40.24353790283203,
+    "logits_cosine": 0.5476365089416504,
+    "reference_nll": 4.982464790344238,
+    "other_nll": 14.489961624145508,
+    "nll_absolute_difference": 9.50749683380127
+  },
+  {
+    "sample_id": "5a835a265542992ef85e2281",
+    "comparison": "full_text_vs_official",
+    "mean_kl": 1.6815423720117906e-08,
+    "max_kl": 7.69383632359677e-08,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      30155,
+      51487,
+      40338,
+      785,
+      65402
+    ],
+    "first_other_top5_ids": [
+      30155,
+      51487,
+      40338,
+      785,
+      65402
+    ],
+    "first_reference_top5_tokens": [
+      "film",
+      "Film",
+      "Motion",
+      "The",
+      "films"
+    ],
+    "first_other_top5_tokens": [
+      "film",
+      "Film",
+      "Motion",
+      "The",
+      "films"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 8.106231689453125e-05,
+    "logits_cosine": 1.0000113248825073,
+    "reference_nll": 2.0798487663269043,
+    "other_nll": 2.0798497200012207,
+    "nll_absolute_difference": 9.5367431640625e-07
+  },
+  {
+    "sample_id": "5a835a265542992ef85e2281",
+    "comparison": "full_text_vs_manual_post",
+    "mean_kl": 1.6815423720117906e-08,
+    "max_kl": 7.69383632359677e-08,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      30155,
+      51487,
+      40338,
+      785,
+      65402
+    ],
+    "first_other_top5_ids": [
+      30155,
+      51487,
+      40338,
+      785,
+      65402
+    ],
+    "first_reference_top5_tokens": [
+      "film",
+      "Film",
+      "Motion",
+      "The",
+      "films"
+    ],
+    "first_other_top5_tokens": [
+      "film",
+      "Film",
+      "Motion",
+      "The",
+      "films"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 8.106231689453125e-05,
+    "logits_cosine": 1.0000113248825073,
+    "reference_nll": 2.0798487663269043,
+    "other_nll": 2.0798497200012207,
+    "nll_absolute_difference": 9.5367431640625e-07
+  },
+  {
+    "sample_id": "5a835a265542992ef85e2281",
+    "comparison": "full_text_vs_manual_pre",
+    "mean_kl": 1.6815423720117906e-08,
+    "max_kl": 7.69383632359677e-08,
+    "top1_match_rate": 1.0,
+    "first_top1_match": true,
+    "first_reference_top5_ids": [
+      30155,
+      51487,
+      40338,
+      785,
+      65402
+    ],
+    "first_other_top5_ids": [
+      30155,
+      51487,
+      40338,
+      785,
+      65402
+    ],
+    "first_reference_top5_tokens": [
+      "film",
+      "Film",
+      "Motion",
+      "The",
+      "films"
+    ],
+    "first_other_top5_tokens": [
+      "film",
+      "Film",
+      "Motion",
+      "The",
+      "films"
+    ],
+    "top5_set_equal": true,
+    "logits_max_absolute_error": 8.106231689453125e-05,
+    "logits_cosine": 1.0000113248825073,
+    "reference_nll": 2.0798487663269043,
+    "other_nll": 2.0798497200012207,
+    "nll_absolute_difference": 9.5367431640625e-07
+  },
+  {
+    "sample_id": "5a835a265542992ef85e2281",
+    "comparison": "full_text_vs_shuffled",
+    "mean_kl": 8.067145347595215,
+    "max_kl": 20.023874282836914,
+    "top1_match_rate": 0.4000000059604645,
+    "first_top1_match": false,
+    "first_reference_top5_ids": [
+      30155,
+      51487,
+      40338,
+      785,
+      65402
+    ],
+    "first_other_top5_ids": [
+      785,
+      2152,
+      2753,
+      40,
+      16141
+    ],
+    "first_reference_top5_tokens": [
+      "film",
+      "Film",
+      "Motion",
+      "The",
+      "films"
+    ],
+    "first_other_top5_tokens": [
+      "The",
+      "no",
+      "No",
+      "I",
+      "Answer"
+    ],
+    "top5_set_equal": false,
+    "logits_max_absolute_error": 25.271610260009766,
+    "logits_cosine": 0.8197156190872192,
+    "reference_nll": 2.0798487663269043,
+    "other_nll": 7.2004828453063965,
+    "nll_absolute_difference": 5.120634078979492
+  }
+]

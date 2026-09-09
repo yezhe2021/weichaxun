@@ -1,0 +1,586 @@
+{
+  "passed": true,
+  "count": 64,
+  "maximum_kv_abs_difference": 0.0,
+  "maximum_logits_abs_difference": 0.0,
+  "generation_matches": 64,
+  "f1_matches": 64,
+  "rows": [
+    {
+      "sample_id": "5ac3d9135542995c82c4ac4c",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "The",
+      "learnable_prediction": "The",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5adc0e395542996e685252c1",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "????????????...??????............\n...\n...............\n...\n......",
+      "learnable_prediction": "????????????...??????............\n...\n...............\n...\n......",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5adc597d55429947ff17392f",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "у\n\nв\n\nу\n\nу\n\nу\n\nв\n\nв\n\nу\n\nв\n\nу\n\nу\n\nу\n\nу\n\nу\n\nу\n\nу",
+      "learnable_prediction": "у\n\nв\n\nу\n\nу\n\nу\n\nв\n\nв\n\nу\n\nв\n\nу\n\nу\n\nу\n\nу\n\nу\n\nу\n\nу",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a7128b05542994082a3e5f2",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "## \n## \n## \n## \n## \n## 1",
+      "learnable_prediction": "## \n## \n## \n## \n## \n## 1",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ab281f45542993be8fa9938",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "ال\n\nال\n\nال\n\nال\n\nال\n\nThe",
+      "learnable_prediction": "ال\n\nال\n\nال\n\nال\n\nال\n\nThe",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a8841a35542994846c1ce69",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "A\n\n\n\nAnswer\n?\n\n\n\n\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\n\n\nAnswer\nAnswer",
+      "learnable_prediction": "A\n\n\n\nAnswer\n?\n\n\n\n\nAnswer\nAnswer\nAnswer\nAnswer\nAnswer\n\n\nAnswer\nAnswer",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ae4a3265542995ad6573de5",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "В\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ",
+      "learnable_prediction": "В\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a7b1c745542992d025e6777",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "",
+      "learnable_prediction": "",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a8135eb55429938b61422fa",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "##.",
+      "learnable_prediction": "##.",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ab8494d55429916710eb016",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Herc\n\n? The answer is \"Which was the\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n, 1",
+      "learnable_prediction": "Herc\n\n? The answer is \"Which was the\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n, 1",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a73bcf055429978a71e909c",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": ".\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.",
+      "learnable_prediction": ".\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ab1c2bf5542997061209558",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "а\n\n###",
+      "learnable_prediction": "а\n\n###",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ade0fb95542997545bbbe39",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": ".The",
+      "learnable_prediction": ".The",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ae00de055429906c02daab5",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Загізінідінідінідінідінідінідінід",
+      "learnable_prediction": "Загізінідінідінідінідінідінідінід",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a85b2d95542997b5ce40028",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Поро",
+      "learnable_prediction": "Поро",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a7768cb5542993569682d88",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": ".С\n\n.В\n\n.С\n\n..\n.Н\n\n.С\n\n.С\n\n.Д\n\n.Д\n\n.Э\n\n.С",
+      "learnable_prediction": ".С\n\n.В\n\n.С\n\n..\n.Н\n\n.С\n\n.С\n\n.Д\n\n.Д\n\n.Э\n\n.С",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ae0504055429942ec259c6a",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": ".\r\n.\r\n.\r\n.\r\n.\r\n.\r\n.\r\n.\r\n.",
+      "learnable_prediction": ".\r\n.\r\n.\r\n.\r\n.\r\n.\r\n.\r\n.\r\n.",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ade64b655429939a52fe89a",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|",
+      "learnable_prediction": "|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5adbe447554299438c868ccd",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": ".chemy\n\n.\n\n-##3\n\n##\n\n2\n\n2\n\n3\n\n4\n\n3\n\n4\n\n4\n\n4\n\n4\n\n4",
+      "learnable_prediction": ".chemy\n\n.\n\n-##3\n\n##\n\n2\n\n2\n\n3\n\n4\n\n3\n\n4\n\n4\n\n4\n\n4\n\n4",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a8f45385542997ba9cb320a",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "The user is theaceut. and Aruncus are both examples of what type of plant? The user is asking for the type of plant. and Arunc",
+      "learnable_prediction": "The user is theaceut. and Aruncus are both examples of what type of plant? The user is asking for the type of plant. and Arunc",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a8f9b8c5542997ba9cb32e6",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "В\n\nС\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР",
+      "learnable_prediction": "В\n\nС\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР\n\nР",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a8e8f6f5542995085b37451",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Вер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер",
+      "learnable_prediction": "Вер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер.\n\nВер",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a80a587554299485f598676",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "A\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n,",
+      "learnable_prediction": "A\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n,",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ab5279d5542996a3a96a03f",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "acious\n\nacious\n\nacious\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac",
+      "learnable_prediction": "acious\n\nacious\n\nacious\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac\n\nac",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ab295eb554299194fa93412",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Assistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant",
+      "learnable_prediction": "Assistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant\n\nAssistant",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a87c7dc5542996e4f30891b",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Assistant",
+      "learnable_prediction": "Assistant",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a74670855429929fddd840d",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "esimal\n\nial\n\noo\n\naa\n\naaa\n\naaa\n\naaa\n\naaa\n\naaa\n\naaa\n\naaa\n\naaaa\n\naaaa\n\naaaa\n\naaaa\n\naaaa",
+      "learnable_prediction": "esimal\n\nial\n\noo\n\naa\n\naaa\n\naaa\n\naaa\n\naaa\n\naaa\n\naaa\n\naaa\n\naaaa\n\naaaa\n\naaaa\n\naaaa\n\naaaa",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a823f61554299676cceb234",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "У\n\nБ",
+      "learnable_prediction": "У\n\nБ",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a8f122955429918e830d17f",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Answer:",
+      "learnable_prediction": "Answer:",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a7f0be055429930675135fe",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": ".\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n##\n\n##\n\n\n##\n\n\n##\n\n\n##\n\n\n##\n\n\n##\n\n#\n\nN\n\n#",
+      "learnable_prediction": ".\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n##\n\n##\n\n\n##\n\n\n##\n\n\n##\n\n\n##\n\n\n##\n\n#\n\nN\n\n#",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a79fc8b5542994f819ef114",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "И\n\nС\n\nГ\n\nС\n\nГ\n\nГ\n\nР\n\nД\n\nД\n\nД\n\nД\n\nД\n\nД\n\nС\n\nС\n\nС",
+      "learnable_prediction": "И\n\nС\n\nГ\n\nС\n\nГ\n\nГ\n\nР\n\nД\n\nД\n\nД\n\nД\n\nД\n\nД\n\nС\n\nС\n\nС",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5abeb91c5542994516f45400",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "ывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nThe answer to the question is: \"Which of the following",
+      "learnable_prediction": "ывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nывается\n\nThe answer to the question is: \"Which of the following",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a8d93ad554299653c1aa13d",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "أ\n\nأ\n\nي\n\nم\n\nال\n\nر\n\nأ\n\nي\n\nم\n\nأ\n\nي\n\nم\n\nأ\n\nأ\n\nأ\n\nأ",
+      "learnable_prediction": "أ\n\nأ\n\nي\n\nم\n\nال\n\nر\n\nأ\n\nي\n\nم\n\nأ\n\nي\n\nم\n\nأ\n\nأ\n\nأ\n\nأ",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a866c04554299211dda2b25",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "The answer is: \n*\n\n\nBenedict\n\nThe answer is:\n*\n\n\nBenedict\n\nThe answer is:\n*\n\n\nBenedict\n\nThe",
+      "learnable_prediction": "The answer is: \n*\n\n\nBenedict\n\nThe answer is:\n*\n\n\nBenedict\n\nThe answer is:\n*\n\n\nBenedict\n\nThe",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a733b835542991f9a20c6b2",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "###",
+      "learnable_prediction": "###",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5adc65e85542996e68525350",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "$values$\n\n\n$\n\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$",
+      "learnable_prediction": "$values$\n\n\n$\n\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$\n$",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5adc393f5542996e685252e7",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "###\n###############???\n??\nAnswer:?\nAnswer:?\n\n?\n\n??\n\n?\n\n??\n\n?\n\nAnswer::?\nAnswer:?",
+      "learnable_prediction": "###\n###############???\n??\nAnswer:?\nAnswer:?\n\n?\n\n??\n\n?\n\n??\n\n?\n\nAnswer::?\nAnswer:?",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5adf41a45542993a75d26456",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "П\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.",
+      "learnable_prediction": "П\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.\n\n.",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ae527085542993aec5ec165",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "</think>\n\n\n</think>\n\nAnswer::",
+      "learnable_prediction": "</think>\n\n\n</think>\n\nAnswer::",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a74702555429929fddd8428",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "')}}\"></",
+      "learnable_prediction": "')}}\"></",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a74bdce55429929fddd84e1",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "The. (2. 1. (2... (2.. and",
+      "learnable_prediction": "The. (2. 1. (2... (2.. and",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a7458ff55429979e2882918",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Е\n\nС\n\nР\n\nЕ\n\nР\n\nЕ\n\nЕ\n\nР\n\nЕ\n\nЕ\n\nЕ\n\nЕ\n\nЕ\n\nЕ\n\nЕ\n\nЕ",
+      "learnable_prediction": "Е\n\nС\n\nР\n\nЕ\n\nР\n\nЕ\n\nЕ\n\nР\n\nЕ\n\nЕ\n\nЕ\n\nЕ\n\nЕ\n\nЕ\n\nЕ\n\nЕ",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a7e22ed5542995ed0d166a7",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": ".С\n\n.Р\n\n.В\n\n.С\n\n.С\n\n.С\n\n.С\n\n.С\n\n.С\n\n.С\n\n.С",
+      "learnable_prediction": ".С\n\n.Р\n\n.В\n\n.С\n\n.С\n\n.С\n\n.С\n\n.С\n\n.С\n\n.С\n\n.С",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a8c7232554299585d9e36a6",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "?\n\n?\n\n?\n\nAnswer:\n\nAnswer",
+      "learnable_prediction": "?\n\n?\n\n?\n\nAnswer:\n\nAnswer",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ae5a0765542992663a4f1fb",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "The\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe",
+      "learnable_prediction": "The\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe\n\nThe",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a7dcdea5542990b8f503abc",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "The answer is a question, but the answer is a man, but the answer is a man, but the answer is a man, but the answer is a",
+      "learnable_prediction": "The answer is a question, but the answer is a man, but the answer is a man, but the answer is a man, but the answer is a",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a75377c55429929fddd8514",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "The",
+      "learnable_prediction": "The",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a83972f5542996488c2e46d",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "",
+      "learnable_prediction": "",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ae834e95542997ec272776a",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "",
+      "learnable_prediction": "",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ab48f245542990594ba9c66",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "S\n\nO\n\nS\n\nO\n\nN\n\nB\n\nE\n\nT\n\nS\n\nE\n\n.",
+      "learnable_prediction": "S\n\nO\n\nS\n\nO\n\nN\n\nB\n\nE\n\nT\n\nS\n\nE\n\n.",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a737d3c55429908901be2c8",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "В\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ",
+      "learnable_prediction": "В\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ae114f155429901ffe4ad5c",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "According to the same as the same as the same as the same as the same as the same as the same as the same as the same as the same as",
+      "learnable_prediction": "According to the same as the same as the same as the same as the same as the same as the same as the same as the same as the same as",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a8091515542996402f6a563",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": ".Всито-Дауно, 10000000000000000000",
+      "learnable_prediction": ".Всито-Дауно, 10000000000000000000",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5adea62e55429975fa854f3b",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "اب\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nthat",
+      "learnable_prediction": "اب\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nthat",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ade51b45542997c77adedf4",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "American\n\nAmerican\n\nAmerican\n\nAmerican\n\n is a U.S. and P.R. The U.S. and P.R. are the same as the U.S",
+      "learnable_prediction": "American\n\nAmerican\n\nAmerican\n\nAmerican\n\n is a U.S. and P.R. The U.S. and P.R. are the same as the U.S",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a7636fb55429976ec32bd79",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": ".",
+      "learnable_prediction": ".",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ab82bbb5542990e739ec84c",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "|\\\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|",
+      "learnable_prediction": "|\\\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|\n\n\n|",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5abd2eb255429933744ab750",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Operative\n\n?\n\n\n?\n\n\n?\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n?",
+      "learnable_prediction": "Operative\n\n?\n\n\n?\n\n\n?\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n??\n\n\n?",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ab9ba6e554299743d22ebcd",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Assistant",
+      "learnable_prediction": "Assistant",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5abb07e95542992ccd8e7ec4",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "###\n\n###\n\n\n\n\n###\n\n\n###\n\n\n###\n\n\n###\n\n\n###\n\n\n###\n\n\n\n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n###",
+      "learnable_prediction": "###\n\n###\n\n\n\n\n###\n\n\n###\n\n\n###\n\n\n###\n\n\n###\n\n\n###\n\n\n\n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n###",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ab6bdd255429953192ad36e",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Extend",
+      "learnable_prediction": "Extend",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a8f84505542992414482aef",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "Cour\n\nA\n\nB\n\nC\n\n\n\nThe\n\nAnswer:?\nWhat",
+      "learnable_prediction": "Cour\n\nA\n\nB\n\nC\n\n\n\nThe\n\nAnswer:?\nWhat",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5ae5e852554299546bf82fb8",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "",
+      "learnable_prediction": "",
+      "generation_match": true,
+      "f1_match": true
+    },
+    {
+      "sample_id": "5a8d9de2554299068b959d62",
+      "kv_max_abs": 0.0,
+      "logits_max_abs": 0.0,
+      "repeat_prediction": "В\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ",
+      "learnable_prediction": "В\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ\n\nВ",
+      "generation_match": true,
+      "f1_match": true
+    }
+  ]
+}

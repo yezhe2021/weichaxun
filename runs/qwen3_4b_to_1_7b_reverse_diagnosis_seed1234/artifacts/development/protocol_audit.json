@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "train": 512,
+    "validation": 64,
+    "test": 128
+  },
+  "source4_shape": "[36,T,8,128]",
+  "target1_7_shape": "[28,T,8,128]",
+  "token_ids_shared": true
+}

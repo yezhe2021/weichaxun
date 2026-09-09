@@ -1,0 +1,3842 @@
+[
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.2651591300964355
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Emraan Hashmi, Jacqueline Fernandez, Prashant Narayanan",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.8101166486740112
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Emraan Hashmi, Jacqueline Fernandez, Prashant Narayanan",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.8190770149230957
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.785937309265137
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Isabella (Belle) Baumfree",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.017334826290607452
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Isabella (Belle) Baumfree",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.020202988758683205
+  },
+  {
+    "sample_id": "5a8de5d55542995085b3734d",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 7.092913619999308e-06
+  },
+  {
+    "sample_id": "5a8de5d55542995085b3734d",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 1.5675894246669486e-05
+  },
+  {
+    "sample_id": "5a8de5d55542995085b3734d",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 1.5914307368802838e-05
+  },
+  {
+    "sample_id": "5ade9c2155429939a52fe8fe",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "1854",
+    "prediction": "1901",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.3924400806427002
+  },
+  {
+    "sample_id": "5ade9c2155429939a52fe8fe",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "1854",
+    "prediction": "1953",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.731347680091858
+  },
+  {
+    "sample_id": "5ade9c2155429939a52fe8fe",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "1854",
+    "prediction": "1953",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.7188472747802734
+  },
+  {
+    "sample_id": "5ab871725542990e739ec8f8",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Red House Painters",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.8257741928100586
+  },
+  {
+    "sample_id": "5ab871725542990e739ec8f8",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Red House Painters",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.26294207572937
+  },
+  {
+    "sample_id": "5ab871725542990e739ec8f8",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Red House Painters",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.256681442260742
+  },
+  {
+    "sample_id": "5a835b88554299123d8c2101",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "YIVO",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.787372589111328
+  },
+  {
+    "sample_id": "5a835b88554299123d8c2101",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "YIVO",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.990915298461914
+  },
+  {
+    "sample_id": "5a835b88554299123d8c2101",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "YIVO",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.0074381828308105
+  },
+  {
+    "sample_id": "5a74e8a25542996c70cfae37",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Robert Arthur Mould",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.887150764465332
+  },
+  {
+    "sample_id": "5a74e8a25542996c70cfae37",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Robert Arthur Mould",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.6345014572143555
+  },
+  {
+    "sample_id": "5a74e8a25542996c70cfae37",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Robert Arthur Mould",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.618925094604492
+  },
+  {
+    "sample_id": "5a835a265542992ef85e2281",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "theater and film",
+    "prediction": "film industry",
+    "em": 0.0,
+    "f1": 0.4,
+    "nll": 4.873779773712158
+  },
+  {
+    "sample_id": "5a835a265542992ef85e2281",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "theater and film",
+    "prediction": "film",
+    "em": 0.0,
+    "f1": 0.5,
+    "nll": 3.7519748210906982
+  },
+  {
+    "sample_id": "5a835a265542992ef85e2281",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "theater and film",
+    "prediction": "film",
+    "em": 0.0,
+    "f1": 0.5,
+    "nll": 3.763078212738037
+  },
+  {
+    "sample_id": "5adc396155429944faac2479",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.1093831062316895
+  },
+  {
+    "sample_id": "5adc396155429944faac2479",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 3.701366949826479e-05
+  },
+  {
+    "sample_id": "5adc396155429944faac2479",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 3.4510398108977824e-05
+  },
+  {
+    "sample_id": "5a7df6e65542995f4f402353",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Cherie Ann Currie",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.813468933105469
+  },
+  {
+    "sample_id": "5a7df6e65542995f4f402353",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Cherie Ann Currie",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.131574630737305
+  },
+  {
+    "sample_id": "5a7df6e65542995f4f402353",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Cherie Ann Currie",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.130433082580566
+  },
+  {
+    "sample_id": "5add292b5542990d50227e0a",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Detroit, Michigan",
+    "prediction": "New York",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.346005439758301
+  },
+  {
+    "sample_id": "5add292b5542990d50227e0a",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Detroit, Michigan",
+    "prediction": "Cleveland",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.74894642829895
+  },
+  {
+    "sample_id": "5add292b5542990d50227e0a",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Detroit, Michigan",
+    "prediction": "Cleveland",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.7286601066589355
+  },
+  {
+    "sample_id": "5ac02edb554299294b218f41",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Phil Collins",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.844067573547363
+  },
+  {
+    "sample_id": "5ac02edb554299294b218f41",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Phil Collins",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.168628692626953
+  },
+  {
+    "sample_id": "5ac02edb554299294b218f41",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Phil Collins",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.214661121368408
+  },
+  {
+    "sample_id": "5a8f876e5542997ba9cb32a1",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 4.768360213347478e-06
+  },
+  {
+    "sample_id": "5a8f876e5542997ba9cb32a1",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 2.32457637139305e-06
+  },
+  {
+    "sample_id": "5a8f876e5542997ba9cb32a1",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 2.264971953991335e-06
+  },
+  {
+    "sample_id": "5ab1ec725542993be8fa9883",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Stoloff",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.368014812469482
+  },
+  {
+    "sample_id": "5ab1ec725542993be8fa9883",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Stoloff",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.917744636535645
+  },
+  {
+    "sample_id": "5ab1ec725542993be8fa9883",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Stoloff",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.922163009643555
+  },
+  {
+    "sample_id": "5ac283f7554299677310254a",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Xinghua () is a county-level city",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.218216896057129
+  },
+  {
+    "sample_id": "5ac283f7554299677310254a",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Xinghua () is a county-level city",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.176126003265381
+  },
+  {
+    "sample_id": "5ac283f7554299677310254a",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Xinghua () is a county-level city",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.170504570007324
+  },
+  {
+    "sample_id": "5ade6eb65542992fa25da782",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Johnny Cash, Waylon Jennings",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.671530723571777
+  },
+  {
+    "sample_id": "5ade6eb65542992fa25da782",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Johnny Cash, Waylon Jennings",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.7537777423858643
+  },
+  {
+    "sample_id": "5ade6eb65542992fa25da782",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Johnny Cash, Waylon Jennings",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.7462522983551025
+  },
+  {
+    "sample_id": "5a810221554299260e20a1f9",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Andrew Lloyd Webber and Tim Rice",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.280555725097656
+  },
+  {
+    "sample_id": "5a810221554299260e20a1f9",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Andrew Lloyd Webber and Tim Rice",
+    "prediction": "Murray Head",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.927379131317139
+  },
+  {
+    "sample_id": "5a810221554299260e20a1f9",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Andrew Lloyd Webber and Tim Rice",
+    "prediction": "Murray Head",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.952459812164307
+  },
+  {
+    "sample_id": "5a72aec45542994cef4bc3d7",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Nelson Algren",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.799546241760254
+  },
+  {
+    "sample_id": "5a72aec45542994cef4bc3d7",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Nelson Algren",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 12.01018238067627
+  },
+  {
+    "sample_id": "5a72aec45542994cef4bc3d7",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Nelson Algren",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 11.961790084838867
+  },
+  {
+    "sample_id": "5ae15d70554299422ee9966f",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Fredric March",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.129037380218506
+  },
+  {
+    "sample_id": "5ae15d70554299422ee9966f",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Fredric March",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.744771957397461
+  },
+  {
+    "sample_id": "5ae15d70554299422ee9966f",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Fredric March",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.815066337585449
+  },
+  {
+    "sample_id": "5ab96ab755429970cfb8eacd",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.929021835327148
+  },
+  {
+    "sample_id": "5ab96ab755429970cfb8eacd",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+    "prediction": "Max Martin",
+    "em": 0.0,
+    "f1": 0.4444444444444445,
+    "nll": 1.3460298776626587
+  },
+  {
+    "sample_id": "5ab96ab755429970cfb8eacd",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+    "prediction": "Max Martin",
+    "em": 0.0,
+    "f1": 0.4444444444444445,
+    "nll": 1.3477661609649658
+  },
+  {
+    "sample_id": "5a82efe355429966c78a6aa1",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Winter Haven Mall",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.378983497619629
+  },
+  {
+    "sample_id": "5a82efe355429966c78a6aa1",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Winter Haven Mall",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.019187927246094
+  },
+  {
+    "sample_id": "5a82efe355429966c78a6aa1",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Winter Haven Mall",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.113268852233887
+  },
+  {
+    "sample_id": "5a865bbf5542991e77181615",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Ghostbusters: Answer the Call",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 13.515899658203125
+  },
+  {
+    "sample_id": "5a865bbf5542991e77181615",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Ghostbusters: Answer the Call",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.810544967651367
+  },
+  {
+    "sample_id": "5a865bbf5542991e77181615",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Ghostbusters: Answer the Call",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.807896614074707
+  },
+  {
+    "sample_id": "5ab850795542990e739ec8bd",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Kennebec County, Maine",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.361404895782471
+  },
+  {
+    "sample_id": "5ab850795542990e739ec8bd",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Kennebec County, Maine",
+    "prediction": "Maine",
+    "em": 0.0,
+    "f1": 0.5,
+    "nll": 7.824422359466553
+  },
+  {
+    "sample_id": "5ab850795542990e739ec8bd",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Kennebec County, Maine",
+    "prediction": "Maine",
+    "em": 0.0,
+    "f1": 0.5,
+    "nll": 7.857839107513428
+  },
+  {
+    "sample_id": "5a9052765542995651fb513d",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Prof Bhabananda Deka",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.428445339202881
+  },
+  {
+    "sample_id": "5a9052765542995651fb513d",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Prof Bhabananda Deka",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.444622039794922
+  },
+  {
+    "sample_id": "5a9052765542995651fb513d",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Prof Bhabananda Deka",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.4168701171875
+  },
+  {
+    "sample_id": "5a80ad205542992bc0c4a79d",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "1st Earl Grosvenor",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.841531753540039
+  },
+  {
+    "sample_id": "5a80ad205542992bc0c4a79d",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "1st Earl Grosvenor",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.838152885437012
+  },
+  {
+    "sample_id": "5a80ad205542992bc0c4a79d",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "1st Earl Grosvenor",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.804740905761719
+  },
+  {
+    "sample_id": "5abf877c5542990832d3a147",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.2750357389450073
+  },
+  {
+    "sample_id": "5abf877c5542990832d3a147",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 1.2993700693186838e-05
+  },
+  {
+    "sample_id": "5abf877c5542990832d3a147",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 1.335132219537627e-05
+  },
+  {
+    "sample_id": "5a76f22055429972597f13fa",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "vocalist",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.2686767578125
+  },
+  {
+    "sample_id": "5a76f22055429972597f13fa",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "vocalist",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.04476261138916
+  },
+  {
+    "sample_id": "5a76f22055429972597f13fa",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "vocalist",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.067225456237793
+  },
+  {
+    "sample_id": "5a72bbfa5542992359bc318d",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "University of Washington",
+    "prediction": "University of Washington",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.028906166553497314
+  },
+  {
+    "sample_id": "5a72bbfa5542992359bc318d",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "University of Washington",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.308822154998779
+  },
+  {
+    "sample_id": "5a72bbfa5542992359bc318d",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "University of Washington",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.375227928161621
+  },
+  {
+    "sample_id": "5a888abc5542997e5c09a604",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Ghettopoly",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.212527275085449
+  },
+  {
+    "sample_id": "5a888abc5542997e5c09a604",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Ghettopoly",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.135704040527344
+  },
+  {
+    "sample_id": "5a888abc5542997e5c09a604",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Ghettopoly",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.162611961364746
+  },
+  {
+    "sample_id": "5a8463d05542990548d0b2a5",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Shari Shattuck",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.873673915863037
+  },
+  {
+    "sample_id": "5a8463d05542990548d0b2a5",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Shari Shattuck",
+    "prediction": "Shari Shattuck",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.09227901697158813
+  },
+  {
+    "sample_id": "5a8463d05542990548d0b2a5",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Shari Shattuck",
+    "prediction": "Shari Shattuck",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.1626783013343811
+  },
+  {
+    "sample_id": "5ac540365542994611c8b470",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Loughborough University",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.2443575859069824
+  },
+  {
+    "sample_id": "5ac540365542994611c8b470",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Loughborough University",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.4777257442474365
+  },
+  {
+    "sample_id": "5ac540365542994611c8b470",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Loughborough University",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.4711530208587646
+  },
+  {
+    "sample_id": "5a90a9a45542990a9849367e",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Podocarpus",
+    "prediction": "Osmunda",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.6047269701957703
+  },
+  {
+    "sample_id": "5a90a9a45542990a9849367e",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Podocarpus",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.600042819976807
+  },
+  {
+    "sample_id": "5a90a9a45542990a9849367e",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Podocarpus",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.5790815353393555
+  },
+  {
+    "sample_id": "5ac156d05542994ab5c67ce9",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.6681036949157715
+  },
+  {
+    "sample_id": "5ac156d05542994ab5c67ce9",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.007084286771714687
+  },
+  {
+    "sample_id": "5ac156d05542994ab5c67ce9",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.007084286771714687
+  },
+  {
+    "sample_id": "5abf8e135542990832d3a14f",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Daniel Ricciardo",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.841197490692139
+  },
+  {
+    "sample_id": "5abf8e135542990832d3a14f",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Daniel Ricciardo",
+    "prediction": "Daniel",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 0.180812805891037
+  },
+  {
+    "sample_id": "5abf8e135542990832d3a14f",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Daniel Ricciardo",
+    "prediction": "Daniel",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 0.20480605959892273
+  },
+  {
+    "sample_id": "5a72f45a5542992359bc31e6",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "MGM Grand Garden Arena",
+    "prediction": "Mayweather-Ortiz",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.0545263290405273
+  },
+  {
+    "sample_id": "5a72f45a5542992359bc31e6",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "MGM Grand Garden Arena",
+    "prediction": "MGM Grand Garden Arena",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 5.3299067076295614e-05
+  },
+  {
+    "sample_id": "5a72f45a5542992359bc31e6",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "MGM Grand Garden Arena",
+    "prediction": "MGM Grand Garden Arena",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 5.703344868379645e-05
+  },
+  {
+    "sample_id": "5ae376a35542990afbd1e163",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 6.562065391335636e-05
+  },
+  {
+    "sample_id": "5ae376a35542990afbd1e163",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.0021735341288149357
+  },
+  {
+    "sample_id": "5ae376a35542990afbd1e163",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.0019797899294644594
+  },
+  {
+    "sample_id": "5a8b3fe85542995d1e6f1323",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Johnson Press",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 14.95858383178711
+  },
+  {
+    "sample_id": "5a8b3fe85542995d1e6f1323",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Johnson Press",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.182760238647461
+  },
+  {
+    "sample_id": "5a8b3fe85542995d1e6f1323",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Johnson Press",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.193185806274414
+  },
+  {
+    "sample_id": "5ac3ae475542995ef918c1e5",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.7800544500350952
+  },
+  {
+    "sample_id": "5ac3ae475542995ef918c1e5",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.189264178276062
+  },
+  {
+    "sample_id": "5ac3ae475542995ef918c1e5",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.189264178276062
+  },
+  {
+    "sample_id": "5ac23f9555429951e9e684db",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Seldom Jackson",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 13.314004898071289
+  },
+  {
+    "sample_id": "5ac23f9555429951e9e684db",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Seldom Jackson",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.499541282653809
+  },
+  {
+    "sample_id": "5ac23f9555429951e9e684db",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Seldom Jackson",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.591836929321289
+  },
+  {
+    "sample_id": "5ab528a3554299637185c4e5",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "musician, singer, and songwriter",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.89727783203125
+  },
+  {
+    "sample_id": "5ab528a3554299637185c4e5",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "musician, singer, and songwriter",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.877182483673096
+  },
+  {
+    "sample_id": "5ab528a3554299637185c4e5",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "musician, singer, and songwriter",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.848486423492432
+  },
+  {
+    "sample_id": "5ade64c7554299728e26c710",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.03828926011919975
+  },
+  {
+    "sample_id": "5ade64c7554299728e26c710",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.579104483127594
+  },
+  {
+    "sample_id": "5ade64c7554299728e26c710",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.5474293231964111
+  },
+  {
+    "sample_id": "5a7c9f325542990527d554e6",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Blue",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.108613014221191
+  },
+  {
+    "sample_id": "5a7c9f325542990527d554e6",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Blue",
+    "prediction": "Blue",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.000232943071750924
+  },
+  {
+    "sample_id": "5a7c9f325542990527d554e6",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Blue",
+    "prediction": "Blue",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.00023538577079307288
+  },
+  {
+    "sample_id": "5adfdd1c55429906c02daa74",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Tse Tse Fly",
+    "prediction": "Tse Tse Fly",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.00046369791380129755
+  },
+  {
+    "sample_id": "5adfdd1c55429906c02daa74",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Tse Tse Fly",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.855685710906982
+  },
+  {
+    "sample_id": "5adfdd1c55429906c02daa74",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Tse Tse Fly",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.853048324584961
+  },
+  {
+    "sample_id": "5a8d8f77554299068b959d3e",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Max Kellerman",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.878981113433838
+  },
+  {
+    "sample_id": "5a8d8f77554299068b959d3e",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Max Kellerman",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.033438205718994
+  },
+  {
+    "sample_id": "5a8d8f77554299068b959d3e",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Max Kellerman",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.039368629455566
+  },
+  {
+    "sample_id": "5a7180205542994082a3e856",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Creature Comforts",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 11.581520080566406
+  },
+  {
+    "sample_id": "5a7180205542994082a3e856",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Creature Comforts",
+    "prediction": "Creature Comforts",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.0038967393338680267
+  },
+  {
+    "sample_id": "5a7180205542994082a3e856",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Creature Comforts",
+    "prediction": "Creature Comforts",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.004410221707075834
+  },
+  {
+    "sample_id": "5a7e02b75542997cc2c474f3",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "1970",
+    "prediction": "1928",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.000178337097168
+  },
+  {
+    "sample_id": "5a7e02b75542997cc2c474f3",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "1970",
+    "prediction": "1970",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.06471671164035797
+  },
+  {
+    "sample_id": "5a7e02b75542997cc2c474f3",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "1970",
+    "prediction": "1970",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.06889476627111435
+  },
+  {
+    "sample_id": "5adbd19855429944faac236a",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Sri Lankabhimanya Lester James Peries",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.6016786098480225
+  },
+  {
+    "sample_id": "5adbd19855429944faac236a",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Sri Lankabhimanya Lester James Peries",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.391337871551514
+  },
+  {
+    "sample_id": "5adbd19855429944faac236a",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Sri Lankabhimanya Lester James Peries",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.405725002288818
+  },
+  {
+    "sample_id": "5ae1b53b5542997283cd2255",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Geographical Indication tag",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.057488441467285
+  },
+  {
+    "sample_id": "5ae1b53b5542997283cd2255",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Geographical Indication tag",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.995870113372803
+  },
+  {
+    "sample_id": "5ae1b53b5542997283cd2255",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Geographical Indication tag",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.992412090301514
+  },
+  {
+    "sample_id": "5a7c22bb554299683c1c62d3",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Pacific Lutheran University (PLU), founded by Norwegian Lutheran pioneers in 1890",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.137373924255371
+  },
+  {
+    "sample_id": "5a7c22bb554299683c1c62d3",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Pacific Lutheran University (PLU), founded by Norwegian Lutheran pioneers in 1890",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.7798004150390625
+  },
+  {
+    "sample_id": "5a7c22bb554299683c1c62d3",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Pacific Lutheran University (PLU), founded by Norwegian Lutheran pioneers in 1890",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.772486686706543
+  },
+  {
+    "sample_id": "5a7b7ff75542995eb53be93d",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Arthur Ignatius Conan Doyle",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.536717891693115
+  },
+  {
+    "sample_id": "5a7b7ff75542995eb53be93d",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Arthur Ignatius Conan Doyle",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.693917274475098
+  },
+  {
+    "sample_id": "5a7b7ff75542995eb53be93d",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Arthur Ignatius Conan Doyle",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.686781883239746
+  },
+  {
+    "sample_id": "5ab84d5a55429916710eb028",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Dallas Cowboys",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.982063293457031
+  },
+  {
+    "sample_id": "5ab84d5a55429916710eb028",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Dallas Cowboys",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 12.63415241241455
+  },
+  {
+    "sample_id": "5ab84d5a55429916710eb028",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Dallas Cowboys",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 12.654135704040527
+  },
+  {
+    "sample_id": "5a714bb35542994082a3e78f",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "William Turner Walton",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 16.362520217895508
+  },
+  {
+    "sample_id": "5a714bb35542994082a3e78f",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "William Turner Walton",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 18.898115158081055
+  },
+  {
+    "sample_id": "5a714bb35542994082a3e78f",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "William Turner Walton",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 18.914657592773438
+  },
+  {
+    "sample_id": "5a84cd4b5542991dd0999dfe",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.622803807258606
+  },
+  {
+    "sample_id": "5a84cd4b5542991dd0999dfe",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.00023967394372448325
+  },
+  {
+    "sample_id": "5a84cd4b5542991dd0999dfe",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.00021852385543752462
+  },
+  {
+    "sample_id": "5ab960d6554299743d22eb21",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Leatherheads",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.047136306762695
+  },
+  {
+    "sample_id": "5ab960d6554299743d22eb21",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Leatherheads",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.427790641784668
+  },
+  {
+    "sample_id": "5ab960d6554299743d22eb21",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Leatherheads",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.3675384521484375
+  },
+  {
+    "sample_id": "5a8d838955429941ae14dfe5",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "United States",
+    "prediction": "USA",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.534487724304199
+  },
+  {
+    "sample_id": "5a8d838955429941ae14dfe5",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "United States",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.774258852005005
+  },
+  {
+    "sample_id": "5a8d838955429941ae14dfe5",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "United States",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.7489490509033203
+  },
+  {
+    "sample_id": "5ab681ea55429953192ad2e0",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.04189074784517288
+  },
+  {
+    "sample_id": "5ab681ea55429953192ad2e0",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.33882683515548706
+  },
+  {
+    "sample_id": "5ab681ea55429953192ad2e0",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.3388267755508423
+  },
+  {
+    "sample_id": "5ae819ac55429952e35eaa16",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "National Broadcasting Company",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.668046951293945
+  },
+  {
+    "sample_id": "5ae819ac55429952e35eaa16",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "National Broadcasting Company",
+    "prediction": "NBC",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.192764759063721
+  },
+  {
+    "sample_id": "5ae819ac55429952e35eaa16",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "National Broadcasting Company",
+    "prediction": "NBC",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.224460124969482
+  },
+  {
+    "sample_id": "5a89a99f55429946c8d6e98f",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.0014962897403165698
+  },
+  {
+    "sample_id": "5a89a99f55429946c8d6e98f",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.16088804602622986
+  },
+  {
+    "sample_id": "5a89a99f55429946c8d6e98f",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.18362773954868317
+  },
+  {
+    "sample_id": "5ae33a6e5542992f92d8224d",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.6120822429656982
+  },
+  {
+    "sample_id": "5ae33a6e5542992f92d8224d",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.359384059906006
+  },
+  {
+    "sample_id": "5ae33a6e5542992f92d8224d",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.343759059906006
+  },
+  {
+    "sample_id": "5adfffe755429925eb1afbd1",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "omnisexuality",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.173054695129395
+  },
+  {
+    "sample_id": "5adfffe755429925eb1afbd1",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "omnisexuality",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.4990034103393555
+  },
+  {
+    "sample_id": "5adfffe755429925eb1afbd1",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "omnisexuality",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.497713088989258
+  },
+  {
+    "sample_id": "5a8e463a5542995a26add4b7",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "writer",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.522284507751465
+  },
+  {
+    "sample_id": "5a8e463a5542995a26add4b7",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "writer",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 16.80878257751465
+  },
+  {
+    "sample_id": "5a8e463a5542995a26add4b7",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "writer",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 16.738475799560547
+  },
+  {
+    "sample_id": "5ae201465542997f29b3c1f7",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "South Dakota v. Dole",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.426671266555786
+  },
+  {
+    "sample_id": "5ae201465542997f29b3c1f7",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "South Dakota v. Dole",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.975884914398193
+  },
+  {
+    "sample_id": "5ae201465542997f29b3c1f7",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "South Dakota v. Dole",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.998108386993408
+  },
+  {
+    "sample_id": "5a8ee4315542990e94052ba7",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Treaty of Gandamak",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.569237232208252
+  },
+  {
+    "sample_id": "5a8ee4315542990e94052ba7",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Treaty of Gandamak",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.6071897745132446
+  },
+  {
+    "sample_id": "5a8ee4315542990e94052ba7",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Treaty of Gandamak",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.6109925508499146
+  },
+  {
+    "sample_id": "5ab827a555429934fafe6cf5",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "70 m and 90 m",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.938654899597168
+  },
+  {
+    "sample_id": "5ab827a555429934fafe6cf5",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "70 m and 90 m",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.48742413520813
+  },
+  {
+    "sample_id": "5ab827a555429934fafe6cf5",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "70 m and 90 m",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.4659323692321777
+  },
+  {
+    "sample_id": "5ae644c55542992663a4f27e",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "1919",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.3668267726898193
+  },
+  {
+    "sample_id": "5ae644c55542992663a4f27e",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "1919",
+    "prediction": "1919",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.0004027421528007835
+  },
+  {
+    "sample_id": "5ae644c55542992663a4f27e",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "1919",
+    "prediction": "1919",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.00042843836126849055
+  },
+  {
+    "sample_id": "5ab91b6c55429934fafe6e5f",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "DS Virgin Racing Formula E Team",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.276795387268066
+  },
+  {
+    "sample_id": "5ab91b6c55429934fafe6e5f",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "DS Virgin Racing Formula E Team",
+    "prediction": "Formula E",
+    "em": 0.0,
+    "f1": 0.5,
+    "nll": 4.415417194366455
+  },
+  {
+    "sample_id": "5ab91b6c55429934fafe6e5f",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "DS Virgin Racing Formula E Team",
+    "prediction": "Formula E",
+    "em": 0.0,
+    "f1": 0.5,
+    "nll": 4.382866859436035
+  },
+  {
+    "sample_id": "5ac00278554299012d1db56b",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "director",
+    "prediction": "film director",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 6.613680362701416
+  },
+  {
+    "sample_id": "5ac00278554299012d1db56b",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "director",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 20.73284339904785
+  },
+  {
+    "sample_id": "5ac00278554299012d1db56b",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "director",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 20.69768714904785
+  },
+  {
+    "sample_id": "5a8b3c0055429949d91db4f8",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.7149192690849304
+  },
+  {
+    "sample_id": "5a8b3c0055429949d91db4f8",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.0007331432425417006
+  },
+  {
+    "sample_id": "5a8b3c0055429949d91db4f8",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.0007108235731720924
+  },
+  {
+    "sample_id": "5abd580855429924427fcfb8",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "country",
+    "prediction": "pop",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.629155158996582
+  },
+  {
+    "sample_id": "5abd580855429924427fcfb8",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "country",
+    "prediction": "country",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 1.7464008124079555e-05
+  },
+  {
+    "sample_id": "5abd580855429924427fcfb8",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "country",
+    "prediction": "country",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 1.770242306520231e-05
+  },
+  {
+    "sample_id": "5ae5b25d5542990ba0bbb2bb",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Christopher Haden-Guest",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.67078685760498
+  },
+  {
+    "sample_id": "5ae5b25d5542990ba0bbb2bb",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Christopher Haden-Guest",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.602171897888184
+  },
+  {
+    "sample_id": "5ae5b25d5542990ba0bbb2bb",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Christopher Haden-Guest",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.552103996276855
+  },
+  {
+    "sample_id": "5a8a416955429930ff3c0d2b",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Avengers Assemble",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.3112640380859375
+  },
+  {
+    "sample_id": "5a8a416955429930ff3c0d2b",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Avengers Assemble",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.708834171295166
+  },
+  {
+    "sample_id": "5a8a416955429930ff3c0d2b",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Avengers Assemble",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.6586785316467285
+  },
+  {
+    "sample_id": "5ae5cf1b554299546bf82f7a",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "21,705 at the 2010 census",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.547214031219482
+  },
+  {
+    "sample_id": "5ae5cf1b554299546bf82f7a",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "21,705 at the 2010 census",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.113248586654663
+  },
+  {
+    "sample_id": "5ae5cf1b554299546bf82f7a",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "21,705 at the 2010 census",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.109009265899658
+  },
+  {
+    "sample_id": "5ab80bbf5542991d32223818",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Southwest Oregon Regional Airport",
+    "prediction": "Coos Country Airport",
+    "em": 0.0,
+    "f1": 0.28571428571428575,
+    "nll": 0.7085123062133789
+  },
+  {
+    "sample_id": "5ab80bbf5542991d32223818",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Southwest Oregon Regional Airport",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.9943076372146606
+  },
+  {
+    "sample_id": "5ab80bbf5542991d32223818",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Southwest Oregon Regional Airport",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.0286829471588135
+  },
+  {
+    "sample_id": "5a8a42ec55429970aeb7027c",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.1328952312469482
+  },
+  {
+    "sample_id": "5a8a42ec55429970aeb7027c",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 2.562993131505209e-06
+  },
+  {
+    "sample_id": "5a8a42ec55429970aeb7027c",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 2.562993131505209e-06
+  },
+  {
+    "sample_id": "5a7bc1bf55429927d897c033",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "The English Water Spaniel",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.79690408706665
+  },
+  {
+    "sample_id": "5a7bc1bf55429927d897c033",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "The English Water Spaniel",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.700254917144775
+  },
+  {
+    "sample_id": "5a7bc1bf55429927d897c033",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "The English Water Spaniel",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.683726787567139
+  },
+  {
+    "sample_id": "5a89e85c5542992e4fca846f",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Whitfield County",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.715414524078369
+  },
+  {
+    "sample_id": "5a89e85c5542992e4fca846f",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Whitfield County",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.31493616104126
+  },
+  {
+    "sample_id": "5a89e85c5542992e4fca846f",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Whitfield County",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.283693790435791
+  },
+  {
+    "sample_id": "5a8aed1755429950cd6afbf1",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.0005720017361454666
+  },
+  {
+    "sample_id": "5a8aed1755429950cd6afbf1",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.231973648071289
+  },
+  {
+    "sample_id": "5a8aed1755429950cd6afbf1",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.3039054870605469
+  },
+  {
+    "sample_id": "5ae0f2bf5542997b2ef7d09e",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "The Spring 1945 offensive in Italy",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.011718988418579
+  },
+  {
+    "sample_id": "5ae0f2bf5542997b2ef7d09e",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "The Spring 1945 offensive in Italy",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.2690703868865967
+  },
+  {
+    "sample_id": "5ae0f2bf5542997b2ef7d09e",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "The Spring 1945 offensive in Italy",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.282942771911621
+  },
+  {
+    "sample_id": "5adfeeed55429925eb1afb44",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "15 November 1967",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.9083070755004883
+  },
+  {
+    "sample_id": "5adfeeed55429925eb1afb44",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "15 November 1967",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.3561294078826904
+  },
+  {
+    "sample_id": "5adfeeed55429925eb1afb44",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "15 November 1967",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.3224809169769287
+  },
+  {
+    "sample_id": "5ae35b035542992e3233c3ae",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Conservative",
+    "prediction": "liberal",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.1520298719406128
+  },
+  {
+    "sample_id": "5ae35b035542992e3233c3ae",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Conservative",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.923671007156372
+  },
+  {
+    "sample_id": "5ae35b035542992e3233c3ae",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Conservative",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.927482843399048
+  },
+  {
+    "sample_id": "5ae2295c554299495565da13",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Edward Robert Martin Jr.",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.265364646911621
+  },
+  {
+    "sample_id": "5ae2295c554299495565da13",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Edward Robert Martin Jr.",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.07841157913208
+  },
+  {
+    "sample_id": "5ae2295c554299495565da13",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Edward Robert Martin Jr.",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.121074676513672
+  },
+  {
+    "sample_id": "5adcceda5542990d50227d31",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "a British composer",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 11.11507511138916
+  },
+  {
+    "sample_id": "5adcceda5542990d50227d31",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "a British composer",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 12.2525634765625
+  },
+  {
+    "sample_id": "5adcceda5542990d50227d31",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "a British composer",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 12.271970748901367
+  },
+  {
+    "sample_id": "5ae2196b554299495565da02",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "an American attorney",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.439638137817383
+  },
+  {
+    "sample_id": "5ae2196b554299495565da02",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "an American attorney",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 12.330533027648926
+  },
+  {
+    "sample_id": "5ae2196b554299495565da02",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "an American attorney",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 12.306511878967285
+  },
+  {
+    "sample_id": "5a74581555429979e2882912",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Mitsubishi",
+    "prediction": "Nissan",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.604732513427734
+  },
+  {
+    "sample_id": "5a74581555429979e2882912",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Mitsubishi",
+    "prediction": "Nissan",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.1836076974868774
+  },
+  {
+    "sample_id": "5a74581555429979e2882912",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Mitsubishi",
+    "prediction": "Nissan",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.183322548866272
+  },
+  {
+    "sample_id": "5ae383e15542992f92d822fb",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Heavyweights",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.8500818014144897
+  },
+  {
+    "sample_id": "5ae383e15542992f92d822fb",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Heavyweights",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 14.42719554901123
+  },
+  {
+    "sample_id": "5ae383e15542992f92d822fb",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Heavyweights",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 14.406355857849121
+  },
+  {
+    "sample_id": "5abb9ad4554299642a094abe",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "al-Qaeda",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.123093128204346
+  },
+  {
+    "sample_id": "5abb9ad4554299642a094abe",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "al-Qaeda",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.549086570739746
+  },
+  {
+    "sample_id": "5abb9ad4554299642a094abe",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "al-Qaeda",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.543896675109863
+  },
+  {
+    "sample_id": "5ab484415542990594ba9c44",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Discovery Zone",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.472430944442749
+  },
+  {
+    "sample_id": "5ab484415542990594ba9c44",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Discovery Zone",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.881240844726562
+  },
+  {
+    "sample_id": "5ab484415542990594ba9c44",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Discovery Zone",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.036796569824219
+  },
+  {
+    "sample_id": "5a908aaa55429933b8a20545",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.281351089477539
+  },
+  {
+    "sample_id": "5a908aaa55429933b8a20545",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.031257629394531
+  },
+  {
+    "sample_id": "5a908aaa55429933b8a20545",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.015632629394531
+  },
+  {
+    "sample_id": "5ab56e32554299637185c594",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.8143062591552734
+  },
+  {
+    "sample_id": "5ab56e32554299637185c594",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.2370448112487793
+  },
+  {
+    "sample_id": "5ab56e32554299637185c594",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.2254749834537506
+  },
+  {
+    "sample_id": "5ae497595542995ad6573db7",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "plant",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.904211044311523
+  },
+  {
+    "sample_id": "5ae497595542995ad6573db7",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "plant",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 13.502385139465332
+  },
+  {
+    "sample_id": "5ae497595542995ad6573db7",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "plant",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 13.480533599853516
+  },
+  {
+    "sample_id": "5a713a5a5542994082a3e6a9",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Manchester United",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.999316692352295
+  },
+  {
+    "sample_id": "5a713a5a5542994082a3e6a9",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Manchester United",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.6601481437683105
+  },
+  {
+    "sample_id": "5a713a5a5542994082a3e6a9",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Manchester United",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.5994873046875
+  },
+  {
+    "sample_id": "5a7bacf35542997c3ec9724b",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Jorge Leal Amado de Faria",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.198736190795898
+  },
+  {
+    "sample_id": "5a7bacf35542997c3ec9724b",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Jorge Leal Amado de Faria",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.815630912780762
+  },
+  {
+    "sample_id": "5a7bacf35542997c3ec9724b",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Jorge Leal Amado de Faria",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.836660861968994
+  },
+  {
+    "sample_id": "5ab5f75e554299637185c64b",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "pizzas",
+    "prediction": "pasta",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.2750731706619263
+  },
+  {
+    "sample_id": "5ab5f75e554299637185c64b",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "pizzas",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.060358047485352
+  },
+  {
+    "sample_id": "5ab5f75e554299637185c64b",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "pizzas",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.999159812927246
+  },
+  {
+    "sample_id": "5ab9e2055542994dbf019884",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "band",
+    "prediction": "pop rock",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.9829864501953125
+  },
+  {
+    "sample_id": "5ab9e2055542994dbf019884",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "band",
+    "prediction": "band",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.46406322717666626
+  },
+  {
+    "sample_id": "5ab9e2055542994dbf019884",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "band",
+    "prediction": "band",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.47258347272872925
+  },
+  {
+    "sample_id": "5ac31456554299741d48a1b4",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Lawson",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.193917274475098
+  },
+  {
+    "sample_id": "5ac31456554299741d48a1b4",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Lawson",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.615889549255371
+  },
+  {
+    "sample_id": "5ac31456554299741d48a1b4",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Lawson",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.589906692504883
+  },
+  {
+    "sample_id": "5a7cdcbf55429907fabef04f",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Still Kicking: Six Artistic Women of Project Arts & Longevity",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.9208403825759888
+  },
+  {
+    "sample_id": "5a7cdcbf55429907fabef04f",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Still Kicking: Six Artistic Women of Project Arts & Longevity",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.6699059009552
+  },
+  {
+    "sample_id": "5a7cdcbf55429907fabef04f",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Still Kicking: Six Artistic Women of Project Arts & Longevity",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.668548345565796
+  },
+  {
+    "sample_id": "5ae34a225542992e3233c370",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.16523359715938568
+  },
+  {
+    "sample_id": "5ae34a225542992e3233c370",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.004882186185568571
+  },
+  {
+    "sample_id": "5ae34a225542992e3233c370",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.005036339163780212
+  },
+  {
+    "sample_id": "5ab6988a554299710c8d1edc",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Metropolitan Life Insurance Company Tower",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.540672540664673
+  },
+  {
+    "sample_id": "5ab6988a554299710c8d1edc",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Metropolitan Life Insurance Company Tower",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.425940036773682
+  },
+  {
+    "sample_id": "5ab6988a554299710c8d1edc",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Metropolitan Life Insurance Company Tower",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.428610801696777
+  },
+  {
+    "sample_id": "5a84f06f5542994c784dda92",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "public",
+    "prediction": "Boeing",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.32639217376709
+  },
+  {
+    "sample_id": "5a84f06f5542994c784dda92",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "public",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.65942668914795
+  },
+  {
+    "sample_id": "5a84f06f5542994c784dda92",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "public",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.550050735473633
+  },
+  {
+    "sample_id": "5a7c96765542990527d554d8",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "producer, director, and writer",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.198729038238525
+  },
+  {
+    "sample_id": "5a7c96765542990527d554d8",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "producer, director, and writer",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.964905738830566
+  },
+  {
+    "sample_id": "5a7c96765542990527d554d8",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "producer, director, and writer",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.967733383178711
+  },
+  {
+    "sample_id": "5ac4d314554299076e296e02",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Earvin \"Magic\" Johnson Jr.",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.742928981781006
+  },
+  {
+    "sample_id": "5ac4d314554299076e296e02",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Earvin \"Magic\" Johnson Jr.",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.380928993225098
+  },
+  {
+    "sample_id": "5ac4d314554299076e296e02",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Earvin \"Magic\" Johnson Jr.",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.395766258239746
+  },
+  {
+    "sample_id": "5ae4627d5542991a06ce9a4d",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Oxford",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.103388786315918
+  },
+  {
+    "sample_id": "5ae4627d5542991a06ce9a4d",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Oxford",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.649120807647705
+  },
+  {
+    "sample_id": "5ae4627d5542991a06ce9a4d",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Oxford",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.685344696044922
+  },
+  {
+    "sample_id": "5ab90a2055429916710eb0ea",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Philadelphia",
+    "prediction": "New York",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.3695943355560303
+  },
+  {
+    "sample_id": "5ab90a2055429916710eb0ea",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Philadelphia",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.3344700336456299
+  },
+  {
+    "sample_id": "5ab90a2055429916710eb0ea",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Philadelphia",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.2822152376174927
+  },
+  {
+    "sample_id": "5a7c17c95542990527d5544d",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "The Offspring",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.3178348541259766
+  },
+  {
+    "sample_id": "5a7c17c95542990527d5544d",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "The Offspring",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.90313720703125
+  },
+  {
+    "sample_id": "5a7c17c95542990527d5544d",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "The Offspring",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.841902732849121
+  },
+  {
+    "sample_id": "5a8072a5554299485f5985f1",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "creeks",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.550196647644043
+  },
+  {
+    "sample_id": "5a8072a5554299485f5985f1",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "creeks",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.106898784637451
+  },
+  {
+    "sample_id": "5a8072a5554299485f5985f1",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "creeks",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.11672043800354
+  },
+  {
+    "sample_id": "5ae031c455429924de1b7055",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "six",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.823896408081055
+  },
+  {
+    "sample_id": "5ae031c455429924de1b7055",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "six",
+    "prediction": "2",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 15.493741989135742
+  },
+  {
+    "sample_id": "5ae031c455429924de1b7055",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "six",
+    "prediction": "2",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 15.425658226013184
+  },
+  {
+    "sample_id": "5a7166395542994082a3e814",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Kansas Song",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.4215617179870605
+  },
+  {
+    "sample_id": "5a7166395542994082a3e814",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Kansas Song",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.6418308019638062
+  },
+  {
+    "sample_id": "5a7166395542994082a3e814",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Kansas Song",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.5938291549682617
+  },
+  {
+    "sample_id": "5ae46b615542995dadf24327",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Otto Ludwig Preminger",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.99225378036499
+  },
+  {
+    "sample_id": "5ae46b615542995dadf24327",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Otto Ludwig Preminger",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.56467342376709
+  },
+  {
+    "sample_id": "5ae46b615542995dadf24327",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Otto Ludwig Preminger",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.569743156433105
+  },
+  {
+    "sample_id": "5ae4a91d5542995ad6573e09",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "black nationalism",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.599776744842529
+  },
+  {
+    "sample_id": "5ae4a91d5542995ad6573e09",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "black nationalism",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.893046379089355
+  },
+  {
+    "sample_id": "5ae4a91d5542995ad6573e09",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "black nationalism",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.934698104858398
+  },
+  {
+    "sample_id": "5ae3294155429928c423963d",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Thomas Penson De Quincey",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.311030864715576
+  },
+  {
+    "sample_id": "5ae3294155429928c423963d",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Thomas Penson De Quincey",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.0413498878479004
+  },
+  {
+    "sample_id": "5ae3294155429928c423963d",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Thomas Penson De Quincey",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.027050256729126
+  },
+  {
+    "sample_id": "5a711ef85542994082a3e5ac",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Howard University Hospital",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.1520999670028687
+  },
+  {
+    "sample_id": "5a711ef85542994082a3e5ac",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Howard University Hospital",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.342982292175293
+  },
+  {
+    "sample_id": "5a711ef85542994082a3e5ac",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Howard University Hospital",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.371710777282715
+  },
+  {
+    "sample_id": "5a735e9155429901807db00d",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Spain",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.4738514721393585
+  },
+  {
+    "sample_id": "5a735e9155429901807db00d",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Spain",
+    "prediction": "Spain",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.014541869051754475
+  },
+  {
+    "sample_id": "5a735e9155429901807db00d",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Spain",
+    "prediction": "Spain",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.013261879794299603
+  },
+  {
+    "sample_id": "5ab8ee035542991b5579f04b",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.0781474113464355
+  },
+  {
+    "sample_id": "5ab8ee035542991b5579f04b",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.7648833990097046
+  },
+  {
+    "sample_id": "5ab8ee035542991b5579f04b",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.8408838510513306
+  },
+  {
+    "sample_id": "5ab29caa554299545a2cf9d3",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "PlayStation 4",
+    "prediction": "PS2",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.2247751951217651
+  },
+  {
+    "sample_id": "5ab29caa554299545a2cf9d3",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "PlayStation 4",
+    "prediction": "ps4",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.285226583480835
+  },
+  {
+    "sample_id": "5ab29caa554299545a2cf9d3",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "PlayStation 4",
+    "prediction": "ps4",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.2666218280792236
+  },
+  {
+    "sample_id": "5abfcd7a5542993fe9a41e7a",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.07135840505361557
+  },
+  {
+    "sample_id": "5abfcd7a5542993fe9a41e7a",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.0030672417487949133
+  },
+  {
+    "sample_id": "5abfcd7a5542993fe9a41e7a",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.002882314845919609
+  },
+  {
+    "sample_id": "5a7c6e435542996dd594b933",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "July 16, 1971",
+    "prediction": "1955",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.3861528635025024
+  },
+  {
+    "sample_id": "5a7c6e435542996dd594b933",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "July 16, 1971",
+    "prediction": "1976",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.0613231658935547
+  },
+  {
+    "sample_id": "5a7c6e435542996dd594b933",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "July 16, 1971",
+    "prediction": "1976",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.0111514329910278
+  },
+  {
+    "sample_id": "5a7d9d2b5542997cc2c47464",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Victorian College of the Arts and Melbourne Conservatorium of Music",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.931276798248291
+  },
+  {
+    "sample_id": "5a7d9d2b5542997cc2c47464",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Victorian College of the Arts and Melbourne Conservatorium of Music",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.2961199283599854
+  },
+  {
+    "sample_id": "5a7d9d2b5542997cc2c47464",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Victorian College of the Arts and Melbourne Conservatorium of Music",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.299654722213745
+  },
+  {
+    "sample_id": "5ac2768d5542990b17b153a8",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "19 November 1786",
+    "prediction": "1900",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.640437126159668
+  },
+  {
+    "sample_id": "5ac2768d5542990b17b153a8",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "19 November 1786",
+    "prediction": "1841",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.6181211471557617
+  },
+  {
+    "sample_id": "5ac2768d5542990b17b153a8",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "19 November 1786",
+    "prediction": "1841",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.6208114624023438
+  },
+  {
+    "sample_id": "5a85fe2f5542996432c57165",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Julianne Moore",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.81908893585205
+  },
+  {
+    "sample_id": "5a85fe2f5542996432c57165",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Julianne Moore",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.189502716064453
+  },
+  {
+    "sample_id": "5a85fe2f5542996432c57165",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Julianne Moore",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.255971908569336
+  },
+  {
+    "sample_id": "5ae22ede554299234fd0441b",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "9Lives",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 11.521010398864746
+  },
+  {
+    "sample_id": "5ae22ede554299234fd0441b",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "9Lives",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.14080810546875
+  },
+  {
+    "sample_id": "5ae22ede554299234fd0441b",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "9Lives",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.0861198902130127
+  },
+  {
+    "sample_id": "5a90ab995542990a98493683",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Medinilla",
+    "prediction": "Osteomeles",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.7137411832809448
+  },
+  {
+    "sample_id": "5a90ab995542990a98493683",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Medinilla",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.669417381286621
+  },
+  {
+    "sample_id": "5a90ab995542990a98493683",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Medinilla",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.673293113708496
+  },
+  {
+    "sample_id": "5ab6c94c554299710c8d1f5e",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "The Wu-Tang Clan",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.450958251953125
+  },
+  {
+    "sample_id": "5ab6c94c554299710c8d1f5e",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "The Wu-Tang Clan",
+    "prediction": "Wu-Tang Clan",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 4.98996639251709
+  },
+  {
+    "sample_id": "5ab6c94c554299710c8d1f5e",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "The Wu-Tang Clan",
+    "prediction": "Wu-Tang Clan",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 4.945896625518799
+  },
+  {
+    "sample_id": "5abdce1b5542993062266cfe",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Hennepin County",
+    "prediction": "Minneapolis",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.046426296234131
+  },
+  {
+    "sample_id": "5abdce1b5542993062266cfe",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Hennepin County",
+    "prediction": "Hennepin",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 1.6224180459976196
+  },
+  {
+    "sample_id": "5abdce1b5542993062266cfe",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Hennepin County",
+    "prediction": "Hennepin",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 1.612001895904541
+  },
+  {
+    "sample_id": "5adc6825554299438c868da1",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Salta",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 9.32442855834961
+  },
+  {
+    "sample_id": "5adc6825554299438c868da1",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Salta",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.58382511138916
+  },
+  {
+    "sample_id": "5adc6825554299438c868da1",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Salta",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.64892864227295
+  },
+  {
+    "sample_id": "5a7345185542992359bc32cb",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Europe",
+    "prediction": "Asia",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.7936410903930664
+  },
+  {
+    "sample_id": "5a7345185542992359bc32cb",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Europe",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.0419087409973145
+  },
+  {
+    "sample_id": "5a7345185542992359bc32cb",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Europe",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.012184143066406
+  },
+  {
+    "sample_id": "5ab310bb554299233954fef9",
+    "type": "comparison",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "John le Carré",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.5113766193389893
+  },
+  {
+    "sample_id": "5ab310bb554299233954fef9",
+    "type": "comparison",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "John le Carré",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.490020751953125
+  },
+  {
+    "sample_id": "5ab310bb554299233954fef9",
+    "type": "comparison",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "John le Carré",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.511727333068848
+  },
+  {
+    "sample_id": "5a8078e95542992bc0c4a72c",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Sky News",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.142863273620605
+  },
+  {
+    "sample_id": "5a8078e95542992bc0c4a72c",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Sky News",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 12.735003471374512
+  },
+  {
+    "sample_id": "5a8078e95542992bc0c4a72c",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Sky News",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 12.748027801513672
+  },
+  {
+    "sample_id": "5a8c622a554299240d9c2142",
+    "type": "bridge",
+    "condition": "b1_q_1_7b_question_only",
+    "answer": "Ursula Kroeber Le Guin",
+    "prediction": "JK Rowling",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.8595949411392212
+  },
+  {
+    "sample_id": "5a8c622a554299240d9c2142",
+    "type": "bridge",
+    "condition": "b1_f_1_7b_full_context_text",
+    "answer": "Ursula Kroeber Le Guin",
+    "prediction": "Ursula K. Le Guin",
+    "em": 0.0,
+    "f1": 0.75,
+    "nll": 2.6640725135803223
+  },
+  {
+    "sample_id": "5a8c622a554299240d9c2142",
+    "type": "bridge",
+    "condition": "b1_n_1_7b_native_cache",
+    "answer": "Ursula Kroeber Le Guin",
+    "prediction": "Ursula K. Le Guin",
+    "em": 0.0,
+    "f1": 0.75,
+    "nll": 2.6750097274780273
+  }
+]

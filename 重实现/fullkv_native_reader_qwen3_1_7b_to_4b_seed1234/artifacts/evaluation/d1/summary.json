@@ -1,0 +1,78 @@
+{
+  "writer": "d1",
+  "checkpoint": "/home/yezhe/重实现/fullkv_native_reader_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/d1/stage_b/best.pt",
+  "conditions": {
+    "1_7b_full_text": {
+      "count": 32,
+      "em": 0.0,
+      "f1": 0.053959054230793356,
+      "answer_nll": 14.506282158195972,
+      "bridge_f1": 0.025641025641025644,
+      "comparison_f1": 0.0733345474764239
+    },
+    "4b_full_text": {
+      "count": 32,
+      "em": 0.0,
+      "f1": 0.1256260808085068,
+      "answer_nll": 10.547051191329956,
+      "bridge_f1": 0.14585405218664443,
+      "comparison_f1": 0.1117858898655705
+    },
+    "4b_native_full_kv": {
+      "count": 32,
+      "em": 0.0,
+      "f1": 0.1256260808085068,
+      "answer_nll": 10.547727197408676,
+      "bridge_f1": 0.14585405218664443,
+      "comparison_f1": 0.1117858898655705
+    },
+    "d1_writer_correct": {
+      "count": 32,
+      "em": 0.0,
+      "f1": 0.023672385620915032,
+      "answer_nll": 11.39412473142147,
+      "bridge_f1": 0.009049773755656108,
+      "comparison_f1": 0.033677330581355344
+    },
+    "d1_writer_cross_sample_same_length": {
+      "count": 2,
+      "em": 0.0,
+      "f1": 0.0,
+      "answer_nll": 11.364892482757568,
+      "bridge_f1": 0.0,
+      "comparison_f1": 0.0
+    },
+    "d1_writer_token_permuted": {
+      "count": 32,
+      "em": 0.03125,
+      "f1": 0.04358277591973244,
+      "answer_nll": 12.396260201931,
+      "bridge_f1": 0.023668639053254434,
+      "comparison_f1": 0.05720823798627002
+    },
+    "d1_writer_zero": {
+      "count": 32,
+      "em": 0.0,
+      "f1": 0.061201272702432676,
+      "answer_nll": 14.328781843185425,
+      "bridge_f1": 0.03698482119886803,
+      "comparison_f1": 0.07777042373118744
+    },
+    "question_only": {
+      "count": 32,
+      "em": 0.0,
+      "f1": 0.07472763518422844,
+      "answer_nll": 12.138978198170662,
+      "bridge_f1": 0.045066889632107025,
+      "comparison_f1": 0.09502182950936415
+    }
+  },
+  "comparisons": {
+    "writer_correct_minus_zero_f1": -0.037528887081517644,
+    "writer_correct_minus_token_permuted_f1": -0.01991039029881741,
+    "native4_minus_writer_f1": 0.10195369518759176,
+    "retention_f1": -1.0030807215645159,
+    "retention_denominator": 0.05089844562427835
+  },
+  "retention_defined_only_when_native_exceeds_question_only": true
+}

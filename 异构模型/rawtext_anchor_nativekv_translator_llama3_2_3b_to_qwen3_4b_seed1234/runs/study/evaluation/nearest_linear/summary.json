@@ -1,0 +1,22 @@
+{
+  "functional": {
+    "translated_all": {
+      "accuracy": 0.171875,
+      "oracle_accuracy": 0.21875,
+      "qwen_full_accuracy": 0.25,
+      "oracle_agreement": 0.2421875,
+      "choice_kl": 1.507185293652583,
+      "full_kl": 3.051068478729576,
+      "selection_retention": 0.875,
+      "translation_retention": 0.7857142857142857
+    }
+  },
+  "representation": {
+    "loss": 2.0877229245379567,
+    "k_nmse": 0.578708607237786,
+    "v_nmse": 0.8288685735315084,
+    "k_cosine": 0.8358264775015414,
+    "v_cosine": 0.4840277791954577
+  },
+  "sample_count": 128
+}

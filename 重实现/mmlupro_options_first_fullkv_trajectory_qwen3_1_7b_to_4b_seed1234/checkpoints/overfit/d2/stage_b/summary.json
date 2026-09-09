@@ -1,0 +1,29 @@
+{
+  "writer": "d2",
+  "overfit_code_validation": true,
+  "initial_validation": {
+    "total": 11.129472255706787,
+    "kv": 4.208322003483772,
+    "hidden": 6.247858319431543,
+    "kl": 4.460781764239073,
+    "k_nmse": 1.1276573315262794,
+    "k_cosine": 0.4531637243926525,
+    "v_nmse": 1.6693175956606865,
+    "v_cosine": 0.13548925938084722,
+    "hidden_nmse": 5.953509595245123,
+    "hidden_cosine": 0.7056512236595154
+  },
+  "best_validation_total": 3.544796347618103,
+  "trajectory_loss_decreased": true,
+  "updates": 75,
+  "receiver_frozen": true,
+  "all_36_receiver_layers_supervised": true,
+  "all_suffix_tokens_hidden_supervised": true,
+  "gold_label_used": false,
+  "loss_weights": {
+    "lambda_kv": 0.1,
+    "lambda_hidden": 1.0,
+    "lambda_kl": 1.0
+  },
+  "seconds": 26.494434535503387
+}

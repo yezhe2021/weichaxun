@@ -1,0 +1,54 @@
+[
+  {
+    "step": 128,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_full28_head8_ablation_train1024_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/local5_samehead_choice_kl/step_128.pt",
+    "functional": {
+      "accuracy": 0.1484375,
+      "oracle_accuracy": 0.203125,
+      "qwen_full_accuracy": 0.28125,
+      "oracle_agreement": 0.359375,
+      "choice_kl": 0.6892432877648389,
+      "full_kl": 0.8773021691013128,
+      "accuracy_retention": 0.7307692307692307
+    }
+  },
+  {
+    "step": 256,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_full28_head8_ablation_train1024_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/local5_samehead_choice_kl/step_256.pt",
+    "functional": {
+      "accuracy": 0.1328125,
+      "oracle_accuracy": 0.203125,
+      "qwen_full_accuracy": 0.28125,
+      "oracle_agreement": 0.3359375,
+      "choice_kl": 0.7160857182607288,
+      "full_kl": 0.8466842077905312,
+      "accuracy_retention": 0.6538461538461539
+    }
+  },
+  {
+    "step": 384,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_full28_head8_ablation_train1024_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/local5_samehead_choice_kl/step_384.pt",
+    "functional": {
+      "accuracy": 0.1171875,
+      "oracle_accuracy": 0.203125,
+      "qwen_full_accuracy": 0.28125,
+      "oracle_agreement": 0.3515625,
+      "choice_kl": 0.6696184775209986,
+      "full_kl": 0.8394373698392883,
+      "accuracy_retention": 0.5769230769230769
+    }
+  },
+  {
+    "step": 512,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_full28_head8_ablation_train1024_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/local5_samehead_choice_kl/step_512.pt",
+    "functional": {
+      "accuracy": 0.1484375,
+      "oracle_accuracy": 0.203125,
+      "qwen_full_accuracy": 0.28125,
+      "oracle_agreement": 0.296875,
+      "choice_kl": 0.7258848136079905,
+      "full_kl": 0.9309609405463561,
+      "accuracy_retention": 0.7307692307692307
+    }
+  }
+]

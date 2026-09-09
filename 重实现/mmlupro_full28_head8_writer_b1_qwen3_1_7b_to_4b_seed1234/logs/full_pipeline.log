@@ -1,0 +1,316 @@
+[2026-09-01 23:00:43] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_unit_tests.py
+PASS test_writers.py:test_checkpoint_round_trip_and_metadata
+PASS test_writers.py:test_d2_initialization_equals_calibrated_d0
+PASS test_writers.py:test_full28_initialization_equals_calibrated_d0
+PASS test_writers.py:test_full28_shape_and_layer_concat_order
+PASS test_writers.py:test_head8_cross_head_blocks_are_independent_and_receive_gradients
+PASS test_writers.py:test_head8_identity_extension_zero_and_freeze_policy
+PASS test_writers.py:test_head_independence
+PASS test_writers.py:test_neighbor_order_and_boundary_rules
+PASS test_writers.py:test_parameters_are_independent_by_layer_and_family
+PASS test_writers.py:test_shapes_zero_and_no_bias
+PASS test_writers.py:test_token_independence
+PASS test_losses.py:test_clip_rate_decision_uses_pre_clip_norm
+PASS test_losses.py:test_decoder_layer_capture_preserves_autograd
+PASS test_losses.py:test_epoch_sampler_is_without_replacement_and_changes_each_epoch
+PASS test_losses.py:test_final_kl_ignores_all_earlier_suffix_positions
+PASS test_losses.py:test_hidden_loss_averages_layers_instead_of_flattening
+PASS test_losses.py:test_identical_36_layer_hidden_loss_is_zero
+PASS test_losses.py:test_identical_full_vocabulary_kl_is_zero
+PASS test_losses.py:test_last_n_kl_ignores_earlier_tokens
+PASS test_losses.py:test_shuffled_comparison_uses_only_matched_correct_samples
+PASS test_losses.py:test_training_sample_physically_removes_gold_fields
+21 unit tests passed
+[2026-09-01 23:00:50] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_unit_tests.py
+[2026-09-01 23:00:50] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u audit_head_extension.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json --samples 2
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 112/398 [00:00<00:00, 1119.03it/s]Loading weights:  56%|█████▋    | 224/398 [00:00<00:00, 1033.77it/s]Loading weights:  82%|████████▏ | 328/398 [00:00<00:00, 997.48it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1019.91it/s]
+[2026-09-01 23:01:01] head-extension equivalence: 1/2
+[2026-09-01 23:01:01] head-extension equivalence: 2/2
+[2026-09-01 23:01:02] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u audit_head_extension.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json --samples 2
+[2026-09-01 23:01:02] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json train --writer full28_head8 --stage a
+[2026-09-01 23:01:40] Stage A full28_head8 128/1024 validation=1.037402
+[2026-09-01 23:02:01] Stage A full28_head8 256/1024 validation=1.015602
+[2026-09-01 23:02:24] Stage A full28_head8 384/1024 validation=0.998693
+[2026-09-01 23:02:48] Stage A full28_head8 512/1024 validation=0.984024
+[2026-09-01 23:03:06] Stage A full28_head8 640/1024 validation=0.970318
+[2026-09-01 23:03:25] Stage A full28_head8 768/1024 validation=0.958798
+[2026-09-01 23:03:44] Stage A full28_head8 896/1024 validation=0.946444
+[2026-09-01 23:04:05] Stage A full28_head8 1024/1024 validation=0.936982
+[2026-09-01 23:04:07] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json train --writer full28_head8 --stage a
+[2026-09-01 23:04:07] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json gradient_audit --writer full28_head8 --functional-mode final --checkpoint /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/full28_head8/stage_a/best.pt
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 1005.47it/s]Loading weights:  51%|█████     | 203/398 [00:00<00:00, 985.56it/s] Loading weights:  76%|███████▌  | 302/398 [00:00<00:00, 985.52it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1002.45it/s]
+[2026-09-01 23:04:22] gradient audit final sample=3114
+[2026-09-01 23:04:23] gradient audit final sample=471
+[2026-09-01 23:04:24] gradient audit final sample=3851
+[2026-09-01 23:04:24] gradient audit final sample=10446
+[2026-09-01 23:04:26] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json gradient_audit --writer full28_head8 --functional-mode final --checkpoint /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/full28_head8/stage_a/best.pt
+[2026-09-01 23:04:26] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json train --writer full28_head8 --stage b --functional-mode final
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  27%|██▋       | 108/398 [00:00<00:00, 1070.61it/s]Loading weights:  54%|█████▍    | 216/398 [00:00<00:00, 1030.03it/s]Loading weights:  81%|████████  | 322/398 [00:00<00:00, 1028.72it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1042.36it/s]
+[2026-09-01 23:10:47] Stage B final epoch=1/4 validation=0.691473 clip_rate=0.0312
+[2026-09-01 23:23:39] Stage B final epoch=2/4 validation=0.798999 clip_rate=0.0000
+[2026-09-01 23:29:33] Stage B final epoch=3/4 validation=0.781523 clip_rate=0.0000
+[2026-09-01 23:29:35] Stage B early stopping at epoch=3; best_epoch=1
+[2026-09-01 23:29:39] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json train --writer full28_head8 --stage b --functional-mode final
+[2026-09-01 23:29:39] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json evaluate --scope formal
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  29%|██▊       | 114/398 [00:00<00:00, 1137.49it/s]Loading weights:  58%|█████▊    | 229/398 [00:00<00:00, 1119.19it/s]Loading weights:  86%|████████▌ | 341/398 [00:00<00:00, 1075.15it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1075.13it/s]
+[2026-09-01 23:29:58] 4B pure-functional evaluation: 1/128
+[2026-09-01 23:29:59] 4B pure-functional evaluation: 2/128
+[2026-09-01 23:30:02] 4B pure-functional evaluation: 3/128
+[2026-09-01 23:30:04] 4B pure-functional evaluation: 4/128
+[2026-09-01 23:30:05] 4B pure-functional evaluation: 5/128
+[2026-09-01 23:30:07] 4B pure-functional evaluation: 6/128
+[2026-09-01 23:30:08] 4B pure-functional evaluation: 7/128
+[2026-09-01 23:30:11] 4B pure-functional evaluation: 8/128
+[2026-09-01 23:30:13] 4B pure-functional evaluation: 9/128
+[2026-09-01 23:30:15] 4B pure-functional evaluation: 10/128
+[2026-09-01 23:30:18] 4B pure-functional evaluation: 11/128
+[2026-09-01 23:30:22] 4B pure-functional evaluation: 12/128
+[2026-09-01 23:30:25] 4B pure-functional evaluation: 13/128
+[2026-09-01 23:30:29] 4B pure-functional evaluation: 14/128
+[2026-09-01 23:30:32] 4B pure-functional evaluation: 15/128
+[2026-09-01 23:30:36] 4B pure-functional evaluation: 16/128
+[2026-09-01 23:30:38] 4B pure-functional evaluation: 17/128
+[2026-09-01 23:30:40] 4B pure-functional evaluation: 18/128
+[2026-09-01 23:30:43] 4B pure-functional evaluation: 19/128
+[2026-09-01 23:30:46] 4B pure-functional evaluation: 20/128
+[2026-09-01 23:30:48] 4B pure-functional evaluation: 21/128
+[2026-09-01 23:30:52] 4B pure-functional evaluation: 22/128
+[2026-09-01 23:30:56] 4B pure-functional evaluation: 23/128
+[2026-09-01 23:30:59] 4B pure-functional evaluation: 24/128
+[2026-09-01 23:31:01] 4B pure-functional evaluation: 25/128
+[2026-09-01 23:31:04] 4B pure-functional evaluation: 26/128
+[2026-09-01 23:31:07] 4B pure-functional evaluation: 27/128
+[2026-09-01 23:31:10] 4B pure-functional evaluation: 28/128
+[2026-09-01 23:31:14] 4B pure-functional evaluation: 29/128
+[2026-09-01 23:31:17] 4B pure-functional evaluation: 30/128
+[2026-09-01 23:31:19] 4B pure-functional evaluation: 31/128
+[2026-09-01 23:31:22] 4B pure-functional evaluation: 32/128
+[2026-09-01 23:31:24] 4B pure-functional evaluation: 33/128
+[2026-09-01 23:31:27] 4B pure-functional evaluation: 34/128
+[2026-09-01 23:31:31] 4B pure-functional evaluation: 35/128
+[2026-09-01 23:31:34] 4B pure-functional evaluation: 36/128
+[2026-09-01 23:31:37] 4B pure-functional evaluation: 37/128
+[2026-09-01 23:31:40] 4B pure-functional evaluation: 38/128
+[2026-09-01 23:31:42] 4B pure-functional evaluation: 39/128
+[2026-09-01 23:31:46] 4B pure-functional evaluation: 40/128
+[2026-09-01 23:31:49] 4B pure-functional evaluation: 41/128
+[2026-09-01 23:31:53] 4B pure-functional evaluation: 42/128
+[2026-09-01 23:31:57] 4B pure-functional evaluation: 43/128
+[2026-09-01 23:32:00] 4B pure-functional evaluation: 44/128
+[2026-09-01 23:32:03] 4B pure-functional evaluation: 45/128
+[2026-09-01 23:32:06] 4B pure-functional evaluation: 46/128
+[2026-09-01 23:32:09] 4B pure-functional evaluation: 47/128
+[2026-09-01 23:32:12] 4B pure-functional evaluation: 48/128
+[2026-09-01 23:32:15] 4B pure-functional evaluation: 49/128
+[2026-09-01 23:32:19] 4B pure-functional evaluation: 50/128
+[2026-09-01 23:32:22] 4B pure-functional evaluation: 51/128
+[2026-09-01 23:32:24] 4B pure-functional evaluation: 52/128
+[2026-09-01 23:32:27] 4B pure-functional evaluation: 53/128
+[2026-09-01 23:32:30] 4B pure-functional evaluation: 54/128
+[2026-09-01 23:32:33] 4B pure-functional evaluation: 55/128
+[2026-09-01 23:32:36] 4B pure-functional evaluation: 56/128
+[2026-09-01 23:32:38] 4B pure-functional evaluation: 57/128
+[2026-09-01 23:32:39] 4B pure-functional evaluation: 58/128
+[2026-09-01 23:32:41] 4B pure-functional evaluation: 59/128
+[2026-09-01 23:32:42] 4B pure-functional evaluation: 60/128
+[2026-09-01 23:32:44] 4B pure-functional evaluation: 61/128
+[2026-09-01 23:32:45] 4B pure-functional evaluation: 62/128
+[2026-09-01 23:32:46] 4B pure-functional evaluation: 63/128
+[2026-09-01 23:32:49] 4B pure-functional evaluation: 64/128
+[2026-09-01 23:32:50] 4B pure-functional evaluation: 65/128
+[2026-09-01 23:32:51] 4B pure-functional evaluation: 66/128
+[2026-09-01 23:32:54] 4B pure-functional evaluation: 67/128
+[2026-09-01 23:32:55] 4B pure-functional evaluation: 68/128
+[2026-09-01 23:32:58] 4B pure-functional evaluation: 69/128
+[2026-09-01 23:33:00] 4B pure-functional evaluation: 70/128
+[2026-09-01 23:33:02] 4B pure-functional evaluation: 71/128
+[2026-09-01 23:33:03] 4B pure-functional evaluation: 72/128
+[2026-09-01 23:33:05] 4B pure-functional evaluation: 73/128
+[2026-09-01 23:33:06] 4B pure-functional evaluation: 74/128
+[2026-09-01 23:33:08] 4B pure-functional evaluation: 75/128
+[2026-09-01 23:33:10] 4B pure-functional evaluation: 76/128
+[2026-09-01 23:33:11] 4B pure-functional evaluation: 77/128
+[2026-09-01 23:33:13] 4B pure-functional evaluation: 78/128
+[2026-09-01 23:33:15] 4B pure-functional evaluation: 79/128
+[2026-09-01 23:33:17] 4B pure-functional evaluation: 80/128
+[2026-09-01 23:33:19] 4B pure-functional evaluation: 81/128
+[2026-09-01 23:33:21] 4B pure-functional evaluation: 82/128
+[2026-09-01 23:33:22] 4B pure-functional evaluation: 83/128
+[2026-09-01 23:33:25] 4B pure-functional evaluation: 84/128
+[2026-09-01 23:33:27] 4B pure-functional evaluation: 85/128
+[2026-09-01 23:33:28] 4B pure-functional evaluation: 86/128
+[2026-09-01 23:33:30] 4B pure-functional evaluation: 87/128
+[2026-09-01 23:33:32] 4B pure-functional evaluation: 88/128
+[2026-09-01 23:33:33] 4B pure-functional evaluation: 89/128
+[2026-09-01 23:33:35] 4B pure-functional evaluation: 90/128
+[2026-09-01 23:33:36] 4B pure-functional evaluation: 91/128
+[2026-09-01 23:33:39] 4B pure-functional evaluation: 92/128
+[2026-09-01 23:33:40] 4B pure-functional evaluation: 93/128
+[2026-09-01 23:33:42] 4B pure-functional evaluation: 94/128
+[2026-09-01 23:33:44] 4B pure-functional evaluation: 95/128
+[2026-09-01 23:33:46] 4B pure-functional evaluation: 96/128
+[2026-09-01 23:33:48] 4B pure-functional evaluation: 97/128
+[2026-09-01 23:33:51] 4B pure-functional evaluation: 98/128
+[2026-09-01 23:33:53] 4B pure-functional evaluation: 99/128
+[2026-09-01 23:33:54] 4B pure-functional evaluation: 100/128
+[2026-09-01 23:33:56] 4B pure-functional evaluation: 101/128
+[2026-09-01 23:33:57] 4B pure-functional evaluation: 102/128
+[2026-09-01 23:33:58] 4B pure-functional evaluation: 103/128
+[2026-09-01 23:34:00] 4B pure-functional evaluation: 104/128
+[2026-09-01 23:34:01] 4B pure-functional evaluation: 105/128
+[2026-09-01 23:34:04] 4B pure-functional evaluation: 106/128
+[2026-09-01 23:34:06] 4B pure-functional evaluation: 107/128
+[2026-09-01 23:34:07] 4B pure-functional evaluation: 108/128
+[2026-09-01 23:34:09] 4B pure-functional evaluation: 109/128
+[2026-09-01 23:34:12] 4B pure-functional evaluation: 110/128
+[2026-09-01 23:34:15] 4B pure-functional evaluation: 111/128
+[2026-09-01 23:34:16] 4B pure-functional evaluation: 112/128
+[2026-09-01 23:34:18] 4B pure-functional evaluation: 113/128
+[2026-09-01 23:34:19] 4B pure-functional evaluation: 114/128
+[2026-09-01 23:34:20] 4B pure-functional evaluation: 115/128
+[2026-09-01 23:34:22] 4B pure-functional evaluation: 116/128
+[2026-09-01 23:34:24] 4B pure-functional evaluation: 117/128
+[2026-09-01 23:34:26] 4B pure-functional evaluation: 118/128
+[2026-09-01 23:34:28] 4B pure-functional evaluation: 119/128
+[2026-09-01 23:34:30] 4B pure-functional evaluation: 120/128
+[2026-09-01 23:34:32] 4B pure-functional evaluation: 121/128
+[2026-09-01 23:34:34] 4B pure-functional evaluation: 122/128
+[2026-09-01 23:34:36] 4B pure-functional evaluation: 123/128
+[2026-09-01 23:34:38] 4B pure-functional evaluation: 124/128
+[2026-09-01 23:34:39] 4B pure-functional evaluation: 125/128
+[2026-09-01 23:34:41] 4B pure-functional evaluation: 126/128
+[2026-09-01 23:34:43] 4B pure-functional evaluation: 127/128
+[2026-09-01 23:34:44] 4B pure-functional evaluation: 128/128
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  60%|██████    | 188/311 [00:00<00:00, 1872.70it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1827.18it/s]
+[2026-09-01 23:34:58] 1.7B evaluation: 1/128
+[2026-09-01 23:34:58] 1.7B evaluation: 2/128
+[2026-09-01 23:34:59] 1.7B evaluation: 3/128
+[2026-09-01 23:34:59] 1.7B evaluation: 4/128
+[2026-09-01 23:34:59] 1.7B evaluation: 5/128
+[2026-09-01 23:34:59] 1.7B evaluation: 6/128
+[2026-09-01 23:34:59] 1.7B evaluation: 7/128
+[2026-09-01 23:35:00] 1.7B evaluation: 8/128
+[2026-09-01 23:35:00] 1.7B evaluation: 9/128
+[2026-09-01 23:35:00] 1.7B evaluation: 10/128
+[2026-09-01 23:35:00] 1.7B evaluation: 11/128
+[2026-09-01 23:35:01] 1.7B evaluation: 12/128
+[2026-09-01 23:35:01] 1.7B evaluation: 13/128
+[2026-09-01 23:35:01] 1.7B evaluation: 14/128
+[2026-09-01 23:35:02] 1.7B evaluation: 15/128
+[2026-09-01 23:35:02] 1.7B evaluation: 16/128
+[2026-09-01 23:35:02] 1.7B evaluation: 17/128
+[2026-09-01 23:35:02] 1.7B evaluation: 18/128
+[2026-09-01 23:35:02] 1.7B evaluation: 19/128
+[2026-09-01 23:35:02] 1.7B evaluation: 20/128
+[2026-09-01 23:35:03] 1.7B evaluation: 21/128
+[2026-09-01 23:35:03] 1.7B evaluation: 22/128
+[2026-09-01 23:35:03] 1.7B evaluation: 23/128
+[2026-09-01 23:35:03] 1.7B evaluation: 24/128
+[2026-09-01 23:35:04] 1.7B evaluation: 25/128
+[2026-09-01 23:35:04] 1.7B evaluation: 26/128
+[2026-09-01 23:35:04] 1.7B evaluation: 27/128
+[2026-09-01 23:35:04] 1.7B evaluation: 28/128
+[2026-09-01 23:35:05] 1.7B evaluation: 29/128
+[2026-09-01 23:35:05] 1.7B evaluation: 30/128
+[2026-09-01 23:35:05] 1.7B evaluation: 31/128
+[2026-09-01 23:35:05] 1.7B evaluation: 32/128
+[2026-09-01 23:35:06] 1.7B evaluation: 33/128
+[2026-09-01 23:35:06] 1.7B evaluation: 34/128
+[2026-09-01 23:35:06] 1.7B evaluation: 35/128
+[2026-09-01 23:35:06] 1.7B evaluation: 36/128
+[2026-09-01 23:35:07] 1.7B evaluation: 37/128
+[2026-09-01 23:35:07] 1.7B evaluation: 38/128
+[2026-09-01 23:35:07] 1.7B evaluation: 39/128
+[2026-09-01 23:35:07] 1.7B evaluation: 40/128
+[2026-09-01 23:35:08] 1.7B evaluation: 41/128
+[2026-09-01 23:35:08] 1.7B evaluation: 42/128
+[2026-09-01 23:35:08] 1.7B evaluation: 43/128
+[2026-09-01 23:35:09] 1.7B evaluation: 44/128
+[2026-09-01 23:35:09] 1.7B evaluation: 45/128
+[2026-09-01 23:35:09] 1.7B evaluation: 46/128
+[2026-09-01 23:35:09] 1.7B evaluation: 47/128
+[2026-09-01 23:35:10] 1.7B evaluation: 48/128
+[2026-09-01 23:35:10] 1.7B evaluation: 49/128
+[2026-09-01 23:35:10] 1.7B evaluation: 50/128
+[2026-09-01 23:35:10] 1.7B evaluation: 51/128
+[2026-09-01 23:35:11] 1.7B evaluation: 52/128
+[2026-09-01 23:35:11] 1.7B evaluation: 53/128
+[2026-09-01 23:35:11] 1.7B evaluation: 54/128
+[2026-09-01 23:35:12] 1.7B evaluation: 55/128
+[2026-09-01 23:35:12] 1.7B evaluation: 56/128
+[2026-09-01 23:35:12] 1.7B evaluation: 57/128
+[2026-09-01 23:35:12] 1.7B evaluation: 58/128
+[2026-09-01 23:35:13] 1.7B evaluation: 59/128
+[2026-09-01 23:35:13] 1.7B evaluation: 60/128
+[2026-09-01 23:35:13] 1.7B evaluation: 61/128
+[2026-09-01 23:35:13] 1.7B evaluation: 62/128
+[2026-09-01 23:35:13] 1.7B evaluation: 63/128
+[2026-09-01 23:35:14] 1.7B evaluation: 64/128
+[2026-09-01 23:35:14] 1.7B evaluation: 65/128
+[2026-09-01 23:35:14] 1.7B evaluation: 66/128
+[2026-09-01 23:35:14] 1.7B evaluation: 67/128
+[2026-09-01 23:35:14] 1.7B evaluation: 68/128
+[2026-09-01 23:35:15] 1.7B evaluation: 69/128
+[2026-09-01 23:35:15] 1.7B evaluation: 70/128
+[2026-09-01 23:35:15] 1.7B evaluation: 71/128
+[2026-09-01 23:35:15] 1.7B evaluation: 72/128
+[2026-09-01 23:35:16] 1.7B evaluation: 73/128
+[2026-09-01 23:35:16] 1.7B evaluation: 74/128
+[2026-09-01 23:35:16] 1.7B evaluation: 75/128
+[2026-09-01 23:35:16] 1.7B evaluation: 76/128
+[2026-09-01 23:35:16] 1.7B evaluation: 77/128
+[2026-09-01 23:35:17] 1.7B evaluation: 78/128
+[2026-09-01 23:35:17] 1.7B evaluation: 79/128
+[2026-09-01 23:35:17] 1.7B evaluation: 80/128
+[2026-09-01 23:35:17] 1.7B evaluation: 81/128
+[2026-09-01 23:35:18] 1.7B evaluation: 82/128
+[2026-09-01 23:35:18] 1.7B evaluation: 83/128
+[2026-09-01 23:35:18] 1.7B evaluation: 84/128
+[2026-09-01 23:35:19] 1.7B evaluation: 85/128
+[2026-09-01 23:35:19] 1.7B evaluation: 86/128
+[2026-09-01 23:35:19] 1.7B evaluation: 87/128
+[2026-09-01 23:35:19] 1.7B evaluation: 88/128
+[2026-09-01 23:35:19] 1.7B evaluation: 89/128
+[2026-09-01 23:35:20] 1.7B evaluation: 90/128
+[2026-09-01 23:35:20] 1.7B evaluation: 91/128
+[2026-09-01 23:35:20] 1.7B evaluation: 92/128
+[2026-09-01 23:35:20] 1.7B evaluation: 93/128
+[2026-09-01 23:35:21] 1.7B evaluation: 94/128
+[2026-09-01 23:35:21] 1.7B evaluation: 95/128
+[2026-09-01 23:35:21] 1.7B evaluation: 96/128
+[2026-09-01 23:35:21] 1.7B evaluation: 97/128
+[2026-09-01 23:35:22] 1.7B evaluation: 98/128
+[2026-09-01 23:35:22] 1.7B evaluation: 99/128
+[2026-09-01 23:35:22] 1.7B evaluation: 100/128
+[2026-09-01 23:35:22] 1.7B evaluation: 101/128
+[2026-09-01 23:35:23] 1.7B evaluation: 102/128
+[2026-09-01 23:35:23] 1.7B evaluation: 103/128
+[2026-09-01 23:35:23] 1.7B evaluation: 104/128
+[2026-09-01 23:35:23] 1.7B evaluation: 105/128
+[2026-09-01 23:35:24] 1.7B evaluation: 106/128
+[2026-09-01 23:35:24] 1.7B evaluation: 107/128
+[2026-09-01 23:35:24] 1.7B evaluation: 108/128
+[2026-09-01 23:35:24] 1.7B evaluation: 109/128
+[2026-09-01 23:35:25] 1.7B evaluation: 110/128
+[2026-09-01 23:35:25] 1.7B evaluation: 111/128
+[2026-09-01 23:35:25] 1.7B evaluation: 112/128
+[2026-09-01 23:35:26] 1.7B evaluation: 113/128
+[2026-09-01 23:35:26] 1.7B evaluation: 114/128
+[2026-09-01 23:35:26] 1.7B evaluation: 115/128
+[2026-09-01 23:35:26] 1.7B evaluation: 116/128
+[2026-09-01 23:35:26] 1.7B evaluation: 117/128
+[2026-09-01 23:35:26] 1.7B evaluation: 118/128
+[2026-09-01 23:35:27] 1.7B evaluation: 119/128
+[2026-09-01 23:35:27] 1.7B evaluation: 120/128
+[2026-09-01 23:35:27] 1.7B evaluation: 121/128
+[2026-09-01 23:35:28] 1.7B evaluation: 122/128
+[2026-09-01 23:35:28] 1.7B evaluation: 123/128
+[2026-09-01 23:35:28] 1.7B evaluation: 124/128
+[2026-09-01 23:35:28] 1.7B evaluation: 125/128
+[2026-09-01 23:35:29] 1.7B evaluation: 126/128
+[2026-09-01 23:35:29] 1.7B evaluation: 127/128
+[2026-09-01 23:35:29] 1.7B evaluation: 128/128
+[2026-09-01 23:35:31] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json evaluate --scope formal
+[2026-09-01 23:35:31] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u analyze_head_mixing.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json
+[2026-09-01 23:35:46] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u analyze_head_mixing.py --config /home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json
+[2026-09-01 23:35:46] ALL FULL28-HEAD8 EXPERIMENTS COMPLETED

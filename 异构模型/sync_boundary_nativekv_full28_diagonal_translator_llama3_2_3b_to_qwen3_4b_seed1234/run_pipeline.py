@@ -1,0 +1,44 @@
+import argparse
+import fcntl
+import os
+import traceback
+
+from common import configuration, run_root, save_json, seed_all
+from train import run_phase1, run_stage_b, run_stage_b_all
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--mode", choices=("smoke", "study"), default="study")
+    parser.add_argument("action", choices=("all", "phase1", "stage_b"), default="all", nargs="?")
+    args = parser.parse_args()
+    cfg = configuration(args.mode)
+    seed_all(cfg["seed"])
+    root = run_root(cfg)
+    root.mkdir(parents=True, exist_ok=True)
+    lock = (root / "pipeline.lock").open("w")
+    try:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        raise RuntimeError("Full28/Head8 pipeline already running")
+    (root / "pipeline.pid").write_text(str(os.getpid()) + "\n")
+    save_json(root / "run_config.json", cfg)
+    save_json(root / "status.json", {"status": "running", "stage": args.action, "pid": os.getpid()})
+    try:
+        if args.action == "all":
+            run_phase1(cfg)
+            run_stage_b(cfg)
+        elif args.action == "phase1":
+            run_phase1(cfg)
+        else:
+            run_stage_b(cfg)
+        save_json(root / "status.json", {"status": "completed", "stage": args.action, "pid": os.getpid()})
+    except BaseException as error:
+        save_json(root / "status.json", {"status": "failed", "stage": args.action,
+                                         "error": str(error), "pid": os.getpid()})
+        traceback.print_exc()
+        raise
+
+
+if __name__ == "__main__":
+    main()

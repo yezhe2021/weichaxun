@@ -1,0 +1,27 @@
+{
+  "4b": {
+    "layers": 36,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "rope_theta": null,
+    "rope_scaling": {
+      "rope_theta": 1000000,
+      "rope_type": "default"
+    }
+  },
+  "8b": {
+    "layers": 36,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "rope_theta": null,
+    "rope_scaling": {
+      "rope_theta": 1000000,
+      "rope_type": "default"
+    }
+  },
+  "r1_sparse_reader_smoke": "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/artifacts/smoke/sparse_reader/best.pt",
+  "r1_sparse_reader_formal": "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/artifacts/formal/sparse_reader/best.pt",
+  "canonical_v1": "Qwen3-4B 36-layer selected pre-RoPE K/native V",
+  "writer_4b": "identity",
+  "reader_frozen": true
+}

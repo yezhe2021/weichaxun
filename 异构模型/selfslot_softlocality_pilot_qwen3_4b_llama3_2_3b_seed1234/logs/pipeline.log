@@ -1,0 +1,63 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:29,  4.44it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 552.44it/s]Loading weights:  57%|█████▋    | 227/398 [00:00<00:00, 561.86it/s]Loading weights:  75%|███████▍  | 297/398 [00:00<00:00, 546.84it/s]Loading weights:  90%|█████████ | 360/398 [00:00<00:00, 546.63it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 506.12it/s]
+[2026-09-06 22:21:21] qwen lambda=0 step=16/128 loss=3.860377
+[2026-09-06 22:21:41] qwen lambda=0 step=32/128 loss=4.178528
+[2026-09-06 22:22:00] qwen lambda=0 step=48/128 loss=3.823949
+[2026-09-06 22:22:19] qwen lambda=0 step=64/128 loss=2.859426
+[2026-09-06 22:22:20] qwen lambda=0 validation step=64 KL=5.232643
+[2026-09-06 22:22:40] qwen lambda=0 step=80/128 loss=3.149557
+[2026-09-06 22:22:59] qwen lambda=0 step=96/128 loss=2.817409
+[2026-09-06 22:23:18] qwen lambda=0 step=112/128 loss=2.873317
+[2026-09-06 22:23:38] qwen lambda=0 step=128/128 loss=2.954698
+[2026-09-06 22:23:39] qwen lambda=0 validation step=128 KL=5.183895
+[2026-09-06 22:24:03] qwen lambda=8 step=16/128 loss=4.152185
+[2026-09-06 22:24:23] qwen lambda=8 step=32/128 loss=4.261963
+[2026-09-06 22:24:44] qwen lambda=8 step=48/128 loss=3.930118
+[2026-09-06 22:25:05] qwen lambda=8 step=64/128 loss=2.728526
+[2026-09-06 22:25:06] qwen lambda=8 validation step=64 KL=4.974546
+[2026-09-06 22:25:27] qwen lambda=8 step=80/128 loss=2.930771
+[2026-09-06 22:25:47] qwen lambda=8 step=96/128 loss=2.831938
+[2026-09-06 22:26:08] qwen lambda=8 step=112/128 loss=2.500340
+[2026-09-06 22:26:37] qwen lambda=8 step=128/128 loss=2.848679
+[2026-09-06 22:26:38] qwen lambda=8 validation step=128 KL=4.799045
+[2026-09-06 22:27:14] qwen lambda=16 step=16/128 loss=4.488545
+[2026-09-06 22:27:42] qwen lambda=16 step=32/128 loss=4.117818
+[2026-09-06 22:28:09] qwen lambda=16 step=48/128 loss=3.958691
+[2026-09-06 22:28:39] qwen lambda=16 step=64/128 loss=2.904458
+[2026-09-06 22:28:41] qwen lambda=16 validation step=64 KL=4.784304
+[2026-09-06 22:29:10] qwen lambda=16 step=80/128 loss=2.128649
+[2026-09-06 22:29:37] qwen lambda=16 step=96/128 loss=2.990866
+[2026-09-06 22:30:05] qwen lambda=16 step=112/128 loss=2.507006
+[2026-09-06 22:30:34] qwen lambda=16 step=128/128 loss=2.407243
+[2026-09-06 22:30:36] qwen lambda=16 validation step=128 KL=4.527634
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:04,  3.94it/s]Loading weights:  47%|████▋     | 120/254 [00:00<00:00, 428.37it/s]Loading weights:  74%|███████▍  | 189/254 [00:00<00:00, 456.00it/s]Loading weights:  98%|█████████▊| 250/254 [00:00<00:00, 453.19it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 401.47it/s]
+[2026-09-06 22:31:14] llama lambda=0 step=16/128 loss=5.057433
+[2026-09-06 22:31:39] llama lambda=0 step=32/128 loss=4.993165
+[2026-09-06 22:32:04] llama lambda=0 step=48/128 loss=4.726726
+[2026-09-06 22:32:30] llama lambda=0 step=64/128 loss=4.579936
+[2026-09-06 22:32:31] llama lambda=0 validation step=64 KL=4.507885
+[2026-09-06 22:32:57] llama lambda=0 step=80/128 loss=4.708690
+[2026-09-06 22:33:22] llama lambda=0 step=96/128 loss=4.566684
+[2026-09-06 22:33:38] llama lambda=0 step=112/128 loss=4.230346
+[2026-09-06 22:33:53] llama lambda=0 step=128/128 loss=3.944954
+[2026-09-06 22:33:54] llama lambda=0 validation step=128 KL=4.126537
+[2026-09-06 22:34:12] llama lambda=8 step=16/128 loss=4.837914
+[2026-09-06 22:34:27] llama lambda=8 step=32/128 loss=4.474657
+[2026-09-06 22:34:42] llama lambda=8 step=48/128 loss=4.613680
+[2026-09-06 22:34:56] llama lambda=8 step=64/128 loss=4.288322
+[2026-09-06 22:34:57] llama lambda=8 validation step=64 KL=4.452219
+[2026-09-06 22:35:11] llama lambda=8 step=80/128 loss=4.321460
+[2026-09-06 22:35:26] llama lambda=8 step=96/128 loss=4.427912
+[2026-09-06 22:35:40] llama lambda=8 step=112/128 loss=3.803056
+[2026-09-06 22:35:55] llama lambda=8 step=128/128 loss=3.446225
+[2026-09-06 22:35:56] llama lambda=8 validation step=128 KL=3.944846
+[2026-09-06 22:36:14] llama lambda=16 step=16/128 loss=4.757579
+[2026-09-06 22:36:30] llama lambda=16 step=32/128 loss=4.208787
+[2026-09-06 22:36:45] llama lambda=16 step=48/128 loss=4.201863
+[2026-09-06 22:36:59] llama lambda=16 step=64/128 loss=4.025001
+[2026-09-06 22:37:00] llama lambda=16 validation step=64 KL=4.305217
+[2026-09-06 22:37:14] llama lambda=16 step=80/128 loss=4.070959
+[2026-09-06 22:37:29] llama lambda=16 step=96/128 loss=4.290350
+[2026-09-06 22:37:43] llama lambda=16 step=112/128 loss=3.585956
+[2026-09-06 22:37:57] llama lambda=16 step=128/128 loss=3.198254
+[2026-09-06 22:37:58] llama lambda=16 validation step=128 KL=3.742612
+[2026-09-06 22:38:01] ALL SOFT-LOCALITY TESTS COMPLETED

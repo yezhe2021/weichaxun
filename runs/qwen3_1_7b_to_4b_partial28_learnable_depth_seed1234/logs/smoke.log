@@ -1,0 +1,61 @@
+[2026-08-05 10:49:27] smoke: start prepare
+manifest, native 28-layer source KV and receiver assets linked
+[2026-08-05 10:49:28] smoke: start source
+[2026-08-05 10:49:35] smoke: reused 1.7B native 28-layer cache verified
+[2026-08-05 10:49:36] smoke: start scales
+[2026-08-05 10:49:43] smoke: native-depth RMS 4/4
+[2026-08-05 10:49:44] smoke: start receiver_selftest
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  20%|██        | 80/398 [00:00<00:00, 794.02it/s]Loading weights:  40%|████      | 160/398 [00:00<00:00, 767.45it/s]Loading weights:  60%|█████▉    | 237/398 [00:00<00:00, 719.68it/s]Loading weights:  81%|████████  | 322/398 [00:00<00:00, 762.48it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 566.77it/s]
+[2026-08-05 10:49:56] smoke: start e1_overfit_skip
+[2026-08-05 10:50:04] smoke: e1_skip_overfit16 1/2 validation=4.470022
+[2026-08-05 10:50:06] smoke: e1_skip_overfit16 2/2 validation=4.419303
+[2026-08-05 10:50:09] smoke: start e1_overfit_repeat
+[2026-08-05 10:50:17] smoke: e1_repeat_overfit16 1/2 validation=4.467783
+[2026-08-05 10:50:20] smoke: e1_repeat_overfit16 2/2 validation=4.417349
+[2026-08-05 10:50:23] smoke: start e1_stagea_skip
+[2026-08-05 10:50:31] smoke: e1_skip_stage_a 1/2 validation=4.443506
+[2026-08-05 10:50:33] smoke: e1_skip_stage_a 2/2 validation=4.397149
+[2026-08-05 10:50:34] smoke: start e1_stagea_repeat
+[2026-08-05 10:50:43] smoke: e1_repeat_stage_a 1/2 validation=4.438166
+[2026-08-05 10:50:45] smoke: e1_repeat_stage_a 2/2 validation=4.392293
+[2026-08-05 10:50:47] smoke: start e1_f0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 72/398 [00:00<00:00, 719.36it/s]Loading weights:  37%|███▋      | 147/398 [00:00<00:00, 730.09it/s]Loading weights:  56%|█████▌    | 221/398 [00:00<00:00, 713.82it/s]Loading weights:  74%|███████▎  | 293/398 [00:00<00:00, 686.28it/s]Loading weights:  91%|█████████ | 362/398 [00:00<00:00, 531.40it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 603.41it/s]
+[2026-08-05 10:51:16] smoke: start e1_ce_skip
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  21%|██        | 82/398 [00:00<00:00, 795.83it/s]Loading weights:  45%|████▍     | 179/398 [00:00<00:00, 889.22it/s]Loading weights:  67%|██████▋   | 268/398 [00:00<00:00, 816.14it/s]Loading weights:  89%|████████▊ | 353/398 [00:00<00:00, 824.56it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 803.99it/s]
+[2026-08-05 10:51:33] smoke: e1_skip_ce 1/2
+[2026-08-05 10:51:37] smoke: e1_skip_ce 2/2
+[2026-08-05 10:51:38] smoke: start e1_ce_repeat
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 91/398 [00:00<00:00, 876.55it/s]Loading weights:  45%|████▍     | 179/398 [00:00<00:00, 829.89it/s]Loading weights:  66%|██████▌   | 263/398 [00:00<00:00, 832.57it/s]Loading weights:  87%|████████▋ | 347/398 [00:00<00:00, 798.72it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 812.98it/s]
+[2026-08-05 10:51:56] smoke: e1_repeat_ce 1/2
+[2026-08-05 10:51:59] smoke: e1_repeat_ce 2/2
+[2026-08-05 10:52:01] smoke: start e2_update0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 1004.34it/s]Loading weights:  51%|█████     | 203/398 [00:00<00:00, 881.00it/s] Loading weights:  74%|███████▎  | 293/398 [00:00<00:00, 808.11it/s]Loading weights:  94%|█████████▍| 375/398 [00:00<00:00, 736.04it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 789.91it/s]
+[2026-08-05 10:52:22] smoke: start e2_stagea_fixed
+[2026-08-05 10:52:30] smoke: e2_fixed_stage_a 1/2 validation=4.383419
+[2026-08-05 10:52:34] smoke: e2_fixed_stage_a 2/2 validation=4.374405
+[2026-08-05 10:52:35] smoke: start e2_stagea_learnable
+[2026-08-05 10:52:43] smoke: e2_learnable_stage_a 1/2 validation=4.380111
+[2026-08-05 10:52:46] smoke: e2_learnable_stage_a 2/2 validation=4.367825
+[2026-08-05 10:52:48] smoke: start e2_f0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 93/398 [00:00<00:00, 877.28it/s]Loading weights:  45%|████▌     | 181/398 [00:00<00:00, 795.40it/s]Loading weights:  66%|██████▌   | 261/398 [00:00<00:00, 696.01it/s]Loading weights:  84%|████████▍ | 334/398 [00:00<00:00, 696.29it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 734.11it/s]
+[2026-08-05 10:53:16] smoke: start e2_ce_fixed
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 92/398 [00:00<00:00, 830.65it/s]Loading weights:  44%|████▍     | 176/398 [00:00<00:00, 732.90it/s]Loading weights:  63%|██████▎   | 250/398 [00:00<00:00, 684.00it/s]Loading weights:  81%|████████  | 323/398 [00:00<00:00, 695.38it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 756.47it/s]
+[2026-08-05 10:53:35] smoke: e2_fixed_ce 1/2
+[2026-08-05 10:53:41] smoke: e2_fixed_ce 2/2
+[2026-08-05 10:53:43] smoke: start e2_ce_learnable
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  24%|██▍       | 97/398 [00:00<00:00, 966.53it/s]Loading weights:  49%|████▊     | 194/398 [00:00<00:00, 846.97it/s]Loading weights:  70%|███████   | 280/398 [00:00<00:00, 769.42it/s]Loading weights:  92%|█████████▏| 368/398 [00:00<00:00, 804.95it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 808.97it/s]
+[2026-08-05 10:54:02] smoke: e2_learnable_ce 1/2
+[2026-08-05 10:54:07] smoke: e2_learnable_ce 2/2
+[2026-08-05 10:54:08] smoke: start evaluate
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 89/398 [00:00<00:00, 869.28it/s]Loading weights:  44%|████▍     | 176/398 [00:00<00:00, 827.33it/s]Loading weights:  65%|██████▌   | 259/398 [00:00<00:00, 787.29it/s]Loading weights:  86%|████████▌ | 341/398 [00:00<00:00, 794.84it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 818.93it/s]
+[2026-08-05 10:55:20] smoke: final evaluation completed
+smoke: pipeline completed

@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "train": 64,
+    "validation": 16,
+    "test": 32
+  },
+  "rejected_train_pool": {
+    "too_long": 37
+  },
+  "rejected_test_pool": {
+    "too_long": 11
+  },
+  "uses_supporting_facts": false,
+  "uses_selected_tokens": false,
+  "all_context_documents_included": true,
+  "truncation_used": false,
+  "tokenizers_equal_on_all_serialized_fields": true
+}

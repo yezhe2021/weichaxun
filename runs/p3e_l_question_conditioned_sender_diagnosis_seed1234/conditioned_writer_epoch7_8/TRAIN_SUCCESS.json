@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-L question-conditioned Writer",
+  "samples": 512,
+  "epochs": 2,
+  "best_epoch": 1,
+  "best_train_loss": 0.006753561990080925,
+  "initialized_from_c2": "/home/yezhe/伪查询/runs/p3e_l_question_conditioned_sender_diagnosis_seed1234/conditioned_writer/checkpoint_best.pt",
+  "only_writer_updated": true,
+  "checkpoint": "/home/yezhe/伪查询/runs/p3e_l_question_conditioned_sender_diagnosis_seed1234/conditioned_writer_epoch7_8/checkpoint_best.pt"
+}

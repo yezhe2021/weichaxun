@@ -1,0 +1,188 @@
+{
+  "sample_id": "5ab9610a554299743d22eb23",
+  "checkpoint": "checkpoints/quick/d2/stage_a/best.pt",
+  "diagnostic_only_not_in_loss": true,
+  "hard_gate_used": false,
+  "layers": [
+    {
+      "layer": 0,
+      "route_kl": 7.998753547668457,
+      "attention_output_cosine": 0.10804670304059982
+    },
+    {
+      "layer": 1,
+      "route_kl": 3.0590882301330566,
+      "attention_output_cosine": -0.029376205056905746
+    },
+    {
+      "layer": 2,
+      "route_kl": 4.83487606048584,
+      "attention_output_cosine": 0.004035920836031437
+    },
+    {
+      "layer": 3,
+      "route_kl": 11.350093841552734,
+      "attention_output_cosine": -0.03685542196035385
+    },
+    {
+      "layer": 4,
+      "route_kl": 6.887874603271484,
+      "attention_output_cosine": 0.008251657709479332
+    },
+    {
+      "layer": 5,
+      "route_kl": 6.231305122375488,
+      "attention_output_cosine": 0.023586316034197807
+    },
+    {
+      "layer": 6,
+      "route_kl": 4.769365310668945,
+      "attention_output_cosine": -0.017490368336439133
+    },
+    {
+      "layer": 7,
+      "route_kl": 11.273930549621582,
+      "attention_output_cosine": -0.019354578107595444
+    },
+    {
+      "layer": 8,
+      "route_kl": 6.1327900886535645,
+      "attention_output_cosine": -0.020336538553237915
+    },
+    {
+      "layer": 9,
+      "route_kl": 9.741077423095703,
+      "attention_output_cosine": 0.03243955224752426
+    },
+    {
+      "layer": 10,
+      "route_kl": 7.634030818939209,
+      "attention_output_cosine": 0.02291405200958252
+    },
+    {
+      "layer": 11,
+      "route_kl": 7.5056867599487305,
+      "attention_output_cosine": -0.0844452828168869
+    },
+    {
+      "layer": 12,
+      "route_kl": 7.1080427169799805,
+      "attention_output_cosine": 0.05168703943490982
+    },
+    {
+      "layer": 13,
+      "route_kl": 7.868035316467285,
+      "attention_output_cosine": -0.01715701073408127
+    },
+    {
+      "layer": 14,
+      "route_kl": 6.653210639953613,
+      "attention_output_cosine": -0.0806128978729248
+    },
+    {
+      "layer": 15,
+      "route_kl": 8.229584693908691,
+      "attention_output_cosine": -0.0209028422832489
+    },
+    {
+      "layer": 16,
+      "route_kl": 4.968550682067871,
+      "attention_output_cosine": 0.010740133002400398
+    },
+    {
+      "layer": 17,
+      "route_kl": 5.131871223449707,
+      "attention_output_cosine": -0.07474574446678162
+    },
+    {
+      "layer": 18,
+      "route_kl": 6.035874366760254,
+      "attention_output_cosine": 0.05221204459667206
+    },
+    {
+      "layer": 19,
+      "route_kl": 7.366379261016846,
+      "attention_output_cosine": 0.07269689440727234
+    },
+    {
+      "layer": 20,
+      "route_kl": 5.935690879821777,
+      "attention_output_cosine": -0.015213988721370697
+    },
+    {
+      "layer": 21,
+      "route_kl": 6.9072160720825195,
+      "attention_output_cosine": -0.031894221901893616
+    },
+    {
+      "layer": 22,
+      "route_kl": 6.0356855392456055,
+      "attention_output_cosine": 0.1206851378083229
+    },
+    {
+      "layer": 23,
+      "route_kl": 7.920034408569336,
+      "attention_output_cosine": 0.1426229029893875
+    },
+    {
+      "layer": 24,
+      "route_kl": 6.613712787628174,
+      "attention_output_cosine": 0.1178252100944519
+    },
+    {
+      "layer": 25,
+      "route_kl": 10.198104858398438,
+      "attention_output_cosine": -0.07223188877105713
+    },
+    {
+      "layer": 26,
+      "route_kl": 9.720378875732422,
+      "attention_output_cosine": 0.012577978894114494
+    },
+    {
+      "layer": 27,
+      "route_kl": 9.22661018371582,
+      "attention_output_cosine": 0.03769584000110626
+    },
+    {
+      "layer": 28,
+      "route_kl": 10.031591415405273,
+      "attention_output_cosine": -0.004169647116214037
+    },
+    {
+      "layer": 29,
+      "route_kl": 10.374267578125,
+      "attention_output_cosine": 0.0071895532310009
+    },
+    {
+      "layer": 30,
+      "route_kl": 13.819231033325195,
+      "attention_output_cosine": 0.041259586811065674
+    },
+    {
+      "layer": 31,
+      "route_kl": 7.261906147003174,
+      "attention_output_cosine": 0.0879853218793869
+    },
+    {
+      "layer": 32,
+      "route_kl": 9.202119827270508,
+      "attention_output_cosine": 0.04838761314749718
+    },
+    {
+      "layer": 33,
+      "route_kl": 10.273822784423828,
+      "attention_output_cosine": 0.07598773390054703
+    },
+    {
+      "layer": 34,
+      "route_kl": 7.5870161056518555,
+      "attention_output_cosine": 0.14896124601364136
+    },
+    {
+      "layer": 35,
+      "route_kl": 8.873025894165039,
+      "attention_output_cosine": 0.11350113153457642
+    }
+  ]
+}

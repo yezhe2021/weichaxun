@@ -1,0 +1,18 @@
+{
+  "question_only": {
+    "gold_answer_nll": 12.02821397781372
+  },
+  "native_sparse_correct": {
+    "gold_answer_nll": 12.554290533065796
+  },
+  "native_sparse_shuffled": {
+    "gold_answer_nll": 11.762195825576782
+  },
+  "native_sparse_zero": {
+    "gold_answer_nll": 11.481474161148071
+  },
+  "native_sparse_no_kv_same_lora": {
+    "gold_answer_nll": 12.022443771362305
+  },
+  "correct_minus_shuffled_nll_advantage": -0.7920947074890137
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "full",
+  "branch": "f2_ce",
+  "initialized_from": "/home/yezhe/可拔插/qwen3_8b_to_4b_fullcontext_writer_comparison_seed1234/artifacts/development/full_stage_a/best.pt",
+  "best_validation_nll": 1.5967180794717706,
+  "best_validation_generation_f1": 0.3895731872294373,
+  "training_seconds": 4104.009567514062,
+  "peak_gpu_bytes": 25918914560,
+  "parameters": {
+    "trainable_parameters": 9462960,
+    "total_parameters": 9462960
+  },
+  "stage_b_representation_tether": false
+}

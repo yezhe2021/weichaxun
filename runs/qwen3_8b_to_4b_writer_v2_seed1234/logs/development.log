@@ -1,0 +1,160 @@
+[2026-08-04 11:46:45] development: start update0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  20%|██        | 80/398 [00:00<00:00, 781.39it/s]Loading weights:  40%|███▉      | 159/398 [00:00<00:00, 765.42it/s]Loading weights:  60%|██████    | 240/398 [00:00<00:00, 774.65it/s]Loading weights:  80%|████████  | 319/398 [00:00<00:00, 770.76it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 784.96it/s]
+[2026-08-04 11:49:48] development: start overfit_linear
+[2026-08-04 11:50:58] development: linear_continued_overfit16 25/200 validation=0.698051
+[2026-08-04 11:51:41] development: linear_continued_overfit16 50/200 validation=0.692418
+[2026-08-04 11:52:25] development: linear_continued_overfit16 75/200 validation=0.687268
+[2026-08-04 11:53:12] development: linear_continued_overfit16 100/200 validation=0.682475
+[2026-08-04 11:53:56] development: linear_continued_overfit16 125/200 validation=0.677964
+[2026-08-04 11:54:40] development: linear_continued_overfit16 150/200 validation=0.673696
+[2026-08-04 11:55:24] development: linear_continued_overfit16 175/200 validation=0.669637
+[2026-08-04 11:56:11] development: linear_continued_overfit16 200/200 validation=0.665764
+[2026-08-04 11:56:16] development: start overfit_v2_h
+[2026-08-04 11:57:07] development: v2_h_overfit16 25/200 validation=0.697389
+[2026-08-04 11:57:52] development: v2_h_overfit16 50/200 validation=0.691103
+[2026-08-04 11:58:37] development: v2_h_overfit16 75/200 validation=0.685271
+[2026-08-04 11:59:25] development: v2_h_overfit16 100/200 validation=0.679767
+[2026-08-04 12:00:10] development: v2_h_overfit16 125/200 validation=0.674517
+[2026-08-04 12:00:57] development: v2_h_overfit16 150/200 validation=0.669469
+[2026-08-04 12:01:44] development: v2_h_overfit16 175/200 validation=0.664590
+[2026-08-04 12:02:32] development: v2_h_overfit16 200/200 validation=0.659849
+[2026-08-04 12:02:36] development: start overfit_v2_hl
+[2026-08-04 12:03:54] development: v2_hl_overfit16 25/200 validation=0.697379
+[2026-08-04 12:05:10] development: v2_hl_overfit16 50/200 validation=0.691091
+[2026-08-04 12:06:18] development: v2_hl_overfit16 75/200 validation=0.685259
+[2026-08-04 12:07:29] development: v2_hl_overfit16 100/200 validation=0.679756
+[2026-08-04 12:08:42] development: v2_hl_overfit16 125/200 validation=0.674504
+[2026-08-04 12:09:52] development: v2_hl_overfit16 150/200 validation=0.669458
+[2026-08-04 12:11:05] development: v2_hl_overfit16 175/200 validation=0.664580
+[2026-08-04 12:12:13] development: v2_hl_overfit16 200/200 validation=0.659840
+[2026-08-04 12:12:18] development: start overfit_gate
+[2026-08-04 12:12:24] development: start stagea_linear
+[2026-08-04 12:15:57] development: linear_continued_stage_a 25/200 validation=0.710666
+[2026-08-04 12:19:11] development: linear_continued_stage_a 50/200 validation=0.709500
+[2026-08-04 12:22:01] development: linear_continued_stage_a 75/200 validation=0.708421
+[2026-08-04 12:24:46] development: linear_continued_stage_a 100/200 validation=0.707413
+[2026-08-04 12:28:12] development: linear_continued_stage_a 125/200 validation=0.706385
+[2026-08-04 12:30:41] development: linear_continued_stage_a 150/200 validation=0.705447
+[2026-08-04 12:34:03] development: linear_continued_stage_a 175/200 validation=0.704526
+[2026-08-04 12:37:47] development: linear_continued_stage_a 200/200 validation=0.703588
+[2026-08-04 12:38:03] development: start stagea_v2_h
+[2026-08-04 12:41:08] development: v2_h_stage_a 25/200 validation=0.710258
+[2026-08-04 12:43:44] development: v2_h_stage_a 50/200 validation=0.708657
+[2026-08-04 12:46:22] development: v2_h_stage_a 75/200 validation=0.707104
+[2026-08-04 12:48:56] development: v2_h_stage_a 100/200 validation=0.705579
+[2026-08-04 12:51:43] development: v2_h_stage_a 125/200 validation=0.703976
+[2026-08-04 12:54:09] development: v2_h_stage_a 150/200 validation=0.702425
+[2026-08-04 12:56:48] development: v2_h_stage_a 175/200 validation=0.700839
+[2026-08-04 12:59:32] development: v2_h_stage_a 200/200 validation=0.699189
+[2026-08-04 12:59:48] development: start stagea_v2_hl
+[2026-08-04 13:03:34] development: v2_hl_stage_a 25/200 validation=0.710256
+[2026-08-04 13:06:52] development: v2_hl_stage_a 50/200 validation=0.708653
+[2026-08-04 13:10:14] development: v2_hl_stage_a 75/200 validation=0.707099
+[2026-08-04 13:13:06] development: v2_hl_stage_a 100/200 validation=0.705574
+[2026-08-04 13:16:44] development: v2_hl_stage_a 125/200 validation=0.703972
+[2026-08-04 13:19:20] development: v2_hl_stage_a 150/200 validation=0.702422
+[2026-08-04 13:22:17] development: v2_hl_stage_a 175/200 validation=0.700833
+[2026-08-04 13:24:43] development: v2_hl_stage_a 200/200 validation=0.699183
+[2026-08-04 13:24:59] development: start f0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<03:51,  1.72it/s]Loading weights:   1%|▏         | 5/398 [00:01<01:21,  4.81it/s]Loading weights:   4%|▎         | 14/398 [00:01<00:46,  8.25it/s]Loading weights:   4%|▍         | 15/398 [00:02<00:56,  6.76it/s]Loading weights:   5%|▌         | 20/398 [00:03<01:05,  5.78it/s]Loading weights:   6%|▋         | 25/398 [00:03<00:53,  7.00it/s]Loading weights:   8%|▊         | 31/398 [00:04<00:46,  7.87it/s]Loading weights:   9%|▉         | 37/398 [00:05<00:51,  7.00it/s]Loading weights:  10%|█         | 40/398 [00:05<00:43,  8.30it/s]Loading weights:  12%|█▏        | 47/398 [00:06<00:43,  8.10it/s]Loading weights:  13%|█▎        | 53/398 [00:07<00:42,  8.18it/s]Loading weights:  15%|█▍        | 58/398 [00:07<00:39,  8.55it/s]Loading weights:  15%|█▌        | 60/398 [00:08<00:54,  6.21it/s]Loading weights:  17%|█▋        | 67/398 [00:08<00:36,  9.02it/s]Loading weights:  17%|█▋        | 69/398 [00:09<00:50,  6.56it/s]Loading weights:  18%|█▊        | 71/398 [00:10<00:53,  6.07it/s]Loading weights:  20%|██        | 80/398 [00:11<00:45,  6.97it/s]Loading weights:  21%|██▏       | 85/398 [00:11<00:36,  8.65it/s]Loading weights:  22%|██▏       | 87/398 [00:11<00:33,  9.19it/s]Loading weights:  22%|██▏       | 89/398 [00:12<00:47,  6.51it/s]Loading weights:  23%|██▎       | 92/398 [00:13<00:54,  5.64it/s]Loading weights:  23%|██▎       | 93/398 [00:13<00:52,  5.79it/s]Loading weights:  26%|██▌       | 102/398 [00:14<00:50,  5.83it/s]Loading weights:  26%|██▌       | 103/398 [00:14<00:50,  5.85it/s]Loading weights:  28%|██▊       | 113/398 [00:15<00:39,  7.29it/s]Loading weights:  29%|██▊       | 114/398 [00:16<00:44,  6.44it/s]Loading weights:  29%|██▉       | 115/398 [00:16<00:42,  6.66it/s]Loading weights:  31%|███       | 122/398 [00:16<00:29,  9.27it/s]Loading weights:  31%|███       | 124/398 [00:17<00:45,  6.08it/s]Loading weights:  31%|███▏      | 125/398 [00:18<00:53,  5.07it/s]Loading weights:  34%|███▍      | 135/398 [00:18<00:25, 10.35it/s]Loading weights:  34%|███▍      | 137/398 [00:18<00:26,  9.84it/s]Loading weights:  36%|███▌      | 143/398 [00:19<00:27,  9.39it/s]Loading weights:  37%|███▋      | 148/398 [00:20<00:39,  6.39it/s]Loading weights:  40%|███▉      | 159/398 [00:21<00:20, 11.66it/s]Loading weights:  41%|████      | 163/398 [00:21<00:22, 10.29it/s]Loading weights:  42%|████▏     | 168/398 [00:22<00:26,  8.70it/s]Loading weights:  43%|████▎     | 170/398 [00:23<00:33,  6.71it/s]Loading weights:  45%|████▍     | 179/398 [00:23<00:19, 11.07it/s]Loading weights:  46%|████▌     | 182/398 [00:23<00:20, 10.45it/s]Loading weights:  46%|████▋     | 185/398 [00:24<00:23,  9.08it/s]Loading weights:  47%|████▋     | 187/398 [00:24<00:24,  8.73it/s]Loading weights:  48%|████▊     | 192/398 [00:25<00:37,  5.54it/s]Loading weights:  51%|█████     | 202/398 [00:26<00:25,  7.69it/s]Loading weights:  53%|█████▎    | 212/398 [00:27<00:18, 10.02it/s]Loading weights:  56%|█████▌    | 223/398 [00:28<00:15, 11.45it/s]Loading weights:  58%|█████▊    | 229/398 [00:28<00:12, 13.57it/s]Loading weights:  58%|█████▊    | 231/398 [00:28<00:13, 12.47it/s]Loading weights:  59%|█████▉    | 234/398 [00:30<00:25,  6.38it/s]Loading weights:  61%|██████    | 242/398 [00:30<00:19,  8.10it/s]Loading weights:  62%|██████▏   | 245/398 [00:31<00:19,  7.90it/s]Loading weights:  62%|██████▏   | 247/398 [00:31<00:24,  6.29it/s]Loading weights:  64%|██████▍   | 254/398 [00:32<00:16,  8.93it/s]Loading weights:  65%|██████▍   | 257/398 [00:33<00:23,  5.90it/s]Loading weights:  65%|██████▍   | 258/398 [00:34<00:32,  4.37it/s]Loading weights:  67%|██████▋   | 268/398 [00:34<00:15,  8.58it/s]Loading weights:  69%|██████▊   | 273/398 [00:34<00:11, 10.71it/s]Loading weights:  69%|██████▉   | 275/398 [00:35<00:14,  8.42it/s]Loading weights:  70%|███████   | 279/398 [00:35<00:16,  7.31it/s]Loading weights:  73%|███████▎  | 289/398 [00:36<00:10, 10.42it/s]Loading weights:  73%|███████▎  | 291/398 [00:36<00:11,  9.63it/s]Loading weights:  75%|███████▍  | 297/398 [00:38<00:14,  6.93it/s]Loading weights:  76%|███████▌  | 301/398 [00:38<00:13,  7.25it/s]Loading weights:  77%|███████▋  | 306/398 [00:39<00:14,  6.45it/s]Loading weights:  78%|███████▊  | 312/398 [00:40<00:12,  7.01it/s]Loading weights:  80%|████████  | 319/398 [00:41<00:12,  6.25it/s]Loading weights:  81%|████████▏ | 324/398 [00:42<00:11,  6.40it/s]Loading weights:  83%|████████▎ | 330/398 [00:43<00:10,  6.35it/s]Loading weights:  83%|████████▎ | 331/398 [00:43<00:10,  6.51it/s]Loading weights:  84%|████████▍ | 335/398 [00:44<00:13,  4.54it/s]Loading weights:  86%|████████▋ | 344/398 [00:45<00:07,  7.42it/s]Loading weights:  87%|████████▋ | 346/398 [00:45<00:07,  6.96it/s]Loading weights:  88%|████████▊ | 352/398 [00:46<00:06,  6.73it/s]Loading weights:  89%|████████▉ | 356/398 [00:48<00:08,  4.84it/s]Loading weights:  92%|█████████▏| 367/398 [00:49<00:04,  6.34it/s]Loading weights:  92%|█████████▏| 368/398 [00:50<00:06,  4.64it/s]Loading weights:  95%|█████████▍| 378/398 [00:51<00:03,  6.53it/s]Loading weights:  97%|█████████▋| 385/398 [00:52<00:02,  6.19it/s]Loading weights:  98%|█████████▊| 389/398 [00:52<00:01,  7.20it/s]Loading weights:  99%|█████████▊| 393/398 [00:52<00:00,  8.69it/s]Loading weights: 100%|██████████| 398/398 [00:52<00:00,  7.52it/s]
+[2026-08-04 13:33:08] development: start ce_linear
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 996.12it/s]Loading weights:  51%|█████     | 202/398 [00:00<00:00, 330.46it/s]Loading weights:  65%|██████▍   | 257/398 [00:00<00:00, 350.74it/s]Loading weights:  77%|███████▋  | 305/398 [00:00<00:00, 332.02it/s]Loading weights:  97%|█████████▋| 385/398 [00:00<00:00, 407.42it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 400.72it/s]
+[2026-08-04 13:38:07] development: linear_continued/ce 25/400
+[2026-08-04 13:42:25] development: linear_continued/ce 50/400
+[2026-08-04 13:45:59] development: linear_continued/ce 75/400
+[2026-08-04 13:50:32] development: linear_continued/ce 100/400
+[2026-08-04 13:54:43] development: linear_continued/ce 125/400
+[2026-08-04 13:59:22] development: linear_continued/ce 150/400
+[2026-08-04 14:03:25] development: linear_continued/ce 175/400
+[2026-08-04 14:07:59] development: linear_continued/ce 200/400
+[2026-08-04 14:11:25] development: linear_continued/ce 225/400
+[2026-08-04 14:15:29] development: linear_continued/ce 250/400
+[2026-08-04 14:19:04] development: linear_continued/ce 275/400
+[2026-08-04 14:23:12] development: linear_continued/ce 300/400
+[2026-08-04 14:27:07] development: linear_continued/ce 325/400
+[2026-08-04 14:31:04] development: linear_continued/ce 350/400
+[2026-08-04 14:35:16] development: linear_continued/ce 375/400
+[2026-08-04 14:39:13] development: linear_continued/ce 400/400
+[2026-08-04 14:39:15] development: start ce_v2_h
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  21%|██        | 82/398 [00:00<00:00, 776.62it/s]Loading weights:  40%|████      | 160/398 [00:00<00:00, 426.05it/s]Loading weights:  53%|█████▎    | 211/398 [00:02<00:03, 51.08it/s] Loading weights:  73%|███████▎  | 290/398 [00:03<00:01, 85.75it/s]Loading weights:  87%|████████▋ | 345/398 [00:03<00:00, 114.20it/s]Loading weights: 100%|██████████| 398/398 [00:03<00:00, 121.34it/s]
+[2026-08-04 14:43:03] development: v2_h/ce 25/400
+[2026-08-04 14:47:30] development: v2_h/ce 50/400
+[2026-08-04 14:51:04] development: v2_h/ce 75/400
+[2026-08-04 14:54:56] development: v2_h/ce 100/400
+[2026-08-04 14:58:58] development: v2_h/ce 125/400
+[2026-08-04 15:02:54] development: v2_h/ce 150/400
+[2026-08-04 15:06:40] development: v2_h/ce 175/400
+[2026-08-04 15:10:25] development: v2_h/ce 200/400
+[2026-08-04 15:13:37] development: v2_h/ce 225/400
+[2026-08-04 15:17:39] development: v2_h/ce 250/400
+[2026-08-04 15:20:55] development: v2_h/ce 275/400
+[2026-08-04 15:24:38] development: v2_h/ce 300/400
+[2026-08-04 15:29:02] development: v2_h/ce 325/400
+[2026-08-04 15:32:58] development: v2_h/ce 350/400
+[2026-08-04 15:36:20] development: v2_h/ce 375/400
+[2026-08-04 15:39:34] development: v2_h/ce 400/400
+[2026-08-04 15:39:36] development: start ce_v2_hl
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   1%|          | 3/398 [00:01<02:17,  2.86it/s]Loading weights:   1%|          | 4/398 [00:01<02:20,  2.80it/s]Loading weights:   3%|▎         | 12/398 [00:02<01:08,  5.62it/s]Loading weights:   4%|▎         | 14/398 [00:02<01:03,  6.08it/s]Loading weights:   4%|▍         | 15/398 [00:03<01:15,  5.09it/s]Loading weights:   4%|▍         | 16/398 [00:03<01:29,  4.28it/s]Loading weights:   6%|▌         | 24/398 [00:04<00:58,  6.36it/s]Loading weights:   7%|▋         | 26/398 [00:04<01:03,  5.89it/s]Loading weights:   8%|▊         | 33/398 [00:06<01:00,  6.00it/s]Loading weights:   9%|▉         | 37/398 [00:06<00:50,  7.15it/s]Loading weights:  10%|▉         | 38/398 [00:07<01:11,  5.06it/s]Loading weights:  12%|█▏        | 48/398 [00:08<00:49,  7.00it/s]Loading weights:  13%|█▎        | 53/398 [00:08<00:49,  6.92it/s]Loading weights:  14%|█▍        | 56/398 [00:08<00:42,  8.08it/s]Loading weights:  15%|█▍        | 58/398 [00:09<00:47,  7.23it/s]Loading weights:  15%|█▌        | 60/398 [00:09<00:54,  6.15it/s]Loading weights:  16%|█▌        | 62/398 [00:10<01:00,  5.52it/s]Loading weights:  18%|█▊        | 70/398 [00:11<00:43,  7.61it/s]Loading weights:  18%|█▊        | 71/398 [00:11<00:55,  5.90it/s]Loading weights:  19%|█▉        | 77/398 [00:11<00:35,  9.12it/s]Loading weights:  20%|██        | 81/398 [00:13<00:56,  5.62it/s]Loading weights:  23%|██▎       | 91/398 [00:13<00:35,  8.71it/s]Loading weights:  23%|██▎       | 93/398 [00:15<00:53,  5.68it/s]Loading weights:  26%|██▌       | 103/398 [00:15<00:38,  7.60it/s]Loading weights:  27%|██▋       | 108/398 [00:16<00:31,  9.14it/s]Loading weights:  28%|██▊       | 110/398 [00:16<00:42,  6.81it/s]Loading weights:  28%|██▊       | 113/398 [00:17<00:43,  6.59it/s]Loading weights:  30%|██▉       | 119/398 [00:18<00:38,  7.20it/s]Loading weights:  32%|███▏      | 126/398 [00:18<00:30,  8.98it/s]Loading weights:  33%|███▎      | 132/398 [00:19<00:33,  7.88it/s]Loading weights:  35%|███▌      | 141/398 [00:20<00:26,  9.72it/s]Loading weights:  37%|███▋      | 147/398 [00:20<00:27,  9.21it/s]Loading weights:  37%|███▋      | 149/398 [00:21<00:29,  8.55it/s]Loading weights:  39%|███▊      | 154/398 [00:21<00:23, 10.20it/s]Loading weights:  39%|███▉      | 157/398 [00:21<00:24,  9.72it/s]Loading weights:  41%|████▏     | 165/398 [00:22<00:18, 12.27it/s]Loading weights:  42%|████▏     | 169/398 [00:22<00:20, 11.18it/s]Loading weights:  43%|████▎     | 171/398 [00:23<00:21, 10.60it/s]Loading weights:  45%|████▍     | 179/398 [00:23<00:15, 13.71it/s]Loading weights:  45%|████▌     | 181/398 [00:23<00:16, 13.44it/s]Loading weights:  47%|████▋     | 187/398 [00:24<00:17, 12.15it/s]Loading weights:  48%|████▊     | 191/398 [00:24<00:14, 14.11it/s]Loading weights:  50%|████▉     | 198/398 [00:24<00:16, 12.12it/s]Loading weights:  51%|█████     | 203/398 [00:25<00:19,  9.95it/s]Loading weights:  52%|█████▏    | 205/398 [00:25<00:18, 10.51it/s]Loading weights:  54%|█████▍    | 214/398 [00:25<00:10, 17.10it/s]Loading weights:  55%|█████▍    | 218/398 [00:26<00:12, 14.43it/s]Loading weights:  56%|█████▋    | 224/398 [00:27<00:21,  8.21it/s]Loading weights:  59%|█████▉    | 234/398 [00:28<00:15, 10.51it/s]Loading weights:  59%|█████▉    | 236/398 [00:29<00:21,  7.49it/s]Loading weights:  62%|██████▏   | 246/398 [00:30<00:17,  8.47it/s]Loading weights:  63%|██████▎   | 251/398 [00:31<00:20,  7.25it/s]Loading weights:  65%|██████▍   | 258/398 [00:31<00:13, 10.19it/s]Loading weights:  66%|██████▌   | 262/398 [00:32<00:17,  7.92it/s]Loading weights:  67%|██████▋   | 267/398 [00:32<00:12, 10.17it/s]Loading weights:  68%|██████▊   | 270/398 [00:33<00:18,  7.03it/s]Loading weights:  69%|██████▉   | 276/398 [00:34<00:20,  5.99it/s]Loading weights:  70%|██████▉   | 278/398 [00:34<00:18,  6.52it/s]Loading weights:  71%|███████   | 283/398 [00:34<00:12,  9.00it/s]Loading weights:  72%|███████▏  | 286/398 [00:35<00:18,  6.22it/s]Loading weights:  73%|███████▎  | 290/398 [00:36<00:13,  8.01it/s]Loading weights:  73%|███████▎  | 292/398 [00:36<00:18,  5.83it/s]Loading weights:  76%|███████▌  | 301/398 [00:37<00:11,  8.66it/s]Loading weights:  76%|███████▌  | 303/398 [00:37<00:11,  8.49it/s]Loading weights:  77%|███████▋  | 306/398 [00:38<00:12,  7.51it/s]Loading weights:  79%|███████▊  | 313/398 [00:38<00:09,  8.77it/s]Loading weights:  81%|████████  | 322/398 [00:40<00:09,  8.04it/s]Loading weights:  84%|████████▍ | 334/398 [00:40<00:05, 11.26it/s]Loading weights:  86%|████████▌ | 341/398 [00:41<00:05, 10.57it/s]Loading weights:  87%|████████▋ | 345/398 [00:41<00:04, 10.89it/s]Loading weights:  88%|████████▊ | 352/398 [00:42<00:03, 12.91it/s]Loading weights:  89%|████████▉ | 355/398 [00:42<00:04,  9.96it/s]Loading weights:  90%|████████▉ | 357/398 [00:43<00:05,  7.67it/s]Loading weights:  92%|█████████▏| 368/398 [00:44<00:02, 10.01it/s]Loading weights:  94%|█████████▍| 375/398 [00:44<00:02, 10.05it/s]Loading weights:  95%|█████████▍| 377/398 [00:45<00:02, 10.45it/s]Loading weights:  95%|█████████▌| 379/398 [00:45<00:01, 11.19it/s]Loading weights:  96%|█████████▌| 383/398 [00:45<00:01,  9.97it/s]Loading weights:  97%|█████████▋| 385/398 [00:46<00:01,  7.60it/s]Loading weights:  97%|█████████▋| 388/398 [00:46<00:01,  9.17it/s]Loading weights:  98%|█████████▊| 390/398 [00:47<00:01,  6.08it/s]Loading weights: 100%|██████████| 398/398 [00:47<00:00,  8.43it/s]
+[2026-08-04 15:47:12] development: v2_hl/ce 25/400
+[2026-08-04 15:54:32] development: v2_hl/ce 50/400
+[2026-08-04 16:01:10] development: v2_hl/ce 75/400
+[2026-08-04 16:07:42] development: v2_hl/ce 100/400
+[2026-08-04 16:14:01] development: v2_hl/ce 125/400
+[2026-08-04 16:20:26] development: v2_hl/ce 150/400
+[2026-08-04 16:25:57] development: v2_hl/ce 175/400
+[2026-08-04 16:31:59] development: v2_hl/ce 200/400
+[2026-08-04 16:37:17] development: v2_hl/ce 225/400
+[2026-08-04 16:43:13] development: v2_hl/ce 250/400
+[2026-08-04 16:49:44] development: v2_hl/ce 275/400
+[2026-08-04 16:55:45] development: v2_hl/ce 300/400
+[2026-08-04 17:01:12] development: v2_hl/ce 325/400
+[2026-08-04 17:06:56] development: v2_hl/ce 350/400
+[2026-08-04 17:12:05] development: v2_hl/ce 375/400
+[2026-08-04 17:17:33] development: v2_hl/ce 400/400
+[2026-08-04 17:17:34] development: start select
+[2026-08-04 17:17:41] development: start kd
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  11%|█         | 44/398 [00:00<00:01, 295.42it/s]Loading weights:  20%|██        | 80/398 [00:00<00:01, 265.99it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 404.04it/s]Loading weights:  48%|████▊     | 190/398 [00:00<00:00, 380.31it/s]Loading weights:  58%|█████▊    | 232/398 [00:00<00:00, 367.18it/s]Loading weights:  68%|██████▊   | 270/398 [00:00<00:00, 313.13it/s]Loading weights:  80%|███████▉  | 317/398 [00:00<00:00, 348.75it/s]Loading weights:  89%|████████▉ | 354/398 [00:01<00:00, 341.14it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 365.88it/s]
+[2026-08-04 17:20:57] development: linear_continued/kd 25/400
+[2026-08-04 17:24:01] development: linear_continued/kd 50/400
+[2026-08-04 17:26:15] development: linear_continued/kd 75/400
+[2026-08-04 17:28:39] development: linear_continued/kd 100/400
+[2026-08-04 17:30:43] development: linear_continued/kd 125/400
+[2026-08-04 17:33:20] development: linear_continued/kd 150/400
+[2026-08-04 17:35:17] development: linear_continued/kd 175/400
+[2026-08-04 17:37:36] development: linear_continued/kd 200/400
+[2026-08-04 17:39:26] development: linear_continued/kd 225/400
+[2026-08-04 17:41:47] development: linear_continued/kd 250/400
+[2026-08-04 17:43:36] development: linear_continued/kd 275/400
+[2026-08-04 17:45:57] development: linear_continued/kd 300/400
+[2026-08-04 17:47:47] development: linear_continued/kd 325/400
+[2026-08-04 17:50:26] development: linear_continued/kd 350/400
+[2026-08-04 17:52:16] development: linear_continued/kd 375/400
+[2026-08-04 17:54:41] development: linear_continued/kd 400/400
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:18,  5.05it/s]Loading weights:   6%|▌         | 22/398 [00:00<00:05, 66.17it/s]Loading weights:   8%|▊         | 33/398 [00:00<00:05, 70.47it/s]Loading weights:  10%|█         | 41/398 [00:00<00:06, 54.69it/s]Loading weights:  12%|█▏        | 47/398 [00:01<00:09, 37.65it/s]Loading weights:  13%|█▎        | 52/398 [00:01<00:09, 34.99it/s]Loading weights:  15%|█▍        | 58/398 [00:01<00:16, 21.13it/s]Loading weights:  17%|█▋        | 69/398 [00:02<00:12, 26.31it/s]Loading weights:  18%|█▊        | 73/398 [00:02<00:13, 23.94it/s]Loading weights:  20%|██        | 80/398 [00:04<00:41,  7.61it/s]Loading weights:  23%|██▎       | 93/398 [00:04<00:23, 13.11it/s]Loading weights:  25%|██▍       | 98/398 [00:05<00:22, 13.34it/s]Loading weights:  26%|██▌       | 102/398 [00:06<00:32,  9.22it/s]Loading weights:  26%|██▋       | 105/398 [00:07<00:41,  7.13it/s]Loading weights:  28%|██▊       | 113/398 [00:07<00:27, 10.31it/s]Loading weights:  29%|██▉       | 116/398 [00:08<00:42,  6.65it/s]Loading weights:  31%|███       | 124/398 [00:08<00:29,  9.38it/s]Loading weights:  32%|███▏      | 127/398 [00:10<00:46,  5.83it/s]Loading weights:  34%|███▍      | 136/398 [00:10<00:33,  7.92it/s]Loading weights:  36%|███▌      | 143/398 [00:11<00:23, 10.71it/s]Loading weights:  37%|███▋      | 147/398 [00:11<00:29,  8.50it/s]Loading weights:  38%|███▊      | 151/398 [00:12<00:25,  9.56it/s]Loading weights:  39%|███▉      | 157/398 [00:12<00:19, 12.49it/s]Loading weights:  40%|████      | 160/398 [00:13<00:35,  6.70it/s]Loading weights:  43%|████▎     | 170/398 [00:14<00:23,  9.80it/s]Loading weights:  44%|████▍     | 176/398 [00:14<00:18, 11.96it/s]Loading weights:  45%|████▍     | 179/398 [00:14<00:17, 12.43it/s]Loading weights:  45%|████▌     | 181/398 [00:14<00:21, 10.01it/s]Loading weights:  48%|████▊     | 191/398 [00:16<00:21,  9.50it/s]Loading weights:  51%|█████     | 202/398 [00:16<00:16, 12.07it/s]Loading weights:  51%|█████▏    | 204/398 [00:17<00:19,  9.95it/s]Loading weights:  54%|█████▍    | 214/398 [00:17<00:16, 11.25it/s]Loading weights:  56%|█████▌    | 223/398 [00:18<00:13, 12.84it/s]Loading weights:  57%|█████▋    | 225/398 [00:19<00:17,  9.65it/s]Loading weights:  59%|█████▉    | 235/398 [00:19<00:14, 11.36it/s]Loading weights:  60%|██████    | 240/398 [00:20<00:13, 11.38it/s]Loading weights:  62%|██████▏   | 246/398 [00:21<00:17,  8.83it/s]Loading weights:  62%|██████▏   | 247/398 [00:22<00:23,  6.38it/s]Loading weights:  65%|██████▌   | 259/398 [00:22<00:11, 12.41it/s]Loading weights:  66%|██████▋   | 264/398 [00:23<00:13,  9.82it/s]Loading weights:  67%|██████▋   | 268/398 [00:23<00:13,  9.88it/s]Loading weights:  68%|██████▊   | 271/398 [00:23<00:11, 11.07it/s]Loading weights:  69%|██████▉   | 274/398 [00:24<00:14,  8.68it/s]Loading weights:  70%|███████   | 279/398 [00:24<00:11, 10.10it/s]Loading weights:  71%|███████   | 281/398 [00:24<00:12,  9.01it/s]Loading weights:  72%|███████▏  | 286/398 [00:25<00:12,  8.72it/s]Loading weights:  73%|███████▎  | 291/398 [00:25<00:11,  9.09it/s]Loading weights:  75%|███████▌  | 300/398 [00:26<00:08, 11.34it/s]Loading weights:  76%|███████▌  | 302/398 [00:26<00:08, 11.15it/s]Loading weights:  77%|███████▋  | 306/398 [00:27<00:10,  8.93it/s]Loading weights:  78%|███████▊  | 312/398 [00:27<00:07, 11.03it/s]Loading weights:  79%|███████▉  | 314/398 [00:28<00:09,  8.92it/s]Loading weights:  81%|████████  | 322/398 [00:28<00:05, 14.89it/s]Loading weights:  82%|████████▏ | 325/398 [00:29<00:07,  9.95it/s]Loading weights:  83%|████████▎ | 330/398 [00:29<00:07,  9.47it/s]Loading weights:  84%|████████▎ | 333/398 [00:30<00:07,  8.58it/s]Loading weights:  84%|████████▍ | 335/398 [00:31<00:11,  5.64it/s]Loading weights:  86%|████████▋ | 344/398 [00:31<00:05,  9.51it/s]Loading weights:  87%|████████▋ | 346/398 [00:31<00:06,  8.51it/s]Loading weights:  87%|████████▋ | 348/398 [00:32<00:06,  7.26it/s]Loading weights:  88%|████████▊ | 349/398 [00:33<00:10,  4.74it/s]Loading weights:  90%|████████▉ | 357/398 [00:33<00:04,  9.07it/s]Loading weights:  91%|█████████ | 363/398 [00:33<00:03,  9.34it/s]Loading weights:  92%|█████████▏| 366/398 [00:34<00:03,  9.91it/s]Loading weights:  92%|█████████▏| 368/398 [00:34<00:04,  6.70it/s]Loading weights:  94%|█████████▎| 373/398 [00:35<00:03,  7.49it/s]Loading weights:  94%|█████████▍| 374/398 [00:35<00:03,  6.21it/s]Loading weights:  95%|█████████▍| 378/398 [00:36<00:02,  7.69it/s]Loading weights:  95%|█████████▌| 379/398 [00:36<00:03,  5.15it/s]Loading weights:  97%|█████████▋| 385/398 [00:38<00:02,  5.15it/s]Loading weights:  97%|█████████▋| 388/398 [00:38<00:01,  5.41it/s]Loading weights:  99%|█████████▉| 394/398 [00:38<00:00,  8.83it/s]Loading weights: 100%|██████████| 398/398 [00:38<00:00, 10.29it/s]
+[2026-08-04 18:02:01] development: v2_hl/kd 25/400
+[2026-08-04 18:08:35] development: v2_hl/kd 50/400
+[2026-08-04 18:14:34] development: v2_hl/kd 75/400
+[2026-08-04 18:20:59] development: v2_hl/kd 100/400
+[2026-08-04 18:26:58] development: v2_hl/kd 125/400
+[2026-08-04 18:33:29] development: v2_hl/kd 150/400
+[2026-08-04 18:39:23] development: v2_hl/kd 175/400
+[2026-08-04 18:45:39] development: v2_hl/kd 200/400
+[2026-08-04 18:51:35] development: v2_hl/kd 225/400
+[2026-08-04 18:58:08] development: v2_hl/kd 250/400
+[2026-08-04 19:04:07] development: v2_hl/kd 275/400
+[2026-08-04 19:10:34] development: v2_hl/kd 300/400
+[2026-08-04 19:16:27] development: v2_hl/kd 325/400
+[2026-08-04 19:22:55] development: v2_hl/kd 350/400
+[2026-08-04 19:28:55] development: v2_hl/kd 375/400
+[2026-08-04 19:35:10] development: v2_hl/kd 400/400
+[2026-08-04 19:35:14] development: start evaluate
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   4%|▎         | 14/398 [00:00<00:06, 59.34it/s]Loading weights:   5%|▌         | 20/398 [00:00<00:06, 55.47it/s]Loading weights:   7%|▋         | 26/398 [00:00<00:15, 24.57it/s]Loading weights:   9%|▉         | 37/398 [00:01<00:11, 30.66it/s]Loading weights:  14%|█▍        | 55/398 [00:01<00:07, 44.96it/s]Loading weights:  15%|█▌        | 61/398 [00:01<00:08, 40.27it/s]Loading weights:  17%|█▋        | 69/398 [00:01<00:07, 41.36it/s]Loading weights:  20%|██        | 81/398 [00:01<00:06, 52.40it/s]Loading weights:  22%|██▏       | 88/398 [00:01<00:05, 54.42it/s]Loading weights:  24%|██▍       | 95/398 [00:02<00:06, 48.36it/s]Loading weights:  29%|██▊       | 114/398 [00:02<00:04, 59.38it/s]Loading weights:  32%|███▏      | 126/398 [00:02<00:04, 66.83it/s]Loading weights:  34%|███▍      | 137/398 [00:02<00:03, 68.46it/s]Loading weights:  37%|███▋      | 147/398 [00:02<00:03, 72.68it/s]Loading weights:  40%|███▉      | 158/398 [00:03<00:03, 62.43it/s]Loading weights:  51%|█████     | 203/398 [00:03<00:01, 137.99it/s]Loading weights:  73%|███████▎  | 290/398 [00:03<00:00, 296.82it/s]Loading weights:  83%|████████▎ | 329/398 [00:08<00:03, 22.23it/s] Loading weights:  90%|████████▉ | 357/398 [00:11<00:02, 16.97it/s]Loading weights:  95%|█████████▍| 377/398 [00:13<00:01, 14.91it/s]Loading weights:  98%|█████████▊| 391/398 [00:16<00:00, 12.45it/s]Loading weights: 100%|██████████| 398/398 [00:16<00:00, 24.75it/s]
+[2026-08-04 19:43:11] development: final evaluation completed
+development: pipeline completed

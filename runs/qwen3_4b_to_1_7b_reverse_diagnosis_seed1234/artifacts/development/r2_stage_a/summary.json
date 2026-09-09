@@ -1,0 +1,15 @@
+{
+  "kind": "learnable",
+  "overfit_code_validation_only": false,
+  "initial_checkpoint": "/home/yezhe/可拔插/qwen3_4b_to_1_7b_reverse_diagnosis_seed1234/artifacts/development/r1_stage_a/best.pt",
+  "initial_loss": 1.6831368189305067,
+  "final_loss": 1.5334741827100515,
+  "loss_decreased": true,
+  "all_parameters_received_gradient": true,
+  "missing_gradients": [],
+  "parameters_changed": true,
+  "no_nan_inf": true,
+  "best_validation_loss": 1.5334741827100515,
+  "training_seconds": 3797.6497224066406,
+  "peak_gpu_bytes": 1211784704
+}

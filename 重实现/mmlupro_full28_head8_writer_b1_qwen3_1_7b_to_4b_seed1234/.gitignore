@@ -1,0 +1,9 @@
+cache/
+checkpoints/**/*.pt
+logs/*
+!logs/full_pipeline.log
+artifacts/**/*.pt
+artifacts/**/*.npy
+__pycache__/
+*.pyc
+*.pid

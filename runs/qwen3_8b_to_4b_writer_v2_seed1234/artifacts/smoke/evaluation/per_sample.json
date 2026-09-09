@@ -1,0 +1,222 @@
+[
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "linear_continued_ce_correct",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Kim Yoon-seok and Ha Jung-woo.",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.18284769356250763,
+    "teacher_kl": 0.16922560334205627
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "linear_continued_ce_correct",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Judith Sylvia Cohen",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.9555282592773438,
+    "teacher_kl": 0.3279677629470825
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "linear_continued_ce_shuffled",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "The question is based on incorrect information. The 2008 South Korean movie \"Plan B\" was remade as the Hindi movie \"Murder",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.1738474369049072,
+    "teacher_kl": 3.157609462738037
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "linear_continued_ce_shuffled",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Answer: Anna Julia Swanscott",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.371283531188965,
+    "teacher_kl": 3.903517484664917
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "v2_h_ce_correct",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Kim Yoon-seok and Ha Jung-woo.",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.18025438487529755,
+    "teacher_kl": 0.1667049378156662
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "v2_h_ce_correct",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Judith Sylvia Cohen",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.95448237657547,
+    "teacher_kl": 0.324143648147583
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "v2_h_ce_shuffled",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "The question is based on incorrect information. The 2008 South Korean movie \"Plan B\" was remade as the Hindi movie \"Murder",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.152846574783325,
+    "teacher_kl": 3.136681318283081
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "v2_h_ce_shuffled",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Answer: Anna Julia Swanscott",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.359766006469727,
+    "teacher_kl": 3.9004461765289307
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "v2_hl_ce_correct",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Kim Yoon-seok and Ha Jung-woo.",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.1817069947719574,
+    "teacher_kl": 0.16808490455150604
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "v2_hl_ce_correct",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Judith Sylvia Cohen",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.9644208550453186,
+    "teacher_kl": 0.32610562443733215
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "v2_hl_ce_shuffled",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "The question is based on incorrect information. The 2008 South Korean movie \"Plan B\" was remade as the Hindi movie \"Murder",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.16801381111145,
+    "teacher_kl": 3.15177583694458
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "v2_hl_ce_shuffled",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Answer: Anna Julia Swanscott",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.375380992889404,
+    "teacher_kl": 3.9091567993164062
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "linear_continued_kd_correct",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Kim Yoon-seok and Ha Jung-woo.",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.21093501150608063,
+    "teacher_kl": 0.19611449539661407
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "linear_continued_kd_correct",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Judith Sylvia Cohen",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.0023874044418335,
+    "teacher_kl": 0.3140445351600647
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "linear_continued_kd_shuffled",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "The question is based on incorrect information. The 2008 South Korean movie \"Oldboy\" was remade as a Hindi movie entitled \"Murder",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.3465452194213867,
+    "teacher_kl": 3.3291454315185547
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "linear_continued_kd_shuffled",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Answer: Anna Julia Swanscott",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.366483211517334,
+    "teacher_kl": 3.8974058628082275
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "v2_hl_kd_correct",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Kim Yoon-seok and Ha Jung-woo.",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.21200011670589447,
+    "teacher_kl": 0.19717960059642792
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "v2_hl_kd_correct",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Judith Sylvia Cohen",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.0033230781555176,
+    "teacher_kl": 0.31222736835479736
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "v2_hl_kd_shuffled",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "The question is based on incorrect information. The 2008 South Korean movie \"Oldboy\" was remade as a Hindi movie entitled \"Murder",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.345916509628296,
+    "teacher_kl": 3.3285892009735107
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "v2_hl_kd_shuffled",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "Answer: Anna Julia Swanscott",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.358731269836426,
+    "teacher_kl": 3.88887619972229
+  }
+]

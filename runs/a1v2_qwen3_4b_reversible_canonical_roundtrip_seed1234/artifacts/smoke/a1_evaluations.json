@@ -1,0 +1,46 @@
+[
+  {
+    "update": 0,
+    "kv": 4.964170757402672e-13,
+    "route": -2.5247812868167685e-10,
+    "output": 5.704353005578366e-13,
+    "output_cosine": 1.0,
+    "orth": 0.0,
+    "gate": 0.0,
+    "score": -1.2556934562513253e-10,
+    "native_nll": 12.554290533065796,
+    "decoded_nll": 12.525362730026245,
+    "decoded_minus_native_nll": -0.02892780303955078,
+    "selected": true
+  },
+  {
+    "update": 1,
+    "kv": 1.0733398544959805e-10,
+    "route": -3.2567409880002174e-10,
+    "output": 7.464291436895878e-09,
+    "output_cosine": 0.9999999850988388,
+    "orth": 4.752490718670788e-13,
+    "gate": 1.754721313997759e-13,
+    "score": 7.322921184585787e-09,
+    "native_nll": 12.554290533065796,
+    "decoded_nll": 12.531720399856567,
+    "decoded_minus_native_nll": -0.022570133209228516,
+    "functional_probe_ok": true,
+    "selected": false
+  },
+  {
+    "update": 2,
+    "kv": 2.009403407554622e-10,
+    "route": -9.032142395115628e-11,
+    "output": 8.913030730139937e-11,
+    "output_cosine": 1.0,
+    "orth": 2.477513853793578e-12,
+    "gate": 1.08480130260602e-12,
+    "score": 8.415766347691367e-11,
+    "native_nll": 12.554290533065796,
+    "decoded_nll": 12.551242589950562,
+    "decoded_minus_native_nll": -0.003047943115234375,
+    "functional_probe_ok": true,
+    "selected": false
+  }
+]

@@ -1,0 +1,1326 @@
+{
+  "sample_count": 128,
+  "conditions": {
+    "native": {
+      "writer_layer_count": 0,
+      "writer_layers": [],
+      "final_position_full_vocab_kl_vs_native": {
+        "count": 128,
+        "mean": 0.0,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "choice_only_kl_vs_native": {
+        "count": 128,
+        "mean": 0.0,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "centered_choice_logit_mse": {
+        "count": 128,
+        "mean": 0.0,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "native_choice_top1_agreement": {
+        "count": 128,
+        "mean": 1.0,
+        "min": 1.0,
+        "p10": 1.0,
+        "p25": 1.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "accuracy_evaluation_only": 0.2265625,
+      "margin_buckets": [
+        {
+          "native_margin_rank_interval": "p0-p10",
+          "count": 13,
+          "native_margin_mean": 0.0829326923076923,
+          "full_vocab_kl_mean": 0.0,
+          "choice_kl_mean": 0.0,
+          "native_agreement": 1.0,
+          "accuracy_evaluation_only": 0.15384615384615385
+        },
+        {
+          "native_margin_rank_interval": "p10-p25",
+          "count": 19,
+          "native_margin_mean": 0.39226973684210525,
+          "full_vocab_kl_mean": 0.0,
+          "choice_kl_mean": 0.0,
+          "native_agreement": 1.0,
+          "accuracy_evaluation_only": 0.10526315789473684
+        },
+        {
+          "native_margin_rank_interval": "p25-p50",
+          "count": 32,
+          "native_margin_mean": 0.96044921875,
+          "full_vocab_kl_mean": 0.0,
+          "choice_kl_mean": 0.0,
+          "native_agreement": 1.0,
+          "accuracy_evaluation_only": 0.15625
+        },
+        {
+          "native_margin_rank_interval": "p50-p75",
+          "count": 32,
+          "native_margin_mean": 1.71826171875,
+          "full_vocab_kl_mean": 0.0,
+          "choice_kl_mean": 0.0,
+          "native_agreement": 1.0,
+          "accuracy_evaluation_only": 0.1875
+        },
+        {
+          "native_margin_rank_interval": "p75-p90",
+          "count": 19,
+          "native_margin_mean": 2.833059210526316,
+          "full_vocab_kl_mean": 0.0,
+          "choice_kl_mean": 0.0,
+          "native_agreement": 1.0,
+          "accuracy_evaluation_only": 0.3684210526315789
+        },
+        {
+          "native_margin_rank_interval": "p90-p100",
+          "count": 13,
+          "native_margin_mean": 5.096153846153846,
+          "full_vocab_kl_mean": 0.0,
+          "choice_kl_mean": 0.0,
+          "native_agreement": 1.0,
+          "accuracy_evaluation_only": 0.5384615384615384
+        }
+      ]
+    },
+    "half_interval_even": {
+      "writer_layer_count": 14,
+      "writer_layers": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26
+      ],
+      "final_position_full_vocab_kl_vs_native": {
+        "count": 128,
+        "mean": 0.3677427852235269,
+        "min": 0.0574624128639698,
+        "p10": 0.10520392879843712,
+        "p25": 0.13924304768443108,
+        "median": 0.269159272313118,
+        "p75": 0.5050205066800117,
+        "p90": 0.7864683806896209,
+        "p95": 0.9309100538492198,
+        "max": 1.2212718725204468
+      },
+      "choice_only_kl_vs_native": {
+        "count": 128,
+        "mean": 0.3227989652805263,
+        "min": 0.012630002573132515,
+        "p10": 0.07067251354455947,
+        "p25": 0.11943812295794487,
+        "median": 0.23168060928583145,
+        "p75": 0.4670250788331032,
+        "p90": 0.74489905834198,
+        "p95": 0.9122364491224283,
+        "max": 1.2347204685211182
+      },
+      "centered_choice_logit_mse": {
+        "count": 128,
+        "mean": 1.1152279753587209,
+        "min": 0.08130859583616257,
+        "p10": 0.21734059005975723,
+        "p25": 0.4448925778269768,
+        "median": 0.8140398561954498,
+        "p75": 1.5539208948612213,
+        "p90": 2.2738512277603147,
+        "p95": 2.764447605609893,
+        "max": 5.750393390655518
+      },
+      "native_choice_top1_agreement": {
+        "count": 128,
+        "mean": 0.703125,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "accuracy_evaluation_only": 0.2421875,
+      "margin_buckets": [
+        {
+          "native_margin_rank_interval": "p0-p10",
+          "count": 13,
+          "native_margin_mean": 0.0829326923076923,
+          "full_vocab_kl_mean": 0.25334081798791885,
+          "choice_kl_mean": 0.21582418479598486,
+          "native_agreement": 0.5384615384615384,
+          "accuracy_evaluation_only": 0.38461538461538464
+        },
+        {
+          "native_margin_rank_interval": "p10-p25",
+          "count": 19,
+          "native_margin_mean": 0.39226973684210525,
+          "full_vocab_kl_mean": 0.1988789215683937,
+          "choice_kl_mean": 0.15086104612993567,
+          "native_agreement": 0.631578947368421,
+          "accuracy_evaluation_only": 0.15789473684210525
+        },
+        {
+          "native_margin_rank_interval": "p25-p50",
+          "count": 32,
+          "native_margin_mean": 0.96044921875,
+          "full_vocab_kl_mean": 0.27815773128531873,
+          "choice_kl_mean": 0.20299233763944358,
+          "native_agreement": 0.71875,
+          "accuracy_evaluation_only": 0.09375
+        },
+        {
+          "native_margin_rank_interval": "p50-p75",
+          "count": 32,
+          "native_margin_mean": 1.71826171875,
+          "full_vocab_kl_mean": 0.5066928551532328,
+          "choice_kl_mean": 0.48144204786513,
+          "native_agreement": 0.625,
+          "accuracy_evaluation_only": 0.15625
+        },
+        {
+          "native_margin_rank_interval": "p75-p90",
+          "count": 19,
+          "native_margin_mean": 2.833059210526316,
+          "full_vocab_kl_mean": 0.4009257978514621,
+          "choice_kl_mean": 0.37697098992372813,
+          "native_agreement": 0.8421052631578947,
+          "accuracy_evaluation_only": 0.42105263157894735
+        },
+        {
+          "native_margin_rank_interval": "p90-p100",
+          "count": 13,
+          "native_margin_mean": 5.096153846153846,
+          "full_vocab_kl_mean": 0.558933649212122,
+          "choice_kl_mean": 0.5062957024918153,
+          "native_agreement": 0.9230769230769231,
+          "accuracy_evaluation_only": 0.5384615384615384
+        }
+      ]
+    },
+    "half_interval_odd": {
+      "writer_layer_count": 14,
+      "writer_layers": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27
+      ],
+      "final_position_full_vocab_kl_vs_native": {
+        "count": 128,
+        "mean": 0.6675728596164845,
+        "min": 0.05663852393627167,
+        "p10": 0.16223194152116777,
+        "p25": 0.27218078076839447,
+        "median": 0.5007936209440231,
+        "p75": 0.7990735620260239,
+        "p90": 1.5703617453575134,
+        "p95": 1.9286726534366603,
+        "max": 2.9097790718078613
+      },
+      "choice_only_kl_vs_native": {
+        "count": 128,
+        "mean": 0.6489537161833141,
+        "min": 0.039978884160518646,
+        "p10": 0.10929309129714966,
+        "p25": 0.23099738731980324,
+        "median": 0.43464185297489166,
+        "p75": 0.8306397199630737,
+        "p90": 1.4239650130271904,
+        "p95": 1.9840182304382314,
+        "max": 4.102694511413574
+      },
+      "centered_choice_logit_mse": {
+        "count": 128,
+        "mean": 1.828615575330332,
+        "min": 0.13807617127895355,
+        "p10": 0.4129245728254319,
+        "p25": 0.6635687351226807,
+        "median": 1.3253418803215027,
+        "p75": 2.6695623993873596,
+        "p90": 3.8772082567214965,
+        "p95": 4.866537928581238,
+        "max": 7.556787014007568
+      },
+      "native_choice_top1_agreement": {
+        "count": 128,
+        "mean": 0.453125,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "accuracy_evaluation_only": 0.1796875,
+      "margin_buckets": [
+        {
+          "native_margin_rank_interval": "p0-p10",
+          "count": 13,
+          "native_margin_mean": 0.0829326923076923,
+          "full_vocab_kl_mean": 0.4160501968402129,
+          "choice_kl_mean": 0.4086377127812459,
+          "native_agreement": 0.3076923076923077,
+          "accuracy_evaluation_only": 0.23076923076923078
+        },
+        {
+          "native_margin_rank_interval": "p10-p25",
+          "count": 19,
+          "native_margin_mean": 0.39226973684210525,
+          "full_vocab_kl_mean": 0.3999537307965128,
+          "choice_kl_mean": 0.313845339378244,
+          "native_agreement": 0.3157894736842105,
+          "accuracy_evaluation_only": 0.05263157894736842
+        },
+        {
+          "native_margin_rank_interval": "p25-p50",
+          "count": 32,
+          "native_margin_mean": 0.96044921875,
+          "full_vocab_kl_mean": 0.49548809602856636,
+          "choice_kl_mean": 0.44300573493819684,
+          "native_agreement": 0.5,
+          "accuracy_evaluation_only": 0.09375
+        },
+        {
+          "native_margin_rank_interval": "p50-p75",
+          "count": 32,
+          "native_margin_mean": 1.71826171875,
+          "full_vocab_kl_mean": 0.6309487090911716,
+          "choice_kl_mean": 0.6390985645120963,
+          "native_agreement": 0.5,
+          "accuracy_evaluation_only": 0.03125
+        },
+        {
+          "native_margin_rank_interval": "p75-p90",
+          "count": 19,
+          "native_margin_mean": 2.833059210526316,
+          "full_vocab_kl_mean": 1.2643914622695822,
+          "choice_kl_mean": 1.316219180038101,
+          "native_agreement": 0.3157894736842105,
+          "accuracy_evaluation_only": 0.42105263157894735
+        },
+        {
+          "native_margin_rank_interval": "p90-p100",
+          "count": 13,
+          "native_margin_mean": 5.096153846153846,
+          "full_vocab_kl_mean": 0.9517028492230636,
+          "choice_kl_mean": 0.9350170733836981,
+          "native_agreement": 0.7692307692307693,
+          "accuracy_evaluation_only": 0.5384615384615384
+        }
+      ]
+    },
+    "half_front": {
+      "writer_layer_count": 14,
+      "writer_layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "final_position_full_vocab_kl_vs_native": {
+        "count": 128,
+        "mean": 0.8836794754461152,
+        "min": 0.024109866470098495,
+        "p10": 0.19603707641363147,
+        "p25": 0.3564814627170563,
+        "median": 0.6096869707107544,
+        "p75": 1.0001013725996017,
+        "p90": 1.8765210747718808,
+        "p95": 2.553811967372894,
+        "max": 5.548348426818848
+      },
+      "choice_only_kl_vs_native": {
+        "count": 128,
+        "mean": 0.6712611520233622,
+        "min": 0.002099952194839716,
+        "p10": 0.08970450237393379,
+        "p25": 0.17912128195166588,
+        "median": 0.39575013518333435,
+        "p75": 0.8089522123336792,
+        "p90": 1.6734461069107054,
+        "p95": 2.111628580093383,
+        "max": 4.1044416427612305
+      },
+      "centered_choice_logit_mse": {
+        "count": 128,
+        "mean": 1.7295223975088447,
+        "min": 0.20002198219299316,
+        "p10": 0.5898130476474762,
+        "p25": 0.8244897723197937,
+        "median": 1.2375952005386353,
+        "p75": 2.275871515274048,
+        "p90": 3.8280136823654174,
+        "p95": 4.687917590141294,
+        "max": 9.177122116088867
+      },
+      "native_choice_top1_agreement": {
+        "count": 128,
+        "mean": 0.5546875,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "accuracy_evaluation_only": 0.2421875,
+      "margin_buckets": [
+        {
+          "native_margin_rank_interval": "p0-p10",
+          "count": 13,
+          "native_margin_mean": 0.0829326923076923,
+          "full_vocab_kl_mean": 1.0636279445428114,
+          "choice_kl_mean": 0.8313776203072988,
+          "native_agreement": 0.46153846153846156,
+          "accuracy_evaluation_only": 0.15384615384615385
+        },
+        {
+          "native_margin_rank_interval": "p10-p25",
+          "count": 19,
+          "native_margin_mean": 0.39226973684210525,
+          "full_vocab_kl_mean": 0.613112767276011,
+          "choice_kl_mean": 0.4647897240754805,
+          "native_agreement": 0.42105263157894735,
+          "accuracy_evaluation_only": 0.15789473684210525
+        },
+        {
+          "native_margin_rank_interval": "p25-p50",
+          "count": 32,
+          "native_margin_mean": 0.96044921875,
+          "full_vocab_kl_mean": 0.7153695253655314,
+          "choice_kl_mean": 0.5303835482336581,
+          "native_agreement": 0.71875,
+          "accuracy_evaluation_only": 0.1875
+        },
+        {
+          "native_margin_rank_interval": "p50-p75",
+          "count": 32,
+          "native_margin_mean": 1.71826171875,
+          "full_vocab_kl_mean": 1.1473178272135556,
+          "choice_kl_mean": 0.9314154816092923,
+          "native_agreement": 0.34375,
+          "accuracy_evaluation_only": 0.15625
+        },
+        {
+          "native_margin_rank_interval": "p75-p90",
+          "count": 19,
+          "native_margin_mean": 2.833059210526316,
+          "full_vocab_kl_mean": 1.0529605440403287,
+          "choice_kl_mean": 0.6424079274660662,
+          "native_agreement": 0.631578947368421,
+          "accuracy_evaluation_only": 0.42105263157894735
+        },
+        {
+          "native_margin_rank_interval": "p90-p100",
+          "count": 13,
+          "native_margin_mean": 5.096153846153846,
+          "full_vocab_kl_mean": 0.6171093369619205,
+          "choice_kl_mean": 0.5614764662101291,
+          "native_agreement": 0.8461538461538461,
+          "accuracy_evaluation_only": 0.5384615384615384
+        }
+      ]
+    },
+    "half_back": {
+      "writer_layer_count": 14,
+      "writer_layers": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "final_position_full_vocab_kl_vs_native": {
+        "count": 128,
+        "mean": 0.6731668918218929,
+        "min": 0.049287308007478714,
+        "p10": 0.14888422042131425,
+        "p25": 0.2637978568673134,
+        "median": 0.5074697136878967,
+        "p75": 0.8719875067472458,
+        "p90": 1.36670902967453,
+        "p95": 1.699572843313216,
+        "max": 3.1150190830230713
+      },
+      "choice_only_kl_vs_native": {
+        "count": 128,
+        "mean": 0.6373040374455741,
+        "min": 0.01915833167731762,
+        "p10": 0.1107597328722477,
+        "p25": 0.1947707161307335,
+        "median": 0.47514311969280243,
+        "p75": 0.8258555233478546,
+        "p90": 1.2754860043525695,
+        "p95": 1.90141099691391,
+        "max": 3.168914794921875
+      },
+      "centered_choice_logit_mse": {
+        "count": 128,
+        "mean": 1.9570609633228742,
+        "min": 0.09882812947034836,
+        "p10": 0.32035450637340546,
+        "p25": 0.6183203011751175,
+        "median": 1.3545715808868408,
+        "p75": 2.874033749103546,
+        "p90": 4.495090055465697,
+        "p95": 5.592346668243405,
+        "max": 7.242489814758301
+      },
+      "native_choice_top1_agreement": {
+        "count": 128,
+        "mean": 0.515625,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "accuracy_evaluation_only": 0.1484375,
+      "margin_buckets": [
+        {
+          "native_margin_rank_interval": "p0-p10",
+          "count": 13,
+          "native_margin_mean": 0.0829326923076923,
+          "full_vocab_kl_mean": 0.3616928905248642,
+          "choice_kl_mean": 0.3305100950484092,
+          "native_agreement": 0.46153846153846156,
+          "accuracy_evaluation_only": 0.07692307692307693
+        },
+        {
+          "native_margin_rank_interval": "p10-p25",
+          "count": 19,
+          "native_margin_mean": 0.39226973684210525,
+          "full_vocab_kl_mean": 0.2696117490137878,
+          "choice_kl_mean": 0.21525883076614455,
+          "native_agreement": 0.47368421052631576,
+          "accuracy_evaluation_only": 0.0
+        },
+        {
+          "native_margin_rank_interval": "p25-p50",
+          "count": 32,
+          "native_margin_mean": 0.96044921875,
+          "full_vocab_kl_mean": 0.49218696751631796,
+          "choice_kl_mean": 0.38562947942409664,
+          "native_agreement": 0.40625,
+          "accuracy_evaluation_only": 0.125
+        },
+        {
+          "native_margin_rank_interval": "p50-p75",
+          "count": 32,
+          "native_margin_mean": 1.71826171875,
+          "full_vocab_kl_mean": 0.667724457103759,
+          "choice_kl_mean": 0.6775311352685094,
+          "native_agreement": 0.59375,
+          "accuracy_evaluation_only": 0.0625
+        },
+        {
+          "native_margin_rank_interval": "p75-p90",
+          "count": 19,
+          "native_margin_mean": 2.833059210526316,
+          "full_vocab_kl_mean": 1.2053666146177995,
+          "choice_kl_mean": 1.2789769862827503,
+          "native_agreement": 0.42105263157894735,
+          "accuracy_evaluation_only": 0.3157894736842105
+        },
+        {
+          "native_margin_rank_interval": "p90-p100",
+          "count": 13,
+          "native_margin_mean": 5.096153846153846,
+          "full_vocab_kl_mean": 1.25550769842588,
+          "choice_kl_mean": 1.1435896433316743,
+          "native_agreement": 0.8461538461538461,
+          "accuracy_evaluation_only": 0.46153846153846156
+        }
+      ]
+    },
+    "two_thirds_interval_wwn": {
+      "writer_layer_count": 19,
+      "writer_layers": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13,
+        15,
+        16,
+        18,
+        19,
+        21,
+        22,
+        24,
+        25,
+        27
+      ],
+      "final_position_full_vocab_kl_vs_native": {
+        "count": 128,
+        "mean": 0.5656028236553539,
+        "min": 0.053987156599760056,
+        "p10": 0.12842062562704087,
+        "p25": 0.23515863344073296,
+        "median": 0.4623706340789795,
+        "p75": 0.7212674766778946,
+        "p90": 1.241314625740051,
+        "p95": 1.5430536746978758,
+        "max": 2.3543756008148193
+      },
+      "choice_only_kl_vs_native": {
+        "count": 128,
+        "mean": 0.5630103774019517,
+        "min": 0.02695295959711075,
+        "p10": 0.09591180309653283,
+        "p25": 0.2116568125784397,
+        "median": 0.41633138060569763,
+        "p75": 0.7666979432106018,
+        "p90": 1.2518386006355284,
+        "p95": 1.6058250963687895,
+        "max": 3.4466423988342285
+      },
+      "centered_choice_logit_mse": {
+        "count": 128,
+        "mean": 1.734814558411017,
+        "min": 0.16019533574581146,
+        "p10": 0.3620759010314942,
+        "p25": 0.614648625254631,
+        "median": 1.3178344368934631,
+        "p75": 2.5575724840164185,
+        "p90": 3.8147934198379514,
+        "p95": 4.650808644294735,
+        "max": 6.079579830169678
+      },
+      "native_choice_top1_agreement": {
+        "count": 128,
+        "mean": 0.515625,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "accuracy_evaluation_only": 0.203125,
+      "margin_buckets": [
+        {
+          "native_margin_rank_interval": "p0-p10",
+          "count": 13,
+          "native_margin_mean": 0.0829326923076923,
+          "full_vocab_kl_mean": 0.36451869171399337,
+          "choice_kl_mean": 0.34802696825220036,
+          "native_agreement": 0.38461538461538464,
+          "accuracy_evaluation_only": 0.15384615384615385
+        },
+        {
+          "native_margin_rank_interval": "p10-p25",
+          "count": 19,
+          "native_margin_mean": 0.39226973684210525,
+          "full_vocab_kl_mean": 0.26115598000193896,
+          "choice_kl_mean": 0.21865124353452733,
+          "native_agreement": 0.3157894736842105,
+          "accuracy_evaluation_only": 0.10526315789473684
+        },
+        {
+          "native_margin_rank_interval": "p25-p50",
+          "count": 32,
+          "native_margin_mean": 0.96044921875,
+          "full_vocab_kl_mean": 0.3815869127865881,
+          "choice_kl_mean": 0.3378465649439022,
+          "native_agreement": 0.59375,
+          "accuracy_evaluation_only": 0.1875
+        },
+        {
+          "native_margin_rank_interval": "p50-p75",
+          "count": 32,
+          "native_margin_mean": 1.71826171875,
+          "full_vocab_kl_mean": 0.601423426065594,
+          "choice_kl_mean": 0.616826047655195,
+          "native_agreement": 0.53125,
+          "accuracy_evaluation_only": 0.03125
+        },
+        {
+          "native_margin_rank_interval": "p75-p90",
+          "count": 19,
+          "native_margin_mean": 2.833059210526316,
+          "full_vocab_kl_mean": 1.0291158980444859,
+          "choice_kl_mean": 1.1167444774979038,
+          "native_agreement": 0.5263157894736842,
+          "accuracy_evaluation_only": 0.42105263157894735
+        },
+        {
+          "native_margin_rank_interval": "p90-p100",
+          "count": 13,
+          "native_margin_mean": 5.096153846153846,
+          "full_vocab_kl_mean": 0.8989939930347296,
+          "choice_kl_mean": 0.8937642628756853,
+          "native_agreement": 0.6923076923076923,
+          "accuracy_evaluation_only": 0.5384615384615384
+        }
+      ]
+    },
+    "two_thirds_interval_wnw": {
+      "writer_layer_count": 19,
+      "writer_layers": [
+        0,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        14,
+        15,
+        17,
+        18,
+        20,
+        21,
+        23,
+        24,
+        26,
+        27
+      ],
+      "final_position_full_vocab_kl_vs_native": {
+        "count": 128,
+        "mean": 0.6650300585897639,
+        "min": 0.04375433176755905,
+        "p10": 0.14773490428924563,
+        "p25": 0.25522881746292114,
+        "median": 0.5235907137393951,
+        "p75": 0.7902803272008896,
+        "p90": 1.3179650068283078,
+        "p95": 1.990509331226347,
+        "max": 3.208554267883301
+      },
+      "choice_only_kl_vs_native": {
+        "count": 128,
+        "mean": 0.684406238651718,
+        "min": 0.02496243454515934,
+        "p10": 0.1197559878230095,
+        "p25": 0.20054127648472786,
+        "median": 0.46997103095054626,
+        "p75": 0.935367077589035,
+        "p90": 1.5132816553115838,
+        "p95": 2.0525403261184687,
+        "max": 3.2533979415893555
+      },
+      "centered_choice_logit_mse": {
+        "count": 128,
+        "mean": 1.8445612426148728,
+        "min": 0.13864503800868988,
+        "p10": 0.3752654045820236,
+        "p25": 0.7238470762968063,
+        "median": 1.3958801627159119,
+        "p75": 2.6231054067611694,
+        "p90": 4.21907753944397,
+        "p95": 4.883427667617797,
+        "max": 6.425061225891113
+      },
+      "native_choice_top1_agreement": {
+        "count": 128,
+        "mean": 0.3984375,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "accuracy_evaluation_only": 0.171875,
+      "margin_buckets": [
+        {
+          "native_margin_rank_interval": "p0-p10",
+          "count": 13,
+          "native_margin_mean": 0.0829326923076923,
+          "full_vocab_kl_mean": 0.40592481597111774,
+          "choice_kl_mean": 0.4202444530450381,
+          "native_agreement": 0.3076923076923077,
+          "accuracy_evaluation_only": 0.15384615384615385
+        },
+        {
+          "native_margin_rank_interval": "p10-p25",
+          "count": 19,
+          "native_margin_mean": 0.39226973684210525,
+          "full_vocab_kl_mean": 0.3254701071663907,
+          "choice_kl_mean": 0.3350323513150215,
+          "native_agreement": 0.2631578947368421,
+          "accuracy_evaluation_only": 0.05263157894736842
+        },
+        {
+          "native_margin_rank_interval": "p25-p50",
+          "count": 32,
+          "native_margin_mean": 0.96044921875,
+          "full_vocab_kl_mean": 0.49175481614656746,
+          "choice_kl_mean": 0.4837160750757903,
+          "native_agreement": 0.4375,
+          "accuracy_evaluation_only": 0.09375
+        },
+        {
+          "native_margin_rank_interval": "p50-p75",
+          "count": 32,
+          "native_margin_mean": 1.71826171875,
+          "full_vocab_kl_mean": 0.6476614291314036,
+          "choice_kl_mean": 0.6681010338361375,
+          "native_agreement": 0.4375,
+          "accuracy_evaluation_only": 0.0625
+        },
+        {
+          "native_margin_rank_interval": "p75-p90",
+          "count": 19,
+          "native_margin_mean": 2.833059210526316,
+          "full_vocab_kl_mean": 1.2567367471362416,
+          "choice_kl_mean": 1.378020510861748,
+          "native_agreement": 0.2631578947368421,
+          "accuracy_evaluation_only": 0.3684210526315789
+        },
+        {
+          "native_margin_rank_interval": "p90-p100",
+          "count": 13,
+          "native_margin_mean": 5.096153846153846,
+          "full_vocab_kl_mean": 1.0248903700938592,
+          "choice_kl_mean": 0.9795899070226229,
+          "native_agreement": 0.6923076923076923,
+          "accuracy_evaluation_only": 0.5384615384615384
+        }
+      ]
+    },
+    "two_thirds_front": {
+      "writer_layer_count": 19,
+      "writer_layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "final_position_full_vocab_kl_vs_native": {
+        "count": 128,
+        "mean": 0.726824821671471,
+        "min": 0.09756104648113251,
+        "p10": 0.2306873127818108,
+        "p25": 0.33710379898548126,
+        "median": 0.5982336103916168,
+        "p75": 0.9554037153720856,
+        "p90": 1.4680535316467285,
+        "p95": 1.8467069923877715,
+        "max": 2.819661855697632
+      },
+      "choice_only_kl_vs_native": {
+        "count": 128,
+        "mean": 0.66756889881799,
+        "min": 0.06550395488739014,
+        "p10": 0.16421204656362534,
+        "p25": 0.29901231080293655,
+        "median": 0.5369734168052673,
+        "p75": 0.9053843915462494,
+        "p90": 1.4189882040023802,
+        "p95": 1.7799920380115501,
+        "max": 2.550874948501587
+      },
+      "centered_choice_logit_mse": {
+        "count": 128,
+        "mean": 1.8684617459075525,
+        "min": 0.24854736030101776,
+        "p10": 0.6383532047271728,
+        "p25": 0.8630914688110352,
+        "median": 1.529040515422821,
+        "p75": 2.4106211066246033,
+        "p90": 3.9008712768554683,
+        "p95": 4.824135351181029,
+        "max": 6.3706512451171875
+      },
+      "native_choice_top1_agreement": {
+        "count": 128,
+        "mean": 0.4375,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "accuracy_evaluation_only": 0.1875,
+      "margin_buckets": [
+        {
+          "native_margin_rank_interval": "p0-p10",
+          "count": 13,
+          "native_margin_mean": 0.0829326923076923,
+          "full_vocab_kl_mean": 0.604494402041802,
+          "choice_kl_mean": 0.5271292569545599,
+          "native_agreement": 0.38461538461538464,
+          "accuracy_evaluation_only": 0.3076923076923077
+        },
+        {
+          "native_margin_rank_interval": "p10-p25",
+          "count": 19,
+          "native_margin_mean": 0.39226973684210525,
+          "full_vocab_kl_mean": 0.4655182055736843,
+          "choice_kl_mean": 0.4488967723752323,
+          "native_agreement": 0.42105263157894735,
+          "accuracy_evaluation_only": 0.05263157894736842
+        },
+        {
+          "native_margin_rank_interval": "p25-p50",
+          "count": 32,
+          "native_margin_mean": 0.96044921875,
+          "full_vocab_kl_mean": 0.522057163529098,
+          "choice_kl_mean": 0.488887005019933,
+          "native_agreement": 0.40625,
+          "accuracy_evaluation_only": 0.09375
+        },
+        {
+          "native_margin_rank_interval": "p50-p75",
+          "count": 32,
+          "native_margin_mean": 1.71826171875,
+          "full_vocab_kl_mean": 0.8576621296815574,
+          "choice_kl_mean": 0.7947990442626178,
+          "native_agreement": 0.40625,
+          "accuracy_evaluation_only": 0.09375
+        },
+        {
+          "native_margin_rank_interval": "p75-p90",
+          "count": 19,
+          "native_margin_mean": 2.833059210526316,
+          "full_vocab_kl_mean": 0.9773677320856797,
+          "choice_kl_mean": 0.8199005260279304,
+          "native_agreement": 0.5263157894736842,
+          "accuracy_evaluation_only": 0.42105263157894735
+        },
+        {
+          "native_margin_rank_interval": "p90-p100",
+          "count": 13,
+          "native_margin_mean": 5.096153846153846,
+          "full_vocab_kl_mean": 1.0468692114719977,
+          "choice_kl_mean": 1.0316181893532093,
+          "native_agreement": 0.5384615384615384,
+          "accuracy_evaluation_only": 0.38461538461538464
+        }
+      ]
+    },
+    "two_thirds_back": {
+      "writer_layer_count": 19,
+      "writer_layers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "final_position_full_vocab_kl_vs_native": {
+        "count": 128,
+        "mean": 0.6623143744945992,
+        "min": 0.05035322904586792,
+        "p10": 0.14501954168081282,
+        "p25": 0.24119094759225845,
+        "median": 0.5474940836429596,
+        "p75": 0.8400735110044479,
+        "p90": 1.322175335884094,
+        "p95": 1.6923138380050653,
+        "max": 2.9757447242736816
+      },
+      "choice_only_kl_vs_native": {
+        "count": 128,
+        "mean": 0.6334643829031847,
+        "min": 0.01945679634809494,
+        "p10": 0.11379815042018891,
+        "p25": 0.19799594208598137,
+        "median": 0.4795536696910858,
+        "p75": 0.8337227702140808,
+        "p90": 1.339541721343994,
+        "p95": 1.883055335283277,
+        "max": 3.0274581909179688
+      },
+      "centered_choice_logit_mse": {
+        "count": 128,
+        "mean": 1.904067279130686,
+        "min": 0.07929687947034836,
+        "p10": 0.30331836938858037,
+        "p25": 0.6592974811792374,
+        "median": 1.2717639207839966,
+        "p75": 2.882404625415802,
+        "p90": 4.32307367324829,
+        "p95": 5.054628205299377,
+        "max": 6.903408050537109
+      },
+      "native_choice_top1_agreement": {
+        "count": 128,
+        "mean": 0.46875,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "accuracy_evaluation_only": 0.171875,
+      "margin_buckets": [
+        {
+          "native_margin_rank_interval": "p0-p10",
+          "count": 13,
+          "native_margin_mean": 0.0829326923076923,
+          "full_vocab_kl_mean": 0.3681561889556738,
+          "choice_kl_mean": 0.3433383150169483,
+          "native_agreement": 0.38461538461538464,
+          "accuracy_evaluation_only": 0.15384615384615385
+        },
+        {
+          "native_margin_rank_interval": "p10-p25",
+          "count": 19,
+          "native_margin_mean": 0.39226973684210525,
+          "full_vocab_kl_mean": 0.273604202819498,
+          "choice_kl_mean": 0.23139489363682897,
+          "native_agreement": 0.3157894736842105,
+          "accuracy_evaluation_only": 0.05263157894736842
+        },
+        {
+          "native_margin_rank_interval": "p25-p50",
+          "count": 32,
+          "native_margin_mean": 0.96044921875,
+          "full_vocab_kl_mean": 0.45854842651169747,
+          "choice_kl_mean": 0.3777003869181499,
+          "native_agreement": 0.5,
+          "accuracy_evaluation_only": 0.09375
+        },
+        {
+          "native_margin_rank_interval": "p50-p75",
+          "count": 32,
+          "native_margin_mean": 1.71826171875,
+          "full_vocab_kl_mean": 0.656993595417589,
+          "choice_kl_mean": 0.6586677723098546,
+          "native_agreement": 0.5,
+          "accuracy_evaluation_only": 0.09375
+        },
+        {
+          "native_margin_rank_interval": "p75-p90",
+          "count": 19,
+          "native_margin_mean": 2.833059210526316,
+          "full_vocab_kl_mean": 1.2068664659010737,
+          "choice_kl_mean": 1.2749174707814266,
+          "native_agreement": 0.3157894736842105,
+          "accuracy_evaluation_only": 0.3684210526315789
+        },
+        {
+          "native_margin_rank_interval": "p90-p100",
+          "count": 13,
+          "native_margin_mean": 5.096153846153846,
+          "full_vocab_kl_mean": 1.2433786208813007,
+          "choice_kl_mean": 1.1412559151649475,
+          "native_agreement": 0.8461538461538461,
+          "accuracy_evaluation_only": 0.46153846153846156
+        }
+      ]
+    },
+    "full_writer": {
+      "writer_layer_count": 28,
+      "writer_layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "final_position_full_vocab_kl_vs_native": {
+        "count": 128,
+        "mean": 0.6361784358450677,
+        "min": 0.028447438031435013,
+        "p10": 0.1378399670124054,
+        "p25": 0.2305145263671875,
+        "median": 0.4982277452945709,
+        "p75": 0.7901641577482224,
+        "p90": 1.4564336419105528,
+        "p95": 1.8069050073623654,
+        "max": 2.6335484981536865
+      },
+      "choice_only_kl_vs_native": {
+        "count": 128,
+        "mean": 0.6495380929845851,
+        "min": 0.013218533247709274,
+        "p10": 0.1175206258893013,
+        "p25": 0.21144075691699982,
+        "median": 0.49204520881175995,
+        "p75": 0.834645003080368,
+        "p90": 1.4660059332847595,
+        "p95": 1.8179582238197318,
+        "max": 3.0551161766052246
+      },
+      "centered_choice_logit_mse": {
+        "count": 128,
+        "mean": 1.9904341525980271,
+        "min": 0.09677978605031967,
+        "p10": 0.3286745727062225,
+        "p25": 0.679086908698082,
+        "median": 1.2976184487342834,
+        "p75": 3.0085654258728027,
+        "p90": 4.502663564682006,
+        "p95": 5.25765810012817,
+        "max": 7.447861671447754
+      },
+      "native_choice_top1_agreement": {
+        "count": 128,
+        "mean": 0.5078125,
+        "min": 0.0,
+        "p10": 0.0,
+        "p25": 0.0,
+        "median": 1.0,
+        "p75": 1.0,
+        "p90": 1.0,
+        "p95": 1.0,
+        "max": 1.0
+      },
+      "accuracy_evaluation_only": 0.1875,
+      "margin_buckets": [
+        {
+          "native_margin_rank_interval": "p0-p10",
+          "count": 13,
+          "native_margin_mean": 0.0829326923076923,
+          "full_vocab_kl_mean": 0.35708270164636463,
+          "choice_kl_mean": 0.3579675801671468,
+          "native_agreement": 0.38461538461538464,
+          "accuracy_evaluation_only": 0.15384615384615385
+        },
+        {
+          "native_margin_rank_interval": "p10-p25",
+          "count": 19,
+          "native_margin_mean": 0.39226973684210525,
+          "full_vocab_kl_mean": 0.2628150596038291,
+          "choice_kl_mean": 0.2573121497897725,
+          "native_agreement": 0.3684210526315789,
+          "accuracy_evaluation_only": 0.05263157894736842
+        },
+        {
+          "native_margin_rank_interval": "p25-p50",
+          "count": 32,
+          "native_margin_mean": 0.96044921875,
+          "full_vocab_kl_mean": 0.40853967424482107,
+          "choice_kl_mean": 0.37403762829490006,
+          "native_agreement": 0.625,
+          "accuracy_evaluation_only": 0.15625
+        },
+        {
+          "native_margin_rank_interval": "p50-p75",
+          "count": 32,
+          "native_margin_mean": 1.71826171875,
+          "full_vocab_kl_mean": 0.6409302405081689,
+          "choice_kl_mean": 0.6740619710180908,
+          "native_agreement": 0.5,
+          "accuracy_evaluation_only": 0.09375
+        },
+        {
+          "native_margin_rank_interval": "p75-p90",
+          "count": 19,
+          "native_margin_mean": 2.833059210526316,
+          "full_vocab_kl_mean": 1.2230047050275301,
+          "choice_kl_mean": 1.3206133920895426,
+          "native_agreement": 0.3684210526315789,
+          "accuracy_evaluation_only": 0.3684210526315789
+        },
+        {
+          "native_margin_rank_interval": "p90-p100",
+          "count": 13,
+          "native_margin_mean": 5.096153846153846,
+          "full_vocab_kl_mean": 1.1519347589749556,
+          "choice_kl_mean": 1.1513480681639452,
+          "native_agreement": 0.7692307692307693,
+          "accuracy_evaluation_only": 0.46153846153846156
+        }
+      ]
+    }
+  },
+  "density_groups": {
+    "half_14_of_28": {
+      "conditions": [
+        "half_interval_even",
+        "half_interval_odd",
+        "half_front",
+        "half_back"
+      ],
+      "writer_layer_count": 14,
+      "macro_mean": {
+        "final_position_full_vocab_kl_vs_native": 0.6480405030270049,
+        "choice_only_kl_vs_native": 0.5700794677331942,
+        "centered_choice_logit_mse": 1.657606727880193,
+        "native_choice_top1_agreement": 0.556640625,
+        "accuracy_evaluation_only": 0.203125
+      },
+      "strategy_spread": {
+        "final_position_full_vocab_kl_vs_native": 0.5159366902225884,
+        "choice_only_kl_vs_native": 0.3484621867428359,
+        "centered_choice_logit_mse": 0.8418329879641533,
+        "native_choice_top1_agreement": 0.25
+      },
+      "vs_full_writer": {
+        "full_vocab_kl_reduction": -0.011862067181937164,
+        "full_vocab_kl_gap_recovered_fraction": -0.018645817766803404,
+        "native_agreement_gain": 0.048828125,
+        "native_agreement_gap_recovered_fraction": 0.0992063492063492,
+        "accuracy_gain": 0.015625,
+        "native_accuracy_minus_group_accuracy": 0.0234375
+      }
+    },
+    "two_thirds_19_of_28": {
+      "conditions": [
+        "two_thirds_interval_wwn",
+        "two_thirds_interval_wnw",
+        "two_thirds_front",
+        "two_thirds_back"
+      ],
+      "writer_layer_count": 19,
+      "macro_mean": {
+        "final_position_full_vocab_kl_vs_native": 0.654943019602797,
+        "choice_only_kl_vs_native": 0.6371124744437111,
+        "centered_choice_logit_mse": 1.837976206516032,
+        "native_choice_top1_agreement": 0.455078125,
+        "accuracy_evaluation_only": 0.18359375
+      },
+      "strategy_spread": {
+        "final_position_full_vocab_kl_vs_native": 0.16122199801611714,
+        "choice_only_kl_vs_native": 0.12139586124976631,
+        "centered_choice_logit_mse": 0.16925272071966901,
+        "native_choice_top1_agreement": 0.1171875
+      },
+      "vs_full_writer": {
+        "full_vocab_kl_reduction": -0.01876458375772927,
+        "full_vocab_kl_gap_recovered_fraction": -0.029495787188704898,
+        "native_agreement_gain": -0.052734375,
+        "native_agreement_gap_recovered_fraction": -0.10714285714285714,
+        "accuracy_gain": -0.00390625,
+        "native_accuracy_minus_group_accuracy": 0.04296875
+      }
+    }
+  }
+}

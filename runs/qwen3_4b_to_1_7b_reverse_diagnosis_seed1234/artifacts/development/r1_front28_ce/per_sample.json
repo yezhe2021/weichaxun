@@ -1,0 +1,2562 @@
+[
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "Murder",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.063106536865234
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "John Doe",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.625053405761719
+  },
+  {
+    "sample_id": "5a8de5d55542995085b3734d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.0157034397125244
+  },
+  {
+    "sample_id": "5ade9c2155429939a52fe8fe",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "1854",
+    "prediction": "1999",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.3981549739837646
+  },
+  {
+    "sample_id": "5ab871725542990e739ec8f8",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Red House Painters",
+    "prediction": "Daughtry",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.4994780123233795
+  },
+  {
+    "sample_id": "5a835b88554299123d8c2101",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "YIVO",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.479543209075928
+  },
+  {
+    "sample_id": "5a74e8a25542996c70cfae37",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Robert Arthur Mould",
+    "prediction": "John Mayer",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.615691184997559
+  },
+  {
+    "sample_id": "5a835a265542992ef85e2281",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "theater and film",
+    "prediction": "film industry",
+    "em": 0.0,
+    "f1": 0.4,
+    "nll": 3.0504775047302246
+  },
+  {
+    "sample_id": "5adc396155429944faac2479",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.7163454294204712
+  },
+  {
+    "sample_id": "5a7df6e65542995f4f402353",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Cherie Ann Currie",
+    "prediction": "Adam Duritz",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.636162042617798
+  },
+  {
+    "sample_id": "5add292b5542990d50227e0a",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Detroit, Michigan",
+    "prediction": "New York",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.8513184785842896
+  },
+  {
+    "sample_id": "5ac02edb554299294b218f41",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Phil Collins",
+    "prediction": "Disney",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.114063262939453
+  },
+  {
+    "sample_id": "5a8f876e5542997ba9cb32a1",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.7441487312316895
+  },
+  {
+    "sample_id": "5ab1ec725542993be8fa9883",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Stoloff",
+    "prediction": "Benjamin Stoloff",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 2.1102654933929443
+  },
+  {
+    "sample_id": "5ac283f7554299677310254a",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Xinghua () is a county-level city",
+    "prediction": "Xinghua",
+    "em": 0.0,
+    "f1": 0.4,
+    "nll": 2.5706288814544678
+  },
+  {
+    "sample_id": "5ade6eb65542992fa25da782",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Johnny Cash, Waylon Jennings",
+    "prediction": "The band",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.261149883270264
+  },
+  {
+    "sample_id": "5a810221554299260e20a1f9",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Andrew Lloyd Webber and Tim Rice",
+    "prediction": "Murray Head",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.750138759613037
+  },
+  {
+    "sample_id": "5a72aec45542994cef4bc3d7",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Nelson Algren",
+    "prediction": "Nathanael West",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.9013093709945679
+  },
+  {
+    "sample_id": "5ae15d70554299422ee9966f",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Fredric March",
+    "prediction": "Les Misérables",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.4496846199035645
+  },
+  {
+    "sample_id": "5ab96ab755429970cfb8eacd",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+    "prediction": "no, 2012",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.377475738525391
+  },
+  {
+    "sample_id": "5a82efe355429966c78a6aa1",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Winter Haven Mall",
+    "prediction": "Jackson County",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.1070497035980225
+  },
+  {
+    "sample_id": "5a865bbf5542991e77181615",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Ghostbusters: Answer the Call",
+    "prediction": "Slimer",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.437620639801025
+  },
+  {
+    "sample_id": "5ab850795542990e739ec8bd",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Kennebec County, Maine",
+    "prediction": "Burlington County",
+    "em": 0.0,
+    "f1": 0.4,
+    "nll": 3.209892511367798
+  },
+  {
+    "sample_id": "5a9052765542995651fb513d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Prof Bhabananda Deka",
+    "prediction": "Bhabananda",
+    "em": 0.0,
+    "f1": 0.5,
+    "nll": 2.564403772354126
+  },
+  {
+    "sample_id": "5a80ad205542992bc0c4a79d",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "1st Earl Grosvenor",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.363000392913818
+  },
+  {
+    "sample_id": "5abf877c5542990832d3a147",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "yes",
+    "prediction": "Kabul",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.838057041168213
+  },
+  {
+    "sample_id": "5a76f22055429972597f13fa",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "vocalist",
+    "prediction": "Johnny Edwards",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.9070258140563965
+  },
+  {
+    "sample_id": "5a72bbfa5542992359bc318d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "University of Washington",
+    "prediction": "University of Washington",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.27237725257873535
+  },
+  {
+    "sample_id": "5a888abc5542997e5c09a604",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Ghettopoly",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.0429134368896484
+  },
+  {
+    "sample_id": "5a8463d05542990548d0b2a5",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Shari Shattuck",
+    "prediction": "Lynn Tinsley",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.150428295135498
+  },
+  {
+    "sample_id": "5ac540365542994611c8b470",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Loughborough University",
+    "prediction": "University of Loughborough",
+    "em": 0.0,
+    "f1": 0.8,
+    "nll": 1.3448081016540527
+  },
+  {
+    "sample_id": "5a90a9a45542990a9849367e",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Podocarpus",
+    "prediction": "Podocarpus",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.21601629257202148
+  },
+  {
+    "sample_id": "5ac156d05542994ab5c67ce9",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.8154876828193665
+  },
+  {
+    "sample_id": "5abf8e135542990832d3a14f",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Daniel Ricciardo",
+    "prediction": "James Glicken",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.215195655822754
+  },
+  {
+    "sample_id": "5a72f45a5542992359bc31e6",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "MGM Grand Garden Arena",
+    "prediction": "Mayweather",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.79590106010437
+  },
+  {
+    "sample_id": "5ae376a35542990afbd1e163",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "yes",
+    "prediction": "James Derian",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.185131549835205
+  },
+  {
+    "sample_id": "5a8b3fe85542995d1e6f1323",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Johnson Press",
+    "prediction": "The Blackpool, Lancashire, England",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.2063889503479
+  },
+  {
+    "sample_id": "5ac3ae475542995ef918c1e5",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.33180198073387146
+  },
+  {
+    "sample_id": "5ac23f9555429951e9e684db",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Seldom Jackson",
+    "prediction": "Colonel Sherman T. Potter in \"Kentucky Jones\"",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.279170036315918
+  },
+  {
+    "sample_id": "5ab528a3554299637185c4e5",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "musician, singer, and songwriter",
+    "prediction": "James Hetfield",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.5087828636169434
+  },
+  {
+    "sample_id": "5ade64c7554299728e26c710",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.21963320672512054
+  },
+  {
+    "sample_id": "5a7c9f325542990527d554e6",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Blue",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.321041584014893
+  },
+  {
+    "sample_id": "5adfdd1c55429906c02daa74",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Tse Tse Fly",
+    "prediction": "Marianas Trench",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.4417624771595001
+  },
+  {
+    "sample_id": "5a8d8f77554299068b959d3e",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Max Kellerman",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.195326805114746
+  },
+  {
+    "sample_id": "5a7180205542994082a3e856",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Creature Comforts",
+    "prediction": "Wallace and Gromit",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.098362922668457
+  },
+  {
+    "sample_id": "5a7e02b75542997cc2c474f3",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "1970",
+    "prediction": "1983",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.8107103109359741
+  },
+  {
+    "sample_id": "5adbd19855429944faac236a",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Sri Lankabhimanya Lester James Peries",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.5496432781219482
+  },
+  {
+    "sample_id": "5ae1b53b5542997283cd2255",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Geographical Indication tag",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.8004913330078125
+  },
+  {
+    "sample_id": "5a7c22bb554299683c1c62d3",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Pacific Lutheran University (PLU), founded by Norwegian Lutheran pioneers in 1890",
+    "prediction": "before",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.7557566165924072
+  },
+  {
+    "sample_id": "5a7b7ff75542995eb53be93d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Arthur Ignatius Conan Doyle",
+    "prediction": "Penelope Lively",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.5182700157165527
+  },
+  {
+    "sample_id": "5ab84d5a55429916710eb028",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Dallas Cowboys",
+    "prediction": "2002",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.9491552114486694
+  },
+  {
+    "sample_id": "5a714bb35542994082a3e78f",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "William Turner Walton",
+    "prediction": "William Walton",
+    "em": 0.0,
+    "f1": 0.8,
+    "nll": 4.927188873291016
+  },
+  {
+    "sample_id": "5a84cd4b5542991dd0999dfe",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "yes",
+    "prediction": "",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.967938423156738
+  },
+  {
+    "sample_id": "5ab960d6554299743d22eb21",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Leatherheads",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.429327964782715
+  },
+  {
+    "sample_id": "5a8d838955429941ae14dfe5",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "United States",
+    "prediction": "New York",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.006640076637268
+  },
+  {
+    "sample_id": "5ab681ea55429953192ad2e0",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.6038564443588257
+  },
+  {
+    "sample_id": "5ae819ac55429952e35eaa16",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "National Broadcasting Company",
+    "prediction": "Marry Me a Little, Marry Me a Little More",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.1615986824035645
+  },
+  {
+    "sample_id": "5a89a99f55429946c8d6e98f",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.6785881519317627
+  },
+  {
+    "sample_id": "5ae33a6e5542992f92d8224d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "no food both documentaries about food both documentaries about food both documentaries about food both documentaries about food both documentaries about food both documentaries about food both documentaries about food both documentaries",
+    "em": 0.0,
+    "f1": 0.06060606060606061,
+    "nll": 3.5063555240631104
+  },
+  {
+    "sample_id": "5adfffe755429925eb1afbd1",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "omnisexuality",
+    "prediction": "female",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.3689141273498535
+  },
+  {
+    "sample_id": "5a8e463a5542995a26add4b7",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "writer",
+    "prediction": "1930s",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.016042232513428
+  },
+  {
+    "sample_id": "5ae201465542997f29b3c1f7",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "South Dakota v. Dole",
+    "prediction": "South Dakota",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 1.8415429592132568
+  },
+  {
+    "sample_id": "5a8ee4315542990e94052ba7",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Treaty of Gandamak",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.870762825012207
+  },
+  {
+    "sample_id": "5ab827a555429934fafe6cf5",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "70 m and 90 m",
+    "prediction": "The 2016",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.057607173919678
+  },
+  {
+    "sample_id": "5ae644c55542992663a4f27e",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "1919",
+    "prediction": "Middlesbrough",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.2136104106903076
+  },
+  {
+    "sample_id": "5ab91b6c55429934fafe6e5f",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "DS Virgin Racing Formula E Team",
+    "prediction": "British Racing Series",
+    "em": 0.0,
+    "f1": 0.2222222222222222,
+    "nll": 5.244326591491699
+  },
+  {
+    "sample_id": "5ac00278554299012d1db56b",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "director",
+    "prediction": "musician",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.9531712532043457
+  },
+  {
+    "sample_id": "5a8b3c0055429949d91db4f8",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "Jacques Demy",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.9067462682724
+  },
+  {
+    "sample_id": "5abd580855429924427fcfb8",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "country",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.275537967681885
+  },
+  {
+    "sample_id": "5ae5b25d5542990ba0bbb2bb",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Christopher Haden-Guest",
+    "prediction": "Roman Karmen",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.693920135498047
+  },
+  {
+    "sample_id": "5a8a416955429930ff3c0d2b",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Avengers Assemble",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.237990379333496
+  },
+  {
+    "sample_id": "5ae5cf1b554299546bf82f7a",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "21,705 at the 2010 census",
+    "prediction": "New York",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.246541500091553
+  },
+  {
+    "sample_id": "5ab80bbf5542991d32223818",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Southwest Oregon Regional Airport",
+    "prediction": "Lawton–Fort Sill Regional Airport",
+    "em": 0.0,
+    "f1": 0.5,
+    "nll": 0.9476483464241028
+  },
+  {
+    "sample_id": "5a8a42ec55429970aeb7027c",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "yes",
+    "prediction": "no one one America",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.1081260442733765
+  },
+  {
+    "sample_id": "5a7bc1bf55429927d897c033",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "The English Water Spaniel",
+    "prediction": "English Water Spaniel",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.9019899368286133
+  },
+  {
+    "sample_id": "5a89e85c5542992e4fca846f",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Whitfield County",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.722981929779053
+  },
+  {
+    "sample_id": "5a8aed1755429950cd6afbf1",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.2993719577789307
+  },
+  {
+    "sample_id": "5ae0f2bf5542997b2ef7d09e",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "The Spring 1945 offensive in Italy",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.0709706544876099
+  },
+  {
+    "sample_id": "5adfeeed55429925eb1afb44",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "15 November 1967",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.183234214782715
+  },
+  {
+    "sample_id": "5ae35b035542992e3233c3ae",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Conservative",
+    "prediction": "Sir John Bromley",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.954167366027832
+  },
+  {
+    "sample_id": "5ae2295c554299495565da13",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Edward Robert Martin Jr.",
+    "prediction": "no one",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.688424587249756
+  },
+  {
+    "sample_id": "5adcceda5542990d50227d31",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "a British composer",
+    "prediction": "United States",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.009399890899658
+  },
+  {
+    "sample_id": "5ae2196b554299495565da02",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "an American attorney",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.3687825202941895
+  },
+  {
+    "sample_id": "5a74581555429979e2882912",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Mitsubishi",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.9016609191894531
+  },
+  {
+    "sample_id": "5ae383e15542992f92d822fb",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Heavyweights",
+    "prediction": "Heavyweights",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.10906169563531876
+  },
+  {
+    "sample_id": "5abb9ad4554299642a094abe",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "al-Qaeda",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.071858882904053
+  },
+  {
+    "sample_id": "5ab484415542990594ba9c44",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Discovery Zone",
+    "prediction": "Valentino's",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.0148066282272339
+  },
+  {
+    "sample_id": "5a908aaa55429933b8a20545",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.16651083528995514
+  },
+  {
+    "sample_id": "5ab56e32554299637185c594",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "noises",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.659369707107544
+  },
+  {
+    "sample_id": "5ae497595542995ad6573db7",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "plant",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 11.031610488891602
+  },
+  {
+    "sample_id": "5a713a5a5542994082a3e6a9",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Manchester United",
+    "prediction": "Brook Bar and Trafford",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.255963087081909
+  },
+  {
+    "sample_id": "5a7bacf35542997c3ec9724b",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Jorge Leal Amado de Faria",
+    "prediction": "James Leo Herlihy",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.8758175373077393
+  },
+  {
+    "sample_id": "5ab5f75e554299637185c64b",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "pizzas",
+    "prediction": "pasta",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.470266342163086
+  },
+  {
+    "sample_id": "5ab9e2055542994dbf019884",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "band",
+    "prediction": "group",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.4771043062210083
+  },
+  {
+    "sample_id": "5ac31456554299741d48a1b4",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Lawson",
+    "prediction": "American Music Club",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.3601694107055664
+  },
+  {
+    "sample_id": "5a7cdcbf55429907fabef04f",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Still Kicking: Six Artistic Women of Project Arts & Longevity",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.8728229999542236
+  },
+  {
+    "sample_id": "5ae34a225542992e3233c370",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.240250587463379
+  },
+  {
+    "sample_id": "5ab6988a554299710c8d1edc",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Metropolitan Life Insurance Company Tower",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.028948187828064
+  },
+  {
+    "sample_id": "5a84f06f5542994c784dda92",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "public",
+    "prediction": "Boeing Field",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.288729190826416
+  },
+  {
+    "sample_id": "5a7c96765542990527d554d8",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "producer, director, and writer",
+    "prediction": "actor and director",
+    "em": 0.0,
+    "f1": 0.5714285714285715,
+    "nll": 1.695577621459961
+  },
+  {
+    "sample_id": "5ac4d314554299076e296e02",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Earvin \"Magic\" Johnson Jr.",
+    "prediction": "no.",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.6540608406066895
+  },
+  {
+    "sample_id": "5ae4627d5542991a06ce9a4d",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Oxford",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.387197971343994
+  },
+  {
+    "sample_id": "5ab90a2055429916710eb0ea",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Philadelphia",
+    "prediction": "New York Rangers",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.4680216312408447
+  },
+  {
+    "sample_id": "5a7c17c95542990527d5544d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "The Offspring",
+    "prediction": "The Smashing Pumpkins",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.1855478286743164
+  },
+  {
+    "sample_id": "5a8072a5554299485f5985f1",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "creeks",
+    "prediction": "2015 Africa Magic Viewers Choice Awards",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.0911712646484375
+  },
+  {
+    "sample_id": "5ae031c455429924de1b7055",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "six",
+    "prediction": "1811",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.3754124641418457
+  },
+  {
+    "sample_id": "5a7166395542994082a3e814",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Kansas Song",
+    "prediction": "University of Kansas",
+    "em": 0.0,
+    "f1": 0.4,
+    "nll": 6.919379711151123
+  },
+  {
+    "sample_id": "5ae46b615542995dadf24327",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Otto Ludwig Preminger",
+    "prediction": "Otto Preminger",
+    "em": 0.0,
+    "f1": 0.8,
+    "nll": 2.976024866104126
+  },
+  {
+    "sample_id": "5ae4a91d5542995ad6573e09",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "black nationalism",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.091443061828613
+  },
+  {
+    "sample_id": "5ae3294155429928c423963d",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Thomas Penson De Quincey",
+    "prediction": "William Shakespeare",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.4126973152160645
+  },
+  {
+    "sample_id": "5a711ef85542994082a3e5ac",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Howard University Hospital",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.6035175323486328
+  },
+  {
+    "sample_id": "5a735e9155429901807db00d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Spain",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.983262062072754
+  },
+  {
+    "sample_id": "5ab8ee035542991b5579f04b",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.1008167266845703
+  },
+  {
+    "sample_id": "5ab29caa554299545a2cf9d3",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "PlayStation 4",
+    "prediction": "Yakuza",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.5254414081573486
+  },
+  {
+    "sample_id": "5abfcd7a5542993fe9a41e7a",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.622498095035553
+  },
+  {
+    "sample_id": "5a7c6e435542996dd594b933",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "July 16, 1971",
+    "prediction": "1980",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.115563154220581
+  },
+  {
+    "sample_id": "5a7d9d2b5542997cc2c47464",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Victorian College of the Arts and Melbourne Conservatorium of Music",
+    "prediction": "no.",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.693684101104736
+  },
+  {
+    "sample_id": "5ac2768d5542990b17b153a8",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "19 November 1786",
+    "prediction": "Joseph von Schmoll",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.786034345626831
+  },
+  {
+    "sample_id": "5a85fe2f5542996432c57165",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Julianne Moore",
+    "prediction": "Emanuelle Goes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.5045993328094482
+  },
+  {
+    "sample_id": "5ae22ede554299234fd0441b",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "9Lives",
+    "prediction": "no\n\nThe 19800",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.722373008728027
+  },
+  {
+    "sample_id": "5a90ab995542990a98493683",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Medinilla",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.0028955936431885
+  },
+  {
+    "sample_id": "5ab6c94c554299710c8d1f5e",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "The Wu-Tang Clan",
+    "prediction": "Darryl Hill",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.083754301071167
+  },
+  {
+    "sample_id": "5abdce1b5542993062266cfe",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Hennepin County",
+    "prediction": "Minnesota",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.4392544031143188
+  },
+  {
+    "sample_id": "5adc6825554299438c868da1",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Salta",
+    "prediction": "Santiago del Estero",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.701938629150391
+  },
+  {
+    "sample_id": "5a7345185542992359bc32cb",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Europe",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.61567759513855
+  },
+  {
+    "sample_id": "5ab310bb554299233954fef9",
+    "type": "comparison",
+    "condition": "r1_front28_ce_correct",
+    "answer": "John le Carré",
+    "prediction": "John le Carré",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.15808704495429993
+  },
+  {
+    "sample_id": "5a8078e95542992bc0c4a72c",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Sky News",
+    "prediction": "Johny G.",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.866566181182861
+  },
+  {
+    "sample_id": "5a8c622a554299240d9c2142",
+    "type": "bridge",
+    "condition": "r1_front28_ce_correct",
+    "answer": "Ursula Kroeber Le Guin",
+    "prediction": "Ariya Khan",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.68833065032959
+  },
+  {
+    "sample_id": "5ac4e03f5542995c82c4ad75",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Kim Yoon-seok and Ha Jung-woo",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.514168739318848
+  },
+  {
+    "sample_id": "5adc035c554299438c868d04",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Isabella (Belle) Baumfree",
+    "prediction": "William H. Harlow",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.826871871948242
+  },
+  {
+    "sample_id": "5a8de5d55542995085b3734d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "1999",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.871965408325195
+  },
+  {
+    "sample_id": "5ade9c2155429939a52fe8fe",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "1854",
+    "prediction": "1999",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.7555078268051147
+  },
+  {
+    "sample_id": "5ab871725542990e739ec8f8",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Red House Painters",
+    "prediction": "Red House Painters",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.26347458362579346
+  },
+  {
+    "sample_id": "5a835b88554299123d8c2101",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "YIVO",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.054415702819824
+  },
+  {
+    "sample_id": "5a74e8a25542996c70cfae37",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Robert Arthur Mould",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.988442420959473
+  },
+  {
+    "sample_id": "5a835a265542992ef85e2281",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "theater and film",
+    "prediction": "film industry",
+    "em": 0.0,
+    "f1": 0.4,
+    "nll": 5.68686056137085
+  },
+  {
+    "sample_id": "5adc396155429944faac2479",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.3091433048248291
+  },
+  {
+    "sample_id": "5a7df6e65542995f4f402353",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Cherie Ann Currie",
+    "prediction": "Cherie Currie",
+    "em": 0.0,
+    "f1": 0.8,
+    "nll": 2.8286855220794678
+  },
+  {
+    "sample_id": "5add292b5542990d50227e0a",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Detroit, Michigan",
+    "prediction": "New York",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.2808799743652344
+  },
+  {
+    "sample_id": "5ac02edb554299294b218f41",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Phil Collins",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.652667999267578
+  },
+  {
+    "sample_id": "5a8f876e5542997ba9cb32a1",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.19984540343284607
+  },
+  {
+    "sample_id": "5ab1ec725542993be8fa9883",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Stoloff",
+    "prediction": "Benjamin Stoloff",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 1.5207188129425049
+  },
+  {
+    "sample_id": "5ac283f7554299677310254a",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Xinghua () is a county-level city",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.776392698287964
+  },
+  {
+    "sample_id": "5ade6eb65542992fa25da782",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Johnny Cash, Waylon Jennings",
+    "prediction": "The band",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.200733661651611
+  },
+  {
+    "sample_id": "5a810221554299260e20a1f9",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Andrew Lloyd Webber and Tim Rice",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.129912853240967
+  },
+  {
+    "sample_id": "5a72aec45542994cef4bc3d7",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Nelson Algren",
+    "prediction": "Nathanael West",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.6172367334365845
+  },
+  {
+    "sample_id": "5ae15d70554299422ee9966f",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Fredric March",
+    "prediction": "Leslie Lanchester",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.432443857192993
+  },
+  {
+    "sample_id": "5ab96ab755429970cfb8eacd",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.14413595199585
+  },
+  {
+    "sample_id": "5a82efe355429966c78a6aa1",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Winter Haven Mall",
+    "prediction": "no\n\nno\n\nno\n\nno\n\nno\n\nno\n\nno\n\nno\n\nno\n\n\n\nno\n\nno\n\nno\n\nno\n\nno\n\nno\n\nno",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.9678473472595215
+  },
+  {
+    "sample_id": "5a865bbf5542991e77181615",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Ghostbusters: Answer the Call",
+    "prediction": "The movie starring Melissa McCarthy is \"The Last of the Westies\"",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.930282115936279
+  },
+  {
+    "sample_id": "5ab850795542990e739ec8bd",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Kennebec County, Maine",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.5845625400543213
+  },
+  {
+    "sample_id": "5a9052765542995651fb513d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Prof Bhabananda Deka",
+    "prediction": "B.",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.177733898162842
+  },
+  {
+    "sample_id": "5a80ad205542992bc0c4a79d",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "1st Earl Grosvenor",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.757672309875488
+  },
+  {
+    "sample_id": "5abf877c5542990832d3a147",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.9343135356903076
+  },
+  {
+    "sample_id": "5a76f22055429972597f13fa",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "vocalist",
+    "prediction": "singer",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.7142518758773804
+  },
+  {
+    "sample_id": "5a72bbfa5542992359bc318d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "University of Washington",
+    "prediction": "University of Washington",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.08758202195167542
+  },
+  {
+    "sample_id": "5a888abc5542997e5c09a604",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Ghettopoly",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.31644606590271
+  },
+  {
+    "sample_id": "5a8463d05542990548d0b2a5",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Shari Shattuck",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.116602420806885
+  },
+  {
+    "sample_id": "5ac540365542994611c8b470",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Loughborough University",
+    "prediction": "University of London",
+    "em": 0.0,
+    "f1": 0.4,
+    "nll": 2.018089771270752
+  },
+  {
+    "sample_id": "5a90a9a45542990a9849367e",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Podocarpus",
+    "prediction": "Osmunda",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.662999629974365
+  },
+  {
+    "sample_id": "5ac156d05542994ab5c67ce9",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.7173429727554321
+  },
+  {
+    "sample_id": "5abf8e135542990832d3a14f",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Daniel Ricciardo",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.728440761566162
+  },
+  {
+    "sample_id": "5a72f45a5542992359bc31e6",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "MGM Grand Garden Arena",
+    "prediction": "Maywood Gardens",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.961423873901367
+  },
+  {
+    "sample_id": "5ae376a35542990afbd1e163",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.8537405133247375
+  },
+  {
+    "sample_id": "5a8b3fe85542995d1e6f1323",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Johnson Press",
+    "prediction": "John G. Bowers",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.274091720581055
+  },
+  {
+    "sample_id": "5ac3ae475542995ef918c1e5",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.48545190691947937
+  },
+  {
+    "sample_id": "5ac23f9555429951e9e684db",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Seldom Jackson",
+    "prediction": "Colonel Sherman",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.35883092880249
+  },
+  {
+    "sample_id": "5ab528a3554299637185c4e5",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "musician, singer, and songwriter",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.8065898418426514
+  },
+  {
+    "sample_id": "5ade64c7554299728e26c710",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.9456266760826111
+  },
+  {
+    "sample_id": "5a7c9f325542990527d554e6",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Blue",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 10.960570335388184
+  },
+  {
+    "sample_id": "5adfdd1c55429906c02daa74",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Tse Tse Fly",
+    "prediction": "Marianas Trench",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.2662941217422485
+  },
+  {
+    "sample_id": "5a8d8f77554299068b959d3e",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Max Kellerman",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.517797470092773
+  },
+  {
+    "sample_id": "5a7180205542994082a3e856",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Creature Comforts",
+    "prediction": "Wallace and Gromit",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.92119026184082
+  },
+  {
+    "sample_id": "5a7e02b75542997cc2c474f3",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "1970",
+    "prediction": "1999",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.9120928645133972
+  },
+  {
+    "sample_id": "5adbd19855429944faac236a",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Sri Lankabhimanya Lester James Peries",
+    "prediction": "Jean Vigo",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.48513126373291016
+  },
+  {
+    "sample_id": "5ae1b53b5542997283cd2255",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Geographical Indication tag",
+    "prediction": "Indian government tag",
+    "em": 0.0,
+    "f1": 0.3333333333333333,
+    "nll": 5.470909118652344
+  },
+  {
+    "sample_id": "5a7c22bb554299683c1c62d3",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Pacific Lutheran University (PLU), founded by Norwegian Lutheran pioneers in 1890",
+    "prediction": "Pacific Lutheran University",
+    "em": 0.0,
+    "f1": 0.42857142857142855,
+    "nll": 2.9079787731170654
+  },
+  {
+    "sample_id": "5a7b7ff75542995eb53be93d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Arthur Ignatius Conan Doyle",
+    "prediction": "Arthur Conan",
+    "em": 0.0,
+    "f1": 0.6666666666666666,
+    "nll": 3.8912065029144287
+  },
+  {
+    "sample_id": "5ab84d5a55429916710eb028",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Dallas Cowboys",
+    "prediction": "199",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.5418922901153564
+  },
+  {
+    "sample_id": "5a714bb35542994082a3e78f",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "William Turner Walton",
+    "prediction": "William Walton",
+    "em": 0.0,
+    "f1": 0.8,
+    "nll": 3.6184542179107666
+  },
+  {
+    "sample_id": "5a84cd4b5542991dd0999dfe",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.6972506046295166
+  },
+  {
+    "sample_id": "5ab960d6554299743d22eb21",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Leatherheads",
+    "prediction": "1999999",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.060610294342041
+  },
+  {
+    "sample_id": "5a8d838955429941ae14dfe5",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "United States",
+    "prediction": "United Kingdom",
+    "em": 0.0,
+    "f1": 0.5,
+    "nll": 0.914716899394989
+  },
+  {
+    "sample_id": "5ab681ea55429953192ad2e0",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.9052400588989258
+  },
+  {
+    "sample_id": "5ae819ac55429952e35eaa16",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "National Broadcasting Company",
+    "prediction": "TV Land",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.830606460571289
+  },
+  {
+    "sample_id": "5a89a99f55429946c8d6e98f",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.4640938937664032
+  },
+  {
+    "sample_id": "5ae33a6e5542992f92d8224d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.5939515233039856
+  },
+  {
+    "sample_id": "5adfffe755429925eb1afbd1",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "omnisexuality",
+    "prediction": "Mary Edna González",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.076254844665527
+  },
+  {
+    "sample_id": "5a8e463a5542995a26add4b7",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "writer",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.304356575012207
+  },
+  {
+    "sample_id": "5ae201465542997f29b3c1f7",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "South Dakota v. Dole",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.6535457968711853
+  },
+  {
+    "sample_id": "5a8ee4315542990e94052ba7",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Treaty of Gandamak",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.6833720207214355
+  },
+  {
+    "sample_id": "5ab827a555429934fafe6cf5",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "70 m and 90 m",
+    "prediction": "Taron Egerton",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.077380657196045
+  },
+  {
+    "sample_id": "5ae644c55542992663a4f27e",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "1919",
+    "prediction": "1980s",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.3044613599777222
+  },
+  {
+    "sample_id": "5ab91b6c55429934fafe6e5f",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "DS Virgin Racing Formula E Team",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.133186340332031
+  },
+  {
+    "sample_id": "5ac00278554299012d1db56b",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "director",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.486911296844482
+  },
+  {
+    "sample_id": "5a8b3c0055429949d91db4f8",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "Paul Sloane",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.9429567456245422
+  },
+  {
+    "sample_id": "5abd580855429924427fcfb8",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "country",
+    "prediction": "pop rock",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.398796558380127
+  },
+  {
+    "sample_id": "5ae5b25d5542990ba0bbb2bb",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Christopher Haden-Guest",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.580469131469727
+  },
+  {
+    "sample_id": "5a8a416955429930ff3c0d2b",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Avengers Assemble",
+    "prediction": "The 201",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.622264385223389
+  },
+  {
+    "sample_id": "5ae5cf1b554299546bf82f7a",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "21,705 at the 2010 census",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.7293498516082764
+  },
+  {
+    "sample_id": "5ab80bbf5542991d32223818",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Southwest Oregon Regional Airport",
+    "prediction": "Lawton–Fort Sill Regional Airport",
+    "em": 0.0,
+    "f1": 0.5,
+    "nll": 0.7311591506004333
+  },
+  {
+    "sample_id": "5a8a42ec55429970aeb7027c",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 0.9522385001182556
+  },
+  {
+    "sample_id": "5a7bc1bf55429927d897c033",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "The English Water Spaniel",
+    "prediction": "English Water Spaniel",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.9265446662902832
+  },
+  {
+    "sample_id": "5a89e85c5542992e4fca846f",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Whitfield County",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.385709285736084
+  },
+  {
+    "sample_id": "5a8aed1755429950cd6afbf1",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.718766450881958
+  },
+  {
+    "sample_id": "5ae0f2bf5542997b2ef7d09e",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "The Spring 1945 offensive in Italy",
+    "prediction": "Battle of Guam",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.4276806116104126
+  },
+  {
+    "sample_id": "5adfeeed55429925eb1afb44",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "15 November 1967",
+    "prediction": "1990",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.4898256063461304
+  },
+  {
+    "sample_id": "5ae35b035542992e3233c3ae",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Conservative",
+    "prediction": "Sir John Bromley",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.3710196018218994
+  },
+  {
+    "sample_id": "5ae2295c554299495565da13",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Edward Robert Martin Jr.",
+    "prediction": "John Doe",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.786275386810303
+  },
+  {
+    "sample_id": "5adcceda5542990d50227d31",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "a British composer",
+    "prediction": "United States",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 8.256855964660645
+  },
+  {
+    "sample_id": "5ae2196b554299495565da02",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "an American attorney",
+    "prediction": "Mike Robbie",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.55790901184082
+  },
+  {
+    "sample_id": "5a74581555429979e2882912",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Mitsubishi",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.7737741470336914
+  },
+  {
+    "sample_id": "5ae383e15542992f92d822fb",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Heavyweights",
+    "prediction": "Heavyweights",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.03367982432246208
+  },
+  {
+    "sample_id": "5abb9ad4554299642a094abe",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "al-Qaeda",
+    "prediction": "The Battle of the Year",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.031985759735107
+  },
+  {
+    "sample_id": "5ab484415542990594ba9c44",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Discovery Zone",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.1776264905929565
+  },
+  {
+    "sample_id": "5a908aaa55429933b8a20545",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.3489052355289459
+  },
+  {
+    "sample_id": "5ab56e32554299637185c594",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.8128296732902527
+  },
+  {
+    "sample_id": "5ae497595542995ad6573db7",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "plant",
+    "prediction": "Stauntonia",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.97806453704834
+  },
+  {
+    "sample_id": "5a713a5a5542994082a3e6a9",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Manchester United",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.7056565284729
+  },
+  {
+    "sample_id": "5a7bacf35542997c3ec9724b",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Jorge Leal Amado de Faria",
+    "prediction": "James Leo Herlihy",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.407038688659668
+  },
+  {
+    "sample_id": "5ab5f75e554299637185c64b",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "pizzas",
+    "prediction": "Pizzeria",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.9567108154296875
+  },
+  {
+    "sample_id": "5ab9e2055542994dbf019884",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "band",
+    "prediction": "Drive-In",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.883176326751709
+  },
+  {
+    "sample_id": "5ac31456554299741d48a1b4",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Lawson",
+    "prediction": "American Music Club",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.2487424612045288
+  },
+  {
+    "sample_id": "5a7cdcbf55429907fabef04f",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Still Kicking: Six Artistic Women of Project Arts & Longevity",
+    "prediction": "film",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.519995927810669
+  },
+  {
+    "sample_id": "5ae34a225542992e3233c370",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "yes",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.0269432067871094
+  },
+  {
+    "sample_id": "5ab6988a554299710c8d1edc",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Metropolitan Life Insurance Company Tower",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.56351637840271
+  },
+  {
+    "sample_id": "5a84f06f5542994c784dda92",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "public",
+    "prediction": "airport",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.145587921142578
+  },
+  {
+    "sample_id": "5a7c96765542990527d554d8",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "producer, director, and writer",
+    "prediction": "music producer",
+    "em": 0.0,
+    "f1": 0.3333333333333333,
+    "nll": 2.4132792949676514
+  },
+  {
+    "sample_id": "5ac4d314554299076e296e02",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Earvin \"Magic\" Johnson Jr.",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.623753070831299
+  },
+  {
+    "sample_id": "5ae4627d5542991a06ce9a4d",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Oxford",
+    "prediction": "Joseph L. Bowers",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.39973783493042
+  },
+  {
+    "sample_id": "5ab90a2055429916710eb0ea",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Philadelphia",
+    "prediction": "New York",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.8023624420166016
+  },
+  {
+    "sample_id": "5a7c17c95542990527d5544d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "The Offspring",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.318462610244751
+  },
+  {
+    "sample_id": "5a8072a5554299485f5985f1",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "creeks",
+    "prediction": "The 2015 Africa Magic Viewers Choice Awards",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.252893447875977
+  },
+  {
+    "sample_id": "5ae031c455429924de1b7055",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "six",
+    "prediction": "181",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.7658851146697998
+  },
+  {
+    "sample_id": "5a7166395542994082a3e814",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Kansas Song",
+    "prediction": "Kansasès\nKansas",
+    "em": 0.0,
+    "f1": 0.5,
+    "nll": 3.08103346824646
+  },
+  {
+    "sample_id": "5ae46b615542995dadf24327",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Otto Ludwig Preminger",
+    "prediction": "Otto Preminger",
+    "em": 0.0,
+    "f1": 0.8,
+    "nll": 3.5109596252441406
+  },
+  {
+    "sample_id": "5ae4a91d5542995ad6573e09",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "black nationalism",
+    "prediction": "no movement is a person referred to as movement is a person",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 7.093384265899658
+  },
+  {
+    "sample_id": "5ae3294155429928c423963d",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Thomas Penson De Quincey",
+    "prediction": "William Shakespeare",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 4.667787075042725
+  },
+  {
+    "sample_id": "5a711ef85542994082a3e5ac",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Howard University Hospital",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.4142568111419678
+  },
+  {
+    "sample_id": "5a735e9155429901807db00d",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Spain",
+    "prediction": "Guadarrama National Park",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.9211151599884033
+  },
+  {
+    "sample_id": "5ab8ee035542991b5579f04b",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "yes",
+    "prediction": "yes",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.5582180619239807
+  },
+  {
+    "sample_id": "5ab29caa554299545a2cf9d3",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "PlayStation 4",
+    "prediction": "Yakuza",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.1579501628875732
+  },
+  {
+    "sample_id": "5abfcd7a5542993fe9a41e7a",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "no",
+    "prediction": "no",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 1.0353074073791504
+  },
+  {
+    "sample_id": "5a7c6e435542996dd594b933",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "July 16, 1971",
+    "prediction": "1998",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.1315919160842896
+  },
+  {
+    "sample_id": "5a7d9d2b5542997cc2c47464",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Victorian College of the Arts and Melbourne Conservatorium of Music",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.528120994567871
+  },
+  {
+    "sample_id": "5ac2768d5542990b17b153a8",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "19 November 1786",
+    "prediction": "Peter Schmoll",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.3849964141845703
+  },
+  {
+    "sample_id": "5a85fe2f5542996432c57165",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Julianne Moore",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.611046314239502
+  },
+  {
+    "sample_id": "5ae22ede554299234fd0441b",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "9Lives",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.289552211761475
+  },
+  {
+    "sample_id": "5a90ab995542990a98493683",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Medinilla",
+    "prediction": "no",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 1.045850396156311
+  },
+  {
+    "sample_id": "5ab6c94c554299710c8d1f5e",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "The Wu-Tang Clan",
+    "prediction": "Darryl Hill",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 5.68332052230835
+  },
+  {
+    "sample_id": "5abdce1b5542993062266cfe",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Hennepin County",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.580573797225952
+  },
+  {
+    "sample_id": "5adc6825554299438c868da1",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Salta",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.161702632904053
+  },
+  {
+    "sample_id": "5a7345185542992359bc32cb",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Europe",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 3.0524699687957764
+  },
+  {
+    "sample_id": "5ab310bb554299233954fef9",
+    "type": "comparison",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "John le Carré",
+    "prediction": "John le Carré",
+    "em": 1.0,
+    "f1": 1.0,
+    "nll": 0.0425751656293869
+  },
+  {
+    "sample_id": "5a8078e95542992bc0c4a72c",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Sky News",
+    "prediction": "yes",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 6.038415431976318
+  },
+  {
+    "sample_id": "5a8c622a554299240d9c2142",
+    "type": "bridge",
+    "condition": "r1_front28_ce_shuffled",
+    "answer": "Ursula Kroeber Le Guin",
+    "prediction": "Orson Scott",
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 2.903745412826538
+  }
+]

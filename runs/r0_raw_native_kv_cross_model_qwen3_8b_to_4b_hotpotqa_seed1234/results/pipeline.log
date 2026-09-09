@@ -1,0 +1,208 @@
+[2026-07-28 13:45:20] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:46:22] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:47:24] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:48:26] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:49:28] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:50:30] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:51:32] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:52:34] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:53:36] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:54:38] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:55:40] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:56:42] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:57:44] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:58:45] CUDA unavailable; waiting 60 seconds
+[2026-07-28 13:59:47] CUDA unavailable; waiting 60 seconds
+[2026-07-28 14:00:49] CUDA unavailable; waiting 60 seconds
+[2026-07-28 14:01:51] CUDA unavailable; waiting 60 seconds
+[2026-07-28 14:02:53] CUDA unavailable; waiting 60 seconds
+[2026-07-28 14:03:55] CUDA unavailable; waiting 60 seconds
+[2026-07-28 14:04:57] CUDA unavailable; waiting 60 seconds
+[2026-07-28 14:09:12] CUDA ready; starting/resuming R0 pipeline
+[2026-07-28 14:09:12] stage started: cpu_selftest
+[2026-07-28 14:09:16] CPU self-test passed: LoRA backward and shuffled-cache alignment
+[2026-07-28 14:09:16] stage completed: cpu_selftest
+[2026-07-28 14:09:16] stage started: prepare
+[2026-07-28 14:09:27] smoke: prepared 8/4/4
+[2026-07-28 14:09:42] formal: prepared 1024/128/128
+[2026-07-28 14:09:44] stage completed: prepare
+[2026-07-28 14:09:44] stage started: structure
+[2026-07-28 14:09:49] R0 structure check passed
+[2026-07-28 14:09:50] stage completed: structure
+[2026-07-28 14:09:50] stage started: smoke_replay
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  29%|██▉       | 115/398 [00:00<00:00, 1147.60it/s]Loading weights:  58%|█████▊    | 230/398 [00:00<00:00, 1071.89it/s]Loading weights:  85%|████████▍ | 338/398 [00:00<00:00, 1039.83it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1033.75it/s]
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[2026-07-28 14:10:06] smoke: R0-0 cache replay gate passed
+[2026-07-28 14:10:08] stage completed: smoke_replay
+[2026-07-28 14:10:08] stage started: smoke_cache_4b
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  30%|███       | 121/398 [00:00<00:00, 1177.05it/s]Loading weights:  61%|██████    | 242/398 [00:00<00:00, 1195.86it/s]Loading weights:  91%|█████████ | 362/398 [00:00<00:00, 1161.59it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1164.53it/s]
+[2026-07-28 14:10:19] smoke: complete 36-layer 4b native cache extraction
+[2026-07-28 14:10:20] stage completed: smoke_cache_4b
+[2026-07-28 14:10:20] stage started: smoke_cache_8b
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 61/399 [00:00<00:00, 564.12it/s]Loading weights:  30%|██▉       | 118/399 [00:00<00:00, 524.91it/s]Loading weights:  43%|████▎     | 172/399 [00:00<00:00, 523.97it/s]Loading weights:  56%|█████▋    | 225/399 [00:00<00:00, 502.01it/s]Loading weights:  69%|██████▉   | 276/399 [00:00<00:00, 502.66it/s]Loading weights:  82%|████████▏ | 327/399 [00:00<00:00, 478.47it/s]Loading weights:  95%|█████████▍| 378/399 [00:00<00:00, 486.24it/s]Loading weights: 100%|██████████| 399/399 [00:00<00:00, 507.23it/s]
+[2026-07-28 14:10:36] smoke: complete 36-layer 8b native cache extraction
+[2026-07-28 14:10:37] stage completed: smoke_cache_8b
+[2026-07-28 14:10:37] stage started: smoke_lora_self
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 1143.08it/s]Loading weights:  60%|██████    | 239/398 [00:00<00:00, 1122.25it/s]Loading weights:  88%|████████▊ | 352/398 [00:00<00:00, 1051.35it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1057.64it/s]
+[2026-07-28 14:10:47] smoke: training lora_self from identical seed-1234 initialization
+[2026-07-28 14:10:50] smoke: lora_self epoch 1/1 completed
+[2026-07-28 14:10:51] stage completed: smoke_lora_self
+[2026-07-28 14:10:51] stage started: smoke_lora_pair
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 1178.57it/s]Loading weights:  61%|██████    | 242/398 [00:00<00:00, 1099.22it/s]Loading weights:  89%|████████▊ | 353/398 [00:00<00:00, 1023.88it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1041.38it/s]
+[2026-07-28 14:11:01] smoke: training lora_pair from identical seed-1234 initialization
+[2026-07-28 14:11:03] smoke: lora_pair epoch 1/1 completed
+[2026-07-28 14:11:05] stage completed: smoke_lora_pair
+[2026-07-28 14:11:05] stage started: smoke_evaluation
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  29%|██▉       | 115/398 [00:00<00:00, 1122.19it/s]Loading weights:  57%|█████▋    | 228/398 [00:00<00:00, 1070.73it/s]Loading weights:  84%|████████▍ | 336/398 [00:00<00:00, 1008.15it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1023.71it/s]
+[2026-07-28 14:11:14] smoke: evaluating A_question_only
+[2026-07-28 14:11:27] smoke: evaluating B_supporting_text
+[2026-07-28 14:11:39] smoke: evaluating C_4b_native_lora_off
+[2026-07-28 14:11:51] smoke: evaluating D_4b_correct_self
+[2026-07-28 14:12:05] smoke: evaluating E_4b_shuffled_self
+[2026-07-28 14:12:18] smoke: evaluating F_4b_zero_self
+[2026-07-28 14:12:32] smoke: evaluating G_no_kv_self
+[2026-07-28 14:12:46] smoke: evaluating H_8b_correct_self
+[2026-07-28 14:13:00] smoke: evaluating I_8b_shuffled_self
+[2026-07-28 14:13:13] smoke: evaluating J_8b_zero_self
+[2026-07-28 14:13:27] smoke: evaluating K_8b_correct_pair
+[2026-07-28 14:13:41] smoke: evaluating L_8b_shuffled_pair
+[2026-07-28 14:13:55] smoke: evaluating M_8b_zero_pair
+[2026-07-28 14:14:09] smoke: final evaluation completed
+[2026-07-28 14:14:10] stage completed: smoke_evaluation
+[2026-07-28 14:14:10] complete smoke test passed; formal R0 is now authorized
+[2026-07-28 14:14:10] stage started: formal_replay
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1062.49it/s]Loading weights:  56%|█████▌    | 223/398 [00:00<00:00, 1056.13it/s]Loading weights:  83%|████████▎ | 329/398 [00:00<00:00, 1023.95it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1003.16it/s]
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[2026-07-28 14:14:28] formal: R0-0 cache replay gate passed
+[2026-07-28 14:14:30] stage completed: formal_replay
+[2026-07-28 14:14:30] stage started: formal_cache_4b
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1115.03it/s]Loading weights:  57%|█████▋    | 225/398 [00:00<00:00, 1018.20it/s]Loading weights:  82%|████████▏ | 328/398 [00:00<00:00, 973.56it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 999.32it/s]
+[2026-07-28 14:14:42] formal: 4b cache train 32/1024
+[2026-07-28 14:14:45] formal: 4b cache train 64/1024
+[2026-07-28 14:14:47] formal: 4b cache train 96/1024
+[2026-07-28 14:14:50] formal: 4b cache train 128/1024
+[2026-07-28 14:14:53] formal: 4b cache train 160/1024
+[2026-07-28 14:14:55] formal: 4b cache train 192/1024
+[2026-07-28 14:14:58] formal: 4b cache train 224/1024
+[2026-07-28 14:15:00] formal: 4b cache train 256/1024
+[2026-07-28 14:15:03] formal: 4b cache train 288/1024
+[2026-07-28 14:15:05] formal: 4b cache train 320/1024
+[2026-07-28 14:15:08] formal: 4b cache train 352/1024
+[2026-07-28 14:15:10] formal: 4b cache train 384/1024
+[2026-07-28 14:15:13] formal: 4b cache train 416/1024
+[2026-07-28 14:15:15] formal: 4b cache train 448/1024
+[2026-07-28 14:15:18] formal: 4b cache train 480/1024
+[2026-07-28 14:15:20] formal: 4b cache train 512/1024
+[2026-07-28 14:15:23] formal: 4b cache train 544/1024
+[2026-07-28 14:15:25] formal: 4b cache train 576/1024
+[2026-07-28 14:15:28] formal: 4b cache train 608/1024
+[2026-07-28 14:15:30] formal: 4b cache train 640/1024
+[2026-07-28 14:15:33] formal: 4b cache train 672/1024
+[2026-07-28 14:15:35] formal: 4b cache train 704/1024
+[2026-07-28 14:15:38] formal: 4b cache train 736/1024
+[2026-07-28 14:15:40] formal: 4b cache train 768/1024
+[2026-07-28 14:15:43] formal: 4b cache train 800/1024
+[2026-07-28 14:15:46] formal: 4b cache train 832/1024
+[2026-07-28 14:15:48] formal: 4b cache train 864/1024
+[2026-07-28 14:15:51] formal: 4b cache train 896/1024
+[2026-07-28 14:15:53] formal: 4b cache train 928/1024
+[2026-07-28 14:15:56] formal: 4b cache train 960/1024
+[2026-07-28 14:15:58] formal: 4b cache train 992/1024
+[2026-07-28 14:16:01] formal: 4b cache train 1024/1024
+[2026-07-28 14:16:04] formal: 4b cache validation 32/128
+[2026-07-28 14:16:06] formal: 4b cache validation 64/128
+[2026-07-28 14:16:09] formal: 4b cache validation 96/128
+[2026-07-28 14:16:12] formal: 4b cache validation 128/128
+[2026-07-28 14:16:15] formal: 4b cache test 32/128
+[2026-07-28 14:16:17] formal: 4b cache test 64/128
+[2026-07-28 14:16:20] formal: 4b cache test 96/128
+[2026-07-28 14:16:23] formal: 4b cache test 128/128
+[2026-07-28 14:16:23] formal: complete 36-layer 4b native cache extraction
+[2026-07-28 14:16:24] stage completed: formal_cache_4b
+[2026-07-28 14:16:24] stage started: formal_cache_8b
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 50/399 [00:00<00:00, 478.18it/s]Loading weights:  26%|██▋       | 105/399 [00:00<00:00, 489.16it/s]Loading weights:  40%|███▉      | 158/399 [00:00<00:00, 490.82it/s]Loading weights:  53%|█████▎    | 213/399 [00:00<00:00, 492.24it/s]Loading weights:  66%|██████▌   | 263/399 [00:00<00:00, 471.75it/s]Loading weights:  78%|███████▊  | 311/399 [00:00<00:00, 443.03it/s]Loading weights:  89%|████████▉ | 356/399 [00:00<00:00, 328.10it/s]Loading weights:  98%|█████████▊| 393/399 [00:01<00:00, 292.20it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 377.14it/s]
+[2026-07-28 14:16:43] formal: 8b cache train 32/1024
+[2026-07-28 14:16:47] formal: 8b cache train 64/1024
+[2026-07-28 14:16:50] formal: 8b cache train 96/1024
+[2026-07-28 14:16:54] formal: 8b cache train 128/1024
+[2026-07-28 14:16:59] formal: 8b cache train 160/1024
+[2026-07-28 14:17:03] formal: 8b cache train 192/1024
+[2026-07-28 14:17:07] formal: 8b cache train 224/1024
+[2026-07-28 14:17:12] formal: 8b cache train 256/1024
+[2026-07-28 14:17:17] formal: 8b cache train 288/1024
+[2026-07-28 14:17:21] formal: 8b cache train 320/1024
+[2026-07-28 14:17:25] formal: 8b cache train 352/1024
+[2026-07-28 14:17:31] formal: 8b cache train 384/1024
+[2026-07-28 14:17:36] formal: 8b cache train 416/1024
+[2026-07-28 14:17:41] formal: 8b cache train 448/1024
+[2026-07-28 14:17:46] formal: 8b cache train 480/1024
+[2026-07-28 14:17:51] formal: 8b cache train 512/1024
+[2026-07-28 14:17:56] formal: 8b cache train 544/1024
+[2026-07-28 14:18:01] formal: 8b cache train 576/1024
+[2026-07-28 14:18:07] formal: 8b cache train 608/1024
+[2026-07-28 14:18:12] formal: 8b cache train 640/1024
+[2026-07-28 14:18:16] formal: 8b cache train 672/1024
+[2026-07-28 14:18:22] formal: 8b cache train 704/1024
+[2026-07-28 14:18:27] formal: 8b cache train 736/1024
+[2026-07-28 14:18:33] formal: 8b cache train 768/1024
+[2026-07-28 14:18:37] formal: 8b cache train 800/1024
+[2026-07-28 14:18:42] formal: 8b cache train 832/1024
+[2026-07-28 14:18:47] formal: 8b cache train 864/1024
+[2026-07-28 14:18:54] formal: 8b cache train 896/1024
+[2026-07-28 14:18:59] formal: 8b cache train 928/1024
+[2026-07-28 14:19:04] formal: 8b cache train 960/1024
+[2026-07-28 14:19:09] formal: 8b cache train 992/1024
+[2026-07-28 14:19:15] formal: 8b cache train 1024/1024
+[2026-07-28 14:19:20] formal: 8b cache validation 32/128
+[2026-07-28 14:19:25] formal: 8b cache validation 64/128
+[2026-07-28 14:19:31] formal: 8b cache validation 96/128
+[2026-07-28 14:19:36] formal: 8b cache validation 128/128
+[2026-07-28 14:19:42] formal: 8b cache test 32/128
+[2026-07-28 14:19:47] formal: 8b cache test 64/128
+[2026-07-28 14:19:53] formal: 8b cache test 96/128
+[2026-07-28 14:19:58] formal: 8b cache test 128/128
+[2026-07-28 14:19:58] formal: complete 36-layer 8b native cache extraction
+[2026-07-28 14:19:59] stage completed: formal_cache_8b
+[2026-07-28 14:19:59] stage started: formal_lora_self
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 1207.94it/s]Loading weights:  62%|██████▏   | 245/398 [00:00<00:00, 933.05it/s] Loading weights:  86%|████████▌ | 342/398 [00:00<00:00, 864.90it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 906.41it/s]
+[2026-07-28 14:20:09] formal: training lora_self from identical seed-1234 initialization
+[2026-07-28 14:23:57] formal: lora_self epoch 1/2 completed
+[2026-07-28 14:27:33] formal: lora_self epoch 2/2 completed
+[2026-07-28 14:27:34] stage completed: formal_lora_self
+[2026-07-28 14:27:34] stage started: formal_lora_pair
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 1213.16it/s]Loading weights:  62%|██████▏   | 246/398 [00:00<00:00, 969.61it/s] Loading weights:  87%|████████▋ | 346/398 [00:00<00:00, 926.32it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 967.52it/s]
+[2026-07-28 14:27:44] formal: training lora_pair from identical seed-1234 initialization
+[2026-07-28 14:30:54] formal: lora_pair epoch 1/2 completed
+[2026-07-28 14:34:05] formal: lora_pair epoch 2/2 completed
+[2026-07-28 14:34:06] stage completed: formal_lora_pair
+[2026-07-28 14:34:06] stage started: formal_evaluation
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  29%|██▊       | 114/398 [00:00<00:00, 1133.57it/s]Loading weights:  57%|█████▋    | 228/398 [00:00<00:00, 980.32it/s] Loading weights:  82%|████████▏ | 328/398 [00:00<00:00, 965.50it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 977.44it/s]
+[2026-07-28 14:34:16] formal: evaluating A_question_only
+[2026-07-28 14:40:47] formal: evaluating B_supporting_text
+[2026-07-28 14:47:25] formal: evaluating C_4b_native_lora_off
+[2026-07-28 14:54:01] formal: evaluating D_4b_correct_self
+[2026-07-28 14:54:50] formal: evaluating E_4b_shuffled_self
+[2026-07-28 14:55:40] formal: evaluating F_4b_zero_self
+[2026-07-28 14:56:36] formal: evaluating G_no_kv_self
+[2026-07-28 14:57:36] formal: evaluating H_8b_correct_self
+[2026-07-28 14:58:21] formal: evaluating I_8b_shuffled_self
+[2026-07-28 14:59:28] formal: evaluating J_8b_zero_self
+[2026-07-28 15:00:25] formal: evaluating K_8b_correct_pair
+[2026-07-28 15:01:14] formal: evaluating L_8b_shuffled_pair
+[2026-07-28 15:01:58] formal: evaluating M_8b_zero_pair
+[2026-07-28 15:02:58] formal: final evaluation completed
+[2026-07-28 15:02:59] stage completed: formal_evaluation
+[2026-07-28 15:02:59] R0 pipeline completed
+[2026-07-28 15:02:59] R0 pipeline finished

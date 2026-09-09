@@ -1,0 +1,62 @@
+[2026-08-04 13:47:38] smoke: start preflight
+Qwen3-1.7B model/tokenizer preflight passed
+[2026-08-04 13:47:44] smoke: start render
+[2026-08-04 13:47:51] rendered and froze 64 full-context samples
+[2026-08-04 13:47:52] smoke: start audit
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:07<40:47,  7.89s/it]Loading weights:   1%|          | 2/311 [00:08<17:50,  3.47s/it]Loading weights:   4%|▍         | 12/311 [00:08<02:09,  2.32it/s]Loading weights:   5%|▌         | 16/311 [00:10<01:57,  2.51it/s]Loading weights:   5%|▌         | 17/311 [00:11<02:09,  2.26it/s]Loading weights:   6%|▌         | 18/311 [00:11<02:13,  2.20it/s]Loading weights:   6%|▌         | 19/311 [00:11<02:08,  2.28it/s]Loading weights:  13%|█▎        | 39/311 [00:12<00:28,  9.62it/s]Loading weights:  14%|█▍        | 44/311 [00:12<00:25, 10.50it/s]Loading weights:  15%|█▍        | 46/311 [00:13<00:27,  9.67it/s]Loading weights:  16%|█▌        | 49/311 [00:15<00:55,  4.76it/s]Loading weights:  16%|█▌        | 50/311 [00:15<00:54,  4.82it/s]Loading weights:  25%|██▌       | 78/311 [00:15<00:11, 19.94it/s]Loading weights:  28%|██▊       | 86/311 [00:16<00:13, 16.22it/s]Loading weights:  30%|██▉       | 92/311 [00:17<00:17, 12.54it/s]Loading weights:  31%|███       | 97/311 [00:18<00:27,  7.78it/s]Loading weights:  37%|███▋      | 116/311 [00:19<00:16, 11.71it/s]Loading weights:  41%|████      | 126/311 [00:21<00:19,  9.41it/s]Loading weights:  41%|████▏     | 129/311 [00:21<00:19,  9.25it/s]Loading weights:  48%|████▊     | 148/311 [00:22<00:14, 11.41it/s]Loading weights:  51%|█████▏    | 160/311 [00:23<00:13, 11.45it/s]Loading weights:  55%|█████▍    | 170/311 [00:24<00:10, 13.29it/s]Loading weights:  57%|█████▋    | 177/311 [00:24<00:09, 14.06it/s]Loading weights:  58%|█████▊    | 179/311 [00:25<00:10, 12.44it/s]Loading weights:  59%|█████▊    | 182/311 [00:26<00:16,  7.64it/s]Loading weights:  62%|██████▏   | 193/311 [00:27<00:13,  8.98it/s]Loading weights:  66%|██████▌   | 204/311 [00:27<00:08, 13.01it/s]Loading weights:  67%|██████▋   | 207/311 [00:28<00:09, 11.08it/s]Loading weights:  68%|██████▊   | 210/311 [00:28<00:08, 11.65it/s]Loading weights:  68%|██████▊   | 212/311 [00:28<00:09, 10.38it/s]Loading weights:  69%|██████▉   | 215/311 [00:29<00:12,  7.87it/s]Loading weights:  72%|███████▏  | 225/311 [00:29<00:06, 13.48it/s]Loading weights:  73%|███████▎  | 228/311 [00:29<00:06, 12.25it/s]Loading weights:  75%|███████▍  | 233/311 [00:30<00:05, 14.43it/s]Loading weights:  76%|███████▌  | 235/311 [00:30<00:05, 12.70it/s]Loading weights:  76%|███████▌  | 237/311 [00:30<00:07, 10.33it/s]Loading weights:  77%|███████▋  | 239/311 [00:31<00:07,  9.60it/s]Loading weights:  77%|███████▋  | 241/311 [00:31<00:09,  7.04it/s]Loading weights:  78%|███████▊  | 242/311 [00:32<00:12,  5.62it/s]Loading weights:  79%|███████▉  | 247/311 [00:32<00:06,  9.78it/s]Loading weights:  82%|████████▏ | 254/311 [00:32<00:05,  9.86it/s]Loading weights:  83%|████████▎ | 258/311 [00:32<00:04, 12.29it/s]Loading weights:  84%|████████▎ | 260/311 [00:33<00:06,  7.68it/s]Loading weights:  85%|████████▌ | 265/311 [00:33<00:04,  9.71it/s]Loading weights:  87%|████████▋ | 270/311 [00:34<00:05,  8.16it/s]Loading weights:  90%|████████▉ | 279/311 [00:36<00:04,  6.81it/s]Loading weights:  94%|█████████▍| 292/311 [00:36<00:01, 12.69it/s]Loading weights:  95%|█████████▌| 297/311 [00:36<00:00, 14.07it/s]Loading weights:  97%|█████████▋| 301/311 [00:37<00:00, 11.45it/s]Loading weights:  98%|█████████▊| 304/311 [00:37<00:00, 12.50it/s]Loading weights: 100%|██████████| 311/311 [00:37<00:00,  8.31it/s]
+Traceback (most recent call last):
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py", line 404, in <module>
+    main()
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py", line 296, in main
+    official_cache, captured = prefill(model, sample["context_input_ids"], cfg, True)
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py", line 86, in prefill
+    output = model(
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/transformers/utils/generic.py", line 903, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 492, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/transformers/utils/generic.py", line 1032, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/transformers/utils/output_capturing.py", line 252, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 424, in forward
+    hidden_states = decoder_layer(
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 318, in forward
+    hidden_states, _ = self.self_attn(
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1844, in _call_impl
+    return inner()
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in inner
+    result = forward_call(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 277, in forward
+    attn_output, attn_weights = attention_interface(
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/transformers/models/qwen3/modeling_qwen3.py", line 213, in eager_attention_forward
+    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query.dtype)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/functional.py", line 2142, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 198.00 MiB. GPU 0 has a total capacity of 31.74 GiB of which 64.25 MiB is free. Process 2070440 has 27.42 GiB memory in use. Process 2084458 has 4.25 GiB memory in use. Of the allocated memory 3.56 GiB is allocated by PyTorch, and 329.07 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/run_pipeline.py", line 39, in <module>
+    main()
+  File "/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/run_pipeline.py", line 30, in main
+    subprocess.run([
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yezhe/data/miniconda3/envs/attnkv/bin/python', '-u', '/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/audit.py', '--config', '/home/yezhe/可拔插/qwen3_1_7b_fullcontext_cache_equivalence_seed1234/config.json', '--mode', 'smoke']' returned non-zero exit status 1.
+[2026-08-04 13:48:55] Non-CUDA failure; stopping with status=1

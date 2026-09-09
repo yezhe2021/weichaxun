@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "passed": true,
+  "thresholds": {
+    "correct_f1": 0.85,
+    "gap": 0.4,
+    "off_consistency": 0.999
+  },
+  "observed": {
+    "correct_f1": 1.0,
+    "gap": 0.9479166666666666,
+    "off_consistency": 1.0
+  },
+  "formal_run_policy": "continue_for_diagnosis_regardless_of_gate"
+}

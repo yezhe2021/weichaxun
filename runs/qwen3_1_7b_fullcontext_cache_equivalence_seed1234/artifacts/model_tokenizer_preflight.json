@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "structure": {
+    "num_hidden_layers": 28,
+    "num_key_value_heads": 8,
+    "head_dim": 128
+  },
+  "comparison": {
+    "vocab_size": {
+      "qwen3_1_7b": 151643,
+      "qwen3_4b": 151643
+    },
+    "bos_token_id": {
+      "qwen3_1_7b": null,
+      "qwen3_4b": null
+    },
+    "eos_token_id": {
+      "qwen3_1_7b": 151645,
+      "qwen3_4b": 151645
+    },
+    "pad_token_id": {
+      "qwen3_1_7b": 151643,
+      "qwen3_4b": 151643
+    },
+    "class": {
+      "qwen3_1_7b": "Qwen2Tokenizer",
+      "qwen3_4b": "Qwen2Tokenizer"
+    },
+    "chat_template_equal": true
+  },
+  "model_config_sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197"
+}

@@ -1,0 +1,193 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-M Fresh Native Reader Q-Conditioning Diagnosis",
+  "samples": 64,
+  "conditions": {
+    "question_only": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.2837907936549819,
+      "eos_rate": 0.953125,
+      "average_output_tokens": 9.40625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.23322555322966507
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.3343560340802988
+        }
+      }
+    },
+    "reader_off": {
+      "n": 64,
+      "em": 0.171875,
+      "f1": 0.2837907936549819,
+      "eos_rate": 0.953125,
+      "average_output_tokens": 9.40625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.15625,
+          "f1": 0.23322555322966507
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.3343560340802988
+        }
+      }
+    },
+    "full_evidence_text": {
+      "n": 64,
+      "em": 0.25,
+      "f1": 0.40983000528813956,
+      "eos_rate": 0.640625,
+      "average_output_tokens": 20.109375,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.46875,
+          "f1": 0.6608480553739421
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.03125,
+          "f1": 0.15881195520233732
+        }
+      }
+    },
+    "evidence_only_native_reader_a": {
+      "n": 64,
+      "em": 0.359375,
+      "f1": 0.47695741758241766,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.15625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.25,
+          "f1": 0.44453983516483514
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.46875,
+          "f1": 0.509375
+        }
+      }
+    },
+    "evidence_only_hard_shuffled_reader_a": {
+      "n": 64,
+      "em": 0.28125,
+      "f1": 0.3438988095238095,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.34375,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.0625,
+          "f1": 0.13467261904761907
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.5,
+          "f1": 0.5531250000000001
+        }
+      }
+    },
+    "question_conditioned_native_reader_b": {
+      "n": 64,
+      "em": 0.40625,
+      "f1": 0.5338169642857142,
+      "eos_rate": 1.0,
+      "average_output_tokens": 4.171875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.28125,
+          "f1": 0.48325892857142855
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.53125,
+          "f1": 0.5843750000000001
+        }
+      }
+    },
+    "question_conditioned_hard_shuffled_reader_b": {
+      "n": 64,
+      "em": 0.15625,
+      "f1": 0.21059027777777778,
+      "eos_rate": 0.984375,
+      "average_output_tokens": 5.046875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.0625,
+          "f1": 0.11805555555555555
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.25,
+          "f1": 0.303125
+        }
+      }
+    }
+  },
+  "delta_q_automatic_f1": 0.05685954670329657,
+  "correct_shuffled_f1_gap_a": 0.13305860805860814,
+  "correct_shuffled_f1_gap_b": 0.32322668650793646,
+  "switch_rates": {
+    "a_correct_shuffled_switch": 0.5625,
+    "b_correct_shuffled_switch": 0.671875,
+    "a_b_switch": 0.234375,
+    "question_only_equals_reader_off": 1.0
+  },
+  "reader_a_gates": [
+    0.12289164215326309,
+    0.09085935354232788,
+    0.13195382058620453,
+    0.12287986278533936,
+    0.16404880583286285,
+    0.12352947890758514,
+    0.1392674446105957,
+    0.10451789945363998,
+    0.1546490341424942,
+    0.1485154628753662,
+    0.19327835738658905,
+    0.23664085566997528,
+    0.20966537296772003,
+    0.19821152091026306,
+    0.25993168354034424,
+    0.19229161739349365
+  ],
+  "reader_b_gates": [
+    0.1259671151638031,
+    0.09647592157125473,
+    0.1237223744392395,
+    0.09530230611562729,
+    0.12764959037303925,
+    0.11634187400341034,
+    0.12766467034816742,
+    0.09451035410165787,
+    0.15745511651039124,
+    0.16445045173168182,
+    0.22161228954792023,
+    0.2141481637954712,
+    0.20944622159004211,
+    0.19657042622566223,
+    0.24543803930282593,
+    0.17119784653186798
+  ],
+  "reader_a": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/reader_a/checkpoint_epoch_005.pt",
+  "reader_b": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/reader_b/checkpoint_epoch_005.pt",
+  "same_initialization": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/shared_initialization.pt",
+  "same_architecture": true,
+  "same_parameter_count": true,
+  "writer_loaded": false,
+  "canonical_projection_used": false,
+  "manual_cpw_required": true
+}

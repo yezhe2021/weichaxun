@@ -1,0 +1,43 @@
+{
+  "family": "llama",
+  "arm": "random",
+  "train_samples": 1024,
+  "optimizer_steps": 512,
+  "sample_exposures": 4096,
+  "initial_validation_full_kl": 0.25829084286942816,
+  "best_validation_full_kl": 0.19450134362978133,
+  "best_step": 512,
+  "clip_rate": 0.0,
+  "gold_used_for_training": false,
+  "selector_trainable": false,
+  "validation_metrics": {
+    "full_kl": 0.19450134362978133,
+    "choice_kl": 0.1795905963522273,
+    "native_agreement": 0.5703125,
+    "accuracy": 0.1796875,
+    "native_accuracy": 0.28125,
+    "selected_attention_mass": 0.36325125431967903,
+    "selected_token_normalized_position": 0.49528958993078775,
+    "selected_within_chunk_fraction": 0.4659976647159266,
+    "remaining_tokens_per_valid_slot": 2.600830078125,
+    "empty_slot_fraction": 0.06884765625,
+    "retention": 0.6388888888888888,
+    "sample_count": 128
+  },
+  "test_metrics": {
+    "full_kl": 0.2097510527241866,
+    "choice_kl": 0.19988159838931097,
+    "native_agreement": 0.7109375,
+    "accuracy": 0.15625,
+    "native_accuracy": 0.2265625,
+    "selected_attention_mass": 0.3869112904335323,
+    "selected_token_normalized_position": 0.49484478266394283,
+    "selected_within_chunk_fraction": 0.45118778316410146,
+    "remaining_tokens_per_valid_slot": 2.555419921875,
+    "empty_slot_fraction": 0.098876953125,
+    "retention": 0.6896551724137931,
+    "sample_count": 128
+  },
+  "original_position_oracle_test_metrics": null,
+  "seconds": 1417.3576159980148
+}

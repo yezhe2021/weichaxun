@@ -1,0 +1,59 @@
+{
+  "experiment_name": "mmlupro_composed_writer_qwen3_1_7b_to_4b_to_8b_seed1234",
+  "seed": 1234,
+  "work_dir": "/home/yezhe/重实现/mmlupro_composed_writer_qwen3_1_7b_to_4b_to_8b_seed1234",
+  "cache_dir": "/home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/cache",
+  "manifest_dir": "/home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/artifacts/manifests",
+  "receiver_model": "/home/yezhe/all_models/models/Qwen/Qwen3-8B",
+  "dtype": "float16",
+  "attention_implementation": "eager",
+  "cache_families": {"source17": 28, "target4": 36, "source8": 36},
+  "num_kv_heads": 8,
+  "head_dim": 128,
+  "first_hop": [
+    {
+      "name": "d2_b1",
+      "module": "writers_first_d2",
+      "kind": "d2",
+      "config": "/home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/config.json",
+      "checkpoint": "/home/yezhe/重实现/mmlupro_b1_scale1024_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/d2/stage_b_final/best.pt"
+    },
+    {
+      "name": "full28_b1",
+      "module": "writers_first_full28",
+      "kind": "full28",
+      "config": "/home/yezhe/重实现/mmlupro_full28_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json",
+      "checkpoint": "/home/yezhe/重实现/mmlupro_full28_writer_b1_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/full28/stage_b_final/best.pt"
+    },
+    {
+      "name": "full28_head8_b1",
+      "module": "writers_first_head8",
+      "kind": "full28_head8",
+      "config": "/home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/config.json",
+      "checkpoint": "/home/yezhe/重实现/mmlupro_full28_head8_writer_b1_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/full28_head8/stage_b_final/best.pt"
+    }
+  ],
+  "second_hop": [
+    {
+      "name": "full36_head8_stage_a",
+      "module": "writers_second_head8",
+      "kind": "full36_head8",
+      "config": "/home/yezhe/重实现/mmlupro_full36_head8_writer_b1_qwen3_4b_to_8b_seed1234/config.json",
+      "checkpoint": "/home/yezhe/重实现/mmlupro_full36_head8_writer_b1_qwen3_4b_to_8b_seed1234/checkpoints/quick/full36_head8/stage_a/best.pt"
+    },
+    {
+      "name": "full36_head8_stage_b_lowest",
+      "module": "writers_second_head8",
+      "kind": "full36_head8",
+      "config": "/home/yezhe/重实现/mmlupro_stageb_checkpoint_path_qwen3_4b_to_8b_seed1234/config.json",
+      "checkpoint": "/home/yezhe/重实现/mmlupro_stageb_checkpoint_path_qwen3_4b_to_8b_seed1234/checkpoints/quick/full36_head8/stage_b_final/lowest_stage_b.pt"
+    },
+    {
+      "name": "full36_head8_stage_b_last",
+      "module": "writers_second_head8",
+      "kind": "full36_head8",
+      "config": "/home/yezhe/重实现/mmlupro_stageb_checkpoint_path_qwen3_4b_to_8b_seed1234/config.json",
+      "checkpoint": "/home/yezhe/重实现/mmlupro_stageb_checkpoint_path_qwen3_4b_to_8b_seed1234/checkpoints/quick/full36_head8/stage_b_final/last.pt"
+    }
+  ]
+}

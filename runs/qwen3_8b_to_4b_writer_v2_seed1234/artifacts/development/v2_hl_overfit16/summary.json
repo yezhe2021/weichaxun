@@ -1,0 +1,24 @@
+{
+  "kind": "v2_hl",
+  "overfit": true,
+  "initialized_from": "/home/yezhe/可拔插/qwen3_8b_to_4b_writer_v2_seed1234/reused/linear_stage_a_best.pt",
+  "initial_loss": 0.7046545818448067,
+  "final_loss": 0.6598400995135307,
+  "loss_ratio": 0.9364021983452513,
+  "all_parameters_received_gradient": true,
+  "missing_gradient_parameters": [],
+  "best_validation_loss": 0.6598400995135307,
+  "training_seconds": 570.5053846752271,
+  "peak_gpu_bytes": 2021667328,
+  "parameters": {
+    "trainable_parameters": 94447872,
+    "total_parameters": 94447872
+  },
+  "writer_diagnostics": {
+    "w2_k_rms": 0.0027358015067875385,
+    "w2_v_rms": 0.006478585302829742,
+    "uses_local_layer_residual": true,
+    "beta_k_rms_valid": 0.0025972009170800447,
+    "beta_v_rms_valid": 0.0023860966321080923
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "sender_input": "complete context only; question absent",
+  "sender_tokenizer": "Qwen3.5 native tokenizer",
+  "selected_state": "all eight full-attention layers, pre-RoPE K and native V",
+  "full_attention_layers": [
+    3,
+    7,
+    11,
+    15,
+    19,
+    23,
+    27,
+    31
+  ],
+  "writer": "identity",
+  "receiver": "same frozen Qwen3.5-4B",
+  "delta_context_states": "absent/uninitialized",
+  "reader_lora": "q_proj and o_proj only at eight full-attention layers",
+  "hard_gate": null,
+  "counts": {
+    "train": 512,
+    "validation": 64,
+    "test": 64
+  }
+}
