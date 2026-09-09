@@ -1,0 +1,50 @@
+[
+  {
+    "step": 128,
+    "path": "/home/yezhe/异构模型/noalign_pure_functional_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/noalign_randominit_full28_diagonal_choice_kl/step_128.pt",
+    "functional": {
+      "accuracy": 0.0859375,
+      "teacher_accuracy": 0.28125,
+      "teacher_agreement": 0.3984375,
+      "choice_kl": 0.9912909584236331,
+      "full_kl": 1.6483038640581071,
+      "teacher_retention": 0.3055555555555556
+    }
+  },
+  {
+    "step": 256,
+    "path": "/home/yezhe/异构模型/noalign_pure_functional_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/noalign_randominit_full28_diagonal_choice_kl/step_256.pt",
+    "functional": {
+      "accuracy": 0.109375,
+      "teacher_accuracy": 0.28125,
+      "teacher_agreement": 0.359375,
+      "choice_kl": 0.9968867994321045,
+      "full_kl": 1.443540447507985,
+      "teacher_retention": 0.3888888888888889
+    }
+  },
+  {
+    "step": 384,
+    "path": "/home/yezhe/异构模型/noalign_pure_functional_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/noalign_randominit_full28_diagonal_choice_kl/step_384.pt",
+    "functional": {
+      "accuracy": 0.0859375,
+      "teacher_accuracy": 0.28125,
+      "teacher_agreement": 0.3984375,
+      "choice_kl": 0.9988004124024883,
+      "full_kl": 4.87321337684989,
+      "teacher_retention": 0.3055555555555556
+    }
+  },
+  {
+    "step": 512,
+    "path": "/home/yezhe/异构模型/noalign_pure_functional_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/noalign_randominit_full28_diagonal_choice_kl/step_512.pt",
+    "functional": {
+      "accuracy": 0.09375,
+      "teacher_accuracy": 0.28125,
+      "teacher_agreement": 0.328125,
+      "choice_kl": 1.0297687531274278,
+      "full_kl": 5.244325770065188,
+      "teacher_retention": 0.3333333333333333
+    }
+  }
+]
