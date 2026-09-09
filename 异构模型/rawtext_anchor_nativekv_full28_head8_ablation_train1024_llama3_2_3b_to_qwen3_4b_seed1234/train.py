@@ -394,8 +394,8 @@ def evaluate_stage_b(cfg, model, summary):
                 output.write(json.dumps(record, ensure_ascii=False) + "\n")
         del module
         torch.cuda.empty_cache()
-    save_json(run_root(cfg) / "results" / "stage_b_summary.json", {
-        "experiment": "full28_head8_pure_choice_kl_stage_b",
+    save_json(run_root(cfg) / "results" / f"stage_b_{summary['architecture']}_summary.json", {
+        "experiment": f"{summary['architecture']}_pure_choice_kl_stage_b",
         "training": summary, "test": result,
     })
     return result
@@ -415,6 +415,61 @@ def run_stage_b(cfg):
         torch.cuda.empty_cache()
     weight_audit(cfg, f"{architecture}_choice_kl")
     log("STAGE B FULL28_HEAD8 CHOICE-KL COMPLETED")
+
+
+def run_stage_b_all(cfg):
+    """Run the three missing arms and combine them with the completed Head8 arm."""
+    architectures = list(cfg["architectures"])
+    model = load_model(cfg, "qwen")
+    combined = {}
+    try:
+        for architecture in architectures:
+            result_path = run_root(cfg) / "results" / f"stage_b_{architecture}_summary.json"
+            legacy_head8 = run_root(cfg) / "results" / "stage_b_summary.json"
+            if architecture == "full28_head8" and not result_path.exists() and legacy_head8.exists():
+                legacy = json.loads(legacy_head8.read_text(encoding="utf-8"))
+                legacy["experiment"] = "full28_head8_pure_choice_kl_stage_b"
+                save_json(result_path, legacy)
+                combined[architecture] = legacy
+                log("Reusing already completed Full28 Head8 Stage B")
+                continue
+            if result_path.exists():
+                existing = json.loads(result_path.read_text(encoding="utf-8"))
+                if existing.get("training", {}).get("steps") == cfg["stage_b_steps"]:
+                    combined[architecture] = existing
+                    log(f"Reusing completed Stage B arm: {architecture}")
+                    continue
+            source = checkpoint_path(cfg, architecture, "best_accuracy")
+            if not source.exists():
+                raise FileNotFoundError(f"Missing Phase-1 initialization: {source}")
+            summary = train_stage_b(cfg, model, architecture)
+            test = evaluate_stage_b(cfg, model, summary)
+            weight_audit(cfg, summary["arm"])
+            combined[architecture] = {"experiment": f"{architecture}_pure_choice_kl_stage_b",
+                                      "training": summary, "test": test}
+            log(f"Stage B architecture completed: {architecture}")
+    finally:
+        del model
+        torch.cuda.empty_cache()
+    comparison = {
+        "protocol": {
+            "native_token0": True, "raw_text_anchors": 32, "train_samples": cfg["train_samples"],
+            "steps": cfg["stage_b_steps"], "learning_rate": cfg["stage_b_learning_rate"],
+            "objective": "pure final-position choice KL", "checkpoint_interval": cfg["validation_interval_steps"],
+            "initialization": "each architecture's Phase-1 validation best_accuracy checkpoint",
+            "selection": "validation only; best_accuracy and best_choice_kl both reported on test",
+        },
+        "architectures": combined,
+        "test_accuracy": {
+            architecture: {
+                alias: payload["test"][alias]["functional"]["accuracy"]
+                for alias in ("best_accuracy", "best_choice_kl")
+            }
+            for architecture, payload in combined.items()
+        },
+    }
+    save_json(run_root(cfg) / "results" / "stage_b_architecture_comparison.json", comparison)
+    log("ALL FOUR STAGE B ARCHITECTURE ARMS COMPLETED")
 
 
 def run_phase1(cfg):

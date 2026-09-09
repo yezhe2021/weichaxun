@@ -22,4 +22,8 @@ Phase-1 validation-best-accuracy checkpoint and trains only final-position A-J c
 true epochs (512 optimizer steps, effective batch 8), with Qwen-native token0 fixed. Launch it with
 `bash launch_stage_b.sh`.
 
+`bash launch_stage_b_all.sh` runs the matched Stage-B comparison for Local5, Full28 SameHead,
+Full28 Diagonal, and Full28 Head8. A completed arm is reused rather than retrained. The consolidated
+test-accuracy report is written to `runs/study/results/stage_b_architecture_comparison.json`.
+
 Run tests with `python tests.py`; launch the study with `bash launch.sh`.
