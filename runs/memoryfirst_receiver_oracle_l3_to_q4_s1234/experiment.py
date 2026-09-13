@@ -307,9 +307,11 @@ def append_results(cfg, result):
 
 def finalize(cfg):
     audit = read_json(run_root(cfg) / "oracle_audit" / "summary.json")
-    result = {"experiment": EXPERIMENT, "status": "completed", "oracle_audit": audit,
-              "stage_b_executed": bool(audit["gate"]["passed"] or cfg["mode"] == "smoke")}
     training_path = run_root(cfg) / "stage_b" / "training_summary.json"
+    result = {"experiment": EXPERIMENT, "status": "completed", "oracle_audit": audit,
+              "stage_b_executed": training_path.exists(),
+              "stage_b_trigger": "forced_by_user" if training_path.exists() and not audit["gate"]["passed"]
+                                 else "oracle_gate" if training_path.exists() else "not_run"}
     if training_path.exists():
         training = read_json(training_path); model = load_model(cfg, "qwen"); translated = {}
         try:

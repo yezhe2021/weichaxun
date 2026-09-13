@@ -1,0 +1,74 @@
+{
+  "stage": "B",
+  "objective": "memory-first Oracle A-J choice KL only",
+  "initialized_from_source_stage_a": {
+    "step": 768,
+    "path": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_768.pt"
+  },
+  "steps": 512,
+  "clip_rate": 0.0234375,
+  "seconds": 1698.2460351716727,
+  "selection": "validation only",
+  "best_accuracy": {
+    "step": 512,
+    "path": "/home/yezhe/异构模型/mmlupro_memoryfirst_receiver_oracle_audit_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_512.pt",
+    "functional": {
+      "accuracy": 0.25,
+      "oracle_accuracy": 0.34375,
+      "oracle_agreement": 0.5234375,
+      "oracle_choice_kl": 0.9482967729418306
+    }
+  },
+  "best_choice_kl": {
+    "step": 128,
+    "path": "/home/yezhe/异构模型/mmlupro_memoryfirst_receiver_oracle_audit_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_128.pt",
+    "functional": {
+      "accuracy": 0.2265625,
+      "oracle_accuracy": 0.34375,
+      "oracle_agreement": 0.4765625,
+      "oracle_choice_kl": 0.8525085162254982
+    }
+  },
+  "candidates": [
+    {
+      "step": 128,
+      "path": "/home/yezhe/异构模型/mmlupro_memoryfirst_receiver_oracle_audit_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_128.pt",
+      "functional": {
+        "accuracy": 0.2265625,
+        "oracle_accuracy": 0.34375,
+        "oracle_agreement": 0.4765625,
+        "oracle_choice_kl": 0.8525085162254982
+      }
+    },
+    {
+      "step": 256,
+      "path": "/home/yezhe/异构模型/mmlupro_memoryfirst_receiver_oracle_audit_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_256.pt",
+      "functional": {
+        "accuracy": 0.2265625,
+        "oracle_accuracy": 0.34375,
+        "oracle_agreement": 0.5,
+        "oracle_choice_kl": 0.8813917547813617
+      }
+    },
+    {
+      "step": 384,
+      "path": "/home/yezhe/异构模型/mmlupro_memoryfirst_receiver_oracle_audit_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_384.pt",
+      "functional": {
+        "accuracy": 0.203125,
+        "oracle_accuracy": 0.34375,
+        "oracle_agreement": 0.4921875,
+        "oracle_choice_kl": 0.8796448028588202
+      }
+    },
+    {
+      "step": 512,
+      "path": "/home/yezhe/异构模型/mmlupro_memoryfirst_receiver_oracle_audit_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_512.pt",
+      "functional": {
+        "accuracy": 0.25,
+        "oracle_accuracy": 0.34375,
+        "oracle_agreement": 0.5234375,
+        "oracle_choice_kl": 0.9482967729418306
+      }
+    }
+  ]
+}
