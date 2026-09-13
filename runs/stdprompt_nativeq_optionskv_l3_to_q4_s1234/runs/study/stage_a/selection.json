@@ -1,0 +1,175 @@
+{
+  "selection": "validation only",
+  "best_accuracy": {
+    "step": 768,
+    "path": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+    "representation": {
+      "loss": 0.8173851333558559,
+      "k_nmse": 0.05919205583631992,
+      "v_nmse": 0.43580122850835323,
+      "k_cosine": 0.9327612332999706,
+      "v_cosine": 0.7448469251394272
+    },
+    "functional": {
+      "accuracy": 0.15625,
+      "oracle_accuracy": 0.3515625,
+      "oracle_agreement": 0.1328125,
+      "oracle_choice_kl": 2.079402477364056
+    }
+  },
+  "best_choice_kl": {
+    "step": 1024,
+    "path": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_1024.pt",
+    "representation": {
+      "loss": 0.8035224676132202,
+      "k_nmse": 0.05710198823362589,
+      "v_nmse": 0.4291083849966526,
+      "k_cosine": 0.9347636438906193,
+      "v_cosine": 0.7479242645204067
+    },
+    "functional": {
+      "accuracy": 0.1328125,
+      "oracle_accuracy": 0.3515625,
+      "oracle_agreement": 0.1328125,
+      "oracle_choice_kl": 2.006985724205151
+    }
+  },
+  "candidates": [
+    {
+      "step": 128,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_128.pt",
+      "representation": {
+        "loss": 1.0221435353159904,
+        "k_nmse": 0.0840059700421989,
+        "v_nmse": 0.5441280845552683,
+        "k_cosine": 0.9108896143734455,
+        "v_cosine": 0.6951009258627892
+      },
+      "functional": {
+        "accuracy": 0.125,
+        "oracle_accuracy": 0.3515625,
+        "oracle_agreement": 0.1015625,
+        "oracle_choice_kl": 2.1230012896703556
+      }
+    },
+    {
+      "step": 256,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_256.pt",
+      "representation": {
+        "loss": 0.9176280610263348,
+        "k_nmse": 0.07111119106411934,
+        "v_nmse": 0.4915278758853674,
+        "k_cosine": 0.9224070273339748,
+        "v_cosine": 0.7226039618253708
+      },
+      "functional": {
+        "accuracy": 0.140625,
+        "oracle_accuracy": 0.3515625,
+        "oracle_agreement": 0.109375,
+        "oracle_choice_kl": 2.478189888643101
+      }
+    },
+    {
+      "step": 384,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_384.pt",
+      "representation": {
+        "loss": 0.8702392317354679,
+        "k_nmse": 0.06567653454840183,
+        "v_nmse": 0.46511208079755306,
+        "k_cosine": 0.9272643215954304,
+        "v_cosine": 0.733285054564476
+      },
+      "functional": {
+        "accuracy": 0.1171875,
+        "oracle_accuracy": 0.3515625,
+        "oracle_agreement": 0.1015625,
+        "oracle_choice_kl": 2.2893787405919284
+      }
+    },
+    {
+      "step": 512,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_512.pt",
+      "representation": {
+        "loss": 0.8441667445003986,
+        "k_nmse": 0.06263047666288912,
+        "v_nmse": 0.45038434118032455,
+        "k_cosine": 0.9298909492790699,
+        "v_cosine": 0.7389571145176888
+      },
+      "functional": {
+        "accuracy": 0.1328125,
+        "oracle_accuracy": 0.3515625,
+        "oracle_agreement": 0.109375,
+        "oracle_choice_kl": 2.4558299109339714
+      }
+    },
+    {
+      "step": 640,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_640.pt",
+      "representation": {
+        "loss": 0.827822957187891,
+        "k_nmse": 0.06064567272551358,
+        "v_nmse": 0.4415091313421726,
+        "k_cosine": 0.9317340776324272,
+        "v_cosine": 0.7425977326929569
+      },
+      "functional": {
+        "accuracy": 0.1328125,
+        "oracle_accuracy": 0.3515625,
+        "oracle_agreement": 0.125,
+        "oracle_choice_kl": 2.323809809051454
+      }
+    },
+    {
+      "step": 768,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+      "representation": {
+        "loss": 0.8173851333558559,
+        "k_nmse": 0.05919205583631992,
+        "v_nmse": 0.43580122850835323,
+        "k_cosine": 0.9327612332999706,
+        "v_cosine": 0.7448469251394272
+      },
+      "functional": {
+        "accuracy": 0.15625,
+        "oracle_accuracy": 0.3515625,
+        "oracle_agreement": 0.1328125,
+        "oracle_choice_kl": 2.079402477364056
+      }
+    },
+    {
+      "step": 896,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_896.pt",
+      "representation": {
+        "loss": 0.8091112226247787,
+        "k_nmse": 0.05784615711309016,
+        "v_nmse": 0.4319873321801424,
+        "k_cosine": 0.9341965354979038,
+        "v_cosine": 0.7465257309377193
+      },
+      "functional": {
+        "accuracy": 0.1328125,
+        "oracle_accuracy": 0.3515625,
+        "oracle_agreement": 0.125,
+        "oracle_choice_kl": 2.184465489233844
+      }
+    },
+    {
+      "step": 1024,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_1024.pt",
+      "representation": {
+        "loss": 0.8035224676132202,
+        "k_nmse": 0.05710198823362589,
+        "v_nmse": 0.4291083849966526,
+        "k_cosine": 0.9347636438906193,
+        "v_cosine": 0.7479242645204067
+      },
+      "functional": {
+        "accuracy": 0.1328125,
+        "oracle_accuracy": 0.3515625,
+        "oracle_agreement": 0.1328125,
+        "oracle_choice_kl": 2.006985724205151
+      }
+    }
+  ]
+}
