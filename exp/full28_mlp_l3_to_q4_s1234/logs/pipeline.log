@@ -1,0 +1,235 @@
+[2026-09-13 14:45:23] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:46:23] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:47:23] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:48:23] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:49:23] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:50:23] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:51:23] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:52:24] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:53:24] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:54:24] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:55:24] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:56:24] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:57:24] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:58:25] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 14:59:25] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:00:25] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:01:25] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:02:25] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:03:25] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:04:26] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:05:26] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:06:26] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:07:26] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:08:26] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:09:26] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:10:27] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:11:27] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:12:27] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:13:27] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:14:27] CUDA available but only 10420 MiB free; waiting for 18000 MiB
+[2026-09-13 15:15:27] CUDA has 22902 MiB free; starting smoke
+START stage: prepare
+[2026-09-13 15:15:35] Reusing exact standard-prompt manifests: /home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke
+DONE stage: prepare
+START stage: cache_llama
+[2026-09-13 15:15:39] Reusing exact Llama selected-KV cache: /home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke
+DONE stage: cache_llama
+START stage: cache_qwen
+[2026-09-13 15:15:43] Reusing exact Qwen/RawAnchor pair cache: /home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke
+DONE stage: cache_qwen
+START stage: phase0_audit
+[2026-09-13 15:15:48] PHASE-0 AUDIT PASSED: {'passed': True, 'sample_count': 2, 'selection': 'unchanged 32 normalized raw-text regions; max decision attention within each region', 'query': 'last Sender-native Answer: token', 'candidates': 'body only; position0 and Answer excluded', 'answer_tokenization': {'qwen': {'ids': [16141, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 425, 'C': 356, 'D': 422, 'E': 468, 'F': 434, 'G': 479, 'H': 472, 'I': 358, 'J': 619}}, 'llama': {'ids': [16533, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 426, 'C': 356, 'D': 423, 'E': 469, 'F': 435, 'G': 480, 'H': 473, 'I': 358, 'J': 622}}}, 'mean_anchor_iou': 1.0, 'mean_selected_attention_mass': 0.49251583218574524}
+DONE stage: phase0_audit
+START stage: teachers_baselines
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:28,  4.50it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 592.74it/s]Loading weights:  61%|██████    | 242/398 [00:00<00:00, 613.58it/s]Loading weights:  80%|███████▉  | 318/398 [00:00<00:00, 602.76it/s]Loading weights:  97%|█████████▋| 387/398 [00:00<00:00, 608.21it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 551.66it/s]
+[2026-09-13 15:15:59] Native baselines: 2/2
+DONE stage: teachers_baselines
+START stage: stage_a
+[2026-09-13 15:16:12] Stage A validation step=1 loss=2.988571
+DONE stage: stage_a
+START stage: select_stage_a
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:32,  4.28it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 584.71it/s]Loading weights:  62%|██████▏   | 246/398 [00:00<00:00, 585.28it/s]Loading weights:  81%|████████  | 321/398 [00:00<00:00, 608.31it/s]Loading weights:  99%|█████████▊| 393/398 [00:00<00:00, 569.63it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 531.87it/s]
+[2026-09-13 15:16:29] Stage A functional step=1 acc=0.5000 KL=1.608517
+DONE stage: select_stage_a
+START stage: stage_b
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:27,  4.52it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 598.66it/s]Loading weights:  61%|██████▏   | 244/398 [00:00<00:00, 618.91it/s]Loading weights:  81%|████████  | 321/398 [00:00<00:00, 606.11it/s]Loading weights:  98%|█████████▊| 391/398 [00:00<00:00, 587.01it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 547.76it/s]
+[2026-09-13 15:16:49] Stage B validation step=1 acc=0.5000 KL=1.371626
+DONE stage: stage_b
+START stage: evaluate
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:30,  4.41it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 586.88it/s]Loading weights:  61%|██████    | 242/398 [00:00<00:00, 584.64it/s]Loading weights:  79%|███████▉  | 315/398 [00:00<00:00, 575.27it/s]Loading weights:  96%|█████████▌| 382/398 [00:00<00:00, 584.31it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 537.56it/s]
+[2026-09-13 15:17:07] Translated best_accuracy: 2/2
+[2026-09-13 15:17:13] Translated best_choice_kl: 2/2
+[2026-09-13 15:17:13] STANDARD-PROMPT FULL28-MLP EXPERIMENT COMPLETED
+DONE stage: evaluate
+ALL STANDARD-PROMPT EXPERIMENT STAGES COMPLETED
+[2026-09-13 15:17:15] Smoke passed; starting study
+START stage: prepare
+[2026-09-13 15:17:22] Reusing exact standard-prompt manifests: /home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study
+DONE stage: prepare
+START stage: cache_llama
+[2026-09-13 15:17:27] Reusing exact Llama selected-KV cache: /home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study
+DONE stage: cache_llama
+START stage: cache_qwen
+[2026-09-13 15:17:31] Reusing exact Qwen/RawAnchor pair cache: /home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study
+DONE stage: cache_qwen
+START stage: phase0_audit
+[2026-09-13 15:17:36] PHASE-0 AUDIT PASSED: {'passed': True, 'sample_count': 32, 'selection': 'unchanged 32 normalized raw-text regions; max decision attention within each region', 'query': 'last Sender-native Answer: token', 'candidates': 'body only; position0 and Answer excluded', 'answer_tokenization': {'qwen': {'ids': [16141, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 425, 'C': 356, 'D': 422, 'E': 468, 'F': 434, 'G': 479, 'H': 472, 'I': 358, 'J': 619}}, 'llama': {'ids': [16533, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 426, 'C': 356, 'D': 423, 'E': 469, 'F': 435, 'G': 480, 'H': 473, 'I': 358, 'J': 622}}}, 'mean_anchor_iou': 0.9799804687500001, 'mean_selected_attention_mass': 0.5028142472002919}
+DONE stage: phase0_audit
+START stage: teachers_baselines
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:29,  4.44it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 591.57it/s]Loading weights:  61%|██████    | 243/398 [00:00<00:00, 605.91it/s]Loading weights:  80%|████████  | 319/398 [00:00<00:00, 594.72it/s]Loading weights:  97%|█████████▋| 388/398 [00:00<00:00, 579.36it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 544.95it/s]
+[2026-09-13 15:17:52] Native baselines: 16/128
+[2026-09-13 15:17:56] Native baselines: 32/128
+[2026-09-13 15:18:00] Native baselines: 48/128
+[2026-09-13 15:18:04] Native baselines: 64/128
+[2026-09-13 15:18:08] Native baselines: 80/128
+[2026-09-13 15:18:12] Native baselines: 96/128
+[2026-09-13 15:18:16] Native baselines: 112/128
+[2026-09-13 15:18:20] Native baselines: 128/128
+DONE stage: teachers_baselines
+START stage: stage_a
+[2026-09-13 15:18:40] Stage A 16/1024 loss=1.587442
+[2026-09-13 15:18:50] Stage A 32/1024 loss=1.310974
+[2026-09-13 15:19:00] Stage A 48/1024 loss=1.233040
+[2026-09-13 15:19:10] Stage A 64/1024 loss=1.095045
+[2026-09-13 15:19:20] Stage A 80/1024 loss=0.941977
+[2026-09-13 15:19:30] Stage A 96/1024 loss=0.973539
+[2026-09-13 15:19:40] Stage A 112/1024 loss=1.016499
+[2026-09-13 15:19:51] Stage A 128/1024 loss=0.881151
+[2026-09-13 15:19:55] Stage A validation step=128 loss=0.892502
+[2026-09-13 15:20:05] Stage A 144/1024 loss=0.858914
+[2026-09-13 15:20:16] Stage A 160/1024 loss=0.873190
+[2026-09-13 15:20:26] Stage A 176/1024 loss=0.879605
+[2026-09-13 15:20:36] Stage A 192/1024 loss=0.862668
+[2026-09-13 15:20:46] Stage A 208/1024 loss=0.798218
+[2026-09-13 15:20:57] Stage A 224/1024 loss=0.829350
+[2026-09-13 15:21:07] Stage A 240/1024 loss=0.730971
+[2026-09-13 15:21:17] Stage A 256/1024 loss=0.795954
+[2026-09-13 15:21:22] Stage A validation step=256 loss=0.777250
+[2026-09-13 15:21:32] Stage A 272/1024 loss=0.730644
+[2026-09-13 15:21:42] Stage A 288/1024 loss=0.718654
+[2026-09-13 15:21:52] Stage A 304/1024 loss=0.783807
+[2026-09-13 15:22:02] Stage A 320/1024 loss=0.669365
+[2026-09-13 15:22:12] Stage A 336/1024 loss=0.711251
+[2026-09-13 15:22:21] Stage A 352/1024 loss=0.711895
+[2026-09-13 15:22:31] Stage A 368/1024 loss=0.697662
+[2026-09-13 15:22:41] Stage A 384/1024 loss=0.667328
+[2026-09-13 15:22:46] Stage A validation step=384 loss=0.724020
+[2026-09-13 15:22:56] Stage A 400/1024 loss=0.721883
+[2026-09-13 15:23:06] Stage A 416/1024 loss=0.648095
+[2026-09-13 15:23:16] Stage A 432/1024 loss=0.638220
+[2026-09-13 15:23:26] Stage A 448/1024 loss=0.702554
+[2026-09-13 15:23:36] Stage A 464/1024 loss=0.634113
+[2026-09-13 15:23:47] Stage A 480/1024 loss=0.645010
+[2026-09-13 15:23:57] Stage A 496/1024 loss=0.744778
+[2026-09-13 15:24:08] Stage A 512/1024 loss=0.714966
+[2026-09-13 15:24:13] Stage A validation step=512 loss=0.692369
+[2026-09-13 15:24:26] Stage A 528/1024 loss=0.580278
+[2026-09-13 15:24:38] Stage A 544/1024 loss=0.649357
+[2026-09-13 15:24:52] Stage A 560/1024 loss=0.604276
+[2026-09-13 15:25:04] Stage A 576/1024 loss=0.627925
+[2026-09-13 15:25:17] Stage A 592/1024 loss=0.616484
+[2026-09-13 15:25:30] Stage A 608/1024 loss=0.578575
+[2026-09-13 15:25:43] Stage A 624/1024 loss=0.638230
+[2026-09-13 15:25:56] Stage A 640/1024 loss=0.598452
+[2026-09-13 15:26:01] Stage A validation step=640 loss=0.673721
+[2026-09-13 15:26:14] Stage A 656/1024 loss=0.565359
+[2026-09-13 15:26:27] Stage A 672/1024 loss=0.544969
+[2026-09-13 15:26:40] Stage A 688/1024 loss=0.566483
+[2026-09-13 15:26:53] Stage A 704/1024 loss=0.571130
+[2026-09-13 15:27:06] Stage A 720/1024 loss=0.581121
+[2026-09-13 15:27:19] Stage A 736/1024 loss=0.570355
+[2026-09-13 15:27:32] Stage A 752/1024 loss=0.577813
+[2026-09-13 15:27:44] Stage A 768/1024 loss=0.622755
+[2026-09-13 15:27:50] Stage A validation step=768 loss=0.661197
+[2026-09-13 15:28:02] Stage A 784/1024 loss=0.497063
+[2026-09-13 15:28:15] Stage A 800/1024 loss=0.547668
+[2026-09-13 15:28:28] Stage A 816/1024 loss=0.518710
+[2026-09-13 15:28:41] Stage A 832/1024 loss=0.554055
+[2026-09-13 15:28:54] Stage A 848/1024 loss=0.539720
+[2026-09-13 15:29:07] Stage A 864/1024 loss=0.567628
+[2026-09-13 15:29:20] Stage A 880/1024 loss=0.519608
+[2026-09-13 15:29:33] Stage A 896/1024 loss=0.574105
+[2026-09-13 15:29:38] Stage A validation step=896 loss=0.652212
+[2026-09-13 15:29:51] Stage A 912/1024 loss=0.485974
+[2026-09-13 15:30:04] Stage A 928/1024 loss=0.533693
+[2026-09-13 15:30:16] Stage A 944/1024 loss=0.559285
+[2026-09-13 15:30:29] Stage A 960/1024 loss=0.514474
+[2026-09-13 15:30:42] Stage A 976/1024 loss=0.564217
+[2026-09-13 15:30:56] Stage A 992/1024 loss=0.521763
+[2026-09-13 15:31:09] Stage A 1008/1024 loss=0.492165
+[2026-09-13 15:31:21] Stage A 1024/1024 loss=0.555196
+[2026-09-13 15:31:26] Stage A validation step=1024 loss=0.647361
+DONE stage: stage_a
+START stage: select_stage_a
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:32,  4.31it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 575.87it/s]Loading weights:  61%|██████    | 241/398 [00:00<00:00, 597.78it/s]Loading weights:  79%|███████▉  | 316/398 [00:00<00:00, 586.04it/s]Loading weights:  96%|█████████▋| 384/398 [00:00<00:00, 579.13it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 529.47it/s]
+[2026-09-13 15:32:10] Stage A functional step=128 acc=0.1328 KL=2.098119
+[2026-09-13 15:32:43] Stage A functional step=256 acc=0.1250 KL=2.176446
+[2026-09-13 15:33:06] Stage A functional step=384 acc=0.1250 KL=2.267986
+[2026-09-13 15:33:28] Stage A functional step=512 acc=0.1484 KL=2.122119
+[2026-09-13 15:33:51] Stage A functional step=640 acc=0.1484 KL=2.077905
+[2026-09-13 15:34:14] Stage A functional step=768 acc=0.1406 KL=1.963782
+[2026-09-13 15:34:33] Stage A functional step=896 acc=0.1484 KL=1.770192
+[2026-09-13 15:34:56] Stage A functional step=1024 acc=0.1328 KL=1.965003
+DONE stage: select_stage_a
+START stage: stage_b
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:25,  4.66it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 608.97it/s]Loading weights:  61%|██████    | 243/398 [00:00<00:00, 621.73it/s]Loading weights:  80%|████████  | 319/398 [00:00<00:00, 612.77it/s]Loading weights:  98%|█████████▊| 389/398 [00:00<00:00, 595.13it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 560.08it/s]
+[2026-09-13 15:36:10] Stage B 16/512 KL=0.835039
+[2026-09-13 15:37:04] Stage B 32/512 KL=0.993596
+[2026-09-13 15:37:58] Stage B 48/512 KL=0.265973
+[2026-09-13 15:38:53] Stage B 64/512 KL=0.592309
+[2026-09-13 15:39:47] Stage B 80/512 KL=0.574796
+[2026-09-13 15:40:41] Stage B 96/512 KL=0.516867
+[2026-09-13 15:41:35] Stage B 112/512 KL=0.564771
+[2026-09-13 15:42:29] Stage B 128/512 KL=0.729638
+[2026-09-13 15:42:56] Stage B validation step=128 acc=0.2266 KL=0.694442
+[2026-09-13 15:43:55] Stage B 144/512 KL=0.416313
+[2026-09-13 15:44:53] Stage B 160/512 KL=0.700081
+[2026-09-13 15:45:52] Stage B 176/512 KL=0.626642
+[2026-09-13 15:46:51] Stage B 192/512 KL=1.050667
+[2026-09-13 15:47:49] Stage B 208/512 KL=0.739997
+[2026-09-13 15:48:48] Stage B 224/512 KL=0.534452
+[2026-09-13 15:49:49] Stage B 240/512 KL=0.639956
+[2026-09-13 15:50:53] Stage B 256/512 KL=0.642723
+[2026-09-13 15:51:19] Stage B validation step=256 acc=0.1953 KL=0.704206
+[2026-09-13 15:52:13] Stage B 272/512 KL=0.571979
+[2026-09-13 15:53:07] Stage B 288/512 KL=0.725558
+[2026-09-13 15:53:58] Stage B 304/512 KL=0.623792
+[2026-09-13 15:54:47] Stage B 320/512 KL=0.420912
+[2026-09-13 15:55:37] Stage B 336/512 KL=0.389372
+[2026-09-13 15:56:26] Stage B 352/512 KL=0.282739
+[2026-09-13 15:57:15] Stage B 368/512 KL=0.355253
+[2026-09-13 15:58:03] Stage B 384/512 KL=0.398298
+[2026-09-13 15:58:25] Stage B validation step=384 acc=0.2031 KL=0.749016
+[2026-09-13 15:59:14] Stage B 400/512 KL=0.228955
+[2026-09-13 16:00:03] Stage B 416/512 KL=0.209601
+[2026-09-13 16:00:53] Stage B 432/512 KL=0.089338
+[2026-09-13 16:01:48] Stage B 448/512 KL=0.208169
+[2026-09-13 16:02:43] Stage B 464/512 KL=0.201658
+[2026-09-13 16:03:37] Stage B 480/512 KL=0.215381
+[2026-09-13 16:04:32] Stage B 496/512 KL=0.217735
+[2026-09-13 16:05:26] Stage B 512/512 KL=0.087881
+[2026-09-13 16:05:53] Stage B validation step=512 acc=0.2109 KL=0.729297
+DONE stage: stage_b
+START stage: evaluate
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:30,  4.39it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 592.39it/s]Loading weights:  62%|██████▏   | 245/398 [00:00<00:00, 592.43it/s]Loading weights:  80%|████████  | 320/398 [00:00<00:00, 602.59it/s]Loading weights:  98%|█████████▊| 390/398 [00:00<00:00, 591.79it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 548.21it/s]
+[2026-09-13 16:06:17] Translated best_accuracy: 16/128
+[2026-09-13 16:06:23] Translated best_accuracy: 32/128
+[2026-09-13 16:06:28] Translated best_accuracy: 48/128
+[2026-09-13 16:06:33] Translated best_accuracy: 64/128
+[2026-09-13 16:06:38] Translated best_accuracy: 80/128
+[2026-09-13 16:06:43] Translated best_accuracy: 96/128
+[2026-09-13 16:06:48] Translated best_accuracy: 112/128
+[2026-09-13 16:06:53] Translated best_accuracy: 128/128
+[2026-09-13 16:07:09] Translated best_choice_kl: 16/128
+[2026-09-13 16:07:15] Translated best_choice_kl: 32/128
+[2026-09-13 16:07:21] Translated best_choice_kl: 48/128
+[2026-09-13 16:07:27] Translated best_choice_kl: 64/128
+[2026-09-13 16:07:33] Translated best_choice_kl: 80/128
+[2026-09-13 16:07:39] Translated best_choice_kl: 96/128
+[2026-09-13 16:07:45] Translated best_choice_kl: 112/128
+[2026-09-13 16:07:51] Translated best_choice_kl: 128/128
+[2026-09-13 16:07:55] STANDARD-PROMPT FULL28-MLP EXPERIMENT COMPLETED
+DONE stage: evaluate
+ALL STANDARD-PROMPT EXPERIMENT STAGES COMPLETED
+[2026-09-13 16:07:57] ALL EXPERIMENTS COMPLETED

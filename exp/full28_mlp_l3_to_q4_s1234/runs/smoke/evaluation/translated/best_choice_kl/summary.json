@@ -1,0 +1,22 @@
+{
+  "checkpoint": "best_choice_kl",
+  "functional": {
+    "translated": {
+      "accuracy": 0.5,
+      "oracle_agreement": 0.5,
+      "oracle_choice_kl": 3.237157493829727
+    },
+    "shuffle": {
+      "accuracy": 0.5,
+      "oracle_agreement": 0.5,
+      "oracle_choice_kl": 3.2582989633083344
+    }
+  },
+  "representation": {
+    "loss": 2.975987672805786,
+    "k_nmse": 0.8237755298614502,
+    "v_nmse": 0.9806700348854065,
+    "k_cosine": 0.5380517244338989,
+    "v_cosine": 0.29040607810020447
+  }
+}
