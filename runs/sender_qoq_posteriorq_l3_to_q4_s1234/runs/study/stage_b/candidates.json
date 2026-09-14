@@ -1,0 +1,70 @@
+[
+  {
+    "step": 128,
+    "path": "/home/yezhe/异构模型/mmlupro_sender_qoq_posterior_question_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_128.pt",
+    "functional": {
+      "accuracy": 0.1875,
+      "oracle_accuracy": 0.3359375,
+      "oracle_agreement": 0.3515625,
+      "oracle_choice_kl": 0.8568459562957287
+    },
+    "representation": {
+      "loss": 0.928235799074173,
+      "k_nmse": 0.10408155852928758,
+      "v_nmse": 0.44506971538066864,
+      "k_cosine": 0.8947247229516506,
+      "v_cosine": 0.726190734654665
+    }
+  },
+  {
+    "step": 256,
+    "path": "/home/yezhe/异构模型/mmlupro_sender_qoq_posterior_question_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_256.pt",
+    "functional": {
+      "accuracy": 0.1796875,
+      "oracle_accuracy": 0.3359375,
+      "oracle_agreement": 0.3359375,
+      "oracle_choice_kl": 0.8994751347636338
+    },
+    "representation": {
+      "loss": 0.9527910985052586,
+      "k_nmse": 0.11608652304857969,
+      "v_nmse": 0.4466041885316372,
+      "k_cosine": 0.8858467452228069,
+      "v_cosine": 0.7240528762340546
+    }
+  },
+  {
+    "step": 384,
+    "path": "/home/yezhe/异构模型/mmlupro_sender_qoq_posterior_question_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_384.pt",
+    "functional": {
+      "accuracy": 0.15625,
+      "oracle_accuracy": 0.3359375,
+      "oracle_agreement": 0.3515625,
+      "oracle_choice_kl": 0.8561897858453449
+    },
+    "representation": {
+      "loss": 1.012733582407236,
+      "k_nmse": 0.15139092970639467,
+      "v_nmse": 0.4482896588742733,
+      "k_cosine": 0.8683586679399014,
+      "v_cosine": 0.7185883447527885
+    }
+  },
+  {
+    "step": 512,
+    "path": "/home/yezhe/异构模型/mmlupro_sender_qoq_posterior_question_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_512.pt",
+    "functional": {
+      "accuracy": 0.1875,
+      "oracle_accuracy": 0.3359375,
+      "oracle_agreement": 0.3828125,
+      "oracle_choice_kl": 0.9700572039801045
+    },
+    "representation": {
+      "loss": 1.0742507576942444,
+      "k_nmse": 0.18597050476819277,
+      "v_nmse": 0.4500811770558357,
+      "k_cosine": 0.8484801575541496,
+      "v_cosine": 0.713320791721344
+    }
+  }
+]
