@@ -1,0 +1,15 @@
+{
+  "seed": 1234,
+  "dataset": "/home/yezhe/all_models/datasets/QCRI/AraDiCE-OpenBookQA/OBQA_eng/test.json",
+  "test_samples": 128,
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "llama": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct"
+  },
+  "old_experiment": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234",
+  "new_experiment": "/home/yezhe/异构模型/mmlupro_sender_qoq_posterior_question_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234",
+  "regions": 32,
+  "attention_implementation": "eager",
+  "architecture": "full28_diagonal",
+  "temperature": 1.0
+}

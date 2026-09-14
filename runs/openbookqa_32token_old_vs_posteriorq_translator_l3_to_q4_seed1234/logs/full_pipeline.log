@@ -1,0 +1,22 @@
+[2026-09-14 15:23:03] OpenBookQA selected samples=128 first=926 last=1672
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:  37%|███▋      | 93/254 [00:00<00:00, 887.81it/s]Loading weights:  72%|███████▏  | 182/254 [00:00<00:00, 799.36it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 814.51it/s]
+[2026-09-14 15:23:12] Llama routing cache: 16/128
+[2026-09-14 15:23:15] Llama routing cache: 32/128
+[2026-09-14 15:23:18] Llama routing cache: 48/128
+[2026-09-14 15:23:20] Llama routing cache: 64/128
+[2026-09-14 15:23:23] Llama routing cache: 80/128
+[2026-09-14 15:23:25] Llama routing cache: 96/128
+[2026-09-14 15:23:28] Llama routing cache: 112/128
+[2026-09-14 15:23:31] Llama routing cache: 128/128
+[2026-09-14 15:23:31] Old checkpoint: /home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_512.pt (step 512)
+[2026-09-14 15:23:31] New checkpoint: /home/yezhe/异构模型/mmlupro_sender_qoq_posterior_question_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_128.pt (step 128)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1123.56it/s]Loading weights:  58%|█████▊    | 231/398 [00:00<00:00, 1152.78it/s]Loading weights:  88%|████████▊ | 352/398 [00:00<00:00, 1175.83it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1150.89it/s]
+[2026-09-14 15:23:45] Qwen OpenBookQA evaluation: 16/128
+[2026-09-14 15:23:53] Qwen OpenBookQA evaluation: 32/128
+[2026-09-14 15:24:00] Qwen OpenBookQA evaluation: 48/128
+[2026-09-14 15:24:07] Qwen OpenBookQA evaluation: 64/128
+[2026-09-14 15:24:15] Qwen OpenBookQA evaluation: 80/128
+[2026-09-14 15:24:22] Qwen OpenBookQA evaluation: 96/128
+[2026-09-14 15:24:29] Qwen OpenBookQA evaluation: 112/128
+[2026-09-14 15:24:37] Qwen OpenBookQA evaluation: 128/128
+[2026-09-14 15:24:37] COMPLETED old=0.5156 new=0.4609
