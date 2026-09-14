@@ -1,0 +1,148 @@
+START stage: prepare
+[2026-09-14 22:43:48] Prepared standard prompt with unchanged IDs: {'train': {'count': 305, 'ids_sha256': '6c3e1fa35b8238cb4e199caf1812fa0d07a31d37924c6464f96579128ee43a91', 'first_id': '1179', 'last_id': '1702'}, 'validation': {'count': 64, 'ids_sha256': '5a530ea5d3e955267f9c604588505a56c092e015cb6fc4e569c4dc0d05f18b0c', 'first_id': '9-1102', 'last_id': '850'}, 'test': {'count': 128, 'ids_sha256': '7be29b485f5dc064999ca4f8be58da59b3ee51cda305567abecbde84ea3ef1b1', 'first_id': '926', 'last_id': '1672'}}
+DONE stage: prepare
+START stage: cache_llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<00:58,  4.34it/s]Loading weights:  54%|█████▍    | 138/254 [00:00<00:00, 501.82it/s]Loading weights:  83%|████████▎ | 210/254 [00:00<00:00, 511.24it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 457.31it/s]
+[2026-09-14 22:44:01] Llama fresh decision cache train: 32/305
+[2026-09-14 22:44:03] Llama fresh decision cache train: 64/305
+[2026-09-14 22:44:05] Llama fresh decision cache train: 96/305
+[2026-09-14 22:44:07] Llama fresh decision cache train: 128/305
+[2026-09-14 22:44:10] Llama fresh decision cache train: 160/305
+[2026-09-14 22:44:12] Llama fresh decision cache train: 192/305
+[2026-09-14 22:44:14] Llama fresh decision cache train: 224/305
+[2026-09-14 22:44:17] Llama fresh decision cache train: 256/305
+[2026-09-14 22:44:19] Llama fresh decision cache train: 288/305
+[2026-09-14 22:44:20] Llama fresh decision cache train: 305/305
+[2026-09-14 22:44:22] Llama fresh decision cache validation: 32/64
+[2026-09-14 22:44:25] Llama fresh decision cache validation: 64/64
+[2026-09-14 22:44:27] Llama fresh decision cache test: 32/128
+[2026-09-14 22:44:29] Llama fresh decision cache test: 64/128
+[2026-09-14 22:44:31] Llama fresh decision cache test: 96/128
+[2026-09-14 22:44:34] Llama fresh decision cache test: 128/128
+DONE stage: cache_llama
+START stage: cache_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:22,  4.83it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 635.57it/s]Loading weights:  62%|██████▏   | 248/398 [00:00<00:00, 627.10it/s]Loading weights:  82%|████████▏ | 326/398 [00:00<00:00, 620.13it/s]Loading weights: 100%|█████████▉| 397/398 [00:00<00:00, 536.88it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 526.82it/s]
+[2026-09-14 22:44:50] Qwen fresh decision/pair cache train: 32/305
+[2026-09-14 22:44:53] Qwen fresh decision/pair cache train: 64/305
+[2026-09-14 22:44:57] Qwen fresh decision/pair cache train: 96/305
+[2026-09-14 22:45:01] Qwen fresh decision/pair cache train: 128/305
+[2026-09-14 22:45:04] Qwen fresh decision/pair cache train: 160/305
+[2026-09-14 22:45:08] Qwen fresh decision/pair cache train: 192/305
+[2026-09-14 22:45:12] Qwen fresh decision/pair cache train: 224/305
+[2026-09-14 22:45:15] Qwen fresh decision/pair cache train: 256/305
+[2026-09-14 22:45:19] Qwen fresh decision/pair cache train: 288/305
+[2026-09-14 22:45:21] Qwen fresh decision/pair cache train: 305/305
+[2026-09-14 22:45:25] Qwen fresh decision/pair cache validation: 32/64
+[2026-09-14 22:45:28] Qwen fresh decision/pair cache validation: 64/64
+[2026-09-14 22:45:32] Qwen fresh decision/pair cache test: 32/128
+[2026-09-14 22:45:36] Qwen fresh decision/pair cache test: 64/128
+[2026-09-14 22:45:40] Qwen fresh decision/pair cache test: 96/128
+[2026-09-14 22:45:44] Qwen fresh decision/pair cache test: 128/128
+DONE stage: cache_qwen
+START stage: phase0_audit
+[2026-09-14 22:45:49] PHASE-0 AUDIT PASSED: {'passed': True, 'sample_count': 32, 'selection': '32 normalized option-text regions; max decision attention within each region', 'query': 'last Sender-native Answer: token', 'candidates': 'Options only; Question, position0 and Answer excluded', 'answer_tokenization': {'qwen': {'ids': [16141, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 425, 'C': 356, 'D': 422}}, 'llama': {'ids': [16533, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 426, 'C': 356, 'D': 423}}}, 'mean_anchor_iou': 0.99853515625, 'mean_selected_attention_mass': 0.8185029031335467}
+DONE stage: phase0_audit
+START stage: teachers_baselines
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:30,  4.38it/s]Loading weights:  40%|███▉      | 158/398 [00:00<00:00, 601.92it/s]Loading weights:  63%|██████▎   | 249/398 [00:00<00:00, 570.60it/s]Loading weights:  81%|████████  | 323/398 [00:00<00:00, 553.65it/s]Loading weights:  98%|█████████▊| 389/398 [00:00<00:00, 554.90it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 521.57it/s]
+[2026-09-14 22:46:02] Standard-prompt Oracle teacher train: 32/305
+[2026-09-14 22:46:05] Standard-prompt Oracle teacher train: 64/305
+[2026-09-14 22:46:07] Standard-prompt Oracle teacher train: 96/305
+[2026-09-14 22:46:10] Standard-prompt Oracle teacher train: 128/305
+[2026-09-14 22:46:12] Standard-prompt Oracle teacher train: 160/305
+[2026-09-14 22:46:14] Standard-prompt Oracle teacher train: 192/305
+[2026-09-14 22:46:16] Standard-prompt Oracle teacher train: 224/305
+[2026-09-14 22:46:19] Standard-prompt Oracle teacher train: 256/305
+[2026-09-14 22:46:21] Standard-prompt Oracle teacher train: 288/305
+[2026-09-14 22:46:22] Standard-prompt Oracle teacher train: 305/305
+[2026-09-14 22:46:24] Standard-prompt Oracle teacher validation: 32/64
+[2026-09-14 22:46:26] Standard-prompt Oracle teacher validation: 64/64
+[2026-09-14 22:46:29] Standard-prompt Oracle teacher test: 32/128
+[2026-09-14 22:46:31] Standard-prompt Oracle teacher test: 64/128
+[2026-09-14 22:46:33] Standard-prompt Oracle teacher test: 96/128
+[2026-09-14 22:46:35] Standard-prompt Oracle teacher test: 128/128
+[2026-09-14 22:46:39] Native baselines: 16/128
+[2026-09-14 22:46:41] Native baselines: 32/128
+[2026-09-14 22:46:44] Native baselines: 48/128
+[2026-09-14 22:46:47] Native baselines: 64/128
+[2026-09-14 22:46:50] Native baselines: 80/128
+[2026-09-14 22:46:53] Native baselines: 96/128
+[2026-09-14 22:46:56] Native baselines: 112/128
+[2026-09-14 22:46:59] Native baselines: 128/128
+DONE stage: teachers_baselines
+START stage: stage_a
+[2026-09-14 22:47:19] Stage A 16/312 loss=1.584629
+[2026-09-14 22:47:29] Stage A 32/312 loss=1.331576
+[2026-09-14 22:47:36] Stage A validation step=39 loss=1.341110
+[2026-09-14 22:47:39] Stage A 48/312 loss=1.265358
+[2026-09-14 22:47:46] Stage A 64/312 loss=1.145308
+[2026-09-14 22:47:54] Stage A validation step=78 loss=1.135194
+[2026-09-14 22:47:55] Stage A 80/312 loss=1.036434
+[2026-09-14 22:48:00] Stage A 96/312 loss=1.052635
+[2026-09-14 22:48:06] Stage A 112/312 loss=0.897126
+[2026-09-14 22:48:11] Stage A validation step=117 loss=1.029136
+[2026-09-14 22:48:16] Stage A 128/312 loss=0.899670
+[2026-09-14 22:48:22] Stage A 144/312 loss=0.910195
+[2026-09-14 22:48:29] Stage A validation step=156 loss=0.965381
+[2026-09-14 22:48:31] Stage A 160/312 loss=0.776595
+[2026-09-14 22:48:37] Stage A 176/312 loss=0.844005
+[2026-09-14 22:48:42] Stage A 192/312 loss=0.819997
+[2026-09-14 22:48:47] Stage A validation step=195 loss=0.923602
+[2026-09-14 22:48:52] Stage A 208/312 loss=0.709055
+[2026-09-14 22:48:58] Stage A 224/312 loss=0.802105
+[2026-09-14 22:49:05] Stage A validation step=234 loss=0.892407
+[2026-09-14 22:49:07] Stage A 240/312 loss=0.717651
+[2026-09-14 22:49:13] Stage A 256/312 loss=0.742462
+[2026-09-14 22:49:19] Stage A 272/312 loss=0.738461
+[2026-09-14 22:49:23] Stage A validation step=273 loss=0.871524
+[2026-09-14 22:49:28] Stage A 288/312 loss=0.556696
+[2026-09-14 22:49:34] Stage A 304/312 loss=0.754027
+[2026-09-14 22:49:40] Stage A validation step=312 loss=0.859394
+DONE stage: stage_a
+START stage: select_stage_a
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:30,  4.37it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 541.34it/s]Loading weights:  57%|█████▋    | 225/398 [00:00<00:00, 542.30it/s]Loading weights:  74%|███████▎  | 293/398 [00:00<00:00, 553.84it/s]Loading weights:  90%|████████▉ | 357/398 [00:00<00:00, 546.08it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 508.39it/s]
+[2026-09-14 22:50:15] Stage A functional step=39 acc=0.2188 KL=1.460725
+[2026-09-14 22:50:37] Stage A functional step=78 acc=0.3906 KL=1.278828
+[2026-09-14 22:50:57] Stage A functional step=117 acc=0.3594 KL=1.220812
+[2026-09-14 22:51:15] Stage A functional step=156 acc=0.3594 KL=1.316572
+[2026-09-14 22:51:32] Stage A functional step=195 acc=0.3906 KL=1.213909
+[2026-09-14 22:51:45] Stage A functional step=234 acc=0.3906 KL=1.213770
+[2026-09-14 22:51:56] Stage A functional step=273 acc=0.3906 KL=1.231808
+[2026-09-14 22:52:06] Stage A functional step=312 acc=0.4219 KL=1.246231
+DONE stage: select_stage_a
+START stage: stage_b
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:29,  4.43it/s]Loading weights:  39%|███▊      | 154/398 [00:00<00:00, 594.22it/s]Loading weights:  61%|██████▏   | 244/398 [00:00<00:00, 599.66it/s]Loading weights:  81%|████████  | 321/398 [00:00<00:00, 580.24it/s]Loading weights:  98%|█████████▊| 389/398 [00:00<00:00, 548.98it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 526.35it/s]
+[2026-09-14 22:53:06] Stage B 16/156 KL=1.506815
+[2026-09-14 22:53:51] Stage B 32/156 KL=1.185391
+[2026-09-14 22:54:19] Stage B validation step=39 acc=0.4531 KL=0.921197
+[2026-09-14 22:54:45] Stage B 48/156 KL=0.413781
+[2026-09-14 22:55:30] Stage B 64/156 KL=0.867217
+[2026-09-14 22:56:18] Stage B validation step=78 acc=0.5156 KL=0.865103
+[2026-09-14 22:56:24] Stage B 80/156 KL=0.254648
+[2026-09-14 22:57:09] Stage B 96/156 KL=0.239590
+[2026-09-14 22:57:54] Stage B 112/156 KL=0.388767
+[2026-09-14 22:58:17] Stage B validation step=117 acc=0.4375 KL=1.223605
+[2026-09-14 22:58:48] Stage B 128/156 KL=0.417299
+[2026-09-14 22:59:33] Stage B 144/156 KL=0.064081
+[2026-09-14 23:00:15] Stage B validation step=156 acc=0.4688 KL=1.154665
+DONE stage: stage_b
+START stage: evaluate
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:29,  4.41it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 597.51it/s]Loading weights:  62%|██████▏   | 246/398 [00:00<00:00, 567.47it/s]Loading weights:  80%|████████  | 319/398 [00:00<00:00, 565.15it/s]Loading weights:  97%|█████████▋| 386/398 [00:00<00:00, 555.78it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 517.14it/s]
+[2026-09-14 23:00:36] Translated best_accuracy: 16/128
+[2026-09-14 23:00:43] Translated best_accuracy: 32/128
+[2026-09-14 23:00:58] Translated best_accuracy: 48/128
+[2026-09-14 23:01:05] Translated best_accuracy: 64/128
+[2026-09-14 23:01:12] Translated best_accuracy: 80/128
+[2026-09-14 23:01:19] Translated best_accuracy: 96/128
+[2026-09-14 23:01:25] Translated best_accuracy: 112/128
+[2026-09-14 23:01:32] Translated best_accuracy: 128/128
+[2026-09-14 23:01:42] Translated best_choice_kl: 16/128
+[2026-09-14 23:01:46] Translated best_choice_kl: 32/128
+[2026-09-14 23:01:49] Translated best_choice_kl: 48/128
+[2026-09-14 23:01:53] Translated best_choice_kl: 64/128
+[2026-09-14 23:01:57] Translated best_choice_kl: 80/128
+[2026-09-14 23:02:00] Translated best_choice_kl: 96/128
+[2026-09-14 23:02:04] Translated best_choice_kl: 112/128
+[2026-09-14 23:02:07] Translated best_choice_kl: 128/128
+[2026-09-14 23:02:10] OPENBOOKQA STANDARD-PROMPT FULL28-MLP EXPERIMENT COMPLETED
+DONE stage: evaluate
+ALL NATIVE-QUESTION OPTIONS-KV EXPERIMENT STAGES COMPLETED

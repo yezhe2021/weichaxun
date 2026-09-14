@@ -1,0 +1,98 @@
+{
+  "stage": "A",
+  "architecture": "full28_mlp",
+  "objective": "KV reconstruction only",
+  "steps": 312,
+  "clip_rate": 0.0,
+  "seconds": 152.35971703380346,
+  "candidates": [
+    {
+      "step": 39,
+      "path": "/home/yezhe/异构模型/openbookqa_standardprompt_nativequestion_options32_full28_mlp_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_39.pt",
+      "representation": {
+        "loss": 1.3411096781492233,
+        "k_nmse": 0.10216597747057676,
+        "v_nmse": 0.7403296157717705,
+        "k_cosine": 0.8855396285653114,
+        "v_cosine": 0.6158463209867477
+      }
+    },
+    {
+      "step": 78,
+      "path": "/home/yezhe/异构模型/openbookqa_standardprompt_nativequestion_options32_full28_mlp_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_78.pt",
+      "representation": {
+        "loss": 1.1351941376924515,
+        "k_nmse": 0.08123700320720673,
+        "v_nmse": 0.6335046961903572,
+        "k_cosine": 0.9085591062903404,
+        "v_cosine": 0.6709884256124496
+      }
+    },
+    {
+      "step": 117,
+      "path": "/home/yezhe/异构模型/openbookqa_standardprompt_nativequestion_options32_full28_mlp_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_117.pt",
+      "representation": {
+        "loss": 1.0291361287236214,
+        "k_nmse": 0.07356037106364965,
+        "v_nmse": 0.5699897930026054,
+        "k_cosine": 0.9183029979467392,
+        "v_cosine": 0.6961110755801201
+      }
+    },
+    {
+      "step": 156,
+      "path": "/home/yezhe/异构模型/openbookqa_standardprompt_nativequestion_options32_full28_mlp_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_156.pt",
+      "representation": {
+        "loss": 0.9653806537389755,
+        "k_nmse": 0.06777001544833183,
+        "v_nmse": 0.5315612554550171,
+        "k_cosine": 0.9242801368236542,
+        "v_cosine": 0.7096704766154289
+      }
+    },
+    {
+      "step": 195,
+      "path": "/home/yezhe/异构模型/openbookqa_standardprompt_nativequestion_options32_full28_mlp_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_195.pt",
+      "representation": {
+        "loss": 0.9236023351550102,
+        "k_nmse": 0.06418392900377512,
+        "v_nmse": 0.5062181688845158,
+        "k_cosine": 0.9284604862332344,
+        "v_cosine": 0.7183393090963364
+      }
+    },
+    {
+      "step": 234,
+      "path": "/home/yezhe/异构模型/openbookqa_standardprompt_nativequestion_options32_full28_mlp_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_234.pt",
+      "representation": {
+        "loss": 0.8924067914485931,
+        "k_nmse": 0.06135425204411149,
+        "v_nmse": 0.4871317371726036,
+        "k_cosine": 0.9313903972506523,
+        "v_cosine": 0.7246887907385826
+      }
+    },
+    {
+      "step": 273,
+      "path": "/home/yezhe/异构模型/openbookqa_standardprompt_nativequestion_options32_full28_mlp_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_273.pt",
+      "representation": {
+        "loss": 0.8715237304568291,
+        "k_nmse": 0.05969127267599106,
+        "v_nmse": 0.4737866297364235,
+        "k_cosine": 0.9334907159209251,
+        "v_cosine": 0.7284634560346603
+      }
+    },
+    {
+      "step": 312,
+      "path": "/home/yezhe/异构模型/openbookqa_standardprompt_nativequestion_options32_full28_mlp_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_312.pt",
+      "representation": {
+        "loss": 0.8593939319252968,
+        "k_nmse": 0.05988588323816657,
+        "v_nmse": 0.46392251923680305,
+        "k_cosine": 0.9334437474608421,
+        "v_cosine": 0.730970710515976
+      }
+    }
+  ]
+}
