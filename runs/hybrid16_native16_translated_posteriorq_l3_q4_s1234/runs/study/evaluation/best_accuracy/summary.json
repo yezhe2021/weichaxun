@@ -1,0 +1,17 @@
+{
+  "checkpoint_step": 128,
+  "checkpoint_path": "/home/yezhe/异构模型/mmlupro_sender_qoq_posterior_question_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_128.pt",
+  "samples": 128,
+  "conditions": {
+    "native_even_translated_odd": {
+      "accuracy": 0.1875,
+      "oracle_agreement": 0.3671875,
+      "oracle_choice_kl": 0.9173679886152968
+    },
+    "translated_even_native_odd": {
+      "accuracy": 0.1953125,
+      "oracle_agreement": 0.375,
+      "oracle_choice_kl": 0.9322083943116013
+    }
+  }
+}
