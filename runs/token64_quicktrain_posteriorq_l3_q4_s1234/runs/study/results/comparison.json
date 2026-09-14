@@ -1,0 +1,102 @@
+{
+  "experiment": "mmlupro_posteriorq_full28_diagonal_token64_quicktrain_l3_to_q4_seed1234",
+  "status": "completed",
+  "pilot": true,
+  "training_budget": {
+    "train_samples": 512,
+    "validation_samples": 128,
+    "test_samples": 128,
+    "stage_a_steps": 256,
+    "stage_b_steps": 128
+  },
+  "selection": "64 option-only normalized raw-text regions",
+  "sender_prompt": "Question -> Options -> repeated Question",
+  "receiver": "native Question + translated64 Options KV + native Answer:",
+  "checkpoint_selection": "validation only; primary=best validation accuracy",
+  "main_table": {
+    "Qwen Full Native": {
+      "accuracy": 0.4140625,
+      "oracle_agreement": 0.7265625,
+      "oracle_choice_kl": 0.43251570732394384
+    },
+    "Qwen Self-Selected64 Native": {
+      "accuracy": 0.3671875,
+      "oracle_agreement": 0.828125,
+      "oracle_choice_kl": 0.4256872388031603
+    },
+    "Llama-selected64 -> Qwen Native Oracle": {
+      "accuracy": 0.390625,
+      "oracle_agreement": 1.0,
+      "oracle_choice_kl": 0.0
+    },
+    "Translated64 Full28-Diagonal": {
+      "accuracy": 0.109375,
+      "oracle_agreement": 0.1640625,
+      "oracle_choice_kl": 1.2244133614003658
+    },
+    "Shuffle64": {
+      "accuracy": 0.125,
+      "oracle_agreement": 0.0859375,
+      "oracle_choice_kl": 1.3502974886796437
+    },
+    "Zero64": {
+      "accuracy": 0.1484375,
+      "oracle_agreement": 0.203125,
+      "oracle_choice_kl": 2.482624721189495
+    },
+    "No-memory": {
+      "accuracy": 0.1328125,
+      "oracle_agreement": 0.2578125,
+      "oracle_choice_kl": 2.940261124196695
+    }
+  },
+  "translated_checkpoints": {
+    "best_accuracy": {
+      "checkpoint_step": 128,
+      "checkpoint": "best_accuracy",
+      "functional": {
+        "translated": {
+          "accuracy": 0.109375,
+          "oracle_agreement": 0.1640625,
+          "oracle_choice_kl": 1.2244133614003658
+        },
+        "shuffle": {
+          "accuracy": 0.125,
+          "oracle_agreement": 0.0859375,
+          "oracle_choice_kl": 1.3502974886796437
+        }
+      },
+      "representation": {
+        "loss": 1.4969571679830551,
+        "k_nmse": 0.19425633177161217,
+        "v_nmse": 0.7159141935408115,
+        "k_cosine": 0.8182417452335358,
+        "v_cosine": 0.5949716307222843
+      }
+    },
+    "best_choice_kl": {
+      "checkpoint_step": 64,
+      "checkpoint": "best_choice_kl",
+      "functional": {
+        "translated": {
+          "accuracy": 0.1328125,
+          "oracle_agreement": 0.2734375,
+          "oracle_choice_kl": 1.1440652314340696
+        },
+        "shuffle": {
+          "accuracy": 0.1328125,
+          "oracle_agreement": 0.2734375,
+          "oracle_choice_kl": 1.1650528301252052
+        }
+      },
+      "representation": {
+        "loss": 1.4387294575572014,
+        "k_nmse": 0.15926527604460716,
+        "v_nmse": 0.7151950784027576,
+        "k_cosine": 0.8372682593762875,
+        "v_cosine": 0.5984625965356827
+      }
+    }
+  },
+  "paired_comparisons_file": "paired_comparisons.json"
+}

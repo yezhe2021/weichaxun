@@ -1,0 +1,33 @@
+{
+  "qwen_full_native": {
+    "accuracy": 0.4140625,
+    "oracle_agreement": 0.7265625,
+    "oracle_choice_kl": 0.43251570732394384
+  },
+  "llama_full_native": {
+    "accuracy": 0.3203125,
+    "oracle_agreement": 0.3671875,
+    "oracle_choice_kl": 1.0342424891132396
+  },
+  "qwen_self_selected32_native": {
+    "accuracy": 0.3671875,
+    "oracle_agreement": 0.828125,
+    "oracle_choice_kl": 0.4256872388031603
+  },
+  "llama_selected_qwen_native_oracle": {
+    "accuracy": 0.390625,
+    "oracle_agreement": 1.0,
+    "oracle_choice_kl": 0.0
+  },
+  "zero": {
+    "accuracy": 0.1484375,
+    "oracle_agreement": 0.203125,
+    "oracle_choice_kl": 2.482624721189495
+  },
+  "no_memory": {
+    "accuracy": 0.1328125,
+    "oracle_agreement": 0.2578125,
+    "oracle_choice_kl": 2.940261124196695
+  },
+  "mean_random_chance": 0.11395089285714263
+}
