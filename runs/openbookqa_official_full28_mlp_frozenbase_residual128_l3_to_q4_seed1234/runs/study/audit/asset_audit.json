@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "asset_experiment": "/home/yezhe/异构模型/openbookqa_standardprompt_full28_mlp_frozenbase_residual64_l3_to_q4_seed1234",
+  "asset_signature": "04867e5182ced8121a4ed5ef0fb135a4677fb0e12539f971687a59eb4e71d813",
+  "protocol": "openbookqa_official_standardprompt_receiver_native_question_options32_v2",
+  "counts": {
+    "train": 1024,
+    "validation": 128,
+    "test": 128
+  },
+  "ids_sha256": {
+    "train": "10ced083ccb55c8bae649e52672cdf39402710302eb4d3b6f52efe3dd24edb37",
+    "validation": "1cb2439ef228a1d7dc17beae19acda7f798ae3020ea9b65d41cf1d9abdf4a4a5",
+    "test": "402e20c4f34eb2036c42e02ac36e27c217134da6c943b105e7a0640f1a1b82a9"
+  },
+  "official_splits_disjoint": true,
+  "stage_a_reuse": true,
+  "stage_a_source_experiment": "/home/yezhe/异构模型/openbookqa_official_full28_mlp_retrained_stagea_shared_vs_residual64_l3_to_q4_seed1234",
+  "stage_a_checkpoint": "/home/yezhe/异构模型/openbookqa_official_full28_mlp_retrained_stagea_shared_vs_residual64_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+  "stage_a_source_used_official_disjoint_splits": true,
+  "cache_reuse_only": true
+}
