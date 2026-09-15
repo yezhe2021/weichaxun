@@ -1,0 +1,15 @@
+{
+  "seed": 1234,
+  "dataset": "/home/yezhe/all_models/datasets/QCRI/AraDiCE-OpenBookQA/OBQA_eng/test.json",
+  "test_samples": 128,
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "llama": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct"
+  },
+  "old_checkpoint": "/home/yezhe/异构模型/rawtext_anchor_nativekv_full28_head8_ablation_train1024_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/full28_diagonal_choice_kl/best_accuracy.pt",
+  "new_experiment": "/home/yezhe/异构模型/mmlupro_sender_qoq_posterior_question_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234",
+  "regions": 32,
+  "attention_implementation": "eager",
+  "architecture": "full28_diagonal",
+  "temperature": 1.0
+}

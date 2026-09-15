@@ -1,0 +1,142 @@
+{
+  "experiment": "queryaware_hybrid32x32_slot_contribution_ablation",
+  "primary_contrast": "real_slot_hybrid minus position_matched_native_only",
+  "no_retraining": true,
+  "test_samples": 128,
+  "results": {
+    "qwen": {
+      "slot32_existing": {
+        "full_kl": 0.8653123320555096,
+        "choice_kl": 0.9285975355344362,
+        "native_agreement": 0.3671875,
+        "accuracy": 0.1171875,
+        "slot_k_cosine": 0.7969484503846616,
+        "slot_v_cosine": 0.3376506100175902,
+        "normalized_attention_entropy": 0.8524849398818333,
+        "effective_attended_tokens": 3.4271822664886713,
+        "maximum_attention_weight": 0.49613006436266005,
+        "mean_attended_normalized_distance": 0.008846801105391933,
+        "native_accuracy": 0.25,
+        "without_token0_full_kl": 5.177157539874315,
+        "without_token0_choice_kl": 1.968111003690865,
+        "without_token0_native_agreement": 0.203125,
+        "without_token0_accuracy": 0.125,
+        "sample_count": 128,
+        "mean_native_prefix_tokens": 120.2734375,
+        "native_prefix_shorter_than_slots_fraction": 0.015625,
+        "mean_chunk_tokens": 3.727294921875,
+        "mean_nonempty_chunk_tokens": 3.736417033773862,
+        "min_chunk_tokens": 0,
+        "max_chunk_tokens": 15,
+        "empty_chunk_fraction": 0.00244140625
+      },
+      "compact_native_only": {
+        "accuracy": 0.25,
+        "native_accuracy": 0.25,
+        "native_agreement": 0.6015625,
+        "full_kl": 0.5019716330616575,
+        "choice_kl": 0.5819555718409788,
+        "retention": 1.0,
+        "sample_count": 128
+      },
+      "position_matched_native_only": {
+        "accuracy": 0.265625,
+        "native_accuracy": 0.25,
+        "native_agreement": 0.59375,
+        "full_kl": 0.5285732614747758,
+        "choice_kl": 0.5863509671212768,
+        "retention": 1.0625,
+        "sample_count": 128
+      },
+      "real_slot_hybrid": {
+        "accuracy": 0.2421875,
+        "native_accuracy": 0.25,
+        "native_agreement": 0.6484375,
+        "full_kl": 0.32735721726839984,
+        "choice_kl": 0.37574258849809894,
+        "retention": 0.96875,
+        "sample_count": 128
+      },
+      "slot_net_contribution_C_minus_D": {
+        "accuracy_difference": -0.0234375,
+        "left_correct_right_wrong": 3,
+        "left_wrong_right_correct": 6,
+        "same_correctness": 119
+      },
+      "position_protocol_effect_B1_minus_D": {
+        "accuracy_difference": -0.015625,
+        "left_correct_right_wrong": 0,
+        "left_wrong_right_correct": 2,
+        "same_correctness": 126
+      },
+      "query_checkpoint_step": 512
+    },
+    "llama": {
+      "slot32_existing": {
+        "full_kl": 0.2686707872046554,
+        "choice_kl": 0.23262023171901092,
+        "native_agreement": 0.5390625,
+        "accuracy": 0.171875,
+        "slot_k_cosine": 0.8210334735922515,
+        "slot_v_cosine": 0.33900312101468444,
+        "normalized_attention_entropy": 0.8406082972651348,
+        "effective_attended_tokens": 3.2821369827724993,
+        "maximum_attention_weight": 0.5168589996173978,
+        "mean_attended_normalized_distance": 0.009023776758112945,
+        "native_accuracy": 0.2265625,
+        "without_token0_full_kl": 4.461846013553441,
+        "without_token0_choice_kl": 2.4228551988489926,
+        "without_token0_native_agreement": 0.046875,
+        "without_token0_accuracy": 0.171875,
+        "sample_count": 128,
+        "mean_native_prefix_tokens": 114.671875,
+        "native_prefix_shorter_than_slots_fraction": 0.0234375,
+        "mean_chunk_tokens": 3.55224609375,
+        "mean_nonempty_chunk_tokens": 3.5635562086700956,
+        "min_chunk_tokens": 0,
+        "max_chunk_tokens": 14,
+        "empty_chunk_fraction": 0.003173828125
+      },
+      "compact_native_only": {
+        "accuracy": 0.2265625,
+        "native_accuracy": 0.2265625,
+        "native_agreement": 0.46875,
+        "full_kl": 0.17316191167196848,
+        "choice_kl": 0.17335178770281345,
+        "retention": 1.0,
+        "sample_count": 128
+      },
+      "position_matched_native_only": {
+        "accuracy": 0.2109375,
+        "native_accuracy": 0.2265625,
+        "native_agreement": 0.46875,
+        "full_kl": 0.1743412651176186,
+        "choice_kl": 0.17381070190640457,
+        "retention": 0.9310344827586207,
+        "sample_count": 128
+      },
+      "real_slot_hybrid": {
+        "accuracy": 0.1875,
+        "native_accuracy": 0.2265625,
+        "native_agreement": 0.671875,
+        "full_kl": 0.10777091273121187,
+        "choice_kl": 0.10561907811734272,
+        "retention": 0.8275862068965517,
+        "sample_count": 128
+      },
+      "slot_net_contribution_C_minus_D": {
+        "accuracy_difference": -0.0234375,
+        "left_correct_right_wrong": 3,
+        "left_wrong_right_correct": 6,
+        "same_correctness": 119
+      },
+      "position_protocol_effect_B1_minus_D": {
+        "accuracy_difference": 0.015625,
+        "left_correct_right_wrong": 2,
+        "left_wrong_right_correct": 0,
+        "same_correctness": 126
+      },
+      "query_checkpoint_step": 512
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "experiment": "mmlupro_hybrid16native16translated_posteriorq_l3_to_q4_seed1234",
+  "status": "completed",
+  "purpose": "Replace exactly 16 of 32 translated option KV positions with position-matched native Qwen KV.",
+  "protocol_controls": {
+    "selected_anchors": "unchanged from posterior-Question Sender baseline",
+    "receiver": "native Question + 32 external Options KV + native Answer:",
+    "cache_length": 32,
+    "position_ids": "unchanged",
+    "mask": "unchanged",
+    "kv_replacement": "K and V replaced together at the same memory position"
+  },
+  "patterns": {
+    "native_even_translated_odd": {
+      "native_indices": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30
+      ]
+    },
+    "translated_even_native_odd": {
+      "native_indices": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ]
+    }
+  },
+  "existing_controls": {
+    "full_translated_best_accuracy": {
+      "accuracy": 0.2421875,
+      "oracle_agreement": 0.46875,
+      "oracle_choice_kl": 0.7909029128495604
+    },
+    "full_native_oracle": {
+      "accuracy": 0.3359375,
+      "oracle_agreement": 1.0,
+      "oracle_choice_kl": 0.0
+    },
+    "zero": {
+      "accuracy": 0.1328125,
+      "oracle_agreement": 0.203125,
+      "oracle_choice_kl": 2.405775937542785
+    },
+    "no_memory": {
+      "accuracy": 0.1328125,
+      "oracle_agreement": 0.25,
+      "oracle_choice_kl": 2.7774045560508966
+    }
+  },
+  "hybrid_results": {
+    "best_accuracy": {
+      "checkpoint_step": 128,
+      "conditions": {
+        "native_even_translated_odd": {
+          "accuracy": 0.1875,
+          "oracle_agreement": 0.3671875,
+          "oracle_choice_kl": 0.9173679886152968
+        },
+        "translated_even_native_odd": {
+          "accuracy": 0.1953125,
+          "oracle_agreement": 0.375,
+          "oracle_choice_kl": 0.9322083943116013
+        }
+      }
+    },
+    "best_choice_kl": {
+      "checkpoint_step": 384,
+      "conditions": {
+        "native_even_translated_odd": {
+          "accuracy": 0.1484375,
+          "oracle_agreement": 0.328125,
+          "oracle_choice_kl": 1.0459923587477533
+        },
+        "translated_even_native_odd": {
+          "accuracy": 0.1953125,
+          "oracle_agreement": 0.25,
+          "oracle_choice_kl": 1.0261798027786426
+        }
+      }
+    }
+  }
+}

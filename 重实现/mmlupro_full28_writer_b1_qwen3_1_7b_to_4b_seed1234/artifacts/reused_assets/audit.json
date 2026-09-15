@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": {
+    "manifest_counts": true,
+    "all_split_ids_disjoint": true,
+    "all_paired_caches_present": true,
+    "calibration_present": true,
+    "full28_stage_a_checkpoint_is_local_target": true,
+    "local5_stage_a_reference_present": true,
+    "local5_stage_b_reference_present": true,
+    "local5_formal_reference_present": true,
+    "stage_b_mode_is_final_only": true,
+    "effective_batch_is_8": true
+  },
+  "missing_cache_count": 0,
+  "missing_cache_examples": []
+}

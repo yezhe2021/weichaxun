@@ -1,0 +1,85 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-P-C2 Uncompressed Multi-Slot Trajectory Reader",
+  "samples": 64,
+  "conditions": {
+    "c2_correct_kv": {
+      "n": 64,
+      "em": 0.328125,
+      "f1": 0.3974867724867725,
+      "eos_rate": 1.0,
+      "average_output_tokens": 5.546875,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.2961309523809524
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.46875,
+          "f1": 0.4988425925925926
+        }
+      }
+    },
+    "c2_hard_shuffled": {
+      "n": 64,
+      "em": 0.3125,
+      "f1": 0.3818617724867725,
+      "eos_rate": 1.0,
+      "average_output_tokens": 5.15625,
+      "by_type": {
+        "bridge": {
+          "n": 32,
+          "em": 0.1875,
+          "f1": 0.27529761904761907
+        },
+        "comparison": {
+          "n": 32,
+          "em": 0.4375,
+          "f1": 0.4884259259259259
+        }
+      }
+    }
+  },
+  "state_and_slot_diagnostics": {
+    "cosine_before": 0.9113517999649048,
+    "cosine_after": 0.9093950111418962,
+    "normalized_mse_before": 0.1772958529763855,
+    "normalized_mse_after": 0.18120932980673388,
+    "slot_off_diagonal_cosine": 0.307626124471426,
+    "state_query_slot_attention_entropy": 0.783169592730701,
+    "state_query_slot_attention_max": 0.7315901285037398
+  },
+  "checkpoint": "/home/yezhe/伪查询/runs/p3e_p_c2_uncompressed_multislot_trajectory_seed1234/train/checkpoint_epoch_008.pt",
+  "reader_metadata": {
+    "mode": "c2_uncompressed_multislot",
+    "selected_layers": [
+      0,
+      2,
+      5,
+      7,
+      9,
+      12,
+      14,
+      16,
+      19,
+      21,
+      23,
+      26,
+      28,
+      30,
+      33,
+      35
+    ],
+    "trajectory_target": "receiver_post_attention_state",
+    "native_memory": "[16,T,8,128]",
+    "memory_rounds": 2,
+    "slots": 8,
+    "slot_dim": 256,
+    "slot_pooling_before_state_query": false,
+    "final_read": "receiver_hidden_queries_all_8_slots"
+  },
+  "teacher_branch_used_during_generation": false,
+  "teacher_states_read_only_for_offline_diagnostics": true
+}

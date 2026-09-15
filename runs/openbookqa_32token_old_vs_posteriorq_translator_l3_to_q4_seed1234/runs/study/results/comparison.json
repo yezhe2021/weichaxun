@@ -1,0 +1,82 @@
+{
+  "status": "completed",
+  "dataset": "AraDiCE OpenBookQA English test",
+  "seed": 1234,
+  "sample_count": 128,
+  "sampling": "fixed random sample without replacement",
+  "protocol_shared": "32 normalized Options regions; Full28-Diagonal; Receiver-native Question + external Options KV + native Answer:",
+  "old": {
+    "routing": "last Answer: token",
+    "checkpoint": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_512.pt",
+    "checkpoint_step": 512
+  },
+  "new": {
+    "routing": "last token of repeated posterior Question",
+    "checkpoint": "/home/yezhe/异构模型/mmlupro_sender_qoq_posterior_question_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_128.pt",
+    "checkpoint_step": 128
+  },
+  "routing_audit": {
+    "old_selected_mass": 0.7885568704650655,
+    "new_selected_mass": 0.7820581600552271,
+    "selection_overlap": 0.52734375
+  },
+  "metrics": {
+    "qwen_full_native": {
+      "accuracy": 0.828125,
+      "oracle_agreement": 1.0,
+      "oracle_choice_kl": 0.0
+    },
+    "old_oracle": {
+      "accuracy": 0.7734375,
+      "oracle_agreement": 1.0,
+      "oracle_choice_kl": 0.0
+    },
+    "old_translated": {
+      "accuracy": 0.515625,
+      "oracle_agreement": 0.4609375,
+      "oracle_choice_kl": 1.0806886728350946
+    },
+    "new_oracle": {
+      "accuracy": 0.75,
+      "oracle_agreement": 1.0,
+      "oracle_choice_kl": 0.0
+    },
+    "new_translated": {
+      "accuracy": 0.4609375,
+      "oracle_agreement": 0.46875,
+      "oracle_choice_kl": 0.9148705457337201
+    }
+  },
+  "paired_old_vs_new_translated": {
+    "both_correct": 39,
+    "only_first_correct": 27,
+    "only_second_correct": 20,
+    "both_wrong": 42,
+    "accuracy_difference_second_minus_first": -0.0546875,
+    "mcnemar_exact_two_sided_p": 0.38169339766321286
+  },
+  "paired_old_oracle_vs_new_oracle": {
+    "both_correct": 93,
+    "only_first_correct": 6,
+    "only_second_correct": 3,
+    "both_wrong": 26,
+    "accuracy_difference_second_minus_first": -0.0234375,
+    "mcnemar_exact_two_sided_p": 0.5078125
+  },
+  "paired_old_translated_vs_old_oracle": {
+    "both_correct": 54,
+    "only_first_correct": 12,
+    "only_second_correct": 45,
+    "both_wrong": 17,
+    "accuracy_difference_second_minus_first": 0.2578125,
+    "mcnemar_exact_two_sided_p": 1.3127443164284713e-05
+  },
+  "paired_new_translated_vs_new_oracle": {
+    "both_correct": 49,
+    "only_first_correct": 10,
+    "only_second_correct": 47,
+    "both_wrong": 22,
+    "accuracy_difference_second_minus_first": 0.2890625,
+    "mcnemar_exact_two_sided_p": 7.513043097095995e-07
+  }
+}

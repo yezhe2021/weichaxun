@@ -1,0 +1,82 @@
+[
+  {
+    "condition": "native_4b_sparse_correct",
+    "sample_id": "5a7b40cd5542995eb53be8d4",
+    "prediction": "Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been",
+    "reference_prediction": "Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been",
+    "prediction_identical": true,
+    "em": 0.0,
+    "gold_answer_nll": 8.62838077545166,
+    "reference_gold_answer_nll": 8.62838077545166
+  },
+  {
+    "condition": "native_4b_sparse_correct",
+    "sample_id": "5aba749055429901930fa7d8",
+    "prediction": "Chris Menges and Aram Avokianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianian",
+    "reference_prediction": "Chris Menges and Aram Avokianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianian",
+    "prediction_identical": true,
+    "em": 0.0,
+    "gold_answer_nll": 17.9560489654541,
+    "reference_gold_answer_nll": 17.9560489654541
+  },
+  {
+    "condition": "native_4b_sparse_correct",
+    "sample_id": "5ab615cf554299488d4d9aa3",
+    "prediction": "Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer: Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer: Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer: Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer:",
+    "reference_prediction": "Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer: Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer: Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer: Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer:",
+    "prediction_identical": true,
+    "em": 0.0,
+    "gold_answer_nll": 9.291932106018066,
+    "reference_gold_answer_nll": 9.291932106018066
+  },
+  {
+    "condition": "native_4b_sparse_correct",
+    "sample_id": "5a8b42be55429949d91db515",
+    "prediction": "The profession does John Lanchester and Alan Dean Foster have in common is the author of fantasy and science fiction.\n\nAnswer: The profession does John Lanchester and Alan Dean Foster have in common is the author of fantasy and science fiction.\n\nAnswer: The profession does John Lanchester and Alan Dean Foster have in common",
+    "reference_prediction": "The profession does John Lanchester and Alan Dean Foster have in common is the author of fantasy and science fiction.\n\nAnswer: The profession does John Lanchester and Alan Dean Foster have in common is the author of fantasy and science fiction.\n\nAnswer: The profession does John Lanchester and Alan Dean Foster have in common",
+    "prediction_identical": true,
+    "em": 0.0,
+    "gold_answer_nll": 15.391740798950195,
+    "reference_gold_answer_nll": 15.391740798950195
+  },
+  {
+    "condition": "cross_8b_raw_native_correct",
+    "sample_id": "5a7b40cd5542995eb53be8d4",
+    "prediction": "Answer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer:",
+    "reference_prediction": "Answer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer: 2\n\nAnswer:",
+    "prediction_identical": true,
+    "em": 0.0,
+    "gold_answer_nll": 12.898246765136719,
+    "reference_gold_answer_nll": 12.898246765136719
+  },
+  {
+    "condition": "cross_8b_raw_native_correct",
+    "sample_id": "5aba749055429901930fa7d8",
+    "prediction": "The The The The The The The The The The The The The The The The The The The The The The The The The\nThe\n\nAnswer: The The The The The The The The The The The The The The The The The\nThe\n\nAnswer: The The The The The The The The The The The The",
+    "reference_prediction": "The The The The The The The The The The The The The The The The The The The The The The The The The\nThe\n\nAnswer: The The The The The The The The The The The The The The The The The\nThe\n\nAnswer: The The The The The The The The The The The The",
+    "prediction_identical": true,
+    "em": 0.0,
+    "gold_answer_nll": 21.240394592285156,
+    "reference_gold_answer_nll": 21.240394592285156
+  },
+  {
+    "condition": "cross_8b_raw_native_correct",
+    "sample_id": "5ab615cf554299488d4d9aa3",
+    "prediction": "Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn",
+    "reference_prediction": "Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn Dawn",
+    "prediction_identical": true,
+    "em": 0.0,
+    "gold_answer_nll": 10.089011192321777,
+    "reference_gold_answer_nll": 10.089011192321777
+  },
+  {
+    "condition": "cross_8b_raw_native_correct",
+    "sample_id": "5a8b42be55429949d91db515",
+    "prediction": "Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer:",
+    "reference_prediction": "Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer: Answer:",
+    "prediction_identical": true,
+    "em": 0.0,
+    "gold_answer_nll": 16.027982711791992,
+    "reference_gold_answer_nll": 16.027982711791992
+  }
+]

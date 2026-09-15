@@ -1,0 +1,62 @@
+{
+  "stage": "B",
+  "objective": "32-memory Oracle final-position A-J choice KL only",
+  "initialized_from_stage_a_step": 1,
+  "steps": 1,
+  "clip_rate": 0.0,
+  "seconds": 3.799121044576168,
+  "selection": "validation only",
+  "best_accuracy": {
+    "step": 1,
+    "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/stage_b/checkpoints/step_1.pt",
+    "functional": {
+      "accuracy": 0.5,
+      "oracle_accuracy": 0.5,
+      "oracle_agreement": 0.5,
+      "oracle_choice_kl": 1.3716259598731995
+    },
+    "representation": {
+      "loss": 2.9937074184417725,
+      "k_nmse": 0.822350800037384,
+      "v_nmse": 0.9812663197517395,
+      "k_cosine": 0.5411757826805115,
+      "v_cosine": 0.26873376965522766
+    }
+  },
+  "best_choice_kl": {
+    "step": 1,
+    "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/stage_b/checkpoints/step_1.pt",
+    "functional": {
+      "accuracy": 0.5,
+      "oracle_accuracy": 0.5,
+      "oracle_agreement": 0.5,
+      "oracle_choice_kl": 1.3716259598731995
+    },
+    "representation": {
+      "loss": 2.9937074184417725,
+      "k_nmse": 0.822350800037384,
+      "v_nmse": 0.9812663197517395,
+      "k_cosine": 0.5411757826805115,
+      "v_cosine": 0.26873376965522766
+    }
+  },
+  "candidates": [
+    {
+      "step": 1,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/stage_b/checkpoints/step_1.pt",
+      "functional": {
+        "accuracy": 0.5,
+        "oracle_accuracy": 0.5,
+        "oracle_agreement": 0.5,
+        "oracle_choice_kl": 1.3716259598731995
+      },
+      "representation": {
+        "loss": 2.9937074184417725,
+        "k_nmse": 0.822350800037384,
+        "v_nmse": 0.9812663197517395,
+        "k_cosine": 0.5411757826805115,
+        "v_cosine": 0.26873376965522766
+      }
+    }
+  ]
+}

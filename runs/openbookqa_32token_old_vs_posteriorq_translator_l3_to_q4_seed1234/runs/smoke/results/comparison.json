@@ -1,0 +1,82 @@
+{
+  "status": "completed",
+  "dataset": "AraDiCE OpenBookQA English test",
+  "seed": 1234,
+  "sample_count": 2,
+  "sampling": "fixed random sample without replacement",
+  "protocol_shared": "32 normalized Options regions; Full28-Diagonal; Receiver-native Question + external Options KV + native Answer:",
+  "old": {
+    "routing": "last Answer: token",
+    "checkpoint": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_512.pt",
+    "checkpoint_step": 512
+  },
+  "new": {
+    "routing": "last token of repeated posterior Question",
+    "checkpoint": "/home/yezhe/异构模型/mmlupro_sender_qoq_posterior_question_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_128.pt",
+    "checkpoint_step": 128
+  },
+  "routing_audit": {
+    "old_selected_mass": 0.7254535939062716,
+    "new_selected_mass": 0.783301657666462,
+    "selection_overlap": 0.515625
+  },
+  "metrics": {
+    "qwen_full_native": {
+      "accuracy": 1.0,
+      "oracle_agreement": 1.0,
+      "oracle_choice_kl": 0.0
+    },
+    "old_oracle": {
+      "accuracy": 1.0,
+      "oracle_agreement": 1.0,
+      "oracle_choice_kl": 0.0
+    },
+    "old_translated": {
+      "accuracy": 0.5,
+      "oracle_agreement": 0.5,
+      "oracle_choice_kl": 1.7674158364534378
+    },
+    "new_oracle": {
+      "accuracy": 1.0,
+      "oracle_agreement": 1.0,
+      "oracle_choice_kl": 0.0
+    },
+    "new_translated": {
+      "accuracy": 0.5,
+      "oracle_agreement": 0.5,
+      "oracle_choice_kl": 0.8449869975447655
+    }
+  },
+  "paired_old_vs_new_translated": {
+    "both_correct": 0,
+    "only_first_correct": 1,
+    "only_second_correct": 1,
+    "both_wrong": 0,
+    "accuracy_difference_second_minus_first": 0.0,
+    "mcnemar_exact_two_sided_p": 1.0
+  },
+  "paired_old_oracle_vs_new_oracle": {
+    "both_correct": 2,
+    "only_first_correct": 0,
+    "only_second_correct": 0,
+    "both_wrong": 0,
+    "accuracy_difference_second_minus_first": 0.0,
+    "mcnemar_exact_two_sided_p": 1.0
+  },
+  "paired_old_translated_vs_old_oracle": {
+    "both_correct": 1,
+    "only_first_correct": 0,
+    "only_second_correct": 1,
+    "both_wrong": 0,
+    "accuracy_difference_second_minus_first": 0.5,
+    "mcnemar_exact_two_sided_p": 1.0
+  },
+  "paired_new_translated_vs_new_oracle": {
+    "both_correct": 1,
+    "only_first_correct": 0,
+    "only_second_correct": 1,
+    "both_wrong": 0,
+    "accuracy_difference_second_minus_first": 0.5,
+    "mcnemar_exact_two_sided_p": 1.0
+  }
+}

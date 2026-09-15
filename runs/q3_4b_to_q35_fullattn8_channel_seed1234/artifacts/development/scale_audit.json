@@ -1,0 +1,31 @@
+{
+  "train_only": true,
+  "counts": {
+    "source": 44511,
+    "target": 44511
+  },
+  "shapes": {
+    "source_k": [
+      8,
+      1024
+    ],
+    "source_v": [
+      8,
+      1024
+    ],
+    "target_k": [
+      8,
+      1024
+    ],
+    "target_v": [
+      8,
+      1024
+    ]
+  },
+  "finite": {
+    "source_k": true,
+    "source_v": true,
+    "target_k": true,
+    "target_v": true
+  }
+}

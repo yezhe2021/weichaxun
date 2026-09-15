@@ -1,0 +1,32 @@
+{
+  "q35_native_anchor8_reader_correct": {
+    "count": 64,
+    "em": 0.328125,
+    "token_f1": 0.38454670329670326,
+    "nll": 1.8107390211953316,
+    "bridge_em": 0.34615384615384615,
+    "bridge_f1": 0.4027754296985066,
+    "comparison_em": 0.25,
+    "comparison_f1": 0.3055555555555555
+  },
+  "q35_native_anchor8_reader_no_memory": {
+    "count": 64,
+    "em": 0.1875,
+    "token_f1": 0.2675824175824176,
+    "nll": 2.253100009576883,
+    "bridge_em": 0.11538461538461539,
+    "bridge_f1": 0.18830656522964212,
+    "comparison_em": 0.5,
+    "comparison_f1": 0.611111111111111
+  },
+  "q35_native_anchor8_reader_shuffled": {
+    "count": 64,
+    "em": 0.078125,
+    "token_f1": 0.0859375,
+    "nll": 3.5110472153755836,
+    "bridge_em": 0.057692307692307696,
+    "bridge_f1": 0.06410256410256411,
+    "comparison_em": 0.16666666666666666,
+    "comparison_f1": 0.18055555555555558
+  }
+}

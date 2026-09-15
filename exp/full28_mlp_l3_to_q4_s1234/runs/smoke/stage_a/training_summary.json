@@ -1,0 +1,21 @@
+{
+  "stage": "A",
+  "architecture": "full28_mlp",
+  "objective": "KV reconstruction only",
+  "steps": 1,
+  "clip_rate": 0.0,
+  "seconds": 3.3305772319436073,
+  "candidates": [
+    {
+      "step": 1,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke/stage_a/checkpoints/step_1.pt",
+      "representation": {
+        "loss": 2.9885714054107666,
+        "k_nmse": 0.8213118314743042,
+        "v_nmse": 0.9812741875648499,
+        "k_cosine": 0.5436556935310364,
+        "v_cosine": 0.27035874128341675
+      }
+    }
+  ]
+}

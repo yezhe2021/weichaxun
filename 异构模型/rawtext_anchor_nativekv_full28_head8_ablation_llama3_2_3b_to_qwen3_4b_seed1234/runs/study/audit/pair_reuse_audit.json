@@ -1,0 +1,24 @@
+{
+  "pair_source_root": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study",
+  "reuse_without_copy": true,
+  "source_schema": "[layers,33,8,128] = token0 + 32 content anchors",
+  "translator_schema": "[layers,32,8,128] content anchors only",
+  "receiver_schema": "Qwen Native token0 + 32 translated/native anchors; suffix starts at 33",
+  "splits": {
+    "train": {
+      "count": 1024,
+      "first_id": "2973",
+      "last_id": "1927"
+    },
+    "validation": {
+      "count": 128,
+      "first_id": "8776",
+      "last_id": "9262"
+    },
+    "test": {
+      "count": 128,
+      "first_id": "2599",
+      "last_id": "11547"
+    }
+  }
+}

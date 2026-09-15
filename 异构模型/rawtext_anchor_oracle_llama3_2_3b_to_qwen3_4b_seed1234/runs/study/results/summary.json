@@ -1,0 +1,84 @@
+{
+  "experiment": "rawtext_anchor_oracle_llama_to_qwen",
+  "no_training": true,
+  "schema": "33 entries [model-native token0,32 raw-text anchors], canonical positions 0..32",
+  "offset_audit": {
+    "qwen": {
+      "rows": 128,
+      "id_matches": 128,
+      "special_spans": 0,
+      "id_match_rate": 1.0
+    },
+    "llama": {
+      "rows": 128,
+      "id_matches": 128,
+      "special_spans": 128,
+      "id_match_rate": 1.0
+    }
+  },
+  "alignment": {
+    "anchor_count": 4096,
+    "target_contains_anchor_rate": 0.95947265625,
+    "positive_span_overlap_rate": 0.95947265625,
+    "mean_span_iou": 0.9199625651041683,
+    "mean_char_distance": 0.22509765625,
+    "p50_char_distance": 0,
+    "p90_char_distance": 0,
+    "max_char_distance": 9,
+    "source_region_fallback_rate": 0.0,
+    "source_duplicate_rate": 0.112060546875,
+    "target_duplicate_rate": 0.120849609375
+  },
+  "attention_mass": {
+    "llama_selected_mass": 0.5349285565176747,
+    "mapped_qwen_selected_mass": 0.42780784001620087,
+    "qwen_self_selected_mass": 0.4949729565648742
+  },
+  "functional": {
+    "qwen_old_token_chunk_self": {
+      "accuracy": 0.25,
+      "native_accuracy": 0.25,
+      "native_agreement": 0.6015625,
+      "full_kl": 0.5019716330616575,
+      "choice_kl": 0.5819555718409788,
+      "retention": 1.0,
+      "sample_count": 128
+    },
+    "qwen_raw_region_self": {
+      "accuracy": 0.234375,
+      "native_accuracy": 0.25,
+      "native_agreement": 0.59375,
+      "full_kl": 0.7419259732587307,
+      "choice_kl": 0.8539979947692871,
+      "retention": 0.9375,
+      "sample_count": 128
+    },
+    "llama_driven_mapped_qwen": {
+      "accuracy": 0.21875,
+      "native_accuracy": 0.25,
+      "native_agreement": 0.4453125,
+      "full_kl": 0.7592551984125748,
+      "choice_kl": 0.8771379821658911,
+      "retention": 0.875,
+      "sample_count": 128
+    },
+    "llama_old_token_chunk_self": {
+      "accuracy": 0.2265625,
+      "native_accuracy": 0.2265625,
+      "native_agreement": 0.46875,
+      "full_kl": 0.17316191167196848,
+      "choice_kl": 0.17335178770281345,
+      "retention": 1.0,
+      "sample_count": 128
+    },
+    "llama_raw_region_self": {
+      "accuracy": 0.15625,
+      "native_accuracy": 0.2265625,
+      "native_agreement": 0.3359375,
+      "full_kl": 0.22437581662234152,
+      "choice_kl": 0.2162452070915606,
+      "retention": 0.6896551724137931,
+      "sample_count": 128
+    }
+  }
+}

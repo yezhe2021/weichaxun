@@ -1,0 +1,12 @@
+{
+  "loss": "answer CE only",
+  "initial_checkpoint": "/home/yezhe/可拔插/qwen3_4b_to_1_7b_reverse_diagnosis_seed1234/artifacts/development/r2_stage_a/best.pt",
+  "best_validation_nll": 2.7763063467573375,
+  "best_validation_generation_f1": 0.11666666666666667,
+  "selection_uses_test": false,
+  "kd_used": false,
+  "representation_loss_used": false,
+  "tether_used": false,
+  "training_seconds": 1142.3912677764893,
+  "peak_gpu_bytes": 7676110848
+}

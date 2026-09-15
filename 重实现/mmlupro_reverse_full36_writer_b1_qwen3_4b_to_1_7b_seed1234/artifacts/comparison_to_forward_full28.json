@@ -1,0 +1,47 @@
+{
+  "protocol": {
+    "same_seed": true,
+    "same_splits": true,
+    "same_paired_full_kv_cache": true,
+    "same_stage_a_objective": "KV_reconstruction",
+    "same_stage_b_objective": "final_position_full_vocabulary_KL",
+    "same_train_validation_test_sizes": [
+      1024,
+      128,
+      128
+    ],
+    "same_writer_parameter_count": 33030144,
+    "forward_direction": "Qwen3-1.7B_28_layers_to_Qwen3-4B_36_layers",
+    "reverse_direction": "Qwen3-4B_36_layers_to_Qwen3-1.7B_28_layers",
+    "warning": "Raw accuracy ceilings differ because the frozen Receiver differs by direction."
+  },
+  "stage_a": {
+    "reverse_full36_best_validation_kv_loss": 0.9508405427914113,
+    "forward_full28_best_validation_kv_loss": 1.0686381615232676,
+    "reverse_minus_forward": -0.11779761873185635
+  },
+  "stage_b": {
+    "reverse_full36_best_validation_final_kl": 0.6647412512102164,
+    "forward_full28_best_validation_final_kl": 0.7378139589709463,
+    "reverse_minus_forward": -0.07307270776072983,
+    "reverse_clip_rate": 0.072265625,
+    "forward_clip_rate": 0.029296875
+  },
+  "formal_test": {
+    "reverse_native_receiver_accuracy": 0.2265625,
+    "reverse_writer_accuracy": 0.1875,
+    "reverse_accuracy_retention": 0.8275862068965517,
+    "reverse_native_agreement": 0.5078125,
+    "reverse_native_choice_kl": 0.6495380907144863,
+    "forward_native_receiver_accuracy": 0.2890625,
+    "forward_writer_accuracy": 0.203125,
+    "forward_accuracy_retention": 0.7027027027027027,
+    "forward_native_agreement": 0.4140625,
+    "forward_native_choice_kl": 0.6977751570229884
+  },
+  "forward_references": {
+    "stage_a_summary": "/home/yezhe/重实现/mmlupro_full28_writer_b1_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/full28/stage_a/summary.json",
+    "stage_b_summary": "/home/yezhe/重实现/mmlupro_full28_writer_b1_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/full28/stage_b_final/summary.json",
+    "formal_summary": "/home/yezhe/重实现/mmlupro_full28_writer_b1_qwen3_1_7b_to_4b_seed1234/artifacts/evaluation/formal/summary.json"
+  }
+}

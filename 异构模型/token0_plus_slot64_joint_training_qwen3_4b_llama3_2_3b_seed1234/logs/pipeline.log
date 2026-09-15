@@ -1,0 +1,75 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:24,  4.72it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 622.35it/s]Loading weights:  62%|██████▏   | 246/398 [00:00<00:00, 611.51it/s]Loading weights:  81%|████████  | 322/398 [00:00<00:00, 610.79it/s]Loading weights:  98%|█████████▊| 392/398 [00:00<00:00, 606.53it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 562.14it/s]
+[2026-09-07 12:16:01] qwen lambda=16 step=16/512 loss=1.763701
+[2026-09-07 12:16:22] qwen lambda=16 step=32/512 loss=2.688942
+[2026-09-07 12:16:43] qwen lambda=16 step=48/512 loss=1.362475
+[2026-09-07 12:17:03] qwen lambda=16 step=64/512 loss=1.088588
+[2026-09-07 12:17:23] qwen lambda=16 step=80/512 loss=1.067454
+[2026-09-07 12:17:44] qwen lambda=16 step=96/512 loss=1.332582
+[2026-09-07 12:18:05] qwen lambda=16 step=112/512 loss=2.087247
+[2026-09-07 12:18:25] qwen lambda=16 step=128/512 loss=1.816705
+[2026-09-07 12:18:34] qwen lambda=16 validation step=128 KL=1.650261
+[2026-09-07 12:18:55] qwen lambda=16 step=144/512 loss=1.715152
+[2026-09-07 12:19:15] qwen lambda=16 step=160/512 loss=1.457744
+[2026-09-07 12:19:36] qwen lambda=16 step=176/512 loss=1.052997
+[2026-09-07 12:19:58] qwen lambda=16 step=192/512 loss=1.786694
+[2026-09-07 12:20:19] qwen lambda=16 step=208/512 loss=2.078705
+[2026-09-07 12:20:41] qwen lambda=16 step=224/512 loss=1.696370
+[2026-09-07 12:21:05] qwen lambda=16 step=240/512 loss=0.887406
+[2026-09-07 12:21:33] qwen lambda=16 step=256/512 loss=0.840595
+[2026-09-07 12:21:47] qwen lambda=16 validation step=256 KL=1.451886
+[2026-09-07 12:22:15] qwen lambda=16 step=272/512 loss=0.904394
+[2026-09-07 12:22:44] qwen lambda=16 step=288/512 loss=1.065690
+[2026-09-07 12:23:12] qwen lambda=16 step=304/512 loss=0.912047
+[2026-09-07 12:23:39] qwen lambda=16 step=320/512 loss=1.481670
+[2026-09-07 12:24:07] qwen lambda=16 step=336/512 loss=1.227713
+[2026-09-07 12:24:34] qwen lambda=16 step=352/512 loss=1.943975
+[2026-09-07 12:25:02] qwen lambda=16 step=368/512 loss=1.543186
+[2026-09-07 12:25:30] qwen lambda=16 step=384/512 loss=1.297487
+[2026-09-07 12:25:47] qwen lambda=16 validation step=384 KL=1.308180
+[2026-09-07 12:26:24] qwen lambda=16 step=400/512 loss=1.442853
+[2026-09-07 12:27:02] qwen lambda=16 step=416/512 loss=1.174666
+[2026-09-07 12:27:37] qwen lambda=16 step=432/512 loss=1.209054
+[2026-09-07 12:28:13] qwen lambda=16 step=448/512 loss=1.725313
+[2026-09-07 12:28:44] qwen lambda=16 step=464/512 loss=1.577285
+[2026-09-07 12:29:06] qwen lambda=16 step=480/512 loss=0.828511
+[2026-09-07 12:29:29] qwen lambda=16 step=496/512 loss=1.302389
+[2026-09-07 12:29:51] qwen lambda=16 step=512/512 loss=1.056321
+[2026-09-07 12:30:02] qwen lambda=16 validation step=512 KL=1.201436
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<00:58,  4.30it/s]Loading weights:  47%|████▋     | 120/254 [00:00<00:00, 443.52it/s]Loading weights:  73%|███████▎  | 186/254 [00:00<00:00, 457.38it/s]Loading weights:  96%|█████████▌| 244/254 [00:00<00:00, 483.85it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 421.35it/s]
+[2026-09-07 12:31:14] llama lambda=16 step=16/512 loss=0.457115
+[2026-09-07 12:31:29] llama lambda=16 step=32/512 loss=1.026048
+[2026-09-07 12:31:45] llama lambda=16 step=48/512 loss=0.453310
+[2026-09-07 12:32:00] llama lambda=16 step=64/512 loss=0.297162
+[2026-09-07 12:32:16] llama lambda=16 step=80/512 loss=0.564991
+[2026-09-07 12:32:31] llama lambda=16 step=96/512 loss=0.493064
+[2026-09-07 12:32:47] llama lambda=16 step=112/512 loss=0.341151
+[2026-09-07 12:33:03] llama lambda=16 step=128/512 loss=0.650489
+[2026-09-07 12:33:11] llama lambda=16 validation step=128 KL=0.408529
+[2026-09-07 12:33:27] llama lambda=16 step=144/512 loss=0.518768
+[2026-09-07 12:33:42] llama lambda=16 step=160/512 loss=0.385279
+[2026-09-07 12:33:57] llama lambda=16 step=176/512 loss=0.304418
+[2026-09-07 12:34:12] llama lambda=16 step=192/512 loss=0.558020
+[2026-09-07 12:34:28] llama lambda=16 step=208/512 loss=0.433300
+[2026-09-07 12:34:43] llama lambda=16 step=224/512 loss=0.671884
+[2026-09-07 12:35:00] llama lambda=16 step=240/512 loss=0.227850
+[2026-09-07 12:35:15] llama lambda=16 step=256/512 loss=0.453078
+[2026-09-07 12:35:23] llama lambda=16 validation step=256 KL=0.362521
+[2026-09-07 12:35:38] llama lambda=16 step=272/512 loss=0.510628
+[2026-09-07 12:35:54] llama lambda=16 step=288/512 loss=0.280222
+[2026-09-07 12:36:10] llama lambda=16 step=304/512 loss=0.212510
+[2026-09-07 12:36:25] llama lambda=16 step=320/512 loss=0.536965
+[2026-09-07 12:36:41] llama lambda=16 step=336/512 loss=0.299798
+[2026-09-07 12:36:57] llama lambda=16 step=352/512 loss=0.488177
+[2026-09-07 12:37:12] llama lambda=16 step=368/512 loss=0.481011
+[2026-09-07 12:37:28] llama lambda=16 step=384/512 loss=0.499629
+[2026-09-07 12:37:36] llama lambda=16 validation step=384 KL=0.325749
+[2026-09-07 12:37:52] llama lambda=16 step=400/512 loss=0.507658
+[2026-09-07 12:38:08] llama lambda=16 step=416/512 loss=0.788696
+[2026-09-07 12:38:23] llama lambda=16 step=432/512 loss=0.270956
+[2026-09-07 12:38:39] llama lambda=16 step=448/512 loss=0.466162
+[2026-09-07 12:38:54] llama lambda=16 step=464/512 loss=0.408056
+[2026-09-07 12:39:10] llama lambda=16 step=480/512 loss=0.247589
+[2026-09-07 12:39:25] llama lambda=16 step=496/512 loss=0.543931
+[2026-09-07 12:39:41] llama lambda=16 step=512/512 loss=0.238633
+[2026-09-07 12:39:49] llama lambda=16 validation step=512 KL=0.291250
+[2026-09-07 12:40:24] ALL TOKEN0 PLUS 64-SLOT JOINT TRAINING COMPLETED

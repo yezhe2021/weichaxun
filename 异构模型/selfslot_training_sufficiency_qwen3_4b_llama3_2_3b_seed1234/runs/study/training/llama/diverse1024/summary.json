@@ -1,0 +1,41 @@
+{
+  "family": "llama",
+  "arm": "diverse1024",
+  "train_samples": 1024,
+  "epochs": 4,
+  "optimizer_steps": 512,
+  "sample_exposures": 4096,
+  "initial_validation_full_kl": 5.0596938226372,
+  "best_validation_full_kl": 0.7981721645919606,
+  "best_step": 512,
+  "relative_kl_reduction": 0.8422489200787372,
+  "clip_rate": 0.0,
+  "true_epoch_sampler": true,
+  "gold_used_for_training": false,
+  "same_initialization_across_arms": true,
+  "fit_metrics": {
+    "full_kl": 0.7981721645919606,
+    "choice_kl": 0.44450946006691083,
+    "native_agreement": 0.2734375,
+    "accuracy": 0.1328125,
+    "slot_k_cosine": 0.98259920720011,
+    "slot_v_cosine": 0.9124703789129853,
+    "normalized_attention_entropy": 0.9485581070184708,
+    "effective_attended_tokens": 97.43550419807434,
+    "maximum_attention_weight": 0.054396243300288916,
+    "attention_diagnostic_samples": 8
+  },
+  "test_metrics": {
+    "full_kl": 0.8600963650969788,
+    "choice_kl": 0.49150192830711603,
+    "native_agreement": 0.3125,
+    "accuracy": 0.140625,
+    "slot_k_cosine": 0.9824606142938137,
+    "slot_v_cosine": 0.9122813851572573,
+    "normalized_attention_entropy": 0.9472654387354851,
+    "effective_attended_tokens": 89.2290678024292,
+    "maximum_attention_weight": 0.05973711237311363,
+    "attention_diagnostic_samples": 8
+  },
+  "seconds": 674.4533500168473
+}

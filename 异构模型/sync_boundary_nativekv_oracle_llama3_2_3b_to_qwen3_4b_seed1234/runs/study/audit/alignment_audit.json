@@ -1,0 +1,50 @@
+{
+  "count": 112.6015625,
+  "mean_llama_tokens": 1.0129006230161293,
+  "mean_qwen_tokens": 1.0688468403585287,
+  "mean_bytes": 3.2365903803596803,
+  "mean_characters": 3.2323084159790314,
+  "one_to_one": 0.9369880168100406,
+  "one_to_many": 0.06244948318995927,
+  "many_to_many": 0.0005625,
+  "samples_with_fewer_units_than_budget": 3,
+  "minimum_units_in_sample": 24,
+  "selection": {
+    "sync_trigger": {
+      "unique_units": 27.890625,
+      "duplicate_entries": 4.109375,
+      "selected_llama_attention_mass": 0.5401187860406935,
+      "selected_qwen_attention_mass": 0.44444073864724487
+    },
+    "sync_max_duplicate": {
+      "unique_units": 27.8828125,
+      "duplicate_entries": 4.1171875,
+      "selected_llama_attention_mass": 0.5399443698115647,
+      "selected_qwen_attention_mass": 0.4442513450048864
+    },
+    "sync_max_unique": {
+      "unique_units": 31.875,
+      "duplicate_entries": 0.125,
+      "selected_llama_attention_mass": 0.5950831340160221,
+      "selected_qwen_attention_mass": 0.5210016560740769
+    },
+    "sync_sum_duplicate": {
+      "unique_units": 27.6015625,
+      "duplicate_entries": 4.3984375,
+      "selected_llama_attention_mass": 0.5248473777901381,
+      "selected_qwen_attention_mass": 0.4286228616256267
+    },
+    "sync_sum_unique": {
+      "unique_units": 31.875,
+      "duplicate_entries": 0.125,
+      "selected_llama_attention_mass": 0.595545151270926,
+      "selected_qwen_attention_mass": 0.5206191664328799
+    },
+    "qwen_self_sync_max_unique": {
+      "unique_units": 31.875,
+      "duplicate_entries": 0.125,
+      "selected_llama_attention_mass": 0.5564502535853535,
+      "selected_qwen_attention_mass": 0.5639846535632387
+    }
+  }
+}

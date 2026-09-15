@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-C2 fresh Reader on frozen learned Writer",
+  "mode": "formal512",
+  "samples": 512,
+  "best_epoch_by_train_objective": 15,
+  "best_train_loss": 0.0016560408410797312,
+  "fresh_reader": true,
+  "writer_frozen": true,
+  "trainable_parameters": 4202512,
+  "checkpoint": "/home/yezhe/伪查询/runs/p3e_c2_learned_head_structured_writer_seed1234/fresh_reader_formal512/reader/checkpoint_best.pt"
+}

@@ -1,0 +1,31 @@
+{
+  "seed": 1234,
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "llama": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct"
+  },
+  "source_manifest_root": "/home/yezhe/异构模型/selfslot_training_sufficiency_qwen3_4b_llama3_2_3b_seed1234/runs/study",
+  "baseline_experiment_root": "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234",
+  "shared_results_document": "/home/yezhe/异构模型/EXPERIMENT_RESULTS.md",
+  "regions": 32,
+  "train_samples": 1024,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "max_body_tokens": 2048,
+  "audit_samples": 32,
+  "stage_a_epochs": 8,
+  "stage_a_steps": 1024,
+  "stage_b_epochs": 4,
+  "stage_b_steps": 512,
+  "batch_size": 8,
+  "validation_interval_steps": 128,
+  "stage_a_learning_rate": 0.001,
+  "stage_b_learning_rate": 0.0001,
+  "clip": 30.0,
+  "temperature": 1.0,
+  "attention_implementation": "eager",
+  "architecture": "full28_diagonal",
+  "protocol": "sender_question_options_posterior_question_router_v1",
+  "mode": "study",
+  "signature": "015358d954ea9ea023356b6642657d2a4df5861eb6448bb0605ffe67391419c8"
+}

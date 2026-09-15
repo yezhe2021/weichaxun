@@ -1,0 +1,145 @@
+[
+  {
+    "update": 0,
+    "answer_nll": 0.9486777590354905,
+    "shuffled_nll": 5.934814291773364,
+    "correct_shuffled_nll_gap": 4.9861365327378735,
+    "distill_kl": 1.1354126596124843,
+    "generation_em": 0.5625,
+    "generation_f1": 0.6041666666666666,
+    "generation_probe_count": 16,
+    "selected": true
+  },
+  {
+    "update": 50,
+    "answer_nll": 0.8962049586116336,
+    "shuffled_nll": 6.013170803315006,
+    "correct_shuffled_nll_gap": 5.116965844703373,
+    "distill_kl": 0.8854920499143191,
+    "generation_em": null,
+    "generation_f1": null,
+    "generation_probe_count": 0,
+    "selected": true
+  },
+  {
+    "update": 100,
+    "answer_nll": 0.8898612429111381,
+    "shuffled_nll": 6.259981668088585,
+    "correct_shuffled_nll_gap": 5.370120425177447,
+    "distill_kl": 0.6242180264671333,
+    "generation_em": 0.5,
+    "generation_f1": 0.6166666666666667,
+    "generation_probe_count": 16,
+    "selected": true
+  },
+  {
+    "update": 150,
+    "answer_nll": 0.8778168359713163,
+    "shuffled_nll": 6.4531683614477515,
+    "correct_shuffled_nll_gap": 5.575351525476435,
+    "distill_kl": 0.5419966604677029,
+    "generation_em": null,
+    "generation_f1": null,
+    "generation_probe_count": 0,
+    "selected": true
+  },
+  {
+    "update": 200,
+    "answer_nll": 0.8865139450390416,
+    "shuffled_nll": 6.440629692922812,
+    "correct_shuffled_nll_gap": 5.55411574788377,
+    "distill_kl": 0.551150469633285,
+    "generation_em": 0.625,
+    "generation_f1": 0.7484848484848485,
+    "generation_probe_count": 16,
+    "selected": false
+  },
+  {
+    "update": 250,
+    "answer_nll": 0.8585282151580031,
+    "shuffled_nll": 6.518001718330197,
+    "correct_shuffled_nll_gap": 5.659473503172194,
+    "distill_kl": 0.5020239342702553,
+    "generation_em": null,
+    "generation_f1": null,
+    "generation_probe_count": 0,
+    "selected": true
+  },
+  {
+    "update": 300,
+    "answer_nll": 0.8617103179312835,
+    "shuffled_nll": 6.551546993083321,
+    "correct_shuffled_nll_gap": 5.689836675152037,
+    "distill_kl": 0.5043772525386885,
+    "generation_em": 0.5625,
+    "generation_f1": 0.6859848484848485,
+    "generation_probe_count": 16,
+    "selected": false
+  },
+  {
+    "update": 350,
+    "answer_nll": 0.8692829723913746,
+    "shuffled_nll": 6.564633795875125,
+    "correct_shuffled_nll_gap": 5.69535082348375,
+    "distill_kl": 0.4828055287944153,
+    "generation_em": null,
+    "generation_f1": null,
+    "generation_probe_count": 0,
+    "selected": false
+  },
+  {
+    "update": 400,
+    "answer_nll": 0.8503719612035638,
+    "shuffled_nll": 6.577244089799933,
+    "correct_shuffled_nll_gap": 5.726872128596369,
+    "distill_kl": 0.46778714086394757,
+    "generation_em": 0.5625,
+    "generation_f1": 0.6291666666666667,
+    "generation_probe_count": 16,
+    "selected": true
+  },
+  {
+    "update": 450,
+    "answer_nll": 0.8433479088762397,
+    "shuffled_nll": 6.56741892703576,
+    "correct_shuffled_nll_gap": 5.7240710181595205,
+    "distill_kl": 0.4554922469542362,
+    "generation_em": null,
+    "generation_f1": null,
+    "generation_probe_count": 0,
+    "selected": true
+  },
+  {
+    "update": 500,
+    "answer_nll": 0.8388642767640704,
+    "shuffled_nll": 6.593858531792648,
+    "correct_shuffled_nll_gap": 5.754994255028578,
+    "distill_kl": 0.45512769324705005,
+    "generation_em": 0.5625,
+    "generation_f1": 0.6604166666666667,
+    "generation_probe_count": 16,
+    "selected": true
+  },
+  {
+    "update": 550,
+    "answer_nll": 0.8521296532526321,
+    "shuffled_nll": 6.609617699519731,
+    "correct_shuffled_nll_gap": 5.757488046267099,
+    "distill_kl": 0.4582091803313233,
+    "generation_em": null,
+    "generation_f1": null,
+    "generation_probe_count": 0,
+    "selected": false
+  },
+  {
+    "update": 600,
+    "answer_nll": 0.8471027732121001,
+    "shuffled_nll": 6.6168217320227996,
+    "correct_shuffled_nll_gap": 5.769718958810699,
+    "distill_kl": 0.458897499833256,
+    "generation_em": 0.625,
+    "generation_f1": 0.7229166666666667,
+    "generation_probe_count": 16,
+    "selected": false
+  }
+]

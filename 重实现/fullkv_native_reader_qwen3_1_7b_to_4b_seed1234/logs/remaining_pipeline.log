@@ -1,0 +1,704 @@
+[2026-08-29 20:37:38] start stage: cache_train64
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+Loading weights:  62%|██████▏   | 192/311 [00:00<00:00, 1897.99it/s]
+Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1859.90it/s]
+[2026-08-29 20:37:49] source17/train: resume skip 1/64
+[2026-08-29 20:37:49] source17/train: resume skip 2/64
+[2026-08-29 20:37:49] source17/train: resume skip 3/64
+[2026-08-29 20:37:49] source17/train: resume skip 4/64
+[2026-08-29 20:37:49] source17/train: resume skip 5/64
+[2026-08-29 20:37:49] source17/train: resume skip 6/64
+[2026-08-29 20:37:49] source17/train: resume skip 7/64
+[2026-08-29 20:37:49] source17/train: resume skip 8/64
+[2026-08-29 20:37:49] source17/train: resume skip 9/64
+[2026-08-29 20:37:49] source17/train: resume skip 10/64
+[2026-08-29 20:37:49] source17/train: resume skip 11/64
+[2026-08-29 20:37:49] source17/train: resume skip 12/64
+[2026-08-29 20:37:49] source17/train: resume skip 13/64
+[2026-08-29 20:37:49] source17/train: resume skip 14/64
+[2026-08-29 20:37:49] source17/train: resume skip 15/64
+[2026-08-29 20:37:49] source17/train: resume skip 16/64
+[2026-08-29 20:37:50] source17/train: 17/64 T=1041
+[2026-08-29 20:37:51] source17/train: 18/64 T=1434
+[2026-08-29 20:37:51] source17/train: 19/64 T=1212
+[2026-08-29 20:37:52] source17/train: 20/64 T=1238
+[2026-08-29 20:37:52] source17/train: 21/64 T=1085
+[2026-08-29 20:37:53] source17/train: 22/64 T=1266
+[2026-08-29 20:37:53] source17/train: 23/64 T=987
+[2026-08-29 20:37:54] source17/train: 24/64 T=1522
+[2026-08-29 20:37:54] source17/train: 25/64 T=1057
+[2026-08-29 20:37:55] source17/train: 26/64 T=1110
+[2026-08-29 20:37:55] source17/train: 27/64 T=1025
+[2026-08-29 20:37:56] source17/train: 28/64 T=1504
+[2026-08-29 20:37:57] source17/train: 29/64 T=1425
+[2026-08-29 20:37:57] source17/train: 30/64 T=1511
+[2026-08-29 20:37:58] source17/train: 31/64 T=1242
+[2026-08-29 20:37:59] source17/train: 32/64 T=1122
+[2026-08-29 20:38:00] source17/train: 33/64 T=1224
+[2026-08-29 20:38:00] source17/train: 34/64 T=1390
+[2026-08-29 20:38:01] source17/train: 35/64 T=1416
+[2026-08-29 20:38:01] source17/train: 36/64 T=1164
+[2026-08-29 20:38:02] source17/train: 37/64 T=1352
+[2026-08-29 20:38:03] source17/train: 38/64 T=1175
+[2026-08-29 20:38:03] source17/train: 39/64 T=1350
+[2026-08-29 20:38:04] source17/train: 40/64 T=1162
+[2026-08-29 20:38:04] source17/train: 41/64 T=1280
+[2026-08-29 20:38:05] source17/train: 42/64 T=1512
+[2026-08-29 20:38:05] source17/train: 43/64 T=1181
+[2026-08-29 20:38:06] source17/train: 44/64 T=1219
+[2026-08-29 20:38:07] source17/train: 45/64 T=1301
+[2026-08-29 20:38:08] source17/train: 46/64 T=911
+[2026-08-29 20:38:08] source17/train: 47/64 T=1366
+[2026-08-29 20:38:09] source17/train: 48/64 T=796
+[2026-08-29 20:38:09] source17/train: 49/64 T=1466
+[2026-08-29 20:38:10] source17/train: 50/64 T=1492
+[2026-08-29 20:38:11] source17/train: 51/64 T=1412
+[2026-08-29 20:38:11] source17/train: 52/64 T=1038
+[2026-08-29 20:38:12] source17/train: 53/64 T=1496
+[2026-08-29 20:38:13] source17/train: 54/64 T=1345
+[2026-08-29 20:38:13] source17/train: 55/64 T=741
+[2026-08-29 20:38:14] source17/train: 56/64 T=1337
+[2026-08-29 20:38:15] source17/train: 57/64 T=1529
+[2026-08-29 20:38:15] source17/train: 58/64 T=1267
+[2026-08-29 20:38:16] source17/train: 59/64 T=1445
+[2026-08-29 20:38:17] source17/train: 60/64 T=1135
+[2026-08-29 20:38:17] source17/train: 61/64 T=1016
+[2026-08-29 20:38:18] source17/train: 62/64 T=1514
+[2026-08-29 20:38:18] source17/train: 63/64 T=1128
+[2026-08-29 20:38:19] source17/train: 64/64 T=1273
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1075.52it/s]
+Loading weights:  58%|█████▊    | 231/398 [00:00<00:00, 1132.20it/s]
+Loading weights:  88%|████████▊ | 352/398 [00:00<00:00, 1153.08it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1159.16it/s]
+[2026-08-29 20:38:23] target4/train: resume skip 1/64
+[2026-08-29 20:38:23] target4/train: resume skip 2/64
+[2026-08-29 20:38:23] target4/train: resume skip 3/64
+[2026-08-29 20:38:23] target4/train: resume skip 4/64
+[2026-08-29 20:38:23] target4/train: resume skip 5/64
+[2026-08-29 20:38:23] target4/train: resume skip 6/64
+[2026-08-29 20:38:23] target4/train: resume skip 7/64
+[2026-08-29 20:38:23] target4/train: resume skip 8/64
+[2026-08-29 20:38:23] target4/train: resume skip 9/64
+[2026-08-29 20:38:23] target4/train: resume skip 10/64
+[2026-08-29 20:38:23] target4/train: resume skip 11/64
+[2026-08-29 20:38:23] target4/train: resume skip 12/64
+[2026-08-29 20:38:23] target4/train: resume skip 13/64
+[2026-08-29 20:38:23] target4/train: resume skip 14/64
+[2026-08-29 20:38:23] target4/train: resume skip 15/64
+[2026-08-29 20:38:23] target4/train: resume skip 16/64
+[2026-08-29 20:38:24] target4/train: 17/64 T=1041
+[2026-08-29 20:38:26] target4/train: 18/64 T=1434
+[2026-08-29 20:38:27] target4/train: 19/64 T=1212
+[2026-08-29 20:38:28] target4/train: 20/64 T=1238
+[2026-08-29 20:38:29] target4/train: 21/64 T=1085
+[2026-08-29 20:38:30] target4/train: 22/64 T=1266
+[2026-08-29 20:38:31] target4/train: 23/64 T=987
+[2026-08-29 20:38:33] target4/train: 24/64 T=1522
+[2026-08-29 20:38:35] target4/train: 25/64 T=1057
+[2026-08-29 20:38:36] target4/train: 26/64 T=1110
+[2026-08-29 20:38:37] target4/train: 27/64 T=1025
+[2026-08-29 20:38:39] target4/train: 28/64 T=1504
+[2026-08-29 20:38:40] target4/train: 29/64 T=1425
+[2026-08-29 20:38:42] target4/train: 30/64 T=1511
+[2026-08-29 20:38:43] target4/train: 31/64 T=1242
+[2026-08-29 20:38:44] target4/train: 32/64 T=1122
+[2026-08-29 20:38:46] target4/train: 33/64 T=1224
+[2026-08-29 20:38:47] target4/train: 34/64 T=1390
+[2026-08-29 20:38:49] target4/train: 35/64 T=1416
+[2026-08-29 20:38:50] target4/train: 36/64 T=1164
+[2026-08-29 20:38:51] target4/train: 37/64 T=1352
+[2026-08-29 20:38:53] target4/train: 38/64 T=1175
+[2026-08-29 20:38:54] target4/train: 39/64 T=1350
+[2026-08-29 20:38:55] target4/train: 40/64 T=1162
+[2026-08-29 20:38:57] target4/train: 41/64 T=1280
+[2026-08-29 20:38:58] target4/train: 42/64 T=1512
+[2026-08-29 20:39:00] target4/train: 43/64 T=1181
+[2026-08-29 20:39:01] target4/train: 44/64 T=1219
+[2026-08-29 20:39:03] target4/train: 45/64 T=1301
+[2026-08-29 20:39:04] target4/train: 46/64 T=911
+[2026-08-29 20:39:06] target4/train: 47/64 T=1366
+[2026-08-29 20:39:06] target4/train: 48/64 T=796
+[2026-08-29 20:39:08] target4/train: 49/64 T=1466
+[2026-08-29 20:39:10] target4/train: 50/64 T=1492
+[2026-08-29 20:39:12] target4/train: 51/64 T=1412
+[2026-08-29 20:39:13] target4/train: 52/64 T=1038
+[2026-08-29 20:39:15] target4/train: 53/64 T=1496
+[2026-08-29 20:39:17] target4/train: 54/64 T=1345
+[2026-08-29 20:39:17] target4/train: 55/64 T=741
+[2026-08-29 20:39:19] target4/train: 56/64 T=1337
+[2026-08-29 20:39:21] target4/train: 57/64 T=1529
+[2026-08-29 20:39:22] target4/train: 58/64 T=1267
+[2026-08-29 20:39:24] target4/train: 59/64 T=1445
+[2026-08-29 20:39:26] target4/train: 60/64 T=1135
+[2026-08-29 20:39:27] target4/train: 61/64 T=1016
+[2026-08-29 20:39:28] target4/train: 62/64 T=1514
+[2026-08-29 20:39:30] target4/train: 63/64 T=1128
+[2026-08-29 20:39:31] target4/train: 64/64 T=1273
+[2026-08-29 20:39:34] completed stage: cache_train64
+[2026-08-29 20:39:36] start stage: cache_validation16
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+Loading weights:  61%|██████    | 189/311 [00:00<00:00, 1888.87it/s]
+Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1911.70it/s]
+[2026-08-29 20:39:48] source17/validation: 1/16 T=1172
+[2026-08-29 20:39:48] source17/validation: 2/16 T=1297
+[2026-08-29 20:39:49] source17/validation: 3/16 T=862
+[2026-08-29 20:39:49] source17/validation: 4/16 T=1076
+[2026-08-29 20:39:50] source17/validation: 5/16 T=1183
+[2026-08-29 20:39:50] source17/validation: 6/16 T=1205
+[2026-08-29 20:39:50] source17/validation: 7/16 T=1285
+[2026-08-29 20:39:51] source17/validation: 8/16 T=1451
+[2026-08-29 20:39:51] source17/validation: 9/16 T=869
+[2026-08-29 20:39:52] source17/validation: 10/16 T=1094
+[2026-08-29 20:39:52] source17/validation: 11/16 T=1141
+[2026-08-29 20:39:52] source17/validation: 12/16 T=1390
+[2026-08-29 20:39:53] source17/validation: 13/16 T=1333
+[2026-08-29 20:39:54] source17/validation: 14/16 T=1218
+[2026-08-29 20:39:54] source17/validation: 15/16 T=1457
+[2026-08-29 20:39:55] source17/validation: 16/16 T=1209
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1095.53it/s]
+Loading weights:  56%|█████▌    | 223/398 [00:00<00:00, 1083.62it/s]
+Loading weights:  83%|████████▎ | 332/398 [00:00<00:00, 1072.00it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1077.03it/s]
+[2026-08-29 20:40:02] target4/validation: 1/16 T=1172
+[2026-08-29 20:40:03] target4/validation: 2/16 T=1297
+[2026-08-29 20:40:04] target4/validation: 3/16 T=862
+[2026-08-29 20:40:05] target4/validation: 4/16 T=1076
+[2026-08-29 20:40:06] target4/validation: 5/16 T=1183
+[2026-08-29 20:40:08] target4/validation: 6/16 T=1205
+[2026-08-29 20:40:09] target4/validation: 7/16 T=1285
+[2026-08-29 20:40:11] target4/validation: 8/16 T=1451
+[2026-08-29 20:40:12] target4/validation: 9/16 T=869
+[2026-08-29 20:40:13] target4/validation: 10/16 T=1094
+[2026-08-29 20:40:14] target4/validation: 11/16 T=1141
+[2026-08-29 20:40:15] target4/validation: 12/16 T=1390
+[2026-08-29 20:40:17] target4/validation: 13/16 T=1333
+[2026-08-29 20:40:18] target4/validation: 14/16 T=1218
+[2026-08-29 20:40:20] target4/validation: 15/16 T=1457
+[2026-08-29 20:40:21] target4/validation: 16/16 T=1209
+[2026-08-29 20:40:23] completed stage: cache_validation16
+[2026-08-29 20:40:25] start stage: cache_test32
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+Loading weights:  59%|█████▊    | 182/311 [00:00<00:00, 1798.46it/s]
+Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1886.14it/s]
+[2026-08-29 20:40:38] source17/test: 1/32 T=1487
+[2026-08-29 20:40:38] source17/test: 2/32 T=1293
+[2026-08-29 20:40:39] source17/test: 3/32 T=1280
+[2026-08-29 20:40:39] source17/test: 4/32 T=1245
+[2026-08-29 20:40:40] source17/test: 5/32 T=1393
+[2026-08-29 20:40:41] source17/test: 6/32 T=1174
+[2026-08-29 20:40:41] source17/test: 7/32 T=1185
+[2026-08-29 20:40:42] source17/test: 8/32 T=1486
+[2026-08-29 20:40:43] source17/test: 9/32 T=1373
+[2026-08-29 20:40:43] source17/test: 10/32 T=1384
+[2026-08-29 20:40:44] source17/test: 11/32 T=1205
+[2026-08-29 20:40:44] source17/test: 12/32 T=790
+[2026-08-29 20:40:45] source17/test: 13/32 T=1419
+[2026-08-29 20:40:45] source17/test: 14/32 T=1207
+[2026-08-29 20:40:46] source17/test: 15/32 T=1100
+[2026-08-29 20:40:46] source17/test: 16/32 T=669
+[2026-08-29 20:40:47] source17/test: 17/32 T=716
+[2026-08-29 20:40:47] source17/test: 18/32 T=1060
+[2026-08-29 20:40:47] source17/test: 19/32 T=1218
+[2026-08-29 20:40:48] source17/test: 20/32 T=1536
+[2026-08-29 20:40:49] source17/test: 21/32 T=1040
+[2026-08-29 20:40:50] source17/test: 22/32 T=976
+[2026-08-29 20:40:50] source17/test: 23/32 T=1222
+[2026-08-29 20:40:51] source17/test: 24/32 T=1174
+[2026-08-29 20:40:51] source17/test: 25/32 T=1123
+[2026-08-29 20:40:52] source17/test: 26/32 T=1143
+[2026-08-29 20:40:52] source17/test: 27/32 T=841
+[2026-08-29 20:40:53] source17/test: 28/32 T=1513
+[2026-08-29 20:40:53] source17/test: 29/32 T=886
+[2026-08-29 20:40:54] source17/test: 30/32 T=1279
+[2026-08-29 20:40:54] source17/test: 31/32 T=1255
+[2026-08-29 20:40:55] source17/test: 32/32 T=1324
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  29%|██▊       | 114/398 [00:00<00:00, 1132.94it/s]
+Loading weights:  59%|█████▉    | 235/398 [00:00<00:00, 1170.85it/s]
+Loading weights:  89%|████████▊ | 353/398 [00:00<00:00, 1138.37it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1150.21it/s]
+[2026-08-29 20:41:02] target4/test: 1/32 T=1487
+[2026-08-29 20:41:03] target4/test: 2/32 T=1293
+[2026-08-29 20:41:04] target4/test: 3/32 T=1280
+[2026-08-29 20:41:06] target4/test: 4/32 T=1245
+[2026-08-29 20:41:07] target4/test: 5/32 T=1393
+[2026-08-29 20:41:09] target4/test: 6/32 T=1174
+[2026-08-29 20:41:10] target4/test: 7/32 T=1185
+[2026-08-29 20:41:11] target4/test: 8/32 T=1486
+[2026-08-29 20:41:13] target4/test: 9/32 T=1373
+[2026-08-29 20:41:14] target4/test: 10/32 T=1384
+[2026-08-29 20:41:16] target4/test: 11/32 T=1205
+[2026-08-29 20:41:16] target4/test: 12/32 T=790
+[2026-08-29 20:41:18] target4/test: 13/32 T=1419
+[2026-08-29 20:41:20] target4/test: 14/32 T=1207
+[2026-08-29 20:41:21] target4/test: 15/32 T=1100
+[2026-08-29 20:41:22] target4/test: 16/32 T=669
+[2026-08-29 20:41:23] target4/test: 17/32 T=716
+[2026-08-29 20:41:24] target4/test: 18/32 T=1060
+[2026-08-29 20:41:25] target4/test: 19/32 T=1218
+[2026-08-29 20:41:28] target4/test: 20/32 T=1536
+[2026-08-29 20:41:29] target4/test: 21/32 T=1040
+[2026-08-29 20:41:30] target4/test: 22/32 T=976
+[2026-08-29 20:41:31] target4/test: 23/32 T=1222
+[2026-08-29 20:41:33] target4/test: 24/32 T=1174
+[2026-08-29 20:41:34] target4/test: 25/32 T=1123
+[2026-08-29 20:41:35] target4/test: 26/32 T=1143
+[2026-08-29 20:41:36] target4/test: 27/32 T=841
+[2026-08-29 20:41:38] target4/test: 28/32 T=1513
+[2026-08-29 20:41:39] target4/test: 29/32 T=886
+[2026-08-29 20:41:40] target4/test: 30/32 T=1279
+[2026-08-29 20:41:42] target4/test: 31/32 T=1255
+[2026-08-29 20:41:43] target4/test: 32/32 T=1324
+[2026-08-29 20:41:46] completed stage: cache_test32
+[2026-08-29 20:41:48] start stage: calibrate_train64
+[2026-08-29 20:41:56] calibration source17: 1/64
+[2026-08-29 20:41:56] calibration source17: 2/64
+[2026-08-29 20:41:56] calibration source17: 3/64
+[2026-08-29 20:41:57] calibration source17: 4/64
+[2026-08-29 20:41:57] calibration source17: 5/64
+[2026-08-29 20:41:58] calibration source17: 6/64
+[2026-08-29 20:41:58] calibration source17: 7/64
+[2026-08-29 20:41:58] calibration source17: 8/64
+[2026-08-29 20:41:58] calibration source17: 9/64
+[2026-08-29 20:41:58] calibration source17: 10/64
+[2026-08-29 20:41:59] calibration source17: 11/64
+[2026-08-29 20:41:59] calibration source17: 12/64
+[2026-08-29 20:41:59] calibration source17: 13/64
+[2026-08-29 20:42:00] calibration source17: 14/64
+[2026-08-29 20:42:00] calibration source17: 15/64
+[2026-08-29 20:42:00] calibration source17: 16/64
+[2026-08-29 20:42:00] calibration source17: 17/64
+[2026-08-29 20:42:01] calibration source17: 18/64
+[2026-08-29 20:42:01] calibration source17: 19/64
+[2026-08-29 20:42:01] calibration source17: 20/64
+[2026-08-29 20:42:02] calibration source17: 21/64
+[2026-08-29 20:42:02] calibration source17: 22/64
+[2026-08-29 20:42:02] calibration source17: 23/64
+[2026-08-29 20:42:03] calibration source17: 24/64
+[2026-08-29 20:42:03] calibration source17: 25/64
+[2026-08-29 20:42:03] calibration source17: 26/64
+[2026-08-29 20:42:04] calibration source17: 27/64
+[2026-08-29 20:42:04] calibration source17: 28/64
+[2026-08-29 20:42:04] calibration source17: 29/64
+[2026-08-29 20:42:05] calibration source17: 30/64
+[2026-08-29 20:42:05] calibration source17: 31/64
+[2026-08-29 20:42:05] calibration source17: 32/64
+[2026-08-29 20:42:06] calibration source17: 33/64
+[2026-08-29 20:42:06] calibration source17: 34/64
+[2026-08-29 20:42:06] calibration source17: 35/64
+[2026-08-29 20:42:07] calibration source17: 36/64
+[2026-08-29 20:42:07] calibration source17: 37/64
+[2026-08-29 20:42:07] calibration source17: 38/64
+[2026-08-29 20:42:08] calibration source17: 39/64
+[2026-08-29 20:42:08] calibration source17: 40/64
+[2026-08-29 20:42:09] calibration source17: 41/64
+[2026-08-29 20:42:09] calibration source17: 42/64
+[2026-08-29 20:42:09] calibration source17: 43/64
+[2026-08-29 20:42:10] calibration source17: 44/64
+[2026-08-29 20:42:10] calibration source17: 45/64
+[2026-08-29 20:42:10] calibration source17: 46/64
+[2026-08-29 20:42:11] calibration source17: 47/64
+[2026-08-29 20:42:11] calibration source17: 48/64
+[2026-08-29 20:42:11] calibration source17: 49/64
+[2026-08-29 20:42:12] calibration source17: 50/64
+[2026-08-29 20:42:12] calibration source17: 51/64
+[2026-08-29 20:42:12] calibration source17: 52/64
+[2026-08-29 20:42:13] calibration source17: 53/64
+[2026-08-29 20:42:13] calibration source17: 54/64
+[2026-08-29 20:42:13] calibration source17: 55/64
+[2026-08-29 20:42:13] calibration source17: 56/64
+[2026-08-29 20:42:14] calibration source17: 57/64
+[2026-08-29 20:42:14] calibration source17: 58/64
+[2026-08-29 20:42:15] calibration source17: 59/64
+[2026-08-29 20:42:15] calibration source17: 60/64
+[2026-08-29 20:42:15] calibration source17: 61/64
+[2026-08-29 20:42:16] calibration source17: 62/64
+[2026-08-29 20:42:16] calibration source17: 63/64
+[2026-08-29 20:42:16] calibration source17: 64/64
+[2026-08-29 20:42:17] calibration target4: 1/64
+[2026-08-29 20:42:17] calibration target4: 2/64
+[2026-08-29 20:42:18] calibration target4: 3/64
+[2026-08-29 20:42:18] calibration target4: 4/64
+[2026-08-29 20:42:19] calibration target4: 5/64
+[2026-08-29 20:42:19] calibration target4: 6/64
+[2026-08-29 20:42:19] calibration target4: 7/64
+[2026-08-29 20:42:19] calibration target4: 8/64
+[2026-08-29 20:42:20] calibration target4: 9/64
+[2026-08-29 20:42:20] calibration target4: 10/64
+[2026-08-29 20:42:21] calibration target4: 11/64
+[2026-08-29 20:42:21] calibration target4: 12/64
+[2026-08-29 20:42:21] calibration target4: 13/64
+[2026-08-29 20:42:22] calibration target4: 14/64
+[2026-08-29 20:42:22] calibration target4: 15/64
+[2026-08-29 20:42:22] calibration target4: 16/64
+[2026-08-29 20:42:23] calibration target4: 17/64
+[2026-08-29 20:42:23] calibration target4: 18/64
+[2026-08-29 20:42:23] calibration target4: 19/64
+[2026-08-29 20:42:24] calibration target4: 20/64
+[2026-08-29 20:42:24] calibration target4: 21/64
+[2026-08-29 20:42:25] calibration target4: 22/64
+[2026-08-29 20:42:25] calibration target4: 23/64
+[2026-08-29 20:42:25] calibration target4: 24/64
+[2026-08-29 20:42:26] calibration target4: 25/64
+[2026-08-29 20:42:26] calibration target4: 26/64
+[2026-08-29 20:42:27] calibration target4: 27/64
+[2026-08-29 20:42:27] calibration target4: 28/64
+[2026-08-29 20:42:27] calibration target4: 29/64
+[2026-08-29 20:42:28] calibration target4: 30/64
+[2026-08-29 20:42:28] calibration target4: 31/64
+[2026-08-29 20:42:29] calibration target4: 32/64
+[2026-08-29 20:42:29] calibration target4: 33/64
+[2026-08-29 20:42:30] calibration target4: 34/64
+[2026-08-29 20:42:30] calibration target4: 35/64
+[2026-08-29 20:42:30] calibration target4: 36/64
+[2026-08-29 20:42:31] calibration target4: 37/64
+[2026-08-29 20:42:31] calibration target4: 38/64
+[2026-08-29 20:42:32] calibration target4: 39/64
+[2026-08-29 20:42:32] calibration target4: 40/64
+[2026-08-29 20:42:32] calibration target4: 41/64
+[2026-08-29 20:42:33] calibration target4: 42/64
+[2026-08-29 20:42:33] calibration target4: 43/64
+[2026-08-29 20:42:34] calibration target4: 44/64
+[2026-08-29 20:42:34] calibration target4: 45/64
+[2026-08-29 20:42:34] calibration target4: 46/64
+[2026-08-29 20:42:35] calibration target4: 47/64
+[2026-08-29 20:42:35] calibration target4: 48/64
+[2026-08-29 20:42:36] calibration target4: 49/64
+[2026-08-29 20:42:36] calibration target4: 50/64
+[2026-08-29 20:42:36] calibration target4: 51/64
+[2026-08-29 20:42:37] calibration target4: 52/64
+[2026-08-29 20:42:37] calibration target4: 53/64
+[2026-08-29 20:42:38] calibration target4: 54/64
+[2026-08-29 20:42:38] calibration target4: 55/64
+[2026-08-29 20:42:38] calibration target4: 56/64
+[2026-08-29 20:42:39] calibration target4: 57/64
+[2026-08-29 20:42:39] calibration target4: 58/64
+[2026-08-29 20:42:40] calibration target4: 59/64
+[2026-08-29 20:42:40] calibration target4: 60/64
+[2026-08-29 20:42:41] calibration target4: 61/64
+[2026-08-29 20:42:41] calibration target4: 62/64
+[2026-08-29 20:42:41] calibration target4: 63/64
+[2026-08-29 20:42:42] calibration target4: 64/64
+[2026-08-29 20:42:43] completed stage: calibrate_train64
+[2026-08-29 20:42:45] start stage: stage_a_d0
+[2026-08-29 20:43:25] Stage A d0 50/150 validation=5.678803
+[2026-08-29 20:43:54] Stage A d0 100/150 validation=5.398987
+[2026-08-29 20:44:23] Stage A d0 150/150 validation=5.163016
+[2026-08-29 20:44:24] completed stage: stage_a_d0
+[2026-08-29 20:44:26] start stage: stage_a_d1
+[2026-08-29 20:45:10] Stage A d1 50/150 validation=5.086327
+[2026-08-29 20:45:44] Stage A d1 100/150 validation=4.842633
+[2026-08-29 20:46:14] Stage A d1 150/150 validation=4.632328
+[2026-08-29 20:46:15] completed stage: stage_a_d1
+[2026-08-29 20:46:16] start stage: stage_a_d2
+[2026-08-29 20:46:53] Stage A d2 50/150 validation=4.778954
+[2026-08-29 20:47:20] Stage A d2 100/150 validation=4.245184
+[2026-08-29 20:47:46] Stage A d2 150/150 validation=3.970974
+[2026-08-29 20:47:47] completed stage: stage_a_d2
+[2026-08-29 20:47:49] start stage: diagnose_d0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  31%|███       | 124/398 [00:00<00:00, 1207.14it/s]
+Loading weights:  62%|██████▏   | 245/398 [00:00<00:00, 1163.17it/s]
+Loading weights:  91%|█████████ | 362/398 [00:00<00:00, 1144.30it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1161.47it/s]
+[2026-08-29 20:48:00] completed stage: diagnose_d0
+[2026-08-29 20:48:02] start stage: diagnose_d1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1121.23it/s]
+Loading weights:  58%|█████▊    | 231/398 [00:00<00:00, 1138.77it/s]
+Loading weights:  87%|████████▋ | 345/398 [00:00<00:00, 1018.17it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1058.56it/s]
+[2026-08-29 20:48:15] completed stage: diagnose_d1
+[2026-08-29 20:48:16] start stage: diagnose_d2
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1123.08it/s]
+Loading weights:  57%|█████▋    | 226/398 [00:00<00:00, 1112.05it/s]
+Loading weights:  85%|████████▍ | 338/398 [00:00<00:00, 1113.38it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1109.97it/s]
+[2026-08-29 20:48:27] completed stage: diagnose_d2
+[2026-08-29 20:48:29] start stage: stage_b_d0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 990.40it/s]
+Loading weights:  53%|█████▎    | 211/398 [00:00<00:00, 1034.59it/s]
+Loading weights:  79%|███████▉  | 315/398 [00:00<00:00, 989.84it/s] 
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1010.78it/s]
+[2026-08-29 20:49:27] Stage B d0 50/150 validation_nll=12.648313
+[2026-08-29 20:50:16] Stage B d0 100/150 validation_nll=12.037978
+[2026-08-29 20:51:16] Stage B d0 150/150 validation_nll=11.813030
+[2026-08-29 20:51:17] completed stage: stage_b_d0
+[2026-08-29 20:51:19] start stage: stage_b_d1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 1005.67it/s]
+Loading weights:  51%|█████     | 203/398 [00:00<00:00, 936.00it/s] 
+Loading weights:  75%|███████▍  | 297/398 [00:00<00:00, 897.61it/s]
+Loading weights:  98%|█████████▊| 389/398 [00:00<00:00, 901.01it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 930.70it/s]
+[2026-08-29 20:52:44] Stage B d1 50/150 validation_nll=12.724618
+[2026-08-29 20:53:32] Stage B d1 100/150 validation_nll=12.220029
+[2026-08-29 20:54:23] Stage B d1 150/150 validation_nll=11.556613
+[2026-08-29 20:54:24] completed stage: stage_b_d1
+[2026-08-29 20:54:26] start stage: stage_b_d2
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  23%|██▎       | 93/398 [00:00<00:00, 887.16it/s]
+Loading weights:  51%|█████     | 201/398 [00:00<00:00, 937.19it/s]
+Loading weights:  75%|███████▌  | 300/398 [00:00<00:00, 921.37it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 936.16it/s]
+[2026-08-29 20:55:28] Stage B d2 50/150 validation_nll=11.985903
+[2026-08-29 20:56:15] Stage B d2 100/150 validation_nll=10.097589
+[2026-08-29 20:57:02] Stage B d2 150/150 validation_nll=9.417504
+[2026-08-29 20:57:03] completed stage: stage_b_d2
+[2026-08-29 20:57:05] start stage: evaluate_d0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  31%|███       | 124/398 [00:00<00:00, 1236.83it/s]
+Loading weights:  62%|██████▏   | 248/398 [00:00<00:00, 1179.91it/s]
+Loading weights:  92%|█████████▏| 367/398 [00:00<00:00, 1136.75it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1151.26it/s]
+[2026-08-29 20:57:35] 4B evaluation d0: 1/32
+[2026-08-29 20:57:50] 4B evaluation d0: 2/32
+[2026-08-29 20:58:05] 4B evaluation d0: 3/32
+[2026-08-29 20:58:20] 4B evaluation d0: 4/32
+[2026-08-29 20:58:35] 4B evaluation d0: 5/32
+[2026-08-29 20:58:52] 4B evaluation d0: 6/32
+[2026-08-29 20:59:07] 4B evaluation d0: 7/32
+[2026-08-29 20:59:23] 4B evaluation d0: 8/32
+[2026-08-29 20:59:38] 4B evaluation d0: 9/32
+[2026-08-29 20:59:53] 4B evaluation d0: 10/32
+[2026-08-29 21:00:04] 4B evaluation d0: 11/32
+[2026-08-29 21:00:18] 4B evaluation d0: 12/32
+[2026-08-29 21:00:33] 4B evaluation d0: 13/32
+[2026-08-29 21:00:47] 4B evaluation d0: 14/32
+[2026-08-29 21:01:02] 4B evaluation d0: 15/32
+[2026-08-29 21:01:15] 4B evaluation d0: 16/32
+[2026-08-29 21:01:28] 4B evaluation d0: 17/32
+[2026-08-29 21:01:41] 4B evaluation d0: 18/32
+[2026-08-29 21:01:56] 4B evaluation d0: 19/32
+[2026-08-29 21:02:12] 4B evaluation d0: 20/32
+[2026-08-29 21:02:26] 4B evaluation d0: 21/32
+[2026-08-29 21:02:40] 4B evaluation d0: 22/32
+[2026-08-29 21:02:54] 4B evaluation d0: 23/32
+[2026-08-29 21:03:11] 4B evaluation d0: 24/32
+[2026-08-29 21:03:25] 4B evaluation d0: 25/32
+[2026-08-29 21:03:39] 4B evaluation d0: 26/32
+[2026-08-29 21:03:52] 4B evaluation d0: 27/32
+[2026-08-29 21:04:07] 4B evaluation d0: 28/32
+[2026-08-29 21:04:21] 4B evaluation d0: 29/32
+[2026-08-29 21:04:37] 4B evaluation d0: 30/32
+[2026-08-29 21:04:54] 4B evaluation d0: 31/32
+[2026-08-29 21:05:10] 4B evaluation d0: 32/32
+
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+Loading weights:  54%|█████▍    | 168/311 [00:00<00:00, 1679.26it/s]
+Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1729.85it/s]
+[2026-08-29 21:05:15] 1.7B full-text evaluation: 1/32
+[2026-08-29 21:05:17] 1.7B full-text evaluation: 2/32
+[2026-08-29 21:05:19] 1.7B full-text evaluation: 3/32
+[2026-08-29 21:05:21] 1.7B full-text evaluation: 4/32
+[2026-08-29 21:05:23] 1.7B full-text evaluation: 5/32
+[2026-08-29 21:05:25] 1.7B full-text evaluation: 6/32
+[2026-08-29 21:05:27] 1.7B full-text evaluation: 7/32
+[2026-08-29 21:05:29] 1.7B full-text evaluation: 8/32
+[2026-08-29 21:05:32] 1.7B full-text evaluation: 9/32
+[2026-08-29 21:05:34] 1.7B full-text evaluation: 10/32
+[2026-08-29 21:05:36] 1.7B full-text evaluation: 11/32
+[2026-08-29 21:05:38] 1.7B full-text evaluation: 12/32
+[2026-08-29 21:05:40] 1.7B full-text evaluation: 13/32
+[2026-08-29 21:05:42] 1.7B full-text evaluation: 14/32
+[2026-08-29 21:05:44] 1.7B full-text evaluation: 15/32
+[2026-08-29 21:05:46] 1.7B full-text evaluation: 16/32
+[2026-08-29 21:05:48] 1.7B full-text evaluation: 17/32
+[2026-08-29 21:05:50] 1.7B full-text evaluation: 18/32
+[2026-08-29 21:05:51] 1.7B full-text evaluation: 19/32
+[2026-08-29 21:05:54] 1.7B full-text evaluation: 20/32
+[2026-08-29 21:05:56] 1.7B full-text evaluation: 21/32
+[2026-08-29 21:05:58] 1.7B full-text evaluation: 22/32
+[2026-08-29 21:06:00] 1.7B full-text evaluation: 23/32
+[2026-08-29 21:06:02] 1.7B full-text evaluation: 24/32
+[2026-08-29 21:06:05] 1.7B full-text evaluation: 25/32
+[2026-08-29 21:06:07] 1.7B full-text evaluation: 26/32
+[2026-08-29 21:06:09] 1.7B full-text evaluation: 27/32
+[2026-08-29 21:06:11] 1.7B full-text evaluation: 28/32
+[2026-08-29 21:06:13] 1.7B full-text evaluation: 29/32
+[2026-08-29 21:06:15] 1.7B full-text evaluation: 30/32
+[2026-08-29 21:06:18] 1.7B full-text evaluation: 31/32
+[2026-08-29 21:06:20] 1.7B full-text evaluation: 32/32
+[2026-08-29 21:06:22] completed stage: evaluate_d0
+[2026-08-29 21:06:24] start stage: evaluate_d1
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  30%|███       | 120/398 [00:00<00:00, 1190.62it/s]
+Loading weights:  60%|██████    | 240/398 [00:00<00:00, 1163.96it/s]
+Loading weights:  90%|████████▉ | 357/398 [00:00<00:00, 1025.15it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1084.65it/s]
+[2026-08-29 21:06:55] 4B evaluation d1: 1/32
+[2026-08-29 21:07:10] 4B evaluation d1: 2/32
+[2026-08-29 21:07:25] 4B evaluation d1: 3/32
+[2026-08-29 21:07:41] 4B evaluation d1: 4/32
+[2026-08-29 21:07:56] 4B evaluation d1: 5/32
+[2026-08-29 21:08:13] 4B evaluation d1: 6/32
+[2026-08-29 21:08:29] 4B evaluation d1: 7/32
+[2026-08-29 21:08:51] 4B evaluation d1: 8/32
+[2026-08-29 21:09:15] 4B evaluation d1: 9/32
+[2026-08-29 21:09:40] 4B evaluation d1: 10/32
+[2026-08-29 21:10:04] 4B evaluation d1: 11/32
+[2026-08-29 21:10:27] 4B evaluation d1: 12/32
+[2026-08-29 21:10:52] 4B evaluation d1: 13/32
+[2026-08-29 21:11:13] 4B evaluation d1: 14/32
+[2026-08-29 21:11:29] 4B evaluation d1: 15/32
+[2026-08-29 21:11:43] 4B evaluation d1: 16/32
+[2026-08-29 21:11:56] 4B evaluation d1: 17/32
+[2026-08-29 21:12:10] 4B evaluation d1: 18/32
+[2026-08-29 21:12:25] 4B evaluation d1: 19/32
+[2026-08-29 21:12:40] 4B evaluation d1: 20/32
+[2026-08-29 21:12:55] 4B evaluation d1: 21/32
+[2026-08-29 21:13:08] 4B evaluation d1: 22/32
+[2026-08-29 21:13:23] 4B evaluation d1: 23/32
+[2026-08-29 21:13:39] 4B evaluation d1: 24/32
+[2026-08-29 21:13:53] 4B evaluation d1: 25/32
+[2026-08-29 21:14:07] 4B evaluation d1: 26/32
+[2026-08-29 21:14:21] 4B evaluation d1: 27/32
+[2026-08-29 21:14:33] 4B evaluation d1: 28/32
+[2026-08-29 21:14:47] 4B evaluation d1: 29/32
+[2026-08-29 21:15:01] 4B evaluation d1: 30/32
+[2026-08-29 21:15:16] 4B evaluation d1: 31/32
+[2026-08-29 21:15:31] 4B evaluation d1: 32/32
+
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+Loading weights:  61%|██████▏   | 191/311 [00:00<00:00, 1899.67it/s]
+Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1899.59it/s]
+[2026-08-29 21:15:36] 1.7B full-text evaluation: 1/32
+[2026-08-29 21:15:38] 1.7B full-text evaluation: 2/32
+[2026-08-29 21:15:41] 1.7B full-text evaluation: 3/32
+[2026-08-29 21:15:43] 1.7B full-text evaluation: 4/32
+[2026-08-29 21:15:45] 1.7B full-text evaluation: 5/32
+[2026-08-29 21:15:48] 1.7B full-text evaluation: 6/32
+[2026-08-29 21:15:50] 1.7B full-text evaluation: 7/32
+[2026-08-29 21:15:52] 1.7B full-text evaluation: 8/32
+[2026-08-29 21:15:55] 1.7B full-text evaluation: 9/32
+[2026-08-29 21:15:58] 1.7B full-text evaluation: 10/32
+[2026-08-29 21:16:00] 1.7B full-text evaluation: 11/32
+[2026-08-29 21:16:02] 1.7B full-text evaluation: 12/32
+[2026-08-29 21:16:04] 1.7B full-text evaluation: 13/32
+[2026-08-29 21:16:07] 1.7B full-text evaluation: 14/32
+[2026-08-29 21:16:09] 1.7B full-text evaluation: 15/32
+[2026-08-29 21:16:11] 1.7B full-text evaluation: 16/32
+[2026-08-29 21:16:13] 1.7B full-text evaluation: 17/32
+[2026-08-29 21:16:16] 1.7B full-text evaluation: 18/32
+[2026-08-29 21:16:18] 1.7B full-text evaluation: 19/32
+[2026-08-29 21:16:21] 1.7B full-text evaluation: 20/32
+[2026-08-29 21:16:23] 1.7B full-text evaluation: 21/32
+[2026-08-29 21:16:25] 1.7B full-text evaluation: 22/32
+[2026-08-29 21:16:27] 1.7B full-text evaluation: 23/32
+[2026-08-29 21:16:30] 1.7B full-text evaluation: 24/32
+[2026-08-29 21:16:31] 1.7B full-text evaluation: 25/32
+[2026-08-29 21:16:33] 1.7B full-text evaluation: 26/32
+[2026-08-29 21:16:35] 1.7B full-text evaluation: 27/32
+[2026-08-29 21:16:38] 1.7B full-text evaluation: 28/32
+[2026-08-29 21:16:40] 1.7B full-text evaluation: 29/32
+[2026-08-29 21:16:42] 1.7B full-text evaluation: 30/32
+[2026-08-29 21:16:44] 1.7B full-text evaluation: 31/32
+[2026-08-29 21:16:46] 1.7B full-text evaluation: 32/32
+[2026-08-29 21:16:48] completed stage: evaluate_d1
+[2026-08-29 21:16:50] start stage: evaluate_d2
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:  28%|██▊       | 112/398 [00:00<00:00, 1110.88it/s]
+Loading weights:  56%|█████▋    | 224/398 [00:00<00:00, 1045.60it/s]
+Loading weights:  83%|████████▎ | 329/398 [00:00<00:00, 1000.68it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1017.47it/s]
+[2026-08-29 21:17:21] 4B evaluation d2: 1/32
+[2026-08-29 21:17:36] 4B evaluation d2: 2/32
+[2026-08-29 21:17:51] 4B evaluation d2: 3/32
+[2026-08-29 21:18:06] 4B evaluation d2: 4/32
+[2026-08-29 21:18:21] 4B evaluation d2: 5/32
+[2026-08-29 21:18:38] 4B evaluation d2: 6/32
+[2026-08-29 21:18:53] 4B evaluation d2: 7/32
+[2026-08-29 21:19:09] 4B evaluation d2: 8/32
+[2026-08-29 21:19:25] 4B evaluation d2: 9/32
+[2026-08-29 21:19:40] 4B evaluation d2: 10/32
+[2026-08-29 21:19:56] 4B evaluation d2: 11/32
+[2026-08-29 21:20:10] 4B evaluation d2: 12/32
+[2026-08-29 21:20:25] 4B evaluation d2: 13/32
+[2026-08-29 21:20:39] 4B evaluation d2: 14/32
+[2026-08-29 21:20:53] 4B evaluation d2: 15/32
+[2026-08-29 21:21:06] 4B evaluation d2: 16/32
+[2026-08-29 21:21:19] 4B evaluation d2: 17/32
+[2026-08-29 21:21:34] 4B evaluation d2: 18/32
+[2026-08-29 21:21:48] 4B evaluation d2: 19/32
+[2026-08-29 21:22:04] 4B evaluation d2: 20/32
+[2026-08-29 21:22:18] 4B evaluation d2: 21/32
+[2026-08-29 21:22:32] 4B evaluation d2: 22/32
+[2026-08-29 21:22:47] 4B evaluation d2: 23/32
+[2026-08-29 21:23:05] 4B evaluation d2: 24/32
+[2026-08-29 21:23:19] 4B evaluation d2: 25/32
+[2026-08-29 21:23:34] 4B evaluation d2: 26/32
+[2026-08-29 21:23:48] 4B evaluation d2: 27/32
+[2026-08-29 21:24:03] 4B evaluation d2: 28/32
+[2026-08-29 21:24:17] 4B evaluation d2: 29/32
+[2026-08-29 21:24:31] 4B evaluation d2: 30/32
+[2026-08-29 21:24:45] 4B evaluation d2: 31/32
+[2026-08-29 21:25:00] 4B evaluation d2: 32/32
+
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]
+Loading weights:  61%|██████    | 189/311 [00:00<00:00, 1873.00it/s]
+Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1870.60it/s]
+[2026-08-29 21:25:06] 1.7B full-text evaluation: 1/32
+[2026-08-29 21:25:08] 1.7B full-text evaluation: 2/32
+[2026-08-29 21:25:10] 1.7B full-text evaluation: 3/32
+[2026-08-29 21:25:12] 1.7B full-text evaluation: 4/32
+[2026-08-29 21:25:14] 1.7B full-text evaluation: 5/32
+[2026-08-29 21:25:16] 1.7B full-text evaluation: 6/32
+[2026-08-29 21:25:18] 1.7B full-text evaluation: 7/32
+[2026-08-29 21:25:21] 1.7B full-text evaluation: 8/32
+[2026-08-29 21:25:24] 1.7B full-text evaluation: 9/32
+[2026-08-29 21:25:26] 1.7B full-text evaluation: 10/32
+[2026-08-29 21:25:28] 1.7B full-text evaluation: 11/32
+[2026-08-29 21:25:31] 1.7B full-text evaluation: 12/32
+[2026-08-29 21:25:35] 1.7B full-text evaluation: 13/32
+[2026-08-29 21:25:38] 1.7B full-text evaluation: 14/32
+[2026-08-29 21:25:41] 1.7B full-text evaluation: 15/32
+[2026-08-29 21:25:44] 1.7B full-text evaluation: 16/32
+[2026-08-29 21:25:47] 1.7B full-text evaluation: 17/32
+[2026-08-29 21:25:50] 1.7B full-text evaluation: 18/32
+[2026-08-29 21:25:52] 1.7B full-text evaluation: 19/32
+[2026-08-29 21:25:58] 1.7B full-text evaluation: 20/32
+[2026-08-29 21:26:01] 1.7B full-text evaluation: 21/32
+[2026-08-29 21:26:04] 1.7B full-text evaluation: 22/32
+[2026-08-29 21:26:06] 1.7B full-text evaluation: 23/32
+[2026-08-29 21:26:09] 1.7B full-text evaluation: 24/32
+[2026-08-29 21:26:11] 1.7B full-text evaluation: 25/32
+[2026-08-29 21:26:13] 1.7B full-text evaluation: 26/32
+[2026-08-29 21:26:15] 1.7B full-text evaluation: 27/32
+[2026-08-29 21:26:17] 1.7B full-text evaluation: 28/32
+[2026-08-29 21:26:19] 1.7B full-text evaluation: 29/32
+[2026-08-29 21:26:22] 1.7B full-text evaluation: 30/32
+[2026-08-29 21:26:26] 1.7B full-text evaluation: 31/32
+[2026-08-29 21:26:30] 1.7B full-text evaluation: 32/32
+[2026-08-29 21:26:34] completed stage: evaluate_d2
+[2026-08-29 21:26:34] remaining pipeline completed

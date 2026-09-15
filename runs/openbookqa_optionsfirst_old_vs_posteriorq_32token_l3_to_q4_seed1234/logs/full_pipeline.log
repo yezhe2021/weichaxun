@@ -1,0 +1,22 @@
+[2026-09-14 15:55:45] Selected OpenBookQA samples=128 first=926 last=1672
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:  40%|████      | 102/254 [00:00<00:00, 931.29it/s]Loading weights:  77%|███████▋  | 196/254 [00:00<00:00, 893.59it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 898.32it/s]
+[2026-09-14 15:55:55] Llama old/new routing: 16/128
+[2026-09-14 15:55:58] Llama old/new routing: 32/128
+[2026-09-14 15:56:02] Llama old/new routing: 48/128
+[2026-09-14 15:56:05] Llama old/new routing: 64/128
+[2026-09-14 15:56:09] Llama old/new routing: 80/128
+[2026-09-14 15:56:12] Llama old/new routing: 96/128
+[2026-09-14 15:56:16] Llama old/new routing: 112/128
+[2026-09-14 15:56:19] Llama old/new routing: 128/128
+[2026-09-14 15:56:21] Old Options-first checkpoint=/home/yezhe/异构模型/rawtext_anchor_nativekv_full28_head8_ablation_train1024_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/full28_diagonal_choice_kl/best_accuracy.pt step=256
+[2026-09-14 15:56:21] New posterior-Question checkpoint=/home/yezhe/异构模型/mmlupro_sender_qoq_posterior_question_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_b/checkpoints/step_128.pt step=128
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 110/398 [00:00<00:00, 1083.21it/s]Loading weights:  55%|█████▌    | 219/398 [00:00<00:00, 1077.95it/s]Loading weights:  83%|████████▎ | 332/398 [00:00<00:00, 1084.15it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1087.02it/s]
+[2026-09-14 15:56:34] Qwen paired evaluation: 16/128
+[2026-09-14 15:56:42] Qwen paired evaluation: 32/128
+[2026-09-14 15:56:50] Qwen paired evaluation: 48/128
+[2026-09-14 15:56:58] Qwen paired evaluation: 64/128
+[2026-09-14 15:57:07] Qwen paired evaluation: 80/128
+[2026-09-14 15:57:15] Qwen paired evaluation: 96/128
+[2026-09-14 15:57:23] Qwen paired evaluation: 112/128
+[2026-09-14 15:57:31] Qwen paired evaluation: 128/128
+[2026-09-14 15:57:31] COMPLETED old_options_first=0.2812 new_posterior_question=0.4609

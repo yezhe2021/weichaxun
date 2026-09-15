@@ -1,0 +1,107 @@
+{
+  "experiment": "mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234",
+  "status": "completed",
+  "prompt": "Question -> Options -> Answer:",
+  "routing_query": "last Sender-native Answer: token",
+  "selection": "32 raw-text regions",
+  "checkpoint_selection": "validation only; primary=best validation accuracy",
+  "main_table": {
+    "Qwen Full Native": {
+      "accuracy": 0.4140625,
+      "oracle_agreement": 0.5546875,
+      "oracle_choice_kl": 0.5524718741876313
+    },
+    "Llama Full Native": {
+      "accuracy": 0.3203125,
+      "oracle_agreement": 0.375,
+      "oracle_choice_kl": 0.8608318891201634
+    },
+    "Qwen Self-Selected32 Native": {
+      "accuracy": 0.375,
+      "oracle_agreement": 0.8125,
+      "oracle_choice_kl": 0.4049900094671557
+    },
+    "Llama-selected -> Qwen Native Oracle": {
+      "accuracy": 0.34375,
+      "oracle_agreement": 1.0,
+      "oracle_choice_kl": 0.0
+    },
+    "Translated Full28-MLP": {
+      "accuracy": 0.265625,
+      "oracle_agreement": 0.53125,
+      "oracle_choice_kl": 0.6568357499636477
+    },
+    "Shuffle": {
+      "accuracy": 0.1484375,
+      "oracle_agreement": 0.1796875,
+      "oracle_choice_kl": 1.4319984164321795
+    },
+    "Zero": {
+      "accuracy": 0.1328125,
+      "oracle_agreement": 0.2890625,
+      "oracle_choice_kl": 1.6394205447868444
+    },
+    "No-memory": {
+      "accuracy": 0.1328125,
+      "oracle_agreement": 0.2890625,
+      "oracle_choice_kl": 1.9401989544858225
+    }
+  },
+  "translated_checkpoints": {
+    "best_accuracy": {
+      "checkpoint_step": 128,
+      "checkpoint": "best_accuracy",
+      "functional": {
+        "translated": {
+          "accuracy": 0.265625,
+          "oracle_agreement": 0.53125,
+          "oracle_choice_kl": 0.6568357499636477
+        },
+        "shuffle": {
+          "accuracy": 0.1484375,
+          "oracle_agreement": 0.1796875,
+          "oracle_choice_kl": 1.4319984164321795
+        }
+      },
+      "representation": {
+        "loss": 0.7933645956218243,
+        "k_nmse": 0.11249080114066601,
+        "v_nmse": 0.35052502527832985,
+        "k_cosine": 0.9050881825387478,
+        "v_cosine": 0.7645630463957787
+      }
+    },
+    "best_choice_kl": {
+      "checkpoint_step": 128,
+      "checkpoint": "best_choice_kl",
+      "functional": {
+        "translated": {
+          "accuracy": 0.265625,
+          "oracle_agreement": 0.53125,
+          "oracle_choice_kl": 0.6568357499636477
+        },
+        "shuffle": {
+          "accuracy": 0.1484375,
+          "oracle_agreement": 0.1796875,
+          "oracle_choice_kl": 1.4319984164321795
+        }
+      },
+      "representation": {
+        "loss": 0.7933645956218243,
+        "k_nmse": 0.11249080114066601,
+        "v_nmse": 0.35052502527832985,
+        "k_cosine": 0.9050881825387478,
+        "v_cosine": 0.7645630463957787
+      }
+    }
+  },
+  "mean_random_chance": 0.11395089285714263,
+  "gaps": {
+    "selection_gap": 0.0703125,
+    "translation_gap": 0.078125,
+    "information_gain_vs_zero": 0.1328125,
+    "information_gain_vs_no_memory": 0.1328125,
+    "oracle_retention_vs_zero": 0.6296296296296297,
+    "oracle_retention_vs_no_memory": 0.6296296296296297
+  }
+}

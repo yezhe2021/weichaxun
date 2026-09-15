@@ -1,0 +1,26 @@
+{
+  "seed": 1234,
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "llama": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct"
+  },
+  "source_root": "/home/yezhe/异构模型/selfslot_training_sufficiency_qwen3_4b_llama3_2_3b_seed1234/runs/study",
+  "slots": 64,
+  "locality_strengths": [
+    0.0,
+    8.0,
+    16.0
+  ],
+  "train_samples": 16,
+  "validation_samples": 16,
+  "test_samples": 32,
+  "optimizer_steps": 128,
+  "batch_size": 8,
+  "validation_interval_steps": 64,
+  "learning_rate": 0.001,
+  "clip": 30.0,
+  "temperature": 1.0,
+  "attention_implementation": "eager",
+  "mode": "pilot",
+  "signature": "fee83aeb740f94903ab22c44be403b0288a16b5ca45e00b582d3f55209e1553b"
+}

@@ -1,0 +1,24 @@
+{
+  "experiment_name": "q35_full_hybrid_cache_replay_audit_seed1234",
+  "seed": 1234,
+  "work_dir": "/home/yezhe/可拔插/q35_full_hybrid_cache_replay_audit_seed1234",
+  "model_path": "/home/yezhe/all_models/models/Qwen/Qwen3___5-4B",
+  "hotpot_dev": "/home/yezhe/数据集/HotpotQA/raw/hotpot_dev_distractor_v1.json",
+  "formal_samples": 64,
+  "smoke_samples": 4,
+  "max_new_tokens": 32,
+  "max_answer_tokens": 32,
+  "dtype": "float16",
+  "split_remainders": [0, 1, 17, 32, 63],
+  "conditions": ["continuous", "full_hybrid_replay", "fa_only", "fa_recurrent", "question_only", "shuffled"],
+  "enforce_hard_gates": true,
+  "gates": {
+    "clone_logits_max_abs": 1e-5,
+    "clone_cache_nmse": 1e-6,
+    "replay_mean_kl": 0.0001,
+    "answer_nll_diff": 0.001,
+    "top1_match_rate": 0.999,
+    "generation_match_min": 0.98,
+    "em_f1_diff": 0.02
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-C2 Head-Structured Writer",
+  "mode": "formal512",
+  "samples": 512,
+  "best_epoch_by_train_objective": 15,
+  "best_train_loss": 0.004535412666882621,
+  "writer_metadata": {
+    "layers": 16,
+    "native_heads": 8,
+    "canonical_heads": 16,
+    "head_dim": 128,
+    "rank": 32,
+    "routing": "shared_KV_16x8_straight_through_top1",
+    "initialization": "exact_fixed_duplicate_writer16",
+    "k_v_route_shared": true,
+    "k_v_residual_adapters_separate": true,
+    "cross_token_mixing": false,
+    "cross_layer_mixing": false,
+    "dimension_compression": false
+  },
+  "trainable_parameters": 4196352,
+  "only_writer_updated": true,
+  "checkpoint": "/home/yezhe/伪查询/runs/p3e_c2_learned_head_structured_writer_seed1234/writer_formal512/worker/checkpoint_best.pt"
+}

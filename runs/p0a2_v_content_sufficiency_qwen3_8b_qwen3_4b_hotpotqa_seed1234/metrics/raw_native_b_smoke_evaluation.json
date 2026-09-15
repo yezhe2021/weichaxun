@@ -1,0 +1,31 @@
+{
+  "mode": "raw_native",
+  "probe_trained_sender": "b",
+  "probe_training_source": "b_self_only",
+  "conditions": {
+    "self": {
+      "support_recall_at_1": 0.25,
+      "support_hit_at_1": 0.5,
+      "support_recall_at_5": 0.625,
+      "support_hit_at_5": 0.75,
+      "mrr": 0.5989583333333334,
+      "support_auprc": 0.5113839285714286
+    },
+    "cross": {
+      "support_recall_at_1": 0.0,
+      "support_hit_at_1": 0.0,
+      "support_recall_at_5": 0.375,
+      "support_hit_at_5": 0.75,
+      "mrr": 0.3317307692307692,
+      "support_auprc": 0.2686992355470616
+    },
+    "shuffled": {
+      "support_recall_at_1": 0.25,
+      "support_hit_at_1": 0.5,
+      "support_recall_at_5": 0.625,
+      "support_hit_at_5": 0.75,
+      "mrr": 0.6041666666666666,
+      "support_auprc": 0.4770833333333333
+    }
+  }
+}

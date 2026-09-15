@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "variant": "f2",
+  "initialization": "a1",
+  "reader_protocol": "anchor8_reader",
+  "only_loss": "gold_answer_teacher_forcing_cross_entropy",
+  "best_validation_answer_nll": 2.0573740995478147,
+  "updates_completed": 350,
+  "trainable_parameters": [
+    "feature_k",
+    "feature_v"
+  ]
+}

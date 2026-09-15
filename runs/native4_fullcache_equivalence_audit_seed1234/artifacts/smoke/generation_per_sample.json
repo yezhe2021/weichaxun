@@ -1,0 +1,642 @@
+[
+  {
+    "sample_id": "5a80735b554299485f5985f3",
+    "type": "bridge",
+    "condition": "full_text_lora_off",
+    "answer": "venue Heaven",
+    "prediction": "The answer is Heaven.\nThe answer should be written in English, in a box, and in the format \\boxed{}.\nAnswer: \\boxed{Heaven}",
+    "em": 0.0,
+    "token_f1": 0.10526315789473684,
+    "answer_nll": 15.583335876464844
+  },
+  {
+    "sample_id": "5a80735b554299485f5985f3",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_off",
+    "answer": "venue Heaven",
+    "prediction": "The answer is Heaven.\nThe answer should be written in English, in a box, and in the format \\boxed{}.\nAnswer: \\boxed{Heaven}",
+    "em": 0.0,
+    "token_f1": 0.10526315789473684,
+    "answer_nll": 15.588383674621582
+  },
+  {
+    "sample_id": "5a80735b554299485f5985f3",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_off",
+    "answer": "venue Heaven",
+    "prediction": "The answer is Heaven.\nThe answer should be written in English, in a box, and in the format \\boxed{}.\nAnswer: \\boxed{Heaven}",
+    "em": 0.0,
+    "token_f1": 0.10526315789473684,
+    "answer_nll": 15.588383674621582
+  },
+  {
+    "sample_id": "5a80735b554299485f5985f3",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_on",
+    "answer": "venue Heaven",
+    "prediction": "Heaven. The nightclub moved to Heaven, a famous gay venue underneath Charing Cross railway station in Central London. The answer is Heaven. The nightclub moved to Heaven, a famous gay venue underneath Charing Cross railway station in Central London. The answer is Heaven. The nightclub moved to Heaven, a famous gay venue underneath Ch",
+    "em": 0.0,
+    "token_f1": 0.08333333333333333,
+    "answer_nll": 9.780423164367676
+  },
+  {
+    "sample_id": "5a80735b554299485f5985f3",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_on",
+    "answer": "venue Heaven",
+    "prediction": "Heaven. The nightclub moved to Heaven, a famous gay venue underneath Charing Cross railway station in Central London. The answer is Heaven. The nightclub moved to Heaven, a famous gay venue underneath Charing Cross railway station in Central London. The answer is Heaven. The nightclub moved to Heaven, a famous gay venue underneath Ch",
+    "em": 0.0,
+    "token_f1": 0.08333333333333333,
+    "answer_nll": 9.780423164367676
+  },
+  {
+    "sample_id": "5a80735b554299485f5985f3",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_off",
+    "answer": "venue Heaven",
+    "prediction": "What location under Charing Cross railway station did G-A-Y move to?\n\nAnswer: What location under Charing Cross railway station did G-A-Y move to?\n\nAnswer: What location under Charing Cross railway station did G-A-Y move to?\n\nAnswer: What location under Charing Cross railway station did G-A-Y move",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "answer_nll": 10.6132230758667
+  },
+  {
+    "sample_id": "5a80735b554299485f5985f3",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_on",
+    "answer": "venue Heaven",
+    "prediction": "Heaven",
+    "em": 0.0,
+    "token_f1": 0.6666666666666666,
+    "answer_nll": 4.044100284576416
+  },
+  {
+    "sample_id": "5a80735b554299485f5985f3",
+    "type": "bridge",
+    "condition": "full_text_lora_on_all",
+    "answer": "venue Heaven",
+    "prediction": "Heaven. The nightclub moved to Heaven, a famous gay venue underneath Charing Cross railway station in Central London. The answer is Heaven. The nightclub moved to Heaven, a famous gay venue underneath Charing Cross railway station in Central London. The answer is Heaven. The nightclub moved to Heaven, a famous gay venue underneath Ch",
+    "em": 0.0,
+    "token_f1": 0.08333333333333333,
+    "answer_nll": 9.394740104675293
+  },
+  {
+    "sample_id": "5ac3a0db554299391541383a",
+    "type": "bridge",
+    "condition": "full_text_lora_off",
+    "answer": "Saint Paul",
+    "prediction": "The House of Representatives meets at the Legislative Building in Olympia.\nThe answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "answer_nll": 12.646035194396973
+  },
+  {
+    "sample_id": "5ac3a0db554299391541383a",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_off",
+    "answer": "Saint Paul",
+    "prediction": "The House of Representatives meets at the Legislative Building in Olympia.\nThe answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "answer_nll": 12.6512451171875
+  },
+  {
+    "sample_id": "5ac3a0db554299391541383a",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_off",
+    "answer": "Saint Paul",
+    "prediction": "The House of Representatives meets at the Legislative Building in Olympia.\nThe answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be in the format of a single sentence. The answer should be",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "answer_nll": 12.6512451171875
+  },
+  {
+    "sample_id": "5ac3a0db554299391541383a",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_on",
+    "answer": "Saint Paul",
+    "prediction": "The Minnesota House of Representatives meets at the north wing of the State Capitol in Saint Paul. \n\nThe answer is correct. \n\nThe question is asking where the House of Representatives where Phyllis Kohn holds a seat meets. \n\nPhyllis Kohn is a member of the Minnesota House of Representatives, as stated in",
+    "em": 0.0,
+    "token_f1": 0.0909090909090909,
+    "answer_nll": 8.172491073608398
+  },
+  {
+    "sample_id": "5ac3a0db554299391541383a",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_on",
+    "answer": "Saint Paul",
+    "prediction": "The Minnesota House of Representatives meets at the north wing of the State Capitol in Saint Paul. \n\nThe answer is correct. \n\nThe question is asking where the House of Representatives where Phyllis Kohn holds a seat meets. \n\nPhyllis Kohn is a member of the Minnesota House of Representatives, as stated in",
+    "em": 0.0,
+    "token_f1": 0.0909090909090909,
+    "answer_nll": 8.172491073608398
+  },
+  {
+    "sample_id": "5ac3a0db554299391541383a",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_off",
+    "answer": "Saint Paul",
+    "prediction": "Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer: Where?\n\nAnswer:",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "answer_nll": 11.448616981506348
+  },
+  {
+    "sample_id": "5ac3a0db554299391541383a",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_on",
+    "answer": "Saint Paul",
+    "prediction": "north wing of the State Capitol",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "answer_nll": 0.9755401015281677
+  },
+  {
+    "sample_id": "5ac3a0db554299391541383a",
+    "type": "bridge",
+    "condition": "full_text_lora_on_all",
+    "answer": "Saint Paul",
+    "prediction": "The Washington House of Representatives meets at the Legislative Building in Olympia. \n\nWait, but the document about Phyllis Kohn is not in the provided documents. The user is asking about Phyllis Kahn, not Phyllis Kohn. Let me check the documents again.\n\nLooking at the documents, there is a",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "answer_nll": 7.909067153930664
+  },
+  {
+    "sample_id": "5a8318dd55429940e5e1a95e",
+    "type": "bridge",
+    "condition": "full_text_lora_off",
+    "answer": "Brian Yorkey",
+    "prediction": "The musical \"If/Then\" was made by Brian Yorkey, who is the libretto writer, and it has a theatrical score by Tom Kitt, who won the Tony Award and 2008 Outer Critics Circle Award. \n\nLet me check the documents again to make sure. \n\nLooking at the",
+    "em": 0.0,
+    "token_f1": 0.09756097560975609,
+    "answer_nll": 5.204087257385254
+  },
+  {
+    "sample_id": "5a8318dd55429940e5e1a95e",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_off",
+    "answer": "Brian Yorkey",
+    "prediction": "The musical \"If/Then\" was made by Brian Yorkey, who is the libretto writer, and it has a theatrical score by Tom Kitt, who won the Tony Award and 2008 Outer Critics Circle Award. \n\nLet me check the documents again to make sure. \n\nLooking at the",
+    "em": 0.0,
+    "token_f1": 0.09756097560975609,
+    "answer_nll": 5.206398963928223
+  },
+  {
+    "sample_id": "5a8318dd55429940e5e1a95e",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_off",
+    "answer": "Brian Yorkey",
+    "prediction": "The musical \"If/Then\" was made by Brian Yorkey, who is the libretto writer, and it has a theatrical score by Tom Kitt, who won the Tony Award and 2008 Outer Critics Circle Award. \n\nLet me check the documents again to make sure. \n\nLooking at the",
+    "em": 0.0,
+    "token_f1": 0.09756097560975609,
+    "answer_nll": 5.206398963928223
+  },
+  {
+    "sample_id": "5a8318dd55429940e5e1a95e",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_on",
+    "answer": "Brian Yorkey",
+    "prediction": "Brian Yorkey\n**Reasoning**: The document \"If/Then\" states that the musical has a theatrical score by Tom Kitt. However, the question is about the person who made the musical, not the composer. The answer is Brian Yorkey, as he is the libretto writer for \"If",
+    "em": 0.0,
+    "token_f1": 0.1081081081081081,
+    "answer_nll": 2.7068488597869873
+  },
+  {
+    "sample_id": "5a8318dd55429940e5e1a95e",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_on",
+    "answer": "Brian Yorkey",
+    "prediction": "Brian Yorkey\n**Reasoning**: The document \"If/Then\" states that the musical has a theatrical score by Tom Kitt. However, the question is about the person who made the musical, not the composer. The answer is Brian Yorkey, as he is the libretto writer for \"If",
+    "em": 0.0,
+    "token_f1": 0.1081081081081081,
+    "answer_nll": 2.7068488597869873
+  },
+  {
+    "sample_id": "5a8318dd55429940e5e1a95e",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_off",
+    "answer": "Brian Yorkey",
+    "prediction": "Brian Yorkey and Tom Kitt, directed by Michael Greif.\n\nIf/Then is a musical with a libretto by Brian Yorkey and a theatrical score by Tom Kitt, directed by Michael Greif.\n\nIf/Then is a musical with a libretto by Brian Yorkey and a theatrical score",
+    "em": 0.0,
+    "token_f1": 0.1,
+    "answer_nll": 4.361104488372803
+  },
+  {
+    "sample_id": "5a8318dd55429940e5e1a95e",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_on",
+    "answer": "Brian Yorkey",
+    "prediction": "Michael Greif",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "answer_nll": 0.3858911395072937
+  },
+  {
+    "sample_id": "5a8318dd55429940e5e1a95e",
+    "type": "bridge",
+    "condition": "full_text_lora_on_all",
+    "answer": "Brian Yorkey",
+    "prediction": "Brian Yorkey\n**Thought Process**: The question is asking about the musical \"If/Then\" and its libretto writer, as the score is by Tom Kitt. From the document about \"If/Then\", it states that the libretto is by Brian Yorkey. Additionally, Tom Kitt is",
+    "em": 0.0,
+    "token_f1": 0.10526315789473684,
+    "answer_nll": 2.5699191093444824
+  },
+  {
+    "sample_id": "5a8c6342554299240d9c214a",
+    "type": "bridge",
+    "condition": "full_text_lora_off",
+    "answer": "Kelly Bundy",
+    "prediction": "The actress who starred in \"Claudine's Return\" is Christina Applegate. On \"Married...with Children,\" she played the role of Kelly Bundy. Therefore, the answer is Kelly Bundy.\nLet me check the documents again to make sure. \n\nLooking at the document for Christina Applegate, Sentence 0",
+    "em": 0.0,
+    "token_f1": 0.09756097560975609,
+    "answer_nll": 12.142220497131348
+  },
+  {
+    "sample_id": "5a8c6342554299240d9c214a",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_off",
+    "answer": "Kelly Bundy",
+    "prediction": "The actress who starred in \"Claudine's Return\" is Christina Applegate. On \"Married...with Children,\" she played the role of Kelly Bundy. Therefore, the answer is Kelly Bundy.\nLet me check the documents again to make sure. \n\nLooking at the document for Christina Applegate, Sentence 0",
+    "em": 0.0,
+    "token_f1": 0.09756097560975609,
+    "answer_nll": 12.130414009094238
+  },
+  {
+    "sample_id": "5a8c6342554299240d9c214a",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_off",
+    "answer": "Kelly Bundy",
+    "prediction": "The actress who starred in \"Claudine's Return\" is Christina Applegate. On \"Married...with Children,\" she played the role of Kelly Bundy. Therefore, the answer is Kelly Bundy.\nLet me check the documents again to make sure. \n\nLooking at the document for Christina Applegate, Sentence 0",
+    "em": 0.0,
+    "token_f1": 0.09756097560975609,
+    "answer_nll": 12.130414009094238
+  },
+  {
+    "sample_id": "5a8c6342554299240d9c214a",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_on",
+    "answer": "Kelly Bundy",
+    "prediction": "Kelly Bundy\n**Answer**\nKelly Bundy\n**Explanation**\nThe question asks which role the actress who starred in \"Claudine's Return\" played on \"Married... with Children\". From the document about Christina Applegate, we know she played Kelly Bundy on \"Married... with Children\". Since \"Claud",
+    "em": 0.0,
+    "token_f1": 0.1,
+    "answer_nll": 3.9632577896118164
+  },
+  {
+    "sample_id": "5a8c6342554299240d9c214a",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_on",
+    "answer": "Kelly Bundy",
+    "prediction": "Kelly Bundy\n**Answer**\nKelly Bundy\n**Explanation**\nThe question asks which role the actress who starred in \"Claudine's Return\" played on \"Married... with Children\". From the document about Christina Applegate, we know she played Kelly Bundy on \"Married... with Children\". Since \"Claud",
+    "em": 0.0,
+    "token_f1": 0.1,
+    "answer_nll": 3.9632577896118164
+  },
+  {
+    "sample_id": "5a8c6342554299240d9c214a",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_off",
+    "answer": "Kelly Bundy",
+    "prediction": "Claudine's Return starred the actress who played which role on \"Married...with Children\"?\n\nAnswer: Claudine's Return starred the actress who played which role on \"Married...with Children\"?\n\nAnswer: Claudine's Return starred the actress who played which role on \"Married...with Children\"?\n\nAnswer: Claud",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "answer_nll": 11.586247444152832
+  },
+  {
+    "sample_id": "5a8c6342554299240d9c214a",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_on",
+    "answer": "Kelly Bundy",
+    "prediction": "Kelly Bundy",
+    "em": 1.0,
+    "token_f1": 1.0,
+    "answer_nll": 0.007282248232513666
+  },
+  {
+    "sample_id": "5a8c6342554299240d9c214a",
+    "type": "bridge",
+    "condition": "full_text_lora_on_all",
+    "answer": "Kelly Bundy",
+    "prediction": "Kelly Bundy. \n\nThe answer is \"Kelly Bundy.\" The question asks which role the actress, Christina Applegate, played on \"Married... with Children.\" From the document about Christina Applegate, it states that she started playing the role of Kelly Bundy on the show. Claudine's Return is the movie that stars",
+    "em": 0.0,
+    "token_f1": 0.09302325581395349,
+    "answer_nll": 3.627253532409668
+  },
+  {
+    "sample_id": "5a8adbf55542992d82986fab",
+    "type": "bridge",
+    "condition": "full_text_lora_off",
+    "answer": "over 150 films",
+    "prediction": "150\nThe answer is 150. The document about Hans Zimmer states that since the 1980s, he has composed music for over 150 films. The question mentions \"since the 19080's\" which is likely a typo for \"19",
+    "em": 0.0,
+    "token_f1": 0.18181818181818182,
+    "answer_nll": 5.502833366394043
+  },
+  {
+    "sample_id": "5a8adbf55542992d82986fab",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_off",
+    "answer": "over 150 films",
+    "prediction": "150\nThe answer is 150. The document about Hans Zimmer states that since the 1980s, he has composed music for over 150 films. The question mentions \"since the 19080's\" which is likely a typo for \"19",
+    "em": 0.0,
+    "token_f1": 0.18181818181818182,
+    "answer_nll": 5.504663944244385
+  },
+  {
+    "sample_id": "5a8adbf55542992d82986fab",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_off",
+    "answer": "over 150 films",
+    "prediction": "150\nThe answer is 150. The document about Hans Zimmer states that since the 1980s, he has composed music for over 150 films. The question mentions \"since the 19080's\" which is likely a typo for \"19",
+    "em": 0.0,
+    "token_f1": 0.18181818181818182,
+    "answer_nll": 5.504663944244385
+  },
+  {
+    "sample_id": "5a8adbf55542992d82986fab",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_on",
+    "answer": "over 150 films",
+    "prediction": "150",
+    "em": 0.0,
+    "token_f1": 0.5,
+    "answer_nll": 2.3419740200042725
+  },
+  {
+    "sample_id": "5a8adbf55542992d82986fab",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_on",
+    "answer": "over 150 films",
+    "prediction": "150",
+    "em": 0.0,
+    "token_f1": 0.5,
+    "answer_nll": 2.3419740200042725
+  },
+  {
+    "sample_id": "5a8adbf55542992d82986fab",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_off",
+    "answer": "over 150 films",
+    "prediction": "150 films has he composed music for?\n\nAnswer: 150 films has he composed music for?\n\nAnswer: 150 films has he composed music for?\n\nAnswer: 150 films has he composed music for?\n\nAnswer: 150 films has he composed music for?\n\nAnswer",
+    "em": 0.0,
+    "token_f1": 0.09302325581395349,
+    "answer_nll": 5.204283237457275
+  },
+  {
+    "sample_id": "5a8adbf55542992d82986fab",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_on",
+    "answer": "over 150 films",
+    "prediction": "150",
+    "em": 0.0,
+    "token_f1": 0.5,
+    "answer_nll": 0.18834415078163147
+  },
+  {
+    "sample_id": "5a8adbf55542992d82986fab",
+    "type": "bridge",
+    "condition": "full_text_lora_on_all",
+    "answer": "over 150 films",
+    "prediction": "150",
+    "em": 0.0,
+    "token_f1": 0.5,
+    "answer_nll": 2.2135496139526367
+  },
+  {
+    "sample_id": "5a8d263f554299653c1aa139",
+    "type": "bridge",
+    "condition": "full_text_lora_off",
+    "answer": "1999",
+    "prediction": "The band that sang \"Gives You Hell\" is The All-American Rejects. According to the document, The All-American Rejects is an American rock band formed in Stillwater, Oklahoma in 1999. Therefore, the answer is 1999.\nThe answer is 1999",
+    "em": 0.0,
+    "token_f1": 0.0625,
+    "answer_nll": 4.862364292144775
+  },
+  {
+    "sample_id": "5a8d263f554299653c1aa139",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_off",
+    "answer": "1999",
+    "prediction": "The band that sang \"Gives You Hell\" is The All-American Rejects. According to the document, The All-American Rejects is an American rock band formed in Stillwater, Oklahoma in 1999. Therefore, the answer is 1999.\nThe answer is 1999",
+    "em": 0.0,
+    "token_f1": 0.0625,
+    "answer_nll": 4.853952407836914
+  },
+  {
+    "sample_id": "5a8d263f554299653c1aa139",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_off",
+    "answer": "1999",
+    "prediction": "The band that sang \"Gives You Hell\" is The All-American Rejects. According to the document, The All-American Rejects is an American rock band formed in Stillwater, Oklahoma in 1999. Therefore, the answer is 1999.\nThe answer is 1999",
+    "em": 0.0,
+    "token_f1": 0.0625,
+    "answer_nll": 4.853952407836914
+  },
+  {
+    "sample_id": "5a8d263f554299653c1aa139",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_on",
+    "answer": "1999",
+    "prediction": "1999. \n\nThe band The All-American Rejects formed in Stillwater, Oklahoma in 1999. The song \"Gives You Hell\" is by this band. The answer is 1999. \n\nThe answer is 1999. \n\nThe answer is",
+    "em": 0.0,
+    "token_f1": 0.07407407407407407,
+    "answer_nll": 2.1880979537963867
+  },
+  {
+    "sample_id": "5a8d263f554299653c1aa139",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_on",
+    "answer": "1999",
+    "prediction": "1999. \n\nThe band The All-American Rejects formed in Stillwater, Oklahoma in 1999. The song \"Gives You Hell\" is by this band. The answer is 1999. \n\nThe answer is 1999. \n\nThe answer is",
+    "em": 0.0,
+    "token_f1": 0.07407407407407407,
+    "answer_nll": 2.1880979537963867
+  },
+  {
+    "sample_id": "5a8d263f554299653c1aa139",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_off",
+    "answer": "1999",
+    "prediction": "\"Gives You Hell formed in 2008.\"\"\n\nAnswer: \"Gives You Hell formed in 2008.\"\"\n\nAnswer: \"Gives You Hell formed in 2008.\"\"\n\nAnswer: \"Gives You Hell formed in 2008.\"\"\n\nAnswer:",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "answer_nll": 5.453816890716553
+  },
+  {
+    "sample_id": "5a8d263f554299653c1aa139",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_on",
+    "answer": "1999",
+    "prediction": "1999",
+    "em": 1.0,
+    "token_f1": 1.0,
+    "answer_nll": 0.0018604784272611141
+  },
+  {
+    "sample_id": "5a8d263f554299653c1aa139",
+    "type": "bridge",
+    "condition": "full_text_lora_on_all",
+    "answer": "1999",
+    "prediction": "1999. \n\nThe band The All-American Rejects formed in Stillwater, Oklahoma in 1999. The song \"Gives You Hell\" is by this band. The answer is 1999. \n\nThe answer is 1999. \n\nThe answer is",
+    "em": 0.0,
+    "token_f1": 0.07407407407407407,
+    "answer_nll": 2.027639865875244
+  },
+  {
+    "sample_id": "5adfb790554299603e418389",
+    "type": "comparison",
+    "condition": "full_text_lora_off",
+    "answer": "plant genus",
+    "prediction": "Both Eragrostis and Rhexia are plant genera. Eragrostis is a genus of grasses, while Rhexia is a genus of flowering plants in the Melastomataceae family. They are both plant genera, with Eragrostis being part of the grass family Poaceae",
+    "em": 0.0,
+    "token_f1": 0.1081081081081081,
+    "answer_nll": 13.69507122039795
+  },
+  {
+    "sample_id": "5adfb790554299603e418389",
+    "type": "comparison",
+    "condition": "official_fullcache_lora_off",
+    "answer": "plant genus",
+    "prediction": "Both Eragrostis and Rhexia are plant genera. Eragrostis is a genus of grasses, while Rhexia is a genus of flowering plants in the Melastomataceae family. They are both plant genera, with Eragrostis being part of the grass family Poaceae",
+    "em": 0.0,
+    "token_f1": 0.1081081081081081,
+    "answer_nll": 13.704991340637207
+  },
+  {
+    "sample_id": "5adfb790554299603e418389",
+    "type": "comparison",
+    "condition": "manual_fullcache_lora_off",
+    "answer": "plant genus",
+    "prediction": "Both Eragrostis and Rhexia are plant genera. Eragrostis is a genus of grasses, while Rhexia is a genus of flowering plants in the Melastomataceae family. They are both plant genera, with Eragrostis being part of the grass family Poaceae",
+    "em": 0.0,
+    "token_f1": 0.1081081081081081,
+    "answer_nll": 13.704991340637207
+  },
+  {
+    "sample_id": "5adfb790554299603e418389",
+    "type": "comparison",
+    "condition": "official_fullcache_lora_on",
+    "answer": "plant genus",
+    "prediction": "Eragrostis and Rhexia are both plant genera. Eragrostis is a genus of grasses, while Rhexia is a genus of flowering plants in the Melastomataceae family. Both are plant genera, and they are both known to have species with common names related to \"love",
+    "em": 0.0,
+    "token_f1": 0.09523809523809523,
+    "answer_nll": 7.951313018798828
+  },
+  {
+    "sample_id": "5adfb790554299603e418389",
+    "type": "comparison",
+    "condition": "manual_fullcache_lora_on",
+    "answer": "plant genus",
+    "prediction": "Eragrostis and Rhexia are both plant genera. Eragrostis is a genus of grasses, while Rhexia is a genus of flowering plants in the Melastomataceae family. Both are plant genera, and they are both known to have species with common names related to \"love",
+    "em": 0.0,
+    "token_f1": 0.09523809523809523,
+    "answer_nll": 7.951313018798828
+  },
+  {
+    "sample_id": "5adfb790554299603e418389",
+    "type": "comparison",
+    "condition": "native4_sparse_gold_lora_off",
+    "answer": "plant genus",
+    "prediction": "Rhexia has in common with Rhexia and Rhexia and Rhexia and Rhexia and Rhexia and Rhexia and Rhexia and Rhexia and Rhexia and Rhexia and Rhexia and Rhexia and Rhexia and Rhexia and R",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "answer_nll": 12.950088500976562
+  },
+  {
+    "sample_id": "5adfb790554299603e418389",
+    "type": "comparison",
+    "condition": "native4_sparse_gold_lora_on",
+    "answer": "plant genus",
+    "prediction": "genus",
+    "em": 0.0,
+    "token_f1": 0.6666666666666666,
+    "answer_nll": 0.633776843547821
+  },
+  {
+    "sample_id": "5adfb790554299603e418389",
+    "type": "comparison",
+    "condition": "full_text_lora_on_all",
+    "answer": "plant genus",
+    "prediction": "Eragrostis and Rhexia are both plant genera. Eragrostis is a genus of grasses, while Rhexia is a genus of flowering plants in the Melastomataceae family. Both are plant genera, and they are both known to have species with common names related to \"love",
+    "em": 0.0,
+    "token_f1": 0.09523809523809523,
+    "answer_nll": 7.622448444366455
+  },
+  {
+    "sample_id": "5a839c8b5542996488c2e479",
+    "type": "bridge",
+    "condition": "full_text_lora_off",
+    "answer": "Lord Chancellor of England",
+    "prediction": "Lord Chancellor of England.\n\nStep-by-Step Explanation:\n1. Identify the author mentioned in the context of James Spedding. From the document about James Spedding, it says he was an English author, chiefly known as the editor of the works of Francis Bacon.\n2. Find the positions that Francis Bacon held",
+    "em": 0.0,
+    "token_f1": 0.17391304347826084,
+    "answer_nll": 5.467296600341797
+  },
+  {
+    "sample_id": "5a839c8b5542996488c2e479",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_off",
+    "answer": "Lord Chancellor of England",
+    "prediction": "Lord Chancellor of England.\n\nStep-by-Step Explanation:\n1. Identify the author mentioned in the context of James Spedding. From the document about James Spedding, it says he was an English author, chiefly known as the editor of the works of Francis Bacon.\n2. Find the positions that Francis Bacon held",
+    "em": 0.0,
+    "token_f1": 0.17391304347826084,
+    "answer_nll": 5.472400665283203
+  },
+  {
+    "sample_id": "5a839c8b5542996488c2e479",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_off",
+    "answer": "Lord Chancellor of England",
+    "prediction": "Lord Chancellor of England.\n\nStep-by-Step Explanation:\n1. Identify the author mentioned in the context of James Spedding. From the document about James Spedding, it says he was an English author, chiefly known as the editor of the works of Francis Bacon.\n2. Find the positions that Francis Bacon held",
+    "em": 0.0,
+    "token_f1": 0.17391304347826084,
+    "answer_nll": 5.472400665283203
+  },
+  {
+    "sample_id": "5a839c8b5542996488c2e479",
+    "type": "bridge",
+    "condition": "official_fullcache_lora_on",
+    "answer": "Lord Chancellor of England",
+    "prediction": "Lord Chancellor of England. \n\nThe question is asking about the position that James Spedding was chiefly known for editing the works of an author who also served as Attorney General and another position. \n\nFrom the given documents, we can see that Francis Bacon served both as Attorney General and as Lord Chancellor of England. \n\nJames",
+    "em": 0.0,
+    "token_f1": 0.14814814814814814,
+    "answer_nll": 3.1588730812072754
+  },
+  {
+    "sample_id": "5a839c8b5542996488c2e479",
+    "type": "bridge",
+    "condition": "manual_fullcache_lora_on",
+    "answer": "Lord Chancellor of England",
+    "prediction": "Lord Chancellor of England. \n\nThe question is asking about the position that James Spedding was chiefly known for editing the works of an author who also served as Attorney General and another position. \n\nFrom the given documents, we can see that Francis Bacon served both as Attorney General and as Lord Chancellor of England. \n\nJames",
+    "em": 0.0,
+    "token_f1": 0.14814814814814814,
+    "answer_nll": 3.1588730812072754
+  },
+  {
+    "sample_id": "5a839c8b5542996488c2e479",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_off",
+    "answer": "Lord Chancellor of England",
+    "prediction": "James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?\n\nAnswer: James Spedding was chiefly known as the editor of the works of an author who served both as Attorney General and as what?\n\nAnswer: James Spedding was chiefly known as",
+    "em": 0.0,
+    "token_f1": 0.038461538461538464,
+    "answer_nll": 8.72535228729248
+  },
+  {
+    "sample_id": "5a839c8b5542996488c2e479",
+    "type": "bridge",
+    "condition": "native4_sparse_gold_lora_on",
+    "answer": "Lord Chancellor of England",
+    "prediction": "Lord Chancellor",
+    "em": 0.0,
+    "token_f1": 0.6666666666666666,
+    "answer_nll": 0.4022837281227112
+  },
+  {
+    "sample_id": "5a839c8b5542996488c2e479",
+    "type": "bridge",
+    "condition": "full_text_lora_on_all",
+    "answer": "Lord Chancellor of England",
+    "prediction": "Lord Chancellor of England. \n\nThe question is asking about the position that James Spedding was chiefly known for editing the works of an author who served both as Attorney General and as another position. \n\nFirst, we need to identify the author in question. The document about James Spedding states that he was an English",
+    "em": 0.0,
+    "token_f1": 0.1568627450980392,
+    "answer_nll": 3.0204031467437744
+  }
+]

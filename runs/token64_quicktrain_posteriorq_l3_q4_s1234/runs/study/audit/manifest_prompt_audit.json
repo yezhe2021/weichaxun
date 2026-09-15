@@ -1,0 +1,77 @@
+{
+  "signature": "d65ecafc1673c7957ef52a89b09f94250cc222b93fdaa3e504e901fb754a98a9",
+  "sender_prompt": "Question -> Options -> repeated Question",
+  "receiver_prompt": "native Question -> external selected Options KV -> native Answer:",
+  "same_ids_as_options_first": true,
+  "no_truncation": true,
+  "splits": {
+    "train": {
+      "count": 512,
+      "ids_sha256": "8d9206b462f8914199a45307387434fece0748aa596810837a475e8a5f8a1b91",
+      "first_id": "2973",
+      "last_id": "10700"
+    },
+    "validation": {
+      "count": 128,
+      "ids_sha256": "bdf7cd104c2f66a2434454bd72c33165d68ff45ae22152e606d13d4599712729",
+      "first_id": "8776",
+      "last_id": "9262"
+    },
+    "test": {
+      "count": 128,
+      "ids_sha256": "f7f17a0ca5914154202aaf70a9446e00d3be7c85417409b359f80066e275377b",
+      "first_id": "2599",
+      "last_id": "11547"
+    }
+  },
+  "answer_tokenization": {
+    "qwen": {
+      "ids": [
+        16141,
+        25
+      ],
+      "tokens": [
+        "Answer",
+        ":"
+      ],
+      "choice_ids": {
+        "A": 362,
+        "B": 425,
+        "C": 356,
+        "D": 422,
+        "E": 468,
+        "F": 434,
+        "G": 479,
+        "H": 472,
+        "I": 358,
+        "J": 619
+      }
+    },
+    "llama": {
+      "ids": [
+        16533,
+        25
+      ],
+      "tokens": [
+        "Answer",
+        ":"
+      ],
+      "choice_ids": {
+        "A": 362,
+        "B": 426,
+        "C": 356,
+        "D": 423,
+        "E": 469,
+        "F": 435,
+        "G": 480,
+        "H": 473,
+        "I": 358,
+        "J": 622
+      }
+    }
+  },
+  "observed_max_body_tokens": {
+    "qwen": 714,
+    "llama": 668
+  }
+}

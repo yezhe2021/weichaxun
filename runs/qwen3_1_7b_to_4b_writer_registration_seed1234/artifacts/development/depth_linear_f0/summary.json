@@ -1,0 +1,20 @@
+{
+  "depth_linear_f0_correct": {
+    "count": 64,
+    "em": 0.015625,
+    "f1": 0.019516941391941392,
+    "bridge_f1": 0.007783882783882784,
+    "comparison_f1": 0.03125,
+    "nll": 15.045767027884722,
+    "teacher_kl": 14.533677700906992
+  },
+  "depth_linear_f0_shuffled": {
+    "count": 64,
+    "em": 0.0,
+    "f1": 0.0,
+    "bridge_f1": 0.0,
+    "comparison_f1": 0.0,
+    "nll": 15.484106063842773,
+    "teacher_kl": 14.924986831843853
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "a0_4b_question_only": {
+    "count": 128,
+    "em": 0.25,
+    "f1": 0.3479202836849495,
+    "bridge_f1": 0.17375249918808103,
+    "comparison_f1": 0.5220880681818181,
+    "nll": 3.2320981169197935
+  },
+  "a1_4b_full_context_text": {
+    "count": 128,
+    "em": 0.46875,
+    "f1": 0.6296944272376015,
+    "bridge_f1": 0.6437007231620718,
+    "comparison_f1": 0.6156881313131313,
+    "nll": 2.744734331475641
+  },
+  "a2_4b_native_full36": {
+    "count": 128,
+    "em": 0.46875,
+    "f1": 0.6296944272376015,
+    "bridge_f1": 0.6437007231620718,
+    "comparison_f1": 0.6156881313131313,
+    "nll": 2.7464802857593646
+  },
+  "a3_4b_native_partial28": {
+    "count": 128,
+    "em": 0.1953125,
+    "f1": 0.29903749321917494,
+    "bridge_f1": 0.0773551680622816,
+    "comparison_f1": 0.5207198183760683,
+    "nll": 5.460864636665974
+  },
+  "a4_1_7b_raw_native_partial28": {
+    "count": 128,
+    "em": 0.0,
+    "f1": 0.0,
+    "bridge_f1": 0.0,
+    "comparison_f1": 0.0,
+    "nll": 15.641547493636608
+  },
+  "a2_full36_generation_match_vs_text": 1.0,
+  "a5_existing_1_7b_writer_partial28_skip_ce": {
+    "count": 128,
+    "f1": 0.23255208333333338,
+    "source": "frozen current eval128 result"
+  },
+  "protocol_loss": 0.33065693401842655,
+  "forward_gap": 0.06648540988584156
+}

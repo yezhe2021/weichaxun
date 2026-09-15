@@ -1,0 +1,173 @@
+{
+  "experiment": "openbookqa_standardprompt_nativequestion_options32_full28_mlp_l3_to_q4_seed1234",
+  "status": "completed",
+  "prompt": "Question -> Options -> Answer:",
+  "routing_query": "last Sender-native Answer: token",
+  "selection": "32 option-only raw-text regions",
+  "receiver_protocol": "native Question + external selected Options KV + native Answer:",
+  "checkpoint_selection": "validation only; primary=best validation accuracy",
+  "main_table": {
+    "Qwen Full Native": {
+      "accuracy": 0.828125,
+      "oracle_agreement": 0.9140625,
+      "oracle_choice_kl": 0.1132807738195854
+    },
+    "Llama Full Native": {
+      "accuracy": 0.75,
+      "oracle_agreement": 0.6640625,
+      "oracle_choice_kl": 0.7398915282001326
+    },
+    "Qwen Self-Selected32 Native": {
+      "accuracy": 0.7734375,
+      "oracle_agreement": 0.953125,
+      "oracle_choice_kl": 0.020481531166465228
+    },
+    "Llama-selected -> Qwen Native Oracle": {
+      "accuracy": 0.7734375,
+      "oracle_agreement": 1.0,
+      "oracle_choice_kl": 0.0
+    },
+    "Translated Full28-MLP": {
+      "accuracy": 0.5625,
+      "oracle_agreement": 0.609375,
+      "oracle_choice_kl": 0.90660880491032
+    },
+    "Shuffle": {
+      "accuracy": 0.234375,
+      "oracle_agreement": 0.25,
+      "oracle_choice_kl": 2.0391952746213065
+    },
+    "Zero": {
+      "accuracy": 0.3125,
+      "oracle_agreement": 0.328125,
+      "oracle_choice_kl": 1.8553946829624692
+    },
+    "No-memory": {
+      "accuracy": 0.3359375,
+      "oracle_agreement": 0.359375,
+      "oracle_choice_kl": 2.435758289921978
+    }
+  },
+  "translated_checkpoints": {
+    "best_accuracy": {
+      "checkpoint_step": 78,
+      "checkpoint": "best_accuracy",
+      "functional": {
+        "translated": {
+          "accuracy": 0.5625,
+          "oracle_agreement": 0.609375,
+          "oracle_choice_kl": 0.90660880491032
+        },
+        "shuffle": {
+          "accuracy": 0.234375,
+          "oracle_agreement": 0.25,
+          "oracle_choice_kl": 2.0391952746213065
+        }
+      },
+      "representation": {
+        "loss": 1.0826636105775833,
+        "k_nmse": 0.1585549134761095,
+        "v_nmse": 0.4821504168212414,
+        "k_cosine": 0.8560866191983223,
+        "v_cosine": 0.7019551582634449
+      }
+    },
+    "best_choice_kl": {
+      "checkpoint_step": 78,
+      "checkpoint": "best_choice_kl",
+      "functional": {
+        "translated": {
+          "accuracy": 0.5625,
+          "oracle_agreement": 0.609375,
+          "oracle_choice_kl": 0.90660880491032
+        },
+        "shuffle": {
+          "accuracy": 0.234375,
+          "oracle_agreement": 0.25,
+          "oracle_choice_kl": 2.0391952746213065
+        }
+      },
+      "representation": {
+        "loss": 1.0826636105775833,
+        "k_nmse": 0.1585549134761095,
+        "v_nmse": 0.4821504168212414,
+        "k_cosine": 0.8560866191983223,
+        "v_cosine": 0.7019551582634449
+      }
+    }
+  },
+  "mean_random_chance": 0.25,
+  "gaps": {
+    "selection_gap": 0.0546875,
+    "translation_gap": 0.2109375,
+    "information_gain_vs_zero": 0.25,
+    "information_gain_vs_no_memory": 0.2265625,
+    "oracle_retention_vs_zero": 0.5423728813559322,
+    "oracle_retention_vs_no_memory": 0.5178571428571429
+  },
+  "linear_vs_mlp_paired": {
+    "sample_count": 128,
+    "linear_accuracy": 0.515625,
+    "mlp_accuracy": 0.5625,
+    "mlp_minus_linear": 0.046875,
+    "both_correct": 44,
+    "only_linear_correct": 22,
+    "only_mlp_correct": 28,
+    "both_wrong": 34,
+    "mcnemar_exact_two_sided_p": 0.47988766169832786,
+    "only_linear_ids": [
+      "35",
+      "7-414",
+      "8-135",
+      "7-683",
+      "7-1062",
+      "490",
+      "9-655",
+      "8-395",
+      "8-190",
+      "1208",
+      "1709",
+      "9-881",
+      "1774",
+      "9-271",
+      "9-352",
+      "57",
+      "1160",
+      "9-73",
+      "7-107",
+      "9-298",
+      "8-445",
+      "8-308"
+    ],
+    "only_mlp_ids": [
+      "926",
+      "7-444",
+      "7-999",
+      "1391",
+      "8-293",
+      "1998",
+      "1554",
+      "9-1160",
+      "605",
+      "9-222",
+      "8-340",
+      "7-1018",
+      "1787",
+      "1577",
+      "597",
+      "9-858",
+      "880",
+      "9-510",
+      "7-445",
+      "9-79",
+      "1309",
+      "9-436",
+      "7-49",
+      "8-213",
+      "7-664",
+      "8-279",
+      "7-7",
+      "1672"
+    ]
+  }
+}

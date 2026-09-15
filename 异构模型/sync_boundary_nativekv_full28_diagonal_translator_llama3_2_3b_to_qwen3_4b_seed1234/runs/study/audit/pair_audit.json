@@ -1,0 +1,25 @@
+{
+  "selection": "sync_max_unique",
+  "alignment": "UTF-8 synchronized causal right boundary",
+  "token0_excluded_from_writer": true,
+  "splits": {
+    "train": {
+      "count": 1024,
+      "samples_below_32_units": 19,
+      "mean_duplicate_entries": 0.1220703125,
+      "max_duplicate_entries": 12
+    },
+    "validation": {
+      "count": 128,
+      "samples_below_32_units": 3,
+      "mean_duplicate_entries": 0.1484375,
+      "max_duplicate_entries": 11
+    },
+    "test": {
+      "count": 128,
+      "samples_below_32_units": 3,
+      "mean_duplicate_entries": 0.125,
+      "max_duplicate_entries": 8
+    }
+  }
+}

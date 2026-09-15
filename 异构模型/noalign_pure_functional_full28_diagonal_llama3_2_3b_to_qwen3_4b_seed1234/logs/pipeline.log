@@ -1,0 +1,57 @@
+[2026-09-09 10:19:35] NoAlign audit train: 1024 samples
+[2026-09-09 10:19:36] NoAlign audit validation: 128 samples
+[2026-09-09 10:19:37] NoAlign audit test: 128 samples
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:47,  3.71it/s]Loading weights:  34%|███▍      | 135/398 [00:00<00:00, 457.28it/s]Loading weights:  53%|█████▎    | 210/398 [00:00<00:00, 478.94it/s]Loading weights:  69%|██████▉   | 274/398 [00:00<00:00, 479.84it/s]Loading weights:  83%|████████▎ | 332/398 [00:00<00:00, 481.22it/s]Loading weights:  97%|█████████▋| 387/398 [00:00<00:00, 483.53it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 437.60it/s]
+[2026-09-09 10:20:42] NoAlign Stage B 16/512 choice_KL=1.118641
+[2026-09-09 10:21:37] NoAlign Stage B 32/512 choice_KL=1.672008
+[2026-09-09 10:22:43] NoAlign Stage B 48/512 choice_KL=0.866261
+[2026-09-09 10:23:49] NoAlign Stage B 64/512 choice_KL=0.463673
+[2026-09-09 10:24:59] NoAlign Stage B 80/512 choice_KL=0.562643
+[2026-09-09 10:26:10] NoAlign Stage B 96/512 choice_KL=1.291518
+[2026-09-09 10:27:35] NoAlign Stage B 112/512 choice_KL=1.447906
+[2026-09-09 10:28:31] NoAlign Stage B 128/512 choice_KL=0.977535
+[2026-09-09 10:28:50] NoAlign validation step=128 acc=0.0859 choice_KL=0.991291
+[2026-09-09 10:29:47] NoAlign Stage B 144/512 choice_KL=1.099505
+[2026-09-09 10:30:46] NoAlign Stage B 160/512 choice_KL=0.942457
+[2026-09-09 10:31:46] NoAlign Stage B 176/512 choice_KL=0.749456
+[2026-09-09 10:32:38] NoAlign Stage B 192/512 choice_KL=1.362670
+[2026-09-09 10:33:27] NoAlign Stage B 208/512 choice_KL=1.558048
+[2026-09-09 10:34:24] NoAlign Stage B 224/512 choice_KL=1.164156
+[2026-09-09 10:35:30] NoAlign Stage B 240/512 choice_KL=0.889250
+[2026-09-09 10:36:32] NoAlign Stage B 256/512 choice_KL=0.702578
+[2026-09-09 10:37:03] NoAlign validation step=256 acc=0.1094 choice_KL=0.996887
+[2026-09-09 10:38:07] NoAlign Stage B 272/512 choice_KL=0.530047
+[2026-09-09 10:39:10] NoAlign Stage B 288/512 choice_KL=0.788082
+[2026-09-09 10:40:31] NoAlign Stage B 304/512 choice_KL=0.594313
+[2026-09-09 10:41:29] NoAlign Stage B 320/512 choice_KL=1.678781
+[2026-09-09 10:42:21] NoAlign Stage B 336/512 choice_KL=1.057276
+[2026-09-09 10:43:10] NoAlign Stage B 352/512 choice_KL=1.272508
+[2026-09-09 10:44:03] NoAlign Stage B 368/512 choice_KL=1.584883
+[2026-09-09 10:44:52] NoAlign Stage B 384/512 choice_KL=0.969121
+[2026-09-09 10:45:08] NoAlign validation step=384 acc=0.0859 choice_KL=0.998800
+[2026-09-09 10:46:00] NoAlign Stage B 400/512 choice_KL=1.338857
+[2026-09-09 10:46:50] NoAlign Stage B 416/512 choice_KL=0.986978
+[2026-09-09 10:47:50] NoAlign Stage B 432/512 choice_KL=1.211903
+[2026-09-09 10:48:56] NoAlign Stage B 448/512 choice_KL=1.516287
+[2026-09-09 10:50:00] NoAlign Stage B 464/512 choice_KL=0.984527
+[2026-09-09 10:51:02] NoAlign Stage B 480/512 choice_KL=0.748203
+[2026-09-09 10:52:05] NoAlign Stage B 496/512 choice_KL=0.960531
+[2026-09-09 10:53:28] NoAlign Stage B 512/512 choice_KL=0.927418
+[2026-09-09 10:53:47] NoAlign validation step=512 acc=0.0938 choice_KL=1.029769
+[2026-09-09 10:53:52] NoAlign test: 16/128
+[2026-09-09 10:53:54] NoAlign test: 32/128
+[2026-09-09 10:53:56] NoAlign test: 48/128
+[2026-09-09 10:53:58] NoAlign test: 64/128
+[2026-09-09 10:54:00] NoAlign test: 80/128
+[2026-09-09 10:54:02] NoAlign test: 96/128
+[2026-09-09 10:54:04] NoAlign test: 112/128
+[2026-09-09 10:54:06] NoAlign test: 128/128
+[2026-09-09 10:54:09] NoAlign test: 16/128
+[2026-09-09 10:54:11] NoAlign test: 32/128
+[2026-09-09 10:54:13] NoAlign test: 48/128
+[2026-09-09 10:54:15] NoAlign test: 64/128
+[2026-09-09 10:54:17] NoAlign test: 80/128
+[2026-09-09 10:54:19] NoAlign test: 96/128
+[2026-09-09 10:54:21] NoAlign test: 112/128
+[2026-09-09 10:54:23] NoAlign test: 128/128
+[2026-09-09 10:54:23] NOALIGN RANDOMINIT FULL28 DIAGONAL EXPERIMENT COMPLETED

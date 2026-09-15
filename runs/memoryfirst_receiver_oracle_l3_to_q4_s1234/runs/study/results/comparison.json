@@ -1,0 +1,49 @@
+{
+  "experiment": "mmlupro_memoryfirst_receiver_oracle_audit_llama3_2_3b_to_qwen3_4b_seed1234",
+  "status": "completed",
+  "oracle_audit": {
+    "experiment": "mmlupro_memoryfirst_receiver_oracle_audit_llama3_2_3b_to_qwen3_4b_seed1234",
+    "status": "completed",
+    "sample_count": 128,
+    "fixed_router": "Answer-query + 32 option-region Top1",
+    "fixed_alignment": "RawAnchor",
+    "external_memory": "Qwen-native token0 + 32 selected option KVs",
+    "question_first": {
+      "correct": 43,
+      "accuracy": 0.3359375
+    },
+    "memory_first": {
+      "correct": 44,
+      "accuracy": 0.34375
+    },
+    "layout_agreement": 0.78125,
+    "gain_correct": 1,
+    "gain_accuracy": 0.0078125,
+    "gate": {
+      "minimum_gain_correct": 3,
+      "passed": false
+    }
+  },
+  "stage_b_executed": true,
+  "stage_b_trigger": "forced_by_user",
+  "translated": {
+    "best_accuracy": {
+      "step": 512,
+      "functional": {
+        "accuracy": 0.2265625,
+        "oracle_accuracy": 0.34375,
+        "oracle_agreement": 0.5234375,
+        "oracle_choice_kl": 0.9050351633268292
+      }
+    },
+    "best_choice_kl": {
+      "step": 128,
+      "functional": {
+        "accuracy": 0.25,
+        "oracle_accuracy": 0.34375,
+        "oracle_agreement": 0.5078125,
+        "oracle_choice_kl": 0.8924313301686198
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-N protocol audit",
+  "splits": {
+    "train": {
+      "samples": 512,
+      "shape": "[16,T,8,128]"
+    },
+    "validation": {
+      "samples": 64,
+      "shape": "[16,T,8,128]"
+    }
+  },
+  "shared_initialization": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/shared_initialization.pt",
+  "shared_initialization_sha256": "a68ce776f12bbbaf9ad51cf1e1df39e71d64929f093bbb77abff9872e284bdc5",
+  "reader_b_training_reference": {
+    "status": "complete",
+    "experiment": "P3-E-M Fresh Native Headwise Reader",
+    "source": "question_conditioned",
+    "samples": 512,
+    "epochs": 5,
+    "loss": "answer-token mean NLL only",
+    "checkpoint_selection": "fixed final epoch 5",
+    "checkpoint": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/reader_b/checkpoint_epoch_005.pt",
+    "initialization": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/shared_initialization.pt",
+    "trainable_parameters": 4194320,
+    "receiver_backbone_frozen": true,
+    "writer_loaded": false,
+    "canonical_projection_used": false
+  },
+  "same_epochs": 5,
+  "same_loss": "answer-token mean NLL only",
+  "writer_loaded": false,
+  "canonical_projection_used": false
+}

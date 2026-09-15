@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-H Evidence Assimilation Reader V2",
+  "mode": "formal512",
+  "samples": 512,
+  "epochs": 5,
+  "best_epoch_by_total_training_loss": 5,
+  "best_train_loss": 1.353031411737902,
+  "initial_equivalence": {
+    "max_abs_logit_difference": 0.0,
+    "mean_abs_logit_difference": 0.0
+  },
+  "smoke_free_running": null,
+  "trainable_parameters": 7905288,
+  "old_c1_reader_frozen": true,
+  "receiver_backbone_frozen": true,
+  "checkpoint_best": "/home/yezhe/伪查询/runs/p3e_h_evidence_assimilation_reader_v2_seed1234/formal512/checkpoint_best.pt",
+  "checkpoint_last": "/home/yezhe/伪查询/runs/p3e_h_evidence_assimilation_reader_v2_seed1234/formal512/checkpoint_last.pt"
+}

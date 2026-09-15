@@ -1,0 +1,15 @@
+{
+  "kind": "linear_continued",
+  "branch": "kd",
+  "initialized_from": "/home/yezhe/可拔插/qwen3_8b_to_4b_writer_v2_seed1234/artifacts/smoke/linear_continued_stage_a/best.pt",
+  "best_validation_nll": 4.921166181564331,
+  "best_validation_generation_f1": 0.16666666666666666,
+  "training_seconds": 8.039984417147934,
+  "peak_gpu_bytes": 11728918528,
+  "parameters": {
+    "trainable_parameters": 75497472,
+    "total_parameters": 75497472
+  },
+  "representation_losses_used": false,
+  "tether_used": false
+}

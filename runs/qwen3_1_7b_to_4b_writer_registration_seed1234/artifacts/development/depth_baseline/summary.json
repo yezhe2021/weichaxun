@@ -1,0 +1,56 @@
+{
+  "depth_raw": {
+    "count": 64,
+    "em": 0.0,
+    "f1": 0.0,
+    "bridge_f1": 0.0,
+    "comparison_f1": 0.0,
+    "nll": 15.450345173478127,
+    "teacher_kl": 15.312383368611336
+  },
+  "depth_rms": {
+    "count": 64,
+    "em": 0.0,
+    "f1": 0.003472222222222222,
+    "bridge_f1": 0.0,
+    "comparison_f1": 0.006944444444444444,
+    "nll": 11.926114030182362,
+    "teacher_kl": 11.69571028649807
+  },
+  "qwen3_1_7b_full_context_text": {
+    "count": 64,
+    "em": 0.234375,
+    "f1": 0.2673611111111111,
+    "nll": 4.7222220436561635,
+    "bridge_f1": 0.2378472222222222,
+    "comparison_f1": 0.296875,
+    "generation_match_vs_text": 1.0
+  },
+  "qwen3_4b_question_only": {
+    "count": 64,
+    "em": 0.203125,
+    "f1": 0.2997628654558002,
+    "nll": 3.3914692638224935,
+    "bridge_f1": 0.09753709454796411,
+    "comparison_f1": 0.5019886363636363,
+    "generation_match_vs_text": 0.296875
+  },
+  "qwen3_4b_full_context_text": {
+    "count": 64,
+    "em": 0.453125,
+    "f1": 0.6049913194444445,
+    "nll": 2.599654186224619,
+    "bridge_f1": 0.6509548611111112,
+    "comparison_f1": 0.5590277777777778,
+    "generation_match_vs_text": 1.0
+  },
+  "qwen3_4b_official_native_cache": {
+    "count": 64,
+    "em": 0.453125,
+    "f1": 0.6049913194444445,
+    "nll": 2.599657341792515,
+    "bridge_f1": 0.6509548611111112,
+    "comparison_f1": 0.5590277777777778,
+    "generation_match_vs_text": 1.0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "4b": {
+    "layers": 36,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "rope_theta": null,
+    "rope_scaling": {
+      "rope_theta": 1000000,
+      "rope_type": "default"
+    }
+  },
+  "8b": {
+    "layers": 36,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "rope_theta": null,
+    "rope_scaling": {
+      "rope_theta": 1000000,
+      "rope_type": "default"
+    }
+  },
+  "tokenizer_identical": true,
+  "held_out_qwen3_5": true,
+  "receiver_lora": false
+}

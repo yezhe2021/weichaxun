@@ -1,0 +1,24 @@
+{
+  "seed": 1234,
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B"
+  },
+  "source_root": "/home/yezhe/异构模型/selfslot_training_sufficiency_qwen3_4b_llama3_2_3b_seed1234/runs/study",
+  "pair_source_root": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study",
+  "aligned_baseline_root": "/home/yezhe/异构模型/rawtext_anchor_nativekv_full28_head8_ablation_train1024_llama3_2_3b_to_qwen3_4b_seed1234/runs/study",
+  "train_samples": 1024,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "regions": 32,
+  "architecture": "full28_diagonal",
+  "epochs": 4,
+  "batch_size": 8,
+  "steps": 512,
+  "validation_interval_steps": 128,
+  "learning_rate": 0.0001,
+  "clip": 30.0,
+  "temperature": 1.0,
+  "attention_implementation": "eager",
+  "mode": "study",
+  "signature": "7677b3085b2aa0f5b6580c35f79ea10f3cc4a3d6805d7674019bd4d3b7e812c3"
+}

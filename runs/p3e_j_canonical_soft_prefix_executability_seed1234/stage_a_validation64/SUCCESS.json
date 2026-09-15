@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-J Stage-A embedding reconstruction validation",
+  "samples": 64,
+  "tokens": 16278,
+  "embedding_cosine": 0.7212313925631144,
+  "embedding_mse": 0.00026004081931812404,
+  "nearest_neighbor": {
+    "sampled_positions": 512,
+    "nearest_token_top1": 0.69140625,
+    "nearest_token_top5": 0.73828125,
+    "scope": "first_512_valid_validation_positions_in_fixed_sample_order"
+  },
+  "decoder": "/home/yezhe/伪查询/runs/p3e_j_canonical_soft_prefix_executability_seed1234/formal512/stage_a/checkpoint_best.pt",
+  "decoder_sha256": "7bc47f255fcfaa3c74753299b51aa9631982538856d1ccdb077624cd876259ac",
+  "decoder_stage": "a"
+}

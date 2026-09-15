@@ -1,0 +1,52 @@
+{
+  "functional": {
+    "oracle": {
+      "accuracy": 0.21875,
+      "oracle_accuracy": 0.21875,
+      "qwen_full_accuracy": 0.25,
+      "oracle_agreement": 1.0,
+      "choice_kl": 0.0,
+      "full_kl": 0.0,
+      "selection_retention": 0.875,
+      "translation_retention": 1.0
+    },
+    "native_token0_translated_anchors": {
+      "accuracy": 0.1953125,
+      "oracle_accuracy": 0.21875,
+      "qwen_full_accuracy": 0.25,
+      "oracle_agreement": 0.3046875,
+      "choice_kl": 0.6791462846449576,
+      "full_kl": 1.6276836204342544,
+      "selection_retention": 0.875,
+      "translation_retention": 0.8928571428571429
+    },
+    "translated_token0_native_anchors": {
+      "accuracy": 0.1171875,
+      "oracle_accuracy": 0.21875,
+      "qwen_full_accuracy": 0.25,
+      "oracle_agreement": 0.2734375,
+      "choice_kl": 1.6230369604600128,
+      "full_kl": 4.718912011012435,
+      "selection_retention": 0.875,
+      "translation_retention": 0.5357142857142857
+    },
+    "translated_all": {
+      "accuracy": 0.1171875,
+      "oracle_accuracy": 0.21875,
+      "qwen_full_accuracy": 0.25,
+      "oracle_agreement": 0.34375,
+      "choice_kl": 0.6399785562243778,
+      "full_kl": 3.298755018506199,
+      "selection_retention": 0.875,
+      "translation_retention": 0.5357142857142857
+    }
+  },
+  "representation": {
+    "loss": 1.5410182606428862,
+    "k_nmse": 0.387105000205338,
+    "v_nmse": 0.6531152888201177,
+    "k_cosine": 0.8738749125041068,
+    "v_cosine": 0.6253271200694144
+  },
+  "sample_count": 128
+}

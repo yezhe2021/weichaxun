@@ -1,0 +1,90 @@
+{
+  "status": "completed",
+  "protocol": "openbookqa_official_standardprompt_receiver_native_question_options32_v2",
+  "train_samples": 1024,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "stage_a_checkpoint": "/home/yezhe/异构模型/openbookqa_standardprompt_nativequestion_options32_full28_mlp_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_312.pt",
+  "metrics": {
+    "stage_a": {
+      "accuracy": 0.4765625,
+      "oracle_agreement": 0.46875,
+      "oracle_choice_kl": 1.0062008831819185,
+      "k_nmse": 0.05496044276515022,
+      "v_nmse": 0.39824263739865273,
+      "k_cosine": 0.9390603066422045,
+      "v_cosine": 0.7928292546421289
+    },
+    "shared": {
+      "accuracy": 0.5859375,
+      "oracle_agreement": 0.578125,
+      "oracle_choice_kl": 0.9386066458573623,
+      "k_nmse": 0.2763923837337643,
+      "v_nmse": 0.4410386588424444,
+      "k_cosine": 0.8083175616338849,
+      "v_cosine": 0.7397412052378058
+    },
+    "residual": {
+      "accuracy": 0.640625,
+      "oracle_agreement": 0.640625,
+      "oracle_choice_kl": 0.6126306820733589,
+      "k_nmse": 0.05880849633831531,
+      "v_nmse": 0.40218625112902373,
+      "k_cosine": 0.9366588238626719,
+      "v_cosine": 0.7914461703039706
+    }
+  },
+  "relative_residual_norm": {
+    "k": {
+      "min": 0.06124013855713225,
+      "p10": 0.06183218246189063,
+      "p25": 0.06217502658897105,
+      "median": 0.06257435429756728,
+      "p75": 0.06298495097754701,
+      "p90": 0.0634210707664279,
+      "p95": 0.06346889151327552,
+      "max": 0.06535280110231043,
+      "mean": 0.0626017126343231
+    },
+    "v": {
+      "min": 0.06978220169583445,
+      "p10": 0.07570354316961198,
+      "p25": 0.07981876198710476,
+      "median": 0.0839249619660281,
+      "p75": 0.08690984085818029,
+      "p90": 0.09025483201126537,
+      "p95": 0.09130021475067186,
+      "max": 0.09548573670083886,
+      "mean": 0.08337420513763827
+    }
+  },
+  "paired_shared_vs_residual": {
+    "both_correct": 65,
+    "only_first_correct": 10,
+    "only_second_correct": 17,
+    "both_wrong": 36,
+    "second_minus_first": 0.0546875,
+    "mcnemar_p": 0.24778856337070465
+  },
+  "paired_stage_a_vs_shared": {
+    "both_correct": 42,
+    "only_first_correct": 19,
+    "only_second_correct": 33,
+    "both_wrong": 34,
+    "second_minus_first": 0.109375,
+    "mcnemar_p": 0.07039422106706228
+  },
+  "paired_stage_a_vs_residual": {
+    "both_correct": 54,
+    "only_first_correct": 7,
+    "only_second_correct": 28,
+    "both_wrong": 39,
+    "second_minus_first": 0.1640625,
+    "mcnemar_p": 0.0005082604475319386
+  },
+  "frozen_base_hash_verified": true,
+  "trained_parameters": {
+    "shared": 283115520,
+    "residual": 9437184
+  }
+}

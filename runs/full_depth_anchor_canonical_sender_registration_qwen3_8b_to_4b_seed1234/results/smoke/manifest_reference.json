@@ -1,0 +1,34 @@
+{
+  "source": "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/artifacts/smoke/manifest.json",
+  "sample_ids": {
+    "train": [
+      "5ac4d692554299076e296e0c",
+      "5a7188685542994082a3e86e",
+      "5ac45245554299076e296d94",
+      "5ae12f0055429920d52342f1",
+      "5a76420a5542994ccc918745",
+      "5adf74515542995ec70e9017",
+      "5adcef0d5542990d50227d66",
+      "5adc0d725542996e685252c0"
+    ],
+    "validation": [
+      "5ab851e35542990e739ec8c3",
+      "5a80e47d55429938b6142238",
+      "5ac34ed0554299741d48a248",
+      "5ac1218c55429964131be15c"
+    ],
+    "test": [
+      "5a7b40cd5542995eb53be8d4",
+      "5aba749055429901930fa7d8",
+      "5ab615cf554299488d4d9aa3",
+      "5a8b42be55429949d91db515"
+    ]
+  },
+  "counts": {
+    "train": 8,
+    "validation": 4,
+    "test": 4
+  },
+  "position_policy": "original offsets in complete Context->Question sequence",
+  "canonical_v1": "identity Qwen3-4B native KV, all 36 layers"
+}

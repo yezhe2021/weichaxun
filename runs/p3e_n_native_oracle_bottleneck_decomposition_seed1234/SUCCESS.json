@@ -1,0 +1,375 @@
+{
+  "status": "complete",
+  "experiment": "P3-E-N Native Oracle Bottleneck Decomposition",
+  "audit": {
+    "status": "complete",
+    "experiment": "P3-E-N protocol audit",
+    "splits": {
+      "train": {
+        "samples": 512,
+        "shape": "[16,T,8,128]"
+      },
+      "validation": {
+        "samples": 64,
+        "shape": "[16,T,8,128]"
+      }
+    },
+    "shared_initialization": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/shared_initialization.pt",
+    "shared_initialization_sha256": "a68ce776f12bbbaf9ad51cf1e1df39e71d64929f093bbb77abff9872e284bdc5",
+    "reader_b_training_reference": {
+      "status": "complete",
+      "experiment": "P3-E-M Fresh Native Headwise Reader",
+      "source": "question_conditioned",
+      "samples": 512,
+      "epochs": 5,
+      "loss": "answer-token mean NLL only",
+      "checkpoint_selection": "fixed final epoch 5",
+      "checkpoint": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/reader_b/checkpoint_epoch_005.pt",
+      "initialization": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/shared_initialization.pt",
+      "trainable_parameters": 4194320,
+      "receiver_backbone_frozen": true,
+      "writer_loaded": false,
+      "canonical_projection_used": false
+    },
+    "same_epochs": 5,
+    "same_loss": "answer-token mean NLL only",
+    "writer_loaded": false,
+    "canonical_projection_used": false
+  },
+  "reader_c_training": {
+    "status": "complete",
+    "experiment": "P3-E-N same-model Fresh Reader C",
+    "samples": 512,
+    "epochs": 5,
+    "loss": "answer-token mean NLL only",
+    "checkpoint_selection": "fixed final epoch 5",
+    "checkpoint": "/home/yezhe/伪查询/runs/p3e_n_native_oracle_bottleneck_decomposition_seed1234/reader_c/checkpoint_epoch_005.pt",
+    "initialization": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/shared_initialization.pt",
+    "trainable_parameters": 4194320,
+    "receiver_backbone_frozen": true,
+    "writer_loaded": false,
+    "canonical_projection_used": false
+  },
+  "same_model_evaluation": {
+    "status": "complete",
+    "experiment": "P3-E-N Native Oracle Bottleneck Decomposition",
+    "samples": 64,
+    "conditions": {
+      "question_only": {
+        "n": 64,
+        "em": 0.171875,
+        "f1": 0.2837907936549819,
+        "eos_rate": 0.953125,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.15625,
+            "f1": 0.23322555322966507
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.1875,
+            "f1": 0.3343560340802988
+          }
+        }
+      },
+      "reader_off": {
+        "n": 64,
+        "em": 0.171875,
+        "f1": 0.2837907936549819,
+        "eos_rate": 0.953125,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.15625,
+            "f1": 0.23322555322966507
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.1875,
+            "f1": 0.3343560340802988
+          }
+        }
+      },
+      "full_evidence_text": {
+        "n": 64,
+        "em": 0.25,
+        "f1": 0.40983000528813956,
+        "eos_rate": 0.640625,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.46875,
+            "f1": 0.6608480553739421
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.03125,
+            "f1": 0.15881195520233732
+          }
+        }
+      },
+      "qwen3_4b_qconditioned_native_reader_c": {
+        "n": 64,
+        "em": 0.46875,
+        "f1": 0.5720238095238096,
+        "eos_rate": 1.0,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.40625,
+            "f1": 0.5721726190476191
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.53125,
+            "f1": 0.571875
+          }
+        }
+      },
+      "qwen3_4b_qconditioned_hard_shuffled_reader_c": {
+        "n": 64,
+        "em": 0.171875,
+        "f1": 0.23895089285714285,
+        "eos_rate": 1.0,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.0625,
+            "f1": 0.14352678571428573
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.28125,
+            "f1": 0.334375
+          }
+        }
+      }
+    },
+    "dependency_4b_automatic_f1": 0.3330729166666667,
+    "prediction_switch_rate": 0.640625,
+    "reader_off_exact_output_consistency": 1.0,
+    "reader_c_gates": [
+      0.09652189165353775,
+      0.09223403036594391,
+      0.10707013309001923,
+      0.12149067223072052,
+      0.12273065000772476,
+      0.1087825745344162,
+      0.13995105028152466,
+      0.1196642741560936,
+      0.15984952449798584,
+      0.16583165526390076,
+      0.21715965867042542,
+      0.21810604631900787,
+      0.21628691256046295,
+      0.18435007333755493,
+      0.24746805429458618,
+      0.16807933151721954
+    ],
+    "reader_c": "/home/yezhe/伪查询/runs/p3e_n_native_oracle_bottleneck_decomposition_seed1234/reader_c/checkpoint_epoch_005.pt",
+    "p3em_heterogeneous_reference": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/evaluation/SUCCESS.json",
+    "manual_cpw_required": true,
+    "writer_loaded": false,
+    "canonical_projection_used": false
+  },
+  "heterogeneous_p3em_evaluation": {
+    "status": "complete",
+    "experiment": "P3-E-M Fresh Native Reader Q-Conditioning Diagnosis",
+    "samples": 64,
+    "conditions": {
+      "question_only": {
+        "n": 64,
+        "em": 0.171875,
+        "f1": 0.2837907936549819,
+        "eos_rate": 0.953125,
+        "average_output_tokens": 9.40625,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.15625,
+            "f1": 0.23322555322966507
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.1875,
+            "f1": 0.3343560340802988
+          }
+        }
+      },
+      "reader_off": {
+        "n": 64,
+        "em": 0.171875,
+        "f1": 0.2837907936549819,
+        "eos_rate": 0.953125,
+        "average_output_tokens": 9.40625,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.15625,
+            "f1": 0.23322555322966507
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.1875,
+            "f1": 0.3343560340802988
+          }
+        }
+      },
+      "full_evidence_text": {
+        "n": 64,
+        "em": 0.25,
+        "f1": 0.40983000528813956,
+        "eos_rate": 0.640625,
+        "average_output_tokens": 20.109375,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.46875,
+            "f1": 0.6608480553739421
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.03125,
+            "f1": 0.15881195520233732
+          }
+        }
+      },
+      "evidence_only_native_reader_a": {
+        "n": 64,
+        "em": 0.359375,
+        "f1": 0.47695741758241766,
+        "eos_rate": 1.0,
+        "average_output_tokens": 4.15625,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.25,
+            "f1": 0.44453983516483514
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.46875,
+            "f1": 0.509375
+          }
+        }
+      },
+      "evidence_only_hard_shuffled_reader_a": {
+        "n": 64,
+        "em": 0.28125,
+        "f1": 0.3438988095238095,
+        "eos_rate": 1.0,
+        "average_output_tokens": 4.34375,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.0625,
+            "f1": 0.13467261904761907
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.5,
+            "f1": 0.5531250000000001
+          }
+        }
+      },
+      "question_conditioned_native_reader_b": {
+        "n": 64,
+        "em": 0.40625,
+        "f1": 0.5338169642857142,
+        "eos_rate": 1.0,
+        "average_output_tokens": 4.171875,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.28125,
+            "f1": 0.48325892857142855
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.53125,
+            "f1": 0.5843750000000001
+          }
+        }
+      },
+      "question_conditioned_hard_shuffled_reader_b": {
+        "n": 64,
+        "em": 0.15625,
+        "f1": 0.21059027777777778,
+        "eos_rate": 0.984375,
+        "average_output_tokens": 5.046875,
+        "by_type": {
+          "bridge": {
+            "n": 32,
+            "em": 0.0625,
+            "f1": 0.11805555555555555
+          },
+          "comparison": {
+            "n": 32,
+            "em": 0.25,
+            "f1": 0.303125
+          }
+        }
+      }
+    },
+    "delta_q_automatic_f1": 0.05685954670329657,
+    "correct_shuffled_f1_gap_a": 0.13305860805860814,
+    "correct_shuffled_f1_gap_b": 0.32322668650793646,
+    "switch_rates": {
+      "a_correct_shuffled_switch": 0.5625,
+      "b_correct_shuffled_switch": 0.671875,
+      "a_b_switch": 0.234375,
+      "question_only_equals_reader_off": 1.0
+    },
+    "reader_a_gates": [
+      0.12289164215326309,
+      0.09085935354232788,
+      0.13195382058620453,
+      0.12287986278533936,
+      0.16404880583286285,
+      0.12352947890758514,
+      0.1392674446105957,
+      0.10451789945363998,
+      0.1546490341424942,
+      0.1485154628753662,
+      0.19327835738658905,
+      0.23664085566997528,
+      0.20966537296772003,
+      0.19821152091026306,
+      0.25993168354034424,
+      0.19229161739349365
+    ],
+    "reader_b_gates": [
+      0.1259671151638031,
+      0.09647592157125473,
+      0.1237223744392395,
+      0.09530230611562729,
+      0.12764959037303925,
+      0.11634187400341034,
+      0.12766467034816742,
+      0.09451035410165787,
+      0.15745511651039124,
+      0.16445045173168182,
+      0.22161228954792023,
+      0.2141481637954712,
+      0.20944622159004211,
+      0.19657042622566223,
+      0.24543803930282593,
+      0.17119784653186798
+    ],
+    "reader_a": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/reader_a/checkpoint_epoch_005.pt",
+    "reader_b": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/reader_b/checkpoint_epoch_005.pt",
+    "same_initialization": "/home/yezhe/伪查询/runs/p3e_m_fresh_native_reader_q_conditioning_seed1234/shared_initialization.pt",
+    "same_architecture": true,
+    "same_parameter_count": true,
+    "writer_loaded": false,
+    "canonical_projection_used": false,
+    "manual_cpw_required": true
+  },
+  "reader_c_checkpoint_sha256": "86f022a1c47b474056052cf4918da05ea59ebd87d7ee0af404e1f10545cc89c8",
+  "decomposition": {
+    "text_to_same_model_interface_gap_f1": -0.16219380423567004,
+    "same_model_to_heterogeneous_gap_f1": 0.038206845238095366
+  },
+  "n2_executed": false
+}

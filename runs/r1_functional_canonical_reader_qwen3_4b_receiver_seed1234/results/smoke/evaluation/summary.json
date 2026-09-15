@@ -1,0 +1,107 @@
+{
+  "question_only": {
+    "em": 0.0,
+    "token_f1": 0.019999999999999997,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.25,
+    "gold_answer_nll": 17.310178995132446
+  },
+  "supporting_text": {
+    "em": 0.0,
+    "token_f1": 0.055170707570509646,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.75,
+    "gold_answer_nll": 13.915518522262573
+  },
+  "native_4b_sparse_correct": {
+    "em": 0.0,
+    "token_f1": 0.018518518518518517,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.25,
+    "gold_answer_nll": 12.817025661468506
+  },
+  "native_4b_sparse_shuffled": {
+    "em": 0.0,
+    "token_f1": 0.0,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.0,
+    "gold_answer_nll": 14.535197019577026
+  },
+  "native_4b_sparse_zero": {
+    "em": 0.0,
+    "token_f1": 0.02040816326530612,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.25,
+    "gold_answer_nll": 15.179804563522339
+  },
+  "self_4b_canonical_correct": {
+    "em": 0.0,
+    "token_f1": 0.0,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.0,
+    "gold_answer_nll": 12.957619428634644
+  },
+  "self_4b_canonical_shuffled": {
+    "em": 0.0,
+    "token_f1": 0.0,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.0,
+    "gold_answer_nll": 12.688490152359009
+  },
+  "self_4b_canonical_zero": {
+    "em": 0.0,
+    "token_f1": 0.019607843137254898,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.25,
+    "gold_answer_nll": 15.522075891494751
+  },
+  "self_reader_no_memory": {
+    "em": 0.0,
+    "token_f1": 0.019999999999999997,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.25,
+    "gold_answer_nll": 17.326231002807617
+  },
+  "cross_8b_raw_native_correct": {
+    "em": 0.0,
+    "token_f1": 0.0,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.0,
+    "gold_answer_nll": 15.063908815383911
+  },
+  "cross_8b_canonical_correct": {
+    "em": 0.0,
+    "token_f1": 0.0,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.0,
+    "gold_answer_nll": 12.49470067024231
+  },
+  "cross_8b_canonical_shuffled": {
+    "em": 0.0,
+    "token_f1": 0.0,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.0,
+    "gold_answer_nll": 12.260277032852173
+  },
+  "cross_8b_canonical_zero": {
+    "em": 0.0,
+    "token_f1": 0.019607843137254898,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.25,
+    "gold_answer_nll": 15.522075891494751
+  },
+  "core_retention": {
+    "A_Q": 0.0,
+    "A_N": 0.0,
+    "A_S": 0.0,
+    "A_C": 0.0,
+    "A_raw8": 0.0,
+    "retention_self": null,
+    "retention_cross": null,
+    "writer_gain": 0.0,
+    "native_correct_minus_shuffled": 0.0,
+    "self_correct_minus_shuffled": 0.0,
+    "cross_correct_minus_shuffled": 0.0
+  },
+  "r0_pairwise_upper_bound_source": "/home/yezhe/可拔插/r0_raw_native_kv_cross_model_qwen3_8b_to_4b_hotpotqa_seed1234/artifacts/formal/evaluation/summary.json"
+}

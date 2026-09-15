@@ -1,0 +1,26 @@
+[2026-09-13 20:47:00] CUDA available; starting smoke
+Memory-first layout and Full28-Diagonal zero/bias/shape tests passed
+SKIP completed stage: oracle_audit
+SKIP completed stage: prepare_teachers
+SKIP completed stage: stage_b
+SKIP completed stage: evaluate
+ALL MEMORY-FIRST RECEIVER STAGES COMPLETED
+[2026-09-13 20:47:09] Smoke passed; starting study Oracle audit
+START stage: oracle_audit
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:33,  4.26it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 517.64it/s]Loading weights:  55%|█████▌    | 220/398 [00:00<00:00, 540.85it/s]Loading weights:  72%|███████▏  | 287/398 [00:00<00:00, 543.75it/s]Loading weights:  88%|████████▊ | 349/398 [00:00<00:00, 535.83it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 494.31it/s]
+[2026-09-13 20:47:27] Memory-first Oracle audit: 16/128
+[2026-09-13 20:47:29] Memory-first Oracle audit: 32/128
+[2026-09-13 20:47:32] Memory-first Oracle audit: 48/128
+[2026-09-13 20:47:34] Memory-first Oracle audit: 64/128
+[2026-09-13 20:47:36] Memory-first Oracle audit: 80/128
+[2026-09-13 20:47:39] Memory-first Oracle audit: 96/128
+[2026-09-13 20:47:41] Memory-first Oracle audit: 112/128
+[2026-09-13 20:47:43] Memory-first Oracle audit: 128/128
+[2026-09-13 20:47:43] MEMORY-FIRST ORACLE AUDIT COMPLETED: {'experiment': 'mmlupro_memoryfirst_receiver_oracle_audit_llama3_2_3b_to_qwen3_4b_seed1234', 'status': 'completed', 'sample_count': 128, 'fixed_router': 'Answer-query + 32 option-region Top1', 'fixed_alignment': 'RawAnchor', 'external_memory': 'Qwen-native token0 + 32 selected option KVs', 'question_first': {'correct': 43, 'accuracy': 0.3359375}, 'memory_first': {'correct': 44, 'accuracy': 0.34375}, 'layout_agreement': 0.78125, 'gain_correct': 1, 'gain_accuracy': 0.0078125, 'gate': {'minimum_gain_correct': 3, 'passed': False}}
+DONE stage: oracle_audit
+ORACLE GATE FAILED: gain=1 correct; Stage-B intentionally skipped
+START stage: evaluate
+[2026-09-13 20:47:49] MEMORY-FIRST RECEIVER EXPERIMENT COMPLETED
+DONE stage: evaluate
+ALL MEMORY-FIRST RECEIVER STAGES COMPLETED
+[2026-09-13 20:47:51] ALL EXPERIMENTS COMPLETED

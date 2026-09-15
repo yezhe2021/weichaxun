@@ -1,0 +1,19 @@
+{
+  "splits": {
+    "train": {
+      "samples_checked": 512
+    },
+    "validation": {
+      "samples_checked": 64
+    },
+    "test": {
+      "samples_checked": 64
+    }
+  },
+  "passed": true,
+  "token_ids_identical": true,
+  "support_indices_identical": true,
+  "pre_rope_k_source": "R1 NativeCapture before rotary embedding",
+  "dynamic_attention_mask": true,
+  "shuffled_answer_different": true
+}

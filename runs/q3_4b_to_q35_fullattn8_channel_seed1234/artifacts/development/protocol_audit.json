@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "direction": "Qwen3-4B -> Qwen3.5-4B",
+  "source_layers": [
+    3,
+    8,
+    12,
+    17,
+    21,
+    26,
+    30,
+    35
+  ],
+  "target_layers": [
+    3,
+    7,
+    11,
+    15,
+    19,
+    23,
+    27,
+    31
+  ],
+  "channel": "Qwen3.5 Full-Attention Anchor8 only",
+  "excluded": [
+    "24 DeltaNet Context states",
+    "layer mixer",
+    "depth residual",
+    "calibration",
+    "MLP",
+    "gate",
+    "low-rank residual"
+  ],
+  "question_enters_sender": false,
+  "reader_sender_independent": true,
+  "q35_reader_sha256": "86271fd11944f0e38fea09253da3eace767137a2ef827b0fc9b7ba5c4c36f2c5",
+  "hard_result_gate": null
+}
