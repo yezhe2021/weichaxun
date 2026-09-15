@@ -1,0 +1,177 @@
+START stage: asset_audit
+DONE stage: asset_audit
+START stage: stage_a
+[2026-09-15 14:26:55] Fresh Stage A 16/1024 loss=1.564124
+[2026-09-15 14:27:02] Fresh Stage A 32/1024 loss=1.369750
+[2026-09-15 14:27:08] Fresh Stage A 48/1024 loss=1.278038
+[2026-09-15 14:27:14] Fresh Stage A 64/1024 loss=1.203585
+[2026-09-15 14:27:21] Fresh Stage A 80/1024 loss=1.074943
+[2026-09-15 14:27:29] Fresh Stage A 96/1024 loss=1.046610
+[2026-09-15 14:27:37] Fresh Stage A 112/1024 loss=0.999110
+[2026-09-15 14:27:44] Fresh Stage A 128/1024 loss=0.987473
+[2026-09-15 14:27:48] Fresh Stage A validation step=128 loss=1.006778
+[2026-09-15 14:27:55] Fresh Stage A 144/1024 loss=0.905712
+[2026-09-15 14:28:02] Fresh Stage A 160/1024 loss=0.860314
+[2026-09-15 14:28:10] Fresh Stage A 176/1024 loss=0.866100
+[2026-09-15 14:28:19] Fresh Stage A 192/1024 loss=0.885355
+[2026-09-15 14:28:27] Fresh Stage A 208/1024 loss=0.886705
+[2026-09-15 14:28:34] Fresh Stage A 224/1024 loss=0.847228
+[2026-09-15 14:28:41] Fresh Stage A 240/1024 loss=0.843856
+[2026-09-15 14:28:49] Fresh Stage A 256/1024 loss=0.824886
+[2026-09-15 14:28:54] Fresh Stage A validation step=256 loss=0.860850
+[2026-09-15 14:29:02] Fresh Stage A 272/1024 loss=0.750802
+[2026-09-15 14:29:10] Fresh Stage A 288/1024 loss=0.748867
+[2026-09-15 14:29:17] Fresh Stage A 304/1024 loss=0.788461
+[2026-09-15 14:29:25] Fresh Stage A 320/1024 loss=0.825028
+[2026-09-15 14:29:34] Fresh Stage A 336/1024 loss=0.757780
+[2026-09-15 14:29:42] Fresh Stage A 352/1024 loss=0.721520
+[2026-09-15 14:29:50] Fresh Stage A 368/1024 loss=0.746270
+[2026-09-15 14:29:59] Fresh Stage A 384/1024 loss=0.679815
+[2026-09-15 14:30:03] Fresh Stage A validation step=384 loss=0.798269
+[2026-09-15 14:30:11] Fresh Stage A 400/1024 loss=0.717094
+[2026-09-15 14:30:18] Fresh Stage A 416/1024 loss=0.685221
+[2026-09-15 14:30:26] Fresh Stage A 432/1024 loss=0.660404
+[2026-09-15 14:30:33] Fresh Stage A 448/1024 loss=0.689395
+[2026-09-15 14:30:41] Fresh Stage A 464/1024 loss=0.655233
+[2026-09-15 14:30:49] Fresh Stage A 480/1024 loss=0.689078
+[2026-09-15 14:30:57] Fresh Stage A 496/1024 loss=0.616600
+[2026-09-15 14:31:04] Fresh Stage A 512/1024 loss=0.677232
+[2026-09-15 14:31:09] Fresh Stage A validation step=512 loss=0.762770
+[2026-09-15 14:31:16] Fresh Stage A 528/1024 loss=0.636980
+[2026-09-15 14:31:24] Fresh Stage A 544/1024 loss=0.646396
+[2026-09-15 14:31:32] Fresh Stage A 560/1024 loss=0.595957
+[2026-09-15 14:31:40] Fresh Stage A 576/1024 loss=0.634272
+[2026-09-15 14:31:47] Fresh Stage A 592/1024 loss=0.552632
+[2026-09-15 14:31:55] Fresh Stage A 608/1024 loss=0.676608
+[2026-09-15 14:32:03] Fresh Stage A 624/1024 loss=0.624017
+[2026-09-15 14:32:10] Fresh Stage A 640/1024 loss=0.609066
+[2026-09-15 14:32:15] Fresh Stage A validation step=640 loss=0.739142
+[2026-09-15 14:32:23] Fresh Stage A 656/1024 loss=0.636712
+[2026-09-15 14:32:30] Fresh Stage A 672/1024 loss=0.570406
+[2026-09-15 14:32:37] Fresh Stage A 688/1024 loss=0.558371
+[2026-09-15 14:32:45] Fresh Stage A 704/1024 loss=0.587213
+[2026-09-15 14:32:53] Fresh Stage A 720/1024 loss=0.546118
+[2026-09-15 14:33:01] Fresh Stage A 736/1024 loss=0.555970
+[2026-09-15 14:33:09] Fresh Stage A 752/1024 loss=0.565935
+[2026-09-15 14:33:16] Fresh Stage A 768/1024 loss=0.621229
+[2026-09-15 14:33:21] Fresh Stage A validation step=768 loss=0.725316
+[2026-09-15 14:33:28] Fresh Stage A 784/1024 loss=0.536391
+[2026-09-15 14:33:36] Fresh Stage A 800/1024 loss=0.542678
+[2026-09-15 14:33:44] Fresh Stage A 816/1024 loss=0.549187
+[2026-09-15 14:33:53] Fresh Stage A 832/1024 loss=0.535073
+[2026-09-15 14:34:00] Fresh Stage A 848/1024 loss=0.555391
+[2026-09-15 14:34:08] Fresh Stage A 864/1024 loss=0.559478
+[2026-09-15 14:34:16] Fresh Stage A 880/1024 loss=0.528691
+[2026-09-15 14:34:23] Fresh Stage A 896/1024 loss=0.622797
+[2026-09-15 14:34:28] Fresh Stage A validation step=896 loss=0.715994
+[2026-09-15 14:34:36] Fresh Stage A 912/1024 loss=0.513069
+[2026-09-15 14:34:44] Fresh Stage A 928/1024 loss=0.492500
+[2026-09-15 14:34:51] Fresh Stage A 944/1024 loss=0.524482
+[2026-09-15 14:34:58] Fresh Stage A 960/1024 loss=0.567355
+[2026-09-15 14:35:07] Fresh Stage A 976/1024 loss=0.537622
+[2026-09-15 14:35:13] Fresh Stage A 992/1024 loss=0.497431
+[2026-09-15 14:35:20] Fresh Stage A 1008/1024 loss=0.508295
+[2026-09-15 14:35:28] Fresh Stage A 1024/1024 loss=0.529678
+[2026-09-15 14:35:33] Fresh Stage A validation step=1024 loss=0.708258
+DONE stage: stage_a
+START stage: select_stage_a
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:30,  4.39it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 540.40it/s]Loading weights:  56%|█████▋    | 224/398 [00:00<00:00, 533.69it/s]Loading weights:  73%|███████▎  | 291/398 [00:00<00:00, 514.52it/s]Loading weights:  88%|████████▊ | 351/398 [00:00<00:00, 452.77it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 407.27it/s]
+[2026-09-15 14:36:11] Fresh Stage A functional step=128 acc=0.3438 KL=1.269682
+[2026-09-15 14:36:49] Fresh Stage A functional step=256 acc=0.3750 KL=1.189652
+[2026-09-15 14:37:22] Fresh Stage A functional step=384 acc=0.3906 KL=1.101143
+[2026-09-15 14:37:54] Fresh Stage A functional step=512 acc=0.4766 KL=1.050420
+[2026-09-15 14:38:25] Fresh Stage A functional step=640 acc=0.4922 KL=0.967504
+[2026-09-15 14:38:57] Fresh Stage A functional step=768 acc=0.5078 KL=0.951374
+[2026-09-15 14:39:30] Fresh Stage A functional step=896 acc=0.4922 KL=0.973141
+[2026-09-15 14:40:03] Fresh Stage A functional step=1024 acc=0.4688 KL=0.977045
+DONE stage: select_stage_a
+START stage: train_shared
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:29,  4.46it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 592.16it/s]Loading weights:  61%|██████    | 243/398 [00:00<00:00, 610.09it/s]Loading weights:  80%|████████  | 319/398 [00:00<00:00, 425.48it/s]Loading weights:  94%|█████████▍| 376/398 [00:00<00:00, 367.04it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 399.30it/s]
+[2026-09-15 14:41:34] shared Stage B 16/512 KL=0.693783
+[2026-09-15 14:42:23] shared Stage B 32/512 KL=0.911917
+[2026-09-15 14:43:12] shared Stage B 48/512 KL=0.484086
+[2026-09-15 14:44:00] shared Stage B 64/512 KL=1.433376
+[2026-09-15 14:44:46] shared Stage B 80/512 KL=0.699691
+[2026-09-15 14:45:32] shared Stage B 96/512 KL=0.540179
+[2026-09-15 14:46:17] shared Stage B 112/512 KL=0.555430
+[2026-09-15 14:47:03] shared Stage B 128/512 KL=0.678661
+[2026-09-15 14:47:19] shared validation step=128 acc=0.6016 KL=0.705508
+[2026-09-15 14:48:05] shared Stage B 144/512 KL=0.052772
+[2026-09-15 14:48:52] shared Stage B 160/512 KL=0.234707
+[2026-09-15 14:49:42] shared Stage B 176/512 KL=0.194344
+[2026-09-15 14:50:31] shared Stage B 192/512 KL=0.797116
+[2026-09-15 14:51:18] shared Stage B 208/512 KL=0.659490
+[2026-09-15 14:52:04] shared Stage B 224/512 KL=0.578651
+[2026-09-15 14:53:10] shared Stage B 240/512 KL=0.651300
+[2026-09-15 14:54:16] shared Stage B 256/512 KL=0.762557
+[2026-09-15 14:54:43] shared validation step=256 acc=0.5234 KL=1.037328
+[2026-09-15 14:55:46] shared Stage B 272/512 KL=0.795695
+[2026-09-15 14:56:52] shared Stage B 288/512 KL=0.617807
+[2026-09-15 14:58:07] shared Stage B 304/512 KL=0.663480
+[2026-09-15 14:59:00] shared Stage B 320/512 KL=0.125342
+[2026-09-15 14:59:48] shared Stage B 336/512 KL=0.360948
+[2026-09-15 15:00:36] shared Stage B 352/512 KL=0.608871
+[2026-09-15 15:01:23] shared Stage B 368/512 KL=0.224863
+[2026-09-15 15:02:09] shared Stage B 384/512 KL=0.709781
+[2026-09-15 15:02:25] shared validation step=384 acc=0.6250 KL=0.722906
+[2026-09-15 15:03:11] shared Stage B 400/512 KL=0.222218
+[2026-09-15 15:04:01] shared Stage B 416/512 KL=0.302334
+[2026-09-15 15:04:50] shared Stage B 432/512 KL=0.345123
+[2026-09-15 15:05:36] shared Stage B 448/512 KL=0.101867
+[2026-09-15 15:06:22] shared Stage B 464/512 KL=0.166060
+[2026-09-15 15:07:08] shared Stage B 480/512 KL=0.315330
+[2026-09-15 15:07:55] shared Stage B 496/512 KL=0.352820
+[2026-09-15 15:08:43] shared Stage B 512/512 KL=0.233892
+[2026-09-15 15:09:04] shared validation step=512 acc=0.5625 KL=0.857423
+DONE stage: train_shared
+START stage: train_residual
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:28,  4.50it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 601.31it/s]Loading weights:  62%|██████▏   | 245/398 [00:00<00:00, 555.54it/s]Loading weights:  79%|███████▉  | 316/398 [00:00<00:00, 561.27it/s]Loading weights:  96%|█████████▌| 382/398 [00:00<00:00, 561.90it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 521.79it/s]
+[2026-09-15 15:10:29] residual Stage B 16/512 KL=0.428839
+[2026-09-15 15:11:33] residual Stage B 32/512 KL=0.817595
+[2026-09-15 15:12:37] residual Stage B 48/512 KL=0.437735
+[2026-09-15 15:13:46] residual Stage B 64/512 KL=0.676379
+[2026-09-15 15:14:57] residual Stage B 80/512 KL=0.313183
+[2026-09-15 15:15:54] residual Stage B 96/512 KL=0.395097
+[2026-09-15 15:16:44] residual Stage B 112/512 KL=0.682920
+[2026-09-15 15:17:40] residual Stage B 128/512 KL=0.596801
+[2026-09-15 15:18:12] residual validation step=128 acc=0.6875 KL=0.609611
+[2026-09-15 15:19:07] residual Stage B 144/512 KL=0.481253
+[2026-09-15 15:19:58] residual Stage B 160/512 KL=0.134747
+[2026-09-15 15:20:50] residual Stage B 176/512 KL=0.454219
+[2026-09-15 15:21:41] residual Stage B 192/512 KL=0.168451
+[2026-09-15 15:22:33] residual Stage B 208/512 KL=0.182326
+[2026-09-15 15:23:25] residual Stage B 224/512 KL=0.366321
+[2026-09-15 15:24:17] residual Stage B 240/512 KL=0.432009
+[2026-09-15 15:25:12] residual Stage B 256/512 KL=0.631731
+[2026-09-15 15:25:44] residual validation step=256 acc=0.6719 KL=0.602584
+[2026-09-15 15:26:46] residual Stage B 272/512 KL=0.237032
+[2026-09-15 15:27:51] residual Stage B 288/512 KL=0.526941
+[2026-09-15 15:29:02] residual Stage B 304/512 KL=0.214049
+[2026-09-15 15:29:55] residual Stage B 320/512 KL=0.368607
+[2026-09-15 15:30:47] residual Stage B 336/512 KL=0.267762
+[2026-09-15 15:31:40] residual Stage B 352/512 KL=0.544349
+[2026-09-15 15:32:31] residual Stage B 368/512 KL=0.321802
+[2026-09-15 15:33:23] residual Stage B 384/512 KL=0.159221
+[2026-09-15 15:33:47] residual validation step=384 acc=0.7266 KL=0.580958
+[2026-09-15 15:34:39] residual Stage B 400/512 KL=0.178685
+[2026-09-15 15:35:30] residual Stage B 416/512 KL=0.253719
+[2026-09-15 15:36:21] residual Stage B 432/512 KL=0.635844
+[2026-09-15 15:37:13] residual Stage B 448/512 KL=0.547920
+[2026-09-15 15:38:04] residual Stage B 464/512 KL=0.130658
+[2026-09-15 15:38:58] residual Stage B 480/512 KL=0.508542
+[2026-09-15 15:39:56] residual Stage B 496/512 KL=0.546417
+[2026-09-15 15:40:59] residual Stage B 512/512 KL=0.219455
+[2026-09-15 15:41:32] residual validation step=512 acc=0.7031 KL=0.584854
+DONE stage: train_residual
+START stage: evaluate
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:27,  4.54it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 596.57it/s]Loading weights:  61%|██████    | 242/398 [00:00<00:00, 615.12it/s]Loading weights:  80%|███████▉  | 318/398 [00:00<00:00, 604.79it/s]Loading weights:  97%|█████████▋| 387/398 [00:00<00:00, 617.77it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 557.05it/s]
+[2026-09-15 15:42:17] Final A/B evaluation 16/128
+[2026-09-15 15:42:36] Final A/B evaluation 32/128
+[2026-09-15 15:42:48] Final A/B evaluation 48/128
+[2026-09-15 15:43:00] Final A/B evaluation 64/128
+[2026-09-15 15:43:12] Final A/B evaluation 80/128
+[2026-09-15 15:43:23] Final A/B evaluation 96/128
+[2026-09-15 15:43:35] Final A/B evaluation 112/128
+[2026-09-15 15:43:47] Final A/B evaluation 128/128
+DONE stage: evaluate
+ALL OFFICIAL RETRAINED-STAGE-A EXPERIMENT STAGES COMPLETED

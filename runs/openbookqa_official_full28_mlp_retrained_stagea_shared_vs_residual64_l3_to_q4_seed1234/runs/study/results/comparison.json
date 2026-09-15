@@ -1,0 +1,90 @@
+{
+  "status": "completed",
+  "protocol": "openbookqa_official_standardprompt_receiver_native_question_options32_v2",
+  "train_samples": 1024,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "stage_a_checkpoint": "/home/yezhe/异构模型/openbookqa_official_full28_mlp_retrained_stagea_shared_vs_residual64_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+  "metrics": {
+    "stage_a": {
+      "accuracy": 0.484375,
+      "oracle_agreement": 0.5078125,
+      "oracle_choice_kl": 0.9405674014328724,
+      "k_nmse": 0.04780164663679898,
+      "v_nmse": 0.38092696329113096,
+      "k_cosine": 0.9461745545268059,
+      "v_cosine": 0.7715430171228945
+    },
+    "shared": {
+      "accuracy": 0.6953125,
+      "oracle_agreement": 0.625,
+      "oracle_choice_kl": 0.7229711649124511,
+      "k_nmse": 0.26485855772625655,
+      "v_nmse": 0.4207038884051144,
+      "k_cosine": 0.8017399241216481,
+      "v_cosine": 0.7303820131346583
+    },
+    "residual": {
+      "accuracy": 0.6640625,
+      "oracle_agreement": 0.6953125,
+      "oracle_choice_kl": 0.6138482471687894,
+      "k_nmse": 0.0486764955567196,
+      "v_nmse": 0.38165309745818377,
+      "k_cosine": 0.9453979786485434,
+      "v_cosine": 0.7712260689586401
+    }
+  },
+  "relative_residual_norm": {
+    "k": {
+      "min": 0.02979026100331844,
+      "p10": 0.030263901785404387,
+      "p25": 0.03045609577426517,
+      "median": 0.03082148599460436,
+      "p75": 0.03108731675919824,
+      "p90": 0.03134263544464991,
+      "p95": 0.03144749712964176,
+      "max": 0.03169323613929868,
+      "mean": 0.030795550098181065
+    },
+    "v": {
+      "min": 0.03116987205440141,
+      "p10": 0.03271346687889969,
+      "p25": 0.03337377900104526,
+      "median": 0.0343115662749118,
+      "p75": 0.03550880596823418,
+      "p90": 0.03675968222774344,
+      "p95": 0.03765848014825039,
+      "max": 0.038666956936645736,
+      "mean": 0.03454723796794988
+    }
+  },
+  "paired_shared_vs_residual": {
+    "both_correct": 74,
+    "only_first_correct": 15,
+    "only_second_correct": 11,
+    "both_wrong": 28,
+    "second_minus_first": -0.03125,
+    "mcnemar_p": 0.557197093963623
+  },
+  "paired_stage_a_vs_shared": {
+    "both_correct": 51,
+    "only_first_correct": 11,
+    "only_second_correct": 38,
+    "both_wrong": 28,
+    "second_minus_first": 0.2109375,
+    "mcnemar_p": 0.00014197068519905542
+  },
+  "paired_stage_a_vs_residual": {
+    "both_correct": 54,
+    "only_first_correct": 8,
+    "only_second_correct": 31,
+    "both_wrong": 35,
+    "second_minus_first": 0.1796875,
+    "mcnemar_p": 0.0002940768754342571
+  },
+  "frozen_base_hash_verified": true,
+  "trained_parameters": {
+    "shared": 283115520,
+    "residual": 9437184
+  }
+}
