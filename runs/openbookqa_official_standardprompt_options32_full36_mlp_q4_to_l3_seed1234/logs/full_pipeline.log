@@ -1,0 +1,290 @@
+START stage: prepare
+[2026-09-15 17:19:37] Prepared standard prompt with unchanged IDs: {'train': {'count': 1024, 'ids_sha256': '10ced083ccb55c8bae649e52672cdf39402710302eb4d3b6f52efe3dd24edb37', 'first_id': '14-120', 'last_id': '9-581'}, 'validation': {'count': 128, 'ids_sha256': '1cb2439ef228a1d7dc17beae19acda7f798ae3020ea9b65d41cf1d9abdf4a4a5', 'first_id': '9-888', 'last_id': '7-324'}, 'test': {'count': 128, 'ids_sha256': '402e20c4f34eb2036c42e02ac36e27c217134da6c943b105e7a0640f1a1b82a9', 'first_id': '7-334', 'last_id': '1937'}}
+DONE stage: prepare
+START stage: cache_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:25,  4.66it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 571.59it/s]Loading weights:  57%|█████▋    | 228/398 [00:00<00:00, 577.11it/s]Loading weights:  75%|███████▌  | 300/398 [00:00<00:00, 579.65it/s]Loading weights:  92%|█████████▏| 367/398 [00:00<00:00, 531.33it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 510.43it/s]
+[2026-09-15 17:19:53] Qwen source decision cache train: 32/1024
+[2026-09-15 17:19:57] Qwen source decision cache train: 64/1024
+[2026-09-15 17:20:02] Qwen source decision cache train: 96/1024
+[2026-09-15 17:20:06] Qwen source decision cache train: 128/1024
+[2026-09-15 17:20:10] Qwen source decision cache train: 160/1024
+[2026-09-15 17:20:15] Qwen source decision cache train: 192/1024
+[2026-09-15 17:20:19] Qwen source decision cache train: 224/1024
+[2026-09-15 17:20:23] Qwen source decision cache train: 256/1024
+[2026-09-15 17:20:28] Qwen source decision cache train: 288/1024
+[2026-09-15 17:20:32] Qwen source decision cache train: 320/1024
+[2026-09-15 17:20:36] Qwen source decision cache train: 352/1024
+[2026-09-15 17:20:40] Qwen source decision cache train: 384/1024
+[2026-09-15 17:20:45] Qwen source decision cache train: 416/1024
+[2026-09-15 17:20:49] Qwen source decision cache train: 448/1024
+[2026-09-15 17:20:53] Qwen source decision cache train: 480/1024
+[2026-09-15 17:20:58] Qwen source decision cache train: 512/1024
+[2026-09-15 17:21:02] Qwen source decision cache train: 544/1024
+[2026-09-15 17:21:06] Qwen source decision cache train: 576/1024
+[2026-09-15 17:21:11] Qwen source decision cache train: 608/1024
+[2026-09-15 17:21:15] Qwen source decision cache train: 640/1024
+[2026-09-15 17:21:19] Qwen source decision cache train: 672/1024
+[2026-09-15 17:21:24] Qwen source decision cache train: 704/1024
+[2026-09-15 17:21:28] Qwen source decision cache train: 736/1024
+[2026-09-15 17:21:32] Qwen source decision cache train: 768/1024
+[2026-09-15 17:21:37] Qwen source decision cache train: 800/1024
+[2026-09-15 17:21:41] Qwen source decision cache train: 832/1024
+[2026-09-15 17:21:45] Qwen source decision cache train: 864/1024
+[2026-09-15 17:21:50] Qwen source decision cache train: 896/1024
+[2026-09-15 17:21:54] Qwen source decision cache train: 928/1024
+[2026-09-15 17:21:58] Qwen source decision cache train: 960/1024
+[2026-09-15 17:22:03] Qwen source decision cache train: 992/1024
+[2026-09-15 17:22:07] Qwen source decision cache train: 1024/1024
+[2026-09-15 17:22:11] Qwen source decision cache validation: 32/128
+[2026-09-15 17:22:16] Qwen source decision cache validation: 64/128
+[2026-09-15 17:22:20] Qwen source decision cache validation: 96/128
+[2026-09-15 17:22:24] Qwen source decision cache validation: 128/128
+[2026-09-15 17:22:29] Qwen source decision cache test: 32/128
+[2026-09-15 17:22:33] Qwen source decision cache test: 64/128
+[2026-09-15 17:22:37] Qwen source decision cache test: 96/128
+[2026-09-15 17:22:42] Qwen source decision cache test: 128/128
+DONE stage: cache_qwen
+START stage: cache_llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:01,  4.12it/s]Loading weights:  51%|█████     | 129/254 [00:00<00:00, 468.76it/s]Loading weights:  80%|███████▉  | 202/254 [00:00<00:00, 462.16it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 418.30it/s]
+[2026-09-15 17:22:55] Llama target decision/pair cache train: 32/1024
+[2026-09-15 17:22:58] Llama target decision/pair cache train: 64/1024
+[2026-09-15 17:23:02] Llama target decision/pair cache train: 96/1024
+[2026-09-15 17:23:05] Llama target decision/pair cache train: 128/1024
+[2026-09-15 17:23:08] Llama target decision/pair cache train: 160/1024
+[2026-09-15 17:23:11] Llama target decision/pair cache train: 192/1024
+[2026-09-15 17:23:14] Llama target decision/pair cache train: 224/1024
+[2026-09-15 17:23:17] Llama target decision/pair cache train: 256/1024
+[2026-09-15 17:23:20] Llama target decision/pair cache train: 288/1024
+[2026-09-15 17:23:24] Llama target decision/pair cache train: 320/1024
+[2026-09-15 17:23:27] Llama target decision/pair cache train: 352/1024
+[2026-09-15 17:23:30] Llama target decision/pair cache train: 384/1024
+[2026-09-15 17:23:33] Llama target decision/pair cache train: 416/1024
+[2026-09-15 17:23:36] Llama target decision/pair cache train: 448/1024
+[2026-09-15 17:23:39] Llama target decision/pair cache train: 480/1024
+[2026-09-15 17:23:42] Llama target decision/pair cache train: 512/1024
+[2026-09-15 17:23:46] Llama target decision/pair cache train: 544/1024
+[2026-09-15 17:23:49] Llama target decision/pair cache train: 576/1024
+[2026-09-15 17:23:52] Llama target decision/pair cache train: 608/1024
+[2026-09-15 17:23:55] Llama target decision/pair cache train: 640/1024
+[2026-09-15 17:23:58] Llama target decision/pair cache train: 672/1024
+[2026-09-15 17:24:01] Llama target decision/pair cache train: 704/1024
+[2026-09-15 17:24:04] Llama target decision/pair cache train: 736/1024
+[2026-09-15 17:24:07] Llama target decision/pair cache train: 768/1024
+[2026-09-15 17:24:11] Llama target decision/pair cache train: 800/1024
+[2026-09-15 17:24:14] Llama target decision/pair cache train: 832/1024
+[2026-09-15 17:24:17] Llama target decision/pair cache train: 864/1024
+[2026-09-15 17:24:20] Llama target decision/pair cache train: 896/1024
+[2026-09-15 17:24:23] Llama target decision/pair cache train: 928/1024
+[2026-09-15 17:24:26] Llama target decision/pair cache train: 960/1024
+[2026-09-15 17:24:29] Llama target decision/pair cache train: 992/1024
+[2026-09-15 17:24:33] Llama target decision/pair cache train: 1024/1024
+[2026-09-15 17:24:36] Llama target decision/pair cache validation: 32/128
+[2026-09-15 17:24:39] Llama target decision/pair cache validation: 64/128
+[2026-09-15 17:24:42] Llama target decision/pair cache validation: 96/128
+[2026-09-15 17:24:45] Llama target decision/pair cache validation: 128/128
+[2026-09-15 17:24:48] Llama target decision/pair cache test: 32/128
+[2026-09-15 17:24:51] Llama target decision/pair cache test: 64/128
+[2026-09-15 17:24:54] Llama target decision/pair cache test: 96/128
+[2026-09-15 17:24:57] Llama target decision/pair cache test: 128/128
+DONE stage: cache_llama
+START stage: phase0_audit
+[2026-09-15 17:25:03] PHASE-0 AUDIT PASSED: {'passed': True, 'sample_count': 32, 'selection': '32 normalized option-text regions; max decision attention within each region', 'query': 'last Sender-native Answer: token', 'candidates': 'Options only; Question, position0 and Answer excluded', 'answer_tokenization': {'qwen': {'ids': [16141, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 425, 'C': 356, 'D': 422}}, 'llama': {'ids': [16533, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 426, 'C': 356, 'D': 423}}}, 'mean_anchor_iou': 0.9990234375, 'mean_selected_attention_mass': 0.8342764453367157}
+DONE stage: phase0_audit
+START stage: teachers
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:04,  3.92it/s]Loading weights:  54%|█████▎    | 136/254 [00:00<00:00, 486.57it/s]Loading weights:  85%|████████▌ | 216/254 [00:00<00:00, 471.08it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 414.32it/s]
+[2026-09-15 17:25:15] Reverse Llama Oracle teachers train: 64/1024
+[2026-09-15 17:25:19] Reverse Llama Oracle teachers train: 128/1024
+[2026-09-15 17:25:22] Reverse Llama Oracle teachers train: 192/1024
+[2026-09-15 17:25:25] Reverse Llama Oracle teachers train: 256/1024
+[2026-09-15 17:25:28] Reverse Llama Oracle teachers train: 320/1024
+[2026-09-15 17:25:31] Reverse Llama Oracle teachers train: 384/1024
+[2026-09-15 17:25:34] Reverse Llama Oracle teachers train: 448/1024
+[2026-09-15 17:25:37] Reverse Llama Oracle teachers train: 512/1024
+[2026-09-15 17:25:41] Reverse Llama Oracle teachers train: 576/1024
+[2026-09-15 17:25:44] Reverse Llama Oracle teachers train: 640/1024
+[2026-09-15 17:25:47] Reverse Llama Oracle teachers train: 704/1024
+[2026-09-15 17:25:50] Reverse Llama Oracle teachers train: 768/1024
+[2026-09-15 17:25:53] Reverse Llama Oracle teachers train: 832/1024
+[2026-09-15 17:25:56] Reverse Llama Oracle teachers train: 896/1024
+[2026-09-15 17:25:59] Reverse Llama Oracle teachers train: 960/1024
+[2026-09-15 17:26:02] Reverse Llama Oracle teachers train: 1024/1024
+[2026-09-15 17:26:05] Reverse Llama Oracle teachers validation: 64/128
+[2026-09-15 17:26:09] Reverse Llama Oracle teachers validation: 128/128
+[2026-09-15 17:26:12] Reverse Llama Oracle teachers test: 64/128
+[2026-09-15 17:26:15] Reverse Llama Oracle teachers test: 128/128
+DONE stage: teachers
+START stage: stage_a
+[2026-09-15 17:26:31] Fresh Stage A 16/1024 loss=1.499894
+[2026-09-15 17:26:39] Fresh Stage A 32/1024 loss=1.243769
+[2026-09-15 17:26:46] Fresh Stage A 48/1024 loss=1.152254
+[2026-09-15 17:26:53] Fresh Stage A 64/1024 loss=1.108752
+[2026-09-15 17:27:00] Fresh Stage A 80/1024 loss=0.957314
+[2026-09-15 17:27:07] Fresh Stage A 96/1024 loss=0.942368
+[2026-09-15 17:27:14] Fresh Stage A 112/1024 loss=0.901172
+[2026-09-15 17:27:21] Fresh Stage A 128/1024 loss=0.940248
+[2026-09-15 17:27:26] Fresh Stage A validation step=128 loss=0.940063
+[2026-09-15 17:27:35] Fresh Stage A 144/1024 loss=0.799155
+[2026-09-15 17:27:43] Fresh Stage A 160/1024 loss=0.731288
+[2026-09-15 17:27:52] Fresh Stage A 176/1024 loss=0.819870
+[2026-09-15 17:28:01] Fresh Stage A 192/1024 loss=0.808106
+[2026-09-15 17:28:11] Fresh Stage A 208/1024 loss=0.799021
+[2026-09-15 17:28:20] Fresh Stage A 224/1024 loss=0.800163
+[2026-09-15 17:28:30] Fresh Stage A 240/1024 loss=0.803150
+[2026-09-15 17:28:39] Fresh Stage A 256/1024 loss=0.800455
+[2026-09-15 17:28:44] Fresh Stage A validation step=256 loss=0.839909
+[2026-09-15 17:28:54] Fresh Stage A 272/1024 loss=0.660634
+[2026-09-15 17:29:04] Fresh Stage A 288/1024 loss=0.697496
+[2026-09-15 17:29:14] Fresh Stage A 304/1024 loss=0.711838
+[2026-09-15 17:29:22] Fresh Stage A 320/1024 loss=0.757772
+[2026-09-15 17:29:33] Fresh Stage A 336/1024 loss=0.697134
+[2026-09-15 17:29:44] Fresh Stage A 352/1024 loss=0.686324
+[2026-09-15 17:29:55] Fresh Stage A 368/1024 loss=0.692769
+[2026-09-15 17:30:06] Fresh Stage A 384/1024 loss=0.643795
+[2026-09-15 17:30:12] Fresh Stage A validation step=384 loss=0.801728
+[2026-09-15 17:30:22] Fresh Stage A 400/1024 loss=0.662541
+[2026-09-15 17:30:33] Fresh Stage A 416/1024 loss=0.629459
+[2026-09-15 17:30:40] Fresh Stage A 432/1024 loss=0.641825
+[2026-09-15 17:30:46] Fresh Stage A 448/1024 loss=0.643522
+[2026-09-15 17:30:51] Fresh Stage A 464/1024 loss=0.629626
+[2026-09-15 17:30:56] Fresh Stage A 480/1024 loss=0.657541
+[2026-09-15 17:31:01] Fresh Stage A 496/1024 loss=0.589039
+[2026-09-15 17:31:08] Fresh Stage A 512/1024 loss=0.643817
+[2026-09-15 17:31:12] Fresh Stage A validation step=512 loss=0.783291
+[2026-09-15 17:31:17] Fresh Stage A 528/1024 loss=0.597871
+[2026-09-15 17:31:23] Fresh Stage A 544/1024 loss=0.603065
+[2026-09-15 17:31:28] Fresh Stage A 560/1024 loss=0.578254
+[2026-09-15 17:31:34] Fresh Stage A 576/1024 loss=0.621081
+[2026-09-15 17:31:40] Fresh Stage A 592/1024 loss=0.523986
+[2026-09-15 17:31:45] Fresh Stage A 608/1024 loss=0.638847
+[2026-09-15 17:31:50] Fresh Stage A 624/1024 loss=0.603457
+[2026-09-15 17:31:55] Fresh Stage A 640/1024 loss=0.605962
+[2026-09-15 17:32:00] Fresh Stage A validation step=640 loss=0.773052
+[2026-09-15 17:32:05] Fresh Stage A 656/1024 loss=0.622410
+[2026-09-15 17:32:11] Fresh Stage A 672/1024 loss=0.535760
+[2026-09-15 17:32:16] Fresh Stage A 688/1024 loss=0.524269
+[2026-09-15 17:32:21] Fresh Stage A 704/1024 loss=0.543250
+[2026-09-15 17:32:26] Fresh Stage A 720/1024 loss=0.536881
+[2026-09-15 17:32:32] Fresh Stage A 736/1024 loss=0.560715
+[2026-09-15 17:32:37] Fresh Stage A 752/1024 loss=0.557924
+[2026-09-15 17:32:42] Fresh Stage A 768/1024 loss=0.614158
+[2026-09-15 17:32:47] Fresh Stage A validation step=768 loss=0.769215
+[2026-09-15 17:32:53] Fresh Stage A 784/1024 loss=0.508625
+[2026-09-15 17:32:57] Fresh Stage A 800/1024 loss=0.533821
+[2026-09-15 17:33:03] Fresh Stage A 816/1024 loss=0.546028
+[2026-09-15 17:33:08] Fresh Stage A 832/1024 loss=0.525806
+[2026-09-15 17:33:13] Fresh Stage A 848/1024 loss=0.546978
+[2026-09-15 17:33:18] Fresh Stage A 864/1024 loss=0.559853
+[2026-09-15 17:33:24] Fresh Stage A 880/1024 loss=0.523535
+[2026-09-15 17:33:30] Fresh Stage A 896/1024 loss=0.621367
+[2026-09-15 17:33:34] Fresh Stage A validation step=896 loss=0.766120
+[2026-09-15 17:33:39] Fresh Stage A 912/1024 loss=0.509415
+[2026-09-15 17:33:44] Fresh Stage A 928/1024 loss=0.491144
+[2026-09-15 17:33:49] Fresh Stage A 944/1024 loss=0.527385
+[2026-09-15 17:33:55] Fresh Stage A 960/1024 loss=0.523909
+[2026-09-15 17:34:00] Fresh Stage A 976/1024 loss=0.518120
+[2026-09-15 17:34:05] Fresh Stage A 992/1024 loss=0.495319
+[2026-09-15 17:34:10] Fresh Stage A 1008/1024 loss=0.520162
+[2026-09-15 17:34:15] Fresh Stage A 1024/1024 loss=0.532162
+[2026-09-15 17:34:20] Fresh Stage A validation step=1024 loss=0.763870
+DONE stage: stage_a
+START stage: select_stage_a
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:18,  3.23it/s]Loading weights:  51%|█████     | 129/254 [00:00<00:00, 397.59it/s]Loading weights:  79%|███████▊  | 200/254 [00:00<00:00, 438.04it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 376.70it/s]
+[2026-09-15 17:34:44] Fresh Stage A functional step=128 acc=0.5469 KL=0.301188
+[2026-09-15 17:34:59] Fresh Stage A functional step=256 acc=0.5156 KL=0.290251
+[2026-09-15 17:35:14] Fresh Stage A functional step=384 acc=0.5391 KL=0.233521
+[2026-09-15 17:35:28] Fresh Stage A functional step=512 acc=0.5859 KL=0.208995
+[2026-09-15 17:35:43] Fresh Stage A functional step=640 acc=0.5469 KL=0.216665
+[2026-09-15 17:35:57] Fresh Stage A functional step=768 acc=0.6016 KL=0.215709
+[2026-09-15 17:36:11] Fresh Stage A functional step=896 acc=0.5312 KL=0.214181
+[2026-09-15 17:36:26] Fresh Stage A functional step=1024 acc=0.5781 KL=0.196870
+DONE stage: select_stage_a
+START stage: train_shared
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:02,  4.04it/s]Loading weights:  51%|█████     | 129/254 [00:00<00:00, 467.95it/s]Loading weights:  80%|████████  | 204/254 [00:00<00:00, 484.54it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 435.09it/s]
+[2026-09-15 17:37:16] shared Stage B 16/512 KL=0.273617
+[2026-09-15 17:37:49] shared Stage B 32/512 KL=0.203488
+[2026-09-15 17:38:22] shared Stage B 48/512 KL=0.210292
+[2026-09-15 17:38:55] shared Stage B 64/512 KL=0.258585
+[2026-09-15 17:39:28] shared Stage B 80/512 KL=0.126324
+[2026-09-15 17:40:01] shared Stage B 96/512 KL=0.230212
+[2026-09-15 17:40:36] shared Stage B 112/512 KL=0.148065
+[2026-09-15 17:41:12] shared Stage B 128/512 KL=0.240343
+[2026-09-15 17:41:29] shared validation step=128 acc=0.5781 KL=0.347239
+[2026-09-15 17:42:06] shared Stage B 144/512 KL=0.070664
+[2026-09-15 17:42:45] shared Stage B 160/512 KL=0.172381
+[2026-09-15 17:43:27] shared Stage B 176/512 KL=0.114559
+[2026-09-15 17:44:04] shared Stage B 192/512 KL=0.202416
+[2026-09-15 17:44:38] shared Stage B 208/512 KL=0.210460
+[2026-09-15 17:45:11] shared Stage B 224/512 KL=0.192245
+[2026-09-15 17:45:44] shared Stage B 240/512 KL=0.107991
+[2026-09-15 17:46:17] shared Stage B 256/512 KL=0.150852
+[2026-09-15 17:46:30] shared validation step=256 acc=0.6562 KL=0.240071
+[2026-09-15 17:47:03] shared Stage B 272/512 KL=0.042479
+[2026-09-15 17:47:36] shared Stage B 288/512 KL=0.053187
+[2026-09-15 17:48:10] shared Stage B 304/512 KL=0.055967
+[2026-09-15 17:48:43] shared Stage B 320/512 KL=0.042315
+[2026-09-15 17:49:16] shared Stage B 336/512 KL=0.088041
+[2026-09-15 17:49:49] shared Stage B 352/512 KL=0.066957
+[2026-09-15 17:50:22] shared Stage B 368/512 KL=0.090168
+[2026-09-15 17:50:55] shared Stage B 384/512 KL=0.041201
+[2026-09-15 17:51:08] shared validation step=384 acc=0.5781 KL=0.241957
+[2026-09-15 17:51:41] shared Stage B 400/512 KL=0.043768
+[2026-09-15 17:52:15] shared Stage B 416/512 KL=0.029773
+[2026-09-15 17:52:52] shared Stage B 432/512 KL=0.070072
+[2026-09-15 17:53:30] shared Stage B 448/512 KL=0.028599
+[2026-09-15 17:54:09] shared Stage B 464/512 KL=0.025877
+[2026-09-15 17:54:49] shared Stage B 480/512 KL=0.040511
+[2026-09-15 17:55:29] shared Stage B 496/512 KL=0.042305
+[2026-09-15 17:56:12] shared Stage B 512/512 KL=0.038836
+[2026-09-15 17:56:31] shared validation step=512 acc=0.6484 KL=0.254131
+DONE stage: train_shared
+START stage: train_residual
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:01,  4.12it/s]Loading weights:  51%|█████     | 129/254 [00:00<00:00, 471.07it/s]Loading weights:  80%|███████▉  | 203/254 [00:00<00:00, 425.59it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 395.58it/s]
+[2026-09-15 17:57:29] residual Stage B 16/512 KL=0.096706
+[2026-09-15 17:58:07] residual Stage B 32/512 KL=0.066394
+[2026-09-15 17:58:45] residual Stage B 48/512 KL=0.082435
+[2026-09-15 17:59:23] residual Stage B 64/512 KL=0.100746
+[2026-09-15 18:00:01] residual Stage B 80/512 KL=0.074215
+[2026-09-15 18:00:39] residual Stage B 96/512 KL=0.143193
+[2026-09-15 18:01:17] residual Stage B 112/512 KL=0.263634
+[2026-09-15 18:01:54] residual Stage B 128/512 KL=0.099277
+[2026-09-15 18:02:13] residual validation step=128 acc=0.5859 KL=0.188572
+[2026-09-15 18:02:51] residual Stage B 144/512 KL=0.082986
+[2026-09-15 18:03:29] residual Stage B 160/512 KL=0.106881
+[2026-09-15 18:04:07] residual Stage B 176/512 KL=0.207383
+[2026-09-15 18:04:44] residual Stage B 192/512 KL=0.083266
+[2026-09-15 18:05:22] residual Stage B 208/512 KL=0.274388
+[2026-09-15 18:06:01] residual Stage B 224/512 KL=0.071175
+[2026-09-15 18:06:40] residual Stage B 240/512 KL=0.058108
+[2026-09-15 18:07:20] residual Stage B 256/512 KL=0.083209
+[2026-09-15 18:07:41] residual validation step=256 acc=0.6016 KL=0.182128
+[2026-09-15 18:08:21] residual Stage B 272/512 KL=0.079403
+[2026-09-15 18:09:03] residual Stage B 288/512 KL=0.146117
+[2026-09-15 18:09:42] residual Stage B 304/512 KL=0.263569
+[2026-09-15 18:10:19] residual Stage B 320/512 KL=0.111683
+[2026-09-15 18:10:57] residual Stage B 336/512 KL=0.129508
+[2026-09-15 18:11:35] residual Stage B 352/512 KL=0.097672
+[2026-09-15 18:12:13] residual Stage B 368/512 KL=0.058748
+[2026-09-15 18:12:50] residual Stage B 384/512 KL=0.168581
+[2026-09-15 18:13:09] residual validation step=384 acc=0.6172 KL=0.187201
+[2026-09-15 18:13:47] residual Stage B 400/512 KL=0.038250
+[2026-09-15 18:14:25] residual Stage B 416/512 KL=0.135791
+[2026-09-15 18:15:03] residual Stage B 432/512 KL=0.116168
+[2026-09-15 18:15:40] residual Stage B 448/512 KL=0.054254
+[2026-09-15 18:16:18] residual Stage B 464/512 KL=0.101009
+[2026-09-15 18:16:56] residual Stage B 480/512 KL=0.037394
+[2026-09-15 18:17:34] residual Stage B 496/512 KL=0.086635
+[2026-09-15 18:18:16] residual Stage B 512/512 KL=0.120848
+[2026-09-15 18:18:37] residual validation step=512 acc=0.6016 KL=0.187875
+DONE stage: train_residual
+START stage: evaluate
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:00,  4.19it/s]Loading weights:  51%|█████     | 129/254 [00:00<00:00, 472.35it/s]Loading weights:  79%|███████▉  | 201/254 [00:00<00:00, 485.37it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 436.00it/s]
+[2026-09-15 18:19:13] Final A/B evaluation 16/128
+[2026-09-15 18:19:24] Final A/B evaluation 32/128
+[2026-09-15 18:19:34] Final A/B evaluation 48/128
+[2026-09-15 18:19:44] Final A/B evaluation 64/128
+[2026-09-15 18:19:54] Final A/B evaluation 80/128
+[2026-09-15 18:20:02] Final A/B evaluation 96/128
+[2026-09-15 18:20:11] Final A/B evaluation 112/128
+[2026-09-15 18:20:20] Final A/B evaluation 128/128
+DONE stage: evaluate
+ALL REVERSE QWEN4-TO-LLAMA3 EXPERIMENT STAGES COMPLETED

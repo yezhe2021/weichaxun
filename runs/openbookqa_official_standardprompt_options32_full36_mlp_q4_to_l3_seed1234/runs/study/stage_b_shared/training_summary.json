@@ -1,0 +1,94 @@
+{
+  "stage": "B shared",
+  "objective": "final-position A-D choice KL only",
+  "base_checkpoint": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+  "base_stage_a_selection": {
+    "step": 768,
+    "path": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+    "representation": {
+      "loss": 0.7692146934568882,
+      "k_nmse": 0.08881209278479218,
+      "v_nmse": 0.39328794553875923,
+      "k_cosine": 0.9538546875119209,
+      "v_cosine": 0.7590306513011456
+    },
+    "functional": {
+      "accuracy": 0.6015625,
+      "oracle_accuracy": 0.6171875,
+      "oracle_agreement": 0.71875,
+      "choice_kl": 0.21570936848911515
+    }
+  },
+  "base_frozen": false,
+  "base_hash_before": "b7fa231a220b6b047c8fee1d750860ca8b2d3e3ba3b82ebcbba4c731ed7a7914",
+  "base_hash_after": "c23d9fa19ae627c4f0bdb3c8b6535a13ac83647dfa4307c27e733487802e7f67",
+  "train_samples": 1024,
+  "parameters_trained": 278921216,
+  "adapter_rank": null,
+  "steps": 512,
+  "epochs": 4,
+  "clip_rate": 0.0,
+  "seconds": 1192.6335180178285,
+  "best_accuracy": {
+    "step": 256,
+    "path": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_b_shared/checkpoints/step_256.pt",
+    "functional": {
+      "accuracy": 0.65625,
+      "oracle_accuracy": 0.6171875,
+      "oracle_agreement": 0.6875,
+      "choice_kl": 0.2400713966708281
+    }
+  },
+  "best_choice_kl": {
+    "step": 256,
+    "path": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_b_shared/checkpoints/step_256.pt",
+    "functional": {
+      "accuracy": 0.65625,
+      "oracle_accuracy": 0.6171875,
+      "oracle_agreement": 0.6875,
+      "choice_kl": 0.2400713966708281
+    }
+  },
+  "candidates": [
+    {
+      "step": 128,
+      "path": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_b_shared/checkpoints/step_128.pt",
+      "functional": {
+        "accuracy": 0.578125,
+        "oracle_accuracy": 0.6171875,
+        "oracle_agreement": 0.6328125,
+        "choice_kl": 0.34723898049560376
+      }
+    },
+    {
+      "step": 256,
+      "path": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_b_shared/checkpoints/step_256.pt",
+      "functional": {
+        "accuracy": 0.65625,
+        "oracle_accuracy": 0.6171875,
+        "oracle_agreement": 0.6875,
+        "choice_kl": 0.2400713966708281
+      }
+    },
+    {
+      "step": 384,
+      "path": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_b_shared/checkpoints/step_384.pt",
+      "functional": {
+        "accuracy": 0.578125,
+        "oracle_accuracy": 0.6171875,
+        "oracle_agreement": 0.7421875,
+        "choice_kl": 0.24195663151840563
+      }
+    },
+    {
+      "step": 512,
+      "path": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_b_shared/checkpoints/step_512.pt",
+      "functional": {
+        "accuracy": 0.6484375,
+        "oracle_accuracy": 0.6171875,
+        "oracle_agreement": 0.7265625,
+        "choice_kl": 0.2541308233194286
+      }
+    }
+  ]
+}
