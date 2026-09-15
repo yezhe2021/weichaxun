@@ -86,5 +86,70 @@
   "trained_parameters": {
     "shared": 278921216,
     "residual": 7340032
+  },
+  "native_baselines": {
+    "status": "completed",
+    "protocol": "openbookqa_official_standardprompt_receiver_native_question_options32_q4_to_l3_v1",
+    "sample_count": 128,
+    "metrics": {
+      "qwen_full_native": {
+        "correct": 96,
+        "accuracy": 0.75
+      },
+      "qwen_native_selected32": {
+        "correct": 94,
+        "accuracy": 0.734375
+      },
+      "llama_full_native": {
+        "correct": 92,
+        "accuracy": 0.71875
+      },
+      "llama_native_oracle32": {
+        "correct": 76,
+        "accuracy": 0.59375
+      }
+    },
+    "pairwise_correctness": {
+      "qwen_full_native_vs_qwen_native_selected32": {
+        "both_correct": 91,
+        "only_first_correct": 5,
+        "only_second_correct": 3,
+        "both_wrong": 29
+      },
+      "qwen_full_native_vs_llama_full_native": {
+        "both_correct": 77,
+        "only_first_correct": 19,
+        "only_second_correct": 15,
+        "both_wrong": 17
+      },
+      "qwen_full_native_vs_llama_native_oracle32": {
+        "both_correct": 62,
+        "only_first_correct": 34,
+        "only_second_correct": 14,
+        "both_wrong": 18
+      },
+      "qwen_native_selected32_vs_llama_full_native": {
+        "both_correct": 76,
+        "only_first_correct": 18,
+        "only_second_correct": 16,
+        "both_wrong": 18
+      },
+      "qwen_native_selected32_vs_llama_native_oracle32": {
+        "both_correct": 61,
+        "only_first_correct": 33,
+        "only_second_correct": 15,
+        "both_wrong": 19
+      },
+      "llama_full_native_vs_llama_native_oracle32": {
+        "both_correct": 68,
+        "only_first_correct": 24,
+        "only_second_correct": 8,
+        "both_wrong": 28
+      }
+    },
+    "definitions": {
+      "qwen_native_selected32": "Qwen-native Question cache + the same 32 Qwen-selected native Option KVs + native Answer suffix.",
+      "llama_native_oracle32": "Llama-native Question cache + Llama-native Option KVs at the 32 RawAnchor positions selected by Qwen + native Answer suffix."
+    }
   }
 }

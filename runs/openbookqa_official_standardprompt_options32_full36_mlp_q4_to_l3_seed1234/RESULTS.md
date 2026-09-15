@@ -10,7 +10,18 @@ The complete study finished successfully on the official OpenBookQA Main splits 
 | Shared-parameter Stage-B | **62.50%** | 64.84% | 0.2418 | 0.8853 | 0.7238 |
 | Frozen-base Residual64 Stage-B | **62.50%** | **69.53%** | **0.2086** | **0.9539** | **0.7637** |
 
-The Llama Native Oracle32 accuracy for the same selected positions is 61.72% on validation. On test, Stage-A reaches 60.94%, while both Stage-B variants reach 62.50%.
+## Native baselines on test128
+
+| Baseline | Correct | Accuracy |
+| --- | ---: | ---: |
+| Qwen Full Native | 96/128 | **75.00%** |
+| Qwen Native Selected32 | 94/128 | **73.44%** |
+| Llama Full Native | 92/128 | **71.88%** |
+| Llama Native Oracle32 | 76/128 | **59.38%** |
+
+The Sender-side Qwen selection retains nearly all of Qwen's native task performance (73.44% versus 75.00%). In contrast, moving the same selected evidence locations into the Llama-native cache protocol yields a 59.38% Oracle32 baseline. Stage-A reaches 60.94%, while both Stage-B variants reach 62.50%.
+
+For Qwen Full Native versus Qwen Selected32, 91 examples are jointly correct, 5 only Full Native, 3 only Selected32, and 29 jointly wrong. For Llama Full Native versus Llama Oracle32, the corresponding counts are 68, 24, 8, and 28.
 
 Shared and Residual64 have identical aggregate test accuracy but different per-sample predictions: 69 examples are jointly correct, 11 are correct only for Shared, 11 only for Residual64, and 37 are jointly wrong.
 
