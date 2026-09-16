@@ -1,0 +1,18 @@
+{
+  "forward_stage_a_checkpoint": {
+    "path": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_1536.pt",
+    "sha256": "1b096ffd034db6fd65e7a70333ea934f0180be77ed937d652d6274aae300cdd0"
+  },
+  "forward_residual_checkpoint": {
+    "path": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/runs/study/stage_b_residual/checkpoints/step_1024.pt",
+    "sha256": "689374df9e1c6cf5460041c41211da01b161286481496132dffa0601ab36bb30"
+  },
+  "reverse_stage_a_checkpoint": {
+    "path": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+    "sha256": "0966187fd3ce95056d427191dcd921846a8bfd5d207629a9f55cc5ad38f2cfeb"
+  },
+  "reverse_residual_checkpoint": {
+    "path": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_b_residual/checkpoints/step_384.pt",
+    "sha256": "e433225a668e818d3dd1e306e334e1c71961d0eecc3ac760196f9b12f2d159f9"
+  }
+}

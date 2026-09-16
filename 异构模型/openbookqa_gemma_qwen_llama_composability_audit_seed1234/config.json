@@ -1,0 +1,22 @@
+{
+  "seed": 1234,
+  "test_samples": 128,
+  "temperature": 1.0,
+  "attention_implementation": "eager",
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "llama": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct"
+  },
+  "forward_root": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234",
+  "reverse_root": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234",
+  "forward_stage_a_checkpoint": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_1536.pt",
+  "forward_residual_checkpoint": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/runs/study/stage_b_residual/checkpoints/step_1024.pt",
+  "reverse_stage_a_checkpoint": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+  "reverse_residual_checkpoint": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_b_residual/checkpoints/step_384.pt",
+  "forward_depth_hidden_dim": 1024,
+  "forward_depth_output_dim": 256,
+  "forward_head_mapping": "full_head",
+  "reverse_hidden_dim": 1024,
+  "adapter_rank": 64,
+  "protocol": "openbookqa_official_gemma_qwen_llama_stagea_vs_residual_composability_v1"
+}
