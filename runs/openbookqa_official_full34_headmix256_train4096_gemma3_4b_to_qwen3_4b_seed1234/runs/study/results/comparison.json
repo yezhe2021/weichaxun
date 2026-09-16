@@ -1,0 +1,182 @@
+{
+  "status": "completed",
+  "protocol": "openbookqa_official_gemma3_4b_onboarding_full34_headmix256_options32_v1",
+  "train_samples": 4096,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "stage_a_checkpoint": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_1536.pt",
+  "metrics": {
+    "stage_a": {
+      "accuracy": 0.40625,
+      "oracle_agreement": 0.421875,
+      "oracle_choice_kl": 1.0368744593670272,
+      "k_nmse": 0.04347799698007293,
+      "v_nmse": 0.3048319590743631,
+      "k_cosine": 0.9507662449032068,
+      "v_cosine": 0.7786299544386566
+    },
+    "residual": {
+      "accuracy": 0.7421875,
+      "oracle_agreement": 0.703125,
+      "oracle_choice_kl": 0.549546815947906,
+      "k_nmse": 0.045472168319975026,
+      "v_nmse": 0.3101806028280407,
+      "k_cosine": 0.9492003577761352,
+      "v_cosine": 0.7770112594589591
+    },
+    "shared": {
+      "accuracy": 0.734375,
+      "oracle_agreement": 0.65625,
+      "oracle_choice_kl": 0.6297800803076825,
+      "k_nmse": 0.4926791221369058,
+      "v_nmse": 0.4714870967436582,
+      "k_cosine": 0.7536210254766047,
+      "v_cosine": 0.6919116755016148
+    }
+  },
+  "relative_residual_norm": {
+    "k": {
+      "min": 0.0438961529656919,
+      "p10": 0.04464261382397727,
+      "p25": 0.045123110691604094,
+      "median": 0.04562477268827568,
+      "p75": 0.04606164399384128,
+      "p90": 0.04649986398409868,
+      "p95": 0.04670501161202461,
+      "max": 0.04893832976956888,
+      "mean": 0.04559736155095047
+    },
+    "v": {
+      "min": 0.0717037515271981,
+      "p10": 0.07906633867198425,
+      "p25": 0.082405498069563,
+      "median": 0.08581060595003205,
+      "p75": 0.08972806182646878,
+      "p90": 0.0936144858384541,
+      "p95": 0.09602342034550711,
+      "max": 0.10213576310611552,
+      "mean": 0.08620522643461069
+    }
+  },
+  "paired_stage_a_vs_residual": {
+    "both_correct": 46,
+    "only_first_correct": 6,
+    "only_second_correct": 49,
+    "both_wrong": 27,
+    "second_minus_first": 0.3359375,
+    "mcnemar_p": 1.822834494458192e-09
+  },
+  "paired_stage_a_vs_shared": {
+    "both_correct": 43,
+    "only_first_correct": 9,
+    "only_second_correct": 51,
+    "both_wrong": 25,
+    "second_minus_first": 0.328125,
+    "mcnemar_p": 3.085035609438902e-08
+  },
+  "paired_residual_vs_shared": {
+    "both_correct": 83,
+    "only_first_correct": 12,
+    "only_second_correct": 11,
+    "both_wrong": 22,
+    "second_minus_first": -0.0078125,
+    "mcnemar_p": 1.0
+  },
+  "frozen_base_hash_verified": true,
+  "trained_parameters": {
+    "stage_a": 736100352,
+    "residual": 9437184,
+    "shared": 736100352
+  },
+  "baselines": {
+    "status": "completed",
+    "protocol": "openbookqa_official_gemma3_4b_onboarding_full34_headmix256_options32_v1",
+    "sample_count": 128,
+    "metrics": {
+      "gemma3_full_native": {
+        "correct": 97,
+        "accuracy": 0.7578125
+      },
+      "gemma3_native_selected32": {
+        "correct": 90,
+        "accuracy": 0.703125
+      },
+      "qwen_full_native": {
+        "correct": 96,
+        "accuracy": 0.75
+      },
+      "qwen_native_oracle32": {
+        "correct": 95,
+        "accuracy": 0.7421875
+      },
+      "qwen_self_selected32": {
+        "correct": 94,
+        "accuracy": 0.734375
+      },
+      "qwen_zero32": {
+        "correct": 31,
+        "accuracy": 0.2421875
+      },
+      "qwen_no_memory": {
+        "correct": 33,
+        "accuracy": 0.2578125
+      },
+      "qwen_shuffled_oracle32": {
+        "correct": 34,
+        "accuracy": 0.265625
+      }
+    },
+    "pairwise_correctness": {
+      "qwen_full_native_vs_qwen_native_oracle32": {
+        "both_correct": 92,
+        "only_first_correct": 4,
+        "only_second_correct": 3,
+        "both_wrong": 29
+      },
+      "gemma3_full_native_vs_gemma3_native_selected32": {
+        "both_correct": 90,
+        "only_first_correct": 7,
+        "only_second_correct": 0,
+        "both_wrong": 31
+      },
+      "qwen_native_oracle32_vs_qwen_self_selected32": {
+        "both_correct": 93,
+        "only_first_correct": 2,
+        "only_second_correct": 1,
+        "both_wrong": 32
+      },
+      "qwen_native_oracle32_vs_qwen_zero32": {
+        "both_correct": 22,
+        "only_first_correct": 73,
+        "only_second_correct": 9,
+        "both_wrong": 24
+      },
+      "qwen_native_oracle32_vs_qwen_no_memory": {
+        "both_correct": 24,
+        "only_first_correct": 71,
+        "only_second_correct": 9,
+        "both_wrong": 24
+      },
+      "qwen_native_oracle32_vs_qwen_shuffled_oracle32": {
+        "both_correct": 25,
+        "only_first_correct": 70,
+        "only_second_correct": 9,
+        "both_wrong": 24
+      }
+    },
+    "definitions": {
+      "gemma3_native_selected32": "Gemma3-native Question + its selected 32 native Option KVs + native Answer.",
+      "qwen_native_oracle32": "Qwen-native Question + Qwen-native KVs at Gemma3-selected RawAnchor positions + native Answer.",
+      "qwen_self_selected32": "Qwen-native Question + its own decision-selected 32 native Option KVs + native Answer.",
+      "qwen_zero32": "The Oracle32 K/V tensors are replaced by exact zeros after construction.",
+      "qwen_no_memory": "Qwen processes native Question and Answer prefix with no Option-memory cache.",
+      "qwen_shuffled_oracle32": "Each question receives the next test sample's native Oracle32 memory."
+    }
+  },
+  "translation_gap": {
+    "definition": "Qwen Native Oracle32 accuracy minus translated accuracy",
+    "stage_a": 0.3359375,
+    "residual": 0.0,
+    "shared": 0.0078125
+  }
+}

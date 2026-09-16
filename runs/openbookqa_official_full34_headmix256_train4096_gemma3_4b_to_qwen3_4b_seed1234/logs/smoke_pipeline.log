@@ -1,0 +1,239 @@
+START stage: model_audit
+{'qwen': {'path': '/home/yezhe/all_models/models/Qwen/Qwen3-4B', 'layers': 36, 'kv_heads': 8, 'head_dim': 128, 'tokenizer_class': 'Qwen2Tokenizer', 'bos_token_id': None}, 'gemma': {'path': '/home/yezhe/all_models/models/LLM-Research/gemma-3-4b-it', 'layers': 34, 'kv_heads': 4, 'head_dim': 256, 'tokenizer_class': 'GemmaTokenizer', 'bos_token_id': 2, 'layer_types': ['sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention'], 'rope_parameters': {'sliding_attention': {'rope_type': 'default', 'rope_theta': 10000.0}, 'full_attention': {'rope_type': 'linear', 'factor': 8.0, 'rope_theta': 1000000.0}}}, 'translator': {'source_shape': [34, 32, 4, 256], 'target_shape': [36, 32, 8, 128], 'per_head_depth_width': 8704, 'depth_hidden_dim': 1024, 'depth_output_dim': 256, 'head_mapping': 'full_head', 'head_input_width': 1024, 'head_output_width': 1024, 'token_mixing': False, 'k_v_shared': False}}
+DONE stage: model_audit
+START stage: prepare
+[2026-09-16 15:56:09] Prepared standard prompt with unchanged IDs: {'train': {'count': 2, 'ids_sha256': '282b1319d42b5294bfdbdd941e951b11a44b950c443b5fb74f0eb851eccb4f81', 'first_id': '14-120', 'last_id': '10-1020'}, 'validation': {'count': 2, 'ids_sha256': 'a7cb4f4f335cf150eed53f9167a08ff5fdc630276bf75105d9f65e13c7692ede', 'first_id': '9-888', 'last_id': '1840'}, 'test': {'count': 2, 'ids_sha256': '1a347ac25cadcc5aa3bc70cb9d73726d4a3ebde3c7481d2f5bea8d7ab2f2dfc9', 'first_id': '7-334', 'last_id': '7-1108'}}
+DONE stage: prepare
+START stage: cache_gemma
+
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/883 [00:00<03:39,  4.01it/s]
+Loading weights:  17%|█▋        | 147/883 [00:00<00:01, 531.61it/s]
+Loading weights:  26%|██▋       | 232/883 [00:00<00:01, 568.33it/s]
+Loading weights:  35%|███▍      | 307/883 [00:00<00:01, 563.36it/s]
+Loading weights:  42%|████▏     | 374/883 [00:00<00:00, 570.58it/s]
+Loading weights:  50%|████▉     | 438/883 [00:00<00:00, 564.27it/s]
+Loading weights:  86%|████████▌ | 759/883 [00:00<00:00, 1285.15it/s]
+Loading weights: 100%|██████████| 883/883 [00:00<00:00, 889.25it/s]
+[2026-09-16 15:56:25] Gemma3 fresh decision cache train: 2/2
+[2026-09-16 15:56:25] Gemma3 fresh decision cache validation: 2/2
+[2026-09-16 15:56:26] Gemma3 fresh decision cache test: 2/2
+DONE stage: cache_gemma
+START stage: cache_qwen
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:25,  4.62it/s]
+Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 596.25it/s]
+Loading weights:  60%|██████    | 240/398 [00:00<00:00, 608.71it/s]
+Loading weights:  79%|███████▉  | 314/398 [00:00<00:00, 595.77it/s]
+Loading weights:  96%|█████████▌| 382/398 [00:00<00:00, 610.60it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 557.12it/s]
+[2026-09-16 15:56:40] Qwen fresh decision/pair cache train: 2/2
+[2026-09-16 15:56:40] Qwen fresh decision/pair cache validation: 2/2
+[2026-09-16 15:56:40] Qwen fresh decision/pair cache test: 2/2
+DONE stage: cache_qwen
+START stage: phase0_audit
+[2026-09-16 15:56:45] PHASE-0 AUDIT PASSED: {'passed': True, 'sample_count': 2, 'selection': '32 normalized option-text regions; max decision attention within each region', 'query': 'last Sender-native Answer: token', 'candidates': 'Options only; Question, position0 and Answer excluded', 'answer_tokenization': {'qwen': {'ids': [16141, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 425, 'C': 356, 'D': 422}}, 'gemma': {'ids': [7925, 236787], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 562, 'B': 603, 'C': 565, 'D': 622}}}, 'mean_anchor_iou': 0.9380952380952381, 'mean_selected_attention_mass': 0.8315518497021168}
+DONE stage: phase0_audit
+START stage: teachers
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:32,  4.31it/s]
+Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 588.33it/s]
+Loading weights:  62%|██████▏   | 246/398 [00:00<00:00, 582.38it/s]
+Loading weights:  81%|████████  | 321/398 [00:00<00:00, 606.83it/s]
+Loading weights:  99%|█████████▊| 393/398 [00:00<00:00, 593.78it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 543.39it/s]
+Traceback (most recent call last):
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/run_pipeline.py", line 67, in run_stage
+    execute(cfg, stage)
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/run_pipeline.py", line 43, in execute
+    prepare_oracle_teachers(cfg, model)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/experiment.py", line 78, in prepare_oracle_teachers
+    logits = receiver_logits(model, row, pair, pair["target_k"][:, 1:].cuda(), pair["target_v"][:, 1:].cuda())
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/experiment.py", line 57, in receiver_logits
+    return final_logits(model, row["encoded"]["qwen"]["receiver_answer"], key, value,
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/protocol.py", line 109, in final_logits
+    cache = make_cache(model, key, value, positions) if key is not None else None
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/protocol.py", line 101, in make_cache
+    rotated = torch.stack([apply_rope(model, layer, positions, index)
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/protocol.py", line 101, in <listcomp>
+    rotated = torch.stack([apply_rope(model, layer, positions, index)
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/protocol.py", line 25, in apply_rope
+    cos, sin = rotary_embeddings(model, x, positions, layer_index)
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/protocol.py", line 21, in rotary_embeddings
+    return backbone.rotary_emb(x.unsqueeze(0), positions, layer_types[layer_index])
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/transformers/modeling_rope_utils.py", line 122, in wrapper
+    rope_type = self.rope_type if layer_type is None else self.rope_type[layer_type]
+TypeError: string indices must be integers
+Traceback (most recent call last):
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/run_pipeline.py", line 112, in <module>
+    main()
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/run_pipeline.py", line 89, in main
+    run_stage(cfg, args.action)
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/run_pipeline.py", line 67, in run_stage
+    execute(cfg, stage)
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/run_pipeline.py", line 43, in execute
+    prepare_oracle_teachers(cfg, model)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/experiment.py", line 78, in prepare_oracle_teachers
+    logits = receiver_logits(model, row, pair, pair["target_k"][:, 1:].cuda(), pair["target_v"][:, 1:].cuda())
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/experiment.py", line 57, in receiver_logits
+    return final_logits(model, row["encoded"]["qwen"]["receiver_answer"], key, value,
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/protocol.py", line 109, in final_logits
+    cache = make_cache(model, key, value, positions) if key is not None else None
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/protocol.py", line 101, in make_cache
+    rotated = torch.stack([apply_rope(model, layer, positions, index)
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/protocol.py", line 101, in <listcomp>
+    rotated = torch.stack([apply_rope(model, layer, positions, index)
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/protocol.py", line 25, in apply_rope
+    cos, sin = rotary_embeddings(model, x, positions, layer_index)
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/protocol.py", line 21, in rotary_embeddings
+    return backbone.rotary_emb(x.unsqueeze(0), positions, layer_types[layer_index])
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/transformers/modeling_rope_utils.py", line 122, in wrapper
+    rope_type = self.rope_type if layer_type is None else self.rope_type[layer_type]
+TypeError: string indices must be integers
+Traceback (most recent call last):
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/run_pipeline.py", line 112, in <module>
+    main()
+  File "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/run_pipeline.py", line 105, in main
+    subprocess.run([sys.executable, "-u", __file__, "--mode", args.mode, stage], check=True)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yezhe/data/miniconda3/envs/attnkv/bin/python', '-u', '/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/run_pipeline.py', '--mode', 'smoke', 'teachers']' returned non-zero exit status 1.
+SKIP completed stage: model_audit
+SKIP completed stage: prepare
+SKIP completed stage: cache_gemma
+SKIP completed stage: cache_qwen
+SKIP completed stage: phase0_audit
+START stage: teachers
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:28,  4.48it/s]
+Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 607.79it/s]
+Loading weights:  62%|██████▏   | 248/398 [00:00<00:00, 638.29it/s]
+Loading weights:  83%|████████▎ | 329/398 [00:00<00:00, 652.25it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 583.12it/s]
+[2026-09-16 15:57:32] Qwen Oracle teachers train: 2/2
+[2026-09-16 15:57:32] Qwen Oracle teachers validation: 2/2
+[2026-09-16 15:57:32] Qwen Oracle teachers test: 2/2
+DONE stage: teachers
+START stage: baselines
+
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/883 [00:00<06:12,  2.37it/s]
+Loading weights:  24%|██▍       | 211/883 [00:00<00:01, 507.29it/s]
+Loading weights:  36%|███▌      | 315/883 [00:00<00:01, 497.59it/s]
+Loading weights:  45%|████▍     | 394/883 [00:00<00:00, 497.13it/s]
+Loading weights:  59%|█████▉    | 519/883 [00:01<00:00, 658.14it/s]
+Loading weights:  90%|████████▉ | 793/883 [00:01<00:00, 1148.99it/s]
+Loading weights: 100%|██████████| 883/883 [00:01<00:00, 770.67it/s]
+Gemma3 baseline pass: 2/2
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:24,  4.70it/s]
+Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 564.97it/s]
+Loading weights:  57%|█████▋    | 225/398 [00:00<00:00, 570.77it/s]
+Loading weights:  74%|███████▍  | 295/398 [00:00<00:00, 605.74it/s]
+Loading weights:  91%|█████████▏| 364/398 [00:00<00:00, 626.34it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 556.02it/s]
+Qwen baseline/control pass: 2/2
+{
+  "gemma3_full_native": {
+    "correct": 1,
+    "accuracy": 0.5
+  },
+  "gemma3_native_selected32": {
+    "correct": 1,
+    "accuracy": 0.5
+  },
+  "qwen_full_native": {
+    "correct": 1,
+    "accuracy": 0.5
+  },
+  "qwen_native_oracle32": {
+    "correct": 1,
+    "accuracy": 0.5
+  },
+  "qwen_self_selected32": {
+    "correct": 1,
+    "accuracy": 0.5
+  },
+  "qwen_zero32": {
+    "correct": 0,
+    "accuracy": 0.0
+  },
+  "qwen_no_memory": {
+    "correct": 0,
+    "accuracy": 0.0
+  },
+  "qwen_shuffled_oracle32": {
+    "correct": 1,
+    "accuracy": 0.5
+  }
+}
+DONE stage: baselines
+START stage: stage_a
+[2026-09-16 15:58:09] Fresh Stage A validation step=1 loss=3.234593
+DONE stage: stage_a
+START stage: select_stage_a
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:29,  4.43it/s]
+Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 577.26it/s]
+Loading weights:  60%|██████    | 239/398 [00:00<00:00, 579.30it/s]
+Loading weights:  78%|███████▊  | 310/398 [00:00<00:00, 593.27it/s]
+Loading weights:  95%|█████████▍| 378/398 [00:00<00:00, 544.47it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 517.10it/s]
+[2026-09-16 15:58:30] Fresh Stage A functional step=1 acc=0.0000 KL=1.286544
+DONE stage: select_stage_a
+START stage: train_residual
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<02:12,  2.99it/s]
+Loading weights:  42%|████▏     | 168/398 [00:00<00:00, 495.82it/s]
+Loading weights:  66%|██████▌   | 263/398 [00:00<00:00, 501.28it/s]
+Loading weights:  85%|████████▍ | 338/398 [00:00<00:00, 504.58it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 452.49it/s]
+[2026-09-16 15:59:15] residual validation step=1 acc=0.0000 KL=1.269435
+DONE stage: train_residual
+START stage: train_shared
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:19,  4.99it/s]
+Loading weights:  28%|██▊       | 110/398 [00:00<00:00, 455.87it/s]
+Loading weights:  44%|████▍     | 175/398 [00:00<00:00, 428.87it/s]
+Loading weights:  58%|█████▊    | 229/398 [00:00<00:00, 456.72it/s]
+Loading weights:  71%|███████   | 282/398 [00:00<00:00, 450.53it/s]
+Loading weights:  84%|████████▎ | 333/398 [00:00<00:00, 446.83it/s]
+Loading weights:  97%|█████████▋| 388/398 [00:00<00:00, 475.27it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 437.33it/s]
+[2026-09-16 16:00:04] shared validation step=1 acc=0.5000 KL=4.688979
+DONE stage: train_shared
+START stage: evaluate
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:33,  4.25it/s]
+Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 565.95it/s]
+Loading weights:  60%|██████    | 239/398 [00:00<00:00, 579.06it/s]
+Loading weights:  78%|███████▊  | 311/398 [00:00<00:00, 563.21it/s]
+Loading weights:  94%|█████████▍| 376/398 [00:00<00:00, 587.14it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 526.02it/s]
+[2026-09-16 16:00:54] Final A/B evaluation 2/2
+DONE stage: evaluate
+ALL FORWARD TRAIN4096 EXPERIMENT STAGES COMPLETED

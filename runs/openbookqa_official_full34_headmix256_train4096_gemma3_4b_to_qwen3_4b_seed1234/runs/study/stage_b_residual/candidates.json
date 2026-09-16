@@ -1,0 +1,42 @@
+[
+  {
+    "step": 256,
+    "path": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/runs/study/stage_b_residual/checkpoints/step_256.pt",
+    "functional": {
+      "accuracy": 0.7109375,
+      "oracle_accuracy": 0.78125,
+      "oracle_agreement": 0.7109375,
+      "choice_kl": 0.5577633051998419
+    }
+  },
+  {
+    "step": 512,
+    "path": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/runs/study/stage_b_residual/checkpoints/step_512.pt",
+    "functional": {
+      "accuracy": 0.734375,
+      "oracle_accuracy": 0.78125,
+      "oracle_agreement": 0.7265625,
+      "choice_kl": 0.5415029984342254
+    }
+  },
+  {
+    "step": 768,
+    "path": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/runs/study/stage_b_residual/checkpoints/step_768.pt",
+    "functional": {
+      "accuracy": 0.7578125,
+      "oracle_accuracy": 0.78125,
+      "oracle_agreement": 0.75,
+      "choice_kl": 0.5120144282700494
+    }
+  },
+  {
+    "step": 1024,
+    "path": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/runs/study/stage_b_residual/checkpoints/step_1024.pt",
+    "functional": {
+      "accuracy": 0.7734375,
+      "oracle_accuracy": 0.78125,
+      "oracle_agreement": 0.7421875,
+      "choice_kl": 0.5030598338526033
+    }
+  }
+]
