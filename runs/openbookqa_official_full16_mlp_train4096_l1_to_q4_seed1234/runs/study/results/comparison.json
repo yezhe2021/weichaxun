@@ -1,0 +1,144 @@
+{
+  "status": "completed",
+  "protocol": "openbookqa_official_model_onboarding_full16_l1_to_q4_options32_v1",
+  "train_samples": 4096,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "stage_a_checkpoint": "/home/yezhe/异构模型/openbookqa_official_full16_mlp_train4096_l1_to_q4_seed1234/runs/study/stage_a/checkpoints/step_2048.pt",
+  "metrics": {
+    "stage_a": {
+      "accuracy": 0.296875,
+      "oracle_agreement": 0.3046875,
+      "oracle_choice_kl": 1.242756389623537,
+      "k_nmse": 0.04926654155133292,
+      "v_nmse": 0.3988340449286625,
+      "k_cosine": 0.9431614042259753,
+      "v_cosine": 0.762890983838588
+    },
+    "residual": {
+      "accuracy": 0.5703125,
+      "oracle_agreement": 0.6015625,
+      "oracle_choice_kl": 0.7641053342122177,
+      "k_nmse": 0.051563062152126804,
+      "v_nmse": 0.4019697499461472,
+      "k_cosine": 0.9410917074419558,
+      "v_cosine": 0.7616070676594973
+    }
+  },
+  "relative_residual_norm": {
+    "k": {
+      "min": 0.04686438034182543,
+      "p10": 0.04783638607061733,
+      "p25": 0.04836933882993829,
+      "median": 0.04886547436914644,
+      "p75": 0.04942435249782014,
+      "p90": 0.04970068033767878,
+      "p95": 0.04996856069000772,
+      "max": 0.051283584179537225,
+      "mean": 0.048858086388974986
+    },
+    "v": {
+      "min": 0.06229233350061061,
+      "p10": 0.0657636000099347,
+      "p25": 0.06873762272306974,
+      "median": 0.0709587073560511,
+      "p75": 0.07294618912543957,
+      "p90": 0.07479053702704481,
+      "p95": 0.07632534807008161,
+      "max": 0.07936031487380515,
+      "mean": 0.0707165999989805
+    }
+  },
+  "paired_stage_a_vs_residual": {
+    "both_correct": 28,
+    "only_first_correct": 10,
+    "only_second_correct": 45,
+    "both_wrong": 45,
+    "second_minus_first": 0.2734375,
+    "mcnemar_p": 2.0572645155203517e-06
+  },
+  "frozen_base_hash_verified": true,
+  "trained_parameters": {
+    "stage_a": 94371840,
+    "residual": 9437184
+  },
+  "baselines": {
+    "status": "completed",
+    "protocol": "openbookqa_official_model_onboarding_full16_l1_to_q4_options32_v1",
+    "sample_count": 128,
+    "metrics": {
+      "qwen_full_native": {
+        "correct": 96,
+        "accuracy": 0.75
+      },
+      "llama1_full_native": {
+        "correct": 70,
+        "accuracy": 0.546875
+      },
+      "llama1_native_selected32": {
+        "correct": 58,
+        "accuracy": 0.453125
+      },
+      "qwen_native_oracle32": {
+        "correct": 95,
+        "accuracy": 0.7421875
+      },
+      "qwen_zero32": {
+        "correct": 31,
+        "accuracy": 0.2421875
+      },
+      "qwen_no_memory": {
+        "correct": 33,
+        "accuracy": 0.2578125
+      },
+      "qwen_shuffled_oracle32": {
+        "correct": 34,
+        "accuracy": 0.265625
+      }
+    },
+    "pairwise_correctness": {
+      "qwen_full_native_vs_qwen_native_oracle32": {
+        "both_correct": 93,
+        "only_first_correct": 3,
+        "only_second_correct": 2,
+        "both_wrong": 30
+      },
+      "llama1_full_native_vs_llama1_native_selected32": {
+        "both_correct": 46,
+        "only_first_correct": 24,
+        "only_second_correct": 12,
+        "both_wrong": 46
+      },
+      "qwen_native_oracle32_vs_qwen_zero32": {
+        "both_correct": 22,
+        "only_first_correct": 73,
+        "only_second_correct": 9,
+        "both_wrong": 24
+      },
+      "qwen_native_oracle32_vs_qwen_no_memory": {
+        "both_correct": 24,
+        "only_first_correct": 71,
+        "only_second_correct": 9,
+        "both_wrong": 24
+      },
+      "qwen_native_oracle32_vs_qwen_shuffled_oracle32": {
+        "both_correct": 25,
+        "only_first_correct": 70,
+        "only_second_correct": 9,
+        "both_wrong": 24
+      }
+    },
+    "definitions": {
+      "llama1_native_selected32": "Llama1B-native Question + its selected 32 native Option KVs + native Answer.",
+      "qwen_native_oracle32": "Qwen-native Question + Qwen-native KVs at Llama1B-selected RawAnchor positions + native Answer.",
+      "qwen_zero32": "The Oracle32 K/V tensors are replaced by exact zeros after construction.",
+      "qwen_no_memory": "Qwen processes native Question and Answer prefix with no Option-memory cache.",
+      "qwen_shuffled_oracle32": "Each question receives the next test sample's native Oracle32 memory."
+    }
+  },
+  "translation_gap": {
+    "definition": "Qwen Native Oracle32 accuracy minus translated accuracy",
+    "stage_a": 0.4453125,
+    "residual": 0.171875
+  }
+}

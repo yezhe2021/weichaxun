@@ -1,0 +1,638 @@
+[2026-09-15 23:26:16] Waiting for forward Llama1B-to-Qwen4B pipeline
+[2026-09-16 01:47:17] Forward completed; starting reverse pipeline
+START stage: model_audit
+{'qwen': {'path': '/home/yezhe/all_models/models/Qwen/Qwen3-4B', 'layers': 36, 'kv_heads': 8, 'head_dim': 128, 'tokenizer_class': 'Qwen2Tokenizer', 'bos_token_id': None}, 'llama': {'path': '/home/yezhe/all_models/models/LLM-Research/Llama-3___2-1B-Instruct', 'layers': 16, 'kv_heads': 8, 'head_dim': 64, 'tokenizer_class': 'TokenizersBackend', 'bos_token_id': 128000}, 'translator': {'source_shape': [36, 32, 8, 128], 'target_shape': [16, 32, 8, 64], 'per_head_depth_width': 4608, 'hidden_dim': 1024, 'head_mixing': False, 'token_mixing': False, 'k_v_shared': False}}
+DONE stage: model_audit
+START stage: prepare
+[2026-09-16 01:47:44] Prepared standard prompt with unchanged IDs: {'train': {'count': 4096, 'ids_sha256': '61ef5d1de1f88d3bdaf9698e9f02eddd77418b43ba5129c65ac061a2e226a218', 'first_id': '14-120', 'last_id': '12-415'}, 'validation': {'count': 128, 'ids_sha256': '1cb2439ef228a1d7dc17beae19acda7f798ae3020ea9b65d41cf1d9abdf4a4a5', 'first_id': '9-888', 'last_id': '7-324'}, 'test': {'count': 128, 'ids_sha256': '402e20c4f34eb2036c42e02ac36e27c217134da6c943b105e7a0640f1a1b82a9', 'first_id': '7-334', 'last_id': '1937'}}
+DONE stage: prepare
+START stage: cache_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:26,  4.60it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 603.73it/s]Loading weights:  61%|██████    | 243/398 [00:00<00:00, 623.58it/s]Loading weights:  80%|████████  | 320/398 [00:00<00:00, 594.49it/s]Loading weights:  97%|█████████▋| 388/398 [00:00<00:00, 559.41it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 537.47it/s]
+[2026-09-16 01:47:59] Qwen source decision cache train: 32/4096
+[2026-09-16 01:48:02] Qwen source decision cache train: 64/4096
+[2026-09-16 01:48:05] Qwen source decision cache train: 96/4096
+[2026-09-16 01:48:09] Qwen source decision cache train: 128/4096
+[2026-09-16 01:48:12] Qwen source decision cache train: 160/4096
+[2026-09-16 01:48:15] Qwen source decision cache train: 192/4096
+[2026-09-16 01:48:19] Qwen source decision cache train: 224/4096
+[2026-09-16 01:48:22] Qwen source decision cache train: 256/4096
+[2026-09-16 01:48:25] Qwen source decision cache train: 288/4096
+[2026-09-16 01:48:29] Qwen source decision cache train: 320/4096
+[2026-09-16 01:48:32] Qwen source decision cache train: 352/4096
+[2026-09-16 01:48:36] Qwen source decision cache train: 384/4096
+[2026-09-16 01:48:39] Qwen source decision cache train: 416/4096
+[2026-09-16 01:48:42] Qwen source decision cache train: 448/4096
+[2026-09-16 01:48:46] Qwen source decision cache train: 480/4096
+[2026-09-16 01:48:49] Qwen source decision cache train: 512/4096
+[2026-09-16 01:48:52] Qwen source decision cache train: 544/4096
+[2026-09-16 01:48:56] Qwen source decision cache train: 576/4096
+[2026-09-16 01:48:59] Qwen source decision cache train: 608/4096
+[2026-09-16 01:49:02] Qwen source decision cache train: 640/4096
+[2026-09-16 01:49:06] Qwen source decision cache train: 672/4096
+[2026-09-16 01:49:09] Qwen source decision cache train: 704/4096
+[2026-09-16 01:49:12] Qwen source decision cache train: 736/4096
+[2026-09-16 01:49:16] Qwen source decision cache train: 768/4096
+[2026-09-16 01:49:19] Qwen source decision cache train: 800/4096
+[2026-09-16 01:49:22] Qwen source decision cache train: 832/4096
+[2026-09-16 01:49:26] Qwen source decision cache train: 864/4096
+[2026-09-16 01:49:29] Qwen source decision cache train: 896/4096
+[2026-09-16 01:49:33] Qwen source decision cache train: 928/4096
+[2026-09-16 01:49:36] Qwen source decision cache train: 960/4096
+[2026-09-16 01:49:39] Qwen source decision cache train: 992/4096
+[2026-09-16 01:49:43] Qwen source decision cache train: 1024/4096
+[2026-09-16 01:49:46] Qwen source decision cache train: 1056/4096
+[2026-09-16 01:49:49] Qwen source decision cache train: 1088/4096
+[2026-09-16 01:49:53] Qwen source decision cache train: 1120/4096
+[2026-09-16 01:49:56] Qwen source decision cache train: 1152/4096
+[2026-09-16 01:49:59] Qwen source decision cache train: 1184/4096
+[2026-09-16 01:50:03] Qwen source decision cache train: 1216/4096
+[2026-09-16 01:50:06] Qwen source decision cache train: 1248/4096
+[2026-09-16 01:50:10] Qwen source decision cache train: 1280/4096
+[2026-09-16 01:50:13] Qwen source decision cache train: 1312/4096
+[2026-09-16 01:50:16] Qwen source decision cache train: 1344/4096
+[2026-09-16 01:50:20] Qwen source decision cache train: 1376/4096
+[2026-09-16 01:50:23] Qwen source decision cache train: 1408/4096
+[2026-09-16 01:50:26] Qwen source decision cache train: 1440/4096
+[2026-09-16 01:50:30] Qwen source decision cache train: 1472/4096
+[2026-09-16 01:50:33] Qwen source decision cache train: 1504/4096
+[2026-09-16 01:50:36] Qwen source decision cache train: 1536/4096
+[2026-09-16 01:50:40] Qwen source decision cache train: 1568/4096
+[2026-09-16 01:50:43] Qwen source decision cache train: 1600/4096
+[2026-09-16 01:50:47] Qwen source decision cache train: 1632/4096
+[2026-09-16 01:50:50] Qwen source decision cache train: 1664/4096
+[2026-09-16 01:50:53] Qwen source decision cache train: 1696/4096
+[2026-09-16 01:50:57] Qwen source decision cache train: 1728/4096
+[2026-09-16 01:51:00] Qwen source decision cache train: 1760/4096
+[2026-09-16 01:51:03] Qwen source decision cache train: 1792/4096
+[2026-09-16 01:51:07] Qwen source decision cache train: 1824/4096
+[2026-09-16 01:51:10] Qwen source decision cache train: 1856/4096
+[2026-09-16 01:51:14] Qwen source decision cache train: 1888/4096
+[2026-09-16 01:51:18] Qwen source decision cache train: 1920/4096
+[2026-09-16 01:51:24] Qwen source decision cache train: 1952/4096
+[2026-09-16 01:51:30] Qwen source decision cache train: 1984/4096
+[2026-09-16 01:51:37] Qwen source decision cache train: 2016/4096
+[2026-09-16 01:51:43] Qwen source decision cache train: 2048/4096
+[2026-09-16 01:51:50] Qwen source decision cache train: 2080/4096
+[2026-09-16 01:51:56] Qwen source decision cache train: 2112/4096
+[2026-09-16 01:52:03] Qwen source decision cache train: 2144/4096
+[2026-09-16 01:52:10] Qwen source decision cache train: 2176/4096
+[2026-09-16 01:52:17] Qwen source decision cache train: 2208/4096
+[2026-09-16 01:52:24] Qwen source decision cache train: 2240/4096
+[2026-09-16 01:52:30] Qwen source decision cache train: 2272/4096
+[2026-09-16 01:52:38] Qwen source decision cache train: 2304/4096
+[2026-09-16 01:52:45] Qwen source decision cache train: 2336/4096
+[2026-09-16 01:52:53] Qwen source decision cache train: 2368/4096
+[2026-09-16 01:53:00] Qwen source decision cache train: 2400/4096
+[2026-09-16 01:53:07] Qwen source decision cache train: 2432/4096
+[2026-09-16 01:53:14] Qwen source decision cache train: 2464/4096
+[2026-09-16 01:53:22] Qwen source decision cache train: 2496/4096
+[2026-09-16 01:53:29] Qwen source decision cache train: 2528/4096
+[2026-09-16 01:53:36] Qwen source decision cache train: 2560/4096
+[2026-09-16 01:53:43] Qwen source decision cache train: 2592/4096
+[2026-09-16 01:53:49] Qwen source decision cache train: 2624/4096
+[2026-09-16 01:53:56] Qwen source decision cache train: 2656/4096
+[2026-09-16 01:54:03] Qwen source decision cache train: 2688/4096
+[2026-09-16 01:54:10] Qwen source decision cache train: 2720/4096
+[2026-09-16 01:54:17] Qwen source decision cache train: 2752/4096
+[2026-09-16 01:54:25] Qwen source decision cache train: 2784/4096
+[2026-09-16 01:54:32] Qwen source decision cache train: 2816/4096
+[2026-09-16 01:54:40] Qwen source decision cache train: 2848/4096
+[2026-09-16 01:54:48] Qwen source decision cache train: 2880/4096
+[2026-09-16 01:54:56] Qwen source decision cache train: 2912/4096
+[2026-09-16 01:54:59] Qwen source decision cache train: 2944/4096
+[2026-09-16 01:55:03] Qwen source decision cache train: 2976/4096
+[2026-09-16 01:55:06] Qwen source decision cache train: 3008/4096
+[2026-09-16 01:55:10] Qwen source decision cache train: 3040/4096
+[2026-09-16 01:55:13] Qwen source decision cache train: 3072/4096
+[2026-09-16 01:55:17] Qwen source decision cache train: 3104/4096
+[2026-09-16 01:55:20] Qwen source decision cache train: 3136/4096
+[2026-09-16 01:55:24] Qwen source decision cache train: 3168/4096
+[2026-09-16 01:55:27] Qwen source decision cache train: 3200/4096
+[2026-09-16 01:55:31] Qwen source decision cache train: 3232/4096
+[2026-09-16 01:55:34] Qwen source decision cache train: 3264/4096
+[2026-09-16 01:55:38] Qwen source decision cache train: 3296/4096
+[2026-09-16 01:55:41] Qwen source decision cache train: 3328/4096
+[2026-09-16 01:55:45] Qwen source decision cache train: 3360/4096
+[2026-09-16 01:55:48] Qwen source decision cache train: 3392/4096
+[2026-09-16 01:55:52] Qwen source decision cache train: 3424/4096
+[2026-09-16 01:55:55] Qwen source decision cache train: 3456/4096
+[2026-09-16 01:55:59] Qwen source decision cache train: 3488/4096
+[2026-09-16 01:56:02] Qwen source decision cache train: 3520/4096
+[2026-09-16 01:56:06] Qwen source decision cache train: 3552/4096
+[2026-09-16 01:56:10] Qwen source decision cache train: 3584/4096
+[2026-09-16 01:56:13] Qwen source decision cache train: 3616/4096
+[2026-09-16 01:56:17] Qwen source decision cache train: 3648/4096
+[2026-09-16 01:56:20] Qwen source decision cache train: 3680/4096
+[2026-09-16 01:56:24] Qwen source decision cache train: 3712/4096
+[2026-09-16 01:56:27] Qwen source decision cache train: 3744/4096
+[2026-09-16 01:56:31] Qwen source decision cache train: 3776/4096
+[2026-09-16 01:56:34] Qwen source decision cache train: 3808/4096
+[2026-09-16 01:56:38] Qwen source decision cache train: 3840/4096
+[2026-09-16 01:56:41] Qwen source decision cache train: 3872/4096
+[2026-09-16 01:56:45] Qwen source decision cache train: 3904/4096
+[2026-09-16 01:56:48] Qwen source decision cache train: 3936/4096
+[2026-09-16 01:56:52] Qwen source decision cache train: 3968/4096
+[2026-09-16 01:56:55] Qwen source decision cache train: 4000/4096
+[2026-09-16 01:56:59] Qwen source decision cache train: 4032/4096
+[2026-09-16 01:57:02] Qwen source decision cache train: 4064/4096
+[2026-09-16 01:57:06] Qwen source decision cache train: 4096/4096
+[2026-09-16 01:57:09] Qwen source decision cache validation: 32/128
+[2026-09-16 01:57:13] Qwen source decision cache validation: 64/128
+[2026-09-16 01:57:16] Qwen source decision cache validation: 96/128
+[2026-09-16 01:57:20] Qwen source decision cache validation: 128/128
+[2026-09-16 01:57:23] Qwen source decision cache test: 32/128
+[2026-09-16 01:57:27] Qwen source decision cache test: 64/128
+[2026-09-16 01:57:30] Qwen source decision cache test: 96/128
+[2026-09-16 01:57:34] Qwen source decision cache test: 128/128
+DONE stage: cache_qwen
+START stage: cache_llama
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights:   1%|          | 1/146 [00:00<00:21,  6.65it/s]Loading weights:  39%|███▉      | 57/146 [00:00<00:00, 273.27it/s]Loading weights:  64%|██████▎   | 93/146 [00:00<00:00, 304.00it/s]Loading weights:  95%|█████████▍| 138/146 [00:00<00:00, 228.43it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 238.43it/s]
+[2026-09-16 01:57:47] Llama target decision/pair cache train: 32/4096
+[2026-09-16 01:57:49] Llama target decision/pair cache train: 64/4096
+[2026-09-16 01:57:51] Llama target decision/pair cache train: 96/4096
+[2026-09-16 01:57:52] Llama target decision/pair cache train: 128/4096
+[2026-09-16 01:57:54] Llama target decision/pair cache train: 160/4096
+[2026-09-16 01:57:55] Llama target decision/pair cache train: 192/4096
+[2026-09-16 01:57:57] Llama target decision/pair cache train: 224/4096
+[2026-09-16 01:57:59] Llama target decision/pair cache train: 256/4096
+[2026-09-16 01:58:00] Llama target decision/pair cache train: 288/4096
+[2026-09-16 01:58:02] Llama target decision/pair cache train: 320/4096
+[2026-09-16 01:58:03] Llama target decision/pair cache train: 352/4096
+[2026-09-16 01:58:05] Llama target decision/pair cache train: 384/4096
+[2026-09-16 01:58:07] Llama target decision/pair cache train: 416/4096
+[2026-09-16 01:58:08] Llama target decision/pair cache train: 448/4096
+[2026-09-16 01:58:10] Llama target decision/pair cache train: 480/4096
+[2026-09-16 01:58:11] Llama target decision/pair cache train: 512/4096
+[2026-09-16 01:58:13] Llama target decision/pair cache train: 544/4096
+[2026-09-16 01:58:15] Llama target decision/pair cache train: 576/4096
+[2026-09-16 01:58:16] Llama target decision/pair cache train: 608/4096
+[2026-09-16 01:58:18] Llama target decision/pair cache train: 640/4096
+[2026-09-16 01:58:19] Llama target decision/pair cache train: 672/4096
+[2026-09-16 01:58:21] Llama target decision/pair cache train: 704/4096
+[2026-09-16 01:58:22] Llama target decision/pair cache train: 736/4096
+[2026-09-16 01:58:24] Llama target decision/pair cache train: 768/4096
+[2026-09-16 01:58:26] Llama target decision/pair cache train: 800/4096
+[2026-09-16 01:58:27] Llama target decision/pair cache train: 832/4096
+[2026-09-16 01:58:29] Llama target decision/pair cache train: 864/4096
+[2026-09-16 01:58:30] Llama target decision/pair cache train: 896/4096
+[2026-09-16 01:58:32] Llama target decision/pair cache train: 928/4096
+[2026-09-16 01:58:34] Llama target decision/pair cache train: 960/4096
+[2026-09-16 01:58:35] Llama target decision/pair cache train: 992/4096
+[2026-09-16 01:58:37] Llama target decision/pair cache train: 1024/4096
+[2026-09-16 01:58:38] Llama target decision/pair cache train: 1056/4096
+[2026-09-16 01:58:40] Llama target decision/pair cache train: 1088/4096
+[2026-09-16 01:58:42] Llama target decision/pair cache train: 1120/4096
+[2026-09-16 01:58:43] Llama target decision/pair cache train: 1152/4096
+[2026-09-16 01:58:45] Llama target decision/pair cache train: 1184/4096
+[2026-09-16 01:58:46] Llama target decision/pair cache train: 1216/4096
+[2026-09-16 01:58:48] Llama target decision/pair cache train: 1248/4096
+[2026-09-16 01:58:49] Llama target decision/pair cache train: 1280/4096
+[2026-09-16 01:58:51] Llama target decision/pair cache train: 1312/4096
+[2026-09-16 01:58:53] Llama target decision/pair cache train: 1344/4096
+[2026-09-16 01:58:54] Llama target decision/pair cache train: 1376/4096
+[2026-09-16 01:58:56] Llama target decision/pair cache train: 1408/4096
+[2026-09-16 01:58:57] Llama target decision/pair cache train: 1440/4096
+[2026-09-16 01:58:59] Llama target decision/pair cache train: 1472/4096
+[2026-09-16 01:59:01] Llama target decision/pair cache train: 1504/4096
+[2026-09-16 01:59:02] Llama target decision/pair cache train: 1536/4096
+[2026-09-16 01:59:04] Llama target decision/pair cache train: 1568/4096
+[2026-09-16 01:59:05] Llama target decision/pair cache train: 1600/4096
+[2026-09-16 01:59:07] Llama target decision/pair cache train: 1632/4096
+[2026-09-16 01:59:09] Llama target decision/pair cache train: 1664/4096
+[2026-09-16 01:59:10] Llama target decision/pair cache train: 1696/4096
+[2026-09-16 01:59:12] Llama target decision/pair cache train: 1728/4096
+[2026-09-16 01:59:13] Llama target decision/pair cache train: 1760/4096
+[2026-09-16 01:59:15] Llama target decision/pair cache train: 1792/4096
+[2026-09-16 01:59:17] Llama target decision/pair cache train: 1824/4096
+[2026-09-16 01:59:18] Llama target decision/pair cache train: 1856/4096
+[2026-09-16 01:59:20] Llama target decision/pair cache train: 1888/4096
+[2026-09-16 01:59:21] Llama target decision/pair cache train: 1920/4096
+[2026-09-16 01:59:23] Llama target decision/pair cache train: 1952/4096
+[2026-09-16 01:59:24] Llama target decision/pair cache train: 1984/4096
+[2026-09-16 01:59:26] Llama target decision/pair cache train: 2016/4096
+[2026-09-16 01:59:28] Llama target decision/pair cache train: 2048/4096
+[2026-09-16 01:59:29] Llama target decision/pair cache train: 2080/4096
+[2026-09-16 01:59:31] Llama target decision/pair cache train: 2112/4096
+[2026-09-16 01:59:32] Llama target decision/pair cache train: 2144/4096
+[2026-09-16 01:59:34] Llama target decision/pair cache train: 2176/4096
+[2026-09-16 01:59:36] Llama target decision/pair cache train: 2208/4096
+[2026-09-16 01:59:37] Llama target decision/pair cache train: 2240/4096
+[2026-09-16 01:59:39] Llama target decision/pair cache train: 2272/4096
+[2026-09-16 01:59:40] Llama target decision/pair cache train: 2304/4096
+[2026-09-16 01:59:42] Llama target decision/pair cache train: 2336/4096
+[2026-09-16 01:59:43] Llama target decision/pair cache train: 2368/4096
+[2026-09-16 01:59:45] Llama target decision/pair cache train: 2400/4096
+[2026-09-16 01:59:47] Llama target decision/pair cache train: 2432/4096
+[2026-09-16 01:59:48] Llama target decision/pair cache train: 2464/4096
+[2026-09-16 01:59:50] Llama target decision/pair cache train: 2496/4096
+[2026-09-16 01:59:51] Llama target decision/pair cache train: 2528/4096
+[2026-09-16 01:59:53] Llama target decision/pair cache train: 2560/4096
+[2026-09-16 01:59:55] Llama target decision/pair cache train: 2592/4096
+[2026-09-16 01:59:56] Llama target decision/pair cache train: 2624/4096
+[2026-09-16 01:59:58] Llama target decision/pair cache train: 2656/4096
+[2026-09-16 01:59:59] Llama target decision/pair cache train: 2688/4096
+[2026-09-16 02:00:01] Llama target decision/pair cache train: 2720/4096
+[2026-09-16 02:00:02] Llama target decision/pair cache train: 2752/4096
+[2026-09-16 02:00:04] Llama target decision/pair cache train: 2784/4096
+[2026-09-16 02:00:06] Llama target decision/pair cache train: 2816/4096
+[2026-09-16 02:00:07] Llama target decision/pair cache train: 2848/4096
+[2026-09-16 02:00:09] Llama target decision/pair cache train: 2880/4096
+[2026-09-16 02:00:10] Llama target decision/pair cache train: 2912/4096
+[2026-09-16 02:00:12] Llama target decision/pair cache train: 2944/4096
+[2026-09-16 02:00:14] Llama target decision/pair cache train: 2976/4096
+[2026-09-16 02:00:15] Llama target decision/pair cache train: 3008/4096
+[2026-09-16 02:00:17] Llama target decision/pair cache train: 3040/4096
+[2026-09-16 02:00:18] Llama target decision/pair cache train: 3072/4096
+[2026-09-16 02:00:20] Llama target decision/pair cache train: 3104/4096
+[2026-09-16 02:00:22] Llama target decision/pair cache train: 3136/4096
+[2026-09-16 02:00:23] Llama target decision/pair cache train: 3168/4096
+[2026-09-16 02:00:25] Llama target decision/pair cache train: 3200/4096
+[2026-09-16 02:00:26] Llama target decision/pair cache train: 3232/4096
+[2026-09-16 02:00:28] Llama target decision/pair cache train: 3264/4096
+[2026-09-16 02:00:29] Llama target decision/pair cache train: 3296/4096
+[2026-09-16 02:00:31] Llama target decision/pair cache train: 3328/4096
+[2026-09-16 02:00:33] Llama target decision/pair cache train: 3360/4096
+[2026-09-16 02:00:34] Llama target decision/pair cache train: 3392/4096
+[2026-09-16 02:00:36] Llama target decision/pair cache train: 3424/4096
+[2026-09-16 02:00:37] Llama target decision/pair cache train: 3456/4096
+[2026-09-16 02:00:39] Llama target decision/pair cache train: 3488/4096
+[2026-09-16 02:00:41] Llama target decision/pair cache train: 3520/4096
+[2026-09-16 02:00:42] Llama target decision/pair cache train: 3552/4096
+[2026-09-16 02:00:44] Llama target decision/pair cache train: 3584/4096
+[2026-09-16 02:00:45] Llama target decision/pair cache train: 3616/4096
+[2026-09-16 02:00:47] Llama target decision/pair cache train: 3648/4096
+[2026-09-16 02:00:49] Llama target decision/pair cache train: 3680/4096
+[2026-09-16 02:00:50] Llama target decision/pair cache train: 3712/4096
+[2026-09-16 02:00:52] Llama target decision/pair cache train: 3744/4096
+[2026-09-16 02:00:53] Llama target decision/pair cache train: 3776/4096
+[2026-09-16 02:00:55] Llama target decision/pair cache train: 3808/4096
+[2026-09-16 02:00:57] Llama target decision/pair cache train: 3840/4096
+[2026-09-16 02:00:58] Llama target decision/pair cache train: 3872/4096
+[2026-09-16 02:01:00] Llama target decision/pair cache train: 3904/4096
+[2026-09-16 02:01:01] Llama target decision/pair cache train: 3936/4096
+[2026-09-16 02:01:03] Llama target decision/pair cache train: 3968/4096
+[2026-09-16 02:01:04] Llama target decision/pair cache train: 4000/4096
+[2026-09-16 02:01:06] Llama target decision/pair cache train: 4032/4096
+[2026-09-16 02:01:08] Llama target decision/pair cache train: 4064/4096
+[2026-09-16 02:01:09] Llama target decision/pair cache train: 4096/4096
+[2026-09-16 02:01:11] Llama target decision/pair cache validation: 32/128
+[2026-09-16 02:01:13] Llama target decision/pair cache validation: 64/128
+[2026-09-16 02:01:14] Llama target decision/pair cache validation: 96/128
+[2026-09-16 02:01:16] Llama target decision/pair cache validation: 128/128
+[2026-09-16 02:01:17] Llama target decision/pair cache test: 32/128
+[2026-09-16 02:01:19] Llama target decision/pair cache test: 64/128
+[2026-09-16 02:01:21] Llama target decision/pair cache test: 96/128
+[2026-09-16 02:01:22] Llama target decision/pair cache test: 128/128
+DONE stage: cache_llama
+START stage: phase0_audit
+[2026-09-16 02:01:29] PHASE-0 AUDIT PASSED: {'passed': True, 'sample_count': 32, 'selection': '32 normalized option-text regions; max decision attention within each region', 'query': 'last Sender-native Answer: token', 'candidates': 'Options only; Question, position0 and Answer excluded', 'answer_tokenization': {'qwen': {'ids': [16141, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 425, 'C': 356, 'D': 422}}, 'llama': {'ids': [16533, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 426, 'C': 356, 'D': 423}}}, 'mean_anchor_iou': 1.0, 'mean_selected_attention_mass': 0.8405007529650087}
+DONE stage: phase0_audit
+START stage: teachers
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights:   1%|          | 1/146 [00:00<00:24,  5.88it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 581.67it/s]
+[2026-09-16 02:01:39] Reverse Llama Oracle teachers train: 64/4096
+[2026-09-16 02:01:42] Reverse Llama Oracle teachers train: 128/4096
+[2026-09-16 02:01:44] Reverse Llama Oracle teachers train: 192/4096
+[2026-09-16 02:01:46] Reverse Llama Oracle teachers train: 256/4096
+[2026-09-16 02:01:48] Reverse Llama Oracle teachers train: 320/4096
+[2026-09-16 02:01:50] Reverse Llama Oracle teachers train: 384/4096
+[2026-09-16 02:01:52] Reverse Llama Oracle teachers train: 448/4096
+[2026-09-16 02:01:54] Reverse Llama Oracle teachers train: 512/4096
+[2026-09-16 02:01:56] Reverse Llama Oracle teachers train: 576/4096
+[2026-09-16 02:01:58] Reverse Llama Oracle teachers train: 640/4096
+[2026-09-16 02:02:00] Reverse Llama Oracle teachers train: 704/4096
+[2026-09-16 02:02:02] Reverse Llama Oracle teachers train: 768/4096
+[2026-09-16 02:02:04] Reverse Llama Oracle teachers train: 832/4096
+[2026-09-16 02:02:06] Reverse Llama Oracle teachers train: 896/4096
+[2026-09-16 02:02:08] Reverse Llama Oracle teachers train: 960/4096
+[2026-09-16 02:02:11] Reverse Llama Oracle teachers train: 1024/4096
+[2026-09-16 02:02:13] Reverse Llama Oracle teachers train: 1088/4096
+[2026-09-16 02:02:15] Reverse Llama Oracle teachers train: 1152/4096
+[2026-09-16 02:02:17] Reverse Llama Oracle teachers train: 1216/4096
+[2026-09-16 02:02:19] Reverse Llama Oracle teachers train: 1280/4096
+[2026-09-16 02:02:21] Reverse Llama Oracle teachers train: 1344/4096
+[2026-09-16 02:02:23] Reverse Llama Oracle teachers train: 1408/4096
+[2026-09-16 02:02:25] Reverse Llama Oracle teachers train: 1472/4096
+[2026-09-16 02:02:27] Reverse Llama Oracle teachers train: 1536/4096
+[2026-09-16 02:02:29] Reverse Llama Oracle teachers train: 1600/4096
+[2026-09-16 02:02:31] Reverse Llama Oracle teachers train: 1664/4096
+[2026-09-16 02:02:33] Reverse Llama Oracle teachers train: 1728/4096
+[2026-09-16 02:02:35] Reverse Llama Oracle teachers train: 1792/4096
+[2026-09-16 02:02:37] Reverse Llama Oracle teachers train: 1856/4096
+[2026-09-16 02:02:39] Reverse Llama Oracle teachers train: 1920/4096
+[2026-09-16 02:02:41] Reverse Llama Oracle teachers train: 1984/4096
+[2026-09-16 02:02:43] Reverse Llama Oracle teachers train: 2048/4096
+[2026-09-16 02:02:45] Reverse Llama Oracle teachers train: 2112/4096
+[2026-09-16 02:02:47] Reverse Llama Oracle teachers train: 2176/4096
+[2026-09-16 02:02:49] Reverse Llama Oracle teachers train: 2240/4096
+[2026-09-16 02:02:51] Reverse Llama Oracle teachers train: 2304/4096
+[2026-09-16 02:02:53] Reverse Llama Oracle teachers train: 2368/4096
+[2026-09-16 02:02:55] Reverse Llama Oracle teachers train: 2432/4096
+[2026-09-16 02:02:57] Reverse Llama Oracle teachers train: 2496/4096
+[2026-09-16 02:02:59] Reverse Llama Oracle teachers train: 2560/4096
+[2026-09-16 02:03:01] Reverse Llama Oracle teachers train: 2624/4096
+[2026-09-16 02:03:03] Reverse Llama Oracle teachers train: 2688/4096
+[2026-09-16 02:03:05] Reverse Llama Oracle teachers train: 2752/4096
+[2026-09-16 02:03:07] Reverse Llama Oracle teachers train: 2816/4096
+[2026-09-16 02:03:09] Reverse Llama Oracle teachers train: 2880/4096
+[2026-09-16 02:03:11] Reverse Llama Oracle teachers train: 2944/4096
+[2026-09-16 02:03:13] Reverse Llama Oracle teachers train: 3008/4096
+[2026-09-16 02:03:15] Reverse Llama Oracle teachers train: 3072/4096
+[2026-09-16 02:03:17] Reverse Llama Oracle teachers train: 3136/4096
+[2026-09-16 02:03:19] Reverse Llama Oracle teachers train: 3200/4096
+[2026-09-16 02:03:21] Reverse Llama Oracle teachers train: 3264/4096
+[2026-09-16 02:03:23] Reverse Llama Oracle teachers train: 3328/4096
+[2026-09-16 02:03:25] Reverse Llama Oracle teachers train: 3392/4096
+[2026-09-16 02:03:27] Reverse Llama Oracle teachers train: 3456/4096
+[2026-09-16 02:03:29] Reverse Llama Oracle teachers train: 3520/4096
+[2026-09-16 02:03:31] Reverse Llama Oracle teachers train: 3584/4096
+[2026-09-16 02:03:33] Reverse Llama Oracle teachers train: 3648/4096
+[2026-09-16 02:03:35] Reverse Llama Oracle teachers train: 3712/4096
+[2026-09-16 02:03:37] Reverse Llama Oracle teachers train: 3776/4096
+[2026-09-16 02:03:39] Reverse Llama Oracle teachers train: 3840/4096
+[2026-09-16 02:03:41] Reverse Llama Oracle teachers train: 3904/4096
+[2026-09-16 02:03:43] Reverse Llama Oracle teachers train: 3968/4096
+[2026-09-16 02:03:45] Reverse Llama Oracle teachers train: 4032/4096
+[2026-09-16 02:03:47] Reverse Llama Oracle teachers train: 4096/4096
+[2026-09-16 02:03:49] Reverse Llama Oracle teachers validation: 64/128
+[2026-09-16 02:03:51] Reverse Llama Oracle teachers validation: 128/128
+[2026-09-16 02:03:54] Reverse Llama Oracle teachers test: 64/128
+[2026-09-16 02:03:56] Reverse Llama Oracle teachers test: 128/128
+DONE stage: teachers
+START stage: baselines
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   6%|▋         | 25/398 [00:00<00:01, 234.97it/s]Loading weights:  20%|██        | 81/398 [00:00<00:00, 418.14it/s]Loading weights:  34%|███▍      | 135/398 [00:00<00:00, 456.00it/s]Loading weights:  48%|████▊     | 190/398 [00:00<00:00, 484.54it/s]Loading weights:  62%|██████▏   | 245/398 [00:00<00:00, 494.68it/s]Loading weights:  75%|███████▌  | 300/398 [00:00<00:00, 493.52it/s]Loading weights:  89%|████████▉ | 355/398 [00:00<00:00, 505.52it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 490.72it/s]
+Qwen baseline pass: 32/128
+Qwen baseline pass: 64/128
+Qwen baseline pass: 96/128
+Qwen baseline pass: 128/128
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights:   1%|          | 1/146 [00:00<00:23,  6.30it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 567.26it/s]
+Llama1B baseline/control pass: 16/128
+Llama1B baseline/control pass: 32/128
+Llama1B baseline/control pass: 48/128
+Llama1B baseline/control pass: 64/128
+Llama1B baseline/control pass: 80/128
+Llama1B baseline/control pass: 96/128
+Llama1B baseline/control pass: 112/128
+Llama1B baseline/control pass: 128/128
+{
+  "qwen_full_native": {
+    "correct": 96,
+    "accuracy": 0.75
+  },
+  "qwen_native_selected32": {
+    "correct": 94,
+    "accuracy": 0.734375
+  },
+  "llama1_full_native": {
+    "correct": 70,
+    "accuracy": 0.546875
+  },
+  "llama1_native_oracle32": {
+    "correct": 52,
+    "accuracy": 0.40625
+  },
+  "llama1_zero32": {
+    "correct": 34,
+    "accuracy": 0.265625
+  },
+  "llama1_no_memory": {
+    "correct": 33,
+    "accuracy": 0.2578125
+  },
+  "llama1_shuffled_oracle32": {
+    "correct": 29,
+    "accuracy": 0.2265625
+  }
+}
+DONE stage: baselines
+START stage: stage_a
+[2026-09-16 02:05:15] Fresh Stage A 16/2048 loss=1.427336
+[2026-09-16 02:05:23] Fresh Stage A 32/2048 loss=1.075006
+[2026-09-16 02:05:32] Fresh Stage A 48/2048 loss=0.992257
+[2026-09-16 02:05:40] Fresh Stage A 64/2048 loss=0.871049
+[2026-09-16 02:05:48] Fresh Stage A 80/2048 loss=0.815453
+[2026-09-16 02:05:55] Fresh Stage A 96/2048 loss=0.723930
+[2026-09-16 02:06:04] Fresh Stage A 112/2048 loss=0.764656
+[2026-09-16 02:06:12] Fresh Stage A 128/2048 loss=0.762033
+[2026-09-16 02:06:19] Fresh Stage A 144/2048 loss=0.690000
+[2026-09-16 02:06:29] Fresh Stage A 160/2048 loss=0.656807
+[2026-09-16 02:06:35] Fresh Stage A 176/2048 loss=0.683785
+[2026-09-16 02:06:45] Fresh Stage A 192/2048 loss=0.675451
+[2026-09-16 02:06:53] Fresh Stage A 208/2048 loss=0.682417
+[2026-09-16 02:07:00] Fresh Stage A 224/2048 loss=0.579882
+[2026-09-16 02:07:08] Fresh Stage A 240/2048 loss=0.626734
+[2026-09-16 02:07:14] Fresh Stage A 256/2048 loss=0.610735
+[2026-09-16 02:07:18] Fresh Stage A validation step=256 loss=0.639942
+[2026-09-16 02:07:24] Fresh Stage A 272/2048 loss=0.630986
+[2026-09-16 02:07:31] Fresh Stage A 288/2048 loss=0.560672
+[2026-09-16 02:07:38] Fresh Stage A 304/2048 loss=0.616607
+[2026-09-16 02:07:45] Fresh Stage A 320/2048 loss=0.596234
+[2026-09-16 02:07:55] Fresh Stage A 336/2048 loss=0.593083
+[2026-09-16 02:08:02] Fresh Stage A 352/2048 loss=0.604133
+[2026-09-16 02:08:08] Fresh Stage A 368/2048 loss=0.578034
+[2026-09-16 02:08:15] Fresh Stage A 384/2048 loss=0.641973
+[2026-09-16 02:08:21] Fresh Stage A 400/2048 loss=0.546404
+[2026-09-16 02:08:29] Fresh Stage A 416/2048 loss=0.513776
+[2026-09-16 02:08:36] Fresh Stage A 432/2048 loss=0.578351
+[2026-09-16 02:08:42] Fresh Stage A 448/2048 loss=0.550377
+[2026-09-16 02:08:49] Fresh Stage A 464/2048 loss=0.504676
+[2026-09-16 02:08:56] Fresh Stage A 480/2048 loss=0.496098
+[2026-09-16 02:09:03] Fresh Stage A 496/2048 loss=0.585597
+[2026-09-16 02:09:10] Fresh Stage A 512/2048 loss=0.563950
+[2026-09-16 02:09:13] Fresh Stage A validation step=512 loss=0.563080
+[2026-09-16 02:09:17] Fresh Stage A 528/2048 loss=0.488703
+[2026-09-16 02:09:22] Fresh Stage A 544/2048 loss=0.489782
+[2026-09-16 02:09:27] Fresh Stage A 560/2048 loss=0.469122
+[2026-09-16 02:09:31] Fresh Stage A 576/2048 loss=0.585505
+[2026-09-16 02:09:36] Fresh Stage A 592/2048 loss=0.455335
+[2026-09-16 02:09:40] Fresh Stage A 608/2048 loss=0.480053
+[2026-09-16 02:09:45] Fresh Stage A 624/2048 loss=0.539299
+[2026-09-16 02:09:52] Fresh Stage A 640/2048 loss=0.478556
+[2026-09-16 02:09:57] Fresh Stage A 656/2048 loss=0.491348
+[2026-09-16 02:10:02] Fresh Stage A 672/2048 loss=0.475270
+[2026-09-16 02:10:06] Fresh Stage A 688/2048 loss=0.469402
+[2026-09-16 02:10:11] Fresh Stage A 704/2048 loss=0.538067
+[2026-09-16 02:10:15] Fresh Stage A 720/2048 loss=0.501770
+[2026-09-16 02:10:20] Fresh Stage A 736/2048 loss=0.452667
+[2026-09-16 02:10:24] Fresh Stage A 752/2048 loss=0.471741
+[2026-09-16 02:10:29] Fresh Stage A 768/2048 loss=0.422965
+[2026-09-16 02:10:32] Fresh Stage A validation step=768 loss=0.533000
+[2026-09-16 02:10:37] Fresh Stage A 784/2048 loss=0.440684
+[2026-09-16 02:10:42] Fresh Stage A 800/2048 loss=0.531203
+[2026-09-16 02:10:47] Fresh Stage A 816/2048 loss=0.519940
+[2026-09-16 02:10:52] Fresh Stage A 832/2048 loss=0.481796
+[2026-09-16 02:10:57] Fresh Stage A 848/2048 loss=0.523178
+[2026-09-16 02:11:02] Fresh Stage A 864/2048 loss=0.460801
+[2026-09-16 02:11:09] Fresh Stage A 880/2048 loss=0.455852
+[2026-09-16 02:11:14] Fresh Stage A 896/2048 loss=0.438146
+[2026-09-16 02:11:19] Fresh Stage A 912/2048 loss=0.502936
+[2026-09-16 02:11:25] Fresh Stage A 928/2048 loss=0.491418
+[2026-09-16 02:11:29] Fresh Stage A 944/2048 loss=0.504980
+[2026-09-16 02:11:34] Fresh Stage A 960/2048 loss=0.495065
+[2026-09-16 02:11:40] Fresh Stage A 976/2048 loss=0.454060
+[2026-09-16 02:11:45] Fresh Stage A 992/2048 loss=0.503381
+[2026-09-16 02:11:50] Fresh Stage A 1008/2048 loss=0.456791
+[2026-09-16 02:11:55] Fresh Stage A 1024/2048 loss=0.424862
+[2026-09-16 02:11:58] Fresh Stage A validation step=1024 loss=0.516938
+[2026-09-16 02:12:02] Fresh Stage A 1040/2048 loss=0.416355
+[2026-09-16 02:12:07] Fresh Stage A 1056/2048 loss=0.447541
+[2026-09-16 02:12:12] Fresh Stage A 1072/2048 loss=0.415841
+[2026-09-16 02:12:17] Fresh Stage A 1088/2048 loss=0.396030
+[2026-09-16 02:12:21] Fresh Stage A 1104/2048 loss=0.410824
+[2026-09-16 02:12:26] Fresh Stage A 1120/2048 loss=0.462334
+[2026-09-16 02:12:31] Fresh Stage A 1136/2048 loss=0.409848
+[2026-09-16 02:12:39] Fresh Stage A 1152/2048 loss=0.435855
+[2026-09-16 02:12:43] Fresh Stage A 1168/2048 loss=0.485422
+[2026-09-16 02:12:49] Fresh Stage A 1184/2048 loss=0.463858
+[2026-09-16 02:12:53] Fresh Stage A 1200/2048 loss=0.435030
+[2026-09-16 02:12:58] Fresh Stage A 1216/2048 loss=0.458613
+[2026-09-16 02:13:03] Fresh Stage A 1232/2048 loss=0.472906
+[2026-09-16 02:13:07] Fresh Stage A 1248/2048 loss=0.484611
+[2026-09-16 02:13:12] Fresh Stage A 1264/2048 loss=0.500557
+[2026-09-16 02:13:16] Fresh Stage A 1280/2048 loss=0.413310
+[2026-09-16 02:13:19] Fresh Stage A validation step=1280 loss=0.505135
+[2026-09-16 02:13:24] Fresh Stage A 1296/2048 loss=0.426284
+[2026-09-16 02:13:30] Fresh Stage A 1312/2048 loss=0.459201
+[2026-09-16 02:13:35] Fresh Stage A 1328/2048 loss=0.446462
+[2026-09-16 02:13:41] Fresh Stage A 1344/2048 loss=0.424162
+[2026-09-16 02:13:46] Fresh Stage A 1360/2048 loss=0.532929
+[2026-09-16 02:13:52] Fresh Stage A 1376/2048 loss=0.484898
+[2026-09-16 02:13:59] Fresh Stage A 1392/2048 loss=0.479121
+[2026-09-16 02:14:04] Fresh Stage A 1408/2048 loss=0.452232
+[2026-09-16 02:14:10] Fresh Stage A 1424/2048 loss=0.425390
+[2026-09-16 02:14:15] Fresh Stage A 1440/2048 loss=0.470852
+[2026-09-16 02:14:21] Fresh Stage A 1456/2048 loss=0.409653
+[2026-09-16 02:14:26] Fresh Stage A 1472/2048 loss=0.435639
+[2026-09-16 02:14:31] Fresh Stage A 1488/2048 loss=0.433089
+[2026-09-16 02:14:37] Fresh Stage A 1504/2048 loss=0.453718
+[2026-09-16 02:14:43] Fresh Stage A 1520/2048 loss=0.446824
+[2026-09-16 02:14:48] Fresh Stage A 1536/2048 loss=0.417246
+[2026-09-16 02:14:51] Fresh Stage A validation step=1536 loss=0.496389
+[2026-09-16 02:14:56] Fresh Stage A 1552/2048 loss=0.387275
+[2026-09-16 02:15:00] Fresh Stage A 1568/2048 loss=0.361748
+[2026-09-16 02:15:04] Fresh Stage A 1584/2048 loss=0.443934
+[2026-09-16 02:15:09] Fresh Stage A 1600/2048 loss=0.433294
+[2026-09-16 02:15:13] Fresh Stage A 1616/2048 loss=0.397045
+[2026-09-16 02:15:18] Fresh Stage A 1632/2048 loss=0.378412
+[2026-09-16 02:15:22] Fresh Stage A 1648/2048 loss=0.417174
+[2026-09-16 02:15:31] Fresh Stage A 1664/2048 loss=0.397756
+[2026-09-16 02:15:36] Fresh Stage A 1680/2048 loss=0.402720
+[2026-09-16 02:15:41] Fresh Stage A 1696/2048 loss=0.359989
+[2026-09-16 02:15:46] Fresh Stage A 1712/2048 loss=0.392988
+[2026-09-16 02:15:50] Fresh Stage A 1728/2048 loss=0.406649
+[2026-09-16 02:15:55] Fresh Stage A 1744/2048 loss=0.403131
+[2026-09-16 02:16:00] Fresh Stage A 1760/2048 loss=0.461145
+[2026-09-16 02:16:05] Fresh Stage A 1776/2048 loss=0.379550
+[2026-09-16 02:16:11] Fresh Stage A 1792/2048 loss=0.422587
+[2026-09-16 02:16:14] Fresh Stage A validation step=1792 loss=0.489488
+[2026-09-16 02:16:20] Fresh Stage A 1808/2048 loss=0.418481
+[2026-09-16 02:16:27] Fresh Stage A 1824/2048 loss=0.380991
+[2026-09-16 02:16:35] Fresh Stage A 1840/2048 loss=0.457920
+[2026-09-16 02:16:42] Fresh Stage A 1856/2048 loss=0.412046
+[2026-09-16 02:16:52] Fresh Stage A 1872/2048 loss=0.439966
+[2026-09-16 02:17:00] Fresh Stage A 1888/2048 loss=0.416471
+[2026-09-16 02:17:08] Fresh Stage A 1904/2048 loss=0.433395
+[2026-09-16 02:17:16] Fresh Stage A 1920/2048 loss=0.457930
+[2026-09-16 02:17:25] Fresh Stage A 1936/2048 loss=0.431419
+[2026-09-16 02:17:34] Fresh Stage A 1952/2048 loss=0.400832
+[2026-09-16 02:17:44] Fresh Stage A 1968/2048 loss=0.422435
+[2026-09-16 02:17:53] Fresh Stage A 1984/2048 loss=0.453536
+[2026-09-16 02:18:03] Fresh Stage A 2000/2048 loss=0.424634
+[2026-09-16 02:18:12] Fresh Stage A 2016/2048 loss=0.456353
+[2026-09-16 02:18:22] Fresh Stage A 2032/2048 loss=0.454248
+[2026-09-16 02:18:32] Fresh Stage A 2048/2048 loss=0.461749
+[2026-09-16 02:18:36] Fresh Stage A validation step=2048 loss=0.486796
+DONE stage: stage_a
+START stage: select_stage_a
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights:   1%|          | 1/146 [00:00<00:25,  5.69it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 575.90it/s]
+[2026-09-16 02:18:58] Fresh Stage A functional step=256 acc=0.3438 KL=0.279649
+[2026-09-16 02:19:11] Fresh Stage A functional step=512 acc=0.3672 KL=0.218506
+[2026-09-16 02:19:20] Fresh Stage A functional step=768 acc=0.3438 KL=0.213109
+[2026-09-16 02:19:29] Fresh Stage A functional step=1024 acc=0.3516 KL=0.223183
+[2026-09-16 02:19:37] Fresh Stage A functional step=1280 acc=0.3359 KL=0.189482
+[2026-09-16 02:19:46] Fresh Stage A functional step=1536 acc=0.3672 KL=0.181027
+[2026-09-16 02:19:55] Fresh Stage A functional step=1792 acc=0.4062 KL=0.176220
+[2026-09-16 02:20:03] Fresh Stage A functional step=2048 acc=0.4062 KL=0.166792
+DONE stage: select_stage_a
+START stage: train_residual
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights:   1%|          | 1/146 [00:00<00:24,  5.99it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 597.21it/s]
+[2026-09-16 02:20:42] residual Stage B 16/1024 KL=0.110896
+[2026-09-16 02:21:07] residual Stage B 32/1024 KL=0.156834
+[2026-09-16 02:21:33] residual Stage B 48/1024 KL=0.091493
+[2026-09-16 02:21:58] residual Stage B 64/1024 KL=0.256627
+[2026-09-16 02:22:22] residual Stage B 80/1024 KL=0.260226
+[2026-09-16 02:22:46] residual Stage B 96/1024 KL=0.123148
+[2026-09-16 02:23:10] residual Stage B 112/1024 KL=0.112258
+[2026-09-16 02:23:34] residual Stage B 128/1024 KL=0.184504
+[2026-09-16 02:23:58] residual Stage B 144/1024 KL=0.331191
+[2026-09-16 02:24:23] residual Stage B 160/1024 KL=0.238723
+[2026-09-16 02:24:48] residual Stage B 176/1024 KL=0.269076
+[2026-09-16 02:25:12] residual Stage B 192/1024 KL=0.155214
+[2026-09-16 02:25:36] residual Stage B 208/1024 KL=0.097073
+[2026-09-16 02:26:00] residual Stage B 224/1024 KL=0.132425
+[2026-09-16 02:26:25] residual Stage B 240/1024 KL=0.203439
+[2026-09-16 02:26:49] residual Stage B 256/1024 KL=0.113776
+[2026-09-16 02:27:00] residual validation step=256 acc=0.4297 KL=0.155681
+[2026-09-16 02:27:24] residual Stage B 272/1024 KL=0.329669
+[2026-09-16 02:27:49] residual Stage B 288/1024 KL=0.124711
+[2026-09-16 02:28:13] residual Stage B 304/1024 KL=0.220642
+[2026-09-16 02:28:41] residual Stage B 320/1024 KL=0.160620
+[2026-09-16 02:29:09] residual Stage B 336/1024 KL=0.121923
+[2026-09-16 02:29:37] residual Stage B 352/1024 KL=0.166226
+[2026-09-16 02:30:05] residual Stage B 368/1024 KL=0.441620
+[2026-09-16 02:30:34] residual Stage B 384/1024 KL=0.138851
+[2026-09-16 02:31:02] residual Stage B 400/1024 KL=0.183581
+[2026-09-16 02:31:28] residual Stage B 416/1024 KL=0.136472
+[2026-09-16 02:31:56] residual Stage B 432/1024 KL=0.296381
+[2026-09-16 02:32:22] residual Stage B 448/1024 KL=0.191712
+[2026-09-16 02:32:49] residual Stage B 464/1024 KL=0.068782
+[2026-09-16 02:33:16] residual Stage B 480/1024 KL=0.417557
+[2026-09-16 02:33:41] residual Stage B 496/1024 KL=0.198294
+[2026-09-16 02:34:06] residual Stage B 512/1024 KL=0.285282
+[2026-09-16 02:34:17] residual validation step=512 acc=0.5000 KL=0.162535
+[2026-09-16 02:34:38] residual Stage B 528/1024 KL=0.145359
+[2026-09-16 02:35:00] residual Stage B 544/1024 KL=0.185159
+[2026-09-16 02:35:22] residual Stage B 560/1024 KL=0.145771
+[2026-09-16 02:35:43] residual Stage B 576/1024 KL=0.346591
+[2026-09-16 02:36:05] residual Stage B 592/1024 KL=0.152060
+[2026-09-16 02:36:26] residual Stage B 608/1024 KL=0.170678
+[2026-09-16 02:36:48] residual Stage B 624/1024 KL=0.079065
+[2026-09-16 02:37:10] residual Stage B 640/1024 KL=0.057396
+[2026-09-16 02:37:32] residual Stage B 656/1024 KL=0.134102
+[2026-09-16 02:37:53] residual Stage B 672/1024 KL=0.252641
+[2026-09-16 02:38:15] residual Stage B 688/1024 KL=0.160825
+[2026-09-16 02:38:36] residual Stage B 704/1024 KL=0.152250
+[2026-09-16 02:38:58] residual Stage B 720/1024 KL=0.143201
+[2026-09-16 02:39:22] residual Stage B 736/1024 KL=0.065479
+[2026-09-16 02:39:47] residual Stage B 752/1024 KL=0.101627
+[2026-09-16 02:40:14] residual Stage B 768/1024 KL=0.159554
+[2026-09-16 02:40:30] residual validation step=768 acc=0.4688 KL=0.150382
+[2026-09-16 02:40:57] residual Stage B 784/1024 KL=0.128307
+[2026-09-16 02:41:24] residual Stage B 800/1024 KL=0.128609
+[2026-09-16 02:41:50] residual Stage B 816/1024 KL=0.040723
+[2026-09-16 02:42:17] residual Stage B 832/1024 KL=0.214030
+[2026-09-16 02:42:44] residual Stage B 848/1024 KL=0.109536
+[2026-09-16 02:43:09] residual Stage B 864/1024 KL=0.151513
+[2026-09-16 02:43:34] residual Stage B 880/1024 KL=0.102412
+[2026-09-16 02:43:59] residual Stage B 896/1024 KL=0.312801
+[2026-09-16 02:44:24] residual Stage B 912/1024 KL=0.192365
+[2026-09-16 02:44:49] residual Stage B 928/1024 KL=0.249312
+[2026-09-16 02:45:14] residual Stage B 944/1024 KL=0.232223
+[2026-09-16 02:45:39] residual Stage B 960/1024 KL=0.145590
+[2026-09-16 02:46:04] residual Stage B 976/1024 KL=0.039493
+[2026-09-16 02:46:29] residual Stage B 992/1024 KL=0.156826
+[2026-09-16 02:46:54] residual Stage B 1008/1024 KL=0.075425
+[2026-09-16 02:47:19] residual Stage B 1024/1024 KL=0.269993
+[2026-09-16 02:47:33] residual validation step=1024 acc=0.4453 KL=0.153612
+DONE stage: train_residual
+START stage: evaluate
+Loading weights:   0%|          | 0/146 [00:00<?, ?it/s]Loading weights:   1%|          | 1/146 [00:00<00:26,  5.38it/s]Loading weights: 100%|██████████| 146/146 [00:00<00:00, 533.47it/s]
+[2026-09-16 02:47:51] Final A/B evaluation 16/128
+[2026-09-16 02:47:56] Final A/B evaluation 32/128
+[2026-09-16 02:48:01] Final A/B evaluation 48/128
+[2026-09-16 02:48:06] Final A/B evaluation 64/128
+[2026-09-16 02:48:11] Final A/B evaluation 80/128
+[2026-09-16 02:48:16] Final A/B evaluation 96/128
+[2026-09-16 02:48:20] Final A/B evaluation 112/128
+[2026-09-16 02:48:26] Final A/B evaluation 128/128
+DONE stage: evaluate
+ALL REVERSE QWEN4-TO-LLAMA1 EXPERIMENT STAGES COMPLETED

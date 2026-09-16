@@ -1,0 +1,74 @@
+{
+  "status": "completed",
+  "protocol": "openbookqa_official_model_onboarding_full16_l1_to_q4_options32_v1",
+  "sample_count": 128,
+  "metrics": {
+    "qwen_full_native": {
+      "correct": 96,
+      "accuracy": 0.75
+    },
+    "llama1_full_native": {
+      "correct": 70,
+      "accuracy": 0.546875
+    },
+    "llama1_native_selected32": {
+      "correct": 58,
+      "accuracy": 0.453125
+    },
+    "qwen_native_oracle32": {
+      "correct": 95,
+      "accuracy": 0.7421875
+    },
+    "qwen_zero32": {
+      "correct": 31,
+      "accuracy": 0.2421875
+    },
+    "qwen_no_memory": {
+      "correct": 33,
+      "accuracy": 0.2578125
+    },
+    "qwen_shuffled_oracle32": {
+      "correct": 34,
+      "accuracy": 0.265625
+    }
+  },
+  "pairwise_correctness": {
+    "qwen_full_native_vs_qwen_native_oracle32": {
+      "both_correct": 93,
+      "only_first_correct": 3,
+      "only_second_correct": 2,
+      "both_wrong": 30
+    },
+    "llama1_full_native_vs_llama1_native_selected32": {
+      "both_correct": 46,
+      "only_first_correct": 24,
+      "only_second_correct": 12,
+      "both_wrong": 46
+    },
+    "qwen_native_oracle32_vs_qwen_zero32": {
+      "both_correct": 22,
+      "only_first_correct": 73,
+      "only_second_correct": 9,
+      "both_wrong": 24
+    },
+    "qwen_native_oracle32_vs_qwen_no_memory": {
+      "both_correct": 24,
+      "only_first_correct": 71,
+      "only_second_correct": 9,
+      "both_wrong": 24
+    },
+    "qwen_native_oracle32_vs_qwen_shuffled_oracle32": {
+      "both_correct": 25,
+      "only_first_correct": 70,
+      "only_second_correct": 9,
+      "both_wrong": 24
+    }
+  },
+  "definitions": {
+    "llama1_native_selected32": "Llama1B-native Question + its selected 32 native Option KVs + native Answer.",
+    "qwen_native_oracle32": "Qwen-native Question + Qwen-native KVs at Llama1B-selected RawAnchor positions + native Answer.",
+    "qwen_zero32": "The Oracle32 K/V tensors are replaced by exact zeros after construction.",
+    "qwen_no_memory": "Qwen processes native Question and Answer prefix with no Option-memory cache.",
+    "qwen_shuffled_oracle32": "Each question receives the next test sample's native Oracle32 memory."
+  }
+}
