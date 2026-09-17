@@ -1,0 +1,175 @@
+{
+  "status": "completed",
+  "protocol": "openbookqa_official_llama_qwen_hub_gemma_composability_v1",
+  "sample_count": 128,
+  "definition": "Freeze Llama->Qwen Stage-A/Residual Stage-B and Qwen->Gemma Stage-A/Residual writers; vary only the Qwen Hub state passed between them.",
+  "checkpoints": {
+    "upstream_stage_a_checkpoint": {
+      "path": "/home/yezhe/异构模型/openbookqa_official_full28_mlp_train4096_shared_vs_residual64_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_2048.pt",
+      "sha256": "546fbee0e500880bbb78db054958fdca0ff9ef5f240ccdedc42e428a67f1e7b5"
+    },
+    "upstream_residual_checkpoint": {
+      "path": "/home/yezhe/异构模型/openbookqa_official_full28_mlp_train4096_shared_vs_residual64_l3_to_q4_seed1234/runs/study/stage_b_residual/checkpoints/step_1024.pt",
+      "sha256": "186c4fb81e768074d08f5f5474e6f93b6e3836e6d3f5ccc3e63374120e238562"
+    },
+    "downstream_stage_a_checkpoint": {
+      "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_2048.pt",
+      "sha256": "5c28942c6c85adc1b95a2351ee975a7acf2c0d18144cb13533629d8389ac28e1"
+    },
+    "downstream_residual_checkpoint": {
+      "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_b_residual/checkpoints/step_256.pt",
+      "sha256": "bb4bcbc986a6d5eb88d2d4ef0c1a1458e6ce4cef6be487cf9fe0429168504e03"
+    }
+  },
+  "upstream_qwen_metrics": {
+    "stage_a": {
+      "accuracy": 0.46875,
+      "oracle_agreement": 0.5078125,
+      "oracle_choice_kl": 0.9496069147189132,
+      "k_nmse": 0.04188004869502038,
+      "v_nmse": 0.3155160230817273,
+      "k_cosine": 0.9524839008226991,
+      "v_cosine": 0.8006433011032641
+    },
+    "stage_b_residual": {
+      "accuracy": 0.7421875,
+      "oracle_agreement": 0.703125,
+      "oracle_choice_kl": 0.5615398756708601,
+      "k_nmse": 0.045275690164999105,
+      "v_nmse": 0.32068887900095433,
+      "k_cosine": 0.9505772711709142,
+      "v_cosine": 0.799311907030642
+    },
+    "functional_accuracy_gain": 0.2734375
+  },
+  "gemma_native_oracle32": {
+    "correct": 91,
+    "accuracy": 0.7109375
+  },
+  "metrics": {
+    "downstream_stage_a": {
+      "qwen_native_bridge": {
+        "correct": 90,
+        "accuracy": 0.703125,
+        "agreement_with_gemma_native_oracle32": 0.7578125,
+        "choice_kl_to_gemma_native_oracle32": 0.7630204400084608,
+        "k_nmse_to_gemma_native": 0.08292326313676313,
+        "v_nmse_to_gemma_native": 0.18463101171073504,
+        "k_cosine_to_gemma_native": 0.9497975204139948,
+        "v_cosine_to_gemma_native": 0.8126825080253184
+      },
+      "llama_stage_a": {
+        "correct": 79,
+        "accuracy": 0.6171875,
+        "agreement_with_gemma_native_oracle32": 0.65625,
+        "choice_kl_to_gemma_native_oracle32": 0.867571995057915,
+        "k_nmse_to_gemma_native": 0.09997621981892735,
+        "v_nmse_to_gemma_native": 0.21636307990411296,
+        "k_cosine_to_gemma_native": 0.9413937595672905,
+        "v_cosine_to_gemma_native": 0.7937828563153744
+      },
+      "llama_stage_b_residual": {
+        "correct": 79,
+        "accuracy": 0.6171875,
+        "agreement_with_gemma_native_oracle32": 0.65625,
+        "choice_kl_to_gemma_native_oracle32": 0.8713681804566704,
+        "k_nmse_to_gemma_native": 0.10047653361107223,
+        "v_nmse_to_gemma_native": 0.21675165789201856,
+        "k_cosine_to_gemma_native": 0.9408543724566698,
+        "v_cosine_to_gemma_native": 0.7937564915046096
+      }
+    },
+    "downstream_residual": {
+      "qwen_native_bridge": {
+        "correct": 91,
+        "accuracy": 0.7109375,
+        "agreement_with_gemma_native_oracle32": 0.7734375,
+        "choice_kl_to_gemma_native_oracle32": 0.4963259640862816,
+        "k_nmse_to_gemma_native": 0.0833903041202575,
+        "v_nmse_to_gemma_native": 0.18518729784409516,
+        "k_cosine_to_gemma_native": 0.9495073375292122,
+        "v_cosine_to_gemma_native": 0.8122956114821136
+      },
+      "llama_stage_a": {
+        "correct": 79,
+        "accuracy": 0.6171875,
+        "agreement_with_gemma_native_oracle32": 0.6484375,
+        "choice_kl_to_gemma_native_oracle32": 0.6743999797618017,
+        "k_nmse_to_gemma_native": 0.10041237660334446,
+        "v_nmse_to_gemma_native": 0.21673844766337425,
+        "k_cosine_to_gemma_native": 0.941109606064856,
+        "v_cosine_to_gemma_native": 0.7934428569860756
+      },
+      "llama_stage_b_residual": {
+        "correct": 80,
+        "accuracy": 0.625,
+        "agreement_with_gemma_native_oracle32": 0.640625,
+        "choice_kl_to_gemma_native_oracle32": 0.6772510411246913,
+        "k_nmse_to_gemma_native": 0.10092028614599258,
+        "v_nmse_to_gemma_native": 0.21713540790369734,
+        "k_cosine_to_gemma_native": 0.9405661690980196,
+        "v_cosine_to_gemma_native": 0.7934140269644558
+      }
+    }
+  },
+  "pairwise_correctness": {
+    "downstream_stage_a": {
+      "stage_a_vs_stage_b": {
+        "both_correct": 79,
+        "only_first_correct": 0,
+        "only_second_correct": 0,
+        "both_wrong": 49,
+        "second_minus_first": 0.0
+      },
+      "native_bridge_vs_stage_b": {
+        "both_correct": 71,
+        "only_first_correct": 19,
+        "only_second_correct": 8,
+        "both_wrong": 30,
+        "second_minus_first": -0.0859375
+      },
+      "gemma_oracle_vs_stage_b": {
+        "both_correct": 68,
+        "only_first_correct": 23,
+        "only_second_correct": 11,
+        "both_wrong": 26,
+        "second_minus_first": -0.09375
+      }
+    },
+    "downstream_residual": {
+      "stage_a_vs_stage_b": {
+        "both_correct": 78,
+        "only_first_correct": 1,
+        "only_second_correct": 2,
+        "both_wrong": 47,
+        "second_minus_first": 0.0078125
+      },
+      "native_bridge_vs_stage_b": {
+        "both_correct": 74,
+        "only_first_correct": 17,
+        "only_second_correct": 6,
+        "both_wrong": 31,
+        "second_minus_first": -0.0859375
+      },
+      "gemma_oracle_vs_stage_b": {
+        "both_correct": 67,
+        "only_first_correct": 24,
+        "only_second_correct": 13,
+        "both_wrong": 24,
+        "second_minus_first": -0.0859375
+      }
+    }
+  },
+  "primary_deltas": {
+    "downstream_stage_a": {
+      "stage_b_minus_stage_a_accuracy": 0.0,
+      "stage_b_minus_stage_a_agreement": 0.0,
+      "stage_b_minus_stage_a_choice_kl": 0.0037961853987553695
+    },
+    "downstream_residual": {
+      "stage_b_minus_stage_a_accuracy": 0.0078125,
+      "stage_b_minus_stage_a_agreement": -0.0078125,
+      "stage_b_minus_stage_a_choice_kl": 0.0028510613628895953
+    }
+  }
+}

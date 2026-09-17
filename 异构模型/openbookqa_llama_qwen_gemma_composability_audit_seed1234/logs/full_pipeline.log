@@ -1,0 +1,162 @@
+Thu Sep 17 11:14:36 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.309.01             Driver Version: 535.309.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-PCIE-32GB           On  | 00000000:AF:00.0 Off |                    0 |
+| N/A   36C    P0              24W / 250W |     20MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
++---------------------------------------------------------------------------------------+
+FROZEN LLAMA-QWEN-GEMMA COMPOSABILITY AUDIT STARTED
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   9%|▉         | 81/883 [00:00<00:01, 733.88it/s]Loading weights:  18%|█▊        | 155/883 [00:00<00:01, 632.89it/s]Loading weights:  25%|██▌       | 223/883 [00:00<00:01, 642.95it/s]Loading weights:  33%|███▎      | 289/883 [00:00<00:00, 618.20it/s]Loading weights:  40%|████      | 354/883 [00:00<00:00, 626.47it/s]Loading weights:  48%|████▊     | 420/883 [00:00<00:00, 610.29it/s]Loading weights:  78%|███████▊  | 687/883 [00:00<00:00, 1237.59it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 1051.34it/s]
+Llama-Qwen-Gemma audit: 1/128 id=7-334
+Llama-Qwen-Gemma audit: 2/128 id=7-1108
+Llama-Qwen-Gemma audit: 3/128 id=406
+Llama-Qwen-Gemma audit: 4/128 id=7-1197
+Llama-Qwen-Gemma audit: 5/128 id=9-501
+Llama-Qwen-Gemma audit: 6/128 id=7-986
+Llama-Qwen-Gemma audit: 7/128 id=9-230
+Llama-Qwen-Gemma audit: 8/128 id=9-163
+Llama-Qwen-Gemma audit: 9/128 id=841
+Llama-Qwen-Gemma audit: 10/128 id=7-108
+Llama-Qwen-Gemma audit: 11/128 id=9-222
+Llama-Qwen-Gemma audit: 12/128 id=3
+Llama-Qwen-Gemma audit: 13/128 id=9-552
+Llama-Qwen-Gemma audit: 14/128 id=44
+Llama-Qwen-Gemma audit: 15/128 id=8-308
+Llama-Qwen-Gemma audit: 16/128 id=385
+Llama-Qwen-Gemma audit: 17/128 id=769
+Llama-Qwen-Gemma audit: 18/128 id=9-1164
+Llama-Qwen-Gemma audit: 19/128 id=9-433
+Llama-Qwen-Gemma audit: 20/128 id=187
+Llama-Qwen-Gemma audit: 21/128 id=9-554
+Llama-Qwen-Gemma audit: 22/128 id=1345
+Llama-Qwen-Gemma audit: 23/128 id=9-317
+Llama-Qwen-Gemma audit: 24/128 id=9-454
+Llama-Qwen-Gemma audit: 25/128 id=224
+Llama-Qwen-Gemma audit: 26/128 id=1712
+Llama-Qwen-Gemma audit: 27/128 id=1359
+Llama-Qwen-Gemma audit: 28/128 id=1126
+Llama-Qwen-Gemma audit: 29/128 id=676
+Llama-Qwen-Gemma audit: 30/128 id=1618
+Llama-Qwen-Gemma audit: 31/128 id=9-866
+Llama-Qwen-Gemma audit: 32/128 id=1568
+Llama-Qwen-Gemma audit: 33/128 id=767
+Llama-Qwen-Gemma audit: 34/128 id=342
+Llama-Qwen-Gemma audit: 35/128 id=9-523
+Llama-Qwen-Gemma audit: 36/128 id=82
+Llama-Qwen-Gemma audit: 37/128 id=520
+Llama-Qwen-Gemma audit: 38/128 id=620
+Llama-Qwen-Gemma audit: 39/128 id=661
+Llama-Qwen-Gemma audit: 40/128 id=9-440
+Llama-Qwen-Gemma audit: 41/128 id=9-776
+Llama-Qwen-Gemma audit: 42/128 id=8-373
+Llama-Qwen-Gemma audit: 43/128 id=9-1186
+Llama-Qwen-Gemma audit: 44/128 id=381
+Llama-Qwen-Gemma audit: 45/128 id=9-540
+Llama-Qwen-Gemma audit: 46/128 id=389
+Llama-Qwen-Gemma audit: 47/128 id=9-206
+Llama-Qwen-Gemma audit: 48/128 id=9-463
+Llama-Qwen-Gemma audit: 49/128 id=28
+Llama-Qwen-Gemma audit: 50/128 id=644
+Llama-Qwen-Gemma audit: 51/128 id=9-520
+Llama-Qwen-Gemma audit: 52/128 id=9-199
+Llama-Qwen-Gemma audit: 53/128 id=257
+Llama-Qwen-Gemma audit: 54/128 id=7-561
+Llama-Qwen-Gemma audit: 55/128 id=9-645
+Llama-Qwen-Gemma audit: 56/128 id=9-30
+Llama-Qwen-Gemma audit: 57/128 id=1458
+Llama-Qwen-Gemma audit: 58/128 id=8-213
+Llama-Qwen-Gemma audit: 59/128 id=8-350
+Llama-Qwen-Gemma audit: 60/128 id=9-390
+Llama-Qwen-Gemma audit: 61/128 id=163
+Llama-Qwen-Gemma audit: 62/128 id=8-186
+Llama-Qwen-Gemma audit: 63/128 id=8-409
+Llama-Qwen-Gemma audit: 64/128 id=1955
+Llama-Qwen-Gemma audit: 65/128 id=8-165
+Llama-Qwen-Gemma audit: 66/128 id=7-59
+Llama-Qwen-Gemma audit: 67/128 id=9-478
+Llama-Qwen-Gemma audit: 68/128 id=8-312
+Llama-Qwen-Gemma audit: 69/128 id=761
+Llama-Qwen-Gemma audit: 70/128 id=470
+Llama-Qwen-Gemma audit: 71/128 id=1189
+Llama-Qwen-Gemma audit: 72/128 id=8-378
+Llama-Qwen-Gemma audit: 73/128 id=9-416
+Llama-Qwen-Gemma audit: 74/128 id=1611
+Llama-Qwen-Gemma audit: 75/128 id=926
+Llama-Qwen-Gemma audit: 76/128 id=8-93
+Llama-Qwen-Gemma audit: 77/128 id=8-395
+Llama-Qwen-Gemma audit: 78/128 id=9-652
+Llama-Qwen-Gemma audit: 79/128 id=9-1046
+Llama-Qwen-Gemma audit: 80/128 id=7-727
+Llama-Qwen-Gemma audit: 81/128 id=9-783
+Llama-Qwen-Gemma audit: 82/128 id=9-187
+Llama-Qwen-Gemma audit: 83/128 id=1129
+Llama-Qwen-Gemma audit: 84/128 id=1635
+Llama-Qwen-Gemma audit: 85/128 id=8-190
+Llama-Qwen-Gemma audit: 86/128 id=7-769
+Llama-Qwen-Gemma audit: 87/128 id=9-799
+Llama-Qwen-Gemma audit: 88/128 id=1756
+Llama-Qwen-Gemma audit: 89/128 id=8-257
+Llama-Qwen-Gemma audit: 90/128 id=597
+Llama-Qwen-Gemma audit: 91/128 id=1582
+Llama-Qwen-Gemma audit: 92/128 id=7-386
+Llama-Qwen-Gemma audit: 93/128 id=170
+Llama-Qwen-Gemma audit: 94/128 id=7-95
+Llama-Qwen-Gemma audit: 95/128 id=1272
+Llama-Qwen-Gemma audit: 96/128 id=8-201
+Llama-Qwen-Gemma audit: 97/128 id=1393
+Llama-Qwen-Gemma audit: 98/128 id=1309
+Llama-Qwen-Gemma audit: 99/128 id=1698
+Llama-Qwen-Gemma audit: 100/128 id=496
+Llama-Qwen-Gemma audit: 101/128 id=359
+Llama-Qwen-Gemma audit: 102/128 id=1918
+Llama-Qwen-Gemma audit: 103/128 id=8-493
+Llama-Qwen-Gemma audit: 104/128 id=7-270
+Llama-Qwen-Gemma audit: 105/128 id=9-124
+Llama-Qwen-Gemma audit: 106/128 id=1240
+Llama-Qwen-Gemma audit: 107/128 id=1023
+Llama-Qwen-Gemma audit: 108/128 id=147
+Llama-Qwen-Gemma audit: 109/128 id=8-97
+Llama-Qwen-Gemma audit: 110/128 id=1161
+Llama-Qwen-Gemma audit: 111/128 id=1774
+Llama-Qwen-Gemma audit: 112/128 id=9-431
+Llama-Qwen-Gemma audit: 113/128 id=9-1053
+Llama-Qwen-Gemma audit: 114/128 id=9-437
+Llama-Qwen-Gemma audit: 115/128 id=8-478
+Llama-Qwen-Gemma audit: 116/128 id=1200
+Llama-Qwen-Gemma audit: 117/128 id=7-372
+Llama-Qwen-Gemma audit: 118/128 id=8-107
+Llama-Qwen-Gemma audit: 119/128 id=8-307
+Llama-Qwen-Gemma audit: 120/128 id=936
+Llama-Qwen-Gemma audit: 121/128 id=880
+Llama-Qwen-Gemma audit: 122/128 id=8-205
+Llama-Qwen-Gemma audit: 123/128 id=9-881
+Llama-Qwen-Gemma audit: 124/128 id=7-942
+Llama-Qwen-Gemma audit: 125/128 id=7-884
+Llama-Qwen-Gemma audit: 126/128 id=1426
+Llama-Qwen-Gemma audit: 127/128 id=7-1053
+Llama-Qwen-Gemma audit: 128/128 id=1937
+{
+  "downstream_stage_a": {
+    "stage_b_minus_stage_a_accuracy": 0.0,
+    "stage_b_minus_stage_a_agreement": 0.0,
+    "stage_b_minus_stage_a_choice_kl": 0.0037961853987553695
+  },
+  "downstream_residual": {
+    "stage_b_minus_stage_a_accuracy": 0.0078125,
+    "stage_b_minus_stage_a_agreement": -0.0078125,
+    "stage_b_minus_stage_a_choice_kl": 0.0028510613628895953
+  }
+}
+ALL EXPERIMENTS COMPLETED
