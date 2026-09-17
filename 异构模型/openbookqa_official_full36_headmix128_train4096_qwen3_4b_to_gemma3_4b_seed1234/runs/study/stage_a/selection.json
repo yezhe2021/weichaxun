@@ -1,0 +1,175 @@
+{
+  "selection": "official validation128 only",
+  "best_accuracy": {
+    "step": 2048,
+    "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_2048.pt",
+    "representation": {
+      "loss": 0.5082970224320889,
+      "k_nmse": 0.08510854933410883,
+      "v_nmse": 0.18062848970294,
+      "k_cosine": 0.9487768039107323,
+      "v_cosine": 0.8086632005870342
+    },
+    "functional": {
+      "accuracy": 0.6953125,
+      "oracle_accuracy": 0.7578125,
+      "oracle_agreement": 0.640625,
+      "choice_kl": 1.1331789482422892
+    }
+  },
+  "best_choice_kl": {
+    "step": 1536,
+    "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_1536.pt",
+    "representation": {
+      "loss": 0.5152354724705219,
+      "k_nmse": 0.08656830806285143,
+      "v_nmse": 0.18362314347177744,
+      "k_cosine": 0.9477762170135975,
+      "v_cosine": 0.807179756462574
+    },
+    "functional": {
+      "accuracy": 0.6640625,
+      "oracle_accuracy": 0.7578125,
+      "oracle_agreement": 0.640625,
+      "choice_kl": 1.1047473512500119
+    }
+  },
+  "candidates": [
+    {
+      "step": 256,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_256.pt",
+      "representation": {
+        "loss": 0.6761202774941921,
+        "k_nmse": 0.11267538322135806,
+        "v_nmse": 0.26217104960232973,
+        "k_cosine": 0.9320626705884933,
+        "v_cosine": 0.7666634656488895
+      },
+      "functional": {
+        "accuracy": 0.578125,
+        "oracle_accuracy": 0.7578125,
+        "oracle_agreement": 0.5625,
+        "choice_kl": 1.168407838505459
+      }
+    },
+    {
+      "step": 512,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_512.pt",
+      "representation": {
+        "loss": 0.5952723100781441,
+        "k_nmse": 0.10041279066354036,
+        "v_nmse": 0.2235981086269021,
+        "k_cosine": 0.9396350160241127,
+        "v_cosine": 0.7891035750508308
+      },
+      "functional": {
+        "accuracy": 0.5859375,
+        "oracle_accuracy": 0.7578125,
+        "oracle_agreement": 0.59375,
+        "choice_kl": 1.2509235891433832
+      }
+    },
+    {
+      "step": 768,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+      "representation": {
+        "loss": 0.5607868321239948,
+        "k_nmse": 0.09526405995711684,
+        "v_nmse": 0.20640570670366287,
+        "k_cosine": 0.9428137056529522,
+        "v_cosine": 0.7980692312121391
+      },
+      "functional": {
+        "accuracy": 0.6328125,
+        "oracle_accuracy": 0.7578125,
+        "oracle_agreement": 0.5859375,
+        "choice_kl": 1.2521779005953135
+      }
+    },
+    {
+      "step": 1024,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_1024.pt",
+      "representation": {
+        "loss": 0.5398946143686771,
+        "k_nmse": 0.09073886461555958,
+        "v_nmse": 0.19619937520474195,
+        "k_cosine": 0.9453171268105507,
+        "v_cosine": 0.801726471632719
+      },
+      "functional": {
+        "accuracy": 0.59375,
+        "oracle_accuracy": 0.7578125,
+        "oracle_agreement": 0.5703125,
+        "choice_kl": 1.1854457610061218
+      }
+    },
+    {
+      "step": 1280,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_1280.pt",
+      "representation": {
+        "loss": 0.5266100540757179,
+        "k_nmse": 0.08841518266126513,
+        "v_nmse": 0.18967644684016705,
+        "k_cosine": 0.9465574324131012,
+        "v_cosine": 0.8049241453409195
+      },
+      "functional": {
+        "accuracy": 0.65625,
+        "oracle_accuracy": 0.7578125,
+        "oracle_agreement": 0.609375,
+        "choice_kl": 1.1449156181744229
+      }
+    },
+    {
+      "step": 1536,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_1536.pt",
+      "representation": {
+        "loss": 0.5152354724705219,
+        "k_nmse": 0.08656830806285143,
+        "v_nmse": 0.18362314347177744,
+        "k_cosine": 0.9477762170135975,
+        "v_cosine": 0.807179756462574
+      },
+      "functional": {
+        "accuracy": 0.6640625,
+        "oracle_accuracy": 0.7578125,
+        "oracle_agreement": 0.640625,
+        "choice_kl": 1.1047473512500119
+      }
+    },
+    {
+      "step": 1792,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_1792.pt",
+      "representation": {
+        "loss": 0.5092227980494499,
+        "k_nmse": 0.0857387026771903,
+        "v_nmse": 0.1808574516326189,
+        "k_cosine": 0.9485560804605484,
+        "v_cosine": 0.8088172823190689
+      },
+      "functional": {
+        "accuracy": 0.640625,
+        "oracle_accuracy": 0.7578125,
+        "oracle_agreement": 0.5859375,
+        "choice_kl": 1.1809195012580176
+      }
+    },
+    {
+      "step": 2048,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_2048.pt",
+      "representation": {
+        "loss": 0.5082970224320889,
+        "k_nmse": 0.08510854933410883,
+        "v_nmse": 0.18062848970294,
+        "k_cosine": 0.9487768039107323,
+        "v_cosine": 0.8086632005870342
+      },
+      "functional": {
+        "accuracy": 0.6953125,
+        "oracle_accuracy": 0.7578125,
+        "oracle_agreement": 0.640625,
+        "choice_kl": 1.1331789482422892
+      }
+    }
+  ]
+}

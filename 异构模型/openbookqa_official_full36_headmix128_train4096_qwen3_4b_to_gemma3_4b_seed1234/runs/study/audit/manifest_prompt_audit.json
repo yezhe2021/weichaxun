@@ -1,0 +1,66 @@
+{
+  "signature": "3300911488d04fe8cf250505388d8dc58c30159ef567d5175df77fc223f8be06",
+  "dataset": "Official OpenBookQA Main splits",
+  "prompt": "Question -> Options -> Answer:",
+  "split_policy": "official OpenBookQA Main splits; seed1234 shuffle; train4096/validation128/test128",
+  "split_disjoint": true,
+  "no_truncation": true,
+  "splits": {
+    "train": {
+      "count": 4096,
+      "ids_sha256": "61ef5d1de1f88d3bdaf9698e9f02eddd77418b43ba5129c65ac061a2e226a218",
+      "first_id": "14-120",
+      "last_id": "12-415"
+    },
+    "validation": {
+      "count": 128,
+      "ids_sha256": "1cb2439ef228a1d7dc17beae19acda7f798ae3020ea9b65d41cf1d9abdf4a4a5",
+      "first_id": "9-888",
+      "last_id": "7-324"
+    },
+    "test": {
+      "count": 128,
+      "ids_sha256": "402e20c4f34eb2036c42e02ac36e27c217134da6c943b105e7a0640f1a1b82a9",
+      "first_id": "7-334",
+      "last_id": "1937"
+    }
+  },
+  "answer_tokenization": {
+    "qwen": {
+      "ids": [
+        16141,
+        25
+      ],
+      "tokens": [
+        "Answer",
+        ":"
+      ],
+      "choice_ids": {
+        "A": 362,
+        "B": 425,
+        "C": 356,
+        "D": 422
+      }
+    },
+    "gemma": {
+      "ids": [
+        7925,
+        236787
+      ],
+      "tokens": [
+        "Answer",
+        ":"
+      ],
+      "choice_ids": {
+        "A": 562,
+        "B": 603,
+        "C": 565,
+        "D": 622
+      }
+    }
+  },
+  "observed_max_body_tokens": {
+    "qwen": 110,
+    "gemma": 112
+  }
+}

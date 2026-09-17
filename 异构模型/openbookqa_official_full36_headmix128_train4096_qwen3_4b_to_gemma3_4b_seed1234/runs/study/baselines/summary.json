@@ -1,0 +1,85 @@
+{
+  "status": "completed",
+  "protocol": "openbookqa_official_qwen3_4b_to_gemma3_4b_full36_headmix128_options32_v1",
+  "sample_count": 128,
+  "metrics": {
+    "qwen_full_native": {
+      "correct": 96,
+      "accuracy": 0.75
+    },
+    "qwen_native_selected32": {
+      "correct": 94,
+      "accuracy": 0.734375
+    },
+    "gemma_full_native": {
+      "correct": 97,
+      "accuracy": 0.7578125
+    },
+    "gemma_native_oracle32": {
+      "correct": 91,
+      "accuracy": 0.7109375
+    },
+    "gemma_self_selected32": {
+      "correct": 90,
+      "accuracy": 0.703125
+    },
+    "gemma_zero32": {
+      "correct": 32,
+      "accuracy": 0.25
+    },
+    "gemma_no_memory": {
+      "correct": 33,
+      "accuracy": 0.2578125
+    },
+    "gemma_shuffled_oracle32": {
+      "correct": 34,
+      "accuracy": 0.265625
+    }
+  },
+  "pairwise_correctness": {
+    "gemma_full_native_vs_gemma_native_oracle32": {
+      "both_correct": 90,
+      "only_first_correct": 7,
+      "only_second_correct": 1,
+      "both_wrong": 30
+    },
+    "qwen_full_native_vs_qwen_native_selected32": {
+      "both_correct": 91,
+      "only_first_correct": 5,
+      "only_second_correct": 3,
+      "both_wrong": 29
+    },
+    "gemma_native_oracle32_vs_gemma_self_selected32": {
+      "both_correct": 89,
+      "only_first_correct": 2,
+      "only_second_correct": 1,
+      "both_wrong": 36
+    },
+    "gemma_native_oracle32_vs_gemma_zero32": {
+      "both_correct": 26,
+      "only_first_correct": 65,
+      "only_second_correct": 6,
+      "both_wrong": 31
+    },
+    "gemma_native_oracle32_vs_gemma_no_memory": {
+      "both_correct": 26,
+      "only_first_correct": 65,
+      "only_second_correct": 7,
+      "both_wrong": 30
+    },
+    "gemma_native_oracle32_vs_gemma_shuffled_oracle32": {
+      "both_correct": 27,
+      "only_first_correct": 64,
+      "only_second_correct": 7,
+      "both_wrong": 30
+    }
+  },
+  "definitions": {
+    "qwen_native_selected32": "Qwen-native Question + its selected 32 native Option KVs + native Answer.",
+    "gemma_native_oracle32": "Gemma-native Question + Gemma-native KVs at Qwen-selected RawAnchor positions + native Answer.",
+    "gemma_self_selected32": "Gemma-native Question + its own decision-selected 32 native Option KVs + native Answer.",
+    "gemma_zero32": "The Oracle32 K/V tensors are replaced by exact zeros after construction.",
+    "gemma_no_memory": "Gemma processes native Question and Answer prefix with no Option-memory cache.",
+    "gemma_shuffled_oracle32": "Each question receives the next test sample's native Oracle32 memory."
+  }
+}

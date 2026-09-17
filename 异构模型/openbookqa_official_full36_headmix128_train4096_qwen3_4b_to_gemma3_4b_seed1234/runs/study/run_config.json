@@ -1,0 +1,39 @@
+{
+  "seed": 1234,
+  "dataset": {
+    "train": "/home/yezhe/all_models/datasets/allenai/OpenBookQA-V1-Sep2018/Data/Main/train.jsonl",
+    "validation": "/home/yezhe/all_models/datasets/allenai/OpenBookQA-V1-Sep2018/Data/Main/dev.jsonl",
+    "test": "/home/yezhe/all_models/datasets/allenai/OpenBookQA-V1-Sep2018/Data/Main/test.jsonl"
+  },
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "gemma": "/home/yezhe/all_models/models/LLM-Research/gemma-3-4b-it"
+  },
+  "train_samples": 4096,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "audit_samples": 32,
+  "regions": 32,
+  "max_body_tokens": 2048,
+  "batch_size": 8,
+  "stage_a_epochs": 4,
+  "stage_a_steps": 2048,
+  "stage_a_learning_rate": 0.001,
+  "stage_b_epochs": 2,
+  "stage_b_steps": 1024,
+  "validation_interval_steps": 256,
+  "learning_rate": 0.0001,
+  "clip": 30.0,
+  "temperature": 1.0,
+  "adapter_rank": 64,
+  "depth_hidden_dim": 1024,
+  "depth_output_dim": 128,
+  "head_mapping": "full_head",
+  "gemma_dtype": "float32",
+  "attention_implementation": "eager",
+  "architecture": "full36_headmix128_qwen4_to_gemma4",
+  "protocol": "openbookqa_official_qwen3_4b_to_gemma3_4b_full36_headmix128_options32_v1",
+  "split_policy": "official OpenBookQA Main splits; seed1234 shuffle; train4096/validation128/test128",
+  "mode": "study",
+  "signature": "3300911488d04fe8cf250505388d8dc58c30159ef567d5175df77fc223f8be06"
+}
