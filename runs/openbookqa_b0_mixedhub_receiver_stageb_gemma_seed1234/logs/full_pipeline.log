@@ -1,0 +1,273 @@
+Thu Sep 17 11:43:18 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.309.01             Driver Version: 535.309.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-PCIE-32GB           On  | 00000000:AF:00.0 Off |                    0 |
+| N/A   36C    P0              24W / 250W |     20MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
++---------------------------------------------------------------------------------------+
+START teachers
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   9%|▉         | 78/883 [00:00<00:01, 760.03it/s]Loading weights:  18%|█▊        | 155/883 [00:00<00:01, 671.59it/s]Loading weights:  25%|██▌       | 223/883 [00:00<00:00, 664.12it/s]Loading weights:  33%|███▎      | 290/883 [00:00<00:01, 582.25it/s]Loading weights:  40%|████      | 354/883 [00:00<00:00, 600.47it/s]Loading weights:  47%|████▋     | 417/883 [00:00<00:00, 591.43it/s]Loading weights:  70%|██████▉   | 615/883 [00:00<00:00, 1006.87it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 1004.29it/s]
+[2026-09-17 11:43:39] Llama-anchor Gemma teachers train: 32/4096
+[2026-09-17 11:43:44] Llama-anchor Gemma teachers train: 64/4096
+[2026-09-17 11:43:49] Llama-anchor Gemma teachers train: 96/4096
+[2026-09-17 11:43:54] Llama-anchor Gemma teachers train: 128/4096
+[2026-09-17 11:43:59] Llama-anchor Gemma teachers train: 160/4096
+[2026-09-17 11:44:04] Llama-anchor Gemma teachers train: 192/4096
+[2026-09-17 11:44:09] Llama-anchor Gemma teachers train: 224/4096
+[2026-09-17 11:44:14] Llama-anchor Gemma teachers train: 256/4096
+[2026-09-17 11:44:19] Llama-anchor Gemma teachers train: 288/4096
+[2026-09-17 11:44:24] Llama-anchor Gemma teachers train: 320/4096
+[2026-09-17 11:44:29] Llama-anchor Gemma teachers train: 352/4096
+[2026-09-17 11:44:34] Llama-anchor Gemma teachers train: 384/4096
+[2026-09-17 11:44:39] Llama-anchor Gemma teachers train: 416/4096
+[2026-09-17 11:44:45] Llama-anchor Gemma teachers train: 448/4096
+[2026-09-17 11:44:50] Llama-anchor Gemma teachers train: 480/4096
+[2026-09-17 11:44:55] Llama-anchor Gemma teachers train: 512/4096
+[2026-09-17 11:45:00] Llama-anchor Gemma teachers train: 544/4096
+[2026-09-17 11:45:05] Llama-anchor Gemma teachers train: 576/4096
+[2026-09-17 11:45:10] Llama-anchor Gemma teachers train: 608/4096
+[2026-09-17 11:45:15] Llama-anchor Gemma teachers train: 640/4096
+[2026-09-17 11:45:20] Llama-anchor Gemma teachers train: 672/4096
+[2026-09-17 11:45:25] Llama-anchor Gemma teachers train: 704/4096
+[2026-09-17 11:45:30] Llama-anchor Gemma teachers train: 736/4096
+[2026-09-17 11:45:36] Llama-anchor Gemma teachers train: 768/4096
+[2026-09-17 11:45:41] Llama-anchor Gemma teachers train: 800/4096
+[2026-09-17 11:45:46] Llama-anchor Gemma teachers train: 832/4096
+[2026-09-17 11:45:51] Llama-anchor Gemma teachers train: 864/4096
+[2026-09-17 11:45:56] Llama-anchor Gemma teachers train: 896/4096
+[2026-09-17 11:46:01] Llama-anchor Gemma teachers train: 928/4096
+[2026-09-17 11:46:06] Llama-anchor Gemma teachers train: 960/4096
+[2026-09-17 11:46:11] Llama-anchor Gemma teachers train: 992/4096
+[2026-09-17 11:46:16] Llama-anchor Gemma teachers train: 1024/4096
+[2026-09-17 11:46:21] Llama-anchor Gemma teachers train: 1056/4096
+[2026-09-17 11:46:26] Llama-anchor Gemma teachers train: 1088/4096
+[2026-09-17 11:46:31] Llama-anchor Gemma teachers train: 1120/4096
+[2026-09-17 11:46:36] Llama-anchor Gemma teachers train: 1152/4096
+[2026-09-17 11:46:41] Llama-anchor Gemma teachers train: 1184/4096
+[2026-09-17 11:46:47] Llama-anchor Gemma teachers train: 1216/4096
+[2026-09-17 11:46:52] Llama-anchor Gemma teachers train: 1248/4096
+[2026-09-17 11:46:57] Llama-anchor Gemma teachers train: 1280/4096
+[2026-09-17 11:47:02] Llama-anchor Gemma teachers train: 1312/4096
+[2026-09-17 11:47:07] Llama-anchor Gemma teachers train: 1344/4096
+[2026-09-17 11:47:12] Llama-anchor Gemma teachers train: 1376/4096
+[2026-09-17 11:47:17] Llama-anchor Gemma teachers train: 1408/4096
+[2026-09-17 11:47:22] Llama-anchor Gemma teachers train: 1440/4096
+[2026-09-17 11:47:27] Llama-anchor Gemma teachers train: 1472/4096
+[2026-09-17 11:47:32] Llama-anchor Gemma teachers train: 1504/4096
+[2026-09-17 11:47:37] Llama-anchor Gemma teachers train: 1536/4096
+[2026-09-17 11:47:42] Llama-anchor Gemma teachers train: 1568/4096
+[2026-09-17 11:47:47] Llama-anchor Gemma teachers train: 1600/4096
+[2026-09-17 11:47:52] Llama-anchor Gemma teachers train: 1632/4096
+[2026-09-17 11:47:57] Llama-anchor Gemma teachers train: 1664/4096
+[2026-09-17 11:48:02] Llama-anchor Gemma teachers train: 1696/4096
+[2026-09-17 11:48:07] Llama-anchor Gemma teachers train: 1728/4096
+[2026-09-17 11:48:12] Llama-anchor Gemma teachers train: 1760/4096
+[2026-09-17 11:48:17] Llama-anchor Gemma teachers train: 1792/4096
+[2026-09-17 11:48:22] Llama-anchor Gemma teachers train: 1824/4096
+[2026-09-17 11:48:27] Llama-anchor Gemma teachers train: 1856/4096
+[2026-09-17 11:48:32] Llama-anchor Gemma teachers train: 1888/4096
+[2026-09-17 11:48:37] Llama-anchor Gemma teachers train: 1920/4096
+[2026-09-17 11:48:43] Llama-anchor Gemma teachers train: 1952/4096
+[2026-09-17 11:48:48] Llama-anchor Gemma teachers train: 1984/4096
+[2026-09-17 11:48:53] Llama-anchor Gemma teachers train: 2016/4096
+[2026-09-17 11:48:58] Llama-anchor Gemma teachers train: 2048/4096
+[2026-09-17 11:49:04] Llama-anchor Gemma teachers train: 2080/4096
+[2026-09-17 11:49:10] Llama-anchor Gemma teachers train: 2112/4096
+[2026-09-17 11:49:15] Llama-anchor Gemma teachers train: 2144/4096
+[2026-09-17 11:49:20] Llama-anchor Gemma teachers train: 2176/4096
+[2026-09-17 11:49:26] Llama-anchor Gemma teachers train: 2208/4096
+[2026-09-17 11:49:31] Llama-anchor Gemma teachers train: 2240/4096
+[2026-09-17 11:49:37] Llama-anchor Gemma teachers train: 2272/4096
+[2026-09-17 11:49:42] Llama-anchor Gemma teachers train: 2304/4096
+[2026-09-17 11:49:47] Llama-anchor Gemma teachers train: 2336/4096
+[2026-09-17 11:49:53] Llama-anchor Gemma teachers train: 2368/4096
+[2026-09-17 11:49:58] Llama-anchor Gemma teachers train: 2400/4096
+[2026-09-17 11:50:04] Llama-anchor Gemma teachers train: 2432/4096
+[2026-09-17 11:50:09] Llama-anchor Gemma teachers train: 2464/4096
+[2026-09-17 11:50:15] Llama-anchor Gemma teachers train: 2496/4096
+[2026-09-17 11:50:22] Llama-anchor Gemma teachers train: 2528/4096
+[2026-09-17 11:50:28] Llama-anchor Gemma teachers train: 2560/4096
+[2026-09-17 11:50:35] Llama-anchor Gemma teachers train: 2592/4096
+[2026-09-17 11:50:40] Llama-anchor Gemma teachers train: 2624/4096
+[2026-09-17 11:50:46] Llama-anchor Gemma teachers train: 2656/4096
+[2026-09-17 11:50:51] Llama-anchor Gemma teachers train: 2688/4096
+[2026-09-17 11:50:57] Llama-anchor Gemma teachers train: 2720/4096
+[2026-09-17 11:51:02] Llama-anchor Gemma teachers train: 2752/4096
+[2026-09-17 11:51:07] Llama-anchor Gemma teachers train: 2784/4096
+[2026-09-17 11:51:13] Llama-anchor Gemma teachers train: 2816/4096
+[2026-09-17 11:51:18] Llama-anchor Gemma teachers train: 2848/4096
+[2026-09-17 11:51:24] Llama-anchor Gemma teachers train: 2880/4096
+[2026-09-17 11:51:32] Llama-anchor Gemma teachers train: 2912/4096
+[2026-09-17 11:51:41] Llama-anchor Gemma teachers train: 2944/4096
+[2026-09-17 11:51:49] Llama-anchor Gemma teachers train: 2976/4096
+[2026-09-17 11:51:58] Llama-anchor Gemma teachers train: 3008/4096
+[2026-09-17 11:52:06] Llama-anchor Gemma teachers train: 3040/4096
+[2026-09-17 11:52:15] Llama-anchor Gemma teachers train: 3072/4096
+[2026-09-17 11:52:23] Llama-anchor Gemma teachers train: 3104/4096
+[2026-09-17 11:52:32] Llama-anchor Gemma teachers train: 3136/4096
+[2026-09-17 11:52:39] Llama-anchor Gemma teachers train: 3168/4096
+[2026-09-17 11:52:46] Llama-anchor Gemma teachers train: 3200/4096
+[2026-09-17 11:52:52] Llama-anchor Gemma teachers train: 3232/4096
+[2026-09-17 11:52:59] Llama-anchor Gemma teachers train: 3264/4096
+[2026-09-17 11:53:06] Llama-anchor Gemma teachers train: 3296/4096
+[2026-09-17 11:53:12] Llama-anchor Gemma teachers train: 3328/4096
+[2026-09-17 11:53:18] Llama-anchor Gemma teachers train: 3360/4096
+[2026-09-17 11:53:24] Llama-anchor Gemma teachers train: 3392/4096
+[2026-09-17 11:53:30] Llama-anchor Gemma teachers train: 3424/4096
+[2026-09-17 11:53:36] Llama-anchor Gemma teachers train: 3456/4096
+[2026-09-17 11:53:42] Llama-anchor Gemma teachers train: 3488/4096
+[2026-09-17 11:53:48] Llama-anchor Gemma teachers train: 3520/4096
+[2026-09-17 11:53:54] Llama-anchor Gemma teachers train: 3552/4096
+[2026-09-17 11:53:59] Llama-anchor Gemma teachers train: 3584/4096
+[2026-09-17 11:54:05] Llama-anchor Gemma teachers train: 3616/4096
+[2026-09-17 11:54:11] Llama-anchor Gemma teachers train: 3648/4096
+[2026-09-17 11:54:17] Llama-anchor Gemma teachers train: 3680/4096
+[2026-09-17 11:54:23] Llama-anchor Gemma teachers train: 3712/4096
+[2026-09-17 11:54:29] Llama-anchor Gemma teachers train: 3744/4096
+[2026-09-17 11:54:35] Llama-anchor Gemma teachers train: 3776/4096
+[2026-09-17 11:54:41] Llama-anchor Gemma teachers train: 3808/4096
+[2026-09-17 11:54:47] Llama-anchor Gemma teachers train: 3840/4096
+[2026-09-17 11:54:53] Llama-anchor Gemma teachers train: 3872/4096
+[2026-09-17 11:54:58] Llama-anchor Gemma teachers train: 3904/4096
+[2026-09-17 11:55:03] Llama-anchor Gemma teachers train: 3936/4096
+[2026-09-17 11:55:09] Llama-anchor Gemma teachers train: 3968/4096
+[2026-09-17 11:55:14] Llama-anchor Gemma teachers train: 4000/4096
+[2026-09-17 11:55:19] Llama-anchor Gemma teachers train: 4032/4096
+[2026-09-17 11:55:25] Llama-anchor Gemma teachers train: 4064/4096
+[2026-09-17 11:55:30] Llama-anchor Gemma teachers train: 4096/4096
+[2026-09-17 11:55:36] Llama-anchor Gemma teachers validation: 32/128
+[2026-09-17 11:55:41] Llama-anchor Gemma teachers validation: 64/128
+[2026-09-17 11:55:47] Llama-anchor Gemma teachers validation: 96/128
+[2026-09-17 11:55:52] Llama-anchor Gemma teachers validation: 128/128
+[2026-09-17 11:55:57] Llama-anchor Gemma teachers test: 32/128
+[2026-09-17 11:56:03] Llama-anchor Gemma teachers test: 64/128
+[2026-09-17 11:56:08] Llama-anchor Gemma teachers test: 96/128
+[2026-09-17 11:56:13] Llama-anchor Gemma teachers test: 128/128
+DONE teachers
+START train
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   8%|▊         | 68/883 [00:00<00:01, 643.85it/s]Loading weights:  15%|█▌        | 133/883 [00:00<00:01, 628.90it/s]Loading weights:  24%|██▍       | 210/883 [00:00<00:00, 683.73it/s]Loading weights:  32%|███▏      | 279/883 [00:00<00:00, 667.97it/s]Loading weights:  40%|████      | 354/883 [00:00<00:00, 659.35it/s]Loading weights:  48%|████▊     | 421/883 [00:00<00:00, 622.68it/s]Loading weights:  77%|███████▋  | 679/883 [00:00<00:00, 1209.87it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 1068.97it/s]
+[2026-09-17 11:57:43] Mixed Receiver Stage-B 16/1024 KL=1.146640
+[2026-09-17 11:58:41] Mixed Receiver Stage-B 32/1024 KL=0.256774
+[2026-09-17 11:59:39] Mixed Receiver Stage-B 48/1024 KL=0.543824
+[2026-09-17 12:00:37] Mixed Receiver Stage-B 64/1024 KL=0.409851
+[2026-09-17 12:01:32] Mixed Receiver Stage-B 80/1024 KL=0.516056
+[2026-09-17 12:02:27] Mixed Receiver Stage-B 96/1024 KL=0.710349
+[2026-09-17 12:03:23] Mixed Receiver Stage-B 112/1024 KL=0.312687
+[2026-09-17 12:04:21] Mixed Receiver Stage-B 128/1024 KL=0.163596
+[2026-09-17 12:05:16] Mixed Receiver Stage-B 144/1024 KL=1.760733
+[2026-09-17 12:06:11] Mixed Receiver Stage-B 160/1024 KL=0.364248
+[2026-09-17 12:07:07] Mixed Receiver Stage-B 176/1024 KL=0.708123
+[2026-09-17 12:08:01] Mixed Receiver Stage-B 192/1024 KL=0.817411
+[2026-09-17 12:08:57] Mixed Receiver Stage-B 208/1024 KL=0.464977
+[2026-09-17 12:09:53] Mixed Receiver Stage-B 224/1024 KL=1.672046
+[2026-09-17 12:10:50] Mixed Receiver Stage-B 240/1024 KL=0.612094
+[2026-09-17 12:11:46] Mixed Receiver Stage-B 256/1024 KL=0.792038
+[2026-09-17 12:12:22] Mixed validation step=256 native=0.7266 llama=0.6953 mean=0.7109
+[2026-09-17 12:13:19] Mixed Receiver Stage-B 272/1024 KL=0.528540
+[2026-09-17 12:14:16] Mixed Receiver Stage-B 288/1024 KL=0.255770
+[2026-09-17 12:15:11] Mixed Receiver Stage-B 304/1024 KL=0.567396
+[2026-09-17 12:16:06] Mixed Receiver Stage-B 320/1024 KL=0.168784
+[2026-09-17 12:17:01] Mixed Receiver Stage-B 336/1024 KL=0.853841
+[2026-09-17 12:17:57] Mixed Receiver Stage-B 352/1024 KL=0.348794
+[2026-09-17 12:18:53] Mixed Receiver Stage-B 368/1024 KL=0.659524
+[2026-09-17 12:19:49] Mixed Receiver Stage-B 384/1024 KL=0.345893
+[2026-09-17 12:20:45] Mixed Receiver Stage-B 400/1024 KL=0.310746
+[2026-09-17 12:21:43] Mixed Receiver Stage-B 416/1024 KL=0.557201
+[2026-09-17 12:22:39] Mixed Receiver Stage-B 432/1024 KL=0.956549
+[2026-09-17 12:23:35] Mixed Receiver Stage-B 448/1024 KL=1.122997
+[2026-09-17 12:24:33] Mixed Receiver Stage-B 464/1024 KL=0.250806
+[2026-09-17 12:25:30] Mixed Receiver Stage-B 480/1024 KL=0.144748
+[2026-09-17 12:26:28] Mixed Receiver Stage-B 496/1024 KL=1.171423
+[2026-09-17 12:27:26] Mixed Receiver Stage-B 512/1024 KL=0.315525
+[2026-09-17 12:28:02] Mixed validation step=512 native=0.7500 llama=0.6797 mean=0.7148
+[2026-09-17 12:29:00] Mixed Receiver Stage-B 528/1024 KL=0.263260
+[2026-09-17 12:29:55] Mixed Receiver Stage-B 544/1024 KL=1.470295
+[2026-09-17 12:30:53] Mixed Receiver Stage-B 560/1024 KL=0.212825
+[2026-09-17 12:31:47] Mixed Receiver Stage-B 576/1024 KL=0.460892
+[2026-09-17 12:32:45] Mixed Receiver Stage-B 592/1024 KL=0.065303
+[2026-09-17 12:33:42] Mixed Receiver Stage-B 608/1024 KL=0.893241
+[2026-09-17 12:34:39] Mixed Receiver Stage-B 624/1024 KL=0.402107
+[2026-09-17 12:35:38] Mixed Receiver Stage-B 640/1024 KL=0.228170
+[2026-09-17 12:36:36] Mixed Receiver Stage-B 656/1024 KL=0.737359
+[2026-09-17 12:37:34] Mixed Receiver Stage-B 672/1024 KL=0.852405
+[2026-09-17 12:38:32] Mixed Receiver Stage-B 688/1024 KL=0.962652
+[2026-09-17 12:39:29] Mixed Receiver Stage-B 704/1024 KL=0.530682
+[2026-09-17 12:40:24] Mixed Receiver Stage-B 720/1024 KL=0.557926
+[2026-09-17 12:41:22] Mixed Receiver Stage-B 736/1024 KL=0.568688
+[2026-09-17 12:42:20] Mixed Receiver Stage-B 752/1024 KL=0.668167
+[2026-09-17 12:43:20] Mixed Receiver Stage-B 768/1024 KL=0.214512
+[2026-09-17 12:43:56] Mixed validation step=768 native=0.7422 llama=0.6641 mean=0.7031
+[2026-09-17 12:44:57] Mixed Receiver Stage-B 784/1024 KL=0.265379
+[2026-09-17 12:45:54] Mixed Receiver Stage-B 800/1024 KL=0.835951
+[2026-09-17 12:46:52] Mixed Receiver Stage-B 816/1024 KL=1.038680
+[2026-09-17 12:47:54] Mixed Receiver Stage-B 832/1024 KL=1.002087
+[2026-09-17 12:48:53] Mixed Receiver Stage-B 848/1024 KL=0.570473
+[2026-09-17 12:49:51] Mixed Receiver Stage-B 864/1024 KL=0.963441
+[2026-09-17 12:50:49] Mixed Receiver Stage-B 880/1024 KL=0.583178
+[2026-09-17 12:51:46] Mixed Receiver Stage-B 896/1024 KL=0.291822
+[2026-09-17 12:52:45] Mixed Receiver Stage-B 912/1024 KL=0.955591
+[2026-09-17 12:53:43] Mixed Receiver Stage-B 928/1024 KL=0.236989
+[2026-09-17 12:54:43] Mixed Receiver Stage-B 944/1024 KL=1.039139
+[2026-09-17 12:55:45] Mixed Receiver Stage-B 960/1024 KL=0.554105
+[2026-09-17 12:56:45] Mixed Receiver Stage-B 976/1024 KL=0.464193
+[2026-09-17 12:57:46] Mixed Receiver Stage-B 992/1024 KL=0.761508
+[2026-09-17 12:58:47] Mixed Receiver Stage-B 1008/1024 KL=0.187393
+[2026-09-17 12:59:48] Mixed Receiver Stage-B 1024/1024 KL=0.682432
+[2026-09-17 13:00:25] Mixed validation step=1024 native=0.7344 llama=0.6719 mean=0.7031
+DONE train
+START evaluate
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   9%|▉         | 81/883 [00:00<00:01, 779.07it/s]Loading weights:  18%|█▊        | 159/883 [00:00<00:01, 712.07it/s]Loading weights:  26%|██▌       | 231/883 [00:00<00:01, 650.48it/s]Loading weights:  34%|███▎      | 297/883 [00:00<00:01, 489.44it/s]Loading weights:  43%|████▎     | 380/883 [00:00<00:00, 580.45it/s]Loading weights:  57%|█████▋    | 505/883 [00:00<00:00, 765.50it/s]Loading weights:  90%|████████▉ | 791/883 [00:00<00:00, 1364.05it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 1010.80it/s]
+Traceback (most recent call last):
+  File "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/experiment.py", line 531, in <module>
+    main()
+  File "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/experiment.py", line 527, in main
+    evaluate(cfg)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/experiment.py", line 460, in evaluate
+    old_k, old_v = old_adapter(base_k, base_v)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/translators.py", line 86, in forward
+    delta_k, delta_v = self._map(key, self.k), self._map(value, self.v)
+  File "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/translators.py", line 81, in _map
+    return torch.stack([torch.stack([mappings[layer][head](tensor[:, layer, :, head])
+  File "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/translators.py", line 81, in <listcomp>
+    return torch.stack([torch.stack([mappings[layer][head](tensor[:, layer, :, head])
+  File "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/translators.py", line 81, in <listcomp>
+    return torch.stack([torch.stack([mappings[layer][head](tensor[:, layer, :, head])
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: expected scalar type Float but found Half
+Traceback (most recent call last):
+  File "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/run_pipeline.py", line 18, in <module>
+    main()
+  File "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/run_pipeline.py", line 12, in main
+    subprocess.run([sys.executable, "-u", str(ROOT / "experiment.py"), stage], cwd=ROOT, check=True)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yezhe/data/miniconda3/envs/attnkv/bin/python', '-u', '/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/experiment.py', 'evaluate']' returned non-zero exit status 1.
