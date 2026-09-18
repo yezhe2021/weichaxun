@@ -1,0 +1,227 @@
+START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/prepare.py --mode study --dataset all all
+[2026-09-17 23:19:37] arc_challenge: manifest prepared 128 rows; max tokens={'llama': 170, 'qwen': 172, 'gemma': 181}
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:  40%|████      | 102/254 [00:00<00:00, 1019.02it/s]Loading weights:  80%|████████  | 204/254 [00:00<00:00, 898.25it/s] Loading weights: 100%|██████████| 254/254 [00:00<00:00, 888.58it/s]
+[2026-09-17 23:19:42] arc_challenge native llama: 16/128
+[2026-09-17 23:19:43] arc_challenge native llama: 32/128
+[2026-09-17 23:19:45] arc_challenge native llama: 48/128
+[2026-09-17 23:19:46] arc_challenge native llama: 64/128
+[2026-09-17 23:19:47] arc_challenge native llama: 80/128
+[2026-09-17 23:19:48] arc_challenge native llama: 96/128
+[2026-09-17 23:19:49] arc_challenge native llama: 112/128
+[2026-09-17 23:19:50] arc_challenge native llama: 128/128
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 967.05it/s]Loading weights:  51%|█████     | 201/398 [00:00<00:00, 969.03it/s]Loading weights:  78%|███████▊  | 312/398 [00:00<00:00, 1030.76it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1055.90it/s]
+[2026-09-17 23:19:56] arc_challenge native qwen: 16/128
+[2026-09-17 23:19:57] arc_challenge native qwen: 32/128
+[2026-09-17 23:19:59] arc_challenge native qwen: 48/128
+[2026-09-17 23:20:00] arc_challenge native qwen: 64/128
+[2026-09-17 23:20:02] arc_challenge native qwen: 80/128
+[2026-09-17 23:20:03] arc_challenge native qwen: 96/128
+[2026-09-17 23:20:05] arc_challenge native qwen: 112/128
+[2026-09-17 23:20:07] arc_challenge native qwen: 128/128
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 109/883 [00:00<00:00, 1073.23it/s]Loading weights:  25%|██▍       | 217/883 [00:00<00:00, 849.30it/s] Loading weights:  35%|███▍      | 305/883 [00:00<00:00, 756.62it/s]Loading weights:  43%|████▎     | 383/883 [00:00<00:00, 699.22it/s]Loading weights:  59%|█████▊    | 518/883 [00:00<00:00, 895.32it/s]Loading weights:  90%|█████████ | 795/883 [00:00<00:00, 1460.96it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 1180.42it/s]
+[2026-09-17 23:20:14] arc_challenge native gemma: 16/128
+[2026-09-17 23:20:16] arc_challenge native gemma: 32/128
+[2026-09-17 23:20:18] arc_challenge native gemma: 48/128
+[2026-09-17 23:20:20] arc_challenge native gemma: 64/128
+[2026-09-17 23:20:22] arc_challenge native gemma: 80/128
+[2026-09-17 23:20:24] arc_challenge native gemma: 96/128
+[2026-09-17 23:20:26] arc_challenge native gemma: 112/128
+[2026-09-17 23:20:28] arc_challenge native gemma: 128/128
+[2026-09-17 23:20:30] arc_challenge routes: 16/128
+[2026-09-17 23:20:31] arc_challenge routes: 32/128
+[2026-09-17 23:20:32] arc_challenge routes: 48/128
+[2026-09-17 23:20:34] arc_challenge routes: 64/128
+[2026-09-17 23:20:35] arc_challenge routes: 80/128
+[2026-09-17 23:20:36] arc_challenge routes: 96/128
+[2026-09-17 23:20:38] arc_challenge routes: 112/128
+[2026-09-17 23:20:39] arc_challenge routes: 128/128
+[2026-09-17 23:20:47] mmlu_pro: manifest prepared 128 rows; max tokens={'llama': 604, 'qwen': 612, 'gemma': 624}
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 84/254 [00:00<00:00, 815.21it/s]Loading weights:  72%|███████▏  | 183/254 [00:00<00:00, 905.10it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 883.55it/s]
+[2026-09-17 23:20:51] mmlu_pro native llama: 16/128
+[2026-09-17 23:20:52] mmlu_pro native llama: 32/128
+[2026-09-17 23:20:54] mmlu_pro native llama: 48/128
+[2026-09-17 23:20:55] mmlu_pro native llama: 64/128
+[2026-09-17 23:20:57] mmlu_pro native llama: 80/128
+[2026-09-17 23:20:58] mmlu_pro native llama: 96/128
+[2026-09-17 23:21:00] mmlu_pro native llama: 112/128
+[2026-09-17 23:21:01] mmlu_pro native llama: 128/128
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 1233.70it/s]Loading weights:  62%|██████▏   | 248/398 [00:00<00:00, 1185.49it/s]Loading weights:  92%|█████████▏| 367/398 [00:00<00:00, 1116.47it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1142.68it/s]
+[2026-09-17 23:21:07] mmlu_pro native qwen: 16/128
+[2026-09-17 23:21:09] mmlu_pro native qwen: 32/128
+[2026-09-17 23:21:11] mmlu_pro native qwen: 48/128
+[2026-09-17 23:21:13] mmlu_pro native qwen: 64/128
+[2026-09-17 23:21:15] mmlu_pro native qwen: 80/128
+[2026-09-17 23:21:17] mmlu_pro native qwen: 96/128
+[2026-09-17 23:21:19] mmlu_pro native qwen: 112/128
+[2026-09-17 23:21:21] mmlu_pro native qwen: 128/128
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   9%|▉         | 83/883 [00:00<00:00, 826.51it/s]Loading weights:  19%|█▉        | 166/883 [00:00<00:00, 808.00it/s]Loading weights:  28%|██▊       | 247/883 [00:00<00:00, 764.27it/s]Loading weights:  37%|███▋      | 324/883 [00:00<00:00, 655.59it/s]Loading weights:  44%|████▍     | 392/883 [00:00<00:00, 661.59it/s]Loading weights:  53%|█████▎    | 471/883 [00:00<00:00, 695.61it/s]Loading weights:  87%|████████▋ | 769/883 [00:00<00:00, 1381.30it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 1097.88it/s]
+[2026-09-17 23:21:32] mmlu_pro native gemma: 16/128
+[2026-09-17 23:21:35] mmlu_pro native gemma: 32/128
+[2026-09-17 23:21:39] mmlu_pro native gemma: 48/128
+[2026-09-17 23:21:43] mmlu_pro native gemma: 64/128
+[2026-09-17 23:21:46] mmlu_pro native gemma: 80/128
+[2026-09-17 23:21:51] mmlu_pro native gemma: 96/128
+[2026-09-17 23:21:54] mmlu_pro native gemma: 112/128
+[2026-09-17 23:21:58] mmlu_pro native gemma: 128/128
+[2026-09-17 23:22:01] mmlu_pro routes: 16/128
+[2026-09-17 23:22:03] mmlu_pro routes: 32/128
+[2026-09-17 23:22:06] mmlu_pro routes: 48/128
+[2026-09-17 23:22:08] mmlu_pro routes: 64/128
+[2026-09-17 23:22:11] mmlu_pro routes: 80/128
+[2026-09-17 23:22:14] mmlu_pro routes: 96/128
+[2026-09-17 23:22:17] mmlu_pro routes: 112/128
+[2026-09-17 23:22:20] mmlu_pro routes: 128/128
+DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/prepare.py --mode study --dataset all all
+START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset arc_challenge --receiver qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1100.13it/s]Loading weights:  56%|█████▋    | 224/398 [00:00<00:00, 977.34it/s] Loading weights:  81%|████████  | 323/398 [00:00<00:00, 964.63it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1006.23it/s]
+[2026-09-17 23:22:55] arc_challenge qwen receiver: 16/128
+[2026-09-17 23:23:06] arc_challenge qwen receiver: 32/128
+[2026-09-17 23:23:17] arc_challenge qwen receiver: 48/128
+[2026-09-17 23:23:27] arc_challenge qwen receiver: 64/128
+[2026-09-17 23:23:38] arc_challenge qwen receiver: 80/128
+[2026-09-17 23:23:48] arc_challenge qwen receiver: 96/128
+[2026-09-17 23:23:59] arc_challenge qwen receiver: 112/128
+[2026-09-17 23:24:10] arc_challenge qwen receiver: 128/128
+[2026-09-17 23:24:10] DONE arc_challenge qwen receiver -> /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/runs/study/arc_challenge/results/qwen_receiver.jsonl
+DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset arc_challenge --receiver qwen
+START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset arc_challenge --receiver gemma
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:  10%|█         | 91/883 [00:00<00:00, 888.41it/s]Loading weights:  20%|██        | 180/883 [00:00<00:00, 705.93it/s]Loading weights:  29%|██▊       | 253/883 [00:00<00:00, 678.91it/s]Loading weights:  37%|███▋      | 328/883 [00:00<00:00, 686.45it/s]Loading weights:  45%|████▌     | 401/883 [00:00<00:00, 699.08it/s]Loading weights:  59%|█████▉    | 522/883 [00:00<00:00, 861.79it/s]Loading weights:  91%|█████████▏| 807/883 [00:00<00:00, 1477.94it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 1111.29it/s]
+[2026-09-17 23:24:53] arc_challenge gemma receiver: 16/128
+[2026-09-17 23:25:10] arc_challenge gemma receiver: 32/128
+[2026-09-17 23:25:27] arc_challenge gemma receiver: 48/128
+[2026-09-17 23:25:44] arc_challenge gemma receiver: 64/128
+[2026-09-17 23:26:00] arc_challenge gemma receiver: 80/128
+[2026-09-17 23:26:17] arc_challenge gemma receiver: 96/128
+[2026-09-17 23:26:34] arc_challenge gemma receiver: 112/128
+[2026-09-17 23:26:51] arc_challenge gemma receiver: 128/128
+[2026-09-17 23:26:52] DONE arc_challenge gemma receiver -> /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/runs/study/arc_challenge/results/gemma_receiver.jsonl
+DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset arc_challenge --receiver gemma
+START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset arc_challenge --receiver llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:  37%|███▋      | 94/254 [00:00<00:00, 936.88it/s]Loading weights:  74%|███████▍  | 188/254 [00:00<00:00, 853.56it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 837.94it/s]
+[2026-09-17 23:27:26] arc_challenge llama receiver: 16/128
+[2026-09-17 23:27:38] arc_challenge llama receiver: 32/128
+[2026-09-17 23:27:50] arc_challenge llama receiver: 48/128
+[2026-09-17 23:28:02] arc_challenge llama receiver: 64/128
+[2026-09-17 23:28:14] arc_challenge llama receiver: 80/128
+[2026-09-17 23:28:26] arc_challenge llama receiver: 96/128
+[2026-09-17 23:28:38] arc_challenge llama receiver: 112/128
+[2026-09-17 23:28:50] arc_challenge llama receiver: 128/128
+[2026-09-17 23:28:50] DONE arc_challenge llama receiver -> /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/runs/study/arc_challenge/results/llama_receiver.jsonl
+DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset arc_challenge --receiver llama
+START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/summarize.py --mode study --dataset arc_challenge
+{
+  "qwen": {
+    "full_native": 85.94,
+    "no_memory": 22.66,
+    "lq_oracle32": 85.16,
+    "lq_stage_a": 54.69,
+    "lq_residual": 64.84,
+    "gq_oracle32": 84.38,
+    "gq_stage_a": 52.34,
+    "gq_residual": 69.53
+  },
+  "gemma": {
+    "full_native": 76.56,
+    "no_memory": 21.88,
+    "qg_oracle32": 73.44,
+    "qg_stage_a": 75.78,
+    "qg_old_residual": 77.34,
+    "qg_mixed_residual": 78.12,
+    "lqg_oracle32": 73.44,
+    "lqg_stage_a_stage_a": 51.56,
+    "lqg_qwen_residual_stage_a": 51.56,
+    "lqg_stage_a_old_residual": 54.69,
+    "lqg_stage_a_mixed_residual": 57.03,
+    "lqg_both_residuals": 56.25
+  },
+  "llama": {
+    "full_native": 71.88,
+    "no_memory": 30.47,
+    "ql_oracle32": 57.03,
+    "ql_stage_a": 58.59,
+    "ql_residual": 63.28,
+    "gql_oracle32": 60.16,
+    "gql_stage_a_stage_a": 57.03,
+    "gql_qwen_residual_stage_a": 55.47,
+    "gql_stage_a_llama_residual": 57.81,
+    "gql_both_residuals": 57.03
+  }
+}
+DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/summarize.py --mode study --dataset arc_challenge
+START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset mmlu_pro --receiver qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  30%|███       | 121/398 [00:00<00:00, 1199.92it/s]Loading weights:  61%|██████    | 241/398 [00:00<00:00, 1074.04it/s]Loading weights:  88%|████████▊ | 350/398 [00:00<00:00, 993.99it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1027.95it/s]
+[2026-09-17 23:29:28] mmlu_pro qwen receiver: 16/128
+[2026-09-17 23:29:39] mmlu_pro qwen receiver: 32/128
+[2026-09-17 23:29:49] mmlu_pro qwen receiver: 48/128
+[2026-09-17 23:30:00] mmlu_pro qwen receiver: 64/128
+[2026-09-17 23:30:10] mmlu_pro qwen receiver: 80/128
+[2026-09-17 23:30:21] mmlu_pro qwen receiver: 96/128
+[2026-09-17 23:30:32] mmlu_pro qwen receiver: 112/128
+[2026-09-17 23:30:42] mmlu_pro qwen receiver: 128/128
+[2026-09-17 23:30:42] DONE mmlu_pro qwen receiver -> /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/runs/study/mmlu_pro/results/qwen_receiver.jsonl
+DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset mmlu_pro --receiver qwen
+START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset mmlu_pro --receiver gemma
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   8%|▊         | 68/883 [00:00<00:01, 608.15it/s]Loading weights:  15%|█▍        | 129/883 [00:00<00:01, 575.88it/s]Loading weights:  23%|██▎       | 200/883 [00:00<00:01, 630.27it/s]Loading weights:  31%|███▏      | 277/883 [00:00<00:00, 681.91it/s]Loading weights:  39%|███▉      | 346/883 [00:00<00:00, 665.55it/s]Loading weights:  47%|████▋     | 413/883 [00:00<00:00, 660.44it/s]Loading weights:  68%|██████▊   | 599/883 [00:00<00:00, 1038.32it/s]Loading weights:  99%|█████████▉| 877/883 [00:00<00:00, 1577.26it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 1054.40it/s]
+[2026-09-17 23:31:30] mmlu_pro gemma receiver: 16/128
+[2026-09-17 23:31:52] mmlu_pro gemma receiver: 32/128
+[2026-09-17 23:32:15] mmlu_pro gemma receiver: 48/128
+[2026-09-17 23:32:38] mmlu_pro gemma receiver: 64/128
+[2026-09-17 23:33:00] mmlu_pro gemma receiver: 80/128
+[2026-09-17 23:33:23] mmlu_pro gemma receiver: 96/128
+[2026-09-17 23:33:46] mmlu_pro gemma receiver: 112/128
+[2026-09-17 23:34:08] mmlu_pro gemma receiver: 128/128
+[2026-09-17 23:34:09] DONE mmlu_pro gemma receiver -> /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/runs/study/mmlu_pro/results/gemma_receiver.jsonl
+DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset mmlu_pro --receiver gemma
+START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset mmlu_pro --receiver llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:  40%|████      | 102/254 [00:00<00:00, 1011.23it/s]Loading weights:  80%|████████  | 204/254 [00:00<00:00, 897.69it/s] Loading weights: 100%|██████████| 254/254 [00:00<00:00, 914.51it/s]
+[2026-09-17 23:34:44] mmlu_pro llama receiver: 16/128
+[2026-09-17 23:34:56] mmlu_pro llama receiver: 32/128
+[2026-09-17 23:35:08] mmlu_pro llama receiver: 48/128
+[2026-09-17 23:35:20] mmlu_pro llama receiver: 64/128
+[2026-09-17 23:35:33] mmlu_pro llama receiver: 80/128
+[2026-09-17 23:35:45] mmlu_pro llama receiver: 96/128
+[2026-09-17 23:35:57] mmlu_pro llama receiver: 112/128
+[2026-09-17 23:36:09] mmlu_pro llama receiver: 128/128
+[2026-09-17 23:36:10] DONE mmlu_pro llama receiver -> /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/runs/study/mmlu_pro/results/llama_receiver.jsonl
+DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/evaluate.py --mode study --dataset mmlu_pro --receiver llama
+START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/summarize.py --mode study --dataset mmlu_pro
+{
+  "qwen": {
+    "full_native": 45.31,
+    "no_memory": 11.72,
+    "lq_oracle32": 37.5,
+    "lq_stage_a": 13.28,
+    "lq_residual": 17.97,
+    "gq_oracle32": 39.84,
+    "gq_stage_a": 14.84,
+    "gq_residual": 24.22
+  },
+  "gemma": {
+    "full_native": 31.25,
+    "no_memory": 13.28,
+    "qg_oracle32": 27.34,
+    "qg_stage_a": 21.09,
+    "qg_old_residual": 21.09,
+    "qg_mixed_residual": 20.31,
+    "lqg_oracle32": 27.34,
+    "lqg_stage_a_stage_a": 15.62,
+    "lqg_qwen_residual_stage_a": 16.41,
+    "lqg_stage_a_old_residual": 14.84,
+    "lqg_stage_a_mixed_residual": 17.97,
+    "lqg_both_residuals": 17.97
+  },
+  "llama": {
+    "full_native": 32.03,
+    "no_memory": 14.06,
+    "ql_oracle32": 23.44,
+    "ql_stage_a": 21.09,
+    "ql_residual": 22.66,
+    "gql_oracle32": 25.78,
+    "gql_stage_a_stage_a": 19.53,
+    "gql_qwen_residual_stage_a": 18.75,
+    "gql_stage_a_llama_residual": 20.31,
+    "gql_both_residuals": 19.53
+  }
+}
+DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u /home/yezhe/异构模型/frozen_writer_crossdataset_arc_mmlupro_seed1234/summarize.py --mode study --dataset mmlu_pro
+ALL EXPERIMENTS COMPLETED

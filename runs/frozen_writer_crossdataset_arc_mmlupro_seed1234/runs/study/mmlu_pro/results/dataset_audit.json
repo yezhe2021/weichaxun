@@ -1,0 +1,24 @@
+{
+  "dataset": "mmlu_pro",
+  "raw_candidates": 12032,
+  "selected": 128,
+  "excluded_before_selection": 0,
+  "max_question_jaccard": 0.6,
+  "mean_question_jaccard": 0.20817714920192573,
+  "openbook_reference_count": 4096,
+  "selection": "seed1234; ARC exact four-choice; MMLU-Pro category round-robin; leakage threshold 0.9",
+  "signature": "47f3fba5026a63deb1866d72fb553ef022fcbd0cb769a35510f0df86e3ac995b",
+  "max_body_tokens": {
+    "llama": 604,
+    "qwen": 612,
+    "gemma": 624
+  },
+  "option_counts": {
+    "4": 12,
+    "6": 2,
+    "7": 3,
+    "8": 2,
+    "9": 13,
+    "10": 96
+  }
+}
