@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "errors": [],
+  "invariants": {
+    "sender_cache": "Qwen3-8B evidence-only [16,T,8,128]",
+    "writer_output": "[16,T,16,128]",
+    "writer_only_training": true,
+    "K_V_head_route_shared": true,
+    "cross_token_mixing": false,
+    "cross_layer_mixing": false,
+    "receiver_backbone_frozen": true,
+    "writer_training_reader_frozen": true,
+    "fresh_reader_does_not_load_C1": true
+  },
+  "native_reader_sha256": "98e56daf1f1f1aaa9c54d56ee5c38596207bc982ba6ba6c6d05adb0e1bf2e9bf",
+  "c1_reader_sha256": "3619b4235a202bfac835d8fd3f99254312d643946d3b01172a5c8ec7809ea071",
+  "c0_success_sha256": "c80c7ef7c0e9e04b504ad8832711b46128fda1c825ec8c1c3511a65350f67a7b",
+  "c1_success_sha256": "4c891f0c247ad74df70ff6a610aad38b64301efe699a5e5a74f668f65ff90b65"
+}

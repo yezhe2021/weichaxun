@@ -1,0 +1,75 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:21,  4.88it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 589.60it/s]Loading weights:  58%|█████▊    | 229/398 [00:00<00:00, 601.96it/s]Loading weights:  76%|███████▌  | 302/398 [00:00<00:00, 600.36it/s]Loading weights:  93%|█████████▎| 370/398 [00:00<00:00, 607.38it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 556.28it/s]
+[2026-09-07 16:16:40] qwen hard_chunk step=16/512 loss=1.492286
+[2026-09-07 16:17:15] qwen hard_chunk step=32/512 loss=2.252702
+[2026-09-07 16:17:37] qwen hard_chunk step=48/512 loss=1.142321
+[2026-09-07 16:18:00] qwen hard_chunk step=64/512 loss=0.791592
+[2026-09-07 16:18:21] qwen hard_chunk step=80/512 loss=0.852416
+[2026-09-07 16:18:43] qwen hard_chunk step=96/512 loss=1.140135
+[2026-09-07 16:19:06] qwen hard_chunk step=112/512 loss=2.034460
+[2026-09-07 16:19:28] qwen hard_chunk step=128/512 loss=1.574452
+[2026-09-07 16:19:39] qwen hard_chunk validation step=128 KL=1.376885
+[2026-09-07 16:20:09] qwen hard_chunk step=144/512 loss=1.466228
+[2026-09-07 16:20:38] qwen hard_chunk step=160/512 loss=1.296274
+[2026-09-07 16:21:08] qwen hard_chunk step=176/512 loss=0.941626
+[2026-09-07 16:21:37] qwen hard_chunk step=192/512 loss=1.681292
+[2026-09-07 16:22:06] qwen hard_chunk step=208/512 loss=1.334315
+[2026-09-07 16:22:34] qwen hard_chunk step=224/512 loss=1.738061
+[2026-09-07 16:23:03] qwen hard_chunk step=240/512 loss=0.834924
+[2026-09-07 16:23:32] qwen hard_chunk step=256/512 loss=0.716507
+[2026-09-07 16:23:45] qwen hard_chunk validation step=256 KL=1.227289
+[2026-09-07 16:24:14] qwen hard_chunk step=272/512 loss=0.804483
+[2026-09-07 16:24:44] qwen hard_chunk step=288/512 loss=0.949356
+[2026-09-07 16:25:13] qwen hard_chunk step=304/512 loss=0.873646
+[2026-09-07 16:25:41] qwen hard_chunk step=320/512 loss=1.468225
+[2026-09-07 16:26:11] qwen hard_chunk step=336/512 loss=1.081416
+[2026-09-07 16:26:38] qwen hard_chunk step=352/512 loss=1.608401
+[2026-09-07 16:27:07] qwen hard_chunk step=368/512 loss=1.435039
+[2026-09-07 16:27:36] qwen hard_chunk step=384/512 loss=1.188312
+[2026-09-07 16:27:49] qwen hard_chunk validation step=384 KL=1.127797
+[2026-09-07 16:28:21] qwen hard_chunk step=400/512 loss=1.271191
+[2026-09-07 16:29:00] qwen hard_chunk step=416/512 loss=0.814944
+[2026-09-07 16:29:35] qwen hard_chunk step=432/512 loss=0.901416
+[2026-09-07 16:30:11] qwen hard_chunk step=448/512 loss=1.508531
+[2026-09-07 16:30:47] qwen hard_chunk step=464/512 loss=1.273572
+[2026-09-07 16:31:22] qwen hard_chunk step=480/512 loss=0.515621
+[2026-09-07 16:31:59] qwen hard_chunk step=496/512 loss=1.407410
+[2026-09-07 16:32:37] qwen hard_chunk step=512/512 loss=0.942488
+[2026-09-07 16:32:54] qwen hard_chunk validation step=512 KL=1.053699
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:22,  3.05it/s]Loading weights:  51%|█████     | 129/254 [00:00<00:00, 381.97it/s]Loading weights:  79%|███████▊  | 200/254 [00:00<00:00, 367.01it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 310.87it/s]
+[2026-09-07 16:35:22] llama hard_chunk step=16/512 loss=0.415179
+[2026-09-07 16:35:56] llama hard_chunk step=32/512 loss=0.902486
+[2026-09-07 16:36:27] llama hard_chunk step=48/512 loss=0.402985
+[2026-09-07 16:36:52] llama hard_chunk step=64/512 loss=0.247547
+[2026-09-07 16:37:12] llama hard_chunk step=80/512 loss=0.494408
+[2026-09-07 16:37:31] llama hard_chunk step=96/512 loss=0.443125
+[2026-09-07 16:37:50] llama hard_chunk step=112/512 loss=0.327209
+[2026-09-07 16:38:10] llama hard_chunk step=128/512 loss=0.572752
+[2026-09-07 16:38:19] llama hard_chunk validation step=128 KL=0.368631
+[2026-09-07 16:38:38] llama hard_chunk step=144/512 loss=0.443549
+[2026-09-07 16:38:57] llama hard_chunk step=160/512 loss=0.377417
+[2026-09-07 16:39:16] llama hard_chunk step=176/512 loss=0.261674
+[2026-09-07 16:39:35] llama hard_chunk step=192/512 loss=0.554978
+[2026-09-07 16:39:55] llama hard_chunk step=208/512 loss=0.397140
+[2026-09-07 16:40:14] llama hard_chunk step=224/512 loss=0.630179
+[2026-09-07 16:40:34] llama hard_chunk step=240/512 loss=0.201533
+[2026-09-07 16:40:53] llama hard_chunk step=256/512 loss=0.438497
+[2026-09-07 16:41:03] llama hard_chunk validation step=256 KL=0.334906
+[2026-09-07 16:41:22] llama hard_chunk step=272/512 loss=0.434082
+[2026-09-07 16:41:41] llama hard_chunk step=288/512 loss=0.247487
+[2026-09-07 16:42:01] llama hard_chunk step=304/512 loss=0.171768
+[2026-09-07 16:42:21] llama hard_chunk step=320/512 loss=0.520281
+[2026-09-07 16:42:40] llama hard_chunk step=336/512 loss=0.278781
+[2026-09-07 16:42:59] llama hard_chunk step=352/512 loss=0.482039
+[2026-09-07 16:43:19] llama hard_chunk step=368/512 loss=0.473080
+[2026-09-07 16:43:39] llama hard_chunk step=384/512 loss=0.417214
+[2026-09-07 16:43:48] llama hard_chunk validation step=384 KL=0.307746
+[2026-09-07 16:44:07] llama hard_chunk step=400/512 loss=0.494860
+[2026-09-07 16:44:28] llama hard_chunk step=416/512 loss=0.748226
+[2026-09-07 16:44:47] llama hard_chunk step=432/512 loss=0.291690
+[2026-09-07 16:45:05] llama hard_chunk step=448/512 loss=0.476736
+[2026-09-07 16:45:26] llama hard_chunk step=464/512 loss=0.363704
+[2026-09-07 16:45:46] llama hard_chunk step=480/512 loss=0.235585
+[2026-09-07 16:46:05] llama hard_chunk step=496/512 loss=0.543594
+[2026-09-07 16:46:24] llama hard_chunk step=512/512 loss=0.214096
+[2026-09-07 16:46:33] llama hard_chunk validation step=512 KL=0.284514
+[2026-09-07 16:47:11] ALL TOKEN0 PLUS HARD-CHUNK32 JOINT TRAINING COMPLETED

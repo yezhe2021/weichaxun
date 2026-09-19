@@ -1,0 +1,26 @@
+{
+  "seed": 1234,
+  "train_samples": 4096,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "source_pairs_per_step": 4,
+  "effective_batch_size": 8,
+  "stage_b_steps": 1024,
+  "validation_interval_steps": 256,
+  "learning_rate": 0.0001,
+  "clip": 30.0,
+  "temperature": 1.0,
+  "adapter_rank": 64,
+  "attention_implementation": "eager",
+  "models": {
+    "gemma": "/home/yezhe/all_models/models/LLM-Research/gemma-3-4b-it"
+  },
+  "upstream_root": "/home/yezhe/异构模型/openbookqa_official_full28_mlp_train4096_shared_vs_residual64_l3_to_q4_seed1234",
+  "downstream_root": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234",
+  "upstream_stage_a_checkpoint": "/home/yezhe/异构模型/openbookqa_official_full28_mlp_train4096_shared_vs_residual64_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_2048.pt",
+  "downstream_stage_a_checkpoint": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_a/checkpoints/step_2048.pt",
+  "old_downstream_residual_checkpoint": "/home/yezhe/异构模型/openbookqa_official_full36_headmix128_train4096_qwen3_4b_to_gemma3_4b_seed1234/runs/study/stage_b_residual/checkpoints/step_256.pt",
+  "mlp_hidden_dim": 1024,
+  "depth_output_dim": 128,
+  "protocol": "openbookqa_b0_mixed_qwen_native_llama3b_stagea_hub_receiver_gemma_residual64_v1"
+}

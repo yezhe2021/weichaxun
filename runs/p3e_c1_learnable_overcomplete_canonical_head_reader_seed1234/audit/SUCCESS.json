@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "errors": [],
+  "invariants": {
+    "duplicate_writer16_frozen": true,
+    "writer_trainable_parameters": 0,
+    "canonical_memory": "[16,T,16,128]",
+    "receiver_backbone_frozen": true,
+    "native_o_proj_frozen": true,
+    "train_samples": 512,
+    "validation_samples": 64
+  },
+  "native_reader": "/home/yezhe/伪查询/runs/p3e_b_sender_native_headwise16_qwen3_8b_to_4b_seed1234/formal512/reader/checkpoint_best.pt",
+  "native_reader_sha256": "98e56daf1f1f1aaa9c54d56ee5c38596207bc982ba6ba6c6d05adb0e1bf2e9bf",
+  "c0_success": "/home/yezhe/伪查询/runs/p3e_c0_duplicate_overcomplete_canonical_head_bus_seed1234/SUCCESS.json",
+  "c0_success_sha256": "c80c7ef7c0e9e04b504ad8832711b46128fda1c825ec8c1c3511a65350f67a7b",
+  "selected_layers": [
+    0,
+    2,
+    5,
+    7,
+    9,
+    12,
+    14,
+    16,
+    19,
+    21,
+    23,
+    26,
+    28,
+    30,
+    33,
+    35
+  ]
+}

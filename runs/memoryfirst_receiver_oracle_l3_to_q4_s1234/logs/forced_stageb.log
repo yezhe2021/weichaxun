@@ -1,0 +1,138 @@
+[2026-09-13 21:13:36] Forced Memory-first Stage-B pipeline started
+Sun Sep 13 21:13:36 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.309.01             Driver Version: 535.309.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-PCIE-32GB           On  | 00000000:AF:00.0 Off |                    0 |
+| N/A   37C    P0              24W / 250W |     20MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
++---------------------------------------------------------------------------------------+
+[2026-09-13 21:13:36] Preparing Memory-first Oracle teachers
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:29,  4.43it/s]Loading weights:  30%|███       | 121/398 [00:00<00:00, 464.50it/s]Loading weights:  48%|████▊     | 191/398 [00:00<00:00, 472.39it/s]Loading weights:  63%|██████▎   | 251/398 [00:00<00:00, 480.91it/s]Loading weights:  77%|███████▋  | 307/398 [00:00<00:00, 489.81it/s]Loading weights:  91%|█████████ | 362/398 [00:00<00:00, 498.85it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 459.14it/s]
+[2026-09-13 21:13:50] Memory-first teacher train: 32/1024
+[2026-09-13 21:13:52] Memory-first teacher train: 64/1024
+[2026-09-13 21:13:55] Memory-first teacher train: 96/1024
+[2026-09-13 21:13:57] Memory-first teacher train: 128/1024
+[2026-09-13 21:14:00] Memory-first teacher train: 160/1024
+[2026-09-13 21:14:02] Memory-first teacher train: 192/1024
+[2026-09-13 21:14:05] Memory-first teacher train: 224/1024
+[2026-09-13 21:14:08] Memory-first teacher train: 256/1024
+[2026-09-13 21:14:10] Memory-first teacher train: 288/1024
+[2026-09-13 21:14:13] Memory-first teacher train: 320/1024
+[2026-09-13 21:14:15] Memory-first teacher train: 352/1024
+[2026-09-13 21:14:18] Memory-first teacher train: 384/1024
+[2026-09-13 21:14:20] Memory-first teacher train: 416/1024
+[2026-09-13 21:14:23] Memory-first teacher train: 448/1024
+[2026-09-13 21:14:25] Memory-first teacher train: 480/1024
+[2026-09-13 21:14:28] Memory-first teacher train: 512/1024
+[2026-09-13 21:14:31] Memory-first teacher train: 544/1024
+[2026-09-13 21:14:33] Memory-first teacher train: 576/1024
+[2026-09-13 21:14:36] Memory-first teacher train: 608/1024
+[2026-09-13 21:14:38] Memory-first teacher train: 640/1024
+[2026-09-13 21:14:41] Memory-first teacher train: 672/1024
+[2026-09-13 21:14:43] Memory-first teacher train: 704/1024
+[2026-09-13 21:14:46] Memory-first teacher train: 736/1024
+[2026-09-13 21:14:48] Memory-first teacher train: 768/1024
+[2026-09-13 21:14:51] Memory-first teacher train: 800/1024
+[2026-09-13 21:14:53] Memory-first teacher train: 832/1024
+[2026-09-13 21:14:56] Memory-first teacher train: 864/1024
+[2026-09-13 21:14:59] Memory-first teacher train: 896/1024
+[2026-09-13 21:15:01] Memory-first teacher train: 928/1024
+[2026-09-13 21:15:04] Memory-first teacher train: 960/1024
+[2026-09-13 21:15:06] Memory-first teacher train: 992/1024
+[2026-09-13 21:15:09] Memory-first teacher train: 1024/1024
+[2026-09-13 21:15:12] Memory-first teacher validation: 32/128
+[2026-09-13 21:15:14] Memory-first teacher validation: 64/128
+[2026-09-13 21:15:17] Memory-first teacher validation: 96/128
+[2026-09-13 21:15:19] Memory-first teacher validation: 128/128
+[2026-09-13 21:15:22] Memory-first teacher test: 32/128
+[2026-09-13 21:15:25] Memory-first teacher test: 64/128
+[2026-09-13 21:15:27] Memory-first teacher test: 96/128
+[2026-09-13 21:15:30] Memory-first teacher test: 128/128
+[2026-09-13 21:15:31] Training 512-step Memory-first Stage-B
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:26,  4.59it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 445.12it/s]Loading weights:  45%|████▍     | 179/398 [00:00<00:00, 456.69it/s]Loading weights:  60%|█████▉    | 237/398 [00:00<00:00, 488.10it/s]Loading weights:  74%|███████▍  | 294/398 [00:00<00:00, 500.51it/s]Loading weights:  88%|████████▊ | 350/398 [00:00<00:00, 510.13it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 463.66it/s]
+[2026-09-13 21:16:34] Memory-first Stage B 16/512 KL=1.161704
+[2026-09-13 21:17:25] Memory-first Stage B 32/512 KL=1.043165
+[2026-09-13 21:18:16] Memory-first Stage B 48/512 KL=0.843631
+[2026-09-13 21:19:07] Memory-first Stage B 64/512 KL=0.874167
+[2026-09-13 21:19:57] Memory-first Stage B 80/512 KL=0.756076
+[2026-09-13 21:20:48] Memory-first Stage B 96/512 KL=0.732143
+[2026-09-13 21:21:39] Memory-first Stage B 112/512 KL=0.841483
+[2026-09-13 21:22:30] Memory-first Stage B 128/512 KL=0.533247
+[2026-09-13 21:22:46] Memory-first Stage B validation step=128 acc=0.2266 KL=0.852509
+[2026-09-13 21:23:37] Memory-first Stage B 144/512 KL=0.857638
+[2026-09-13 21:24:27] Memory-first Stage B 160/512 KL=0.478133
+[2026-09-13 21:25:18] Memory-first Stage B 176/512 KL=0.954303
+[2026-09-13 21:26:08] Memory-first Stage B 192/512 KL=1.291438
+[2026-09-13 21:26:58] Memory-first Stage B 208/512 KL=0.810242
+[2026-09-13 21:27:49] Memory-first Stage B 224/512 KL=0.733787
+[2026-09-13 21:28:39] Memory-first Stage B 240/512 KL=0.652595
+[2026-09-13 21:29:30] Memory-first Stage B 256/512 KL=1.078490
+[2026-09-13 21:29:47] Memory-first Stage B validation step=256 acc=0.2266 KL=0.881392
+[2026-09-13 21:30:38] Memory-first Stage B 272/512 KL=0.383711
+[2026-09-13 21:31:29] Memory-first Stage B 288/512 KL=0.886193
+[2026-09-13 21:32:19] Memory-first Stage B 304/512 KL=0.740107
+[2026-09-13 21:33:10] Memory-first Stage B 320/512 KL=0.590541
+[2026-09-13 21:34:00] Memory-first Stage B 336/512 KL=0.473996
+[2026-09-13 21:34:51] Memory-first Stage B 352/512 KL=0.524837
+[2026-09-13 21:35:45] Memory-first Stage B 368/512 KL=0.436146
+[2026-09-13 21:36:37] Memory-first Stage B 384/512 KL=0.523523
+[2026-09-13 21:36:54] Memory-first Stage B validation step=384 acc=0.2031 KL=0.879645
+[2026-09-13 21:37:45] Memory-first Stage B 400/512 KL=0.389629
+[2026-09-13 21:38:35] Memory-first Stage B 416/512 KL=0.495929
+[2026-09-13 21:39:26] Memory-first Stage B 432/512 KL=0.157187
+[2026-09-13 21:40:17] Memory-first Stage B 448/512 KL=0.309296
+[2026-09-13 21:41:09] Memory-first Stage B 464/512 KL=0.825708
+[2026-09-13 21:42:00] Memory-first Stage B 480/512 KL=0.631641
+[2026-09-13 21:42:51] Memory-first Stage B 496/512 KL=0.690421
+[2026-09-13 21:43:43] Memory-first Stage B 512/512 KL=0.254287
+[2026-09-13 21:44:00] Memory-first Stage B validation step=512 acc=0.2500 KL=0.948297
+[2026-09-13 21:44:02] Running final evaluation
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:29,  4.46it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 480.24it/s]Loading weights:  49%|████▉     | 197/398 [00:00<00:00, 506.46it/s]Loading weights:  66%|██████▌   | 261/398 [00:00<00:00, 523.24it/s]Loading weights:  81%|████████  | 322/398 [00:00<00:00, 529.02it/s]Loading weights:  96%|█████████▌| 381/398 [00:00<00:00, 538.21it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 490.62it/s]
+[2026-09-13 21:44:16] Memory-first translated evaluation: 16/128
+[2026-09-13 21:44:18] Memory-first translated evaluation: 32/128
+[2026-09-13 21:44:20] Memory-first translated evaluation: 48/128
+[2026-09-13 21:44:22] Memory-first translated evaluation: 64/128
+[2026-09-13 21:44:24] Memory-first translated evaluation: 80/128
+[2026-09-13 21:44:26] Memory-first translated evaluation: 96/128
+[2026-09-13 21:44:28] Memory-first translated evaluation: 112/128
+[2026-09-13 21:44:30] Memory-first translated evaluation: 128/128
+[2026-09-13 21:44:33] Memory-first translated evaluation: 16/128
+[2026-09-13 21:44:35] Memory-first translated evaluation: 32/128
+[2026-09-13 21:44:37] Memory-first translated evaluation: 48/128
+[2026-09-13 21:44:39] Memory-first translated evaluation: 64/128
+[2026-09-13 21:44:42] Memory-first translated evaluation: 80/128
+[2026-09-13 21:44:44] Memory-first translated evaluation: 96/128
+[2026-09-13 21:44:46] Memory-first translated evaluation: 112/128
+[2026-09-13 21:44:48] Memory-first translated evaluation: 128/128
+[2026-09-13 21:44:48] MEMORY-FIRST RECEIVER EXPERIMENT COMPLETED
+[2026-09-13 21:44:50] FORCED STAGE-B EXPERIMENT COMPLETED
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:41,  3.91it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 502.77it/s]Loading weights:  56%|█████▋    | 224/398 [00:00<00:00, 521.66it/s]Loading weights:  73%|███████▎  | 291/398 [00:00<00:00, 525.77it/s]Loading weights:  89%|████████▊ | 353/398 [00:00<00:00, 535.73it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 481.80it/s]
+[2026-09-13 21:49:55] Memory-first translated evaluation: 16/128
+[2026-09-13 21:49:58] Memory-first translated evaluation: 32/128
+[2026-09-13 21:50:00] Memory-first translated evaluation: 48/128
+[2026-09-13 21:50:02] Memory-first translated evaluation: 64/128
+[2026-09-13 21:50:04] Memory-first translated evaluation: 80/128
+[2026-09-13 21:50:06] Memory-first translated evaluation: 96/128
+[2026-09-13 21:50:09] Memory-first translated evaluation: 112/128
+[2026-09-13 21:50:11] Memory-first translated evaluation: 128/128
+[2026-09-13 21:50:14] Memory-first translated evaluation: 16/128
+[2026-09-13 21:50:16] Memory-first translated evaluation: 32/128
+[2026-09-13 21:50:18] Memory-first translated evaluation: 48/128
+[2026-09-13 21:50:20] Memory-first translated evaluation: 64/128
+[2026-09-13 21:50:22] Memory-first translated evaluation: 80/128
+[2026-09-13 21:50:24] Memory-first translated evaluation: 96/128
+[2026-09-13 21:50:26] Memory-first translated evaluation: 112/128
+[2026-09-13 21:50:28] Memory-first translated evaluation: 128/128
+[2026-09-13 21:50:28] MEMORY-FIRST RECEIVER EXPERIMENT COMPLETED

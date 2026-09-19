@@ -1,0 +1,222 @@
+[2026-09-07 22:17:38] pair dataset train: 32/1024
+[2026-09-07 22:17:39] pair dataset train: 64/1024
+[2026-09-07 22:17:39] pair dataset train: 96/1024
+[2026-09-07 22:17:40] pair dataset train: 128/1024
+[2026-09-07 22:17:41] pair dataset train: 160/1024
+[2026-09-07 22:17:42] pair dataset train: 192/1024
+[2026-09-07 22:17:43] pair dataset train: 224/1024
+[2026-09-07 22:17:43] pair dataset train: 256/1024
+[2026-09-07 22:17:44] pair dataset train: 288/1024
+[2026-09-07 22:17:45] pair dataset train: 320/1024
+[2026-09-07 22:17:46] pair dataset train: 352/1024
+[2026-09-07 22:17:47] pair dataset train: 384/1024
+[2026-09-07 22:17:48] pair dataset train: 416/1024
+[2026-09-07 22:17:48] pair dataset train: 448/1024
+[2026-09-07 22:17:49] pair dataset train: 480/1024
+[2026-09-07 22:17:50] pair dataset train: 512/1024
+[2026-09-07 22:17:51] pair dataset train: 544/1024
+[2026-09-07 22:17:52] pair dataset train: 576/1024
+[2026-09-07 22:17:52] pair dataset train: 608/1024
+[2026-09-07 22:17:53] pair dataset train: 640/1024
+[2026-09-07 22:17:54] pair dataset train: 672/1024
+[2026-09-07 22:17:55] pair dataset train: 704/1024
+[2026-09-07 22:17:56] pair dataset train: 736/1024
+[2026-09-07 22:17:57] pair dataset train: 768/1024
+[2026-09-07 22:17:57] pair dataset train: 800/1024
+[2026-09-07 22:17:58] pair dataset train: 832/1024
+[2026-09-07 22:17:59] pair dataset train: 864/1024
+[2026-09-07 22:18:00] pair dataset train: 896/1024
+[2026-09-07 22:18:01] pair dataset train: 928/1024
+[2026-09-07 22:18:01] pair dataset train: 960/1024
+[2026-09-07 22:18:02] pair dataset train: 992/1024
+[2026-09-07 22:18:03] pair dataset train: 1024/1024
+[2026-09-07 22:18:05] pair dataset validation: 32/128
+[2026-09-07 22:18:06] pair dataset validation: 64/128
+[2026-09-07 22:18:07] pair dataset validation: 96/128
+[2026-09-07 22:18:08] pair dataset validation: 128/128
+[2026-09-07 22:18:08] pair dataset test: 32/128
+[2026-09-07 22:18:09] pair dataset test: 64/128
+[2026-09-07 22:18:10] pair dataset test: 96/128
+[2026-09-07 22:18:11] pair dataset test: 128/128
+[2026-09-07 22:18:15] Stage A nearest_linear 16/512 loss=3.507523
+[2026-09-07 22:18:17] Stage A nearest_linear 32/512 loss=3.158483
+[2026-09-07 22:18:19] Stage A nearest_linear 48/512 loss=2.936360
+[2026-09-07 22:18:21] Stage A nearest_linear 64/512 loss=2.668154
+[2026-09-07 22:18:24] Stage A nearest_linear 80/512 loss=2.603135
+[2026-09-07 22:18:26] Stage A nearest_linear 96/512 loss=2.591513
+[2026-09-07 22:18:28] Stage A nearest_linear 112/512 loss=2.548186
+[2026-09-07 22:18:30] Stage A nearest_linear 128/512 loss=2.406846
+[2026-09-07 22:18:32] Stage A nearest_linear validation step=128 rep=2.462068
+[2026-09-07 22:18:34] Stage A nearest_linear 144/512 loss=2.475821
+[2026-09-07 22:18:36] Stage A nearest_linear 160/512 loss=2.483620
+[2026-09-07 22:18:38] Stage A nearest_linear 176/512 loss=2.282239
+[2026-09-07 22:18:40] Stage A nearest_linear 192/512 loss=2.408864
+[2026-09-07 22:18:42] Stage A nearest_linear 208/512 loss=2.386137
+[2026-09-07 22:18:44] Stage A nearest_linear 224/512 loss=2.380173
+[2026-09-07 22:18:47] Stage A nearest_linear 240/512 loss=2.264499
+[2026-09-07 22:18:49] Stage A nearest_linear 256/512 loss=2.297404
+[2026-09-07 22:18:51] Stage A nearest_linear validation step=256 rep=2.265676
+[2026-09-07 22:18:53] Stage A nearest_linear 272/512 loss=2.207950
+[2026-09-07 22:18:55] Stage A nearest_linear 288/512 loss=2.191053
+[2026-09-07 22:18:57] Stage A nearest_linear 304/512 loss=2.225077
+[2026-09-07 22:18:59] Stage A nearest_linear 320/512 loss=2.214680
+[2026-09-07 22:19:02] Stage A nearest_linear 336/512 loss=2.283214
+[2026-09-07 22:19:04] Stage A nearest_linear 352/512 loss=2.247597
+[2026-09-07 22:19:06] Stage A nearest_linear 368/512 loss=2.289742
+[2026-09-07 22:19:08] Stage A nearest_linear 384/512 loss=2.161165
+[2026-09-07 22:19:10] Stage A nearest_linear validation step=384 rep=2.167891
+[2026-09-07 22:19:12] Stage A nearest_linear 400/512 loss=2.266686
+[2026-09-07 22:19:14] Stage A nearest_linear 416/512 loss=2.209620
+[2026-09-07 22:19:17] Stage A nearest_linear 432/512 loss=2.161984
+[2026-09-07 22:19:19] Stage A nearest_linear 448/512 loss=2.152800
+[2026-09-07 22:19:21] Stage A nearest_linear 464/512 loss=2.090214
+[2026-09-07 22:19:23] Stage A nearest_linear 480/512 loss=2.023705
+[2026-09-07 22:19:25] Stage A nearest_linear 496/512 loss=2.083222
+[2026-09-07 22:19:28] Stage A nearest_linear 512/512 loss=2.163206
+[2026-09-07 22:19:30] Stage A nearest_linear validation step=512 rep=2.100698
+[2026-09-07 22:19:32] Stage A local5_linear 16/512 loss=2.676904
+[2026-09-07 22:19:34] Stage A local5_linear 32/512 loss=2.400966
+[2026-09-07 22:19:37] Stage A local5_linear 48/512 loss=2.184705
+[2026-09-07 22:19:39] Stage A local5_linear 64/512 loss=1.908026
+[2026-09-07 22:19:42] Stage A local5_linear 80/512 loss=1.854035
+[2026-09-07 22:19:44] Stage A local5_linear 96/512 loss=1.861345
+[2026-09-07 22:19:47] Stage A local5_linear 112/512 loss=1.838612
+[2026-09-07 22:19:49] Stage A local5_linear 128/512 loss=1.658100
+[2026-09-07 22:19:51] Stage A local5_linear validation step=128 rep=1.733478
+[2026-09-07 22:19:54] Stage A local5_linear 144/512 loss=1.754430
+[2026-09-07 22:19:57] Stage A local5_linear 160/512 loss=1.777015
+[2026-09-07 22:20:00] Stage A local5_linear 176/512 loss=1.517644
+[2026-09-07 22:20:02] Stage A local5_linear 192/512 loss=1.687185
+[2026-09-07 22:20:04] Stage A local5_linear 208/512 loss=1.668733
+[2026-09-07 22:20:06] Stage A local5_linear 224/512 loss=1.640208
+[2026-09-07 22:20:09] Stage A local5_linear 240/512 loss=1.509917
+[2026-09-07 22:20:11] Stage A local5_linear 256/512 loss=1.545013
+[2026-09-07 22:20:13] Stage A local5_linear validation step=256 rep=1.504676
+[2026-09-07 22:20:16] Stage A local5_linear 272/512 loss=1.436178
+[2026-09-07 22:20:18] Stage A local5_linear 288/512 loss=1.424059
+[2026-09-07 22:20:20] Stage A local5_linear 304/512 loss=1.455641
+[2026-09-07 22:20:23] Stage A local5_linear 320/512 loss=1.427044
+[2026-09-07 22:20:25] Stage A local5_linear 336/512 loss=1.519904
+[2026-09-07 22:20:27] Stage A local5_linear 352/512 loss=1.475858
+[2026-09-07 22:20:30] Stage A local5_linear 368/512 loss=1.523993
+[2026-09-07 22:20:32] Stage A local5_linear 384/512 loss=1.380147
+[2026-09-07 22:20:34] Stage A local5_linear validation step=384 rep=1.387548
+[2026-09-07 22:20:36] Stage A local5_linear 400/512 loss=1.499359
+[2026-09-07 22:20:39] Stage A local5_linear 416/512 loss=1.416040
+[2026-09-07 22:20:41] Stage A local5_linear 432/512 loss=1.368763
+[2026-09-07 22:20:43] Stage A local5_linear 448/512 loss=1.376797
+[2026-09-07 22:20:46] Stage A local5_linear 464/512 loss=1.297612
+[2026-09-07 22:20:48] Stage A local5_linear 480/512 loss=1.219369
+[2026-09-07 22:20:50] Stage A local5_linear 496/512 loss=1.281219
+[2026-09-07 22:20:52] Stage A local5_linear 512/512 loss=1.397649
+[2026-09-07 22:20:54] Stage A local5_linear validation step=512 rep=1.314525
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:32,  4.30it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 571.29it/s]Loading weights:  60%|██████    | 240/398 [00:00<00:00, 582.00it/s]Loading weights:  79%|███████▊  | 313/398 [00:00<00:00, 565.60it/s]Loading weights:  95%|█████████▍| 378/398 [00:00<00:00, 572.20it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 528.61it/s]
+[2026-09-07 22:21:04] Oracle teacher train: 32/1024
+[2026-09-07 22:21:09] Oracle teacher train: 64/1024
+[2026-09-07 22:21:14] Oracle teacher train: 96/1024
+[2026-09-07 22:21:20] Oracle teacher train: 128/1024
+[2026-09-07 22:21:25] Oracle teacher train: 160/1024
+[2026-09-07 22:21:30] Oracle teacher train: 192/1024
+[2026-09-07 22:21:35] Oracle teacher train: 224/1024
+[2026-09-07 22:21:41] Oracle teacher train: 256/1024
+[2026-09-07 22:21:46] Oracle teacher train: 288/1024
+[2026-09-07 22:21:51] Oracle teacher train: 320/1024
+[2026-09-07 22:21:56] Oracle teacher train: 352/1024
+[2026-09-07 22:22:02] Oracle teacher train: 384/1024
+[2026-09-07 22:22:07] Oracle teacher train: 416/1024
+[2026-09-07 22:22:12] Oracle teacher train: 448/1024
+[2026-09-07 22:22:17] Oracle teacher train: 480/1024
+[2026-09-07 22:22:23] Oracle teacher train: 512/1024
+[2026-09-07 22:22:28] Oracle teacher train: 544/1024
+[2026-09-07 22:22:33] Oracle teacher train: 576/1024
+[2026-09-07 22:22:38] Oracle teacher train: 608/1024
+[2026-09-07 22:22:43] Oracle teacher train: 640/1024
+[2026-09-07 22:22:48] Oracle teacher train: 672/1024
+[2026-09-07 22:22:54] Oracle teacher train: 704/1024
+[2026-09-07 22:22:59] Oracle teacher train: 736/1024
+[2026-09-07 22:23:05] Oracle teacher train: 768/1024
+[2026-09-07 22:23:11] Oracle teacher train: 800/1024
+[2026-09-07 22:23:16] Oracle teacher train: 832/1024
+[2026-09-07 22:23:23] Oracle teacher train: 864/1024
+[2026-09-07 22:23:29] Oracle teacher train: 896/1024
+[2026-09-07 22:23:34] Oracle teacher train: 928/1024
+[2026-09-07 22:23:39] Oracle teacher train: 960/1024
+[2026-09-07 22:23:45] Oracle teacher train: 992/1024
+[2026-09-07 22:23:51] Oracle teacher train: 1024/1024
+[2026-09-07 22:23:57] Oracle teacher validation: 32/128
+[2026-09-07 22:24:02] Oracle teacher validation: 64/128
+[2026-09-07 22:24:09] Oracle teacher validation: 96/128
+[2026-09-07 22:24:15] Oracle teacher validation: 128/128
+[2026-09-07 22:24:20] Oracle teacher test: 32/128
+[2026-09-07 22:24:26] Oracle teacher test: 64/128
+[2026-09-07 22:24:31] Oracle teacher test: 96/128
+[2026-09-07 22:24:37] Oracle teacher test: 128/128
+[2026-09-07 22:31:51] Stage B local5 choice-KL 16/512 loss=0.803766
+[2026-09-07 22:33:09] Stage B local5 choice-KL 32/512 loss=1.254912
+[2026-09-07 22:34:36] Stage B local5 choice-KL 48/512 loss=0.910251
+[2026-09-07 22:36:05] Stage B local5 choice-KL 64/512 loss=0.297520
+[2026-09-07 22:36:59] Stage B local5 choice-KL 80/512 loss=0.515813
+[2026-09-07 22:37:51] Stage B local5 choice-KL 96/512 loss=0.888825
+[2026-09-07 22:38:43] Stage B local5 choice-KL 112/512 loss=0.894422
+[2026-09-07 22:39:33] Stage B local5 choice-KL 128/512 loss=0.587180
+[2026-09-07 22:40:06] Stage B validation step=128 choice_KL=0.824538 accuracy=0.1172
+[2026-09-07 22:40:59] Stage B local5 choice-KL 144/512 loss=0.934992
+[2026-09-07 22:42:13] Stage B local5 choice-KL 160/512 loss=0.728455
+[2026-09-07 22:43:25] Stage B local5 choice-KL 176/512 loss=0.646438
+[2026-09-07 22:44:39] Stage B local5 choice-KL 192/512 loss=0.663909
+[2026-09-07 22:46:03] Stage B local5 choice-KL 208/512 loss=1.314702
+[2026-09-07 22:47:32] Stage B local5 choice-KL 224/512 loss=0.913105
+[2026-09-07 22:49:03] Stage B local5 choice-KL 240/512 loss=0.393973
+[2026-09-07 22:50:32] Stage B local5 choice-KL 256/512 loss=0.666675
+[2026-09-07 22:51:27] Stage B validation step=256 choice_KL=0.766423 accuracy=0.1328
+[2026-09-07 22:52:35] Stage B local5 choice-KL 272/512 loss=0.472299
+[2026-09-07 22:53:49] Stage B local5 choice-KL 288/512 loss=0.405416
+[2026-09-07 22:55:18] Stage B local5 choice-KL 304/512 loss=0.659764
+[2026-09-07 22:56:40] Stage B local5 choice-KL 320/512 loss=0.812032
+[2026-09-07 22:57:48] Stage B local5 choice-KL 336/512 loss=0.681658
+[2026-09-07 22:58:38] Stage B local5 choice-KL 352/512 loss=0.699274
+[2026-09-07 22:59:28] Stage B local5 choice-KL 368/512 loss=0.725444
+[2026-09-07 23:00:20] Stage B local5 choice-KL 384/512 loss=0.549953
+[2026-09-07 23:00:53] Stage B validation step=384 choice_KL=0.742613 accuracy=0.1406
+[2026-09-07 23:01:45] Stage B local5 choice-KL 400/512 loss=0.885939
+[2026-09-07 23:02:36] Stage B local5 choice-KL 416/512 loss=0.615735
+[2026-09-07 23:03:26] Stage B local5 choice-KL 432/512 loss=0.558875
+[2026-09-07 23:04:16] Stage B local5 choice-KL 448/512 loss=0.988289
+[2026-09-07 23:05:06] Stage B local5 choice-KL 464/512 loss=0.723701
+[2026-09-07 23:05:57] Stage B local5 choice-KL 480/512 loss=0.603976
+[2026-09-07 23:06:56] Stage B local5 choice-KL 496/512 loss=0.623732
+[2026-09-07 23:08:02] Stage B local5 choice-KL 512/512 loss=0.489292
+[2026-09-07 23:08:51] Stage B validation step=512 choice_KL=0.734249 accuracy=0.1328
+[2026-09-07 23:09:20] Final direct_nearest: 16/128
+[2026-09-07 23:09:24] Final direct_nearest: 32/128
+[2026-09-07 23:09:27] Final direct_nearest: 48/128
+[2026-09-07 23:09:30] Final direct_nearest: 64/128
+[2026-09-07 23:09:34] Final direct_nearest: 80/128
+[2026-09-07 23:09:37] Final direct_nearest: 96/128
+[2026-09-07 23:09:41] Final direct_nearest: 112/128
+[2026-09-07 23:09:44] Final direct_nearest: 128/128
+[2026-09-07 23:09:50] Final nearest_linear: 16/128
+[2026-09-07 23:09:57] Final nearest_linear: 32/128
+[2026-09-07 23:10:03] Final nearest_linear: 48/128
+[2026-09-07 23:10:09] Final nearest_linear: 64/128
+[2026-09-07 23:10:15] Final nearest_linear: 80/128
+[2026-09-07 23:10:21] Final nearest_linear: 96/128
+[2026-09-07 23:10:26] Final nearest_linear: 112/128
+[2026-09-07 23:10:33] Final nearest_linear: 128/128
+[2026-09-07 23:10:48] Final local5_linear: 16/128
+[2026-09-07 23:11:04] Final local5_linear: 32/128
+[2026-09-07 23:11:20] Final local5_linear: 48/128
+[2026-09-07 23:11:35] Final local5_linear: 64/128
+[2026-09-07 23:11:50] Final local5_linear: 80/128
+[2026-09-07 23:12:05] Final local5_linear: 96/128
+[2026-09-07 23:12:19] Final local5_linear: 112/128
+[2026-09-07 23:12:35] Final local5_linear: 128/128
+[2026-09-07 23:12:50] Final local5_choice_kl: 16/128
+[2026-09-07 23:13:07] Final local5_choice_kl: 32/128
+[2026-09-07 23:13:22] Final local5_choice_kl: 48/128
+[2026-09-07 23:13:38] Final local5_choice_kl: 64/128
+[2026-09-07 23:13:58] Final local5_choice_kl: 80/128
+[2026-09-07 23:14:18] Final local5_choice_kl: 96/128
+[2026-09-07 23:14:36] Final local5_choice_kl: 112/128
+[2026-09-07 23:14:56] Final local5_choice_kl: 128/128
+[2026-09-07 23:14:56] ALL RAW-TEXT ANCHOR NATIVE-KV TRANSLATOR EXPERIMENTS COMPLETED

@@ -1,0 +1,100 @@
+{
+  "stage": "A freshly retrained",
+  "objective": "KV reconstruction only",
+  "train_samples": 4096,
+  "epochs": 4,
+  "steps": 2048,
+  "parameters_trained": 94371840,
+  "clip_rate": 0.0,
+  "seconds": 2413.9456087779254,
+  "candidates": [
+    {
+      "step": 256,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full16_mlp_train4096_l1_to_q4_seed1234/runs/study/stage_a/checkpoints/step_256.pt",
+      "representation": {
+        "loss": 1.0222243294119835,
+        "k_nmse": 0.06913238391280174,
+        "v_nmse": 0.5578287057578564,
+        "k_cosine": 0.9217477105557919,
+        "v_cosine": 0.6829890459775925
+      }
+    },
+    {
+      "step": 512,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full16_mlp_train4096_l1_to_q4_seed1234/runs/study/stage_a/checkpoints/step_512.pt",
+      "representation": {
+        "loss": 0.9076764844357967,
+        "k_nmse": 0.06005705380812287,
+        "v_nmse": 0.4936244450509548,
+        "k_cosine": 0.9314801245927811,
+        "v_cosine": 0.7145248763263226
+      }
+    },
+    {
+      "step": 768,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full16_mlp_train4096_l1_to_q4_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+      "representation": {
+        "loss": 0.8544119857251644,
+        "k_nmse": 0.05650171870365739,
+        "v_nmse": 0.4634693469852209,
+        "k_cosine": 0.935163713991642,
+        "v_cosine": 0.7303953804075718
+      }
+    },
+    {
+      "step": 1024,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full16_mlp_train4096_l1_to_q4_seed1234/runs/study/stage_a/checkpoints/step_1024.pt",
+      "representation": {
+        "loss": 0.8190060742199421,
+        "k_nmse": 0.05438428348861635,
+        "v_nmse": 0.4428675752133131,
+        "k_cosine": 0.9374926052987576,
+        "v_cosine": 0.7407531812787056
+      }
+    },
+    {
+      "step": 1280,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full16_mlp_train4096_l1_to_q4_seed1234/runs/study/stage_a/checkpoints/step_1280.pt",
+      "representation": {
+        "loss": 0.7958418540656567,
+        "k_nmse": 0.053494872292503715,
+        "v_nmse": 0.42846884205937386,
+        "k_cosine": 0.9389997348189354,
+        "v_cosine": 0.7471221201121807
+      }
+    },
+    {
+      "step": 1536,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full16_mlp_train4096_l1_to_q4_seed1234/runs/study/stage_a/checkpoints/step_1536.pt",
+      "representation": {
+        "loss": 0.7749910838901997,
+        "k_nmse": 0.051792731042951345,
+        "v_nmse": 0.416158489882946,
+        "k_cosine": 0.9402564354240894,
+        "v_cosine": 0.7527037113904953
+      }
+    },
+    {
+      "step": 1792,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full16_mlp_train4096_l1_to_q4_seed1234/runs/study/stage_a/checkpoints/step_1792.pt",
+      "representation": {
+        "loss": 0.7604199275374413,
+        "k_nmse": 0.050826204009354115,
+        "v_nmse": 0.4068637974560261,
+        "k_cosine": 0.9413165226578712,
+        "v_cosine": 0.7559535428881645
+      }
+    },
+    {
+      "step": 2048,
+      "path": "/home/yezhe/异构模型/openbookqa_official_full16_mlp_train4096_l1_to_q4_seed1234/runs/study/stage_a/checkpoints/step_2048.pt",
+      "representation": {
+        "loss": 0.7497338131070137,
+        "k_nmse": 0.050147667760029435,
+        "v_nmse": 0.4000596608966589,
+        "k_cosine": 0.9417604692280293,
+        "v_cosine": 0.7587130628526211
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+
+# Runtime caches and large model checkpoints are intentionally not published.
+kv/
+phase1/**/*.pt
+phase2/*.pt
+

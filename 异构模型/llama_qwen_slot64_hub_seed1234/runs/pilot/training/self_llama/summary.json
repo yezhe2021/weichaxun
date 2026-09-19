@@ -1,0 +1,16 @@
+{
+  "stage": "self_llama",
+  "initial_validation_loss": 5.222192272543907,
+  "best_validation_loss": 5.112572550773621,
+  "best_epoch": 2,
+  "best_trained_validation_loss": 5.112572550773621,
+  "epochs": 2,
+  "optimizer_steps": 32,
+  "sample_exposures": 256,
+  "clip_rate": 0.0,
+  "trainable_parameters": 1835008,
+  "training_uses_gold": false,
+  "true_epoch_sampler": true,
+  "receiver_frozen": true,
+  "seconds": 30.25279239565134
+}

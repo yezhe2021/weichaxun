@@ -1,0 +1,65 @@
+{
+  "experiment": "mmlupro_token_count_scaling_posteriorq_l3_to_q4_seed1234",
+  "status": "completed",
+  "samples": 128,
+  "checkpoint": {
+    "alias": "best_accuracy",
+    "step": 128
+  },
+  "purpose": "No-training scaling audit from 32 to 48/64 selected option KV tokens.",
+  "invariants": {
+    "translator_parameters": "unchanged posterior-Question Full28-Diagonal checkpoint",
+    "translator_operation": "same per-token maps; only legacy T=32 shape guard bypassed",
+    "sender_routing_query": "last token of repeated posterior Question",
+    "receiver": "native Question + external selected Options KV + native Answer:",
+    "selection": "M normalized option-text regions; max routing attention per region"
+  },
+  "baseline_32": {
+    "native_oracle": {
+      "accuracy": 0.3359375,
+      "oracle_agreement": 1.0,
+      "oracle_choice_kl": 0.0
+    },
+    "translated": {
+      "accuracy": 0.2421875,
+      "oracle_agreement": 0.46875,
+      "oracle_choice_kl": 0.7909029128495604
+    }
+  },
+  "scaled": {
+    "48": {
+      "native_oracle": {
+        "accuracy": 0.3671875,
+        "oracle_agreement": 1.0,
+        "oracle_choice_kl": 0.0
+      },
+      "translated": {
+        "accuracy": 0.2421875,
+        "oracle_agreement": 0.4375,
+        "oracle_choice_kl": 0.9007984126219526
+      },
+      "selection": {
+        "mean_unique_source_tokens": 41.3046875,
+        "mean_unique_target_tokens": 42.2421875,
+        "mean_selected_attention_mass": 0.6582907918368683
+      }
+    },
+    "64": {
+      "native_oracle": {
+        "accuracy": 0.390625,
+        "oracle_agreement": 1.0,
+        "oracle_choice_kl": 0.0
+      },
+      "translated": {
+        "accuracy": 0.2265625,
+        "oracle_agreement": 0.453125,
+        "oracle_choice_kl": 0.8967150351381861
+      },
+      "selection": {
+        "mean_unique_source_tokens": 50.8203125,
+        "mean_unique_target_tokens": 52.6015625,
+        "mean_selected_attention_mass": 0.7271592788163661
+      }
+    }
+  }
+}

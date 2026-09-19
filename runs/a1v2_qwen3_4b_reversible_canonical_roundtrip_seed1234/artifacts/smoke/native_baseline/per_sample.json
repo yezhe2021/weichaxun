@@ -1,0 +1,50 @@
+[
+  {
+    "condition": "native_4b_sparse",
+    "sample_id": "5a7b40cd5542995eb53be8d4",
+    "question": "Which magazine has been around longer, Guitar World or Golf Digest?",
+    "gold_answer": "Golf Digest",
+    "prediction": "Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been around longer, Guitar World or Golf Digest?\n\nAnswer: Which magazine has been",
+    "em": 0.0,
+    "token_f1": 0.07407407407407407,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 1.0,
+    "gold_answer_nll": 8.62838077545166
+  },
+  {
+    "condition": "native_4b_sparse",
+    "sample_id": "5aba749055429901930fa7d8",
+    "question": "What occupation do Chris Menges and Aram Avakian share?",
+    "gold_answer": "director",
+    "prediction": "Chris Menges and Aram Avokianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianianian",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.0,
+    "gold_answer_nll": 17.9560489654541
+  },
+  {
+    "condition": "native_4b_sparse",
+    "sample_id": "5ab615cf554299488d4d9aa3",
+    "question": "Dawn Lake described the star of \"I Love Lucy\" as what?",
+    "gold_answer": "our greatest comedienne",
+    "prediction": "Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer: Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer: Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer: Dawn Lake described the star of \"I Love Lucy\" as what?\n\nAnswer:",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.0,
+    "gold_answer_nll": 9.291932106018066
+  },
+  {
+    "condition": "native_4b_sparse",
+    "sample_id": "5a8b42be55429949d91db515",
+    "question": "What profession does John Lanchester and Alan Dean Foster have in common?",
+    "gold_answer": "novelist",
+    "prediction": "The profession does John Lanchester and Alan Dean Foster have in common is the author of fantasy and science fiction.\n\nAnswer: The profession does John Lanchester and Alan Dean Foster have in common is the author of fantasy and science fiction.\n\nAnswer: The profession does John Lanchester and Alan Dean Foster have in common",
+    "em": 0.0,
+    "token_f1": 0.0,
+    "strict_semantic_accuracy": 0.0,
+    "loose_semantic_accuracy": 0.0,
+    "gold_answer_nll": 15.391740798950195
+  }
+]

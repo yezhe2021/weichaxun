@@ -1,0 +1,20 @@
+{
+  "train_only": true,
+  "source_cache_family": "target4",
+  "target_cache_family": "source17",
+  "sample_count": 128,
+  "token_count": 15392,
+  "scale_shapes": {
+    "source": [
+      36,
+      8,
+      128
+    ],
+    "target": [
+      28,
+      8,
+      128
+    ]
+  },
+  "epsilon": 1e-06
+}

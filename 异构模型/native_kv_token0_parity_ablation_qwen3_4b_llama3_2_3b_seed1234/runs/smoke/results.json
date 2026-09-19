@@ -1,0 +1,118 @@
+{
+  "qwen": {
+    "family": "qwen",
+    "split": "test",
+    "conditions": {
+      "native_full": {
+        "full_vocab_kl": 0.0,
+        "choice_kl": 0.0,
+        "native_agreement": 1.0,
+        "accuracy": 1.0,
+        "retained_fraction": 1.0,
+        "samples": 2,
+        "mean_retained_tokens": 141.0,
+        "mean_original_tokens": 141.0
+      },
+      "keep_even": {
+        "full_vocab_kl": 0.7643082961440086,
+        "choice_kl": 0.4620082378387451,
+        "native_agreement": 0.5,
+        "accuracy": 0.5,
+        "retained_fraction": 0.5,
+        "samples": 2,
+        "mean_retained_tokens": 70.5,
+        "mean_original_tokens": 141.0
+      },
+      "keep_odd": {
+        "full_vocab_kl": 6.951184988021851,
+        "choice_kl": 3.2911391258239746,
+        "native_agreement": 0.5,
+        "accuracy": 0.5,
+        "retained_fraction": 0.5,
+        "samples": 2,
+        "mean_retained_tokens": 70.5,
+        "mean_original_tokens": 141.0
+      },
+      "keep_odd_plus_token0": {
+        "full_vocab_kl": 0.6468878757441416,
+        "choice_kl": 0.07866764155915007,
+        "native_agreement": 1.0,
+        "accuracy": 1.0,
+        "retained_fraction": 0.5103372434017595,
+        "samples": 2,
+        "mean_retained_tokens": 71.5,
+        "mean_original_tokens": 141.0
+      },
+      "keep_even_minus_token0": {
+        "full_vocab_kl": 5.079648733139038,
+        "choice_kl": 2.355278395116329,
+        "native_agreement": 0.5,
+        "accuracy": 0.5,
+        "retained_fraction": 0.4896627565982405,
+        "samples": 2,
+        "mean_retained_tokens": 69.5,
+        "mean_original_tokens": 141.0
+      }
+    },
+    "seconds": 1.3440517727285624,
+    "position_protocol": "retained K uses original token positions; suffix begins at original full-context length"
+  },
+  "llama": {
+    "family": "llama",
+    "split": "test",
+    "conditions": {
+      "native_full": {
+        "full_vocab_kl": 0.0,
+        "choice_kl": 0.0,
+        "native_agreement": 1.0,
+        "accuracy": 0.5,
+        "retained_fraction": 1.0,
+        "samples": 2,
+        "mean_retained_tokens": 137.5,
+        "mean_original_tokens": 137.5
+      },
+      "keep_even": {
+        "full_vocab_kl": 0.19224030524492264,
+        "choice_kl": 0.1810818836092949,
+        "native_agreement": 0.5,
+        "accuracy": 0.5,
+        "retained_fraction": 0.501131221719457,
+        "samples": 2,
+        "mean_retained_tokens": 69.0,
+        "mean_original_tokens": 137.5
+      },
+      "keep_odd": {
+        "full_vocab_kl": 4.3663716316223145,
+        "choice_kl": 1.9144041538238525,
+        "native_agreement": 0.0,
+        "accuracy": 0.5,
+        "retained_fraction": 0.498868778280543,
+        "samples": 2,
+        "mean_retained_tokens": 68.5,
+        "mean_original_tokens": 137.5
+      },
+      "keep_odd_plus_token0": {
+        "full_vocab_kl": 0.2098655104637146,
+        "choice_kl": 0.2050854042172432,
+        "native_agreement": 0.5,
+        "accuracy": 0.5,
+        "retained_fraction": 0.5103904809787163,
+        "samples": 2,
+        "mean_retained_tokens": 69.5,
+        "mean_original_tokens": 137.5
+      },
+      "keep_even_minus_token0": {
+        "full_vocab_kl": 4.766174554824829,
+        "choice_kl": 2.7060497999191284,
+        "native_agreement": 0.0,
+        "accuracy": 0.5,
+        "retained_fraction": 0.4896095190212837,
+        "samples": 2,
+        "mean_retained_tokens": 68.0,
+        "mean_original_tokens": 137.5
+      }
+    },
+    "seconds": 0.3405969478189945,
+    "position_protocol": "retained K uses original token positions; suffix begins at original full-context length"
+  }
+}

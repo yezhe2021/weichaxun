@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "training_allowed": true,
+  "numerical_thresholds": {
+    "nmse_max": 0.0001,
+    "cosine_min": 0.999,
+    "route_kl_max": 0.001,
+    "output_cosine_min": 0.995
+  }
+}

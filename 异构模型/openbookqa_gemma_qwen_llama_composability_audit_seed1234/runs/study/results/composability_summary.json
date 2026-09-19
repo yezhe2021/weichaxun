@@ -1,0 +1,175 @@
+{
+  "status": "completed",
+  "protocol": "openbookqa_official_gemma_qwen_llama_stagea_vs_residual_composability_v1",
+  "sample_count": 128,
+  "definition": "Freeze Gemma->Qwen Stage-A/Residual Stage-B and Qwen->Llama Stage-A/Residual writers; vary only the Qwen-space KV passed between them.",
+  "checkpoints": {
+    "forward_stage_a_checkpoint": {
+      "path": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_1536.pt",
+      "sha256": "1b096ffd034db6fd65e7a70333ea934f0180be77ed937d652d6274aae300cdd0"
+    },
+    "forward_residual_checkpoint": {
+      "path": "/home/yezhe/异构模型/openbookqa_official_full34_headmix256_train4096_gemma3_4b_to_qwen3_4b_seed1234/runs/study/stage_b_residual/checkpoints/step_1024.pt",
+      "sha256": "689374df9e1c6cf5460041c41211da01b161286481496132dffa0601ab36bb30"
+    },
+    "reverse_stage_a_checkpoint": {
+      "path": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+      "sha256": "0966187fd3ce95056d427191dcd921846a8bfd5d207629a9f55cc5ad38f2cfeb"
+    },
+    "reverse_residual_checkpoint": {
+      "path": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_b_residual/checkpoints/step_384.pt",
+      "sha256": "e433225a668e818d3dd1e306e334e1c71961d0eecc3ac760196f9b12f2d159f9"
+    }
+  },
+  "upstream_qwen_metrics_from_frozen_forward_experiment": {
+    "stage_a": {
+      "accuracy": 0.40625,
+      "oracle_agreement": 0.421875,
+      "oracle_choice_kl": 1.0368744593670272,
+      "k_nmse": 0.04347799698007293,
+      "v_nmse": 0.3048319590743631,
+      "k_cosine": 0.9507662449032068,
+      "v_cosine": 0.7786299544386566
+    },
+    "stage_b_residual": {
+      "accuracy": 0.7421875,
+      "oracle_agreement": 0.703125,
+      "oracle_choice_kl": 0.549546815947906,
+      "k_nmse": 0.045472168319975026,
+      "v_nmse": 0.3101806028280407,
+      "k_cosine": 0.9492003577761352,
+      "v_cosine": 0.7770112594589591
+    },
+    "functional_accuracy_gain": 0.3359375
+  },
+  "llama_native_oracle32": {
+    "correct": 84,
+    "accuracy": 0.65625
+  },
+  "metrics": {
+    "reverse_stage_a": {
+      "qwen_native_bridge": {
+        "correct": 81,
+        "accuracy": 0.6328125,
+        "agreement_with_llama_native_oracle32": 0.7265625,
+        "choice_kl_to_llama_native_oracle32": 0.2043574604931564,
+        "k_nmse_to_llama_native": 0.08729031102848239,
+        "v_nmse_to_llama_native": 0.38490707462187856,
+        "k_cosine_to_llama_native": 0.9545732773840427,
+        "v_cosine_to_llama_native": 0.7639573821797967
+      },
+      "gemma_stage_a": {
+        "correct": 74,
+        "accuracy": 0.578125,
+        "agreement_with_llama_native_oracle32": 0.75,
+        "choice_kl_to_llama_native_oracle32": 0.2172593218201655,
+        "k_nmse_to_llama_native": 0.09734952822327614,
+        "v_nmse_to_llama_native": 0.40477906237356365,
+        "k_cosine_to_llama_native": 0.9493011897429824,
+        "v_cosine_to_llama_native": 0.7529658749699593
+      },
+      "gemma_stage_b_residual": {
+        "correct": 75,
+        "accuracy": 0.5859375,
+        "agreement_with_llama_native_oracle32": 0.7421875,
+        "choice_kl_to_llama_native_oracle32": 0.21607154279990937,
+        "k_nmse_to_llama_native": 0.09801240731030703,
+        "v_nmse_to_llama_native": 0.40554164024069905,
+        "k_cosine_to_llama_native": 0.9489937364123762,
+        "v_cosine_to_llama_native": 0.7524969736114144
+      }
+    },
+    "reverse_residual": {
+      "qwen_native_bridge": {
+        "correct": 80,
+        "accuracy": 0.625,
+        "agreement_with_llama_native_oracle32": 0.703125,
+        "choice_kl_to_llama_native_oracle32": 0.2008409944082814,
+        "k_nmse_to_llama_native": 0.08886610736954026,
+        "v_nmse_to_llama_native": 0.3850987897021696,
+        "k_cosine_to_llama_native": 0.9537580795586109,
+        "v_cosine_to_llama_native": 0.7638188069686294
+      },
+      "gemma_stage_a": {
+        "correct": 69,
+        "accuracy": 0.5390625,
+        "agreement_with_llama_native_oracle32": 0.7578125,
+        "choice_kl_to_llama_native_oracle32": 0.1935517140518641,
+        "k_nmse_to_llama_native": 0.09889326896518469,
+        "v_nmse_to_llama_native": 0.40498286252841353,
+        "k_cosine_to_llama_native": 0.948483953718096,
+        "v_cosine_to_llama_native": 0.7528126849792898
+      },
+      "gemma_stage_b_residual": {
+        "correct": 71,
+        "accuracy": 0.5546875,
+        "agreement_with_llama_native_oracle32": 0.765625,
+        "choice_kl_to_llama_native_oracle32": 0.19271693540213164,
+        "k_nmse_to_llama_native": 0.09954658051719889,
+        "v_nmse_to_llama_native": 0.4057474215514958,
+        "k_cosine_to_llama_native": 0.9481784529052675,
+        "v_cosine_to_llama_native": 0.7523424639366567
+      }
+    }
+  },
+  "pairwise_correctness": {
+    "reverse_stage_a": {
+      "stage_a_vs_stage_b": {
+        "both_correct": 74,
+        "only_first_correct": 0,
+        "only_second_correct": 1,
+        "both_wrong": 53,
+        "second_minus_first": 0.0078125
+      },
+      "native_bridge_vs_stage_b": {
+        "both_correct": 71,
+        "only_first_correct": 10,
+        "only_second_correct": 4,
+        "both_wrong": 43,
+        "second_minus_first": -0.046875
+      },
+      "llama_native_oracle_vs_stage_b": {
+        "both_correct": 68,
+        "only_first_correct": 16,
+        "only_second_correct": 7,
+        "both_wrong": 37,
+        "second_minus_first": -0.0703125
+      }
+    },
+    "reverse_residual": {
+      "stage_a_vs_stage_b": {
+        "both_correct": 69,
+        "only_first_correct": 0,
+        "only_second_correct": 2,
+        "both_wrong": 57,
+        "second_minus_first": 0.015625
+      },
+      "native_bridge_vs_stage_b": {
+        "both_correct": 65,
+        "only_first_correct": 15,
+        "only_second_correct": 6,
+        "both_wrong": 42,
+        "second_minus_first": -0.0703125
+      },
+      "llama_native_oracle_vs_stage_b": {
+        "both_correct": 66,
+        "only_first_correct": 18,
+        "only_second_correct": 5,
+        "both_wrong": 39,
+        "second_minus_first": -0.1015625
+      }
+    }
+  },
+  "primary_deltas": {
+    "reverse_stage_a": {
+      "stage_b_minus_stage_a_accuracy": 0.0078125,
+      "stage_b_minus_stage_a_agreement": -0.0078125,
+      "stage_b_minus_stage_a_choice_kl": -0.00118777902025613
+    },
+    "reverse_residual": {
+      "stage_b_minus_stage_a_accuracy": 0.015625,
+      "stage_b_minus_stage_a_agreement": 0.0078125,
+      "stage_b_minus_stage_a_choice_kl": -0.0008347786497324705
+    }
+  }
+}

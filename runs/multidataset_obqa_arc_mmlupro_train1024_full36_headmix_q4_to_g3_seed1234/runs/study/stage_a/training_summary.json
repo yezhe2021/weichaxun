@@ -1,0 +1,100 @@
+{
+  "stage": "A freshly retrained",
+  "objective": "KV reconstruction only",
+  "train_samples": 3072,
+  "epochs": 4,
+  "steps": 1536,
+  "parameters_trained": 401080320,
+  "clip_rate": 0.0,
+  "seconds": 5955.238911323249,
+  "candidates": [
+    {
+      "step": 192,
+      "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_headmix_q4_to_g3_seed1234/runs/study/stage_a/checkpoints/step_192.pt",
+      "representation": {
+        "loss": 0.8012232842544714,
+        "k_nmse": 0.14890125642220178,
+        "v_nmse": 0.2905285557111104,
+        "k_cosine": 0.9117778080205122,
+        "v_cosine": 0.726428709924221
+      }
+    },
+    {
+      "step": 384,
+      "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_headmix_q4_to_g3_seed1234/runs/study/stage_a/checkpoints/step_384.pt",
+      "representation": {
+        "loss": 0.7104703560471535,
+        "k_nmse": 0.13131792905429998,
+        "v_nmse": 0.25271738196412724,
+        "k_cosine": 0.9221665039658546,
+        "v_cosine": 0.751398449142774
+      }
+    },
+    {
+      "step": 576,
+      "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_headmix_q4_to_g3_seed1234/runs/study/stage_a/checkpoints/step_576.pt",
+      "representation": {
+        "loss": 0.6663715603450934,
+        "k_nmse": 0.1253448543138802,
+        "v_nmse": 0.2313731051981449,
+        "k_cosine": 0.9266779472430547,
+        "v_cosine": 0.7636684564252695
+      }
+    },
+    {
+      "step": 768,
+      "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_headmix_q4_to_g3_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+      "representation": {
+        "loss": 0.6330190983911356,
+        "k_nmse": 0.115631815046072,
+        "v_nmse": 0.21907607652246952,
+        "k_cosine": 0.9313913732767105,
+        "v_cosine": 0.7702974217633406
+      }
+    },
+    {
+      "step": 960,
+      "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_headmix_q4_to_g3_seed1234/runs/study/stage_a/checkpoints/step_960.pt",
+      "representation": {
+        "loss": 0.6197656244039536,
+        "k_nmse": 0.11392842590187986,
+        "v_nmse": 0.21131541362653175,
+        "k_cosine": 0.9322431509693464,
+        "v_cosine": 0.773235060274601
+      }
+    },
+    {
+      "step": 1152,
+      "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_headmix_q4_to_g3_seed1234/runs/study/stage_a/checkpoints/step_1152.pt",
+      "representation": {
+        "loss": 0.6091025260587534,
+        "k_nmse": 0.11217867474382122,
+        "v_nmse": 0.2058755618830522,
+        "k_cosine": 0.9331504106521606,
+        "v_cosine": 0.7758013022442659
+      }
+    },
+    {
+      "step": 1344,
+      "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_headmix_q4_to_g3_seed1234/runs/study/stage_a/checkpoints/step_1344.pt",
+      "representation": {
+        "loss": 0.5972362024088701,
+        "k_nmse": 0.1091676251962781,
+        "v_nmse": 0.2012717085890472,
+        "k_cosine": 0.9352781052390734,
+        "v_cosine": 0.7779250231881937
+      }
+    },
+    {
+      "step": 1536,
+      "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_headmix_q4_to_g3_seed1234/runs/study/stage_a/checkpoints/step_1536.pt",
+      "representation": {
+        "loss": 0.588725579281648,
+        "k_nmse": 0.10661171562969685,
+        "v_nmse": 0.19767504278570414,
+        "k_cosine": 0.9363668312629064,
+        "v_cosine": 0.7791943401098251
+      }
+    }
+  ]
+}

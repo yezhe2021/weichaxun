@@ -1,0 +1,48 @@
+[2026-09-18 19:19:45] waiting for GPU: 5620 MiB free
+[2026-09-18 19:20:45] waiting for GPU: 5620 MiB free
+[2026-09-18 19:21:45] waiting for GPU: 5620 MiB free
+[2026-09-18 19:22:45] waiting for GPU: 5620 MiB free
+[2026-09-18 19:23:45] waiting for GPU: 5620 MiB free
+[2026-09-18 19:24:45] waiting for GPU: 5620 MiB free
+[2026-09-18 19:25:45] waiting for GPU: 5620 MiB free
+[2026-09-18 19:26:46] waiting for GPU: 13920 MiB free
+[2026-09-18 19:30:08] GPU ready: 32480 MiB free
+[2026-09-18 19:30:08] START /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full28_mlp_l3_to_q4_seed1234 mode=smoke
+[2026-09-18 19:30:57] NON-CUDA FAILURE /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full28_mlp_l3_to_q4_seed1234 mode=smoke
+[2026-09-18 19:42:45] GPU ready: 32480 MiB free
+[2026-09-18 19:42:45] START /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full28_mlp_l3_to_q4_seed1234 mode=smoke
+[2026-09-18 19:43:15] CUDA-related interruption; retrying completed-stage-resumable pipeline
+[2026-09-18 19:44:15] GPU ready: 32480 MiB free
+[2026-09-18 19:44:15] START /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full28_mlp_l3_to_q4_seed1234 mode=smoke
+[2026-09-18 19:44:27] CUDA-related interruption; retrying completed-stage-resumable pipeline
+[2026-09-18 19:45:46] GPU ready: 32480 MiB free
+[2026-09-18 19:45:46] START /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full28_mlp_l3_to_q4_seed1234 mode=smoke
+[2026-09-18 19:46:00] CUDA-related interruption; retrying completed-stage-resumable pipeline
+[2026-09-18 19:47:00] GPU ready: 32480 MiB free
+[2026-09-18 19:47:00] START /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full28_mlp_l3_to_q4_seed1234 mode=smoke
+[2026-09-18 19:47:14] CUDA-related interruption; retrying completed-stage-resumable pipeline
+[2026-09-18 19:48:11] GPU ready: 32480 MiB free
+[2026-09-18 19:48:11] START /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full28_mlp_l3_to_q4_seed1234 mode=smoke
+[2026-09-18 19:49:28] DONE /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full28_mlp_l3_to_q4_seed1234 mode=smoke
+[2026-09-18 19:49:28] waiting for GPU: 21626 MiB free
+[2026-09-18 19:50:28] GPU ready: 32480 MiB free
+[2026-09-18 19:50:28] START /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_mlp_q4_to_l3_seed1234 mode=smoke
+[2026-09-18 19:52:32] DONE /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_mlp_q4_to_l3_seed1234 mode=smoke
+[2026-09-18 19:52:32] waiting for GPU: 17280 MiB free
+[2026-09-18 19:53:32] GPU ready: 32480 MiB free
+[2026-09-18 19:53:32] START /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full28_mlp_l3_to_q4_seed1234 mode=study
+[2026-09-19 00:09:38] DONE /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full28_mlp_l3_to_q4_seed1234 mode=study
+[2026-09-19 00:09:38] waiting for GPU: 20310 MiB free
+[2026-09-19 00:10:38] waiting for GPU: 20310 MiB free
+[2026-09-19 00:11:38] waiting for GPU: 20310 MiB free
+[2026-09-19 00:12:38] waiting for GPU: 20310 MiB free
+[2026-09-19 00:13:38] waiting for GPU: 20310 MiB free
+[2026-09-19 00:14:38] waiting for GPU: 20310 MiB free
+[2026-09-19 00:15:38] waiting for GPU: 20310 MiB free
+[2026-09-19 00:16:38] waiting for GPU: 20310 MiB free
+[2026-09-19 00:17:38] waiting for GPU: 20310 MiB free
+[2026-09-19 00:18:38] waiting for GPU: 20310 MiB free
+[2026-09-19 00:19:38] GPU ready: 24446 MiB free
+[2026-09-19 00:19:38] START /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_mlp_q4_to_l3_seed1234 mode=study
+[2026-09-19 04:16:12] DONE /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_mlp_q4_to_l3_seed1234 mode=study
+[2026-09-19 04:16:12] ALL BIDIRECTIONAL MULTIDATASET EXPERIMENTS COMPLETED

@@ -1,0 +1,60 @@
+{
+  "arm": "local5_choice_kl",
+  "initialized_from": 256,
+  "steps": 512,
+  "clip_rate": 0.013671875,
+  "selection_criterion": "validation_choice_kl",
+  "best": {
+    "step": 512,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/local5_choice_kl/step_512.pt",
+    "functional": {
+      "choice_kl": 0.734248829074204,
+      "accuracy": 0.1328125,
+      "oracle_accuracy": 0.203125,
+      "oracle_agreement": 0.2734375
+    }
+  },
+  "candidates": [
+    {
+      "step": 128,
+      "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/local5_choice_kl/step_128.pt",
+      "functional": {
+        "choice_kl": 0.82453799401992,
+        "accuracy": 0.1171875,
+        "oracle_accuracy": 0.203125,
+        "oracle_agreement": 0.2265625
+      }
+    },
+    {
+      "step": 256,
+      "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/local5_choice_kl/step_256.pt",
+      "functional": {
+        "choice_kl": 0.7664228243811522,
+        "accuracy": 0.1328125,
+        "oracle_accuracy": 0.203125,
+        "oracle_agreement": 0.2734375
+      }
+    },
+    {
+      "step": 384,
+      "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/local5_choice_kl/step_384.pt",
+      "functional": {
+        "choice_kl": 0.7426132100226823,
+        "accuracy": 0.140625,
+        "oracle_accuracy": 0.203125,
+        "oracle_agreement": 0.28125
+      }
+    },
+    {
+      "step": 512,
+      "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/local5_choice_kl/step_512.pt",
+      "functional": {
+        "choice_kl": 0.734248829074204,
+        "accuracy": 0.1328125,
+        "oracle_accuracy": 0.203125,
+        "oracle_agreement": 0.2734375
+      }
+    }
+  ],
+  "seconds": 2289.0899392906576
+}

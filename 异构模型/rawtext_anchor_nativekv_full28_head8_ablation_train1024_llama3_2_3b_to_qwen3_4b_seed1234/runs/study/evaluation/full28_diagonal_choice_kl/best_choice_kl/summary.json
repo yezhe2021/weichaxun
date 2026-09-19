@@ -1,0 +1,19 @@
+{
+  "checkpoint_step": 384,
+  "functional": {
+    "accuracy": 0.2109375,
+    "oracle_accuracy": 0.21875,
+    "qwen_full_accuracy": 0.25,
+    "oracle_agreement": 0.4375,
+    "choice_kl": 0.5962722418189514,
+    "full_kl": 2.969506870955229,
+    "accuracy_retention": 0.9642857142857143
+  },
+  "representation": {
+    "loss": 1.0701034776866436,
+    "k_nmse": 0.1791297374293208,
+    "v_nmse": 0.45408538170158863,
+    "k_cosine": 0.8436175510287285,
+    "v_cosine": 0.7194941118359566
+  }
+}

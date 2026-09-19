@@ -1,0 +1,37 @@
+{
+  "qwen": {
+    "path": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "layers": 36,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "tokenizer_class": "Qwen2Tokenizer",
+    "bos_token_id": null
+  },
+  "llama": {
+    "path": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-1B-Instruct",
+    "layers": 16,
+    "kv_heads": 8,
+    "head_dim": 64,
+    "tokenizer_class": "TokenizersBackend",
+    "bos_token_id": 128000
+  },
+  "translator": {
+    "source_shape": [
+      16,
+      32,
+      8,
+      64
+    ],
+    "target_shape": [
+      36,
+      32,
+      8,
+      128
+    ],
+    "per_head_depth_width": 1024,
+    "hidden_dim": 1024,
+    "head_mixing": false,
+    "token_mixing": false,
+    "k_v_shared": false
+  }
+}

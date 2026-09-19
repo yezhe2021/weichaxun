@@ -1,0 +1,46 @@
+[
+  {
+    "step": 128,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/nearest_linear/step_128.pt",
+    "representation": {
+      "loss": 2.4620683640241623,
+      "k_nmse": 0.7490097358822823,
+      "v_nmse": 0.9065732397139072,
+      "k_cosine": 0.7707806676626205,
+      "v_cosine": 0.42273395135998726
+    }
+  },
+  {
+    "step": 256,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/nearest_linear/step_256.pt",
+    "representation": {
+      "loss": 2.2656761556863785,
+      "k_nmse": 0.6775721870362759,
+      "v_nmse": 0.8688000403344631,
+      "k_cosine": 0.8147630281746387,
+      "v_cosine": 0.46593301743268967
+    }
+  },
+  {
+    "step": 384,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/nearest_linear/step_384.pt",
+    "representation": {
+      "loss": 2.167890787124634,
+      "k_nmse": 0.6233910173177719,
+      "v_nmse": 0.8462723419070244,
+      "k_cosine": 0.8271718621253967,
+      "v_cosine": 0.474600687623024
+    }
+  },
+  {
+    "step": 512,
+    "path": "/home/yezhe/异构模型/rawtext_anchor_nativekv_translator_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/checkpoints/nearest_linear/step_512.pt",
+    "representation": {
+      "loss": 2.100697800517082,
+      "k_nmse": 0.5799084417521954,
+      "v_nmse": 0.8318406604230404,
+      "k_cosine": 0.8337702751159668,
+      "v_cosine": 0.4772810600697994
+    }
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "writer": "d2",
+  "checkpoint": "checkpoints/quick/d2/stage_a/best.pt",
+  "sample_count": 4,
+  "functional_modes": [
+    "final",
+    "all"
+  ],
+  "rows": [
+    {
+      "sample_id": "3114",
+      "functional_mode": "final",
+      "functional_kl": 4.607544898986816,
+      "gradient": {
+        "norm": 302.39201801708305,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "3114",
+      "functional_mode": "all",
+      "functional_kl": 5.196406841278076,
+      "gradient": {
+        "norm": 46.247021650093025,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "471",
+      "functional_mode": "final",
+      "functional_kl": 7.852083683013916,
+      "gradient": {
+        "norm": 150.01622943500132,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "471",
+      "functional_mode": "all",
+      "functional_kl": 3.052628517150879,
+      "gradient": {
+        "norm": 40.10004211765664,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "3851",
+      "functional_mode": "final",
+      "functional_kl": 8.85393238067627,
+      "gradient": {
+        "norm": 242.02115195851482,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "3851",
+      "functional_mode": "all",
+      "functional_kl": 3.4304697513580322,
+      "gradient": {
+        "norm": 28.08481681534994,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "10446",
+      "functional_mode": "final",
+      "functional_kl": 2.7693052291870117,
+      "gradient": {
+        "norm": 250.77414297188082,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "10446",
+      "functional_mode": "all",
+      "functional_kl": 4.889055252075195,
+      "gradient": {
+        "norm": 105.4610672295819,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    }
+  ],
+  "receiver_gradient_count": 0,
+  "kv_hidden_losses_present_in_training_graph": false,
+  "gold_label_used": false
+}

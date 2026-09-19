@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "sample_count": 32,
+  "selection": "32 normalized option-text regions; max decision attention within each region",
+  "query": "last Sender-native Answer: token",
+  "candidates": "Options only; Question, position0 and Answer excluded",
+  "answer_tokenization": {
+    "qwen": {
+      "ids": [
+        16141,
+        25
+      ],
+      "tokens": [
+        "Answer",
+        ":"
+      ],
+      "choice_ids": {
+        "A": 362,
+        "B": 425,
+        "C": 356,
+        "D": 422
+      }
+    },
+    "gemma": {
+      "ids": [
+        7925,
+        236787
+      ],
+      "tokens": [
+        "Answer",
+        ":"
+      ],
+      "choice_ids": {
+        "A": 562,
+        "B": 603,
+        "C": 565,
+        "D": 622
+      }
+    }
+  },
+  "mean_anchor_iou": 0.9482932350852273,
+  "mean_selected_attention_mass": 0.8405007529650087
+}

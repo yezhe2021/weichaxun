@@ -1,0 +1,81 @@
+{
+  "status": "completed",
+  "protocol": "multidataset_standardprompt_receiver_native_question_options32_mmlu64_q4_to_l3_train1024_v3",
+  "train_samples": 3072,
+  "validation_samples": 384,
+  "test_samples": 384,
+  "stage_a_checkpoint": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full36_mlp_q4_to_l3_seed1234/runs/study/stage_a/checkpoints/step_1536.pt",
+  "metrics": {
+    "stage_a": {
+      "accuracy": 0.4947916666666667,
+      "oracle_agreement": 0.7135416666666666,
+      "oracle_choice_kl": 0.2017070818171002,
+      "k_nmse": 0.08920244229375385,
+      "v_nmse": 0.3851242716579388,
+      "k_cosine": 0.95363076015686,
+      "v_cosine": 0.7650176024374863
+    },
+    "residual": {
+      "accuracy": 0.5234375,
+      "oracle_agreement": 0.734375,
+      "oracle_choice_kl": 0.1815353249257896,
+      "k_nmse": 0.08946174522861838,
+      "v_nmse": 0.3851481391660248,
+      "k_cosine": 0.9534947347516814,
+      "v_cosine": 0.7649977010053893
+    }
+  },
+  "per_dataset_accuracy": {
+    "arc_challenge": {
+      "count": 128,
+      "stage_a": 0.625,
+      "residual": 0.625
+    },
+    "mmlu_pro": {
+      "count": 128,
+      "stage_a": 0.2578125,
+      "residual": 0.3046875
+    },
+    "openbookqa": {
+      "count": 128,
+      "stage_a": 0.6015625,
+      "residual": 0.640625
+    }
+  },
+  "relative_residual_norm": {
+    "k": {
+      "min": 0.01624540453147623,
+      "p10": 0.016478364029743932,
+      "p25": 0.016603460107006918,
+      "median": 0.01674660779702746,
+      "p75": 0.016868311589246725,
+      "p90": 0.016985201172431845,
+      "p95": 0.017064422439983386,
+      "max": 0.017296926186374822,
+      "mean": 0.01673996156644333
+    },
+    "v": {
+      "min": 0.006702496970650281,
+      "p10": 0.007119895742092618,
+      "p25": 0.007235780940364424,
+      "median": 0.007402613623254846,
+      "p75": 0.007611303156555144,
+      "p90": 0.007874092858781132,
+      "p95": 0.007988883302701361,
+      "max": 0.008199606160518695,
+      "mean": 0.007442814857632581
+    }
+  },
+  "paired_stage_a_vs_residual": {
+    "both_correct": 187,
+    "only_first_correct": 3,
+    "only_second_correct": 14,
+    "both_wrong": 180,
+    "second_minus_first": 0.028645833333333332,
+    "mcnemar_p": 0.012725830078125
+  },
+  "frozen_base_hash_verified": true,
+  "trained_parameters": {
+    "residual": 7340032
+  }
+}

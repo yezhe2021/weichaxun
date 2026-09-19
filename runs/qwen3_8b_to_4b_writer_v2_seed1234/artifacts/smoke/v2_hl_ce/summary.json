@@ -1,0 +1,15 @@
+{
+  "kind": "v2_hl",
+  "branch": "ce",
+  "initialized_from": "/home/yezhe/可拔插/qwen3_8b_to_4b_writer_v2_seed1234/artifacts/smoke/v2_hl_stage_a/best.pt",
+  "best_validation_nll": 4.967583775520325,
+  "best_validation_generation_f1": 0.16666666666666666,
+  "training_seconds": 7.629433898255229,
+  "peak_gpu_bytes": 14355907072,
+  "parameters": {
+    "trainable_parameters": 94447872,
+    "total_parameters": 94447872
+  },
+  "representation_losses_used": false,
+  "tether_used": false
+}

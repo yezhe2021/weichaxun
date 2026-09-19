@@ -1,0 +1,31 @@
+{
+  "seed": 1234,
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "llama": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct"
+  },
+  "dataset": "/home/yezhe/all_models/datasets/QCRI/AraDiCE-OpenBookQA/OBQA_eng/test.json",
+  "linear_baseline_per_sample": "/home/yezhe/异构模型/openbookqa_32token_old_vs_posteriorq_translator_l3_to_q4_seed1234/runs/study/results/per_sample_metrics.jsonl",
+  "shared_results_document": "/home/yezhe/异构模型/EXPERIMENT_RESULTS.md",
+  "regions": 32,
+  "train_samples": 305,
+  "validation_samples": 64,
+  "test_samples": 128,
+  "max_body_tokens": 2048,
+  "audit_samples": 32,
+  "stage_a_epochs": 8,
+  "stage_a_steps": 312,
+  "stage_b_epochs": 4,
+  "stage_b_steps": 156,
+  "batch_size": 8,
+  "validation_interval_steps": 39,
+  "stage_a_learning_rate": 0.001,
+  "stage_b_learning_rate": 0.0001,
+  "clip": 30.0,
+  "temperature": 1.0,
+  "attention_implementation": "eager",
+  "architecture": "full28_mlp",
+  "mlp_hidden_dim": 1024,
+  "protocol": "openbookqa_standardprompt_receiver_native_question_options32_v1",
+  "split_policy": "seed1234 fixed test128; remaining shuffled into train305/validation64"
+}

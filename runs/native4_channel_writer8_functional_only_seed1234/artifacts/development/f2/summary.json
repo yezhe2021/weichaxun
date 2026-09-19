@@ -1,0 +1,12 @@
+{
+  "completed": true,
+  "updates": 600,
+  "initialization": "stage_a",
+  "optimized_losses": [
+    "answer_nll",
+    "distill_kl",
+    "dependence"
+  ],
+  "representation_losses_used_for_backprop": false,
+  "hard_gates_enforced": false
+}

@@ -1,0 +1,31 @@
+{
+  "mode": "shared_canonical",
+  "probe_trained_sender": "a",
+  "probe_training_source": "a_self_only",
+  "conditions": {
+    "self": {
+      "support_recall_at_1": 0.26171875,
+      "support_hit_at_1": 0.5625,
+      "support_recall_at_5": 0.62109375,
+      "support_hit_at_5": 0.8125,
+      "mrr": 0.6860682720057721,
+      "support_auprc": 0.5793696097933716
+    },
+    "cross": {
+      "support_recall_at_1": 0.23828125000000003,
+      "support_hit_at_1": 0.515625,
+      "support_recall_at_5": 0.6497395833333333,
+      "support_hit_at_5": 0.84375,
+      "mrr": 0.6582051475893389,
+      "support_auprc": 0.5716657978075086
+    },
+    "shuffled": {
+      "support_recall_at_1": 0.23307291666666666,
+      "support_hit_at_1": 0.5,
+      "support_recall_at_5": 0.5403645833333333,
+      "support_hit_at_5": 0.765625,
+      "mrr": 0.6188937364718615,
+      "support_auprc": 0.48990100605449866
+    }
+  }
+}

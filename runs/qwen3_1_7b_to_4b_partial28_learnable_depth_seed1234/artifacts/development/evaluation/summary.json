@@ -1,0 +1,176 @@
+{
+  "learnable_matrix_ce_correct": {
+    "count": 64,
+    "em": 0.1875,
+    "f1": 0.25949900793650793,
+    "nll": 3.5667730660968573
+  },
+  "learnable_matrix_ce_shuffled": {
+    "count": 64,
+    "em": 0.203125,
+    "f1": 0.27198660714285716,
+    "nll": 3.9409208505016977
+  },
+  "learnable_matrix_f0_correct": {
+    "count": 64,
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 14.156540863215923
+  },
+  "learnable_matrix_f0_shuffled": {
+    "count": 64,
+    "em": 0.0,
+    "f1": 0.004644660894660895,
+    "nll": 13.811436958611012
+  },
+  "partial28_repeat_ce_correct": {
+    "count": 64,
+    "em": 0.140625,
+    "f1": 0.21540178571428575,
+    "nll": 3.5533532852628014
+  },
+  "partial28_repeat_ce_shuffled": {
+    "count": 64,
+    "em": 0.15625,
+    "f1": 0.2053199404761905,
+    "nll": 3.725392306027061
+  },
+  "partial28_repeat_f0_correct": {
+    "count": 64,
+    "em": 0.0,
+    "f1": 0.00390625,
+    "nll": 15.484925329685211
+  },
+  "partial28_repeat_f0_shuffled": {
+    "count": 64,
+    "em": 0.0,
+    "f1": 0.001644736842105263,
+    "nll": 15.060780301690102
+  },
+  "partial28_skip_ce_correct": {
+    "count": 64,
+    "em": 0.21875,
+    "f1": 0.2802083333333334,
+    "nll": 3.1815787199884653
+  },
+  "partial28_skip_ce_shuffled": {
+    "count": 64,
+    "em": 0.125,
+    "f1": 0.18370535714285713,
+    "nll": 3.4416400979971513
+  },
+  "partial28_skip_f0_correct": {
+    "count": 64,
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 15.104996860027313
+  },
+  "partial28_skip_f0_shuffled": {
+    "count": 64,
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 15.132894858717918
+  },
+  "repeat_continued_ce_correct": {
+    "count": 64,
+    "em": 0.15625,
+    "f1": 0.2453497023809524,
+    "nll": 2.971042142919032
+  },
+  "repeat_continued_ce_shuffled": {
+    "count": 64,
+    "em": 0.15625,
+    "f1": 0.21808035714285715,
+    "nll": 3.0647866450090078
+  },
+  "repeat_continued_f0_correct": {
+    "count": 64,
+    "em": 0.0,
+    "f1": 0.0,
+    "nll": 15.377750284969807
+  },
+  "repeat_continued_f0_shuffled": {
+    "count": 64,
+    "em": 0.0,
+    "f1": 0.003652597402597403,
+    "nll": 15.301737233996391
+  },
+  "qwen3_4b_question_only": {
+    "count": 64,
+    "em": 0.203125,
+    "f1": 0.2997628654558002,
+    "nll": 3.3914692638224935,
+    "bridge_f1": 0.09753709454796411,
+    "comparison_f1": 0.5019886363636363,
+    "generation_match_vs_text": 0.296875
+  },
+  "qwen3_4b_full_context": {
+    "count": 64,
+    "em": 0.453125,
+    "f1": 0.6049913194444445,
+    "nll": 2.599654186224619,
+    "bridge_f1": 0.6509548611111112,
+    "comparison_f1": 0.5590277777777778,
+    "generation_match_vs_text": 1.0
+  },
+  "qwen3_1_7b_full_context": {
+    "count": 64,
+    "em": 0.234375,
+    "f1": 0.2673611111111111,
+    "nll": 4.7222220436561635,
+    "bridge_f1": 0.2378472222222222,
+    "comparison_f1": 0.296875,
+    "generation_match_vs_text": 1.0
+  },
+  "comparisons": {
+    "partial28_skip_f0": {
+      "delta_memory": -0.2997628654558002,
+      "delta_shuffle": 0.0,
+      "beats_question_only": false,
+      "beats_shuffled": false
+    },
+    "partial28_skip_ce": {
+      "delta_memory": -0.019554532122466828,
+      "delta_shuffle": 0.09650297619047626,
+      "beats_question_only": false,
+      "beats_shuffled": true
+    },
+    "partial28_repeat_f0": {
+      "delta_memory": -0.2958566154558002,
+      "delta_shuffle": 0.002261513157894737,
+      "beats_question_only": false,
+      "beats_shuffled": true
+    },
+    "partial28_repeat_ce": {
+      "delta_memory": -0.08436107974151447,
+      "delta_shuffle": 0.010081845238095244,
+      "beats_question_only": false,
+      "beats_shuffled": true
+    },
+    "repeat_continued_f0": {
+      "delta_memory": -0.2997628654558002,
+      "delta_shuffle": -0.003652597402597403,
+      "beats_question_only": false,
+      "beats_shuffled": false
+    },
+    "repeat_continued_ce": {
+      "delta_memory": -0.05441316307484781,
+      "delta_shuffle": 0.027269345238095266,
+      "beats_question_only": false,
+      "beats_shuffled": true
+    },
+    "learnable_matrix_f0": {
+      "delta_memory": -0.2997628654558002,
+      "delta_shuffle": -0.004644660894660895,
+      "beats_question_only": false,
+      "beats_shuffled": false
+    },
+    "learnable_matrix_ce": {
+      "delta_memory": -0.04026385751929229,
+      "delta_shuffle": -0.012487599206349231,
+      "beats_question_only": false,
+      "beats_shuffled": false
+    },
+    "delta_matrix_ce": 0.01414930555555552
+  }
+}

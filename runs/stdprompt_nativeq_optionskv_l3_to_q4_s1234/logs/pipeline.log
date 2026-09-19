@@ -1,0 +1,373 @@
+[2026-09-13 16:52:54] CUDA available; starting smoke
+START stage: prepare
+Traceback (most recent call last):
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/run_pipeline.py", line 69, in run_internal
+    execute_stage(cfg, stage)
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/run_pipeline.py", line 17, in execute_stage
+    prepare_manifests(cfg)
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/data.py", line 97, in prepare_manifests
+    encoded = {family: encode(tok, text) for family, tok in toks.items()}
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/data.py", line 97, in <dictcomp>
+    encoded = {family: encode(tok, text) for family, tok in toks.items()}
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/data.py", line 62, in encode
+    raise RuntimeError("Noncompositional receiver-Answer boundary")
+RuntimeError: Noncompositional receiver-Answer boundary
+Traceback (most recent call last):
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/run_pipeline.py", line 119, in <module>
+    if __name__ == "__main__": main()
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/run_pipeline.py", line 101, in main
+    run_internal(cfg, args.action); return
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/run_pipeline.py", line 69, in run_internal
+    execute_stage(cfg, stage)
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/run_pipeline.py", line 17, in execute_stage
+    prepare_manifests(cfg)
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/data.py", line 97, in prepare_manifests
+    encoded = {family: encode(tok, text) for family, tok in toks.items()}
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/data.py", line 97, in <dictcomp>
+    encoded = {family: encode(tok, text) for family, tok in toks.items()}
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/data.py", line 62, in encode
+    raise RuntimeError("Noncompositional receiver-Answer boundary")
+RuntimeError: Noncompositional receiver-Answer boundary
+Traceback (most recent call last):
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/run_pipeline.py", line 119, in <module>
+    if __name__ == "__main__": main()
+  File "/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/run_pipeline.py", line 113, in main
+    subprocess.run([sys.executable, "-u", __file__, "--mode", args.mode, stage], check=True)
+  File "/home/yezhe/data/miniconda3/envs/attnkv/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yezhe/data/miniconda3/envs/attnkv/bin/python', '-u', '/home/yezhe/异构模型/mmlupro_standardprompt_nativequestion_optionskv_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/run_pipeline.py', '--mode', 'smoke', 'prepare']' returned non-zero exit status 1.
+[2026-09-13 16:53:07] Non-CUDA smoke failure; stopping
+[2026-09-13 16:54:07] CUDA available; starting smoke
+START stage: prepare
+[2026-09-13 16:54:18] Prepared standard prompt with unchanged IDs: {'train': {'count': 2, 'ids_sha256': '1e042a951fa68151a711e35c84a539055555a79b6209536d3bc6ab31937beebe', 'first_id': '2973', 'last_id': '494'}, 'validation': {'count': 2, 'ids_sha256': 'ee5b586563a95ec7f4a0b194c179e47ae20b37e6c6907c503b4c647e0ba96997', 'first_id': '8776', 'last_id': '5371'}, 'test': {'count': 2, 'ids_sha256': '7f9396ca1d7c9563f548ebd3886bec427fbb4585d275b0a48696b6dfbfba5c47', 'first_id': '2599', 'last_id': '3185'}}
+DONE stage: prepare
+START stage: cache_llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:03,  4.01it/s]Loading weights:  51%|█████     | 129/254 [00:00<00:00, 453.85it/s]Loading weights:  78%|███████▊  | 199/254 [00:00<00:00, 472.33it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 417.39it/s]
+[2026-09-13 16:54:30] Llama fresh decision cache train: 2/2
+[2026-09-13 16:54:31] Llama fresh decision cache validation: 2/2
+[2026-09-13 16:54:31] Llama fresh decision cache test: 2/2
+DONE stage: cache_llama
+START stage: cache_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:24,  4.67it/s]Loading weights:  37%|███▋      | 147/398 [00:00<00:00, 582.84it/s]Loading weights:  58%|█████▊    | 232/398 [00:00<00:00, 600.96it/s]Loading weights:  77%|███████▋  | 307/398 [00:00<00:00, 581.78it/s]Loading weights:  94%|█████████▍| 374/398 [00:00<00:00, 582.92it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 537.44it/s]
+[2026-09-13 16:54:46] Qwen fresh decision/pair cache train: 2/2
+[2026-09-13 16:54:47] Qwen fresh decision/pair cache validation: 2/2
+[2026-09-13 16:54:48] Qwen fresh decision/pair cache test: 2/2
+DONE stage: cache_qwen
+START stage: phase0_audit
+[2026-09-13 16:54:53] PHASE-0 AUDIT PASSED: {'passed': True, 'sample_count': 2, 'selection': '32 normalized option-text regions; max decision attention within each region', 'query': 'last Sender-native Answer: token', 'candidates': 'Options only; Question, position0 and Answer excluded', 'answer_tokenization': {'qwen': {'ids': [16141, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 425, 'C': 356, 'D': 422, 'E': 468, 'F': 434, 'G': 479, 'H': 472, 'I': 358, 'J': 619}}, 'llama': {'ids': [16533, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 426, 'C': 356, 'D': 423, 'E': 469, 'F': 435, 'G': 480, 'H': 473, 'I': 358, 'J': 622}}}, 'mean_anchor_iou': 1.0, 'mean_selected_attention_mass': 0.47361719584490936}
+DONE stage: phase0_audit
+START stage: teachers_baselines
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:30,  4.39it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 596.84it/s]Loading weights:  62%|██████▏   | 247/398 [00:00<00:00, 591.61it/s]Loading weights:  81%|████████  | 323/398 [00:00<00:00, 562.02it/s]Loading weights:  98%|█████████▊| 389/398 [00:00<00:00, 568.29it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 532.73it/s]
+[2026-09-13 16:55:04] Standard-prompt Oracle teacher train: 2/2
+[2026-09-13 16:55:04] Standard-prompt Oracle teacher validation: 2/2
+[2026-09-13 16:55:04] Standard-prompt Oracle teacher test: 2/2
+[2026-09-13 16:55:05] Native baselines: 2/2
+DONE stage: teachers_baselines
+START stage: stage_a
+[2026-09-13 16:55:15] Stage A validation step=1 loss=3.144557
+DONE stage: stage_a
+START stage: select_stage_a
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:27,  4.52it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 607.81it/s]Loading weights:  62%|██████▏   | 247/398 [00:00<00:00, 615.20it/s]Loading weights:  82%|████████▏ | 325/398 [00:00<00:00, 618.92it/s]Loading weights: 100%|█████████▉| 397/398 [00:00<00:00, 633.44it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 567.31it/s]
+[2026-09-13 16:55:29] Stage A functional step=1 acc=0.0000 KL=1.552601
+DONE stage: select_stage_a
+START stage: stage_b
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:31,  4.34it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 571.32it/s]Loading weights:  60%|██████    | 239/398 [00:00<00:00, 583.07it/s]Loading weights:  78%|███████▊  | 311/398 [00:00<00:00, 572.92it/s]Loading weights:  95%|█████████▍| 377/398 [00:00<00:00, 577.22it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 534.08it/s]
+[2026-09-13 16:55:44] Stage B validation step=1 acc=0.0000 KL=1.322500
+DONE stage: stage_b
+START stage: evaluate
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:29,  4.46it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 552.61it/s]Loading weights:  57%|█████▋    | 227/398 [00:00<00:00, 570.89it/s]Loading weights:  75%|███████▍  | 298/398 [00:00<00:00, 578.64it/s]Loading weights:  92%|█████████▏| 365/398 [00:00<00:00, 586.96it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 528.17it/s]
+[2026-09-13 16:55:58] Translated best_accuracy: 2/2
+[2026-09-13 16:56:01] Translated best_choice_kl: 2/2
+[2026-09-13 16:56:01] STANDARD-PROMPT NATIVE-QUESTION OPTIONS-KV EXPERIMENT COMPLETED
+DONE stage: evaluate
+ALL NATIVE-QUESTION OPTIONS-KV EXPERIMENT STAGES COMPLETED
+[2026-09-13 16:56:03] Smoke passed; starting study
+START stage: prepare
+[2026-09-13 16:56:28] Prepared standard prompt with unchanged IDs: {'train': {'count': 1024, 'ids_sha256': '1cf2182f24030b46e4bc62b92249149c9b292530ac6227cae6eb5922dbccc0d6', 'first_id': '2973', 'last_id': '1927'}, 'validation': {'count': 128, 'ids_sha256': 'bdf7cd104c2f66a2434454bd72c33165d68ff45ae22152e606d13d4599712729', 'first_id': '8776', 'last_id': '9262'}, 'test': {'count': 128, 'ids_sha256': 'f7f17a0ca5914154202aaf70a9446e00d3be7c85417409b359f80066e275377b', 'first_id': '2599', 'last_id': '11547'}}
+DONE stage: prepare
+START stage: cache_llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<00:59,  4.27it/s]Loading weights:  47%|████▋     | 120/254 [00:00<00:00, 433.16it/s]Loading weights:  72%|███████▏  | 183/254 [00:00<00:00, 441.53it/s]Loading weights:  94%|█████████▎| 238/254 [00:00<00:00, 447.05it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 407.18it/s]
+[2026-09-13 16:56:46] Llama fresh decision cache train: 32/1024
+[2026-09-13 16:56:52] Llama fresh decision cache train: 64/1024
+[2026-09-13 16:56:58] Llama fresh decision cache train: 96/1024
+[2026-09-13 16:57:05] Llama fresh decision cache train: 128/1024
+[2026-09-13 16:57:12] Llama fresh decision cache train: 160/1024
+[2026-09-13 16:57:17] Llama fresh decision cache train: 192/1024
+[2026-09-13 16:57:23] Llama fresh decision cache train: 224/1024
+[2026-09-13 16:57:30] Llama fresh decision cache train: 256/1024
+[2026-09-13 16:57:36] Llama fresh decision cache train: 288/1024
+[2026-09-13 16:57:42] Llama fresh decision cache train: 320/1024
+[2026-09-13 16:57:48] Llama fresh decision cache train: 352/1024
+[2026-09-13 16:57:54] Llama fresh decision cache train: 384/1024
+[2026-09-13 16:58:01] Llama fresh decision cache train: 416/1024
+[2026-09-13 16:58:07] Llama fresh decision cache train: 448/1024
+[2026-09-13 16:58:13] Llama fresh decision cache train: 480/1024
+[2026-09-13 16:58:20] Llama fresh decision cache train: 512/1024
+[2026-09-13 16:58:26] Llama fresh decision cache train: 544/1024
+[2026-09-13 16:58:32] Llama fresh decision cache train: 576/1024
+[2026-09-13 16:58:38] Llama fresh decision cache train: 608/1024
+[2026-09-13 16:58:44] Llama fresh decision cache train: 640/1024
+[2026-09-13 16:58:51] Llama fresh decision cache train: 672/1024
+[2026-09-13 16:58:57] Llama fresh decision cache train: 704/1024
+[2026-09-13 16:59:03] Llama fresh decision cache train: 736/1024
+[2026-09-13 16:59:09] Llama fresh decision cache train: 768/1024
+[2026-09-13 16:59:16] Llama fresh decision cache train: 800/1024
+[2026-09-13 16:59:22] Llama fresh decision cache train: 832/1024
+[2026-09-13 16:59:29] Llama fresh decision cache train: 864/1024
+[2026-09-13 16:59:35] Llama fresh decision cache train: 896/1024
+[2026-09-13 16:59:42] Llama fresh decision cache train: 928/1024
+[2026-09-13 16:59:48] Llama fresh decision cache train: 960/1024
+[2026-09-13 16:59:54] Llama fresh decision cache train: 992/1024
+[2026-09-13 17:00:01] Llama fresh decision cache train: 1024/1024
+[2026-09-13 17:00:07] Llama fresh decision cache validation: 32/128
+[2026-09-13 17:00:13] Llama fresh decision cache validation: 64/128
+[2026-09-13 17:00:20] Llama fresh decision cache validation: 96/128
+[2026-09-13 17:00:26] Llama fresh decision cache validation: 128/128
+[2026-09-13 17:00:32] Llama fresh decision cache test: 32/128
+[2026-09-13 17:00:38] Llama fresh decision cache test: 64/128
+[2026-09-13 17:00:45] Llama fresh decision cache test: 96/128
+[2026-09-13 17:00:51] Llama fresh decision cache test: 128/128
+DONE stage: cache_llama
+START stage: cache_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:24,  4.68it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 573.09it/s]Loading weights:  57%|█████▋    | 228/398 [00:00<00:00, 603.46it/s]Loading weights:  76%|███████▌  | 302/398 [00:00<00:00, 607.86it/s]Loading weights:  93%|█████████▎| 372/398 [00:00<00:00, 599.73it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 551.46it/s]
+[2026-09-13 17:01:14] Qwen fresh decision/pair cache train: 32/1024
+[2026-09-13 17:01:24] Qwen fresh decision/pair cache train: 64/1024
+[2026-09-13 17:01:33] Qwen fresh decision/pair cache train: 96/1024
+[2026-09-13 17:01:41] Qwen fresh decision/pair cache train: 128/1024
+[2026-09-13 17:01:47] Qwen fresh decision/pair cache train: 160/1024
+[2026-09-13 17:01:52] Qwen fresh decision/pair cache train: 192/1024
+[2026-09-13 17:01:57] Qwen fresh decision/pair cache train: 224/1024
+[2026-09-13 17:02:02] Qwen fresh decision/pair cache train: 256/1024
+[2026-09-13 17:02:09] Qwen fresh decision/pair cache train: 288/1024
+[2026-09-13 17:02:18] Qwen fresh decision/pair cache train: 320/1024
+[2026-09-13 17:02:28] Qwen fresh decision/pair cache train: 352/1024
+[2026-09-13 17:02:38] Qwen fresh decision/pair cache train: 384/1024
+[2026-09-13 17:02:48] Qwen fresh decision/pair cache train: 416/1024
+[2026-09-13 17:02:57] Qwen fresh decision/pair cache train: 448/1024
+[2026-09-13 17:03:07] Qwen fresh decision/pair cache train: 480/1024
+[2026-09-13 17:03:17] Qwen fresh decision/pair cache train: 512/1024
+[2026-09-13 17:03:27] Qwen fresh decision/pair cache train: 544/1024
+[2026-09-13 17:03:36] Qwen fresh decision/pair cache train: 576/1024
+[2026-09-13 17:03:46] Qwen fresh decision/pair cache train: 608/1024
+[2026-09-13 17:03:55] Qwen fresh decision/pair cache train: 640/1024
+[2026-09-13 17:04:05] Qwen fresh decision/pair cache train: 672/1024
+[2026-09-13 17:04:14] Qwen fresh decision/pair cache train: 704/1024
+[2026-09-13 17:04:24] Qwen fresh decision/pair cache train: 736/1024
+[2026-09-13 17:04:34] Qwen fresh decision/pair cache train: 768/1024
+[2026-09-13 17:04:44] Qwen fresh decision/pair cache train: 800/1024
+[2026-09-13 17:04:54] Qwen fresh decision/pair cache train: 832/1024
+[2026-09-13 17:05:04] Qwen fresh decision/pair cache train: 864/1024
+[2026-09-13 17:05:14] Qwen fresh decision/pair cache train: 896/1024
+[2026-09-13 17:05:25] Qwen fresh decision/pair cache train: 928/1024
+[2026-09-13 17:05:38] Qwen fresh decision/pair cache train: 960/1024
+[2026-09-13 17:05:51] Qwen fresh decision/pair cache train: 992/1024
+[2026-09-13 17:06:05] Qwen fresh decision/pair cache train: 1024/1024
+[2026-09-13 17:06:18] Qwen fresh decision/pair cache validation: 32/128
+[2026-09-13 17:06:32] Qwen fresh decision/pair cache validation: 64/128
+[2026-09-13 17:06:45] Qwen fresh decision/pair cache validation: 96/128
+[2026-09-13 17:06:59] Qwen fresh decision/pair cache validation: 128/128
+[2026-09-13 17:07:12] Qwen fresh decision/pair cache test: 32/128
+[2026-09-13 17:07:25] Qwen fresh decision/pair cache test: 64/128
+[2026-09-13 17:07:38] Qwen fresh decision/pair cache test: 96/128
+[2026-09-13 17:07:51] Qwen fresh decision/pair cache test: 128/128
+DONE stage: cache_qwen
+START stage: phase0_audit
+[2026-09-13 17:07:57] PHASE-0 AUDIT PASSED: {'passed': True, 'sample_count': 32, 'selection': '32 normalized option-text regions; max decision attention within each region', 'query': 'last Sender-native Answer: token', 'candidates': 'Options only; Question, position0 and Answer excluded', 'answer_tokenization': {'qwen': {'ids': [16141, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 425, 'C': 356, 'D': 422, 'E': 468, 'F': 434, 'G': 479, 'H': 472, 'I': 358, 'J': 619}}, 'llama': {'ids': [16533, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 426, 'C': 356, 'D': 423, 'E': 469, 'F': 435, 'G': 480, 'H': 473, 'I': 358, 'J': 622}}}, 'mean_anchor_iou': 0.9108072916666665, 'mean_selected_attention_mass': 0.6037618324421803}
+DONE stage: phase0_audit
+START stage: teachers_baselines
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:25,  4.63it/s]Loading weights:  37%|███▋      | 147/398 [00:00<00:00, 578.71it/s]Loading weights:  58%|█████▊    | 232/398 [00:00<00:00, 606.23it/s]Loading weights:  77%|███████▋  | 308/398 [00:00<00:00, 604.40it/s]Loading weights:  95%|█████████▍| 378/398 [00:00<00:00, 585.36it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 550.48it/s]
+[2026-09-13 17:08:12] Standard-prompt Oracle teacher train: 32/1024
+[2026-09-13 17:08:16] Standard-prompt Oracle teacher train: 64/1024
+[2026-09-13 17:08:19] Standard-prompt Oracle teacher train: 96/1024
+[2026-09-13 17:08:22] Standard-prompt Oracle teacher train: 128/1024
+[2026-09-13 17:08:26] Standard-prompt Oracle teacher train: 160/1024
+[2026-09-13 17:08:29] Standard-prompt Oracle teacher train: 192/1024
+[2026-09-13 17:08:33] Standard-prompt Oracle teacher train: 224/1024
+[2026-09-13 17:08:36] Standard-prompt Oracle teacher train: 256/1024
+[2026-09-13 17:08:40] Standard-prompt Oracle teacher train: 288/1024
+[2026-09-13 17:08:43] Standard-prompt Oracle teacher train: 320/1024
+[2026-09-13 17:08:47] Standard-prompt Oracle teacher train: 352/1024
+[2026-09-13 17:08:50] Standard-prompt Oracle teacher train: 384/1024
+[2026-09-13 17:08:54] Standard-prompt Oracle teacher train: 416/1024
+[2026-09-13 17:08:57] Standard-prompt Oracle teacher train: 448/1024
+[2026-09-13 17:09:00] Standard-prompt Oracle teacher train: 480/1024
+[2026-09-13 17:09:04] Standard-prompt Oracle teacher train: 512/1024
+[2026-09-13 17:09:07] Standard-prompt Oracle teacher train: 544/1024
+[2026-09-13 17:09:11] Standard-prompt Oracle teacher train: 576/1024
+[2026-09-13 17:09:14] Standard-prompt Oracle teacher train: 608/1024
+[2026-09-13 17:09:18] Standard-prompt Oracle teacher train: 640/1024
+[2026-09-13 17:09:21] Standard-prompt Oracle teacher train: 672/1024
+[2026-09-13 17:09:25] Standard-prompt Oracle teacher train: 704/1024
+[2026-09-13 17:09:28] Standard-prompt Oracle teacher train: 736/1024
+[2026-09-13 17:09:32] Standard-prompt Oracle teacher train: 768/1024
+[2026-09-13 17:09:35] Standard-prompt Oracle teacher train: 800/1024
+[2026-09-13 17:09:39] Standard-prompt Oracle teacher train: 832/1024
+[2026-09-13 17:09:43] Standard-prompt Oracle teacher train: 864/1024
+[2026-09-13 17:09:46] Standard-prompt Oracle teacher train: 896/1024
+[2026-09-13 17:09:50] Standard-prompt Oracle teacher train: 928/1024
+[2026-09-13 17:09:53] Standard-prompt Oracle teacher train: 960/1024
+[2026-09-13 17:09:57] Standard-prompt Oracle teacher train: 992/1024
+[2026-09-13 17:10:00] Standard-prompt Oracle teacher train: 1024/1024
+[2026-09-13 17:10:04] Standard-prompt Oracle teacher validation: 32/128
+[2026-09-13 17:10:07] Standard-prompt Oracle teacher validation: 64/128
+[2026-09-13 17:10:11] Standard-prompt Oracle teacher validation: 96/128
+[2026-09-13 17:10:15] Standard-prompt Oracle teacher validation: 128/128
+[2026-09-13 17:10:18] Standard-prompt Oracle teacher test: 32/128
+[2026-09-13 17:10:22] Standard-prompt Oracle teacher test: 64/128
+[2026-09-13 17:10:25] Standard-prompt Oracle teacher test: 96/128
+[2026-09-13 17:10:29] Standard-prompt Oracle teacher test: 128/128
+[2026-09-13 17:10:34] Native baselines: 16/128
+[2026-09-13 17:10:40] Native baselines: 32/128
+[2026-09-13 17:10:46] Native baselines: 48/128
+[2026-09-13 17:10:52] Native baselines: 64/128
+[2026-09-13 17:10:57] Native baselines: 80/128
+[2026-09-13 17:11:03] Native baselines: 96/128
+[2026-09-13 17:11:09] Native baselines: 112/128
+[2026-09-13 17:11:14] Native baselines: 128/128
+DONE stage: teachers_baselines
+START stage: stage_a
+[2026-09-13 17:11:35] Stage A 16/1024 loss=1.646610
+[2026-09-13 17:11:45] Stage A 32/1024 loss=1.495193
+[2026-09-13 17:11:56] Stage A 48/1024 loss=1.361104
+[2026-09-13 17:12:08] Stage A 64/1024 loss=1.083399
+[2026-09-13 17:12:20] Stage A 80/1024 loss=1.078053
+[2026-09-13 17:12:33] Stage A 96/1024 loss=1.027023
+[2026-09-13 17:12:46] Stage A 112/1024 loss=1.124832
+[2026-09-13 17:12:58] Stage A 128/1024 loss=0.958072
+[2026-09-13 17:13:02] Stage A validation step=128 loss=1.022144
+[2026-09-13 17:13:13] Stage A 144/1024 loss=1.064515
+[2026-09-13 17:13:25] Stage A 160/1024 loss=1.011647
+[2026-09-13 17:13:33] Stage A 176/1024 loss=0.953216
+[2026-09-13 17:13:42] Stage A 192/1024 loss=1.025561
+[2026-09-13 17:13:51] Stage A 208/1024 loss=1.028954
+[2026-09-13 17:13:59] Stage A 224/1024 loss=0.949006
+[2026-09-13 17:14:08] Stage A 240/1024 loss=0.932071
+[2026-09-13 17:14:17] Stage A 256/1024 loss=0.905902
+[2026-09-13 17:14:20] Stage A validation step=256 loss=0.917628
+[2026-09-13 17:14:29] Stage A 272/1024 loss=0.842971
+[2026-09-13 17:14:38] Stage A 288/1024 loss=0.837009
+[2026-09-13 17:14:46] Stage A 304/1024 loss=0.928476
+[2026-09-13 17:14:54] Stage A 320/1024 loss=0.803014
+[2026-09-13 17:15:03] Stage A 336/1024 loss=0.927207
+[2026-09-13 17:15:11] Stage A 352/1024 loss=0.878919
+[2026-09-13 17:15:19] Stage A 368/1024 loss=0.871779
+[2026-09-13 17:15:28] Stage A 384/1024 loss=0.882861
+[2026-09-13 17:15:31] Stage A validation step=384 loss=0.870239
+[2026-09-13 17:15:39] Stage A 400/1024 loss=0.904632
+[2026-09-13 17:15:48] Stage A 416/1024 loss=0.824800
+[2026-09-13 17:15:56] Stage A 432/1024 loss=0.776083
+[2026-09-13 17:16:04] Stage A 448/1024 loss=0.879542
+[2026-09-13 17:16:13] Stage A 464/1024 loss=0.831561
+[2026-09-13 17:16:21] Stage A 480/1024 loss=0.776263
+[2026-09-13 17:16:29] Stage A 496/1024 loss=0.775575
+[2026-09-13 17:16:38] Stage A 512/1024 loss=0.887818
+[2026-09-13 17:16:41] Stage A validation step=512 loss=0.844167
+[2026-09-13 17:16:49] Stage A 528/1024 loss=0.790408
+[2026-09-13 17:16:58] Stage A 544/1024 loss=0.836286
+[2026-09-13 17:17:06] Stage A 560/1024 loss=0.755273
+[2026-09-13 17:17:15] Stage A 576/1024 loss=0.864355
+[2026-09-13 17:17:23] Stage A 592/1024 loss=0.775502
+[2026-09-13 17:17:31] Stage A 608/1024 loss=0.810042
+[2026-09-13 17:17:40] Stage A 624/1024 loss=0.805521
+[2026-09-13 17:17:48] Stage A 640/1024 loss=0.871210
+[2026-09-13 17:17:51] Stage A validation step=640 loss=0.827823
+[2026-09-13 17:18:00] Stage A 656/1024 loss=0.733649
+[2026-09-13 17:18:09] Stage A 672/1024 loss=0.789969
+[2026-09-13 17:18:17] Stage A 688/1024 loss=0.758606
+[2026-09-13 17:18:26] Stage A 704/1024 loss=0.735164
+[2026-09-13 17:18:34] Stage A 720/1024 loss=0.796636
+[2026-09-13 17:18:43] Stage A 736/1024 loss=0.736807
+[2026-09-13 17:18:51] Stage A 752/1024 loss=0.789637
+[2026-09-13 17:19:00] Stage A 768/1024 loss=0.730640
+[2026-09-13 17:19:03] Stage A validation step=768 loss=0.817385
+[2026-09-13 17:19:11] Stage A 784/1024 loss=0.734939
+[2026-09-13 17:19:20] Stage A 800/1024 loss=0.738394
+[2026-09-13 17:19:28] Stage A 816/1024 loss=0.757111
+[2026-09-13 17:19:37] Stage A 832/1024 loss=0.778664
+[2026-09-13 17:19:45] Stage A 848/1024 loss=0.767367
+[2026-09-13 17:19:54] Stage A 864/1024 loss=0.731601
+[2026-09-13 17:20:02] Stage A 880/1024 loss=0.723694
+[2026-09-13 17:20:11] Stage A 896/1024 loss=0.766817
+[2026-09-13 17:20:14] Stage A validation step=896 loss=0.809111
+[2026-09-13 17:20:22] Stage A 912/1024 loss=0.733695
+[2026-09-13 17:20:31] Stage A 928/1024 loss=0.748134
+[2026-09-13 17:20:39] Stage A 944/1024 loss=0.715115
+[2026-09-13 17:20:48] Stage A 960/1024 loss=0.775136
+[2026-09-13 17:20:56] Stage A 976/1024 loss=0.813462
+[2026-09-13 17:21:05] Stage A 992/1024 loss=0.741642
+[2026-09-13 17:21:14] Stage A 1008/1024 loss=0.663479
+[2026-09-13 17:21:22] Stage A 1024/1024 loss=0.849937
+[2026-09-13 17:21:25] Stage A validation step=1024 loss=0.803522
+DONE stage: stage_a
+START stage: select_stage_a
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:31,  4.34it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 590.06it/s]Loading weights:  62%|██████▏   | 246/398 [00:00<00:00, 583.56it/s]Loading weights:  81%|████████  | 321/398 [00:00<00:00, 610.34it/s]Loading weights:  99%|█████████▊| 393/398 [00:00<00:00, 599.35it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 547.18it/s]
+[2026-09-13 17:22:01] Stage A functional step=128 acc=0.1250 KL=2.123001
+[2026-09-13 17:22:24] Stage A functional step=256 acc=0.1406 KL=2.478190
+[2026-09-13 17:22:48] Stage A functional step=384 acc=0.1172 KL=2.289379
+[2026-09-13 17:23:12] Stage A functional step=512 acc=0.1328 KL=2.455830
+[2026-09-13 17:23:38] Stage A functional step=640 acc=0.1328 KL=2.323810
+[2026-09-13 17:24:07] Stage A functional step=768 acc=0.1562 KL=2.079402
+[2026-09-13 17:24:35] Stage A functional step=896 acc=0.1328 KL=2.184465
+[2026-09-13 17:25:04] Stage A functional step=1024 acc=0.1328 KL=2.006986
+DONE stage: select_stage_a
+START stage: stage_b
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:29,  4.41it/s]Loading weights:  39%|███▊      | 154/398 [00:00<00:00, 591.27it/s]Loading weights:  61%|██████▏   | 244/398 [00:00<00:00, 607.14it/s]Loading weights:  81%|████████  | 322/398 [00:00<00:00, 580.19it/s]Loading weights:  98%|█████████▊| 390/398 [00:00<00:00, 593.79it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 548.06it/s]
+[2026-09-13 17:26:12] Stage B 16/512 KL=1.055817
+[2026-09-13 17:27:04] Stage B 32/512 KL=1.410271
+[2026-09-13 17:27:58] Stage B 48/512 KL=0.582952
+[2026-09-13 17:28:49] Stage B 64/512 KL=0.849512
+[2026-09-13 17:29:41] Stage B 80/512 KL=0.902560
+[2026-09-13 17:30:41] Stage B 96/512 KL=0.761262
+[2026-09-13 17:31:37] Stage B 112/512 KL=1.036843
+[2026-09-13 17:32:23] Stage B 128/512 KL=0.596514
+[2026-09-13 17:32:45] Stage B validation step=128 acc=0.2031 KL=0.834819
+[2026-09-13 17:33:34] Stage B 144/512 KL=0.752569
+[2026-09-13 17:34:20] Stage B 160/512 KL=0.693179
+[2026-09-13 17:35:06] Stage B 176/512 KL=0.888084
+[2026-09-13 17:35:52] Stage B 192/512 KL=1.297133
+[2026-09-13 17:36:38] Stage B 208/512 KL=0.930648
+[2026-09-13 17:37:24] Stage B 224/512 KL=0.792502
+[2026-09-13 17:38:09] Stage B 240/512 KL=0.811798
+[2026-09-13 17:38:55] Stage B 256/512 KL=1.068494
+[2026-09-13 17:39:16] Stage B validation step=256 acc=0.1953 KL=0.802980
+[2026-09-13 17:40:02] Stage B 272/512 KL=0.425176
+[2026-09-13 17:40:49] Stage B 288/512 KL=0.838129
+[2026-09-13 17:41:36] Stage B 304/512 KL=0.983103
+[2026-09-13 17:42:29] Stage B 320/512 KL=0.544910
+[2026-09-13 17:43:20] Stage B 336/512 KL=0.363725
+[2026-09-13 17:44:13] Stage B 352/512 KL=0.604449
+[2026-09-13 17:45:05] Stage B 368/512 KL=0.626099
+[2026-09-13 17:45:57] Stage B 384/512 KL=0.657897
+[2026-09-13 17:46:22] Stage B validation step=384 acc=0.1875 KL=0.865548
+[2026-09-13 17:47:13] Stage B 400/512 KL=0.404273
+[2026-09-13 17:48:07] Stage B 416/512 KL=0.484158
+[2026-09-13 17:49:08] Stage B 432/512 KL=0.428715
+[2026-09-13 17:50:00] Stage B 448/512 KL=0.342645
+[2026-09-13 17:50:46] Stage B 464/512 KL=0.361535
+[2026-09-13 17:51:32] Stage B 480/512 KL=0.493034
+[2026-09-13 17:52:18] Stage B 496/512 KL=0.685321
+[2026-09-13 17:53:04] Stage B 512/512 KL=0.253763
+[2026-09-13 17:53:25] Stage B validation step=512 acc=0.2109 KL=0.966283
+DONE stage: stage_b
+START stage: evaluate
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:33,  4.26it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 578.92it/s]Loading weights:  61%|██████▏   | 244/398 [00:00<00:00, 604.16it/s]Loading weights:  81%|████████  | 321/398 [00:00<00:00, 606.55it/s]Loading weights:  98%|█████████▊| 392/398 [00:00<00:00, 595.52it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 546.17it/s]
+[2026-09-13 17:53:43] Translated best_accuracy: 16/128
+[2026-09-13 17:53:48] Translated best_accuracy: 32/128
+[2026-09-13 17:53:52] Translated best_accuracy: 48/128
+[2026-09-13 17:53:56] Translated best_accuracy: 64/128
+[2026-09-13 17:54:01] Translated best_accuracy: 80/128
+[2026-09-13 17:54:05] Translated best_accuracy: 96/128
+[2026-09-13 17:54:09] Translated best_accuracy: 112/128
+[2026-09-13 17:54:13] Translated best_accuracy: 128/128
+[2026-09-13 17:54:24] Translated best_choice_kl: 16/128
+[2026-09-13 17:54:28] Translated best_choice_kl: 32/128
+[2026-09-13 17:54:32] Translated best_choice_kl: 48/128
+[2026-09-13 17:54:37] Translated best_choice_kl: 64/128
+[2026-09-13 17:54:41] Translated best_choice_kl: 80/128
+[2026-09-13 17:54:45] Translated best_choice_kl: 96/128
+[2026-09-13 17:54:49] Translated best_choice_kl: 112/128
+[2026-09-13 17:54:54] Translated best_choice_kl: 128/128
+[2026-09-13 17:54:57] STANDARD-PROMPT NATIVE-QUESTION OPTIONS-KV EXPERIMENT COMPLETED
+DONE stage: evaluate
+ALL NATIVE-QUESTION OPTIONS-KV EXPERIMENT STAGES COMPLETED
+[2026-09-13 17:54:59] ALL EXPERIMENTS COMPLETED

@@ -1,0 +1,587 @@
+[2026-09-01 15:34:02] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_unit_tests.py
+PASS test_writers.py:test_checkpoint_round_trip_and_metadata
+PASS test_writers.py:test_d2_initialization_equals_calibrated_d0
+PASS test_writers.py:test_full36_initialization_equals_calibrated_d0
+PASS test_writers.py:test_full36_shape_and_layer_concat_order
+PASS test_writers.py:test_head_independence
+PASS test_writers.py:test_neighbor_order_and_boundary_rules
+PASS test_writers.py:test_parameters_are_independent_by_layer_and_family
+PASS test_writers.py:test_shapes_zero_and_no_bias
+PASS test_writers.py:test_token_independence
+PASS test_losses.py:test_clip_rate_decision_uses_pre_clip_norm
+PASS test_losses.py:test_decoder_layer_capture_preserves_autograd
+PASS test_losses.py:test_epoch_sampler_is_without_replacement_and_changes_each_epoch
+PASS test_losses.py:test_final_kl_ignores_all_earlier_suffix_positions
+PASS test_losses.py:test_hidden_loss_averages_layers_instead_of_flattening
+PASS test_losses.py:test_identical_36_layer_hidden_loss_is_zero
+PASS test_losses.py:test_identical_full_vocabulary_kl_is_zero
+PASS test_losses.py:test_last_n_kl_ignores_earlier_tokens
+PASS test_losses.py:test_shuffled_comparison_uses_only_matched_correct_samples
+PASS test_losses.py:test_training_sample_physically_removes_gold_fields
+19 unit tests passed
+[2026-09-01 15:34:09] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_unit_tests.py
+[2026-09-01 15:34:09] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u audit_reused_assets.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json
+reused asset audit passed: {'manifest_counts': True, 'all_split_ids_disjoint': True, 'all_paired_caches_present': True, 'reverse_calibration_is_local_target': True, 'full36_stage_a_checkpoint_is_local_target': True, 'forward_stage_a_reference_present': True, 'forward_stage_b_reference_present': True, 'forward_formal_reference_present': True, 'sender_is_target4': True, 'receiver_is_source17': True, 'stage_b_mode_is_final_only': True, 'effective_batch_is_8': True}
+[2026-09-01 15:34:13] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u audit_reused_assets.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json
+[2026-09-01 15:34:13] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u calibrate.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json
+[2026-09-01 15:34:17] calibration target4: 1/128
+[2026-09-01 15:34:17] calibration target4: 2/128
+[2026-09-01 15:34:17] calibration target4: 3/128
+[2026-09-01 15:34:17] calibration target4: 4/128
+[2026-09-01 15:34:17] calibration target4: 5/128
+[2026-09-01 15:34:17] calibration target4: 6/128
+[2026-09-01 15:34:17] calibration target4: 7/128
+[2026-09-01 15:34:17] calibration target4: 8/128
+[2026-09-01 15:34:17] calibration target4: 9/128
+[2026-09-01 15:34:17] calibration target4: 10/128
+[2026-09-01 15:34:17] calibration target4: 11/128
+[2026-09-01 15:34:17] calibration target4: 12/128
+[2026-09-01 15:34:17] calibration target4: 13/128
+[2026-09-01 15:34:17] calibration target4: 14/128
+[2026-09-01 15:34:17] calibration target4: 15/128
+[2026-09-01 15:34:17] calibration target4: 16/128
+[2026-09-01 15:34:18] calibration target4: 17/128
+[2026-09-01 15:34:18] calibration target4: 18/128
+[2026-09-01 15:34:18] calibration target4: 19/128
+[2026-09-01 15:34:18] calibration target4: 20/128
+[2026-09-01 15:34:18] calibration target4: 21/128
+[2026-09-01 15:34:18] calibration target4: 22/128
+[2026-09-01 15:34:18] calibration target4: 23/128
+[2026-09-01 15:34:18] calibration target4: 24/128
+[2026-09-01 15:34:18] calibration target4: 25/128
+[2026-09-01 15:34:18] calibration target4: 26/128
+[2026-09-01 15:34:18] calibration target4: 27/128
+[2026-09-01 15:34:18] calibration target4: 28/128
+[2026-09-01 15:34:18] calibration target4: 29/128
+[2026-09-01 15:34:18] calibration target4: 30/128
+[2026-09-01 15:34:18] calibration target4: 31/128
+[2026-09-01 15:34:18] calibration target4: 32/128
+[2026-09-01 15:34:18] calibration target4: 33/128
+[2026-09-01 15:34:18] calibration target4: 34/128
+[2026-09-01 15:34:18] calibration target4: 35/128
+[2026-09-01 15:34:18] calibration target4: 36/128
+[2026-09-01 15:34:18] calibration target4: 37/128
+[2026-09-01 15:34:18] calibration target4: 38/128
+[2026-09-01 15:34:18] calibration target4: 39/128
+[2026-09-01 15:34:18] calibration target4: 40/128
+[2026-09-01 15:34:18] calibration target4: 41/128
+[2026-09-01 15:34:18] calibration target4: 42/128
+[2026-09-01 15:34:18] calibration target4: 43/128
+[2026-09-01 15:34:18] calibration target4: 44/128
+[2026-09-01 15:34:18] calibration target4: 45/128
+[2026-09-01 15:34:18] calibration target4: 46/128
+[2026-09-01 15:34:18] calibration target4: 47/128
+[2026-09-01 15:34:18] calibration target4: 48/128
+[2026-09-01 15:34:18] calibration target4: 49/128
+[2026-09-01 15:34:18] calibration target4: 50/128
+[2026-09-01 15:34:18] calibration target4: 51/128
+[2026-09-01 15:34:19] calibration target4: 52/128
+[2026-09-01 15:34:19] calibration target4: 53/128
+[2026-09-01 15:34:19] calibration target4: 54/128
+[2026-09-01 15:34:19] calibration target4: 55/128
+[2026-09-01 15:34:19] calibration target4: 56/128
+[2026-09-01 15:34:19] calibration target4: 57/128
+[2026-09-01 15:34:19] calibration target4: 58/128
+[2026-09-01 15:34:19] calibration target4: 59/128
+[2026-09-01 15:34:19] calibration target4: 60/128
+[2026-09-01 15:34:19] calibration target4: 61/128
+[2026-09-01 15:34:19] calibration target4: 62/128
+[2026-09-01 15:34:19] calibration target4: 63/128
+[2026-09-01 15:34:19] calibration target4: 64/128
+[2026-09-01 15:34:19] calibration target4: 65/128
+[2026-09-01 15:34:19] calibration target4: 66/128
+[2026-09-01 15:34:19] calibration target4: 67/128
+[2026-09-01 15:34:19] calibration target4: 68/128
+[2026-09-01 15:34:19] calibration target4: 69/128
+[2026-09-01 15:34:19] calibration target4: 70/128
+[2026-09-01 15:34:19] calibration target4: 71/128
+[2026-09-01 15:34:19] calibration target4: 72/128
+[2026-09-01 15:34:19] calibration target4: 73/128
+[2026-09-01 15:34:19] calibration target4: 74/128
+[2026-09-01 15:34:19] calibration target4: 75/128
+[2026-09-01 15:34:19] calibration target4: 76/128
+[2026-09-01 15:34:19] calibration target4: 77/128
+[2026-09-01 15:34:19] calibration target4: 78/128
+[2026-09-01 15:34:19] calibration target4: 79/128
+[2026-09-01 15:34:19] calibration target4: 80/128
+[2026-09-01 15:34:19] calibration target4: 81/128
+[2026-09-01 15:34:19] calibration target4: 82/128
+[2026-09-01 15:34:19] calibration target4: 83/128
+[2026-09-01 15:34:19] calibration target4: 84/128
+[2026-09-01 15:34:19] calibration target4: 85/128
+[2026-09-01 15:34:19] calibration target4: 86/128
+[2026-09-01 15:34:19] calibration target4: 87/128
+[2026-09-01 15:34:19] calibration target4: 88/128
+[2026-09-01 15:34:19] calibration target4: 89/128
+[2026-09-01 15:34:19] calibration target4: 90/128
+[2026-09-01 15:34:20] calibration target4: 91/128
+[2026-09-01 15:34:20] calibration target4: 92/128
+[2026-09-01 15:34:20] calibration target4: 93/128
+[2026-09-01 15:34:20] calibration target4: 94/128
+[2026-09-01 15:34:20] calibration target4: 95/128
+[2026-09-01 15:34:20] calibration target4: 96/128
+[2026-09-01 15:34:20] calibration target4: 97/128
+[2026-09-01 15:34:20] calibration target4: 98/128
+[2026-09-01 15:34:20] calibration target4: 99/128
+[2026-09-01 15:34:20] calibration target4: 100/128
+[2026-09-01 15:34:20] calibration target4: 101/128
+[2026-09-01 15:34:20] calibration target4: 102/128
+[2026-09-01 15:34:20] calibration target4: 103/128
+[2026-09-01 15:34:20] calibration target4: 104/128
+[2026-09-01 15:34:20] calibration target4: 105/128
+[2026-09-01 15:34:20] calibration target4: 106/128
+[2026-09-01 15:34:20] calibration target4: 107/128
+[2026-09-01 15:34:20] calibration target4: 108/128
+[2026-09-01 15:34:20] calibration target4: 109/128
+[2026-09-01 15:34:20] calibration target4: 110/128
+[2026-09-01 15:34:20] calibration target4: 111/128
+[2026-09-01 15:34:20] calibration target4: 112/128
+[2026-09-01 15:34:20] calibration target4: 113/128
+[2026-09-01 15:34:20] calibration target4: 114/128
+[2026-09-01 15:34:20] calibration target4: 115/128
+[2026-09-01 15:34:20] calibration target4: 116/128
+[2026-09-01 15:34:20] calibration target4: 117/128
+[2026-09-01 15:34:20] calibration target4: 118/128
+[2026-09-01 15:34:20] calibration target4: 119/128
+[2026-09-01 15:34:20] calibration target4: 120/128
+[2026-09-01 15:34:20] calibration target4: 121/128
+[2026-09-01 15:34:20] calibration target4: 122/128
+[2026-09-01 15:34:20] calibration target4: 123/128
+[2026-09-01 15:34:20] calibration target4: 124/128
+[2026-09-01 15:34:20] calibration target4: 125/128
+[2026-09-01 15:34:20] calibration target4: 126/128
+[2026-09-01 15:34:20] calibration target4: 127/128
+[2026-09-01 15:34:21] calibration target4: 128/128
+[2026-09-01 15:34:21] calibration source17: 1/128
+[2026-09-01 15:34:21] calibration source17: 2/128
+[2026-09-01 15:34:21] calibration source17: 3/128
+[2026-09-01 15:34:21] calibration source17: 4/128
+[2026-09-01 15:34:21] calibration source17: 5/128
+[2026-09-01 15:34:21] calibration source17: 6/128
+[2026-09-01 15:34:21] calibration source17: 7/128
+[2026-09-01 15:34:21] calibration source17: 8/128
+[2026-09-01 15:34:21] calibration source17: 9/128
+[2026-09-01 15:34:21] calibration source17: 10/128
+[2026-09-01 15:34:21] calibration source17: 11/128
+[2026-09-01 15:34:21] calibration source17: 12/128
+[2026-09-01 15:34:21] calibration source17: 13/128
+[2026-09-01 15:34:21] calibration source17: 14/128
+[2026-09-01 15:34:21] calibration source17: 15/128
+[2026-09-01 15:34:21] calibration source17: 16/128
+[2026-09-01 15:34:21] calibration source17: 17/128
+[2026-09-01 15:34:21] calibration source17: 18/128
+[2026-09-01 15:34:21] calibration source17: 19/128
+[2026-09-01 15:34:21] calibration source17: 20/128
+[2026-09-01 15:34:21] calibration source17: 21/128
+[2026-09-01 15:34:21] calibration source17: 22/128
+[2026-09-01 15:34:21] calibration source17: 23/128
+[2026-09-01 15:34:21] calibration source17: 24/128
+[2026-09-01 15:34:21] calibration source17: 25/128
+[2026-09-01 15:34:21] calibration source17: 26/128
+[2026-09-01 15:34:21] calibration source17: 27/128
+[2026-09-01 15:34:21] calibration source17: 28/128
+[2026-09-01 15:34:21] calibration source17: 29/128
+[2026-09-01 15:34:21] calibration source17: 30/128
+[2026-09-01 15:34:21] calibration source17: 31/128
+[2026-09-01 15:34:21] calibration source17: 32/128
+[2026-09-01 15:34:21] calibration source17: 33/128
+[2026-09-01 15:34:21] calibration source17: 34/128
+[2026-09-01 15:34:21] calibration source17: 35/128
+[2026-09-01 15:34:21] calibration source17: 36/128
+[2026-09-01 15:34:21] calibration source17: 37/128
+[2026-09-01 15:34:21] calibration source17: 38/128
+[2026-09-01 15:34:21] calibration source17: 39/128
+[2026-09-01 15:34:21] calibration source17: 40/128
+[2026-09-01 15:34:21] calibration source17: 41/128
+[2026-09-01 15:34:21] calibration source17: 42/128
+[2026-09-01 15:34:21] calibration source17: 43/128
+[2026-09-01 15:34:21] calibration source17: 44/128
+[2026-09-01 15:34:21] calibration source17: 45/128
+[2026-09-01 15:34:21] calibration source17: 46/128
+[2026-09-01 15:34:21] calibration source17: 47/128
+[2026-09-01 15:34:21] calibration source17: 48/128
+[2026-09-01 15:34:21] calibration source17: 49/128
+[2026-09-01 15:34:21] calibration source17: 50/128
+[2026-09-01 15:34:21] calibration source17: 51/128
+[2026-09-01 15:34:21] calibration source17: 52/128
+[2026-09-01 15:34:21] calibration source17: 53/128
+[2026-09-01 15:34:21] calibration source17: 54/128
+[2026-09-01 15:34:21] calibration source17: 55/128
+[2026-09-01 15:34:21] calibration source17: 56/128
+[2026-09-01 15:34:21] calibration source17: 57/128
+[2026-09-01 15:34:21] calibration source17: 58/128
+[2026-09-01 15:34:21] calibration source17: 59/128
+[2026-09-01 15:34:21] calibration source17: 60/128
+[2026-09-01 15:34:21] calibration source17: 61/128
+[2026-09-01 15:34:22] calibration source17: 62/128
+[2026-09-01 15:34:22] calibration source17: 63/128
+[2026-09-01 15:34:22] calibration source17: 64/128
+[2026-09-01 15:34:22] calibration source17: 65/128
+[2026-09-01 15:34:22] calibration source17: 66/128
+[2026-09-01 15:34:22] calibration source17: 67/128
+[2026-09-01 15:34:22] calibration source17: 68/128
+[2026-09-01 15:34:22] calibration source17: 69/128
+[2026-09-01 15:34:22] calibration source17: 70/128
+[2026-09-01 15:34:22] calibration source17: 71/128
+[2026-09-01 15:34:22] calibration source17: 72/128
+[2026-09-01 15:34:22] calibration source17: 73/128
+[2026-09-01 15:34:22] calibration source17: 74/128
+[2026-09-01 15:34:22] calibration source17: 75/128
+[2026-09-01 15:34:22] calibration source17: 76/128
+[2026-09-01 15:34:22] calibration source17: 77/128
+[2026-09-01 15:34:22] calibration source17: 78/128
+[2026-09-01 15:34:22] calibration source17: 79/128
+[2026-09-01 15:34:22] calibration source17: 80/128
+[2026-09-01 15:34:22] calibration source17: 81/128
+[2026-09-01 15:34:22] calibration source17: 82/128
+[2026-09-01 15:34:22] calibration source17: 83/128
+[2026-09-01 15:34:22] calibration source17: 84/128
+[2026-09-01 15:34:22] calibration source17: 85/128
+[2026-09-01 15:34:22] calibration source17: 86/128
+[2026-09-01 15:34:22] calibration source17: 87/128
+[2026-09-01 15:34:22] calibration source17: 88/128
+[2026-09-01 15:34:22] calibration source17: 89/128
+[2026-09-01 15:34:22] calibration source17: 90/128
+[2026-09-01 15:34:22] calibration source17: 91/128
+[2026-09-01 15:34:22] calibration source17: 92/128
+[2026-09-01 15:34:22] calibration source17: 93/128
+[2026-09-01 15:34:22] calibration source17: 94/128
+[2026-09-01 15:34:22] calibration source17: 95/128
+[2026-09-01 15:34:22] calibration source17: 96/128
+[2026-09-01 15:34:22] calibration source17: 97/128
+[2026-09-01 15:34:22] calibration source17: 98/128
+[2026-09-01 15:34:22] calibration source17: 99/128
+[2026-09-01 15:34:22] calibration source17: 100/128
+[2026-09-01 15:34:22] calibration source17: 101/128
+[2026-09-01 15:34:22] calibration source17: 102/128
+[2026-09-01 15:34:22] calibration source17: 103/128
+[2026-09-01 15:34:22] calibration source17: 104/128
+[2026-09-01 15:34:22] calibration source17: 105/128
+[2026-09-01 15:34:22] calibration source17: 106/128
+[2026-09-01 15:34:22] calibration source17: 107/128
+[2026-09-01 15:34:22] calibration source17: 108/128
+[2026-09-01 15:34:22] calibration source17: 109/128
+[2026-09-01 15:34:22] calibration source17: 110/128
+[2026-09-01 15:34:22] calibration source17: 111/128
+[2026-09-01 15:34:22] calibration source17: 112/128
+[2026-09-01 15:34:22] calibration source17: 113/128
+[2026-09-01 15:34:22] calibration source17: 114/128
+[2026-09-01 15:34:22] calibration source17: 115/128
+[2026-09-01 15:34:22] calibration source17: 116/128
+[2026-09-01 15:34:22] calibration source17: 117/128
+[2026-09-01 15:34:22] calibration source17: 118/128
+[2026-09-01 15:34:23] calibration source17: 119/128
+[2026-09-01 15:34:23] calibration source17: 120/128
+[2026-09-01 15:34:23] calibration source17: 121/128
+[2026-09-01 15:34:23] calibration source17: 122/128
+[2026-09-01 15:34:23] calibration source17: 123/128
+[2026-09-01 15:34:23] calibration source17: 124/128
+[2026-09-01 15:34:23] calibration source17: 125/128
+[2026-09-01 15:34:23] calibration source17: 126/128
+[2026-09-01 15:34:23] calibration source17: 127/128
+[2026-09-01 15:34:23] calibration source17: 128/128
+[2026-09-01 15:34:23] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u calibrate.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json
+[2026-09-01 15:34:23] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_gpu_tests.py
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  61%|██████▏   | 191/311 [00:00<00:00, 1865.60it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1874.41it/s]
+PASS GPU pure-functional gradient path: final
+[2026-09-01 15:34:32] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_gpu_tests.py
+[2026-09-01 15:34:32] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json train --writer full36 --stage a
+[2026-09-01 15:35:12] Stage A full36 400/8000 validation=2.002422
+[2026-09-01 15:35:34] Stage A full36 800/8000 validation=1.764201
+[2026-09-01 15:35:57] Stage A full36 1200/8000 validation=1.642208
+[2026-09-01 15:36:20] Stage A full36 1600/8000 validation=1.556104
+[2026-09-01 15:36:44] Stage A full36 2000/8000 validation=1.488386
+[2026-09-01 15:37:07] Stage A full36 2400/8000 validation=1.431953
+[2026-09-01 15:37:30] Stage A full36 2800/8000 validation=1.382937
+[2026-09-01 15:37:53] Stage A full36 3200/8000 validation=1.335541
+[2026-09-01 15:38:17] Stage A full36 3600/8000 validation=1.290503
+[2026-09-01 15:38:41] Stage A full36 4000/8000 validation=1.245941
+[2026-09-01 15:39:23] Stage A full36 4400/8000 validation=1.207950
+[2026-09-01 15:40:08] Stage A full36 4800/8000 validation=1.172834
+[2026-09-01 15:40:52] Stage A full36 5200/8000 validation=1.139077
+[2026-09-01 15:41:36] Stage A full36 5600/8000 validation=1.107299
+[2026-09-01 15:42:20] Stage A full36 6000/8000 validation=1.073445
+[2026-09-01 15:43:18] Stage A full36 6400/8000 validation=1.046741
+[2026-09-01 15:44:11] Stage A full36 6800/8000 validation=1.021349
+[2026-09-01 15:44:56] Stage A full36 7200/8000 validation=0.994532
+[2026-09-01 15:45:43] Stage A full36 7600/8000 validation=0.973850
+[2026-09-01 15:46:28] Stage A full36 8000/8000 validation=0.950841
+[2026-09-01 15:46:30] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json train --writer full36 --stage a
+[2026-09-01 15:46:30] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json gradient_audit --writer full36 --functional-mode final --checkpoint /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/checkpoints/quick/full36/stage_a/best.pt
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  55%|█████▍    | 171/311 [00:00<00:00, 1693.71it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1773.73it/s]
+[2026-09-01 15:46:43] gradient audit final sample=3114
+[2026-09-01 15:46:43] gradient audit final sample=471
+[2026-09-01 15:46:44] gradient audit final sample=3851
+[2026-09-01 15:46:44] gradient audit final sample=10446
+[2026-09-01 15:46:46] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json gradient_audit --writer full36 --functional-mode final --checkpoint /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/checkpoints/quick/full36/stage_a/best.pt
+[2026-09-01 15:46:46] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json train --writer full36 --stage b --functional-mode final
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  61%|██████▏   | 191/311 [00:00<00:00, 1908.40it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1883.56it/s]
+[2026-09-01 15:52:25] Stage B final epoch=1/4 validation=0.687449 clip_rate=0.0469
+[2026-09-01 15:57:37] Stage B final epoch=2/4 validation=0.664741 clip_rate=0.1250
+[2026-09-01 16:04:53] Stage B final epoch=3/4 validation=0.685917 clip_rate=0.1172
+[2026-09-01 16:08:59] Stage B final epoch=4/4 validation=0.781618 clip_rate=0.0000
+[2026-09-01 16:09:00] Stage B early stopping at epoch=4; best_epoch=2
+[2026-09-01 16:09:03] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json train --writer full36 --stage b --functional-mode final
+[2026-09-01 16:09:03] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json evaluate --scope formal
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  61%|██████    | 189/311 [00:00<00:00, 1889.31it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1864.31it/s]
+[2026-09-01 16:09:16] 1.7B Receiver pure-functional evaluation: 1/128
+[2026-09-01 16:09:16] 1.7B Receiver pure-functional evaluation: 2/128
+[2026-09-01 16:09:17] 1.7B Receiver pure-functional evaluation: 3/128
+[2026-09-01 16:09:17] 1.7B Receiver pure-functional evaluation: 4/128
+[2026-09-01 16:09:17] 1.7B Receiver pure-functional evaluation: 5/128
+[2026-09-01 16:09:18] 1.7B Receiver pure-functional evaluation: 6/128
+[2026-09-01 16:09:18] 1.7B Receiver pure-functional evaluation: 7/128
+[2026-09-01 16:09:19] 1.7B Receiver pure-functional evaluation: 8/128
+[2026-09-01 16:09:19] 1.7B Receiver pure-functional evaluation: 9/128
+[2026-09-01 16:09:20] 1.7B Receiver pure-functional evaluation: 10/128
+[2026-09-01 16:09:20] 1.7B Receiver pure-functional evaluation: 11/128
+[2026-09-01 16:09:20] 1.7B Receiver pure-functional evaluation: 12/128
+[2026-09-01 16:09:21] 1.7B Receiver pure-functional evaluation: 13/128
+[2026-09-01 16:09:21] 1.7B Receiver pure-functional evaluation: 14/128
+[2026-09-01 16:09:22] 1.7B Receiver pure-functional evaluation: 15/128
+[2026-09-01 16:09:22] 1.7B Receiver pure-functional evaluation: 16/128
+[2026-09-01 16:09:23] 1.7B Receiver pure-functional evaluation: 17/128
+[2026-09-01 16:09:23] 1.7B Receiver pure-functional evaluation: 18/128
+[2026-09-01 16:09:23] 1.7B Receiver pure-functional evaluation: 19/128
+[2026-09-01 16:09:24] 1.7B Receiver pure-functional evaluation: 20/128
+[2026-09-01 16:09:24] 1.7B Receiver pure-functional evaluation: 21/128
+[2026-09-01 16:09:25] 1.7B Receiver pure-functional evaluation: 22/128
+[2026-09-01 16:09:25] 1.7B Receiver pure-functional evaluation: 23/128
+[2026-09-01 16:09:26] 1.7B Receiver pure-functional evaluation: 24/128
+[2026-09-01 16:09:26] 1.7B Receiver pure-functional evaluation: 25/128
+[2026-09-01 16:09:27] 1.7B Receiver pure-functional evaluation: 26/128
+[2026-09-01 16:09:28] 1.7B Receiver pure-functional evaluation: 27/128
+[2026-09-01 16:09:28] 1.7B Receiver pure-functional evaluation: 28/128
+[2026-09-01 16:09:29] 1.7B Receiver pure-functional evaluation: 29/128
+[2026-09-01 16:09:29] 1.7B Receiver pure-functional evaluation: 30/128
+[2026-09-01 16:09:30] 1.7B Receiver pure-functional evaluation: 31/128
+[2026-09-01 16:09:30] 1.7B Receiver pure-functional evaluation: 32/128
+[2026-09-01 16:09:31] 1.7B Receiver pure-functional evaluation: 33/128
+[2026-09-01 16:09:31] 1.7B Receiver pure-functional evaluation: 34/128
+[2026-09-01 16:09:32] 1.7B Receiver pure-functional evaluation: 35/128
+[2026-09-01 16:09:33] 1.7B Receiver pure-functional evaluation: 36/128
+[2026-09-01 16:09:33] 1.7B Receiver pure-functional evaluation: 37/128
+[2026-09-01 16:09:34] 1.7B Receiver pure-functional evaluation: 38/128
+[2026-09-01 16:09:34] 1.7B Receiver pure-functional evaluation: 39/128
+[2026-09-01 16:09:35] 1.7B Receiver pure-functional evaluation: 40/128
+[2026-09-01 16:09:36] 1.7B Receiver pure-functional evaluation: 41/128
+[2026-09-01 16:09:37] 1.7B Receiver pure-functional evaluation: 42/128
+[2026-09-01 16:09:37] 1.7B Receiver pure-functional evaluation: 43/128
+[2026-09-01 16:09:38] 1.7B Receiver pure-functional evaluation: 44/128
+[2026-09-01 16:09:39] 1.7B Receiver pure-functional evaluation: 45/128
+[2026-09-01 16:09:39] 1.7B Receiver pure-functional evaluation: 46/128
+[2026-09-01 16:09:40] 1.7B Receiver pure-functional evaluation: 47/128
+[2026-09-01 16:09:41] 1.7B Receiver pure-functional evaluation: 48/128
+[2026-09-01 16:09:41] 1.7B Receiver pure-functional evaluation: 49/128
+[2026-09-01 16:09:42] 1.7B Receiver pure-functional evaluation: 50/128
+[2026-09-01 16:09:43] 1.7B Receiver pure-functional evaluation: 51/128
+[2026-09-01 16:09:43] 1.7B Receiver pure-functional evaluation: 52/128
+[2026-09-01 16:09:44] 1.7B Receiver pure-functional evaluation: 53/128
+[2026-09-01 16:09:44] 1.7B Receiver pure-functional evaluation: 54/128
+[2026-09-01 16:09:46] 1.7B Receiver pure-functional evaluation: 55/128
+[2026-09-01 16:09:47] 1.7B Receiver pure-functional evaluation: 56/128
+[2026-09-01 16:09:47] 1.7B Receiver pure-functional evaluation: 57/128
+[2026-09-01 16:09:48] 1.7B Receiver pure-functional evaluation: 58/128
+[2026-09-01 16:09:48] 1.7B Receiver pure-functional evaluation: 59/128
+[2026-09-01 16:09:49] 1.7B Receiver pure-functional evaluation: 60/128
+[2026-09-01 16:09:49] 1.7B Receiver pure-functional evaluation: 61/128
+[2026-09-01 16:09:50] 1.7B Receiver pure-functional evaluation: 62/128
+[2026-09-01 16:09:50] 1.7B Receiver pure-functional evaluation: 63/128
+[2026-09-01 16:09:51] 1.7B Receiver pure-functional evaluation: 64/128
+[2026-09-01 16:09:52] 1.7B Receiver pure-functional evaluation: 65/128
+[2026-09-01 16:09:52] 1.7B Receiver pure-functional evaluation: 66/128
+[2026-09-01 16:09:53] 1.7B Receiver pure-functional evaluation: 67/128
+[2026-09-01 16:09:54] 1.7B Receiver pure-functional evaluation: 68/128
+[2026-09-01 16:09:55] 1.7B Receiver pure-functional evaluation: 69/128
+[2026-09-01 16:09:55] 1.7B Receiver pure-functional evaluation: 70/128
+[2026-09-01 16:09:56] 1.7B Receiver pure-functional evaluation: 71/128
+[2026-09-01 16:09:56] 1.7B Receiver pure-functional evaluation: 72/128
+[2026-09-01 16:09:57] 1.7B Receiver pure-functional evaluation: 73/128
+[2026-09-01 16:09:58] 1.7B Receiver pure-functional evaluation: 74/128
+[2026-09-01 16:09:58] 1.7B Receiver pure-functional evaluation: 75/128
+[2026-09-01 16:09:59] 1.7B Receiver pure-functional evaluation: 76/128
+[2026-09-01 16:09:59] 1.7B Receiver pure-functional evaluation: 77/128
+[2026-09-01 16:10:00] 1.7B Receiver pure-functional evaluation: 78/128
+[2026-09-01 16:10:01] 1.7B Receiver pure-functional evaluation: 79/128
+[2026-09-01 16:10:02] 1.7B Receiver pure-functional evaluation: 80/128
+[2026-09-01 16:10:02] 1.7B Receiver pure-functional evaluation: 81/128
+[2026-09-01 16:10:03] 1.7B Receiver pure-functional evaluation: 82/128
+[2026-09-01 16:10:04] 1.7B Receiver pure-functional evaluation: 83/128
+[2026-09-01 16:10:05] 1.7B Receiver pure-functional evaluation: 84/128
+[2026-09-01 16:10:05] 1.7B Receiver pure-functional evaluation: 85/128
+[2026-09-01 16:10:06] 1.7B Receiver pure-functional evaluation: 86/128
+[2026-09-01 16:10:06] 1.7B Receiver pure-functional evaluation: 87/128
+[2026-09-01 16:10:07] 1.7B Receiver pure-functional evaluation: 88/128
+[2026-09-01 16:10:07] 1.7B Receiver pure-functional evaluation: 89/128
+[2026-09-01 16:10:08] 1.7B Receiver pure-functional evaluation: 90/128
+[2026-09-01 16:10:09] 1.7B Receiver pure-functional evaluation: 91/128
+[2026-09-01 16:10:10] 1.7B Receiver pure-functional evaluation: 92/128
+[2026-09-01 16:10:10] 1.7B Receiver pure-functional evaluation: 93/128
+[2026-09-01 16:10:11] 1.7B Receiver pure-functional evaluation: 94/128
+[2026-09-01 16:10:12] 1.7B Receiver pure-functional evaluation: 95/128
+[2026-09-01 16:10:12] 1.7B Receiver pure-functional evaluation: 96/128
+[2026-09-01 16:10:13] 1.7B Receiver pure-functional evaluation: 97/128
+[2026-09-01 16:10:14] 1.7B Receiver pure-functional evaluation: 98/128
+[2026-09-01 16:10:15] 1.7B Receiver pure-functional evaluation: 99/128
+[2026-09-01 16:10:15] 1.7B Receiver pure-functional evaluation: 100/128
+[2026-09-01 16:10:16] 1.7B Receiver pure-functional evaluation: 101/128
+[2026-09-01 16:10:16] 1.7B Receiver pure-functional evaluation: 102/128
+[2026-09-01 16:10:17] 1.7B Receiver pure-functional evaluation: 103/128
+[2026-09-01 16:10:17] 1.7B Receiver pure-functional evaluation: 104/128
+[2026-09-01 16:10:18] 1.7B Receiver pure-functional evaluation: 105/128
+[2026-09-01 16:10:19] 1.7B Receiver pure-functional evaluation: 106/128
+[2026-09-01 16:10:20] 1.7B Receiver pure-functional evaluation: 107/128
+[2026-09-01 16:10:21] 1.7B Receiver pure-functional evaluation: 108/128
+[2026-09-01 16:10:21] 1.7B Receiver pure-functional evaluation: 109/128
+[2026-09-01 16:10:23] 1.7B Receiver pure-functional evaluation: 110/128
+[2026-09-01 16:10:24] 1.7B Receiver pure-functional evaluation: 111/128
+[2026-09-01 16:10:25] 1.7B Receiver pure-functional evaluation: 112/128
+[2026-09-01 16:10:25] 1.7B Receiver pure-functional evaluation: 113/128
+[2026-09-01 16:10:26] 1.7B Receiver pure-functional evaluation: 114/128
+[2026-09-01 16:10:27] 1.7B Receiver pure-functional evaluation: 115/128
+[2026-09-01 16:10:27] 1.7B Receiver pure-functional evaluation: 116/128
+[2026-09-01 16:10:28] 1.7B Receiver pure-functional evaluation: 117/128
+[2026-09-01 16:10:29] 1.7B Receiver pure-functional evaluation: 118/128
+[2026-09-01 16:10:30] 1.7B Receiver pure-functional evaluation: 119/128
+[2026-09-01 16:10:31] 1.7B Receiver pure-functional evaluation: 120/128
+[2026-09-01 16:10:32] 1.7B Receiver pure-functional evaluation: 121/128
+[2026-09-01 16:10:33] 1.7B Receiver pure-functional evaluation: 122/128
+[2026-09-01 16:10:33] 1.7B Receiver pure-functional evaluation: 123/128
+[2026-09-01 16:10:34] 1.7B Receiver pure-functional evaluation: 124/128
+[2026-09-01 16:10:34] 1.7B Receiver pure-functional evaluation: 125/128
+[2026-09-01 16:10:35] 1.7B Receiver pure-functional evaluation: 126/128
+[2026-09-01 16:10:35] 1.7B Receiver pure-functional evaluation: 127/128
+[2026-09-01 16:10:35] 1.7B Receiver pure-functional evaluation: 128/128
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1125.61it/s]Loading weights:  58%|█████▊    | 229/398 [00:00<00:00, 1145.54it/s]Loading weights:  86%|████████▋ | 344/398 [00:00<00:00, 1144.01it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1137.91it/s]
+[2026-09-01 16:10:44] 4B Sender reference evaluation: 1/128
+[2026-09-01 16:10:44] 4B Sender reference evaluation: 2/128
+[2026-09-01 16:10:44] 4B Sender reference evaluation: 3/128
+[2026-09-01 16:10:44] 4B Sender reference evaluation: 4/128
+[2026-09-01 16:10:44] 4B Sender reference evaluation: 5/128
+[2026-09-01 16:10:45] 4B Sender reference evaluation: 6/128
+[2026-09-01 16:10:45] 4B Sender reference evaluation: 7/128
+[2026-09-01 16:10:45] 4B Sender reference evaluation: 8/128
+[2026-09-01 16:10:45] 4B Sender reference evaluation: 9/128
+[2026-09-01 16:10:45] 4B Sender reference evaluation: 10/128
+[2026-09-01 16:10:45] 4B Sender reference evaluation: 11/128
+[2026-09-01 16:10:46] 4B Sender reference evaluation: 12/128
+[2026-09-01 16:10:46] 4B Sender reference evaluation: 13/128
+[2026-09-01 16:10:46] 4B Sender reference evaluation: 14/128
+[2026-09-01 16:10:47] 4B Sender reference evaluation: 15/128
+[2026-09-01 16:10:47] 4B Sender reference evaluation: 16/128
+[2026-09-01 16:10:48] 4B Sender reference evaluation: 17/128
+[2026-09-01 16:10:48] 4B Sender reference evaluation: 18/128
+[2026-09-01 16:10:48] 4B Sender reference evaluation: 19/128
+[2026-09-01 16:10:48] 4B Sender reference evaluation: 20/128
+[2026-09-01 16:10:49] 4B Sender reference evaluation: 21/128
+[2026-09-01 16:10:49] 4B Sender reference evaluation: 22/128
+[2026-09-01 16:10:50] 4B Sender reference evaluation: 23/128
+[2026-09-01 16:10:50] 4B Sender reference evaluation: 24/128
+[2026-09-01 16:10:50] 4B Sender reference evaluation: 25/128
+[2026-09-01 16:10:50] 4B Sender reference evaluation: 26/128
+[2026-09-01 16:10:51] 4B Sender reference evaluation: 27/128
+[2026-09-01 16:10:51] 4B Sender reference evaluation: 28/128
+[2026-09-01 16:10:51] 4B Sender reference evaluation: 29/128
+[2026-09-01 16:10:52] 4B Sender reference evaluation: 30/128
+[2026-09-01 16:10:52] 4B Sender reference evaluation: 31/128
+[2026-09-01 16:10:52] 4B Sender reference evaluation: 32/128
+[2026-09-01 16:10:52] 4B Sender reference evaluation: 33/128
+[2026-09-01 16:10:52] 4B Sender reference evaluation: 34/128
+[2026-09-01 16:10:53] 4B Sender reference evaluation: 35/128
+[2026-09-01 16:10:53] 4B Sender reference evaluation: 36/128
+[2026-09-01 16:10:53] 4B Sender reference evaluation: 37/128
+[2026-09-01 16:10:54] 4B Sender reference evaluation: 38/128
+[2026-09-01 16:10:54] 4B Sender reference evaluation: 39/128
+[2026-09-01 16:10:54] 4B Sender reference evaluation: 40/128
+[2026-09-01 16:10:55] 4B Sender reference evaluation: 41/128
+[2026-09-01 16:10:55] 4B Sender reference evaluation: 42/128
+[2026-09-01 16:10:56] 4B Sender reference evaluation: 43/128
+[2026-09-01 16:10:56] 4B Sender reference evaluation: 44/128
+[2026-09-01 16:10:56] 4B Sender reference evaluation: 45/128
+[2026-09-01 16:10:56] 4B Sender reference evaluation: 46/128
+[2026-09-01 16:10:57] 4B Sender reference evaluation: 47/128
+[2026-09-01 16:10:57] 4B Sender reference evaluation: 48/128
+[2026-09-01 16:10:57] 4B Sender reference evaluation: 49/128
+[2026-09-01 16:10:58] 4B Sender reference evaluation: 50/128
+[2026-09-01 16:10:58] 4B Sender reference evaluation: 51/128
+[2026-09-01 16:10:58] 4B Sender reference evaluation: 52/128
+[2026-09-01 16:10:58] 4B Sender reference evaluation: 53/128
+[2026-09-01 16:10:59] 4B Sender reference evaluation: 54/128
+[2026-09-01 16:10:59] 4B Sender reference evaluation: 55/128
+[2026-09-01 16:11:00] 4B Sender reference evaluation: 56/128
+[2026-09-01 16:11:00] 4B Sender reference evaluation: 57/128
+[2026-09-01 16:11:00] 4B Sender reference evaluation: 58/128
+[2026-09-01 16:11:01] 4B Sender reference evaluation: 59/128
+[2026-09-01 16:11:01] 4B Sender reference evaluation: 60/128
+[2026-09-01 16:11:01] 4B Sender reference evaluation: 61/128
+[2026-09-01 16:11:01] 4B Sender reference evaluation: 62/128
+[2026-09-01 16:11:01] 4B Sender reference evaluation: 63/128
+[2026-09-01 16:11:02] 4B Sender reference evaluation: 64/128
+[2026-09-01 16:11:02] 4B Sender reference evaluation: 65/128
+[2026-09-01 16:11:02] 4B Sender reference evaluation: 66/128
+[2026-09-01 16:11:03] 4B Sender reference evaluation: 67/128
+[2026-09-01 16:11:03] 4B Sender reference evaluation: 68/128
+[2026-09-01 16:11:03] 4B Sender reference evaluation: 69/128
+[2026-09-01 16:11:03] 4B Sender reference evaluation: 70/128
+[2026-09-01 16:11:04] 4B Sender reference evaluation: 71/128
+[2026-09-01 16:11:04] 4B Sender reference evaluation: 72/128
+[2026-09-01 16:11:04] 4B Sender reference evaluation: 73/128
+[2026-09-01 16:11:04] 4B Sender reference evaluation: 74/128
+[2026-09-01 16:11:05] 4B Sender reference evaluation: 75/128
+[2026-09-01 16:11:05] 4B Sender reference evaluation: 76/128
+[2026-09-01 16:11:05] 4B Sender reference evaluation: 77/128
+[2026-09-01 16:11:05] 4B Sender reference evaluation: 78/128
+[2026-09-01 16:11:06] 4B Sender reference evaluation: 79/128
+[2026-09-01 16:11:06] 4B Sender reference evaluation: 80/128
+[2026-09-01 16:11:06] 4B Sender reference evaluation: 81/128
+[2026-09-01 16:11:06] 4B Sender reference evaluation: 82/128
+[2026-09-01 16:11:07] 4B Sender reference evaluation: 83/128
+[2026-09-01 16:11:07] 4B Sender reference evaluation: 84/128
+[2026-09-01 16:11:07] 4B Sender reference evaluation: 85/128
+[2026-09-01 16:11:08] 4B Sender reference evaluation: 86/128
+[2026-09-01 16:11:08] 4B Sender reference evaluation: 87/128
+[2026-09-01 16:11:08] 4B Sender reference evaluation: 88/128
+[2026-09-01 16:11:08] 4B Sender reference evaluation: 89/128
+[2026-09-01 16:11:09] 4B Sender reference evaluation: 90/128
+[2026-09-01 16:11:09] 4B Sender reference evaluation: 91/128
+[2026-09-01 16:11:09] 4B Sender reference evaluation: 92/128
+[2026-09-01 16:11:09] 4B Sender reference evaluation: 93/128
+[2026-09-01 16:11:10] 4B Sender reference evaluation: 94/128
+[2026-09-01 16:11:10] 4B Sender reference evaluation: 95/128
+[2026-09-01 16:11:10] 4B Sender reference evaluation: 96/128
+[2026-09-01 16:11:11] 4B Sender reference evaluation: 97/128
+[2026-09-01 16:11:11] 4B Sender reference evaluation: 98/128
+[2026-09-01 16:11:11] 4B Sender reference evaluation: 99/128
+[2026-09-01 16:11:12] 4B Sender reference evaluation: 100/128
+[2026-09-01 16:11:12] 4B Sender reference evaluation: 101/128
+[2026-09-01 16:11:12] 4B Sender reference evaluation: 102/128
+[2026-09-01 16:11:12] 4B Sender reference evaluation: 103/128
+[2026-09-01 16:11:12] 4B Sender reference evaluation: 104/128
+[2026-09-01 16:11:13] 4B Sender reference evaluation: 105/128
+[2026-09-01 16:11:13] 4B Sender reference evaluation: 106/128
+[2026-09-01 16:11:13] 4B Sender reference evaluation: 107/128
+[2026-09-01 16:11:14] 4B Sender reference evaluation: 108/128
+[2026-09-01 16:11:14] 4B Sender reference evaluation: 109/128
+[2026-09-01 16:11:15] 4B Sender reference evaluation: 110/128
+[2026-09-01 16:11:15] 4B Sender reference evaluation: 111/128
+[2026-09-01 16:11:15] 4B Sender reference evaluation: 112/128
+[2026-09-01 16:11:16] 4B Sender reference evaluation: 113/128
+[2026-09-01 16:11:16] 4B Sender reference evaluation: 114/128
+[2026-09-01 16:11:16] 4B Sender reference evaluation: 115/128
+[2026-09-01 16:11:16] 4B Sender reference evaluation: 116/128
+[2026-09-01 16:11:17] 4B Sender reference evaluation: 117/128
+[2026-09-01 16:11:17] 4B Sender reference evaluation: 118/128
+[2026-09-01 16:11:18] 4B Sender reference evaluation: 119/128
+[2026-09-01 16:11:18] 4B Sender reference evaluation: 120/128
+[2026-09-01 16:11:18] 4B Sender reference evaluation: 121/128
+[2026-09-01 16:11:19] 4B Sender reference evaluation: 122/128
+[2026-09-01 16:11:19] 4B Sender reference evaluation: 123/128
+[2026-09-01 16:11:19] 4B Sender reference evaluation: 124/128
+[2026-09-01 16:11:19] 4B Sender reference evaluation: 125/128
+[2026-09-01 16:11:20] 4B Sender reference evaluation: 126/128
+[2026-09-01 16:11:20] 4B Sender reference evaluation: 127/128
+[2026-09-01 16:11:20] 4B Sender reference evaluation: 128/128
+[2026-09-01 16:11:22] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json evaluate --scope formal
+[2026-09-01 16:11:22] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u compare_forward.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json
+[2026-09-01 16:11:26] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u compare_forward.py --config /home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/config.json
+[2026-09-01 16:11:26] ALL REVERSE FULL-36 WRITER EXPERIMENTS COMPLETED

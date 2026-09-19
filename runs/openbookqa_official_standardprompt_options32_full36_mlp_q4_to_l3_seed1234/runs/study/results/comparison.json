@@ -1,0 +1,155 @@
+{
+  "status": "completed",
+  "protocol": "openbookqa_official_standardprompt_receiver_native_question_options32_q4_to_l3_v1",
+  "train_samples": 1024,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "stage_a_checkpoint": "/home/yezhe/异构模型/openbookqa_official_standardprompt_options32_full36_mlp_q4_to_l3_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+  "metrics": {
+    "stage_a": {
+      "accuracy": 0.609375,
+      "oracle_agreement": 0.7265625,
+      "oracle_choice_kl": 0.204626688981989,
+      "k_nmse": 0.08711254067020491,
+      "v_nmse": 0.3856410093139857,
+      "k_cosine": 0.95467050652951,
+      "v_cosine": 0.7638411317020655
+    },
+    "shared": {
+      "accuracy": 0.625,
+      "oracle_agreement": 0.6484375,
+      "oracle_choice_kl": 0.24182669632136822,
+      "k_nmse": 0.30763575923629105,
+      "v_nmse": 0.46370682725682855,
+      "k_cosine": 0.8853214019909501,
+      "v_cosine": 0.7238159463740885
+    },
+    "residual": {
+      "accuracy": 0.625,
+      "oracle_agreement": 0.6953125,
+      "oracle_choice_kl": 0.2086481473115782,
+      "k_nmse": 0.08868419061764143,
+      "v_nmse": 0.38583171844948083,
+      "k_cosine": 0.9538576835766435,
+      "v_cosine": 0.7637034957297146
+    }
+  },
+  "relative_residual_norm": {
+    "k": {
+      "min": 0.04079613849551376,
+      "p10": 0.04136671553415996,
+      "p25": 0.04182495104464769,
+      "median": 0.04219079696039967,
+      "p75": 0.04275024376705722,
+      "p90": 0.04323729997688386,
+      "p95": 0.0433902965802625,
+      "max": 0.04402816951193446,
+      "mean": 0.04228153291925842
+    },
+    "v": {
+      "min": 0.015169054652277119,
+      "p10": 0.01565499790756736,
+      "p25": 0.01600081137613492,
+      "median": 0.01649852078458883,
+      "p75": 0.016908397276005366,
+      "p90": 0.01719154619818842,
+      "p95": 0.017257821587887797,
+      "max": 0.01815058396963634,
+      "mean": 0.01646584431893285
+    }
+  },
+  "paired_shared_vs_residual": {
+    "both_correct": 69,
+    "only_first_correct": 11,
+    "only_second_correct": 11,
+    "both_wrong": 37,
+    "second_minus_first": 0.0,
+    "mcnemar_p": 1.0
+  },
+  "paired_stage_a_vs_shared": {
+    "both_correct": 67,
+    "only_first_correct": 11,
+    "only_second_correct": 13,
+    "both_wrong": 37,
+    "second_minus_first": 0.015625,
+    "mcnemar_p": 0.8388197422027588
+  },
+  "paired_stage_a_vs_residual": {
+    "both_correct": 74,
+    "only_first_correct": 4,
+    "only_second_correct": 6,
+    "both_wrong": 44,
+    "second_minus_first": 0.015625,
+    "mcnemar_p": 0.75390625
+  },
+  "frozen_base_hash_verified": true,
+  "trained_parameters": {
+    "shared": 278921216,
+    "residual": 7340032
+  },
+  "native_baselines": {
+    "status": "completed",
+    "protocol": "openbookqa_official_standardprompt_receiver_native_question_options32_q4_to_l3_v1",
+    "sample_count": 128,
+    "metrics": {
+      "qwen_full_native": {
+        "correct": 96,
+        "accuracy": 0.75
+      },
+      "qwen_native_selected32": {
+        "correct": 94,
+        "accuracy": 0.734375
+      },
+      "llama_full_native": {
+        "correct": 92,
+        "accuracy": 0.71875
+      },
+      "llama_native_oracle32": {
+        "correct": 76,
+        "accuracy": 0.59375
+      }
+    },
+    "pairwise_correctness": {
+      "qwen_full_native_vs_qwen_native_selected32": {
+        "both_correct": 91,
+        "only_first_correct": 5,
+        "only_second_correct": 3,
+        "both_wrong": 29
+      },
+      "qwen_full_native_vs_llama_full_native": {
+        "both_correct": 77,
+        "only_first_correct": 19,
+        "only_second_correct": 15,
+        "both_wrong": 17
+      },
+      "qwen_full_native_vs_llama_native_oracle32": {
+        "both_correct": 62,
+        "only_first_correct": 34,
+        "only_second_correct": 14,
+        "both_wrong": 18
+      },
+      "qwen_native_selected32_vs_llama_full_native": {
+        "both_correct": 76,
+        "only_first_correct": 18,
+        "only_second_correct": 16,
+        "both_wrong": 18
+      },
+      "qwen_native_selected32_vs_llama_native_oracle32": {
+        "both_correct": 61,
+        "only_first_correct": 33,
+        "only_second_correct": 15,
+        "both_wrong": 19
+      },
+      "llama_full_native_vs_llama_native_oracle32": {
+        "both_correct": 68,
+        "only_first_correct": 24,
+        "only_second_correct": 8,
+        "both_wrong": 28
+      }
+    },
+    "definitions": {
+      "qwen_native_selected32": "Qwen-native Question cache + the same 32 Qwen-selected native Option KVs + native Answer suffix.",
+      "llama_native_oracle32": "Llama-native Question cache + Llama-native Option KVs at the 32 RawAnchor positions selected by Qwen + native Answer suffix."
+    }
+  }
+}

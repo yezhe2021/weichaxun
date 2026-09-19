@@ -1,0 +1,42 @@
+[
+  {
+    "step": 128,
+    "path": "/home/yezhe/异构模型/openbookqa_official_full28_mlp_retrained_stagea_shared_vs_residual64_l3_to_q4_seed1234/runs/study/stage_b_residual/checkpoints/step_128.pt",
+    "functional": {
+      "accuracy": 0.6875,
+      "oracle_accuracy": 0.7890625,
+      "oracle_agreement": 0.71875,
+      "choice_kl": 0.6096108254787396
+    }
+  },
+  {
+    "step": 256,
+    "path": "/home/yezhe/异构模型/openbookqa_official_full28_mlp_retrained_stagea_shared_vs_residual64_l3_to_q4_seed1234/runs/study/stage_b_residual/checkpoints/step_256.pt",
+    "functional": {
+      "accuracy": 0.671875,
+      "oracle_accuracy": 0.7890625,
+      "oracle_agreement": 0.6953125,
+      "choice_kl": 0.6025836566012686
+    }
+  },
+  {
+    "step": 384,
+    "path": "/home/yezhe/异构模型/openbookqa_official_full28_mlp_retrained_stagea_shared_vs_residual64_l3_to_q4_seed1234/runs/study/stage_b_residual/checkpoints/step_384.pt",
+    "functional": {
+      "accuracy": 0.7265625,
+      "oracle_accuracy": 0.7890625,
+      "oracle_agreement": 0.734375,
+      "choice_kl": 0.5809577033222695
+    }
+  },
+  {
+    "step": 512,
+    "path": "/home/yezhe/异构模型/openbookqa_official_full28_mlp_retrained_stagea_shared_vs_residual64_l3_to_q4_seed1234/runs/study/stage_b_residual/checkpoints/step_512.pt",
+    "functional": {
+      "accuracy": 0.703125,
+      "oracle_accuracy": 0.7890625,
+      "oracle_agreement": 0.7265625,
+      "choice_kl": 0.5848535510351667
+    }
+  }
+]

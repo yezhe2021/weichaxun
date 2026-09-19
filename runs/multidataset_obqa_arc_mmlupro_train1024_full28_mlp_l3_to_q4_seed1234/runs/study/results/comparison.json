@@ -1,0 +1,81 @@
+{
+  "status": "completed",
+  "protocol": "multidataset_standardprompt_receiver_native_question_options32_mmlu64_l3_to_q4_train1024_v3",
+  "train_samples": 3072,
+  "validation_samples": 384,
+  "test_samples": 384,
+  "stage_a_checkpoint": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full28_mlp_l3_to_q4_seed1234/runs/study/stage_a/checkpoints/step_1344.pt",
+  "metrics": {
+    "stage_a": {
+      "accuracy": 0.4166666666666667,
+      "oracle_agreement": 0.4661458333333333,
+      "oracle_choice_kl": 1.2618500202082952,
+      "k_nmse": 0.0516221281432081,
+      "v_nmse": 0.3844306266400963,
+      "k_cosine": 0.9399291902470092,
+      "v_cosine": 0.7683155809839567
+    },
+    "residual": {
+      "accuracy": 0.53125,
+      "oracle_agreement": 0.6614583333333334,
+      "oracle_choice_kl": 0.6655841271072708,
+      "k_nmse": 0.052442671896036096,
+      "v_nmse": 0.3848914495126034,
+      "k_cosine": 0.9396303193643689,
+      "v_cosine": 0.7681933757849038
+    }
+  },
+  "per_dataset_accuracy": {
+    "arc_challenge": {
+      "count": 128,
+      "stage_a": 0.6328125,
+      "residual": 0.7421875
+    },
+    "mmlu_pro": {
+      "count": 128,
+      "stage_a": 0.09375,
+      "residual": 0.234375
+    },
+    "openbookqa": {
+      "count": 128,
+      "stage_a": 0.5234375,
+      "residual": 0.6171875
+    }
+  },
+  "relative_residual_norm": {
+    "k": {
+      "min": 0.028539401369233972,
+      "p10": 0.028951418504527406,
+      "p25": 0.02905754367370916,
+      "median": 0.02920644398309695,
+      "p75": 0.029348189967565927,
+      "p90": 0.02949394169721596,
+      "p95": 0.029582561897189153,
+      "max": 0.030022718333840986,
+      "mean": 0.029212833719975347
+    },
+    "v": {
+      "min": 0.024634376719446124,
+      "p10": 0.02597298635054229,
+      "p25": 0.02638795894094522,
+      "median": 0.027095468260030817,
+      "p75": 0.027967825707348577,
+      "p90": 0.02917353523563616,
+      "p95": 0.029719541129843853,
+      "max": 0.03153061287055136,
+      "mean": 0.02731758424950409
+    }
+  },
+  "paired_stage_a_vs_residual": {
+    "both_correct": 138,
+    "only_first_correct": 22,
+    "only_second_correct": 66,
+    "both_wrong": 158,
+    "second_minus_first": 0.11458333333333333,
+    "mcnemar_p": 2.8793907495367234e-06
+  },
+  "frozen_base_hash_verified": true,
+  "trained_parameters": {
+    "residual": 9437184
+  }
+}

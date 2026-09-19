@@ -1,0 +1,17 @@
+{
+  "writer": "d2",
+  "functional_mode": "final",
+  "overfit_code_validation": false,
+  "initial_validation_functional_kl": 5.834694478660822,
+  "best_validation_functional_kl": 1.0946299710776657,
+  "functional_kl_decreased": true,
+  "updates": 2000,
+  "receiver_frozen": true,
+  "teacher_no_grad": true,
+  "stage_b_loss": "only_final_full_vocabulary_teacher_to_student_kl",
+  "kv_reconstruction_diagnostic_only": true,
+  "hidden_trajectory_diagnostic_only": true,
+  "initialized_from": "/home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/checkpoints/quick/d2/stage_a/best.pt",
+  "gold_label_used": false,
+  "seconds": 792.9312906973064
+}

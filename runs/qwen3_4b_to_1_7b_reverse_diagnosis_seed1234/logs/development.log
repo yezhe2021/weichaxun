@@ -1,0 +1,276 @@
+[2026-08-05 21:29:04] development: start prepare
+reverse diagnosis manifests and reusable assets audited
+[2026-08-05 21:29:12] development: start cache4
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 104/398 [00:00<00:00, 1034.53it/s]Loading weights:  52%|█████▏    | 208/398 [00:00<00:00, 986.39it/s] Loading weights:  77%|███████▋  | 307/398 [00:00<00:00, 969.02it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1007.11it/s]
+[2026-08-05 21:29:30] development: source4_full train 8/512
+[2026-08-05 21:29:39] development: source4_full train 16/512
+[2026-08-05 21:29:50] development: source4_full train 24/512
+[2026-08-05 21:30:01] development: source4_full train 32/512
+[2026-08-05 21:30:14] development: source4_full train 40/512
+[2026-08-05 21:30:23] development: source4_full train 48/512
+[2026-08-05 21:30:34] development: source4_full train 56/512
+[2026-08-05 21:30:45] development: source4_full train 64/512
+[2026-08-05 21:30:56] development: source4_full train 72/512
+[2026-08-05 21:31:08] development: source4_full train 80/512
+[2026-08-05 21:31:18] development: source4_full train 88/512
+[2026-08-05 21:31:30] development: source4_full train 96/512
+[2026-08-05 21:31:41] development: source4_full train 104/512
+[2026-08-05 21:31:51] development: source4_full train 112/512
+[2026-08-05 21:32:03] development: source4_full train 120/512
+[2026-08-05 21:32:13] development: source4_full train 128/512
+[2026-08-05 21:32:26] development: source4_full train 136/512
+[2026-08-05 21:32:38] development: source4_full train 144/512
+[2026-08-05 21:32:48] development: source4_full train 152/512
+[2026-08-05 21:33:00] development: source4_full train 160/512
+[2026-08-05 21:33:08] development: source4_full train 168/512
+[2026-08-05 21:33:17] development: source4_full train 176/512
+[2026-08-05 21:33:26] development: source4_full train 184/512
+[2026-08-05 21:33:40] development: source4_full train 192/512
+[2026-08-05 21:33:50] development: source4_full train 200/512
+[2026-08-05 21:34:04] development: source4_full train 208/512
+[2026-08-05 21:34:12] development: source4_full train 216/512
+[2026-08-05 21:34:22] development: source4_full train 224/512
+[2026-08-05 21:34:31] development: source4_full train 232/512
+[2026-08-05 21:34:40] development: source4_full train 240/512
+[2026-08-05 21:34:52] development: source4_full train 248/512
+[2026-08-05 21:35:03] development: source4_full train 256/512
+[2026-08-05 21:35:12] development: source4_full train 264/512
+[2026-08-05 21:35:27] development: source4_full train 272/512
+[2026-08-05 21:35:35] development: source4_full train 280/512
+[2026-08-05 21:35:45] development: source4_full train 288/512
+[2026-08-05 21:35:54] development: source4_full train 296/512
+[2026-08-05 21:36:07] development: source4_full train 304/512
+[2026-08-05 21:36:18] development: source4_full train 312/512
+[2026-08-05 21:36:28] development: source4_full train 320/512
+[2026-08-05 21:36:38] development: source4_full train 328/512
+[2026-08-05 21:36:48] development: source4_full train 336/512
+[2026-08-05 21:37:03] development: source4_full train 344/512
+[2026-08-05 21:37:13] development: source4_full train 352/512
+[2026-08-05 21:37:21] development: source4_full train 360/512
+[2026-08-05 21:37:33] development: source4_full train 368/512
+[2026-08-05 21:37:46] development: source4_full train 376/512
+[2026-08-05 21:38:01] development: source4_full train 384/512
+[2026-08-05 21:38:13] development: source4_full train 392/512
+[2026-08-05 21:38:24] development: source4_full train 400/512
+[2026-08-05 21:38:37] development: source4_full train 408/512
+[2026-08-05 21:38:47] development: source4_full train 416/512
+[2026-08-05 21:38:57] development: source4_full train 424/512
+[2026-08-05 21:39:09] development: source4_full train 432/512
+[2026-08-05 21:39:21] development: source4_full train 440/512
+[2026-08-05 21:39:36] development: source4_full train 448/512
+[2026-08-05 21:39:47] development: source4_full train 456/512
+[2026-08-05 21:40:01] development: source4_full train 464/512
+[2026-08-05 21:40:13] development: source4_full train 472/512
+[2026-08-05 21:40:25] development: source4_full train 480/512
+[2026-08-05 21:40:38] development: source4_full train 488/512
+[2026-08-05 21:40:51] development: source4_full train 496/512
+[2026-08-05 21:41:06] development: source4_full train 504/512
+[2026-08-05 21:41:19] development: source4_full train 512/512
+[2026-08-05 21:41:29] development: source4_full validation 8/64
+[2026-08-05 21:41:38] development: source4_full validation 16/64
+[2026-08-05 21:41:54] development: source4_full validation 24/64
+[2026-08-05 21:42:09] development: source4_full validation 32/64
+[2026-08-05 21:42:23] development: source4_full validation 40/64
+[2026-08-05 21:42:41] development: source4_full validation 56/64
+[2026-08-05 21:42:57] development: source4_full validation 64/64
+[2026-08-05 21:43:12] development: source4_full test 8/128
+[2026-08-05 21:43:24] development: source4_full test 16/128
+[2026-08-05 21:43:37] development: source4_full test 24/128
+[2026-08-05 21:43:50] development: source4_full test 32/128
+[2026-08-05 21:44:01] development: source4_full test 40/128
+[2026-08-05 21:44:13] development: source4_full test 48/128
+[2026-08-05 21:44:27] development: source4_full test 56/128
+[2026-08-05 21:44:42] development: source4_full test 64/128
+[2026-08-05 21:44:57] development: source4_full test 72/128
+[2026-08-05 21:45:11] development: source4_full test 80/128
+[2026-08-05 21:45:26] development: source4_full test 88/128
+[2026-08-05 21:45:47] development: source4_full test 104/128
+[2026-08-05 21:45:58] development: source4_full test 112/128
+[2026-08-05 21:46:11] development: source4_full test 120/128
+[2026-08-05 21:46:24] development: source4_full test 128/128
+[2026-08-05 21:46:25] development: start asset_audit
+[2026-08-05 22:43:49] development: start scales
+[2026-08-05 22:43:56] development: start oracle
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 110/398 [00:00<00:00, 1070.63it/s]Loading weights:  55%|█████▍    | 218/398 [00:00<00:00, 884.84it/s] Loading weights:  78%|███████▊  | 311/398 [00:00<00:00, 886.88it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 897.70it/s]
+[2026-08-05 22:45:15] development: oracle 8/128
+[2026-08-05 22:46:46] development: oracle 16/128
+[2026-08-05 22:48:44] development: oracle 24/128
+[2026-08-05 22:50:19] development: oracle 32/128
+[2026-08-05 22:52:26] development: oracle 40/128
+[2026-08-05 22:54:30] development: oracle 48/128
+[2026-08-05 22:56:26] development: oracle 56/128
+[2026-08-05 22:58:36] development: oracle 64/128
+[2026-08-05 23:00:49] development: oracle 72/128
+[2026-08-05 23:02:59] development: oracle 80/128
+[2026-08-05 23:04:15] development: oracle 88/128
+[2026-08-05 23:05:45] development: oracle 96/128
+[2026-08-05 23:07:00] development: oracle 104/128
+[2026-08-05 23:08:17] development: oracle 112/128
+[2026-08-05 23:09:32] development: oracle 120/128
+[2026-08-05 23:10:41] development: oracle 128/128
+[2026-08-05 23:10:43] development: start baseline17
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 103/311 [00:00<00:00, 1019.37it/s]Loading weights:  81%|████████▏ | 253/311 [00:00<00:00, 1297.01it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1295.10it/s]
+[2026-08-05 23:11:12] development: 1.7B baseline 8/128
+[2026-08-05 23:11:27] development: 1.7B baseline 16/128
+[2026-08-05 23:11:43] development: 1.7B baseline 24/128
+[2026-08-05 23:11:57] development: 1.7B baseline 32/128
+[2026-08-05 23:12:14] development: 1.7B baseline 40/128
+[2026-08-05 23:12:31] development: 1.7B baseline 48/128
+[2026-08-05 23:12:48] development: 1.7B baseline 56/128
+[2026-08-05 23:13:02] development: 1.7B baseline 64/128
+[2026-08-05 23:13:18] development: 1.7B baseline 72/128
+[2026-08-05 23:13:36] development: 1.7B baseline 80/128
+[2026-08-05 23:13:50] development: 1.7B baseline 88/128
+[2026-08-05 23:14:06] development: 1.7B baseline 96/128
+[2026-08-05 23:14:22] development: 1.7B baseline 104/128
+[2026-08-05 23:14:38] development: 1.7B baseline 112/128
+[2026-08-05 23:14:55] development: 1.7B baseline 120/128
+[2026-08-05 23:15:12] development: 1.7B baseline 128/128
+[2026-08-05 23:15:14] development: start r1_overfit
+[2026-08-05 23:18:05] development: r1_overfit16 50/800 validation=2.975050
+[2026-08-05 23:20:19] development: r1_overfit16 100/800 validation=2.552130
+[2026-08-05 23:22:32] development: r1_overfit16 150/800 validation=2.320537
+[2026-08-05 23:24:43] development: r1_overfit16 200/800 validation=2.159917
+[2026-08-05 23:26:54] development: r1_overfit16 250/800 validation=2.040402
+[2026-08-05 23:29:07] development: r1_overfit16 300/800 validation=1.947410
+[2026-08-05 23:31:18] development: r1_overfit16 350/800 validation=1.872749
+[2026-08-05 23:33:31] development: r1_overfit16 400/800 validation=1.811333
+[2026-08-05 23:35:43] development: r1_overfit16 450/800 validation=1.759790
+[2026-08-05 23:37:54] development: r1_overfit16 500/800 validation=1.715821
+[2026-08-05 23:40:04] development: r1_overfit16 550/800 validation=1.677812
+[2026-08-05 23:42:14] development: r1_overfit16 600/800 validation=1.644573
+[2026-08-05 23:44:22] development: r1_overfit16 650/800 validation=1.615228
+[2026-08-05 23:46:32] development: r1_overfit16 700/800 validation=1.589091
+[2026-08-05 23:48:41] development: r1_overfit16 750/800 validation=1.565642
+[2026-08-05 23:50:50] development: r1_overfit16 800/800 validation=1.544457
+[2026-08-05 23:50:57] development: start r1_stagea
+[2026-08-06 00:10:52] development: r1_stage_a 50/800 validation=3.039767
+[2026-08-06 00:26:29] development: r1_stage_a 100/800 validation=2.646966
+[2026-08-06 00:42:52] development: r1_stage_a 150/800 validation=2.430429
+[2026-08-06 00:59:01] development: r1_stage_a 200/800 validation=2.278667
+[2026-08-06 01:15:59] development: r1_stage_a 250/800 validation=2.164966
+[2026-08-06 01:31:48] development: r1_stage_a 300/800 validation=2.076151
+[2026-08-06 01:47:42] development: r1_stage_a 350/800 validation=2.004201
+[2026-08-06 02:04:17] development: r1_stage_a 400/800 validation=1.944884
+[2026-08-06 02:21:06] development: r1_stage_a 450/800 validation=1.894795
+[2026-08-06 02:37:19] development: r1_stage_a 500/800 validation=1.852078
+[2026-08-06 02:53:21] development: r1_stage_a 550/800 validation=1.814907
+[2026-08-06 03:09:20] development: r1_stage_a 600/800 validation=1.782257
+[2026-08-06 03:25:44] development: r1_stage_a 650/800 validation=1.753255
+[2026-08-06 03:42:29] development: r1_stage_a 700/800 validation=1.727327
+[2026-08-06 03:58:29] development: r1_stage_a 750/800 validation=1.704294
+[2026-08-06 04:14:28] development: r1_stage_a 800/800 validation=1.683137
+[2026-08-06 04:14:49] development: start r1_f0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  40%|████      | 125/311 [00:00<00:00, 1219.27it/s]Loading weights:  86%|████████▌ | 268/311 [00:00<00:00, 1333.60it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1339.72it/s]
+[2026-08-06 04:15:32] development: r1_front28_f0_correct 16/128
+[2026-08-06 04:16:05] development: r1_front28_f0_correct 32/128
+[2026-08-06 04:16:44] development: r1_front28_f0_correct 48/128
+[2026-08-06 04:17:22] development: r1_front28_f0_correct 64/128
+[2026-08-06 04:18:01] development: r1_front28_f0_correct 80/128
+[2026-08-06 04:18:40] development: r1_front28_f0_correct 96/128
+[2026-08-06 04:19:13] development: r1_front28_f0_correct 112/128
+[2026-08-06 04:19:53] development: r1_front28_f0_correct 128/128
+[2026-08-06 04:20:11] development: r1_front28_f0_shuffled 16/128
+[2026-08-06 04:20:30] development: r1_front28_f0_shuffled 32/128
+[2026-08-06 04:20:52] development: r1_front28_f0_shuffled 48/128
+[2026-08-06 04:21:08] development: r1_front28_f0_shuffled 64/128
+[2026-08-06 04:21:31] development: r1_front28_f0_shuffled 80/128
+[2026-08-06 04:21:56] development: r1_front28_f0_shuffled 96/128
+[2026-08-06 04:22:19] development: r1_front28_f0_shuffled 112/128
+[2026-08-06 04:22:40] development: r1_front28_f0_shuffled 128/128
+[2026-08-06 04:22:41] development: start r1_ce
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 177/311 [00:00<00:00, 1746.66it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1625.79it/s]
+[2026-08-06 04:34:20] development: r1_ce 50/400
+[2026-08-06 04:43:41] development: r1_ce 100/400
+[2026-08-06 04:53:18] development: r1_ce 150/400
+[2026-08-06 05:02:57] development: r1_ce 200/400
+[2026-08-06 05:12:33] development: r1_ce 250/400
+[2026-08-06 05:21:46] development: r1_ce 300/400
+[2026-08-06 05:31:54] development: r1_ce 350/400
+[2026-08-06 05:41:51] development: r1_ce 400/400
+[2026-08-06 05:41:52] development: start r1_eval
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  61%|██████    | 189/311 [00:00<00:00, 1863.92it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1786.39it/s]
+[2026-08-06 05:42:25] development: r1_front28_ce_correct 16/128
+[2026-08-06 05:42:48] development: r1_front28_ce_correct 32/128
+[2026-08-06 05:43:16] development: r1_front28_ce_correct 48/128
+[2026-08-06 05:43:44] development: r1_front28_ce_correct 64/128
+[2026-08-06 05:44:14] development: r1_front28_ce_correct 80/128
+[2026-08-06 05:44:40] development: r1_front28_ce_correct 96/128
+[2026-08-06 05:45:07] development: r1_front28_ce_correct 112/128
+[2026-08-06 05:45:35] development: r1_front28_ce_correct 128/128
+[2026-08-06 05:45:40] development: r1_front28_ce_shuffled 16/128
+[2026-08-06 05:45:47] development: r1_front28_ce_shuffled 32/128
+[2026-08-06 05:45:53] development: r1_front28_ce_shuffled 48/128
+[2026-08-06 05:45:59] development: r1_front28_ce_shuffled 64/128
+[2026-08-06 05:46:06] development: r1_front28_ce_shuffled 80/128
+[2026-08-06 05:46:12] development: r1_front28_ce_shuffled 96/128
+[2026-08-06 05:46:18] development: r1_front28_ce_shuffled 112/128
+[2026-08-06 05:46:24] development: r1_front28_ce_shuffled 128/128
+[2026-08-06 05:46:25] development: start update0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  60%|█████▉    | 186/311 [00:00<00:00, 1853.32it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1486.44it/s]
+[2026-08-06 05:49:20] development: start continued_stagea
+[2026-08-06 06:07:00] development: r1_continued_stage_a 50/200 validation=1.676503
+[2026-08-06 06:22:26] development: r1_continued_stage_a 100/200 validation=1.670291
+[2026-08-06 06:37:51] development: r1_continued_stage_a 150/200 validation=1.664322
+[2026-08-06 06:54:17] development: r1_continued_stage_a 200/200 validation=1.658569
+[2026-08-06 06:54:37] development: start r2_stagea
+[2026-08-06 07:10:52] development: r2_stage_a 50/200 validation=1.641260
+[2026-08-06 07:26:09] development: r2_stage_a 100/200 validation=1.602689
+[2026-08-06 07:41:52] development: r2_stage_a 150/200 validation=1.566890
+[2026-08-06 07:58:02] development: r2_stage_a 200/200 validation=1.533474
+[2026-08-06 07:58:22] development: start continued_f0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 103/311 [00:00<00:00, 1029.70it/s]Loading weights:  86%|████████▌ | 268/311 [00:00<00:00, 1388.39it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1232.85it/s]
+[2026-08-06 07:59:05] development: r1_continued_f0_correct 16/128
+[2026-08-06 07:59:35] development: r1_continued_f0_correct 32/128
+[2026-08-06 08:00:12] development: r1_continued_f0_correct 48/128
+[2026-08-06 08:00:48] development: r1_continued_f0_correct 64/128
+[2026-08-06 08:01:28] development: r1_continued_f0_correct 80/128
+[2026-08-06 08:02:06] development: r1_continued_f0_correct 96/128
+[2026-08-06 08:02:39] development: r1_continued_f0_correct 112/128
+[2026-08-06 08:03:14] development: r1_continued_f0_correct 128/128
+[2026-08-06 08:03:32] development: r1_continued_f0_shuffled 16/128
+[2026-08-06 08:03:53] development: r1_continued_f0_shuffled 32/128
+[2026-08-06 08:04:12] development: r1_continued_f0_shuffled 48/128
+[2026-08-06 08:04:30] development: r1_continued_f0_shuffled 64/128
+[2026-08-06 08:04:53] development: r1_continued_f0_shuffled 80/128
+[2026-08-06 08:05:12] development: r1_continued_f0_shuffled 96/128
+[2026-08-06 08:05:38] development: r1_continued_f0_shuffled 112/128
+[2026-08-06 08:06:01] development: r1_continued_f0_shuffled 128/128
+[2026-08-06 08:06:02] development: start r2_f0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  61%|██████▏   | 191/311 [00:00<00:00, 1891.33it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1635.59it/s]
+[2026-08-06 08:06:31] development: r2_learnable_f0_correct 16/128
+[2026-08-06 08:06:46] development: r2_learnable_f0_correct 32/128
+[2026-08-06 08:07:04] development: r2_learnable_f0_correct 48/128
+[2026-08-06 08:07:23] development: r2_learnable_f0_correct 64/128
+[2026-08-06 08:07:54] development: r2_learnable_f0_correct 80/128
+[2026-08-06 08:08:13] development: r2_learnable_f0_correct 96/128
+[2026-08-06 08:08:27] development: r2_learnable_f0_correct 112/128
+[2026-08-06 08:08:43] development: r2_learnable_f0_correct 128/128
+[2026-08-06 08:08:59] development: r2_learnable_f0_shuffled 16/128
+[2026-08-06 08:09:14] development: r2_learnable_f0_shuffled 32/128
+[2026-08-06 08:09:31] development: r2_learnable_f0_shuffled 48/128
+[2026-08-06 08:09:50] development: r2_learnable_f0_shuffled 64/128
+[2026-08-06 08:10:08] development: r2_learnable_f0_shuffled 80/128
+[2026-08-06 08:10:26] development: r2_learnable_f0_shuffled 96/128
+[2026-08-06 08:10:44] development: r2_learnable_f0_shuffled 112/128
+[2026-08-06 08:11:02] development: r2_learnable_f0_shuffled 128/128
+[2026-08-06 08:11:03] development: start continued_ce
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 178/311 [00:00<00:00, 1758.58it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1661.95it/s]
+[2026-08-06 08:22:32] development: r1_continued_ce 50/400
+[2026-08-06 08:31:00] development: r1_continued_ce 100/400
+[2026-08-06 08:40:04] development: r1_continued_ce 150/400
+[2026-08-06 08:49:03] development: r1_continued_ce 200/400
+[2026-08-06 08:58:52] development: r1_continued_ce 250/400
+[2026-08-06 09:06:37] development: r1_continued_ce 300/400
+Terminated
+[2026-08-06 09:10:15] Non-CUDA failure; stopping with status=143

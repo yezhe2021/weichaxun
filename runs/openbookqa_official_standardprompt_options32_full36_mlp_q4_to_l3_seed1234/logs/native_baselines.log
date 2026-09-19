@@ -1,0 +1,27 @@
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   9%|▉         | 36/398 [00:00<00:01, 349.08it/s]Loading weights:  20%|██        | 81/398 [00:00<00:00, 403.69it/s]Loading weights:  34%|███▍      | 135/398 [00:00<00:00, 446.94it/s]Loading weights:  48%|████▊     | 190/398 [00:00<00:00, 472.76it/s]Loading weights:  62%|██████▏   | 245/398 [00:00<00:00, 485.79it/s]Loading weights:  75%|███████▌  | 300/398 [00:00<00:00, 491.36it/s]Loading weights:  88%|████████▊ | 350/398 [00:00<00:00, 487.75it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 479.03it/s]
+Reverse native baseline evaluation: 16/128
+Reverse native baseline evaluation: 32/128
+Reverse native baseline evaluation: 48/128
+Reverse native baseline evaluation: 64/128
+Reverse native baseline evaluation: 80/128
+Reverse native baseline evaluation: 96/128
+Reverse native baseline evaluation: 112/128
+Reverse native baseline evaluation: 128/128
+{
+  "qwen_full_native": {
+    "correct": 96,
+    "accuracy": 0.75
+  },
+  "qwen_native_selected32": {
+    "correct": 94,
+    "accuracy": 0.734375
+  },
+  "llama_full_native": {
+    "correct": 92,
+    "accuracy": 0.71875
+  },
+  "llama_native_oracle32": {
+    "correct": 76,
+    "accuracy": 0.59375
+  }
+}

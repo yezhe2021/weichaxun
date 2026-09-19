@@ -1,0 +1,40 @@
+{
+  "seed": 1234,
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "llama": "/home/yezhe/all_models/models/LLM-Research/Llama-3___2-3B-Instruct"
+  },
+  "source_manifest_root": "/home/yezhe/异构模型/selfslot_training_sufficiency_qwen3_4b_llama3_2_3b_seed1234/runs/study",
+  "shared_results_document": "/home/yezhe/异构模型/EXPERIMENT_RESULTS.md",
+  "regions": 32,
+  "train_samples": 1024,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "max_body_tokens": 2048,
+  "audit_samples": 32,
+  "stage_a_epochs": 8,
+  "stage_a_steps": 1024,
+  "stage_b_epochs": 4,
+  "stage_b_steps": 512,
+  "batch_size": 8,
+  "validation_interval_steps": 128,
+  "stage_a_learning_rate": 0.001,
+  "stage_b_learning_rate": 0.0001,
+  "clip": 30.0,
+  "temperature": 1.0,
+  "attention_implementation": "eager",
+  "architecture": "full28_mlp",
+  "mlp_hidden_dim": 1024,
+  "reuse_assets": {
+    "smoke": {
+      "root": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/smoke",
+      "signature": "6d4b1f06e1cad56c2166096402bcaf609942b78818e469a22724592c8feddd1b"
+    },
+    "study": {
+      "root": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_diagonal_llama3_2_3b_to_qwen3_4b_seed1234/runs/study",
+      "signature": "34d11777de20ba41596f4ba7ad2434bd2bb858b461f04abb24d36b957ed1f1c0"
+    }
+  },
+  "mode": "study",
+  "signature": "8886f9b8b8128fed6ce7972bdcdeb5cfb14423e30a27d6c4f59b930e0a5e7349"
+}

@@ -1,0 +1,57 @@
+{
+  "writer": "full36",
+  "checkpoint": "/home/yezhe/重实现/mmlupro_reverse_full36_writer_b1_qwen3_4b_to_1_7b_seed1234/checkpoints/quick/full36/stage_a/best.pt",
+  "sample_count": 4,
+  "functional_modes": [
+    "final"
+  ],
+  "rows": [
+    {
+      "sample_id": "3114",
+      "functional_mode": "final",
+      "functional_kl": 0.5994637608528137,
+      "gradient": {
+        "norm": 540.6728376764669,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "471",
+      "functional_mode": "final",
+      "functional_kl": 2.6521694660186768,
+      "gradient": {
+        "norm": 571.4992934228462,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "3851",
+      "functional_mode": "final",
+      "functional_kl": 0.6609695553779602,
+      "gradient": {
+        "norm": 180.02091385884782,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    },
+    {
+      "sample_id": "10446",
+      "functional_mode": "final",
+      "functional_kl": 2.0539660453796387,
+      "gradient": {
+        "norm": 779.4388559179906,
+        "missing_parameter_count": 0,
+        "nonfinite_parameter_count": 0,
+        "zero_parameter_count": 0
+      }
+    }
+  ],
+  "receiver_gradient_count": 0,
+  "kv_hidden_losses_present_in_training_graph": false,
+  "gold_label_used": false
+}

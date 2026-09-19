@@ -1,0 +1,19 @@
+{
+  "dataset": "arc_challenge",
+  "raw_candidates": 1144,
+  "selected": 128,
+  "excluded_before_selection": 0,
+  "max_question_jaccard": 0.875,
+  "mean_question_jaccard": 0.28834084460006093,
+  "openbook_reference_count": 4096,
+  "selection": "seed1234; ARC exact four-choice; MMLU-Pro category round-robin; leakage threshold 0.9",
+  "signature": "c0c732fe046ca85a78b86e6d8959efa4a3e7e782f065286859dca7ca701bf506",
+  "max_body_tokens": {
+    "llama": 170,
+    "qwen": 172,
+    "gemma": 181
+  },
+  "option_counts": {
+    "4": 128
+  }
+}

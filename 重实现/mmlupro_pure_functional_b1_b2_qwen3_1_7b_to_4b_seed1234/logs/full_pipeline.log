@@ -1,0 +1,934 @@
+[2026-08-30 17:28:10] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_unit_tests.py
+PASS test_writers.py:test_checkpoint_round_trip_and_metadata
+PASS test_writers.py:test_d2_initialization_equals_calibrated_d0
+PASS test_writers.py:test_head_independence
+PASS test_writers.py:test_neighbor_order_and_boundary_rules
+PASS test_writers.py:test_parameters_are_independent_by_layer_and_family
+PASS test_writers.py:test_shapes_zero_and_no_bias
+PASS test_writers.py:test_token_independence
+PASS test_losses.py:test_decoder_layer_capture_preserves_autograd
+PASS test_losses.py:test_final_kl_ignores_all_earlier_suffix_positions
+PASS test_losses.py:test_hidden_loss_averages_layers_instead_of_flattening
+PASS test_losses.py:test_identical_36_layer_hidden_loss_is_zero
+PASS test_losses.py:test_identical_full_vocabulary_kl_is_zero
+PASS test_losses.py:test_last_n_kl_ignores_earlier_tokens
+PASS test_losses.py:test_training_sample_physically_removes_gold_fields
+14 unit tests passed
+[2026-08-30 17:28:17] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_unit_tests.py
+[2026-08-30 17:28:17] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json prepare
+[2026-08-30 17:29:08] prepared MMLU-Pro Options-first manifests
+[2026-08-30 17:29:09] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json prepare
+[2026-08-30 17:29:09] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json audit
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1128.85it/s]Loading weights:  57%|█████▋    | 226/398 [00:00<00:00, 1056.71it/s]Loading weights:  83%|████████▎ | 332/398 [00:00<00:00, 1053.11it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1026.30it/s]
+[2026-08-30 17:29:23] protocol audit 1/32
+[2026-08-30 17:29:24] protocol audit 2/32
+[2026-08-30 17:29:24] protocol audit 3/32
+[2026-08-30 17:29:24] protocol audit 4/32
+[2026-08-30 17:29:25] protocol audit 5/32
+[2026-08-30 17:29:25] protocol audit 6/32
+[2026-08-30 17:29:26] protocol audit 7/32
+[2026-08-30 17:29:26] protocol audit 8/32
+[2026-08-30 17:29:26] protocol audit 9/32
+[2026-08-30 17:29:27] protocol audit 10/32
+[2026-08-30 17:29:27] protocol audit 11/32
+[2026-08-30 17:29:28] protocol audit 12/32
+[2026-08-30 17:29:28] protocol audit 13/32
+[2026-08-30 17:29:29] protocol audit 14/32
+[2026-08-30 17:29:29] protocol audit 15/32
+[2026-08-30 17:29:29] protocol audit 16/32
+[2026-08-30 17:29:30] protocol audit 17/32
+[2026-08-30 17:29:30] protocol audit 18/32
+[2026-08-30 17:29:31] protocol audit 19/32
+[2026-08-30 17:29:31] protocol audit 20/32
+[2026-08-30 17:29:31] protocol audit 21/32
+[2026-08-30 17:29:32] protocol audit 22/32
+[2026-08-30 17:29:32] protocol audit 23/32
+[2026-08-30 17:29:33] protocol audit 24/32
+[2026-08-30 17:29:33] protocol audit 25/32
+[2026-08-30 17:29:33] protocol audit 26/32
+[2026-08-30 17:29:34] protocol audit 27/32
+[2026-08-30 17:29:34] protocol audit 28/32
+[2026-08-30 17:29:35] protocol audit 29/32
+[2026-08-30 17:29:35] protocol audit 30/32
+[2026-08-30 17:29:35] protocol audit 31/32
+[2026-08-30 17:29:36] protocol audit 32/32
+[2026-08-30 17:29:38] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json audit
+[2026-08-30 17:29:38] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json calibrate
+[2026-08-30 17:29:45] calibration source17: 1/128
+[2026-08-30 17:29:45] calibration source17: 2/128
+[2026-08-30 17:29:45] calibration source17: 3/128
+[2026-08-30 17:29:45] calibration source17: 4/128
+[2026-08-30 17:29:45] calibration source17: 5/128
+[2026-08-30 17:29:45] calibration source17: 6/128
+[2026-08-30 17:29:45] calibration source17: 7/128
+[2026-08-30 17:29:45] calibration source17: 8/128
+[2026-08-30 17:29:45] calibration source17: 9/128
+[2026-08-30 17:29:45] calibration source17: 10/128
+[2026-08-30 17:29:45] calibration source17: 11/128
+[2026-08-30 17:29:45] calibration source17: 12/128
+[2026-08-30 17:29:45] calibration source17: 13/128
+[2026-08-30 17:29:45] calibration source17: 14/128
+[2026-08-30 17:29:45] calibration source17: 15/128
+[2026-08-30 17:29:45] calibration source17: 16/128
+[2026-08-30 17:29:45] calibration source17: 17/128
+[2026-08-30 17:29:45] calibration source17: 18/128
+[2026-08-30 17:29:45] calibration source17: 19/128
+[2026-08-30 17:29:46] calibration source17: 20/128
+[2026-08-30 17:29:46] calibration source17: 21/128
+[2026-08-30 17:29:46] calibration source17: 22/128
+[2026-08-30 17:29:46] calibration source17: 23/128
+[2026-08-30 17:29:46] calibration source17: 24/128
+[2026-08-30 17:29:46] calibration source17: 25/128
+[2026-08-30 17:29:46] calibration source17: 26/128
+[2026-08-30 17:29:46] calibration source17: 27/128
+[2026-08-30 17:29:46] calibration source17: 28/128
+[2026-08-30 17:29:46] calibration source17: 29/128
+[2026-08-30 17:29:46] calibration source17: 30/128
+[2026-08-30 17:29:46] calibration source17: 31/128
+[2026-08-30 17:29:46] calibration source17: 32/128
+[2026-08-30 17:29:46] calibration source17: 33/128
+[2026-08-30 17:29:46] calibration source17: 34/128
+[2026-08-30 17:29:46] calibration source17: 35/128
+[2026-08-30 17:29:46] calibration source17: 36/128
+[2026-08-30 17:29:46] calibration source17: 37/128
+[2026-08-30 17:29:46] calibration source17: 38/128
+[2026-08-30 17:29:46] calibration source17: 39/128
+[2026-08-30 17:29:46] calibration source17: 40/128
+[2026-08-30 17:29:46] calibration source17: 41/128
+[2026-08-30 17:29:46] calibration source17: 42/128
+[2026-08-30 17:29:46] calibration source17: 43/128
+[2026-08-30 17:29:46] calibration source17: 44/128
+[2026-08-30 17:29:46] calibration source17: 45/128
+[2026-08-30 17:29:46] calibration source17: 46/128
+[2026-08-30 17:29:46] calibration source17: 47/128
+[2026-08-30 17:29:46] calibration source17: 48/128
+[2026-08-30 17:29:46] calibration source17: 49/128
+[2026-08-30 17:29:46] calibration source17: 50/128
+[2026-08-30 17:29:46] calibration source17: 51/128
+[2026-08-30 17:29:46] calibration source17: 52/128
+[2026-08-30 17:29:46] calibration source17: 53/128
+[2026-08-30 17:29:46] calibration source17: 54/128
+[2026-08-30 17:29:46] calibration source17: 55/128
+[2026-08-30 17:29:46] calibration source17: 56/128
+[2026-08-30 17:29:46] calibration source17: 57/128
+[2026-08-30 17:29:46] calibration source17: 58/128
+[2026-08-30 17:29:46] calibration source17: 59/128
+[2026-08-30 17:29:46] calibration source17: 60/128
+[2026-08-30 17:29:46] calibration source17: 61/128
+[2026-08-30 17:29:46] calibration source17: 62/128
+[2026-08-30 17:29:46] calibration source17: 63/128
+[2026-08-30 17:29:46] calibration source17: 64/128
+[2026-08-30 17:29:46] calibration source17: 65/128
+[2026-08-30 17:29:46] calibration source17: 66/128
+[2026-08-30 17:29:46] calibration source17: 67/128
+[2026-08-30 17:29:46] calibration source17: 68/128
+[2026-08-30 17:29:47] calibration source17: 69/128
+[2026-08-30 17:29:47] calibration source17: 70/128
+[2026-08-30 17:29:47] calibration source17: 71/128
+[2026-08-30 17:29:47] calibration source17: 72/128
+[2026-08-30 17:29:47] calibration source17: 73/128
+[2026-08-30 17:29:47] calibration source17: 74/128
+[2026-08-30 17:29:47] calibration source17: 75/128
+[2026-08-30 17:29:47] calibration source17: 76/128
+[2026-08-30 17:29:47] calibration source17: 77/128
+[2026-08-30 17:29:47] calibration source17: 78/128
+[2026-08-30 17:29:47] calibration source17: 79/128
+[2026-08-30 17:29:47] calibration source17: 80/128
+[2026-08-30 17:29:47] calibration source17: 81/128
+[2026-08-30 17:29:47] calibration source17: 82/128
+[2026-08-30 17:29:47] calibration source17: 83/128
+[2026-08-30 17:29:47] calibration source17: 84/128
+[2026-08-30 17:29:47] calibration source17: 85/128
+[2026-08-30 17:29:47] calibration source17: 86/128
+[2026-08-30 17:29:47] calibration source17: 87/128
+[2026-08-30 17:29:47] calibration source17: 88/128
+[2026-08-30 17:29:47] calibration source17: 89/128
+[2026-08-30 17:29:47] calibration source17: 90/128
+[2026-08-30 17:29:47] calibration source17: 91/128
+[2026-08-30 17:29:47] calibration source17: 92/128
+[2026-08-30 17:29:47] calibration source17: 93/128
+[2026-08-30 17:29:47] calibration source17: 94/128
+[2026-08-30 17:29:47] calibration source17: 95/128
+[2026-08-30 17:29:47] calibration source17: 96/128
+[2026-08-30 17:29:47] calibration source17: 97/128
+[2026-08-30 17:29:47] calibration source17: 98/128
+[2026-08-30 17:29:47] calibration source17: 99/128
+[2026-08-30 17:29:47] calibration source17: 100/128
+[2026-08-30 17:29:47] calibration source17: 101/128
+[2026-08-30 17:29:47] calibration source17: 102/128
+[2026-08-30 17:29:47] calibration source17: 103/128
+[2026-08-30 17:29:47] calibration source17: 104/128
+[2026-08-30 17:29:47] calibration source17: 105/128
+[2026-08-30 17:29:47] calibration source17: 106/128
+[2026-08-30 17:29:47] calibration source17: 107/128
+[2026-08-30 17:29:47] calibration source17: 108/128
+[2026-08-30 17:29:47] calibration source17: 109/128
+[2026-08-30 17:29:47] calibration source17: 110/128
+[2026-08-30 17:29:47] calibration source17: 111/128
+[2026-08-30 17:29:47] calibration source17: 112/128
+[2026-08-30 17:29:47] calibration source17: 113/128
+[2026-08-30 17:29:47] calibration source17: 114/128
+[2026-08-30 17:29:47] calibration source17: 115/128
+[2026-08-30 17:29:48] calibration source17: 116/128
+[2026-08-30 17:29:48] calibration source17: 117/128
+[2026-08-30 17:29:48] calibration source17: 118/128
+[2026-08-30 17:29:48] calibration source17: 119/128
+[2026-08-30 17:29:48] calibration source17: 120/128
+[2026-08-30 17:29:48] calibration source17: 121/128
+[2026-08-30 17:29:48] calibration source17: 122/128
+[2026-08-30 17:29:48] calibration source17: 123/128
+[2026-08-30 17:29:48] calibration source17: 124/128
+[2026-08-30 17:29:48] calibration source17: 125/128
+[2026-08-30 17:29:48] calibration source17: 126/128
+[2026-08-30 17:29:48] calibration source17: 127/128
+[2026-08-30 17:29:48] calibration source17: 128/128
+[2026-08-30 17:29:48] calibration target4: 1/128
+[2026-08-30 17:29:48] calibration target4: 2/128
+[2026-08-30 17:29:48] calibration target4: 3/128
+[2026-08-30 17:29:48] calibration target4: 4/128
+[2026-08-30 17:29:48] calibration target4: 5/128
+[2026-08-30 17:29:48] calibration target4: 6/128
+[2026-08-30 17:29:48] calibration target4: 7/128
+[2026-08-30 17:29:48] calibration target4: 8/128
+[2026-08-30 17:29:48] calibration target4: 9/128
+[2026-08-30 17:29:48] calibration target4: 10/128
+[2026-08-30 17:29:48] calibration target4: 11/128
+[2026-08-30 17:29:48] calibration target4: 12/128
+[2026-08-30 17:29:48] calibration target4: 13/128
+[2026-08-30 17:29:48] calibration target4: 14/128
+[2026-08-30 17:29:48] calibration target4: 15/128
+[2026-08-30 17:29:48] calibration target4: 16/128
+[2026-08-30 17:29:48] calibration target4: 17/128
+[2026-08-30 17:29:48] calibration target4: 18/128
+[2026-08-30 17:29:48] calibration target4: 19/128
+[2026-08-30 17:29:48] calibration target4: 20/128
+[2026-08-30 17:29:48] calibration target4: 21/128
+[2026-08-30 17:29:48] calibration target4: 22/128
+[2026-08-30 17:29:48] calibration target4: 23/128
+[2026-08-30 17:29:48] calibration target4: 24/128
+[2026-08-30 17:29:48] calibration target4: 25/128
+[2026-08-30 17:29:48] calibration target4: 26/128
+[2026-08-30 17:29:48] calibration target4: 27/128
+[2026-08-30 17:29:48] calibration target4: 28/128
+[2026-08-30 17:29:48] calibration target4: 29/128
+[2026-08-30 17:29:48] calibration target4: 30/128
+[2026-08-30 17:29:48] calibration target4: 31/128
+[2026-08-30 17:29:49] calibration target4: 32/128
+[2026-08-30 17:29:49] calibration target4: 33/128
+[2026-08-30 17:29:49] calibration target4: 34/128
+[2026-08-30 17:29:49] calibration target4: 35/128
+[2026-08-30 17:29:49] calibration target4: 36/128
+[2026-08-30 17:29:49] calibration target4: 37/128
+[2026-08-30 17:29:49] calibration target4: 38/128
+[2026-08-30 17:29:49] calibration target4: 39/128
+[2026-08-30 17:29:49] calibration target4: 40/128
+[2026-08-30 17:29:49] calibration target4: 41/128
+[2026-08-30 17:29:49] calibration target4: 42/128
+[2026-08-30 17:29:49] calibration target4: 43/128
+[2026-08-30 17:29:49] calibration target4: 44/128
+[2026-08-30 17:29:49] calibration target4: 45/128
+[2026-08-30 17:29:49] calibration target4: 46/128
+[2026-08-30 17:29:49] calibration target4: 47/128
+[2026-08-30 17:29:49] calibration target4: 48/128
+[2026-08-30 17:29:49] calibration target4: 49/128
+[2026-08-30 17:29:49] calibration target4: 50/128
+[2026-08-30 17:29:49] calibration target4: 51/128
+[2026-08-30 17:29:49] calibration target4: 52/128
+[2026-08-30 17:29:49] calibration target4: 53/128
+[2026-08-30 17:29:49] calibration target4: 54/128
+[2026-08-30 17:29:49] calibration target4: 55/128
+[2026-08-30 17:29:49] calibration target4: 56/128
+[2026-08-30 17:29:49] calibration target4: 57/128
+[2026-08-30 17:29:49] calibration target4: 58/128
+[2026-08-30 17:29:49] calibration target4: 59/128
+[2026-08-30 17:29:49] calibration target4: 60/128
+[2026-08-30 17:29:49] calibration target4: 61/128
+[2026-08-30 17:29:49] calibration target4: 62/128
+[2026-08-30 17:29:49] calibration target4: 63/128
+[2026-08-30 17:29:50] calibration target4: 64/128
+[2026-08-30 17:29:50] calibration target4: 65/128
+[2026-08-30 17:29:50] calibration target4: 66/128
+[2026-08-30 17:29:50] calibration target4: 67/128
+[2026-08-30 17:29:50] calibration target4: 68/128
+[2026-08-30 17:29:50] calibration target4: 69/128
+[2026-08-30 17:29:50] calibration target4: 70/128
+[2026-08-30 17:29:50] calibration target4: 71/128
+[2026-08-30 17:29:50] calibration target4: 72/128
+[2026-08-30 17:29:50] calibration target4: 73/128
+[2026-08-30 17:29:50] calibration target4: 74/128
+[2026-08-30 17:29:50] calibration target4: 75/128
+[2026-08-30 17:29:50] calibration target4: 76/128
+[2026-08-30 17:29:50] calibration target4: 77/128
+[2026-08-30 17:29:50] calibration target4: 78/128
+[2026-08-30 17:29:50] calibration target4: 79/128
+[2026-08-30 17:29:50] calibration target4: 80/128
+[2026-08-30 17:29:50] calibration target4: 81/128
+[2026-08-30 17:29:50] calibration target4: 82/128
+[2026-08-30 17:29:50] calibration target4: 83/128
+[2026-08-30 17:29:50] calibration target4: 84/128
+[2026-08-30 17:29:50] calibration target4: 85/128
+[2026-08-30 17:29:50] calibration target4: 86/128
+[2026-08-30 17:29:50] calibration target4: 87/128
+[2026-08-30 17:29:50] calibration target4: 88/128
+[2026-08-30 17:29:50] calibration target4: 89/128
+[2026-08-30 17:29:50] calibration target4: 90/128
+[2026-08-30 17:29:50] calibration target4: 91/128
+[2026-08-30 17:29:50] calibration target4: 92/128
+[2026-08-30 17:29:50] calibration target4: 93/128
+[2026-08-30 17:29:50] calibration target4: 94/128
+[2026-08-30 17:29:50] calibration target4: 95/128
+[2026-08-30 17:29:50] calibration target4: 96/128
+[2026-08-30 17:29:50] calibration target4: 97/128
+[2026-08-30 17:29:50] calibration target4: 98/128
+[2026-08-30 17:29:51] calibration target4: 99/128
+[2026-08-30 17:29:51] calibration target4: 100/128
+[2026-08-30 17:29:51] calibration target4: 101/128
+[2026-08-30 17:29:51] calibration target4: 102/128
+[2026-08-30 17:29:51] calibration target4: 103/128
+[2026-08-30 17:29:51] calibration target4: 104/128
+[2026-08-30 17:29:51] calibration target4: 105/128
+[2026-08-30 17:29:51] calibration target4: 106/128
+[2026-08-30 17:29:51] calibration target4: 107/128
+[2026-08-30 17:29:51] calibration target4: 108/128
+[2026-08-30 17:29:51] calibration target4: 109/128
+[2026-08-30 17:29:51] calibration target4: 110/128
+[2026-08-30 17:29:51] calibration target4: 111/128
+[2026-08-30 17:29:51] calibration target4: 112/128
+[2026-08-30 17:29:51] calibration target4: 113/128
+[2026-08-30 17:29:51] calibration target4: 114/128
+[2026-08-30 17:29:51] calibration target4: 115/128
+[2026-08-30 17:29:51] calibration target4: 116/128
+[2026-08-30 17:29:51] calibration target4: 117/128
+[2026-08-30 17:29:51] calibration target4: 118/128
+[2026-08-30 17:29:51] calibration target4: 119/128
+[2026-08-30 17:29:51] calibration target4: 120/128
+[2026-08-30 17:29:51] calibration target4: 121/128
+[2026-08-30 17:29:51] calibration target4: 122/128
+[2026-08-30 17:29:51] calibration target4: 123/128
+[2026-08-30 17:29:51] calibration target4: 124/128
+[2026-08-30 17:29:51] calibration target4: 125/128
+[2026-08-30 17:29:51] calibration target4: 126/128
+[2026-08-30 17:29:51] calibration target4: 127/128
+[2026-08-30 17:29:51] calibration target4: 128/128
+[2026-08-30 17:29:53] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json calibrate
+[2026-08-30 17:29:53] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_gpu_tests.py
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 104/398 [00:00<00:00, 1034.54it/s]Loading weights:  53%|█████▎    | 212/398 [00:00<00:00, 1039.43it/s]Loading weights:  79%|███████▉  | 316/398 [00:00<00:00, 991.13it/s] Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1001.47it/s]
+PASS GPU pure-functional gradient path: final
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 997.68it/s]Loading weights:  51%|█████     | 202/398 [00:00<00:00, 956.16it/s]Loading weights:  79%|███████▊  | 313/398 [00:00<00:00, 1020.56it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1049.71it/s]
+PASS GPU pure-functional gradient path: all
+[2026-08-30 17:30:09] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_gpu_tests.py
+[2026-08-30 17:30:09] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json overfit --writer d2 --stage a
+[2026-08-30 17:30:21] Stage A d2 50/1000 validation=4.628174
+[2026-08-30 17:30:24] Stage A d2 100/1000 validation=3.947796
+[2026-08-30 17:30:27] Stage A d2 150/1000 validation=3.587014
+[2026-08-30 17:30:29] Stage A d2 200/1000 validation=3.361329
+[2026-08-30 17:30:32] Stage A d2 250/1000 validation=3.192128
+[2026-08-30 17:30:34] Stage A d2 300/1000 validation=3.058841
+[2026-08-30 17:30:37] Stage A d2 350/1000 validation=2.949838
+[2026-08-30 17:30:40] Stage A d2 400/1000 validation=2.858264
+[2026-08-30 17:30:43] Stage A d2 450/1000 validation=2.776773
+[2026-08-30 17:30:45] Stage A d2 500/1000 validation=2.704668
+[2026-08-30 17:30:48] Stage A d2 550/1000 validation=2.641948
+[2026-08-30 17:30:51] Stage A d2 600/1000 validation=2.584445
+[2026-08-30 17:30:53] Stage A d2 650/1000 validation=2.531175
+[2026-08-30 17:30:56] Stage A d2 700/1000 validation=2.486049
+[2026-08-30 17:30:59] Stage A d2 750/1000 validation=2.441694
+[2026-08-30 17:31:01] Stage A d2 800/1000 validation=2.401594
+[2026-08-30 17:31:04] Stage A d2 850/1000 validation=2.365947
+[2026-08-30 17:31:06] Stage A d2 900/1000 validation=2.332778
+[2026-08-30 17:31:09] Stage A d2 950/1000 validation=2.301251
+[2026-08-30 17:31:11] Stage A d2 1000/1000 validation=2.269514
+[2026-08-30 17:31:13] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json overfit --writer d2 --stage a
+[2026-08-30 17:31:13] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json gradient_audit --writer d2 --functional-mode both --checkpoint checkpoints/overfit/d2/stage_a/best.pt
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  27%|██▋       | 106/398 [00:00<00:00, 1059.61it/s]Loading weights:  53%|█████▎    | 212/398 [00:00<00:00, 1023.70it/s]Loading weights:  80%|████████  | 319/398 [00:00<00:00, 1043.93it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1028.33it/s]
+[2026-08-30 17:31:26] gradient audit final sample=3114
+[2026-08-30 17:31:27] gradient audit all sample=3114
+[2026-08-30 17:31:27] gradient audit final sample=471
+[2026-08-30 17:31:27] gradient audit all sample=471
+[2026-08-30 17:31:28] gradient audit final sample=3851
+[2026-08-30 17:31:28] gradient audit all sample=3851
+[2026-08-30 17:31:28] gradient audit final sample=10446
+[2026-08-30 17:31:28] gradient audit all sample=10446
+[2026-08-30 17:31:30] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json gradient_audit --writer d2 --functional-mode both --checkpoint checkpoints/overfit/d2/stage_a/best.pt
+[2026-08-30 17:31:30] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json overfit --writer d2 --stage b --functional-mode final
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1093.43it/s]Loading weights:  56%|█████▌    | 223/398 [00:00<00:00, 967.34it/s] Loading weights:  81%|████████  | 321/398 [00:00<00:00, 964.06it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 981.05it/s]
+[2026-08-30 17:32:01] Stage B final d2 50/2000 validation_functional_kl=0.716954
+[2026-08-30 17:32:16] Stage B final d2 100/2000 validation_functional_kl=0.288076
+[2026-08-30 17:32:17] Stage B final diagnostic 100/2000 kv=2.284873 hidden=1.039298
+[2026-08-30 17:32:32] Stage B final d2 150/2000 validation_functional_kl=0.149181
+[2026-08-30 17:32:47] Stage B final d2 200/2000 validation_functional_kl=0.134214
+[2026-08-30 17:32:49] Stage B final diagnostic 200/2000 kv=2.286577 hidden=1.008464
+[2026-08-30 17:33:04] Stage B final d2 250/2000 validation_functional_kl=0.104454
+[2026-08-30 17:33:17] Stage B final d2 300/2000 validation_functional_kl=0.092558
+[2026-08-30 17:33:19] Stage B final diagnostic 300/2000 kv=2.288040 hidden=0.990485
+[2026-08-30 17:33:32] Stage B final d2 350/2000 validation_functional_kl=0.068224
+[2026-08-30 17:33:46] Stage B final d2 400/2000 validation_functional_kl=0.042401
+[2026-08-30 17:33:47] Stage B final diagnostic 400/2000 kv=2.289358 hidden=0.980676
+[2026-08-30 17:34:00] Stage B final d2 450/2000 validation_functional_kl=0.041898
+[2026-08-30 17:34:13] Stage B final d2 500/2000 validation_functional_kl=0.023363
+[2026-08-30 17:34:14] Stage B final diagnostic 500/2000 kv=2.290433 hidden=0.988545
+[2026-08-30 17:34:28] Stage B final d2 550/2000 validation_functional_kl=0.022611
+[2026-08-30 17:34:41] Stage B final d2 600/2000 validation_functional_kl=0.023550
+[2026-08-30 17:34:42] Stage B final diagnostic 600/2000 kv=2.291410 hidden=0.978423
+[2026-08-30 17:34:56] Stage B final d2 650/2000 validation_functional_kl=0.020674
+[2026-08-30 17:35:09] Stage B final d2 700/2000 validation_functional_kl=0.011054
+[2026-08-30 17:35:10] Stage B final diagnostic 700/2000 kv=2.292392 hidden=0.981388
+[2026-08-30 17:35:24] Stage B final d2 750/2000 validation_functional_kl=0.022022
+[2026-08-30 17:35:38] Stage B final d2 800/2000 validation_functional_kl=0.017991
+[2026-08-30 17:35:39] Stage B final diagnostic 800/2000 kv=2.293031 hidden=0.988227
+[2026-08-30 17:35:53] Stage B final d2 850/2000 validation_functional_kl=0.014671
+[2026-08-30 17:36:08] Stage B final d2 900/2000 validation_functional_kl=0.008418
+[2026-08-30 17:36:09] Stage B final diagnostic 900/2000 kv=2.293706 hidden=0.982039
+[2026-08-30 17:36:23] Stage B final d2 950/2000 validation_functional_kl=0.012598
+[2026-08-30 17:36:37] Stage B final d2 1000/2000 validation_functional_kl=0.008426
+[2026-08-30 17:36:38] Stage B final diagnostic 1000/2000 kv=2.294266 hidden=0.995278
+[2026-08-30 17:36:52] Stage B final d2 1050/2000 validation_functional_kl=0.006191
+[2026-08-30 17:37:07] Stage B final d2 1100/2000 validation_functional_kl=0.008200
+[2026-08-30 17:37:08] Stage B final diagnostic 1100/2000 kv=2.295001 hidden=0.978612
+[2026-08-30 17:37:23] Stage B final d2 1150/2000 validation_functional_kl=0.009171
+[2026-08-30 17:37:37] Stage B final d2 1200/2000 validation_functional_kl=0.003676
+[2026-08-30 17:37:38] Stage B final diagnostic 1200/2000 kv=2.295412 hidden=0.981857
+[2026-08-30 17:37:53] Stage B final d2 1250/2000 validation_functional_kl=0.004381
+[2026-08-30 17:38:07] Stage B final d2 1300/2000 validation_functional_kl=0.005442
+[2026-08-30 17:38:08] Stage B final diagnostic 1300/2000 kv=2.295740 hidden=0.979406
+[2026-08-30 17:38:22] Stage B final d2 1350/2000 validation_functional_kl=0.005372
+[2026-08-30 17:38:37] Stage B final d2 1400/2000 validation_functional_kl=0.003430
+[2026-08-30 17:38:38] Stage B final diagnostic 1400/2000 kv=2.296024 hidden=0.979529
+[2026-08-30 17:38:53] Stage B final d2 1450/2000 validation_functional_kl=0.005079
+[2026-08-30 17:39:07] Stage B final d2 1500/2000 validation_functional_kl=0.007477
+[2026-08-30 17:39:08] Stage B final diagnostic 1500/2000 kv=2.296308 hidden=0.984305
+[2026-08-30 17:39:22] Stage B final d2 1550/2000 validation_functional_kl=0.005524
+[2026-08-30 17:39:37] Stage B final d2 1600/2000 validation_functional_kl=0.006613
+[2026-08-30 17:39:38] Stage B final diagnostic 1600/2000 kv=2.296767 hidden=0.991347
+[2026-08-30 17:39:52] Stage B final d2 1650/2000 validation_functional_kl=0.008607
+[2026-08-30 17:40:07] Stage B final d2 1700/2000 validation_functional_kl=0.003641
+[2026-08-30 17:40:08] Stage B final diagnostic 1700/2000 kv=2.297476 hidden=0.998558
+[2026-08-30 17:40:22] Stage B final d2 1750/2000 validation_functional_kl=0.004281
+[2026-08-30 17:40:37] Stage B final d2 1800/2000 validation_functional_kl=0.002426
+[2026-08-30 17:40:38] Stage B final diagnostic 1800/2000 kv=2.297745 hidden=0.995505
+[2026-08-30 17:40:53] Stage B final d2 1850/2000 validation_functional_kl=0.003175
+[2026-08-30 17:41:07] Stage B final d2 1900/2000 validation_functional_kl=0.006235
+[2026-08-30 17:41:08] Stage B final diagnostic 1900/2000 kv=2.298028 hidden=0.994271
+[2026-08-30 17:41:22] Stage B final d2 1950/2000 validation_functional_kl=0.004458
+[2026-08-30 17:41:36] Stage B final d2 2000/2000 validation_functional_kl=0.005221
+[2026-08-30 17:41:37] Stage B final diagnostic 2000/2000 kv=2.298346 hidden=0.985361
+[2026-08-30 17:41:40] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json overfit --writer d2 --stage b --functional-mode final
+[2026-08-30 17:41:40] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json overfit --writer d2 --stage b --functional-mode all
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 996.78it/s]Loading weights:  51%|█████     | 202/398 [00:00<00:00, 980.16it/s]Loading weights:  76%|███████▌  | 301/398 [00:00<00:00, 967.08it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 986.23it/s]
+[2026-08-30 17:42:09] Stage B all d2 50/2000 validation_functional_kl=1.337367
+[2026-08-30 17:42:23] Stage B all d2 100/2000 validation_functional_kl=0.670097
+[2026-08-30 17:42:24] Stage B all diagnostic 100/2000 kv=2.288524 hidden=0.987758
+[2026-08-30 17:42:38] Stage B all d2 150/2000 validation_functional_kl=0.397033
+[2026-08-30 17:42:53] Stage B all d2 200/2000 validation_functional_kl=0.235235
+[2026-08-30 17:42:54] Stage B all diagnostic 200/2000 kv=2.292477 hidden=0.957784
+[2026-08-30 17:43:09] Stage B all d2 250/2000 validation_functional_kl=0.163394
+[2026-08-30 17:43:23] Stage B all d2 300/2000 validation_functional_kl=0.125266
+[2026-08-30 17:43:24] Stage B all diagnostic 300/2000 kv=2.295557 hidden=0.832627
+[2026-08-30 17:43:38] Stage B all d2 350/2000 validation_functional_kl=0.095371
+[2026-08-30 17:43:53] Stage B all d2 400/2000 validation_functional_kl=0.081724
+[2026-08-30 17:43:54] Stage B all diagnostic 400/2000 kv=2.297791 hidden=0.808421
+[2026-08-30 17:44:08] Stage B all d2 450/2000 validation_functional_kl=0.094332
+[2026-08-30 17:44:22] Stage B all d2 500/2000 validation_functional_kl=0.061889
+[2026-08-30 17:44:23] Stage B all diagnostic 500/2000 kv=2.299934 hidden=0.831100
+[2026-08-30 17:44:38] Stage B all d2 550/2000 validation_functional_kl=0.060543
+[2026-08-30 17:44:53] Stage B all d2 600/2000 validation_functional_kl=0.052604
+[2026-08-30 17:44:54] Stage B all diagnostic 600/2000 kv=2.301800 hidden=0.802043
+[2026-08-30 17:45:09] Stage B all d2 650/2000 validation_functional_kl=0.048065
+[2026-08-30 17:45:25] Stage B all d2 700/2000 validation_functional_kl=0.040596
+[2026-08-30 17:45:27] Stage B all diagnostic 700/2000 kv=2.303557 hidden=0.815388
+[2026-08-30 17:45:42] Stage B all d2 750/2000 validation_functional_kl=0.037272
+[2026-08-30 17:45:57] Stage B all d2 800/2000 validation_functional_kl=0.039680
+[2026-08-30 17:45:58] Stage B all diagnostic 800/2000 kv=2.305056 hidden=0.787547
+[2026-08-30 17:46:13] Stage B all d2 850/2000 validation_functional_kl=0.033133
+[2026-08-30 17:46:27] Stage B all d2 900/2000 validation_functional_kl=0.035928
+[2026-08-30 17:46:29] Stage B all diagnostic 900/2000 kv=2.306348 hidden=0.801943
+[2026-08-30 17:46:43] Stage B all d2 950/2000 validation_functional_kl=0.026148
+[2026-08-30 17:46:57] Stage B all d2 1000/2000 validation_functional_kl=0.025342
+[2026-08-30 17:46:58] Stage B all diagnostic 1000/2000 kv=2.307750 hidden=0.772302
+[2026-08-30 17:47:12] Stage B all d2 1050/2000 validation_functional_kl=0.023857
+[2026-08-30 17:47:27] Stage B all d2 1100/2000 validation_functional_kl=0.023481
+[2026-08-30 17:47:28] Stage B all diagnostic 1100/2000 kv=2.308905 hidden=0.775935
+[2026-08-30 17:47:42] Stage B all d2 1150/2000 validation_functional_kl=0.022831
+[2026-08-30 17:47:56] Stage B all d2 1200/2000 validation_functional_kl=0.019091
+[2026-08-30 17:47:58] Stage B all diagnostic 1200/2000 kv=2.309944 hidden=0.779125
+[2026-08-30 17:48:12] Stage B all d2 1250/2000 validation_functional_kl=0.020804
+[2026-08-30 17:48:26] Stage B all d2 1300/2000 validation_functional_kl=0.017681
+[2026-08-30 17:48:27] Stage B all diagnostic 1300/2000 kv=2.310849 hidden=0.776107
+[2026-08-30 17:48:42] Stage B all d2 1350/2000 validation_functional_kl=0.019551
+[2026-08-30 17:48:56] Stage B all d2 1400/2000 validation_functional_kl=0.016928
+[2026-08-30 17:48:57] Stage B all diagnostic 1400/2000 kv=2.311855 hidden=0.766723
+[2026-08-30 17:49:12] Stage B all d2 1450/2000 validation_functional_kl=0.023007
+[2026-08-30 17:49:26] Stage B all d2 1500/2000 validation_functional_kl=0.018671
+[2026-08-30 17:49:28] Stage B all diagnostic 1500/2000 kv=2.312793 hidden=0.762877
+[2026-08-30 17:49:42] Stage B all d2 1550/2000 validation_functional_kl=0.014515
+[2026-08-30 17:49:56] Stage B all d2 1600/2000 validation_functional_kl=0.017254
+[2026-08-30 17:49:57] Stage B all diagnostic 1600/2000 kv=2.313699 hidden=0.746070
+[2026-08-30 17:50:11] Stage B all d2 1650/2000 validation_functional_kl=0.015818
+[2026-08-30 17:50:25] Stage B all d2 1700/2000 validation_functional_kl=0.015219
+[2026-08-30 17:50:26] Stage B all diagnostic 1700/2000 kv=2.314571 hidden=0.756059
+[2026-08-30 17:50:41] Stage B all d2 1750/2000 validation_functional_kl=0.012912
+[2026-08-30 17:50:55] Stage B all d2 1800/2000 validation_functional_kl=0.012290
+[2026-08-30 17:50:56] Stage B all diagnostic 1800/2000 kv=2.315363 hidden=0.769829
+[2026-08-30 17:51:11] Stage B all d2 1850/2000 validation_functional_kl=0.016651
+[2026-08-30 17:51:25] Stage B all d2 1900/2000 validation_functional_kl=0.015154
+[2026-08-30 17:51:26] Stage B all diagnostic 1900/2000 kv=2.316155 hidden=0.764038
+[2026-08-30 17:51:40] Stage B all d2 1950/2000 validation_functional_kl=0.015918
+[2026-08-30 17:51:54] Stage B all d2 2000/2000 validation_functional_kl=0.013530
+[2026-08-30 17:51:55] Stage B all diagnostic 2000/2000 kv=2.316938 hidden=0.767830
+[2026-08-30 17:51:58] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json overfit --writer d2 --stage b --functional-mode all
+[2026-08-30 17:51:58] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json evaluate --scope overfit
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  30%|███       | 121/398 [00:00<00:00, 1167.20it/s]Loading weights:  60%|█████▉    | 238/398 [00:00<00:00, 1140.18it/s]Loading weights:  89%|████████▊ | 353/398 [00:00<00:00, 1130.63it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1108.91it/s]
+[2026-08-30 17:52:12] 4B pure-functional evaluation: 1/16
+[2026-08-30 17:52:13] 4B pure-functional evaluation: 2/16
+[2026-08-30 17:52:13] 4B pure-functional evaluation: 3/16
+[2026-08-30 17:52:14] 4B pure-functional evaluation: 4/16
+[2026-08-30 17:52:14] 4B pure-functional evaluation: 5/16
+[2026-08-30 17:52:15] 4B pure-functional evaluation: 6/16
+[2026-08-30 17:52:15] 4B pure-functional evaluation: 7/16
+[2026-08-30 17:52:16] 4B pure-functional evaluation: 8/16
+[2026-08-30 17:52:16] 4B pure-functional evaluation: 9/16
+[2026-08-30 17:52:17] 4B pure-functional evaluation: 10/16
+[2026-08-30 17:52:17] 4B pure-functional evaluation: 11/16
+[2026-08-30 17:52:18] 4B pure-functional evaluation: 12/16
+[2026-08-30 17:52:18] 4B pure-functional evaluation: 13/16
+[2026-08-30 17:52:19] 4B pure-functional evaluation: 14/16
+[2026-08-30 17:52:19] 4B pure-functional evaluation: 15/16
+[2026-08-30 17:52:20] 4B pure-functional evaluation: 16/16
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  61%|██████▏   | 191/311 [00:00<00:00, 1908.80it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1924.02it/s]
+[2026-08-30 17:52:28] 1.7B evaluation: 1/16
+[2026-08-30 17:52:28] 1.7B evaluation: 2/16
+[2026-08-30 17:52:28] 1.7B evaluation: 3/16
+[2026-08-30 17:52:28] 1.7B evaluation: 4/16
+[2026-08-30 17:52:28] 1.7B evaluation: 5/16
+[2026-08-30 17:52:29] 1.7B evaluation: 6/16
+[2026-08-30 17:52:29] 1.7B evaluation: 7/16
+[2026-08-30 17:52:29] 1.7B evaluation: 8/16
+[2026-08-30 17:52:29] 1.7B evaluation: 9/16
+[2026-08-30 17:52:29] 1.7B evaluation: 10/16
+[2026-08-30 17:52:29] 1.7B evaluation: 11/16
+[2026-08-30 17:52:29] 1.7B evaluation: 12/16
+[2026-08-30 17:52:29] 1.7B evaluation: 13/16
+[2026-08-30 17:52:29] 1.7B evaluation: 14/16
+[2026-08-30 17:52:29] 1.7B evaluation: 15/16
+[2026-08-30 17:52:29] 1.7B evaluation: 16/16
+[2026-08-30 17:52:31] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json evaluate --scope overfit
+[2026-08-30 17:52:31] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json train --writer d2 --stage a
+[2026-08-30 17:52:45] Stage A d2 50/1000 validation=4.713648
+[2026-08-30 17:52:48] Stage A d2 100/1000 validation=4.060793
+[2026-08-30 17:52:51] Stage A d2 150/1000 validation=3.740337
+[2026-08-30 17:52:53] Stage A d2 200/1000 validation=3.542690
+[2026-08-30 17:52:56] Stage A d2 250/1000 validation=3.402504
+[2026-08-30 17:52:59] Stage A d2 300/1000 validation=3.293007
+[2026-08-30 17:53:02] Stage A d2 350/1000 validation=3.200443
+[2026-08-30 17:53:05] Stage A d2 400/1000 validation=3.128310
+[2026-08-30 17:53:08] Stage A d2 450/1000 validation=3.065430
+[2026-08-30 17:53:11] Stage A d2 500/1000 validation=3.006247
+[2026-08-30 17:53:14] Stage A d2 550/1000 validation=2.957341
+[2026-08-30 17:53:17] Stage A d2 600/1000 validation=2.914867
+[2026-08-30 17:53:19] Stage A d2 650/1000 validation=2.872964
+[2026-08-30 17:53:22] Stage A d2 700/1000 validation=2.834434
+[2026-08-30 17:53:25] Stage A d2 750/1000 validation=2.799140
+[2026-08-30 17:53:28] Stage A d2 800/1000 validation=2.766297
+[2026-08-30 17:53:31] Stage A d2 850/1000 validation=2.738966
+[2026-08-30 17:53:34] Stage A d2 900/1000 validation=2.708306
+[2026-08-30 17:53:37] Stage A d2 950/1000 validation=2.684947
+[2026-08-30 17:53:40] Stage A d2 1000/1000 validation=2.661154
+[2026-08-30 17:53:42] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json train --writer d2 --stage a
+[2026-08-30 17:53:42] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json gradient_audit --writer d2 --functional-mode both --checkpoint checkpoints/quick/d2/stage_a/best.pt
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 91/398 [00:00<00:00, 899.30it/s]Loading weights:  51%|█████     | 203/398 [00:00<00:00, 1025.67it/s]Loading weights:  80%|████████  | 319/398 [00:00<00:00, 1083.19it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1031.87it/s]
+[2026-08-30 17:53:55] gradient audit final sample=3114
+[2026-08-30 17:53:55] gradient audit all sample=3114
+[2026-08-30 17:53:55] gradient audit final sample=471
+[2026-08-30 17:53:56] gradient audit all sample=471
+[2026-08-30 17:53:56] gradient audit final sample=3851
+[2026-08-30 17:53:56] gradient audit all sample=3851
+[2026-08-30 17:53:56] gradient audit final sample=10446
+[2026-08-30 17:53:57] gradient audit all sample=10446
+[2026-08-30 17:53:58] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json gradient_audit --writer d2 --functional-mode both --checkpoint checkpoints/quick/d2/stage_a/best.pt
+[2026-08-30 17:53:58] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json train --writer d2 --stage b --functional-mode final
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 93/398 [00:00<00:00, 916.45it/s]Loading weights:  53%|█████▎    | 212/398 [00:00<00:00, 1040.32it/s]Loading weights:  79%|███████▉  | 316/398 [00:00<00:00, 1032.67it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1007.45it/s]
+[2026-08-30 17:54:36] Stage B final d2 50/2000 validation_functional_kl=2.267841
+[2026-08-30 17:54:55] Stage B final d2 100/2000 validation_functional_kl=1.702593
+[2026-08-30 17:54:57] Stage B final diagnostic 100/2000 kv=2.717911 hidden=1.225270
+[2026-08-30 17:55:16] Stage B final d2 150/2000 validation_functional_kl=1.528131
+[2026-08-30 17:55:35] Stage B final d2 200/2000 validation_functional_kl=1.318626
+[2026-08-30 17:55:37] Stage B final diagnostic 200/2000 kv=2.719948 hidden=1.215806
+[2026-08-30 17:55:57] Stage B final d2 250/2000 validation_functional_kl=1.320954
+[2026-08-30 17:56:18] Stage B final d2 300/2000 validation_functional_kl=1.463561
+[2026-08-30 17:56:20] Stage B final diagnostic 300/2000 kv=2.721418 hidden=1.178882
+[2026-08-30 17:56:38] Stage B final d2 350/2000 validation_functional_kl=1.357174
+[2026-08-30 17:56:58] Stage B final d2 400/2000 validation_functional_kl=1.291791
+[2026-08-30 17:57:00] Stage B final diagnostic 400/2000 kv=2.722511 hidden=1.205912
+[2026-08-30 17:57:18] Stage B final d2 450/2000 validation_functional_kl=1.314234
+[2026-08-30 17:57:37] Stage B final d2 500/2000 validation_functional_kl=1.206869
+[2026-08-30 17:57:39] Stage B final diagnostic 500/2000 kv=2.723673 hidden=1.215809
+[2026-08-30 17:57:57] Stage B final d2 550/2000 validation_functional_kl=1.324386
+[2026-08-30 17:58:15] Stage B final d2 600/2000 validation_functional_kl=1.387806
+[2026-08-30 17:58:16] Stage B final diagnostic 600/2000 kv=2.725071 hidden=1.250246
+[2026-08-30 17:58:36] Stage B final d2 650/2000 validation_functional_kl=1.426081
+[2026-08-30 17:58:55] Stage B final d2 700/2000 validation_functional_kl=1.351340
+[2026-08-30 17:58:56] Stage B final diagnostic 700/2000 kv=2.726516 hidden=1.254176
+[2026-08-30 17:59:18] Stage B final d2 750/2000 validation_functional_kl=1.414519
+[2026-08-30 17:59:37] Stage B final d2 800/2000 validation_functional_kl=1.235748
+[2026-08-30 17:59:38] Stage B final diagnostic 800/2000 kv=2.727665 hidden=1.261463
+[2026-08-30 17:59:56] Stage B final d2 850/2000 validation_functional_kl=1.285205
+[2026-08-30 18:00:15] Stage B final d2 900/2000 validation_functional_kl=1.431058
+[2026-08-30 18:00:16] Stage B final diagnostic 900/2000 kv=2.728744 hidden=1.270003
+[2026-08-30 18:00:36] Stage B final d2 950/2000 validation_functional_kl=1.391455
+[2026-08-30 18:00:54] Stage B final d2 1000/2000 validation_functional_kl=1.337504
+[2026-08-30 18:00:55] Stage B final diagnostic 1000/2000 kv=2.730277 hidden=1.238698
+[2026-08-30 18:01:14] Stage B final d2 1050/2000 validation_functional_kl=1.390601
+[2026-08-30 18:01:32] Stage B final d2 1100/2000 validation_functional_kl=1.374706
+[2026-08-30 18:01:34] Stage B final diagnostic 1100/2000 kv=2.730772 hidden=1.208116
+[2026-08-30 18:01:52] Stage B final d2 1150/2000 validation_functional_kl=1.301011
+[2026-08-30 18:02:11] Stage B final d2 1200/2000 validation_functional_kl=1.380533
+[2026-08-30 18:02:13] Stage B final diagnostic 1200/2000 kv=2.731768 hidden=1.205373
+[2026-08-30 18:02:32] Stage B final d2 1250/2000 validation_functional_kl=1.395401
+[2026-08-30 18:02:51] Stage B final d2 1300/2000 validation_functional_kl=1.353021
+[2026-08-30 18:02:52] Stage B final diagnostic 1300/2000 kv=2.732586 hidden=1.187249
+[2026-08-30 18:03:12] Stage B final d2 1350/2000 validation_functional_kl=1.389576
+[2026-08-30 18:03:31] Stage B final d2 1400/2000 validation_functional_kl=1.274509
+[2026-08-30 18:03:33] Stage B final diagnostic 1400/2000 kv=2.733675 hidden=1.246793
+[2026-08-30 18:03:51] Stage B final d2 1450/2000 validation_functional_kl=1.264048
+[2026-08-30 18:04:10] Stage B final d2 1500/2000 validation_functional_kl=1.150655
+[2026-08-30 18:04:12] Stage B final diagnostic 1500/2000 kv=2.734477 hidden=1.216567
+[2026-08-30 18:04:30] Stage B final d2 1550/2000 validation_functional_kl=1.290735
+[2026-08-30 18:04:49] Stage B final d2 1600/2000 validation_functional_kl=1.204660
+[2026-08-30 18:04:51] Stage B final diagnostic 1600/2000 kv=2.734905 hidden=1.193463
+[2026-08-30 18:05:10] Stage B final d2 1650/2000 validation_functional_kl=1.378499
+[2026-08-30 18:05:28] Stage B final d2 1700/2000 validation_functional_kl=1.257951
+[2026-08-30 18:05:30] Stage B final diagnostic 1700/2000 kv=2.735563 hidden=1.189550
+[2026-08-30 18:05:48] Stage B final d2 1750/2000 validation_functional_kl=1.311805
+[2026-08-30 18:06:06] Stage B final d2 1800/2000 validation_functional_kl=1.277835
+[2026-08-30 18:06:08] Stage B final diagnostic 1800/2000 kv=2.736780 hidden=1.172831
+[2026-08-30 18:06:27] Stage B final d2 1850/2000 validation_functional_kl=1.344969
+[2026-08-30 18:06:46] Stage B final d2 1900/2000 validation_functional_kl=1.260741
+[2026-08-30 18:06:48] Stage B final diagnostic 1900/2000 kv=2.737510 hidden=1.249047
+[2026-08-30 18:07:07] Stage B final d2 1950/2000 validation_functional_kl=1.317939
+[2026-08-30 18:07:27] Stage B final d2 2000/2000 validation_functional_kl=1.094630
+[2026-08-30 18:07:28] Stage B final diagnostic 2000/2000 kv=2.738018 hidden=1.144770
+[2026-08-30 18:07:32] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json train --writer d2 --stage b --functional-mode final
+[2026-08-30 18:07:32] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json train --writer d2 --stage b --functional-mode all
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  25%|██▌       | 100/398 [00:00<00:00, 996.92it/s]Loading weights:  54%|█████▎    | 213/398 [00:00<00:00, 1063.05it/s]Loading weights:  84%|████████▎ | 333/398 [00:00<00:00, 1083.81it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1063.51it/s]
+[2026-08-30 18:08:07] Stage B all d2 50/2000 validation_functional_kl=2.236534
+[2026-08-30 18:08:25] Stage B all d2 100/2000 validation_functional_kl=1.583280
+[2026-08-30 18:08:27] Stage B all diagnostic 100/2000 kv=2.721791 hidden=0.951279
+[2026-08-30 18:08:46] Stage B all d2 150/2000 validation_functional_kl=1.252871
+[2026-08-30 18:09:04] Stage B all d2 200/2000 validation_functional_kl=1.084832
+[2026-08-30 18:09:06] Stage B all diagnostic 200/2000 kv=2.729239 hidden=0.836347
+[2026-08-30 18:09:25] Stage B all d2 250/2000 validation_functional_kl=0.974588
+[2026-08-30 18:09:43] Stage B all d2 300/2000 validation_functional_kl=0.896220
+[2026-08-30 18:09:45] Stage B all diagnostic 300/2000 kv=2.735138 hidden=0.773879
+[2026-08-30 18:10:04] Stage B all d2 350/2000 validation_functional_kl=0.859158
+[2026-08-30 18:10:24] Stage B all d2 400/2000 validation_functional_kl=0.822777
+[2026-08-30 18:10:26] Stage B all diagnostic 400/2000 kv=2.740585 hidden=0.742828
+[2026-08-30 18:10:45] Stage B all d2 450/2000 validation_functional_kl=0.815839
+[2026-08-30 18:11:04] Stage B all d2 500/2000 validation_functional_kl=0.806737
+[2026-08-30 18:11:06] Stage B all diagnostic 500/2000 kv=2.744127 hidden=0.730040
+[2026-08-30 18:11:24] Stage B all d2 550/2000 validation_functional_kl=0.807764
+[2026-08-30 18:11:42] Stage B all d2 600/2000 validation_functional_kl=0.815131
+[2026-08-30 18:11:44] Stage B all diagnostic 600/2000 kv=2.747855 hidden=0.715790
+[2026-08-30 18:12:03] Stage B all d2 650/2000 validation_functional_kl=0.802533
+[2026-08-30 18:12:22] Stage B all d2 700/2000 validation_functional_kl=0.791637
+[2026-08-30 18:12:24] Stage B all diagnostic 700/2000 kv=2.751069 hidden=0.711799
+[2026-08-30 18:12:45] Stage B all d2 750/2000 validation_functional_kl=0.801189
+[2026-08-30 18:13:03] Stage B all d2 800/2000 validation_functional_kl=0.790599
+[2026-08-30 18:13:05] Stage B all diagnostic 800/2000 kv=2.754279 hidden=0.695458
+[2026-08-30 18:13:24] Stage B all d2 850/2000 validation_functional_kl=0.776636
+[2026-08-30 18:13:42] Stage B all d2 900/2000 validation_functional_kl=0.770232
+[2026-08-30 18:13:44] Stage B all diagnostic 900/2000 kv=2.756817 hidden=0.691716
+[2026-08-30 18:14:02] Stage B all d2 950/2000 validation_functional_kl=0.772323
+[2026-08-30 18:14:21] Stage B all d2 1000/2000 validation_functional_kl=0.766292
+[2026-08-30 18:14:22] Stage B all diagnostic 1000/2000 kv=2.759927 hidden=0.687901
+[2026-08-30 18:14:41] Stage B all d2 1050/2000 validation_functional_kl=0.758869
+[2026-08-30 18:14:59] Stage B all d2 1100/2000 validation_functional_kl=0.759538
+[2026-08-30 18:15:01] Stage B all diagnostic 1100/2000 kv=2.761842 hidden=0.684531
+[2026-08-30 18:15:20] Stage B all d2 1150/2000 validation_functional_kl=0.765253
+[2026-08-30 18:15:38] Stage B all d2 1200/2000 validation_functional_kl=0.753973
+[2026-08-30 18:15:40] Stage B all diagnostic 1200/2000 kv=2.764871 hidden=0.681315
+[2026-08-30 18:15:59] Stage B all d2 1250/2000 validation_functional_kl=0.750241
+[2026-08-30 18:16:17] Stage B all d2 1300/2000 validation_functional_kl=0.745561
+[2026-08-30 18:16:19] Stage B all diagnostic 1300/2000 kv=2.766761 hidden=0.681094
+[2026-08-30 18:16:40] Stage B all d2 1350/2000 validation_functional_kl=0.735724
+[2026-08-30 18:16:59] Stage B all d2 1400/2000 validation_functional_kl=0.722570
+[2026-08-30 18:17:00] Stage B all diagnostic 1400/2000 kv=2.769210 hidden=0.679978
+[2026-08-30 18:17:18] Stage B all d2 1450/2000 validation_functional_kl=0.742724
+[2026-08-30 18:17:38] Stage B all d2 1500/2000 validation_functional_kl=0.732236
+[2026-08-30 18:17:39] Stage B all diagnostic 1500/2000 kv=2.770989 hidden=0.675700
+[2026-08-30 18:17:57] Stage B all d2 1550/2000 validation_functional_kl=0.726566
+[2026-08-30 18:18:16] Stage B all d2 1600/2000 validation_functional_kl=0.737130
+[2026-08-30 18:18:18] Stage B all diagnostic 1600/2000 kv=2.772725 hidden=0.673318
+[2026-08-30 18:18:37] Stage B all d2 1650/2000 validation_functional_kl=0.725254
+[2026-08-30 18:18:55] Stage B all d2 1700/2000 validation_functional_kl=0.726905
+[2026-08-30 18:18:57] Stage B all diagnostic 1700/2000 kv=2.774577 hidden=0.669807
+[2026-08-30 18:19:16] Stage B all d2 1750/2000 validation_functional_kl=0.716558
+[2026-08-30 18:19:33] Stage B all d2 1800/2000 validation_functional_kl=0.720538
+[2026-08-30 18:19:35] Stage B all diagnostic 1800/2000 kv=2.776099 hidden=0.671293
+[2026-08-30 18:19:55] Stage B all d2 1850/2000 validation_functional_kl=0.716134
+[2026-08-30 18:20:13] Stage B all d2 1900/2000 validation_functional_kl=0.715023
+[2026-08-30 18:20:15] Stage B all diagnostic 1900/2000 kv=2.777461 hidden=0.667474
+[2026-08-30 18:20:34] Stage B all d2 1950/2000 validation_functional_kl=0.710576
+[2026-08-30 18:20:54] Stage B all d2 2000/2000 validation_functional_kl=0.711553
+[2026-08-30 18:20:55] Stage B all diagnostic 2000/2000 kv=2.779390 hidden=0.665453
+[2026-08-30 18:20:59] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json train --writer d2 --stage b --functional-mode all
+[2026-08-30 18:20:59] START /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json evaluate --scope formal
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 979.74it/s]Loading weights:  51%|█████     | 202/398 [00:00<00:00, 989.02it/s]Loading weights:  78%|███████▊  | 309/398 [00:00<00:00, 1004.20it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1015.70it/s]
+[2026-08-30 18:21:13] 4B pure-functional evaluation: 1/128
+[2026-08-30 18:21:14] 4B pure-functional evaluation: 2/128
+[2026-08-30 18:21:15] 4B pure-functional evaluation: 3/128
+[2026-08-30 18:21:16] 4B pure-functional evaluation: 4/128
+[2026-08-30 18:21:16] 4B pure-functional evaluation: 5/128
+[2026-08-30 18:21:17] 4B pure-functional evaluation: 6/128
+[2026-08-30 18:21:18] 4B pure-functional evaluation: 7/128
+[2026-08-30 18:21:18] 4B pure-functional evaluation: 8/128
+[2026-08-30 18:21:19] 4B pure-functional evaluation: 9/128
+[2026-08-30 18:21:20] 4B pure-functional evaluation: 10/128
+[2026-08-30 18:21:21] 4B pure-functional evaluation: 11/128
+[2026-08-30 18:21:21] 4B pure-functional evaluation: 12/128
+[2026-08-30 18:21:22] 4B pure-functional evaluation: 13/128
+[2026-08-30 18:21:23] 4B pure-functional evaluation: 14/128
+[2026-08-30 18:21:24] 4B pure-functional evaluation: 15/128
+[2026-08-30 18:21:24] 4B pure-functional evaluation: 16/128
+[2026-08-30 18:21:25] 4B pure-functional evaluation: 17/128
+[2026-08-30 18:21:26] 4B pure-functional evaluation: 18/128
+[2026-08-30 18:21:26] 4B pure-functional evaluation: 19/128
+[2026-08-30 18:21:27] 4B pure-functional evaluation: 20/128
+[2026-08-30 18:21:28] 4B pure-functional evaluation: 21/128
+[2026-08-30 18:21:29] 4B pure-functional evaluation: 22/128
+[2026-08-30 18:21:30] 4B pure-functional evaluation: 23/128
+[2026-08-30 18:21:30] 4B pure-functional evaluation: 24/128
+[2026-08-30 18:21:31] 4B pure-functional evaluation: 25/128
+[2026-08-30 18:21:32] 4B pure-functional evaluation: 26/128
+[2026-08-30 18:21:33] 4B pure-functional evaluation: 27/128
+[2026-08-30 18:21:33] 4B pure-functional evaluation: 28/128
+[2026-08-30 18:21:35] 4B pure-functional evaluation: 29/128
+[2026-08-30 18:21:36] 4B pure-functional evaluation: 30/128
+[2026-08-30 18:21:36] 4B pure-functional evaluation: 31/128
+[2026-08-30 18:21:37] 4B pure-functional evaluation: 32/128
+[2026-08-30 18:21:38] 4B pure-functional evaluation: 33/128
+[2026-08-30 18:21:38] 4B pure-functional evaluation: 34/128
+[2026-08-30 18:21:39] 4B pure-functional evaluation: 35/128
+[2026-08-30 18:21:40] 4B pure-functional evaluation: 36/128
+[2026-08-30 18:21:41] 4B pure-functional evaluation: 37/128
+[2026-08-30 18:21:42] 4B pure-functional evaluation: 38/128
+[2026-08-30 18:21:42] 4B pure-functional evaluation: 39/128
+[2026-08-30 18:21:43] 4B pure-functional evaluation: 40/128
+[2026-08-30 18:21:44] 4B pure-functional evaluation: 41/128
+[2026-08-30 18:21:45] 4B pure-functional evaluation: 42/128
+[2026-08-30 18:21:47] 4B pure-functional evaluation: 43/128
+[2026-08-30 18:21:48] 4B pure-functional evaluation: 44/128
+[2026-08-30 18:21:49] 4B pure-functional evaluation: 45/128
+[2026-08-30 18:21:50] 4B pure-functional evaluation: 46/128
+[2026-08-30 18:21:51] 4B pure-functional evaluation: 47/128
+[2026-08-30 18:21:52] 4B pure-functional evaluation: 48/128
+[2026-08-30 18:21:52] 4B pure-functional evaluation: 49/128
+[2026-08-30 18:21:54] 4B pure-functional evaluation: 50/128
+[2026-08-30 18:21:54] 4B pure-functional evaluation: 51/128
+[2026-08-30 18:21:55] 4B pure-functional evaluation: 52/128
+[2026-08-30 18:21:56] 4B pure-functional evaluation: 53/128
+[2026-08-30 18:21:58] 4B pure-functional evaluation: 54/128
+[2026-08-30 18:22:00] 4B pure-functional evaluation: 55/128
+[2026-08-30 18:22:01] 4B pure-functional evaluation: 56/128
+[2026-08-30 18:22:02] 4B pure-functional evaluation: 57/128
+[2026-08-30 18:22:03] 4B pure-functional evaluation: 58/128
+[2026-08-30 18:22:03] 4B pure-functional evaluation: 59/128
+[2026-08-30 18:22:04] 4B pure-functional evaluation: 60/128
+[2026-08-30 18:22:05] 4B pure-functional evaluation: 61/128
+[2026-08-30 18:22:06] 4B pure-functional evaluation: 62/128
+[2026-08-30 18:22:06] 4B pure-functional evaluation: 63/128
+[2026-08-30 18:22:07] 4B pure-functional evaluation: 64/128
+[2026-08-30 18:22:08] 4B pure-functional evaluation: 65/128
+[2026-08-30 18:22:09] 4B pure-functional evaluation: 66/128
+[2026-08-30 18:22:10] 4B pure-functional evaluation: 67/128
+[2026-08-30 18:22:11] 4B pure-functional evaluation: 68/128
+[2026-08-30 18:22:13] 4B pure-functional evaluation: 69/128
+[2026-08-30 18:22:14] 4B pure-functional evaluation: 70/128
+[2026-08-30 18:22:14] 4B pure-functional evaluation: 71/128
+[2026-08-30 18:22:15] 4B pure-functional evaluation: 72/128
+[2026-08-30 18:22:16] 4B pure-functional evaluation: 73/128
+[2026-08-30 18:22:17] 4B pure-functional evaluation: 74/128
+[2026-08-30 18:22:18] 4B pure-functional evaluation: 75/128
+[2026-08-30 18:22:18] 4B pure-functional evaluation: 76/128
+[2026-08-30 18:22:19] 4B pure-functional evaluation: 77/128
+[2026-08-30 18:22:20] 4B pure-functional evaluation: 78/128
+[2026-08-30 18:22:21] 4B pure-functional evaluation: 79/128
+[2026-08-30 18:22:22] 4B pure-functional evaluation: 80/128
+[2026-08-30 18:22:23] 4B pure-functional evaluation: 81/128
+[2026-08-30 18:22:24] 4B pure-functional evaluation: 82/128
+[2026-08-30 18:22:25] 4B pure-functional evaluation: 83/128
+[2026-08-30 18:22:26] 4B pure-functional evaluation: 84/128
+[2026-08-30 18:22:27] 4B pure-functional evaluation: 85/128
+[2026-08-30 18:22:27] 4B pure-functional evaluation: 86/128
+[2026-08-30 18:22:28] 4B pure-functional evaluation: 87/128
+[2026-08-30 18:22:29] 4B pure-functional evaluation: 88/128
+[2026-08-30 18:22:30] 4B pure-functional evaluation: 89/128
+[2026-08-30 18:22:31] 4B pure-functional evaluation: 90/128
+[2026-08-30 18:22:32] 4B pure-functional evaluation: 91/128
+[2026-08-30 18:22:32] 4B pure-functional evaluation: 92/128
+[2026-08-30 18:22:33] 4B pure-functional evaluation: 93/128
+[2026-08-30 18:22:34] 4B pure-functional evaluation: 94/128
+[2026-08-30 18:22:35] 4B pure-functional evaluation: 95/128
+[2026-08-30 18:22:36] 4B pure-functional evaluation: 96/128
+[2026-08-30 18:22:37] 4B pure-functional evaluation: 97/128
+[2026-08-30 18:22:39] 4B pure-functional evaluation: 98/128
+[2026-08-30 18:22:39] 4B pure-functional evaluation: 99/128
+[2026-08-30 18:22:40] 4B pure-functional evaluation: 100/128
+[2026-08-30 18:22:41] 4B pure-functional evaluation: 101/128
+[2026-08-30 18:22:41] 4B pure-functional evaluation: 102/128
+[2026-08-30 18:22:42] 4B pure-functional evaluation: 103/128
+[2026-08-30 18:22:43] 4B pure-functional evaluation: 104/128
+[2026-08-30 18:22:44] 4B pure-functional evaluation: 105/128
+[2026-08-30 18:22:45] 4B pure-functional evaluation: 106/128
+[2026-08-30 18:22:46] 4B pure-functional evaluation: 107/128
+[2026-08-30 18:22:46] 4B pure-functional evaluation: 108/128
+[2026-08-30 18:22:47] 4B pure-functional evaluation: 109/128
+[2026-08-30 18:22:49] 4B pure-functional evaluation: 110/128
+[2026-08-30 18:22:50] 4B pure-functional evaluation: 111/128
+[2026-08-30 18:22:51] 4B pure-functional evaluation: 112/128
+[2026-08-30 18:22:51] 4B pure-functional evaluation: 113/128
+[2026-08-30 18:22:52] 4B pure-functional evaluation: 114/128
+[2026-08-30 18:22:53] 4B pure-functional evaluation: 115/128
+[2026-08-30 18:22:53] 4B pure-functional evaluation: 116/128
+[2026-08-30 18:22:55] 4B pure-functional evaluation: 117/128
+[2026-08-30 18:22:55] 4B pure-functional evaluation: 118/128
+[2026-08-30 18:22:57] 4B pure-functional evaluation: 119/128
+[2026-08-30 18:22:57] 4B pure-functional evaluation: 120/128
+[2026-08-30 18:22:58] 4B pure-functional evaluation: 121/128
+[2026-08-30 18:22:59] 4B pure-functional evaluation: 122/128
+[2026-08-30 18:23:00] 4B pure-functional evaluation: 123/128
+[2026-08-30 18:23:01] 4B pure-functional evaluation: 124/128
+[2026-08-30 18:23:02] 4B pure-functional evaluation: 125/128
+[2026-08-30 18:23:03] 4B pure-functional evaluation: 126/128
+[2026-08-30 18:23:03] 4B pure-functional evaluation: 127/128
+[2026-08-30 18:23:04] 4B pure-functional evaluation: 128/128
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  61%|██████▏   | 191/311 [00:00<00:00, 1843.11it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1873.05it/s]
+[2026-08-30 18:23:16] 1.7B evaluation: 1/128
+[2026-08-30 18:23:16] 1.7B evaluation: 2/128
+[2026-08-30 18:23:16] 1.7B evaluation: 3/128
+[2026-08-30 18:23:16] 1.7B evaluation: 4/128
+[2026-08-30 18:23:16] 1.7B evaluation: 5/128
+[2026-08-30 18:23:16] 1.7B evaluation: 6/128
+[2026-08-30 18:23:16] 1.7B evaluation: 7/128
+[2026-08-30 18:23:16] 1.7B evaluation: 8/128
+[2026-08-30 18:23:16] 1.7B evaluation: 9/128
+[2026-08-30 18:23:17] 1.7B evaluation: 10/128
+[2026-08-30 18:23:17] 1.7B evaluation: 11/128
+[2026-08-30 18:23:17] 1.7B evaluation: 12/128
+[2026-08-30 18:23:17] 1.7B evaluation: 13/128
+[2026-08-30 18:23:17] 1.7B evaluation: 14/128
+[2026-08-30 18:23:17] 1.7B evaluation: 15/128
+[2026-08-30 18:23:17] 1.7B evaluation: 16/128
+[2026-08-30 18:23:17] 1.7B evaluation: 17/128
+[2026-08-30 18:23:17] 1.7B evaluation: 18/128
+[2026-08-30 18:23:17] 1.7B evaluation: 19/128
+[2026-08-30 18:23:18] 1.7B evaluation: 20/128
+[2026-08-30 18:23:18] 1.7B evaluation: 21/128
+[2026-08-30 18:23:18] 1.7B evaluation: 22/128
+[2026-08-30 18:23:18] 1.7B evaluation: 23/128
+[2026-08-30 18:23:18] 1.7B evaluation: 24/128
+[2026-08-30 18:23:18] 1.7B evaluation: 25/128
+[2026-08-30 18:23:18] 1.7B evaluation: 26/128
+[2026-08-30 18:23:18] 1.7B evaluation: 27/128
+[2026-08-30 18:23:18] 1.7B evaluation: 28/128
+[2026-08-30 18:23:19] 1.7B evaluation: 29/128
+[2026-08-30 18:23:19] 1.7B evaluation: 30/128
+[2026-08-30 18:23:19] 1.7B evaluation: 31/128
+[2026-08-30 18:23:19] 1.7B evaluation: 32/128
+[2026-08-30 18:23:19] 1.7B evaluation: 33/128
+[2026-08-30 18:23:19] 1.7B evaluation: 34/128
+[2026-08-30 18:23:19] 1.7B evaluation: 35/128
+[2026-08-30 18:23:19] 1.7B evaluation: 36/128
+[2026-08-30 18:23:19] 1.7B evaluation: 37/128
+[2026-08-30 18:23:19] 1.7B evaluation: 38/128
+[2026-08-30 18:23:19] 1.7B evaluation: 39/128
+[2026-08-30 18:23:20] 1.7B evaluation: 40/128
+[2026-08-30 18:23:20] 1.7B evaluation: 41/128
+[2026-08-30 18:23:20] 1.7B evaluation: 42/128
+[2026-08-30 18:23:20] 1.7B evaluation: 43/128
+[2026-08-30 18:23:20] 1.7B evaluation: 44/128
+[2026-08-30 18:23:20] 1.7B evaluation: 45/128
+[2026-08-30 18:23:20] 1.7B evaluation: 46/128
+[2026-08-30 18:23:20] 1.7B evaluation: 47/128
+[2026-08-30 18:23:20] 1.7B evaluation: 48/128
+[2026-08-30 18:23:21] 1.7B evaluation: 49/128
+[2026-08-30 18:23:21] 1.7B evaluation: 50/128
+[2026-08-30 18:23:21] 1.7B evaluation: 51/128
+[2026-08-30 18:23:21] 1.7B evaluation: 52/128
+[2026-08-30 18:23:21] 1.7B evaluation: 53/128
+[2026-08-30 18:23:21] 1.7B evaluation: 54/128
+[2026-08-30 18:23:21] 1.7B evaluation: 55/128
+[2026-08-30 18:23:22] 1.7B evaluation: 56/128
+[2026-08-30 18:23:22] 1.7B evaluation: 57/128
+[2026-08-30 18:23:22] 1.7B evaluation: 58/128
+[2026-08-30 18:23:22] 1.7B evaluation: 59/128
+[2026-08-30 18:23:22] 1.7B evaluation: 60/128
+[2026-08-30 18:23:22] 1.7B evaluation: 61/128
+[2026-08-30 18:23:22] 1.7B evaluation: 62/128
+[2026-08-30 18:23:22] 1.7B evaluation: 63/128
+[2026-08-30 18:23:22] 1.7B evaluation: 64/128
+[2026-08-30 18:23:23] 1.7B evaluation: 65/128
+[2026-08-30 18:23:23] 1.7B evaluation: 66/128
+[2026-08-30 18:23:23] 1.7B evaluation: 67/128
+[2026-08-30 18:23:23] 1.7B evaluation: 68/128
+[2026-08-30 18:23:23] 1.7B evaluation: 69/128
+[2026-08-30 18:23:23] 1.7B evaluation: 70/128
+[2026-08-30 18:23:23] 1.7B evaluation: 71/128
+[2026-08-30 18:23:23] 1.7B evaluation: 72/128
+[2026-08-30 18:23:24] 1.7B evaluation: 73/128
+[2026-08-30 18:23:24] 1.7B evaluation: 74/128
+[2026-08-30 18:23:24] 1.7B evaluation: 75/128
+[2026-08-30 18:23:24] 1.7B evaluation: 76/128
+[2026-08-30 18:23:24] 1.7B evaluation: 77/128
+[2026-08-30 18:23:24] 1.7B evaluation: 78/128
+[2026-08-30 18:23:24] 1.7B evaluation: 79/128
+[2026-08-30 18:23:24] 1.7B evaluation: 80/128
+[2026-08-30 18:23:24] 1.7B evaluation: 81/128
+[2026-08-30 18:23:24] 1.7B evaluation: 82/128
+[2026-08-30 18:23:25] 1.7B evaluation: 83/128
+[2026-08-30 18:23:25] 1.7B evaluation: 84/128
+[2026-08-30 18:23:25] 1.7B evaluation: 85/128
+[2026-08-30 18:23:25] 1.7B evaluation: 86/128
+[2026-08-30 18:23:25] 1.7B evaluation: 87/128
+[2026-08-30 18:23:25] 1.7B evaluation: 88/128
+[2026-08-30 18:23:25] 1.7B evaluation: 89/128
+[2026-08-30 18:23:25] 1.7B evaluation: 90/128
+[2026-08-30 18:23:26] 1.7B evaluation: 91/128
+[2026-08-30 18:23:26] 1.7B evaluation: 92/128
+[2026-08-30 18:23:26] 1.7B evaluation: 93/128
+[2026-08-30 18:23:26] 1.7B evaluation: 94/128
+[2026-08-30 18:23:26] 1.7B evaluation: 95/128
+[2026-08-30 18:23:26] 1.7B evaluation: 96/128
+[2026-08-30 18:23:26] 1.7B evaluation: 97/128
+[2026-08-30 18:23:27] 1.7B evaluation: 98/128
+[2026-08-30 18:23:27] 1.7B evaluation: 99/128
+[2026-08-30 18:23:27] 1.7B evaluation: 100/128
+[2026-08-30 18:23:27] 1.7B evaluation: 101/128
+[2026-08-30 18:23:27] 1.7B evaluation: 102/128
+[2026-08-30 18:23:27] 1.7B evaluation: 103/128
+[2026-08-30 18:23:27] 1.7B evaluation: 104/128
+[2026-08-30 18:23:27] 1.7B evaluation: 105/128
+[2026-08-30 18:23:27] 1.7B evaluation: 106/128
+[2026-08-30 18:23:27] 1.7B evaluation: 107/128
+[2026-08-30 18:23:28] 1.7B evaluation: 108/128
+[2026-08-30 18:23:28] 1.7B evaluation: 109/128
+[2026-08-30 18:23:28] 1.7B evaluation: 110/128
+[2026-08-30 18:23:28] 1.7B evaluation: 111/128
+[2026-08-30 18:23:28] 1.7B evaluation: 112/128
+[2026-08-30 18:23:28] 1.7B evaluation: 113/128
+[2026-08-30 18:23:29] 1.7B evaluation: 114/128
+[2026-08-30 18:23:29] 1.7B evaluation: 115/128
+[2026-08-30 18:23:29] 1.7B evaluation: 116/128
+[2026-08-30 18:23:29] 1.7B evaluation: 117/128
+[2026-08-30 18:23:29] 1.7B evaluation: 118/128
+[2026-08-30 18:23:29] 1.7B evaluation: 119/128
+[2026-08-30 18:23:29] 1.7B evaluation: 120/128
+[2026-08-30 18:23:29] 1.7B evaluation: 121/128
+[2026-08-30 18:23:30] 1.7B evaluation: 122/128
+[2026-08-30 18:23:30] 1.7B evaluation: 123/128
+[2026-08-30 18:23:30] 1.7B evaluation: 124/128
+[2026-08-30 18:23:30] 1.7B evaluation: 125/128
+[2026-08-30 18:23:30] 1.7B evaluation: 126/128
+[2026-08-30 18:23:30] 1.7B evaluation: 127/128
+[2026-08-30 18:23:30] 1.7B evaluation: 128/128
+[2026-08-30 18:23:32] DONE  /home/yezhe/data/miniconda3/envs/attnkv/bin/python -u run_pipeline.py --config /home/yezhe/重实现/mmlupro_pure_functional_b1_b2_qwen3_1_7b_to_4b_seed1234/config.json evaluate --scope formal
+[2026-08-30 18:23:32] ALL PURE-FUNCTIONAL EXPERIMENTS COMPLETED

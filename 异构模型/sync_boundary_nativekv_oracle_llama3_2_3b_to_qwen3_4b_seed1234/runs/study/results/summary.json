@@ -1,0 +1,50 @@
+{
+  "primary_metric": "accuracy",
+  "sample_count": 128,
+  "accuracy": {
+    "qwen_full": 0.25,
+    "current_rawanchor": 0.21875,
+    "sync_trigger": 0.2265625,
+    "sync_max_duplicate": 0.2265625,
+    "sync_max_unique": 0.234375,
+    "sync_sum_duplicate": 0.2421875,
+    "sync_sum_unique": 0.234375,
+    "qwen_self_sync_max_unique": 0.2578125
+  },
+  "correct_counts": {
+    "qwen_full": 32,
+    "current_rawanchor": 28,
+    "sync_trigger": 29,
+    "sync_max_duplicate": 29,
+    "sync_max_unique": 30,
+    "sync_sum_duplicate": 31,
+    "sync_sum_unique": 30,
+    "qwen_self_sync_max_unique": 33
+  },
+  "paired_transitions_vs_current_rawanchor": {
+    "sync_trigger": {
+      "raw_wrong_to_sync_correct": 2,
+      "raw_correct_to_sync_wrong": 1
+    },
+    "sync_max_duplicate": {
+      "raw_wrong_to_sync_correct": 2,
+      "raw_correct_to_sync_wrong": 1
+    },
+    "sync_max_unique": {
+      "raw_wrong_to_sync_correct": 3,
+      "raw_correct_to_sync_wrong": 1
+    },
+    "sync_sum_duplicate": {
+      "raw_wrong_to_sync_correct": 4,
+      "raw_correct_to_sync_wrong": 1
+    },
+    "sync_sum_unique": {
+      "raw_wrong_to_sync_correct": 3,
+      "raw_correct_to_sync_wrong": 1
+    },
+    "qwen_self_sync_max_unique": {
+      "raw_wrong_to_sync_correct": 10,
+      "raw_correct_to_sync_wrong": 5
+    }
+  }
+}

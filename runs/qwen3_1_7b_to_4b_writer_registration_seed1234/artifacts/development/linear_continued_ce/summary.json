@@ -1,0 +1,15 @@
+{
+  "kind": "linear_continued",
+  "branch": "ce",
+  "initialized_from": "/home/yezhe/可拔插/qwen3_1_7b_to_4b_writer_registration_seed1234/artifacts/development/linear_continued_stage_a/best.pt",
+  "best_validation_nll": 2.67164388258243,
+  "best_validation_generation_f1": 0.21822916666666667,
+  "training_seconds": 2854.147062958218,
+  "peak_gpu_bytes": 13834867200,
+  "parameters": {
+    "trainable_parameters": 75497472,
+    "total_parameters": 75497472
+  },
+  "representation_losses_used": false,
+  "tether_used": false
+}

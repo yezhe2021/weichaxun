@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "shapes",
+    "query_gradients",
+    "Writer(0)=0",
+    "bias_free",
+    "K/V_independence",
+    "target_layer_independence",
+    "slot_independence",
+    "pooling_weights_shared_KV",
+    "pre_RoPE_token_permutation_invariance",
+    "checkpoint_roundtrip",
+    "teacher_detached"
+  ]
+}

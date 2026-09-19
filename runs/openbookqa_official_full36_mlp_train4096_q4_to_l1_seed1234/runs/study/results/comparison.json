@@ -1,0 +1,144 @@
+{
+  "status": "completed",
+  "protocol": "openbookqa_official_model_onboarding_full36_q4_to_l1_options32_v1",
+  "train_samples": 4096,
+  "validation_samples": 128,
+  "test_samples": 128,
+  "stage_a_checkpoint": "/home/yezhe/异构模型/openbookqa_official_full36_mlp_train4096_q4_to_l1_seed1234/runs/study/stage_a/checkpoints/step_2048.pt",
+  "metrics": {
+    "stage_a": {
+      "accuracy": 0.4453125,
+      "oracle_agreement": 0.6171875,
+      "oracle_choice_kl": 0.22236861480632797,
+      "k_nmse": 0.0447090013185516,
+      "v_nmse": 0.24843395105563104,
+      "k_cosine": 0.9774521659128368,
+      "v_cosine": 0.8351954785175622
+    },
+    "residual": {
+      "accuracy": 0.4609375,
+      "oracle_agreement": 0.65625,
+      "oracle_choice_kl": 0.18816936680013896,
+      "k_nmse": 0.045308747692615725,
+      "v_nmse": 0.24854856356978416,
+      "k_cosine": 0.977165384683758,
+      "v_cosine": 0.8351302766241133
+    }
+  },
+  "relative_residual_norm": {
+    "k": {
+      "min": 0.02439761122202724,
+      "p10": 0.024752400779999968,
+      "p25": 0.02494567594248117,
+      "median": 0.025214998455266983,
+      "p75": 0.025409316157717188,
+      "p90": 0.02551382837261987,
+      "p95": 0.02562002735070734,
+      "max": 0.02572122279563251,
+      "mean": 0.02517484264160765
+    },
+    "v": {
+      "min": 0.012697078682413052,
+      "p10": 0.013282416322876318,
+      "p25": 0.013491938658592318,
+      "median": 0.013887784118744242,
+      "p75": 0.014224544111165631,
+      "p90": 0.014506341632279002,
+      "p95": 0.01460978934768648,
+      "max": 0.014773963156657095,
+      "mean": 0.013856701662249754
+    }
+  },
+  "paired_stage_a_vs_residual": {
+    "both_correct": 53,
+    "only_first_correct": 4,
+    "only_second_correct": 6,
+    "both_wrong": 65,
+    "second_minus_first": 0.015625,
+    "mcnemar_p": 0.75390625
+  },
+  "frozen_base_hash_verified": true,
+  "trained_parameters": {
+    "stage_a": 154140672,
+    "residual": 2097152
+  },
+  "baselines": {
+    "status": "completed",
+    "protocol": "openbookqa_official_model_onboarding_full36_q4_to_l1_options32_v1",
+    "sample_count": 128,
+    "metrics": {
+      "qwen_full_native": {
+        "correct": 96,
+        "accuracy": 0.75
+      },
+      "qwen_native_selected32": {
+        "correct": 94,
+        "accuracy": 0.734375
+      },
+      "llama1_full_native": {
+        "correct": 70,
+        "accuracy": 0.546875
+      },
+      "llama1_native_oracle32": {
+        "correct": 52,
+        "accuracy": 0.40625
+      },
+      "llama1_zero32": {
+        "correct": 34,
+        "accuracy": 0.265625
+      },
+      "llama1_no_memory": {
+        "correct": 33,
+        "accuracy": 0.2578125
+      },
+      "llama1_shuffled_oracle32": {
+        "correct": 29,
+        "accuracy": 0.2265625
+      }
+    },
+    "pairwise_correctness": {
+      "qwen_full_native_vs_qwen_native_selected32": {
+        "both_correct": 91,
+        "only_first_correct": 5,
+        "only_second_correct": 3,
+        "both_wrong": 29
+      },
+      "llama1_full_native_vs_llama1_native_oracle32": {
+        "both_correct": 41,
+        "only_first_correct": 29,
+        "only_second_correct": 11,
+        "both_wrong": 47
+      },
+      "llama1_native_oracle32_vs_llama1_zero32": {
+        "both_correct": 13,
+        "only_first_correct": 39,
+        "only_second_correct": 21,
+        "both_wrong": 55
+      },
+      "llama1_native_oracle32_vs_llama1_no_memory": {
+        "both_correct": 13,
+        "only_first_correct": 39,
+        "only_second_correct": 20,
+        "both_wrong": 56
+      },
+      "llama1_native_oracle32_vs_llama1_shuffled_oracle32": {
+        "both_correct": 16,
+        "only_first_correct": 36,
+        "only_second_correct": 13,
+        "both_wrong": 63
+      }
+    },
+    "definitions": {
+      "qwen_native_selected32": "Qwen-native Question + its selected 32 native Option KVs + native Answer.",
+      "llama1_native_oracle32": "Llama1B-native Question + Llama1B-native KVs at Qwen-selected RawAnchor positions + native Answer.",
+      "llama1_zero32": "Oracle32 K/V replaced by exact zeros.",
+      "llama1_no_memory": "Llama1B processes native Question and Answer prefix without Option memory.",
+      "llama1_shuffled_oracle32": "Each question receives the next test sample's Llama1B Oracle32 memory."
+    }
+  },
+  "translation_gap": {
+    "definition": "Llama1 Native Oracle32 accuracy minus translated accuracy",
+    "stage_a": -0.0390625,
+    "residual": -0.0546875
+  }
+}

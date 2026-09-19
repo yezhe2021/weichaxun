@@ -1,0 +1,90 @@
+[
+  {
+    "step": 256,
+    "path": "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/runs/study/stage_b_mixed/checkpoints/step_256.pt",
+    "validation": {
+      "qwen_native": {
+        "accuracy": 0.7265625,
+        "oracle_accuracy": 0.78125,
+        "oracle_agreement": 0.6953125,
+        "choice_kl": 0.6065162422237336
+      },
+      "llama_stage_a": {
+        "accuracy": 0.6953125,
+        "oracle_accuracy": 0.78125,
+        "oracle_agreement": 0.6796875,
+        "choice_kl": 0.6217380566522479
+      },
+      "balanced": {
+        "mean_accuracy": 0.7109375,
+        "mean_choice_kl": 0.6141271494379907
+      }
+    }
+  },
+  {
+    "step": 512,
+    "path": "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/runs/study/stage_b_mixed/checkpoints/step_512.pt",
+    "validation": {
+      "qwen_native": {
+        "accuracy": 0.75,
+        "oracle_accuracy": 0.78125,
+        "oracle_agreement": 0.7109375,
+        "choice_kl": 0.5854160916514957
+      },
+      "llama_stage_a": {
+        "accuracy": 0.6796875,
+        "oracle_accuracy": 0.78125,
+        "oracle_agreement": 0.6875,
+        "choice_kl": 0.6173672511504265
+      },
+      "balanced": {
+        "mean_accuracy": 0.71484375,
+        "mean_choice_kl": 0.6013916714009611
+      }
+    }
+  },
+  {
+    "step": 768,
+    "path": "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/runs/study/stage_b_mixed/checkpoints/step_768.pt",
+    "validation": {
+      "qwen_native": {
+        "accuracy": 0.7421875,
+        "oracle_accuracy": 0.78125,
+        "oracle_agreement": 0.7109375,
+        "choice_kl": 0.601536692951413
+      },
+      "llama_stage_a": {
+        "accuracy": 0.6640625,
+        "oracle_accuracy": 0.78125,
+        "oracle_agreement": 0.671875,
+        "choice_kl": 0.5957414935910492
+      },
+      "balanced": {
+        "mean_accuracy": 0.703125,
+        "mean_choice_kl": 0.5986390932712311
+      }
+    }
+  },
+  {
+    "step": 1024,
+    "path": "/home/yezhe/异构模型/openbookqa_b0_mixedhub_receiver_stageb_gemma_seed1234/runs/study/stage_b_mixed/checkpoints/step_1024.pt",
+    "validation": {
+      "qwen_native": {
+        "accuracy": 0.734375,
+        "oracle_accuracy": 0.78125,
+        "oracle_agreement": 0.703125,
+        "choice_kl": 0.5915684386527573
+      },
+      "llama_stage_a": {
+        "accuracy": 0.671875,
+        "oracle_accuracy": 0.78125,
+        "oracle_agreement": 0.6875,
+        "choice_kl": 0.6293751274934039
+      },
+      "balanced": {
+        "mean_accuracy": 0.703125,
+        "mean_choice_kl": 0.6104717830730806
+      }
+    }
+  }
+]

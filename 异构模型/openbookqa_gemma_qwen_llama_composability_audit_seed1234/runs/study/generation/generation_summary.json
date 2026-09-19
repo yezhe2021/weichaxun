@@ -1,0 +1,78 @@
+{
+  "status": "completed",
+  "protocol": "openbookqa_official_gemma_qwen_llama_stagea_vs_residual_composability_v1_greedy_generation_v1",
+  "sample_count": 128,
+  "decoding": {
+    "method": "greedy",
+    "max_new_tokens": 12,
+    "stop_on_eos": true,
+    "prompt_suffix": "Receiver-native Answer:"
+  },
+  "metrics": {
+    "llama_native_oracle32": {
+      "samples": 128,
+      "choice_argmax_correct": 84,
+      "choice_argmax_accuracy": 0.65625,
+      "first_generated_token_is_choice": 128,
+      "first_generated_token_choice_rate": 1.0,
+      "first_generated_token_correct": 83,
+      "first_generated_token_accuracy": 0.6484375,
+      "parsed_valid": 128,
+      "parsed_valid_rate": 1.0,
+      "parsed_correct": 83,
+      "parsed_accuracy": 0.6484375
+    },
+    "qwen_native_bridge_reverse_stage_a": {
+      "samples": 128,
+      "choice_argmax_correct": 81,
+      "choice_argmax_accuracy": 0.6328125,
+      "first_generated_token_is_choice": 128,
+      "first_generated_token_choice_rate": 1.0,
+      "first_generated_token_correct": 80,
+      "first_generated_token_accuracy": 0.625,
+      "parsed_valid": 128,
+      "parsed_valid_rate": 1.0,
+      "parsed_correct": 80,
+      "parsed_accuracy": 0.625
+    },
+    "gemma_stage_a_reverse_stage_a": {
+      "samples": 128,
+      "choice_argmax_correct": 74,
+      "choice_argmax_accuracy": 0.578125,
+      "first_generated_token_is_choice": 128,
+      "first_generated_token_choice_rate": 1.0,
+      "first_generated_token_correct": 74,
+      "first_generated_token_accuracy": 0.578125,
+      "parsed_valid": 128,
+      "parsed_valid_rate": 1.0,
+      "parsed_correct": 74,
+      "parsed_accuracy": 0.578125
+    },
+    "gemma_stage_b_reverse_stage_a": {
+      "samples": 128,
+      "choice_argmax_correct": 75,
+      "choice_argmax_accuracy": 0.5859375,
+      "first_generated_token_is_choice": 128,
+      "first_generated_token_choice_rate": 1.0,
+      "first_generated_token_correct": 75,
+      "first_generated_token_accuracy": 0.5859375,
+      "parsed_valid": 128,
+      "parsed_valid_rate": 1.0,
+      "parsed_correct": 75,
+      "parsed_accuracy": 0.5859375
+    },
+    "gemma_stage_b_reverse_residual": {
+      "samples": 128,
+      "choice_argmax_correct": 71,
+      "choice_argmax_accuracy": 0.5546875,
+      "first_generated_token_is_choice": 128,
+      "first_generated_token_choice_rate": 1.0,
+      "first_generated_token_correct": 71,
+      "first_generated_token_accuracy": 0.5546875,
+      "parsed_valid": 128,
+      "parsed_valid_rate": 1.0,
+      "parsed_correct": 71,
+      "parsed_accuracy": 0.5546875
+    }
+  }
+}

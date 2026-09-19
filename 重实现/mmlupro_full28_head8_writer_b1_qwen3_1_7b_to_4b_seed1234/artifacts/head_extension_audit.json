@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "sample_id": "10673",
+      "k_max_abs_diff": 0.0,
+      "v_max_abs_diff": 0.0,
+      "final_logits_max_abs_diff": 0.0
+    },
+    {
+      "sample_id": "7387",
+      "k_max_abs_diff": 0.0,
+      "v_max_abs_diff": 0.0,
+      "final_logits_max_abs_diff": 0.0
+    }
+  ],
+  "writer_zero_max_abs": 0.0,
+  "direct_dense_parameter_count_avoided": 2113929216,
+  "total_parameter_count": 108527616,
+  "trainable_head_parameter_count": 75497472,
+  "depth_projection_frozen": true,
+  "k_v_separated": true,
+  "per_target_head_independent": true
+}

@@ -1,0 +1,71 @@
+{
+  "source_file": "/home/yezhe/数据集/MMLU-Pro/data/test-00000-of-00001.parquet",
+  "official_test_repartitioned": true,
+  "leaderboard_comparison_valid": false,
+  "split_strategy": "stratified_random",
+  "counts": {
+    "train": 128,
+    "validation": 32,
+    "test": 128
+  },
+  "categories": {
+    "train": [
+      "biology",
+      "business",
+      "chemistry",
+      "computer science",
+      "economics",
+      "engineering",
+      "health",
+      "history",
+      "law",
+      "math",
+      "other",
+      "philosophy",
+      "physics",
+      "psychology"
+    ],
+    "validation": [
+      "biology",
+      "business",
+      "chemistry",
+      "computer science",
+      "economics",
+      "engineering",
+      "health",
+      "history",
+      "law",
+      "math",
+      "other",
+      "philosophy",
+      "physics",
+      "psychology"
+    ],
+    "test": [
+      "biology",
+      "business",
+      "chemistry",
+      "computer science",
+      "economics",
+      "engineering",
+      "health",
+      "history",
+      "law",
+      "math",
+      "other",
+      "philosophy",
+      "physics",
+      "psychology"
+    ]
+  },
+  "rejected": {
+    "prefix_too_long": 100,
+    "suffix_too_long": 26
+  },
+  "original_option_order": true,
+  "option_permutation_used": false,
+  "cot_content_used": false,
+  "gold_fields_used_only_for_evaluation": true,
+  "tokenizers_equal": true,
+  "prefix_suffix_composition_equal": true
+}

@@ -1,0 +1,28 @@
+{
+  "source": "/home/yezhe/可拔插/r0_raw_native_kv_cross_model_qwen3_8b_to_4b_hotpotqa_seed1234/artifacts/smoke/splits.json",
+  "same_sample_ids_as_r0": {
+    "train": true,
+    "validation": true,
+    "test": true
+  },
+  "position_policy": "selected and question positions are original offsets in complete Context->Question sequence",
+  "counts": {
+    "train": 8,
+    "validation": 4,
+    "test": 4
+  },
+  "selected_token_range": {
+    "train": {
+      "min": 65,
+      "max": 133
+    },
+    "validation": {
+      "min": 44,
+      "max": 227
+    },
+    "test": {
+      "min": 67,
+      "max": 103
+    }
+  }
+}

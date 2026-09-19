@@ -1,0 +1,90 @@
+{
+  "qwen": {
+    "family": "qwen",
+    "checkpoint": {
+      "path": "/home/yezhe/异构模型/selfslot16_softlocality_training_qwen3_4b_llama3_2_3b_seed1234/runs/study/checkpoints/qwen/lambda_16/best.pt",
+      "step": 512,
+      "validation_full_kl": 3.7624137059319764
+    },
+    "conditions": {
+      "native_full": {
+        "full_vocab_kl": 0.0,
+        "choice_kl": 0.0,
+        "native_agreement": 1.0,
+        "accuracy": 0.25,
+        "cache_tokens": 120.2734375,
+        "samples": 128
+      },
+      "slot16_original": {
+        "full_vocab_kl": 3.70661249011755,
+        "choice_kl": 1.4970313635421917,
+        "native_agreement": 0.296875,
+        "accuracy": 0.109375,
+        "cache_tokens": 16.0,
+        "samples": 128
+      },
+      "slot16_shifted_control": {
+        "full_vocab_kl": 3.7083846163004637,
+        "choice_kl": 1.499011997191701,
+        "native_agreement": 0.296875,
+        "accuracy": 0.109375,
+        "cache_tokens": 16.0,
+        "samples": 128
+      },
+      "token0_plus_slot16": {
+        "full_vocab_kl": 1.6324510101694614,
+        "choice_kl": 1.5061787509475835,
+        "native_agreement": 0.140625,
+        "accuracy": 0.1328125,
+        "cache_tokens": 17.0,
+        "samples": 128
+      }
+    },
+    "clean_token0_contrast": "token0_plus_slot16 minus slot16_shifted_control",
+    "seconds": 22.70764692313969
+  },
+  "llama": {
+    "family": "llama",
+    "checkpoint": {
+      "path": "/home/yezhe/异构模型/selfslot16_softlocality_training_qwen3_4b_llama3_2_3b_seed1234/runs/study/checkpoints/llama/lambda_16/best.pt",
+      "step": 512,
+      "validation_full_kl": 1.2231389459921047
+    },
+    "conditions": {
+      "native_full": {
+        "full_vocab_kl": 0.0,
+        "choice_kl": 0.0,
+        "native_agreement": 1.0,
+        "accuracy": 0.2265625,
+        "cache_tokens": 114.671875,
+        "samples": 128
+      },
+      "slot16_original": {
+        "full_vocab_kl": 1.284309095237404,
+        "choice_kl": 0.6744008149253204,
+        "native_agreement": 0.2578125,
+        "accuracy": 0.109375,
+        "cache_tokens": 16.0,
+        "samples": 128
+      },
+      "slot16_shifted_control": {
+        "full_vocab_kl": 1.2848745870869607,
+        "choice_kl": 0.6742838085046969,
+        "native_agreement": 0.2578125,
+        "accuracy": 0.109375,
+        "cache_tokens": 16.0,
+        "samples": 128
+      },
+      "token0_plus_slot16": {
+        "full_vocab_kl": 0.4208742629562039,
+        "choice_kl": 0.35673645278438926,
+        "native_agreement": 0.3984375,
+        "accuracy": 0.15625,
+        "cache_tokens": 17.0,
+        "samples": 128
+      }
+    },
+    "clean_token0_contrast": "token0_plus_slot16 minus slot16_shifted_control",
+    "seconds": 19.527985295280814
+  }
+}

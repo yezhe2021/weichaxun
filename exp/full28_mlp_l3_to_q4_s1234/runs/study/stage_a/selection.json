@@ -1,0 +1,175 @@
+{
+  "selection": "validation only",
+  "best_accuracy": {
+    "step": 896,
+    "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_896.pt",
+    "representation": {
+      "loss": 0.6522115953266621,
+      "k_nmse": 0.04791950108483434,
+      "v_nmse": 0.33392458967864513,
+      "k_cosine": 0.947044275701046,
+      "v_cosine": 0.7825882099568844
+    },
+    "functional": {
+      "accuracy": 0.1484375,
+      "oracle_accuracy": 0.3828125,
+      "oracle_agreement": 0.15625,
+      "oracle_choice_kl": 1.7701918598031625
+    }
+  },
+  "best_choice_kl": {
+    "step": 896,
+    "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_896.pt",
+    "representation": {
+      "loss": 0.6522115953266621,
+      "k_nmse": 0.04791950108483434,
+      "v_nmse": 0.33392458967864513,
+      "k_cosine": 0.947044275701046,
+      "v_cosine": 0.7825882099568844
+    },
+    "functional": {
+      "accuracy": 0.1484375,
+      "oracle_accuracy": 0.3828125,
+      "oracle_agreement": 0.15625,
+      "oracle_choice_kl": 1.7701918598031625
+    }
+  },
+  "candidates": [
+    {
+      "step": 128,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_128.pt",
+      "representation": {
+        "loss": 0.8925021700561047,
+        "k_nmse": 0.07260932307690382,
+        "v_nmse": 0.46200239285826683,
+        "k_cosine": 0.9232641123235226,
+        "v_cosine": 0.7188454270362854
+      },
+      "functional": {
+        "accuracy": 0.1328125,
+        "oracle_accuracy": 0.3828125,
+        "oracle_agreement": 0.125,
+        "oracle_choice_kl": 2.098119212896563
+      }
+    },
+    {
+      "step": 256,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_256.pt",
+      "representation": {
+        "loss": 0.7772496119141579,
+        "k_nmse": 0.060202751541510224,
+        "v_nmse": 0.40270688384771347,
+        "k_cosine": 0.9352369047701359,
+        "v_cosine": 0.750423114746809
+      },
+      "functional": {
+        "accuracy": 0.125,
+        "oracle_accuracy": 0.3828125,
+        "oracle_agreement": 0.140625,
+        "oracle_choice_kl": 2.1764457765966654
+      }
+    },
+    {
+      "step": 384,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_384.pt",
+      "representation": {
+        "loss": 0.724020391702652,
+        "k_nmse": 0.05520548135973513,
+        "v_nmse": 0.37465318478643894,
+        "k_cosine": 0.9399139024317265,
+        "v_cosine": 0.7659243829548359
+      },
+      "functional": {
+        "accuracy": 0.125,
+        "oracle_accuracy": 0.3828125,
+        "oracle_agreement": 0.125,
+        "oracle_choice_kl": 2.2679861646611243
+      }
+    },
+    {
+      "step": 512,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_512.pt",
+      "representation": {
+        "loss": 0.6923686303198338,
+        "k_nmse": 0.052044390700757504,
+        "v_nmse": 0.3576656375080347,
+        "k_cosine": 0.9430153593420982,
+        "v_cosine": 0.7743260525166988
+      },
+      "functional": {
+        "accuracy": 0.1484375,
+        "oracle_accuracy": 0.3828125,
+        "oracle_agreement": 0.1484375,
+        "oracle_choice_kl": 2.122118884231895
+      }
+    },
+    {
+      "step": 640,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_640.pt",
+      "representation": {
+        "loss": 0.6737207174301147,
+        "k_nmse": 0.05040053161792457,
+        "v_nmse": 0.3467080798000097,
+        "k_cosine": 0.9445170983672142,
+        "v_cosine": 0.7788707986474037
+      },
+      "functional": {
+        "accuracy": 0.1484375,
+        "oracle_accuracy": 0.3828125,
+        "oracle_agreement": 0.15625,
+        "oracle_choice_kl": 2.0779054851736873
+      }
+    },
+    {
+      "step": 768,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_768.pt",
+      "representation": {
+        "loss": 0.6611967608332634,
+        "k_nmse": 0.04899330320768058,
+        "v_nmse": 0.339304244145751,
+        "k_cosine": 0.9458298683166504,
+        "v_cosine": 0.7812709286808968
+      },
+      "functional": {
+        "accuracy": 0.140625,
+        "oracle_accuracy": 0.3828125,
+        "oracle_agreement": 0.15625,
+        "oracle_choice_kl": 1.9637821987853386
+      }
+    },
+    {
+      "step": 896,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_896.pt",
+      "representation": {
+        "loss": 0.6522115953266621,
+        "k_nmse": 0.04791950108483434,
+        "v_nmse": 0.33392458967864513,
+        "k_cosine": 0.947044275701046,
+        "v_cosine": 0.7825882099568844
+      },
+      "functional": {
+        "accuracy": 0.1484375,
+        "oracle_accuracy": 0.3828125,
+        "oracle_agreement": 0.15625,
+        "oracle_choice_kl": 1.7701918598031625
+      }
+    },
+    {
+      "step": 1024,
+      "path": "/home/yezhe/异构模型/mmlupro_standardprompt_rawanchor_full28_mlp_llama3_2_3b_to_qwen3_4b_seed1234/runs/study/stage_a/checkpoints/step_1024.pt",
+      "representation": {
+        "loss": 0.6473611742258072,
+        "k_nmse": 0.047291409224271774,
+        "v_nmse": 0.3305363580584526,
+        "k_cosine": 0.9476042836904526,
+        "v_cosine": 0.7828623130917549
+      },
+      "functional": {
+        "accuracy": 0.1328125,
+        "oracle_accuracy": 0.3828125,
+        "oracle_agreement": 0.1640625,
+        "oracle_choice_kl": 1.9650031091296114
+      }
+    }
+  ]
+}

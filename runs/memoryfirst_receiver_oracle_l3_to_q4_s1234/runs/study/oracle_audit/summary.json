@@ -1,0 +1,23 @@
+{
+  "experiment": "mmlupro_memoryfirst_receiver_oracle_audit_llama3_2_3b_to_qwen3_4b_seed1234",
+  "status": "completed",
+  "sample_count": 128,
+  "fixed_router": "Answer-query + 32 option-region Top1",
+  "fixed_alignment": "RawAnchor",
+  "external_memory": "Qwen-native token0 + 32 selected option KVs",
+  "question_first": {
+    "correct": 43,
+    "accuracy": 0.3359375
+  },
+  "memory_first": {
+    "correct": 44,
+    "accuracy": 0.34375
+  },
+  "layout_agreement": 0.78125,
+  "gain_correct": 1,
+  "gain_accuracy": 0.0078125,
+  "gate": {
+    "minimum_gain_correct": 3,
+    "passed": false
+  }
+}

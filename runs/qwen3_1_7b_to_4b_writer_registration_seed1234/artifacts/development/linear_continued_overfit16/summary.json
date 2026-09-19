@@ -1,0 +1,17 @@
+{
+  "kind": "linear_continued",
+  "overfit": true,
+  "initialized_from": "/home/yezhe/可拔插/qwen3_1_7b_to_4b_writer_registration_seed1234/reused/linear_stage_a_best.pt",
+  "initial_loss": 1.3729765862226486,
+  "final_loss": 1.2921227887272835,
+  "loss_ratio": 0.9411105780632347,
+  "all_parameters_received_gradient": true,
+  "missing_gradient_parameters": [],
+  "best_validation_loss": 1.2921227887272835,
+  "training_seconds": 639.3486725827679,
+  "peak_gpu_bytes": 1547371008,
+  "parameters": {
+    "trainable_parameters": 75497472,
+    "total_parameters": 75497472
+  }
+}

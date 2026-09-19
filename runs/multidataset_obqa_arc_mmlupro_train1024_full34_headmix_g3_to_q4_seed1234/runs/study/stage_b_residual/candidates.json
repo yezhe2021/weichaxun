@@ -1,0 +1,42 @@
+[
+  {
+    "step": 192,
+    "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full34_headmix_g3_to_q4_seed1234/runs/study/stage_b_residual/checkpoints/step_192.pt",
+    "functional": {
+      "accuracy": 0.5598958333333334,
+      "oracle_accuracy": 0.6901041666666666,
+      "oracle_agreement": 0.6067708333333334,
+      "choice_kl": 0.7196273962707286
+    }
+  },
+  {
+    "step": 384,
+    "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full34_headmix_g3_to_q4_seed1234/runs/study/stage_b_residual/checkpoints/step_384.pt",
+    "functional": {
+      "accuracy": 0.5833333333333334,
+      "oracle_accuracy": 0.6901041666666666,
+      "oracle_agreement": 0.6276041666666666,
+      "choice_kl": 0.6698190040275828
+    }
+  },
+  {
+    "step": 576,
+    "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full34_headmix_g3_to_q4_seed1234/runs/study/stage_b_residual/checkpoints/step_576.pt",
+    "functional": {
+      "accuracy": 0.5703125,
+      "oracle_accuracy": 0.6901041666666666,
+      "oracle_agreement": 0.6328125,
+      "choice_kl": 0.6667038045657137
+    }
+  },
+  {
+    "step": 768,
+    "path": "/home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full34_headmix_g3_to_q4_seed1234/runs/study/stage_b_residual/checkpoints/step_768.pt",
+    "functional": {
+      "accuracy": 0.578125,
+      "oracle_accuracy": 0.6901041666666666,
+      "oracle_agreement": 0.6302083333333334,
+      "choice_kl": 0.6631620809854061
+    }
+  }
+]

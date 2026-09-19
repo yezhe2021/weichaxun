@@ -1,0 +1,26 @@
+{
+  "reader_checkpoint": "/home/yezhe/可拔插/r1_functional_canonical_reader_qwen3_4b_receiver_seed1234/artifacts/smoke/sparse_reader/best.pt",
+  "writer_instantiated": false,
+  "writer_trained": false,
+  "conditions": {
+    "native_4b_sparse_correct": {
+      "em": 0.0,
+      "r1_reference_em": 0.0,
+      "em_absolute_delta": 0.0,
+      "gold_answer_nll": 12.817025661468506,
+      "r1_reference_gold_answer_nll": 12.817025661468506,
+      "nll_absolute_delta": 0.0,
+      "all_generations_identical": true
+    },
+    "cross_8b_raw_native_correct": {
+      "em": 0.0,
+      "r1_reference_em": 0.0,
+      "em_absolute_delta": 0.0,
+      "gold_answer_nll": 15.063908815383911,
+      "r1_reference_gold_answer_nll": 15.063908815383911,
+      "nll_absolute_delta": 0.0,
+      "all_generations_identical": true
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,53 @@
+START stage: asset_audit
+DONE stage: asset_audit
+START stage: train_residual
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:27,  4.53it/s]Loading weights:  40%|███▉      | 159/398 [00:00<00:00, 622.97it/s]Loading weights:  63%|██████▎   | 252/398 [00:00<00:00, 628.41it/s]Loading weights:  83%|████████▎ | 332/398 [00:00<00:00, 631.54it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 568.06it/s]
+[2026-09-15 16:16:01] residual Stage B 16/512 KL=0.599461
+[2026-09-15 16:16:55] residual Stage B 32/512 KL=0.852679
+[2026-09-15 16:17:48] residual Stage B 48/512 KL=0.287237
+[2026-09-15 16:18:40] residual Stage B 64/512 KL=0.614773
+[2026-09-15 16:19:32] residual Stage B 80/512 KL=0.281587
+[2026-09-15 16:20:23] residual Stage B 96/512 KL=0.365134
+[2026-09-15 16:21:15] residual Stage B 112/512 KL=0.751525
+[2026-09-15 16:22:07] residual Stage B 128/512 KL=0.595966
+[2026-09-15 16:22:31] residual validation step=128 acc=0.6719 KL=0.590266
+[2026-09-15 16:23:23] residual Stage B 144/512 KL=0.503800
+[2026-09-15 16:24:15] residual Stage B 160/512 KL=0.128607
+[2026-09-15 16:25:07] residual Stage B 176/512 KL=0.357200
+[2026-09-15 16:25:58] residual Stage B 192/512 KL=0.163590
+[2026-09-15 16:26:51] residual Stage B 208/512 KL=0.198296
+[2026-09-15 16:27:45] residual Stage B 224/512 KL=0.337524
+[2026-09-15 16:28:38] residual Stage B 240/512 KL=0.456468
+[2026-09-15 16:29:34] residual Stage B 256/512 KL=0.598575
+[2026-09-15 16:29:59] residual validation step=256 acc=0.6797 KL=0.628213
+[2026-09-15 16:30:51] residual Stage B 272/512 KL=0.185332
+[2026-09-15 16:31:42] residual Stage B 288/512 KL=0.432538
+[2026-09-15 16:32:34] residual Stage B 304/512 KL=0.157407
+[2026-09-15 16:33:26] residual Stage B 320/512 KL=0.354584
+[2026-09-15 16:34:18] residual Stage B 336/512 KL=0.224511
+[2026-09-15 16:35:10] residual Stage B 352/512 KL=0.447036
+[2026-09-15 16:36:01] residual Stage B 368/512 KL=0.256922
+[2026-09-15 16:36:53] residual Stage B 384/512 KL=0.150698
+[2026-09-15 16:37:18] residual validation step=384 acc=0.6797 KL=0.610854
+[2026-09-15 16:38:09] residual Stage B 400/512 KL=0.134524
+[2026-09-15 16:39:02] residual Stage B 416/512 KL=0.141107
+[2026-09-15 16:39:56] residual Stage B 432/512 KL=0.515986
+[2026-09-15 16:40:51] residual Stage B 448/512 KL=0.585277
+[2026-09-15 16:41:47] residual Stage B 464/512 KL=0.050645
+[2026-09-15 16:42:39] residual Stage B 480/512 KL=0.567255
+[2026-09-15 16:43:30] residual Stage B 496/512 KL=0.432422
+[2026-09-15 16:44:22] residual Stage B 512/512 KL=0.090242
+[2026-09-15 16:44:47] residual validation step=512 acc=0.6875 KL=0.649053
+DONE stage: train_residual
+START stage: evaluate
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:27,  4.52it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 602.19it/s]Loading weights:  62%|██████▏   | 245/398 [00:00<00:00, 587.19it/s]Loading weights:  80%|████████  | 319/398 [00:00<00:00, 611.99it/s]Loading weights:  98%|█████████▊| 390/398 [00:00<00:00, 538.80it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 524.61it/s]
+[2026-09-15 16:45:15] Final A/B evaluation 16/128
+[2026-09-15 16:45:23] Final A/B evaluation 32/128
+[2026-09-15 16:45:30] Final A/B evaluation 48/128
+[2026-09-15 16:45:38] Final A/B evaluation 64/128
+[2026-09-15 16:45:46] Final A/B evaluation 80/128
+[2026-09-15 16:45:53] Final A/B evaluation 96/128
+[2026-09-15 16:46:00] Final A/B evaluation 112/128
+[2026-09-15 16:46:08] Final A/B evaluation 128/128
+DONE stage: evaluate
+ALL RESIDUAL128 EXPERIMENT STAGES COMPLETED

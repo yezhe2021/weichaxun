@@ -1,0 +1,1833 @@
+[2026-09-06 16:56:29] START tests
+[2026-09-06 16:56:33] DONE tests
+[2026-09-06 16:56:33] START prepare
+[2026-09-06 16:56:41] Prepared {'train': 128, 'validation': 32, 'test': 128}; tokenizer and label continuation checks passed
+[2026-09-06 16:56:42] DONE prepare
+[2026-09-06 16:56:42] START cache_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:28,  4.46it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 600.12it/s]Loading weights:  62%|██████▏   | 246/398 [00:00<00:00, 585.87it/s]Loading weights:  80%|████████  | 320/398 [00:00<00:00, 609.72it/s]Loading weights:  98%|█████████▊| 391/398 [00:00<00:00, 587.05it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 545.71it/s]
+[2026-09-06 16:56:52] qwen cache train 1/128
+[2026-09-06 16:56:52] qwen cache train 2/128
+[2026-09-06 16:56:52] qwen cache train 3/128
+[2026-09-06 16:56:52] qwen cache train 4/128
+[2026-09-06 16:56:53] qwen cache train 5/128
+[2026-09-06 16:56:53] qwen cache train 6/128
+[2026-09-06 16:56:53] qwen cache train 7/128
+[2026-09-06 16:56:53] qwen cache train 8/128
+[2026-09-06 16:56:53] qwen cache train 9/128
+[2026-09-06 16:56:53] qwen cache train 10/128
+[2026-09-06 16:56:53] qwen cache train 11/128
+[2026-09-06 16:56:53] qwen cache train 12/128
+[2026-09-06 16:56:54] qwen cache train 13/128
+[2026-09-06 16:56:54] qwen cache train 14/128
+[2026-09-06 16:56:54] qwen cache train 15/128
+[2026-09-06 16:56:54] qwen cache train 16/128
+[2026-09-06 16:56:54] qwen cache train 17/128
+[2026-09-06 16:56:54] qwen cache train 18/128
+[2026-09-06 16:56:55] qwen cache train 19/128
+[2026-09-06 16:56:55] qwen cache train 20/128
+[2026-09-06 16:56:55] qwen cache train 21/128
+[2026-09-06 16:56:55] qwen cache train 22/128
+[2026-09-06 16:56:55] qwen cache train 23/128
+[2026-09-06 16:56:55] qwen cache train 24/128
+[2026-09-06 16:56:55] qwen cache train 25/128
+[2026-09-06 16:56:56] qwen cache train 26/128
+[2026-09-06 16:56:56] qwen cache train 27/128
+[2026-09-06 16:56:56] qwen cache train 28/128
+[2026-09-06 16:56:56] qwen cache train 29/128
+[2026-09-06 16:56:56] qwen cache train 30/128
+[2026-09-06 16:56:56] qwen cache train 31/128
+[2026-09-06 16:56:56] qwen cache train 32/128
+[2026-09-06 16:56:57] qwen cache train 33/128
+[2026-09-06 16:56:57] qwen cache train 34/128
+[2026-09-06 16:56:57] qwen cache train 35/128
+[2026-09-06 16:56:57] qwen cache train 36/128
+[2026-09-06 16:56:57] qwen cache train 37/128
+[2026-09-06 16:56:57] qwen cache train 38/128
+[2026-09-06 16:56:57] qwen cache train 39/128
+[2026-09-06 16:56:58] qwen cache train 40/128
+[2026-09-06 16:56:58] qwen cache train 41/128
+[2026-09-06 16:56:58] qwen cache train 42/128
+[2026-09-06 16:56:58] qwen cache train 43/128
+[2026-09-06 16:56:58] qwen cache train 44/128
+[2026-09-06 16:56:58] qwen cache train 45/128
+[2026-09-06 16:56:58] qwen cache train 46/128
+[2026-09-06 16:56:59] qwen cache train 47/128
+[2026-09-06 16:56:59] qwen cache train 48/128
+[2026-09-06 16:56:59] qwen cache train 49/128
+[2026-09-06 16:56:59] qwen cache train 50/128
+[2026-09-06 16:56:59] qwen cache train 51/128
+[2026-09-06 16:56:59] qwen cache train 52/128
+[2026-09-06 16:56:59] qwen cache train 53/128
+[2026-09-06 16:57:00] qwen cache train 54/128
+[2026-09-06 16:57:00] qwen cache train 55/128
+[2026-09-06 16:57:00] qwen cache train 56/128
+[2026-09-06 16:57:00] qwen cache train 57/128
+[2026-09-06 16:57:00] qwen cache train 58/128
+[2026-09-06 16:57:00] qwen cache train 59/128
+[2026-09-06 16:57:01] qwen cache train 60/128
+[2026-09-06 16:57:01] qwen cache train 61/128
+[2026-09-06 16:57:01] qwen cache train 62/128
+[2026-09-06 16:57:01] qwen cache train 63/128
+[2026-09-06 16:57:01] qwen cache train 64/128
+[2026-09-06 16:57:01] qwen cache train 65/128
+[2026-09-06 16:57:01] qwen cache train 66/128
+[2026-09-06 16:57:02] qwen cache train 67/128
+[2026-09-06 16:57:02] qwen cache train 68/128
+[2026-09-06 16:57:02] qwen cache train 69/128
+[2026-09-06 16:57:02] qwen cache train 70/128
+[2026-09-06 16:57:02] qwen cache train 71/128
+[2026-09-06 16:57:02] qwen cache train 72/128
+[2026-09-06 16:57:02] qwen cache train 73/128
+[2026-09-06 16:57:03] qwen cache train 74/128
+[2026-09-06 16:57:03] qwen cache train 75/128
+[2026-09-06 16:57:03] qwen cache train 76/128
+[2026-09-06 16:57:03] qwen cache train 77/128
+[2026-09-06 16:57:03] qwen cache train 78/128
+[2026-09-06 16:57:03] qwen cache train 79/128
+[2026-09-06 16:57:03] qwen cache train 80/128
+[2026-09-06 16:57:04] qwen cache train 81/128
+[2026-09-06 16:57:04] qwen cache train 82/128
+[2026-09-06 16:57:04] qwen cache train 83/128
+[2026-09-06 16:57:04] qwen cache train 84/128
+[2026-09-06 16:57:04] qwen cache train 85/128
+[2026-09-06 16:57:04] qwen cache train 86/128
+[2026-09-06 16:57:05] qwen cache train 87/128
+[2026-09-06 16:57:05] qwen cache train 88/128
+[2026-09-06 16:57:05] qwen cache train 89/128
+[2026-09-06 16:57:05] qwen cache train 90/128
+[2026-09-06 16:57:05] qwen cache train 91/128
+[2026-09-06 16:57:05] qwen cache train 92/128
+[2026-09-06 16:57:05] qwen cache train 93/128
+[2026-09-06 16:57:06] qwen cache train 94/128
+[2026-09-06 16:57:06] qwen cache train 95/128
+[2026-09-06 16:57:06] qwen cache train 96/128
+[2026-09-06 16:57:06] qwen cache train 97/128
+[2026-09-06 16:57:06] qwen cache train 98/128
+[2026-09-06 16:57:06] qwen cache train 99/128
+[2026-09-06 16:57:07] qwen cache train 100/128
+[2026-09-06 16:57:07] qwen cache train 101/128
+[2026-09-06 16:57:07] qwen cache train 102/128
+[2026-09-06 16:57:07] qwen cache train 103/128
+[2026-09-06 16:57:07] qwen cache train 104/128
+[2026-09-06 16:57:07] qwen cache train 105/128
+[2026-09-06 16:57:08] qwen cache train 106/128
+[2026-09-06 16:57:08] qwen cache train 107/128
+[2026-09-06 16:57:08] qwen cache train 108/128
+[2026-09-06 16:57:08] qwen cache train 109/128
+[2026-09-06 16:57:08] qwen cache train 110/128
+[2026-09-06 16:57:08] qwen cache train 111/128
+[2026-09-06 16:57:08] qwen cache train 112/128
+[2026-09-06 16:57:09] qwen cache train 113/128
+[2026-09-06 16:57:09] qwen cache train 114/128
+[2026-09-06 16:57:09] qwen cache train 115/128
+[2026-09-06 16:57:09] qwen cache train 116/128
+[2026-09-06 16:57:09] qwen cache train 117/128
+[2026-09-06 16:57:09] qwen cache train 118/128
+[2026-09-06 16:57:09] qwen cache train 119/128
+[2026-09-06 16:57:10] qwen cache train 120/128
+[2026-09-06 16:57:10] qwen cache train 121/128
+[2026-09-06 16:57:10] qwen cache train 122/128
+[2026-09-06 16:57:10] qwen cache train 123/128
+[2026-09-06 16:57:10] qwen cache train 124/128
+[2026-09-06 16:57:10] qwen cache train 125/128
+[2026-09-06 16:57:10] qwen cache train 126/128
+[2026-09-06 16:57:11] qwen cache train 127/128
+[2026-09-06 16:57:11] qwen cache train 128/128
+[2026-09-06 16:57:11] qwen cache validation 1/32
+[2026-09-06 16:57:11] qwen cache validation 2/32
+[2026-09-06 16:57:12] qwen cache validation 3/32
+[2026-09-06 16:57:12] qwen cache validation 4/32
+[2026-09-06 16:57:12] qwen cache validation 5/32
+[2026-09-06 16:57:12] qwen cache validation 6/32
+[2026-09-06 16:57:12] qwen cache validation 7/32
+[2026-09-06 16:57:12] qwen cache validation 8/32
+[2026-09-06 16:57:13] qwen cache validation 9/32
+[2026-09-06 16:57:13] qwen cache validation 10/32
+[2026-09-06 16:57:13] qwen cache validation 11/32
+[2026-09-06 16:57:13] qwen cache validation 12/32
+[2026-09-06 16:57:13] qwen cache validation 13/32
+[2026-09-06 16:57:13] qwen cache validation 14/32
+[2026-09-06 16:57:14] qwen cache validation 15/32
+[2026-09-06 16:57:14] qwen cache validation 16/32
+[2026-09-06 16:57:14] qwen cache validation 17/32
+[2026-09-06 16:57:14] qwen cache validation 18/32
+[2026-09-06 16:57:14] qwen cache validation 19/32
+[2026-09-06 16:57:14] qwen cache validation 20/32
+[2026-09-06 16:57:15] qwen cache validation 21/32
+[2026-09-06 16:57:15] qwen cache validation 22/32
+[2026-09-06 16:57:15] qwen cache validation 23/32
+[2026-09-06 16:57:15] qwen cache validation 24/32
+[2026-09-06 16:57:15] qwen cache validation 25/32
+[2026-09-06 16:57:15] qwen cache validation 26/32
+[2026-09-06 16:57:15] qwen cache validation 27/32
+[2026-09-06 16:57:16] qwen cache validation 28/32
+[2026-09-06 16:57:16] qwen cache validation 29/32
+[2026-09-06 16:57:16] qwen cache validation 30/32
+[2026-09-06 16:57:16] qwen cache validation 31/32
+[2026-09-06 16:57:16] qwen cache validation 32/32
+[2026-09-06 16:57:16] qwen cache test 1/128
+[2026-09-06 16:57:16] qwen cache test 2/128
+[2026-09-06 16:57:17] qwen cache test 3/128
+[2026-09-06 16:57:17] qwen cache test 4/128
+[2026-09-06 16:57:17] qwen cache test 5/128
+[2026-09-06 16:57:17] qwen cache test 6/128
+[2026-09-06 16:57:17] qwen cache test 7/128
+[2026-09-06 16:57:17] qwen cache test 8/128
+[2026-09-06 16:57:17] qwen cache test 9/128
+[2026-09-06 16:57:18] qwen cache test 10/128
+[2026-09-06 16:57:18] qwen cache test 11/128
+[2026-09-06 16:57:18] qwen cache test 12/128
+[2026-09-06 16:57:18] qwen cache test 13/128
+[2026-09-06 16:57:18] qwen cache test 14/128
+[2026-09-06 16:57:18] qwen cache test 15/128
+[2026-09-06 16:57:18] qwen cache test 16/128
+[2026-09-06 16:57:18] qwen cache test 17/128
+[2026-09-06 16:57:19] qwen cache test 18/128
+[2026-09-06 16:57:19] qwen cache test 19/128
+[2026-09-06 16:57:19] qwen cache test 20/128
+[2026-09-06 16:57:19] qwen cache test 21/128
+[2026-09-06 16:57:19] qwen cache test 22/128
+[2026-09-06 16:57:19] qwen cache test 23/128
+[2026-09-06 16:57:19] qwen cache test 24/128
+[2026-09-06 16:57:20] qwen cache test 25/128
+[2026-09-06 16:57:20] qwen cache test 26/128
+[2026-09-06 16:57:20] qwen cache test 27/128
+[2026-09-06 16:57:20] qwen cache test 28/128
+[2026-09-06 16:57:20] qwen cache test 29/128
+[2026-09-06 16:57:20] qwen cache test 30/128
+[2026-09-06 16:57:20] qwen cache test 31/128
+[2026-09-06 16:57:21] qwen cache test 32/128
+[2026-09-06 16:57:21] qwen cache test 33/128
+[2026-09-06 16:57:21] qwen cache test 34/128
+[2026-09-06 16:57:21] qwen cache test 35/128
+[2026-09-06 16:57:21] qwen cache test 36/128
+[2026-09-06 16:57:21] qwen cache test 37/128
+[2026-09-06 16:57:21] qwen cache test 38/128
+[2026-09-06 16:57:22] qwen cache test 39/128
+[2026-09-06 16:57:22] qwen cache test 40/128
+[2026-09-06 16:57:22] qwen cache test 41/128
+[2026-09-06 16:57:22] qwen cache test 42/128
+[2026-09-06 16:57:22] qwen cache test 43/128
+[2026-09-06 16:57:22] qwen cache test 44/128
+[2026-09-06 16:57:22] qwen cache test 45/128
+[2026-09-06 16:57:23] qwen cache test 46/128
+[2026-09-06 16:57:23] qwen cache test 47/128
+[2026-09-06 16:57:23] qwen cache test 48/128
+[2026-09-06 16:57:23] qwen cache test 49/128
+[2026-09-06 16:57:23] qwen cache test 50/128
+[2026-09-06 16:57:23] qwen cache test 51/128
+[2026-09-06 16:57:23] qwen cache test 52/128
+[2026-09-06 16:57:24] qwen cache test 53/128
+[2026-09-06 16:57:24] qwen cache test 54/128
+[2026-09-06 16:57:24] qwen cache test 55/128
+[2026-09-06 16:57:24] qwen cache test 56/128
+[2026-09-06 16:57:24] qwen cache test 57/128
+[2026-09-06 16:57:24] qwen cache test 58/128
+[2026-09-06 16:57:24] qwen cache test 59/128
+[2026-09-06 16:57:25] qwen cache test 60/128
+[2026-09-06 16:57:25] qwen cache test 61/128
+[2026-09-06 16:57:25] qwen cache test 62/128
+[2026-09-06 16:57:25] qwen cache test 63/128
+[2026-09-06 16:57:25] qwen cache test 64/128
+[2026-09-06 16:57:25] qwen cache test 65/128
+[2026-09-06 16:57:25] qwen cache test 66/128
+[2026-09-06 16:57:26] qwen cache test 67/128
+[2026-09-06 16:57:26] qwen cache test 68/128
+[2026-09-06 16:57:26] qwen cache test 69/128
+[2026-09-06 16:57:26] qwen cache test 70/128
+[2026-09-06 16:57:26] qwen cache test 71/128
+[2026-09-06 16:57:26] qwen cache test 72/128
+[2026-09-06 16:57:26] qwen cache test 73/128
+[2026-09-06 16:57:26] qwen cache test 74/128
+[2026-09-06 16:57:27] qwen cache test 75/128
+[2026-09-06 16:57:27] qwen cache test 76/128
+[2026-09-06 16:57:27] qwen cache test 77/128
+[2026-09-06 16:57:27] qwen cache test 78/128
+[2026-09-06 16:57:27] qwen cache test 79/128
+[2026-09-06 16:57:27] qwen cache test 80/128
+[2026-09-06 16:57:27] qwen cache test 81/128
+[2026-09-06 16:57:28] qwen cache test 82/128
+[2026-09-06 16:57:28] qwen cache test 83/128
+[2026-09-06 16:57:28] qwen cache test 84/128
+[2026-09-06 16:57:28] qwen cache test 85/128
+[2026-09-06 16:57:28] qwen cache test 86/128
+[2026-09-06 16:57:28] qwen cache test 87/128
+[2026-09-06 16:57:28] qwen cache test 88/128
+[2026-09-06 16:57:29] qwen cache test 89/128
+[2026-09-06 16:57:29] qwen cache test 90/128
+[2026-09-06 16:57:29] qwen cache test 91/128
+[2026-09-06 16:57:29] qwen cache test 92/128
+[2026-09-06 16:57:29] qwen cache test 93/128
+[2026-09-06 16:57:29] qwen cache test 94/128
+[2026-09-06 16:57:29] qwen cache test 95/128
+[2026-09-06 16:57:30] qwen cache test 96/128
+[2026-09-06 16:57:30] qwen cache test 97/128
+[2026-09-06 16:57:30] qwen cache test 98/128
+[2026-09-06 16:57:30] qwen cache test 99/128
+[2026-09-06 16:57:30] qwen cache test 100/128
+[2026-09-06 16:57:30] qwen cache test 101/128
+[2026-09-06 16:57:30] qwen cache test 102/128
+[2026-09-06 16:57:31] qwen cache test 103/128
+[2026-09-06 16:57:31] qwen cache test 104/128
+[2026-09-06 16:57:31] qwen cache test 105/128
+[2026-09-06 16:57:31] qwen cache test 106/128
+[2026-09-06 16:57:31] qwen cache test 107/128
+[2026-09-06 16:57:31] qwen cache test 108/128
+[2026-09-06 16:57:31] qwen cache test 109/128
+[2026-09-06 16:57:32] qwen cache test 110/128
+[2026-09-06 16:57:32] qwen cache test 111/128
+[2026-09-06 16:57:32] qwen cache test 112/128
+[2026-09-06 16:57:32] qwen cache test 113/128
+[2026-09-06 16:57:32] qwen cache test 114/128
+[2026-09-06 16:57:32] qwen cache test 115/128
+[2026-09-06 16:57:32] qwen cache test 116/128
+[2026-09-06 16:57:32] qwen cache test 117/128
+[2026-09-06 16:57:33] qwen cache test 118/128
+[2026-09-06 16:57:33] qwen cache test 119/128
+[2026-09-06 16:57:33] qwen cache test 120/128
+[2026-09-06 16:57:33] qwen cache test 121/128
+[2026-09-06 16:57:33] qwen cache test 122/128
+[2026-09-06 16:57:33] qwen cache test 123/128
+[2026-09-06 16:57:34] qwen cache test 124/128
+[2026-09-06 16:57:34] qwen cache test 125/128
+[2026-09-06 16:57:34] qwen cache test 126/128
+[2026-09-06 16:57:34] qwen cache test 127/128
+[2026-09-06 16:57:34] qwen cache test 128/128
+[2026-09-06 16:57:35] DONE cache_qwen
+[2026-09-06 16:57:35] START cache_llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<00:54,  4.64it/s]Loading weights:  51%|█████     | 129/254 [00:00<00:00, 510.18it/s]Loading weights:  80%|████████  | 204/254 [00:00<00:00, 495.68it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 453.17it/s]
+[2026-09-06 16:57:44] llama cache train 1/128
+[2026-09-06 16:57:44] llama cache train 2/128
+[2026-09-06 16:57:45] llama cache train 3/128
+[2026-09-06 16:57:45] llama cache train 4/128
+[2026-09-06 16:57:45] llama cache train 5/128
+[2026-09-06 16:57:45] llama cache train 6/128
+[2026-09-06 16:57:45] llama cache train 7/128
+[2026-09-06 16:57:45] llama cache train 8/128
+[2026-09-06 16:57:45] llama cache train 9/128
+[2026-09-06 16:57:45] llama cache train 10/128
+[2026-09-06 16:57:45] llama cache train 11/128
+[2026-09-06 16:57:46] llama cache train 12/128
+[2026-09-06 16:57:46] llama cache train 13/128
+[2026-09-06 16:57:46] llama cache train 14/128
+[2026-09-06 16:57:46] llama cache train 15/128
+[2026-09-06 16:57:46] llama cache train 16/128
+[2026-09-06 16:57:46] llama cache train 17/128
+[2026-09-06 16:57:46] llama cache train 18/128
+[2026-09-06 16:57:47] llama cache train 19/128
+[2026-09-06 16:57:47] llama cache train 20/128
+[2026-09-06 16:57:47] llama cache train 21/128
+[2026-09-06 16:57:47] llama cache train 22/128
+[2026-09-06 16:57:47] llama cache train 23/128
+[2026-09-06 16:57:47] llama cache train 24/128
+[2026-09-06 16:57:47] llama cache train 25/128
+[2026-09-06 16:57:47] llama cache train 26/128
+[2026-09-06 16:57:48] llama cache train 27/128
+[2026-09-06 16:57:48] llama cache train 28/128
+[2026-09-06 16:57:48] llama cache train 29/128
+[2026-09-06 16:57:48] llama cache train 30/128
+[2026-09-06 16:57:48] llama cache train 31/128
+[2026-09-06 16:57:48] llama cache train 32/128
+[2026-09-06 16:57:48] llama cache train 33/128
+[2026-09-06 16:57:48] llama cache train 34/128
+[2026-09-06 16:57:48] llama cache train 35/128
+[2026-09-06 16:57:49] llama cache train 36/128
+[2026-09-06 16:57:49] llama cache train 37/128
+[2026-09-06 16:57:49] llama cache train 38/128
+[2026-09-06 16:57:49] llama cache train 39/128
+[2026-09-06 16:57:49] llama cache train 40/128
+[2026-09-06 16:57:49] llama cache train 41/128
+[2026-09-06 16:57:49] llama cache train 42/128
+[2026-09-06 16:57:49] llama cache train 43/128
+[2026-09-06 16:57:49] llama cache train 44/128
+[2026-09-06 16:57:50] llama cache train 45/128
+[2026-09-06 16:57:50] llama cache train 46/128
+[2026-09-06 16:57:50] llama cache train 47/128
+[2026-09-06 16:57:50] llama cache train 48/128
+[2026-09-06 16:57:50] llama cache train 49/128
+[2026-09-06 16:57:50] llama cache train 50/128
+[2026-09-06 16:57:50] llama cache train 51/128
+[2026-09-06 16:57:50] llama cache train 52/128
+[2026-09-06 16:57:50] llama cache train 53/128
+[2026-09-06 16:57:51] llama cache train 54/128
+[2026-09-06 16:57:51] llama cache train 55/128
+[2026-09-06 16:57:51] llama cache train 56/128
+[2026-09-06 16:57:51] llama cache train 57/128
+[2026-09-06 16:57:51] llama cache train 58/128
+[2026-09-06 16:57:51] llama cache train 59/128
+[2026-09-06 16:57:51] llama cache train 60/128
+[2026-09-06 16:57:51] llama cache train 61/128
+[2026-09-06 16:57:52] llama cache train 62/128
+[2026-09-06 16:57:52] llama cache train 63/128
+[2026-09-06 16:57:52] llama cache train 64/128
+[2026-09-06 16:57:52] llama cache train 65/128
+[2026-09-06 16:57:52] llama cache train 66/128
+[2026-09-06 16:57:52] llama cache train 67/128
+[2026-09-06 16:57:52] llama cache train 68/128
+[2026-09-06 16:57:52] llama cache train 69/128
+[2026-09-06 16:57:53] llama cache train 70/128
+[2026-09-06 16:57:53] llama cache train 71/128
+[2026-09-06 16:57:53] llama cache train 72/128
+[2026-09-06 16:57:53] llama cache train 73/128
+[2026-09-06 16:57:53] llama cache train 74/128
+[2026-09-06 16:57:53] llama cache train 75/128
+[2026-09-06 16:57:53] llama cache train 76/128
+[2026-09-06 16:57:53] llama cache train 77/128
+[2026-09-06 16:57:54] llama cache train 78/128
+[2026-09-06 16:57:54] llama cache train 79/128
+[2026-09-06 16:57:54] llama cache train 80/128
+[2026-09-06 16:57:54] llama cache train 81/128
+[2026-09-06 16:57:54] llama cache train 82/128
+[2026-09-06 16:57:54] llama cache train 83/128
+[2026-09-06 16:57:54] llama cache train 84/128
+[2026-09-06 16:57:54] llama cache train 85/128
+[2026-09-06 16:57:54] llama cache train 86/128
+[2026-09-06 16:57:55] llama cache train 87/128
+[2026-09-06 16:57:55] llama cache train 88/128
+[2026-09-06 16:57:55] llama cache train 89/128
+[2026-09-06 16:57:55] llama cache train 90/128
+[2026-09-06 16:57:55] llama cache train 91/128
+[2026-09-06 16:57:55] llama cache train 92/128
+[2026-09-06 16:57:55] llama cache train 93/128
+[2026-09-06 16:57:55] llama cache train 94/128
+[2026-09-06 16:57:55] llama cache train 95/128
+[2026-09-06 16:57:56] llama cache train 96/128
+[2026-09-06 16:57:56] llama cache train 97/128
+[2026-09-06 16:57:56] llama cache train 98/128
+[2026-09-06 16:57:56] llama cache train 99/128
+[2026-09-06 16:57:56] llama cache train 100/128
+[2026-09-06 16:57:56] llama cache train 101/128
+[2026-09-06 16:57:56] llama cache train 102/128
+[2026-09-06 16:57:56] llama cache train 103/128
+[2026-09-06 16:57:57] llama cache train 104/128
+[2026-09-06 16:57:57] llama cache train 105/128
+[2026-09-06 16:57:57] llama cache train 106/128
+[2026-09-06 16:57:57] llama cache train 107/128
+[2026-09-06 16:57:57] llama cache train 108/128
+[2026-09-06 16:57:57] llama cache train 109/128
+[2026-09-06 16:57:57] llama cache train 110/128
+[2026-09-06 16:57:57] llama cache train 111/128
+[2026-09-06 16:57:57] llama cache train 112/128
+[2026-09-06 16:57:58] llama cache train 113/128
+[2026-09-06 16:57:58] llama cache train 114/128
+[2026-09-06 16:57:58] llama cache train 115/128
+[2026-09-06 16:57:58] llama cache train 116/128
+[2026-09-06 16:57:58] llama cache train 117/128
+[2026-09-06 16:57:58] llama cache train 118/128
+[2026-09-06 16:57:58] llama cache train 119/128
+[2026-09-06 16:57:58] llama cache train 120/128
+[2026-09-06 16:57:58] llama cache train 121/128
+[2026-09-06 16:57:58] llama cache train 122/128
+[2026-09-06 16:57:59] llama cache train 123/128
+[2026-09-06 16:57:59] llama cache train 124/128
+[2026-09-06 16:57:59] llama cache train 125/128
+[2026-09-06 16:57:59] llama cache train 126/128
+[2026-09-06 16:57:59] llama cache train 127/128
+[2026-09-06 16:57:59] llama cache train 128/128
+[2026-09-06 16:57:59] llama cache validation 1/32
+[2026-09-06 16:57:59] llama cache validation 2/32
+[2026-09-06 16:58:00] llama cache validation 3/32
+[2026-09-06 16:58:00] llama cache validation 4/32
+[2026-09-06 16:58:00] llama cache validation 5/32
+[2026-09-06 16:58:00] llama cache validation 6/32
+[2026-09-06 16:58:00] llama cache validation 7/32
+[2026-09-06 16:58:00] llama cache validation 8/32
+[2026-09-06 16:58:01] llama cache validation 9/32
+[2026-09-06 16:58:01] llama cache validation 10/32
+[2026-09-06 16:58:01] llama cache validation 11/32
+[2026-09-06 16:58:01] llama cache validation 12/32
+[2026-09-06 16:58:01] llama cache validation 13/32
+[2026-09-06 16:58:01] llama cache validation 14/32
+[2026-09-06 16:58:01] llama cache validation 15/32
+[2026-09-06 16:58:01] llama cache validation 16/32
+[2026-09-06 16:58:01] llama cache validation 17/32
+[2026-09-06 16:58:02] llama cache validation 18/32
+[2026-09-06 16:58:02] llama cache validation 19/32
+[2026-09-06 16:58:02] llama cache validation 20/32
+[2026-09-06 16:58:02] llama cache validation 21/32
+[2026-09-06 16:58:02] llama cache validation 22/32
+[2026-09-06 16:58:02] llama cache validation 23/32
+[2026-09-06 16:58:02] llama cache validation 24/32
+[2026-09-06 16:58:02] llama cache validation 25/32
+[2026-09-06 16:58:02] llama cache validation 26/32
+[2026-09-06 16:58:02] llama cache validation 27/32
+[2026-09-06 16:58:03] llama cache validation 28/32
+[2026-09-06 16:58:03] llama cache validation 29/32
+[2026-09-06 16:58:03] llama cache validation 30/32
+[2026-09-06 16:58:03] llama cache validation 31/32
+[2026-09-06 16:58:03] llama cache validation 32/32
+[2026-09-06 16:58:03] llama cache test 1/128
+[2026-09-06 16:58:03] llama cache test 2/128
+[2026-09-06 16:58:03] llama cache test 3/128
+[2026-09-06 16:58:03] llama cache test 4/128
+[2026-09-06 16:58:03] llama cache test 5/128
+[2026-09-06 16:58:04] llama cache test 6/128
+[2026-09-06 16:58:04] llama cache test 7/128
+[2026-09-06 16:58:04] llama cache test 8/128
+[2026-09-06 16:58:04] llama cache test 9/128
+[2026-09-06 16:58:04] llama cache test 10/128
+[2026-09-06 16:58:04] llama cache test 11/128
+[2026-09-06 16:58:04] llama cache test 12/128
+[2026-09-06 16:58:04] llama cache test 13/128
+[2026-09-06 16:58:04] llama cache test 14/128
+[2026-09-06 16:58:04] llama cache test 15/128
+[2026-09-06 16:58:05] llama cache test 16/128
+[2026-09-06 16:58:05] llama cache test 17/128
+[2026-09-06 16:58:05] llama cache test 18/128
+[2026-09-06 16:58:05] llama cache test 19/128
+[2026-09-06 16:58:05] llama cache test 20/128
+[2026-09-06 16:58:05] llama cache test 21/128
+[2026-09-06 16:58:05] llama cache test 22/128
+[2026-09-06 16:58:05] llama cache test 23/128
+[2026-09-06 16:58:05] llama cache test 24/128
+[2026-09-06 16:58:05] llama cache test 25/128
+[2026-09-06 16:58:06] llama cache test 26/128
+[2026-09-06 16:58:06] llama cache test 27/128
+[2026-09-06 16:58:06] llama cache test 28/128
+[2026-09-06 16:58:06] llama cache test 29/128
+[2026-09-06 16:58:06] llama cache test 30/128
+[2026-09-06 16:58:06] llama cache test 31/128
+[2026-09-06 16:58:06] llama cache test 32/128
+[2026-09-06 16:58:06] llama cache test 33/128
+[2026-09-06 16:58:06] llama cache test 34/128
+[2026-09-06 16:58:06] llama cache test 35/128
+[2026-09-06 16:58:07] llama cache test 36/128
+[2026-09-06 16:58:07] llama cache test 37/128
+[2026-09-06 16:58:07] llama cache test 38/128
+[2026-09-06 16:58:07] llama cache test 39/128
+[2026-09-06 16:58:07] llama cache test 40/128
+[2026-09-06 16:58:07] llama cache test 41/128
+[2026-09-06 16:58:07] llama cache test 42/128
+[2026-09-06 16:58:07] llama cache test 43/128
+[2026-09-06 16:58:07] llama cache test 44/128
+[2026-09-06 16:58:07] llama cache test 45/128
+[2026-09-06 16:58:08] llama cache test 46/128
+[2026-09-06 16:58:08] llama cache test 47/128
+[2026-09-06 16:58:08] llama cache test 48/128
+[2026-09-06 16:58:08] llama cache test 49/128
+[2026-09-06 16:58:08] llama cache test 50/128
+[2026-09-06 16:58:08] llama cache test 51/128
+[2026-09-06 16:58:08] llama cache test 52/128
+[2026-09-06 16:58:08] llama cache test 53/128
+[2026-09-06 16:58:08] llama cache test 54/128
+[2026-09-06 16:58:09] llama cache test 55/128
+[2026-09-06 16:58:09] llama cache test 56/128
+[2026-09-06 16:58:09] llama cache test 57/128
+[2026-09-06 16:58:09] llama cache test 58/128
+[2026-09-06 16:58:09] llama cache test 59/128
+[2026-09-06 16:58:09] llama cache test 60/128
+[2026-09-06 16:58:09] llama cache test 61/128
+[2026-09-06 16:58:09] llama cache test 62/128
+[2026-09-06 16:58:09] llama cache test 63/128
+[2026-09-06 16:58:09] llama cache test 64/128
+[2026-09-06 16:58:10] llama cache test 65/128
+[2026-09-06 16:58:10] llama cache test 66/128
+[2026-09-06 16:58:10] llama cache test 67/128
+[2026-09-06 16:58:10] llama cache test 68/128
+[2026-09-06 16:58:10] llama cache test 69/128
+[2026-09-06 16:58:10] llama cache test 70/128
+[2026-09-06 16:58:10] llama cache test 71/128
+[2026-09-06 16:58:10] llama cache test 72/128
+[2026-09-06 16:58:10] llama cache test 73/128
+[2026-09-06 16:58:10] llama cache test 74/128
+[2026-09-06 16:58:11] llama cache test 75/128
+[2026-09-06 16:58:11] llama cache test 76/128
+[2026-09-06 16:58:11] llama cache test 77/128
+[2026-09-06 16:58:11] llama cache test 78/128
+[2026-09-06 16:58:11] llama cache test 79/128
+[2026-09-06 16:58:11] llama cache test 80/128
+[2026-09-06 16:58:11] llama cache test 81/128
+[2026-09-06 16:58:11] llama cache test 82/128
+[2026-09-06 16:58:11] llama cache test 83/128
+[2026-09-06 16:58:12] llama cache test 84/128
+[2026-09-06 16:58:12] llama cache test 85/128
+[2026-09-06 16:58:12] llama cache test 86/128
+[2026-09-06 16:58:12] llama cache test 87/128
+[2026-09-06 16:58:12] llama cache test 88/128
+[2026-09-06 16:58:12] llama cache test 89/128
+[2026-09-06 16:58:12] llama cache test 90/128
+[2026-09-06 16:58:12] llama cache test 91/128
+[2026-09-06 16:58:12] llama cache test 92/128
+[2026-09-06 16:58:12] llama cache test 93/128
+[2026-09-06 16:58:13] llama cache test 94/128
+[2026-09-06 16:58:13] llama cache test 95/128
+[2026-09-06 16:58:13] llama cache test 96/128
+[2026-09-06 16:58:13] llama cache test 97/128
+[2026-09-06 16:58:13] llama cache test 98/128
+[2026-09-06 16:58:13] llama cache test 99/128
+[2026-09-06 16:58:13] llama cache test 100/128
+[2026-09-06 16:58:13] llama cache test 101/128
+[2026-09-06 16:58:13] llama cache test 102/128
+[2026-09-06 16:58:14] llama cache test 103/128
+[2026-09-06 16:58:14] llama cache test 104/128
+[2026-09-06 16:58:14] llama cache test 105/128
+[2026-09-06 16:58:14] llama cache test 106/128
+[2026-09-06 16:58:14] llama cache test 107/128
+[2026-09-06 16:58:14] llama cache test 108/128
+[2026-09-06 16:58:14] llama cache test 109/128
+[2026-09-06 16:58:14] llama cache test 110/128
+[2026-09-06 16:58:14] llama cache test 111/128
+[2026-09-06 16:58:14] llama cache test 112/128
+[2026-09-06 16:58:15] llama cache test 113/128
+[2026-09-06 16:58:15] llama cache test 114/128
+[2026-09-06 16:58:15] llama cache test 115/128
+[2026-09-06 16:58:15] llama cache test 116/128
+[2026-09-06 16:58:15] llama cache test 117/128
+[2026-09-06 16:58:15] llama cache test 118/128
+[2026-09-06 16:58:15] llama cache test 119/128
+[2026-09-06 16:58:15] llama cache test 120/128
+[2026-09-06 16:58:16] llama cache test 121/128
+[2026-09-06 16:58:16] llama cache test 122/128
+[2026-09-06 16:58:16] llama cache test 123/128
+[2026-09-06 16:58:16] llama cache test 124/128
+[2026-09-06 16:58:16] llama cache test 125/128
+[2026-09-06 16:58:16] llama cache test 126/128
+[2026-09-06 16:58:16] llama cache test 127/128
+[2026-09-06 16:58:16] llama cache test 128/128
+[2026-09-06 16:58:17] DONE cache_llama
+[2026-09-06 16:58:17] START self_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  10%|▉         | 38/398 [00:00<00:01, 331.90it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 480.49it/s]Loading weights:  42%|████▏     | 168/398 [00:00<00:00, 530.06it/s]Loading weights:  59%|█████▉    | 234/398 [00:00<00:00, 553.80it/s]Loading weights:  75%|███████▌  | 300/398 [00:00<00:00, 568.05it/s]Loading weights:  92%|█████████▏| 366/398 [00:00<00:00, 575.88it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 562.07it/s]
+[2026-09-06 16:58:31] self_qwen epoch=1/2 step=1 loss=5.148236
+[2026-09-06 16:58:32] self_qwen epoch=1/2 step=2 loss=4.576304
+[2026-09-06 16:58:34] self_qwen epoch=1/2 step=3 loss=3.427366
+[2026-09-06 16:58:35] self_qwen epoch=1/2 step=4 loss=4.797688
+[2026-09-06 16:58:36] self_qwen epoch=1/2 step=5 loss=4.749332
+[2026-09-06 16:58:37] self_qwen epoch=1/2 step=6 loss=5.045378
+[2026-09-06 16:58:39] self_qwen epoch=1/2 step=7 loss=5.856783
+[2026-09-06 16:58:40] self_qwen epoch=1/2 step=8 loss=4.112060
+[2026-09-06 16:58:41] self_qwen epoch=1/2 step=9 loss=4.472342
+[2026-09-06 16:58:42] self_qwen epoch=1/2 step=10 loss=3.217958
+[2026-09-06 16:58:43] self_qwen epoch=1/2 step=11 loss=4.657931
+[2026-09-06 16:58:45] self_qwen epoch=1/2 step=12 loss=4.957611
+[2026-09-06 16:58:46] self_qwen epoch=1/2 step=13 loss=3.830654
+[2026-09-06 16:58:47] self_qwen epoch=1/2 step=14 loss=4.725202
+[2026-09-06 16:58:48] self_qwen epoch=1/2 step=15 loss=5.779676
+[2026-09-06 16:58:50] self_qwen epoch=1/2 step=16 loss=4.428327
+[2026-09-06 16:58:52] self_qwen validation epoch=1 loss=4.525446; best_epoch=1
+[2026-09-06 16:58:53] self_qwen epoch=2/2 step=17 loss=4.245588
+[2026-09-06 16:58:54] self_qwen epoch=2/2 step=18 loss=5.326420
+[2026-09-06 16:58:55] self_qwen epoch=2/2 step=19 loss=5.225167
+[2026-09-06 16:58:57] self_qwen epoch=2/2 step=20 loss=4.228573
+[2026-09-06 16:58:58] self_qwen epoch=2/2 step=21 loss=4.563665
+[2026-09-06 16:58:59] self_qwen epoch=2/2 step=22 loss=4.018471
+[2026-09-06 16:59:00] self_qwen epoch=2/2 step=23 loss=5.280623
+[2026-09-06 16:59:01] self_qwen epoch=2/2 step=24 loss=3.980806
+[2026-09-06 16:59:03] self_qwen epoch=2/2 step=25 loss=3.356522
+[2026-09-06 16:59:04] self_qwen epoch=2/2 step=26 loss=4.407778
+[2026-09-06 16:59:05] self_qwen epoch=2/2 step=27 loss=5.558545
+[2026-09-06 16:59:06] self_qwen epoch=2/2 step=28 loss=4.372031
+[2026-09-06 16:59:08] self_qwen epoch=2/2 step=29 loss=5.146791
+[2026-09-06 16:59:09] self_qwen epoch=2/2 step=30 loss=4.158666
+[2026-09-06 16:59:10] self_qwen epoch=2/2 step=31 loss=4.827310
+[2026-09-06 16:59:11] self_qwen epoch=2/2 step=32 loss=3.530790
+[2026-09-06 16:59:13] self_qwen validation epoch=2 loss=4.466506; best_epoch=2
+[2026-09-06 16:59:14] DONE self_qwen
+[2026-09-06 16:59:14] START self_llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 30/254 [00:00<00:00, 297.51it/s]Loading weights:  30%|██▉       | 75/254 [00:00<00:00, 381.24it/s]Loading weights:  51%|█████     | 129/254 [00:00<00:00, 429.93it/s]Loading weights:  72%|███████▏  | 183/254 [00:00<00:00, 457.84it/s]Loading weights:  93%|█████████▎| 237/254 [00:00<00:00, 476.37it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 462.46it/s]
+[2026-09-06 16:59:26] self_llama epoch=1/2 step=1 loss=5.660431
+[2026-09-06 16:59:27] self_llama epoch=1/2 step=2 loss=5.375466
+[2026-09-06 16:59:27] self_llama epoch=1/2 step=3 loss=5.019239
+[2026-09-06 16:59:28] self_llama epoch=1/2 step=4 loss=5.060393
+[2026-09-06 16:59:29] self_llama epoch=1/2 step=5 loss=5.576123
+[2026-09-06 16:59:30] self_llama epoch=1/2 step=6 loss=5.548950
+[2026-09-06 16:59:31] self_llama epoch=1/2 step=7 loss=5.311597
+[2026-09-06 16:59:32] self_llama epoch=1/2 step=8 loss=5.201488
+[2026-09-06 16:59:32] self_llama epoch=1/2 step=9 loss=5.248934
+[2026-09-06 16:59:33] self_llama epoch=1/2 step=10 loss=5.152808
+[2026-09-06 16:59:34] self_llama epoch=1/2 step=11 loss=4.985925
+[2026-09-06 16:59:35] self_llama epoch=1/2 step=12 loss=5.223426
+[2026-09-06 16:59:36] self_llama epoch=1/2 step=13 loss=5.323572
+[2026-09-06 16:59:37] self_llama epoch=1/2 step=14 loss=4.688020
+[2026-09-06 16:59:38] self_llama epoch=1/2 step=15 loss=5.349765
+[2026-09-06 16:59:38] self_llama epoch=1/2 step=16 loss=4.880661
+[2026-09-06 16:59:40] self_llama validation epoch=1 loss=5.166161; best_epoch=1
+[2026-09-06 16:59:41] self_llama epoch=2/2 step=17 loss=4.992385
+[2026-09-06 16:59:42] self_llama epoch=2/2 step=18 loss=5.076129
+[2026-09-06 16:59:42] self_llama epoch=2/2 step=19 loss=5.366602
+[2026-09-06 16:59:43] self_llama epoch=2/2 step=20 loss=5.047999
+[2026-09-06 16:59:44] self_llama epoch=2/2 step=21 loss=5.355613
+[2026-09-06 16:59:45] self_llama epoch=2/2 step=22 loss=5.152360
+[2026-09-06 16:59:46] self_llama epoch=2/2 step=23 loss=5.009160
+[2026-09-06 16:59:47] self_llama epoch=2/2 step=24 loss=5.008871
+[2026-09-06 16:59:48] self_llama epoch=2/2 step=25 loss=4.988943
+[2026-09-06 16:59:48] self_llama epoch=2/2 step=26 loss=5.213936
+[2026-09-06 16:59:49] self_llama epoch=2/2 step=27 loss=5.423362
+[2026-09-06 16:59:50] self_llama epoch=2/2 step=28 loss=5.571152
+[2026-09-06 16:59:51] self_llama epoch=2/2 step=29 loss=4.997601
+[2026-09-06 16:59:52] self_llama epoch=2/2 step=30 loss=4.881864
+[2026-09-06 16:59:53] self_llama epoch=2/2 step=31 loss=5.295288
+[2026-09-06 16:59:53] self_llama epoch=2/2 step=32 loss=5.179024
+[2026-09-06 16:59:55] self_llama validation epoch=2 loss=5.112573; best_epoch=2
+[2026-09-06 16:59:56] DONE self_llama
+[2026-09-06 16:59:56] START slots_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:30,  4.40it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 593.31it/s]Loading weights:  62%|██████▏   | 245/398 [00:00<00:00, 588.26it/s]Loading weights:  80%|████████  | 320/398 [00:00<00:00, 611.13it/s]Loading weights:  98%|█████████▊| 391/398 [00:00<00:00, 596.40it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 549.92it/s]
+[2026-09-06 17:00:06] qwen slots train 1/128
+[2026-09-06 17:00:06] qwen slots train 2/128
+[2026-09-06 17:00:06] qwen slots train 3/128
+[2026-09-06 17:00:06] qwen slots train 4/128
+[2026-09-06 17:00:06] qwen slots train 5/128
+[2026-09-06 17:00:06] qwen slots train 6/128
+[2026-09-06 17:00:06] qwen slots train 7/128
+[2026-09-06 17:00:07] qwen slots train 8/128
+[2026-09-06 17:00:07] qwen slots train 9/128
+[2026-09-06 17:00:07] qwen slots train 10/128
+[2026-09-06 17:00:07] qwen slots train 11/128
+[2026-09-06 17:00:07] qwen slots train 12/128
+[2026-09-06 17:00:07] qwen slots train 13/128
+[2026-09-06 17:00:07] qwen slots train 14/128
+[2026-09-06 17:00:07] qwen slots train 15/128
+[2026-09-06 17:00:07] qwen slots train 16/128
+[2026-09-06 17:00:07] qwen slots train 17/128
+[2026-09-06 17:00:07] qwen slots train 18/128
+[2026-09-06 17:00:07] qwen slots train 19/128
+[2026-09-06 17:00:07] qwen slots train 20/128
+[2026-09-06 17:00:07] qwen slots train 21/128
+[2026-09-06 17:00:08] qwen slots train 22/128
+[2026-09-06 17:00:08] qwen slots train 23/128
+[2026-09-06 17:00:08] qwen slots train 24/128
+[2026-09-06 17:00:08] qwen slots train 25/128
+[2026-09-06 17:00:08] qwen slots train 26/128
+[2026-09-06 17:00:08] qwen slots train 27/128
+[2026-09-06 17:00:08] qwen slots train 28/128
+[2026-09-06 17:00:08] qwen slots train 29/128
+[2026-09-06 17:00:08] qwen slots train 30/128
+[2026-09-06 17:00:08] qwen slots train 31/128
+[2026-09-06 17:00:08] qwen slots train 32/128
+[2026-09-06 17:00:08] qwen slots train 33/128
+[2026-09-06 17:00:08] qwen slots train 34/128
+[2026-09-06 17:00:08] qwen slots train 35/128
+[2026-09-06 17:00:09] qwen slots train 36/128
+[2026-09-06 17:00:09] qwen slots train 37/128
+[2026-09-06 17:00:09] qwen slots train 38/128
+[2026-09-06 17:00:09] qwen slots train 39/128
+[2026-09-06 17:00:09] qwen slots train 40/128
+[2026-09-06 17:00:09] qwen slots train 41/128
+[2026-09-06 17:00:09] qwen slots train 42/128
+[2026-09-06 17:00:09] qwen slots train 43/128
+[2026-09-06 17:00:09] qwen slots train 44/128
+[2026-09-06 17:00:09] qwen slots train 45/128
+[2026-09-06 17:00:09] qwen slots train 46/128
+[2026-09-06 17:00:09] qwen slots train 47/128
+[2026-09-06 17:00:09] qwen slots train 48/128
+[2026-09-06 17:00:09] qwen slots train 49/128
+[2026-09-06 17:00:10] qwen slots train 50/128
+[2026-09-06 17:00:10] qwen slots train 51/128
+[2026-09-06 17:00:10] qwen slots train 52/128
+[2026-09-06 17:00:10] qwen slots train 53/128
+[2026-09-06 17:00:10] qwen slots train 54/128
+[2026-09-06 17:00:10] qwen slots train 55/128
+[2026-09-06 17:00:10] qwen slots train 56/128
+[2026-09-06 17:00:10] qwen slots train 57/128
+[2026-09-06 17:00:10] qwen slots train 58/128
+[2026-09-06 17:00:10] qwen slots train 59/128
+[2026-09-06 17:00:10] qwen slots train 60/128
+[2026-09-06 17:00:10] qwen slots train 61/128
+[2026-09-06 17:00:10] qwen slots train 62/128
+[2026-09-06 17:00:10] qwen slots train 63/128
+[2026-09-06 17:00:11] qwen slots train 64/128
+[2026-09-06 17:00:11] qwen slots train 65/128
+[2026-09-06 17:00:11] qwen slots train 66/128
+[2026-09-06 17:00:11] qwen slots train 67/128
+[2026-09-06 17:00:11] qwen slots train 68/128
+[2026-09-06 17:00:11] qwen slots train 69/128
+[2026-09-06 17:00:11] qwen slots train 70/128
+[2026-09-06 17:00:11] qwen slots train 71/128
+[2026-09-06 17:00:11] qwen slots train 72/128
+[2026-09-06 17:00:11] qwen slots train 73/128
+[2026-09-06 17:00:11] qwen slots train 74/128
+[2026-09-06 17:00:11] qwen slots train 75/128
+[2026-09-06 17:00:11] qwen slots train 76/128
+[2026-09-06 17:00:12] qwen slots train 77/128
+[2026-09-06 17:00:12] qwen slots train 78/128
+[2026-09-06 17:00:12] qwen slots train 79/128
+[2026-09-06 17:00:12] qwen slots train 80/128
+[2026-09-06 17:00:12] qwen slots train 81/128
+[2026-09-06 17:00:12] qwen slots train 82/128
+[2026-09-06 17:00:12] qwen slots train 83/128
+[2026-09-06 17:00:12] qwen slots train 84/128
+[2026-09-06 17:00:12] qwen slots train 85/128
+[2026-09-06 17:00:12] qwen slots train 86/128
+[2026-09-06 17:00:12] qwen slots train 87/128
+[2026-09-06 17:00:12] qwen slots train 88/128
+[2026-09-06 17:00:12] qwen slots train 89/128
+[2026-09-06 17:00:12] qwen slots train 90/128
+[2026-09-06 17:00:12] qwen slots train 91/128
+[2026-09-06 17:00:13] qwen slots train 92/128
+[2026-09-06 17:00:13] qwen slots train 93/128
+[2026-09-06 17:00:13] qwen slots train 94/128
+[2026-09-06 17:00:13] qwen slots train 95/128
+[2026-09-06 17:00:13] qwen slots train 96/128
+[2026-09-06 17:00:13] qwen slots train 97/128
+[2026-09-06 17:00:13] qwen slots train 98/128
+[2026-09-06 17:00:13] qwen slots train 99/128
+[2026-09-06 17:00:13] qwen slots train 100/128
+[2026-09-06 17:00:13] qwen slots train 101/128
+[2026-09-06 17:00:13] qwen slots train 102/128
+[2026-09-06 17:00:13] qwen slots train 103/128
+[2026-09-06 17:00:13] qwen slots train 104/128
+[2026-09-06 17:00:14] qwen slots train 105/128
+[2026-09-06 17:00:14] qwen slots train 106/128
+[2026-09-06 17:00:14] qwen slots train 107/128
+[2026-09-06 17:00:14] qwen slots train 108/128
+[2026-09-06 17:00:14] qwen slots train 109/128
+[2026-09-06 17:00:14] qwen slots train 110/128
+[2026-09-06 17:00:14] qwen slots train 111/128
+[2026-09-06 17:00:14] qwen slots train 112/128
+[2026-09-06 17:00:14] qwen slots train 113/128
+[2026-09-06 17:00:14] qwen slots train 114/128
+[2026-09-06 17:00:14] qwen slots train 115/128
+[2026-09-06 17:00:14] qwen slots train 116/128
+[2026-09-06 17:00:14] qwen slots train 117/128
+[2026-09-06 17:00:14] qwen slots train 118/128
+[2026-09-06 17:00:15] qwen slots train 119/128
+[2026-09-06 17:00:15] qwen slots train 120/128
+[2026-09-06 17:00:15] qwen slots train 121/128
+[2026-09-06 17:00:15] qwen slots train 122/128
+[2026-09-06 17:00:15] qwen slots train 123/128
+[2026-09-06 17:00:15] qwen slots train 124/128
+[2026-09-06 17:00:15] qwen slots train 125/128
+[2026-09-06 17:00:15] qwen slots train 126/128
+[2026-09-06 17:00:15] qwen slots train 127/128
+[2026-09-06 17:00:15] qwen slots train 128/128
+[2026-09-06 17:00:15] qwen slots validation 1/32
+[2026-09-06 17:00:15] qwen slots validation 2/32
+[2026-09-06 17:00:15] qwen slots validation 3/32
+[2026-09-06 17:00:15] qwen slots validation 4/32
+[2026-09-06 17:00:16] qwen slots validation 5/32
+[2026-09-06 17:00:16] qwen slots validation 6/32
+[2026-09-06 17:00:16] qwen slots validation 7/32
+[2026-09-06 17:00:16] qwen slots validation 8/32
+[2026-09-06 17:00:16] qwen slots validation 9/32
+[2026-09-06 17:00:16] qwen slots validation 10/32
+[2026-09-06 17:00:16] qwen slots validation 11/32
+[2026-09-06 17:00:16] qwen slots validation 12/32
+[2026-09-06 17:00:16] qwen slots validation 13/32
+[2026-09-06 17:00:16] qwen slots validation 14/32
+[2026-09-06 17:00:16] qwen slots validation 15/32
+[2026-09-06 17:00:16] qwen slots validation 16/32
+[2026-09-06 17:00:16] qwen slots validation 17/32
+[2026-09-06 17:00:16] qwen slots validation 18/32
+[2026-09-06 17:00:17] qwen slots validation 19/32
+[2026-09-06 17:00:17] qwen slots validation 20/32
+[2026-09-06 17:00:17] qwen slots validation 21/32
+[2026-09-06 17:00:17] qwen slots validation 22/32
+[2026-09-06 17:00:17] qwen slots validation 23/32
+[2026-09-06 17:00:17] qwen slots validation 24/32
+[2026-09-06 17:00:17] qwen slots validation 25/32
+[2026-09-06 17:00:17] qwen slots validation 26/32
+[2026-09-06 17:00:17] qwen slots validation 27/32
+[2026-09-06 17:00:17] qwen slots validation 28/32
+[2026-09-06 17:00:17] qwen slots validation 29/32
+[2026-09-06 17:00:17] qwen slots validation 30/32
+[2026-09-06 17:00:18] qwen slots validation 31/32
+[2026-09-06 17:00:18] qwen slots validation 32/32
+[2026-09-06 17:00:18] qwen slots test 1/128
+[2026-09-06 17:00:18] qwen slots test 2/128
+[2026-09-06 17:00:18] qwen slots test 3/128
+[2026-09-06 17:00:18] qwen slots test 4/128
+[2026-09-06 17:00:18] qwen slots test 5/128
+[2026-09-06 17:00:18] qwen slots test 6/128
+[2026-09-06 17:00:18] qwen slots test 7/128
+[2026-09-06 17:00:18] qwen slots test 8/128
+[2026-09-06 17:00:18] qwen slots test 9/128
+[2026-09-06 17:00:18] qwen slots test 10/128
+[2026-09-06 17:00:19] qwen slots test 11/128
+[2026-09-06 17:00:19] qwen slots test 12/128
+[2026-09-06 17:00:19] qwen slots test 13/128
+[2026-09-06 17:00:19] qwen slots test 14/128
+[2026-09-06 17:00:19] qwen slots test 15/128
+[2026-09-06 17:00:19] qwen slots test 16/128
+[2026-09-06 17:00:19] qwen slots test 17/128
+[2026-09-06 17:00:19] qwen slots test 18/128
+[2026-09-06 17:00:19] qwen slots test 19/128
+[2026-09-06 17:00:19] qwen slots test 20/128
+[2026-09-06 17:00:19] qwen slots test 21/128
+[2026-09-06 17:00:19] qwen slots test 22/128
+[2026-09-06 17:00:20] qwen slots test 23/128
+[2026-09-06 17:00:20] qwen slots test 24/128
+[2026-09-06 17:00:20] qwen slots test 25/128
+[2026-09-06 17:00:20] qwen slots test 26/128
+[2026-09-06 17:00:20] qwen slots test 27/128
+[2026-09-06 17:00:20] qwen slots test 28/128
+[2026-09-06 17:00:20] qwen slots test 29/128
+[2026-09-06 17:00:20] qwen slots test 30/128
+[2026-09-06 17:00:20] qwen slots test 31/128
+[2026-09-06 17:00:20] qwen slots test 32/128
+[2026-09-06 17:00:20] qwen slots test 33/128
+[2026-09-06 17:00:20] qwen slots test 34/128
+[2026-09-06 17:00:21] qwen slots test 35/128
+[2026-09-06 17:00:21] qwen slots test 36/128
+[2026-09-06 17:00:21] qwen slots test 37/128
+[2026-09-06 17:00:21] qwen slots test 38/128
+[2026-09-06 17:00:21] qwen slots test 39/128
+[2026-09-06 17:00:21] qwen slots test 40/128
+[2026-09-06 17:00:21] qwen slots test 41/128
+[2026-09-06 17:00:21] qwen slots test 42/128
+[2026-09-06 17:00:21] qwen slots test 43/128
+[2026-09-06 17:00:21] qwen slots test 44/128
+[2026-09-06 17:00:21] qwen slots test 45/128
+[2026-09-06 17:00:21] qwen slots test 46/128
+[2026-09-06 17:00:22] qwen slots test 47/128
+[2026-09-06 17:00:22] qwen slots test 48/128
+[2026-09-06 17:00:22] qwen slots test 49/128
+[2026-09-06 17:00:22] qwen slots test 50/128
+[2026-09-06 17:00:22] qwen slots test 51/128
+[2026-09-06 17:00:22] qwen slots test 52/128
+[2026-09-06 17:00:22] qwen slots test 53/128
+[2026-09-06 17:00:22] qwen slots test 54/128
+[2026-09-06 17:00:22] qwen slots test 55/128
+[2026-09-06 17:00:22] qwen slots test 56/128
+[2026-09-06 17:00:22] qwen slots test 57/128
+[2026-09-06 17:00:22] qwen slots test 58/128
+[2026-09-06 17:00:23] qwen slots test 59/128
+[2026-09-06 17:00:23] qwen slots test 60/128
+[2026-09-06 17:00:23] qwen slots test 61/128
+[2026-09-06 17:00:23] qwen slots test 62/128
+[2026-09-06 17:00:23] qwen slots test 63/128
+[2026-09-06 17:00:23] qwen slots test 64/128
+[2026-09-06 17:00:23] qwen slots test 65/128
+[2026-09-06 17:00:23] qwen slots test 66/128
+[2026-09-06 17:00:23] qwen slots test 67/128
+[2026-09-06 17:00:23] qwen slots test 68/128
+[2026-09-06 17:00:23] qwen slots test 69/128
+[2026-09-06 17:00:24] qwen slots test 70/128
+[2026-09-06 17:00:24] qwen slots test 71/128
+[2026-09-06 17:00:24] qwen slots test 72/128
+[2026-09-06 17:00:24] qwen slots test 73/128
+[2026-09-06 17:00:24] qwen slots test 74/128
+[2026-09-06 17:00:24] qwen slots test 75/128
+[2026-09-06 17:00:24] qwen slots test 76/128
+[2026-09-06 17:00:24] qwen slots test 77/128
+[2026-09-06 17:00:24] qwen slots test 78/128
+[2026-09-06 17:00:24] qwen slots test 79/128
+[2026-09-06 17:00:24] qwen slots test 80/128
+[2026-09-06 17:00:24] qwen slots test 81/128
+[2026-09-06 17:00:25] qwen slots test 82/128
+[2026-09-06 17:00:25] qwen slots test 83/128
+[2026-09-06 17:00:25] qwen slots test 84/128
+[2026-09-06 17:00:25] qwen slots test 85/128
+[2026-09-06 17:00:25] qwen slots test 86/128
+[2026-09-06 17:00:25] qwen slots test 87/128
+[2026-09-06 17:00:25] qwen slots test 88/128
+[2026-09-06 17:00:25] qwen slots test 89/128
+[2026-09-06 17:00:25] qwen slots test 90/128
+[2026-09-06 17:00:25] qwen slots test 91/128
+[2026-09-06 17:00:25] qwen slots test 92/128
+[2026-09-06 17:00:25] qwen slots test 93/128
+[2026-09-06 17:00:26] qwen slots test 94/128
+[2026-09-06 17:00:26] qwen slots test 95/128
+[2026-09-06 17:00:26] qwen slots test 96/128
+[2026-09-06 17:00:26] qwen slots test 97/128
+[2026-09-06 17:00:26] qwen slots test 98/128
+[2026-09-06 17:00:26] qwen slots test 99/128
+[2026-09-06 17:00:26] qwen slots test 100/128
+[2026-09-06 17:00:26] qwen slots test 101/128
+[2026-09-06 17:00:26] qwen slots test 102/128
+[2026-09-06 17:00:26] qwen slots test 103/128
+[2026-09-06 17:00:26] qwen slots test 104/128
+[2026-09-06 17:00:26] qwen slots test 105/128
+[2026-09-06 17:00:26] qwen slots test 106/128
+[2026-09-06 17:00:26] qwen slots test 107/128
+[2026-09-06 17:00:26] qwen slots test 108/128
+[2026-09-06 17:00:27] qwen slots test 109/128
+[2026-09-06 17:00:27] qwen slots test 110/128
+[2026-09-06 17:00:27] qwen slots test 111/128
+[2026-09-06 17:00:27] qwen slots test 112/128
+[2026-09-06 17:00:27] qwen slots test 113/128
+[2026-09-06 17:00:27] qwen slots test 114/128
+[2026-09-06 17:00:27] qwen slots test 115/128
+[2026-09-06 17:00:27] qwen slots test 116/128
+[2026-09-06 17:00:27] qwen slots test 117/128
+[2026-09-06 17:00:27] qwen slots test 118/128
+[2026-09-06 17:00:27] qwen slots test 119/128
+[2026-09-06 17:00:27] qwen slots test 120/128
+[2026-09-06 17:00:27] qwen slots test 121/128
+[2026-09-06 17:00:27] qwen slots test 122/128
+[2026-09-06 17:00:28] qwen slots test 123/128
+[2026-09-06 17:00:28] qwen slots test 124/128
+[2026-09-06 17:00:28] qwen slots test 125/128
+[2026-09-06 17:00:28] qwen slots test 126/128
+[2026-09-06 17:00:28] qwen slots test 127/128
+[2026-09-06 17:00:28] qwen slots test 128/128
+[2026-09-06 17:00:29] DONE slots_qwen
+[2026-09-06 17:00:29] START slots_llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:00,  4.21it/s]Loading weights:  51%|█████     | 129/254 [00:00<00:00, 473.20it/s]Loading weights:  79%|███████▉  | 201/254 [00:00<00:00, 483.82it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 436.78it/s]
+[2026-09-06 17:00:38] llama slots train 1/128
+[2026-09-06 17:00:38] llama slots train 2/128
+[2026-09-06 17:00:38] llama slots train 3/128
+[2026-09-06 17:00:38] llama slots train 4/128
+[2026-09-06 17:00:38] llama slots train 5/128
+[2026-09-06 17:00:38] llama slots train 6/128
+[2026-09-06 17:00:38] llama slots train 7/128
+[2026-09-06 17:00:38] llama slots train 8/128
+[2026-09-06 17:00:38] llama slots train 9/128
+[2026-09-06 17:00:38] llama slots train 10/128
+[2026-09-06 17:00:38] llama slots train 11/128
+[2026-09-06 17:00:38] llama slots train 12/128
+[2026-09-06 17:00:38] llama slots train 13/128
+[2026-09-06 17:00:38] llama slots train 14/128
+[2026-09-06 17:00:39] llama slots train 15/128
+[2026-09-06 17:00:39] llama slots train 16/128
+[2026-09-06 17:00:39] llama slots train 17/128
+[2026-09-06 17:00:39] llama slots train 18/128
+[2026-09-06 17:00:39] llama slots train 19/128
+[2026-09-06 17:00:39] llama slots train 20/128
+[2026-09-06 17:00:39] llama slots train 21/128
+[2026-09-06 17:00:39] llama slots train 22/128
+[2026-09-06 17:00:39] llama slots train 23/128
+[2026-09-06 17:00:39] llama slots train 24/128
+[2026-09-06 17:00:39] llama slots train 25/128
+[2026-09-06 17:00:39] llama slots train 26/128
+[2026-09-06 17:00:39] llama slots train 27/128
+[2026-09-06 17:00:39] llama slots train 28/128
+[2026-09-06 17:00:39] llama slots train 29/128
+[2026-09-06 17:00:39] llama slots train 30/128
+[2026-09-06 17:00:39] llama slots train 31/128
+[2026-09-06 17:00:39] llama slots train 32/128
+[2026-09-06 17:00:39] llama slots train 33/128
+[2026-09-06 17:00:39] llama slots train 34/128
+[2026-09-06 17:00:40] llama slots train 35/128
+[2026-09-06 17:00:40] llama slots train 36/128
+[2026-09-06 17:00:40] llama slots train 37/128
+[2026-09-06 17:00:40] llama slots train 38/128
+[2026-09-06 17:00:40] llama slots train 39/128
+[2026-09-06 17:00:40] llama slots train 40/128
+[2026-09-06 17:00:40] llama slots train 41/128
+[2026-09-06 17:00:40] llama slots train 42/128
+[2026-09-06 17:00:40] llama slots train 43/128
+[2026-09-06 17:00:40] llama slots train 44/128
+[2026-09-06 17:00:40] llama slots train 45/128
+[2026-09-06 17:00:40] llama slots train 46/128
+[2026-09-06 17:00:40] llama slots train 47/128
+[2026-09-06 17:00:40] llama slots train 48/128
+[2026-09-06 17:00:40] llama slots train 49/128
+[2026-09-06 17:00:40] llama slots train 50/128
+[2026-09-06 17:00:40] llama slots train 51/128
+[2026-09-06 17:00:40] llama slots train 52/128
+[2026-09-06 17:00:40] llama slots train 53/128
+[2026-09-06 17:00:41] llama slots train 54/128
+[2026-09-06 17:00:41] llama slots train 55/128
+[2026-09-06 17:00:41] llama slots train 56/128
+[2026-09-06 17:00:41] llama slots train 57/128
+[2026-09-06 17:00:41] llama slots train 58/128
+[2026-09-06 17:00:41] llama slots train 59/128
+[2026-09-06 17:00:41] llama slots train 60/128
+[2026-09-06 17:00:41] llama slots train 61/128
+[2026-09-06 17:00:41] llama slots train 62/128
+[2026-09-06 17:00:41] llama slots train 63/128
+[2026-09-06 17:00:41] llama slots train 64/128
+[2026-09-06 17:00:41] llama slots train 65/128
+[2026-09-06 17:00:41] llama slots train 66/128
+[2026-09-06 17:00:41] llama slots train 67/128
+[2026-09-06 17:00:41] llama slots train 68/128
+[2026-09-06 17:00:41] llama slots train 69/128
+[2026-09-06 17:00:41] llama slots train 70/128
+[2026-09-06 17:00:41] llama slots train 71/128
+[2026-09-06 17:00:41] llama slots train 72/128
+[2026-09-06 17:00:41] llama slots train 73/128
+[2026-09-06 17:00:42] llama slots train 74/128
+[2026-09-06 17:00:42] llama slots train 75/128
+[2026-09-06 17:00:42] llama slots train 76/128
+[2026-09-06 17:00:42] llama slots train 77/128
+[2026-09-06 17:00:42] llama slots train 78/128
+[2026-09-06 17:00:42] llama slots train 79/128
+[2026-09-06 17:00:42] llama slots train 80/128
+[2026-09-06 17:00:42] llama slots train 81/128
+[2026-09-06 17:00:42] llama slots train 82/128
+[2026-09-06 17:00:42] llama slots train 83/128
+[2026-09-06 17:00:42] llama slots train 84/128
+[2026-09-06 17:00:42] llama slots train 85/128
+[2026-09-06 17:00:42] llama slots train 86/128
+[2026-09-06 17:00:42] llama slots train 87/128
+[2026-09-06 17:00:42] llama slots train 88/128
+[2026-09-06 17:00:42] llama slots train 89/128
+[2026-09-06 17:00:42] llama slots train 90/128
+[2026-09-06 17:00:42] llama slots train 91/128
+[2026-09-06 17:00:42] llama slots train 92/128
+[2026-09-06 17:00:43] llama slots train 93/128
+[2026-09-06 17:00:43] llama slots train 94/128
+[2026-09-06 17:00:43] llama slots train 95/128
+[2026-09-06 17:00:43] llama slots train 96/128
+[2026-09-06 17:00:43] llama slots train 97/128
+[2026-09-06 17:00:43] llama slots train 98/128
+[2026-09-06 17:00:43] llama slots train 99/128
+[2026-09-06 17:00:43] llama slots train 100/128
+[2026-09-06 17:00:43] llama slots train 101/128
+[2026-09-06 17:00:43] llama slots train 102/128
+[2026-09-06 17:00:43] llama slots train 103/128
+[2026-09-06 17:00:43] llama slots train 104/128
+[2026-09-06 17:00:43] llama slots train 105/128
+[2026-09-06 17:00:43] llama slots train 106/128
+[2026-09-06 17:00:43] llama slots train 107/128
+[2026-09-06 17:00:43] llama slots train 108/128
+[2026-09-06 17:00:43] llama slots train 109/128
+[2026-09-06 17:00:43] llama slots train 110/128
+[2026-09-06 17:00:43] llama slots train 111/128
+[2026-09-06 17:00:43] llama slots train 112/128
+[2026-09-06 17:00:44] llama slots train 113/128
+[2026-09-06 17:00:44] llama slots train 114/128
+[2026-09-06 17:00:44] llama slots train 115/128
+[2026-09-06 17:00:44] llama slots train 116/128
+[2026-09-06 17:00:44] llama slots train 117/128
+[2026-09-06 17:00:44] llama slots train 118/128
+[2026-09-06 17:00:44] llama slots train 119/128
+[2026-09-06 17:00:44] llama slots train 120/128
+[2026-09-06 17:00:44] llama slots train 121/128
+[2026-09-06 17:00:44] llama slots train 122/128
+[2026-09-06 17:00:44] llama slots train 123/128
+[2026-09-06 17:00:44] llama slots train 124/128
+[2026-09-06 17:00:44] llama slots train 125/128
+[2026-09-06 17:00:44] llama slots train 126/128
+[2026-09-06 17:00:44] llama slots train 127/128
+[2026-09-06 17:00:44] llama slots train 128/128
+[2026-09-06 17:00:44] llama slots validation 1/32
+[2026-09-06 17:00:44] llama slots validation 2/32
+[2026-09-06 17:00:44] llama slots validation 3/32
+[2026-09-06 17:00:45] llama slots validation 4/32
+[2026-09-06 17:00:45] llama slots validation 5/32
+[2026-09-06 17:00:45] llama slots validation 6/32
+[2026-09-06 17:00:45] llama slots validation 7/32
+[2026-09-06 17:00:45] llama slots validation 8/32
+[2026-09-06 17:00:45] llama slots validation 9/32
+[2026-09-06 17:00:45] llama slots validation 10/32
+[2026-09-06 17:00:45] llama slots validation 11/32
+[2026-09-06 17:00:45] llama slots validation 12/32
+[2026-09-06 17:00:45] llama slots validation 13/32
+[2026-09-06 17:00:45] llama slots validation 14/32
+[2026-09-06 17:00:45] llama slots validation 15/32
+[2026-09-06 17:00:45] llama slots validation 16/32
+[2026-09-06 17:00:45] llama slots validation 17/32
+[2026-09-06 17:00:45] llama slots validation 18/32
+[2026-09-06 17:00:45] llama slots validation 19/32
+[2026-09-06 17:00:45] llama slots validation 20/32
+[2026-09-06 17:00:45] llama slots validation 21/32
+[2026-09-06 17:00:45] llama slots validation 22/32
+[2026-09-06 17:00:45] llama slots validation 23/32
+[2026-09-06 17:00:46] llama slots validation 24/32
+[2026-09-06 17:00:46] llama slots validation 25/32
+[2026-09-06 17:00:46] llama slots validation 26/32
+[2026-09-06 17:00:46] llama slots validation 27/32
+[2026-09-06 17:00:46] llama slots validation 28/32
+[2026-09-06 17:00:46] llama slots validation 29/32
+[2026-09-06 17:00:46] llama slots validation 30/32
+[2026-09-06 17:00:46] llama slots validation 31/32
+[2026-09-06 17:00:46] llama slots validation 32/32
+[2026-09-06 17:00:46] llama slots test 1/128
+[2026-09-06 17:00:46] llama slots test 2/128
+[2026-09-06 17:00:46] llama slots test 3/128
+[2026-09-06 17:00:46] llama slots test 4/128
+[2026-09-06 17:00:46] llama slots test 5/128
+[2026-09-06 17:00:46] llama slots test 6/128
+[2026-09-06 17:00:46] llama slots test 7/128
+[2026-09-06 17:00:47] llama slots test 8/128
+[2026-09-06 17:00:47] llama slots test 9/128
+[2026-09-06 17:00:47] llama slots test 10/128
+[2026-09-06 17:00:47] llama slots test 11/128
+[2026-09-06 17:00:47] llama slots test 12/128
+[2026-09-06 17:00:47] llama slots test 13/128
+[2026-09-06 17:00:47] llama slots test 14/128
+[2026-09-06 17:00:47] llama slots test 15/128
+[2026-09-06 17:00:47] llama slots test 16/128
+[2026-09-06 17:00:47] llama slots test 17/128
+[2026-09-06 17:00:47] llama slots test 18/128
+[2026-09-06 17:00:47] llama slots test 19/128
+[2026-09-06 17:00:47] llama slots test 20/128
+[2026-09-06 17:00:47] llama slots test 21/128
+[2026-09-06 17:00:47] llama slots test 22/128
+[2026-09-06 17:00:47] llama slots test 23/128
+[2026-09-06 17:00:47] llama slots test 24/128
+[2026-09-06 17:00:47] llama slots test 25/128
+[2026-09-06 17:00:47] llama slots test 26/128
+[2026-09-06 17:00:47] llama slots test 27/128
+[2026-09-06 17:00:48] llama slots test 28/128
+[2026-09-06 17:00:48] llama slots test 29/128
+[2026-09-06 17:00:48] llama slots test 30/128
+[2026-09-06 17:00:48] llama slots test 31/128
+[2026-09-06 17:00:48] llama slots test 32/128
+[2026-09-06 17:00:48] llama slots test 33/128
+[2026-09-06 17:00:48] llama slots test 34/128
+[2026-09-06 17:00:48] llama slots test 35/128
+[2026-09-06 17:00:48] llama slots test 36/128
+[2026-09-06 17:00:48] llama slots test 37/128
+[2026-09-06 17:00:48] llama slots test 38/128
+[2026-09-06 17:00:48] llama slots test 39/128
+[2026-09-06 17:00:48] llama slots test 40/128
+[2026-09-06 17:00:48] llama slots test 41/128
+[2026-09-06 17:00:48] llama slots test 42/128
+[2026-09-06 17:00:48] llama slots test 43/128
+[2026-09-06 17:00:48] llama slots test 44/128
+[2026-09-06 17:00:48] llama slots test 45/128
+[2026-09-06 17:00:48] llama slots test 46/128
+[2026-09-06 17:00:48] llama slots test 47/128
+[2026-09-06 17:00:49] llama slots test 48/128
+[2026-09-06 17:00:49] llama slots test 49/128
+[2026-09-06 17:00:49] llama slots test 50/128
+[2026-09-06 17:00:49] llama slots test 51/128
+[2026-09-06 17:00:49] llama slots test 52/128
+[2026-09-06 17:00:49] llama slots test 53/128
+[2026-09-06 17:00:49] llama slots test 54/128
+[2026-09-06 17:00:49] llama slots test 55/128
+[2026-09-06 17:00:49] llama slots test 56/128
+[2026-09-06 17:00:49] llama slots test 57/128
+[2026-09-06 17:00:49] llama slots test 58/128
+[2026-09-06 17:00:49] llama slots test 59/128
+[2026-09-06 17:00:49] llama slots test 60/128
+[2026-09-06 17:00:49] llama slots test 61/128
+[2026-09-06 17:00:49] llama slots test 62/128
+[2026-09-06 17:00:49] llama slots test 63/128
+[2026-09-06 17:00:49] llama slots test 64/128
+[2026-09-06 17:00:49] llama slots test 65/128
+[2026-09-06 17:00:49] llama slots test 66/128
+[2026-09-06 17:00:49] llama slots test 67/128
+[2026-09-06 17:00:49] llama slots test 68/128
+[2026-09-06 17:00:50] llama slots test 69/128
+[2026-09-06 17:00:50] llama slots test 70/128
+[2026-09-06 17:00:50] llama slots test 71/128
+[2026-09-06 17:00:50] llama slots test 72/128
+[2026-09-06 17:00:50] llama slots test 73/128
+[2026-09-06 17:00:50] llama slots test 74/128
+[2026-09-06 17:00:50] llama slots test 75/128
+[2026-09-06 17:00:50] llama slots test 76/128
+[2026-09-06 17:00:50] llama slots test 77/128
+[2026-09-06 17:00:50] llama slots test 78/128
+[2026-09-06 17:00:50] llama slots test 79/128
+[2026-09-06 17:00:50] llama slots test 80/128
+[2026-09-06 17:00:50] llama slots test 81/128
+[2026-09-06 17:00:50] llama slots test 82/128
+[2026-09-06 17:00:50] llama slots test 83/128
+[2026-09-06 17:00:50] llama slots test 84/128
+[2026-09-06 17:00:50] llama slots test 85/128
+[2026-09-06 17:00:50] llama slots test 86/128
+[2026-09-06 17:00:50] llama slots test 87/128
+[2026-09-06 17:00:50] llama slots test 88/128
+[2026-09-06 17:00:51] llama slots test 89/128
+[2026-09-06 17:00:51] llama slots test 90/128
+[2026-09-06 17:00:51] llama slots test 91/128
+[2026-09-06 17:00:51] llama slots test 92/128
+[2026-09-06 17:00:51] llama slots test 93/128
+[2026-09-06 17:00:51] llama slots test 94/128
+[2026-09-06 17:00:51] llama slots test 95/128
+[2026-09-06 17:00:51] llama slots test 96/128
+[2026-09-06 17:00:51] llama slots test 97/128
+[2026-09-06 17:00:51] llama slots test 98/128
+[2026-09-06 17:00:51] llama slots test 99/128
+[2026-09-06 17:00:51] llama slots test 100/128
+[2026-09-06 17:00:51] llama slots test 101/128
+[2026-09-06 17:00:51] llama slots test 102/128
+[2026-09-06 17:00:51] llama slots test 103/128
+[2026-09-06 17:00:51] llama slots test 104/128
+[2026-09-06 17:00:51] llama slots test 105/128
+[2026-09-06 17:00:51] llama slots test 106/128
+[2026-09-06 17:00:51] llama slots test 107/128
+[2026-09-06 17:00:51] llama slots test 108/128
+[2026-09-06 17:00:52] llama slots test 109/128
+[2026-09-06 17:00:52] llama slots test 110/128
+[2026-09-06 17:00:52] llama slots test 111/128
+[2026-09-06 17:00:52] llama slots test 112/128
+[2026-09-06 17:00:52] llama slots test 113/128
+[2026-09-06 17:00:52] llama slots test 114/128
+[2026-09-06 17:00:52] llama slots test 115/128
+[2026-09-06 17:00:52] llama slots test 116/128
+[2026-09-06 17:00:52] llama slots test 117/128
+[2026-09-06 17:00:52] llama slots test 118/128
+[2026-09-06 17:00:52] llama slots test 119/128
+[2026-09-06 17:00:52] llama slots test 120/128
+[2026-09-06 17:00:52] llama slots test 121/128
+[2026-09-06 17:00:52] llama slots test 122/128
+[2026-09-06 17:00:52] llama slots test 123/128
+[2026-09-06 17:00:52] llama slots test 124/128
+[2026-09-06 17:00:52] llama slots test 125/128
+[2026-09-06 17:00:52] llama slots test 126/128
+[2026-09-06 17:00:52] llama slots test 127/128
+[2026-09-06 17:00:53] llama slots test 128/128
+[2026-09-06 17:00:54] DONE slots_llama
+[2026-09-06 17:00:54] START stage_a
+[2026-09-06 17:01:02] stage_a epoch=1/2 step=1 loss=6.105579
+[2026-09-06 17:01:02] stage_a epoch=1/2 step=2 loss=5.553993
+[2026-09-06 17:01:03] stage_a epoch=1/2 step=3 loss=5.086066
+[2026-09-06 17:01:03] stage_a epoch=1/2 step=4 loss=4.774162
+[2026-09-06 17:01:04] stage_a epoch=1/2 step=5 loss=4.436648
+[2026-09-06 17:01:04] stage_a epoch=1/2 step=6 loss=4.106901
+[2026-09-06 17:01:05] stage_a epoch=1/2 step=7 loss=3.828665
+[2026-09-06 17:01:05] stage_a epoch=1/2 step=8 loss=3.567800
+[2026-09-06 17:01:05] stage_a epoch=1/2 step=9 loss=3.431600
+[2026-09-06 17:01:06] stage_a epoch=1/2 step=10 loss=3.190159
+[2026-09-06 17:01:06] stage_a epoch=1/2 step=11 loss=3.151705
+[2026-09-06 17:01:07] stage_a epoch=1/2 step=12 loss=2.975814
+[2026-09-06 17:01:07] stage_a epoch=1/2 step=13 loss=2.993910
+[2026-09-06 17:01:08] stage_a epoch=1/2 step=14 loss=2.624529
+[2026-09-06 17:01:08] stage_a epoch=1/2 step=15 loss=2.468873
+[2026-09-06 17:01:09] stage_a epoch=1/2 step=16 loss=2.480244
+[2026-09-06 17:01:15] stage_a validation epoch=1 loss=2.359514; best_epoch=1
+[2026-09-06 17:01:15] stage_a epoch=2/2 step=17 loss=2.309596
+[2026-09-06 17:01:15] stage_a epoch=2/2 step=18 loss=2.172576
+[2026-09-06 17:01:16] stage_a epoch=2/2 step=19 loss=2.068094
+[2026-09-06 17:01:16] stage_a epoch=2/2 step=20 loss=2.175097
+[2026-09-06 17:01:17] stage_a epoch=2/2 step=21 loss=2.056527
+[2026-09-06 17:01:17] stage_a epoch=2/2 step=22 loss=2.029933
+[2026-09-06 17:01:18] stage_a epoch=2/2 step=23 loss=1.924999
+[2026-09-06 17:01:18] stage_a epoch=2/2 step=24 loss=2.029823
+[2026-09-06 17:01:19] stage_a epoch=2/2 step=25 loss=2.011187
+[2026-09-06 17:01:19] stage_a epoch=2/2 step=26 loss=1.936111
+[2026-09-06 17:01:20] stage_a epoch=2/2 step=27 loss=1.723664
+[2026-09-06 17:01:20] stage_a epoch=2/2 step=28 loss=1.578967
+[2026-09-06 17:01:21] stage_a epoch=2/2 step=29 loss=1.693377
+[2026-09-06 17:01:21] stage_a epoch=2/2 step=30 loss=1.608929
+[2026-09-06 17:01:22] stage_a epoch=2/2 step=31 loss=1.701562
+[2026-09-06 17:01:22] stage_a epoch=2/2 step=32 loss=1.721026
+[2026-09-06 17:01:35] stage_a validation epoch=2 loss=1.606768; best_epoch=2
+[2026-09-06 17:01:36] DONE stage_a
+[2026-09-06 17:01:36] START stage_b
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   9%|▉         | 36/398 [00:00<00:01, 321.05it/s]Loading weights:  23%|██▎       | 91/398 [00:00<00:00, 446.80it/s]Loading weights:  39%|███▉      | 155/398 [00:00<00:00, 532.39it/s]Loading weights:  53%|█████▎    | 212/398 [00:00<00:00, 522.52it/s]Loading weights:  70%|██████▉   | 278/398 [00:00<00:00, 546.00it/s]Loading weights:  86%|████████▋ | 344/398 [00:00<00:00, 565.08it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 547.33it/s]
+[2026-09-06 17:01:52] stage_b epoch=1/2 step=1 loss=1.116881
+[2026-09-06 17:01:54] stage_b epoch=1/2 step=2 loss=1.349363
+[2026-09-06 17:01:55] stage_b epoch=1/2 step=3 loss=1.409156
+[2026-09-06 17:01:57] stage_b epoch=1/2 step=4 loss=1.582247
+[2026-09-06 17:01:59] stage_b epoch=1/2 step=5 loss=1.673872
+[2026-09-06 17:02:00] stage_b epoch=1/2 step=6 loss=1.407320
+[2026-09-06 17:02:02] stage_b epoch=1/2 step=7 loss=1.188119
+[2026-09-06 17:02:03] stage_b epoch=1/2 step=8 loss=1.540346
+[2026-09-06 17:02:05] stage_b epoch=1/2 step=9 loss=0.852246
+[2026-09-06 17:02:07] stage_b epoch=1/2 step=10 loss=2.603779
+[2026-09-06 17:02:08] stage_b epoch=1/2 step=11 loss=1.292344
+[2026-09-06 17:02:10] stage_b epoch=1/2 step=12 loss=3.431693
+[2026-09-06 17:02:11] stage_b epoch=1/2 step=13 loss=1.714373
+[2026-09-06 17:02:12] stage_b epoch=1/2 step=14 loss=1.909257
+[2026-09-06 17:02:14] stage_b epoch=1/2 step=15 loss=2.686027
+[2026-09-06 17:02:15] stage_b epoch=1/2 step=16 loss=1.724068
+[2026-09-06 17:02:18] stage_b validation epoch=1 loss=1.718758; best_epoch=0
+[2026-09-06 17:02:20] stage_b epoch=2/2 step=17 loss=2.128669
+[2026-09-06 17:02:21] stage_b epoch=2/2 step=18 loss=1.844710
+[2026-09-06 17:02:22] stage_b epoch=2/2 step=19 loss=1.781081
+[2026-09-06 17:02:24] stage_b epoch=2/2 step=20 loss=1.038026
+[2026-09-06 17:02:25] stage_b epoch=2/2 step=21 loss=1.265902
+[2026-09-06 17:02:27] stage_b epoch=2/2 step=22 loss=1.039311
+[2026-09-06 17:02:28] stage_b epoch=2/2 step=23 loss=0.926992
+[2026-09-06 17:02:30] stage_b epoch=2/2 step=24 loss=0.945789
+[2026-09-06 17:02:31] stage_b epoch=2/2 step=25 loss=1.068165
+[2026-09-06 17:02:33] stage_b epoch=2/2 step=26 loss=0.925090
+[2026-09-06 17:02:34] stage_b epoch=2/2 step=27 loss=0.760701
+[2026-09-06 17:02:36] stage_b epoch=2/2 step=28 loss=0.974082
+[2026-09-06 17:02:38] stage_b epoch=2/2 step=29 loss=1.223112
+[2026-09-06 17:02:39] stage_b epoch=2/2 step=30 loss=1.516512
+[2026-09-06 17:02:40] stage_b epoch=2/2 step=31 loss=0.946481
+[2026-09-06 17:02:42] stage_b epoch=2/2 step=32 loss=1.117238
+[2026-09-06 17:02:58] stage_b validation epoch=2 loss=1.032130; best_epoch=2
+[2026-09-06 17:02:59] DONE stage_b
+[2026-09-06 17:02:59] START evaluate
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   9%|▉         | 36/398 [00:00<00:01, 344.17it/s]Loading weights:  23%|██▎       | 92/398 [00:00<00:00, 464.39it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 540.65it/s]Loading weights:  56%|█████▌    | 223/398 [00:00<00:00, 580.45it/s]Loading weights:  73%|███████▎  | 289/398 [00:00<00:00, 593.40it/s]Loading weights:  89%|████████▉ | 355/398 [00:00<00:00, 596.48it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 578.04it/s]
+[2026-09-06 17:03:18] evaluate stage_a/best 1/128
+[2026-09-06 17:03:18] evaluate stage_a/best 2/128
+[2026-09-06 17:03:18] evaluate stage_a/best 3/128
+[2026-09-06 17:03:19] evaluate stage_a/best 4/128
+[2026-09-06 17:03:19] evaluate stage_a/best 5/128
+[2026-09-06 17:03:19] evaluate stage_a/best 6/128
+[2026-09-06 17:03:19] evaluate stage_a/best 7/128
+[2026-09-06 17:03:19] evaluate stage_a/best 8/128
+[2026-09-06 17:03:19] evaluate stage_a/best 9/128
+[2026-09-06 17:03:19] evaluate stage_a/best 10/128
+[2026-09-06 17:03:19] evaluate stage_a/best 11/128
+[2026-09-06 17:03:19] evaluate stage_a/best 12/128
+[2026-09-06 17:03:20] evaluate stage_a/best 13/128
+[2026-09-06 17:03:20] evaluate stage_a/best 14/128
+[2026-09-06 17:03:20] evaluate stage_a/best 15/128
+[2026-09-06 17:03:20] evaluate stage_a/best 16/128
+[2026-09-06 17:03:20] evaluate stage_a/best 17/128
+[2026-09-06 17:03:20] evaluate stage_a/best 18/128
+[2026-09-06 17:03:20] evaluate stage_a/best 19/128
+[2026-09-06 17:03:20] evaluate stage_a/best 20/128
+[2026-09-06 17:03:20] evaluate stage_a/best 21/128
+[2026-09-06 17:03:20] evaluate stage_a/best 22/128
+[2026-09-06 17:03:20] evaluate stage_a/best 23/128
+[2026-09-06 17:03:20] evaluate stage_a/best 24/128
+[2026-09-06 17:03:20] evaluate stage_a/best 25/128
+[2026-09-06 17:03:20] evaluate stage_a/best 26/128
+[2026-09-06 17:03:21] evaluate stage_a/best 27/128
+[2026-09-06 17:03:21] evaluate stage_a/best 28/128
+[2026-09-06 17:03:21] evaluate stage_a/best 29/128
+[2026-09-06 17:03:21] evaluate stage_a/best 30/128
+[2026-09-06 17:03:21] evaluate stage_a/best 31/128
+[2026-09-06 17:03:21] evaluate stage_a/best 32/128
+[2026-09-06 17:03:21] evaluate stage_a/best 33/128
+[2026-09-06 17:03:21] evaluate stage_a/best 34/128
+[2026-09-06 17:03:21] evaluate stage_a/best 35/128
+[2026-09-06 17:03:21] evaluate stage_a/best 36/128
+[2026-09-06 17:03:21] evaluate stage_a/best 37/128
+[2026-09-06 17:03:21] evaluate stage_a/best 38/128
+[2026-09-06 17:03:21] evaluate stage_a/best 39/128
+[2026-09-06 17:03:22] evaluate stage_a/best 40/128
+[2026-09-06 17:03:22] evaluate stage_a/best 41/128
+[2026-09-06 17:03:22] evaluate stage_a/best 42/128
+[2026-09-06 17:03:22] evaluate stage_a/best 43/128
+[2026-09-06 17:03:22] evaluate stage_a/best 44/128
+[2026-09-06 17:03:22] evaluate stage_a/best 45/128
+[2026-09-06 17:03:22] evaluate stage_a/best 46/128
+[2026-09-06 17:03:22] evaluate stage_a/best 47/128
+[2026-09-06 17:03:22] evaluate stage_a/best 48/128
+[2026-09-06 17:03:22] evaluate stage_a/best 49/128
+[2026-09-06 17:03:22] evaluate stage_a/best 50/128
+[2026-09-06 17:03:22] evaluate stage_a/best 51/128
+[2026-09-06 17:03:22] evaluate stage_a/best 52/128
+[2026-09-06 17:03:22] evaluate stage_a/best 53/128
+[2026-09-06 17:03:23] evaluate stage_a/best 54/128
+[2026-09-06 17:03:23] evaluate stage_a/best 55/128
+[2026-09-06 17:03:23] evaluate stage_a/best 56/128
+[2026-09-06 17:03:23] evaluate stage_a/best 57/128
+[2026-09-06 17:03:23] evaluate stage_a/best 58/128
+[2026-09-06 17:03:23] evaluate stage_a/best 59/128
+[2026-09-06 17:03:23] evaluate stage_a/best 60/128
+[2026-09-06 17:03:23] evaluate stage_a/best 61/128
+[2026-09-06 17:03:23] evaluate stage_a/best 62/128
+[2026-09-06 17:03:23] evaluate stage_a/best 63/128
+[2026-09-06 17:03:23] evaluate stage_a/best 64/128
+[2026-09-06 17:03:23] evaluate stage_a/best 65/128
+[2026-09-06 17:03:23] evaluate stage_a/best 66/128
+[2026-09-06 17:03:24] evaluate stage_a/best 67/128
+[2026-09-06 17:03:24] evaluate stage_a/best 68/128
+[2026-09-06 17:03:24] evaluate stage_a/best 69/128
+[2026-09-06 17:03:24] evaluate stage_a/best 70/128
+[2026-09-06 17:03:24] evaluate stage_a/best 71/128
+[2026-09-06 17:03:24] evaluate stage_a/best 72/128
+[2026-09-06 17:03:24] evaluate stage_a/best 73/128
+[2026-09-06 17:03:24] evaluate stage_a/best 74/128
+[2026-09-06 17:03:24] evaluate stage_a/best 75/128
+[2026-09-06 17:03:24] evaluate stage_a/best 76/128
+[2026-09-06 17:03:24] evaluate stage_a/best 77/128
+[2026-09-06 17:03:24] evaluate stage_a/best 78/128
+[2026-09-06 17:03:24] evaluate stage_a/best 79/128
+[2026-09-06 17:03:24] evaluate stage_a/best 80/128
+[2026-09-06 17:03:25] evaluate stage_a/best 81/128
+[2026-09-06 17:03:25] evaluate stage_a/best 82/128
+[2026-09-06 17:03:25] evaluate stage_a/best 83/128
+[2026-09-06 17:03:25] evaluate stage_a/best 84/128
+[2026-09-06 17:03:25] evaluate stage_a/best 85/128
+[2026-09-06 17:03:25] evaluate stage_a/best 86/128
+[2026-09-06 17:03:25] evaluate stage_a/best 87/128
+[2026-09-06 17:03:25] evaluate stage_a/best 88/128
+[2026-09-06 17:03:25] evaluate stage_a/best 89/128
+[2026-09-06 17:03:25] evaluate stage_a/best 90/128
+[2026-09-06 17:03:25] evaluate stage_a/best 91/128
+[2026-09-06 17:03:25] evaluate stage_a/best 92/128
+[2026-09-06 17:03:26] evaluate stage_a/best 93/128
+[2026-09-06 17:03:26] evaluate stage_a/best 94/128
+[2026-09-06 17:03:26] evaluate stage_a/best 95/128
+[2026-09-06 17:03:26] evaluate stage_a/best 96/128
+[2026-09-06 17:03:26] evaluate stage_a/best 97/128
+[2026-09-06 17:03:26] evaluate stage_a/best 98/128
+[2026-09-06 17:03:26] evaluate stage_a/best 99/128
+[2026-09-06 17:03:26] evaluate stage_a/best 100/128
+[2026-09-06 17:03:26] evaluate stage_a/best 101/128
+[2026-09-06 17:03:26] evaluate stage_a/best 102/128
+[2026-09-06 17:03:26] evaluate stage_a/best 103/128
+[2026-09-06 17:03:26] evaluate stage_a/best 104/128
+[2026-09-06 17:03:26] evaluate stage_a/best 105/128
+[2026-09-06 17:03:27] evaluate stage_a/best 106/128
+[2026-09-06 17:03:27] evaluate stage_a/best 107/128
+[2026-09-06 17:03:27] evaluate stage_a/best 108/128
+[2026-09-06 17:03:27] evaluate stage_a/best 109/128
+[2026-09-06 17:03:27] evaluate stage_a/best 110/128
+[2026-09-06 17:03:27] evaluate stage_a/best 111/128
+[2026-09-06 17:03:27] evaluate stage_a/best 112/128
+[2026-09-06 17:03:27] evaluate stage_a/best 113/128
+[2026-09-06 17:03:27] evaluate stage_a/best 114/128
+[2026-09-06 17:03:27] evaluate stage_a/best 115/128
+[2026-09-06 17:03:27] evaluate stage_a/best 116/128
+[2026-09-06 17:03:27] evaluate stage_a/best 117/128
+[2026-09-06 17:03:27] evaluate stage_a/best 118/128
+[2026-09-06 17:03:27] evaluate stage_a/best 119/128
+[2026-09-06 17:03:28] evaluate stage_a/best 120/128
+[2026-09-06 17:03:28] evaluate stage_a/best 121/128
+[2026-09-06 17:03:28] evaluate stage_a/best 122/128
+[2026-09-06 17:03:28] evaluate stage_a/best 123/128
+[2026-09-06 17:03:28] evaluate stage_a/best 124/128
+[2026-09-06 17:03:28] evaluate stage_a/best 125/128
+[2026-09-06 17:03:28] evaluate stage_a/best 126/128
+[2026-09-06 17:03:28] evaluate stage_a/best 127/128
+[2026-09-06 17:03:28] evaluate stage_a/best 128/128
+[2026-09-06 17:03:30] evaluate stage_b/best 1/128
+[2026-09-06 17:03:30] evaluate stage_b/best 2/128
+[2026-09-06 17:03:30] evaluate stage_b/best 3/128
+[2026-09-06 17:03:30] evaluate stage_b/best 4/128
+[2026-09-06 17:03:30] evaluate stage_b/best 5/128
+[2026-09-06 17:03:31] evaluate stage_b/best 6/128
+[2026-09-06 17:03:31] evaluate stage_b/best 7/128
+[2026-09-06 17:03:31] evaluate stage_b/best 8/128
+[2026-09-06 17:03:31] evaluate stage_b/best 9/128
+[2026-09-06 17:03:31] evaluate stage_b/best 10/128
+[2026-09-06 17:03:31] evaluate stage_b/best 11/128
+[2026-09-06 17:03:32] evaluate stage_b/best 12/128
+[2026-09-06 17:03:32] evaluate stage_b/best 13/128
+[2026-09-06 17:03:32] evaluate stage_b/best 14/128
+[2026-09-06 17:03:32] evaluate stage_b/best 15/128
+[2026-09-06 17:03:32] evaluate stage_b/best 16/128
+[2026-09-06 17:03:33] evaluate stage_b/best 17/128
+[2026-09-06 17:03:33] evaluate stage_b/best 18/128
+[2026-09-06 17:03:33] evaluate stage_b/best 19/128
+[2026-09-06 17:03:33] evaluate stage_b/best 20/128
+[2026-09-06 17:03:33] evaluate stage_b/best 21/128
+[2026-09-06 17:03:33] evaluate stage_b/best 22/128
+[2026-09-06 17:03:34] evaluate stage_b/best 23/128
+[2026-09-06 17:03:34] evaluate stage_b/best 24/128
+[2026-09-06 17:03:34] evaluate stage_b/best 25/128
+[2026-09-06 17:03:34] evaluate stage_b/best 26/128
+[2026-09-06 17:03:34] evaluate stage_b/best 27/128
+[2026-09-06 17:03:35] evaluate stage_b/best 28/128
+[2026-09-06 17:03:35] evaluate stage_b/best 29/128
+[2026-09-06 17:03:35] evaluate stage_b/best 30/128
+[2026-09-06 17:03:35] evaluate stage_b/best 31/128
+[2026-09-06 17:03:35] evaluate stage_b/best 32/128
+[2026-09-06 17:03:35] evaluate stage_b/best 33/128
+[2026-09-06 17:03:36] evaluate stage_b/best 34/128
+[2026-09-06 17:03:36] evaluate stage_b/best 35/128
+[2026-09-06 17:03:36] evaluate stage_b/best 36/128
+[2026-09-06 17:03:36] evaluate stage_b/best 37/128
+[2026-09-06 17:03:36] evaluate stage_b/best 38/128
+[2026-09-06 17:03:37] evaluate stage_b/best 39/128
+[2026-09-06 17:03:37] evaluate stage_b/best 40/128
+[2026-09-06 17:03:37] evaluate stage_b/best 41/128
+[2026-09-06 17:03:37] evaluate stage_b/best 42/128
+[2026-09-06 17:03:37] evaluate stage_b/best 43/128
+[2026-09-06 17:03:38] evaluate stage_b/best 44/128
+[2026-09-06 17:03:38] evaluate stage_b/best 45/128
+[2026-09-06 17:03:38] evaluate stage_b/best 46/128
+[2026-09-06 17:03:38] evaluate stage_b/best 47/128
+[2026-09-06 17:03:38] evaluate stage_b/best 48/128
+[2026-09-06 17:03:38] evaluate stage_b/best 49/128
+[2026-09-06 17:03:39] evaluate stage_b/best 50/128
+[2026-09-06 17:03:39] evaluate stage_b/best 51/128
+[2026-09-06 17:03:39] evaluate stage_b/best 52/128
+[2026-09-06 17:03:39] evaluate stage_b/best 53/128
+[2026-09-06 17:03:39] evaluate stage_b/best 54/128
+[2026-09-06 17:03:40] evaluate stage_b/best 55/128
+[2026-09-06 17:03:40] evaluate stage_b/best 56/128
+[2026-09-06 17:03:40] evaluate stage_b/best 57/128
+[2026-09-06 17:03:40] evaluate stage_b/best 58/128
+[2026-09-06 17:03:40] evaluate stage_b/best 59/128
+[2026-09-06 17:03:41] evaluate stage_b/best 60/128
+[2026-09-06 17:03:41] evaluate stage_b/best 61/128
+[2026-09-06 17:03:41] evaluate stage_b/best 62/128
+[2026-09-06 17:03:41] evaluate stage_b/best 63/128
+[2026-09-06 17:03:41] evaluate stage_b/best 64/128
+[2026-09-06 17:03:41] evaluate stage_b/best 65/128
+[2026-09-06 17:03:42] evaluate stage_b/best 66/128
+[2026-09-06 17:03:42] evaluate stage_b/best 67/128
+[2026-09-06 17:03:42] evaluate stage_b/best 68/128
+[2026-09-06 17:03:42] evaluate stage_b/best 69/128
+[2026-09-06 17:03:42] evaluate stage_b/best 70/128
+[2026-09-06 17:03:43] evaluate stage_b/best 71/128
+[2026-09-06 17:03:43] evaluate stage_b/best 72/128
+[2026-09-06 17:03:43] evaluate stage_b/best 73/128
+[2026-09-06 17:03:43] evaluate stage_b/best 74/128
+[2026-09-06 17:03:43] evaluate stage_b/best 75/128
+[2026-09-06 17:03:43] evaluate stage_b/best 76/128
+[2026-09-06 17:03:44] evaluate stage_b/best 77/128
+[2026-09-06 17:03:44] evaluate stage_b/best 78/128
+[2026-09-06 17:03:44] evaluate stage_b/best 79/128
+[2026-09-06 17:03:44] evaluate stage_b/best 80/128
+[2026-09-06 17:03:44] evaluate stage_b/best 81/128
+[2026-09-06 17:03:45] evaluate stage_b/best 82/128
+[2026-09-06 17:03:45] evaluate stage_b/best 83/128
+[2026-09-06 17:03:45] evaluate stage_b/best 84/128
+[2026-09-06 17:03:45] evaluate stage_b/best 85/128
+[2026-09-06 17:03:45] evaluate stage_b/best 86/128
+[2026-09-06 17:03:46] evaluate stage_b/best 87/128
+[2026-09-06 17:03:46] evaluate stage_b/best 88/128
+[2026-09-06 17:03:46] evaluate stage_b/best 89/128
+[2026-09-06 17:03:46] evaluate stage_b/best 90/128
+[2026-09-06 17:03:46] evaluate stage_b/best 91/128
+[2026-09-06 17:03:47] evaluate stage_b/best 92/128
+[2026-09-06 17:03:47] evaluate stage_b/best 93/128
+[2026-09-06 17:03:47] evaluate stage_b/best 94/128
+[2026-09-06 17:03:47] evaluate stage_b/best 95/128
+[2026-09-06 17:03:48] evaluate stage_b/best 96/128
+[2026-09-06 17:03:48] evaluate stage_b/best 97/128
+[2026-09-06 17:03:48] evaluate stage_b/best 98/128
+[2026-09-06 17:03:48] evaluate stage_b/best 99/128
+[2026-09-06 17:03:48] evaluate stage_b/best 100/128
+[2026-09-06 17:03:48] evaluate stage_b/best 101/128
+[2026-09-06 17:03:49] evaluate stage_b/best 102/128
+[2026-09-06 17:03:49] evaluate stage_b/best 103/128
+[2026-09-06 17:03:49] evaluate stage_b/best 104/128
+[2026-09-06 17:03:49] evaluate stage_b/best 105/128
+[2026-09-06 17:03:49] evaluate stage_b/best 106/128
+[2026-09-06 17:03:50] evaluate stage_b/best 107/128
+[2026-09-06 17:03:50] evaluate stage_b/best 108/128
+[2026-09-06 17:03:50] evaluate stage_b/best 109/128
+[2026-09-06 17:03:50] evaluate stage_b/best 110/128
+[2026-09-06 17:03:50] evaluate stage_b/best 111/128
+[2026-09-06 17:03:51] evaluate stage_b/best 112/128
+[2026-09-06 17:03:51] evaluate stage_b/best 113/128
+[2026-09-06 17:03:51] evaluate stage_b/best 114/128
+[2026-09-06 17:03:51] evaluate stage_b/best 115/128
+[2026-09-06 17:03:51] evaluate stage_b/best 116/128
+[2026-09-06 17:03:52] evaluate stage_b/best 117/128
+[2026-09-06 17:03:52] evaluate stage_b/best 118/128
+[2026-09-06 17:03:52] evaluate stage_b/best 119/128
+[2026-09-06 17:03:52] evaluate stage_b/best 120/128
+[2026-09-06 17:03:52] evaluate stage_b/best 121/128
+[2026-09-06 17:03:52] evaluate stage_b/best 122/128
+[2026-09-06 17:03:53] evaluate stage_b/best 123/128
+[2026-09-06 17:03:53] evaluate stage_b/best 124/128
+[2026-09-06 17:03:53] evaluate stage_b/best 125/128
+[2026-09-06 17:03:53] evaluate stage_b/best 126/128
+[2026-09-06 17:03:53] evaluate stage_b/best 127/128
+[2026-09-06 17:03:54] evaluate stage_b/best 128/128
+[2026-09-06 17:03:55] evaluate stage_b/best_trained 1/128
+[2026-09-06 17:03:55] evaluate stage_b/best_trained 2/128
+[2026-09-06 17:03:55] evaluate stage_b/best_trained 3/128
+[2026-09-06 17:03:55] evaluate stage_b/best_trained 4/128
+[2026-09-06 17:03:55] evaluate stage_b/best_trained 5/128
+[2026-09-06 17:03:55] evaluate stage_b/best_trained 6/128
+[2026-09-06 17:03:55] evaluate stage_b/best_trained 7/128
+[2026-09-06 17:03:55] evaluate stage_b/best_trained 8/128
+[2026-09-06 17:03:55] evaluate stage_b/best_trained 9/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 10/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 11/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 12/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 13/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 14/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 15/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 16/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 17/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 18/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 19/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 20/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 21/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 22/128
+[2026-09-06 17:03:56] evaluate stage_b/best_trained 23/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 24/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 25/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 26/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 27/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 28/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 29/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 30/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 31/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 32/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 33/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 34/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 35/128
+[2026-09-06 17:03:57] evaluate stage_b/best_trained 36/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 37/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 38/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 39/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 40/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 41/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 42/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 43/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 44/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 45/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 46/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 47/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 48/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 49/128
+[2026-09-06 17:03:58] evaluate stage_b/best_trained 50/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 51/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 52/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 53/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 54/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 55/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 56/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 57/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 58/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 59/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 60/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 61/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 62/128
+[2026-09-06 17:03:59] evaluate stage_b/best_trained 63/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 64/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 65/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 66/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 67/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 68/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 69/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 70/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 71/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 72/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 73/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 74/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 75/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 76/128
+[2026-09-06 17:04:00] evaluate stage_b/best_trained 77/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 78/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 79/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 80/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 81/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 82/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 83/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 84/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 85/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 86/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 87/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 88/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 89/128
+[2026-09-06 17:04:01] evaluate stage_b/best_trained 90/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 91/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 92/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 93/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 94/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 95/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 96/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 97/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 98/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 99/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 100/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 101/128
+[2026-09-06 17:04:02] evaluate stage_b/best_trained 102/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 103/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 104/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 105/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 106/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 107/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 108/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 109/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 110/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 111/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 112/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 113/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 114/128
+[2026-09-06 17:04:03] evaluate stage_b/best_trained 115/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 116/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 117/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 118/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 119/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 120/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 121/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 122/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 123/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 124/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 125/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 126/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 127/128
+[2026-09-06 17:04:04] evaluate stage_b/best_trained 128/128
+[2026-09-06 17:04:06] evaluate stage_b/last 1/128
+[2026-09-06 17:04:06] evaluate stage_b/last 2/128
+[2026-09-06 17:04:06] evaluate stage_b/last 3/128
+[2026-09-06 17:04:06] evaluate stage_b/last 4/128
+[2026-09-06 17:04:06] evaluate stage_b/last 5/128
+[2026-09-06 17:04:06] evaluate stage_b/last 6/128
+[2026-09-06 17:04:06] evaluate stage_b/last 7/128
+[2026-09-06 17:04:06] evaluate stage_b/last 8/128
+[2026-09-06 17:04:06] evaluate stage_b/last 9/128
+[2026-09-06 17:04:06] evaluate stage_b/last 10/128
+[2026-09-06 17:04:06] evaluate stage_b/last 11/128
+[2026-09-06 17:04:06] evaluate stage_b/last 12/128
+[2026-09-06 17:04:06] evaluate stage_b/last 13/128
+[2026-09-06 17:04:06] evaluate stage_b/last 14/128
+[2026-09-06 17:04:07] evaluate stage_b/last 15/128
+[2026-09-06 17:04:07] evaluate stage_b/last 16/128
+[2026-09-06 17:04:07] evaluate stage_b/last 17/128
+[2026-09-06 17:04:07] evaluate stage_b/last 18/128
+[2026-09-06 17:04:07] evaluate stage_b/last 19/128
+[2026-09-06 17:04:07] evaluate stage_b/last 20/128
+[2026-09-06 17:04:07] evaluate stage_b/last 21/128
+[2026-09-06 17:04:07] evaluate stage_b/last 22/128
+[2026-09-06 17:04:07] evaluate stage_b/last 23/128
+[2026-09-06 17:04:07] evaluate stage_b/last 24/128
+[2026-09-06 17:04:07] evaluate stage_b/last 25/128
+[2026-09-06 17:04:07] evaluate stage_b/last 26/128
+[2026-09-06 17:04:07] evaluate stage_b/last 27/128
+[2026-09-06 17:04:08] evaluate stage_b/last 28/128
+[2026-09-06 17:04:08] evaluate stage_b/last 29/128
+[2026-09-06 17:04:08] evaluate stage_b/last 30/128
+[2026-09-06 17:04:08] evaluate stage_b/last 31/128
+[2026-09-06 17:04:08] evaluate stage_b/last 32/128
+[2026-09-06 17:04:08] evaluate stage_b/last 33/128
+[2026-09-06 17:04:08] evaluate stage_b/last 34/128
+[2026-09-06 17:04:08] evaluate stage_b/last 35/128
+[2026-09-06 17:04:08] evaluate stage_b/last 36/128
+[2026-09-06 17:04:08] evaluate stage_b/last 37/128
+[2026-09-06 17:04:08] evaluate stage_b/last 38/128
+[2026-09-06 17:04:08] evaluate stage_b/last 39/128
+[2026-09-06 17:04:08] evaluate stage_b/last 40/128
+[2026-09-06 17:04:09] evaluate stage_b/last 41/128
+[2026-09-06 17:04:09] evaluate stage_b/last 42/128
+[2026-09-06 17:04:09] evaluate stage_b/last 43/128
+[2026-09-06 17:04:09] evaluate stage_b/last 44/128
+[2026-09-06 17:04:09] evaluate stage_b/last 45/128
+[2026-09-06 17:04:09] evaluate stage_b/last 46/128
+[2026-09-06 17:04:09] evaluate stage_b/last 47/128
+[2026-09-06 17:04:09] evaluate stage_b/last 48/128
+[2026-09-06 17:04:09] evaluate stage_b/last 49/128
+[2026-09-06 17:04:09] evaluate stage_b/last 50/128
+[2026-09-06 17:04:09] evaluate stage_b/last 51/128
+[2026-09-06 17:04:09] evaluate stage_b/last 52/128
+[2026-09-06 17:04:09] evaluate stage_b/last 53/128
+[2026-09-06 17:04:10] evaluate stage_b/last 54/128
+[2026-09-06 17:04:10] evaluate stage_b/last 55/128
+[2026-09-06 17:04:10] evaluate stage_b/last 56/128
+[2026-09-06 17:04:10] evaluate stage_b/last 57/128
+[2026-09-06 17:04:10] evaluate stage_b/last 58/128
+[2026-09-06 17:04:10] evaluate stage_b/last 59/128
+[2026-09-06 17:04:10] evaluate stage_b/last 60/128
+[2026-09-06 17:04:10] evaluate stage_b/last 61/128
+[2026-09-06 17:04:10] evaluate stage_b/last 62/128
+[2026-09-06 17:04:10] evaluate stage_b/last 63/128
+[2026-09-06 17:04:10] evaluate stage_b/last 64/128
+[2026-09-06 17:04:10] evaluate stage_b/last 65/128
+[2026-09-06 17:04:10] evaluate stage_b/last 66/128
+[2026-09-06 17:04:11] evaluate stage_b/last 67/128
+[2026-09-06 17:04:11] evaluate stage_b/last 68/128
+[2026-09-06 17:04:11] evaluate stage_b/last 69/128
+[2026-09-06 17:04:11] evaluate stage_b/last 70/128
+[2026-09-06 17:04:11] evaluate stage_b/last 71/128
+[2026-09-06 17:04:11] evaluate stage_b/last 72/128
+[2026-09-06 17:04:11] evaluate stage_b/last 73/128
+[2026-09-06 17:04:11] evaluate stage_b/last 74/128
+[2026-09-06 17:04:11] evaluate stage_b/last 75/128
+[2026-09-06 17:04:11] evaluate stage_b/last 76/128
+[2026-09-06 17:04:11] evaluate stage_b/last 77/128
+[2026-09-06 17:04:11] evaluate stage_b/last 78/128
+[2026-09-06 17:04:11] evaluate stage_b/last 79/128
+[2026-09-06 17:04:12] evaluate stage_b/last 80/128
+[2026-09-06 17:04:12] evaluate stage_b/last 81/128
+[2026-09-06 17:04:12] evaluate stage_b/last 82/128
+[2026-09-06 17:04:12] evaluate stage_b/last 83/128
+[2026-09-06 17:04:12] evaluate stage_b/last 84/128
+[2026-09-06 17:04:12] evaluate stage_b/last 85/128
+[2026-09-06 17:04:12] evaluate stage_b/last 86/128
+[2026-09-06 17:04:12] evaluate stage_b/last 87/128
+[2026-09-06 17:04:12] evaluate stage_b/last 88/128
+[2026-09-06 17:04:12] evaluate stage_b/last 89/128
+[2026-09-06 17:04:12] evaluate stage_b/last 90/128
+[2026-09-06 17:04:12] evaluate stage_b/last 91/128
+[2026-09-06 17:04:12] evaluate stage_b/last 92/128
+[2026-09-06 17:04:13] evaluate stage_b/last 93/128
+[2026-09-06 17:04:13] evaluate stage_b/last 94/128
+[2026-09-06 17:04:13] evaluate stage_b/last 95/128
+[2026-09-06 17:04:13] evaluate stage_b/last 96/128
+[2026-09-06 17:04:13] evaluate stage_b/last 97/128
+[2026-09-06 17:04:13] evaluate stage_b/last 98/128
+[2026-09-06 17:04:13] evaluate stage_b/last 99/128
+[2026-09-06 17:04:13] evaluate stage_b/last 100/128
+[2026-09-06 17:04:13] evaluate stage_b/last 101/128
+[2026-09-06 17:04:13] evaluate stage_b/last 102/128
+[2026-09-06 17:04:13] evaluate stage_b/last 103/128
+[2026-09-06 17:04:13] evaluate stage_b/last 104/128
+[2026-09-06 17:04:14] evaluate stage_b/last 105/128
+[2026-09-06 17:04:14] evaluate stage_b/last 106/128
+[2026-09-06 17:04:14] evaluate stage_b/last 107/128
+[2026-09-06 17:04:14] evaluate stage_b/last 108/128
+[2026-09-06 17:04:14] evaluate stage_b/last 109/128
+[2026-09-06 17:04:14] evaluate stage_b/last 110/128
+[2026-09-06 17:04:14] evaluate stage_b/last 111/128
+[2026-09-06 17:04:14] evaluate stage_b/last 112/128
+[2026-09-06 17:04:14] evaluate stage_b/last 113/128
+[2026-09-06 17:04:14] evaluate stage_b/last 114/128
+[2026-09-06 17:04:14] evaluate stage_b/last 115/128
+[2026-09-06 17:04:14] evaluate stage_b/last 116/128
+[2026-09-06 17:04:14] evaluate stage_b/last 117/128
+[2026-09-06 17:04:15] evaluate stage_b/last 118/128
+[2026-09-06 17:04:15] evaluate stage_b/last 119/128
+[2026-09-06 17:04:15] evaluate stage_b/last 120/128
+[2026-09-06 17:04:15] evaluate stage_b/last 121/128
+[2026-09-06 17:04:15] evaluate stage_b/last 122/128
+[2026-09-06 17:04:15] evaluate stage_b/last 123/128
+[2026-09-06 17:04:15] evaluate stage_b/last 124/128
+[2026-09-06 17:04:15] evaluate stage_b/last 125/128
+[2026-09-06 17:04:15] evaluate stage_b/last 126/128
+[2026-09-06 17:04:15] evaluate stage_b/last 127/128
+[2026-09-06 17:04:15] evaluate stage_b/last 128/128
+[2026-09-06 17:04:15] Evaluation files saved
+[2026-09-06 17:04:16] DONE evaluate
+[2026-09-06 17:04:16] ALL EXPERIMENTS COMPLETED

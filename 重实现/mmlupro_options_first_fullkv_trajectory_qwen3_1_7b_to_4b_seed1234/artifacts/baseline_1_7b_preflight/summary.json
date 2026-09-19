@@ -1,0 +1,52 @@
+{
+  "sample_count": 32,
+  "conditions": {
+    "1_7b_options_first_full_text": {
+      "count": 32,
+      "accuracy": 0.21875,
+      "native_agreement": null,
+      "native_choice_logit_cosine": null,
+      "native_to_condition_choice_kl": null,
+      "category_accuracy": {
+        "biology": 0.0,
+        "business": 0.0,
+        "chemistry": 0.5,
+        "computer science": 0.0,
+        "economics": 0.0,
+        "engineering": 0.0,
+        "health": 0.5,
+        "history": 0.0,
+        "law": 0.0,
+        "math": 0.3333333333333333,
+        "other": 0.3333333333333333,
+        "philosophy": 0.3333333333333333,
+        "physics": 0.0,
+        "psychology": 1.0
+      }
+    },
+    "1_7b_standard_question_first": {
+      "count": 32,
+      "accuracy": 0.25,
+      "native_agreement": null,
+      "native_choice_logit_cosine": null,
+      "native_to_condition_choice_kl": null,
+      "category_accuracy": {
+        "biology": 0.0,
+        "business": 0.0,
+        "chemistry": 0.5,
+        "computer science": 0.0,
+        "economics": 0.5,
+        "engineering": 0.0,
+        "health": 0.5,
+        "history": 0.0,
+        "law": 0.3333333333333333,
+        "math": 0.3333333333333333,
+        "other": 0.3333333333333333,
+        "philosophy": 0.0,
+        "physics": 0.0,
+        "psychology": 1.0
+      }
+    }
+  },
+  "same_samples_as_protocol_audit": true
+}

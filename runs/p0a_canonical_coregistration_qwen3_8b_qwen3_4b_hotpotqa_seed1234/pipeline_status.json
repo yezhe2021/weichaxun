@@ -1,0 +1,21 @@
+{
+  "state": "completed",
+  "started_at": 1785133430.8234575,
+  "completed_stages": [
+    "prepare",
+    "cpu_self_test",
+    "sanity",
+    "extract_a_smoke",
+    "extract_b_smoke",
+    "private_smoke",
+    "shared_smoke",
+    "smoke_passed",
+    "extract_a",
+    "extract_b",
+    "private_formal",
+    "shared_formal",
+    "final_evaluation"
+  ],
+  "last_completed_at": 1785134103.8496962,
+  "finished_at": 1785134103.8500214
+}

@@ -1,0 +1,51 @@
+{
+  "seed": 1234,
+  "datasets": {
+    "openbookqa": {
+      "train": "/home/yezhe/all_models/datasets/allenai/OpenBookQA-V1-Sep2018/Data/Main/train.jsonl",
+      "validation": "/home/yezhe/all_models/datasets/allenai/OpenBookQA-V1-Sep2018/Data/Main/dev.jsonl",
+      "test": "/home/yezhe/all_models/datasets/allenai/OpenBookQA-V1-Sep2018/Data/Main/test.jsonl"
+    },
+    "arc_challenge_zip": "/home/yezhe/all_models/datasets/OmniData/ARC/raw/ARC-V1-Feb2018.zip",
+    "mmlu_pro_test": "/home/yezhe/数据集/MMLU-Pro/data/test-00000-of-00001.parquet"
+  },
+  "models": {
+    "qwen": "/home/yezhe/all_models/models/Qwen/Qwen3-4B",
+    "gemma": "/home/yezhe/all_models/models/LLM-Research/gemma-3-4b-it"
+  },
+  "per_dataset_samples": {
+    "train": 1024,
+    "validation": 128,
+    "test": 128
+  },
+  "train_samples": 3072,
+  "validation_samples": 384,
+  "test_samples": 384,
+  "audit_samples": 32,
+  "regions": 32,
+  "regions_by_dataset": {
+    "mmlu_pro": 64
+  },
+  "max_body_tokens": 2048,
+  "batch_size": 8,
+  "stage_a_epochs": 4,
+  "stage_a_steps": 1536,
+  "stage_a_learning_rate": 0.001,
+  "stage_b_epochs": 2,
+  "stage_b_steps": 768,
+  "validation_interval_steps": 192,
+  "learning_rate": 0.0001,
+  "clip": 30.0,
+  "temperature": 1.0,
+  "adapter_rank": 64,
+  "depth_hidden_dim": 1024,
+  "depth_output_dim": 256,
+  "head_mapping": "full_head",
+  "gemma_dtype": "float32",
+  "attention_implementation": "eager",
+  "architecture": "full34_headmix256_multidataset_train1024_gemma4_to_qwen4",
+  "protocol": "multidataset_standardprompt_options32_mmlu64_gemma4_to_qwen4_train1024_v3",
+  "split_policy": "balanced leak-free OpenBookQA+ARC-Challenge+MMLU-Pro; 1024/128/128 each; seed1234",
+  "mode": "study",
+  "signature": "4cd4c43f1b01fbe57d969da26baf4c9961d8c3477a944ff4cec5cd5176dd922c"
+}

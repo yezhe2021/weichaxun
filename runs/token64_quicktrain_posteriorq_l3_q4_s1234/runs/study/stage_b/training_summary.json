@@ -1,0 +1,79 @@
+{
+  "stage": "B",
+  "objective": "32-memory Oracle final-position A-J choice KL only",
+  "initialized_from_stage_a_step": 64,
+  "steps": 128,
+  "clip_rate": 0.0078125,
+  "seconds": 463.79885611496866,
+  "selection": "validation only",
+  "best_accuracy": {
+    "step": 128,
+    "path": "/home/yezhe/异构模型/mmlupro_posteriorq_full28_diagonal_token64_quicktrain_l3_to_q4_seed1234/runs/study/stage_b/checkpoints/step_128.pt",
+    "functional": {
+      "accuracy": 0.140625,
+      "oracle_accuracy": 0.359375,
+      "oracle_agreement": 0.15625,
+      "oracle_choice_kl": 1.2542634714627638
+    },
+    "representation": {
+      "loss": 1.5117017701268196,
+      "k_nmse": 0.19456760864704847,
+      "v_nmse": 0.7238263078033924,
+      "k_cosine": 0.8175381869077682,
+      "v_cosine": 0.5891540162265301
+    }
+  },
+  "best_choice_kl": {
+    "step": 64,
+    "path": "/home/yezhe/异构模型/mmlupro_posteriorq_full28_diagonal_token64_quicktrain_l3_to_q4_seed1234/runs/study/stage_b/checkpoints/step_64.pt",
+    "functional": {
+      "accuracy": 0.09375,
+      "oracle_accuracy": 0.359375,
+      "oracle_agreement": 0.203125,
+      "oracle_choice_kl": 1.1828354413155466
+    },
+    "representation": {
+      "loss": 1.4535492584109306,
+      "k_nmse": 0.15963619388639927,
+      "v_nmse": 0.7231004759669304,
+      "k_cosine": 0.8365705721080303,
+      "v_cosine": 0.5926168411970139
+    }
+  },
+  "candidates": [
+    {
+      "step": 64,
+      "path": "/home/yezhe/异构模型/mmlupro_posteriorq_full28_diagonal_token64_quicktrain_l3_to_q4_seed1234/runs/study/stage_b/checkpoints/step_64.pt",
+      "functional": {
+        "accuracy": 0.09375,
+        "oracle_accuracy": 0.359375,
+        "oracle_agreement": 0.203125,
+        "oracle_choice_kl": 1.1828354413155466
+      },
+      "representation": {
+        "loss": 1.4535492584109306,
+        "k_nmse": 0.15963619388639927,
+        "v_nmse": 0.7231004759669304,
+        "k_cosine": 0.8365705721080303,
+        "v_cosine": 0.5926168411970139
+      }
+    },
+    {
+      "step": 128,
+      "path": "/home/yezhe/异构模型/mmlupro_posteriorq_full28_diagonal_token64_quicktrain_l3_to_q4_seed1234/runs/study/stage_b/checkpoints/step_128.pt",
+      "functional": {
+        "accuracy": 0.140625,
+        "oracle_accuracy": 0.359375,
+        "oracle_agreement": 0.15625,
+        "oracle_choice_kl": 1.2542634714627638
+      },
+      "representation": {
+        "loss": 1.5117017701268196,
+        "k_nmse": 0.19456760864704847,
+        "v_nmse": 0.7238263078033924,
+        "k_cosine": 0.8175381869077682,
+        "v_cosine": 0.5891540162265301
+      }
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+[2026-07-27 14:23:50] P0-A pipeline started
+[2026-07-27 14:23:50] Pipeline stage started: prepare
+[2026-07-27 14:23:55] Pipeline stage completed: prepare
+[2026-07-27 14:23:55] Pipeline stage started: cpu_self_test
+[2026-07-27 14:23:59] CPU structural self-test passed
+[2026-07-27 14:24:00] Pipeline stage completed: cpu_self_test
+[2026-07-27 14:24:00] Pipeline stage started: sanity
+[2026-07-27 14:24:04] Context invariance sanity (a) started
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 50/399 [00:00<00:00, 497.65it/s]Loading weights:  26%|██▌       | 103/399 [00:00<00:00, 512.13it/s]Loading weights:  40%|███▉      | 158/399 [00:00<00:00, 514.22it/s]Loading weights:  53%|█████▎    | 213/399 [00:00<00:00, 523.73it/s]Loading weights:  67%|██████▋   | 268/399 [00:00<00:00, 531.17it/s]Loading weights:  81%|████████  | 323/399 [00:00<00:00, 521.01it/s]Loading weights:  95%|█████████▍| 378/399 [00:00<00:00, 511.37it/s]Loading weights: 100%|██████████| 399/399 [00:00<00:00, 524.42it/s]
+[2026-07-27 14:24:14] Context invariance sanity (a) passed
+[2026-07-27 14:24:14] Context invariance sanity (b) started
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 110/398 [00:00<00:00, 1083.12it/s]Loading weights:  55%|█████▌    | 219/398 [00:00<00:00, 1068.84it/s]Loading weights:  82%|████████▏ | 326/398 [00:00<00:00, 1006.52it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1046.34it/s]
+[2026-07-27 14:24:17] Context invariance sanity (b) passed
+[2026-07-27 14:24:19] Pipeline stage completed: sanity
+[2026-07-27 14:24:19] Pipeline stage started: extract_a
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 59/399 [00:00<00:00, 551.49it/s]Loading weights:  29%|██▉       | 115/399 [00:00<00:00, 551.08it/s]Loading weights:  43%|████▎     | 171/399 [00:00<00:00, 545.26it/s]Loading weights:  58%|█████▊    | 233/399 [00:00<00:00, 556.34it/s]Loading weights:  72%|███████▏  | 289/399 [00:00<00:00, 538.53it/s]Loading weights:  86%|████████▌ | 343/399 [00:00<00:00, 512.28it/s]Loading weights:  99%|█████████▉| 395/399 [00:00<00:00, 488.94it/s]Loading weights: 100%|██████████| 399/399 [00:00<00:00, 521.53it/s]
+[2026-07-27 14:24:33] Native extraction a: 16 samples
+[2026-07-27 14:24:35] Native extraction a: 4/16
+[2026-07-27 14:24:36] Native extraction a: 8/16
+[2026-07-27 14:24:37] Native extraction a: 12/16
+[2026-07-27 14:24:39] Native extraction a: 16/16
+[2026-07-27 14:24:40] Pipeline stage completed: extract_a_smoke
+[2026-07-27 14:24:40] Pipeline stage started: extract_b
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 103/398 [00:00<00:00, 1005.96it/s]Loading weights:  53%|█████▎    | 212/398 [00:00<00:00, 1053.14it/s]Loading weights:  80%|███████▉  | 318/398 [00:00<00:00, 1011.38it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1006.23it/s]
+[2026-07-27 14:24:51] Native extraction b: 16 samples
+[2026-07-27 14:24:53] Native extraction b: 4/16
+[2026-07-27 14:24:54] Native extraction b: 8/16
+[2026-07-27 14:24:55] Native extraction b: 12/16
+[2026-07-27 14:24:56] Native extraction b: 16/16
+[2026-07-27 14:24:58] Pipeline stage completed: extract_b_smoke
+[2026-07-27 14:24:59] Training private_smoke started
+[2026-07-27 14:25:00] Training private_smoke: step 1
+[2026-07-27 14:25:01] Training private_smoke: step 2
+[2026-07-27 14:25:01] Training private_smoke completed
+[2026-07-27 14:25:01] Pipeline stage completed: private_smoke
+[2026-07-27 14:25:01] Training shared_smoke started
+[2026-07-27 14:25:01] Training shared_smoke: step 1
+[2026-07-27 14:25:02] Training shared_smoke: step 2
+[2026-07-27 14:25:02] Training shared_smoke completed
+[2026-07-27 14:25:02] Pipeline stage completed: shared_smoke
+[2026-07-27 14:25:02] Pipeline stage completed: smoke_passed
+[2026-07-27 14:25:02] Pipeline stage started: extract_a
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:  14%|█▎        | 54/399 [00:00<00:00, 462.72it/s]Loading weights:  26%|██▋       | 105/399 [00:00<00:00, 477.57it/s]Loading weights:  40%|███▉      | 158/399 [00:00<00:00, 498.83it/s]Loading weights:  52%|█████▏    | 209/399 [00:00<00:00, 499.41it/s]Loading weights:  65%|██████▌   | 260/399 [00:00<00:00, 482.75it/s]Loading weights:  77%|███████▋  | 309/399 [00:00<00:00, 473.07it/s]Loading weights:  89%|████████▉ | 357/399 [00:00<00:00, 473.56it/s]Loading weights: 100%|██████████| 399/399 [00:00<00:00, 481.71it/s]
+[2026-07-27 14:25:17] Native extraction a: 320 samples
+[2026-07-27 14:25:19] Native extraction a: 12/320
+[2026-07-27 14:25:20] Native extraction a: 16/320
+[2026-07-27 14:25:22] Native extraction a: 20/320
+[2026-07-27 14:25:23] Native extraction a: 24/320
+[2026-07-27 14:25:25] Native extraction a: 28/320
+[2026-07-27 14:25:26] Native extraction a: 32/320
+[2026-07-27 14:25:27] Native extraction a: 36/320
+[2026-07-27 14:25:29] Native extraction a: 40/320
+[2026-07-27 14:25:30] Native extraction a: 44/320
+[2026-07-27 14:25:32] Native extraction a: 48/320
+[2026-07-27 14:25:33] Native extraction a: 52/320
+[2026-07-27 14:25:34] Native extraction a: 56/320
+[2026-07-27 14:25:35] Native extraction a: 60/320
+[2026-07-27 14:25:36] Native extraction a: 64/320
+[2026-07-27 14:25:37] Native extraction a: 68/320
+[2026-07-27 14:25:39] Native extraction a: 72/320
+[2026-07-27 14:25:40] Native extraction a: 76/320
+[2026-07-27 14:25:41] Native extraction a: 80/320
+[2026-07-27 14:25:42] Native extraction a: 84/320
+[2026-07-27 14:25:43] Native extraction a: 88/320
+[2026-07-27 14:25:45] Native extraction a: 92/320
+[2026-07-27 14:25:46] Native extraction a: 96/320
+[2026-07-27 14:25:47] Native extraction a: 100/320
+[2026-07-27 14:25:49] Native extraction a: 104/320
+[2026-07-27 14:25:50] Native extraction a: 108/320
+[2026-07-27 14:25:52] Native extraction a: 112/320
+[2026-07-27 14:25:53] Native extraction a: 116/320
+[2026-07-27 14:25:55] Native extraction a: 120/320
+[2026-07-27 14:25:57] Native extraction a: 124/320
+[2026-07-27 14:25:59] Native extraction a: 128/320
+[2026-07-27 14:26:01] Native extraction a: 132/320
+[2026-07-27 14:26:03] Native extraction a: 136/320
+[2026-07-27 14:26:06] Native extraction a: 140/320
+[2026-07-27 14:26:08] Native extraction a: 144/320
+[2026-07-27 14:26:12] Native extraction a: 148/320
+[2026-07-27 14:26:15] Native extraction a: 152/320
+[2026-07-27 14:26:19] Native extraction a: 156/320
+[2026-07-27 14:26:21] Native extraction a: 160/320
+[2026-07-27 14:26:26] Native extraction a: 164/320
+[2026-07-27 14:26:29] Native extraction a: 168/320
+[2026-07-27 14:26:33] Native extraction a: 172/320
+[2026-07-27 14:26:35] Native extraction a: 176/320
+[2026-07-27 14:26:40] Native extraction a: 180/320
+[2026-07-27 14:26:45] Native extraction a: 184/320
+[2026-07-27 14:26:49] Native extraction a: 188/320
+[2026-07-27 14:26:54] Native extraction a: 192/320
+[2026-07-27 14:26:57] Native extraction a: 196/320
+[2026-07-27 14:27:03] Native extraction a: 200/320
+[2026-07-27 14:27:08] Native extraction a: 204/320
+[2026-07-27 14:27:12] Native extraction a: 208/320
+[2026-07-27 14:27:16] Native extraction a: 212/320
+[2026-07-27 14:27:21] Native extraction a: 216/320
+[2026-07-27 14:27:26] Native extraction a: 220/320
+[2026-07-27 14:27:31] Native extraction a: 224/320
+[2026-07-27 14:27:35] Native extraction a: 228/320
+[2026-07-27 14:27:38] Native extraction a: 232/320
+[2026-07-27 14:27:42] Native extraction a: 236/320
+[2026-07-27 14:27:48] Native extraction a: 240/320
+[2026-07-27 14:27:52] Native extraction a: 244/320
+[2026-07-27 14:27:56] Native extraction a: 248/320
+[2026-07-27 14:28:00] Native extraction a: 252/320
+[2026-07-27 14:28:04] Native extraction a: 256/320
+[2026-07-27 14:28:08] Native extraction a: 268/320
+[2026-07-27 14:28:12] Native extraction a: 272/320
+[2026-07-27 14:28:18] Native extraction a: 276/320
+[2026-07-27 14:28:23] Native extraction a: 280/320
+[2026-07-27 14:28:29] Native extraction a: 284/320
+[2026-07-27 14:28:33] Native extraction a: 288/320
+[2026-07-27 14:28:37] Native extraction a: 292/320
+[2026-07-27 14:28:43] Native extraction a: 296/320
+[2026-07-27 14:28:48] Native extraction a: 300/320
+[2026-07-27 14:28:53] Native extraction a: 304/320
+[2026-07-27 14:28:58] Native extraction a: 308/320
+[2026-07-27 14:29:03] Native extraction a: 312/320
+[2026-07-27 14:29:06] Native extraction a: 316/320
+[2026-07-27 14:29:11] Native extraction a: 320/320
+[2026-07-27 14:29:12] Pipeline stage completed: extract_a
+[2026-07-27 14:29:12] Pipeline stage started: extract_b
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 113/398 [00:00<00:00, 1095.67it/s]Loading weights:  56%|█████▌    | 223/398 [00:00<00:00, 1063.08it/s]Loading weights:  83%|████████▎ | 330/398 [00:00<00:00, 1038.77it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 1025.94it/s]
+[2026-07-27 14:29:23] Native extraction b: 320 samples
+[2026-07-27 14:29:24] Native extraction b: 12/320
+[2026-07-27 14:29:26] Native extraction b: 16/320
+[2026-07-27 14:29:29] Native extraction b: 20/320
+[2026-07-27 14:29:32] Native extraction b: 24/320
+[2026-07-27 14:29:35] Native extraction b: 28/320
+[2026-07-27 14:29:38] Native extraction b: 32/320
+[2026-07-27 14:29:42] Native extraction b: 36/320
+[2026-07-27 14:29:45] Native extraction b: 40/320
+[2026-07-27 14:29:48] Native extraction b: 44/320
+[2026-07-27 14:29:51] Native extraction b: 48/320
+[2026-07-27 14:29:54] Native extraction b: 52/320
+[2026-07-27 14:29:56] Native extraction b: 56/320
+[2026-07-27 14:29:59] Native extraction b: 60/320
+[2026-07-27 14:30:01] Native extraction b: 64/320
+[2026-07-27 14:30:04] Native extraction b: 68/320
+[2026-07-27 14:30:08] Native extraction b: 72/320
+[2026-07-27 14:30:10] Native extraction b: 76/320
+[2026-07-27 14:30:13] Native extraction b: 80/320
+[2026-07-27 14:30:15] Native extraction b: 84/320
+[2026-07-27 14:30:17] Native extraction b: 88/320
+[2026-07-27 14:30:20] Native extraction b: 92/320
+[2026-07-27 14:30:23] Native extraction b: 96/320
+[2026-07-27 14:30:24] Native extraction b: 100/320
+[2026-07-27 14:30:27] Native extraction b: 104/320
+[2026-07-27 14:30:31] Native extraction b: 108/320
+[2026-07-27 14:30:33] Native extraction b: 112/320
+[2026-07-27 14:30:36] Native extraction b: 116/320
+[2026-07-27 14:30:39] Native extraction b: 120/320
+[2026-07-27 14:30:42] Native extraction b: 124/320
+[2026-07-27 14:30:44] Native extraction b: 128/320
+[2026-07-27 14:30:48] Native extraction b: 132/320
+[2026-07-27 14:30:50] Native extraction b: 136/320
+[2026-07-27 14:30:53] Native extraction b: 140/320
+[2026-07-27 14:30:57] Native extraction b: 144/320
+[2026-07-27 14:30:59] Native extraction b: 148/320
+[2026-07-27 14:31:03] Native extraction b: 152/320
+[2026-07-27 14:31:06] Native extraction b: 156/320
+[2026-07-27 14:31:10] Native extraction b: 160/320
+[2026-07-27 14:31:13] Native extraction b: 164/320
+[2026-07-27 14:31:16] Native extraction b: 168/320
+[2026-07-27 14:31:18] Native extraction b: 172/320
+[2026-07-27 14:31:20] Native extraction b: 176/320
+[2026-07-27 14:31:24] Native extraction b: 180/320
+[2026-07-27 14:31:26] Native extraction b: 184/320
+[2026-07-27 14:31:30] Native extraction b: 188/320
+[2026-07-27 14:31:33] Native extraction b: 192/320
+[2026-07-27 14:31:36] Native extraction b: 196/320
+[2026-07-27 14:31:39] Native extraction b: 200/320
+[2026-07-27 14:31:43] Native extraction b: 204/320
+[2026-07-27 14:31:45] Native extraction b: 208/320
+[2026-07-27 14:31:48] Native extraction b: 212/320
+[2026-07-27 14:31:51] Native extraction b: 216/320
+[2026-07-27 14:31:55] Native extraction b: 220/320
+[2026-07-27 14:31:57] Native extraction b: 224/320
+[2026-07-27 14:32:01] Native extraction b: 228/320
+[2026-07-27 14:32:05] Native extraction b: 232/320
+[2026-07-27 14:32:06] Native extraction b: 236/320
+[2026-07-27 14:32:09] Native extraction b: 240/320
+[2026-07-27 14:32:11] Native extraction b: 244/320
+[2026-07-27 14:32:14] Native extraction b: 248/320
+[2026-07-27 14:32:18] Native extraction b: 252/320
+[2026-07-27 14:32:21] Native extraction b: 256/320
+[2026-07-27 14:32:24] Native extraction b: 268/320
+[2026-07-27 14:32:27] Native extraction b: 272/320
+[2026-07-27 14:32:30] Native extraction b: 276/320
+[2026-07-27 14:32:33] Native extraction b: 280/320
+[2026-07-27 14:32:36] Native extraction b: 284/320
+[2026-07-27 14:32:40] Native extraction b: 288/320
+[2026-07-27 14:32:43] Native extraction b: 292/320
+[2026-07-27 14:32:45] Native extraction b: 296/320
+[2026-07-27 14:32:49] Native extraction b: 300/320
+[2026-07-27 14:32:53] Native extraction b: 304/320
+[2026-07-27 14:32:57] Native extraction b: 308/320
+[2026-07-27 14:33:00] Native extraction b: 312/320
+[2026-07-27 14:33:04] Native extraction b: 316/320
+[2026-07-27 14:33:06] Native extraction b: 320/320
+[2026-07-27 14:33:07] Pipeline stage completed: extract_b
+[2026-07-27 14:33:08] Training private_formal started
+[2026-07-27 14:33:08] Training private_formal: step 1
+[2026-07-27 14:33:08] Training private_formal: step 2
+[2026-07-27 14:33:08] Training private_formal: step 3
+[2026-07-27 14:33:08] Training private_formal: step 4
+[2026-07-27 14:33:09] Training private_formal: step 5
+[2026-07-27 14:33:09] Training private_formal: step 6
+[2026-07-27 14:33:09] Training private_formal: step 7
+[2026-07-27 14:33:10] Training private_formal: step 8
+[2026-07-27 14:33:10] Training private_formal: step 9
+[2026-07-27 14:33:10] Training private_formal: step 10
+[2026-07-27 14:33:11] Training private_formal: step 11
+[2026-07-27 14:33:11] Training private_formal: step 12
+[2026-07-27 14:33:11] Training private_formal: step 13
+[2026-07-27 14:33:12] Training private_formal: step 14
+[2026-07-27 14:33:12] Training private_formal: step 15
+[2026-07-27 14:33:12] Training private_formal: step 16
+[2026-07-27 14:33:12] Training private_formal: step 17
+[2026-07-27 14:33:12] Training private_formal: step 18
+[2026-07-27 14:33:14] Training private_formal: step 19
+[2026-07-27 14:33:14] Training private_formal: step 20
+[2026-07-27 14:33:15] Training private_formal: step 21
+[2026-07-27 14:33:15] Training private_formal: step 22
+[2026-07-27 14:33:15] Training private_formal: step 23
+[2026-07-27 14:33:16] Training private_formal: step 24
+[2026-07-27 14:33:16] Training private_formal: step 25
+[2026-07-27 14:33:16] Training private_formal: step 26
+[2026-07-27 14:33:17] Training private_formal: step 27
+[2026-07-27 14:33:17] Training private_formal: step 28
+[2026-07-27 14:33:17] Training private_formal: step 29
+[2026-07-27 14:33:17] Training private_formal: step 30
+[2026-07-27 14:33:18] Training private_formal: step 31
+[2026-07-27 14:33:18] Training private_formal: step 32
+[2026-07-27 14:33:19] Training private_formal: step 33
+[2026-07-27 14:33:19] Training private_formal: step 34
+[2026-07-27 14:33:19] Training private_formal: step 35
+[2026-07-27 14:33:21] Training private_formal: step 36
+[2026-07-27 14:33:21] Training private_formal: step 37
+[2026-07-27 14:33:21] Training private_formal: step 38
+[2026-07-27 14:33:21] Training private_formal: step 39
+[2026-07-27 14:33:22] Training private_formal: step 40
+[2026-07-27 14:33:22] Training private_formal: step 41
+[2026-07-27 14:33:23] Training private_formal: step 42
+[2026-07-27 14:33:23] Training private_formal: step 43
+[2026-07-27 14:33:23] Training private_formal: step 44
+[2026-07-27 14:33:23] Training private_formal: step 45
+[2026-07-27 14:33:23] Training private_formal: step 46
+[2026-07-27 14:33:24] Training private_formal: step 47
+[2026-07-27 14:33:24] Training private_formal: step 48
+[2026-07-27 14:33:24] Training private_formal: step 49
+[2026-07-27 14:33:24] Training private_formal: step 50
+[2026-07-27 14:33:25] Training private_formal: step 51
+[2026-07-27 14:33:25] Training private_formal: step 52
+[2026-07-27 14:33:26] Training private_formal: step 53
+[2026-07-27 14:33:26] Training private_formal: step 54
+[2026-07-27 14:33:26] Training private_formal: step 55
+[2026-07-27 14:33:26] Training private_formal: step 56
+[2026-07-27 14:33:27] Training private_formal: step 57
+[2026-07-27 14:33:27] Training private_formal: step 58
+[2026-07-27 14:33:27] Training private_formal: step 59
+[2026-07-27 14:33:27] Training private_formal: step 60
+[2026-07-27 14:33:27] Training private_formal: step 61
+[2026-07-27 14:33:28] Training private_formal: step 62
+[2026-07-27 14:33:29] Training private_formal: step 63
+[2026-07-27 14:33:30] Training private_formal: step 64
+[2026-07-27 14:33:30] Training private_formal: step 65
+[2026-07-27 14:33:30] Training private_formal: step 66
+[2026-07-27 14:33:31] Training private_formal: step 67
+[2026-07-27 14:33:31] Training private_formal: step 68
+[2026-07-27 14:33:31] Training private_formal: step 69
+[2026-07-27 14:33:31] Training private_formal: step 70
+[2026-07-27 14:33:31] Training private_formal: step 71
+[2026-07-27 14:33:32] Training private_formal: step 72
+[2026-07-27 14:33:32] Training private_formal: step 73
+[2026-07-27 14:33:32] Training private_formal: step 74
+[2026-07-27 14:33:32] Training private_formal: step 75
+[2026-07-27 14:33:32] Training private_formal: step 76
+[2026-07-27 14:33:33] Training private_formal: step 77
+[2026-07-27 14:33:33] Training private_formal: step 78
+[2026-07-27 14:33:33] Training private_formal: step 79
+[2026-07-27 14:33:33] Training private_formal: step 80
+[2026-07-27 14:33:33] Training private_formal: step 81
+[2026-07-27 14:33:34] Training private_formal: step 82
+[2026-07-27 14:33:34] Training private_formal: step 83
+[2026-07-27 14:33:34] Training private_formal: step 84
+[2026-07-27 14:33:34] Training private_formal: step 85
+[2026-07-27 14:33:34] Training private_formal: step 86
+[2026-07-27 14:33:35] Training private_formal: step 87
+[2026-07-27 14:33:35] Training private_formal: step 88
+[2026-07-27 14:33:35] Training private_formal: step 89
+[2026-07-27 14:33:35] Training private_formal: step 90
+[2026-07-27 14:33:35] Training private_formal: step 91
+[2026-07-27 14:33:36] Training private_formal: step 92
+[2026-07-27 14:33:36] Training private_formal: step 93
+[2026-07-27 14:33:36] Training private_formal: step 94
+[2026-07-27 14:33:36] Training private_formal: step 95
+[2026-07-27 14:33:36] Training private_formal: step 96
+[2026-07-27 14:33:36] Training private_formal: step 97
+[2026-07-27 14:33:37] Training private_formal: step 98
+[2026-07-27 14:33:37] Training private_formal: step 99
+[2026-07-27 14:33:37] Training private_formal: step 100
+[2026-07-27 14:33:37] Training private_formal: step 101
+[2026-07-27 14:33:37] Training private_formal: step 102
+[2026-07-27 14:33:38] Training private_formal: step 103
+[2026-07-27 14:33:38] Training private_formal: step 104
+[2026-07-27 14:33:38] Training private_formal: step 105
+[2026-07-27 14:33:38] Training private_formal: step 106
+[2026-07-27 14:33:38] Training private_formal: step 107
+[2026-07-27 14:33:39] Training private_formal: step 108
+[2026-07-27 14:33:39] Training private_formal: step 109
+[2026-07-27 14:33:39] Training private_formal: step 110
+[2026-07-27 14:33:39] Training private_formal: step 111
+[2026-07-27 14:33:39] Training private_formal: step 112
+[2026-07-27 14:33:40] Training private_formal: step 113
+[2026-07-27 14:33:40] Training private_formal: step 114
+[2026-07-27 14:33:40] Training private_formal: step 115
+[2026-07-27 14:33:40] Training private_formal: step 116
+[2026-07-27 14:33:41] Training private_formal: step 117
+[2026-07-27 14:33:41] Training private_formal: step 118
+[2026-07-27 14:33:41] Training private_formal: step 119
+[2026-07-27 14:33:41] Training private_formal: step 120
+[2026-07-27 14:33:41] Training private_formal: step 121
+[2026-07-27 14:33:41] Training private_formal: step 122
+[2026-07-27 14:33:42] Training private_formal: step 123
+[2026-07-27 14:33:42] Training private_formal: step 124
+[2026-07-27 14:33:42] Training private_formal: step 125
+[2026-07-27 14:33:42] Training private_formal: step 126
+[2026-07-27 14:33:43] Training private_formal: step 127
+[2026-07-27 14:33:43] Training private_formal: step 128
+[2026-07-27 14:33:43] Training private_formal: step 129
+[2026-07-27 14:33:43] Training private_formal: step 130
+[2026-07-27 14:33:43] Training private_formal: step 131
+[2026-07-27 14:33:44] Training private_formal: step 132
+[2026-07-27 14:33:44] Training private_formal: step 133
+[2026-07-27 14:33:44] Training private_formal: step 134
+[2026-07-27 14:33:44] Training private_formal: step 135
+[2026-07-27 14:33:44] Training private_formal: step 136
+[2026-07-27 14:33:44] Training private_formal: step 137
+[2026-07-27 14:33:45] Training private_formal: step 138
+[2026-07-27 14:33:45] Training private_formal: step 139
+[2026-07-27 14:33:45] Training private_formal: step 140
+[2026-07-27 14:33:45] Training private_formal: step 141
+[2026-07-27 14:33:46] Training private_formal: step 142
+[2026-07-27 14:33:46] Training private_formal: step 143
+[2026-07-27 14:33:46] Training private_formal: step 144
+[2026-07-27 14:33:46] Training private_formal: step 145
+[2026-07-27 14:33:46] Training private_formal: step 146
+[2026-07-27 14:33:47] Training private_formal: step 147
+[2026-07-27 14:33:47] Training private_formal: step 148
+[2026-07-27 14:33:47] Training private_formal: step 149
+[2026-07-27 14:33:47] Training private_formal: step 150
+[2026-07-27 14:33:47] Training private_formal: step 151
+[2026-07-27 14:33:47] Training private_formal: step 152
+[2026-07-27 14:33:48] Training private_formal: step 153
+[2026-07-27 14:33:48] Training private_formal: step 154
+[2026-07-27 14:33:48] Training private_formal: step 155
+[2026-07-27 14:33:48] Training private_formal: step 156
+[2026-07-27 14:33:48] Training private_formal: step 157
+[2026-07-27 14:33:49] Training private_formal: step 158
+[2026-07-27 14:33:49] Training private_formal: step 159
+[2026-07-27 14:33:49] Training private_formal: step 160
+[2026-07-27 14:33:49] Training private_formal: step 161
+[2026-07-27 14:33:49] Training private_formal: step 162
+[2026-07-27 14:33:50] Training private_formal: step 163
+[2026-07-27 14:33:50] Training private_formal: step 164
+[2026-07-27 14:33:50] Training private_formal: step 165
+[2026-07-27 14:33:50] Training private_formal: step 166
+[2026-07-27 14:33:51] Training private_formal: step 167
+[2026-07-27 14:33:51] Training private_formal: step 168
+[2026-07-27 14:33:51] Training private_formal: step 169
+[2026-07-27 14:33:51] Training private_formal: step 170
+[2026-07-27 14:33:51] Training private_formal: step 171
+[2026-07-27 14:33:52] Training private_formal: step 172
+[2026-07-27 14:33:52] Training private_formal: step 173
+[2026-07-27 14:33:52] Training private_formal: step 174
+[2026-07-27 14:33:52] Training private_formal: step 175
+[2026-07-27 14:33:52] Training private_formal: step 176
+[2026-07-27 14:33:53] Training private_formal: step 177
+[2026-07-27 14:33:53] Training private_formal: step 178
+[2026-07-27 14:33:53] Training private_formal: step 179
+[2026-07-27 14:33:53] Training private_formal: step 180
+[2026-07-27 14:33:53] Training private_formal: step 181
+[2026-07-27 14:33:54] Training private_formal: step 182
+[2026-07-27 14:33:54] Training private_formal: step 183
+[2026-07-27 14:33:54] Training private_formal: step 184
+[2026-07-27 14:33:54] Training private_formal: step 185
+[2026-07-27 14:33:54] Training private_formal: step 186
+[2026-07-27 14:33:55] Training private_formal: step 187
+[2026-07-27 14:33:55] Training private_formal: step 188
+[2026-07-27 14:33:55] Training private_formal: step 189
+[2026-07-27 14:33:55] Training private_formal: step 190
+[2026-07-27 14:33:55] Training private_formal: step 191
+[2026-07-27 14:33:56] Training private_formal: step 192
+[2026-07-27 14:33:56] Training private_formal completed
+[2026-07-27 14:33:56] Pipeline stage completed: private_formal
+[2026-07-27 14:33:56] Training shared_formal started
+[2026-07-27 14:33:56] Training shared_formal: step 1
+[2026-07-27 14:33:56] Training shared_formal: step 2
+[2026-07-27 14:33:57] Training shared_formal: step 3
+[2026-07-27 14:33:57] Training shared_formal: step 4
+[2026-07-27 14:33:57] Training shared_formal: step 5
+[2026-07-27 14:33:57] Training shared_formal: step 6
+[2026-07-27 14:33:58] Training shared_formal: step 7
+[2026-07-27 14:33:58] Training shared_formal: step 8
+[2026-07-27 14:33:58] Training shared_formal: step 9
+[2026-07-27 14:33:58] Training shared_formal: step 10
+[2026-07-27 14:33:59] Training shared_formal: step 11
+[2026-07-27 14:33:59] Training shared_formal: step 12
+[2026-07-27 14:33:59] Training shared_formal: step 13
+[2026-07-27 14:33:59] Training shared_formal: step 14
+[2026-07-27 14:34:00] Training shared_formal: step 15
+[2026-07-27 14:34:00] Training shared_formal: step 16
+[2026-07-27 14:34:00] Training shared_formal: step 17
+[2026-07-27 14:34:00] Training shared_formal: step 18
+[2026-07-27 14:34:01] Training shared_formal: step 19
+[2026-07-27 14:34:01] Training shared_formal: step 20
+[2026-07-27 14:34:01] Training shared_formal: step 21
+[2026-07-27 14:34:01] Training shared_formal: step 22
+[2026-07-27 14:34:02] Training shared_formal: step 23
+[2026-07-27 14:34:02] Training shared_formal: step 24
+[2026-07-27 14:34:02] Training shared_formal: step 25
+[2026-07-27 14:34:03] Training shared_formal: step 26
+[2026-07-27 14:34:03] Training shared_formal: step 27
+[2026-07-27 14:34:03] Training shared_formal: step 28
+[2026-07-27 14:34:03] Training shared_formal: step 29
+[2026-07-27 14:34:04] Training shared_formal: step 30
+[2026-07-27 14:34:04] Training shared_formal: step 31
+[2026-07-27 14:34:04] Training shared_formal: step 32
+[2026-07-27 14:34:04] Training shared_formal: step 33
+[2026-07-27 14:34:05] Training shared_formal: step 34
+[2026-07-27 14:34:05] Training shared_formal: step 35
+[2026-07-27 14:34:05] Training shared_formal: step 36
+[2026-07-27 14:34:05] Training shared_formal: step 37
+[2026-07-27 14:34:06] Training shared_formal: step 38
+[2026-07-27 14:34:06] Training shared_formal: step 39
+[2026-07-27 14:34:06] Training shared_formal: step 40
+[2026-07-27 14:34:07] Training shared_formal: step 41
+[2026-07-27 14:34:07] Training shared_formal: step 42
+[2026-07-27 14:34:07] Training shared_formal: step 43
+[2026-07-27 14:34:07] Training shared_formal: step 44
+[2026-07-27 14:34:08] Training shared_formal: step 45
+[2026-07-27 14:34:08] Training shared_formal: step 46
+[2026-07-27 14:34:08] Training shared_formal: step 47
+[2026-07-27 14:34:08] Training shared_formal: step 48
+[2026-07-27 14:34:09] Training shared_formal: step 49
+[2026-07-27 14:34:09] Training shared_formal: step 50
+[2026-07-27 14:34:09] Training shared_formal: step 51
+[2026-07-27 14:34:09] Training shared_formal: step 52
+[2026-07-27 14:34:10] Training shared_formal: step 53
+[2026-07-27 14:34:10] Training shared_formal: step 54
+[2026-07-27 14:34:10] Training shared_formal: step 55
+[2026-07-27 14:34:10] Training shared_formal: step 56
+[2026-07-27 14:34:11] Training shared_formal: step 57
+[2026-07-27 14:34:11] Training shared_formal: step 58
+[2026-07-27 14:34:11] Training shared_formal: step 59
+[2026-07-27 14:34:11] Training shared_formal: step 60
+[2026-07-27 14:34:12] Training shared_formal: step 61
+[2026-07-27 14:34:12] Training shared_formal: step 62
+[2026-07-27 14:34:12] Training shared_formal: step 63
+[2026-07-27 14:34:13] Training shared_formal: step 64
+[2026-07-27 14:34:13] Training shared_formal: step 65
+[2026-07-27 14:34:13] Training shared_formal: step 66
+[2026-07-27 14:34:13] Training shared_formal: step 67
+[2026-07-27 14:34:14] Training shared_formal: step 68
+[2026-07-27 14:34:14] Training shared_formal: step 69
+[2026-07-27 14:34:14] Training shared_formal: step 70
+[2026-07-27 14:34:14] Training shared_formal: step 71
+[2026-07-27 14:34:15] Training shared_formal: step 72
+[2026-07-27 14:34:15] Training shared_formal: step 73
+[2026-07-27 14:34:15] Training shared_formal: step 74
+[2026-07-27 14:34:16] Training shared_formal: step 75
+[2026-07-27 14:34:16] Training shared_formal: step 76
+[2026-07-27 14:34:16] Training shared_formal: step 77
+[2026-07-27 14:34:16] Training shared_formal: step 78
+[2026-07-27 14:34:17] Training shared_formal: step 79
+[2026-07-27 14:34:17] Training shared_formal: step 80
+[2026-07-27 14:34:17] Training shared_formal: step 81
+[2026-07-27 14:34:17] Training shared_formal: step 82
+[2026-07-27 14:34:18] Training shared_formal: step 83
+[2026-07-27 14:34:18] Training shared_formal: step 84
+[2026-07-27 14:34:18] Training shared_formal: step 85
+[2026-07-27 14:34:18] Training shared_formal: step 86
+[2026-07-27 14:34:19] Training shared_formal: step 87
+[2026-07-27 14:34:19] Training shared_formal: step 88
+[2026-07-27 14:34:19] Training shared_formal: step 89
+[2026-07-27 14:34:20] Training shared_formal: step 90
+[2026-07-27 14:34:20] Training shared_formal: step 91
+[2026-07-27 14:34:20] Training shared_formal: step 92
+[2026-07-27 14:34:21] Training shared_formal: step 93
+[2026-07-27 14:34:21] Training shared_formal: step 94
+[2026-07-27 14:34:21] Training shared_formal: step 95
+[2026-07-27 14:34:21] Training shared_formal: step 96
+[2026-07-27 14:34:22] Training shared_formal: step 97
+[2026-07-27 14:34:22] Training shared_formal: step 98
+[2026-07-27 14:34:22] Training shared_formal: step 99
+[2026-07-27 14:34:23] Training shared_formal: step 100
+[2026-07-27 14:34:23] Training shared_formal: step 101
+[2026-07-27 14:34:23] Training shared_formal: step 102
+[2026-07-27 14:34:23] Training shared_formal: step 103
+[2026-07-27 14:34:24] Training shared_formal: step 104
+[2026-07-27 14:34:24] Training shared_formal: step 105
+[2026-07-27 14:34:24] Training shared_formal: step 106
+[2026-07-27 14:34:25] Training shared_formal: step 107
+[2026-07-27 14:34:25] Training shared_formal: step 108
+[2026-07-27 14:34:25] Training shared_formal: step 109
+[2026-07-27 14:34:26] Training shared_formal: step 110
+[2026-07-27 14:34:26] Training shared_formal: step 111
+[2026-07-27 14:34:26] Training shared_formal: step 112
+[2026-07-27 14:34:26] Training shared_formal: step 113
+[2026-07-27 14:34:27] Training shared_formal: step 114
+[2026-07-27 14:34:27] Training shared_formal: step 115
+[2026-07-27 14:34:27] Training shared_formal: step 116
+[2026-07-27 14:34:28] Training shared_formal: step 117
+[2026-07-27 14:34:28] Training shared_formal: step 118
+[2026-07-27 14:34:28] Training shared_formal: step 119
+[2026-07-27 14:34:28] Training shared_formal: step 120
+[2026-07-27 14:34:29] Training shared_formal: step 121
+[2026-07-27 14:34:29] Training shared_formal: step 122
+[2026-07-27 14:34:29] Training shared_formal: step 123
+[2026-07-27 14:34:30] Training shared_formal: step 124
+[2026-07-27 14:34:30] Training shared_formal: step 125
+[2026-07-27 14:34:30] Training shared_formal: step 126
+[2026-07-27 14:34:30] Training shared_formal: step 127
+[2026-07-27 14:34:31] Training shared_formal: step 128
+[2026-07-27 14:34:31] Training shared_formal: step 129
+[2026-07-27 14:34:31] Training shared_formal: step 130
+[2026-07-27 14:34:31] Training shared_formal: step 131
+[2026-07-27 14:34:32] Training shared_formal: step 132
+[2026-07-27 14:34:32] Training shared_formal: step 133
+[2026-07-27 14:34:32] Training shared_formal: step 134
+[2026-07-27 14:34:33] Training shared_formal: step 135
+[2026-07-27 14:34:33] Training shared_formal: step 136
+[2026-07-27 14:34:33] Training shared_formal: step 137
+[2026-07-27 14:34:33] Training shared_formal: step 138
+[2026-07-27 14:34:34] Training shared_formal: step 139
+[2026-07-27 14:34:34] Training shared_formal: step 140
+[2026-07-27 14:34:34] Training shared_formal: step 141
+[2026-07-27 14:34:35] Training shared_formal: step 142
+[2026-07-27 14:34:35] Training shared_formal: step 143
+[2026-07-27 14:34:35] Training shared_formal: step 144
+[2026-07-27 14:34:36] Training shared_formal: step 145
+[2026-07-27 14:34:36] Training shared_formal: step 146
+[2026-07-27 14:34:36] Training shared_formal: step 147
+[2026-07-27 14:34:36] Training shared_formal: step 148
+[2026-07-27 14:34:37] Training shared_formal: step 149
+[2026-07-27 14:34:37] Training shared_formal: step 150
+[2026-07-27 14:34:37] Training shared_formal: step 151
+[2026-07-27 14:34:37] Training shared_formal: step 152
+[2026-07-27 14:34:38] Training shared_formal: step 153
+[2026-07-27 14:34:38] Training shared_formal: step 154
+[2026-07-27 14:34:38] Training shared_formal: step 155
+[2026-07-27 14:34:39] Training shared_formal: step 156
+[2026-07-27 14:34:39] Training shared_formal: step 157
+[2026-07-27 14:34:39] Training shared_formal: step 158
+[2026-07-27 14:34:39] Training shared_formal: step 159
+[2026-07-27 14:34:40] Training shared_formal: step 160
+[2026-07-27 14:34:40] Training shared_formal: step 161
+[2026-07-27 14:34:40] Training shared_formal: step 162
+[2026-07-27 14:34:40] Training shared_formal: step 163
+[2026-07-27 14:34:41] Training shared_formal: step 164
+[2026-07-27 14:34:41] Training shared_formal: step 165
+[2026-07-27 14:34:41] Training shared_formal: step 166
+[2026-07-27 14:34:42] Training shared_formal: step 167
+[2026-07-27 14:34:42] Training shared_formal: step 168
+[2026-07-27 14:34:42] Training shared_formal: step 169
+[2026-07-27 14:34:42] Training shared_formal: step 170
+[2026-07-27 14:34:43] Training shared_formal: step 171
+[2026-07-27 14:34:43] Training shared_formal: step 172
+[2026-07-27 14:34:43] Training shared_formal: step 173
+[2026-07-27 14:34:44] Training shared_formal: step 174
+[2026-07-27 14:34:44] Training shared_formal: step 175
+[2026-07-27 14:34:44] Training shared_formal: step 176
+[2026-07-27 14:34:45] Training shared_formal: step 177
+[2026-07-27 14:34:45] Training shared_formal: step 178
+[2026-07-27 14:34:45] Training shared_formal: step 179
+[2026-07-27 14:34:45] Training shared_formal: step 180
+[2026-07-27 14:34:46] Training shared_formal: step 181
+[2026-07-27 14:34:46] Training shared_formal: step 182
+[2026-07-27 14:34:46] Training shared_formal: step 183
+[2026-07-27 14:34:47] Training shared_formal: step 184
+[2026-07-27 14:34:47] Training shared_formal: step 185
+[2026-07-27 14:34:47] Training shared_formal: step 186
+[2026-07-27 14:34:47] Training shared_formal: step 187
+[2026-07-27 14:34:48] Training shared_formal: step 188
+[2026-07-27 14:34:48] Training shared_formal: step 189
+[2026-07-27 14:34:48] Training shared_formal: step 190
+[2026-07-27 14:34:48] Training shared_formal: step 191
+[2026-07-27 14:34:49] Training shared_formal: step 192
+[2026-07-27 14:34:49] Training shared_formal completed
+[2026-07-27 14:34:49] Pipeline stage completed: shared_formal
+[2026-07-27 14:34:51] Evaluation raw_native: 64 samples
+[2026-07-27 14:34:52] Evaluation raw_native: 8/64
+[2026-07-27 14:34:52] Evaluation raw_native: 16/64
+[2026-07-27 14:34:52] Evaluation raw_native: 24/64
+[2026-07-27 14:34:53] Evaluation raw_native: 32/64
+[2026-07-27 14:34:53] Evaluation raw_native: 40/64
+[2026-07-27 14:34:53] Evaluation raw_native: 48/64
+[2026-07-27 14:34:53] Evaluation raw_native: 56/64
+[2026-07-27 14:34:54] Evaluation raw_native: 64/64
+[2026-07-27 14:34:55] Evaluation private_writer: 64 samples
+[2026-07-27 14:34:56] Evaluation private_writer: 8/64
+[2026-07-27 14:34:56] Evaluation private_writer: 16/64
+[2026-07-27 14:34:56] Evaluation private_writer: 24/64
+[2026-07-27 14:34:57] Evaluation private_writer: 32/64
+[2026-07-27 14:34:57] Evaluation private_writer: 40/64
+[2026-07-27 14:34:58] Evaluation private_writer: 48/64
+[2026-07-27 14:34:58] Evaluation private_writer: 56/64
+[2026-07-27 14:34:58] Evaluation private_writer: 64/64
+[2026-07-27 14:35:00] Evaluation shared_canonical: 64 samples
+[2026-07-27 14:35:00] Evaluation shared_canonical: 8/64
+[2026-07-27 14:35:01] Evaluation shared_canonical: 16/64
+[2026-07-27 14:35:01] Evaluation shared_canonical: 24/64
+[2026-07-27 14:35:02] Evaluation shared_canonical: 32/64
+[2026-07-27 14:35:02] Evaluation shared_canonical: 40/64
+[2026-07-27 14:35:02] Evaluation shared_canonical: 48/64
+[2026-07-27 14:35:03] Evaluation shared_canonical: 56/64
+[2026-07-27 14:35:03] Evaluation shared_canonical: 64/64
+[2026-07-27 14:35:03] Final evaluation completed
+[2026-07-27 14:35:03] Pipeline stage completed: final_evaluation
+[2026-07-27 14:35:03] P0-A pipeline completed

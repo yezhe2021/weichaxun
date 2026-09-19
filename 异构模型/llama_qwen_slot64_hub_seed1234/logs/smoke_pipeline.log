@@ -1,0 +1,85 @@
+[2026-09-06 13:48:49] START tests
+[2026-09-06 13:48:53] DONE tests
+[2026-09-06 13:48:53] START prepare
+[2026-09-06 13:49:04] Prepared {'train': 4, 'validation': 2, 'test': 2}; tokenizer and label continuation checks passed
+[2026-09-06 13:49:05] DONE prepare
+[2026-09-06 13:49:05] START cache_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:06<41:39,  6.30s/it]Loading weights:  11%|█         | 44/398 [00:06<00:37,  9.37it/s]Loading weights:  14%|█▎        | 54/398 [00:07<00:35,  9.79it/s]Loading weights:  15%|█▌        | 60/398 [00:08<00:35,  9.54it/s]Loading weights:  17%|█▋        | 69/398 [00:08<00:29, 11.07it/s]Loading weights:  18%|█▊        | 73/398 [00:08<00:27, 11.91it/s]Loading weights:  19%|█▉        | 76/398 [00:09<00:38,  8.30it/s]Loading weights:  20%|██        | 81/398 [00:10<00:36,  8.69it/s]Loading weights:  21%|██        | 83/398 [00:10<00:36,  8.72it/s]Loading weights:  22%|██▏       | 88/398 [00:10<00:26, 11.48it/s]Loading weights:  23%|██▎       | 91/398 [00:11<00:42,  7.15it/s]Loading weights:  26%|██▌       | 102/398 [00:12<00:29,  9.96it/s]Loading weights:  26%|██▌       | 104/398 [00:12<00:28, 10.40it/s]Loading weights:  28%|██▊       | 113/398 [00:12<00:20, 13.85it/s]Loading weights:  29%|██▉       | 115/398 [00:13<00:35,  8.02it/s]Loading weights:  34%|███▍      | 135/398 [00:14<00:13, 18.83it/s]Loading weights:  35%|███▍      | 139/398 [00:14<00:16, 15.34it/s]Loading weights:  37%|███▋      | 147/398 [00:15<00:15, 16.12it/s]Loading weights:  39%|███▉      | 157/398 [00:15<00:14, 16.64it/s]Loading weights:  40%|████      | 160/398 [00:16<00:17, 13.38it/s]Loading weights:  42%|████▏     | 168/398 [00:16<00:15, 14.70it/s]Loading weights:  43%|████▎     | 170/398 [00:17<00:20, 11.09it/s]Loading weights:  45%|████▌     | 180/398 [00:17<00:15, 13.82it/s]Loading weights:  48%|████▊     | 190/398 [00:18<00:14, 14.72it/s]Loading weights:  48%|████▊     | 192/398 [00:18<00:14, 14.60it/s]Loading weights:  51%|█████     | 201/398 [00:18<00:12, 16.03it/s]Loading weights:  51%|█████     | 203/398 [00:19<00:13, 14.80it/s]Loading weights:  53%|█████▎    | 209/398 [00:19<00:14, 13.25it/s]Loading weights:  55%|█████▍    | 217/398 [00:19<00:10, 17.92it/s]Loading weights:  56%|█████▌    | 223/398 [00:20<00:13, 12.69it/s]Loading weights:  57%|█████▋    | 225/398 [00:21<00:16, 10.29it/s]Loading weights:  59%|█████▉    | 236/398 [00:21<00:09, 16.87it/s]Loading weights:  62%|██████▏   | 245/398 [00:22<00:09, 15.39it/s]Loading weights:  62%|██████▏   | 248/398 [00:22<00:09, 15.11it/s]Loading weights:  64%|██████▍   | 256/398 [00:22<00:06, 20.91it/s]Loading weights:  65%|██████▌   | 260/398 [00:22<00:09, 14.59it/s]Loading weights:  67%|██████▋   | 267/398 [00:23<00:08, 15.32it/s]Loading weights:  69%|██████▉   | 275/398 [00:23<00:07, 16.25it/s]Loading weights:  70%|██████▉   | 278/398 [00:24<00:08, 14.71it/s]Loading weights:  70%|███████   | 280/398 [00:24<00:09, 12.88it/s]Loading weights:  73%|███████▎  | 289/398 [00:24<00:07, 14.07it/s]Loading weights:  73%|███████▎  | 291/398 [00:25<00:10,  9.96it/s]Loading weights:  76%|███████▌  | 301/398 [00:25<00:06, 15.66it/s]Loading weights:  78%|███████▊  | 310/398 [00:25<00:03, 22.82it/s]Loading weights:  79%|███████▉  | 315/398 [00:27<00:07, 11.78it/s]Loading weights:  81%|████████  | 322/398 [00:27<00:05, 13.53it/s]Loading weights:  82%|████████▏ | 325/398 [00:27<00:05, 14.53it/s]Loading weights:  83%|████████▎ | 330/398 [00:28<00:05, 12.24it/s]Loading weights:  84%|████████▎ | 333/398 [00:28<00:05, 12.65it/s]Loading weights:  86%|████████▌ | 341/398 [00:28<00:03, 15.19it/s]Loading weights:  86%|████████▋ | 344/398 [00:28<00:03, 15.52it/s]Loading weights:  87%|████████▋ | 346/398 [00:29<00:03, 14.00it/s]Loading weights:  89%|████████▉ | 355/398 [00:29<00:02, 15.90it/s]Loading weights:  90%|████████▉ | 357/398 [00:29<00:03, 13.02it/s]Loading weights:  92%|█████████▏| 366/398 [00:30<00:02, 15.81it/s]Loading weights:  94%|█████████▍| 374/398 [00:30<00:01, 17.33it/s]Loading weights:  95%|█████████▌| 379/398 [00:30<00:00, 19.96it/s]Loading weights:  97%|█████████▋| 385/398 [00:31<00:01, 11.46it/s]Loading weights:  98%|█████████▊| 390/398 [00:32<00:00, 12.05it/s]Loading weights: 100%|██████████| 398/398 [00:32<00:00, 12.35it/s]
+[2026-09-06 13:49:46] qwen cache train 1/4
+[2026-09-06 13:49:47] qwen cache train 2/4
+[2026-09-06 13:49:47] qwen cache train 3/4
+[2026-09-06 13:49:47] qwen cache train 4/4
+[2026-09-06 13:49:47] qwen cache validation 1/2
+[2026-09-06 13:49:48] qwen cache validation 2/2
+[2026-09-06 13:49:48] qwen cache test 1/2
+[2026-09-06 13:49:48] qwen cache test 2/2
+[2026-09-06 13:49:49] DONE cache_qwen
+[2026-09-06 13:49:49] START cache_llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:04<20:46,  4.93s/it]Loading weights:   6%|▌         | 14/254 [00:05<01:09,  3.44it/s]Loading weights:   6%|▋         | 16/254 [00:05<01:00,  3.92it/s]Loading weights:   7%|▋         | 18/254 [00:06<01:06,  3.54it/s]Loading weights:   9%|▊         | 22/254 [00:07<00:59,  3.88it/s]Loading weights:  11%|█         | 27/254 [00:07<00:44,  5.10it/s]Loading weights:  11%|█         | 28/254 [00:08<00:52,  4.34it/s]Loading weights:  12%|█▏        | 31/254 [00:08<00:48,  4.64it/s]Loading weights:  13%|█▎        | 32/254 [00:10<01:20,  2.75it/s]Loading weights:  18%|█▊        | 45/254 [00:11<00:32,  6.46it/s]Loading weights:  20%|█▉        | 50/254 [00:12<00:37,  5.41it/s]Loading weights:  23%|██▎       | 58/254 [00:13<00:32,  6.04it/s]Loading weights:  25%|██▌       | 64/254 [00:13<00:24,  7.76it/s]Loading weights:  26%|██▋       | 67/254 [00:15<00:34,  5.41it/s]Loading weights:  30%|██▉       | 76/254 [00:15<00:24,  7.17it/s]Loading weights:  32%|███▏      | 81/254 [00:16<00:21,  8.02it/s]Loading weights:  33%|███▎      | 83/254 [00:16<00:20,  8.38it/s]Loading weights:  33%|███▎      | 85/254 [00:17<00:25,  6.53it/s]Loading weights:  35%|███▌      | 90/254 [00:17<00:25,  6.53it/s]Loading weights:  37%|███▋      | 94/254 [00:18<00:26,  5.95it/s]Loading weights:  37%|███▋      | 95/254 [00:18<00:29,  5.44it/s]Loading weights:  41%|████      | 103/254 [00:20<00:24,  6.23it/s]Loading weights:  43%|████▎     | 109/254 [00:20<00:20,  7.05it/s]Loading weights:  44%|████▍     | 112/254 [00:21<00:19,  7.40it/s]Loading weights:  44%|████▍     | 113/254 [00:23<00:44,  3.16it/s]Loading weights:  51%|█████     | 130/254 [00:24<00:17,  7.03it/s]Loading weights:  52%|█████▏    | 131/254 [00:24<00:19,  6.31it/s]Loading weights:  54%|█████▍    | 137/254 [00:25<00:18,  6.35it/s]Loading weights:  54%|█████▍    | 138/254 [00:26<00:20,  5.64it/s]Loading weights:  57%|█████▋    | 144/254 [00:27<00:19,  5.66it/s]Loading weights:  58%|█████▊    | 148/254 [00:27<00:17,  5.90it/s]Loading weights:  60%|██████    | 153/254 [00:28<00:17,  5.84it/s]Loading weights:  62%|██████▏   | 157/254 [00:30<00:22,  4.27it/s]Loading weights:  65%|██████▌   | 166/254 [00:31<00:15,  5.81it/s]Loading weights:  67%|██████▋   | 171/254 [00:31<00:13,  6.11it/s]Loading weights:  69%|██████▉   | 175/254 [00:32<00:12,  6.16it/s]Loading weights:  69%|██████▉   | 176/254 [00:33<00:16,  4.66it/s]Loading weights:  70%|██████▉   | 177/254 [00:33<00:17,  4.46it/s]Loading weights:  72%|███████▏  | 184/254 [00:33<00:08,  8.05it/s]Loading weights:  74%|███████▎  | 187/254 [00:34<00:08,  8.10it/s]Loading weights:  74%|███████▍  | 189/254 [00:34<00:09,  6.94it/s]Loading weights:  76%|███████▋  | 194/254 [00:35<00:11,  5.45it/s]Loading weights:  80%|███████▉  | 202/254 [00:36<00:07,  6.64it/s]Loading weights:  81%|████████▏ | 207/254 [00:37<00:07,  6.29it/s]Loading weights:  83%|████████▎ | 210/254 [00:37<00:05,  7.48it/s]Loading weights:  83%|████████▎ | 212/254 [00:37<00:05,  8.07it/s]Loading weights:  85%|████████▍ | 215/254 [00:38<00:06,  5.84it/s]Loading weights:  87%|████████▋ | 221/254 [00:39<00:04,  7.40it/s]Loading weights:  89%|████████▊ | 225/254 [00:39<00:03,  7.60it/s]Loading weights:  89%|████████▉ | 227/254 [00:40<00:03,  7.22it/s]Loading weights:  90%|█████████ | 229/254 [00:41<00:06,  4.15it/s]Loading weights:  94%|█████████▍| 239/254 [00:42<00:02,  5.54it/s]Loading weights:  94%|█████████▍| 240/254 [00:43<00:02,  5.17it/s]Loading weights: 100%|██████████| 254/254 [00:43<00:00,  5.86it/s]
+[2026-09-06 13:50:43] llama cache train 1/4
+[2026-09-06 13:50:43] llama cache train 2/4
+[2026-09-06 13:50:43] llama cache train 3/4
+[2026-09-06 13:50:44] llama cache train 4/4
+[2026-09-06 13:50:44] llama cache validation 1/2
+[2026-09-06 13:50:44] llama cache validation 2/2
+[2026-09-06 13:50:44] llama cache test 1/2
+[2026-09-06 13:50:44] llama cache test 2/2
+[2026-09-06 13:50:45] DONE cache_llama
+[2026-09-06 13:50:45] START self_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:29,  4.44it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 579.46it/s]Loading weights:  60%|██████    | 239/398 [00:00<00:00, 588.10it/s]Loading weights:  78%|███████▊  | 311/398 [00:00<00:00, 585.95it/s]Loading weights:  95%|█████████▍| 378/398 [00:00<00:00, 596.66it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 546.41it/s]
+[2026-09-06 13:50:56] self_qwen epoch=1/1 step=1 loss=4.365337
+[2026-09-06 13:50:56] self_qwen epoch=1/1 step=2 loss=2.865915
+[2026-09-06 13:50:56] self_qwen validation epoch=1 loss=4.684987; best_epoch=0
+[2026-09-06 13:50:57] DONE self_qwen
+[2026-09-06 13:50:57] START self_llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<01:00,  4.22it/s]Loading weights:  54%|█████▍    | 138/254 [00:00<00:00, 496.68it/s]Loading weights:  83%|████████▎ | 211/254 [00:00<00:00, 500.03it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 449.64it/s]
+[2026-09-06 13:51:06] self_llama epoch=1/1 step=1 loss=6.206770
+[2026-09-06 13:51:07] self_llama epoch=1/1 step=2 loss=4.920558
+[2026-09-06 13:51:07] self_llama validation epoch=1 loss=5.258770; best_epoch=1
+[2026-09-06 13:51:08] DONE self_llama
+[2026-09-06 13:51:08] START slots_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:29,  4.43it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 559.53it/s]Loading weights:  58%|█████▊    | 230/398 [00:00<00:00, 587.68it/s]Loading weights:  76%|███████▋  | 304/398 [00:00<00:00, 585.59it/s]Loading weights:  93%|█████████▎| 372/398 [00:00<00:00, 599.17it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 541.22it/s]
+[2026-09-06 13:51:18] qwen slots train 1/4
+[2026-09-06 13:51:18] qwen slots train 2/4
+[2026-09-06 13:51:18] qwen slots train 3/4
+[2026-09-06 13:51:18] qwen slots train 4/4
+[2026-09-06 13:51:18] qwen slots validation 1/2
+[2026-09-06 13:51:18] qwen slots validation 2/2
+[2026-09-06 13:51:18] qwen slots test 1/2
+[2026-09-06 13:51:18] qwen slots test 2/2
+[2026-09-06 13:51:19] DONE slots_qwen
+[2026-09-06 13:51:19] START slots_llama
+Loading weights:   0%|          | 0/254 [00:00<?, ?it/s]Loading weights:   0%|          | 1/254 [00:00<00:59,  4.24it/s]Loading weights:  54%|█████▍    | 138/254 [00:00<00:00, 487.14it/s]Loading weights:  81%|████████▏ | 207/254 [00:00<00:00, 504.55it/s]Loading weights: 100%|██████████| 254/254 [00:00<00:00, 443.86it/s]
+[2026-09-06 13:51:28] llama slots train 1/4
+[2026-09-06 13:51:28] llama slots train 2/4
+[2026-09-06 13:51:28] llama slots train 3/4
+[2026-09-06 13:51:28] llama slots train 4/4
+[2026-09-06 13:51:28] llama slots validation 1/2
+[2026-09-06 13:51:28] llama slots validation 2/2
+[2026-09-06 13:51:28] llama slots test 1/2
+[2026-09-06 13:51:28] llama slots test 2/2
+[2026-09-06 13:51:29] DONE slots_llama
+[2026-09-06 13:51:29] START stage_a
+[2026-09-06 13:51:37] stage_a epoch=1/1 step=1 loss=6.140807
+[2026-09-06 13:51:37] stage_a epoch=1/1 step=2 loss=6.115592
+[2026-09-06 13:51:41] stage_a validation epoch=1 loss=5.221813; best_epoch=1
+[2026-09-06 13:51:42] DONE stage_a
+[2026-09-06 13:51:42] START stage_b
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   9%|▉         | 37/398 [00:00<00:01, 355.22it/s]Loading weights:  23%|██▎       | 91/398 [00:00<00:00, 454.34it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 516.95it/s]Loading weights:  56%|█████▌    | 223/398 [00:00<00:00, 547.98it/s]Loading weights:  73%|███████▎  | 289/398 [00:00<00:00, 570.03it/s]Loading weights:  89%|████████▉ | 355/398 [00:00<00:00, 582.50it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 562.62it/s]
+[2026-09-06 13:51:55] stage_b epoch=1/1 step=1 loss=4.247109
+[2026-09-06 13:51:55] stage_b epoch=1/1 step=2 loss=1.898139
+[2026-09-06 13:51:56] stage_b validation epoch=1 loss=6.056257; best_epoch=0
+[2026-09-06 13:51:57] DONE stage_b
+[2026-09-06 13:51:57] START evaluate
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:23,  4.74it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 622.82it/s]Loading weights:  62%|██████▏   | 246/398 [00:00<00:00, 619.08it/s]Loading weights:  81%|████████  | 323/398 [00:00<00:00, 612.87it/s]Loading weights:  99%|█████████▊| 393/398 [00:00<00:00, 629.34it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 573.95it/s]
+[2026-09-06 13:52:09] evaluate stage_a/best 1/2
+[2026-09-06 13:52:09] evaluate stage_a/best 2/2
+[2026-09-06 13:52:10] evaluate stage_b/best 1/2
+[2026-09-06 13:52:11] evaluate stage_b/best 2/2
+[2026-09-06 13:52:12] evaluate stage_b/best_trained 1/2
+[2026-09-06 13:52:12] evaluate stage_b/best_trained 2/2
+[2026-09-06 13:52:13] evaluate stage_b/last 1/2
+[2026-09-06 13:52:13] evaluate stage_b/last 2/2
+[2026-09-06 13:52:13] Evaluation files saved
+[2026-09-06 13:52:15] DONE evaluate
+[2026-09-06 13:52:15] ALL EXPERIMENTS COMPLETED
