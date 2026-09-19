@@ -1,0 +1,1392 @@
+START stage: model_audit
+{'qwen': {'path': '/home/yezhe/all_models/models/Qwen/Qwen3-4B', 'layers': 36, 'kv_heads': 8, 'head_dim': 128, 'tokenizer_class': 'Qwen2Tokenizer', 'bos_token_id': None}, 'gemma': {'path': '/home/yezhe/all_models/models/LLM-Research/gemma-3-4b-it', 'layers': 34, 'kv_heads': 4, 'head_dim': 256, 'tokenizer_class': 'GemmaTokenizer', 'bos_token_id': 2, 'layer_types': ['sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention'], 'rope_parameters': {'sliding_attention': {'rope_type': 'default', 'rope_theta': 10000.0}, 'full_attention': {'rope_type': 'linear', 'factor': 8.0, 'rope_theta': 1000000.0}}}, 'translator': {'source_shape': [34, 32, 4, 256], 'target_shape': [36, 32, 8, 128], 'per_head_depth_width': 8704, 'depth_hidden_dim': 1024, 'depth_output_dim': 256, 'head_mapping': 'full_head', 'head_input_width': 1024, 'head_output_width': 1024, 'token_mixing': False, 'k_v_shared': False}}
+DONE stage: model_audit
+START stage: prepare
+[2026-09-16 16:01:57] Prepared standard prompt with unchanged IDs: {'train': {'count': 4096, 'ids_sha256': '61ef5d1de1f88d3bdaf9698e9f02eddd77418b43ba5129c65ac061a2e226a218', 'first_id': '14-120', 'last_id': '12-415'}, 'validation': {'count': 128, 'ids_sha256': '1cb2439ef228a1d7dc17beae19acda7f798ae3020ea9b65d41cf1d9abdf4a4a5', 'first_id': '9-888', 'last_id': '7-324'}, 'test': {'count': 128, 'ids_sha256': '402e20c4f34eb2036c42e02ac36e27c217134da6c943b105e7a0640f1a1b82a9', 'first_id': '7-334', 'last_id': '1937'}}
+DONE stage: prepare
+START stage: cache_gemma
+
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/883 [00:00<02:24,  6.11it/s]
+Loading weights:  14%|█▎        | 120/883 [00:00<00:01, 551.80it/s]
+Loading weights:  21%|██▏       | 189/883 [00:00<00:01, 589.10it/s]
+Loading weights:  29%|██▉       | 256/883 [00:00<00:01, 601.67it/s]
+Loading weights:  36%|███▋      | 321/883 [00:00<00:00, 595.68it/s]
+Loading weights:  43%|████▎     | 384/883 [00:00<00:00, 582.63it/s]
+Loading weights:  55%|█████▌    | 487/883 [00:00<00:00, 714.53it/s]
+Loading weights:  85%|████████▌ | 753/883 [00:00<00:00, 1297.09it/s]
+Loading weights: 100%|██████████| 883/883 [00:00<00:00, 932.50it/s]
+[2026-09-16 16:02:17] Gemma3 fresh decision cache train: 32/4096
+[2026-09-16 16:02:20] Gemma3 fresh decision cache train: 64/4096
+[2026-09-16 16:02:23] Gemma3 fresh decision cache train: 96/4096
+[2026-09-16 16:02:27] Gemma3 fresh decision cache train: 128/4096
+[2026-09-16 16:02:30] Gemma3 fresh decision cache train: 160/4096
+[2026-09-16 16:02:33] Gemma3 fresh decision cache train: 192/4096
+[2026-09-16 16:02:36] Gemma3 fresh decision cache train: 224/4096
+[2026-09-16 16:02:40] Gemma3 fresh decision cache train: 256/4096
+[2026-09-16 16:02:43] Gemma3 fresh decision cache train: 288/4096
+[2026-09-16 16:02:46] Gemma3 fresh decision cache train: 320/4096
+[2026-09-16 16:02:49] Gemma3 fresh decision cache train: 352/4096
+[2026-09-16 16:02:53] Gemma3 fresh decision cache train: 384/4096
+[2026-09-16 16:02:56] Gemma3 fresh decision cache train: 416/4096
+[2026-09-16 16:02:59] Gemma3 fresh decision cache train: 448/4096
+[2026-09-16 16:03:03] Gemma3 fresh decision cache train: 480/4096
+[2026-09-16 16:03:06] Gemma3 fresh decision cache train: 512/4096
+[2026-09-16 16:03:09] Gemma3 fresh decision cache train: 544/4096
+[2026-09-16 16:03:13] Gemma3 fresh decision cache train: 576/4096
+[2026-09-16 16:03:16] Gemma3 fresh decision cache train: 608/4096
+[2026-09-16 16:03:19] Gemma3 fresh decision cache train: 640/4096
+[2026-09-16 16:03:23] Gemma3 fresh decision cache train: 672/4096
+[2026-09-16 16:03:26] Gemma3 fresh decision cache train: 704/4096
+[2026-09-16 16:03:30] Gemma3 fresh decision cache train: 736/4096
+[2026-09-16 16:03:34] Gemma3 fresh decision cache train: 768/4096
+[2026-09-16 16:03:38] Gemma3 fresh decision cache train: 800/4096
+[2026-09-16 16:03:42] Gemma3 fresh decision cache train: 832/4096
+[2026-09-16 16:03:45] Gemma3 fresh decision cache train: 864/4096
+[2026-09-16 16:03:49] Gemma3 fresh decision cache train: 896/4096
+[2026-09-16 16:03:53] Gemma3 fresh decision cache train: 928/4096
+[2026-09-16 16:03:57] Gemma3 fresh decision cache train: 960/4096
+[2026-09-16 16:04:01] Gemma3 fresh decision cache train: 992/4096
+[2026-09-16 16:04:05] Gemma3 fresh decision cache train: 1024/4096
+[2026-09-16 16:04:08] Gemma3 fresh decision cache train: 1056/4096
+[2026-09-16 16:04:12] Gemma3 fresh decision cache train: 1088/4096
+[2026-09-16 16:04:16] Gemma3 fresh decision cache train: 1120/4096
+[2026-09-16 16:04:20] Gemma3 fresh decision cache train: 1152/4096
+[2026-09-16 16:04:24] Gemma3 fresh decision cache train: 1184/4096
+[2026-09-16 16:04:27] Gemma3 fresh decision cache train: 1216/4096
+[2026-09-16 16:04:31] Gemma3 fresh decision cache train: 1248/4096
+[2026-09-16 16:04:35] Gemma3 fresh decision cache train: 1280/4096
+[2026-09-16 16:04:39] Gemma3 fresh decision cache train: 1312/4096
+[2026-09-16 16:04:42] Gemma3 fresh decision cache train: 1344/4096
+[2026-09-16 16:04:46] Gemma3 fresh decision cache train: 1376/4096
+[2026-09-16 16:04:50] Gemma3 fresh decision cache train: 1408/4096
+[2026-09-16 16:04:54] Gemma3 fresh decision cache train: 1440/4096
+[2026-09-16 16:04:57] Gemma3 fresh decision cache train: 1472/4096
+[2026-09-16 16:05:02] Gemma3 fresh decision cache train: 1504/4096
+[2026-09-16 16:05:06] Gemma3 fresh decision cache train: 1536/4096
+[2026-09-16 16:05:10] Gemma3 fresh decision cache train: 1568/4096
+[2026-09-16 16:05:14] Gemma3 fresh decision cache train: 1600/4096
+[2026-09-16 16:05:18] Gemma3 fresh decision cache train: 1632/4096
+[2026-09-16 16:05:22] Gemma3 fresh decision cache train: 1664/4096
+[2026-09-16 16:05:27] Gemma3 fresh decision cache train: 1696/4096
+[2026-09-16 16:05:30] Gemma3 fresh decision cache train: 1728/4096
+[2026-09-16 16:05:34] Gemma3 fresh decision cache train: 1760/4096
+[2026-09-16 16:05:38] Gemma3 fresh decision cache train: 1792/4096
+[2026-09-16 16:05:42] Gemma3 fresh decision cache train: 1824/4096
+[2026-09-16 16:05:46] Gemma3 fresh decision cache train: 1856/4096
+[2026-09-16 16:05:49] Gemma3 fresh decision cache train: 1888/4096
+[2026-09-16 16:05:53] Gemma3 fresh decision cache train: 1920/4096
+[2026-09-16 16:05:57] Gemma3 fresh decision cache train: 1952/4096
+[2026-09-16 16:06:01] Gemma3 fresh decision cache train: 1984/4096
+[2026-09-16 16:06:04] Gemma3 fresh decision cache train: 2016/4096
+[2026-09-16 16:06:08] Gemma3 fresh decision cache train: 2048/4096
+[2026-09-16 16:06:12] Gemma3 fresh decision cache train: 2080/4096
+[2026-09-16 16:06:16] Gemma3 fresh decision cache train: 2112/4096
+[2026-09-16 16:06:21] Gemma3 fresh decision cache train: 2144/4096
+[2026-09-16 16:06:25] Gemma3 fresh decision cache train: 2176/4096
+[2026-09-16 16:06:28] Gemma3 fresh decision cache train: 2208/4096
+[2026-09-16 16:06:32] Gemma3 fresh decision cache train: 2240/4096
+[2026-09-16 16:06:36] Gemma3 fresh decision cache train: 2272/4096
+[2026-09-16 16:06:40] Gemma3 fresh decision cache train: 2304/4096
+[2026-09-16 16:06:44] Gemma3 fresh decision cache train: 2336/4096
+[2026-09-16 16:06:48] Gemma3 fresh decision cache train: 2368/4096
+[2026-09-16 16:06:51] Gemma3 fresh decision cache train: 2400/4096
+[2026-09-16 16:06:55] Gemma3 fresh decision cache train: 2432/4096
+[2026-09-16 16:06:59] Gemma3 fresh decision cache train: 2464/4096
+[2026-09-16 16:07:03] Gemma3 fresh decision cache train: 2496/4096
+[2026-09-16 16:07:07] Gemma3 fresh decision cache train: 2528/4096
+[2026-09-16 16:07:11] Gemma3 fresh decision cache train: 2560/4096
+[2026-09-16 16:07:14] Gemma3 fresh decision cache train: 2592/4096
+[2026-09-16 16:07:18] Gemma3 fresh decision cache train: 2624/4096
+[2026-09-16 16:07:22] Gemma3 fresh decision cache train: 2656/4096
+[2026-09-16 16:07:26] Gemma3 fresh decision cache train: 2688/4096
+[2026-09-16 16:07:30] Gemma3 fresh decision cache train: 2720/4096
+[2026-09-16 16:07:34] Gemma3 fresh decision cache train: 2752/4096
+[2026-09-16 16:07:38] Gemma3 fresh decision cache train: 2784/4096
+[2026-09-16 16:07:42] Gemma3 fresh decision cache train: 2816/4096
+[2026-09-16 16:07:46] Gemma3 fresh decision cache train: 2848/4096
+[2026-09-16 16:07:50] Gemma3 fresh decision cache train: 2880/4096
+[2026-09-16 16:07:54] Gemma3 fresh decision cache train: 2912/4096
+[2026-09-16 16:07:58] Gemma3 fresh decision cache train: 2944/4096
+[2026-09-16 16:08:02] Gemma3 fresh decision cache train: 2976/4096
+[2026-09-16 16:08:06] Gemma3 fresh decision cache train: 3008/4096
+[2026-09-16 16:08:10] Gemma3 fresh decision cache train: 3040/4096
+[2026-09-16 16:08:14] Gemma3 fresh decision cache train: 3072/4096
+[2026-09-16 16:08:18] Gemma3 fresh decision cache train: 3104/4096
+[2026-09-16 16:08:22] Gemma3 fresh decision cache train: 3136/4096
+[2026-09-16 16:08:26] Gemma3 fresh decision cache train: 3168/4096
+[2026-09-16 16:08:30] Gemma3 fresh decision cache train: 3200/4096
+[2026-09-16 16:08:34] Gemma3 fresh decision cache train: 3232/4096
+[2026-09-16 16:08:38] Gemma3 fresh decision cache train: 3264/4096
+[2026-09-16 16:08:42] Gemma3 fresh decision cache train: 3296/4096
+[2026-09-16 16:08:46] Gemma3 fresh decision cache train: 3328/4096
+[2026-09-16 16:08:50] Gemma3 fresh decision cache train: 3360/4096
+[2026-09-16 16:08:54] Gemma3 fresh decision cache train: 3392/4096
+[2026-09-16 16:08:58] Gemma3 fresh decision cache train: 3424/4096
+[2026-09-16 16:09:02] Gemma3 fresh decision cache train: 3456/4096
+[2026-09-16 16:09:06] Gemma3 fresh decision cache train: 3488/4096
+[2026-09-16 16:09:10] Gemma3 fresh decision cache train: 3520/4096
+[2026-09-16 16:09:14] Gemma3 fresh decision cache train: 3552/4096
+[2026-09-16 16:09:18] Gemma3 fresh decision cache train: 3584/4096
+[2026-09-16 16:09:21] Gemma3 fresh decision cache train: 3616/4096
+[2026-09-16 16:09:25] Gemma3 fresh decision cache train: 3648/4096
+[2026-09-16 16:09:29] Gemma3 fresh decision cache train: 3680/4096
+[2026-09-16 16:09:33] Gemma3 fresh decision cache train: 3712/4096
+[2026-09-16 16:09:37] Gemma3 fresh decision cache train: 3744/4096
+[2026-09-16 16:09:41] Gemma3 fresh decision cache train: 3776/4096
+[2026-09-16 16:09:45] Gemma3 fresh decision cache train: 3808/4096
+[2026-09-16 16:09:49] Gemma3 fresh decision cache train: 3840/4096
+[2026-09-16 16:09:53] Gemma3 fresh decision cache train: 3872/4096
+[2026-09-16 16:09:57] Gemma3 fresh decision cache train: 3904/4096
+[2026-09-16 16:10:00] Gemma3 fresh decision cache train: 3936/4096
+[2026-09-16 16:10:04] Gemma3 fresh decision cache train: 3968/4096
+[2026-09-16 16:10:08] Gemma3 fresh decision cache train: 4000/4096
+[2026-09-16 16:10:11] Gemma3 fresh decision cache train: 4032/4096
+[2026-09-16 16:10:15] Gemma3 fresh decision cache train: 4064/4096
+[2026-09-16 16:10:19] Gemma3 fresh decision cache train: 4096/4096
+[2026-09-16 16:10:23] Gemma3 fresh decision cache validation: 32/128
+[2026-09-16 16:10:27] Gemma3 fresh decision cache validation: 64/128
+[2026-09-16 16:10:31] Gemma3 fresh decision cache validation: 96/128
+[2026-09-16 16:10:35] Gemma3 fresh decision cache validation: 128/128
+[2026-09-16 16:10:38] Gemma3 fresh decision cache test: 32/128
+[2026-09-16 16:10:46] Gemma3 fresh decision cache test: 64/128
+[2026-09-16 16:10:55] Gemma3 fresh decision cache test: 96/128
+[2026-09-16 16:11:04] Gemma3 fresh decision cache test: 128/128
+DONE stage: cache_gemma
+START stage: cache_qwen
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:47,  3.70it/s]
+Loading weights:  34%|███▍      | 135/398 [00:00<00:00, 457.72it/s]
+Loading weights:  53%|█████▎    | 211/398 [00:00<00:00, 454.46it/s]
+Loading weights:  69%|██████▊   | 273/398 [00:00<00:00, 439.17it/s]
+Loading weights:  82%|████████▏ | 327/398 [00:00<00:00, 382.02it/s]
+Loading weights:  93%|█████████▎| 372/398 [00:01<00:00, 353.78it/s]
+Loading weights: 100%|██████████| 398/398 [00:01<00:00, 360.58it/s]
+[2026-09-16 16:11:29] Qwen fresh decision/pair cache train: 32/4096
+[2026-09-16 16:11:34] Qwen fresh decision/pair cache train: 64/4096
+[2026-09-16 16:11:40] Qwen fresh decision/pair cache train: 96/4096
+[2026-09-16 16:11:45] Qwen fresh decision/pair cache train: 128/4096
+[2026-09-16 16:11:50] Qwen fresh decision/pair cache train: 160/4096
+[2026-09-16 16:11:57] Qwen fresh decision/pair cache train: 192/4096
+[2026-09-16 16:12:02] Qwen fresh decision/pair cache train: 224/4096
+[2026-09-16 16:12:08] Qwen fresh decision/pair cache train: 256/4096
+[2026-09-16 16:12:13] Qwen fresh decision/pair cache train: 288/4096
+[2026-09-16 16:12:18] Qwen fresh decision/pair cache train: 320/4096
+[2026-09-16 16:12:24] Qwen fresh decision/pair cache train: 352/4096
+[2026-09-16 16:12:29] Qwen fresh decision/pair cache train: 384/4096
+[2026-09-16 16:12:34] Qwen fresh decision/pair cache train: 416/4096
+[2026-09-16 16:12:41] Qwen fresh decision/pair cache train: 448/4096
+[2026-09-16 16:12:47] Qwen fresh decision/pair cache train: 480/4096
+[2026-09-16 16:12:53] Qwen fresh decision/pair cache train: 512/4096
+[2026-09-16 16:12:58] Qwen fresh decision/pair cache train: 544/4096
+[2026-09-16 16:13:04] Qwen fresh decision/pair cache train: 576/4096
+[2026-09-16 16:13:09] Qwen fresh decision/pair cache train: 608/4096
+[2026-09-16 16:13:15] Qwen fresh decision/pair cache train: 640/4096
+[2026-09-16 16:13:20] Qwen fresh decision/pair cache train: 672/4096
+[2026-09-16 16:13:25] Qwen fresh decision/pair cache train: 704/4096
+[2026-09-16 16:13:31] Qwen fresh decision/pair cache train: 736/4096
+[2026-09-16 16:13:36] Qwen fresh decision/pair cache train: 768/4096
+[2026-09-16 16:13:41] Qwen fresh decision/pair cache train: 800/4096
+[2026-09-16 16:13:47] Qwen fresh decision/pair cache train: 832/4096
+[2026-09-16 16:13:51] Qwen fresh decision/pair cache train: 864/4096
+[2026-09-16 16:14:00] Qwen fresh decision/pair cache train: 896/4096
+[2026-09-16 16:14:10] Qwen fresh decision/pair cache train: 928/4096
+[2026-09-16 16:14:19] Qwen fresh decision/pair cache train: 960/4096
+[2026-09-16 16:14:29] Qwen fresh decision/pair cache train: 992/4096
+[2026-09-16 16:14:35] Qwen fresh decision/pair cache train: 1024/4096
+[2026-09-16 16:14:41] Qwen fresh decision/pair cache train: 1056/4096
+[2026-09-16 16:14:47] Qwen fresh decision/pair cache train: 1088/4096
+[2026-09-16 16:14:52] Qwen fresh decision/pair cache train: 1120/4096
+[2026-09-16 16:14:57] Qwen fresh decision/pair cache train: 1152/4096
+[2026-09-16 16:15:03] Qwen fresh decision/pair cache train: 1184/4096
+[2026-09-16 16:15:06] Qwen fresh decision/pair cache train: 1216/4096
+[2026-09-16 16:15:09] Qwen fresh decision/pair cache train: 1248/4096
+[2026-09-16 16:15:13] Qwen fresh decision/pair cache train: 1280/4096
+[2026-09-16 16:15:16] Qwen fresh decision/pair cache train: 1312/4096
+[2026-09-16 16:15:19] Qwen fresh decision/pair cache train: 1344/4096
+[2026-09-16 16:15:22] Qwen fresh decision/pair cache train: 1376/4096
+[2026-09-16 16:15:26] Qwen fresh decision/pair cache train: 1408/4096
+[2026-09-16 16:15:29] Qwen fresh decision/pair cache train: 1440/4096
+[2026-09-16 16:15:32] Qwen fresh decision/pair cache train: 1472/4096
+[2026-09-16 16:15:36] Qwen fresh decision/pair cache train: 1504/4096
+[2026-09-16 16:15:39] Qwen fresh decision/pair cache train: 1536/4096
+[2026-09-16 16:15:42] Qwen fresh decision/pair cache train: 1568/4096
+[2026-09-16 16:15:45] Qwen fresh decision/pair cache train: 1600/4096
+[2026-09-16 16:15:48] Qwen fresh decision/pair cache train: 1632/4096
+[2026-09-16 16:15:52] Qwen fresh decision/pair cache train: 1664/4096
+[2026-09-16 16:15:55] Qwen fresh decision/pair cache train: 1696/4096
+[2026-09-16 16:15:58] Qwen fresh decision/pair cache train: 1728/4096
+[2026-09-16 16:16:02] Qwen fresh decision/pair cache train: 1760/4096
+[2026-09-16 16:16:05] Qwen fresh decision/pair cache train: 1792/4096
+[2026-09-16 16:16:08] Qwen fresh decision/pair cache train: 1824/4096
+[2026-09-16 16:16:11] Qwen fresh decision/pair cache train: 1856/4096
+[2026-09-16 16:16:15] Qwen fresh decision/pair cache train: 1888/4096
+[2026-09-16 16:16:19] Qwen fresh decision/pair cache train: 1920/4096
+[2026-09-16 16:16:22] Qwen fresh decision/pair cache train: 1952/4096
+[2026-09-16 16:16:25] Qwen fresh decision/pair cache train: 1984/4096
+[2026-09-16 16:16:28] Qwen fresh decision/pair cache train: 2016/4096
+[2026-09-16 16:16:32] Qwen fresh decision/pair cache train: 2048/4096
+[2026-09-16 16:16:35] Qwen fresh decision/pair cache train: 2080/4096
+[2026-09-16 16:16:38] Qwen fresh decision/pair cache train: 2112/4096
+[2026-09-16 16:16:41] Qwen fresh decision/pair cache train: 2144/4096
+[2026-09-16 16:16:45] Qwen fresh decision/pair cache train: 2176/4096
+[2026-09-16 16:16:48] Qwen fresh decision/pair cache train: 2208/4096
+[2026-09-16 16:16:52] Qwen fresh decision/pair cache train: 2240/4096
+[2026-09-16 16:16:55] Qwen fresh decision/pair cache train: 2272/4096
+[2026-09-16 16:16:59] Qwen fresh decision/pair cache train: 2304/4096
+[2026-09-16 16:17:02] Qwen fresh decision/pair cache train: 2336/4096
+[2026-09-16 16:17:05] Qwen fresh decision/pair cache train: 2368/4096
+[2026-09-16 16:17:09] Qwen fresh decision/pair cache train: 2400/4096
+[2026-09-16 16:17:12] Qwen fresh decision/pair cache train: 2432/4096
+[2026-09-16 16:17:15] Qwen fresh decision/pair cache train: 2464/4096
+[2026-09-16 16:17:19] Qwen fresh decision/pair cache train: 2496/4096
+[2026-09-16 16:17:22] Qwen fresh decision/pair cache train: 2528/4096
+[2026-09-16 16:17:25] Qwen fresh decision/pair cache train: 2560/4096
+[2026-09-16 16:17:29] Qwen fresh decision/pair cache train: 2592/4096
+[2026-09-16 16:17:33] Qwen fresh decision/pair cache train: 2624/4096
+[2026-09-16 16:17:36] Qwen fresh decision/pair cache train: 2656/4096
+[2026-09-16 16:17:40] Qwen fresh decision/pair cache train: 2688/4096
+[2026-09-16 16:17:43] Qwen fresh decision/pair cache train: 2720/4096
+[2026-09-16 16:17:46] Qwen fresh decision/pair cache train: 2752/4096
+[2026-09-16 16:17:49] Qwen fresh decision/pair cache train: 2784/4096
+[2026-09-16 16:17:53] Qwen fresh decision/pair cache train: 2816/4096
+[2026-09-16 16:17:57] Qwen fresh decision/pair cache train: 2848/4096
+[2026-09-16 16:18:02] Qwen fresh decision/pair cache train: 2880/4096
+[2026-09-16 16:18:05] Qwen fresh decision/pair cache train: 2912/4096
+[2026-09-16 16:18:09] Qwen fresh decision/pair cache train: 2944/4096
+[2026-09-16 16:18:12] Qwen fresh decision/pair cache train: 2976/4096
+[2026-09-16 16:18:15] Qwen fresh decision/pair cache train: 3008/4096
+[2026-09-16 16:18:18] Qwen fresh decision/pair cache train: 3040/4096
+[2026-09-16 16:18:22] Qwen fresh decision/pair cache train: 3072/4096
+[2026-09-16 16:18:25] Qwen fresh decision/pair cache train: 3104/4096
+[2026-09-16 16:18:28] Qwen fresh decision/pair cache train: 3136/4096
+[2026-09-16 16:18:31] Qwen fresh decision/pair cache train: 3168/4096
+[2026-09-16 16:18:35] Qwen fresh decision/pair cache train: 3200/4096
+[2026-09-16 16:18:38] Qwen fresh decision/pair cache train: 3232/4096
+[2026-09-16 16:18:41] Qwen fresh decision/pair cache train: 3264/4096
+[2026-09-16 16:18:44] Qwen fresh decision/pair cache train: 3296/4096
+[2026-09-16 16:18:48] Qwen fresh decision/pair cache train: 3328/4096
+[2026-09-16 16:18:51] Qwen fresh decision/pair cache train: 3360/4096
+[2026-09-16 16:18:54] Qwen fresh decision/pair cache train: 3392/4096
+[2026-09-16 16:18:58] Qwen fresh decision/pair cache train: 3424/4096
+[2026-09-16 16:19:01] Qwen fresh decision/pair cache train: 3456/4096
+[2026-09-16 16:19:04] Qwen fresh decision/pair cache train: 3488/4096
+[2026-09-16 16:19:07] Qwen fresh decision/pair cache train: 3520/4096
+[2026-09-16 16:19:11] Qwen fresh decision/pair cache train: 3552/4096
+[2026-09-16 16:19:14] Qwen fresh decision/pair cache train: 3584/4096
+[2026-09-16 16:19:17] Qwen fresh decision/pair cache train: 3616/4096
+[2026-09-16 16:19:21] Qwen fresh decision/pair cache train: 3648/4096
+[2026-09-16 16:19:24] Qwen fresh decision/pair cache train: 3680/4096
+[2026-09-16 16:19:27] Qwen fresh decision/pair cache train: 3712/4096
+[2026-09-16 16:19:30] Qwen fresh decision/pair cache train: 3744/4096
+[2026-09-16 16:19:34] Qwen fresh decision/pair cache train: 3776/4096
+[2026-09-16 16:19:37] Qwen fresh decision/pair cache train: 3808/4096
+[2026-09-16 16:19:40] Qwen fresh decision/pair cache train: 3840/4096
+[2026-09-16 16:19:44] Qwen fresh decision/pair cache train: 3872/4096
+[2026-09-16 16:19:47] Qwen fresh decision/pair cache train: 3904/4096
+[2026-09-16 16:19:50] Qwen fresh decision/pair cache train: 3936/4096
+[2026-09-16 16:19:54] Qwen fresh decision/pair cache train: 3968/4096
+[2026-09-16 16:19:57] Qwen fresh decision/pair cache train: 4000/4096
+[2026-09-16 16:20:00] Qwen fresh decision/pair cache train: 4032/4096
+[2026-09-16 16:20:03] Qwen fresh decision/pair cache train: 4064/4096
+[2026-09-16 16:20:07] Qwen fresh decision/pair cache train: 4096/4096
+[2026-09-16 16:20:10] Qwen fresh decision/pair cache validation: 32/128
+[2026-09-16 16:20:14] Qwen fresh decision/pair cache validation: 64/128
+[2026-09-16 16:20:17] Qwen fresh decision/pair cache validation: 96/128
+[2026-09-16 16:20:20] Qwen fresh decision/pair cache validation: 128/128
+[2026-09-16 16:20:23] Qwen fresh decision/pair cache test: 32/128
+[2026-09-16 16:20:27] Qwen fresh decision/pair cache test: 64/128
+[2026-09-16 16:20:30] Qwen fresh decision/pair cache test: 96/128
+[2026-09-16 16:20:34] Qwen fresh decision/pair cache test: 128/128
+DONE stage: cache_qwen
+START stage: phase0_audit
+[2026-09-16 16:20:40] PHASE-0 AUDIT PASSED: {'passed': True, 'sample_count': 32, 'selection': '32 normalized option-text regions; max decision attention within each region', 'query': 'last Sender-native Answer: token', 'candidates': 'Options only; Question, position0 and Answer excluded', 'answer_tokenization': {'qwen': {'ids': [16141, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 425, 'C': 356, 'D': 422}}, 'gemma': {'ids': [7925, 236787], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 562, 'B': 603, 'C': 565, 'D': 622}}}, 'mean_anchor_iou': 0.9438456481669374, 'mean_selected_attention_mass': 0.8131194788615607}
+DONE stage: phase0_audit
+START stage: teachers
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:29,  4.45it/s]
+Loading weights:  37%|███▋      | 148/398 [00:00<00:00, 572.28it/s]
+Loading weights:  59%|█████▉    | 234/398 [00:00<00:00, 578.59it/s]
+Loading weights:  77%|███████▋  | 308/398 [00:00<00:00, 601.39it/s]
+Loading weights:  95%|█████████▍| 378/398 [00:00<00:00, 587.12it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 544.11it/s]
+[2026-09-16 16:20:55] Qwen Oracle teachers train: 64/4096
+[2026-09-16 16:20:59] Qwen Oracle teachers train: 128/4096
+[2026-09-16 16:21:03] Qwen Oracle teachers train: 192/4096
+[2026-09-16 16:21:08] Qwen Oracle teachers train: 256/4096
+[2026-09-16 16:21:12] Qwen Oracle teachers train: 320/4096
+[2026-09-16 16:21:16] Qwen Oracle teachers train: 384/4096
+[2026-09-16 16:21:21] Qwen Oracle teachers train: 448/4096
+[2026-09-16 16:21:25] Qwen Oracle teachers train: 512/4096
+[2026-09-16 16:21:30] Qwen Oracle teachers train: 576/4096
+[2026-09-16 16:21:34] Qwen Oracle teachers train: 640/4096
+[2026-09-16 16:21:38] Qwen Oracle teachers train: 704/4096
+[2026-09-16 16:21:43] Qwen Oracle teachers train: 768/4096
+[2026-09-16 16:21:47] Qwen Oracle teachers train: 832/4096
+[2026-09-16 16:21:51] Qwen Oracle teachers train: 896/4096
+[2026-09-16 16:21:56] Qwen Oracle teachers train: 960/4096
+[2026-09-16 16:22:00] Qwen Oracle teachers train: 1024/4096
+[2026-09-16 16:22:04] Qwen Oracle teachers train: 1088/4096
+[2026-09-16 16:22:09] Qwen Oracle teachers train: 1152/4096
+[2026-09-16 16:22:13] Qwen Oracle teachers train: 1216/4096
+[2026-09-16 16:22:17] Qwen Oracle teachers train: 1280/4096
+[2026-09-16 16:22:22] Qwen Oracle teachers train: 1344/4096
+[2026-09-16 16:22:26] Qwen Oracle teachers train: 1408/4096
+[2026-09-16 16:22:30] Qwen Oracle teachers train: 1472/4096
+[2026-09-16 16:22:35] Qwen Oracle teachers train: 1536/4096
+[2026-09-16 16:22:39] Qwen Oracle teachers train: 1600/4096
+[2026-09-16 16:22:43] Qwen Oracle teachers train: 1664/4096
+[2026-09-16 16:22:48] Qwen Oracle teachers train: 1728/4096
+[2026-09-16 16:22:52] Qwen Oracle teachers train: 1792/4096
+[2026-09-16 16:22:56] Qwen Oracle teachers train: 1856/4096
+[2026-09-16 16:23:01] Qwen Oracle teachers train: 1920/4096
+[2026-09-16 16:23:05] Qwen Oracle teachers train: 1984/4096
+[2026-09-16 16:23:09] Qwen Oracle teachers train: 2048/4096
+[2026-09-16 16:23:14] Qwen Oracle teachers train: 2112/4096
+[2026-09-16 16:23:18] Qwen Oracle teachers train: 2176/4096
+[2026-09-16 16:23:22] Qwen Oracle teachers train: 2240/4096
+[2026-09-16 16:23:27] Qwen Oracle teachers train: 2304/4096
+[2026-09-16 16:23:31] Qwen Oracle teachers train: 2368/4096
+[2026-09-16 16:23:35] Qwen Oracle teachers train: 2432/4096
+[2026-09-16 16:23:40] Qwen Oracle teachers train: 2496/4096
+[2026-09-16 16:23:44] Qwen Oracle teachers train: 2560/4096
+[2026-09-16 16:23:48] Qwen Oracle teachers train: 2624/4096
+[2026-09-16 16:23:53] Qwen Oracle teachers train: 2688/4096
+[2026-09-16 16:23:59] Qwen Oracle teachers train: 2752/4096
+[2026-09-16 16:24:04] Qwen Oracle teachers train: 2816/4096
+[2026-09-16 16:24:08] Qwen Oracle teachers train: 2880/4096
+[2026-09-16 16:24:13] Qwen Oracle teachers train: 2944/4096
+[2026-09-16 16:24:20] Qwen Oracle teachers train: 3008/4096
+[2026-09-16 16:24:25] Qwen Oracle teachers train: 3072/4096
+[2026-09-16 16:24:29] Qwen Oracle teachers train: 3136/4096
+[2026-09-16 16:24:34] Qwen Oracle teachers train: 3200/4096
+[2026-09-16 16:24:38] Qwen Oracle teachers train: 3264/4096
+[2026-09-16 16:24:42] Qwen Oracle teachers train: 3328/4096
+[2026-09-16 16:24:47] Qwen Oracle teachers train: 3392/4096
+[2026-09-16 16:24:51] Qwen Oracle teachers train: 3456/4096
+[2026-09-16 16:24:55] Qwen Oracle teachers train: 3520/4096
+[2026-09-16 16:25:00] Qwen Oracle teachers train: 3584/4096
+[2026-09-16 16:25:04] Qwen Oracle teachers train: 3648/4096
+[2026-09-16 16:25:09] Qwen Oracle teachers train: 3712/4096
+[2026-09-16 16:25:13] Qwen Oracle teachers train: 3776/4096
+[2026-09-16 16:25:18] Qwen Oracle teachers train: 3840/4096
+[2026-09-16 16:25:23] Qwen Oracle teachers train: 3904/4096
+[2026-09-16 16:25:28] Qwen Oracle teachers train: 3968/4096
+[2026-09-16 16:25:33] Qwen Oracle teachers train: 4032/4096
+[2026-09-16 16:25:38] Qwen Oracle teachers train: 4096/4096
+[2026-09-16 16:25:43] Qwen Oracle teachers validation: 64/128
+[2026-09-16 16:25:49] Qwen Oracle teachers validation: 128/128
+[2026-09-16 16:25:54] Qwen Oracle teachers test: 64/128
+[2026-09-16 16:25:59] Qwen Oracle teachers test: 128/128
+DONE stage: teachers
+START stage: baselines
+
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/883 [00:00<05:45,  2.55it/s]
+Loading weights:  20%|█▉        | 173/883 [00:00<00:01, 363.53it/s]
+Loading weights:  25%|██▌       | 224/883 [00:02<00:09, 71.57it/s]
+Loading weights:  29%|██▊       | 253/883 [00:04<00:13, 47.52it/s]
+Loading weights:  31%|███       | 272/883 [00:04<00:15, 40.17it/s]
+Loading weights:  32%|███▏      | 285/883 [00:05<00:18, 32.61it/s]
+Loading weights:  33%|███▎      | 294/883 [00:06<00:22, 25.70it/s]
+Loading weights:  34%|███▍      | 303/883 [00:07<00:28, 20.35it/s]
+Loading weights:  36%|███▌      | 317/883 [00:08<00:26, 21.30it/s]
+Loading weights:  37%|███▋      | 329/883 [00:08<00:24, 22.42it/s]
+Loading weights:  38%|███▊      | 339/883 [00:09<00:25, 21.75it/s]
+Loading weights:  39%|███▉      | 343/883 [00:09<00:29, 18.28it/s]
+Loading weights:  39%|███▉      | 346/883 [00:10<00:29, 18.23it/s]
+Loading weights:  40%|████      | 355/883 [00:11<00:39, 13.53it/s]
+Loading weights:  42%|████▏     | 369/883 [00:11<00:32, 15.73it/s]
+Loading weights:  43%|████▎     | 382/883 [00:12<00:30, 16.43it/s]
+Loading weights:  45%|████▍     | 393/883 [00:13<00:28, 16.94it/s]
+Loading weights:  45%|████▍     | 395/883 [00:13<00:29, 16.78it/s]
+Loading weights:  46%|████▌     | 406/883 [00:13<00:20, 23.14it/s]
+Loading weights:  46%|████▋     | 410/883 [00:13<00:24, 19.27it/s]
+Loading weights:  47%|████▋     | 413/883 [00:13<00:26, 17.72it/s]
+Loading weights:  48%|████▊     | 420/883 [00:15<00:39, 11.81it/s]
+Loading weights:  49%|████▉     | 433/883 [00:15<00:25, 17.64it/s]
+Loading weights:  67%|██████▋   | 593/883 [00:15<00:01, 147.81it/s]
+Loading weights:  83%|████████▎ | 731/883 [00:15<00:00, 277.36it/s]
+Loading weights: 100%|██████████| 883/883 [00:15<00:00, 56.61it/s]
+Gemma3 baseline pass: 32/128
+Gemma3 baseline pass: 64/128
+Gemma3 baseline pass: 96/128
+Gemma3 baseline pass: 128/128
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:24,  4.71it/s]
+Loading weights:  40%|███▉      | 158/398 [00:00<00:00, 632.47it/s]
+Loading weights:  63%|██████▎   | 250/398 [00:00<00:00, 594.40it/s]
+Loading weights:  82%|████████▏ | 326/398 [00:00<00:00, 551.30it/s]
+Loading weights:  98%|█████████▊| 391/398 [00:00<00:00, 552.80it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 527.71it/s]
+Qwen baseline/control pass: 16/128
+Qwen baseline/control pass: 32/128
+Qwen baseline/control pass: 48/128
+Qwen baseline/control pass: 64/128
+Qwen baseline/control pass: 80/128
+Qwen baseline/control pass: 96/128
+Qwen baseline/control pass: 112/128
+Qwen baseline/control pass: 128/128
+{
+  "gemma3_full_native": {
+    "correct": 97,
+    "accuracy": 0.7578125
+  },
+  "gemma3_native_selected32": {
+    "correct": 90,
+    "accuracy": 0.703125
+  },
+  "qwen_full_native": {
+    "correct": 96,
+    "accuracy": 0.75
+  },
+  "qwen_native_oracle32": {
+    "correct": 95,
+    "accuracy": 0.7421875
+  },
+  "qwen_self_selected32": {
+    "correct": 94,
+    "accuracy": 0.734375
+  },
+  "qwen_zero32": {
+    "correct": 31,
+    "accuracy": 0.2421875
+  },
+  "qwen_no_memory": {
+    "correct": 33,
+    "accuracy": 0.2578125
+  },
+  "qwen_shuffled_oracle32": {
+    "correct": 34,
+    "accuracy": 0.265625
+  }
+}
+DONE stage: baselines
+START stage: stage_a
+[2026-09-16 16:28:32] Fresh Stage A 16/2048 loss=1.470989
+[2026-09-16 16:28:44] Fresh Stage A 32/2048 loss=1.188010
+[2026-09-16 16:28:56] Fresh Stage A 48/2048 loss=1.085699
+[2026-09-16 16:29:07] Fresh Stage A 64/2048 loss=1.000285
+[2026-09-16 16:29:15] Fresh Stage A 80/2048 loss=0.915531
+[2026-09-16 16:29:23] Fresh Stage A 96/2048 loss=0.847883
+[2026-09-16 16:29:29] Fresh Stage A 112/2048 loss=0.882349
+[2026-09-16 16:29:37] Fresh Stage A 128/2048 loss=0.925164
+[2026-09-16 16:29:43] Fresh Stage A 144/2048 loss=0.829776
+[2026-09-16 16:29:50] Fresh Stage A 160/2048 loss=0.794943
+[2026-09-16 16:29:56] Fresh Stage A 176/2048 loss=0.812931
+[2026-09-16 16:30:03] Fresh Stage A 192/2048 loss=0.792563
+[2026-09-16 16:30:10] Fresh Stage A 208/2048 loss=0.815462
+[2026-09-16 16:30:16] Fresh Stage A 224/2048 loss=0.716807
+[2026-09-16 16:30:23] Fresh Stage A 240/2048 loss=0.780151
+[2026-09-16 16:30:30] Fresh Stage A 256/2048 loss=0.764840
+[2026-09-16 16:30:38] Fresh Stage A validation step=256 loss=0.771788
+[2026-09-16 16:30:43] Fresh Stage A 272/2048 loss=0.753292
+[2026-09-16 16:30:50] Fresh Stage A 288/2048 loss=0.654710
+[2026-09-16 16:30:56] Fresh Stage A 304/2048 loss=0.733268
+[2026-09-16 16:31:03] Fresh Stage A 320/2048 loss=0.712558
+[2026-09-16 16:31:09] Fresh Stage A 336/2048 loss=0.759725
+[2026-09-16 16:31:16] Fresh Stage A 352/2048 loss=0.727480
+[2026-09-16 16:31:23] Fresh Stage A 368/2048 loss=0.759028
+[2026-09-16 16:31:29] Fresh Stage A 384/2048 loss=0.814236
+[2026-09-16 16:31:35] Fresh Stage A 400/2048 loss=0.672980
+[2026-09-16 16:31:42] Fresh Stage A 416/2048 loss=0.648932
+[2026-09-16 16:31:48] Fresh Stage A 432/2048 loss=0.690022
+[2026-09-16 16:31:54] Fresh Stage A 448/2048 loss=0.676223
+[2026-09-16 16:32:01] Fresh Stage A 464/2048 loss=0.613986
+[2026-09-16 16:32:07] Fresh Stage A 480/2048 loss=0.622396
+[2026-09-16 16:32:14] Fresh Stage A 496/2048 loss=0.737162
+[2026-09-16 16:32:21] Fresh Stage A 512/2048 loss=0.711859
+[2026-09-16 16:32:30] Fresh Stage A validation step=512 loss=0.697509
+[2026-09-16 16:32:35] Fresh Stage A 528/2048 loss=0.591756
+[2026-09-16 16:32:41] Fresh Stage A 544/2048 loss=0.626167
+[2026-09-16 16:32:47] Fresh Stage A 560/2048 loss=0.636059
+[2026-09-16 16:32:53] Fresh Stage A 576/2048 loss=0.690783
+[2026-09-16 16:33:00] Fresh Stage A 592/2048 loss=0.540246
+[2026-09-16 16:33:06] Fresh Stage A 608/2048 loss=0.603860
+[2026-09-16 16:33:13] Fresh Stage A 624/2048 loss=0.657205
+[2026-09-16 16:33:19] Fresh Stage A 640/2048 loss=0.645218
+[2026-09-16 16:33:26] Fresh Stage A 656/2048 loss=0.614338
+[2026-09-16 16:33:32] Fresh Stage A 672/2048 loss=0.573325
+[2026-09-16 16:33:39] Fresh Stage A 688/2048 loss=0.578022
+[2026-09-16 16:33:45] Fresh Stage A 704/2048 loss=0.652585
+[2026-09-16 16:33:52] Fresh Stage A 720/2048 loss=0.618426
+[2026-09-16 16:33:58] Fresh Stage A 736/2048 loss=0.568434
+[2026-09-16 16:34:04] Fresh Stage A 752/2048 loss=0.591426
+[2026-09-16 16:34:10] Fresh Stage A 768/2048 loss=0.582773
+[2026-09-16 16:34:19] Fresh Stage A validation step=768 loss=0.664844
+[2026-09-16 16:34:24] Fresh Stage A 784/2048 loss=0.569735
+[2026-09-16 16:34:30] Fresh Stage A 800/2048 loss=0.655750
+[2026-09-16 16:34:36] Fresh Stage A 816/2048 loss=0.652834
+[2026-09-16 16:34:42] Fresh Stage A 832/2048 loss=0.638752
+[2026-09-16 16:34:49] Fresh Stage A 848/2048 loss=0.622134
+[2026-09-16 16:34:55] Fresh Stage A 864/2048 loss=0.600839
+[2026-09-16 16:35:01] Fresh Stage A 880/2048 loss=0.569132
+[2026-09-16 16:35:08] Fresh Stage A 896/2048 loss=0.579619
+[2026-09-16 16:35:14] Fresh Stage A 912/2048 loss=0.648534
+[2026-09-16 16:35:20] Fresh Stage A 928/2048 loss=0.605033
+[2026-09-16 16:35:27] Fresh Stage A 944/2048 loss=0.656172
+[2026-09-16 16:35:33] Fresh Stage A 960/2048 loss=0.605981
+[2026-09-16 16:35:40] Fresh Stage A 976/2048 loss=0.588111
+[2026-09-16 16:35:46] Fresh Stage A 992/2048 loss=0.623177
+[2026-09-16 16:35:52] Fresh Stage A 1008/2048 loss=0.623894
+[2026-09-16 16:35:59] Fresh Stage A 1024/2048 loss=0.519876
+[2026-09-16 16:36:07] Fresh Stage A validation step=1024 loss=0.654538
+[2026-09-16 16:36:12] Fresh Stage A 1040/2048 loss=0.570207
+[2026-09-16 16:36:18] Fresh Stage A 1056/2048 loss=0.550449
+[2026-09-16 16:36:24] Fresh Stage A 1072/2048 loss=0.579162
+[2026-09-16 16:36:30] Fresh Stage A 1088/2048 loss=0.529023
+[2026-09-16 16:36:36] Fresh Stage A 1104/2048 loss=0.508308
+[2026-09-16 16:36:43] Fresh Stage A 1120/2048 loss=0.538480
+[2026-09-16 16:36:49] Fresh Stage A 1136/2048 loss=0.520382
+[2026-09-16 16:36:56] Fresh Stage A 1152/2048 loss=0.545725
+[2026-09-16 16:37:02] Fresh Stage A 1168/2048 loss=0.615892
+[2026-09-16 16:37:09] Fresh Stage A 1184/2048 loss=0.575235
+[2026-09-16 16:37:15] Fresh Stage A 1200/2048 loss=0.555104
+[2026-09-16 16:37:21] Fresh Stage A 1216/2048 loss=0.657590
+[2026-09-16 16:37:28] Fresh Stage A 1232/2048 loss=0.617915
+[2026-09-16 16:37:34] Fresh Stage A 1248/2048 loss=0.581136
+[2026-09-16 16:37:41] Fresh Stage A 1264/2048 loss=0.598653
+[2026-09-16 16:37:47] Fresh Stage A 1280/2048 loss=0.511794
+[2026-09-16 16:37:55] Fresh Stage A validation step=1280 loss=0.639066
+[2026-09-16 16:38:01] Fresh Stage A 1296/2048 loss=0.546320
+[2026-09-16 16:38:07] Fresh Stage A 1312/2048 loss=0.592207
+[2026-09-16 16:38:13] Fresh Stage A 1328/2048 loss=0.563498
+[2026-09-16 16:38:19] Fresh Stage A 1344/2048 loss=0.534243
+[2026-09-16 16:38:25] Fresh Stage A 1360/2048 loss=0.644316
+[2026-09-16 16:38:32] Fresh Stage A 1376/2048 loss=0.598951
+[2026-09-16 16:38:38] Fresh Stage A 1392/2048 loss=0.564455
+[2026-09-16 16:38:45] Fresh Stage A 1408/2048 loss=0.568050
+[2026-09-16 16:38:51] Fresh Stage A 1424/2048 loss=0.517583
+[2026-09-16 16:38:57] Fresh Stage A 1440/2048 loss=0.613359
+[2026-09-16 16:39:04] Fresh Stage A 1456/2048 loss=0.569261
+[2026-09-16 16:39:11] Fresh Stage A 1472/2048 loss=0.537318
+[2026-09-16 16:39:21] Fresh Stage A 1488/2048 loss=0.566951
+[2026-09-16 16:39:31] Fresh Stage A 1504/2048 loss=0.554930
+[2026-09-16 16:39:42] Fresh Stage A 1520/2048 loss=0.563451
+[2026-09-16 16:39:53] Fresh Stage A 1536/2048 loss=0.527090
+[2026-09-16 16:40:02] Fresh Stage A validation step=1536 loss=0.631064
+[2026-09-16 16:40:14] Fresh Stage A 1552/2048 loss=0.539123
+[2026-09-16 16:40:25] Fresh Stage A 1568/2048 loss=0.476256
+[2026-09-16 16:40:37] Fresh Stage A 1584/2048 loss=0.555980
+[2026-09-16 16:40:48] Fresh Stage A 1600/2048 loss=0.584248
+[2026-09-16 16:40:59] Fresh Stage A 1616/2048 loss=0.516447
+[2026-09-16 16:41:09] Fresh Stage A 1632/2048 loss=0.501050
+[2026-09-16 16:41:21] Fresh Stage A 1648/2048 loss=0.551213
+[2026-09-16 16:41:32] Fresh Stage A 1664/2048 loss=0.513002
+[2026-09-16 16:41:43] Fresh Stage A 1680/2048 loss=0.483806
+[2026-09-16 16:41:53] Fresh Stage A 1696/2048 loss=0.464627
+[2026-09-16 16:42:03] Fresh Stage A 1712/2048 loss=0.481470
+[2026-09-16 16:42:15] Fresh Stage A 1728/2048 loss=0.507533
+[2026-09-16 16:42:26] Fresh Stage A 1744/2048 loss=0.537355
+[2026-09-16 16:42:37] Fresh Stage A 1760/2048 loss=0.577528
+[2026-09-16 16:42:48] Fresh Stage A 1776/2048 loss=0.501882
+[2026-09-16 16:42:59] Fresh Stage A 1792/2048 loss=0.537195
+[2026-09-16 16:43:08] Fresh Stage A validation step=1792 loss=0.621203
+[2026-09-16 16:43:19] Fresh Stage A 1808/2048 loss=0.531960
+[2026-09-16 16:43:31] Fresh Stage A 1824/2048 loss=0.474955
+[2026-09-16 16:43:44] Fresh Stage A 1840/2048 loss=0.571239
+[2026-09-16 16:43:58] Fresh Stage A 1856/2048 loss=0.519328
+[2026-09-16 16:44:11] Fresh Stage A 1872/2048 loss=0.541801
+[2026-09-16 16:44:23] Fresh Stage A 1888/2048 loss=0.556623
+[2026-09-16 16:44:34] Fresh Stage A 1904/2048 loss=0.558471
+[2026-09-16 16:44:41] Fresh Stage A 1920/2048 loss=0.594804
+[2026-09-16 16:44:48] Fresh Stage A 1936/2048 loss=0.550314
+[2026-09-16 16:44:57] Fresh Stage A 1952/2048 loss=0.546113
+[2026-09-16 16:45:04] Fresh Stage A 1968/2048 loss=0.570487
+[2026-09-16 16:45:12] Fresh Stage A 1984/2048 loss=0.581736
+[2026-09-16 16:45:19] Fresh Stage A 2000/2048 loss=0.643029
+[2026-09-16 16:45:27] Fresh Stage A 2016/2048 loss=0.549754
+[2026-09-16 16:45:36] Fresh Stage A 2032/2048 loss=0.547549
+[2026-09-16 16:45:45] Fresh Stage A 2048/2048 loss=0.563064
+[2026-09-16 16:45:53] Fresh Stage A validation step=2048 loss=0.625569
+DONE stage: stage_a
+START stage: select_stage_a
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:28,  4.49it/s]
+Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 591.88it/s]
+Loading weights:  61%|██████    | 242/398 [00:00<00:00, 612.82it/s]
+Loading weights:  80%|███████▉  | 318/398 [00:00<00:00, 604.82it/s]
+Loading weights:  97%|█████████▋| 387/398 [00:00<00:00, 606.84it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 549.31it/s]
+[2026-09-16 16:46:25] Fresh Stage A functional step=256 acc=0.2109 KL=1.283658
+[2026-09-16 16:46:46] Fresh Stage A functional step=512 acc=0.2188 KL=1.298964
+[2026-09-16 16:47:07] Fresh Stage A functional step=768 acc=0.2500 KL=1.228026
+[2026-09-16 16:47:28] Fresh Stage A functional step=1024 acc=0.3438 KL=1.159271
+[2026-09-16 16:47:49] Fresh Stage A functional step=1280 acc=0.2734 KL=1.163845
+[2026-09-16 16:48:10] Fresh Stage A functional step=1536 acc=0.4531 KL=1.016425
+[2026-09-16 16:48:30] Fresh Stage A functional step=1792 acc=0.3359 KL=1.187344
+[2026-09-16 16:48:50] Fresh Stage A functional step=2048 acc=0.3438 KL=1.139747
+DONE stage: select_stage_a
+START stage: train_residual
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:27,  4.51it/s]
+Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 596.34it/s]
+Loading weights:  61%|██████    | 243/398 [00:00<00:00, 613.08it/s]
+Loading weights:  80%|████████  | 319/398 [00:00<00:00, 601.13it/s]
+Loading weights:  97%|█████████▋| 388/398 [00:00<00:00, 590.36it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 553.38it/s]
+[2026-09-16 16:50:17] residual Stage B 16/1024 KL=0.227630
+[2026-09-16 16:51:11] residual Stage B 32/1024 KL=0.838236
+[2026-09-16 16:52:00] residual Stage B 48/1024 KL=0.332591
+[2026-09-16 16:52:48] residual Stage B 64/1024 KL=0.410212
+[2026-09-16 16:53:36] residual Stage B 80/1024 KL=0.786336
+[2026-09-16 16:54:24] residual Stage B 96/1024 KL=0.445057
+[2026-09-16 16:55:13] residual Stage B 112/1024 KL=0.394882
+[2026-09-16 16:56:02] residual Stage B 128/1024 KL=0.382899
+[2026-09-16 16:56:55] residual Stage B 144/1024 KL=0.287327
+[2026-09-16 16:57:53] residual Stage B 160/1024 KL=0.916354
+[2026-09-16 16:58:48] residual Stage B 176/1024 KL=0.956194
+[2026-09-16 16:59:40] residual Stage B 192/1024 KL=0.265501
+[2026-09-16 17:00:31] residual Stage B 208/1024 KL=0.503713
+[2026-09-16 17:01:23] residual Stage B 224/1024 KL=0.492968
+[2026-09-16 17:02:15] residual Stage B 240/1024 KL=0.467424
+[2026-09-16 17:03:07] residual Stage B 256/1024 KL=0.620364
+[2026-09-16 17:03:29] residual validation step=256 acc=0.7109 KL=0.557763
+[2026-09-16 17:04:21] residual Stage B 272/1024 KL=0.497872
+[2026-09-16 17:05:13] residual Stage B 288/1024 KL=0.272147
+[2026-09-16 17:06:04] residual Stage B 304/1024 KL=0.756912
+[2026-09-16 17:06:56] residual Stage B 320/1024 KL=0.675977
+[2026-09-16 17:07:48] residual Stage B 336/1024 KL=0.692935
+[2026-09-16 17:08:41] residual Stage B 352/1024 KL=0.511642
+[2026-09-16 17:09:34] residual Stage B 368/1024 KL=0.684973
+[2026-09-16 17:10:29] residual Stage B 384/1024 KL=0.297734
+[2026-09-16 17:11:23] residual Stage B 400/1024 KL=0.225065
+[2026-09-16 17:12:15] residual Stage B 416/1024 KL=0.651464
+[2026-09-16 17:13:06] residual Stage B 432/1024 KL=0.187053
+[2026-09-16 17:13:58] residual Stage B 448/1024 KL=0.202507
+[2026-09-16 17:14:50] residual Stage B 464/1024 KL=0.448358
+[2026-09-16 17:15:41] residual Stage B 480/1024 KL=0.384370
+[2026-09-16 17:16:33] residual Stage B 496/1024 KL=0.421816
+[2026-09-16 17:17:24] residual Stage B 512/1024 KL=0.715975
+[2026-09-16 17:17:46] residual validation step=512 acc=0.7344 KL=0.541503
+[2026-09-16 17:18:38] residual Stage B 528/1024 KL=0.565753
+[2026-09-16 17:19:28] residual Stage B 544/1024 KL=0.158564
+[2026-09-16 17:20:19] residual Stage B 560/1024 KL=0.619330
+[2026-09-16 17:21:12] residual Stage B 576/1024 KL=0.346222
+[2026-09-16 17:22:04] residual Stage B 592/1024 KL=0.364419
+[2026-09-16 17:22:57] residual Stage B 608/1024 KL=0.215855
+[2026-09-16 17:23:48] residual Stage B 624/1024 KL=0.474714
+[2026-09-16 17:24:38] residual Stage B 640/1024 KL=0.202019
+[2026-09-16 17:25:34] residual Stage B 656/1024 KL=0.391678
+[2026-09-16 17:26:25] residual Stage B 672/1024 KL=0.773656
+[2026-09-16 17:27:16] residual Stage B 688/1024 KL=0.351127
+[2026-09-16 17:28:08] residual Stage B 704/1024 KL=0.533638
+[2026-09-16 17:28:59] residual Stage B 720/1024 KL=0.273681
+[2026-09-16 17:29:50] residual Stage B 736/1024 KL=0.370448
+[2026-09-16 17:30:41] residual Stage B 752/1024 KL=0.933404
+[2026-09-16 17:31:32] residual Stage B 768/1024 KL=0.310049
+[2026-09-16 17:31:56] residual validation step=768 acc=0.7578 KL=0.512014
+[2026-09-16 17:32:49] residual Stage B 784/1024 KL=0.340188
+[2026-09-16 17:33:41] residual Stage B 800/1024 KL=0.355806
+[2026-09-16 17:34:33] residual Stage B 816/1024 KL=0.480812
+[2026-09-16 17:35:27] residual Stage B 832/1024 KL=0.397818
+[2026-09-16 17:36:20] residual Stage B 848/1024 KL=0.728621
+[2026-09-16 17:37:11] residual Stage B 864/1024 KL=0.208935
+[2026-09-16 17:38:02] residual Stage B 880/1024 KL=0.289404
+[2026-09-16 17:38:54] residual Stage B 896/1024 KL=0.291059
+[2026-09-16 17:39:52] residual Stage B 912/1024 KL=0.430093
+[2026-09-16 17:40:42] residual Stage B 928/1024 KL=0.622891
+[2026-09-16 17:41:37] residual Stage B 944/1024 KL=0.591591
+[2026-09-16 17:42:32] residual Stage B 960/1024 KL=0.249508
+[2026-09-16 17:43:27] residual Stage B 976/1024 KL=0.788233
+[2026-09-16 17:44:22] residual Stage B 992/1024 KL=0.429651
+[2026-09-16 17:45:17] residual Stage B 1008/1024 KL=0.288193
+[2026-09-16 17:46:11] residual Stage B 1024/1024 KL=0.255535
+[2026-09-16 17:46:34] residual validation step=1024 acc=0.7734 KL=0.503060
+DONE stage: train_residual
+START stage: train_shared
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:29,  4.44it/s]
+Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 577.96it/s]
+Loading weights:  60%|█████▉    | 238/398 [00:00<00:00, 589.06it/s]
+Loading weights:  78%|███████▊  | 310/398 [00:00<00:00, 608.39it/s]
+Loading weights:  95%|█████████▌| 379/398 [00:00<00:00, 586.50it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 544.27it/s]
+[2026-09-16 17:47:59] shared Stage B 16/1024 KL=0.979384
+[2026-09-16 17:48:39] shared Stage B 32/1024 KL=0.464610
+[2026-09-16 17:49:12] shared Stage B 48/1024 KL=0.833456
+[2026-09-16 17:49:46] shared Stage B 64/1024 KL=1.016021
+[2026-09-16 17:50:20] shared Stage B 80/1024 KL=0.831086
+[2026-09-16 17:50:54] shared Stage B 96/1024 KL=0.586522
+[2026-09-16 17:51:27] shared Stage B 112/1024 KL=0.635325
+[2026-09-16 17:52:01] shared Stage B 128/1024 KL=0.702217
+[2026-09-16 17:52:30] shared Stage B 144/1024 KL=0.526638
+[2026-09-16 17:52:59] shared Stage B 160/1024 KL=0.790673
+[2026-09-16 17:53:28] shared Stage B 176/1024 KL=0.345407
+[2026-09-16 17:53:57] shared Stage B 192/1024 KL=0.256234
+[2026-09-16 17:54:26] shared Stage B 208/1024 KL=0.547517
+[2026-09-16 17:54:55] shared Stage B 224/1024 KL=0.401744
+[2026-09-16 17:55:24] shared Stage B 240/1024 KL=0.515341
+[2026-09-16 17:55:57] shared Stage B 256/1024 KL=0.726782
+[2026-09-16 17:56:14] shared validation step=256 acc=0.7031 KL=0.648514
+[2026-09-16 17:56:47] shared Stage B 272/1024 KL=0.332128
+[2026-09-16 17:57:21] shared Stage B 288/1024 KL=0.572598
+[2026-09-16 17:58:05] shared Stage B 304/1024 KL=0.450714
+[2026-09-16 17:58:50] shared Stage B 320/1024 KL=0.575659
+[2026-09-16 17:59:36] shared Stage B 336/1024 KL=0.299478
+[2026-09-16 18:00:21] shared Stage B 352/1024 KL=0.827248
+[2026-09-16 18:01:06] shared Stage B 368/1024 KL=0.502024
+[2026-09-16 18:01:55] shared Stage B 384/1024 KL=0.762617
+[2026-09-16 18:02:30] shared Stage B 400/1024 KL=0.440978
+[2026-09-16 18:03:02] shared Stage B 416/1024 KL=0.338706
+[2026-09-16 18:03:35] shared Stage B 432/1024 KL=0.416751
+[2026-09-16 18:04:07] shared Stage B 448/1024 KL=0.915274
+[2026-09-16 18:04:39] shared Stage B 464/1024 KL=0.654248
+[2026-09-16 18:05:12] shared Stage B 480/1024 KL=0.696095
+[2026-09-16 18:05:44] shared Stage B 496/1024 KL=1.000016
+[2026-09-16 18:06:16] shared Stage B 512/1024 KL=0.304869
+[2026-09-16 18:06:36] shared validation step=512 acc=0.7578 KL=0.681913
+[2026-09-16 18:07:08] shared Stage B 528/1024 KL=0.924634
+[2026-09-16 18:07:40] shared Stage B 544/1024 KL=0.209948
+[2026-09-16 18:08:13] shared Stage B 560/1024 KL=0.508308
+[2026-09-16 18:08:45] shared Stage B 576/1024 KL=0.698125
+[2026-09-16 18:09:17] shared Stage B 592/1024 KL=0.359035
+[2026-09-16 18:09:50] shared Stage B 608/1024 KL=0.113510
+[2026-09-16 18:10:22] shared Stage B 624/1024 KL=0.724815
+[2026-09-16 18:10:54] shared Stage B 640/1024 KL=0.260795
+[2026-09-16 18:11:33] shared Stage B 656/1024 KL=0.857043
+[2026-09-16 18:12:18] shared Stage B 672/1024 KL=0.316633
+[2026-09-16 18:13:03] shared Stage B 688/1024 KL=0.387439
+[2026-09-16 18:13:49] shared Stage B 704/1024 KL=0.395853
+[2026-09-16 18:14:33] shared Stage B 720/1024 KL=0.619998
+[2026-09-16 18:15:21] shared Stage B 736/1024 KL=0.300121
+[2026-09-16 18:16:02] shared Stage B 752/1024 KL=0.339400
+[2026-09-16 18:16:35] shared Stage B 768/1024 KL=0.353311
+[2026-09-16 18:16:54] shared validation step=768 acc=0.7031 KL=0.690455
+[2026-09-16 18:17:27] shared Stage B 784/1024 KL=0.330169
+[2026-09-16 18:17:59] shared Stage B 800/1024 KL=0.241602
+[2026-09-16 18:18:32] shared Stage B 816/1024 KL=0.282039
+[2026-09-16 18:19:04] shared Stage B 832/1024 KL=0.400426
+[2026-09-16 18:19:36] shared Stage B 848/1024 KL=0.163110
+[2026-09-16 18:20:09] shared Stage B 864/1024 KL=0.504058
+[2026-09-16 18:20:41] shared Stage B 880/1024 KL=0.206926
+[2026-09-16 18:21:14] shared Stage B 896/1024 KL=0.677493
+[2026-09-16 18:21:46] shared Stage B 912/1024 KL=0.379809
+[2026-09-16 18:22:19] shared Stage B 928/1024 KL=0.110207
+[2026-09-16 18:22:51] shared Stage B 944/1024 KL=0.235598
+[2026-09-16 18:23:24] shared Stage B 960/1024 KL=0.732985
+[2026-09-16 18:23:54] shared Stage B 976/1024 KL=0.265054
+[2026-09-16 18:24:23] shared Stage B 992/1024 KL=0.470992
+[2026-09-16 18:24:53] shared Stage B 1008/1024 KL=0.643173
+[2026-09-16 18:25:34] shared Stage B 1024/1024 KL=0.647770
+[2026-09-16 18:25:58] shared validation step=1024 acc=0.6562 KL=0.696628
+DONE stage: train_shared
+START stage: evaluate
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<01:27,  4.53it/s]
+Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 607.98it/s]
+Loading weights:  62%|██████▏   | 247/398 [00:00<00:00, 608.29it/s]
+Loading weights:  81%|████████▏ | 324/398 [00:00<00:00, 604.22it/s]
+Loading weights:  99%|█████████▉| 394/398 [00:00<00:00, 626.15it/s]
+Loading weights: 100%|██████████| 398/398 [00:00<00:00, 564.33it/s]
+[2026-09-16 18:27:03] Final A/B evaluation 16/128
+[2026-09-16 18:27:14] Final A/B evaluation 32/128
+[2026-09-16 18:27:25] Final A/B evaluation 48/128
+[2026-09-16 18:27:37] Final A/B evaluation 64/128
+[2026-09-16 18:27:47] Final A/B evaluation 80/128
+[2026-09-16 18:27:58] Final A/B evaluation 96/128
+[2026-09-16 18:28:09] Final A/B evaluation 112/128
+[2026-09-16 18:28:20] Final A/B evaluation 128/128
+DONE stage: evaluate
+ALL FORWARD TRAIN4096 EXPERIMENT STAGES COMPLETED
+[2026-09-18 19:53:32] START /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full34_headmix_g3_to_q4_seed1234 mode=study
+START stage: model_audit
+{'qwen': {'path': '/home/yezhe/all_models/models/Qwen/Qwen3-4B', 'layers': 36, 'kv_heads': 8, 'head_dim': 128, 'tokenizer_class': 'Qwen2Tokenizer', 'bos_token_id': None}, 'gemma': {'path': '/home/yezhe/all_models/models/LLM-Research/gemma-3-4b-it', 'layers': 34, 'kv_heads': 4, 'head_dim': 256, 'tokenizer_class': 'GemmaTokenizer', 'bos_token_id': 2, 'layer_types': ['sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'full_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention', 'sliding_attention'], 'rope_parameters': {'sliding_attention': {'rope_type': 'default', 'rope_theta': 10000.0}, 'full_attention': {'rope_type': 'linear', 'factor': 8.0, 'rope_theta': 1000000.0}}}, 'translator': {'source_shape': [34, 32, 4, 256], 'target_shape': [36, 32, 8, 128], 'per_head_depth_width': 8704, 'depth_hidden_dim': 1024, 'depth_output_dim': 256, 'head_mapping': 'full_head', 'head_input_width': 1024, 'head_output_width': 1024, 'token_mixing': False, 'k_v_shared': False}}
+DONE stage: model_audit
+START stage: prepare
+[2026-09-18 19:54:12] Prepared standard prompt with unchanged IDs: {'train': {'count': 3072, 'ids_sha256': 'c8dbdaff24c81c8b33f69f720cf7c97d2d782db680f1a2bb12d4dcc266e3e7cf', 'first_id': 'mmlupro_train_5322', 'last_id': 'obqa_12-1071'}, 'validation': {'count': 384, 'ids_sha256': '4b91f8456e14ec72226d2fe18391e5443738cceeea948825f9ba9b4bc6809f7c', 'first_id': 'arc_validation_Mercury_7032340', 'last_id': 'obqa_1177'}, 'test': {'count': 384, 'ids_sha256': 'f2bf2f735fd8676a1a0129d426aa04221b17cc2ea858318de4f2337da8394908', 'first_id': 'arc_test_OHAT_2009_8_36', 'last_id': 'arc_test_VASoL_2008_3_25'}}
+DONE stage: prepare
+START stage: cache_gemma
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<02:24,  6.11it/s]Loading weights:  12%|█▏        | 107/883 [00:00<00:01, 451.62it/s]Loading weights:  19%|█▉        | 172/883 [00:00<00:01, 503.95it/s]Loading weights:  26%|██▌       | 227/883 [00:00<00:01, 513.27it/s]Loading weights:  33%|███▎      | 289/883 [00:00<00:01, 529.55it/s]Loading weights:  40%|████      | 354/883 [00:00<00:00, 549.42it/s]Loading weights:  47%|████▋     | 419/883 [00:00<00:00, 561.16it/s]Loading weights:  72%|███████▏  | 638/883 [00:00<00:00, 1038.31it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 868.15it/s] 
+[2026-09-18 19:54:34] Gemma3 fresh decision cache train: 32/3072
+[2026-09-18 19:54:40] Gemma3 fresh decision cache train: 64/3072
+[2026-09-18 19:54:46] Gemma3 fresh decision cache train: 96/3072
+[2026-09-18 19:54:52] Gemma3 fresh decision cache train: 128/3072
+[2026-09-18 19:54:58] Gemma3 fresh decision cache train: 160/3072
+[2026-09-18 19:55:04] Gemma3 fresh decision cache train: 192/3072
+[2026-09-18 19:55:09] Gemma3 fresh decision cache train: 224/3072
+[2026-09-18 19:55:14] Gemma3 fresh decision cache train: 256/3072
+[2026-09-18 19:55:21] Gemma3 fresh decision cache train: 288/3072
+[2026-09-18 19:55:27] Gemma3 fresh decision cache train: 320/3072
+[2026-09-18 19:55:33] Gemma3 fresh decision cache train: 352/3072
+[2026-09-18 19:55:38] Gemma3 fresh decision cache train: 384/3072
+[2026-09-18 19:55:45] Gemma3 fresh decision cache train: 416/3072
+[2026-09-18 19:55:52] Gemma3 fresh decision cache train: 448/3072
+[2026-09-18 19:56:00] Gemma3 fresh decision cache train: 480/3072
+[2026-09-18 19:56:06] Gemma3 fresh decision cache train: 512/3072
+[2026-09-18 19:56:13] Gemma3 fresh decision cache train: 544/3072
+[2026-09-18 19:56:20] Gemma3 fresh decision cache train: 576/3072
+[2026-09-18 19:56:27] Gemma3 fresh decision cache train: 608/3072
+[2026-09-18 19:56:37] Gemma3 fresh decision cache train: 640/3072
+[2026-09-18 19:56:44] Gemma3 fresh decision cache train: 672/3072
+[2026-09-18 19:56:54] Gemma3 fresh decision cache train: 704/3072
+[2026-09-18 19:57:03] Gemma3 fresh decision cache train: 736/3072
+[2026-09-18 19:57:15] Gemma3 fresh decision cache train: 768/3072
+[2026-09-18 19:57:26] Gemma3 fresh decision cache train: 800/3072
+[2026-09-18 19:57:36] Gemma3 fresh decision cache train: 832/3072
+[2026-09-18 19:57:46] Gemma3 fresh decision cache train: 864/3072
+[2026-09-18 19:57:58] Gemma3 fresh decision cache train: 896/3072
+[2026-09-18 19:58:09] Gemma3 fresh decision cache train: 928/3072
+[2026-09-18 19:58:19] Gemma3 fresh decision cache train: 960/3072
+[2026-09-18 19:58:29] Gemma3 fresh decision cache train: 992/3072
+[2026-09-18 19:58:41] Gemma3 fresh decision cache train: 1024/3072
+[2026-09-18 19:58:50] Gemma3 fresh decision cache train: 1056/3072
+[2026-09-18 19:59:01] Gemma3 fresh decision cache train: 1088/3072
+[2026-09-18 19:59:13] Gemma3 fresh decision cache train: 1120/3072
+[2026-09-18 19:59:22] Gemma3 fresh decision cache train: 1152/3072
+[2026-09-18 19:59:35] Gemma3 fresh decision cache train: 1184/3072
+[2026-09-18 19:59:46] Gemma3 fresh decision cache train: 1216/3072
+[2026-09-18 19:59:57] Gemma3 fresh decision cache train: 1248/3072
+[2026-09-18 20:00:09] Gemma3 fresh decision cache train: 1280/3072
+[2026-09-18 20:00:20] Gemma3 fresh decision cache train: 1312/3072
+[2026-09-18 20:00:32] Gemma3 fresh decision cache train: 1344/3072
+[2026-09-18 20:00:44] Gemma3 fresh decision cache train: 1376/3072
+[2026-09-18 20:00:55] Gemma3 fresh decision cache train: 1408/3072
+[2026-09-18 20:01:05] Gemma3 fresh decision cache train: 1440/3072
+[2026-09-18 20:01:17] Gemma3 fresh decision cache train: 1472/3072
+[2026-09-18 20:01:27] Gemma3 fresh decision cache train: 1504/3072
+[2026-09-18 20:01:35] Gemma3 fresh decision cache train: 1536/3072
+[2026-09-18 20:01:46] Gemma3 fresh decision cache train: 1568/3072
+[2026-09-18 20:01:57] Gemma3 fresh decision cache train: 1600/3072
+[2026-09-18 20:02:08] Gemma3 fresh decision cache train: 1632/3072
+[2026-09-18 20:02:19] Gemma3 fresh decision cache train: 1664/3072
+[2026-09-18 20:02:32] Gemma3 fresh decision cache train: 1696/3072
+[2026-09-18 20:02:43] Gemma3 fresh decision cache train: 1728/3072
+[2026-09-18 20:02:54] Gemma3 fresh decision cache train: 1760/3072
+[2026-09-18 20:03:07] Gemma3 fresh decision cache train: 1792/3072
+[2026-09-18 20:03:17] Gemma3 fresh decision cache train: 1824/3072
+[2026-09-18 20:03:29] Gemma3 fresh decision cache train: 1856/3072
+[2026-09-18 20:03:43] Gemma3 fresh decision cache train: 1888/3072
+[2026-09-18 20:03:54] Gemma3 fresh decision cache train: 1920/3072
+[2026-09-18 20:04:07] Gemma3 fresh decision cache train: 1952/3072
+[2026-09-18 20:04:18] Gemma3 fresh decision cache train: 1984/3072
+[2026-09-18 20:04:28] Gemma3 fresh decision cache train: 2016/3072
+[2026-09-18 20:04:41] Gemma3 fresh decision cache train: 2048/3072
+[2026-09-18 20:04:52] Gemma3 fresh decision cache train: 2080/3072
+[2026-09-18 20:05:03] Gemma3 fresh decision cache train: 2112/3072
+[2026-09-18 20:05:14] Gemma3 fresh decision cache train: 2144/3072
+[2026-09-18 20:05:28] Gemma3 fresh decision cache train: 2176/3072
+[2026-09-18 20:05:35] Gemma3 fresh decision cache train: 2208/3072
+[2026-09-18 20:05:45] Gemma3 fresh decision cache train: 2240/3072
+[2026-09-18 20:05:55] Gemma3 fresh decision cache train: 2272/3072
+[2026-09-18 20:06:05] Gemma3 fresh decision cache train: 2304/3072
+[2026-09-18 20:06:15] Gemma3 fresh decision cache train: 2336/3072
+[2026-09-18 20:06:26] Gemma3 fresh decision cache train: 2368/3072
+[2026-09-18 20:06:31] Gemma3 fresh decision cache train: 2400/3072
+[2026-09-18 20:06:37] Gemma3 fresh decision cache train: 2432/3072
+[2026-09-18 20:06:45] Gemma3 fresh decision cache train: 2464/3072
+[2026-09-18 20:06:54] Gemma3 fresh decision cache train: 2496/3072
+[2026-09-18 20:07:02] Gemma3 fresh decision cache train: 2528/3072
+[2026-09-18 20:07:13] Gemma3 fresh decision cache train: 2560/3072
+[2026-09-18 20:07:20] Gemma3 fresh decision cache train: 2592/3072
+[2026-09-18 20:07:28] Gemma3 fresh decision cache train: 2624/3072
+[2026-09-18 20:07:38] Gemma3 fresh decision cache train: 2656/3072
+[2026-09-18 20:07:47] Gemma3 fresh decision cache train: 2688/3072
+[2026-09-18 20:07:57] Gemma3 fresh decision cache train: 2720/3072
+[2026-09-18 20:08:06] Gemma3 fresh decision cache train: 2752/3072
+[2026-09-18 20:08:15] Gemma3 fresh decision cache train: 2784/3072
+[2026-09-18 20:08:24] Gemma3 fresh decision cache train: 2816/3072
+[2026-09-18 20:08:32] Gemma3 fresh decision cache train: 2848/3072
+[2026-09-18 20:08:40] Gemma3 fresh decision cache train: 2880/3072
+[2026-09-18 20:08:50] Gemma3 fresh decision cache train: 2912/3072
+[2026-09-18 20:09:01] Gemma3 fresh decision cache train: 2944/3072
+[2026-09-18 20:09:09] Gemma3 fresh decision cache train: 2976/3072
+[2026-09-18 20:09:20] Gemma3 fresh decision cache train: 3008/3072
+[2026-09-18 20:09:26] Gemma3 fresh decision cache train: 3040/3072
+[2026-09-18 20:09:34] Gemma3 fresh decision cache train: 3072/3072
+[2026-09-18 20:09:43] Gemma3 fresh decision cache validation: 32/384
+[2026-09-18 20:09:51] Gemma3 fresh decision cache validation: 64/384
+[2026-09-18 20:10:01] Gemma3 fresh decision cache validation: 96/384
+[2026-09-18 20:10:08] Gemma3 fresh decision cache validation: 128/384
+[2026-09-18 20:10:17] Gemma3 fresh decision cache validation: 160/384
+[2026-09-18 20:10:29] Gemma3 fresh decision cache validation: 192/384
+[2026-09-18 20:10:38] Gemma3 fresh decision cache validation: 224/384
+[2026-09-18 20:10:47] Gemma3 fresh decision cache validation: 256/384
+[2026-09-18 20:10:57] Gemma3 fresh decision cache validation: 288/384
+[2026-09-18 20:11:06] Gemma3 fresh decision cache validation: 320/384
+[2026-09-18 20:11:14] Gemma3 fresh decision cache validation: 352/384
+[2026-09-18 20:11:24] Gemma3 fresh decision cache validation: 384/384
+[2026-09-18 20:11:31] Gemma3 fresh decision cache test: 32/384
+[2026-09-18 20:11:41] Gemma3 fresh decision cache test: 64/384
+[2026-09-18 20:11:49] Gemma3 fresh decision cache test: 96/384
+[2026-09-18 20:11:58] Gemma3 fresh decision cache test: 128/384
+[2026-09-18 20:12:06] Gemma3 fresh decision cache test: 160/384
+[2026-09-18 20:12:15] Gemma3 fresh decision cache test: 192/384
+[2026-09-18 20:12:25] Gemma3 fresh decision cache test: 224/384
+[2026-09-18 20:12:33] Gemma3 fresh decision cache test: 256/384
+[2026-09-18 20:12:40] Gemma3 fresh decision cache test: 288/384
+[2026-09-18 20:12:49] Gemma3 fresh decision cache test: 320/384
+[2026-09-18 20:12:57] Gemma3 fresh decision cache test: 352/384
+[2026-09-18 20:13:04] Gemma3 fresh decision cache test: 384/384
+DONE stage: cache_gemma
+START stage: cache_qwen
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:25,  4.63it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 570.97it/s]Loading weights:  58%|█████▊    | 229/398 [00:00<00:00, 575.22it/s]Loading weights:  76%|███████▌  | 301/398 [00:00<00:00, 541.43it/s]Loading weights:  92%|█████████▏| 365/398 [00:00<00:00, 568.59it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 517.22it/s]
+[2026-09-18 20:13:38] Qwen fresh decision/pair cache train: 32/3072
+[2026-09-18 20:13:48] Qwen fresh decision/pair cache train: 64/3072
+[2026-09-18 20:14:03] Qwen fresh decision/pair cache train: 96/3072
+[2026-09-18 20:14:16] Qwen fresh decision/pair cache train: 128/3072
+[2026-09-18 20:14:30] Qwen fresh decision/pair cache train: 160/3072
+[2026-09-18 20:14:43] Qwen fresh decision/pair cache train: 192/3072
+[2026-09-18 20:14:58] Qwen fresh decision/pair cache train: 224/3072
+[2026-09-18 20:15:10] Qwen fresh decision/pair cache train: 256/3072
+[2026-09-18 20:15:23] Qwen fresh decision/pair cache train: 288/3072
+[2026-09-18 20:15:39] Qwen fresh decision/pair cache train: 320/3072
+[2026-09-18 20:15:52] Qwen fresh decision/pair cache train: 352/3072
+[2026-09-18 20:16:06] Qwen fresh decision/pair cache train: 384/3072
+[2026-09-18 20:16:20] Qwen fresh decision/pair cache train: 416/3072
+[2026-09-18 20:16:36] Qwen fresh decision/pair cache train: 448/3072
+[2026-09-18 20:16:52] Qwen fresh decision/pair cache train: 480/3072
+[2026-09-18 20:17:07] Qwen fresh decision/pair cache train: 512/3072
+[2026-09-18 20:17:19] Qwen fresh decision/pair cache train: 544/3072
+[2026-09-18 20:17:36] Qwen fresh decision/pair cache train: 576/3072
+[2026-09-18 20:17:48] Qwen fresh decision/pair cache train: 608/3072
+[2026-09-18 20:18:00] Qwen fresh decision/pair cache train: 640/3072
+[2026-09-18 20:18:16] Qwen fresh decision/pair cache train: 672/3072
+[2026-09-18 20:18:29] Qwen fresh decision/pair cache train: 704/3072
+[2026-09-18 20:18:50] Qwen fresh decision/pair cache train: 736/3072
+[2026-09-18 20:19:04] Qwen fresh decision/pair cache train: 768/3072
+[2026-09-18 20:19:16] Qwen fresh decision/pair cache train: 800/3072
+[2026-09-18 20:19:29] Qwen fresh decision/pair cache train: 832/3072
+[2026-09-18 20:19:45] Qwen fresh decision/pair cache train: 864/3072
+[2026-09-18 20:20:00] Qwen fresh decision/pair cache train: 896/3072
+[2026-09-18 20:20:14] Qwen fresh decision/pair cache train: 928/3072
+[2026-09-18 20:20:28] Qwen fresh decision/pair cache train: 960/3072
+[2026-09-18 20:20:44] Qwen fresh decision/pair cache train: 992/3072
+[2026-09-18 20:20:59] Qwen fresh decision/pair cache train: 1024/3072
+[2026-09-18 20:21:10] Qwen fresh decision/pair cache train: 1056/3072
+[2026-09-18 20:21:24] Qwen fresh decision/pair cache train: 1088/3072
+[2026-09-18 20:21:42] Qwen fresh decision/pair cache train: 1120/3072
+[2026-09-18 20:21:53] Qwen fresh decision/pair cache train: 1152/3072
+[2026-09-18 20:22:09] Qwen fresh decision/pair cache train: 1184/3072
+[2026-09-18 20:22:22] Qwen fresh decision/pair cache train: 1216/3072
+[2026-09-18 20:22:39] Qwen fresh decision/pair cache train: 1248/3072
+[2026-09-18 20:22:52] Qwen fresh decision/pair cache train: 1280/3072
+[2026-09-18 20:23:04] Qwen fresh decision/pair cache train: 1312/3072
+[2026-09-18 20:23:20] Qwen fresh decision/pair cache train: 1344/3072
+[2026-09-18 20:23:34] Qwen fresh decision/pair cache train: 1376/3072
+[2026-09-18 20:23:50] Qwen fresh decision/pair cache train: 1408/3072
+[2026-09-18 20:24:03] Qwen fresh decision/pair cache train: 1440/3072
+[2026-09-18 20:24:18] Qwen fresh decision/pair cache train: 1472/3072
+[2026-09-18 20:24:32] Qwen fresh decision/pair cache train: 1504/3072
+[2026-09-18 20:24:46] Qwen fresh decision/pair cache train: 1536/3072
+[2026-09-18 20:25:00] Qwen fresh decision/pair cache train: 1568/3072
+[2026-09-18 20:25:11] Qwen fresh decision/pair cache train: 1600/3072
+[2026-09-18 20:25:23] Qwen fresh decision/pair cache train: 1632/3072
+[2026-09-18 20:25:38] Qwen fresh decision/pair cache train: 1664/3072
+[2026-09-18 20:25:51] Qwen fresh decision/pair cache train: 1696/3072
+[2026-09-18 20:26:08] Qwen fresh decision/pair cache train: 1728/3072
+[2026-09-18 20:26:22] Qwen fresh decision/pair cache train: 1760/3072
+[2026-09-18 20:26:37] Qwen fresh decision/pair cache train: 1792/3072
+[2026-09-18 20:26:51] Qwen fresh decision/pair cache train: 1824/3072
+[2026-09-18 20:27:04] Qwen fresh decision/pair cache train: 1856/3072
+[2026-09-18 20:27:18] Qwen fresh decision/pair cache train: 1888/3072
+[2026-09-18 20:27:31] Qwen fresh decision/pair cache train: 1920/3072
+[2026-09-18 20:27:47] Qwen fresh decision/pair cache train: 1952/3072
+[2026-09-18 20:28:00] Qwen fresh decision/pair cache train: 1984/3072
+[2026-09-18 20:28:16] Qwen fresh decision/pair cache train: 2016/3072
+[2026-09-18 20:28:30] Qwen fresh decision/pair cache train: 2048/3072
+[2026-09-18 20:28:46] Qwen fresh decision/pair cache train: 2080/3072
+[2026-09-18 20:28:58] Qwen fresh decision/pair cache train: 2112/3072
+[2026-09-18 20:29:11] Qwen fresh decision/pair cache train: 2144/3072
+[2026-09-18 20:29:25] Qwen fresh decision/pair cache train: 2176/3072
+[2026-09-18 20:29:40] Qwen fresh decision/pair cache train: 2208/3072
+[2026-09-18 20:29:55] Qwen fresh decision/pair cache train: 2240/3072
+[2026-09-18 20:30:09] Qwen fresh decision/pair cache train: 2272/3072
+[2026-09-18 20:30:22] Qwen fresh decision/pair cache train: 2304/3072
+[2026-09-18 20:30:38] Qwen fresh decision/pair cache train: 2336/3072
+[2026-09-18 20:30:53] Qwen fresh decision/pair cache train: 2368/3072
+[2026-09-18 20:31:07] Qwen fresh decision/pair cache train: 2400/3072
+[2026-09-18 20:31:20] Qwen fresh decision/pair cache train: 2432/3072
+[2026-09-18 20:31:38] Qwen fresh decision/pair cache train: 2464/3072
+[2026-09-18 20:31:50] Qwen fresh decision/pair cache train: 2496/3072
+[2026-09-18 20:32:01] Qwen fresh decision/pair cache train: 2528/3072
+[2026-09-18 20:32:13] Qwen fresh decision/pair cache train: 2560/3072
+[2026-09-18 20:32:23] Qwen fresh decision/pair cache train: 2592/3072
+[2026-09-18 20:32:36] Qwen fresh decision/pair cache train: 2624/3072
+[2026-09-18 20:32:47] Qwen fresh decision/pair cache train: 2656/3072
+[2026-09-18 20:32:59] Qwen fresh decision/pair cache train: 2688/3072
+[2026-09-18 20:33:10] Qwen fresh decision/pair cache train: 2720/3072
+[2026-09-18 20:33:21] Qwen fresh decision/pair cache train: 2752/3072
+[2026-09-18 20:33:35] Qwen fresh decision/pair cache train: 2784/3072
+[2026-09-18 20:33:45] Qwen fresh decision/pair cache train: 2816/3072
+[2026-09-18 20:33:57] Qwen fresh decision/pair cache train: 2848/3072
+[2026-09-18 20:34:08] Qwen fresh decision/pair cache train: 2880/3072
+[2026-09-18 20:34:19] Qwen fresh decision/pair cache train: 2912/3072
+[2026-09-18 20:34:31] Qwen fresh decision/pair cache train: 2944/3072
+[2026-09-18 20:34:41] Qwen fresh decision/pair cache train: 2976/3072
+[2026-09-18 20:34:54] Qwen fresh decision/pair cache train: 3008/3072
+[2026-09-18 20:35:06] Qwen fresh decision/pair cache train: 3040/3072
+[2026-09-18 20:35:17] Qwen fresh decision/pair cache train: 3072/3072
+[2026-09-18 20:35:29] Qwen fresh decision/pair cache validation: 32/384
+[2026-09-18 20:35:40] Qwen fresh decision/pair cache validation: 64/384
+[2026-09-18 20:35:52] Qwen fresh decision/pair cache validation: 96/384
+[2026-09-18 20:36:03] Qwen fresh decision/pair cache validation: 128/384
+[2026-09-18 20:36:14] Qwen fresh decision/pair cache validation: 160/384
+[2026-09-18 20:36:28] Qwen fresh decision/pair cache validation: 192/384
+[2026-09-18 20:36:43] Qwen fresh decision/pair cache validation: 224/384
+[2026-09-18 20:36:57] Qwen fresh decision/pair cache validation: 256/384
+[2026-09-18 20:37:08] Qwen fresh decision/pair cache validation: 288/384
+[2026-09-18 20:37:20] Qwen fresh decision/pair cache validation: 320/384
+[2026-09-18 20:37:34] Qwen fresh decision/pair cache validation: 352/384
+[2026-09-18 20:37:47] Qwen fresh decision/pair cache validation: 384/384
+[2026-09-18 20:38:00] Qwen fresh decision/pair cache test: 32/384
+[2026-09-18 20:38:13] Qwen fresh decision/pair cache test: 64/384
+[2026-09-18 20:38:27] Qwen fresh decision/pair cache test: 96/384
+[2026-09-18 20:38:39] Qwen fresh decision/pair cache test: 128/384
+[2026-09-18 20:38:52] Qwen fresh decision/pair cache test: 160/384
+[2026-09-18 20:39:05] Qwen fresh decision/pair cache test: 192/384
+[2026-09-18 20:39:19] Qwen fresh decision/pair cache test: 224/384
+[2026-09-18 20:39:35] Qwen fresh decision/pair cache test: 256/384
+[2026-09-18 20:39:50] Qwen fresh decision/pair cache test: 288/384
+[2026-09-18 20:40:02] Qwen fresh decision/pair cache test: 320/384
+[2026-09-18 20:40:15] Qwen fresh decision/pair cache test: 352/384
+[2026-09-18 20:40:29] Qwen fresh decision/pair cache test: 384/384
+DONE stage: cache_qwen
+START stage: phase0_audit
+[2026-09-18 20:40:49] PHASE-0 AUDIT PASSED: {'passed': True, 'sample_count': 32, 'selection': 'dataset-aware normalized option-text regions (32 default; MMLU-Pro 64)', 'query': 'last Sender-native Answer: token', 'candidates': 'Options only; Question, position0 and Answer excluded', 'answer_tokenization': {'qwen': {'ids': [16141, 25], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 362, 'B': 425, 'C': 356, 'D': 422, 'E': 468, 'F': 434, 'G': 479, 'H': 472, 'I': 358, 'J': 619}}, 'gemma': {'ids': [7925, 236787], 'tokens': ['Answer', ':'], 'choice_ids': {'A': 562, 'B': 603, 'C': 565, 'D': 622, 'E': 645, 'F': 633, 'G': 667, 'H': 640, 'I': 564, 'J': 730}}}, 'mean_anchor_iou': 0.9492898686715174, 'mean_selected_attention_mass': 0.7465228993268408}
+DONE stage: phase0_audit
+START stage: teachers
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  10%|▉         | 38/398 [00:00<00:01, 341.54it/s]Loading weights:  26%|██▌       | 102/398 [00:00<00:00, 486.61it/s]Loading weights:  41%|████▏     | 165/398 [00:00<00:00, 543.91it/s]Loading weights:  56%|█████▌    | 223/398 [00:00<00:00, 539.45it/s]Loading weights:  73%|███████▎  | 289/398 [00:00<00:00, 553.36it/s]Loading weights:  88%|████████▊ | 352/398 [00:00<00:00, 575.84it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 546.59it/s]
+[2026-09-18 20:41:16] Qwen Oracle teachers train: 64/3072
+[2026-09-18 20:41:32] Qwen Oracle teachers train: 128/3072
+[2026-09-18 20:41:48] Qwen Oracle teachers train: 192/3072
+[2026-09-18 20:42:04] Qwen Oracle teachers train: 256/3072
+[2026-09-18 20:42:22] Qwen Oracle teachers train: 320/3072
+[2026-09-18 20:42:37] Qwen Oracle teachers train: 384/3072
+[2026-09-18 20:42:53] Qwen Oracle teachers train: 448/3072
+[2026-09-18 20:43:09] Qwen Oracle teachers train: 512/3072
+[2026-09-18 20:43:24] Qwen Oracle teachers train: 576/3072
+[2026-09-18 20:43:39] Qwen Oracle teachers train: 640/3072
+[2026-09-18 20:43:53] Qwen Oracle teachers train: 704/3072
+[2026-09-18 20:44:08] Qwen Oracle teachers train: 768/3072
+[2026-09-18 20:44:22] Qwen Oracle teachers train: 832/3072
+[2026-09-18 20:44:37] Qwen Oracle teachers train: 896/3072
+[2026-09-18 20:44:51] Qwen Oracle teachers train: 960/3072
+[2026-09-18 20:45:05] Qwen Oracle teachers train: 1024/3072
+[2026-09-18 20:45:20] Qwen Oracle teachers train: 1088/3072
+[2026-09-18 20:45:35] Qwen Oracle teachers train: 1152/3072
+[2026-09-18 20:45:50] Qwen Oracle teachers train: 1216/3072
+[2026-09-18 20:46:06] Qwen Oracle teachers train: 1280/3072
+[2026-09-18 20:46:20] Qwen Oracle teachers train: 1344/3072
+[2026-09-18 20:46:37] Qwen Oracle teachers train: 1408/3072
+[2026-09-18 20:46:51] Qwen Oracle teachers train: 1472/3072
+[2026-09-18 20:47:06] Qwen Oracle teachers train: 1536/3072
+[2026-09-18 20:47:21] Qwen Oracle teachers train: 1600/3072
+[2026-09-18 20:47:37] Qwen Oracle teachers train: 1664/3072
+[2026-09-18 20:47:53] Qwen Oracle teachers train: 1728/3072
+[2026-09-18 20:48:09] Qwen Oracle teachers train: 1792/3072
+[2026-09-18 20:48:24] Qwen Oracle teachers train: 1856/3072
+[2026-09-18 20:48:38] Qwen Oracle teachers train: 1920/3072
+[2026-09-18 20:48:54] Qwen Oracle teachers train: 1984/3072
+[2026-09-18 20:49:12] Qwen Oracle teachers train: 2048/3072
+[2026-09-18 20:49:30] Qwen Oracle teachers train: 2112/3072
+[2026-09-18 20:49:47] Qwen Oracle teachers train: 2176/3072
+[2026-09-18 20:50:03] Qwen Oracle teachers train: 2240/3072
+[2026-09-18 20:50:20] Qwen Oracle teachers train: 2304/3072
+[2026-09-18 20:50:37] Qwen Oracle teachers train: 2368/3072
+[2026-09-18 20:50:52] Qwen Oracle teachers train: 2432/3072
+[2026-09-18 20:51:07] Qwen Oracle teachers train: 2496/3072
+[2026-09-18 20:51:23] Qwen Oracle teachers train: 2560/3072
+[2026-09-18 20:51:41] Qwen Oracle teachers train: 2624/3072
+[2026-09-18 20:51:57] Qwen Oracle teachers train: 2688/3072
+[2026-09-18 20:52:13] Qwen Oracle teachers train: 2752/3072
+[2026-09-18 20:52:29] Qwen Oracle teachers train: 2816/3072
+[2026-09-18 20:52:48] Qwen Oracle teachers train: 2880/3072
+[2026-09-18 20:53:07] Qwen Oracle teachers train: 2944/3072
+[2026-09-18 20:53:23] Qwen Oracle teachers train: 3008/3072
+[2026-09-18 20:53:40] Qwen Oracle teachers train: 3072/3072
+[2026-09-18 20:53:56] Qwen Oracle teachers validation: 64/384
+[2026-09-18 20:54:14] Qwen Oracle teachers validation: 128/384
+[2026-09-18 20:54:31] Qwen Oracle teachers validation: 192/384
+[2026-09-18 20:54:48] Qwen Oracle teachers validation: 256/384
+[2026-09-18 20:55:04] Qwen Oracle teachers validation: 320/384
+[2026-09-18 20:55:20] Qwen Oracle teachers validation: 384/384
+[2026-09-18 20:55:41] Qwen Oracle teachers test: 64/384
+[2026-09-18 20:56:00] Qwen Oracle teachers test: 128/384
+[2026-09-18 20:56:20] Qwen Oracle teachers test: 192/384
+[2026-09-18 20:56:41] Qwen Oracle teachers test: 256/384
+[2026-09-18 20:57:00] Qwen Oracle teachers test: 320/384
+[2026-09-18 20:57:19] Qwen Oracle teachers test: 384/384
+DONE stage: teachers
+START stage: baselines
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<07:16,  2.02it/s]Loading weights:  22%|██▏       | 198/883 [00:00<00:01, 427.05it/s]Loading weights:  34%|███▎      | 298/883 [00:00<00:01, 461.63it/s]Loading weights:  43%|████▎     | 376/883 [00:00<00:01, 449.99it/s]Loading weights:  50%|████▉     | 440/883 [00:01<00:00, 451.19it/s]Loading weights:  80%|████████  | 707/883 [00:01<00:00, 927.92it/s]Loading weights: 100%|██████████| 883/883 [00:01<00:00, 682.96it/s]
+Gemma3 baseline pass: 32/384
+Gemma3 baseline pass: 64/384
+Gemma3 baseline pass: 96/384
+Gemma3 baseline pass: 128/384
+Gemma3 baseline pass: 160/384
+Gemma3 baseline pass: 192/384
+Gemma3 baseline pass: 224/384
+Gemma3 baseline pass: 256/384
+Gemma3 baseline pass: 288/384
+Gemma3 baseline pass: 320/384
+Gemma3 baseline pass: 352/384
+Gemma3 baseline pass: 384/384
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:37,  4.06it/s]Loading weights:  34%|███▍      | 135/398 [00:00<00:00, 465.67it/s]Loading weights:  51%|█████     | 203/398 [00:00<00:00, 512.30it/s]Loading weights:  67%|██████▋   | 267/398 [00:00<00:00, 534.75it/s]Loading weights:  83%|████████▎ | 329/398 [00:00<00:00, 559.58it/s]Loading weights:  98%|█████████▊| 391/398 [00:00<00:00, 564.58it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 497.20it/s]
+Qwen baseline/control pass: 16/384
+Qwen baseline/control pass: 32/384
+Qwen baseline/control pass: 48/384
+Qwen baseline/control pass: 64/384
+Qwen baseline/control pass: 80/384
+Qwen baseline/control pass: 96/384
+Qwen baseline/control pass: 112/384
+Qwen baseline/control pass: 128/384
+Qwen baseline/control pass: 144/384
+Qwen baseline/control pass: 160/384
+Qwen baseline/control pass: 176/384
+Qwen baseline/control pass: 192/384
+Qwen baseline/control pass: 208/384
+Qwen baseline/control pass: 224/384
+Qwen baseline/control pass: 240/384
+Qwen baseline/control pass: 256/384
+Qwen baseline/control pass: 272/384
+Qwen baseline/control pass: 288/384
+Qwen baseline/control pass: 304/384
+Qwen baseline/control pass: 320/384
+Qwen baseline/control pass: 336/384
+Qwen baseline/control pass: 352/384
+Qwen baseline/control pass: 368/384
+Qwen baseline/control pass: 384/384
+{
+  "gemma3_full_native": {
+    "correct": 246,
+    "accuracy": 0.640625
+  },
+  "gemma3_native_selected32": {
+    "correct": 229,
+    "accuracy": 0.5963541666666666
+  },
+  "qwen_full_native": {
+    "correct": 274,
+    "accuracy": 0.7135416666666666
+  },
+  "qwen_native_oracle32": {
+    "correct": 263,
+    "accuracy": 0.6848958333333334
+  },
+  "qwen_self_selected32": {
+    "correct": 261,
+    "accuracy": 0.6796875
+  },
+  "qwen_zero32": {
+    "correct": 89,
+    "accuracy": 0.23177083333333334
+  },
+  "qwen_no_memory": {
+    "correct": 81,
+    "accuracy": 0.2109375
+  },
+  "qwen_shuffled_oracle32": {
+    "correct": 80,
+    "accuracy": 0.20833333333333334
+  }
+}
+DONE stage: baselines
+START stage: stage_a
+[2026-09-18 21:04:04] Fresh Stage A 16/1536 loss=1.546389
+[2026-09-18 21:05:05] Fresh Stage A 32/1536 loss=1.325930
+[2026-09-18 21:06:02] Fresh Stage A 48/1536 loss=1.137177
+[2026-09-18 21:06:51] Fresh Stage A 64/1536 loss=1.159539
+[2026-09-18 21:07:53] Fresh Stage A 80/1536 loss=1.067617
+[2026-09-18 21:08:51] Fresh Stage A 96/1536 loss=0.927490
+[2026-09-18 21:09:57] Fresh Stage A 112/1536 loss=0.996844
+[2026-09-18 21:11:20] Fresh Stage A 128/1536 loss=0.922274
+[2026-09-18 21:12:23] Fresh Stage A 144/1536 loss=0.918752
+[2026-09-18 21:13:19] Fresh Stage A 160/1536 loss=0.992619
+[2026-09-18 21:14:21] Fresh Stage A 176/1536 loss=0.887986
+[2026-09-18 21:15:16] Fresh Stage A 192/1536 loss=0.828532
+[2026-09-18 21:17:58] Fresh Stage A validation step=192 loss=0.885482
+[2026-09-18 21:18:55] Fresh Stage A 208/1536 loss=0.753433
+[2026-09-18 21:19:51] Fresh Stage A 224/1536 loss=0.855385
+[2026-09-18 21:20:46] Fresh Stage A 240/1536 loss=0.769597
+[2026-09-18 21:21:47] Fresh Stage A 256/1536 loss=0.731518
+[2026-09-18 21:22:43] Fresh Stage A 272/1536 loss=0.710971
+[2026-09-18 21:23:41] Fresh Stage A 288/1536 loss=0.685529
+[2026-09-18 21:24:39] Fresh Stage A 304/1536 loss=0.738883
+[2026-09-18 21:25:35] Fresh Stage A 320/1536 loss=0.727274
+[2026-09-18 21:26:30] Fresh Stage A 336/1536 loss=0.803642
+[2026-09-18 21:27:26] Fresh Stage A 352/1536 loss=0.906030
+[2026-09-18 21:28:24] Fresh Stage A 368/1536 loss=0.766925
+[2026-09-18 21:29:23] Fresh Stage A 384/1536 loss=0.899936
+[2026-09-18 21:32:10] Fresh Stage A validation step=384 loss=0.807457
+[2026-09-18 21:33:08] Fresh Stage A 400/1536 loss=0.814696
+[2026-09-18 21:34:06] Fresh Stage A 416/1536 loss=0.763936
+[2026-09-18 21:35:02] Fresh Stage A 432/1536 loss=0.924196
+[2026-09-18 21:35:57] Fresh Stage A 448/1536 loss=0.741089
+[2026-09-18 21:36:51] Fresh Stage A 464/1536 loss=0.832463
+[2026-09-18 21:37:49] Fresh Stage A 480/1536 loss=0.687703
+[2026-09-18 21:38:43] Fresh Stage A 496/1536 loss=0.820379
+[2026-09-18 21:39:38] Fresh Stage A 512/1536 loss=0.734312
+[2026-09-18 21:40:43] Fresh Stage A 528/1536 loss=0.799824
+[2026-09-18 21:41:34] Fresh Stage A 544/1536 loss=0.693289
+[2026-09-18 21:42:26] Fresh Stage A 560/1536 loss=0.775533
+[2026-09-18 21:43:28] Fresh Stage A 576/1536 loss=0.893960
+[2026-09-18 21:46:12] Fresh Stage A validation step=576 loss=0.762255
+[2026-09-18 21:47:09] Fresh Stage A 592/1536 loss=0.736742
+[2026-09-18 21:48:08] Fresh Stage A 608/1536 loss=0.810007
+[2026-09-18 21:49:06] Fresh Stage A 624/1536 loss=0.576907
+[2026-09-18 21:50:03] Fresh Stage A 640/1536 loss=0.626484
+[2026-09-18 21:51:01] Fresh Stage A 656/1536 loss=0.732003
+[2026-09-18 21:51:56] Fresh Stage A 672/1536 loss=0.662713
+[2026-09-18 21:52:50] Fresh Stage A 688/1536 loss=0.689398
+[2026-09-18 21:53:49] Fresh Stage A 704/1536 loss=0.624493
+[2026-09-18 21:54:46] Fresh Stage A 720/1536 loss=0.791735
+[2026-09-18 21:55:46] Fresh Stage A 736/1536 loss=0.677541
+[2026-09-18 21:56:41] Fresh Stage A 752/1536 loss=0.639447
+[2026-09-18 21:57:50] Fresh Stage A 768/1536 loss=0.671200
+[2026-09-18 22:00:33] Fresh Stage A validation step=768 loss=0.738316
+[2026-09-18 22:01:23] Fresh Stage A 784/1536 loss=0.754502
+[2026-09-18 22:02:18] Fresh Stage A 800/1536 loss=0.732355
+[2026-09-18 22:03:12] Fresh Stage A 816/1536 loss=0.598343
+[2026-09-18 22:04:10] Fresh Stage A 832/1536 loss=0.822619
+[2026-09-18 22:05:07] Fresh Stage A 848/1536 loss=0.736878
+[2026-09-18 22:06:03] Fresh Stage A 864/1536 loss=0.592158
+[2026-09-18 22:07:00] Fresh Stage A 880/1536 loss=0.579755
+[2026-09-18 22:08:02] Fresh Stage A 896/1536 loss=0.626683
+[2026-09-18 22:08:56] Fresh Stage A 912/1536 loss=0.642792
+[2026-09-18 22:09:52] Fresh Stage A 928/1536 loss=0.673373
+[2026-09-18 22:10:58] Fresh Stage A 944/1536 loss=0.669667
+[2026-09-18 22:11:58] Fresh Stage A 960/1536 loss=0.621107
+[2026-09-18 22:14:32] Fresh Stage A validation step=960 loss=0.725579
+[2026-09-18 22:15:28] Fresh Stage A 976/1536 loss=0.614599
+[2026-09-18 22:16:27] Fresh Stage A 992/1536 loss=0.650117
+[2026-09-18 22:17:25] Fresh Stage A 1008/1536 loss=0.792144
+[2026-09-18 22:18:20] Fresh Stage A 1024/1536 loss=0.620164
+[2026-09-18 22:19:13] Fresh Stage A 1040/1536 loss=0.622675
+[2026-09-18 22:20:08] Fresh Stage A 1056/1536 loss=0.726998
+[2026-09-18 22:21:06] Fresh Stage A 1072/1536 loss=0.631883
+[2026-09-18 22:22:00] Fresh Stage A 1088/1536 loss=0.605060
+[2026-09-18 22:23:08] Fresh Stage A 1104/1536 loss=0.611889
+[2026-09-18 22:23:58] Fresh Stage A 1120/1536 loss=0.598630
+[2026-09-18 22:24:39] Fresh Stage A 1136/1536 loss=0.756236
+[2026-09-18 22:25:19] Fresh Stage A 1152/1536 loss=0.601594
+[2026-09-18 22:27:14] Fresh Stage A validation step=1152 loss=0.723264
+[2026-09-18 22:27:56] Fresh Stage A 1168/1536 loss=0.502067
+[2026-09-18 22:28:38] Fresh Stage A 1184/1536 loss=0.659058
+[2026-09-18 22:29:23] Fresh Stage A 1200/1536 loss=0.752684
+[2026-09-18 22:30:09] Fresh Stage A 1216/1536 loss=0.688563
+[2026-09-18 22:30:44] Fresh Stage A 1232/1536 loss=0.569627
+[2026-09-18 22:31:28] Fresh Stage A 1248/1536 loss=0.774722
+[2026-09-18 22:32:11] Fresh Stage A 1264/1536 loss=0.573771
+[2026-09-18 22:32:48] Fresh Stage A 1280/1536 loss=0.524046
+[2026-09-18 22:33:34] Fresh Stage A 1296/1536 loss=0.651471
+[2026-09-18 22:34:16] Fresh Stage A 1312/1536 loss=0.685358
+[2026-09-18 22:35:11] Fresh Stage A 1328/1536 loss=0.805111
+[2026-09-18 22:35:51] Fresh Stage A 1344/1536 loss=0.613719
+[2026-09-18 22:37:41] Fresh Stage A validation step=1344 loss=0.705958
+[2026-09-18 22:38:22] Fresh Stage A 1360/1536 loss=0.612805
+[2026-09-18 22:39:03] Fresh Stage A 1376/1536 loss=0.655237
+[2026-09-18 22:39:42] Fresh Stage A 1392/1536 loss=0.495564
+[2026-09-18 22:40:26] Fresh Stage A 1408/1536 loss=0.606956
+[2026-09-18 22:41:08] Fresh Stage A 1424/1536 loss=0.581393
+[2026-09-18 22:41:53] Fresh Stage A 1440/1536 loss=0.544150
+[2026-09-18 22:42:37] Fresh Stage A 1456/1536 loss=0.823206
+[2026-09-18 22:43:20] Fresh Stage A 1472/1536 loss=0.725663
+[2026-09-18 22:44:02] Fresh Stage A 1488/1536 loss=0.731584
+[2026-09-18 22:44:44] Fresh Stage A 1504/1536 loss=0.569458
+[2026-09-18 22:45:27] Fresh Stage A 1520/1536 loss=0.587274
+[2026-09-18 22:46:15] Fresh Stage A 1536/1536 loss=0.584213
+[2026-09-18 22:48:08] Fresh Stage A validation step=1536 loss=0.702658
+DONE stage: stage_a
+START stage: select_stage_a
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   9%|▉         | 37/398 [00:00<00:01, 349.06it/s]Loading weights:  23%|██▎       | 91/398 [00:00<00:00, 428.34it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 499.74it/s]Loading weights:  56%|█████▌    | 223/398 [00:00<00:00, 535.33it/s]Loading weights:  71%|███████   | 283/398 [00:00<00:00, 556.94it/s]Loading weights:  86%|████████▋ | 344/398 [00:00<00:00, 551.59it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 542.61it/s]
+[2026-09-18 22:49:28] Fresh Stage A functional step=192 acc=0.2109 KL=1.441777
+[2026-09-18 22:50:37] Fresh Stage A functional step=384 acc=0.2370 KL=1.649194
+[2026-09-18 22:52:12] Fresh Stage A functional step=576 acc=0.2552 KL=1.599835
+[2026-09-18 22:54:06] Fresh Stage A functional step=768 acc=0.2526 KL=1.588510
+[2026-09-18 22:55:16] Fresh Stage A functional step=960 acc=0.2682 KL=1.576000
+[2026-09-18 22:56:40] Fresh Stage A functional step=1152 acc=0.2708 KL=1.584345
+[2026-09-18 22:58:10] Fresh Stage A functional step=1344 acc=0.3411 KL=1.397269
+[2026-09-18 22:59:33] Fresh Stage A functional step=1536 acc=0.3073 KL=1.389742
+DONE stage: select_stage_a
+START stage: train_residual
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 47/398 [00:00<00:00, 391.21it/s]Loading weights:  29%|██▉       | 115/398 [00:00<00:00, 540.83it/s]Loading weights:  45%|████▌     | 181/398 [00:00<00:00, 578.19it/s]Loading weights:  62%|██████▏   | 246/398 [00:00<00:00, 602.46it/s]Loading weights:  78%|███████▊  | 311/398 [00:00<00:00, 611.92it/s]Loading weights:  95%|█████████▍| 377/398 [00:00<00:00, 616.64it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 601.12it/s]
+[2026-09-18 23:01:44] residual Stage B 16/768 KL=1.284297
+[2026-09-18 23:03:17] residual Stage B 32/768 KL=0.645423
+[2026-09-18 23:04:47] residual Stage B 48/768 KL=0.414521
+[2026-09-18 23:06:16] residual Stage B 64/768 KL=0.630637
+[2026-09-18 23:07:44] residual Stage B 80/768 KL=0.683838
+[2026-09-18 23:09:16] residual Stage B 96/768 KL=1.260132
+[2026-09-18 23:10:45] residual Stage B 112/768 KL=0.802982
+[2026-09-18 23:12:13] residual Stage B 128/768 KL=0.250309
+[2026-09-18 23:13:42] residual Stage B 144/768 KL=0.680490
+[2026-09-18 23:15:11] residual Stage B 160/768 KL=0.718322
+[2026-09-18 23:16:38] residual Stage B 176/768 KL=0.816177
+[2026-09-18 23:18:07] residual Stage B 192/768 KL=0.285710
+[2026-09-18 23:20:11] residual validation step=192 acc=0.5599 KL=0.719627
+[2026-09-18 23:21:45] residual Stage B 208/768 KL=0.196645
+[2026-09-18 23:23:14] residual Stage B 224/768 KL=0.486641
+[2026-09-18 23:24:44] residual Stage B 240/768 KL=0.791689
+[2026-09-18 23:26:14] residual Stage B 256/768 KL=0.745436
+[2026-09-18 23:27:44] residual Stage B 272/768 KL=0.865270
+[2026-09-18 23:29:12] residual Stage B 288/768 KL=0.842500
+[2026-09-18 23:30:41] residual Stage B 304/768 KL=0.108771
+[2026-09-18 23:32:10] residual Stage B 320/768 KL=0.812746
+[2026-09-18 23:33:41] residual Stage B 336/768 KL=0.928442
+[2026-09-18 23:35:11] residual Stage B 352/768 KL=0.785884
+[2026-09-18 23:36:40] residual Stage B 368/768 KL=0.822564
+[2026-09-18 23:38:11] residual Stage B 384/768 KL=0.976423
+[2026-09-18 23:40:11] residual validation step=384 acc=0.5833 KL=0.669819
+[2026-09-18 23:41:37] residual Stage B 400/768 KL=0.535282
+[2026-09-18 23:43:05] residual Stage B 416/768 KL=0.797751
+[2026-09-18 23:44:32] residual Stage B 432/768 KL=0.272834
+[2026-09-18 23:45:58] residual Stage B 448/768 KL=0.312791
+[2026-09-18 23:47:26] residual Stage B 464/768 KL=0.846334
+[2026-09-18 23:48:53] residual Stage B 480/768 KL=0.864953
+[2026-09-18 23:50:21] residual Stage B 496/768 KL=1.074174
+[2026-09-18 23:51:50] residual Stage B 512/768 KL=0.243606
+[2026-09-18 23:53:17] residual Stage B 528/768 KL=0.245060
+[2026-09-18 23:54:45] residual Stage B 544/768 KL=0.994265
+[2026-09-18 23:56:12] residual Stage B 560/768 KL=0.755421
+[2026-09-18 23:57:40] residual Stage B 576/768 KL=0.258720
+[2026-09-18 23:59:39] residual validation step=576 acc=0.5703 KL=0.666704
+[2026-09-19 00:01:09] residual Stage B 592/768 KL=0.581168
+[2026-09-19 00:02:42] residual Stage B 608/768 KL=0.823537
+[2026-09-19 00:04:14] residual Stage B 624/768 KL=0.760939
+[2026-09-19 00:05:49] residual Stage B 640/768 KL=0.424838
+[2026-09-19 00:07:19] residual Stage B 656/768 KL=0.513547
+[2026-09-19 00:08:50] residual Stage B 672/768 KL=0.551976
+[2026-09-19 00:10:18] residual Stage B 688/768 KL=0.579277
+[2026-09-19 00:11:43] residual Stage B 704/768 KL=0.552143
+[2026-09-19 00:13:07] residual Stage B 720/768 KL=0.728342
+[2026-09-19 00:14:30] residual Stage B 736/768 KL=0.773882
+[2026-09-19 00:15:53] residual Stage B 752/768 KL=0.628861
+[2026-09-19 00:17:18] residual Stage B 768/768 KL=0.401911
+[2026-09-19 00:19:08] residual validation step=768 acc=0.5781 KL=0.663162
+DONE stage: train_residual
+START stage: evaluate
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   9%|▉         | 37/398 [00:00<00:01, 351.90it/s]Loading weights:  23%|██▎       | 91/398 [00:00<00:00, 447.55it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 491.02it/s]Loading weights:  51%|█████     | 202/398 [00:00<00:00, 517.12it/s]Loading weights:  67%|██████▋   | 267/398 [00:00<00:00, 540.87it/s]Loading weights:  84%|████████▎ | 333/398 [00:00<00:00, 553.41it/s]Loading weights:  99%|█████████▉| 396/398 [00:00<00:00, 576.53it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 538.47it/s]
+[2026-09-19 00:20:17] Final A/B evaluation 16/384
+[2026-09-19 00:20:26] Final A/B evaluation 32/384
+[2026-09-19 00:20:37] Final A/B evaluation 48/384
+[2026-09-19 00:20:47] Final A/B evaluation 64/384
+[2026-09-19 00:20:57] Final A/B evaluation 80/384
+[2026-09-19 00:21:09] Final A/B evaluation 96/384
+[2026-09-19 00:21:23] Final A/B evaluation 112/384
+[2026-09-19 00:21:35] Final A/B evaluation 128/384
+[2026-09-19 00:21:48] Final A/B evaluation 144/384
+[2026-09-19 00:22:02] Final A/B evaluation 160/384
+[2026-09-19 00:22:14] Final A/B evaluation 176/384
+[2026-09-19 00:22:28] Final A/B evaluation 192/384
+[2026-09-19 00:22:42] Final A/B evaluation 208/384
+[2026-09-19 00:22:53] Final A/B evaluation 224/384
+[2026-09-19 00:23:07] Final A/B evaluation 240/384
+[2026-09-19 00:23:19] Final A/B evaluation 256/384
+[2026-09-19 00:23:32] Final A/B evaluation 272/384
+[2026-09-19 00:23:46] Final A/B evaluation 288/384
+[2026-09-19 00:23:58] Final A/B evaluation 304/384
+[2026-09-19 00:24:12] Final A/B evaluation 320/384
+[2026-09-19 00:24:24] Final A/B evaluation 336/384
+[2026-09-19 00:24:37] Final A/B evaluation 352/384
+[2026-09-19 00:24:51] Final A/B evaluation 368/384
+[2026-09-19 00:25:02] Final A/B evaluation 384/384
+DONE stage: evaluate
+ALL FORWARD TRAIN4096 EXPERIMENT STAGES COMPLETED
+[2026-09-19 00:25:04] DONE /home/yezhe/异构模型/multidataset_obqa_arc_mmlupro_train1024_full34_headmix_g3_to_q4_seed1234 mode=study
